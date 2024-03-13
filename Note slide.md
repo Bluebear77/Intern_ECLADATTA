@@ -73,6 +73,7 @@ Each EG is associated with one or more question templates, which differ in their
 Me: It is used a pre-trained model and trained on given data setup, dynamically sample examples based on current model errors.
 
 https://github.com/oriyor/turning_tables/blob/main/ExampleGeneration/ExampleGeneration/question_templates/tabreas_question_templates.json
+
 ![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/576c7c5c-c526-4d72-ad0f-5daa9ed0254a)
 
 
