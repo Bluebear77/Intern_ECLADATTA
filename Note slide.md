@@ -14,8 +14,8 @@
 
    
   https://github.com/Yale-LILY/ReasTAP/tree/main/synthetic_tableqa_generation/question_generator
+![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/5c490bf5-ba2c-4c6e-ba53-9f24a4f96a55)
 
- ![image](https://github.com/Bluebear77/Sailing_log/assets/119409649/4eed5961-4d22-4511-bb6b-a12776b615cf)
 
 
 - How the template is chosen based on the query? Which case they apply?
