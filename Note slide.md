@@ -104,6 +104,8 @@ examples with Logical Reasoning Type Definition/
 #### [Investigating Table-to-Text Generation Capabilities of LLMs in Real-World Information Seeking Scenarios]:
 "LOTNLG and F2WTQ were constructed upon **the test set of LOGICNLG (Chen et al., 2020a) and WTQ (Pasupat and Liang, 2015) datasets**, which are publicly available under the licenses of MIT1 and CC BY-SA 4.02 , respectively. These licenses permit us to modify, publish, and distribute additional annotations upon the original dataset."
 
+_In its github,  no template is found for the table insight extraction._
+
 #### [Logical Natural Language Generation from Open-Domain Tables]:
 
 https://aclanthology.org/2020.acl-main.708.pdf<br/>
