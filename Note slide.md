@@ -8,7 +8,7 @@
 
 - Do we have the full list?
 
-   Kind of. I find the question template of the ReasTAP. The summarizationo template of QTSUMM is based on ReasTAP, but it is not posted on github.
+   Kind of. I find the question template of the ReasTAP. The summarization template of QTSUMM is based on ReasTAP, but it is not posted on github.
   
   https://github.com/Yale-LILY/ReasTAP/blob/main/synthetic_tableqa_generation/question_template.json
 
