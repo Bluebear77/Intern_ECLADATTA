@@ -205,9 +205,9 @@ The dataset contains tables with open schema crawled from diversified domains Fi
 
 #### [Compositional Semantic Parsing on Semi-Structured Tables]:
 
-https://aclanthology.org/P15-1142.pdf
-https://paperswithcode.com/dataset/wikitablequestions 
-The WTQ dataset, https://github.com/percyliang/sempre,
+https://aclanthology.org/P15-1142.pdf <br/>
+https://paperswithcode.com/dataset/wikitablequestions <br/>
+The WTQ dataset, https://github.com/percyliang/sempre
 
 
 
