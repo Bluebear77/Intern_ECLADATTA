@@ -211,4 +211,3 @@ Generation via Logic Form Control]:
 
 https://aclanthology.org/2023.eacl-main.40.pdf<br/>
 https://github.com/Yale-LILY/LoFT
-
