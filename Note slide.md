@@ -26,7 +26,7 @@
   
 ```diff
 - Code of refactor?
-- No template found for the 
+- Not shown on github, contacted the author Yilun Zhao by e-mail, waiting for their response.
 ```
   
 
