@@ -19,7 +19,8 @@
 
 
 - How the template is chosen based on the query? Which case they apply?
-  ![image](https://github.com/Bluebear77/Sailing_log/assets/119409649/538d5fcf-f14e-4f7a-9315-2773062d55e3)
+![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/be6756b4-85c8-4420-8f35-831f9927af6b)
+
 
  
 
@@ -43,19 +44,24 @@
 ### Template:
 #### [QTSUMM: Query-Focused Summarization over Tabular Data]:"For each reasoning operation, the fact generator
 (adopted from Zhao et al. (2022b)) takes a table and a query as input."
-![image](https://github.com/Bluebear77/Sailing_log/assets/119409649/4983764e-294b-4232-9a4b-3890f1ad1119)
+![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/478a2192-98cc-4f5a-8b2c-34c2af6317bd)
+
+
 
 #### [REASTAP: Injecting Table Reasoning Skills During Pre-training via Synthetic Reasoning Examples] : " The
 example generation pipeline was adapted from Yoran et al. (2021)" https://aclanthology.org/2022.emnlp-main.615.pdf
-![image](https://github.com/Bluebear77/Sailing_log/assets/119409649/488b1959-34a7-4f02-ac03-fc14159a7368)
+![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/2e1b8821-53da-4243-9947-c5ca0ff74402)
+
 
 #### [Turning Tables: Generating Examples from Semi-structured Tables for Endowing Language Models with Reasoning Skills]：https://arxiv.org/pdf/2107.07261.pdf
 
 
-![image](https://github.com/Bluebear77/Sailing_log/assets/119409649/8d8d18b4-1c70-4145-a894-8223fed6f306)
+![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/8a498c54-2605-4373-8a35-e0557e121529)
 
 
-![image](https://github.com/Bluebear77/Sailing_log/assets/119409649/68cff967-a10b-40d0-9e43-d2ef6268f243)
+
+![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/19a5c921-83fe-423a-98b9-551ba11f0272)
+
 " Approach overview. First, we use semi-structured tables to generate large amounts of data **from 16 different example generators (EGs)**, each corresponding to a different reasoning skill. Then, **a pre-trained LM is
 trained over this data in a multi-task setup to obtain our model**, PReasM, where we dynamically sample examples
 based on current model errors (arrow width corresponds to the number of sampled examples). Last, **our model is fine-tuned and evaluated on target tasks that require reasoning.**
@@ -67,9 +73,8 @@ Each EG is associated with one or more question templates, which differ in their
 Me: It is used a pre-trained model and trained on given data setup, dynamically sample examples based on current model errors.
 
 https://github.com/oriyor/turning_tables/blob/main/ExampleGeneration/ExampleGeneration/question_templates/tabreas_question_templates.json
+![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/576c7c5c-c526-4d72-ad0f-5daa9ed0254a)
 
-
-![image](https://github.com/Bluebear77/Sailing_log/assets/119409649/08b0934a-dd85-4373-a5f6-c92a64c9b140)
 
 
 
@@ -184,7 +189,8 @@ The template LM file: https://github.com/wenhuchen/LogicNLG/tree/master/data
 
 "We took their positive statements (the sentences which are entailed by the knowledge in the table) collected from "complex channel" (required to annotate sentences with logical inference) as our target text. To prevent confusion with the original dataset, **we name this table-to-text dataset as LOGICNLG, which contains 28,450 training, 4,260 validation, and 4,305 test examples based on 7,392 open-domain tables crawled from Wikipedia.** Each table has 5 different examples covering diverse types of logical inference."
 
-  ![image](https://github.com/Bluebear77/Sailing_log/assets/119409649/5cfe5573-f1a2-4060-91c3-4b93a43e30cf)
+![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/d11d6754-cd47-4278-8a4b-5ef5a5b04739)
+
 
 
 "Involves very rich logical inference, every annotated sentence involves certain types of inference with minimum domain-specific knowledge. 
