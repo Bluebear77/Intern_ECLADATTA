@@ -209,7 +209,8 @@ https://aclanthology.org/P15-1142.pdf
 
 
 ### Logical  reasoning operations:
-#### [Investigating Table-to-Text Generation Capabilities of LLMs in Real-World Information Seeking Scenarios]:"To address this issue, application developers could tailor the table-to-text generation systems to generate multiple insights that encompass **different logical reasoning operations (Perlitz et al., 2022; Zhao et al., 2023b).**"
+#### [Investigating Table-to-Text Generation Capabilities of LLMs in Real-World Information Seeking Scenarios]:
+"To address this issue, application developers could tailor the table-to-text generation systems to generate multiple insights that encompass **different logical reasoning operations (Perlitz et al., 2022; Zhao et al., 2023b).**"
 
 #### [Diversity Enhanced Table-to-Text Generation via Logic-Type Control]: 
 
