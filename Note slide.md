@@ -212,6 +212,8 @@ detailed experiment: https://worksheets.codalab.org/worksheets/0xf26cd79d4d73428
 The WTQ dataset, https://github.com/percyliang/sempre
 
 The paper:
+
+
 ![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/cad35227-1e88-460a-b071-e278c82b1784)
 
 SEMPRE:
