@@ -211,8 +211,33 @@ play with the WikiTableQuestions :https://ppasupat.github.io/WikiTableQuestions/
 detailed experiment: https://worksheets.codalab.org/worksheets/0xf26cd79d4d734287868923ad1067cf4c/<br/>
 The WTQ dataset, https://github.com/percyliang/sempre
 
+The paper:
 ![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/cad35227-1e88-460a-b071-e278c82b1784)
 
+SEMPRE:
+
+SEMPRE is a toolkit that makes it easy to develop semantic parsers for new tasks. The main paradigm is to learn a feature-rich discriminative semantic parser from a set of utterance-denotation pairs. One can also quickly prototype rule-based systems, learn from other forms of supervision, and combine any of the above.
+
+A semantic parser maps natural language utterances into an intermediate logical
+form, which is "executed" to produce a denotation that is useful for some task.
+
+A simple arithmetic task:
+A question answering task:
+
+- Utterance: *Where was Obama born?*
+- Logical form: `(place_of_birth barack_obama)`
+- Denotation: `Honolulu`
+
+A virtual travel agent task:
+
+- Utterance: *Show me flights to Montreal leaving tomorrow.*
+- Logical form: `(and (type flight) (destination montreal) (departure_date 2014.12.09))`
+- Denotation: `(list ...)`
+
+By parsing utterances into logical forms, we obtain a rich representation that
+enables much deeper, context-aware understanding beyond the words.  With the
+rise of natural language interfaces, semantic parsers are becoming increasingly
+more powerful and useful.
 
 
 
