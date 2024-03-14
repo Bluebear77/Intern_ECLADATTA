@@ -207,7 +207,11 @@ The dataset contains tables with open schema crawled from diversified domains Fi
 
 https://aclanthology.org/P15-1142.pdf <br/>
 https://paperswithcode.com/dataset/wikitablequestions <br/>
-The WTQ dataset, https://github.com/percyliang/sempre, https://ppasupat.github.io/WikiTableQuestions/
+play with the WikiTableQuestions :https://ppasupat.github.io/WikiTableQuestions/ <br/>
+detailed experiment: https://worksheets.codalab.org/worksheets/0xf26cd79d4d734287868923ad1067cf4c/<br/>
+The WTQ dataset, https://github.com/percyliang/sempre
+
+![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/cad35227-1e88-460a-b071-e278c82b1784)
 
 
 
