@@ -12,8 +12,9 @@ Wikipédia:ébauche footballeur algérien
 Suggestion: Ignore all categories starting with `Wikipédia:ébauche`
 
 ***
- >
+ >Bobby Ray
   ```
- 
+ "Wikipédia:ébauche acteur américain",
+ "Wikipédia:ébauche réalisateur américain"
   
   ``` 
