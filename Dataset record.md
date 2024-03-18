@@ -1,4 +1,4 @@
- >Chawki Bentayeb
+>Chawki Bentayeb
   ```
 Personnalité féminine
 Personnalité féminine africaine
@@ -7,10 +7,11 @@ Sportive algérienne
 Athlète algérienne
 Wikipédia:ébauche sportif algérien
 Wikipédia:ébauche footballeur algérien
-  
+ 
   ```
-Suggestion: Ignore all categories starting with Wikipédia:ébauche
+Suggestion: Ignore all categories starting with `Wikipédia:ébauche`
 
+***
  >
   ```
  
