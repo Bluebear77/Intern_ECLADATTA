@@ -1,3 +1,6 @@
+# You can see the extracted result in total 18293 instances :
+# https://docs.google.com/spreadsheets/d/1losvYDlihHk0WSyKhIncAZv-JCjmAFy8XsMeDsICBpc/edit?usp=sharing
+
 import re
 import csv
 
