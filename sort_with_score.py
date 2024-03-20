@@ -62,3 +62,17 @@ input_csv_path = 'extracted_all.csv'  # Adjust with the path to your input CSV f
 output_csv_path = 'sorted_with_scores.csv'  # The path for the output CSV file
 process_csv(input_csv_path, output_csv_path)
 
+
+
+'''
+0riginal strategy：
+select the top 200 URLs that have both tables and text, sorted by the URLs with the most word counts.
+
+Improvements:
+Weighted Ranking: Instead of solely sorting by the number of tables or word counts, you could create a weighted ranking system that takes into account both factors. For example, you could assign a higher weight to tables that have diverse columns and data, and also consider the quality and depth of the surrounding text.
+
+Implementation:
+Evaluating Table Diversity: Assign points or a weight based on the diversity of the table columns. A simple proxy for this could be the number of different column titles in all tables on the page.
+
+Incorporating Quality and Depth of Text: Besides counting words, analyze the text for indicators of depth or analysis, such as the presence of keywords like "analysis," "commentary," "summary," etc., which could signal more insightful content.
+'''
