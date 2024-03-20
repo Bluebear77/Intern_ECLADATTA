@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import re
 
 def analyze_url(url):
-    """Analyze the given URL to check for tables, text diversity, and word count, returning a composite score."""
+    """Analyze the given URL to check for tables, text diversity, and word count, returning a composite score, tailored for French Wikipedia pages."""
     try:
         response = requests.get(url)
         response.raise_for_status()  # Raise an error for bad responses
@@ -23,8 +23,16 @@ def analyze_url(url):
         text = soup.get_text()
         word_count = len(text.split())
         
-        # Identifying depth indicators in the text
-        depth_keywords = re.findall(r'\banalysis\b|\bcommentary\b|\bsummary\b', text, re.IGNORECASE)
+        # Identifying depth indicators in the text, adjusted for French and expanded
+        '''
+        Analyse (analysis)
+    	Commentaire (commentary)
+    	Résumé (summary)
+    	Critique (critique/review)
+    	Évaluation (evaluation)
+    	Synthèse (synthesis)
+        '''
+        depth_keywords = re.findall(r'\banalyse\b|\bcommentaire\b|\brésumé\b|\bcritique\b|\bévaluation\b|\bsynthèse\b', text, re.IGNORECASE)
         
         # Simple scoring: (Unique Columns * Weight1) + (Word Count * Weight2) + (Depth Keywords * Weight3)
         # Adjust the weights as needed
@@ -33,6 +41,7 @@ def analyze_url(url):
     except Exception as e:
         print(f"Error processing {url}: {e}")
     return 0
+
 
 def process_csv(input_csv, output_csv):
     urls_scores = []
