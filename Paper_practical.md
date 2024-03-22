@@ -58,7 +58,9 @@ Sampling and combining questions in a question-answering dataset, facilitate the
   
   ```
 
-## ExampleGeneration/ExampleGeneration/datajobs/gen_synthetic_questions_from_templates.py：
+## ExampleGeneration/ExampleGeneration/question_templates/tabreas_question_templates.json:
 
+
+https://github.com/oriyor/turning_tables/blob/main/ExampleGeneration/ExampleGeneration/question_templates/tabreas_question_templates.json
 
 
