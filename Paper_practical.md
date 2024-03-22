@@ -33,3 +33,8 @@ Sampling and combining questions in a question-answering dataset, facilitate the
 
   Purpose: Creates a conjunction question by combining two questions with 'and', focusing on their intersecting answers.<br/>
   Example: Joining "What are EU countries?" and "Which countries use the euro?" might result in "What are EU countries and which countries use the euro?" if the intersecting answers are countries in the EU that use the euro.
+
+  ## ExampleGeneration/ExampleGeneration/configurations/config_reas.json:
+- `GenQuestionsFromTemplates_TabReas`: Generates synthetic questions from predefined templates, targeting a range of question types like comparisons, superlatives, arithmetic, and more. It's set to create up to 10 million examples using 20 processes, taking "ClassifyTableColumnsFiltered.jsonl" as input and outputting to "PseudoLangQuestions_All.jsonl".
+  
+- `FormatSyntheticQuestions`: Formats the generated questions into triplets of `question, context, and answer`. This stage is limited to formatting 100,000 examples with a single process and outputs to "FormattedQuestions.jsonl".
