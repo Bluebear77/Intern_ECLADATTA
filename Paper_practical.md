@@ -40,7 +40,7 @@ Sampling and combining questions in a question-answering dataset, facilitate the
 - `FormatSyntheticQuestions`: Formats the generated questions into triplets of `question, context, and answer`. This stage is limited to formatting 100,000 examples with a single process and outputs to "FormattedQuestions.jsonl".
 
 
-- `ExampleGeneration/ExampleGeneration/datajobs/format_questions.py`:
+## ExampleGeneration/ExampleGeneration/datajobs/format_questions.py:
 
   Input: Raw question data about a Wikipedia page's table. <br/>
   Operation: The class takes this data and, for a given question, constructs a context string that includes the table and page title. It then combines this with the question and its answers, shuffling associated facts and distractors for variety.
@@ -57,4 +57,8 @@ Sampling and combining questions in a question-answering dataset, facilitate the
   }
   
   ```
+
+## ExampleGeneration/ExampleGeneration/datajobs/gen_synthetic_questions_from_templates.py：
+
+
 
