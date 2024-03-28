@@ -11,7 +11,7 @@ QTSumm in jason:https://huggingface.co/datasets/yale-nlp/QTSumm/tree/main
 
 - LOGICNLG does **NOT** provide urls. 
  https://wenhuchen.github.io/logicnlg.github.io/
- <br/>They kind of use the table id as url, but I can't restore the web url based on just this table id.
+ <br/>They treat the table id as url, but I can't restore the web url based on just this table id.
  ![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/dd0d2694-7933-4021-8afa-452b82201403)
  
  LOGICNLG is based on Table-Fact-Checking by the same author Wenhu Chen, they only provide table id:
@@ -29,6 +29,13 @@ QTSumm in jason:https://huggingface.co/datasets/yale-nlp/QTSumm/tree/main
 
 
 ### Can you study the overlap between LOGICNLG and ToTTo in terms tables? And in terms of Wikipedia pages from which the tables come from? They extract 2000 tables from LOGICNLG and 2000 tables from ToTTO ... this makes 4k tables. But at the end, they have 2934 tables, so they through out some ... WHY? Because they overlap?
+
+First they filter out the tables that are:
+1) too large or too small
+2) with only string-type columns
+3) with hierarchical structures (e.g., containing more than onetable header)
+
+Then they extract 2000 from each LOGICNLG and 2000 from ToTTo.
 
 Becasue there are many tables have similar content, so they keep only one table for each unique table header.
 
