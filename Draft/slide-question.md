@@ -37,6 +37,5 @@ First they filter out the tables that are:
 
 Then they extract 2000 from each LOGICNLG and 2000 from ToTTo.
 
-Becasue there are many tables have similar content, so they keep only one table for each unique table header.
+De-biasing: Becasue there are many tables have similar content in LOGICNLG, they keep only one table for each unique table header. They did not mention ToTTo.
 
-_"we found that many tables in LOGICNLG have similar content. For example, there are around 200 tables describing the results of football games, with identical table headers. To ensure the diversity of source tables, we keep only one table for each unique table header."_
