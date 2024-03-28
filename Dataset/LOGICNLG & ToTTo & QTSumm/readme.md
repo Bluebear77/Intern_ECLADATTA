@@ -3,8 +3,6 @@ https://drive.google.com/file/d/1PAwlg9wRPO-lg_rddVGWjIZ05airZLWD/view?usp=shari
 
 
 <br/>
-LOGICNLG originally in csv:https://github.com/wenhuchen/LogicNLG/blob/master/all_csv.zip
-
-ToTTo  originally in jasonl:https://storage.googleapis.com/totto-public/totto_data.zip
-
+LOGICNLG originally in csv:https://github.com/wenhuchen/LogicNLG/blob/master/all_csv.zip<br/>
+ToTTo  originally in jasonl:https://storage.googleapis.com/totto-public/totto_data.zip<br/>
 QTSumm  originally  in jason:https://huggingface.co/datasets/yale-nlp/QTSumm/tree/main
