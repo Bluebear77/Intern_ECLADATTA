@@ -34,6 +34,6 @@ def convert_titles_to_page_ids(input_csv, output_csv):
             writer.writerow({'table_webpage_url': title_url, 'Page ID URL': page_id_url})
 
 # Example usage (adjust the paths as necessary)
-convert_titles_to_page_ids('ToTTo_url.csv', 'Page_ID_URLs.csv')
+convert_titles_to_page_ids('ToTTo-orignial-url.csv', 'Page_ID_URLs.csv')
 
 
