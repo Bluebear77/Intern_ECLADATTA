@@ -14,7 +14,7 @@ QTSumm  originally  in jason:https://huggingface.co/datasets/yale-nlp/QTSumm/tre
 
 - LOGICNLG does **NOT** provide urls. 
  https://wenhuchen.github.io/logicnlg.github.io/
- <br/>They treat the table id as url, but I can't restore the web url based on just this table id.
+ <br/>They treat the table id as url.
  ![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/dd0d2694-7933-4021-8afa-452b82201403)
  
  LOGICNLG is based on Table-Fact-Checking by the same author Wenhu Chen, they only provide table id:
@@ -25,6 +25,11 @@ QTSumm  originally  in jason:https://huggingface.co/datasets/yale-nlp/QTSumm/tre
  
  all_csv_ids.json: it contains all the table ids
  ```
+
+So I restored the urls based on the table ids:
+```
+http://en.wikipedia.org/?curid=xxx
+```
 
 - You can find the ToTTo urls in here:<br/>
   https://docs.google.com/spreadsheets/d/1qFYT2L0bTwI6JyCUdkyv3iDytgnqqrJaxlCu0NLE4As/edit?usp=sharing
