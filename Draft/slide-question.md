@@ -29,3 +29,7 @@ QTSumm in jason:https://huggingface.co/datasets/yale-nlp/QTSumm/tree/main
 
 
 ### Can you study the overlap between LOGICNLG and ToTTo in terms tables? And in terms of Wikipedia pages from which the tables come from? They extract 2000 tables from LOGICNLG and 2000 tables from ToTTO ... this makes 4k tables. But at the end, they have 2934 tables, so they through out some ... WHY? Because they overlap?
+
+Becasue there are many tables have similar content, so they keep only one table for each unique table header.
+
+_"we found that many tables in LOGICNLG have similar content. For example, there are around 200 tables describing the results of football games, with identical table headers. To ensure the diversity of source tables, we keep only one table for each unique table header."_
