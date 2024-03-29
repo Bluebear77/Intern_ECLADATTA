@@ -39,6 +39,10 @@ http://en.wikipedia.org/?curid=xxx
 
 So I need to unify their format.
 
+
+- 1st attempt:
+  Convert ToTTo Page Id into 
+   12619
 - You can find the ToTTo urls in here:<br/>
   https://docs.google.com/spreadsheets/d/1woiAZ1fpjsCuHq6k8576POku4c4BlZdmCt4wXUUIvE4/edit?usp=sharing
 
