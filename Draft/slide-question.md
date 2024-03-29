@@ -23,7 +23,7 @@ https://drive.google.com/file/d/1PAwlg9wRPO-lg_rddVGWjIZ05airZLWD/view?usp=shari
   In total 1428 overlapped URLs.
 
 - LOGICNLG does **NOT** provide urls. 
- https://wenhuchen.github.io/logicnlg.github.io/
+ https://wenhuchen.github.io/logicnlg.github.io/<br/>
  <br/>They treat the table id as url.
  ![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/dd0d2694-7933-4021-8afa-452b82201403)
  
