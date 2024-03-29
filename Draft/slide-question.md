@@ -32,8 +32,7 @@ http://en.wikipedia.org/?curid=xxx
 ```
 
 - You can find the ToTTo urls in here:<br/>
-  https://docs.google.com/spreadsheets/d/1qFYT2L0bTwI6JyCUdkyv3iDytgnqqrJaxlCu0NLE4As/edit?usp=sharing
-
+  https://docs.google.com/spreadsheets/d/1woiAZ1fpjsCuHq6k8576POku4c4BlZdmCt4wXUUIvE4/edit?usp=sharing
 
 
 ### Can you study the overlap between LOGICNLG and ToTTo in terms tables? And in terms of Wikipedia pages from which the tables come from? They extract 2000 tables from LOGICNLG and 2000 tables from ToTTO ... this makes 4k tables. But at the end, they have 2934 tables, so they through out some ... WHY? Because they overlap?
