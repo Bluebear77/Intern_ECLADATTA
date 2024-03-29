@@ -45,4 +45,4 @@ def convert_page_ids_to_titles(input_csv, output_csv, skipped_csv):
                 skipped_writer.writerow({'Skipped URL': page_id_url})
 
 # Example usage (adjust the paths as necessary)
-convert_page_ids_to_titles('LOGICNLG-URLs.csv', 'LOGICNLG-Title-Format-URLs.csv', 'Skipped-LOGICNLG-URLs.csv')
+convert_page_ids_to_titles('LOGICNLG-Original-URLs.csv', 'LOGICNLG-Title-Format-URLs.csv', 'LOGICNLG-Skipped-URLs.csv')
