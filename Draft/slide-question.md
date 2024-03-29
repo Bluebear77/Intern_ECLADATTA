@@ -39,6 +39,7 @@ http://en.wikipedia.org/?curid=xxx
 
 #### So I need to unify their format.
 
+Use API:https://en.wikipedia.org/w/api.php
 
 - 1st attempt:<br/>
   Convert ToTTo Title format URLs to Page ID format URLs.<br/>
