@@ -26,10 +26,18 @@ QTSumm  originally  in jason:https://huggingface.co/datasets/yale-nlp/QTSumm/tre
  all_csv_ids.json: it contains all the table ids
  ```
 
-So I restored the urls based on the table ids:
+
+LOGICNLG Title format URLs:
+```
+http://en.wikipedia.org/wiki/Title_of_the_Page
+```
+
+ToTTo: Page ID format URLs:
 ```
 http://en.wikipedia.org/?curid=xxx
 ```
+
+So I need to unify their format.
 
 - You can find the ToTTo urls in here:<br/>
   https://docs.google.com/spreadsheets/d/1woiAZ1fpjsCuHq6k8576POku4c4BlZdmCt4wXUUIvE4/edit?usp=sharing
