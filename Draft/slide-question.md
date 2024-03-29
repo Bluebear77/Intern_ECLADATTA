@@ -39,11 +39,14 @@ http://en.wikipedia.org/?curid=xxx
 So I need to unify their format.
 
 
-- 1st attempt:
-  Convert ToTTo Title format URLs to   Page ID format URLs.<br/>
+- 1st attempt:<br/>
+  Convert ToTTo Title format URLs to Page ID format URLs.<br/>
   Results in 12619 invalid conversion.(Ones ends with "curid=-1")<br/>
   You can find the ToTTo urls in here:<br/>
   https://docs.google.com/spreadsheets/d/1woiAZ1fpjsCuHq6k8576POku4c4BlZdmCt4wXUUIvE4/edit?usp=sharing
+- 2nd attempt:<br/>
+  Convert LOGICNLG Page ID format URLs to Title format URLs.
+  
 
 
 ### Can you study the overlap between LOGICNLG and ToTTo in terms tables? And in terms of Wikipedia pages from which the tables come from? They extract 2000 tables from LOGICNLG and 2000 tables from ToTTO ... this makes 4k tables. But at the end, they have 2934 tables, so they through out some ... WHY? Because they overlap?
