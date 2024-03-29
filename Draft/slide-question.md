@@ -46,7 +46,7 @@ http://en.wikipedia.org/?curid=xxx
   You can find the ToTTo urls in here:<br/>
   https://docs.google.com/spreadsheets/d/1woiAZ1fpjsCuHq6k8576POku4c4BlZdmCt4wXUUIvE4/edit?usp=sharing
 - 2nd attempt:<br/>
-  Convert LOGICNLG Page ID format URLs to Title format URLs.
+  Convert LOGICNLG Page ID format URLs to Title format URLs.<br/>
   Results in 247/16573 invalid conversion.
 
 
