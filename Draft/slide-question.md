@@ -12,9 +12,15 @@ QTSumm  originally  in jason:https://huggingface.co/datasets/yale-nlp/QTSumm/tre
 
 ### Can you prepare a spreadsheet showing for each dataset (LOGICNLG and ToTTo) the Wikipedia page from which the table comes from?
 
+- LOGICNLG, ToTTo, and QTSumm Datasets in CSV Format:<br/>
+https://drive.google.com/file/d/1PAwlg9wRPO-lg_rddVGWjIZ05airZLWD/view?usp=sharing
+
 - Wikipedia Source Overview for LOGICNLG and ToTTo Datasets:<br/>
   https://docs.google.com/spreadsheets/d/1G619zqazyZBmOIQp54zqRC_kr0S9n1h4Z4UVngqYe9I/edit?usp=sharing<br/>
-  https://docs.google.com/spreadsheets/d/1dSHCiMhklBLLu1hj_obLGliTpcvC9FlYWjEr1-ty8ZY/edit?usp=sharing
+
+- Overlapped URLs for LOGICNLG and ToTTo Datasets:<br/>
+  https://docs.google.com/spreadsheets/d/13peuRZqLMsJiddPEVT4v5Y-L5YbHPu3DON6Oitp3aI4/edit?usp=sharing<br/>
+  In total 1428 overlapped URLs.
 
 - LOGICNLG does **NOT** provide urls. 
  https://wenhuchen.github.io/logicnlg.github.io/
