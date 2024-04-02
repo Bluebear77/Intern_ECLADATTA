@@ -68,6 +68,12 @@ Use API:https://en.wikipedia.org/w/api.php
 
 ### Can you study the overlap between LOGICNLG and ToTTo in terms tables? And in terms of Wikipedia pages from which the tables come from? They extract 2000 tables from LOGICNLG and 2000 tables from ToTTO ... this makes 4k tables. But at the end, they have 2934 tables, so they through out some ... WHY? Because they overlap?
 
+
+#### From Dataset:
+1427 overlapped URLs: https://docs.google.com/spreadsheets/d/13peuRZqLMsJiddPEVT4v5Y-L5YbHPu3DON6Oitp3aI4/edit?usp=sharing
+
+
+####  From paper:
 - First they filter out the tables that are:
 1) too large or too small
 2) with only string-type columns
@@ -75,5 +81,5 @@ Use API:https://en.wikipedia.org/w/api.php
 
 Then they extract 2000 from each LOGICNLG and 2000 from ToTTo.
 
-- De-biasing: Becasue there are many tables have similar content in LOGICNLG, they keep only one table for each unique table header. They did not mention ToTTo.
+- De-biasing: Becasue there are many tables have similar content in LOGICNLG, **they keep only one table for each unique table header.** They did not mention ToTTo.
 
