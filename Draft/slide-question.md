@@ -6,7 +6,8 @@ https://drive.google.com/file/d/1PAwlg9wRPO-lg_rddVGWjIZ05airZLWD/view?usp=shari
 <br/>
 LOGICNLG originally in csv:https://github.com/wenhuchen/LogicNLG/blob/master/all_csv.zip<br/>
 ToTTo  originally in jasonl:https://storage.googleapis.com/totto-public/totto_data.zip<br/>
-QTSumm  originally  in jason:https://huggingface.co/datasets/yale-nlp/QTSumm/tree/main<br/><br/><br/>
+QTSumm  originally  in jason:https://huggingface.co/datasets/yale-nlp/QTSumm/tree/main<br/>
+
 ***
 
 
@@ -78,12 +79,5 @@ Overlapped URLs for LOGICNLG and ToTTo Datasets:<br/>
 
 
 ####  From paper:
-- First they filter out the tables that are:
-1) too large or too small
-2) with only string-type columns
-3) with hierarchical structures (e.g., containing more than onetable header)
-
-Then they extract 2000 from each LOGICNLG and 2000 from ToTTo.
-
-- De-biasing: Becasue there are many tables have similar content in LOGICNLG, **they keep only one table for each unique table header.** They did not mention ToTTo.
+De-biasing: Becasue there are many tables have similar content in LOGICNLG, **they keep only one table for each unique table header.** They did not mention ToTTo.
 
