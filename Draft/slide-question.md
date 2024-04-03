@@ -7,6 +7,14 @@ https://drive.google.com/file/d/1PAwlg9wRPO-lg_rddVGWjIZ05airZLWD/view?usp=shari
 LOGICNLG originally in csv:https://github.com/wenhuchen/LogicNLG/blob/master/all_csv.zip<br/>
 ToTTo  originally in jasonl:https://storage.googleapis.com/totto-public/totto_data.zip<br/>
 QTSumm  originally  in jason:https://huggingface.co/datasets/yale-nlp/QTSumm/tree/main<br/><br/><br/>
+***
+
+
+
+### Can you prepare a spreadsheet showing for each dataset (LOGICNLG and ToTTo) the Wikipedia page from which the table comes from?
+
+Wikipedia Source Overview for LOGICNLG and ToTTo Datasets:<br/>
+  https://docs.google.com/spreadsheets/d/1G619zqazyZBmOIQp54zqRC_kr0S9n1h4Z4UVngqYe9I/edit?usp=sharing<br/>
 
 
 There are 6 sheets in this table, since URLs of ToTTo and LOGICNLG has different format. 
@@ -38,20 +46,9 @@ Use API:https://en.wikipedia.org/w/api.php
 > Choose `Title format URLs` for overlapped comparsion.
 
 ***
-
-
-### Can you prepare a spreadsheet showing for each dataset (LOGICNLG and ToTTo) the Wikipedia page from which the table comes from?
-
-- LOGICNLG, ToTTo, and QTSumm Datasets in CSV Format:<br/>
-https://drive.google.com/file/d/1PAwlg9wRPO-lg_rddVGWjIZ05airZLWD/view?usp=sharing
-
-- Wikipedia Source Overview for LOGICNLG and ToTTo Datasets:<br/>
-  https://docs.google.com/spreadsheets/d/1G619zqazyZBmOIQp54zqRC_kr0S9n1h4Z4UVngqYe9I/edit?usp=sharing<br/>
-
-- Overlapped URLs for LOGICNLG and ToTTo Datasets:<br/>
+Overlapped URLs for LOGICNLG and ToTTo Datasets:<br/>
   https://docs.google.com/spreadsheets/d/13peuRZqLMsJiddPEVT4v5Y-L5YbHPu3DON6Oitp3aI4/edit?usp=sharing<br/>
   In total **1427** overlapped URLs.
-  
 ***
 
 - LOGICNLG does **NOT** provide urls. 
@@ -70,7 +67,7 @@ https://drive.google.com/file/d/1PAwlg9wRPO-lg_rddVGWjIZ05airZLWD/view?usp=shari
  all_csv_ids.json: it contains all the table ids
  ```
 
-
+***
 
 
 ### Can you study the overlap between LOGICNLG and ToTTo in terms tables? And in terms of Wikipedia pages from which the tables come from? They extract 2000 tables from LOGICNLG and 2000 tables from ToTTO ... this makes 4k tables. But at the end, they have 2934 tables, so they through out some ... WHY? Because they overlap?
