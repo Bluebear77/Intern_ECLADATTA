@@ -8,4 +8,4 @@ term frequency–inverse document frequency,is a measure of importance of a word
 
 ***
 
-3.  **Ablation study**  In artificial intelligence (AI), particularly machine learning (ML),[1] ablation is the removal of a component of an AI system. An ablation study investigates the performance of an AI system by removing certain components to understand the contribution of the component to the overall system.[2]
+3.  **Ablation study**:  In artificial intelligence (AI), particularly machine learning (ML),[1] ablation is the removal of a component of an AI system. An ablation study investigates the performance of an AI system by removing certain components to understand the contribution of the component to the overall system.[2]
