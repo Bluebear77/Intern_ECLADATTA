@@ -5,3 +5,7 @@ the Levenshtein distance between two words is the minimum number of single-chara
 2.   **TF-IDF:**
 term frequency–inverse document frequency,is a measure of importance of a word to a document in a collection or corpus, adjusted for the fact that some words appear more frequently in general.
 <br/>The inverse document frequency is a measure of how much information the word provides, i.e., how common or rare it is across all documents.The closer it is to 0, the more common a word is.
+
+***
+
+3.  **Ablation study**  In artificial intelligence (AI), particularly machine learning (ML),[1] ablation is the removal of a component of an AI system. An ablation study investigates the performance of an AI system by removing certain components to understand the contribution of the component to the overall system.[2]
