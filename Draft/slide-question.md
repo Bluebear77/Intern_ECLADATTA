@@ -86,6 +86,8 @@ Each of the dataset, their overlapping,
 statistics, reasoning skills,
 
 genreate fact, and then apply the reasoning skills to distinguish the fact generated.
+Send another email
+how to go from the old wikilink to the permenant one
 
 
 ####  From paper:
