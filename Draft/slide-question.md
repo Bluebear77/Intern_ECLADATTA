@@ -78,6 +78,16 @@ Overlapped URLs for LOGICNLG and ToTTo Datasets:<br/>
 1427 overlapped URLs: https://docs.google.com/spreadsheets/d/13peuRZqLMsJiddPEVT4v5Y-L5YbHPu3DON6Oitp3aI4/edit?usp=sharing
 
 
+***
+Increase font size > 14
+Not only stick to theauthors, but also challenge what they said, is this also true, critical thinking.
+Give summary at the first too.
+Each of the dataset, their overlapping, 
+statistics, reasoning skills,
+
+genreate fact, and then apply the reasoning skills to distinguish the fact generated.
+
+
 ####  From paper:
 De-biasing: Becasue there are many tables have similar content in LOGICNLG, **they keep only one table for each unique table header.** They did not mention ToTTo.
 
