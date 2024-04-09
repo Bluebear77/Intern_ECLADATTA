@@ -35,5 +35,3 @@ def convert_titles_to_page_ids(input_csv, output_csv):
 
 # Example usage (adjust the paths as necessary)
 convert_titles_to_page_ids('ToTTo-Orignial-URLs.csv', 'ToTTO-Page-ID-URLs.csv')
-
-
