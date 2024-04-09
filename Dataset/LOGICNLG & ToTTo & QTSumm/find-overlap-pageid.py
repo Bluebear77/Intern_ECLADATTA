@@ -45,5 +45,6 @@ if overlapped_info:
         for curid, urls in overlapped_info.items():
             writer.writerow([curid, urls['LOGICNLG_URL'], urls['ToTTo_URL']])
     print(f"Overlapped page IDs and URLs written to {output_file}")
+    print(f"Total overlapped URLs: {len(overlapped_info)}")
 else:
     print("No overlapped page IDs found.")
