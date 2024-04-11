@@ -1,0 +1,519 @@
+[
+    {
+        "id": "4524920-1",
+        "title": "Compilation albums",
+        "url": "https://en.wikipedia.org/wiki/Spiral_Starecase",
+        "header": [
+            "Year",
+            "Album",
+            "Record label"
+        ],
+        "rows": [
+            [
+                "1995",
+                "The Very Best of Spiral Starecase",
+                "Columbia Records"
+            ],
+            [
+                "1997",
+                "Our Day Will Come Spiral Starecase Revisited",
+                "Sony Music Entertainment Philippines"
+            ],
+            [
+                "2000",
+                "More Today Than Yesterday/Spiral Starecase",
+                "Sony Japan"
+            ],
+            [
+                "2003",
+                "Spiral Starecase: The Complete Columbia Recordings",
+                "Columbia Records"
+            ],
+            [
+                "2004",
+                "Priceless Collection Spiral Starecase More Today Than Yesterday",
+                "Sony Music Entertainment"
+            ],
+            [
+                "2006",
+                "Our Day Will Come",
+                "Columbia Records"
+            ],
+            [
+                "2006",
+                "From the Original Masters Spiral Starecase Our Day Will Come Revisited",
+                "Sony Music Entertainment"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                1995,
+                1997,
+                2000,
+                2003,
+                2004,
+                2006,
+                2006
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Album when the Record label string contains Entertainment and the Year was after 1995?",
+                "answers": [
+                    "Our Day Will Come Spiral Starecase Revisited",
+                    "Priceless Collection Spiral Starecase More Today Than Yesterday",
+                    "From the Original Masters Spiral Starecase Our Day Will Come Revisited"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Album when the Year was on 2006 and the Record label string starts with Columbia?",
+                "answers": [
+                    "Our Day Will Come"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Album, with Record label string ends with Japan, have Year was after 1997?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Album, with Year was before 2003, have Record label string contains Records?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Album, with Year was before 2004, happened the 3rd according to Year?",
+                "answers": [
+                    "More Today Than Yesterday/Spiral Starecase"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Album, with Year was after 2000, happened the 3rd according to Year?",
+                "answers": [
+                    "Our Day Will Come",
+                    "From the Original Masters Spiral Starecase Our Day Will Come Revisited"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Album, with Year was before 2004, happened the 4th according to Year?",
+                "answers": [
+                    "Spiral Starecase: The Complete Columbia Recordings"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Record label was Sony Japan and when the Record label was Sony Music Entertainment Philippines?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Record label was Sony Music Entertainment Philippines and when the Record label was Sony Japan?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Album had Record label string contains Columbia and Year was after 1997?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Album had Year was after 1995?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "4524072-4",
+        "title": "List of managers",
+        "url": "https://en.wikipedia.org/wiki/Uni-President_7-Eleven_Lions",
+        "header": [
+            "Manager #",
+            "Manager name",
+            "Years",
+            "Games",
+            "Wins",
+            "Losses",
+            "Ties",
+            "Playoffs",
+            "Championships"
+        ],
+        "rows": [
+            [
+                "1",
+                "Cheng Kuen-chi",
+                "1990\u20131993",
+                "360",
+                "178",
+                "162",
+                "20",
+                "2",
+                "1"
+            ],
+            [
+                "2",
+                "Yataro Oishi",
+                "1994\u20131996",
+                "290",
+                "170",
+                "111",
+                "9",
+                "2",
+                "2"
+            ],
+            [
+                "3",
+                "Lin Chia-hsiang",
+                "1997\u20131998",
+                "193",
+                "110",
+                "73",
+                "10",
+                "1",
+                "0"
+            ],
+            [
+                "(Acting)",
+                "Yukihiko Machida",
+                "1997",
+                "1",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            [
+                "(Acting)",
+                "Osamu Inoue",
+                "1998",
+                "7",
+                "4",
+                "3",
+                "0",
+                "0",
+                "0"
+            ],
+            [
+                "4",
+                "Tseng Chih-chen",
+                "1999\u20132002",
+                "353",
+                "178",
+                "164",
+                "11",
+                "3",
+                "1"
+            ],
+            [
+                "(Acting)",
+                "Masashi Takenouchi",
+                "2000",
+                "10",
+                "3",
+                "7",
+                "0",
+                "0",
+                "0"
+            ],
+            [
+                "5",
+                "Hsieh Chang-heng",
+                "2003\u20132005",
+                "250",
+                "132",
+                "105",
+                "13",
+                "1",
+                "0"
+            ],
+            [
+                "6",
+                "Yutaka Ohashi",
+                "2005\u20132007",
+                "167",
+                "76",
+                "81",
+                "10",
+                "1",
+                "0"
+            ],
+            [
+                "(Acting)",
+                "Lo Kuo-chong",
+                "2007",
+                "33",
+                "23",
+                "10",
+                "0",
+                "0",
+                "0"
+            ],
+            [
+                "7",
+                "Lu Wen-sheng",
+                "2007\u20132011",
+                "500",
+                "280",
+                "220",
+                "4",
+                "4",
+                "4"
+            ],
+            [
+                "8",
+                "Nakajima Terushi",
+                "2011\u20132013",
+                "193",
+                "104",
+                "87",
+                "2",
+                "1",
+                "0"
+            ],
+            [
+                "9",
+                "Chen Lien-hung",
+                "2013\u20132015",
+                "284",
+                "134",
+                "138",
+                "11",
+                "1",
+                "1"
+            ],
+            [
+                "10",
+                "Kuo Tai-yuan",
+                "2016",
+                "120",
+                "55",
+                "65",
+                "0",
+                "0",
+                "0"
+            ],
+            [
+                "11",
+                "Huang Kan-lin",
+                "2017\u20132019",
+                "299",
+                "145",
+                "150",
+                "4",
+                "2",
+                "0"
+            ],
+            [
+                "(Acting)",
+                "Hsu Sheng-Chieh",
+                "2018",
+                "1",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0"
+            ],
+            [
+                "(Acting)",
+                "Liu Yu-Chen",
+                "2019",
+                "60",
+                "23",
+                "36",
+                "1",
+                "0",
+                "0"
+            ],
+            [
+                "12",
+                "Lin Yueh-Ping",
+                "2020\u2013present",
+                "240",
+                "122",
+                "112",
+                "6",
+                "2",
+                "1"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Manager name when the Games was less than or equal to 7 and the Playoffs was greater than or equal to 0?",
+                "answers": [
+                    "Yukihiko Machida",
+                    "Osamu Inoue",
+                    "Hsu Sheng-Chieh"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Manager name when the Playoffs was greater than 0 and the Games was less than 500?",
+                "answers": [
+                    "Cheng Kuen-chi",
+                    "Yataro Oishi",
+                    "Lin Chia-hsiang",
+                    "Tseng Chih-chen",
+                    "Hsieh Chang-heng",
+                    "Yutaka Ohashi",
+                    "Nakajima Terushi",
+                    "Chen Lien-hung",
+                    "Huang Kan-lin",
+                    "Lin Yueh-Ping"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Manager name, with Playoffs was less than or equal to 0, have Championships was greater than or equal to 0?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Manager name, with Playoffs was less than or equal to 1, have Losses was greater than or equal to 10?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Manager name, with Championships was greater than 0, has the 3rd largest Losses?",
+                "answers": [
+                    "Cheng Kuen-chi"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Manager name, with Ties was equal to 0, has the 6th largest Playoffs?",
+                "answers": [
+                    "Yukihiko Machida",
+                    "Osamu Inoue",
+                    "Masashi Takenouchi",
+                    "Lo Kuo-chong",
+                    "Kuo Tai-yuan",
+                    "Hsu Sheng-Chieh"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Manager name, with Playoffs was less than 3, has the 1st largest Championships?",
+                "answers": [
+                    "Yataro Oishi"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Manager name had Games was less than or equal to 290 and Playoffs was greater than or equal to 1?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Manager name had Playoffs was less than or equal to 2?",
+                "answers": [
+                    "16"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Manager name had Ties was greater than 10 and Playoffs was greater than 0?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Championships when the Wins was less than or equal to 122?",
+                "answers": [
+                    "0.09"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Championships when the Ties was less than 4?",
+                "answers": [
+                    "0.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Losses when the Ties was greater than 6?",
+                "answers": [
+                    "834.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    }
+]
