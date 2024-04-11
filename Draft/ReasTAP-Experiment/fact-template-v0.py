@@ -5,7 +5,7 @@ REFACToR_templates = [
         "enable": True,
         "templates": [
             {
-                "template_str": "The [col1] that have [condition] are [executed_results].",
+                "template_str": "The [target_col] that have [condition] are [executed_results].",
                 "type": "conjunction"
             }
         ]
@@ -16,7 +16,7 @@ REFACToR_templates = [
         "enable": True,
         "templates": [
             {
-                "template_str": "[executed_results] [col1] have [col2] [condition].",
+                "template_str": "[executed_results] [target_col] have [source_col] [condition].",
                 "type": "counting"
             }
         ]
@@ -27,12 +27,12 @@ REFACToR_templates = [
         "enable": True,
         "templates": [
             {
-                "template_str": "The [col1] ordered by [col3] are [executed_results].",
+                "template_str": "The [target_col] ordered by [source_col] are [executed_results].",
                 "type": "temporal_numerical_order"
             },
             {
-                "template_str": "The [col1], with [col2] [condition], ordered by [col3] are [executed_results].",
-                "type": "temporal_numerical_order"
+                "template_str": "The [target_col], with [source_col] [condition], ordered by [source_col_2] are [executed_results].",
+                "type": "temporal_numerical_order_with_condition"
             }
         ]
     },
@@ -42,7 +42,7 @@ REFACToR_templates = [
         "enable": True,
         "templates": [
             {
-                "template_str": "The [col1] that [col2] [condition] are [executed_results].",
+                "template_str": "The [target_col] that [source_col] [condition] are [executed_results].",
                 "type": "temporal_numerical_comparison"
             }
         ]
@@ -53,7 +53,7 @@ REFACToR_templates = [
         "enable": True,
         "templates": [
             {
-                "template_str": "The [operator] of [col1] with [col2] [condition] is [executed_results].",
+                "template_str": "The [operator] of [target_col] with [source_col] [condition] is [executed_results].",
                 "type": "numerical_operation"
             }
         ]
@@ -64,19 +64,10 @@ REFACToR_templates = [
         "enable": True,
         "templates": [
             {
-                "template_str": "The difference between [val1] and [val2] in [col] is [executed_results].",
+                "template_str": "The difference between [val1] and [val2] in [target_col] is [executed_results].",
                 "type": "numerical_operation_diff"
             }
         ]
     }
 ]
 
-# Example of how to use the template
-if __name__ == "__main__":
-    # This would be used to iterate over tables and generate examples for pre-training based on the templates
-    for template_info in REFACToR_templates:
-        if template_info["enable"]:
-            for template in template_info["templates"]:
-                print(f"Generating examples for {template_info['reasoning_type']} using: {template['template_str']}")
-                # Here you would add your logic to actually generate the examples
-                # This is just a placeholder for the output structure
