@@ -28,3 +28,8 @@
 
 #### Table 1: Reasoning skills with example for pre-training REAsTAP
 Variable names indicate permissible instantiations. `col` denotes a column name, `val` denotes a cell value, and indices denote that a cell value must originate from the specified column. `OPERATOR` and `ORDINAL` correspond to operations and ordinal numeral that are instantiated according to the specific reasoning skill, e.g., for “Temporal Comparison”, `ORDINAL` is replaced with a reasonable ordinal numeral such as “4th”. And `CONDITION :i` can be 1) a cell value from the i-th column, or 2) number/temporal comparison statement (e.g. "later than 1967") if the i-th column is of number or date type.
+
+***
+Prompt to ChatGPT:
+As you can see from above, I have 2 systems. Now I have the code for REAsTAP, which is Table 1, you can find the code below.I want you to write a new template.py according to the 6 reasoning operations of REFACToR, based on the code below. Read carefully can return me the code
+.
