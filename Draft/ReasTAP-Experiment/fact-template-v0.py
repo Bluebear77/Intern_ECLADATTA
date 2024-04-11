@@ -1,4 +1,4 @@
-REFACToR_templates = [
+[
     {
         "reasoning_type": "conjunction",
         "sample_examples_per_table": 2,
