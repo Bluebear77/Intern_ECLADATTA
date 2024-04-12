@@ -10,8 +10,13 @@ def parse_table(table_content):
     rows = re.sub(r'(^\{\||\|\}$)', '', table_content, flags=re.MULTILINE).strip().split("\n|-")
     table_data = []
     for row in rows:
-        cells = re.findall(r'\|\s*(.*?)\s*(?=\n|$)', row)
-        cells = [re.sub(r'\[\[(?:[^\]|]*\|)?([^\]]+)\]\]', r'\1', cell).strip() for cell in cells]
+        # Simplify HTML tags for easier processing
+        row = re.sub(r'<br\s*/?>', ' ', row)  # Replace <br> tags with space
+        row = re.sub(r'<small>(.*?)</small>', r'\1', row)  # Remove <small> tags, keep content
+        row = re.sub(r'\[\[(?:[^\]|]*\|)?([^\]]+)\]\]', r'\1', row)  # Simplify wiki links
+        # Extract cells, preserving multiline data
+        cells = re.findall(r'\|\s*(.*?)\s*(?=\n\||$)', row, re.DOTALL)
+        cells = [re.sub(r'(?m)^\s*|\s*$', '', cell) for cell in cells]  # Trim each cell
         if cells:
             table_data.append(cells)
     return table_data
