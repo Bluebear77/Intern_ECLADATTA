@@ -2,13 +2,16 @@ from utils.generate_condition import *
 from utils.table_wrapper import WikiTable
 import random
 
-def generate_counting_fact(table_data, fact_template, type, count_map={"counting_1": 1, "counting_2": 2}):
+def generate_counting_fact(table_data, fact_template, type, source_col_count=2):
     
     """
     fact_template: "[executed_results] [target_col] have [source_col] [condition]."
    
     """
-
+    count_map = {
+        "counting_1": 1,
+        "counting_2": 2
+    }
     table = WikiTable(table_data)
     
     # Use count_map to determine the number of source columns to use based on the type
