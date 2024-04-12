@@ -1,13 +1,8 @@
 def generate_fact(table_data, fact_template):
     """
-    Generates a factual statement from the given table data based on specified conditions.
-    
-    Args:
-        table_data (list of dicts): The data of the table in the form of a list of dictionaries.
-        fact_template (str): A template for the fact to generate, with placeholders.
+   
+    fact template:The `col1` that have `CONDITION` are `executed_results`.
 
-    Returns:
-        str: A factual statement generated based on the table data.
     """
     # Assuming a WikiTable class and some necessary functions are defined elsewhere
     table = WikiTable(table_data)
