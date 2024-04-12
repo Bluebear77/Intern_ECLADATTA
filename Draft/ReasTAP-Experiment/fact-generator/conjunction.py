@@ -1,7 +1,7 @@
 def generate_fact(table_data, fact_template):
     """
    
-    fact template:The `col1` that have `CONDITION` are `executed_results`.
+    fact template: The `col1` that have `CONDITION` are `executed_results`.
 
     """
     # Assuming a WikiTable class and some necessary functions are defined elsewhere
