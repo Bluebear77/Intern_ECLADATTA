@@ -26,7 +26,8 @@ fact_func_map = {
     "numerical_operation_diff": generate_numerical_operation_diff_fact
 }
 
-def generate_facts(table, template_data):
+
+def generate_facts(table, template_data, max_trails=50):
     facts = []
     fact_set = set()
 
@@ -40,7 +41,11 @@ def generate_facts(table, template_data):
             template = random.sample(template_dict["templates"], 1)[0]
             generate_fact_func = fact_func_map[reasoning_type]
 
-            fact = generate_fact_func(table, template["template_str"])
+            time, fact = 0, None
+            while fact is None and time < max_trails:
+                fact = generate_fact_func(table, template["template_str"])
+                time += 1
+
             if fact and fact not in fact_set:
                 facts.append({
                     "source": "synthetic_fact",
@@ -49,6 +54,10 @@ def generate_facts(table, template_data):
                 })
                 fact_set.add(fact)
     return facts
+
+
+
+
 
 def worker(table_data_chunk, template_dict, q):
     result = []
