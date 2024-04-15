@@ -1,16 +1,24 @@
 # Detailed Statistical Report of Overlapped URLs
 
-Total unique URLs considered: 91213
+## Overlaps Between Datasets
 
-Total URLs from FeTaQA: 9333
+### FeTaQA and LOGICNLG
+Total overlapping URLs: 198
 
-Total URLs from LOGICNLG: 10538
+### FeTaQA and LOTNLG
+Total overlapping URLs: 15
 
-Total URLs from LOTNLG: 804
+### FeTaQA and ToTTo
+Total overlapping URLs: 8725
 
-Total URLs from ToTTo: 81729
+### LOGICNLG and LOTNLG
+Total overlapping URLs: 804
 
-Total overlapped URLs across files: 10855
+### LOGICNLG and ToTTo
+Total overlapping URLs: 1660
 
-## URLs in Each File Graph
-![URLs in Each File](urls_in_each_file.png)
+### LOTNLG and ToTTo
+Total overlapping URLs: 140
+
+## UpSet Plot of Dataset Overlaps
+![UpSet Plot of Dataset Overlaps](upset_plot.png)

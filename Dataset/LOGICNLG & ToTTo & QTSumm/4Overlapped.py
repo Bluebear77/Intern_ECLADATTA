@@ -1,13 +1,7 @@
 import csv
 import matplotlib.pyplot as plt
-
-# File paths
-fetaqa_file = 'FeTaQA_converted_urls.csv'
-logicnlg_file = 'LOGICNLG-Original-URLs.csv'
-lotnlg_file = 'LOTNLG-URLs.csv'
-totto_file = 'ToTTo-Page-ID-URLs.csv'
-output_file = 'Overlapped-URLs.csv'
-report_file = 'Report.md'
+import pandas as pd
+from upsetplot import plot, from_contents
 
 def extract_curid(url):
     prefix = 'curid='
@@ -27,43 +21,53 @@ def read_urls(file_path, url_column):
                 urls.add('http://en.wikipedia.org/?curid=' + curid)
     return urls
 
+# File paths
+fetaqa_file = 'FeTaQA_converted_urls.csv'
+logicnlg_file = 'LOGICNLG-Original-URLs.csv'
+lotnlg_file = 'LOTNLG-URLs.csv'
+totto_file = 'ToTTo-Page-ID-URLs.csv'
+report_file = 'Report.md'
+
 # Read URLs from each file
 fetaqa_urls = read_urls(fetaqa_file, 'converted_url')
 logicnlg_urls = read_urls(logicnlg_file, 'URL')
 lotnlg_urls = read_urls(lotnlg_file, 'URL')
 totto_urls = read_urls(totto_file, 'Page ID URL')
 
-# Prepare a set for all unique URLs and a dictionary to count occurrences
-all_urls = fetaqa_urls.union(logicnlg_urls, lotnlg_urls, totto_urls)
-url_counts = {url: sum(url in urls for urls in [fetaqa_urls, logicnlg_urls, lotnlg_urls, totto_urls]) for url in all_urls}
+# Collect sets for upset plot
+dataset_sets = {
+    'FeTaQA': fetaqa_urls,
+    'LOGICNLG': logicnlg_urls,
+    'LOTNLG': lotnlg_urls,
+    'ToTTo': totto_urls
+}
 
-# Filter URLs that appear in more than one file
-overlapped_urls = {url for url, count in url_counts.items() if count > 1}
-
-# Write overlapped URLs to the output file
-with open(output_file, mode='w', encoding='utf-8', newline='') as outfile:
-    writer = csv.writer(outfile)
-    writer.writerow(['URL'])
-    for url in overlapped_urls:
-        writer.writerow([url])
-
-# Generate and save a graph
-file_counts = [len(fetaqa_urls), len(logicnlg_urls), len(lotnlg_urls), len(totto_urls)]
-file_names = ['FeTaQA', 'LOGICNLG', 'LOTNLG', 'ToTTo']
-plt.figure(figsize=(10, 6))
-plt.bar(file_names, file_counts, color=['blue', 'green', 'red', 'purple'])
-plt.title('URLs in Each File')
-plt.ylabel('Number of URLs')
-plt.savefig('urls_in_each_file.png')
+# Calculate overlaps for pairs
+pairs = [
+    ("FeTaQA", "LOGICNLG", fetaqa_urls & logicnlg_urls),
+    ("FeTaQA", "LOTNLG", fetaqa_urls & lotnlg_urls),
+    ("FeTaQA", "ToTTo", fetaqa_urls & totto_urls),
+    ("LOGICNLG", "LOTNLG", logicnlg_urls & lotnlg_urls),
+    ("LOGICNLG", "ToTTo", logicnlg_urls & totto_urls),
+    ("LOTNLG", "ToTTo", lotnlg_urls & totto_urls)
+]
 
 # Write the detailed statistical report to a Markdown file
 with open(report_file, mode='w', encoding='utf-8') as mdfile:
     mdfile.write("# Detailed Statistical Report of Overlapped URLs\n\n")
-    mdfile.write(f"Total unique URLs considered: {len(all_urls)}\n")
-    mdfile.write(f"Total URLs from FeTaQA: {len(fetaqa_urls)}\n")
-    mdfile.write(f"Total URLs from LOGICNLG: {len(logicnlg_urls)}\n")
-    mdfile.write(f"Total URLs from LOTNLG: {len(lotnlg_urls)}\n")
-    mdfile.write(f"Total URLs from ToTTo: {len(totto_urls)}\n")
-    mdfile.write(f"Total overlapped URLs across files: {len(overlapped_urls)}\n\n")
-    mdfile.write("## URLs in Each File Graph\n")
-    mdfile.write("![URLs in Each File](urls_in_each_file.png)\n")
+    mdfile.write("## Overlaps Between Datasets\n\n")
+    for (set1, set2, intersection) in pairs:
+        mdfile.write(f"### {set1} and {set2}\n")
+        mdfile.write(f"Total overlapping URLs: {len(intersection)}\n\n")
+
+# Prepare and plot the data using upsetplot
+upset_data = from_contents(dataset_sets)
+plot(upset_data, orientation='horizontal')
+plt.title('UpSet Plot of Dataset Overlaps')
+plt.savefig('upset_plot.png')
+plt.show()
+
+# Append plot image to Markdown report
+with open(report_file, 'a', encoding='utf-8') as mdfile:
+    mdfile.write("## UpSet Plot of Dataset Overlaps\n")
+    mdfile.write("![UpSet Plot of Dataset Overlaps](upset_plot.png)\n")
