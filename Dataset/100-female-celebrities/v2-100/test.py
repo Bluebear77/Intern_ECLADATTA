@@ -2,43 +2,45 @@ import re
 import json
 
 def extract_wiki_table_data(file_content):
-    # Extract headers
-    header_pattern = r"\{\|\s*class=\"wikitable.*?\"\s*\n(.*?)\n\|-\n"
-
-
-   # header_pattern = r"\{\|\s*class=\"wikitable.*?\"\s*\n\|(.*?)\n\|\-"
-    header_match = re.search(header_pattern, file_content, re.DOTALL)
-    if header_match:
-        headers = [h.strip().replace('!!', ' ').replace('! align="center"|', '').strip() for h in header_match.group(1).split('!!')]
-    else:
-        print("No headers found")
+    # Find all tables in the content
+    tables = re.findall(r'\{\|\s*class="wikitable.*?"(.*?)(?=\{\||\Z)', file_content, re.DOTALL)
+    
+    if not tables:
+        print("No tables found")
         return None
 
-    # Regex to extract rows, considering multiline values and complex wiki markup
-    row_pattern = r"\|\-\s*(?:\|\s*rowspan=\"\d+\"\s*\|)?(.*?)\n(?=\|\-|\|\})"
-    rows = re.findall(row_pattern, file_content, re.DOTALL)
-    parsed_rows = []
+    results = []
 
-    for row in rows:
-        # Normalize row data
-        entries = re.sub(r"<ref.*?\/ref>", "", row)  # Remove references
-        entries = re.sub(r"\[\[|\]\]", "", entries)  # Remove wiki links
-        entries = re.sub(r"''", "", entries)  # Remove italic formatting
-        entries = re.sub(r"\{\{nb\|", "", entries)  # Remove number formatting
-        entries = entries.split("\n|")
-        entries = [entry.strip() for entry in entries if entry.strip()]
-        parsed_rows.append(entries)
+    for table in tables:
+        # Extract headers for each table
+        headers = re.search(r'\n\!(.*?)\n\|-\n', table, re.DOTALL)
+        if headers:
+            headers = [h.strip().replace('!!', ' ').replace('! align="center"|', '').strip() for h in headers.group(1).split('!!')]
+        else:
+            print("No headers found in table")
+            continue
 
-    # Prepare JSON output structure
-    json_output = {
-        "header": headers,
-        "rows": parsed_rows,
-        "column_types": ["string"] * len(headers),  # Assume all are strings for simplicity
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {}
-    }
-    return json_output
+        # Extract rows
+        rows = re.findall(r'\|\-\s*(?:\|\s*rowspan="\d+"\s*\|)?(.*?)\n(?=\|\-|\|\})', table, re.DOTALL)
+        parsed_rows = []
+
+        for row in rows:
+            # Normalize row data
+            entries = re.sub(r'<ref.*?\/ref>', '', row)  # Remove references
+            entries = re.sub(r'\[\[|\]\]', '', entries)  # Remove wiki links
+            entries = re.sub(r"''", '', entries)  # Remove italic formatting
+            entries = re.sub(r'\{\{nb\|', '', entries)  # Remove number formatting
+            entries = entries.split('\n|')
+            entries = [entry.strip() for entry in entries if entry.strip()]
+            parsed_rows.append(entries)
+
+        # Append this table's data to results
+        results.append({
+            "header": headers,
+            "rows": parsed_rows
+        })
+
+    return results
 
 # Specify file paths
 files = [
