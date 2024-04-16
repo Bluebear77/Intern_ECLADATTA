@@ -1,0 +1,44 @@
+[
+    {
+        "id": "<string: unique identifier for the dataset>",
+        "title": "<string: title of the dataset>",
+        "url": "<string: URL pointing to the source or more information>",
+        "header": [
+            "<string: column name 1>",
+            "<string: column name 2>",
+            "<string: column name 3>",
+            ...
+        ],
+        "rows": [
+            [
+                "<data type corresponding to column 1>",
+                "<data type corresponding to column 2>",
+                "<data type corresponding to column 3>",
+                ...
+            ],
+            ...
+        ],
+        "column_types": [
+            "<string: data type of column 1 (e.g., 'string', 'numeric', 'datetime')>",
+            "<string: data type of column 2 (e.g., 'string', 'numeric', 'datetime')>",
+            ...
+        ],
+        "key_column": "<integer: index of the key column>",
+        "numeric_columns": [
+            "<integer: index of a numeric column>",
+            "<integer: index of another numeric column>",
+            ...
+        ],
+        "date_columns": {
+            "<integer: index of a date column>": [
+                "<date: date value for row 1>",
+                "<date: date value for row 2>",
+                ...
+            ],
+            ...
+        }
+    },
+    {
+        // Another dataset with similar structure
+    }
+]
