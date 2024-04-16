@@ -39,8 +39,8 @@ def extract_wiki_table_data(file_content):
 
 # Specify file paths
 files = [
-    ("P2/tables_output-instance_1.txt", "P2/output_instance_1.json"),
-    ("P2/tables_output-instance_2.txt", "P2/output_instance_2.json")
+    ("P2/tables_output-instance_1.txt", "output_instance_1.json"),
+    ("P2/tables_output-instance_2.txt", "output_instance_2.json")
 ]
 
 # Process each file and save the output to new JSON files
