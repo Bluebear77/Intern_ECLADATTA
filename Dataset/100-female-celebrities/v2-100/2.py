@@ -25,8 +25,9 @@ output_dir = "P2"
 for filename in os.listdir(input_dir):
     if filename.endswith(".json"):
         input_file = os.path.join(input_dir, filename)
-        output_file = os.path.join(output_dir, "tables_" + filename)
+        # Change the output file name to use .txt instead of .json
+        output_file = os.path.join(output_dir, "tables_" + os.path.splitext(filename)[0] + ".txt")
         extract_tables(input_file, output_file)
 
 # Provide paths to the output files for user download
-[file.replace("P1", "P2") for file in os.listdir("P1") if file.endswith(".json")]
+[file.replace("P1", "P2").replace(".json", ".txt") for file in os.listdir("P1") if file.endswith(".json")]
