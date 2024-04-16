@@ -15,7 +15,8 @@ def extract_wiki_table_data(file_content):
         # Extract headers for each table
         headers = re.search(r'\n\!(.*?)\n\|-\n', table, re.DOTALL)
         if headers:
-            headers = [h.strip().replace('!!', ' ').replace('! align="center"|', '').strip() for h in headers.group(1).split('!!')]
+            headers = [h.strip() for h in headers.group(1).replace('align="center"|', '').split('!')]
+            headers = [re.sub(r'<[^>]+>', '', h).strip() for h in headers if h.strip()]  # Remove HTML tags
         else:
             print("No headers found in table")
             continue
