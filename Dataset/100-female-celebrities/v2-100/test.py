@@ -53,11 +53,8 @@ def extract_wiki_table_data(file_content):
     return results
 
 # Specify file paths
-files = [
-    ("P2/tables_output-instance_1.txt", "output_instance_1.json"),
-    ("P2/tables_output-instance_2.txt", "output_instance_2.json"),
-    ("P2/tables_output-instance_3.txt", "output_instance_3.json")
-]
+files = [("P2/tables_output-instance_{}.txt".format(i), "P3/output_instance_{}.json".format(i)) for i in range(1, 101)]
+
 
 # Process each file and save the output to new JSON files
 for input_path, output_path in files:
