@@ -1,9 +1,24 @@
 import re
 import json
 
+def clean_text(text):
+    # Remove HTML tags and attributes
+    text = re.sub(r'<[^>]*>', '', text)
+    # Remove wiki markup like [[Page|Display]] and replace with 'Display'
+    text = re.sub(r'\[\[([^|\]]*\|)?([^\]]+)\]\]', r'\2', text)
+    # Remove templates {{...}}
+    text = re.sub(r'\{\{[^}]+\}\}', '', text)
+    # Remove style and class attributes
+    text = re.sub(r'\b(style|class)="[^"]*"', '', text)
+    # Remove extraneous characters
+    text = re.sub(r'[\|\[\]\{\}]', '', text)
+    # Remove multiple spaces and newlines
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text
+
 def extract_wiki_table_data(file_content):
-    # Find all tables in the content
-    tables = re.findall(r'\{\|\s*class="wikitable.*?"(.*?)(?=\{\||\Z)', file_content, re.DOTALL)
+    # Find all tables in the content with a more general regex
+    tables = re.findall(r'\{\|\s*class="[^"]*wikitable[^"]*"(.*?)(?=\{\||\Z)', file_content, re.DOTALL)
     
     if not tables:
         print("No tables found")
@@ -15,8 +30,7 @@ def extract_wiki_table_data(file_content):
         # Extract headers for each table
         headers = re.search(r'\n\!(.*?)\n\|-\n', table, re.DOTALL)
         if headers:
-            headers = [h.strip() for h in headers.group(1).replace('align="center"|', '').split('!')]
-            headers = [re.sub(r'<[^>]+>', '', h).strip() for h in headers if h.strip()]  # Remove HTML tags
+            headers = [clean_text(h) for h in headers.group(1).split('!')]
         else:
             print("No headers found in table")
             continue
@@ -27,12 +41,7 @@ def extract_wiki_table_data(file_content):
 
         for row in rows:
             # Normalize row data
-            entries = re.sub(r'<ref.*?\/ref>', '', row)  # Remove references
-            entries = re.sub(r'\[\[|\]\]', '', entries)  # Remove wiki links
-            entries = re.sub(r"''", '', entries)  # Remove italic formatting
-            entries = re.sub(r'\{\{nb\|', '', entries)  # Remove number formatting
-            entries = entries.split('\n|')
-            entries = [entry.strip() for entry in entries if entry.strip()]
+            entries = [clean_text(entry) for entry in row.split('\n|')]
             parsed_rows.append(entries)
 
         # Append this table's data to results
@@ -44,10 +53,8 @@ def extract_wiki_table_data(file_content):
     return results
 
 # Specify file paths
-files = [
-    ("P2/tables_output-instance_1.txt", "output_instance_1.json"),
-    ("P2/tables_output-instance_2.txt", "output_instance_2.json")
-]
+files = [("P2/tables_output-instance_{}.txt".format(i), "P3/output_instance_{}.json".format(i)) for i in range(1, 101)]
+
 
 # Process each file and save the output to new JSON files
 for input_path, output_path in files:

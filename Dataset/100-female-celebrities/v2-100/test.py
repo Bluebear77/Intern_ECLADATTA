@@ -2,59 +2,104 @@ import re
 import json
 
 def clean_text(text):
-    # Remove HTML tags and attributes
     text = re.sub(r'<[^>]*>', '', text)
-    # Remove wiki markup like [[Page|Display]] and replace with 'Display'
     text = re.sub(r'\[\[([^|\]]*\|)?([^\]]+)\]\]', r'\2', text)
-    # Remove templates {{...}}
     text = re.sub(r'\{\{[^}]+\}\}', '', text)
-    # Remove style and class attributes
-    text = re.sub(r'\b(style|class)="[^"]*"', '', text)
-    # Remove extraneous characters
-    text = re.sub(r'[\|\[\]\{\}]', '', text)
-    # Remove multiple spaces and newlines
-    text = re.sub(r'\s+', ' ', text).strip()
-    return text
+    text = re.sub(r'rowspan="\d+"', '', text)
+    text = re.sub(r'align="center"', '', text)  # Remove align="center" from the text
+    text = re.sub(r'\'{2,}', '', text)  # Removes multiple single quotes used for italic in wiki markup
+    text = re.sub(r'\|', '', text)  # Removes all "|" characters
+    return text.strip()
 
-def extract_wiki_table_data(file_content):
-    # Find all tables in the content with a more general regex
-    tables = re.findall(r'\{\|\s*class="[^"]*wikitable[^"]*"(.*?)(?=\{\||\Z)', file_content, re.DOTALL)
-    
-    if not tables:
-        print("No tables found")
-        return None
+def is_numeric(text):
+    try:
+        float(text.replace(',', '').replace(' ', ''))
+        return True
+    except ValueError:
+        return False
 
-    results = []
+def determine_data_types(rows):
+    if not rows:
+        return []
+    column_count = len(rows[0])
+    column_types = ['text'] * column_count
+    for row in rows:
+        for i, cell in enumerate(row):
+            if is_numeric(cell):
+                column_types[i] = 'numeric'
+            elif re.match(r'\d{4}-\d{2}-\d{2}', cell):
+                column_types[i] = 'date'  # Identify ISO date formats
+            elif column_types[i] == 'text' and re.match(r'\d{4}', cell):
+                column_types[i] = 'year'  # A column containing just years
+    return column_types
+
+def extract_table_data(table):
+    headers = re.findall(r'^\!\s*(.*)', table, re.MULTILINE)
+    headers = [clean_text(h.split('!!')[0]) for h in headers]
+
+    rows = []
+    spans = [0] * len(headers)
+    actual_rows = table.split('|-')[1:]
+
+    for row in actual_rows:
+        cells = re.split(r'\n\|', row)[1:]
+        row_result = []
+        col_index = 0
+
+        for cell in cells:
+            #print(f"Processing cell: {cell}")  # Debug print
+            while col_index < len(spans) and spans[col_index] > 0:
+                row_result.append('')
+                spans[col_index] -= 1
+                col_index += 1
+
+            span_match = re.search(r'rowspan="(\d+)"', cell)
+            span_length = 0
+            if span_match:
+                span_length = int(span_match.group(1)) - 1
+                print(f"span_match found, col_index: {col_index}, span_length: {span_length}, spans length: {len(spans)}")  # Debug print
+                if col_index < len(spans):
+                    spans[col_index] = span_length
+                else:
+                    print("Error: col_index out of range of spans")  # Error notice
+
+            clean_cell = clean_text(cell.strip())  # Apply the cleaning including removal of "|"
+            row_result.append(clean_cell)
+            if span_length > 0 and col_index < len(spans):
+                spans[col_index] = span_length
+
+            col_index += 1
+
+            #print(f"Current row_result: {row_result}")  # Debug print
+            #print(f"Current spans state: {spans}")  # Debug print
+
+        spans = [max(0, x - 1) for x in spans]
+        rows.append(row_result)
+
+    data_types = determine_data_types(rows)
+    numeric_columns = [index for index, type in enumerate(data_types) if type == 'numeric']
+    key_column = numeric_columns[0] if numeric_columns else None
+
+    return headers, rows, data_types, key_column, numeric_columns
+
+def extract_wiki_table_data(content):
+    tables = re.findall(r'\{\|\s*class="[^"]*wikitable[^"]*"(.*?)\|\}', content, re.DOTALL)
+    all_tables = []
 
     for table in tables:
-        # Extract headers for each table
-        headers = re.search(r'\n\!(.*?)\n\|-\n', table, re.DOTALL)
-        if headers:
-            headers = [clean_text(h) for h in headers.group(1).split('!')]
-        else:
-            print("No headers found in table")
-            continue
-
-        # Extract rows
-        rows = re.findall(r'\|\-\s*(?:\|\s*rowspan="\d+"\s*\|)?(.*?)\n(?=\|\-|\|\})', table, re.DOTALL)
-        parsed_rows = []
-
-        for row in rows:
-            # Normalize row data
-            entries = [clean_text(entry) for entry in row.split('\n|')]
-            parsed_rows.append(entries)
-
-        # Append this table's data to results
-        results.append({
-            "header": headers,
-            "rows": parsed_rows
+        headers, rows, column_types, key_column, numeric_columns = extract_table_data(table)
+        all_tables.append({
+            'header': headers,
+            'rows': rows,
+            'column_types': column_types,
+            'key_column': key_column,
+            'numeric_columns': numeric_columns
         })
 
-    return results
+    return all_tables
 
 # Specify file paths
-files = [("P2/tables_output-instance_{}.txt".format(i), "P3/output_instance_{}.json".format(i)) for i in range(1, 101)]
-
+files = [("P2/tables_output-instance_{}.txt".format(i), "P3/output_instance_{}.json".format(i)) for i in range(1, 3)]
 
 # Process each file and save the output to new JSON files
 for input_path, output_path in files:
