@@ -1,46 +1,22 @@
 import re
 import json
 
+def clean_text(text):
+    text = re.sub(r'<[^>]*>', '', text)
+    text = re.sub(r'\[\[([^|\]]*\|)?([^\]]+)\]\]', r'\2', text)
+    text = re.sub(r'\{\{[^}]+\}\}', '', text)
+    text = re.sub(r'rowspan="\d+"', '', text)
+    text = re.sub(r'align="center"', '', text)  # Remove align="center" from the text
+    text = re.sub(r'\'{2,}', '', text)  # Removes multiple single quotes used for italic in wiki markup
+    text = re.sub(r'\|', '', text)  # Removes all "|" characters
+    return text.strip()
 
-
-def extract_table_data(table):
-    headers = re.findall(r'^\!\s*(.*)', table, re.MULTILINE)
-    headers = [clean_text(h.split('!!')[0]) for h in headers]
-
-    rows = []
-    spans = [0] * len(headers)  # Initialize spans to match the number of headers
-    actual_rows = table.split('|-')[1:]
-
-    for row in actual_rows:
-        cells = re.split(r'\n\|', row)[1:]
-        row_result = [''] * len(headers)  # Initialize row_result with empty strings for each header
-        col_index = 0
-
-        for cell in cells:
-            while col_index < len(headers) and spans[col_index] > 0:
-                spans[col_index] -= 1
-                col_index += 1  # Move to next column if current is spanned from previous row
-
-            # Handle rowspan
-            span_match = re.search(r'rowspan="(\d+)"', cell)
-            if span_match:
-                span_length = int(span_match.group(1)) - 1
-                spans[col_index] = span_length
-
-            clean_cell = clean_text(cell)
-            if col_index < len(headers):  # Check to prevent out of range error
-                row_result[col_index] = clean_cell
-            col_index += 1
-
-        rows.append(row_result)
-        spans = [max(0, x - 1) for x in spans]  # Reduce spans for next row
-
-    # Determine data types and numeric columns
-    data_types = determine_data_types(rows)
-    numeric_columns = [index for index, type in enumerate(data_types) if type == 'numeric']
-    key_column = numeric_columns[0] if numeric_columns else None
-
-    return headers, rows, data_types, key_column, numeric_columns
+def is_numeric(text):
+    try:
+        float(text.replace(',', '').replace(' ', ''))
+        return True
+    except ValueError:
+        return False
 
 def determine_data_types(rows):
     if not rows:
@@ -52,29 +28,56 @@ def determine_data_types(rows):
             if is_numeric(cell):
                 column_types[i] = 'numeric'
             elif re.match(r'\d{4}-\d{2}-\d{2}', cell):
-                column_types[i] = 'date'
+                column_types[i] = 'date'  # Identify ISO date formats
             elif column_types[i] == 'text' and re.match(r'\d{4}', cell):
-                column_types[i] = 'year'
+                column_types[i] = 'year'  # A column containing just years
     return column_types
 
-def is_numeric(text):
-    try:
-        float(text.replace(',', '').replace(' ', ''))
-        return True
-    except ValueError:
-        return False
+def extract_table_data(table):
+    headers = re.findall(r'^\!\s*(.*)', table, re.MULTILINE)
+    headers = [clean_text(h.split('!!')[0]) for h in headers]
 
-def clean_text(text):
-    # Cleaning function as per your requirement
-    text = re.sub(r'<[^>]*>', '', text)
-    text = re.sub(r'\[\[([^|\]]*\|)?([^\]]+)\]\]', r'\2', text)
-    text = re.sub(r'\{\{[^}]+\}\}', '', text)
-    text = re.sub(r'rowspan="\d+"', '', text)
-    text = re.sub(r'align="center"', '', text)
-    text = re.sub(r'\'{2,}', '', text)
-    text = re.sub(r'\|', '', text)
-    return text.strip()
+    rows = []
+    spans = [0] * len(headers)
+    actual_rows = table.split('|-')[1:]
 
+    for row in actual_rows:
+        cells = re.split(r'\n\|', row)[1:]
+        row_result = []
+        col_index = 0
+
+        for cell in cells:
+            while col_index < len(spans) and spans[col_index] > 0:
+                row_result.append('')
+                spans[col_index] -= 1
+                col_index += 1
+
+            span_match = re.search(r'rowspan="(\d+)"', cell)
+            span_length = 0
+            if span_match:
+                span_length = int(span_match.group(1)) - 1
+                # Ensure spans list is long enough
+                if col_index >= len(spans):
+                    spans.extend([0] * (col_index - len(spans) + 1))
+                spans[col_index] = span_length
+
+            clean_cell = clean_text(cell.strip())  # Apply the cleaning including removal of "|"
+            row_result.append(clean_cell)
+            if span_length > 0:
+                if col_index >= len(spans):
+                    spans.extend([0] * (col_index - len(spans) + 1))
+                spans[col_index] = span_length
+
+            col_index += 1
+
+        spans = [max(0, x - 1) for x in spans]
+        rows.append(row_result)
+
+    data_types = determine_data_types(rows)
+    numeric_columns = [index for index, type in enumerate(data_types) if type == 'numeric']
+    key_column = numeric_columns[0] if numeric_columns else None
+
+    return headers, rows, data_types, key_column, numeric_columns
 
 def extract_wiki_table_data(content):
     tables = re.findall(r'\{\|\s*class="[^"]*wikitable[^"]*"(.*?)\|\}', content, re.DOTALL)
