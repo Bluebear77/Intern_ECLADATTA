@@ -1,15 +1,20 @@
 import re
 import json
 
+
+
+
 def clean_text(text):
     text = re.sub(r'<[^>]*>', '', text)
     text = re.sub(r'\[\[([^|\]]*\|)?([^\]]+)\]\]', r'\2', text)
     text = re.sub(r'\{\{[^}]+\}\}', '', text)
     text = re.sub(r'rowspan="\d+"', '', text)
-    text = re.sub(r'align="center"', '', text)  # Remove align="center" from the text
+    text = re.sub(r'align=\".*?\" valign=\".*?\"', '', text)  # Remove align="anything" valign="anything"
+    text = re.sub(r'width=\"\d+\"', '', text)  # Remove width="any number"
     text = re.sub(r'\'{2,}', '', text)  # Removes multiple single quotes used for italic in wiki markup
     text = re.sub(r'\|', '', text)  # Removes all "|" characters
     return text.strip()
+
 
 def is_numeric(text):
     try:
