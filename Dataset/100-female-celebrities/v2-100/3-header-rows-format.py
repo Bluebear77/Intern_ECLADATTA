@@ -1,20 +1,24 @@
 import re
 import json
 
+import re
+
 def clean_text(text):
-    # Remove HTML tags and attributes
-    text = re.sub(r'<[^>]*>', '', text)
+    # Remove HTML tags
+    text = re.sub(r'<[^>]+>', '', text)
     # Remove wiki markup like [[Page|Display]] and replace with 'Display'
     text = re.sub(r'\[\[([^|\]]*\|)?([^\]]+)\]\]', r'\2', text)
-    # Remove templates {{...}}
-    text = re.sub(r'\{\{[^}]+\}\}', '', text)
+    # Remove templates and nested templates recursively
+    while re.search(r'\{\{[^{}]+\}\}', text):
+        text = re.sub(r'\{\{[^{}]+\}\}', '', text)
     # Remove style and class attributes
     text = re.sub(r'\b(style|class)="[^"]*"', '', text)
-    # Remove extraneous characters
+    # Remove extraneous characters like brackets which might not be needed
     text = re.sub(r'[\|\[\]\{\}]', '', text)
-    # Remove multiple spaces and newlines
+    # Normalize whitespace to a single space
     text = re.sub(r'\s+', ' ', text).strip()
     return text
+
 
 def extract_wiki_table_data(file_content):
     # Find all tables in the content with a more general regex
@@ -51,6 +55,7 @@ def extract_wiki_table_data(file_content):
         })
 
     return results
+
 
 # Specify file paths
 files = [("P2/tables_output-instance_{}.txt".format(i), "P3/output_instance_{}.json".format(i)) for i in range(1, 101)]
