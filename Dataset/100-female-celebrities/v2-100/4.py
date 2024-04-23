@@ -6,13 +6,25 @@ def clean_text(data):
     # Extended regular expression to handle various HTML-like tags and attributes
     patterns = [
         r'!?scope="[^"]*"',
+         r'!?scope="?col"?',
         r'rowspan=?[0-9]*',
         r'colspan=?[0-9]*',
         r'bgcolor="[^"]*"',
         r'style=[^;]*;',
         r'width="[^"]*"',
         r'align="[^"]*"',
+        r'align=left\s*',
+        r'align="?[^"\s]*"?',
+        r'width:\d+%\"[^"]*',
         r'valign="[^"]*"',
+        r'"[0-9]+"',
+        r'scope=?row[0-9]*', 
+        r'style="[^"]*"',  
+        r'style=\\"[^"]*\\"',  # Handles escaped quotes within style attributes
+        r'background: #[A-Fa-f0-9]{6}',  # Specifically target background color codes in styles
+        r'align=center' # Remove alignment tags that are likely used in table formatting
+
+
     ]
     cleaned_data = data
     for pattern in patterns:
