@@ -23,7 +23,8 @@ def clean_text(text):
 def extract_wiki_table_data(file_content):
     #tables = re.findall(r'\{\|\s*class="[^"]*wikitable[^"]*"(.*?)(?=\{\||\Z)', file_content, re.DOTALL)
     tables = re.findall(r'\{\|\s*(?:[^|\n]*?\s+)?class="[^"]*wikitable[^"]*"(.*?)(?=\{\||\Z)', file_content, re.DOTALL)
-
+    
+     
     if not tables:
         return None, "No tables found"
     
@@ -32,13 +33,16 @@ def extract_wiki_table_data(file_content):
 
     for table in tables:
         headers = re.search(r'\n\!(.*?)\n\|-\n', table, re.DOTALL)
+        
         if headers:
             headers = [clean_text(h) for h in headers.group(1).split('!')]
+            
         else:
             log_messages.append("No headers found in table")
             continue
 
         rows = re.findall(r'\|\-\s*(?:\|\s*rowspan="\d+"\s*\|)?(.*?)\n(?=\|\-|\|\})', table, re.DOTALL)
+        
         parsed_rows = []
 
         for row in rows:
