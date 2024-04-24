@@ -92,7 +92,14 @@ No headers found in table
 Data successfully saved to P3/output_instance_16.json
 
 Processing P2/tables_output-instance_17.txt
-No tables found
+No headers found in table
+No headers found in table
+No headers found in table
+No headers found in table
+No headers found in table
+No headers found in table
+No headers found in table
+No headers found in table
 
 Failed to process P2/tables_output-instance_17.txt: No data found
 
@@ -115,9 +122,9 @@ Processing P2/tables_output-instance_20.txt
 Data successfully saved to P3/output_instance_20.json
 
 Processing P2/tables_output-instance_21.txt
-No tables found
+No headers found in table
 
-Failed to process P2/tables_output-instance_21.txt: No data found
+Data successfully saved to P3/output_instance_21.json
 
 Processing P2/tables_output-instance_22.txt
 
@@ -130,7 +137,8 @@ Processing P2/tables_output-instance_23.txt
 Data successfully saved to P3/output_instance_23.json
 
 Processing P2/tables_output-instance_24.txt
-
+No headers found in table
+No headers found in table
 
 Data successfully saved to P3/output_instance_24.json
 
@@ -140,9 +148,10 @@ Processing P2/tables_output-instance_25.txt
 Data successfully saved to P3/output_instance_25.json
 
 Processing P2/tables_output-instance_26.txt
-No tables found
+No headers found in table
+No headers found in table
 
-Failed to process P2/tables_output-instance_26.txt: No data found
+Data successfully saved to P3/output_instance_26.json
 
 Processing P2/tables_output-instance_27.txt
 No headers found in table
@@ -216,7 +225,7 @@ Processing P2/tables_output-instance_35.txt
 Data successfully saved to P3/output_instance_35.json
 
 Processing P2/tables_output-instance_36.txt
-No tables found
+No headers found in table
 
 Failed to process P2/tables_output-instance_36.txt: No data found
 
@@ -241,9 +250,9 @@ No headers found in table
 Data successfully saved to P3/output_instance_38.json
 
 Processing P2/tables_output-instance_39.txt
-No tables found
 
-Failed to process P2/tables_output-instance_39.txt: No data found
+
+Data successfully saved to P3/output_instance_39.json
 
 Processing P2/tables_output-instance_40.txt
 
@@ -256,9 +265,9 @@ No headers found in table
 Data successfully saved to P3/output_instance_41.json
 
 Processing P2/tables_output-instance_42.txt
-No tables found
 
-Failed to process P2/tables_output-instance_42.txt: No data found
+
+Data successfully saved to P3/output_instance_42.json
 
 Processing P2/tables_output-instance_43.txt
 No headers found in table
@@ -266,7 +275,7 @@ No headers found in table
 Data successfully saved to P3/output_instance_43.json
 
 Processing P2/tables_output-instance_44.txt
-No tables found
+No headers found in table
 
 Failed to process P2/tables_output-instance_44.txt: No data found
 
@@ -281,7 +290,8 @@ Processing P2/tables_output-instance_46.txt
 Data successfully saved to P3/output_instance_46.json
 
 Processing P2/tables_output-instance_47.txt
-
+No headers found in table
+No headers found in table
 
 Data successfully saved to P3/output_instance_47.json
 
@@ -291,9 +301,9 @@ Processing P2/tables_output-instance_48.txt
 Data successfully saved to P3/output_instance_48.json
 
 Processing P2/tables_output-instance_49.txt
-No tables found
 
-Failed to process P2/tables_output-instance_49.txt: No data found
+
+Data successfully saved to P3/output_instance_49.json
 
 Processing P2/tables_output-instance_50.txt
 
@@ -306,7 +316,7 @@ Processing P2/tables_output-instance_51.txt
 Data successfully saved to P3/output_instance_51.json
 
 Processing P2/tables_output-instance_52.txt
-
+No headers found in table
 
 Data successfully saved to P3/output_instance_52.json
 
@@ -361,9 +371,9 @@ Processing P2/tables_output-instance_62.txt
 Data successfully saved to P3/output_instance_62.json
 
 Processing P2/tables_output-instance_63.txt
-No tables found
 
-Failed to process P2/tables_output-instance_63.txt: No data found
+
+Data successfully saved to P3/output_instance_63.json
 
 Processing P2/tables_output-instance_64.txt
 
@@ -442,9 +452,9 @@ No headers found in table
 Data successfully saved to P3/output_instance_77.json
 
 Processing P2/tables_output-instance_78.txt
-No tables found
 
-Failed to process P2/tables_output-instance_78.txt: No data found
+
+Data successfully saved to P3/output_instance_78.json
 
 Processing P2/tables_output-instance_79.txt
 
@@ -493,7 +503,7 @@ Processing P2/tables_output-instance_87.txt
 Data successfully saved to P3/output_instance_87.json
 
 Processing P2/tables_output-instance_88.txt
-No tables found
+No headers found in table
 
 Failed to process P2/tables_output-instance_88.txt: No data found
 
@@ -503,9 +513,9 @@ No headers found in table
 Data successfully saved to P3/output_instance_89.json
 
 Processing P2/tables_output-instance_90.txt
-No tables found
 
-Failed to process P2/tables_output-instance_90.txt: No data found
+
+Data successfully saved to P3/output_instance_90.json
 
 Processing P2/tables_output-instance_91.txt
 
@@ -552,9 +562,9 @@ No headers found in table
 Data successfully saved to P3/output_instance_98.json
 
 Processing P2/tables_output-instance_99.txt
-No tables found
 
-Failed to process P2/tables_output-instance_99.txt: No data found
+
+Data successfully saved to P3/output_instance_99.json
 
 Processing P2/tables_output-instance_100.txt
 

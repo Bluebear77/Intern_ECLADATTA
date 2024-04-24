@@ -21,8 +21,9 @@ def clean_text(text):
 
 
 def extract_wiki_table_data(file_content):
-    tables = re.findall(r'\{\|\s*class="[^"]*wikitable[^"]*"(.*?)(?=\{\||\Z)', file_content, re.DOTALL)
-    
+    #tables = re.findall(r'\{\|\s*class="[^"]*wikitable[^"]*"(.*?)(?=\{\||\Z)', file_content, re.DOTALL)
+    tables = re.findall(r'\{\|\s*(?:[^|\n]*?\s+)?class="[^"]*wikitable[^"]*"(.*?)(?=\{\||\Z)', file_content, re.DOTALL)
+
     if not tables:
         return None, "No tables found"
     
