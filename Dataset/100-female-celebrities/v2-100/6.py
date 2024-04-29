@@ -88,3 +88,4 @@ def process_directory(input_dir, output_dir):
 input_dir = 'P5'
 output_dir = 'P6'
 process_directory(input_dir, output_dir)
+
