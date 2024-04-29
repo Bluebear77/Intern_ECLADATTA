@@ -36,7 +36,7 @@ def merge_datasets(p1_dir, p4_dir, output_dir):
             }
 
             # Save each merged dataset to a separate file
-            output_file_path = os.path.join(output_dir, f'merged_output_{instance_number}.json')
+            output_file_path = os.path.join(output_dir, f'merged_output_{instance_number}')
             write_json_file(dataset, output_file_path)
         else:
             missing_matches.append(instance_number)
