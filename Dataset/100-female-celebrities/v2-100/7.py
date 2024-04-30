@@ -1,13 +1,17 @@
+# pip install fuzzywuzzy python-Levenshtein
+
+
 import json
 import os
+from fuzzywuzzy import fuzz
 
 def clean_entry(entry):
-    # Remove leading/trailing whitespaces, exclamation marks, and normalize spaces
-    return ' '.join(entry.replace('!', '').strip().split())
+    # Remove all non-alphabetic characters and normalize spaces
+    return ' '.join(''.join(filter(str.isalpha, entry)).split())
 
 def process_entries(entries):
-    # Process each entry by cleaning and removing empty ones
-    return [clean_entry(entry) for entry in entries if clean_entry(entry)]
+    # Process each entry by cleaning
+    return ' '.join([clean_entry(entry) for entry in entries])
 
 def check_and_remove_header_row(input_json_file_path, output_json_file_path):
     try:
@@ -20,17 +24,19 @@ def check_and_remove_header_row(input_json_file_path, output_json_file_path):
 
     # Process each item in the JSON data
     for item in data:
-        header = process_entries(item['header'])
-        rows = item['rows']
+        header_string = process_entries(item['header'])
         
-        if not rows:
+        if not item['rows']:
             continue  # If rows are empty, skip to the next item
 
-        # Process the first row to normalize its format for comparison
-        first_row_processed = process_entries(rows[0][0].split('!!'))
+        # Convert the first row to a similar format as header for comparison
+        first_row_string = process_entries(item['rows'][0][0].split())
+
+        # Calculate the similarity between header and the first row
+        similarity = fuzz.ratio(header_string, first_row_string)
         
-        # Check if the processed first row matches the header
-        if first_row_processed == header:
+        # Check if the similarity is above 85%
+        if similarity > 85:
             # Remove the first row if it matches the header
             item['rows'].pop(0)
 
