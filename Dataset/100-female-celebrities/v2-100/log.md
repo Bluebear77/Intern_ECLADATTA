@@ -1,8 +1,3 @@
-Skipping missing file: P3/output_instance_17.json
-Skipping missing file: P3/output_instance_36.json
-Skipping missing file: P3/output_instance_44.json
-Skipping missing file: P3/output_instance_88.json
-
 Processing P2/tables_output-instance_1.txt
 
 
