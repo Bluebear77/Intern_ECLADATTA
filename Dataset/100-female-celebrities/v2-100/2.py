@@ -10,7 +10,8 @@ def extract_tables(input_file, output_file):
     content = data['Content']
 
     # Regular expression to find tables
-    tables = re.findall(r'\{\|.*?\|\}', content, re.DOTALL)
+    # tables = re.findall(r'\{\|.*?\|\}', content, re.DOTALL)
+    tables = re.findall(r'(\{\|(?:(?!\{\|).)*?\|\})', content, re.DOTALL)
 
     # Write the extracted tables to the output file
     with open(output_file, 'w', encoding='utf-8') as file:
