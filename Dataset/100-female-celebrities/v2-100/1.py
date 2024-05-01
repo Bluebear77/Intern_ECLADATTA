@@ -20,9 +20,11 @@ def extract_and_save_data(input_file, output_file):
         "Content": content
     }
 
+ 
     # Save extracted data to the specified output file
-    with open(output_file, 'w') as output_file:
-        json.dump(extracted_data, output_file, indent=4)
+    with open(output_file, 'w', encoding='utf-8') as output_file:
+        json.dump(extracted_data, output_file, ensure_ascii=False, indent=4)
+
 
 # Define the directories
 raw_dir = "Raw"
