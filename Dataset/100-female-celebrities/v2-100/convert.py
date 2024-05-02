@@ -2,24 +2,27 @@ import json
 import os
 import glob
 from dateutil.parser import parse
+from datetime import datetime
 
 def read_json_file(json_path):
     with open(json_path, 'r', encoding='utf-8') as file:
         data = json.load(file)
     return [data] if isinstance(data, dict) else data
 
-def is_date(string):
+def is_full_date(string):
     try:
-        # Using dayfirst=True to better handle international date formats
-        parse(string, fuzzy=False, dayfirst=True)
-        return True
+        parsed_date = parse(string, fuzzy=False)
+        # Ensuring the date includes day, month, and year
+        if parsed_date and (parsed_date.year is not None and parsed_date.month is not None and parsed_date.day is not None):
+            # Further check to make sure the string wasn't just a year
+            if len(string.strip()) > 4:
+                return True
     except (ValueError, OverflowError):
-        # Handling OverflowError to avoid large integer issues
         return False
+    return False
 
 def looks_numeric(s):
     try:
-        # Removing common number formatting characters before checking
         float(s.replace(',', '').replace('.', '').strip())
         return True
     except ValueError:
@@ -48,16 +51,17 @@ def process_single_table_data(table_data):
                 value = row[col_index].strip()
                 if looks_numeric(value):
                     numeric_count += 1
-                if is_date(value):
+                if is_full_date(value):
                     date_count += 1
                 total_count += 1
 
-        if numeric_count == total_count and total_count > 0:
+        if date_count == total_count and total_count > 0:
+            output_table_data["column_types"][col_index] = "datetime"
+            formatted_dates = [datetime.strptime(parse(row[col_index].strip()).isoformat(), "%Y-%m-%dT%H:%M:%S").isoformat() for row in table_data["rows"] if len(row) > col_index and is_full_date(row[col_index].strip())]
+            output_table_data["date_columns"][col_index] = formatted_dates
+        elif numeric_count == total_count and total_count > 0:
             output_table_data["column_types"][col_index] = "numeric"
             output_table_data["numeric_columns"].append(col_index)
-        elif date_count > 0.5 * total_count and total_count > 0:
-            output_table_data["column_types"][col_index] = "datetime"
-            output_table_data["date_columns"][col_index] = [row[col_index] for row in table_data["rows"] if len(row) > col_index]
 
     if output_table_data["numeric_columns"]:
         output_table_data["key_column"] = output_table_data["numeric_columns"][0]
