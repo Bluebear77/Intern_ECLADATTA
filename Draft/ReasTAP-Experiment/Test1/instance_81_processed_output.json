@@ -1,0 +1,1945 @@
+[
+    {
+        "id": "5510922",
+        "title": "Caroline Garcia",
+        "url": "https://fr.wikipedia.org/?curid=5510922",
+        "header": [
+            "#",
+            "Date",
+            "Nom de l'olympiade",
+            "Surface",
+            "R\u00e9sultat",
+            "Ultime adversaire",
+            "Score",
+            ""
+        ],
+        "rows": [
+            [
+                "1",
+                "06/08/2016",
+                "Olympic Tennis Event Rio de Janeiro",
+                "Dur ()",
+                "(1/16)",
+                "Johanna Konta",
+                "6-2, 6-3",
+                "Parcours"
+            ],
+            [
+                "2",
+                "31/07/2021",
+                "Olympic Tennis Event Tokyo",
+                "Dur ()",
+                "(1/32)",
+                "Donna Veki\u0107",
+                "6-2, 6-7, 6-3",
+                "Parcours"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            0
+        ],
+        "date_columns": {
+            "1": [
+                "2016-06-08T00:00:00",
+                "2021-07-31T00:00:00"
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the # when the Date was after 06/08/2016 and the Nom de l'olympiade string contains Tennis?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the # when the Ultime adversaire string starts with Donna and the Date was after 06/08/2016?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only #, with Date was on 31/07/2021, have Ultime adversaire string starts with Donna?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only #, with Date was before 31/07/2021, have Nom de l'olympiade string starts with Olympic?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many months had passed between when the Score was 6-2, 6-7, 6-3 and when the Score was 6-2, 6-3?",
+                "answers": [
+                    "61"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many # had Date was on 31/07/2021 and Ultime adversaire string starts with Donna?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many # had Nom de l'olympiade string starts with Olympic?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many # had Date was before 31/07/2021?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "5510922",
+        "title": "Caroline Garcia",
+        "url": "https://fr.wikipedia.org/?curid=5510922",
+        "header": [
+            "#",
+            "Date",
+            "Nom de l'\u00e9dition",
+            "($)",
+            "Surface",
+            "R\u00e9sultat",
+            "Ultime(s) adversaire(s)",
+            "Score",
+            ""
+        ],
+        "rows": [
+            [
+                "1",
+                "22/10/2017",
+                "BNP Paribas WTA Finals Singapour",
+                "",
+                "Dur ()",
+                "1/2 finale",
+                "Venus Williams",
+                "6-7, 6-2, 6-3",
+                "Parcours"
+            ],
+            [
+                "2",
+                "31/10/2022",
+                "WTA Finals Fort Worth",
+                "",
+                "Dur ()",
+                "Victoire",
+                "Aryna Sabalenka",
+                "7-6, 6-4",
+                "Parcours"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            0
+        ],
+        "date_columns": {
+            "1": [
+                "2017-10-22T00:00:00",
+                "2022-10-31T00:00:00"
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the # when the R\u00e9sultat string contains finale and the Date was on 22/10/2017?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the # when the Date was on 22/10/2017 and the Ultime(s) adversaire(s) string starts with Venus?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every #, with Nom de l'\u00e9dition string contains Fort, have Date was after 22/10/2017?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every #, with Date was before 31/10/2022, have R\u00e9sultat string ends with finale?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many months had passed between when the Ultime(s) adversaire(s) was Aryna Sabalenka and when the Ultime(s) adversaire(s) was Venus Williams?",
+                "answers": [
+                    "60"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many # had Nom de l'\u00e9dition string contains Fort?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many # had Nom de l'\u00e9dition string contains Finals?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "5510922",
+        "title": "Caroline Garcia",
+        "url": "https://fr.wikipedia.org/?curid=5510922",
+        "header": [
+            "#",
+            "Date",
+            "Nom de l'\u00e9dition",
+            "($)",
+            "Surface",
+            "R\u00e9sultat",
+            "Partenaire",
+            "Ultimes adversaires",
+            "Score",
+            ""
+        ],
+        "rows": [
+            [
+                "1",
+                "25/10/2015",
+                "BNP Paribas WTA Finals Singapour",
+                "",
+                "Dur ()",
+                "Round Robin (d\u00e9faite)",
+                "Katarina Srebotnik",
+                "Chan Hao-ching Chan Yung-jan",
+                "6-4, 7-6",
+                "Parcours"
+            ],
+            [
+                "1",
+                "25/10/2015",
+                "BNP Paribas WTA Finals Singapour",
+                "",
+                "Dur ()",
+                "Round Robin (d\u00e9faite)",
+                "Katarina Srebotnik",
+                "Garbi\u00f1e Muguruza Carla Su\u00e1rez Navarro",
+                "7-5, 6-2",
+                "Parcours"
+            ],
+            [
+                "1",
+                "25/10/2015",
+                "BNP Paribas WTA Finals Singapour",
+                "",
+                "Dur ()",
+                "Round Robin (victoire)",
+                "Katarina Srebotnik",
+                "Bethanie Mattek-Sands Lucie \u0160af\u00e1\u0159ov\u00e1",
+                "6-2, 3-0,",
+                "Parcours"
+            ],
+            [
+                "2",
+                "23/10/2016",
+                "BNP Paribas WTA Finals Singapour",
+                "",
+                "Dur ()",
+                "1/2 finale",
+                "Kristina Mladenovic",
+                "Bethanie Mattek-Sands Lucie \u0160af\u00e1\u0159ov\u00e1",
+                "6-3, 7-5",
+                "Parcours"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            0
+        ],
+        "date_columns": {
+            "1": [
+                "2015-10-25T00:00:00",
+                "2015-10-25T00:00:00",
+                "2015-10-25T00:00:00",
+                "2016-10-23T00:00:00"
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the # when the Date was on 25/10/2015 and the R\u00e9sultat string starts with Round?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the # when the R\u00e9sultat string starts with Round and the Date was before 23/10/2016?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only #, with Date was on 25/10/2015, have R\u00e9sultat string starts with Round?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every #, with Date was on 23/10/2016, have Nom de l'\u00e9dition string contains Finals?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which #, with Date was before 23/10/2016, happened the 3rd according to Date?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which #, with R\u00e9sultat string starts with Round, happened the 3rd according to Date?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which #, with Date was on 25/10/2015, happened the 1st according to Date?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many months had passed between when the Score was 6-3, 7-5 and when the Score was 6-4, 7-6?",
+                "answers": [
+                    "12"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many # had Date was before 23/10/2016 and Nom de l'\u00e9dition string contains Finals?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many # had R\u00e9sultat string contains Round and Date was on 25/10/2015?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many # had Date was on 25/10/2015 and Nom de l'\u00e9dition string contains Finals?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "5510922",
+        "title": "Caroline Garcia",
+        "url": "https://fr.wikipedia.org/?curid=5510922",
+        "header": [
+            "L\u00e9gende"
+        ],
+        "rows": [
+            [
+                "Grand Chelem"
+            ],
+            [
+                "Masters"
+            ],
+            [
+                "Premier 5 / WTA 1000"
+            ],
+            [
+                "Premier / WTA 500"
+            ],
+            [
+                "Intern'l / WTA 250"
+            ],
+            [
+                "Fed Cup"
+            ]
+        ],
+        "column_types": [
+            "string"
+        ],
+        "key_column": -1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many L\u00e9gende had L\u00e9gende string starts with Premier?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "5510922",
+        "title": "Caroline Garcia",
+        "url": "https://fr.wikipedia.org/?curid=5510922",
+        "header": [
+            "Joueuse",
+            "Meilleurclassement",
+            "Confrontations",
+            "Victoires",
+            "D\u00e9faites",
+            "Pourcentagede victoires",
+            "Derni\u00e8re confrontation"
+        ],
+        "rows": [
+            [
+                "Agnieszka Radwa\u0144ska",
+                "2",
+                "5",
+                "1",
+                "4",
+                "20",
+                "d\u00e9faite (2-6, 3-6) \u00e0 l'US Open 2016"
+            ],
+            [
+                "Madison Keys",
+                "7",
+                "5",
+                "1",
+                "4",
+                "20",
+                "d\u00e9faite (5-7, 4-6) \u00e0 Duba\u00ef 2023"
+            ],
+            [
+                "Simona Halep",
+                "1",
+                "9",
+                "2",
+                "7",
+                "22,2",
+                "victoire (6-4, 6-3) \u00e0 Doha 2022"
+            ],
+            [
+                "Maria Sharapova",
+                "1",
+                "7",
+                "2",
+                "5",
+                "28,5",
+                "victoire (6-3, 6-2) \u00e0 Montr\u00e9al 2018"
+            ],
+            [
+                "Angelique Kerber",
+                "1",
+                "9",
+                "3",
+                "6",
+                "33,3",
+                "victoire (3-6, 6-2, 6-4) \u00e0 Duba\u00ef 2021"
+            ],
+            [
+                "Anett Kontaveit",
+                "2",
+                "5",
+                "2",
+                "3",
+                "40",
+                "d\u00e9faite (3-6, 3-6) \u00e0 Cleveland 2021"
+            ],
+            [
+                "Jelena Jankovi\u0107",
+                "1",
+                "5",
+                "2",
+                "3",
+                "40",
+                "victoire (6-4, 6-4) \u00e0 Calvi\u00e0 2017"
+            ],
+            [
+                "Andrea Petkovic",
+                "9",
+                "5",
+                "2",
+                "3",
+                "40",
+                "d\u00e9faite (1-6, 1-6) \u00e0 Luxembourg 2016"
+            ],
+            [
+                "Petra Kvitov\u00e1",
+                "2",
+                "9",
+                "4",
+                "5",
+                "44,4",
+                "victoire (6-2, 6-4) \u00e0 Cincinnati 2022"
+            ],
+            [
+                "Johanna Konta",
+                "4",
+                "6",
+                "3",
+                "3",
+                "50",
+                "victoire (6-2, 6-2) \u00e0 l'US Open 2018"
+            ],
+            [
+                "Aryna Sabalenka",
+                "1",
+                "5",
+                "3",
+                "2",
+                "60",
+                "victoire (7-6, 6-4) au Masters 2022"
+            ],
+            [
+                "Elina Svitolina",
+                "3",
+                "5",
+                "3",
+                "2",
+                "60",
+                "d\u00e9faite (1-6, 3-6) \u00e0 Roland-Garros 2020"
+            ],
+            [
+                "Sloane Stephens",
+                "3",
+                "8",
+                "5",
+                "3",
+                "62,5",
+                "victoire (6-3, 3-6, 6-1) \u00e0 San Diego 2023"
+            ],
+            [
+                "Karol\u00edna Pl\u00ed\u0161kov\u00e1",
+                "1",
+                "6",
+                "4",
+                "2",
+                "66,6",
+                "victoire (6-1, 7-6) \u00e0 l'US Open 2020"
+            ],
+            [
+                "Sara Errani",
+                "5",
+                "7",
+                "5",
+                "2",
+                "71,4",
+                "victoire (6-1, 6-0) \u00e0 B\u00e5stad 2017"
+            ],
+            [
+                "Ana Ivanovi\u0107",
+                "1",
+                "5",
+                "4",
+                "1",
+                "80",
+                "victoire (7-6, 5-7, 6-3) \u00e0 Calvi\u00e0 2016"
+            ],
+            [
+                "Victoria Azarenka",
+                "1",
+                "5",
+                "4",
+                "1",
+                "80",
+                "victoire (6-3, 6-4) \u00e0 Guadalajara 2023"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Meilleurclassement when the Pourcentagede victoires was equal to 80 and the Joueuse string starts with Ana?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Meilleurclassement when the Confrontations was equal to 7 and the Joueuse string starts with Maria?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Meilleurclassement, with Victoires was equal to 4, have Pourcentagede victoires was greater than 80?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Meilleurclassement, with Pourcentagede victoires was greater than 60, have Joueuse string starts with Victoria?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Meilleurclassement, with D\u00e9faites was less than or equal to 3, has the 1st largest Pourcentagede victoires?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Meilleurclassement, with Pourcentagede victoires was less than or equal to 44,4, has the 3rd largest Victoires?",
+                "answers": [
+                    "2",
+                    "1"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Meilleurclassement, with D\u00e9faites was less than 2, has the 1st largest Pourcentagede victoires?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Meilleurclassement had Confrontations was equal to 5?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Meilleurclassement had Confrontations was less than or equal to 5 and D\u00e9faites was greater than or equal to 3?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Meilleurclassement had Pourcentagede victoires was less than 44,4?",
+                "answers": [
+                    "13"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Confrontations when the Victoires was greater than or equal to 2?",
+                "answers": [
+                    "96.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Confrontations when the Pourcentagede victoires was greater than or equal to 20?",
+                "answers": [
+                    "106.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Confrontations when the Pourcentagede victoires was less than 71,4?",
+                "answers": [
+                    "6.19"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    },
+    {
+        "id": "5510922",
+        "title": "Caroline Garcia",
+        "url": "https://fr.wikipedia.org/?curid=5510922",
+        "header": [
+            "#",
+            "Date",
+            "Nom de l'olympiade",
+            "Surface",
+            "R\u00e9sultat",
+            "Partenaire",
+            "Ultimes adversaires",
+            "Score",
+            ""
+        ],
+        "rows": [
+            [
+                "1",
+                "06/08/2016",
+                "Olympic Tennis Event Rio de Janeiro",
+                "Dur ()",
+                "(1/16)",
+                "Kristina Mladenovic",
+                "Misaki Doi Eri Hozumi",
+                "6-0, 0-6, 6-4",
+                "Parcours"
+            ],
+            [
+                "1",
+                "31/07/2021",
+                "Olympic Tennis Event Tokyo",
+                "Dur ()",
+                "(1/16)",
+                "Kristina Mladenovic",
+                "Kiki Bertens Demi Schuurs",
+                "7-6, 5-7, [11-9]",
+                "Parcours"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            0
+        ],
+        "date_columns": {
+            "1": [
+                "2016-06-08T00:00:00",
+                "2021-07-31T00:00:00"
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the # when the Date was before 31/07/2021 and the Nom de l'olympiade string contains Olympic?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the # when the Date was before 31/07/2021 and the Ultimes adversaires string contains Doi?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every #, with Date was before 31/07/2021, have Nom de l'olympiade string starts with Olympic?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every #, with Ultimes adversaires string contains Doi, have Date was before 31/07/2021?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many months had passed between when the Ultimes adversaires was Kiki Bertens Demi Schuurs and when the Ultimes adversaires was Misaki Doi Eri Hozumi?",
+                "answers": [
+                    "61"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many months had passed between when the Score was 7-6, 5-7, [11-9] and when the Score was 6-0, 0-6, 6-4?",
+                "answers": [
+                    "61"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many # had Date was after 06/08/2016?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many # had Date was after 06/08/2016 and Nom de l'olympiade string starts with Olympic?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many # had Nom de l'olympiade string starts with Olympic?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "5510922",
+        "title": "Caroline Garcia",
+        "url": "https://fr.wikipedia.org/?curid=5510922",
+        "header": [
+            "#",
+            "",
+            "",
+            "Tournoi",
+            "Ann\u00e9e",
+            "Surface",
+            "",
+            "Adversaire",
+            "Rang",
+            "Tour",
+            "Score",
+            "Tableau"
+        ],
+        "rows": [
+            [
+                "1",
+                "",
+                "",
+                "Bogota",
+                "2014",
+                "Terre battue",
+                "",
+                "Jelena Jankovi\u0107",
+                "",
+                "Finale",
+                "6-3, 6-4",
+                "Tableau"
+            ],
+            [
+                "2",
+                "",
+                "",
+                "Madrid",
+                "2014",
+                "Terre battue",
+                "",
+                "Angelique Kerber",
+                "",
+                "1/32",
+                "6-3, 2-0",
+                "Tableau"
+            ],
+            [
+                "3",
+                "",
+                "",
+                "Wuhan",
+                "2014",
+                "Dur",
+                "",
+                "Agnieszka Radwa\u0144ska",
+                "",
+                "1/8",
+                "3-6, 7-6, 7-6",
+                "Tableau"
+            ],
+            [
+                "4",
+                "",
+                "",
+                "Monterrey",
+                "2015",
+                "Dur",
+                "",
+                "Ana Ivanovi\u0107",
+                "",
+                "1/2",
+                "6-1, 6-4",
+                "Tableau"
+            ],
+            [
+                "5",
+                "",
+                "",
+                "Indian Wells",
+                "2015",
+                "Dur",
+                "",
+                "Ana Ivanovi\u0107",
+                "",
+                "1/16",
+                "6-2, 5-7, 6-2",
+                "Tableau"
+            ],
+            [
+                "6",
+                "",
+                "",
+                "Stuttgart",
+                "2015",
+                "Terre battue (int.)",
+                "",
+                "Ana Ivanovi\u0107",
+                "",
+                "1/16",
+                "7-6, 6-4",
+                "Tableau"
+            ],
+            [
+                "7",
+                "",
+                "",
+                "Cincinnati",
+                "2015",
+                "Dur",
+                "",
+                "Petra Kvitov\u00e1",
+                "",
+                "1/16",
+                "7-5, 4-6, 6-2",
+                "Tableau"
+            ],
+            [
+                "8",
+                "",
+                "",
+                "Fed Cup",
+                "2016",
+                "Dur (int.)",
+                "",
+                "Karol\u00edna Pl\u00ed\u0161kov\u00e1",
+                "",
+                "Finale",
+                "6-3, 3-6, 6-3",
+                "Tableau"
+            ],
+            [
+                "9",
+                "",
+                "",
+                "Wuhan",
+                "2017",
+                "Dur",
+                "",
+                "Dominika Cibulkov\u00e1",
+                "",
+                "1/8",
+                "6-3, 7-5",
+                "Tableau"
+            ],
+            [
+                "10",
+                "",
+                "",
+                "P\u00e9kin",
+                "2017",
+                "Dur",
+                "",
+                "Elina Svitolina",
+                "",
+                "1/4",
+                "6-7, 7-5, 7-6",
+                "Tableau"
+            ],
+            [
+                "11",
+                "",
+                "",
+                "P\u00e9kin",
+                "2017",
+                "Dur",
+                "",
+                "Simona Halep",
+                "",
+                "Finale",
+                "6-4, 7-6",
+                "Tableau"
+            ],
+            [
+                "12",
+                "",
+                "",
+                "Masters",
+                "2017",
+                "Dur (int.)",
+                "",
+                "Elina Svitolina",
+                "",
+                "Poules",
+                "6-7, 6-3, 7-5",
+                "Tableau"
+            ],
+            [
+                "13",
+                "",
+                "",
+                "Masters",
+                "2017",
+                "Dur (int.)",
+                "",
+                "Caroline Wozniacki",
+                "",
+                "Poules",
+                "0-6, 6-3, 7-5",
+                "Tableau"
+            ],
+            [
+                "14",
+                "",
+                "",
+                "Stuttgart",
+                "2018",
+                "Terre battue (int.)",
+                "",
+                "Elina Svitolina",
+                "",
+                "1/4",
+                "6-7, 6-4, 6-2",
+                "Tableau"
+            ],
+            [
+                "15",
+                "",
+                "",
+                "Rome",
+                "2018",
+                "Terre battue",
+                "",
+                "Sloane Stephens",
+                "",
+                "1/8",
+                "6-1, 7-6",
+                "Tableau"
+            ],
+            [
+                "16",
+                "",
+                "",
+                "Tianjin",
+                "2018",
+                "Dur",
+                "",
+                "Karol\u00edna Pl\u00ed\u0161kov\u00e1",
+                "",
+                "Finale",
+                "7-6, 6-3",
+                "Tableau"
+            ],
+            [
+                "17",
+                "",
+                "",
+                "US Open",
+                "2020",
+                "Dur",
+                "",
+                "Karol\u00edna Pl\u00ed\u0161kov\u00e1",
+                "",
+                "1/32",
+                "6-1, 7-6",
+                "Tableau"
+            ],
+            [
+                "18",
+                "",
+                "",
+                "Varsovie",
+                "2022",
+                "Terre battue",
+                "",
+                "Iga \u015awi\u0105tek",
+                "",
+                "1/4",
+                "6-1, 1-6, 6-4",
+                "Tableau"
+            ],
+            [
+                "19",
+                "",
+                "",
+                "Cincinnati",
+                "2022",
+                "Dur",
+                "",
+                "Mar\u00eda S\u00e1kkari",
+                "",
+                "1/16",
+                "7-6, 6-7, 6-1",
+                "Tableau"
+            ],
+            [
+                "20",
+                "",
+                "",
+                "Cincinnati",
+                "2022",
+                "Dur",
+                "",
+                "Jessica Pegula",
+                "",
+                "1/4",
+                "6-1, 7-5",
+                "Tableau"
+            ],
+            [
+                "21",
+                "",
+                "",
+                "Cincinnati",
+                "2022",
+                "Dur",
+                "",
+                "Aryna Sabalenka",
+                "",
+                "1/2",
+                "6-2, 4-6, 6-1",
+                "Tableau"
+            ],
+            [
+                "22",
+                "",
+                "",
+                "Masters",
+                "2022",
+                "Dur (int.)",
+                "",
+                "Coco Gauff",
+                "",
+                "RR",
+                "6-4, 6-3",
+                "Tableau"
+            ],
+            [
+                "23",
+                "",
+                "",
+                "Masters",
+                "2022",
+                "Dur (int.)",
+                "",
+                "Daria Kasatkina",
+                "",
+                "RR",
+                "4-6, 6-1, 7-6",
+                "Tableau"
+            ],
+            [
+                "24",
+                "",
+                "",
+                "Masters",
+                "2022",
+                "Dur (int.)",
+                "",
+                "Mar\u00eda S\u00e1kkari",
+                "",
+                "1/2",
+                "6-3, 6-2",
+                "Tableau"
+            ],
+            [
+                "25",
+                "",
+                "",
+                "Masters",
+                "2022",
+                "Dur (int.)",
+                "",
+                "Aryna Sabalenka",
+                "",
+                "Finale",
+                "7-6, 6-4",
+                "Tableau"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            0,
+            4
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the # when the Tableau is Tableau and the Tournoi is Masters?",
+                "answers": [
+                    "12",
+                    "13",
+                    "22",
+                    "23",
+                    "24",
+                    "25"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the # when the Tour is Finale and the Surface string ends with battue?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every #, with Tour is Finale, have Ann\u00e9e was greater than or equal to 2014?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every #, with Ann\u00e9e was greater than 2018, have Tournoi is Cincinnati?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which #, with Tableau is Tableau, has the 3rd largest Ann\u00e9e?",
+                "answers": [
+                    "18",
+                    "19",
+                    "20",
+                    "21",
+                    "22",
+                    "23",
+                    "24",
+                    "25"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which #, with Tableau is Tableau, has the 17th largest Ann\u00e9e?",
+                "answers": [
+                    "9",
+                    "10",
+                    "11",
+                    "12",
+                    "13"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which #, with Tableau is Tableau, has the 19th largest Ann\u00e9e?",
+                "answers": [
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many # had Tournoi is Wuhan?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many # had Tableau is Tableau?",
+                "answers": [
+                    "25"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many # had Ann\u00e9e was greater than or equal to 2015 and Adversaire string contains Ana?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Ann\u00e9e when the Tableau is Tableau?",
+                "answers": [
+                    "50453.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Ann\u00e9e when the Tournoi is Masters?",
+                "answers": [
+                    "2020.33"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    },
+    {
+        "id": "5510922",
+        "title": "Caroline Garcia",
+        "url": "https://fr.wikipedia.org/?curid=5510922",
+        "header": [
+            "#",
+            "Date",
+            "Lieu",
+            "Surface",
+            "Gagnante(s)",
+            "Perdante(s)",
+            "Score",
+            ""
+        ],
+        "rows": [
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2013 -  Barrage (groupe mondial II) - France - Kazakhstan -",
+                "2013 -  Barrage (groupe mondial II) - France - Kazakhstan -",
+                "2013 -  Barrage (groupe mondial II) - France - Kazakhstan -",
+                "2013 -  Barrage (groupe mondial II) - France - Kazakhstan -",
+                "2013 -  Barrage (groupe mondial II) - France - Kazakhstan -",
+                "2013 -  Barrage (groupe mondial II) - France - Kazakhstan -",
+                "2013 -  Barrage (groupe mondial II) - France - Kazakhstan -",
+                "2013 -  Barrage (groupe mondial II) - France - Kazakhstan -"
+            ],
+            [
+                "1",
+                "20/04/2013",
+                "Besan\u00e7on",
+                "Dur ()",
+                "Caroline Garcia Kristina Mladenovic",
+                "Sesil Karatantcheva Galina Voskoboeva",
+                "6-2, 7-5",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2014 -  Barrage (groupe mondial I) - \u00c9tats-Unis - France -",
+                "2014 -  Barrage (groupe mondial I) - \u00c9tats-Unis - France -",
+                "2014 -  Barrage (groupe mondial I) - \u00c9tats-Unis - France -",
+                "2014 -  Barrage (groupe mondial I) - \u00c9tats-Unis - France -",
+                "2014 -  Barrage (groupe mondial I) - \u00c9tats-Unis - France -",
+                "2014 -  Barrage (groupe mondial I) - \u00c9tats-Unis - France -",
+                "2014 -  Barrage (groupe mondial I) - \u00c9tats-Unis - France -",
+                "2014 -  Barrage (groupe mondial I) - \u00c9tats-Unis - France -"
+            ],
+            [
+                "2",
+                "19/04/2014",
+                "St Louis",
+                "Dur ()",
+                "Caroline Garcia",
+                "Sloane Stephens",
+                "6-3, 6-2",
+                "Parcours"
+            ],
+            [
+                "2",
+                "19/04/2014",
+                "St Louis",
+                "Dur ()",
+                "Caroline Garcia",
+                "Madison Keys",
+                "6-4, 6-3",
+                "Parcours"
+            ],
+            [
+                "2",
+                "19/04/2014",
+                "St Louis",
+                "Dur ()",
+                "Caroline Garcia Virginie Razzano",
+                "Madison Keys Sloane Stephens",
+                "6-2, 7-5",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2015 -  (groupe mondial) - Italie - France -",
+                "2015 -  (groupe mondial) - Italie - France -",
+                "2015 -  (groupe mondial) - Italie - France -",
+                "2015 -  (groupe mondial) - Italie - France -",
+                "2015 -  (groupe mondial) - Italie - France -",
+                "2015 -  (groupe mondial) - Italie - France -",
+                "2015 -  (groupe mondial) - Italie - France -",
+                "2015 -  (groupe mondial) - Italie - France -"
+            ],
+            [
+                "3",
+                "07/02/2015",
+                "G\u00eanes",
+                "Terre ()",
+                "Sara Errani",
+                "Caroline Garcia",
+                "7-6, 7-5",
+                "Parcours"
+            ],
+            [
+                "3",
+                "07/02/2015",
+                "G\u00eanes",
+                "Terre ()",
+                "Caroline Garcia",
+                "Camila Giorgi",
+                "4-6, 6-0, 6-2",
+                "Parcours"
+            ],
+            [
+                "3",
+                "07/02/2015",
+                "G\u00eanes",
+                "Terre ()",
+                "Caroline Garcia Kristina Mladenovic",
+                "Sara Errani Roberta Vinci",
+                "6-1, 6-2",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2015 - 1/2 finale (groupe mondial) - R\u00e9publique tch\u00e8que - France -",
+                "2015 - 1/2 finale (groupe mondial) - R\u00e9publique tch\u00e8que - France -",
+                "2015 - 1/2 finale (groupe mondial) - R\u00e9publique tch\u00e8que - France -",
+                "2015 - 1/2 finale (groupe mondial) - R\u00e9publique tch\u00e8que - France -",
+                "2015 - 1/2 finale (groupe mondial) - R\u00e9publique tch\u00e8que - France -",
+                "2015 - 1/2 finale (groupe mondial) - R\u00e9publique tch\u00e8que - France -",
+                "2015 - 1/2 finale (groupe mondial) - R\u00e9publique tch\u00e8que - France -",
+                "2015 - 1/2 finale (groupe mondial) - R\u00e9publique tch\u00e8que - France -"
+            ],
+            [
+                "4",
+                "18/04/2015",
+                "Ostrava",
+                "Dur ()",
+                "Lucie \u0160af\u00e1\u0159ov\u00e1",
+                "Caroline Garcia",
+                "4-6, 7-6, 6-1",
+                "Parcours"
+            ],
+            [
+                "4",
+                "18/04/2015",
+                "Ostrava",
+                "Dur ()",
+                "Petra Kvitov\u00e1",
+                "Caroline Garcia",
+                "6-4, 6-4",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2016 -  (groupe mondial) - France - Italie -",
+                "2016 -  (groupe mondial) - France - Italie -",
+                "2016 -  (groupe mondial) - France - Italie -",
+                "2016 -  (groupe mondial) - France - Italie -",
+                "2016 -  (groupe mondial) - France - Italie -",
+                "2016 -  (groupe mondial) - France - Italie -",
+                "2016 -  (groupe mondial) - France - Italie -",
+                "2016 -  (groupe mondial) - France - Italie -"
+            ],
+            [
+                "5",
+                "06/02/2016",
+                "Marseille",
+                "Dur ()",
+                "Caroline Garcia",
+                "Sara Errani",
+                "6-3, 7-5",
+                "Parcours"
+            ],
+            [
+                "5",
+                "06/02/2016",
+                "Marseille",
+                "Dur ()",
+                "Caroline Garcia",
+                "Camila Giorgi",
+                "6-3, 6-4",
+                "Parcours"
+            ],
+            [
+                "5",
+                "06/02/2016",
+                "Marseille",
+                "Dur ()",
+                "Caroline Garcia Kristina Mladenovic",
+                "Martina Caregaro Sara Errani",
+                "6-0, 6-1",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2016 - 1/2 finale (groupe mondial) - France - Pays-Bas -",
+                "2016 - 1/2 finale (groupe mondial) - France - Pays-Bas -",
+                "2016 - 1/2 finale (groupe mondial) - France - Pays-Bas -",
+                "2016 - 1/2 finale (groupe mondial) - France - Pays-Bas -",
+                "2016 - 1/2 finale (groupe mondial) - France - Pays-Bas -",
+                "2016 - 1/2 finale (groupe mondial) - France - Pays-Bas -",
+                "2016 - 1/2 finale (groupe mondial) - France - Pays-Bas -",
+                "2016 - 1/2 finale (groupe mondial) - France - Pays-Bas -"
+            ],
+            [
+                "6",
+                "16/04/2016",
+                "Tr\u00e9laz\u00e9",
+                "Terre ()",
+                "Kiki Bertens",
+                "Caroline Garcia",
+                "6-4, 6-2",
+                "Parcours"
+            ],
+            [
+                "6",
+                "16/04/2016",
+                "Tr\u00e9laz\u00e9",
+                "Terre ()",
+                "Caroline Garcia",
+                "Arantxa Rus",
+                "6-3, 6-4",
+                "Parcours"
+            ],
+            [
+                "6",
+                "16/04/2016",
+                "Tr\u00e9laz\u00e9",
+                "Terre ()",
+                "Caroline Garcia Kristina Mladenovic",
+                "Kiki Bertens Rich\u00e8l Hogenkamp",
+                "4-6, 6-3, 6-3",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2016 - Finale (groupe mondial) - France - R\u00e9publique tch\u00e8que -",
+                "2016 - Finale (groupe mondial) - France - R\u00e9publique tch\u00e8que -",
+                "2016 - Finale (groupe mondial) - France - R\u00e9publique tch\u00e8que -",
+                "2016 - Finale (groupe mondial) - France - R\u00e9publique tch\u00e8que -",
+                "2016 - Finale (groupe mondial) - France - R\u00e9publique tch\u00e8que -",
+                "2016 - Finale (groupe mondial) - France - R\u00e9publique tch\u00e8que -",
+                "2016 - Finale (groupe mondial) - France - R\u00e9publique tch\u00e8que -",
+                "2016 - Finale (groupe mondial) - France - R\u00e9publique tch\u00e8que -"
+            ],
+            [
+                "7",
+                "12/11/2016",
+                "Strasbourg",
+                "Dur ()",
+                "Caroline Garcia",
+                "Petra Kvitov\u00e1",
+                "7-6, 6-3",
+                "Parcours"
+            ],
+            [
+                "7",
+                "12/11/2016",
+                "Strasbourg",
+                "Dur ()",
+                "Caroline Garcia",
+                "Karol\u00edna Pl\u00ed\u0161kov\u00e1",
+                "6-3, 3-6, 6-3",
+                "Parcours"
+            ],
+            [
+                "7",
+                "12/11/2016",
+                "Strasbourg",
+                "Dur ()",
+                "Karol\u00edna Pl\u00ed\u0161kov\u00e1 Barbora Str\u00fdcov\u00e1",
+                "Caroline Garcia Kristina Mladenovic",
+                "7-5, 7-5",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2019 - 1/4 de finale (groupe mondial) - Belgique - France -",
+                "2019 - 1/4 de finale (groupe mondial) - Belgique - France -",
+                "2019 - 1/4 de finale (groupe mondial) - Belgique - France -",
+                "2019 - 1/4 de finale (groupe mondial) - Belgique - France -",
+                "2019 - 1/4 de finale (groupe mondial) - Belgique - France -",
+                "2019 - 1/4 de finale (groupe mondial) - Belgique - France -",
+                "2019 - 1/4 de finale (groupe mondial) - Belgique - France -",
+                "2019 - 1/4 de finale (groupe mondial) - Belgique - France -"
+            ],
+            [
+                "8",
+                "09/02/2019",
+                "Li\u00e8ge",
+                "Dur ()",
+                "Caroline Garcia",
+                "Alison Van Uytvanck",
+                "7-6, 4-6, 6-2",
+                "Parcours"
+            ],
+            [
+                "8",
+                "09/02/2019",
+                "Li\u00e8ge",
+                "Dur ()",
+                "Caroline Garcia",
+                "Elise Mertens",
+                "6-2, 6-3",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2019 - 1/2 finale (groupe mondial) - France - Roumanie -",
+                "2019 - 1/2 finale (groupe mondial) - France - Roumanie -",
+                "2019 - 1/2 finale (groupe mondial) - France - Roumanie -",
+                "2019 - 1/2 finale (groupe mondial) - France - Roumanie -",
+                "2019 - 1/2 finale (groupe mondial) - France - Roumanie -",
+                "2019 - 1/2 finale (groupe mondial) - France - Roumanie -",
+                "2019 - 1/2 finale (groupe mondial) - France - Roumanie -",
+                "2019 - 1/2 finale (groupe mondial) - France - Roumanie -"
+            ],
+            [
+                "9",
+                "20/04/2019",
+                "Rouen",
+                "Terre battue ()",
+                "Caroline Garcia",
+                "Mihaela Buz\u0103rnescu",
+                "6-3, 6-3",
+                "Parcours"
+            ],
+            [
+                "9",
+                "20/04/2019",
+                "Rouen",
+                "Terre battue ()",
+                "Simona Halep",
+                "Caroline Garcia",
+                "6-7, 6-3, 6-4",
+                "Parcours"
+            ],
+            [
+                "9",
+                "20/04/2019",
+                "Rouen",
+                "Terre battue ()",
+                "Caroline Garcia Kristina Mladenovic",
+                "Simona Halep Monica Niculescu",
+                "5-7, 6-2, 6-4",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2019 - Finale (groupe mondial) - France - Australie -",
+                "2019 - Finale (groupe mondial) - France - Australie -",
+                "2019 - Finale (groupe mondial) - France - Australie -",
+                "2019 - Finale (groupe mondial) - France - Australie -",
+                "2019 - Finale (groupe mondial) - France - Australie -",
+                "2019 - Finale (groupe mondial) - France - Australie -",
+                "2019 - Finale (groupe mondial) - France - Australie -",
+                "2019 - Finale (groupe mondial) - France - Australie -"
+            ],
+            [
+                "10",
+                "09/10/2019",
+                "Perth",
+                "Dur ()",
+                "Ashleigh Barty",
+                "Caroline Garcia",
+                "6-0, 6-0",
+                "Parcours"
+            ],
+            [
+                "10",
+                "09/10/2019",
+                "Perth",
+                "Dur ()",
+                "Caroline Garcia Kristina Mladenovic",
+                "Ashleigh Barty Samantha Stosur",
+                "6-4, 6-3",
+                "Parcours"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": -1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the  when the # is 7 and the Lieu is Strasbourg?",
+                "answers": [
+                    "Parcours"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the  when the Date string contains France and the Lieu string contains Finale?",
+                "answers": [
+                    "2016 - Finale (groupe mondial) - France - R\u00e9publique tch\u00e8que -",
+                    "2019 - Finale (groupe mondial) - France - Australie -"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only , with Perdante(s) string contains Caroline, have Lieu is Perth?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only , with Perdante(s) string starts with Caroline, have # is 10?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many  had Gagnante(s) string starts with Caroline?",
+                "answers": [
+                    "18"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many  had # is 5?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many  had Perdante(s) string starts with Caroline?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

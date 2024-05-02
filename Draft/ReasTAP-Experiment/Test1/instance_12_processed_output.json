@@ -1,0 +1,1338 @@
+[
+    {
+        "id": "1905669",
+        "title": "Andrea Petkovic",
+        "url": "https://fr.wikipedia.org/?curid=1905669",
+        "header": [
+            "#",
+            "Rang",
+            "",
+            "Tournoi",
+            "Ann\u00e9e",
+            "Surface",
+            "",
+            "Adversaire",
+            "Rang",
+            "Tour",
+            "Score",
+            "Tableau"
+        ],
+        "rows": [
+            [
+                "1",
+                "",
+                "",
+                "Tokyo",
+                "2009",
+                "Dur",
+                "",
+                "Svetlana Kuznetsova",
+                "",
+                "1/16",
+                "7-5, 4-6, 6-3",
+                "Tableau"
+            ],
+            [
+                "2",
+                "",
+                "",
+                "Open d'Australie",
+                "2011",
+                "Dur",
+                "",
+                "Venus Williams",
+                "",
+                "1/16",
+                "1-0",
+                "Tableau"
+            ],
+            [
+                "3",
+                "",
+                "",
+                "Miami",
+                "2011",
+                "Dur",
+                "",
+                "Caroline Wozniacki",
+                "",
+                "1/8",
+                "7-5, 3-6, 6-3",
+                "Tableau"
+            ],
+            [
+                "4",
+                "",
+                "",
+                "Miami",
+                "2011",
+                "Dur",
+                "",
+                "Jelena Jankovi\u0107",
+                "",
+                "1/4",
+                "2-6, 6-2, 6-4",
+                "Tableau"
+            ],
+            [
+                "5",
+                "",
+                "",
+                "Stuttgart",
+                "2011",
+                "Terre battue (int.)",
+                "",
+                "Jelena Jankovi\u0107",
+                "",
+                "1/8",
+                "3-6, 6-1, 6-3",
+                "Tableau"
+            ],
+            [
+                "6",
+                "",
+                "",
+                "Toronto",
+                "2011",
+                "Dur",
+                "",
+                "Petra Kvitov\u00e1",
+                "",
+                "1/8",
+                "6-1, 6-2",
+                "Tableau"
+            ],
+            [
+                "7",
+                "",
+                "",
+                "Cincinnati",
+                "2011",
+                "Dur",
+                "",
+                "Petra Kvitov\u00e1",
+                "",
+                "1/8",
+                "6-3, 6-3",
+                "Tableau"
+            ],
+            [
+                "8",
+                "",
+                "",
+                "P\u00e9kin",
+                "2011",
+                "Dur",
+                "",
+                "Marion Bartoli",
+                "",
+                "1/8",
+                "4-6, 6-4, 7-5",
+                "Tableau"
+            ],
+            [
+                "9",
+                "",
+                "",
+                "P\u00e9kin",
+                "2013",
+                "Dur",
+                "",
+                "Victoria Azarenka",
+                "",
+                "1/32",
+                "6-4, 2-6, 6-4",
+                "Tableau"
+            ],
+            [
+                "10",
+                "",
+                "",
+                "Miami",
+                "2015",
+                "Dur",
+                "",
+                "Ekaterina Makarova",
+                "",
+                "1/8",
+                "6-1, 7-5",
+                "Tableau"
+            ],
+            [
+                "11",
+                "",
+                "",
+                "Doha",
+                "2016",
+                "Dur",
+                "",
+                "Garbi\u00f1e Muguruza",
+                "",
+                "1/4",
+                "6-1, 5-7, 6-2",
+                "Tableau"
+            ],
+            [
+                "12",
+                "",
+                "",
+                "Washington",
+                "2018",
+                "Dur",
+                "",
+                "Sloane Stephens",
+                "",
+                "1/8",
+                "2-6, 6-4, 6-2",
+                "Tableau"
+            ],
+            [
+                "13",
+                "",
+                "",
+                "Linz",
+                "2018",
+                "Dur (int.)",
+                "",
+                "Julia G\u00f6rges",
+                "",
+                "1/16",
+                "1-6, 7-5, 6-4",
+                "Tableau"
+            ],
+            [
+                "14",
+                "",
+                "",
+                "US Open",
+                "2019",
+                "Dur",
+                "",
+                "Petra Kvitov\u00e1",
+                "",
+                "1/32",
+                "6-4, 6-4",
+                "Tableau"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            0,
+            4
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the # when the Adversaire string starts with Victoria and the Ann\u00e9e was greater than or equal to 2011?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the # when the Ann\u00e9e was less than 2015 and the Tournoi is Toronto?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only #, with Ann\u00e9e was less than 2011, have Tableau is Tableau?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every #, with Ann\u00e9e was greater than or equal to 2011, have Tournoi is Linz?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which #, with Tableau is Tableau, has the 14th largest Ann\u00e9e?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which #, with Tournoi is Miami, has the 2nd largest Ann\u00e9e?",
+                "answers": [
+                    "3",
+                    "4"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many # had Tableau is Tableau?",
+                "answers": [
+                    "14"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many # had Ann\u00e9e was greater than or equal to 2011?",
+                "answers": [
+                    "13"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Ann\u00e9e when the Tableau is Tableau?",
+                "answers": [
+                    "28185.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Ann\u00e9e when the Tableau is Tableau?",
+                "answers": [
+                    "2013.21"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    },
+    {
+        "id": "1905669",
+        "title": "Andrea Petkovic",
+        "url": "https://fr.wikipedia.org/?curid=1905669",
+        "header": [
+            "#",
+            "Date",
+            "Lieu",
+            "Surface",
+            "Gagnante(s)",
+            "Perdante(s)",
+            "Score",
+            ""
+        ],
+        "rows": [
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2007 -  (groupe mondial II) - Allemagne - Croatie -",
+                "2007 -  (groupe mondial II) - Allemagne - Croatie -",
+                "2007 -  (groupe mondial II) - Allemagne - Croatie -",
+                "2007 -  (groupe mondial II) - Allemagne - Croatie -",
+                "2007 -  (groupe mondial II) - Allemagne - Croatie -",
+                "2007 -  (groupe mondial II) - Allemagne - Croatie -",
+                "2007 -  (groupe mondial II) - Allemagne - Croatie -",
+                "2007 -  (groupe mondial II) - Allemagne - Croatie -"
+            ],
+            [
+                "1",
+                "21/04/2007",
+                "F\u00fcrth",
+                "Terre ()",
+                "Tatjana Malek Andrea Petkovic",
+                "Jelena Kostani\u0107 Sanja Ancic",
+                "6-3, 6-7, 6-3",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2010 - 1/4 de finale (groupe mondial) - R\u00e9publique tch\u00e8que - Allemagne -",
+                "2010 - 1/4 de finale (groupe mondial) - R\u00e9publique tch\u00e8que - Allemagne -",
+                "2010 - 1/4 de finale (groupe mondial) - R\u00e9publique tch\u00e8que - Allemagne -",
+                "2010 - 1/4 de finale (groupe mondial) - R\u00e9publique tch\u00e8que - Allemagne -",
+                "2010 - 1/4 de finale (groupe mondial) - R\u00e9publique tch\u00e8que - Allemagne -",
+                "2010 - 1/4 de finale (groupe mondial) - R\u00e9publique tch\u00e8que - Allemagne -",
+                "2010 - 1/4 de finale (groupe mondial) - R\u00e9publique tch\u00e8que - Allemagne -",
+                "2010 - 1/4 de finale (groupe mondial) - R\u00e9publique tch\u00e8que - Allemagne -"
+            ],
+            [
+                "2",
+                "06/02/2010",
+                "Brno",
+                "Dur ()",
+                "Petra Kvitov\u00e1",
+                "Andrea Petkovic",
+                "6-4, 6-4",
+                "Parcours"
+            ],
+            [
+                "2",
+                "06/02/2010",
+                "Brno",
+                "Dur ()",
+                "Lucie Hradeck\u00e1",
+                "Andrea Petkovic",
+                "6-1, 7-6",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2010 -  Barrage (groupe mondial I) - Allemagne - France -",
+                "2010 -  Barrage (groupe mondial I) - Allemagne - France -",
+                "2010 -  Barrage (groupe mondial I) - Allemagne - France -",
+                "2010 -  Barrage (groupe mondial I) - Allemagne - France -",
+                "2010 -  Barrage (groupe mondial I) - Allemagne - France -",
+                "2010 -  Barrage (groupe mondial I) - Allemagne - France -",
+                "2010 -  Barrage (groupe mondial I) - Allemagne - France -",
+                "2010 -  Barrage (groupe mondial I) - Allemagne - France -"
+            ],
+            [
+                "3",
+                "24/04/2010",
+                "Francfort",
+                "Terre ()",
+                "Andrea Petkovic",
+                "Pauline Parmentier",
+                "6-3, 6-2",
+                "Parcours"
+            ],
+            [
+                "3",
+                "24/04/2010",
+                "Francfort",
+                "Terre ()",
+                "Andrea Petkovic",
+                "Aravane Reza\u00ef",
+                "6-1, 7-6",
+                "Parcours"
+            ],
+            [
+                "3",
+                "24/04/2010",
+                "Francfort",
+                "Terre ()",
+                "Julie Coin Aliz\u00e9 Cornet",
+                "Kristina Barrois Andrea Petkovic",
+                "6-3, 6-1",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2011 -  (groupe mondial II) - Slov\u00e9nie - Allemagne -",
+                "2011 -  (groupe mondial II) - Slov\u00e9nie - Allemagne -",
+                "2011 -  (groupe mondial II) - Slov\u00e9nie - Allemagne -",
+                "2011 -  (groupe mondial II) - Slov\u00e9nie - Allemagne -",
+                "2011 -  (groupe mondial II) - Slov\u00e9nie - Allemagne -",
+                "2011 -  (groupe mondial II) - Slov\u00e9nie - Allemagne -",
+                "2011 -  (groupe mondial II) - Slov\u00e9nie - Allemagne -",
+                "2011 -  (groupe mondial II) - Slov\u00e9nie - Allemagne -"
+            ],
+            [
+                "4",
+                "05/02/2011",
+                "Maribor",
+                "Terre ()",
+                "Andrea Petkovic",
+                "Ma\u0161a Zec Pe\u0161kiri\u010d",
+                "6-3, 6-4",
+                "Parcours"
+            ],
+            [
+                "4",
+                "05/02/2011",
+                "Maribor",
+                "Terre ()",
+                "Andrea Petkovic",
+                "Polona Hercog",
+                "6-1, 6-2",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2011 -  Barrage (groupe mondial I) - Allemagne - \u00c9tats-Unis -",
+                "2011 -  Barrage (groupe mondial I) - Allemagne - \u00c9tats-Unis -",
+                "2011 -  Barrage (groupe mondial I) - Allemagne - \u00c9tats-Unis -",
+                "2011 -  Barrage (groupe mondial I) - Allemagne - \u00c9tats-Unis -",
+                "2011 -  Barrage (groupe mondial I) - Allemagne - \u00c9tats-Unis -",
+                "2011 -  Barrage (groupe mondial I) - Allemagne - \u00c9tats-Unis -",
+                "2011 -  Barrage (groupe mondial I) - Allemagne - \u00c9tats-Unis -",
+                "2011 -  Barrage (groupe mondial I) - Allemagne - \u00c9tats-Unis -"
+            ],
+            [
+                "5",
+                "16/04/2011",
+                "Stuttgart",
+                "Terre ()",
+                "Andrea Petkovic",
+                "Christina McHale",
+                "6-3, 6-4",
+                "Parcours"
+            ],
+            [
+                "5",
+                "16/04/2011",
+                "Stuttgart",
+                "Terre ()",
+                "Andrea Petkovic",
+                "Melanie Oudin",
+                "6-2, 6-3",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2012 -  Barrage (groupe mondial I) - Allemagne - Australie -",
+                "2012 -  Barrage (groupe mondial I) - Allemagne - Australie -",
+                "2012 -  Barrage (groupe mondial I) - Allemagne - Australie -",
+                "2012 -  Barrage (groupe mondial I) - Allemagne - Australie -",
+                "2012 -  Barrage (groupe mondial I) - Allemagne - Australie -",
+                "2012 -  Barrage (groupe mondial I) - Allemagne - Australie -",
+                "2012 -  Barrage (groupe mondial I) - Allemagne - Australie -",
+                "2012 -  Barrage (groupe mondial I) - Allemagne - Australie -"
+            ],
+            [
+                "6",
+                "21/04/2012",
+                "Stuttgart",
+                "Terre ()",
+                "Samantha Stosur",
+                "Andrea Petkovic",
+                "6-4, 6-1",
+                "Parcours"
+            ],
+            [
+                "6",
+                "21/04/2012",
+                "Stuttgart",
+                "Terre ()",
+                "Julia G\u00f6rges Andrea Petkovic",
+                "Casey Dellacqua Jarmila Gajdo\u0161ov\u00e1",
+                "6-3, 6-4",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2014 -  (groupe mondial) - Slovaquie - Allemagne -",
+                "2014 -  (groupe mondial) - Slovaquie - Allemagne -",
+                "2014 -  (groupe mondial) - Slovaquie - Allemagne -",
+                "2014 -  (groupe mondial) - Slovaquie - Allemagne -",
+                "2014 -  (groupe mondial) - Slovaquie - Allemagne -",
+                "2014 -  (groupe mondial) - Slovaquie - Allemagne -",
+                "2014 -  (groupe mondial) - Slovaquie - Allemagne -",
+                "2014 -  (groupe mondial) - Slovaquie - Allemagne -"
+            ],
+            [
+                "7",
+                "08/02/2014",
+                "Bratislava",
+                "Dur ()",
+                "Andrea Petkovic",
+                "Dominika Cibulkov\u00e1",
+                "2-6, 7-6, 6-2",
+                "Parcours"
+            ],
+            [
+                "7",
+                "08/02/2014",
+                "Bratislava",
+                "Dur ()",
+                "Daniela Hantuchov\u00e1",
+                "Andrea Petkovic",
+                "Non disput\u00e9",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2014 - 1/2 finale (groupe mondial) - Australie - Allemagne -",
+                "2014 - 1/2 finale (groupe mondial) - Australie - Allemagne -",
+                "2014 - 1/2 finale (groupe mondial) - Australie - Allemagne -",
+                "2014 - 1/2 finale (groupe mondial) - Australie - Allemagne -",
+                "2014 - 1/2 finale (groupe mondial) - Australie - Allemagne -",
+                "2014 - 1/2 finale (groupe mondial) - Australie - Allemagne -",
+                "2014 - 1/2 finale (groupe mondial) - Australie - Allemagne -",
+                "2014 - 1/2 finale (groupe mondial) - Australie - Allemagne -"
+            ],
+            [
+                "8",
+                "19/04/2014",
+                "Brisbane",
+                "Dur ()",
+                "Andrea Petkovic",
+                "Samantha Stosur",
+                "6-1, 7-6",
+                "Parcours"
+            ],
+            [
+                "8",
+                "19/04/2014",
+                "Brisbane",
+                "Dur ()",
+                "Casey Dellacqua",
+                "Andrea Petkovic",
+                "Non disput\u00e9",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2014 - Finale (groupe mondial) - R\u00e9publique tch\u00e8que - Allemagne -",
+                "2014 - Finale (groupe mondial) - R\u00e9publique tch\u00e8que - Allemagne -",
+                "2014 - Finale (groupe mondial) - R\u00e9publique tch\u00e8que - Allemagne -",
+                "2014 - Finale (groupe mondial) - R\u00e9publique tch\u00e8que - Allemagne -",
+                "2014 - Finale (groupe mondial) - R\u00e9publique tch\u00e8que - Allemagne -",
+                "2014 - Finale (groupe mondial) - R\u00e9publique tch\u00e8que - Allemagne -",
+                "2014 - Finale (groupe mondial) - R\u00e9publique tch\u00e8que - Allemagne -",
+                "2014 - Finale (groupe mondial) - R\u00e9publique tch\u00e8que - Allemagne -"
+            ],
+            [
+                "9",
+                "08/11/2014",
+                "Prague",
+                "Dur ()",
+                "Petra Kvitov\u00e1",
+                "Andrea Petkovic",
+                "6-2, 6-4",
+                "Parcours"
+            ],
+            [
+                "9",
+                "08/11/2014",
+                "Prague",
+                "Dur ()",
+                "Lucie \u0160af\u00e1\u0159ov\u00e1",
+                "Andrea Petkovic",
+                "Non disput\u00e9",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2015 -  (groupe mondial) - Allemagne - Australie -",
+                "2015 -  (groupe mondial) - Allemagne - Australie -",
+                "2015 -  (groupe mondial) - Allemagne - Australie -",
+                "2015 -  (groupe mondial) - Allemagne - Australie -",
+                "2015 -  (groupe mondial) - Allemagne - Australie -",
+                "2015 -  (groupe mondial) - Allemagne - Australie -",
+                "2015 -  (groupe mondial) - Allemagne - Australie -",
+                "2015 -  (groupe mondial) - Allemagne - Australie -"
+            ],
+            [
+                "10",
+                "07/02/2015",
+                "Stuttgart",
+                "Dur ()",
+                "Andrea Petkovic",
+                "Samantha Stosur",
+                "6-4, 3-6, 12-10",
+                "Parcours"
+            ],
+            [
+                "10",
+                "07/02/2015",
+                "Stuttgart",
+                "Dur ()",
+                "Andrea Petkovic",
+                "Jarmila Gajdo\u0161ov\u00e1",
+                "6-3, 3-6, 8-6",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2015 - 1/2 finale (groupe mondial) - Russie - Allemagne -",
+                "2015 - 1/2 finale (groupe mondial) - Russie - Allemagne -",
+                "2015 - 1/2 finale (groupe mondial) - Russie - Allemagne -",
+                "2015 - 1/2 finale (groupe mondial) - Russie - Allemagne -",
+                "2015 - 1/2 finale (groupe mondial) - Russie - Allemagne -",
+                "2015 - 1/2 finale (groupe mondial) - Russie - Allemagne -",
+                "2015 - 1/2 finale (groupe mondial) - Russie - Allemagne -",
+                "2015 - 1/2 finale (groupe mondial) - Russie - Allemagne -"
+            ],
+            [
+                "11",
+                "18/04/2015",
+                "Sotchi",
+                "Terre ()",
+                "Andrea Petkovic",
+                "Svetlana Kuznetsova",
+                "6-2, 6-1",
+                "Parcours"
+            ],
+            [
+                "11",
+                "18/04/2015",
+                "Sotchi",
+                "Terre ()",
+                "A. Pavlyuchenkova Elena Vesnina",
+                "Sabine Lisicki Andrea Petkovic",
+                "6-2, 6-3",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2016 -  (groupe mondial) - Allemagne - Suisse -",
+                "2016 -  (groupe mondial) - Allemagne - Suisse -",
+                "2016 -  (groupe mondial) - Allemagne - Suisse -",
+                "2016 -  (groupe mondial) - Allemagne - Suisse -",
+                "2016 -  (groupe mondial) - Allemagne - Suisse -",
+                "2016 -  (groupe mondial) - Allemagne - Suisse -",
+                "2016 -  (groupe mondial) - Allemagne - Suisse -",
+                "2016 -  (groupe mondial) - Allemagne - Suisse -"
+            ],
+            [
+                "12",
+                "06/02/2016",
+                "Leipzig",
+                "Dur ()",
+                "Belinda Bencic",
+                "Andrea Petkovic",
+                "6-3, 6-4",
+                "Parcours"
+            ],
+            [
+                "12",
+                "06/02/2016",
+                "Leipzig",
+                "Dur ()",
+                "Belinda Bencic Martina Hingis",
+                "Anna-Lena Gr\u00f6nefeld Andrea Petkovic",
+                "6-3, 6-2",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2016 -  Barrage (groupe mondial I) - Roumanie - Allemagne -",
+                "2016 -  Barrage (groupe mondial I) - Roumanie - Allemagne -",
+                "2016 -  Barrage (groupe mondial I) - Roumanie - Allemagne -",
+                "2016 -  Barrage (groupe mondial I) - Roumanie - Allemagne -",
+                "2016 -  Barrage (groupe mondial I) - Roumanie - Allemagne -",
+                "2016 -  Barrage (groupe mondial I) - Roumanie - Allemagne -",
+                "2016 -  Barrage (groupe mondial I) - Roumanie - Allemagne -",
+                "2016 -  Barrage (groupe mondial I) - Roumanie - Allemagne -"
+            ],
+            [
+                "13",
+                "16/04/2016",
+                "Cluj-Napoca",
+                "Terre ()",
+                "Simona Halep",
+                "Andrea Petkovic",
+                "6-4, 6-7, 6-4",
+                "Parcours"
+            ],
+            [
+                "13",
+                "16/04/2016",
+                "Cluj-Napoca",
+                "Terre ()",
+                "Andrea Petkovic",
+                "Monica Niculescu",
+                "0-6, 7-6, 6-3",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2017 -  (groupe mondial) - \u00c9tats-Unis - Allemagne -",
+                "2017 -  (groupe mondial) - \u00c9tats-Unis - Allemagne -",
+                "2017 -  (groupe mondial) - \u00c9tats-Unis - Allemagne -",
+                "2017 -  (groupe mondial) - \u00c9tats-Unis - Allemagne -",
+                "2017 -  (groupe mondial) - \u00c9tats-Unis - Allemagne -",
+                "2017 -  (groupe mondial) - \u00c9tats-Unis - Allemagne -",
+                "2017 -  (groupe mondial) - \u00c9tats-Unis - Allemagne -",
+                "2017 -  (groupe mondial) - \u00c9tats-Unis - Allemagne -"
+            ],
+            [
+                "14",
+                "11/02/2017",
+                "Maui",
+                "Dur ()",
+                "Alison Riske",
+                "Andrea Petkovic",
+                "7-6, 6-2",
+                "Parcours"
+            ],
+            [
+                "14",
+                "11/02/2017",
+                "Maui",
+                "Dur ()",
+                "Coco Vandeweghe",
+                "Andrea Petkovic",
+                "3-6, 6-4, 6-0",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2019 - 1/4 de finale (groupe mondial) - Allemagne - Bi\u00e9lorussie -",
+                "2019 - 1/4 de finale (groupe mondial) - Allemagne - Bi\u00e9lorussie -",
+                "2019 - 1/4 de finale (groupe mondial) - Allemagne - Bi\u00e9lorussie -",
+                "2019 - 1/4 de finale (groupe mondial) - Allemagne - Bi\u00e9lorussie -",
+                "2019 - 1/4 de finale (groupe mondial) - Allemagne - Bi\u00e9lorussie -",
+                "2019 - 1/4 de finale (groupe mondial) - Allemagne - Bi\u00e9lorussie -",
+                "2019 - 1/4 de finale (groupe mondial) - Allemagne - Bi\u00e9lorussie -",
+                "2019 - 1/4 de finale (groupe mondial) - Allemagne - Bi\u00e9lorussie -"
+            ],
+            [
+                "15",
+                "09/02/2019",
+                "Brunswick",
+                "Dur ()",
+                "Aryna Sabalenka",
+                "Andrea Petkovic",
+                "6-2, 6-1",
+                "Parcours"
+            ],
+            [
+                "15",
+                "09/02/2019",
+                "Brunswick",
+                "Dur ()",
+                "Aliaksandra Sasnovich",
+                "Andrea Petkovic",
+                "Non disput\u00e9",
+                "Parcours"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": -1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the  when the Score string contains Non and the Lieu is Brisbane?",
+                "answers": [
+                    "Parcours"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the  when the # is 2 and the Lieu is Brno?",
+                "answers": [
+                    "Parcours"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only , with # is 7, have Score string contains Non?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every , with # is 12, have Lieu is Leipzig?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many  had Lieu is Bratislava?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "1905669",
+        "title": "Andrea Petkovic",
+        "url": "https://fr.wikipedia.org/?curid=1905669",
+        "header": [
+            "Joueuse",
+            "Meilleurclassement",
+            "Confrontations",
+            "Victoires",
+            "D\u00e9faites",
+            "Pourcentagede victoires",
+            "Derni\u00e8re confrontation"
+        ],
+        "rows": [
+            [
+                "Agnieszka Radwa\u0144ska",
+                "2",
+                "8",
+                "0",
+                "8",
+                "0",
+                "d\u00e9faite (0-6, 1-6) \u00e0 Cincinnati 2016"
+            ],
+            [
+                "Serena Williams",
+                "1",
+                "5",
+                "0",
+                "5",
+                "0",
+                "d\u00e9faite (3-6, 2-6) \u00e0 Toronto 2015"
+            ],
+            [
+                "Simona Halep",
+                "1",
+                "8",
+                "1",
+                "7",
+                "13",
+                "d\u00e9faite (5-7, 0-6) \u00e0 Roland-Garros 2018"
+            ],
+            [
+                "Caroline Wozniacki",
+                "1",
+                "5",
+                "1",
+                "4",
+                "20",
+                "d\u00e9faite (5-7, 1-6) \u00e0 Eastbourne 2015"
+            ],
+            [
+                "Angelique Kerber",
+                "1",
+                "11",
+                "3",
+                "8",
+                "27",
+                "d\u00e9faite (2-6, 1-6) \u00e0 Indian Wells 2018"
+            ],
+            [
+                "Carla Su\u00e1rez Navarro",
+                "6",
+                "7",
+                "2",
+                "5",
+                "29",
+                "d\u00e9faite (6-4, 6-7, 6-7) \u00e0 Birmingham 2016"
+            ],
+            [
+                "Sloane Stephens",
+                "3",
+                "5",
+                "2",
+                "3",
+                "40",
+                "victoire (2-6, 6-4, 6-2) \u00e0 Washington 2018"
+            ],
+            [
+                "Petra Kvitov\u00e1",
+                "2",
+                "10",
+                "5",
+                "5",
+                "50",
+                "victoire (6-3, 4-6, [10-8]) \u00e0 l'Open d'Australie 2018"
+            ],
+            [
+                "Sara Errani",
+                "5",
+                "6",
+                "3",
+                "3",
+                "50",
+                "victoire (6-1, 3-6, 6-4) \u00e0 Eastbourne 2016"
+            ],
+            [
+                "Svetlana Kuznetsova",
+                "2",
+                "7",
+                "4",
+                "3",
+                "57",
+                "d\u00e9faite (2-6, 2-6) \u00e0 San Jos\u00e9 2018"
+            ],
+            [
+                "Caroline Garcia",
+                "6",
+                "5",
+                "3",
+                "2",
+                "60",
+                "victoire (6-1, 6-1) \u00e0 Luxembourg 2016"
+            ],
+            [
+                "Lucie \u0160af\u00e1\u0159ov\u00e1",
+                "5",
+                "8",
+                "5",
+                "3",
+                "63",
+                "victoire (6-1, 6-7, 6-2) \u00e0 Cincinnati 2016"
+            ],
+            [
+                "Marion Bartoli",
+                "7",
+                "6",
+                "4",
+                "2",
+                "67",
+                "victoire (6-3, 4-1 ) \u00e0 Miami 2013"
+            ],
+            [
+                "Dominika Cibulkov\u00e1",
+                "4",
+                "6",
+                "4",
+                "2",
+                "67",
+                "d\u00e9faite (3-6, 6-3, 7-9) \u00e0 Wimbledon 2017"
+            ],
+            [
+                "Flavia Pennetta",
+                "6",
+                "6",
+                "4",
+                "2",
+                "67",
+                "victoire (6-3, 7-5) \u00e0 Madrid 2015"
+            ],
+            [
+                "Jelena Jankovi\u0107",
+                "1",
+                "7",
+                "5",
+                "2",
+                "71",
+                "victoire (6-3, 6-2) \u00e0 Duba\u00ef 2016"
+            ],
+            [
+                "Ekaterina Makarova",
+                "8",
+                "5",
+                "4",
+                "1",
+                "80",
+                "d\u00e9faite (6-3, 4-6, 0-6) \u00e0 Eastbourne 2016"
+            ],
+            [
+                "Eugenie Bouchard",
+                "5",
+                "6",
+                "4",
+                "1",
+                "83",
+                "victoire (6-2, 4-6, 6-0) \u00e0 Washington 2017"
+            ],
+            [
+                "Kristina Mladenovic",
+                "10",
+                "5",
+                "5",
+                "0",
+                "100",
+                "victoire (7-6, 6-2) \u00e0 Roland-Garros 2018"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Meilleurclassement when the D\u00e9faites was less than 4 and the Joueuse string starts with Caroline?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Meilleurclassement when the Joueuse string starts with Angelique and the Victoires was greater than or equal to 3?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Meilleurclassement, with D\u00e9faites was greater than 4, have Pourcentagede victoires was greater than 40?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Meilleurclassement, with Pourcentagede victoires was greater than or equal to 27, have D\u00e9faites was less than or equal to 2?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Meilleurclassement, with Pourcentagede victoires was less than 27, has the 1st largest Victoires?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Meilleurclassement, with D\u00e9faites was less than 2, has the 3rd largest Confrontations?",
+                "answers": [
+                    "8",
+                    "10"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Meilleurclassement, with Victoires was less than 4, has the 3rd largest Pourcentagede victoires?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Meilleurclassement had Victoires was less than 4 and Confrontations was greater than 5?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Meilleurclassement had Victoires was less than 5 and Pourcentagede victoires was greater than or equal to 40?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Meilleurclassement had Confrontations was less than or equal to 7?",
+                "answers": [
+                    "14"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Confrontations when the Pourcentagede victoires was equal to 50?",
+                "answers": [
+                    "8.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Victoires when the Pourcentagede victoires was greater than or equal to 50?",
+                "answers": [
+                    "50.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Confrontations when the D\u00e9faites was less than or equal to 2?",
+                "answers": [
+                    "5.75"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    },
+    {
+        "id": "1905669",
+        "title": "Andrea Petkovic",
+        "url": "https://fr.wikipedia.org/?curid=1905669",
+        "header": [
+            "L\u00e9gende"
+        ],
+        "rows": [
+            [
+                "Grand Chelem"
+            ],
+            [
+                "Premier* / WTA 1000"
+            ],
+            [
+                "Premier / WTA 500"
+            ],
+            [
+                "Intern'l"
+            ],
+            [
+                "Fed Cup"
+            ]
+        ],
+        "column_types": [
+            "string"
+        ],
+        "key_column": -1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": []
+    }
+]
