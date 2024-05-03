@@ -1,56 +1,49 @@
 import os
 import re
-from collections import Counter
+import numpy as np
 
-def parse_markdown_stats(file_path):
-    reasoning_type_counts = Counter()
-    with open(file_path, 'r') as file:
-        content = file.readlines()
-
-    # Enhanced regex to capture reasoning type details correctly from formatted markdown
-    pattern = re.compile(r"- \*\*(.+?)\*\*: Count = (\d+), Percentage = ([\d.]+)%")
+def rank_reasoning_skills(stats_dir):
+    # Prepare the output file for results
+    output_file = os.path.join(stats_dir, "find.md")
     
-    for line in content:
-        match = pattern.search(line.strip())
-        if match:
-            reasoning_type = match.group(1)
-            count = int(match.group(2))
-            reasoning_type_counts[reasoning_type] = count
+    # Open the output file
+    with open(output_file, 'w') as output:
+        output.write("# Ranking of Instances by Reasoning Types and Variance of Percentages\n\n")
+        
+        # Dictionary to store the number of reasoning types and their variances for each file
+        reasoning_stats = {}
 
-    return reasoning_type_counts
+        # Regex patterns to find the number of reasoning types and percentages
+        total_types_pattern = re.compile(r"Total (\d+) unique reasoning types are produced.")
+        percentage_pattern = re.compile(r"Percentage = (\d+\.\d+)%")
+        
+        # Iterate over each markdown file in the directory
+        for filename in os.listdir(stats_dir):
+            if filename.startswith('stats_') and filename.endswith('.md') and not filename.endswith('all.md'):
+                with open(os.path.join(stats_dir, filename), 'r') as file:
+                    content = file.read()
 
-def calculate_diversity_score(reasoning_counts):
-    types_count = len(reasoning_counts)
-    # Calculate balance using entropy-like approach for simplicity
-    if types_count > 0:
-        total = sum(reasoning_counts.values())
-        balance_score = sum((count / total) * ((count / total) * -1) for count in reasoning_counts.values())
-        balance_score = -balance_score  # Normalize the balance score
-    else:
-        balance_score = 0  # No types found
+                    total_match = total_types_pattern.search(content)
+                    if total_match:
+                        num_types = int(total_match.group(1))
+                        percentages = [float(match.group(1)) for match in percentage_pattern.finditer(content)]
+                        
+                        # Calculate variance of the reasoning type percentages
+                        variance = np.var(percentages) if percentages else 0
+                        
+                        # Extract the instance number from the filename
+                        instance_num = int(filename.split('_')[1].split('.')[0])
+                        reasoning_stats[instance_num] = (num_types, variance)
+        
+        # Sort instances by the number of reasoning types and variance (descending order for types, ascending for variance)
+        sorted_reasoning = sorted(reasoning_stats.items(), key=lambda x: (x[1][0], x[1][1]), reverse=True)
+        
+        # Write the ranking to the output file
+        for rank, (instance, stats) in enumerate(sorted_reasoning, start=1):
+            output.write(f"Rank {rank}: Instance {instance} with {stats[0]} reasoning types and variance {stats[1]:.2f}\n")
 
-    return types_count + balance_score  # Combine diversity and balance score
+# Set the directory where markdown files are located to the current directory
+stats_dir = "."
 
-def rank_stats_files(directory):
-    scores = []
-    
-    # Iterate over markdown files in the directory
-    for filename in os.listdir(directory):
-        if filename.startswith('stats_') and filename.endswith('.md'):
-            file_path = os.path.join(directory, filename)
-            reasoning_type_counts = parse_markdown_stats(file_path)
-            score = calculate_diversity_score(reasoning_type_counts)
-            scores.append((filename, score, reasoning_type_counts))
-    
-    # Sort files by score, highest first
-    scores.sort(key=lambda x: x[1], reverse=True)
-    
-    # Print ranked list
-    for idx, (filename, score, counts) in enumerate(scores):
-        print(f"{idx + 1}. {filename} - Score: {score:.2f}, Reasoning Types: {len(counts)}, Distribution: {dict(counts)}")
-
-# Specify the directory containing the markdown files
-stats_directory = '.'
-
-# Run the ranking function
-rank_stats_files(stats_directory)
+# Rank the reasoning skills across all stats markdown files
+rank_reasoning_skills(stats_dir)
