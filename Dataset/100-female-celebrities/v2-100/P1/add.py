@@ -22,9 +22,9 @@ merged_df = celebrities_df.join(output_df['File Name without Extension'].rename(
 # Reset index to turn the URL back into a column
 merged_df.reset_index(inplace=True)
 
-# Move the 'File Name' column to be the second column in the dataframe
+# Move the 'File Name' column to be the first column in the dataframe
 file_name = merged_df.pop('File Name')
-merged_df.insert(1, 'File Name', file_name)
+merged_df.insert(0, 'File Name', file_name)
 
 # Sort the DataFrame by extracting numbers from 'File Name' and sorting numerically
 merged_df['File Number'] = merged_df['File Name'].str.extract('(\d+)').astype(float)
