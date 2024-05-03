@@ -1,6 +1,8 @@
 # Statistics for Instance all
 Total number of questions: 4000
+
 Total 7 unique reasoning types are produced.
+
 ## Reasoning Type Statistics
 - **conjunction:** Count = 1122, Percentage = 28.05%
 - **quantifiers:** Count = 1122, Percentage = 28.05%
