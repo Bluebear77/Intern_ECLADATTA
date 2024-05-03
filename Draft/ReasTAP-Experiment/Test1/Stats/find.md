@@ -1,7 +1,7 @@
 # Ranking of Instances by Reasoning Types and Variance of Percentages
 
-Rank 1: Instance 94 with 7 reasoning types and variance 54.80<br/>
-Rank 2: Instance 100 with 7 reasoning types and variance 56.59<br/>
+**Rank 1: Instance 94 with 7 reasoning types and variance 54.80<br/>**
+**Rank 2: Instance 100 with 7 reasoning types and variance 56.59<br/>**
 Rank 3: Instance 3 with 7 reasoning types and variance 72.71<br/>
 Rank 4: Instance 80 with 7 reasoning types and variance 81.98<br/>
 Rank 5: Instance 81 with 7 reasoning types and variance 82.64<br/>
