@@ -20,9 +20,9 @@ Rank 9: Instance 80 with 7 reasoning types and variance 81.98
 
 Rank 10: Instance 3 with 7 reasoning types and variance 72.71
 
-Rank 11: Instance 100 with 7 reasoning types and variance 56.59
+**Rank 11: Instance 100 with 7 reasoning types and variance 56.59**
 
-Rank 12: Instance 94 with 7 reasoning types and variance 54.80
+**Rank 12: Instance 94 with 7 reasoning types and variance 54.80**
 
 
 
