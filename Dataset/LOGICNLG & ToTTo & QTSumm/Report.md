@@ -2,23 +2,19 @@
 
 ## Overlaps Between Datasets
 
-### FeTaQA and LOGICNLG
-Total overlapping URLs: 198
-
-### FeTaQA and LOTNLG
+### Overlap among FeTaQA, LOGICNLG, LOTNLG
+![Venn Diagram](venn_0_1_2.png)
 Total overlapping URLs: 15
 
-### FeTaQA and ToTTo
-Total overlapping URLs: 8725
+### Overlap among FeTaQA, LOGICNLG, ToTTo
+![Venn Diagram](venn_0_1_3.png)
+Total overlapping URLs: 196
 
-### LOGICNLG and LOTNLG
-Total overlapping URLs: 804
+### Overlap among FeTaQA, LOTNLG, ToTTo
+![Venn Diagram](venn_0_2_3.png)
+Total overlapping URLs: 15
 
-### LOGICNLG and ToTTo
-Total overlapping URLs: 1660
-
-### LOTNLG and ToTTo
+### Overlap among LOGICNLG, LOTNLG, ToTTo
+![Venn Diagram](venn_1_2_3.png)
 Total overlapping URLs: 140
 
-## UpSet Plot of Dataset Overlaps
-![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/eaac9cbc-e1ef-4233-a53e-8711445691a0)

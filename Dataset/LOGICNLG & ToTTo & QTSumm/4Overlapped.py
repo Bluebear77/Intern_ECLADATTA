@@ -1,7 +1,7 @@
 import csv
 import matplotlib.pyplot as plt
+from matplotlib_venn import venn2, venn3
 import pandas as pd
-from upsetplot import plot, from_contents
 
 def extract_curid(url):
     prefix = 'curid='
@@ -34,41 +34,24 @@ logicnlg_urls = read_urls(logicnlg_file, 'URL')
 lotnlg_urls = read_urls(lotnlg_file, 'URL')
 totto_urls = read_urls(totto_file, 'Page ID URL')
 
-# Collect sets for upset plot
-dataset_sets = {
-    'FeTaQA': fetaqa_urls,
-    'LOGICNLG': logicnlg_urls,
-    'LOTNLG': lotnlg_urls,
-    'ToTTo': totto_urls
-}
-
-# Calculate overlaps for pairs
-pairs = [
-    ("FeTaQA", "LOGICNLG", fetaqa_urls & logicnlg_urls),
-    ("FeTaQA", "LOTNLG", fetaqa_urls & lotnlg_urls),
-    ("FeTaQA", "ToTTo", fetaqa_urls & totto_urls),
-    ("LOGICNLG", "LOTNLG", logicnlg_urls & lotnlg_urls),
-    ("LOGICNLG", "ToTTo", logicnlg_urls & totto_urls),
-    ("LOTNLG", "ToTTo", lotnlg_urls & totto_urls)
-]
+# Collect sets
+dataset_sets = [fetaqa_urls, logicnlg_urls, lotnlg_urls, totto_urls]
+dataset_labels = ['FeTaQA', 'LOGICNLG', 'LOTNLG', 'ToTTo']
 
 # Write the detailed statistical report to a Markdown file
 with open(report_file, mode='w', encoding='utf-8') as mdfile:
     mdfile.write("# Detailed Statistical Report of Overlapped URLs\n\n")
     mdfile.write("## Overlaps Between Datasets\n\n")
-    for (set1, set2, intersection) in pairs:
-        mdfile.write(f"### {set1} and {set2}\n")
-        mdfile.write(f"Total overlapping URLs: {len(intersection)}\n\n")
-
-# Prepare and plot the data using upsetplot
-upset_data = from_contents(dataset_sets)
-plot(upset_data, orientation='horizontal', show_counts='%d')
-
-plt.title('UpSet Plot of Dataset Overlaps')
-plt.savefig('upset_plot.png')
-plt.show()
-
-# Append plot image to Markdown report
-with open(report_file, 'a', encoding='utf-8') as mdfile:
-    mdfile.write("## UpSet Plot of Dataset Overlaps\n")
-    mdfile.write("![UpSet Plot of Dataset Overlaps](upset_plot.png)\n")
+    
+    # Generate Venn diagrams and add them to the report
+    for i in range(len(dataset_sets)):
+        for j in range(i + 1, len(dataset_sets)):
+            for k in range(j + 1, len(dataset_sets)):
+                plt.figure()
+                venn3([dataset_sets[i], dataset_sets[j], dataset_sets[k]], set_labels=(dataset_labels[i], dataset_labels[j], dataset_labels[k]))
+                plt.title(f'Overlap among {dataset_labels[i]}, {dataset_labels[j]}, {dataset_labels[k]}')
+                plt.savefig(f'venn_{i}_{j}_{k}.png')
+                plt.close()
+                mdfile.write(f"### Overlap among {dataset_labels[i]}, {dataset_labels[j]}, {dataset_labels[k]}\n")
+                mdfile.write(f"![Venn Diagram](venn_{i}_{j}_{k}.png)\n")
+                mdfile.write(f"Total overlapping URLs: {len(dataset_sets[i] & dataset_sets[j] & dataset_sets[k])}\n\n")
