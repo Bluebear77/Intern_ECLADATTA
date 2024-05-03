@@ -1,7 +1,7 @@
-# Statistics for Instance 38
-Total number of questions: 14
-Total 3 unique reasoning types are produced.
-## Reasoning Type Statistics
-- **conjunction:** Count = 4, Percentage = 28.57%
-- **quantifiers:** Count = 4, Percentage = 28.57%
-- **counting:** Count = 6, Percentage = 42.86%
+# Statistics for Instance 38<br/>
+Total number of questions: 14<br/>
+Total 3 unique reasoning types are produced.<br/>
+## Reasoning Type Statistics<br/>
+- **conjunction:** Count = 4, Percentage = 28.57%<br/>
+- **quantifiers:** Count = 4, Percentage = 28.57%<br/>
+- **counting:** Count = 6, Percentage = 42.86%<br/>

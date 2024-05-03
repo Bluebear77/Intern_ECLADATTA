@@ -1,7 +1,7 @@
-# Statistics for Instance 45
-Total number of questions: 33
-Total 3 unique reasoning types are produced.
-## Reasoning Type Statistics
-- **conjunction:** Count = 10, Percentage = 30.30%
-- **quantifiers:** Count = 10, Percentage = 30.30%
-- **counting:** Count = 13, Percentage = 39.39%
+# Statistics for Instance 45<br/>
+Total number of questions: 33<br/>
+Total 3 unique reasoning types are produced.<br/>
+## Reasoning Type Statistics<br/>
+- **conjunction:** Count = 10, Percentage = 30.30%<br/>
+- **quantifiers:** Count = 10, Percentage = 30.30%<br/>
+- **counting:** Count = 13, Percentage = 39.39%<br/>

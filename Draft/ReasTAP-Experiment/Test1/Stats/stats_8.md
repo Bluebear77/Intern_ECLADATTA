@@ -1,11 +1,11 @@
-# Statistics for Instance 8
-Total number of questions: 99
-Total 7 unique reasoning types are produced.
-## Reasoning Type Statistics
-- **conjunction:** Count = 24, Percentage = 24.24%
-- **quantifiers:** Count = 24, Percentage = 24.24%
-- **counting:** Count = 34, Percentage = 34.34%
-- **numerical_comparison:** Count = 6, Percentage = 6.06%
-- **numerical_operation:** Count = 5, Percentage = 5.05%
-- **date_difference:** Count = 3, Percentage = 3.03%
-- **temporal_comparison:** Count = 3, Percentage = 3.03%
+# Statistics for Instance 8<br/>
+Total number of questions: 99<br/>
+Total 7 unique reasoning types are produced.<br/>
+## Reasoning Type Statistics<br/>
+- **conjunction:** Count = 24, Percentage = 24.24%<br/>
+- **quantifiers:** Count = 24, Percentage = 24.24%<br/>
+- **counting:** Count = 34, Percentage = 34.34%<br/>
+- **numerical_comparison:** Count = 6, Percentage = 6.06%<br/>
+- **numerical_operation:** Count = 5, Percentage = 5.05%<br/>
+- **date_difference:** Count = 3, Percentage = 3.03%<br/>
+- **temporal_comparison:** Count = 3, Percentage = 3.03%<br/>

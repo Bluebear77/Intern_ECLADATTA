@@ -35,12 +35,12 @@ def rank_reasoning_skills(stats_dir):
                         instance_num = int(filename.split('_')[1].split('.')[0])
                         reasoning_stats[instance_num] = (num_types, variance)
         
-        # Sort instances by the number of reasoning types and variance (descending order for types, ascending for variance)
-        sorted_reasoning = sorted(reasoning_stats.items(), key=lambda x: (x[1][0], x[1][1]), reverse=True)
+        # Sort instances first by the number of reasoning types (descending) and then by variance (ascending)
+        sorted_reasoning = sorted(reasoning_stats.items(), key=lambda x: (-x[1][0], x[1][1]))
         
         # Write the ranking to the output file
         for rank, (instance, stats) in enumerate(sorted_reasoning, start=1):
-            output.write(f"Rank {rank}: Instance {instance} with {stats[0]} reasoning types and variance {stats[1]:.2f}\n")
+            output.write(f"Rank {rank}: Instance {instance} with {stats[0]} reasoning types and variance {stats[1]:.2f}<br/>\n")
 
 # Set the directory where markdown files are located to the current directory
 stats_dir = "."

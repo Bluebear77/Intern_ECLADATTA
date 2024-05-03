@@ -40,19 +40,20 @@ def process_file(filepath):
     
     return total_questions, reasoning_type_counts
 
+
 def write_stats_markdown(directory, index, total_questions, reasoning_type_counts):
     filename = os.path.join(directory, f'stats_{index}.md')
     with open(filename, 'w') as md_file:
-        md_file.write(f"# Statistics for Instance {index}\n")
-        md_file.write(f"Total number of questions: {total_questions}\n")
-        md_file.write(f"Total {len(reasoning_type_counts)} unique reasoning types are produced.\n")
-        md_file.write("## Reasoning Type Statistics\n")
+        md_file.write(f"# Statistics for Instance {index}<br/>\n")
+        md_file.write(f"Total number of questions: {total_questions}<br/>\n")
+        md_file.write(f"Total {len(reasoning_type_counts)} unique reasoning types are produced.<br/>\n")
+        md_file.write("## Reasoning Type Statistics<br/>\n")
         for rtype, count in reasoning_type_counts.items():
             percentage = (count / total_questions) * 100
-            md_file.write(f"- **{rtype}:** Count = {count}, Percentage = {percentage:.2f}%\n")
+            md_file.write(f"- **{rtype}:** Count = {count}, Percentage = {percentage:.2f}%<br/>\n")
 
 # Specify the base directory where files are located
-base_path = "/path/to/your/directory"
+base_path = "../"
 
 # Analyze JSON files from instance 1 to 100
 analyze_json_files(base_path, 1, 100)
