@@ -62,7 +62,8 @@ with open(report_file, mode='w', encoding='utf-8') as mdfile:
 
 # Prepare and plot the data using upsetplot
 upset_data = from_contents(dataset_sets)
-plot(upset_data, orientation='horizontal')
+plot(upset_data, orientation='horizontal', show_counts='%d')
+
 plt.title('UpSet Plot of Dataset Overlaps')
 plt.savefig('upset_plot.png')
 plt.show()
