@@ -1,30 +1,33 @@
 import os
-import pandas as pd
+import re
+import csv
 
-# List all .tsv files in the current directory
-tsv_files = [f for f in os.listdir('.') if f.endswith('.tsv')]
+# Function to extract ID and source file information
+def parse_examples(file_path):
+    pattern = re.compile(r'\(id ([^\)]+)\).*?graph tables.TableKnowledgeGraph (csv/[^\)]+)\)')
+    results = []
+    with open(file_path, 'r') as file:
+        content = file.read()
+        results = pattern.findall(content)
+    return results
 
-# Process each .tsv file
-for tsv_file in tsv_files:
-    try:
-        # Read the .tsv file into a DataFrame
-        df = pd.read_csv(tsv_file, sep='\t', on_bad_lines='skip')
-        
-        # Ensure the required columns exist
-        if 'id' not in df.columns or 'context' not in df.columns:
-            print(f"Skipping file {tsv_file}: Missing required columns")
-            continue
-        
-        # Extract relevant columns
-        output_df = df[['id', 'context']].copy()
-        output_df.rename(columns={'context': 'origin_file'}, inplace=True)
-        
-        # Create output .csv filename based on the .tsv filename
-        csv_file = os.path.splitext(tsv_file)[0] + '.csv'
-        
-        # Write the extracted data to a .csv file
-        output_df.to_csv(csv_file, index=False)
-        
-        print(f"Created {csv_file} from {tsv_file}")
-    except Exception as e:
-        print(f"Error processing {tsv_file}: {e}")
+# Function to write extracted data to a CSV file
+def write_to_csv(data, output_file):
+    with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(['id', 'source file'])
+        writer.writerows(data)
+
+# Function to process each .examples file in the current directory
+def process_files_in_directory():
+    current_dir = os.getcwd()
+    for file_name in os.listdir(current_dir):
+        if file_name.endswith('.examples'):
+            base_name = os.path.splitext(file_name)[0]
+            csv_file_name = f"{base_name}.csv"
+            examples_data = parse_examples(file_name)
+            write_to_csv(examples_data, csv_file_name)
+            print(f"Generated CSV file: {csv_file_name}")
+
+# Execute the processing function
+process_files_in_directory()
