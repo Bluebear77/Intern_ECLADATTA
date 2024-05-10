@@ -6,21 +6,45 @@ Here contains all files of the `WikiTableQuestions-1.0.2/data` directory.
 
 Then the the origin file `csv/xxx-csv/yyy.csv` will be used as index to track the corresponding URL.
 
+***
+**Dataset Splits:** 
 
-| Dataset                                         |
-|-------------------------------------------------|
-| ├── training (14152 examples)                   |
-| ├── pristine-unseen-tables (4344 examples)     |
-| ├── pristine-seen-tables (3537 examples)       |
-| ├── random-split-1                             |
-| │   ├── random-split-seed-1-train              |
-| │   └── random-split-seed-1-test               |
-| ├── random-split-2                             |
-| │   ├── random-split-seed-2-train              |
-| │   └── random-split-seed-2-test               |
-| ├── random-split-3                             |
-| │   ├── random-split-seed-3-train              |
-| │   └── random-split-seed-3-test               |
-| ├── ...                                        |
-| ├── training-before300 (300 examples)           |
-| └── annotated-all.examples (300 examples annotated with gold logical forms) |
+We split 22033 examples into multiple sets:
+
+- `training`:
+  Training data (14152 examples)
+
+- `pristine-unseen-tables`:
+  Test data -- the tables are *not seen* in training data (4344 examples)
+
+- `pristine-seen-tables`:
+  Additional data where the tables are *seen* in training data. (3537 examples)
+  (Initially intended to be used as development data, this portion of the
+  dataset has not been used in any experiment in the paper.)
+
+- `random-split-*`:
+  For development, we split `training.tsv` into random 80-20 splits.
+  Within each split, tables in the training data (`random-split-seed-*-train`)
+  and the test data (`random-split-seed-*-test`) are disjoint.
+
+- `training-before300`:
+  The first 300 training examples.
+
+- `annotated-all.examples`:
+  The first 300 training examples annotated with gold logical forms.
+
+For our ACL 2015 paper:
+
+- In development set experiments:
+  we trained on `random-split-seed-{1,2,3}-train`
+  and tested on `random-split-seed-{1,2,3}-test`, respectively.
+
+- In test set experiments:
+  we trained on `training` and tested on `pristine-unseen-tables`.
+
+**Supplementary Files:**
+
+- `*.examples` files:
+  The LispTree format of the dataset is used internally in our
+  [SEMPRE](http://nlp.stanford.edu/software/sempre/) code base.
+  The `*.examples` files contain the same information as the TSV files.
