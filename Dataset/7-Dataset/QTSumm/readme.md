@@ -5,6 +5,27 @@ Here is the dataset of QTSumm.
 Source：
 https://huggingface.co/datasets/yale-nlp/QTSumm/tree/main
 
+***
+```
+{
+    "example_id": "{example_id_placeholder}",
+    "table": {
+        "title": "{table_title_placeholder}",
+        "table_id": "{table_id_placeholder}",
+        "header": ["{header1_placeholder}", "{header2_placeholder}", "...", "{headerN_placeholder}"],
+        "rows": [
+            ["{row1_data1_placeholder}", "{row1_data2_placeholder}", "...", "{row1_dataN_placeholder}"],
+            ["{row2_data1_placeholder}", "{row2_data2_placeholder}", "...", "{row2_dataN_placeholder}"],
+            "...",
+            ["{rowM_data1_placeholder}", "{rowM_data2_placeholder}", "...", "{rowM_dataN_placeholder}"]
+        ]
+    },
+    "query": "{query_placeholder}",
+    "summary": "{summary_placeholder}",
+    "row_ids": [{row_index_placeholder}]
+}
+
+```
 
 ---
 license: mit
