@@ -1,5 +1,7 @@
 Here is the dataset of QTSumm.
 
+- 2,934 Tables from 2 sources: <br/>LOGICNLG (Chen et al., 2020a), 7,392 tables  <br/> ToTTo (Parikh et al., 2020), 83,141 tables
+
 Source：
 https://huggingface.co/datasets/yale-nlp/QTSumm/tree/main
 
