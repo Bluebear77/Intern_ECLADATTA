@@ -2,7 +2,70 @@ Here is the subcorpus for the ECLADATTA project.
 
 It has 3 corpora: Business, Telco and Celebrity. Each with 100 examples.
 
-*_stats.json: contains the statistics of the JSON file.
+
+- *_doc.json: contains detailed info of each instance.
+
+```
+{
+  "_index": "[index_name]",
+  "_id": "[document_id]",
+  "_source": {
+    "identificationMetadata": {
+      "id": "[document_id]",
+      "title": "[document_title]",
+      "url": ["[url_list]"],
+      "version": [version_number],
+      "versionDate": "[version_date]",
+      "hash": "[hash_value]",
+      "wikidata": "[wikidata_id]"
+    },
+    "descriptionMetadata": {
+      "categories": ["[list_of_categories]"],
+      "language": "[language]",
+      "source": "[source]"
+    },
+    "contentMetadata": {
+      "format": "[content_format]",
+      "content": "[content_text]"
+    },
+    "collectMetadata": {
+      "requestedDate": "[request_date]",
+      "ingestedDate": "[ingest_date]"
+    },
+    "extractionMetadata": [{
+      "id": "[extractor_id]",
+      "linkExtractionDate": "[link_extraction_date]",
+      "links": [{
+        "fragment": "[fragment]",
+        "link": "[link]",
+        "text": "[link_text]",
+        "title": "[link_title]"
+      }],
+      "nbLinks": [number_of_links],
+      "nbTables": [number_of_tables],
+      "nbTexts": [number_of_texts],
+      "tableExtractionDate": "[table_extraction_date]",
+      "tables": [],
+      "technology": "[extraction_technology]",
+      "textExtractionDate": "[text_extraction_date]",
+      "texts": [{
+        "endOffset": [end_offset],
+        "index": [text_index],
+        "level": [text_level],
+        "startOffset": [start_offset],
+        "title": "[text_title]",
+        "value": "[text_value]"
+      }]
+    }],
+    "statsMetadata": {
+      "textSize": [total_text_size]
+    }
+  }
+}
+
+```
+
+- *_stats.json: contains the statistics of the JSON file.
 ```
 {
     "nb_tables": [total_number_of_tables],
@@ -30,7 +93,7 @@ It has 3 corpora: Business, Telco and Celebrity. Each with 100 examples.
 
 ```
 
-*_cat.json:
+- *_cat.json:contains the key index info of each instance.
 
 ```
 {
