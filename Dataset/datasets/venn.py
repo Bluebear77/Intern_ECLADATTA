@@ -6,8 +6,9 @@ import os
 # List of dataset filenames
 datasets = [
     "F2WTQ.csv", "FeTaQA.csv", "LOGICNLG.csv", "LOTNLG.csv", "ToTTo.csv",
-    "WTQ.csv", "business100.csv", "female100.csv", "telco100.csv"
+    "WTQ.csv", "business100.csv", "female100.csv", "telco100.csv","female100_english.csv"
 ]
+
 
 # Dictionary to store URLs from each dataset
 url_dict = {}
