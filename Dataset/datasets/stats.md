@@ -1,0 +1,41 @@
+Total unique URLs across all datasets: 103806
+
+Pairwise dataset overlap counts:
+LOGICNLG.csv & LOTNLG.csv: 804
+F2WTQ.csv & WTQ.csv: 767
+LOGICNLG.csv & ToTTo.csv: 233
+LOTNLG.csv & ToTTo.csv: 25
+ToTTo.csv & telco100.csv: 12
+ToTTo.csv & business100.csv: 2
+F2WTQ.csv & FeTaQA.csv: 0
+F2WTQ.csv & LOGICNLG.csv: 0
+F2WTQ.csv & LOTNLG.csv: 0
+F2WTQ.csv & ToTTo.csv: 0
+F2WTQ.csv & business100.csv: 0
+F2WTQ.csv & female100.csv: 0
+F2WTQ.csv & telco100.csv: 0
+FeTaQA.csv & LOGICNLG.csv: 0
+FeTaQA.csv & LOTNLG.csv: 0
+FeTaQA.csv & ToTTo.csv: 0
+FeTaQA.csv & WTQ.csv: 0
+FeTaQA.csv & business100.csv: 0
+FeTaQA.csv & female100.csv: 0
+FeTaQA.csv & telco100.csv: 0
+LOGICNLG.csv & WTQ.csv: 0
+LOGICNLG.csv & business100.csv: 0
+LOGICNLG.csv & female100.csv: 0
+LOGICNLG.csv & telco100.csv: 0
+LOTNLG.csv & WTQ.csv: 0
+LOTNLG.csv & business100.csv: 0
+LOTNLG.csv & female100.csv: 0
+LOTNLG.csv & telco100.csv: 0
+ToTTo.csv & WTQ.csv: 0
+ToTTo.csv & female100.csv: 0
+WTQ.csv & business100.csv: 0
+WTQ.csv & female100.csv: 0
+WTQ.csv & telco100.csv: 0
+business100.csv & female100.csv: 0
+business100.csv & telco100.csv: 0
+female100.csv & telco100.csv: 0
+
+Datasets with the highest overlap: LOGICNLG.csv & LOTNLG.csv (804 URLs)
