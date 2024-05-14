@@ -4,8 +4,9 @@ import pandas as pd
 # Directory containing the CSV files
 directory = "."
 
-# Get the list of CSV files
-csv_files = [f for f in os.listdir(directory) if f.endswith('.csv')]
+# Get the list of CSV files, excluding summary.csv
+csv_files = [f for f in os.listdir(directory) if f.endswith('.csv') and f != 'summary.csv']
+
 
 # Initialize a dictionary to store URLs for each file
 url_dict = {}
