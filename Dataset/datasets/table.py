@@ -23,7 +23,7 @@ overlap_matrix = pd.DataFrame(index=csv_files, columns=csv_files)
 for file1 in csv_files:
     for file2 in csv_files:
         if file1 == file2:
-            overlap_matrix.loc[file1, file2] = len(url_dict[file1])
+            overlap_matrix.loc[file1, file2] = ''
         else:
             overlap_count = len(url_dict[file1].intersection(url_dict[file2]))
             overlap_matrix.loc[file1, file2] = overlap_count
