@@ -1,1 +1,0 @@
-Download the raw table data (`chunk-*/ClassifyTableColumnsFiltered.jsonl`) from [Google Drive](https://drive.google.com/drive/folders/1i_8N4VWK-cXdVFL7sWEGrXW4JvCK9iBk?usp=share_link) and put them in this folder.
