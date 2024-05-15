@@ -1,0 +1,543 @@
+[
+    {
+        "id": "828499",
+        "title": "Lynn Hill",
+        "url": "https://fr.wikipedia.org/?curid=828499",
+        "header": [
+            "Ann\u00e9e",
+            "Comp\u00e9tition",
+            "Lieu",
+            "Titre"
+        ],
+        "rows": [
+            [
+                "1986",
+                "Sportroccia",
+                "Arco et Bardonn\u00e8che ;",
+                "M\u00e9daille d'argent"
+            ],
+            [
+                "1986",
+                "Grand Prix de France d'escalade",
+                "Troubat ;",
+                "M\u00e9daille d'or"
+            ],
+            [
+                "1987",
+                "Rock Master Festival",
+                "Arco ;",
+                "M\u00e9daille d'or"
+            ],
+            [
+                "1987",
+                "World Indoor Rock Climbing Premier",
+                "Grenoble ;",
+                "M\u00e9daille d'or"
+            ],
+            [
+                "1988",
+                "Masters",
+                "Paris ;",
+                "M\u00e9daille d'or"
+            ],
+            [
+                "1988",
+                "Rock Master Festival",
+                "Arco ;",
+                "M\u00e9daille d'or"
+            ],
+            [
+                "1988",
+                "International Climbing Competition",
+                "Marseille ;",
+                "M\u00e9daille d'or"
+            ],
+            [
+                "1989",
+                "Rock Master Festival",
+                "Arco ;",
+                "M\u00e9daille d'or"
+            ],
+            [
+                "1989",
+                "Masters",
+                "Paris ;",
+                "M\u00e9daille d'or"
+            ],
+            [
+                "1989",
+                "German Free Climbing Championship",
+                "",
+                "M\u00e9daille d'or"
+            ],
+            [
+                "1989",
+                "Coupe du monde",
+                "Snowbird ;",
+                "M\u00e9daille d'argent"
+            ],
+            [
+                "1989",
+                "Coupe du monde",
+                "Lyon ;",
+                "M\u00e9daille d'or"
+            ],
+            [
+                "1990",
+                "Rock Master Festival",
+                "Arco ;",
+                "M\u00e9daille d'or"
+            ],
+            [
+                "1990",
+                "Coupe du monde",
+                "Vienne ;",
+                "M\u00e9daille d'argent"
+            ],
+            [
+                "1990",
+                "Coupe du monde",
+                "Madona di Campiglio ;",
+                "M\u00e9daille de bronze"
+            ],
+            [
+                "1990",
+                "Coupe du monde",
+                "Berkeley ;",
+                "M\u00e9daille d'argent"
+            ],
+            [
+                "1990",
+                "Coupe du monde",
+                "Lyon ;",
+                "M\u00e9daille d'or"
+            ],
+            [
+                "1990",
+                "Coupe du monde",
+                "Barcelone ;",
+                "M\u00e9daille d'or"
+            ],
+            [
+                "1990",
+                "Coupe du monde",
+                "Classement g\u00e9n\u00e9ral",
+                "M\u00e9daille d'or"
+            ],
+            [
+                "1991",
+                "Coupe du monde",
+                "Vienne ;",
+                "M\u00e9daille d'argent"
+            ],
+            [
+                "1992",
+                "Rock Master Festival",
+                "Arco ;",
+                "M\u00e9daille d'or"
+            ],
+            [
+                "1992",
+                "Coupe du monde",
+                "Zurich ;",
+                "M\u00e9daille de bronze"
+            ],
+            [
+                "1992",
+                "Coupe du monde",
+                "Kobe ;",
+                "M\u00e9daille d'argent"
+            ],
+            [
+                "1992",
+                "Coupe du monde",
+                "Nuremberg ;",
+                "M\u00e9daille d'argent"
+            ],
+            [
+                "1992",
+                "Coupe du monde",
+                "Birmingham ;",
+                "M\u00e9daille d'or"
+            ],
+            [
+                "1992",
+                "Coupe du monde",
+                "Classement g\u00e9n\u00e9ral",
+                "M\u00e9daille de bronze"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            0
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Ann\u00e9e when the Comp\u00e9tition string starts with Coupe and the Titre string ends with bronze?",
+                "answers": [
+                    "1990",
+                    "1992"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Ann\u00e9e when the Lieu string starts with Paris and the Comp\u00e9tition string contains Master?",
+                "answers": [
+                    "1988",
+                    "1989"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Ann\u00e9e, with Titre string contains bronze, have Comp\u00e9tition string starts with Coupe?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Ann\u00e9e, with Comp\u00e9tition string contains Coupe, have Lieu string contains Birmingham?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ann\u00e9e had Titre string contains bronze and Comp\u00e9tition string starts with Coupe?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ann\u00e9e had Comp\u00e9tition string contains Coupe?",
+                "answers": [
+                    "14"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ann\u00e9e had Comp\u00e9tition string starts with Coupe and Lieu string starts with Birmingham?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "828499",
+        "title": "Lynn Hill",
+        "url": "https://fr.wikipedia.org/?curid=828499",
+        "header": [
+            "Ann\u00e9e",
+            "Cotation",
+            "Voie et site",
+            "Description",
+            "Cord\u00e9e notable"
+        ],
+        "rows": [
+            [
+                "1979",
+                "7c (5.12d)",
+                "Ophir Broke, Telluride, Colorado",
+                "Premi\u00e8re ascension en libre",
+                "avec John Long"
+            ],
+            [
+                "1979",
+                "7c (5.12d)",
+                "Pea Brain, Col Independence, Colorado",
+                "Premi\u00e8re ascension en libre",
+                "avec John Long"
+            ],
+            [
+                "1979",
+                "7a+ (5.12)",
+                "Stairway to Heaven, Tahquitz Peak, Californie",
+                "Premi\u00e8re ascension en libre",
+                "avec John Long et Tim Powell"
+            ],
+            [
+                "1980",
+                "7a+ (5.12)",
+                "Coatamundi Whiteout, Granite Mountain, Arizona",
+                "Premi\u00e8re ascension en libre",
+                "avec John Long et Keith Cunning"
+            ],
+            [
+                "1981",
+                "7a+ (5.12a)",
+                "Hidden Arch, Parc national de Joshua Tree, Californie",
+                "Premi\u00e8re ascension en libre",
+                ""
+            ],
+            [
+                "1981",
+                "6c (5.11a)",
+                "Levitation 29, Red Rock Canyon National Conservation Area, Nevada",
+                "Premi\u00e8re ascension en libre",
+                "avec John Long, Jorge et Joanne Urioste"
+            ],
+            [
+                "1982",
+                "6c (5.11)",
+                "Blue Nubian, Parc national de Joshua Tree, Californie",
+                "Premi\u00e8re ascension en libre",
+                ""
+            ],
+            [
+                "1984",
+                "7b+ (5.12c)",
+                "Yellow Crack, Shawangunk Ridge, \u00c9tat de New York",
+                "Premi\u00e8re ascension en libre",
+                ""
+            ],
+            [
+                "1984",
+                "7c+ (5.13a)",
+                "Vandals, Shawangunk Ridge, \u00c9tat de New York",
+                "Premi\u00e8re ascension en libre",
+                ""
+            ],
+            [
+                "1984",
+                "7b+ (5.12c)",
+                "Organic Iron, Shawangunk Ridge, \u00c9tat de New York",
+                "Premi\u00e8re ascension en libre",
+                ""
+            ],
+            [
+                "1985",
+                "7b+ (5.12c)",
+                "Organic Iron, Shawangunk Ridge, \u00c9tat de New York",
+                "Premi\u00e8re ascension en libre",
+                "avec Russ Raffa"
+            ],
+            [
+                "1987",
+                "7a+ (5.12)",
+                "Girls Just Want to Have Fun, Shawangunk Ridge, \u00c9tat de New York",
+                "Premi\u00e8re ascension en libre",
+                ""
+            ],
+            [
+                "1988",
+                "7c (5.12d)",
+                "The Greatest Show on Earth, Parc national et r\u00e9serve de New River Gorge, Virginie-Occidentale",
+                "Premi\u00e8re ascension en libre",
+                ""
+            ],
+            [
+                "1989",
+                "8b (5.13d)",
+                "Running Man, Shawangunk Ridge, \u00c9tat de New York",
+                "Premi\u00e8re ascension en libre",
+                ""
+            ],
+            [
+                "1990",
+                "8b+ (5.14)",
+                "Masse Critique, Cima\u00ef, France",
+                "Premi\u00e8re f\u00e9minine en libre\nPremi\u00e8re f\u00e9minine \u00e0 la cotation 5.14",
+                ""
+            ],
+            [
+                "1992",
+                "8a (5.13b)",
+                "Simon, Jura franconien, Allemagne",
+                "Premi\u00e8re femme \u00e0 r\u00e9aliser la cotation en libre et \u00e0 vue",
+                ""
+            ],
+            [
+                "1993",
+                "8b+ / 8c (5.14a/b)",
+                "The Nose, El Capitan, Yosemite",
+                "Premi\u00e8re ascension en libre",
+                "avec Brooke Sandahl"
+            ],
+            [
+                "1994",
+                "7c+ (5.13a)",
+                "Mingus, Gorges du Verdon, France",
+                "Premi\u00e8re ascension en libre",
+                ""
+            ],
+            [
+                "1994",
+                "8b+ / 8c (5.14a/b)",
+                "The Nose, El Capitan, Yosemite",
+                "Premi\u00e8re ascension en libre en moins de",
+                ""
+            ],
+            [
+                "1995",
+                "6b (5.10+)",
+                "Clodhopper Direct, Kirghizistan",
+                "Premi\u00e8re ascension en libre",
+                "avec Greg Child"
+            ],
+            [
+                "1995",
+                "7b (5.12b)",
+                "Perestroika Crack, Kirghizistan",
+                "Premi\u00e8re ascension en libre",
+                "avec Greg Child"
+            ],
+            [
+                "1995",
+                "7b (5.12b)",
+                "West Face, Peak 4810, Kirghizistan",
+                "Premi\u00e8re ascension en libre",
+                "avec Alex Lowe"
+            ],
+            [
+                "1997",
+                "7c+ (5.13a)",
+                "T\u00eate de Chou, Gorges du Toudra, Maroc",
+                "Premi\u00e8re ascension",
+                ""
+            ],
+            [
+                "1998",
+                "7B (V8)",
+                "Midnight Lightning, Camp 4, Yosemite",
+                "Premi\u00e8re ascension f\u00e9minine",
+                ""
+            ],
+            [
+                "1998",
+                "7C / 7C+ (V9/10)",
+                "King Cobra, Camp 4, Yosemite",
+                "Premi\u00e8re ascension f\u00e9minine",
+                ""
+            ],
+            [
+                "1998",
+                "8b+ (5.14a)",
+                "To Bolt or Not to Be, Parc d'\u00c9tat de Smith Rock, Oregon",
+                "Premi\u00e8re ascension f\u00e9minine en libre",
+                ""
+            ],
+            [
+                "1999",
+                "8b+ (5.14a)",
+                "Scarface, Parc d'\u00c9tat de Smith Rock, Oregon",
+                "Premi\u00e8re ascension f\u00e9minine en libre",
+                ""
+            ],
+            [
+                "1999",
+                "8b (5.13d)",
+                "Bravo les Filles, Parc national d'Andringitra, Madagascar",
+                "Premi\u00e8re ascension",
+                "avec Nancy Feagin, Kath Pyke et Beth Rodden"
+            ],
+            [
+                "2004",
+                "7b (5.12b)",
+                "Viva la Liberdad, Vi\u00f1ales, Cuba",
+                "Premi\u00e8re ascension",
+                ""
+            ],
+            [
+                "2004",
+                "8a+ (5.13c)",
+                "Sprayathon, Rifle, Colorado",
+                "Premi\u00e8re ascension f\u00e9minine en libre",
+                ""
+            ],
+            [
+                "2005",
+                "8a / 8a+ (5.13b/c)",
+                "West Face, Yosemite",
+                "Premi\u00e8re ascension f\u00e9minine en libre",
+                "avec Katie Brown"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            0
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Ann\u00e9e when the Cord\u00e9e notable string ends with Brown and the Description string contains en?",
+                "answers": [
+                    "2005"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Ann\u00e9e when the Voie et site string ends with Arizona and the Cord\u00e9e notable string contains John?",
+                "answers": [
+                    "1980"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Ann\u00e9e, with Description string contains ascension, have Cord\u00e9e notable string contains Child?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Ann\u00e9e, with Voie et site string ends with Arizona, have Description string contains en?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ann\u00e9e had Cord\u00e9e notable string ends with Long and Description string contains ascension?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ann\u00e9e had Cord\u00e9e notable string ends with Long and Description string contains en?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ann\u00e9e had Voie et site string ends with Colorado and Cord\u00e9e notable string contains John?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

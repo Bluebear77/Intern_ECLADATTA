@@ -1,0 +1,771 @@
+[
+    {
+        "id": "12748865",
+        "title": "Liste des duchesses de Lorraine",
+        "url": "https://fr.wikipedia.org/?curid=12748865",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "119x119px",
+                "B\u00e9atrice de France\n(938-1003)",
+                "* Fr\u00e9d\u00e9ric Ier de Lorraine (mariage en 954)",
+                "* Comtesse de Bar (955-978)\n* Duchesse de Haute-Lotharingie (959-978)\n* R\u00e9gente de Haute-Lotharingie et de Bar (978-987)",
+                "* Princesse de la Dynastie des Robertiens. Fille d'Hugues le Grand et d'Hedwige de Saxe.\n* M\u00e8re d'Adalb\u00e9ron II de Metz et de Thierry Ier de Lorraine."
+            ],
+            [
+                "",
+                "Richilde de Lun\u00e9ville",
+                "* Thierry Ier de Lorraine (mariage en 985)",
+                "* Duchesse de Haute-Lotharingie et comtesse de Bar (985-?)",
+                "* Princesse de la Maison de Metz. Fille de Folmar Ier de Metz.\n* M\u00e8re de Fr\u00e9d\u00e9ric II de Lorraine."
+            ],
+            [
+                "117x117px",
+                "Mathilde de Souabe\n(988-1032)",
+                "* Conrad de Carinthie (mariage en 1002)\n* Fr\u00e9d\u00e9ric II de Lorraine (mariage en 1016)\n* Esico de Ballenstedt (mariage en 1026)",
+                "* Duchesse de Carinthie et margravine de V\u00e9rone (1004-1011)\n* Duchesse de Haute-Lotharingie et comtesse de Bar (1019-1026)\n* Comtesse de Ballenstedt (1026-1032)",
+                "* Princesse de la Dynastie des Conradiens. Fille d'Hermann II de Souabe et de Gerberge de Bourgogne.\n* M\u00e8re de Conrad II de Carinthie, de Brunon de Wurtzbourg, de Fr\u00e9d\u00e9ric III de Lorraine, de Sophie de Bar, de B\u00e9atrice de Bar et d'Adalbert II de Ballenstedt."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": -1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the El\u00e9ments biographiques when the El\u00e9ments biographiques string contains de and the Titres string contains de?",
+                "answers": [
+                    "* Princesse de la Dynastie des Robertiens. Fille d'Hugues le Grand et d'Hedwige de Saxe.\n* M\u00e8re d'Adalb\u00e9ron II de Metz et de Thierry Ier de Lorraine.",
+                    "* Princesse de la Maison de Metz. Fille de Folmar Ier de Metz.\n* M\u00e8re de Fr\u00e9d\u00e9ric II de Lorraine.",
+                    "* Princesse de la Dynastie des Conradiens. Fille d'Hermann II de Souabe et de Gerberge de Bourgogne.\n* M\u00e8re de Conrad II de Carinthie, de Brunon de Wurtzbourg, de Fr\u00e9d\u00e9ric III de Lorraine, de Sophie de Bar, de B\u00e9atrice de Bar et d'Adalbert II de Ballenstedt."
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the El\u00e9ments biographiques when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains Lorraine?",
+                "answers": [
+                    "* Princesse de la Dynastie des Robertiens. Fille d'Hugues le Grand et d'Hedwige de Saxe.\n* M\u00e8re d'Adalb\u00e9ron II de Metz et de Thierry Ier de Lorraine.",
+                    "* Princesse de la Maison de Metz. Fille de Folmar Ier de Metz.\n* M\u00e8re de Fr\u00e9d\u00e9ric II de Lorraine.",
+                    "* Princesse de la Dynastie des Conradiens. Fille d'Hermann II de Souabe et de Gerberge de Bourgogne.\n* M\u00e8re de Conrad II de Carinthie, de Brunon de Wurtzbourg, de Fr\u00e9d\u00e9ric III de Lorraine, de Sophie de Bar, de B\u00e9atrice de Bar et d'Adalbert II de Ballenstedt."
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every El\u00e9ments biographiques, with Nom\n(dates) string contains de, have El\u00e9ments biographiques string contains le?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only El\u00e9ments biographiques, with El\u00e9ments biographiques string contains de, have Titres string contains Bar?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many El\u00e9ments biographiques had \u00c9poux string contains Ier and Nom\n(dates) string contains de?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many El\u00e9ments biographiques had Titres string contains de and \u00c9poux string contains de?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many El\u00e9ments biographiques had El\u00e9ments biographiques string contains de and Titres string contains de?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "12748865",
+        "title": "Liste des duchesses de Lorraine",
+        "url": "https://fr.wikipedia.org/?curid=12748865",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biograpiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "",
+                "Hedwige de Namur\n(1005-1080)",
+                "* G\u00e9rard Ier de Lorraine",
+                "* Duchesse de Lorraine et comtesse de Metz (1048-1070)",
+                "* Princesse de la Maison de Namur. Fille d'Albert Ier de Namur et d'Ermengarde de Basse-Lotharingie.\n* M\u00e8re de Thierry II de Lorraine et de G\u00e9rard Ier de Vaud\u00e9mont.",
+                ""
+            ],
+            [
+                "",
+                "Edwige de Formbach\n(1057-1093)",
+                "* Gebhard de Supplinbourg\n* Thierry II de Lorraine (mariage en 1075)",
+                "* Comtesse de Supplinbourg (?-1075)\n* Duchesse de Lorraine (1075-1093)",
+                "* Princesse de la Maison de Formbach. Fille de Fr\u00e9d\u00e9ric de Formbach et de Gertrude d'Haldensleben.\n* M\u00e8re de Lothaire de Supplinbourg, de Simon Ier de Lorraine et de Gertrude de Lorraine.",
+                ""
+            ],
+            [
+                "100x100px",
+                "Gertrude de Flandre\n(1070-1117)",
+                "* Henri III de Louvain (mariage en 1090)\n* Thierry II de Lorraine (mariage en 1095)",
+                "* Comtesse de Louvain et de Bruxelles (1090-1095)\n* Duchesse de Lorraine (1095-1115)",
+                "* Princesse de la Maison de Flandre. Fille de Robert Ier de Flandre et de Gertrude de Saxe.\n* M\u00e8re d'Ad\u00e9la\u00efde de Louvain, de Thierry d'Alsace et d'Henri de Lorraine.",
+                ""
+            ],
+            [
+                "100x100px",
+                "Ad\u00e9la\u00efde de Louvain\n(?-1158)",
+                "* Simon Ier de Lorraine (mariage en 1112)",
+                "* Duchesse de Lorraine (1115-1139)",
+                "* Princesse de la Famille des R\u00e9gnier. Fille d'Henri III de Louvain et de Gertrude de Flandre.\n* M\u00e8re de Mathieu Ier de Lorraine, d'Agathe de Lorraine et de Bertha de Lorraine.",
+                ""
+            ],
+            [
+                "100x100px",
+                "Judith-Berthe de Hohenstaufen\n(1123-1195)",
+                "* Mathieu Ier de Lorraine (mariage en 1138)",
+                "* Duchesse de Lorraine (1139-1176)",
+                "* Princesse de la Maison de Hohenstaufen. Fille de Fr\u00e9d\u00e9ric II de Souabe et de Judith de Bavi\u00e8re.\n* M\u00e8re d'Alix de Lorraine, de Simon II de Lorraine, de Ferry Ier de Lorraine, de Mathieu de Lorraine de Toul et de Thierry IV de Lorraine.",
+                ""
+            ],
+            [
+                "",
+                "Agn\u00e8s de Veldenz",
+                "* Simon II de Lorraine",
+                "* Duchesse de Lorraine (?-?)",
+                "* Princesse de la Maison de Veldenz. Fille de Gerlach Ier de Veldenz.",
+                ""
+            ],
+            [
+                "100x100px",
+                "Ida de Vienne\n(1162-1224)",
+                "* Humbert de Coligny\n* Simon II de Lorraine (mariage en 1190)",
+                "* Dame de Coligny\n* Duchesse de Lorraine (1190-1205)",
+                "* Princesse de la Maison d'Ivr\u00e9e. Fille de G\u00e9raud Ier de M\u00e2con et de Maurette de Salins.",
+                ""
+            ],
+            [
+                "104x104px",
+                "Ludmilla Piast de Pologne\n(1150-1223)",
+                "* Ferry Ier de Lorraine",
+                "* Comtesse de Bitche (1188-1206)\n* Duchesse de Lorraine (1205-1206)",
+                "* Princesse de la Maison Piast. Fille de Mieszko III le Vieux et d'\u00c9lisabeth de Hongrie.\n* M\u00e8re de Ferry II de Lorraine, de  Thierry le Diable et de Matthieu de Lorraine.",
+                ""
+            ],
+            [
+                "100x100px",
+                "Agn\u00e8s de Bar\n(?-1226)",
+                "* Ferry II de Lorraine (mariage en 1188)",
+                "* Duchesse de Lorraine et comtesse de Bitche (1206-1213)",
+                "* Princesse de la Maison de Scarpone. Fille de Thi\u00e9baut Ier de Bar et de Laurette de Looz.\n* M\u00e8re de Thi\u00e9baud Ier de Lorraine, de Matthieu II de Lorraine et de Jacques de Lorraine.",
+                ""
+            ],
+            [
+                "100x100px",
+                "Gertrude de Dabo\n(1190-1225)",
+                "* Thi\u00e9baud Ier de Lorraine (mariage en 1215)\n* Thibaut  de Navarre (mariage en 1220)\n* Simon de Linange (mariage en 1223)",
+                "* Comtesse de Metz, de Dabo et d'Eguisheim (de plein droit, 1212-1225)\n* Duchesse de Lorraine (1215-1220)\n* Comtesse de Champagne et de Brie (1220-1222)",
+                "* Princesse de la Maison de Dabo. Fille d'Albert II de Dabo-Moha et de Gertrude de Bade.",
+                ""
+            ],
+            [
+                "100x100px",
+                "Catherine de Limbourg\n(1215-1255)",
+                "* Matthieu II de Lorraine (mariage en 1225)",
+                "* Duchesse de Lorraine (1225-1251)\n* R\u00e9gente de Lorraine (1251-1255)",
+                "* Princesse de la Maison de Limbourg. Fille de Wal\u00e9ran III de Limbourg et d'Ermesinde Ire de Luxembourg.\n* M\u00e8re de Ferry III de Lorraine.",
+                ""
+            ],
+            [
+                "100x100px",
+                "Marguerite de Champagne\n(1244-1306)",
+                "* Ferry III de Lorraine (mariage en 1255)",
+                "* Duchesse de Lorraine (1255-1303)",
+                "* Princesse de la Maison de Blois. Fille de Thibaut Ier de Navarre et de Marguerite de Bourbon.\n* M\u00e8re de Thi\u00e9baud II de Lorraine et de Fr\u00e9d\u00e9ric de Lorraine.",
+                ""
+            ],
+            [
+                "",
+                "Isabelle de Rumigny\n(1263-1326)",
+                "* Thi\u00e9baud II de Lorraine (mariage en 1278)",
+                "* Duchesse de Lorraine (1303-1312)",
+                "* Princesse de la Maison de Rumigny. Fille d'Hugues de Rumigny et de Philippine d'Oulche.\n* M\u00e8re de Ferry IV de Lorraine.",
+                ""
+            ],
+            [
+                "124x124px",
+                "\u00c9lisabeth d'Autriche\n(1285-1352)",
+                "* Ferry IV de Lorraine (mariage en 1304)",
+                "* Duchesse de Lorraine (1312-1328)\n* R\u00e9gente de Lorraine (1328-1334)",
+                "* Princesse de la Maison de Habsbourg. Fille d'Albert Ier du Saint-Empire et d'\u00c9lisabeth de Tyrol.\n* M\u00e8re de Raoul de Lorraine.",
+                ""
+            ],
+            [
+                "",
+                "Ali\u00e9nor de Bar\n(?-1332)",
+                "* Raoul de Lorraine (mariage en 1329)",
+                "* Duchesse de Lorraine (1329-1332)",
+                "* Princesse de la Maison de Scarpone. Fille d'Edouard Ier de Bar et de Marie de Bourgogne.",
+                ""
+            ],
+            [
+                "100x100px",
+                "Marie de Ch\u00e2tillon\n(1323-1363)",
+                "* Raoul de Lorraine (mariage en 1334)\n* Ferry de Linange (mariage en 1352)",
+                "* Duchesse de Lorraine (1334-1346)\n* R\u00e9gente de Lorraine (1346-1360)\n* Comtesse de Linange (1352-1363)",
+                "* Princesse de la Maison de Blois. Fille de Guy Ier de Blois-Ch\u00e2tillon et de Marguerite de Valois.\n* M\u00e8re de Jean Ier de Lorraine.",
+                ""
+            ],
+            [
+                "100x100px",
+                "Sophie de Wurtemberg\n(1343-1369)",
+                "* Jean Ier de Lorraine (mariage en 1361)",
+                "* Duchesse de Lorraine (1361-1369)",
+                "* Princesse de la Maison de Wurtemberg. Fille d'Eberhard II de Wurtemberg et d'\u00c9lisabeth de Henneberg.\n* M\u00e8re de Charles II de Lorraine et de Ferry  de Vaud\u00e9mont.",
+                ""
+            ],
+            [
+                "142x142px",
+                "Marguerite de Wittelsbach\n(1376-1434)",
+                "* Charles II de Lorraine (mariage en 1394)",
+                "* Duchesse de Lorraine (1394-1431)",
+                "* Princesse de la Maison de Wittelsbach. Fille de Robert Ier du Saint-Empire et d'\u00c9lisabeth de Nuremberg.\n* M\u00e8re d'Isabelle Ire de Lorraine et de Catherine de Lorraine.",
+                ""
+            ],
+            [
+                "128x128px",
+                "Isabelle Ire de Lorraine\n(1410-1453)",
+                "* Ren\u00e9 d'Anjou (mariage en 1420)",
+                "* Comtesse de Guise (1420-1425)\n* Duchesse de Bar (1430-1453)\n* Duchesse de Lorraine (de plein droit, 1431-1453)\n*Duchesse de Calabre (1434-1435)\n* Duchesse d'Anjou et comtesse de Provence (1434-1453)\n* Reine de Naples (1435-1442)",
+                "* Princesse de la Maison de Lorraine. Fille de Charles II de Lorraine et de Marguerite de Wittelsbach.\n* M\u00e8re de Jean II de Lorraine, de Louis d'Anjou-Commercy, de Yolande d'Anjou et de Marguerite d'Anjou.",
+                "110x110px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": -1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Armoiries when the El\u00e9ments biograpiques string contains la and the Nom\n(dates) string starts with Ida?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Armoiries when the \u00c9poux string contains de and the Titres string contains Lorraine?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Armoiries, with Titres string contains Lorraine, have El\u00e9ments biograpiques string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Armoiries, with El\u00e9ments biograpiques string contains de, have Nom\n(dates) string starts with Ida?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Armoiries had Titres string contains Lorraine and Nom\n(dates) string contains de?",
+                "answers": [
+                    "18"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Armoiries had El\u00e9ments biograpiques string contains la and Nom\n(dates) string contains de?",
+                "answers": [
+                    "18"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Armoiries had El\u00e9ments biograpiques string contains de?",
+                "answers": [
+                    "19"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "12748865",
+        "title": "Liste des duchesses de Lorraine",
+        "url": "https://fr.wikipedia.org/?curid=12748865",
+        "header": [
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "Doda\n(?-1053)",
+                "* Godefroid II de Basse-Lotharingie (mariage en 1020)",
+                "* Comtesse de Verdun (1025-1053)\n* Duchesse de Haute-Lotharingie (1044-1047)",
+                "* M\u00e8re de Godefroid III de Basse-Lotharingie et d'Ide de Boulogne."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": -1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the El\u00e9ments biographiques when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains II?",
+                "answers": [
+                    "* M\u00e8re de Godefroid III de Basse-Lotharingie et d'Ide de Boulogne."
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the El\u00e9ments biographiques when the Titres string contains de and the El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "* M\u00e8re de Godefroid III de Basse-Lotharingie et d'Ide de Boulogne."
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every El\u00e9ments biographiques, with \u00c9poux string contains II, have El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only El\u00e9ments biographiques, with \u00c9poux string contains en, have El\u00e9ments biographiques string contains III?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many El\u00e9ments biographiques had Titres string contains de and El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many El\u00e9ments biographiques had \u00c9poux string contains II and Titres string contains de?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "12748865",
+        "title": "Liste des duchesses de Lorraine",
+        "url": "https://fr.wikipedia.org/?curid=12748865",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "134x134px",
+                "Catherine Opalinska\n(1680-1747)",
+                "* Stanislas Leszczynski (mariage en 1698)",
+                "* Reine de Pologne et grande-duchesse de Lituanie (1705-1709 puis 1733-1736)\n* Duchesse de Lorraine et de Bar (1737-1747)",
+                "* Princesse de la Famille Opalinski. Fille de Jan Karol Opalinski et de Sofia Anne Czarnkowska.\n* M\u00e8re d'Anne Leszczynska et de Marie Leszczynska."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": -1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the El\u00e9ments biographiques when the \u00c9poux string contains en and the Nom\n(dates) string contains Catherine?",
+                "answers": [
+                    "* Princesse de la Famille Opalinski. Fille de Jan Karol Opalinski et de Sofia Anne Czarnkowska.\n* M\u00e8re d'Anne Leszczynska et de Marie Leszczynska."
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the El\u00e9ments biographiques when the \u00c9poux string contains en and the Titres string contains de?",
+                "answers": [
+                    "* Princesse de la Famille Opalinski. Fille de Jan Karol Opalinski et de Sofia Anne Czarnkowska.\n* M\u00e8re d'Anne Leszczynska et de Marie Leszczynska."
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only El\u00e9ments biographiques, with Nom\n(dates) string contains Catherine, have \u00c9poux string contains en?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every El\u00e9ments biographiques, with \u00c9poux string contains en, have Nom\n(dates) string starts with Catherine?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many El\u00e9ments biographiques had El\u00e9ments biographiques string contains de and \u00c9poux string contains en?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "12748865",
+        "title": "Liste des duchesses de Lorraine",
+        "url": "https://fr.wikipedia.org/?curid=12748865",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "",
+                "Jeanne d'Harcourt\n(?-1488)",
+                "* Ren\u00e9 II de Lorraine (mariage en 1471)",
+                "* Comtesse de Vaud\u00e9mont (1471-1485)\n* Duchesse de Lorraine, comtesse d'Aumale et baronne d'Elbeuf (1473-1485)\n* Dame de Joinville (1476-1485)\n* Duchesse de Bar (1480-1485)\n* Baronne de Mayenne (1481-1485)\n* Marquise de Pont-\u00e0-Mousson (1485)",
+                "* Princesse de la Maison d'Harcourt. Fille de Guillaume d'Harcourt et de Yolande de Laval.",
+                ""
+            ],
+            [
+                "115px",
+                "Philippa de Gueldre\n(1464-1547)",
+                "* Ren\u00e9 II de Lorraine (mariage en 1485)",
+                "* Duchesse de Lorraine et de Bar, comtesse de Vaud\u00e9mont et d'Aumale, marquise de Pont-\u00e0-Mousson, baronne d'Elbeuf et de Mayenne, dame de Joinville (1485-1508)",
+                "* Princesse de la Maison d'Egmond. Fille d'Adolphe de Gueldre et de Catherine de Bourbon.\n* M\u00e8re d'Antoine de Lorraine, de Claude de Lorraine, de Jean III de Lorraine, de Louis de Lorraine et de Fran\u00e7ois de Lorraine.",
+                ""
+            ],
+            [
+                "115px",
+                "Ren\u00e9e de Bourbon-Montpensier\n(1494-1539)",
+                "* Antoine de Lorraine (mariage en 1515)",
+                "* Dame de Merc\u0153ur (de plein droit, 1496-1539)\n* Duchesse de Lorraine et de Bar (1515-1539)",
+                "* Princesse de la Maison de Bourbon-Montpensier. Fille de Gilbert de Montpensier et de Claire Gonzague.\n* M\u00e8re de Fran\u00e7ois Ier de Lorraine, d'Anne de Lorraine et de Nicolas de Merc\u0153ur.",
+                ""
+            ],
+            [
+                "218x218px",
+                "Christine de Danemark\n(1521-1590)",
+                "* Fran\u00e7ois II Sforza (mariage en 1534)\n* Fran\u00e7ois  de Lorraine (mariage en 1541)",
+                "* Duchesse de Milan (1534-1535)\n* Duchesse de Lorraine et de Bar  (1544-1545)\n* R\u00e9gente de Lorraine (1545-1552)",
+                "* Princesse de la Maison d'Oldenbourg. Fille de Christian II de Danemark et d'Isabelle d'Autriche.\n* M\u00e8re de Charles III de Lorraine, de Ren\u00e9e de Lorraine et de Doroth\u00e9e de Lorraine.",
+                "129x129px"
+            ],
+            [
+                "128x128px",
+                "Claude de France\n(1547-1575)",
+                "* Charles III de Lorraine (mariage en 1559)",
+                "* Duchesse de Lorraine et de Bar (1559-1575)",
+                "* Princesse de la Maison de Valois. Fille d'Henri II de France et de Catherine de M\u00e9dicis.\n* M\u00e8re d'Henri II de Lorraine, de Christine de Lorraine, de Charles de Lorraine, d'Antoinette de Lorraine, de Fran\u00e7ois II de Lorraine, de Catherine de Lorraine et d'\u00c9lisabeth de Lorraine.",
+                ""
+            ],
+            [
+                "134x134px",
+                "Marguerite de Mantoue\n(1591-1632)",
+                "* Henri II de Lorraine (mariage en 1606)",
+                "* Duchesse de Lorraine et de Bar (1606-1624)",
+                "* Princesse de la Maison de Gonzague. Fille de Vincent Ier de Mantoue et d'\u00c9l\u00e9onore de M\u00e9dicis.\n* M\u00e8re de Nicole de Lorraine et de Claude-Fran\u00e7oise de Lorraine.",
+                ""
+            ],
+            [
+                "147x147px",
+                "Christine de Salm\n(1575-1627)",
+                "* Fran\u00e7ois II de Lorraine (mariage en 1597)",
+                "* Comtesse de Vaud\u00e9mont (1597-1627)\n* Duchesse de Lorraine et de Bar (1625)",
+                "* Princesse de la Maison de Salm. Fille de Paul de Salm et de Marie Le Veneur.\n* M\u00e8re de Charles IV de Lorraine, d'Henriette de Lorraine, de Nicolas-Fran\u00e7ois de Lorraine et de Marguerite de Lorraine.",
+                ""
+            ],
+            [
+                "131x131px",
+                "Nicole de Lorraine\n(1608-1657)",
+                "* Charles IV de Lorraine (mariage en 1621)",
+                "* Duchesse de Lorraine et de Bar (de plein droit, 1624-1625 puis consort 1625-1635)",
+                "* Princesse de la Maison de Lorraine. Fille d'Henri II de Lorraine et de Marguerite de Mantoue.",
+                ""
+            ],
+            [
+                "124x124px",
+                "Claude-Fran\u00e7oise de Lorraine\n(1612-1648)",
+                "* Nicolas-Fran\u00e7ois de Lorraine (mariage en 1634)",
+                "* Duchesse de Lorraine et de Bar (1634)",
+                "* Princesse de la Maison de Lorraine. Fille d'Henri II de Lorraine et de Marguerite de Mantoue.\n* M\u00e8re de Charles V de Lorraine.",
+                ""
+            ],
+            [
+                "121x121px",
+                "B\u00e9atrix de Cusance\n(1614-1663)",
+                "* L\u00e9opold-Eug\u00e8ne d'Oiselay (mariage en 1635)\n* Charles IV de Lorraine (mariage invalid\u00e9 en 1637 puis officiel en 1663)",
+                "* Princesse de Cantecroix (1635-1637)\n* Duchesse de Lorraine et de Bar  (1637-1642 puis 1663)",
+                "* Princesse de la Famille de Cusance. Fille de Claude-Fran\u00e7ois de Cusance et d'Ernestine de Witthem.\n* M\u00e8re de Charles-Henri de Lorraine-Vaud\u00e9mont.",
+                ""
+            ],
+            [
+                "",
+                "Marie-Louise d'Apremont\n(1651-1693)",
+                "* Charles IV de Lorraine (mariage en 1665)\n* Heinrich-Franz de von Mansfeld (mariage en 1679)",
+                "* Duchesse de Lorraine et de Bar  (1665-1675)\n* Princesse de Fordi (1679-1693)",
+                "* Princesse de la Famille d'Apremont. Fille de Charles II d'Apremont et de Louise de Mailly.",
+                ""
+            ],
+            [
+                "125x125px",
+                "\u00c9l\u00e9onore d'Autriche (1653-1697)",
+                "* Michel Wi\u015bniowiecki (mariage en 1670)\n* Charles V de Lorraine (mariage en 1678)",
+                "* Reine de Pologne et grande-duchesse de Lituanie (1670-1673)\n* Duchesse de Lorraine et de Bar (1678-1690)",
+                "* Princesse de la Maison de Habsbourg. Fille de Ferdinand III de Habsbourg et d'\u00c9l\u00e9onore de Nevers-Mantoue.\n* M\u00e8re de L\u00e9opold Ier de Lorraine, de Charles-Joseph de Lorraine et de Joseph de Lorraine.",
+                ""
+            ],
+            [
+                "127x127px",
+                "\u00c9lisabeth-Charlotte d'Orl\u00e9ans\n(1676-1744)",
+                "* L\u00e9opold Ier de Lorraine (mariage en 1698)",
+                "* Duchesse de Lorraine et de Bar (1698-1729)\n* R\u00e9gente de Lorraine et de Bar (1729 puis 1730-1737)\n* Princesse de Commercy (de plein droit, 1737-1744)",
+                "* Princesse de la Maison d'Orl\u00e9ans. Fille de Philippe d'Orl\u00e9ans et d'\u00c9lisabeth-Charlotte de Bavi\u00e8re.\n* M\u00e8re d'\u00c9lisabeth-Charlotte de Lorraine, de L\u00e9opold-Cl\u00e9ment de Lorraine, de Fran\u00e7ois Ier du Saint-Empire, d'\u00c9lisabeth-Th\u00e9r\u00e8se de Lorraine, de Charles-Alexandre de Lorraine et d'Anne-Charlotte de Lorraine.",
+                "100x100px"
+            ],
+            [
+                "123x123px",
+                "Marie-Th\u00e9r\u00e8se d'Autriche\n(1717-1780)",
+                "* Fran\u00e7ois Ier du Saint-Empire (mariage en 1736)",
+                "* Duchesse de Lorraine et de Bar  (1736-1737)\n* Grande-duchesse de Toscane (1737-1765)\n* Reine de Hongrie et de Boh\u00eame, archiduchesse d'Autriche, duchesse de Milan, souveraine des Pays-Bas (de plein droit, 1740-1780)\n* Duchesse de Parme et de Plaisance (de plein droit, 1740-1748)\n* Imp\u00e9ratrice du Saint-Empire, reine de Germanie (1745-1765)",
+                "* Princesse de la Maison de Habsbourg. Fille de Charles VI du Saint-Empire et d'\u00c9lisabeth-Christine de Brunswick-Wolfenb\u00fcttel.\n* M\u00e8re de Marie-\u00c9lisabeth d'Autriche, de Marie-Anne d'Autriche, de Marie-Caroline d'Autriche, de Joseph II du Saint-Empire, de Marie-Christine d'Autriche, de Marie-\u00c9lisabeth d'Autriche, de Charles-Joseph d'Autriche, de Marie-Am\u00e9lie d'Autriche, de L\u00e9opold II du Saint-Empire, de Marie-Caroline d'Autriche, de Marie-Jeanne-Gabrielle d'Autriche, de Marie-Jos\u00e8phe d'Autriche, de Marie-Caroline d'Autriche, de Ferdinand d'Autriche-Este, de Marie-Antoinette d'Autriche et de Maximilien-Fran\u00e7ois d'Autriche.",
+                "138x138px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": -1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Armoiries when the Titres string contains Mayenne and the \u00c9poux string contains Lorraine?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Armoiries when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains en?",
+                "answers": [
+                    "",
+                    "129x129px",
+                    "100x100px",
+                    "138x138px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Armoiries, with \u00c9poux string contains Charles, have Titres string contains de?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Armoiries, with \u00c9poux string contains Lorraine, have Titres string contains de?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Armoiries had \u00c9poux string contains en and Titres string contains de?",
+                "answers": [
+                    "14"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Armoiries had Nom\n(dates) string contains de and El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Armoiries had Titres string contains de and \u00c9poux string contains IV?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "12748865",
+        "title": "Liste des duchesses de Lorraine",
+        "url": "https://fr.wikipedia.org/?curid=12748865",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "129x129px",
+                "Yolande d'Anjou\n(1428-1483)",
+                "* Ferry II de Vaud\u00e9mont (mariage en 1445)",
+                "* Baronne de Lambesc (1453-1470)\n* Comtesse de Vaud\u00e9mont et dame de Joinville (1458-1470)\n* Duchesse de Lorraine (de plein droit, 1473)\n* Duchesse de Bar (de plein droit, 1480)",
+                "* Princesse de la Maison de Valois. Fille de Ren\u00e9 d'Anjou et d'Isabelle Ire de Lorraine.\n* M\u00e8re de Ren\u00e9 II de Lorraine, de Nicolas de Joinville et de Marguerite de Lorraine-Vaud\u00e9mont.",
+                "117x117px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": -1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Armoiries when the Titres string contains de and the El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "117x117px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Armoiries when the Titres string contains Bar and the \u00c9poux string contains Ferry?",
+                "answers": [
+                    "117x117px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Armoiries, with El\u00e9ments biographiques string contains de, have \u00c9poux string contains en?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Armoiries, with Titres string contains de, have El\u00e9ments biographiques string contains la?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Armoiries had \u00c9poux string contains de and El\u00e9ments biographiques string contains la?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]
