@@ -1,4 +1,3 @@
-\
 from utils.generate_condition import *
 from utils.table_wrapper import WikiTable
 from utils.multiprocessing_utils import *
@@ -6,6 +5,9 @@ from utils.multiprocessing_utils import *
 from tqdm import tqdm
 import warnings
 import multiprocessing as mp
+import nltk
+nltk.download('wordnet')
+
 
 from question_generator.conjunction import *
 from question_generator.quantifiers import *
@@ -70,16 +72,21 @@ def worker(table_data_chunk, template_dict, q):
 
 def main():
     template_dict = json.load(open("question_template.json"))
-    #table_data_dir = "table_data"
-    table_data_dir = "../../../100-female-celebrities/v2-100/P4"
+    table_data_dir = "table_data"
     
     result = []
-    for orig_file in tqdm(os.listdir(table_data_dir)):
-        if not orig_file.endswith(".json"):
-            continue
+    files = [f for f in os.listdir(table_data_dir) if f.endswith(".json")]
+    for orig_file in tqdm(files):
         orig_file_path = os.path.join(table_data_dir, orig_file)
         
-        data = json.load(open(orig_file_path))
+        try:
+            with open(orig_file_path, 'r') as file:
+                data = json.load(file)
+        except json.JSONDecodeError as e:
+            print(f"Error reading JSON from {orig_file_path}: {e}")
+            continue
+
+        # Set up multiprocessing
         n_processes = mp.cpu_count()
         q = mp.Queue()
         table_chunks = split(data, n_processes)
@@ -97,8 +104,10 @@ def main():
     output_dir = "output"
     os.makedirs(output_dir, exist_ok=True)
     json.dump(result, open(os.path.join(output_dir, "synthetic_qa_output.json"), "w"), indent=4)
-    json.dump(random.sample(result, 1000), open(os.path.join(output_dir, "synthetic_qa_output_sample.json"), "w"), indent=4)
-    print("Generate {} questions".format(len(result)))
+    if len(result) > 1000:
+        json.dump(random.sample(result, 1000), open(os.path.join(output_dir, "synthetic_qa_output_sample.json"), "w"), indent=4)
+    
+    print(f"Generated {len(result)} questions.")
 
 if __name__ == '__main__':
     main()
