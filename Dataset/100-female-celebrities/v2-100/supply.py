@@ -25,10 +25,16 @@ def process_file(i):
             if 'technologyResults' in tech_result:
                 tech_results = tech_result['technologyResults']
                 for result in tech_results:
-                    if 'dagobah' in result and 'preprocessed' in result['dagobah']:
+                    if ('dagobah' in result and 
+                        'preprocessed' in result['dagobah'] and
+                        'primaryKeyInfo' in result['dagobah']['preprocessed']):
+                        
                         preprocessed = result['dagobah']['preprocessed']
-                        primary_key_position = preprocessed['primaryKeyInfo']['primaryKeyPosition']
+                        primary_key_position = preprocessed['primaryKeyInfo'].get('primaryKeyPosition')
                         typing_label = [label['typing'][0]['typingLabel'] for label in preprocessed['primitiveTyping']]
+                        break
+                if primary_key_position is not None:
+                    break
 
         # Sanity check to ensure the keys are found
         if primary_key_position is None or not typing_label:
