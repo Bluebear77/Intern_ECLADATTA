@@ -25,8 +25,9 @@ def write_csv(error_data, csv_file):
         writer.writerow(["File Name", "Error Message"])
         
         total_errors = 0
-        for file_name, errors in error_data.items():
-            for error in errors:
+        sorted_files = sorted(error_data.keys())  # Sort the files with errors
+        for file_name in sorted_files:
+            for error in error_data[file_name]:
                 writer.writerow([file_name, error])
                 total_errors += 1
 
