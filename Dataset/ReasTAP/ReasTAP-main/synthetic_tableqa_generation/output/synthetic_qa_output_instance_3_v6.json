@@ -934,11 +934,11 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the  when the Ann\u00e9e was equal to 2017 and the Surface string contains battue?",
+                "question": "How many  had Tournoi is Masters?",
                 "answers": [
-                    ""
+                    "9"
                 ],
-                "reasoning_type": "conjunction"
+                "reasoning_type": "counting"
             }
         ]
     },
@@ -1048,7 +1048,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the Date was on 22/10/2017 and the # was less than or equal to 1?",
+                "question": "What was the Nom de l'\u00e9dition when the Ultime adversaire string contains Caroline and the # was less than 2?",
                 "answers": [
                     "WTA Finals Singapour"
                 ],
@@ -1056,15 +1056,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the # was greater than 2 and the Date was after 22/10/2017?",
+                "question": "What was the Nom de l'\u00e9dition when the # was greater than or equal to 1 and the Ultime adversaire string ends with Stephens?",
                 "answers": [
-                    "WTA Finals Shenzhen"
+                    "WTA Finals Singapour"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'\u00e9dition, with Date was before 21/10/2018, have R\u00e9sultat string starts with Round?",
+                "question": "Does every Nom de l'\u00e9dition, with # was less than or equal to 1, have Date was on 22/10/2017?",
                 "answers": [
                     "Yes"
                 ],
@@ -1072,15 +1072,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'\u00e9dition, with Date was on 22/10/2017, have Ultime adversaire string starts with Caroline?",
+                "question": "Does only Nom de l'\u00e9dition, with Ultime adversaire string contains Stephens, have # was greater than 1?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Date was on 22/10/2017, happened the 3rd according to Date?",
+                "question": "Which Nom de l'\u00e9dition, with # was equal to 1, happened the 1st according to Date?",
                 "answers": [
                     "WTA Finals Singapour"
                 ],
@@ -1088,15 +1088,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Date was on 22/10/2017, has the 1st largest #?",
+                "question": "Which Nom de l'\u00e9dition, with # was equal to 1, happened the 2nd according to Date?",
                 "answers": [
                     "WTA Finals Singapour"
                 ],
-                "reasoning_type": "numerical_comparison"
+                "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Ultime adversaire string contains Caroline, has the 1st largest #?",
+                "question": "Which Nom de l'\u00e9dition, with R\u00e9sultat string starts with Round, has the 2nd largest #?",
                 "answers": [
                     "WTA Finals Singapour"
                 ],
@@ -1112,23 +1112,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had # was less than 3 and Date was on 22/10/2017?",
+                "question": "Which Nom de l'\u00e9dition, with Date was before 27/10/2019, has the 2nd largest #?",
                 "answers": [
-                    "3"
+                    "WTA Finals Singapour"
                 ],
-                "reasoning_type": "counting"
+                "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had # was less than or equal to 1?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had Date was after 22/10/2017?",
+                "question": "How many Nom de l'\u00e9dition had Ultime adversaire string starts with Caroline and Date was on 22/10/2017?",
                 "answers": [
                     "2"
                 ],
@@ -1136,17 +1128,41 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of # when the Date was before 27/10/2019?",
+                "question": "How many Nom de l'\u00e9dition had R\u00e9sultat string starts with Round?",
                 "answers": [
-                    "1.25"
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'\u00e9dition had R\u00e9sultat string contains Robin and # was less than or equal to 3?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of # when the Date was before 21/10/2018?",
+                "answers": [
+                    "1.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of # when the Date was after 22/10/2017?",
+                "question": "What was the average of # when the R\u00e9sultat string starts with Round?",
                 "answers": [
-                    "5.0"
+                    "1.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of # when the Ultime adversaire string starts with Caroline?",
+                "answers": [
+                    "2.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -1283,7 +1299,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the # was less than or equal to 2 and the Date was on 31/07/2021?",
+                "question": "What was the Nom de l'olympiade when the R\u00e9sultat string starts with tour and the # was equal to 2?",
                 "answers": [
                     "Olympic Tennis Event Tokyo"
                 ],
@@ -1291,7 +1307,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the Ultimes adversaires string contains Cornet and the Date was after 06/08/2016?",
+                "question": "What was the Nom de l'olympiade when the # was greater than or equal to 2 and the R\u00e9sultat string contains tour?",
                 "answers": [
                     "Olympic Tennis Event Tokyo"
                 ],
@@ -1299,15 +1315,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom de l'olympiade, with Date was on 31/07/2021, have # was greater than or equal to 1?",
+                "question": "Does every Nom de l'olympiade, with # was greater than or equal to 1, have Date was on 06/08/2016?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'olympiade, with Ultimes adversaires string contains Cornet, have # was greater than 1?",
+                "question": "Does only Nom de l'olympiade, with Ultimes adversaires string contains Cornet, have Date was on 31/07/2021?",
                 "answers": [
                     "Yes"
                 ],
@@ -1331,15 +1347,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had R\u00e9sultat string starts with tour?",
+                "question": "How many Nom de l'olympiade had Date was after 31/07/2021?",
                 "answers": [
-                    "2"
+                    "0"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had # was less than or equal to 1?",
+                "question": "How many Nom de l'olympiade had # was equal to 1?",
                 "answers": [
                     "1"
                 ],
@@ -1347,23 +1363,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of # when the R\u00e9sultat string starts with tour?",
-                "answers": [
-                    "3.0"
-                ],
-                "reasoning_type": "numerical_operation"
-            },
-            {
-                "source": "synthetic_qa",
                 "question": "What was the average of # when the R\u00e9sultat string contains tour?",
-                "answers": [
-                    "1.5"
-                ],
-                "reasoning_type": "numerical_operation"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the average of # when the R\u00e9sultat string starts with tour?",
                 "answers": [
                     "1.5"
                 ],

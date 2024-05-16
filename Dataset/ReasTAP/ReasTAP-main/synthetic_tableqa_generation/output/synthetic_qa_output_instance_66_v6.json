@@ -270,32 +270,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Does only C\u00e9r\u00e9monie, with Titre string contains La, have Ann\u00e9e was before 2000?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only C\u00e9r\u00e9monie, with Titre string contains de, have Ann\u00e9e was before 1999?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which C\u00e9r\u00e9monie, with Ann\u00e9e was after 2003, happened the 2nd according to Ann\u00e9e?",
-                "answers": [
-                    "MTV Movie Awards",
-                    "Teen Choice Awards"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which C\u00e9r\u00e9monie, with Ann\u00e9e was before 2001, happened the 3rd according to Ann\u00e9e?",
+                "question": "Which C\u00e9r\u00e9monie, with Ann\u00e9e was before 1999, happened the 4th according to Ann\u00e9e?",
                 "answers": [
                     "Emmy Awards"
                 ],
@@ -303,9 +278,19 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre was Meilleure prestation la plus effrayantepour The Grudge and when the Titre was Meilleure r\u00f4le dans une \u0153uvre t\u00e9l\u00e9vis\u00e9epour Buffy contre les vampires?",
+                "question": "Which C\u00e9r\u00e9monie, with Ann\u00e9e was before 2000, happened the 9th according to Ann\u00e9e?",
                 "answers": [
-                    "3"
+                    "FHM",
+                    "Saturn Awards",
+                    "Teen Choice Awards"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Titre was Meilleure r\u00e9v\u00e9lation f\u00e9minine de l'ann\u00e9epour Souviens-toi... l'\u00e9t\u00e9 dernier and when the Titre was Meilleure actricepour Sexe Intentions?",
+                "answers": [
+                    "2"
                 ],
                 "reasoning_type": "date_difference"
             }
@@ -379,14 +364,6 @@
             {
                 "source": "synthetic_qa",
                 "question": "How many Film had Salaire. string starts with par?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Film had Salaire. string contains par?",
                 "answers": [
                     "1"
                 ],

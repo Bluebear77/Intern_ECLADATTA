@@ -84,7 +84,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Titres string contains Francs and the Portrait string ends with Saxe?",
+                "question": "What was the Nom when the Portrait string contains de and the \u00c9pouse de string contains de?",
                 "answers": [
                     "En 936, Hugues le Noir (?-952), alors comte d'Outre Sa\u00f4ne, de M\u00e2con, et d'Autun, et marquis de Provence, fr\u00e8re de Raoul , ainsi que Hugues le Grand (898-856), alors comte de Paris, marquis de Neustrie, et duc des Francs, revendiquent le duch\u00e9, qui est divis\u00e9, en trois part \u00e9gales, par le trait\u00e9 de Langres de 938. Il y a donc jusqu'\u00e0 la r\u00e9unification du duch\u00e9, en 943, au profit d'Hugues le Grand, trois ducs de Bourgogne, et, in extenso, deux duchesses (Hugues le Noir n'\u00e9tant pas mari\u00e9). Celles-ci sont :\n* Ermengarde de Bourgogne\n* Hedwige de Saxe"
                 ],
@@ -92,51 +92,49 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Titres string contains Bourgogne and the Dynastie string contains de?",
+                "question": "What was the Nom when the Notes string starts with En and the \u00c9pouse de string contains Saxe?",
                 "answers": [
-                    "En 936, Hugues le Noir (?-952), alors comte d'Outre Sa\u00f4ne, de M\u00e2con, et d'Autun, et marquis de Provence, fr\u00e8re de Raoul , ainsi que Hugues le Grand (898-856), alors comte de Paris, marquis de Neustrie, et duc des Francs, revendiquent le duch\u00e9, qui est divis\u00e9, en trois part \u00e9gales, par le trait\u00e9 de Langres de 938. Il y a donc jusqu'\u00e0 la r\u00e9unification du duch\u00e9, en 943, au profit d'Hugues le Grand, trois ducs de Bourgogne, et, in extenso, deux duchesses (Hugues le Noir n'\u00e9tant pas mari\u00e9). Celles-ci sont :\n* Ermengarde de Bourgogne\n* Hedwige de Saxe",
-                    "Ermengarde de Bourgogne(v.905-v.945)",
-                    "Hedwige de Saxe(925-965)"
+                    "En 936, Hugues le Noir (?-952), alors comte d'Outre Sa\u00f4ne, de M\u00e2con, et d'Autun, et marquis de Provence, fr\u00e8re de Raoul , ainsi que Hugues le Grand (898-856), alors comte de Paris, marquis de Neustrie, et duc des Francs, revendiquent le duch\u00e9, qui est divis\u00e9, en trois part \u00e9gales, par le trait\u00e9 de Langres de 938. Il y a donc jusqu'\u00e0 la r\u00e9unification du duch\u00e9, en 943, au profit d'Hugues le Grand, trois ducs de Bourgogne, et, in extenso, deux duchesses (Hugues le Noir n'\u00e9tant pas mari\u00e9). Celles-ci sont :\n* Ermengarde de Bourgogne\n* Hedwige de Saxe"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Dynastie string contains marquis, have \u00c9pouse de string contains le?",
+                "question": "Does every Nom, with Titres string contains profit, have Portrait string contains de?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom, with \u00c9pouse de string contains par, have Portrait string starts with En?",
+                "question": "Does only Nom, with Dynastie string starts with En, have Portrait string starts with En?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had \u00c9pouse de string contains la and Portrait string starts with En?",
+                "question": "How many Nom had Titres string contains de and \u00c9pouse de string contains son?",
                 "answers": [
-                    "1"
+                    "3"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Notes string starts with Fille?",
+                "question": "How many Nom had Notes string contains de?",
                 "answers": [
-                    "4"
+                    "5"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Notes string contains comte and Portrait string starts with En?",
+                "question": "How many Nom had \u00c9pouse de string contains de and Notes string contains le?",
                 "answers": [
-                    "1"
+                    "5"
                 ],
                 "reasoning_type": "counting"
             }
@@ -217,7 +215,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Titres string contains de and the Rang was equal to 5?",
+                "question": "What was the Nom when the Titres string contains Bourgogne and the Rang was less than 6?",
                 "answers": [
                     "Li\u00e9gearde de Chalon(v.945 \u2013 965)"
                 ],
@@ -225,7 +223,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Rang was less than 8 and the Notes string starts with Fille?",
+                "question": "What was the Nom when the Notes string starts with Fille and the Titres string contains Bourgogne?",
                 "answers": [
                     "Li\u00e9gearde de Chalon(v.945 \u2013 965)",
                     "(947-986/91)",
@@ -235,15 +233,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Dynastie string contains de, have Rang was greater than or equal to 5?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Nom, with Dynastie string contains de, have Titres string contains de?",
+                "question": "Does every Nom, with Dynastie string contains Gascogne, have Titres string ends with Bourgogne?",
                 "answers": [
                     "Yes"
                 ],
@@ -251,15 +241,47 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with Notes string starts with Fille, has the 1st largest Rang?",
+                "question": "Does every Nom, with Notes string contains de, have Rang was less than or equal to 8?",
                 "answers": [
-                    "Gersende de Gascogne(968-1016)"
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom, with Notes string starts with Fille, has the 3rd largest Rang?",
+                "answers": [
+                    "Li\u00e9gearde de Chalon(v.945 \u2013 965)"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Titres string ends with Bourgogne?",
+                "question": "Which Nom, with Titres string contains de, has the 4th largest Rang?",
+                "answers": [
+                    "Li\u00e9gearde de Chalon(v.945 \u2013 965)"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom, with Titres string contains Bourgogne, has the 4th largest Rang?",
+                "answers": [
+                    "Li\u00e9gearde de Chalon(v.945 \u2013 965)"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Rang was less than or equal to 8 and \u00c9pouse de string contains Ier?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Titres string contains de?",
                 "answers": [
                     "4"
                 ],
@@ -267,41 +289,33 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Rang was greater than or equal to 6?",
+                "question": "How many Nom had Rang was less than or equal to 8?",
                 "answers": [
-                    "3"
+                    "4"
                 ],
                 "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Dynastie string contains de and Rang was less than or equal to 8?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the average of Rang when the Notes string starts with Fille?",
-                "answers": [
-                    "6.0"
-                ],
-                "reasoning_type": "numerical_operation"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the average of Rang when the \u00c9pouse de string contains fils?",
-                "answers": [
-                    "6.5"
-                ],
-                "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
                 "question": "What was the sum of Rang when the Notes string starts with Fille?",
                 "answers": [
                     "18.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Rang when the Titres string ends with Bourgogne?",
+                "answers": [
+                    "26.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Rang when the Titres string contains de?",
+                "answers": [
+                    "26.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -532,7 +546,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the \u00c9pouse de string contains de and the Portrait string starts with Durant?",
+                "question": "What was the Nom when the Notes string starts with fille and the Dynastie string contains de?",
+                "answers": [
+                    "Constance d'Arles(v.985-1032)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the \u00c9pouse de string starts with Durant and the Notes string starts with Durant?",
                 "answers": [
                     "Durant la p\u00e9riode 1016 - 1031, il n'y a aucune duchesse de Bourgogne pour cette p\u00e9riode, correspondant au r\u00e8gne ducal d'Henri II de Bourgogne (1008-1060) (futur roi des Francs Henri  (1027-1060)), encore c\u00e9libataire.",
                     "Durant la p\u00e9riode 1306 - 1315 : il n'y a aucune duchesse de Bourgogne pour cette p\u00e9riode correspondant au r\u00e8gne d'Hugues V de Bourgogne (1294-1315), duc de Bourgogne (1306-1315) et roi de Thessalonique (1306-1313), mort sans s'\u00eatre mari\u00e9 et sans post\u00e9rit\u00e9.",
@@ -542,17 +564,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the \u00c9pouse de string starts with Durant and the Notes string contains de?",
-                "answers": [
-                    "Durant la p\u00e9riode 1016 - 1031, il n'y a aucune duchesse de Bourgogne pour cette p\u00e9riode, correspondant au r\u00e8gne ducal d'Henri II de Bourgogne (1008-1060) (futur roi des Francs Henri  (1027-1060)), encore c\u00e9libataire.",
-                    "Durant la p\u00e9riode 1306 - 1315 : il n'y a aucune duchesse de Bourgogne pour cette p\u00e9riode correspondant au r\u00e8gne d'Hugues V de Bourgogne (1294-1315), duc de Bourgogne (1306-1315) et roi de Thessalonique (1306-1313), mort sans s'\u00eatre mari\u00e9 et sans post\u00e9rit\u00e9.",
-                    "Durant la p\u00e9riode 1361 - 1363 : r\u00e9gence de Jean II le Bon (1319-1364), roi de France."
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom, with \u00c9pouse de string ends with Bourgogne, have Titres string contains de?",
+                "question": "Does every Nom, with Notes string starts with Durant, have \u00c9pouse de string contains Bourgogne?",
                 "answers": [
                     "No"
                 ],
@@ -560,7 +572,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Notes string contains roi, have Portrait string contains roi?",
+                "question": "Does only Nom, with Titres string starts with Durant, have \u00c9pouse de string starts with Durant?",
                 "answers": [
                     "Yes"
                 ],
@@ -568,7 +580,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Portrait string starts with Durant and Notes string starts with Durant?",
+                "question": "How many Nom had \u00c9pouse de string contains Ier?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Portrait string starts with Durant and Dynastie string starts with Durant?",
                 "answers": [
                     "3"
                 ],
@@ -576,17 +596,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Titres string starts with Durant?",
+                "question": "How many Nom had Notes string starts with Fille and Titres string contains de?",
                 "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Titres string contains Bourgogne?",
-                "answers": [
-                    "18"
+                    "15"
                 ],
                 "reasoning_type": "counting"
             }
@@ -687,9 +699,11 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Titres string contains de and the Rang was greater than or equal to 29?",
+                "question": "What was the Nom when the Titres string ends with Bourgogne and the \u00c9pouse de string contains de?",
                 "answers": [
-                    "Bonne d'Artois  (1396-1425)",
+                    "Marguerite III de Flandre (1350-1405)",
+                    "Marguerite de Bavi\u00e8re (1363-1423)",
+                    "Michelle de France  (1395-1422)",
                     "Isabelle de Portugal  (1397-1471)",
                     "Marguerite d'York (1446-1503)"
                 ],
@@ -697,50 +711,35 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Dynastie string contains de and the Titres string ends with Bourgogne?",
+                "question": "What was the Nom when the Notes string contains Fille and the \u00c9pouse de string contains Bourgogne?",
                 "answers": [
                     "Marguerite III de Flandre (1350-1405)",
                     "Marguerite de Bavi\u00e8re (1363-1423)",
                     "Michelle de France  (1395-1422)",
-                    "Bonne d'Artois  (1396-1425)"
+                    "Isabelle de Portugal  (1397-1471)",
+                    "Marguerite d'York (1446-1503)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Titres string ends with Bourgogne, have Dynastie string contains de?",
+                "question": "Does only Nom, with \u00c9pouse de string contains III, have Titres string contains de?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom, with Titres string contains de, have Notes string starts with Fille?",
+                "question": "Does only Nom, with Rang was greater than or equal to 30, have Notes string contains de?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with \u00c9pouse de string contains fils, has the 3rd largest Rang?",
-                "answers": [
-                    "Marguerite de Bavi\u00e8re (1363-1423)"
-                ],
-                "reasoning_type": "numerical_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Nom, with Notes string starts with Fille, has the 2nd largest Rang?",
-                "answers": [
-                    "Isabelle de Portugal  (1397-1471)"
-                ],
-                "reasoning_type": "numerical_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Nom, with Notes string starts with Fille, has the 6th largest Rang?",
+                "question": "Which Nom, with Titres string ends with Bourgogne, has the 6th largest Rang?",
                 "answers": [
                     "Marguerite III de Flandre (1350-1405)"
                 ],
@@ -748,7 +747,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Notes string starts with Fille and Dynastie string contains de?",
+                "question": "Which Nom, with Titres string contains Bourgogne, has the 5th largest Rang?",
+                "answers": [
+                    "Marguerite de Bavi\u00e8re (1363-1423)"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom, with Notes string starts with Fille, has the 4th largest Rang?",
+                "answers": [
+                    "Michelle de France  (1395-1422)"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Dynastie string contains de and Titres string contains de?",
                 "answers": [
                     "4"
                 ],
@@ -756,41 +771,33 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Notes string starts with Fille and Titres string contains Bourgogne?",
+                "question": "How many Nom had Rang was less than or equal to 30?",
                 "answers": [
-                    "6"
+                    "5"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Notes string starts with Fille?",
+                "question": "How many Nom had Notes string starts with Fille and \u00c9pouse de string contains Jean?",
                 "answers": [
-                    "6"
+                    "2"
                 ],
                 "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the sum of Rang when the Notes string contains le?",
-                "answers": [
-                    "171.0"
-                ],
-                "reasoning_type": "numerical_operation"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the sum of Rang when the \u00c9pouse de string contains comte?",
-                "answers": [
-                    "86.0"
-                ],
-                "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
                 "question": "What was the sum of Rang when the Notes string starts with Fille?",
                 "answers": [
                     "171.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Rang when the Titres string ends with Bourgogne?",
+                "answers": [
+                    "28.5"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -951,33 +958,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Dynastie string contains de and the Titres string contains de?",
+                "question": "What was the Nom when the Dynastie string contains Bourbon and the \u00c9pouse de string contains en?",
                 "answers": [
-                    "Marie de Bourgogne(1477-1482)",
-                    "Jeanne  de Castille(1479-1555)",
-                    "1506-1526 : vacance du titre (c\u00e9libat du duc Charles de Gand).",
-                    "1539-1555 : vacance du titre (veuvage du duc Charles de Gand).",
-                    "\u00c9lisabeth de France(1545-1568)",
-                    "\u00c0 la mort de cette derni\u00e8re et jusqu'\u00e0 nos jours, le titre de duc de Bourgogne est port\u00e9 par les rois Bourbons d'Espagne, et celui de duchesse, par leurs \u00e9pouses : voir la liste des rois d'Espagne."
+                    "\u00c9lisabeth de France(1545-1568)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Titres string contains de and the Dynastie string contains de?",
+                "question": "What was the Nom when the Titres string contains Bourgogne and the Dynastie string contains Tudor?",
                 "answers": [
-                    "Marie de Bourgogne(1477-1482)",
-                    "Jeanne  de Castille(1479-1555)",
-                    "1506-1526 : vacance du titre (c\u00e9libat du duc Charles de Gand).",
-                    "1539-1555 : vacance du titre (veuvage du duc Charles de Gand).",
-                    "\u00c9lisabeth de France(1545-1568)",
-                    "\u00c0 la mort de cette derni\u00e8re et jusqu'\u00e0 nos jours, le titre de duc de Bourgogne est port\u00e9 par les rois Bourbons d'Espagne, et celui de duchesse, par leurs \u00e9pouses : voir la liste des rois d'Espagne."
+                    "Marie  d'Angleterre(1516-1558)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Portrait string contains Charles, have Titres string contains de?",
+                "question": "Does every Nom, with Dynastie string contains de, have Notes string contains titre?",
                 "answers": [
                     "No"
                 ],
@@ -985,7 +982,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with \u00c9pouse de string contains en, have Titres string contains de?",
+                "question": "Does every Nom, with \u00c9pouse de string contains en, have Dynastie string ends with Bourgogne?",
                 "answers": [
                     "No"
                 ],
@@ -993,7 +990,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Dynastie string contains de and Notes string starts with Fille?",
+                "question": "How many Nom had Titres string contains de and \u00c9pouse de string contains Charles?",
                 "answers": [
                     "3"
                 ],
@@ -1001,17 +998,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Titres string contains titre and \u00c9pouse de string contains de?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Portrait string contains titre?",
+                "question": "How many Nom had Notes string contains titre?",
                 "answers": [
                     "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had \u00c9pouse de string contains II and Titres string contains Bourgogne?",
+                "answers": [
+                    "3"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1072,7 +1069,16 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the \u00c9pouse de string contains Louis and the Notes string starts with Fille?",
+                "question": "What was the Nom when the Titres string contains de and the Dynastie string contains de?",
+                "answers": [
+                    "\u00c0 la mort de Charles le T\u00e9m\u00e9raire, dernier membre masculin de la branche bourguignonne de la maison cap\u00e9tienne de Valois, Louis XI le Prudent (1423-1483), roi de France, s'empare du duch\u00e9 de Bourgogne et le r\u00e9troc\u00e8de \u00e0 la Couronne. Le titre de duc de Bourgogne est d\u00e9cern\u00e9 par Louis XIV au fils a\u00een\u00e9 du dauphin. L'\u00e9pouse de ce dernier prend donc de facto le titre de duchesse.",
+                    "Marie-Ad\u00e9la\u00efde de Savoie (1685-1712)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the Notes string starts with Fille and the Dynastie string contains de?",
                 "answers": [
                     "Marie-Ad\u00e9la\u00efde de Savoie (1685-1712)"
                 ],
@@ -1080,15 +1086,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Dynastie string contains le and the Portrait string contains Bourgogne?",
-                "answers": [
-                    "\u00c0 la mort de Charles le T\u00e9m\u00e9raire, dernier membre masculin de la branche bourguignonne de la maison cap\u00e9tienne de Valois, Louis XI le Prudent (1423-1483), roi de France, s'empare du duch\u00e9 de Bourgogne et le r\u00e9troc\u00e8de \u00e0 la Couronne. Le titre de duc de Bourgogne est d\u00e9cern\u00e9 par Louis XIV au fils a\u00een\u00e9 du dauphin. L'\u00e9pouse de ce dernier prend donc de facto le titre de duchesse."
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom, with Titres string contains la, have Dynastie string contains Louis?",
+                "question": "Does every Nom, with Titres string contains roi, have \u00c9pouse de string contains fils?",
                 "answers": [
                     "Yes"
                 ],
@@ -1096,7 +1094,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom, with Titres string contains de, have Portrait string contains de?",
+                "question": "Does every Nom, with \u00c9pouse de string contains fils, have Notes string starts with Fille?",
                 "answers": [
                     "No"
                 ],
@@ -1104,17 +1102,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Titres string contains de and Dynastie string contains de?",
+                "question": "How many Nom had Notes string starts with Fille?",
                 "answers": [
-                    "2"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Portrait string contains titre?",
+                "question": "How many Nom had Notes string contains de?",
                 "answers": [
-                    "1"
+                    "2"
                 ],
                 "reasoning_type": "counting"
             }

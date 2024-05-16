@@ -1005,31 +1005,31 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the Metteur en sc\u00e8ne string starts with Bob and the R\u00f4le string starts with Madame?",
+                "question": "What was the Titre when the Auteur string starts with Sarah and the Lieu(x) des repr\u00e9sentations string contains la?",
                 "answers": [
-                    "Quartett"
+                    "4.48 Psychose"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the R\u00f4le string starts with Mary and the Metteur en sc\u00e8ne string starts with Bob?",
+                "question": "What was the Titre when the R\u00f4le is Isabella and the Lieu(x) des repr\u00e9sentations string contains de?",
                 "answers": [
-                    "Mary Said What She Said"
+                    "Mesure pour mesure"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre, with Metteur en sc\u00e8ne string starts with Bob, have R\u00f4le string starts with Madame?",
+                "question": "Does every Titre, with Lieu(x) des repr\u00e9sentations string contains la, have Auteur string starts with Sarah?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Titre, with Lieu(x) des repr\u00e9sentations string contains Festival, have R\u00f4le string contains Stuart?",
+                "question": "Does every Titre, with R\u00f4le string contains Stuart, have Lieu(x) des repr\u00e9sentations string contains Paris?",
                 "answers": [
                     "No"
                 ],
@@ -1045,23 +1045,39 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Lieu(x) des repr\u00e9sentations was Th\u00e9\u00e2tre de la Ville - Espace Cardin, Paris et tourn\u00e9e Vienne (Festival de Vienne), Lisbonne (Centre culturel Bel\u00e9m), Barcelone (Teatre Lliure), Hambourg (Th\u00e9\u00e2tre Thalia). and when the Lieu(x) des repr\u00e9sentations was Sydney, avec la Sydney Theatre Company, dont Cate Blanchett?",
+                "question": "Which Titre, with Metteur en sc\u00e8ne string starts with Caroline, happened the 2nd according to Ann\u00e9e?",
                 "answers": [
-                    "6"
+                    "Voyage autour de ma marmite"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Lieu(x) des repr\u00e9sentations was tourn\u00e9e S\u00e3o Paulo, Porto Alegre et New York (Brooklyn Academy of Music) and when the Lieu(x) des repr\u00e9sentations was Atlantic Theatre, New York.?",
+                "answers": [
+                    "10"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Lieu(x) des repr\u00e9sentations was Th\u00e9\u00e2tre \u00c9douard VII and when the Lieu(x) des repr\u00e9sentations was Petit Od\u00e9on?",
+                "question": "How many years had passed between when the Auteur was Harold Pinter and when the Auteur was Darryl Pinckney?",
                 "answers": [
-                    "16"
+                    "2"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Auteur string contains Arthur?",
+                "question": "How many Titre had Auteur string contains de and Lieu(x) des repr\u00e9sentations string contains de?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Auteur string starts with Sarah?",
                 "answers": [
                     "2"
                 ],
@@ -1069,17 +1085,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Lieu(x) des repr\u00e9sentations string contains Paris and Metteur en sc\u00e8ne string starts with Bob?",
+                "question": "How many Titre had Metteur en sc\u00e8ne string starts with Bob?",
                 "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Titre had R\u00f4le string starts with Madame and Metteur en sc\u00e8ne string contains Wilson?",
-                "answers": [
-                    "2"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             }

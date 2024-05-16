@@ -430,7 +430,16 @@
                 9999
             ]
         },
-        "qas": []
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Ann\u00e9e when the Cha\u00eene string starts with TV and the R\u00f4le(s) is Participant?",
+                "answers": [
+                    "2014"
+                ],
+                "reasoning_type": "conjunction"
+            }
+        ]
     },
     {
         "id": "11019108",
@@ -501,7 +510,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the R\u00f4le string contains dos and the Ann\u00e9e was after 2018?",
+                "question": "What was the Titre when the Ann\u00e9e was after 2015 and the R\u00f4le string contains dos?",
                 "answers": [
                     "Hitpig"
                 ],
@@ -509,7 +518,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the Ann\u00e9e was before 2017 and the R\u00f4le string starts with Helena?",
+                "question": "What was the Titre when the Ann\u00e9e was before 2018 and the R\u00f4le string starts with Helena?",
                 "answers": [
                     "Copa de Elite"
                 ],
@@ -517,32 +526,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre, with Ann\u00e9e was before 2018, have R\u00f4le string contains Helena?",
+                "question": "Does every Titre, with Ann\u00e9e was before 2015, have R\u00f4le string starts with Helena?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre, with Ann\u00e9e was before 2018, have R\u00f4le string starts with Helena?",
+                "question": "Does every Titre, with Ann\u00e9e was on 2014, have R\u00f4le string starts with Helena?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Ann\u00e9e was before 2018, happened the 1st according to Ann\u00e9e?",
-                "answers": [
-                    "Copa de Elite",
-                    "Didi e o Segredo dos Anjos"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Titre, with Ann\u00e9e was after 2014, happened the 4th according to Ann\u00e9e?",
+                "question": "Which Titre, with Ann\u00e9e was after 2015, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
                     "Hitpig"
                 ],
@@ -550,7 +550,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Ann\u00e9e was before 2017, happened the 2nd according to Ann\u00e9e?",
+                "question": "Which Titre, with Ann\u00e9e was after 2014, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "Breaking Through"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Titre, with Ann\u00e9e was before 2018, happened the 1st according to Ann\u00e9e?",
                 "answers": [
                     "Copa de Elite",
                     "Didi e o Segredo dos Anjos"
@@ -567,7 +575,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Ann\u00e9e was after 2014 and R\u00f4le string contains dos?",
+                "question": "How many years had passed between when the R\u00f4le was Deusa Sol\u00e1ris and when the R\u00f4le was Helena Boccato?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Ann\u00e9e was on 2014 and R\u00f4le string starts with Helena?",
                 "answers": [
                     "1"
                 ],
@@ -575,7 +591,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Ann\u00e9e was before 2017 and R\u00f4le string starts with Helena?",
+                "question": "How many Titre had Ann\u00e9e was on 2023 and R\u00f4le string contains dos?",
                 "answers": [
                     "1"
                 ],
@@ -583,9 +599,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had R\u00f4le string contains dos and Ann\u00e9e was after 2014?",
+                "question": "How many Titre had Ann\u00e9e was after 2017?",
                 "answers": [
-                    "1"
+                    "2"
                 ],
                 "reasoning_type": "counting"
             }

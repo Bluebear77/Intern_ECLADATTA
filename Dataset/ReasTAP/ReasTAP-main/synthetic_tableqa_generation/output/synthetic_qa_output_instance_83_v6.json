@@ -286,6 +286,30 @@
                     "Parti"
                 ],
                 "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Parti, with Unique tour is Rang, have Issue is Issue?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Parti, with Issue is Issue, have Unique tour is Rang?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Parti had Unique tour is Rang?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
             }
         ]
     },
@@ -353,15 +377,6 @@
             4
         ],
         "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "How many Parti had Circonscription string starts with de?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
+        "qas": []
     }
 ]

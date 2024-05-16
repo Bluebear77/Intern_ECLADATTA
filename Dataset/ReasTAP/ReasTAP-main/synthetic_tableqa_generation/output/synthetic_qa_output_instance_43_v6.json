@@ -267,16 +267,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Ann\u00e9e was after 2007 and the Film string starts with La?",
-                "answers": [
-                    "C\u00e9sar de la meilleure actrice",
-                    "Lumi\u00e8re de la meilleure actrice"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Film string starts with Le and the Ann\u00e9e was before 2020?",
+                "question": "What was the R\u00e9compense when the Ann\u00e9e was after 2010 and the Film string contains est?",
                 "answers": [
                     "C\u00e9sar de la meilleure actrice dans un second r\u00f4le",
                     "Globe de Cristal de la meilleure actrice de com\u00e9die"
@@ -285,41 +276,48 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every R\u00e9compense, with Ann\u00e9e was before 1986, have Film is Possession?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every R\u00e9compense, with Ann\u00e9e was before 2007, have Film is Subway?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Ann\u00e9e was before 1981, happened the 2nd according to Ann\u00e9e?",
-                "answers": [
-                    "C\u00e9sar de la meilleure actrice",
-                    "Oscar de la meilleure actrice"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Ann\u00e9e was after 2015, happened the 2nd according to Ann\u00e9e?",
+                "question": "What was the R\u00e9compense when the Film string starts with Le and the Ann\u00e9e was after 1981?",
                 "answers": [
                     "C\u00e9sar de la meilleure actrice dans un second r\u00f4le",
                     "Globe de Cristal de la meilleure actrice de com\u00e9die"
                 ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only R\u00e9compense, with Film string starts with Le, have Ann\u00e9e was after 2007?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every R\u00e9compense, with Ann\u00e9e was before 2010, have Film string starts with La?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which R\u00e9compense, with Film string starts with La, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "C\u00e9sar de la meilleure actrice"
+                ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Ann\u00e9e was after 2015, happened the 3rd according to Ann\u00e9e?",
+                "question": "Which R\u00e9compense, with Ann\u00e9e was before 1989, happened the 4th according to Ann\u00e9e?",
+                "answers": [
+                    "Prix d'interpr\u00e9tation f\u00e9minine du Festival de Cannes"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which R\u00e9compense, with Ann\u00e9e was after 2010, happened the 4th according to Ann\u00e9e?",
                 "answers": [
                     "Moli\u00e8re de la com\u00e9dienne"
                 ],
@@ -327,41 +325,41 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Film was L'\u00c9t\u00e9 meurtrier and when the Film was Subway?",
+                "question": "How many years had passed between when the Film was Kinship and when the Film was Subway?",
+                "answers": [
+                    "29"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Film was La Derni\u00e8re nuit pour Marie Stuart and when the Film was Barocco?",
+                "answers": [
+                    "30"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many R\u00e9compense had Ann\u00e9e was on 2019 and Film string starts with Le?",
                 "answers": [
                     "2"
                 ],
-                "reasoning_type": "date_difference"
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Film was L'\u00c9t\u00e9 meurtrier and when the Film was La Reine Margot?",
+                "question": "How many R\u00e9compense had Ann\u00e9e was before 2019 and Film string starts with La?",
                 "answers": [
-                    "11"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was after 2010?",
-                "answers": [
-                    "4"
+                    "5"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was after 1981?",
+                "question": "How many R\u00e9compense had Ann\u00e9e was after 1976 and Film string starts with La?",
                 "answers": [
-                    "15"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was after 1990?",
-                "answers": [
-                    "9"
+                    "5"
                 ],
                 "reasoning_type": "counting"
             }
@@ -557,9 +555,9 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many Ann\u00e9e had Film is Possession?",
+                "question": "How many Ann\u00e9e had Film string contains H?",
                 "answers": [
-                    "2"
+                    "6"
                 ],
                 "reasoning_type": "counting"
             }

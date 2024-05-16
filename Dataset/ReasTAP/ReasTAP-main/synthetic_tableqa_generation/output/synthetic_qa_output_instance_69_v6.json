@@ -292,41 +292,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Notaire when the Ville is Paris and the P\u00e9riode d'exercice is au?",
+                "question": "What was the Notaire when the Quartier string starts with La and the Ville is Paris?",
                 "answers": [
-                    "Claude Aleaume",
-                    "Joseph-Roch Andelle",
-                    "Sylvain Ballot",
-                    "Louis Bronod",
-                    "Edme-Louis Bronod",
-                    "Charles Nicolas Denis de Villiers",
-                    "Andr\u00e9 Guillaume Deshayes",
-                    "Hubert-Antoine Gibe",
-                    "Bernard Maigret",
-                    "Guillaume Henri Picquais",
-                    "Pierre-Christophe Tessier"
+                    "Andr\u00e9 Guillaume Deshayes"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Notaire when the \u00c9tude is LV and the Notes string starts with Bernard?",
+                "question": "What was the Notaire when the Adresse string starts with rue and the Quartier string ends with Luxembourg?",
                 "answers": [
-                    "Bernard Maigret"
+                    "Claude Aleaume"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Notaire, with \u00c9tude is LV, have Notes string starts with Bernard?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Notaire, with \u00c9tude is LXXXVIII, have Quartier is Temple?",
+                "question": "Does every Notaire, with Quartier is Louvre, have P\u00e9riode d'exercice is au?",
                 "answers": [
                     "Yes"
                 ],
@@ -334,17 +316,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Notaire had Adresse string starts with rue and Quartier string starts with Le?",
+                "question": "How many Notaire had P\u00e9riode d'exercice is au and Ville is Paris?",
                 "answers": [
-                    "1"
+                    "11"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Notaire had Notes string contains son and Quartier is Temple?",
+                "question": "How many Notaire had Adresse string contains de?",
                 "answers": [
-                    "1"
+                    "8"
                 ],
                 "reasoning_type": "counting"
             },

@@ -4,6 +4,614 @@
         "title": "Liste des conjoints des souverains de Su\u00e8de",
         "url": "https://fr.wikipedia.org/?curid=3036056",
         "header": [
+            "Nom",
+            "Conjoint(s)",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "Vana de Vanaheim",
+                "* Sveig\u00f0ir",
+                "* Reine de Su\u00e8de",
+                "* M\u00e8re de Vanlandi."
+            ],
+            [
+                "Drifa",
+                "* Vanlandi",
+                "* Reine de Su\u00e8de",
+                "* Fille de Snj\u00e1r le Vieil."
+            ],
+            [
+                "Drott",
+                "* Domar",
+                "* Reine de Su\u00e8de ()",
+                "* S\u0153ur de Dan."
+            ],
+            [
+                "Skj\u00e1lf",
+                "* Agni",
+                "* Reine de Su\u00e8de ()",
+                "* Fille de Frosti."
+            ],
+            [
+                "Bera",
+                "* Alf",
+                "* Reine de Su\u00e8de ()",
+                ""
+            ],
+            [
+                "Yrsa",
+                "* Helgi\n* Adils",
+                "* Reine de Su\u00e8de ()",
+                "* Fille d'Helgi.\n* M\u00e8re d'Hr\u00f3lfr Kraki."
+            ],
+            [
+                "Gauthildr Algautsd\u00f3ttir de G\u00f6taland",
+                "* Ingjald",
+                "* Reine de Su\u00e8de ()",
+                "* Fille d'Algaut.\n* M\u00e8re d'Olof Tr\u00e4t\u00e4lja."
+            ],
+            [
+                "Heidreksdotter de Sm\u00e5land",
+                "* Ivar Vidfamne",
+                "* Reine de Su\u00e8de (655-695)",
+                ""
+            ],
+            [
+                "Inghild de Su\u00e8de",
+                "* Harald Hildetand",
+                "* Reine de Su\u00e8de (695-705)",
+                ""
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the Titres string contains de and the El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "Vana de Vanaheim",
+                    "Drifa",
+                    "Drott",
+                    "Skj\u00e1lf"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the Conjoint(s) string contains Agni and the Titres string contains de?",
+                "answers": [
+                    "Skj\u00e1lf"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom, with Titres string contains de, have El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom, with El\u00e9ments biographiques string contains de, have Titres string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Titres string contains de?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Titres string contains de and El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "3036056",
+        "title": "Liste des conjoints des souverains de Su\u00e8de",
+        "url": "https://fr.wikipedia.org/?curid=3036056",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "Conjoint(s)",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "80x80px",
+                "\u015awi\u0119tos\u0142awa\n(968-1014)",
+                "* \u00c9ric VI de Su\u00e8de (mariage entre 980 et 988)\n* Sven \u00e0 la Barbe fourchue (mariage en 998)",
+                "* Reine de Su\u00e8de (980/88-995)\n* Reine de Danemark (998 - 3 f\u00e9vrier 1014)\n* Reine de Norv\u00e8ge (1000 - 3 f\u00e9vrier 1014)\n* Reine d'Angleterre (1013 - 3 f\u00e9vrier 1014)",
+                "* Princesse de la Maison Piast. Fille de Miezko  de Pologne et de Dubravka.\n* M\u00e8re d'Olof Sk\u00f6tkonung, de Knut le Grand, d'Harald II de Danemark et d'Estrid Svendsdatter."
+            ],
+            [
+                "",
+                "Aud de Lade",
+                "* \u00c9ric VI de Su\u00e8de (mariage vers 995)",
+                "* Reine de Su\u00e8de (995-?)",
+                "* fille d'H\u00e5kon Sigurdsson."
+            ],
+            [
+                "",
+                "Estrid des Obotrites\n(979-1035)",
+                "* Olof Sk\u00f6tkonung",
+                "* Reine de Su\u00e8de (1000-1022)",
+                "* Princesse nakonide.\n* M\u00e8re d'Ingigerd de Su\u00e8de et d'Anund Jacob."
+            ],
+            [
+                "",
+                "Gunild\n(?-1060)",
+                "* Anund Jacob\n* Sven  de Danemark (mariage en 1050)",
+                "* Reine de Su\u00e8de (? - 8 octobre 1050)\n* Reine de Danemark (1050-1052)",
+                "* Fille de Svein H\u00e5konsson et d'Holmfrid de Su\u00e8de.\n* M\u00e8re de Gyda de Su\u00e8de et de Sven le Crois\u00e9."
+            ],
+            [
+                "",
+                "Astrid Njalsdotter\n(?-1060)",
+                "* Ragnvald Ulfsson\n* Emund de Su\u00e8de",
+                "* Reine de Su\u00e8de (1050-1060)",
+                "* Fille de Njal Finnsson.\n* M\u00e8re de Stenkil."
+            ],
+            [
+                "",
+                "Ingamoder",
+                "* Stenkil",
+                "* Reine de Su\u00e8de (1061-1066)",
+                "* Princesse de la dynastie de Muns\u00f6. Fille d'Emund de Su\u00e8de.\n* M\u00e8re d'Inge  de Su\u00e8de, d'Halsten de Su\u00e8de et d'\u00c9ric VII de Su\u00e8de."
+            ],
+            [
+                "",
+                "Gyla",
+                "* \u00c9ric VIII de Su\u00e8de\n* H\u00e5kan de Su\u00e8de",
+                "* Reine de Su\u00e8de (1066-1067, 1070-1079)",
+                ""
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Titres string contains de and the Nom\n(dates) string contains des?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            }
+        ]
+    },
+    {
+        "id": "3036056",
+        "title": "Liste des conjoints des souverains de Su\u00e8de",
+        "url": "https://fr.wikipedia.org/?curid=3036056",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "Conjoint(s)",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "",
+                "H\u00e9l\u00e8ne de Su\u00e8de",
+                "* Inge  de Su\u00e8de",
+                "* Reine de Su\u00e8de (1079-1084, 1087-1105)",
+                "* S\u0153ur de Sven de Su\u00e8de.\n* M\u00e8re de Christine Ingesdotter, de Marguerite Fredkulla et de Catherine Ingesdotter."
+            ],
+            [
+                "",
+                "Blotstulka",
+                "* Sven de Su\u00e8de",
+                "* Reine de Su\u00e8de (1084-1087)",
+                "* M\u00e8re d'Erik \u00c5rs\u00e4ll."
+            ],
+            [
+                "",
+                "Ingegerd de Norv\u00e8ge\n(1046-1120)",
+                "* Oluf  de Danemark\n* Philippe de Su\u00e8de",
+                "* Reine de Danemark (? - 18 ao\u00fbt 1095)\n* Reine de Su\u00e8de (1110-1118)",
+                "* Princesse de la dynastie Hardrada. Fille de Harald Hardrada et d'\u00c9lisabeth de Kiev."
+            ],
+            [
+                "108x108px",
+                "Ragnhild\n(?-1117)",
+                "* Inge II de Su\u00e8de",
+                "* Reine de Su\u00e8de (1105-1117)",
+                ""
+            ],
+            [
+                "",
+                "Ulvhild H\u00e5kansdotter\n(1095-1148)",
+                "* Inge II de Su\u00e8de (mariage en 1117)\n* Niels de Danemark (mariage en 1130)\n* Sverker  de Su\u00e8de (mariage en 1134)",
+                "* Reine de Su\u00e8de (1117-1125, 1134-1148)\n* Reine de Danemark (1130-1134)",
+                "* Fille d'Haakon Finnsson.\n* M\u00e8re d'H\u00e9l\u00e8ne de Su\u00e8de, de Johan Sverkersson l'Ancien, de Karl Sverkersson."
+            ],
+            [
+                "",
+                "Richezza de Pologne\n(12 avril 1116 - 25 d\u00e9cembre 1156)",
+                "* Magnus  de Su\u00e8de (mariage en 1129)\n* Volodar de Polock (mariage en 1139)\n* Sverker  de Su\u00e8de (mariage en 1145)",
+                "* Reine de Su\u00e8de (1129-1130, 1151-1156)\n* Princesse de Minsk (1139-?)",
+                "* Princesse de la Maison Piast. Fille de Boleslas III Bouche-Torse et de Salom\u00e9 de Berg.\n* M\u00e8re de Knut V de Danemark, de Sophie de Polock et de Burislev de Su\u00e8de."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Titres string contains de and the Conjoint(s) string contains Inge?",
+                "answers": [
+                    "",
+                    "108x108px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Titres string contains de?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Titres string contains de and Conjoint(s) string contains Inge?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "3036056",
+        "title": "Liste des conjoints des souverains de Su\u00e8de",
+        "url": "https://fr.wikipedia.org/?curid=3036056",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "Conjoint(s)",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "",
+                "Ulvhild H\u00e5kansdotter\n(1095-1148)",
+                "*Inge II de Su\u00e8de (mariage en 1117)\n* Niels de Danemark (mariage en 1130)\n* Sverker  de Su\u00e8de (mariage en 1134)",
+                "*Reine de Su\u00e8de (1117-1125, 1134-1148)\n* Reine de Danemark (1130-1134)",
+                "*Fille d'Haakon Finnsson.\n* M\u00e8re d'H\u00e9l\u00e8ne de Su\u00e8de, de Johan Sverkersson l'Ancien, de Karl Sverkersson."
+            ],
+            [
+                "",
+                "Richezza de Pologne\n(12 avril 1116 - 25 d\u00e9cembre 1156)",
+                "*Magnus  de Su\u00e8de (mariage en 1129)\n* Volodar de Polock (mariage en 1139)\n* Sverker  de Su\u00e8de (mariage en 1145)",
+                "*Reine de Su\u00e8de (1129-1130, 1151-1156)\n* Princesse de Minsk (1139-?)",
+                "*Princesse de la Maison Piast. Fille de Boleslas III Bouche-Torse et de Salom\u00e9 de Berg.\n* M\u00e8re de Knut V de Danemark, de Sophie de Polock et de Burislev de Su\u00e8de."
+            ],
+            [
+                "",
+                "Christine Bj\u00f6rnsdotter\n(1120-1170)",
+                "* \u00c9ric IX de Su\u00e8de",
+                "* Reine de Su\u00e8de (1156-1160)",
+                "* Princesse de la Maison d'Estridsen. Fille de Bj\u00f6rn Jernsida de Danemark et de Catherine Ingesdotter.\n* Fille de Knut  de Su\u00e8de et de Marguerite de Su\u00e8de."
+            ],
+            [
+                "",
+                "Brigide Haraldsdotter de Norv\u00e8ge\n(1131-1208)",
+                "* Magnus II de Su\u00e8de\n*Birger Brosa",
+                "* Reine de Su\u00e8de (1160-1161)",
+                "* Princesse de la Dynastie H\u00e5rfagre. Fille d'Harald IV de Norv\u00e8ge.\n* M\u00e8re de Knut Birgersson, de Folke Birgersson et d'Ingegerd Birgersdotter de Bjelbo."
+            ],
+            [
+                "",
+                "Christine Stigsdatter de Hvide\n(1145-1200)",
+                "* Karl Sverkersson (mariage en 1163)",
+                "* Reine de Su\u00e8de (1163-1167)",
+                "* Fille de Stig Tokesen Hvide et de Marguerite de Danemark.\n* M\u00e8re de Sverker II de Su\u00e8de."
+            ],
+            [
+                "",
+                "C\u00e9cile de Su\u00e8de\n(1145-?)",
+                "* Knut  de Su\u00e8de (mariage en 1160)",
+                "* Reine de Su\u00e8de (1167-1190)",
+                "* Princesse de la Maison de Sverker. Fille de Johan Sverkersson l'Ancien.\n* M\u00e8re d'\u00c9ric X de Su\u00e8de."
+            ],
+            [
+                "",
+                "B\u00e9nedicte de Hvide\n(1165-1199)",
+                "* Sverker II de Su\u00e8de (mariage vers 1180)",
+                "* Reine de Su\u00e8de (1196-1199)",
+                "* Fille d'Ebbe Sunesen Hvide.\n* M\u00e8re d'H\u00e9l\u00e8ne Sverkersdotter."
+            ],
+            [
+                "",
+                "Ingegerd Birgersdotter de Bjelbo\n(1180-1230)",
+                "* Sverker II de Su\u00e8de (mariage vers 1200)",
+                "* Reine de Su\u00e8de (1200-1208)",
+                "* Fille de Birger Brosa et de Brigide Haraldsdotter de Norv\u00e8ge.\n* M\u00e8re de Jean Ier de Su\u00e8de."
+            ],
+            [
+                "122x122px",
+                "Richardis de Danemark\n(1190 - 8 mai 1220)",
+                "* \u00c9ric X de Su\u00e8de (mariage en 1210)",
+                "* Reine de Su\u00e8de (1210 - 12 avril 1216)",
+                "* Princesse de la Maison d'Estridsen. Fille de Valdemar Ier de Danemark et de Sophie de Polock.\n* M\u00e8re d'Ingeborg de Su\u00e8de et d'\u00c9ric XI de Su\u00e8de."
+            ],
+            [
+                "",
+                "H\u00e9l\u00e8ne Pedersdatter de Strange\n(1200-1255)",
+                "* Knut II de Su\u00e8de\n*Filip Larsson de Runby",
+                "* Reine de Su\u00e8de (28 novembre 1229 - 1234)",
+                "* Fille de Peder Strange et d'Ingeborg Esbernsdatter Snarre.\n* M\u00e8re d'Holmger Knutsson."
+            ],
+            [
+                "104x104px",
+                "Catherine de Ymseborg\n(1215-1252)",
+                "* \u00c9ric XI de Su\u00e8de (mariage en 1244)",
+                "* Reine de Su\u00e8de (1244 - 2 f\u00e9vrier 1250)",
+                "* Princesse de la Maison de Bj\u00e4lbo. Fille de Sune Folkesson et d'H\u00e9l\u00e8ne Sverkersdotter."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Nom\n(dates) string contains Strange and the Titres string contains de?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Conjoint(s) string contains de and Titres string contains de?",
+                "answers": [
+                    "10"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Nom\n(dates) string contains 25?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "3036056",
+        "title": "Liste des conjoints des souverains de Su\u00e8de",
+        "url": "https://fr.wikipedia.org/?curid=3036056",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "Conjoint",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "125x125px",
+                "Sophie de Danemark\n(1241-1286)",
+                "* Valdemar Birgersson (mariage en 1260)",
+                "* Reine de Su\u00e8de (1261 - 22 juillet 1275)",
+                "* Princesse de la Maison d'Estridsen. Fille d'\u00c9ric IV de Danemark et de Jutte de Saxe.\n* M\u00e8re d'Erik Valdemarsson.",
+                ""
+            ],
+            [
+                "95x95px",
+                "Helwig de Holstein\n(1257-1324)",
+                "* Magnus III de Su\u00e8de (mariage le 11 novembre 1276)",
+                "* Reine de Su\u00e8de (11 novembre 1276 - 18 d\u00e9cembre 1290)",
+                "* Princesse de la Maison de Holstein. Fille de G\u00e9rard  de Holstein-Itzehoe et d'\u00c9lisabeth de Mecklembourg.\n* M\u00e8re d'Ingeburg de Su\u00e8de, de Birger Magnusson, d'Erik Magnusson et de Valdemar Magnusson.",
+                ""
+            ],
+            [
+                "",
+                "Marthe de Danemark\n(1277-1341)",
+                "* Birger Magnusson (mariage le 25 novembre 1298)",
+                "* Reine de Su\u00e8de (25 novembre 1298 - 1er novembre 1318)",
+                "* Princesse de la Maison d'Estridsen. Fille d'\u00c9ric V de Danemark et d'Agn\u00e8s de Brandebourg.\n* M\u00e8re de Magnus Birgersson.",
+                ""
+            ],
+            [
+                "99x99px",
+                "Blanche de Namur\n(1320-1363)",
+                "* Magnus IV de Su\u00e8de (mariage en 1335)",
+                "* Reine de Su\u00e8de (1335 - 30 novembre 1363)\n* Reine de Norv\u00e8ge (1335 - 18 novembre 1343)",
+                "* Princesse de la Maison de Dampierre. Fille de Jean  de Namur et de Marie d'Artois.\n*M\u00e8re d'\u00c9ric XII de Su\u00e8de et d'Haakon VI de Norv\u00e8ge.",
+                "131x131px"
+            ],
+            [
+                "",
+                "B\u00e9atrice de Bavi\u00e8re\n(1344-1359)",
+                "* \u00c9ric XII de Su\u00e8de (mariage en 1356)",
+                "* Reine de Su\u00e8de (17 octobre 1356 - 20 juin 1359)",
+                "* Princesse de la Maison de Wittelsbach. Fille de Louis IV du Saint-Empire et de Marguerite II de Hainaut.",
+                ""
+            ],
+            [
+                "104x104px",
+                "Marguerite Ire de Danemark\n(1353 - 28 octobre 1412)",
+                "* Haakon VI de Norv\u00e8ge (mariage le 9 avril 1363)",
+                "* Reine de Su\u00e8de (consort du 9 avril 1363 au 15 f\u00e9vrier 1364, de plein droit du 24 f\u00e9vrier 1389 au 28 octobre 1412)\n*Reine de Norv\u00e8ge (consort du 9 avril 1363 au 11 septembre 1380, de plein droit du 2 f\u00e9vrier 1388 au 28 octobre 1412)\n*Reine de Danemark (de plein droit, 10 ao\u00fbt 1387 - 28 octobre 1412)",
+                "* Princesse de la Maison d'Estridsen. Fille de Valdemar  de Danemark et d'Hedwige de Schleswig.\n* M\u00e8re d'Oluf Hakonsen.",
+                "80x80px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": []
+    },
+    {
+        "id": "3036056",
+        "title": "Liste des conjoints des souverains de Su\u00e8de",
+        "url": "https://fr.wikipedia.org/?curid=3036056",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "Conjoint",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "108x108px",
+                "Richardis de Schwerin\n(1347-1377)",
+                "* Albert de Su\u00e8de (mariage en 1365)",
+                "* Reine de Su\u00e8de (1365-1377)",
+                "* Princesse de la Maison de Schwerin. Fille d'Otto de Schwerin et de Mathilda de Mecklembourg-Werle.\n* M\u00e8re d'\u00c9ric de Mecklembourg et de Richarde-Catherine de Su\u00e8de."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Nom\n(dates) string contains de?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "3036056",
+        "title": "Liste des conjoints des souverains de Su\u00e8de",
+        "url": "https://fr.wikipedia.org/?curid=3036056",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "Conjoint(s)",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "105x105px",
+                "Philippa d'Angleterre\n(4 juin 1394 - 5 juin 1430)",
+                "* \u00c9ric de Pom\u00e9ranie (mariage le 26 octobre 1406)",
+                "* Reine de Danemark, de Norv\u00e8ge et de Su\u00e8de (26 octobre 1406 - 5 juin 1430)",
+                "* Princesse de la Maison de Lancastre. Fille d'Henri IV d'Angleterre et de Marie de Bohun.",
+                "132x132px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": []
+    },
+    {
+        "id": "3036056",
+        "title": "Liste des conjoints des souverains de Su\u00e8de",
+        "url": "https://fr.wikipedia.org/?curid=3036056",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "Conjoints",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "109x109px",
+                "Doroth\u00e9e de Brandebourg-Kulmbach\n(31 d\u00e9cembre 1430 - 25 novembre 1495)",
+                "* Christophe de Bavi\u00e8re (mariage le 12 septembre 1445)\n* Christian  de Danemark (mariage le 28 octobre 1449)",
+                "* Reine de Danemark (12 septembre 1445 - 5 janvier 1448, 28 octobre 1449 - 21 mai 1481)\n* Reine de Norv\u00e8ge (12 septembre 1445 - 28 octobre 1448, 13 mai 1450 - 21 mai 1481)\n* Reine de Su\u00e8de (12 septembre 1445 - 28 octobre 1448, 23 juin 1457 - 23 juin 1464)\n* Duchesse de Schleswig (5 mars 1460 - 21 mai 1481)\n* Comtesse (5 mars 1460 - 1474) puis duchesse (1474 - 21 mai 1481) d'Holstein",
+                "* Princesse de la Maison de Hohenzollern. Fille de Jean IV de Brandebourg-K\u00fclmbach et de Barbara de Saxe.\n* M\u00e8re de Jean de Danemark, de Marguerite de Danemark et de Fr\u00e9d\u00e9ric  de Danemark.",
+                "131x131px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": []
+    },
+    {
+        "id": "3036056",
+        "title": "Liste des conjoints des souverains de Su\u00e8de",
+        "url": "https://fr.wikipedia.org/?curid=3036056",
+        "header": [
             "Nom\n(dates)",
             "Conjoint",
             "Titres",
@@ -35,7 +643,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the Conjoint string contains le and the El\u00e9ments biographiques string contains de?",
+                "question": "What was the Nom\n(dates) when the Conjoint string contains 5 and the El\u00e9ments biographiques string contains Fille?",
                 "answers": [
                     "Catherine de Bjurum\n(1418 - 7 septembre 1450)"
                 ],
@@ -43,15 +651,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the Conjoint string contains en?",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains Magdalena and the Titres string contains de?",
                 "answers": [
-                    "Christine Abrahamsdotter\n(1432-1495)"
+                    "Catherine de Bjurum\n(1418 - 7 septembre 1450)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains Fille, have Titres string contains de?",
+                "question": "Does only Nom\n(dates), with Conjoint string contains le, have Titres string contains de?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains de, have Conjoint string contains en?",
                 "answers": [
                     "Yes"
                 ],
@@ -59,15 +675,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains de, have Titres string contains 7?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de and Titres string contains de?",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains Fille and Titres string contains de?",
                 "answers": [
                     "2"
                 ],
@@ -230,27 +838,9 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Titres string contains de and the Nom\n(dates) string contains Catherine?",
+                "question": "How many Portrait had Conjoint string contains le?",
                 "answers": [
-                    "113x113px",
-                    "91x91px",
-                    "89x89px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with Nom\n(dates) string contains Anne, have Conjoint string contains Vasa?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Conjoint string contains de?",
-                "answers": [
-                    "5"
+                    "9"
                 ],
                 "reasoning_type": "counting"
             }
@@ -336,24 +926,7 @@
         "key_column": 0,
         "numeric_columns": [],
         "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Nom\n(dates) string contains de, have Conjoint string contains 24?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with Titres string contains 5, have Conjoint string contains 24?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            }
-        ]
+        "qas": []
     },
     {
         "id": "3036056",
@@ -413,12 +986,11 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Titres string contains 5 and the Nom\n(dates) string contains de?",
+                "question": "Does only Portrait, with Nom\n(dates) string contains de, have Conjoint string contains XIII?",
                 "answers": [
-                    "111x111px",
-                    "106x106px"
+                    "Yes"
                 ],
-                "reasoning_type": "conjunction"
+                "reasoning_type": "quantifiers"
             }
         ]
     },
@@ -504,681 +1076,11 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with Nom\n(dates) string starts with Victoria, have Titres string contains de?",
+                "question": "What was the Portrait when the Titres string contains de and the Nom\n(dates) string starts with Silvia?",
                 "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            }
-        ]
-    },
-    {
-        "id": "3036056",
-        "title": "Liste des conjoints des souverains de Su\u00e8de",
-        "url": "https://fr.wikipedia.org/?curid=3036056",
-        "header": [
-            "Nom",
-            "Conjoint(s)",
-            "Titres",
-            "El\u00e9ments biographiques"
-        ],
-        "rows": [
-            [
-                "Vana de Vanaheim",
-                "* Sveig\u00f0ir",
-                "* Reine de Su\u00e8de",
-                "* M\u00e8re de Vanlandi."
-            ],
-            [
-                "Drifa",
-                "* Vanlandi",
-                "* Reine de Su\u00e8de",
-                "* Fille de Snj\u00e1r le Vieil."
-            ],
-            [
-                "Drott",
-                "* Domar",
-                "* Reine de Su\u00e8de ()",
-                "* S\u0153ur de Dan."
-            ],
-            [
-                "Skj\u00e1lf",
-                "* Agni",
-                "* Reine de Su\u00e8de ()",
-                "* Fille de Frosti."
-            ],
-            [
-                "Bera",
-                "* Alf",
-                "* Reine de Su\u00e8de ()",
-                ""
-            ],
-            [
-                "Yrsa",
-                "* Helgi\n* Adils",
-                "* Reine de Su\u00e8de ()",
-                "* Fille d'Helgi.\n* M\u00e8re d'Hr\u00f3lfr Kraki."
-            ],
-            [
-                "Gauthildr Algautsd\u00f3ttir de G\u00f6taland",
-                "* Ingjald",
-                "* Reine de Su\u00e8de ()",
-                "* Fille d'Algaut.\n* M\u00e8re d'Olof Tr\u00e4t\u00e4lja."
-            ],
-            [
-                "Heidreksdotter de Sm\u00e5land",
-                "* Ivar Vidfamne",
-                "* Reine de Su\u00e8de (655-695)",
-                ""
-            ],
-            [
-                "Inghild de Su\u00e8de",
-                "* Harald Hildetand",
-                "* Reine de Su\u00e8de (695-705)",
-                ""
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom when the Titres string contains de and the El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "Vana de Vanaheim",
-                    "Drifa",
-                    "Drott",
-                    "Skj\u00e1lf"
+                    "101x101px"
                 ],
                 "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom when the El\u00e9ments biographiques string contains Fille and the Titres string contains de?",
-                "answers": [
-                    "Drifa",
-                    "Skj\u00e1lf",
-                    "Yrsa",
-                    "Gauthildr Algautsd\u00f3ttir de G\u00f6taland"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Nom, with Titres string contains de, have El\u00e9ments biographiques string contains Fille?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Nom, with Titres string contains de, have El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had El\u00e9ments biographiques string contains Fille?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Titres string contains de and El\u00e9ments biographiques string contains Fille?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Titres string contains de?",
-                "answers": [
-                    "9"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "3036056",
-        "title": "Liste des conjoints des souverains de Su\u00e8de",
-        "url": "https://fr.wikipedia.org/?curid=3036056",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "Conjoint(s)",
-            "Titres",
-            "El\u00e9ments biographiques"
-        ],
-        "rows": [
-            [
-                "80x80px",
-                "\u015awi\u0119tos\u0142awa\n(968-1014)",
-                "* \u00c9ric VI de Su\u00e8de (mariage entre 980 et 988)\n* Sven \u00e0 la Barbe fourchue (mariage en 998)",
-                "* Reine de Su\u00e8de (980/88-995)\n* Reine de Danemark (998 - 3 f\u00e9vrier 1014)\n* Reine de Norv\u00e8ge (1000 - 3 f\u00e9vrier 1014)\n* Reine d'Angleterre (1013 - 3 f\u00e9vrier 1014)",
-                "* Princesse de la Maison Piast. Fille de Miezko  de Pologne et de Dubravka.\n* M\u00e8re d'Olof Sk\u00f6tkonung, de Knut le Grand, d'Harald II de Danemark et d'Estrid Svendsdatter."
-            ],
-            [
-                "",
-                "Aud de Lade",
-                "* \u00c9ric VI de Su\u00e8de (mariage vers 995)",
-                "* Reine de Su\u00e8de (995-?)",
-                "* fille d'H\u00e5kon Sigurdsson."
-            ],
-            [
-                "",
-                "Estrid des Obotrites\n(979-1035)",
-                "* Olof Sk\u00f6tkonung",
-                "* Reine de Su\u00e8de (1000-1022)",
-                "* Princesse nakonide.\n* M\u00e8re d'Ingigerd de Su\u00e8de et d'Anund Jacob."
-            ],
-            [
-                "",
-                "Gunild\n(?-1060)",
-                "* Anund Jacob\n* Sven  de Danemark (mariage en 1050)",
-                "* Reine de Su\u00e8de (? - 8 octobre 1050)\n* Reine de Danemark (1050-1052)",
-                "* Fille de Svein H\u00e5konsson et d'Holmfrid de Su\u00e8de.\n* M\u00e8re de Gyda de Su\u00e8de et de Sven le Crois\u00e9."
-            ],
-            [
-                "",
-                "Astrid Njalsdotter\n(?-1060)",
-                "* Ragnvald Ulfsson\n* Emund de Su\u00e8de",
-                "* Reine de Su\u00e8de (1050-1060)",
-                "* Fille de Njal Finnsson.\n* M\u00e8re de Stenkil."
-            ],
-            [
-                "",
-                "Ingamoder",
-                "* Stenkil",
-                "* Reine de Su\u00e8de (1061-1066)",
-                "* Princesse de la dynastie de Muns\u00f6. Fille d'Emund de Su\u00e8de.\n* M\u00e8re d'Inge  de Su\u00e8de, d'Halsten de Su\u00e8de et d'\u00c9ric VII de Su\u00e8de."
-            ],
-            [
-                "",
-                "Gyla",
-                "* \u00c9ric VIII de Su\u00e8de\n* H\u00e5kan de Su\u00e8de",
-                "* Reine de Su\u00e8de (1066-1067, 1070-1079)",
-                ""
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Titres string contains de and the Conjoint(s) string contains de?",
-                "answers": [
-                    "80x80px",
-                    ""
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Titres string contains de, have Nom\n(dates) string contains Lade?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Nom\n(dates) string contains Lade, have Conjoint(s) string contains de?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            }
-        ]
-    },
-    {
-        "id": "3036056",
-        "title": "Liste des conjoints des souverains de Su\u00e8de",
-        "url": "https://fr.wikipedia.org/?curid=3036056",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "Conjoint(s)",
-            "Titres",
-            "El\u00e9ments biographiques"
-        ],
-        "rows": [
-            [
-                "",
-                "H\u00e9l\u00e8ne de Su\u00e8de",
-                "* Inge  de Su\u00e8de",
-                "* Reine de Su\u00e8de (1079-1084, 1087-1105)",
-                "* S\u0153ur de Sven de Su\u00e8de.\n* M\u00e8re de Christine Ingesdotter, de Marguerite Fredkulla et de Catherine Ingesdotter."
-            ],
-            [
-                "",
-                "Blotstulka",
-                "* Sven de Su\u00e8de",
-                "* Reine de Su\u00e8de (1084-1087)",
-                "* M\u00e8re d'Erik \u00c5rs\u00e4ll."
-            ],
-            [
-                "",
-                "Ingegerd de Norv\u00e8ge\n(1046-1120)",
-                "* Oluf  de Danemark\n* Philippe de Su\u00e8de",
-                "* Reine de Danemark (? - 18 ao\u00fbt 1095)\n* Reine de Su\u00e8de (1110-1118)",
-                "* Princesse de la dynastie Hardrada. Fille de Harald Hardrada et d'\u00c9lisabeth de Kiev."
-            ],
-            [
-                "108x108px",
-                "Ragnhild\n(?-1117)",
-                "* Inge II de Su\u00e8de",
-                "* Reine de Su\u00e8de (1105-1117)",
-                ""
-            ],
-            [
-                "",
-                "Ulvhild H\u00e5kansdotter\n(1095-1148)",
-                "* Inge II de Su\u00e8de (mariage en 1117)\n* Niels de Danemark (mariage en 1130)\n* Sverker  de Su\u00e8de (mariage en 1134)",
-                "* Reine de Su\u00e8de (1117-1125, 1134-1148)\n* Reine de Danemark (1130-1134)",
-                "* Fille d'Haakon Finnsson.\n* M\u00e8re d'H\u00e9l\u00e8ne de Su\u00e8de, de Johan Sverkersson l'Ancien, de Karl Sverkersson."
-            ],
-            [
-                "",
-                "Richezza de Pologne\n(12 avril 1116 - 25 d\u00e9cembre 1156)",
-                "* Magnus  de Su\u00e8de (mariage en 1129)\n* Volodar de Polock (mariage en 1139)\n* Sverker  de Su\u00e8de (mariage en 1145)",
-                "* Reine de Su\u00e8de (1129-1130, 1151-1156)\n* Princesse de Minsk (1139-?)",
-                "* Princesse de la Maison Piast. Fille de Boleslas III Bouche-Torse et de Salom\u00e9 de Berg.\n* M\u00e8re de Knut V de Danemark, de Sophie de Polock et de Burislev de Su\u00e8de."
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Conjoint(s) string contains de and Titres string contains de?",
-                "answers": [
-                    "6"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "3036056",
-        "title": "Liste des conjoints des souverains de Su\u00e8de",
-        "url": "https://fr.wikipedia.org/?curid=3036056",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "Conjoint(s)",
-            "Titres",
-            "El\u00e9ments biographiques"
-        ],
-        "rows": [
-            [
-                "",
-                "Ulvhild H\u00e5kansdotter\n(1095-1148)",
-                "*Inge II de Su\u00e8de (mariage en 1117)\n* Niels de Danemark (mariage en 1130)\n* Sverker  de Su\u00e8de (mariage en 1134)",
-                "*Reine de Su\u00e8de (1117-1125, 1134-1148)\n* Reine de Danemark (1130-1134)",
-                "*Fille d'Haakon Finnsson.\n* M\u00e8re d'H\u00e9l\u00e8ne de Su\u00e8de, de Johan Sverkersson l'Ancien, de Karl Sverkersson."
-            ],
-            [
-                "",
-                "Richezza de Pologne\n(12 avril 1116 - 25 d\u00e9cembre 1156)",
-                "*Magnus  de Su\u00e8de (mariage en 1129)\n* Volodar de Polock (mariage en 1139)\n* Sverker  de Su\u00e8de (mariage en 1145)",
-                "*Reine de Su\u00e8de (1129-1130, 1151-1156)\n* Princesse de Minsk (1139-?)",
-                "*Princesse de la Maison Piast. Fille de Boleslas III Bouche-Torse et de Salom\u00e9 de Berg.\n* M\u00e8re de Knut V de Danemark, de Sophie de Polock et de Burislev de Su\u00e8de."
-            ],
-            [
-                "",
-                "Christine Bj\u00f6rnsdotter\n(1120-1170)",
-                "* \u00c9ric IX de Su\u00e8de",
-                "* Reine de Su\u00e8de (1156-1160)",
-                "* Princesse de la Maison d'Estridsen. Fille de Bj\u00f6rn Jernsida de Danemark et de Catherine Ingesdotter.\n* Fille de Knut  de Su\u00e8de et de Marguerite de Su\u00e8de."
-            ],
-            [
-                "",
-                "Brigide Haraldsdotter de Norv\u00e8ge\n(1131-1208)",
-                "* Magnus II de Su\u00e8de\n*Birger Brosa",
-                "* Reine de Su\u00e8de (1160-1161)",
-                "* Princesse de la Dynastie H\u00e5rfagre. Fille d'Harald IV de Norv\u00e8ge.\n* M\u00e8re de Knut Birgersson, de Folke Birgersson et d'Ingegerd Birgersdotter de Bjelbo."
-            ],
-            [
-                "",
-                "Christine Stigsdatter de Hvide\n(1145-1200)",
-                "* Karl Sverkersson (mariage en 1163)",
-                "* Reine de Su\u00e8de (1163-1167)",
-                "* Fille de Stig Tokesen Hvide et de Marguerite de Danemark.\n* M\u00e8re de Sverker II de Su\u00e8de."
-            ],
-            [
-                "",
-                "C\u00e9cile de Su\u00e8de\n(1145-?)",
-                "* Knut  de Su\u00e8de (mariage en 1160)",
-                "* Reine de Su\u00e8de (1167-1190)",
-                "* Princesse de la Maison de Sverker. Fille de Johan Sverkersson l'Ancien.\n* M\u00e8re d'\u00c9ric X de Su\u00e8de."
-            ],
-            [
-                "",
-                "B\u00e9nedicte de Hvide\n(1165-1199)",
-                "* Sverker II de Su\u00e8de (mariage vers 1180)",
-                "* Reine de Su\u00e8de (1196-1199)",
-                "* Fille d'Ebbe Sunesen Hvide.\n* M\u00e8re d'H\u00e9l\u00e8ne Sverkersdotter."
-            ],
-            [
-                "",
-                "Ingegerd Birgersdotter de Bjelbo\n(1180-1230)",
-                "* Sverker II de Su\u00e8de (mariage vers 1200)",
-                "* Reine de Su\u00e8de (1200-1208)",
-                "* Fille de Birger Brosa et de Brigide Haraldsdotter de Norv\u00e8ge.\n* M\u00e8re de Jean Ier de Su\u00e8de."
-            ],
-            [
-                "122x122px",
-                "Richardis de Danemark\n(1190 - 8 mai 1220)",
-                "* \u00c9ric X de Su\u00e8de (mariage en 1210)",
-                "* Reine de Su\u00e8de (1210 - 12 avril 1216)",
-                "* Princesse de la Maison d'Estridsen. Fille de Valdemar Ier de Danemark et de Sophie de Polock.\n* M\u00e8re d'Ingeborg de Su\u00e8de et d'\u00c9ric XI de Su\u00e8de."
-            ],
-            [
-                "",
-                "H\u00e9l\u00e8ne Pedersdatter de Strange\n(1200-1255)",
-                "* Knut II de Su\u00e8de\n*Filip Larsson de Runby",
-                "* Reine de Su\u00e8de (28 novembre 1229 - 1234)",
-                "* Fille de Peder Strange et d'Ingeborg Esbernsdatter Snarre.\n* M\u00e8re d'Holmger Knutsson."
-            ],
-            [
-                "104x104px",
-                "Catherine de Ymseborg\n(1215-1252)",
-                "* \u00c9ric XI de Su\u00e8de (mariage en 1244)",
-                "* Reine de Su\u00e8de (1244 - 2 f\u00e9vrier 1250)",
-                "* Princesse de la Maison de Bj\u00e4lbo. Fille de Sune Folkesson et d'H\u00e9l\u00e8ne Sverkersdotter."
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string starts with Catherine and the Titres string contains de?",
-                "answers": [
-                    "104x104px"
-                ],
-                "reasoning_type": "conjunction"
-            }
-        ]
-    },
-    {
-        "id": "3036056",
-        "title": "Liste des conjoints des souverains de Su\u00e8de",
-        "url": "https://fr.wikipedia.org/?curid=3036056",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "Conjoint",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "125x125px",
-                "Sophie de Danemark\n(1241-1286)",
-                "* Valdemar Birgersson (mariage en 1260)",
-                "* Reine de Su\u00e8de (1261 - 22 juillet 1275)",
-                "* Princesse de la Maison d'Estridsen. Fille d'\u00c9ric IV de Danemark et de Jutte de Saxe.\n* M\u00e8re d'Erik Valdemarsson.",
-                ""
-            ],
-            [
-                "95x95px",
-                "Helwig de Holstein\n(1257-1324)",
-                "* Magnus III de Su\u00e8de (mariage le 11 novembre 1276)",
-                "* Reine de Su\u00e8de (11 novembre 1276 - 18 d\u00e9cembre 1290)",
-                "* Princesse de la Maison de Holstein. Fille de G\u00e9rard  de Holstein-Itzehoe et d'\u00c9lisabeth de Mecklembourg.\n* M\u00e8re d'Ingeburg de Su\u00e8de, de Birger Magnusson, d'Erik Magnusson et de Valdemar Magnusson.",
-                ""
-            ],
-            [
-                "",
-                "Marthe de Danemark\n(1277-1341)",
-                "* Birger Magnusson (mariage le 25 novembre 1298)",
-                "* Reine de Su\u00e8de (25 novembre 1298 - 1er novembre 1318)",
-                "* Princesse de la Maison d'Estridsen. Fille d'\u00c9ric V de Danemark et d'Agn\u00e8s de Brandebourg.\n* M\u00e8re de Magnus Birgersson.",
-                ""
-            ],
-            [
-                "99x99px",
-                "Blanche de Namur\n(1320-1363)",
-                "* Magnus IV de Su\u00e8de (mariage en 1335)",
-                "* Reine de Su\u00e8de (1335 - 30 novembre 1363)\n* Reine de Norv\u00e8ge (1335 - 18 novembre 1343)",
-                "* Princesse de la Maison de Dampierre. Fille de Jean  de Namur et de Marie d'Artois.\n*M\u00e8re d'\u00c9ric XII de Su\u00e8de et d'Haakon VI de Norv\u00e8ge.",
-                "131x131px"
-            ],
-            [
-                "",
-                "B\u00e9atrice de Bavi\u00e8re\n(1344-1359)",
-                "* \u00c9ric XII de Su\u00e8de (mariage en 1356)",
-                "* Reine de Su\u00e8de (17 octobre 1356 - 20 juin 1359)",
-                "* Princesse de la Maison de Wittelsbach. Fille de Louis IV du Saint-Empire et de Marguerite II de Hainaut.",
-                ""
-            ],
-            [
-                "104x104px",
-                "Marguerite Ire de Danemark\n(1353 - 28 octobre 1412)",
-                "* Haakon VI de Norv\u00e8ge (mariage le 9 avril 1363)",
-                "* Reine de Su\u00e8de (consort du 9 avril 1363 au 15 f\u00e9vrier 1364, de plein droit du 24 f\u00e9vrier 1389 au 28 octobre 1412)\n*Reine de Norv\u00e8ge (consort du 9 avril 1363 au 11 septembre 1380, de plein droit du 2 f\u00e9vrier 1388 au 28 octobre 1412)\n*Reine de Danemark (de plein droit, 10 ao\u00fbt 1387 - 28 octobre 1412)",
-                "* Princesse de la Maison d'Estridsen. Fille de Valdemar  de Danemark et d'Hedwige de Schleswig.\n* M\u00e8re d'Oluf Hakonsen.",
-                "80x80px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with Nom\n(dates) string contains de, have Titres string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains 18?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Nom\n(dates) string contains de?",
-                "answers": [
-                    "6"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "3036056",
-        "title": "Liste des conjoints des souverains de Su\u00e8de",
-        "url": "https://fr.wikipedia.org/?curid=3036056",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "Conjoint",
-            "Titres",
-            "El\u00e9ments biographiques"
-        ],
-        "rows": [
-            [
-                "108x108px",
-                "Richardis de Schwerin\n(1347-1377)",
-                "* Albert de Su\u00e8de (mariage en 1365)",
-                "* Reine de Su\u00e8de (1365-1377)",
-                "* Princesse de la Maison de Schwerin. Fille d'Otto de Schwerin et de Mathilda de Mecklembourg-Werle.\n* M\u00e8re d'\u00c9ric de Mecklembourg et de Richarde-Catherine de Su\u00e8de."
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Titres string contains de and the Nom\n(dates) string contains de?",
-                "answers": [
-                    "108x108px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with Conjoint string contains Albert, have Titres string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Nom\n(dates) string contains de, have Titres string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            }
-        ]
-    },
-    {
-        "id": "3036056",
-        "title": "Liste des conjoints des souverains de Su\u00e8de",
-        "url": "https://fr.wikipedia.org/?curid=3036056",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "Conjoint(s)",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "105x105px",
-                "Philippa d'Angleterre\n(4 juin 1394 - 5 juin 1430)",
-                "* \u00c9ric de Pom\u00e9ranie (mariage le 26 octobre 1406)",
-                "* Reine de Danemark, de Norv\u00e8ge et de Su\u00e8de (26 octobre 1406 - 5 juin 1430)",
-                "* Princesse de la Maison de Lancastre. Fille d'Henri IV d'Angleterre et de Marie de Bohun.",
-                "132x132px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Titres string contains de and the Conjoint(s) string contains 26?",
-                "answers": [
-                    "105x105px"
-                ],
-                "reasoning_type": "conjunction"
-            }
-        ]
-    },
-    {
-        "id": "3036056",
-        "title": "Liste des conjoints des souverains de Su\u00e8de",
-        "url": "https://fr.wikipedia.org/?curid=3036056",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "Conjoints",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "109x109px",
-                "Doroth\u00e9e de Brandebourg-Kulmbach\n(31 d\u00e9cembre 1430 - 25 novembre 1495)",
-                "* Christophe de Bavi\u00e8re (mariage le 12 septembre 1445)\n* Christian  de Danemark (mariage le 28 octobre 1449)",
-                "* Reine de Danemark (12 septembre 1445 - 5 janvier 1448, 28 octobre 1449 - 21 mai 1481)\n* Reine de Norv\u00e8ge (12 septembre 1445 - 28 octobre 1448, 13 mai 1450 - 21 mai 1481)\n* Reine de Su\u00e8de (12 septembre 1445 - 28 octobre 1448, 23 juin 1457 - 23 juin 1464)\n* Duchesse de Schleswig (5 mars 1460 - 21 mai 1481)\n* Comtesse (5 mars 1460 - 1474) puis duchesse (1474 - 21 mai 1481) d'Holstein",
-                "* Princesse de la Maison de Hohenzollern. Fille de Jean IV de Brandebourg-K\u00fclmbach et de Barbara de Saxe.\n* M\u00e8re de Jean de Danemark, de Marguerite de Danemark et de Fr\u00e9d\u00e9ric  de Danemark.",
-                "131x131px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Conjoints string contains le and the Titres string contains 28?",
-                "answers": [
-                    "109x109px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Titres string contains 28, have Nom\n(dates) string contains 25?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
             }
         ]
     }

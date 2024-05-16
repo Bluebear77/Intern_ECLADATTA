@@ -4,6 +4,1152 @@
         "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
         "url": "https://fr.wikipedia.org/?curid=6540166",
         "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "111x111px",
+                "Marie de Brabant\n(1226-1256)",
+                "*  (mariage en 1254)",
+                "* Co-duchesse de Bavi\u00e8re (1254-1255)\n* Duchesse de Haute-Bavi\u00e8re (1255-1256)\n* Comtesse palatine du Rhin (1254-1256)",
+                "* Princesse de la Famille des R\u00e9gnier. Fille d' et de Marie de Souabe."
+            ],
+            [
+                "",
+                "Anne de G\u0142og\u00f3w\n(1250-1271)",
+                "*  (mariage en 1260)",
+                "* Duchesse de Haute-Bavi\u00e8re et comtesse palatine du Rhin (1260-1271)",
+                "* Princesse de la Maison Piast. Fille de  et de Salom\u00e9 de Grande Pologne."
+            ],
+            [
+                "104x104px",
+                "Mathilde de Habsbourg\n(1251-1304)",
+                "*  (mariage en 1273)",
+                "* Duchesse de Haute-Bavi\u00e8re et comtesse palatine du Rhin (1273-1294)",
+                "* Princesse de la Maison de Habsbourg. Fille de  et de Gertrude de Hohenberg.\n* M\u00e8re de , de Mathilde de Bavi\u00e8re et de ."
+            ],
+            [
+                "",
+                "Mathilde de Nassau\n(1280-1323)",
+                "*  (mariage en 1294)",
+                "* Duchesse (1294-1302) puis co-duchesse (1302-1317) de Haute-Bavi\u00e8re\n* Comtesse palatine du Rhin (1294-1317)",
+                "* Princesse de la Maison de Nassau. Fille d'Adolphe de Nassau et d'Imagine d'Isembourg-Limbourg.\n* M\u00e8re d', de  et de ."
+            ],
+            [
+                "80x80px",
+                "B\u00e9atrice de \u015awidnica\n(1290-1322)",
+                "*  (mariage en 1308/1311)",
+                "* Co-duchesse (1308/1311-1317) puis duchesse (1317-1322) de Haute-Bavi\u00e8re\n* Reine de Germanie (1314-1322)",
+                "* Princesse de la Maison Piast. Fille de  et de B\u00e9atrice d'Ascanie.\n* M\u00e8re de  et d'."
+            ],
+            [
+                "135x135px",
+                "(1311-1356)",
+                "*  (mariage en 1324)",
+                "* Reine de Germanie (1324-1347)\n*Duchesse de Haute-Bavi\u00e8re (1324-1340)\n*Duchesse de Bavi\u00e8re (1340-1347)\n* Imp\u00e9ratrice du Saint-Empire (1328-1347)\n* Comtesse de Hollande (de plein droit, 1345-1354)\n* Comtesse de Hainaut (de plein droit, 1345-1356)",
+                "* Princesse de la Maison d'Avesnes. Fille de  et de Jeanne de Valois.\n* M\u00e8re d'\u00c9lisabeth de Bavi\u00e8re, de , de , d', d' et de B\u00e9atrice de Bavi\u00e8re."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the Nom\n(dates) string contains de?",
+                "answers": [
+                    "111x111px",
+                    "",
+                    "104x104px",
+                    "80x80px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the Nom\n(dates) string starts with Anne?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with \u00c9poux string contains en, have Nom\n(dates) string starts with Anne?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with Nom\n(dates) string contains de, have El\u00e9ments biographiques string contains Fille?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had El\u00e9ments biographiques string contains de and \u00c9poux string contains en?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "6540166",
+        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
+        "url": "https://fr.wikipedia.org/?curid=6540166",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "",
+                "\u00c9lisabeth de Hongrie\n(1236-1271)",
+                "*  (mariage en 1250)",
+                "* Co-duchesse de Bavi\u00e8re et co-comtesse palatine du Rhin (1253-1255)\n* Duchesse de Basse-Bavi\u00e8re (1255-1271)",
+                "* Princesse \u00c1rp\u00e1d. Fille de  et de Marie Lascaris.\n* M\u00e8re d', de  et d'."
+            ],
+            [
+                "",
+                "Isabelle de Lorraine\n\n(1272-1335)",
+                "*  (mariage en 1287)\n*  (mariage en 1306)",
+                "* Duchesse de Basse-Bavi\u00e8re (1290-1296)\n* Comtesse de Vaud\u00e9mont (1306-1335)",
+                "* Princesse de la Maison de Lorraine. Fille de  et de Marguerite de Champagne.\n* M\u00e8re de Marguerite de Vaud\u00e9mont et d'."
+            ],
+            [
+                "",
+                "Judith de \u015awidnica\n\n(1285/87-1320)",
+                "*  (mariage en 1297)",
+                "* Co-duchesse de Basse-Bavi\u00e8re (1297-1310)",
+                "* Princesse de la Maison Piast. Fille de  et de B\u00e9atrice d'Ascanie.\n* M\u00e8re d' et d'."
+            ],
+            [
+                "",
+                "Agn\u00e8s de G\u0142og\u00f3w\n(1293/96-1361)",
+                "*  (mariage en 1309)",
+                "* Co-duchesse (1309-1310) puis duchesse (1310-1312) de Basse-Bavi\u00e8re",
+                "* Princesse de la Maison Piast. Fille d' et de Mathilde de Brunswick.\n* M\u00e8re d'."
+            ],
+            [
+                "",
+                "Marguerite de Boh\u00eame\n(1313-1341)",
+                "*  (mariage en 1328)",
+                "* Co-duchesse de Basse-Bavi\u00e8re (1328-1339)",
+                "* Princesse de la Maison de Luxembourg. Fille de  et d'\u00c9lisabeth de Boh\u00eame.\n* M\u00e8re de ."
+            ],
+            [
+                "103x103px",
+                "Anne de Habsbourg\n(1318-1343)",
+                "*  (mariage en 1326/1328)\n* Jean-Henri de Goritz (mariage en 1336)",
+                "* Co-duchesse de Basse-Bavi\u00e8re (1326/1328-1333)\n* Comtesse de Goritz (1336-1338)\n* Abbesse du couvent de Sainte-Claire de Vienne (1340-1343)",
+                "* Princesse de la Maison de Habsbourg. Fille de  et d'Isabelle d'Aragon."
+            ],
+            [
+                "",
+                "Richardis de Juliers\n(1314-1360)",
+                "*  (mariage en 1330)\n*  (mariage en 1354)",
+                "* Co-duchesse de Basse-Bavi\u00e8re (1330-1334)\n* Comtesse de La Marck (1354-1360)",
+                "* Princesse de la Maison de Hengebach. Fille de  et de Jeanne de Hainaut."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Nom\n(dates) string starts with Marguerite and the \u00c9poux string contains en?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the \u00c9poux string contains en and the Nom\n(dates) string starts with Marguerite?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with El\u00e9ments biographiques string contains de, have Nom\n(dates) string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with \u00c9poux string contains en, have El\u00e9ments biographiques string contains Fille?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Nom\n(dates) string contains de and El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had \u00c9poux string contains en?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Nom\n(dates) string contains de and \u00c9poux string contains en?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "6540166",
+        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
+        "url": "https://fr.wikipedia.org/?curid=6540166",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "135x135px",
+                "(1311-1356)",
+                "*  (mariage en 1324)",
+                "*Reine de Germanie (1324-1347)\n*Duchesse de Haute-Bavi\u00e8re (1324-1340)\n*Duchesse de Bavi\u00e8re (1340-1347)\n*Imp\u00e9ratrice du Saint-Empire (1328-1347)\n*Comtesse de Hollande (de plein droit, 1345-1354)\n*Comtesse de Hainaut (de plein droit, 1345-1356)",
+                "* Princesse de la Maison d'Avesnes. Fille de  et de Jeanne de Valois.\n* M\u00e8re d'\u00c9lisabeth de Bavi\u00e8re, de , de , d', d' et de B\u00e9atrice de Bavi\u00e8re."
+            ],
+            [
+                "118x118px",
+                "Marguerite de Carinthie\n(1318-1369)",
+                "* Jean-Henri de Moravie (mariage en 1330)\n*  (mariage en 1341)",
+                "* Comtesse de Tyrol (de plein droit, 1335-1363)\n* Margravine de Brandebourg (1341-1351)\n* Co-duchesse de Bavi\u00e8re (1347-1349)\n* Co-duchesse (1349-1351) puis duchesse de Haute-Bavi\u00e8re (1351-1361)",
+                "* Princesse de la Maison de Goritz. Fille d'Henri de Goritz et d'Ad\u00e9la\u00efde de Brunswick-Grubenhagen.\n* M\u00e8re de ."
+            ],
+            [
+                "",
+                "\u00c9lisabeth de Sicile\n(1310-1349)",
+                "*  (mariage en 1329)",
+                "* Co-duchesse de Bavi\u00e8re (1347-1349)",
+                "* Princesse de la Maison de Barcelone. Fille de  et d'\u00c9l\u00e9onore d'Anjou.\n* M\u00e8re d', de Fr\u00e9d\u00e9ric de Bavi\u00e8re et de ."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Nom\n(dates) string contains de and the \u00c9poux string contains de?",
+                "answers": [
+                    "118x118px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Titres string contains de and the \u00c9poux string contains en?",
+                "answers": [
+                    "135x135px",
+                    "118x118px",
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with Titres string contains de, have Nom\n(dates) string starts with Marguerite?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Portrait, with \u00c9poux string contains en, have Nom\n(dates) string starts with Marguerite?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Nom\n(dates) string starts with Marguerite and Titres string contains de?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had El\u00e9ments biographiques string contains Fille and \u00c9poux string contains en?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had El\u00e9ments biographiques string contains Fille?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "6540166",
+        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
+        "url": "https://fr.wikipedia.org/?curid=6540166",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "118x118px",
+                "Marguerite de Carinthie\n(1318-1369)",
+                "*Jean-Henri de Moravie (mariage en 1330)\n* (mariage en 1341)",
+                "*Comtesse de Tyrol (de plein droit, 1335-1363)\n* Margravine de Brandebourg (1341-1351)\n* Co-duchesse de Bavi\u00e8re (1347-1349)\n* Co-duchesse (1349-1351) puis duchesse de Haute-Bavi\u00e8re (1351-1361)",
+                "* Princesse de la Maison de Goritz. Fille d'Henri de Goritz et d'Ad\u00e9la\u00efde de Brunswick-Grubenhagen.\n* M\u00e8re de ."
+            ],
+            [
+                "",
+                "Marguerite de Habsbourg\n(1346-1366)",
+                "*  (mariage en 1359)\n* Jean-Henri de Moravie (mariage en 1364)",
+                "* Duchesse de Haute-Bavi\u00e8re (1361-1363)\n* Margravine de Moravie (1364-1366)",
+                "* Princesse de la Maison de Habsbourg. Fille d' et de Jeanne de Ferrette."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains Fille?",
+                "answers": [
+                    "118x118px",
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the \u00c9poux string contains de and the Nom\n(dates) string starts with Marguerite?",
+                "answers": [
+                    "118x118px",
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Portrait, with Titres string contains de, have \u00c9poux string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with \u00c9poux string contains en, have Titres string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Nom\n(dates) string starts with Marguerite?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had \u00c9poux string contains en and Nom\n(dates) string contains Marguerite?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "6540166",
+        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
+        "url": "https://fr.wikipedia.org/?curid=6540166",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "",
+                "Maud de Lancastre\n(1340-1362)",
+                "* Ralph Stafford\n*  (mariage en 1352)",
+                "* Duchesse de Bavi\u00e8re-Straubing (1352-1362)\n* Comtesse de Hollande et de Z\u00e9lande (1354-1362)\n* Comtesse de Hainaut (1356-1362)",
+                "* Princesse de la Maison Plantagen\u00eat. Fille d'Henri de Grosmont et d'Isabelle de Beaumont.",
+                ""
+            ],
+            [
+                "",
+                "Marguerite de Cl\u00e8ves\n(1375-1411)",
+                "*  (mariage en 1394)",
+                "* Duchesse de Bavi\u00e8re-Straubing, comtesse de Hainaut et de Hollande (1394-1404)",
+                "* Princesse de la Maison de la Marck. Fille d' et de Marguerite de Juliers.",
+                ""
+            ],
+            [
+                "115x115px",
+                "Marguerite de Bourgogne\n(1374-1441)",
+                "*  (mariage en 1385)",
+                "* Duchesse de Bavi\u00e8re-Straubing, comtesse de Hainaut, de Hollande et de Z\u00e9lande (1404-1417)",
+                "* Princesse de la Maison de Valois-Bourgogne. Fille de  et de .\n* M\u00e8re de Jacqueline de Hainaut.",
+                "88x88px"
+            ],
+            [
+                "",
+                "\u00c9lisabeth de Goerlitz\n(1390- 1451)",
+                "* Antoine de Brabant (mariage en 1409)\n*  (mariage en 1418)",
+                "* Duchesse de Brabant (1409-1415)\n*Duchesse engag\u00e8re de Luxembourg (1411-1441)\n* Duchesse de Bavi\u00e8re-Straubing (1418-1424)",
+                "* Princesse de la Maison de Luxembourg. Fille de Jean de Goerlitz et de Catherine de Mecklembourg-Schwerin.",
+                ""
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains Marguerite and the \u00c9poux string contains en?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with Nom\n(dates) string contains de, have \u00c9poux string contains en?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had \u00c9poux string contains en and El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "6540166",
+        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
+        "url": "https://fr.wikipedia.org/?curid=6540166",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "",
+                "Anne de Neuffen\n(?-1381)",
+                "* Fr\u00e9d\u00e9ric de Bavi\u00e8re (mariage en 1360)",
+                "* Co-duchesse de Bavi\u00e8re-Landshut (1375-1381)",
+                "* Princesse de la Maison de Neuffen. Fille de  de Neuffen."
+            ],
+            [
+                "",
+                "Catherine de Goritz\n(1346-1391)",
+                "*  (mariage en 1360)",
+                "* Co-duchesse de Bavi\u00e8re-Landshut (1375-1392)",
+                "* Princesse de la Maison de Goritz. Fille de  de Goritz.\n* M\u00e8re d'Ernest de Bavi\u00e8re, de  et de Sophie de Bavi\u00e8re."
+            ],
+            [
+                "",
+                "Taddea Visconti\n(1351-1381)",
+                "*  (mariage en 1364)",
+                "* Co-duchesse de Bavi\u00e8re-Landshut (1375-1381)",
+                "* Princesse de la Famille Visconti. Fille de Barnab\u00e9 Visconti et de Reine della Scala.\n* M\u00e8re de  et d'Isabeau de Bavi\u00e8re."
+            ],
+            [
+                "",
+                "Maddalena Visconti\n(1366-1404)",
+                "* Fr\u00e9d\u00e9ric de Bavi\u00e8re (mariage en 1381)",
+                "* Co-duchesse de Bavi\u00e8re-Landshut (1381-1393)",
+                "* Princesse de la Famille Visconti. Fille de Barnab\u00e9 Visconti et de Reine della Scala.\n* M\u00e8re d'."
+            ],
+            [
+                "",
+                "Marguerite d'Autriche\n(1395-1447)",
+                "*  (mariage en 1412)",
+                "* Duchesse de Bavi\u00e8re-Landshut (1412-1447)",
+                "* Princesse de la Maison de Habsbourg. Fille d' et de Jeanne-Sophie de Bavi\u00e8re.\n* M\u00e8re de Jeanne de Bavi\u00e8re-Landshut et de ."
+            ],
+            [
+                "148x148px",
+                "Am\u00e9lie de Saxe\n(1436-1501)",
+                "*  (mariage en 1452)",
+                "* Duchesse de Bavi\u00e8re-Landshut (1452-1479)",
+                "* Princesse de la Maison de Wettin. Fille de  et de Marguerite d'Autriche.\n* M\u00e8re de Georges de Bavi\u00e8re et de Marguerite de Bavi\u00e8re."
+            ],
+            [
+                "102x102px",
+                "Edwige Jagellon\n(1457-1502)",
+                "* Georges de Bavi\u00e8re (mariage en 1475)",
+                "* Duchesse de Bavi\u00e8re-Landshut (1479-1502)",
+                "* Princesse de la Maison Jagellon. Fille de  et d'\u00c9lisabeth de Habsbourg."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "",
+                    "148x148px",
+                    "102x102px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the \u00c9poux string contains en and the Nom\n(dates) string contains Marguerite?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Portrait, with Nom\n(dates) string starts with Catherine, have \u00c9poux string contains en?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with Titres string contains de, have El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had El\u00e9ments biographiques string contains la?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Titres string contains de and Nom\n(dates) string contains de?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "6540166",
+        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
+        "url": "https://fr.wikipedia.org/?curid=6540166",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "",
+                "\u00c9lisabeth de Cl\u00e8ves\n(1378-1439)",
+                "* Reinold von Valkenburg (mariage en 1393)\n*  (mariage en 1401)",
+                "* Duchesse de Bavi\u00e8re-Ingolstadt (1401-1413)",
+                "* Princesse de la Maison de la Marck. Fille d' et de Marguerite de Juliers."
+            ],
+            [
+                "112x112px",
+                "Catherine d'Alen\u00e7on\n(1396-1462)",
+                "* Pierre de Navarre (mariage en 1411)\n*  (mariage en 1413)",
+                "* Comtesse de Mortain (1411-1412)\n* Duchesse de Bavi\u00e8re-Ingolstadt (1413-1447)",
+                "* Princesse de la Maison de Valois-Alen\u00e7on. Fille de  et de Marie Chamaillard."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Titres string contains de and the Nom\n(dates) string contains Catherine?",
+                "answers": [
+                    "112x112px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains la?",
+                "answers": [
+                    "",
+                    "112x112px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with Nom\n(dates) string starts with Catherine, have \u00c9poux string contains en?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Portrait, with Titres string contains de, have Nom\n(dates) string starts with Catherine?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "6540166",
+        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
+        "url": "https://fr.wikipedia.org/?curid=6540166",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "",
+                "\u00c9lisabeth Visconti\n(1374-1432)",
+                "* Ernest de Bavi\u00e8re (mariage en 1395)",
+                "* Duchesse de Bavi\u00e8re-Munich (1397-1432)",
+                "* Princesse de la Famille Visconti. Fille de Barnab\u00e9 Visconti et de Reine della Scala.\n* M\u00e8re d'."
+            ],
+            [
+                "117x117px",
+                "Marguerite de Cl\u00e8ves\n(1416-1444)",
+                "*  (mariage en 1433)\n*  (mariage en 1441)",
+                "* Duchesse de Bavi\u00e8re-Munich (1433-1435)\n* Comtesse de Wurtemberg (1441-1442)\n* Comtesse de Wurtemberg-Stuttgart (1442-1444)",
+                "* Princesse de la Maison de la Marck. Fille d' et de Marie de Bourgogne.\n* M\u00e8re d'Adolphe de Bavi\u00e8re."
+            ],
+            [
+                "",
+                "Anne de Brunswick-Grubenhagen\n(1414-1474)",
+                "*  (mariage en 1437)\n*  (mariage en 1463)",
+                "* Duchesse de Bavi\u00e8re-Munich (1437-1460)",
+                "* Princesse de la Maison de Brunswick. Fille d'\u00c9ric de Brunswick-Grubenhagen et d'\u00c9lisabeth de Brunswick-G\u00f6ttingen.\n* M\u00e8re de , de Sigismond de Bavi\u00e8re, de Marguerite de Bavi\u00e8re, d'\u00c9lisabeth de Bavi\u00e8re et d'."
+            ],
+            [
+                "110x110px",
+                "Cun\u00e9gonde d'Autriche\n(1465-1520)",
+                "*  (mariage en 1487)",
+                "* Duchesse de Bavi\u00e8re-Munich (1487-1505)\n* Duchesse de Bavi\u00e8re (1505-1508)\n* R\u00e9gente de Bavi\u00e8re (1508-1511)",
+                "* Princesse de la Maison de Habsbourg. Fille de  et d'El\u00e9onore de Portugal.\n* M\u00e8re de Sidonie de Bavi\u00e8re, de Sibylle de Bavi\u00e8re, de Sabine de Bavi\u00e8re, de , de , d'Ernest de Bavi\u00e8re et de Suzanne de Bavi\u00e8re."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains la and the Titres string contains de?",
+                "answers": [
+                    "",
+                    "117x117px",
+                    "110x110px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "",
+                    "117x117px",
+                    "110x110px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Portrait, with \u00c9poux string contains en, have Nom\n(dates) string starts with Anne?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with \u00c9poux string contains en, have El\u00e9ments biographiques string contains Fille?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Nom\n(dates) string starts with Anne and Titres string contains de?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had \u00c9poux string contains en?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Nom\n(dates) string contains Anne?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "6540166",
+        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
+        "url": "https://fr.wikipedia.org/?curid=6540166",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "110x110px",
+                "Cun\u00e9gonde d'Autriche\n\n(1465-1520)",
+                "* (mariage en 1487)",
+                "*Duchesse de Bavi\u00e8re-Munich (1487-1505)\n* Duchesse de Bavi\u00e8re (1505-1508)\n* R\u00e9gente de Bavi\u00e8re (1508-1511)",
+                "* Princesse de la Maison de Habsbourg. Fille de  et d'Ali\u00e9nor de Portugal.\n* M\u00e8re de Sidonie de Bavi\u00e8re, de Sibylle de Bavi\u00e8re, de Sabine de Bavi\u00e8re, de , de , d'Ernest de Bavi\u00e8re et de Suzanne de Bavi\u00e8re.",
+                ""
+            ],
+            [
+                "109x109px",
+                "Marie-Jacob\u00e9e de Bade-Sponheim\n(1507-1580)",
+                "*  (mariage en 1522)",
+                "* Duchesse de Bavi\u00e8re (1522-1550)",
+                "* Princesse de la Maison de Z\u00e4hringen. fille de  et d'\u00c9lisabeth du Palatinat.\n* M\u00e8re d' et de Mathilde de Bavi\u00e8re.",
+                ""
+            ],
+            [
+                "163x163px",
+                "Anne d'Autriche (1528-1590)",
+                "*  (mariage en 1546)",
+                "* Duchesse de Bavi\u00e8re (1550-1579)",
+                "* Princesse de la Maison de Habsbourg. Fille de  et d'Anne Jagellon.\n* M\u00e8re de , de Ferdinand de Bavi\u00e8re, de Marie-Anne de Bavi\u00e8re, de Maximilienne-Marie de Bavi\u00e8re et d'Ernest de Bavi\u00e8re.",
+                ""
+            ],
+            [
+                "111x111px",
+                "Ren\u00e9e de Lorraine\n(1544-1602)",
+                "*  (mariage en 1568)",
+                "* Duchesse de Bavi\u00e8re (1579-1597)",
+                "* Princesse de la Maison de Lorraine. Fille de  et de Christine de Danemark.\n* M\u00e8re de , de Marie-Anne de Bavi\u00e8re, de Philippe-Guillaume de Bavi\u00e8re, de Ferdinand de Bavi\u00e8re, d' et de Madeleine de Bavi\u00e8re.",
+                ""
+            ],
+            [
+                "111x111px",
+                "\u00c9lisabeth de Lorraine\n(1574-1635)",
+                "*  (mariage en 1595)",
+                "*Duchesse (1597-1623) puis \u00e9lectrice (1623-1635) de Bavi\u00e8re\n* \u00c9lectrice palatine (1623-1635)",
+                "* Princesse de la Maison de Lorraine. Fille de  et de Claude de France.",
+                "84x84px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with El\u00e9ments biographiques string contains de, have Nom\n(dates) string contains Anne?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            }
+        ]
+    },
+    {
+        "id": "6540166",
+        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
+        "url": "https://fr.wikipedia.org/?curid=6540166",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "111x111px",
+                "\u00c9lisabeth de Lorraine\n(1574-1635)",
+                "*  (mariage en 1595)",
+                "* Duchesse (1597-1623) puis \u00e9lectrice (1623-1635) de Bavi\u00e8re\n* \u00c9lectrice palatine (1623-1635)",
+                "* Princesse de la Maison de Lorraine. Fille de  et de Claude de France.",
+                "84x84px"
+            ],
+            [
+                "111x111px",
+                "Marie-Anne d'Autriche (1610-1665)",
+                "*  (mariage en 1635)",
+                "* \u00c9lectrice de Bavi\u00e8re (1635-1651)\n* \u00c9lectrice palatine (1635-1648)",
+                "* Princesse de la Maison de Habsbourg. Fille de  et de Marie-Anne de Bavi\u00e8re.\n* M\u00e8re de Ferdinand-Marie de Bavi\u00e8re.",
+                ""
+            ],
+            [
+                "99x99px",
+                "Henriette-Ad\u00e9la\u00efde de Savoie\n(1636-1676)",
+                "* Ferdinand-Marie de Bavi\u00e8re (mariage en 1652)",
+                "* \u00c9lectrice de Bavi\u00e8re (1652-1676)",
+                "* Princesse de la Maison de Savoie. Fille de  et de Christine de France.\n* M\u00e8re de Marie-Anne de Bavi\u00e8re, de Maximilien-Emmanuel de Bavi\u00e8re, de Joseph-Cl\u00e9ment de Bavi\u00e8re et de Violante-B\u00e9atrice de Bavi\u00e8re.",
+                "85x85px"
+            ],
+            [
+                "124x124px",
+                "Marie-Antoinette d'Autriche\n(1669-1692)",
+                "* Maximilien-Emmanuel de Bavi\u00e8re (mariage en 1685)",
+                "* Princesse h\u00e9riti\u00e8re d'Espagne (de plein droit, 1673-1692)\n* \u00c9lectrice de Bavi\u00e8re (1685-1692)",
+                "* Princesse de la Maison de Habsbourg. Fille de  et de Marguerite-Th\u00e9r\u00e8se d'Autriche.\n* M\u00e8re de Joseph-Ferdinand de Bavi\u00e8re.",
+                ""
+            ],
+            [
+                "98x98px",
+                "Th\u00e9r\u00e8se-Cun\u00e9gonde Sobieska (1676-1730)",
+                "* Maximilien-Emmanuel de Bavi\u00e8re (mariage en 1695)",
+                "* \u00c9lectrice de Bavi\u00e8re (1695-1726)",
+                "* Princesse de la Maison Sobieski. Fille de  et de Marie-Casimire-Louise de La Grange d'Arquien.\n* M\u00e8re de , de Ferdinand-Marie-Innocent de Bavi\u00e8re, de Cl\u00e9ment-Auguste de Bavi\u00e8re et de Jean-Th\u00e9odore de Bavi\u00e8re.",
+                ""
+            ],
+            [
+                "101x101px",
+                "Marie-Am\u00e9lie d'Autriche\n(1701-1756)",
+                "*  (mariage en 1722)",
+                "* \u00c9lectrice de Bavi\u00e8re (1726-1745)\n* Imp\u00e9ratrice du Saint-Empire, reine de Germanie et de Boh\u00eame (1741-1745)",
+                "* Princesse de la Maison de Habsbourg. Fille de  et de Wilhelmine-Am\u00e9lie de Brunswick-Lunebourg.\n* M\u00e8re de Marie-Antoinette de Bavi\u00e8re, de Th\u00e9r\u00e8se-B\u00e9n\u00e9dicte de Bavi\u00e8re, de , de Marie-Anne de Bavi\u00e8re et de Jos\u00e9pha de Bavi\u00e8re.",
+                ""
+            ],
+            [
+                "106x106px",
+                "Marie-Anne de Saxe\n(1728-1797)",
+                "*  (mariage en 1747)",
+                "* \u00c9lectrice de Bavi\u00e8re (1747-1777)",
+                "* Princesse de la Maison de Wettin. Fille d' et de Marie-Jos\u00e8phe d'Autriche.",
+                ""
+            ],
+            [
+                "108x108px",
+                "\u00c9lisabeth-Auguste de Palatinat-Soulzbach\n(1721-1794)",
+                "* Charles-Th\u00e9odore de Bavi\u00e8re (mariage en 1742)",
+                "* Marquise de Berg-op-Zoom (1742-1794)\n* \u00c9lectrice palatine (1742-1777) puis comtesse palatine (1777-1794)\n* \u00c9lectrice de Bavi\u00e8re (1777-1794)",
+                "* Princesse de la Maison de Wittelsbach. Fille de Joseph Charles de Palatinat-Soulzbach  et d'\u00c9lisabeth-Auguste de Palatinat-Neubourg.",
+                ""
+            ],
+            [
+                "107x107px",
+                "Marie-L\u00e9opoldine de Mod\u00e8ne\n(1776-1848)",
+                "* Charles-Th\u00e9odore de Bavi\u00e8re (mariage en 1795)\n* Louis-Joseph d'Arco-Zinneberg (mariage en 1804)",
+                "* \u00c9lectrice de Bavi\u00e8re et comtesse palatine (1795-1799)\n* Comtesse d'Arco-Zinneberg (1804-1848)",
+                "* Princesse de la Maison de Habsbourg-Este. Fille de Ferdinand d'Autriche-Este et de Marie-B\u00e9atrice d'Este.",
+                ""
+            ],
+            [
+                "102x102px",
+                "Caroline de Bade (1776-1841)",
+                "*  (mariage en 1797)",
+                "* \u00c9lectrice (1799-1806) puis reine de Bavi\u00e8re (1806-1825)",
+                "* Princesse de la Maison de Bade. Fille de Charles-Louis de Bade et d'Am\u00e9lie de Hesse-Darmstadt.\n* M\u00e8re d'\u00c9lisabeth de Bavi\u00e8re, d'Am\u00e9lie de Bavi\u00e8re, de Sophie de Bavi\u00e8re, de Marie de Bavi\u00e8re et de Ludovica de Bavi\u00e8re.",
+                "80x80px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Nom\n(dates) string contains de and the El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "111x111px",
+                    "99x99px",
+                    "98x98px",
+                    "106x106px",
+                    "108x108px",
+                    "107x107px",
+                    "102x102px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with Nom\n(dates) string starts with Caroline, have \u00c9poux string contains en?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "10"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "6540166",
+        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
+        "url": "https://fr.wikipedia.org/?curid=6540166",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "102x102px",
+                "Caroline de Bade (1776-1841)",
+                "* (mariage en 1797)",
+                "* \u00c9lectrice (1799-1806) puis reine de Bavi\u00e8re (1806-1825)",
+                "* Princesse de la Maison de Bade. Fille de Charles-Louis de Bade et d'Am\u00e9lie de Hesse-Darmstadt.\n* M\u00e8re d'\u00c9lisabeth de Bavi\u00e8re, d'Am\u00e9lie de Bavi\u00e8re, de Sophie de Bavi\u00e8re, de Marie de Bavi\u00e8re et de Ludovica de Bavi\u00e8re.",
+                "80x80px"
+            ],
+            [
+                "118x118px",
+                "Th\u00e9r\u00e8se de Saxe-Hildburghausen (1792-1854)",
+                "* (mariage en 1810)",
+                "* Reine de Bavi\u00e8re (1825-1848)",
+                "* Princesse de la Maison de Wettin. Fille de  et de Charlotte de Meklembourg-Strelitz.\n* M\u00e8re de , de Mathilde de Bavi\u00e8re, d', de Luitpold de Bavi\u00e8re, d'Adelgonde de Bavi\u00e8re, d'Hildegarde de Bavi\u00e8re, d'Alexandra de Bavi\u00e8re et d'Adalbert de Bavi\u00e8re.",
+                ""
+            ],
+            [
+                "99x99px",
+                "Marie de Prusse (1825-1889)",
+                "* (mariage en 1842)",
+                "* Reine de Bavi\u00e8re (1848-1864)",
+                "* Princesse de la Maison de Hohenzollern. Fille de Guillaume de Prusse et de Marie-Anne-Am\u00e9lie de Hesse-Hombourg.\n* M\u00e8re de  et d'.",
+                "84x84px"
+            ],
+            [
+                "126x126px",
+                "Marie-Th\u00e9r\u00e8se de Mod\u00e8ne (1849-1919)",
+                "* (mariage en 1868)",
+                "* Reine de Bavi\u00e8re (1913-1918)",
+                "* Princesse de la Maison de Habsbourg-Este. Fille de Ferdinand-Charles-Victor d'Autriche-Este et d'\u00c9lisabeth de Habsbourg-Hongrie.\n* M\u00e8re de Rupprecht de Bavi\u00e8re, d'Adelgonde de Bavi\u00e8re, de Marie de Bavi\u00e8re, de Charles de Bavi\u00e8re, de Fran\u00e7ois de Bavi\u00e8re, de Mathilde de Bavi\u00e8re, de Wolfgang de Bavi\u00e8re, d'Hildegarde de Bavi\u00e8re, de Notburga de Bavi\u00e8re, de Wiltrud de Bavi\u00e8re, d'Helmtrud de Bavi\u00e8re, de Dietlinde de Bavi\u00e8re et de Gundelinde de Bavi\u00e8re.",
+                "120x120px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the Nom\n(dates) string contains de?",
+                "answers": [
+                    "102x102px",
+                    "118x118px",
+                    "99x99px",
+                    "126x126px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Nom\n(dates) string contains de?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "6540166",
+        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
+        "url": "https://fr.wikipedia.org/?curid=6540166",
+        "header": [
             "Nom\n(dates)",
             "\u00c9poux",
             "Titres",
@@ -124,7 +1270,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9poux string contains Louis and the Nom\n(dates) string contains Saxe?",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the Nom\n(dates) string contains Saxe?",
                 "answers": [
                     "80x80px"
                 ],
@@ -132,15 +1278,16 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains Charlemagne?",
+                "question": "What was the Portrait when the \u00c9poux string contains Louis and the El\u00e9ments biographiques string contains de?",
                 "answers": [
-                    ""
+                    "103x103px",
+                    "80x80px"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with \u00c9poux string contains en, have El\u00e9ments biographiques string contains de?",
+                "question": "Does every Portrait, with Titres string contains de, have El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -148,17 +1295,33 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Nom\n(dates) string contains de and El\u00e9ments biographiques string contains de?",
+                "question": "Does every Portrait, with El\u00e9ments biographiques string contains Fille, have Titres string contains de?",
                 "answers": [
-                    "6"
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had \u00c9poux string contains en and El\u00e9ments biographiques string contains Fille?",
+                "answers": [
+                    "7"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains Fille?",
+                "question": "How many Portrait had El\u00e9ments biographiques string contains de and Titres string contains de?",
                 "answers": [
                     "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Titres string contains Lombards?",
+                "answers": [
+                    "2"
                 ],
                 "reasoning_type": "counting"
             }
@@ -243,7 +1406,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string contains Bourgogne and the \u00c9poux string contains en?",
+                "question": "What was the Portrait when the Nom\n(dates) string starts with Judith and the El\u00e9ments biographiques string contains Fille?",
                 "answers": [
                     "144x144px"
                 ],
@@ -251,7 +1414,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string contains de and the El\u00e9ments biographiques string contains de?",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains en?",
                 "answers": [
                     "144x144px",
                     "222x222px"
@@ -260,7 +1423,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with El\u00e9ments biographiques string contains de, have Titres string contains de?",
+                "question": "Does only Portrait, with Titres string contains de, have El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -268,15 +1431,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with \u00c9poux string contains en, have Nom\n(dates) string starts with Judith?",
+                "question": "Does every Portrait, with Nom\n(dates) string contains de, have Titres string contains de?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains de?",
+                "question": "How many Portrait had Nom\n(dates) string contains de?",
                 "answers": [
                     "3"
                 ],
@@ -284,9 +1447,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de?",
+                "question": "How many Portrait had Nom\n(dates) string contains de and El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Nom\n(dates) string contains Judith?",
+                "answers": [
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -346,7 +1517,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains Fille?",
+                "question": "What was the Portrait when the Nom\n(dates) string contains Kiev and the \u00c9poux string contains en?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Nom\n(dates) string contains de and the Titres string contains de?",
                 "answers": [
                     "80x80px",
                     "109x109px",
@@ -357,15 +1536,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string contains Kiev and the Titres string contains de?",
-                "answers": [
-                    ""
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Titres string contains de, have Nom\n(dates) string contains Turin?",
+                "question": "Does every Portrait, with \u00c9poux string contains en, have Nom\n(dates) string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -373,7 +1544,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with \u00c9poux string contains en, have Titres string contains de?",
+                "question": "Does only Portrait, with El\u00e9ments biographiques string contains de, have Nom\n(dates) string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -381,15 +1552,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains en?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains de and \u00c9poux string contains en?",
+                "question": "How many Portrait had Nom\n(dates) string contains de and Titres string contains de?",
                 "answers": [
                     "4"
                 ],
@@ -398,6 +1561,14 @@
             {
                 "source": "synthetic_qa",
                 "question": "How many Portrait had Nom\n(dates) string contains de and \u00c9poux string contains en?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "4"
                 ],
@@ -530,27 +1701,25 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the Nom\n(dates) string starts with Judith?",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains Fille and the Nom\n(dates) string contains Saxe?",
                 "answers": [
-                    "218x218px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the Nom\n(dates) string contains de?",
-                "answers": [
-                    "218x218px",
                     "129x129px",
-                    "151x151px",
-                    "152x152px",
-                    "201x201px"
+                    "151x151px"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with \u00c9poux string contains en, have Nom\n(dates) string starts with Judith?",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the Nom\n(dates) string contains Saxe?",
+                "answers": [
+                    "129x129px",
+                    "151x151px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Portrait, with Nom\n(dates) string starts with Judith, have Titres string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -558,7 +1727,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with El\u00e9ments biographiques string contains de, have Nom\n(dates) string starts with Judith?",
+                "question": "Does every Portrait, with Titres string contains de, have \u00c9poux string contains en?",
                 "answers": [
                     "Yes"
                 ],
@@ -566,7 +1735,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains la and Titres string contains de?",
+                "question": "How many Portrait had \u00c9poux string contains en and El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "5"
                 ],
@@ -574,7 +1743,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains en?",
+                "question": "How many Portrait had Nom\n(dates) string contains de?",
                 "answers": [
                     "5"
                 ],
@@ -582,7 +1751,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains en and Titres string contains de?",
+                "question": "How many Portrait had \u00c9poux string contains en and Nom\n(dates) string contains de?",
                 "answers": [
                     "5"
                 ],
@@ -630,6 +1799,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
+                "question": "What was the Portrait when the \u00c9poux string contains en and the Titres string contains de?",
+                "answers": [
+                    "109x109px",
+                    "106x106px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
                 "question": "What was the Portrait when the \u00c9poux string contains en and the Nom\n(dates) string contains de?",
                 "answers": [
                     "109x109px"
@@ -638,31 +1816,31 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the Nom\n(dates) string contains de?",
+                "question": "Does only Portrait, with El\u00e9ments biographiques string contains la, have \u00c9poux string contains en?",
                 "answers": [
-                    "109x109px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Nom\n(dates) string contains de, have \u00c9poux string contains en?",
-                "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Titres string contains de, have Nom\n(dates) string contains de?",
+                "question": "Does only Portrait, with Titres string contains de, have \u00c9poux string contains en?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de?",
+                "question": "How many Portrait had Titres string contains de and Nom\n(dates) string contains de?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Titres string contains de and El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "2"
                 ],
@@ -670,7 +1848,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de and El\u00e9ments biographiques string contains de?",
+                "question": "How many Portrait had Titres string contains de and \u00c9poux string contains en?",
                 "answers": [
                     "2"
                 ],
@@ -711,7 +1889,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string contains de and the Titres string contains de?",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains la and the Nom\n(dates) string contains de?",
                 "answers": [
                     "82x82px"
                 ],
@@ -719,7 +1897,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains en?",
+                "question": "What was the Portrait when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "82x82px"
                 ],
@@ -727,7 +1905,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Nom\n(dates) string contains de, have Titres string contains de?",
+                "question": "Does only Portrait, with Nom\n(dates) string contains de, have El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -735,7 +1913,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Nom\n(dates) string contains de, have \u00c9poux string contains en?",
+                "question": "Does every Portrait, with El\u00e9ments biographiques string contains de, have Titres string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -743,7 +1921,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains de and \u00c9poux string contains en?",
+                "question": "How many Portrait had Titres string contains de and \u00c9poux string contains en?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had \u00c9poux string contains en and Nom\n(dates) string contains de?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Nom\n(dates) string contains de and Titres string contains de?",
                 "answers": [
                     "1"
                 ],
@@ -812,699 +2006,28 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9poux string contains en and the Titres string contains de?",
-                "answers": [
-                    "",
-                    "101x101px",
-                    "96x96px",
-                    "111x111px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "",
-                    "101x101px",
-                    "96x96px",
-                    "111x111px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with \u00c9poux string contains en, have Nom\n(dates) string contains de?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Titres string contains de, have Nom\n(dates) string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains en and Titres string contains de?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Nom\n(dates) string contains de?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "6540166",
-        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
-        "url": "https://fr.wikipedia.org/?curid=6540166",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques"
-        ],
-        "rows": [
-            [
-                "111x111px",
-                "Marie de Brabant\n(1226-1256)",
-                "*  (mariage en 1254)",
-                "* Co-duchesse de Bavi\u00e8re (1254-1255)\n* Duchesse de Haute-Bavi\u00e8re (1255-1256)\n* Comtesse palatine du Rhin (1254-1256)",
-                "* Princesse de la Famille des R\u00e9gnier. Fille d' et de Marie de Souabe."
-            ],
-            [
-                "",
-                "Anne de G\u0142og\u00f3w\n(1250-1271)",
-                "*  (mariage en 1260)",
-                "* Duchesse de Haute-Bavi\u00e8re et comtesse palatine du Rhin (1260-1271)",
-                "* Princesse de la Maison Piast. Fille de  et de Salom\u00e9 de Grande Pologne."
-            ],
-            [
-                "104x104px",
-                "Mathilde de Habsbourg\n(1251-1304)",
-                "*  (mariage en 1273)",
-                "* Duchesse de Haute-Bavi\u00e8re et comtesse palatine du Rhin (1273-1294)",
-                "* Princesse de la Maison de Habsbourg. Fille de  et de Gertrude de Hohenberg.\n* M\u00e8re de , de Mathilde de Bavi\u00e8re et de ."
-            ],
-            [
-                "",
-                "Mathilde de Nassau\n(1280-1323)",
-                "*  (mariage en 1294)",
-                "* Duchesse (1294-1302) puis co-duchesse (1302-1317) de Haute-Bavi\u00e8re\n* Comtesse palatine du Rhin (1294-1317)",
-                "* Princesse de la Maison de Nassau. Fille d'Adolphe de Nassau et d'Imagine d'Isembourg-Limbourg.\n* M\u00e8re d', de  et de ."
-            ],
-            [
-                "80x80px",
-                "B\u00e9atrice de \u015awidnica\n(1290-1322)",
-                "*  (mariage en 1308/1311)",
-                "* Co-duchesse (1308/1311-1317) puis duchesse (1317-1322) de Haute-Bavi\u00e8re\n* Reine de Germanie (1314-1322)",
-                "* Princesse de la Maison Piast. Fille de  et de B\u00e9atrice d'Ascanie.\n* M\u00e8re de  et d'."
-            ],
-            [
-                "135x135px",
-                "(1311-1356)",
-                "*  (mariage en 1324)",
-                "* Reine de Germanie (1324-1347)\n*Duchesse de Haute-Bavi\u00e8re (1324-1340)\n*Duchesse de Bavi\u00e8re (1340-1347)\n* Imp\u00e9ratrice du Saint-Empire (1328-1347)\n* Comtesse de Hollande (de plein droit, 1345-1354)\n* Comtesse de Hainaut (de plein droit, 1345-1356)",
-                "* Princesse de la Maison d'Avesnes. Fille de  et de Jeanne de Valois.\n* M\u00e8re d'\u00c9lisabeth de Bavi\u00e8re, de , de , d', d' et de B\u00e9atrice de Bavi\u00e8re."
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "111x111px",
-                    "",
-                    "104x104px",
-                    "80x80px",
-                    "135x135px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Titres string contains palatine and the Nom\n(dates) string starts with Anne?",
-                "answers": [
-                    ""
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with El\u00e9ments biographiques string contains de, have Nom\n(dates) string starts with Anne?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with El\u00e9ments biographiques string contains de, have Nom\n(dates) string starts with Anne?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de?",
-                "answers": [
-                    "6"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains en?",
-                "answers": [
-                    "6"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Nom\n(dates) string contains de and El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "6540166",
-        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
-        "url": "https://fr.wikipedia.org/?curid=6540166",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques"
-        ],
-        "rows": [
-            [
-                "",
-                "\u00c9lisabeth de Hongrie\n(1236-1271)",
-                "*  (mariage en 1250)",
-                "* Co-duchesse de Bavi\u00e8re et co-comtesse palatine du Rhin (1253-1255)\n* Duchesse de Basse-Bavi\u00e8re (1255-1271)",
-                "* Princesse \u00c1rp\u00e1d. Fille de  et de Marie Lascaris.\n* M\u00e8re d', de  et d'."
-            ],
-            [
-                "",
-                "Isabelle de Lorraine\n\n(1272-1335)",
-                "*  (mariage en 1287)\n*  (mariage en 1306)",
-                "* Duchesse de Basse-Bavi\u00e8re (1290-1296)\n* Comtesse de Vaud\u00e9mont (1306-1335)",
-                "* Princesse de la Maison de Lorraine. Fille de  et de Marguerite de Champagne.\n* M\u00e8re de Marguerite de Vaud\u00e9mont et d'."
-            ],
-            [
-                "",
-                "Judith de \u015awidnica\n\n(1285/87-1320)",
-                "*  (mariage en 1297)",
-                "* Co-duchesse de Basse-Bavi\u00e8re (1297-1310)",
-                "* Princesse de la Maison Piast. Fille de  et de B\u00e9atrice d'Ascanie.\n* M\u00e8re d' et d'."
-            ],
-            [
-                "",
-                "Agn\u00e8s de G\u0142og\u00f3w\n(1293/96-1361)",
-                "*  (mariage en 1309)",
-                "* Co-duchesse (1309-1310) puis duchesse (1310-1312) de Basse-Bavi\u00e8re",
-                "* Princesse de la Maison Piast. Fille d' et de Mathilde de Brunswick.\n* M\u00e8re d'."
-            ],
-            [
-                "",
-                "Marguerite de Boh\u00eame\n(1313-1341)",
-                "*  (mariage en 1328)",
-                "* Co-duchesse de Basse-Bavi\u00e8re (1328-1339)",
-                "* Princesse de la Maison de Luxembourg. Fille de  et d'\u00c9lisabeth de Boh\u00eame.\n* M\u00e8re de ."
-            ],
-            [
-                "103x103px",
-                "Anne de Habsbourg\n(1318-1343)",
-                "*  (mariage en 1326/1328)\n* Jean-Henri de Goritz (mariage en 1336)",
-                "* Co-duchesse de Basse-Bavi\u00e8re (1326/1328-1333)\n* Comtesse de Goritz (1336-1338)\n* Abbesse du couvent de Sainte-Claire de Vienne (1340-1343)",
-                "* Princesse de la Maison de Habsbourg. Fille de  et d'Isabelle d'Aragon."
-            ],
-            [
-                "",
-                "Richardis de Juliers\n(1314-1360)",
-                "*  (mariage en 1330)\n*  (mariage en 1354)",
-                "* Co-duchesse de Basse-Bavi\u00e8re (1330-1334)\n* Comtesse de La Marck (1354-1360)",
-                "* Princesse de la Maison de Hengebach. Fille de  et de Jeanne de Hainaut."
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string starts with Judith and the El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    ""
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
                 "question": "What was the Portrait when the \u00c9poux string contains en and the Nom\n(dates) string contains de?",
                 "answers": [
                     "",
-                    "103x103px"
+                    "101x101px",
+                    "111x111px"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with Nom\n(dates) string contains Lorraine, have El\u00e9ments biographiques string contains Fille?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with Nom\n(dates) string contains de, have Titres string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains Fille?",
-                "answers": [
-                    "7"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains de and \u00c9poux string contains en?",
-                "answers": [
-                    "7"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains en and Titres string contains Vienne?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "6540166",
-        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
-        "url": "https://fr.wikipedia.org/?curid=6540166",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques"
-        ],
-        "rows": [
-            [
-                "135x135px",
-                "(1311-1356)",
-                "*  (mariage en 1324)",
-                "*Reine de Germanie (1324-1347)\n*Duchesse de Haute-Bavi\u00e8re (1324-1340)\n*Duchesse de Bavi\u00e8re (1340-1347)\n*Imp\u00e9ratrice du Saint-Empire (1328-1347)\n*Comtesse de Hollande (de plein droit, 1345-1354)\n*Comtesse de Hainaut (de plein droit, 1345-1356)",
-                "* Princesse de la Maison d'Avesnes. Fille de  et de Jeanne de Valois.\n* M\u00e8re d'\u00c9lisabeth de Bavi\u00e8re, de , de , d', d' et de B\u00e9atrice de Bavi\u00e8re."
-            ],
-            [
-                "118x118px",
-                "Marguerite de Carinthie\n(1318-1369)",
-                "* Jean-Henri de Moravie (mariage en 1330)\n*  (mariage en 1341)",
-                "* Comtesse de Tyrol (de plein droit, 1335-1363)\n* Margravine de Brandebourg (1341-1351)\n* Co-duchesse de Bavi\u00e8re (1347-1349)\n* Co-duchesse (1349-1351) puis duchesse de Haute-Bavi\u00e8re (1351-1361)",
-                "* Princesse de la Maison de Goritz. Fille d'Henri de Goritz et d'Ad\u00e9la\u00efde de Brunswick-Grubenhagen.\n* M\u00e8re de ."
-            ],
-            [
-                "",
-                "\u00c9lisabeth de Sicile\n(1310-1349)",
-                "*  (mariage en 1329)",
-                "* Co-duchesse de Bavi\u00e8re (1347-1349)",
-                "* Princesse de la Maison de Barcelone. Fille de  et d'\u00c9l\u00e9onore d'Anjou.\n* M\u00e8re d', de Fr\u00e9d\u00e9ric de Bavi\u00e8re et de ."
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string starts with Marguerite and the El\u00e9ments biographiques string contains Fille?",
-                "answers": [
-                    "118x118px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains la and the \u00c9poux string contains en?",
-                "answers": [
-                    "135x135px",
-                    "118x118px",
-                    ""
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Titres string contains de, have \u00c9poux string contains en?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with El\u00e9ments biographiques string contains de, have \u00c9poux string contains en?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains la?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de and Nom\n(dates) string contains de?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains de and \u00c9poux string contains en?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "6540166",
-        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
-        "url": "https://fr.wikipedia.org/?curid=6540166",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques"
-        ],
-        "rows": [
-            [
-                "118x118px",
-                "Marguerite de Carinthie\n(1318-1369)",
-                "*Jean-Henri de Moravie (mariage en 1330)\n* (mariage en 1341)",
-                "*Comtesse de Tyrol (de plein droit, 1335-1363)\n* Margravine de Brandebourg (1341-1351)\n* Co-duchesse de Bavi\u00e8re (1347-1349)\n* Co-duchesse (1349-1351) puis duchesse de Haute-Bavi\u00e8re (1351-1361)",
-                "* Princesse de la Maison de Goritz. Fille d'Henri de Goritz et d'Ad\u00e9la\u00efde de Brunswick-Grubenhagen.\n* M\u00e8re de ."
-            ],
-            [
-                "",
-                "Marguerite de Habsbourg\n(1346-1366)",
-                "*  (mariage en 1359)\n* Jean-Henri de Moravie (mariage en 1364)",
-                "* Duchesse de Haute-Bavi\u00e8re (1361-1363)\n* Margravine de Moravie (1364-1366)",
-                "* Princesse de la Maison de Habsbourg. Fille d' et de Jeanne de Ferrette."
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains en?",
-                "answers": [
-                    "118x118px",
-                    ""
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9poux string contains de and the Titres string contains Tyrol?",
-                "answers": [
-                    "118x118px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Titres string contains de, have \u00c9poux string contains en?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with \u00c9poux string contains de, have Titres string contains Tyrol?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Nom\n(dates) string starts with Marguerite?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de and Nom\n(dates) string starts with Marguerite?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains la?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "6540166",
-        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
-        "url": "https://fr.wikipedia.org/?curid=6540166",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "",
-                "Maud de Lancastre\n(1340-1362)",
-                "* Ralph Stafford\n*  (mariage en 1352)",
-                "* Duchesse de Bavi\u00e8re-Straubing (1352-1362)\n* Comtesse de Hollande et de Z\u00e9lande (1354-1362)\n* Comtesse de Hainaut (1356-1362)",
-                "* Princesse de la Maison Plantagen\u00eat. Fille d'Henri de Grosmont et d'Isabelle de Beaumont.",
-                ""
-            ],
-            [
-                "",
-                "Marguerite de Cl\u00e8ves\n(1375-1411)",
-                "*  (mariage en 1394)",
-                "* Duchesse de Bavi\u00e8re-Straubing, comtesse de Hainaut et de Hollande (1394-1404)",
-                "* Princesse de la Maison de la Marck. Fille d' et de Marguerite de Juliers.",
-                ""
-            ],
-            [
-                "115x115px",
-                "Marguerite de Bourgogne\n(1374-1441)",
-                "*  (mariage en 1385)",
-                "* Duchesse de Bavi\u00e8re-Straubing, comtesse de Hainaut, de Hollande et de Z\u00e9lande (1404-1417)",
-                "* Princesse de la Maison de Valois-Bourgogne. Fille de  et de .\n* M\u00e8re de Jacqueline de Hainaut.",
-                "88x88px"
-            ],
-            [
-                "",
-                "\u00c9lisabeth de Goerlitz\n(1390- 1451)",
-                "* Antoine de Brabant (mariage en 1409)\n*  (mariage en 1418)",
-                "* Duchesse de Brabant (1409-1415)\n*Duchesse engag\u00e8re de Luxembourg (1411-1441)\n* Duchesse de Bavi\u00e8re-Straubing (1418-1424)",
-                "* Princesse de la Maison de Luxembourg. Fille de Jean de Goerlitz et de Catherine de Mecklembourg-Schwerin.",
-                ""
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the Titres string contains de?",
+                "question": "What was the Portrait when the Titres string contains de and the El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "",
-                    "115x115px"
+                    "101x101px",
+                    "96x96px",
+                    "111x111px"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with Nom\n(dates) string contains Bourgogne, have Titres string contains de?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            }
-        ]
-    },
-    {
-        "id": "6540166",
-        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
-        "url": "https://fr.wikipedia.org/?curid=6540166",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques"
-        ],
-        "rows": [
-            [
-                "",
-                "Anne de Neuffen\n(?-1381)",
-                "* Fr\u00e9d\u00e9ric de Bavi\u00e8re (mariage en 1360)",
-                "* Co-duchesse de Bavi\u00e8re-Landshut (1375-1381)",
-                "* Princesse de la Maison de Neuffen. Fille de  de Neuffen."
-            ],
-            [
-                "",
-                "Catherine de Goritz\n(1346-1391)",
-                "*  (mariage en 1360)",
-                "* Co-duchesse de Bavi\u00e8re-Landshut (1375-1392)",
-                "* Princesse de la Maison de Goritz. Fille de  de Goritz.\n* M\u00e8re d'Ernest de Bavi\u00e8re, de  et de Sophie de Bavi\u00e8re."
-            ],
-            [
-                "",
-                "Taddea Visconti\n(1351-1381)",
-                "*  (mariage en 1364)",
-                "* Co-duchesse de Bavi\u00e8re-Landshut (1375-1381)",
-                "* Princesse de la Famille Visconti. Fille de Barnab\u00e9 Visconti et de Reine della Scala.\n* M\u00e8re de  et d'Isabeau de Bavi\u00e8re."
-            ],
-            [
-                "",
-                "Maddalena Visconti\n(1366-1404)",
-                "* Fr\u00e9d\u00e9ric de Bavi\u00e8re (mariage en 1381)",
-                "* Co-duchesse de Bavi\u00e8re-Landshut (1381-1393)",
-                "* Princesse de la Famille Visconti. Fille de Barnab\u00e9 Visconti et de Reine della Scala.\n* M\u00e8re d'."
-            ],
-            [
-                "",
-                "Marguerite d'Autriche\n(1395-1447)",
-                "*  (mariage en 1412)",
-                "* Duchesse de Bavi\u00e8re-Landshut (1412-1447)",
-                "* Princesse de la Maison de Habsbourg. Fille d' et de Jeanne-Sophie de Bavi\u00e8re.\n* M\u00e8re de Jeanne de Bavi\u00e8re-Landshut et de ."
-            ],
-            [
-                "148x148px",
-                "Am\u00e9lie de Saxe\n(1436-1501)",
-                "*  (mariage en 1452)",
-                "* Duchesse de Bavi\u00e8re-Landshut (1452-1479)",
-                "* Princesse de la Maison de Wettin. Fille de  et de Marguerite d'Autriche.\n* M\u00e8re de Georges de Bavi\u00e8re et de Marguerite de Bavi\u00e8re."
-            ],
-            [
-                "102x102px",
-                "Edwige Jagellon\n(1457-1502)",
-                "* Georges de Bavi\u00e8re (mariage en 1475)",
-                "* Duchesse de Bavi\u00e8re-Landshut (1479-1502)",
-                "* Princesse de la Maison Jagellon. Fille de  et d'\u00c9lisabeth de Habsbourg."
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9poux string contains de and the El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "",
-                    "102x102px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string starts with Anne and the El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    ""
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with Nom\n(dates) string starts with Marguerite, have El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with \u00c9poux string contains en, have Nom\n(dates) string starts with Marguerite?",
+                "question": "Does every Portrait, with El\u00e9ments biographiques string contains de, have Titres string contains palatine?",
                 "answers": [
                     "No"
                 ],
@@ -1512,190 +2035,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains en?",
-                "answers": [
-                    "7"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de and \u00c9poux string contains en?",
-                "answers": [
-                    "7"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de and Nom\n(dates) string contains Visconti?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "6540166",
-        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
-        "url": "https://fr.wikipedia.org/?curid=6540166",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques"
-        ],
-        "rows": [
-            [
-                "",
-                "\u00c9lisabeth de Cl\u00e8ves\n(1378-1439)",
-                "* Reinold von Valkenburg (mariage en 1393)\n*  (mariage en 1401)",
-                "* Duchesse de Bavi\u00e8re-Ingolstadt (1401-1413)",
-                "* Princesse de la Maison de la Marck. Fille d' et de Marguerite de Juliers."
-            ],
-            [
-                "112x112px",
-                "Catherine d'Alen\u00e7on\n(1396-1462)",
-                "* Pierre de Navarre (mariage en 1411)\n*  (mariage en 1413)",
-                "* Comtesse de Mortain (1411-1412)\n* Duchesse de Bavi\u00e8re-Ingolstadt (1413-1447)",
-                "* Princesse de la Maison de Valois-Alen\u00e7on. Fille de  et de Marie Chamaillard."
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Titres string contains de and the Nom\n(dates) string starts with Catherine?",
-                "answers": [
-                    "112x112px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "",
-                    "112x112px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with El\u00e9ments biographiques string contains de, have Nom\n(dates) string starts with Catherine?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with El\u00e9ments biographiques string contains de, have \u00c9poux string contains Pierre?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains en?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains de and Nom\n(dates) string starts with Catherine?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "6540166",
-        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
-        "url": "https://fr.wikipedia.org/?curid=6540166",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques"
-        ],
-        "rows": [
-            [
-                "",
-                "\u00c9lisabeth Visconti\n(1374-1432)",
-                "* Ernest de Bavi\u00e8re (mariage en 1395)",
-                "* Duchesse de Bavi\u00e8re-Munich (1397-1432)",
-                "* Princesse de la Famille Visconti. Fille de Barnab\u00e9 Visconti et de Reine della Scala.\n* M\u00e8re d'."
-            ],
-            [
-                "117x117px",
-                "Marguerite de Cl\u00e8ves\n(1416-1444)",
-                "*  (mariage en 1433)\n*  (mariage en 1441)",
-                "* Duchesse de Bavi\u00e8re-Munich (1433-1435)\n* Comtesse de Wurtemberg (1441-1442)\n* Comtesse de Wurtemberg-Stuttgart (1442-1444)",
-                "* Princesse de la Maison de la Marck. Fille d' et de Marie de Bourgogne.\n* M\u00e8re d'Adolphe de Bavi\u00e8re."
-            ],
-            [
-                "",
-                "Anne de Brunswick-Grubenhagen\n(1414-1474)",
-                "*  (mariage en 1437)\n*  (mariage en 1463)",
-                "* Duchesse de Bavi\u00e8re-Munich (1437-1460)",
-                "* Princesse de la Maison de Brunswick. Fille d'\u00c9ric de Brunswick-Grubenhagen et d'\u00c9lisabeth de Brunswick-G\u00f6ttingen.\n* M\u00e8re de , de Sigismond de Bavi\u00e8re, de Marguerite de Bavi\u00e8re, d'\u00c9lisabeth de Bavi\u00e8re et d'."
-            ],
-            [
-                "110x110px",
-                "Cun\u00e9gonde d'Autriche\n(1465-1520)",
-                "*  (mariage en 1487)",
-                "* Duchesse de Bavi\u00e8re-Munich (1487-1505)\n* Duchesse de Bavi\u00e8re (1505-1508)\n* R\u00e9gente de Bavi\u00e8re (1508-1511)",
-                "* Princesse de la Maison de Habsbourg. Fille de  et d'El\u00e9onore de Portugal.\n* M\u00e8re de Sidonie de Bavi\u00e8re, de Sibylle de Bavi\u00e8re, de Sabine de Bavi\u00e8re, de , de , d'Ernest de Bavi\u00e8re et de Suzanne de Bavi\u00e8re."
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string starts with Marguerite and the \u00c9poux string contains en?",
-                "answers": [
-                    "117x117px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Titres string contains de, have Nom\n(dates) string starts with Anne?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Nom\n(dates) string starts with Marguerite, have El\u00e9ments biographiques string contains de?",
+                "question": "Does every Portrait, with \u00c9poux string contains en, have Titres string contains palatine?",
                 "answers": [
                     "No"
                 ],
@@ -1705,319 +2045,13 @@
                 "source": "synthetic_qa",
                 "question": "How many Portrait had El\u00e9ments biographiques string contains de?",
                 "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains en?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "6540166",
-        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
-        "url": "https://fr.wikipedia.org/?curid=6540166",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "110x110px",
-                "Cun\u00e9gonde d'Autriche\n\n(1465-1520)",
-                "* (mariage en 1487)",
-                "*Duchesse de Bavi\u00e8re-Munich (1487-1505)\n* Duchesse de Bavi\u00e8re (1505-1508)\n* R\u00e9gente de Bavi\u00e8re (1508-1511)",
-                "* Princesse de la Maison de Habsbourg. Fille de  et d'Ali\u00e9nor de Portugal.\n* M\u00e8re de Sidonie de Bavi\u00e8re, de Sibylle de Bavi\u00e8re, de Sabine de Bavi\u00e8re, de , de , d'Ernest de Bavi\u00e8re et de Suzanne de Bavi\u00e8re.",
-                ""
-            ],
-            [
-                "109x109px",
-                "Marie-Jacob\u00e9e de Bade-Sponheim\n(1507-1580)",
-                "*  (mariage en 1522)",
-                "* Duchesse de Bavi\u00e8re (1522-1550)",
-                "* Princesse de la Maison de Z\u00e4hringen. fille de  et d'\u00c9lisabeth du Palatinat.\n* M\u00e8re d' et de Mathilde de Bavi\u00e8re.",
-                ""
-            ],
-            [
-                "163x163px",
-                "Anne d'Autriche (1528-1590)",
-                "*  (mariage en 1546)",
-                "* Duchesse de Bavi\u00e8re (1550-1579)",
-                "* Princesse de la Maison de Habsbourg. Fille de  et d'Anne Jagellon.\n* M\u00e8re de , de Ferdinand de Bavi\u00e8re, de Marie-Anne de Bavi\u00e8re, de Maximilienne-Marie de Bavi\u00e8re et d'Ernest de Bavi\u00e8re.",
-                ""
-            ],
-            [
-                "111x111px",
-                "Ren\u00e9e de Lorraine\n(1544-1602)",
-                "*  (mariage en 1568)",
-                "* Duchesse de Bavi\u00e8re (1579-1597)",
-                "* Princesse de la Maison de Lorraine. Fille de  et de Christine de Danemark.\n* M\u00e8re de , de Marie-Anne de Bavi\u00e8re, de Philippe-Guillaume de Bavi\u00e8re, de Ferdinand de Bavi\u00e8re, d' et de Madeleine de Bavi\u00e8re.",
-                ""
-            ],
-            [
-                "111x111px",
-                "\u00c9lisabeth de Lorraine\n(1574-1635)",
-                "*  (mariage en 1595)",
-                "*Duchesse (1597-1623) puis \u00e9lectrice (1623-1635) de Bavi\u00e8re\n* \u00c9lectrice palatine (1623-1635)",
-                "* Princesse de la Maison de Lorraine. Fille de  et de Claude de France.",
-                "84x84px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with Nom\n(dates) string starts with Anne, have Titres string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with El\u00e9ments biographiques string contains de, have Nom\n(dates) string starts with Anne?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains en and El\u00e9ments biographiques string contains de?",
-                "answers": [
                     "5"
                 ],
                 "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "6540166",
-        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
-        "url": "https://fr.wikipedia.org/?curid=6540166",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "111x111px",
-                "\u00c9lisabeth de Lorraine\n(1574-1635)",
-                "*  (mariage en 1595)",
-                "* Duchesse (1597-1623) puis \u00e9lectrice (1623-1635) de Bavi\u00e8re\n* \u00c9lectrice palatine (1623-1635)",
-                "* Princesse de la Maison de Lorraine. Fille de  et de Claude de France.",
-                "84x84px"
-            ],
-            [
-                "111x111px",
-                "Marie-Anne d'Autriche (1610-1665)",
-                "*  (mariage en 1635)",
-                "* \u00c9lectrice de Bavi\u00e8re (1635-1651)\n* \u00c9lectrice palatine (1635-1648)",
-                "* Princesse de la Maison de Habsbourg. Fille de  et de Marie-Anne de Bavi\u00e8re.\n* M\u00e8re de Ferdinand-Marie de Bavi\u00e8re.",
-                ""
-            ],
-            [
-                "99x99px",
-                "Henriette-Ad\u00e9la\u00efde de Savoie\n(1636-1676)",
-                "* Ferdinand-Marie de Bavi\u00e8re (mariage en 1652)",
-                "* \u00c9lectrice de Bavi\u00e8re (1652-1676)",
-                "* Princesse de la Maison de Savoie. Fille de  et de Christine de France.\n* M\u00e8re de Marie-Anne de Bavi\u00e8re, de Maximilien-Emmanuel de Bavi\u00e8re, de Joseph-Cl\u00e9ment de Bavi\u00e8re et de Violante-B\u00e9atrice de Bavi\u00e8re.",
-                "85x85px"
-            ],
-            [
-                "124x124px",
-                "Marie-Antoinette d'Autriche\n(1669-1692)",
-                "* Maximilien-Emmanuel de Bavi\u00e8re (mariage en 1685)",
-                "* Princesse h\u00e9riti\u00e8re d'Espagne (de plein droit, 1673-1692)\n* \u00c9lectrice de Bavi\u00e8re (1685-1692)",
-                "* Princesse de la Maison de Habsbourg. Fille de  et de Marguerite-Th\u00e9r\u00e8se d'Autriche.\n* M\u00e8re de Joseph-Ferdinand de Bavi\u00e8re.",
-                ""
-            ],
-            [
-                "98x98px",
-                "Th\u00e9r\u00e8se-Cun\u00e9gonde Sobieska (1676-1730)",
-                "* Maximilien-Emmanuel de Bavi\u00e8re (mariage en 1695)",
-                "* \u00c9lectrice de Bavi\u00e8re (1695-1726)",
-                "* Princesse de la Maison Sobieski. Fille de  et de Marie-Casimire-Louise de La Grange d'Arquien.\n* M\u00e8re de , de Ferdinand-Marie-Innocent de Bavi\u00e8re, de Cl\u00e9ment-Auguste de Bavi\u00e8re et de Jean-Th\u00e9odore de Bavi\u00e8re.",
-                ""
-            ],
-            [
-                "101x101px",
-                "Marie-Am\u00e9lie d'Autriche\n(1701-1756)",
-                "*  (mariage en 1722)",
-                "* \u00c9lectrice de Bavi\u00e8re (1726-1745)\n* Imp\u00e9ratrice du Saint-Empire, reine de Germanie et de Boh\u00eame (1741-1745)",
-                "* Princesse de la Maison de Habsbourg. Fille de  et de Wilhelmine-Am\u00e9lie de Brunswick-Lunebourg.\n* M\u00e8re de Marie-Antoinette de Bavi\u00e8re, de Th\u00e9r\u00e8se-B\u00e9n\u00e9dicte de Bavi\u00e8re, de , de Marie-Anne de Bavi\u00e8re et de Jos\u00e9pha de Bavi\u00e8re.",
-                ""
-            ],
-            [
-                "106x106px",
-                "Marie-Anne de Saxe\n(1728-1797)",
-                "*  (mariage en 1747)",
-                "* \u00c9lectrice de Bavi\u00e8re (1747-1777)",
-                "* Princesse de la Maison de Wettin. Fille d' et de Marie-Jos\u00e8phe d'Autriche.",
-                ""
-            ],
-            [
-                "108x108px",
-                "\u00c9lisabeth-Auguste de Palatinat-Soulzbach\n(1721-1794)",
-                "* Charles-Th\u00e9odore de Bavi\u00e8re (mariage en 1742)",
-                "* Marquise de Berg-op-Zoom (1742-1794)\n* \u00c9lectrice palatine (1742-1777) puis comtesse palatine (1777-1794)\n* \u00c9lectrice de Bavi\u00e8re (1777-1794)",
-                "* Princesse de la Maison de Wittelsbach. Fille de Joseph Charles de Palatinat-Soulzbach  et d'\u00c9lisabeth-Auguste de Palatinat-Neubourg.",
-                ""
-            ],
-            [
-                "107x107px",
-                "Marie-L\u00e9opoldine de Mod\u00e8ne\n(1776-1848)",
-                "* Charles-Th\u00e9odore de Bavi\u00e8re (mariage en 1795)\n* Louis-Joseph d'Arco-Zinneberg (mariage en 1804)",
-                "* \u00c9lectrice de Bavi\u00e8re et comtesse palatine (1795-1799)\n* Comtesse d'Arco-Zinneberg (1804-1848)",
-                "* Princesse de la Maison de Habsbourg-Este. Fille de Ferdinand d'Autriche-Este et de Marie-B\u00e9atrice d'Este.",
-                ""
-            ],
-            [
-                "102x102px",
-                "Caroline de Bade (1776-1841)",
-                "*  (mariage en 1797)",
-                "* \u00c9lectrice (1799-1806) puis reine de Bavi\u00e8re (1806-1825)",
-                "* Princesse de la Maison de Bade. Fille de Charles-Louis de Bade et d'Am\u00e9lie de Hesse-Darmstadt.\n* M\u00e8re d'\u00c9lisabeth de Bavi\u00e8re, d'Am\u00e9lie de Bavi\u00e8re, de Sophie de Bavi\u00e8re, de Marie de Bavi\u00e8re et de Ludovica de Bavi\u00e8re.",
-                "80x80px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Titres string contains palatine and the \u00c9poux string contains de?",
-                "answers": [
-                    "108x108px",
-                    "107x107px"
-                ],
-                "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9poux string contains en and the Nom\n(dates) string contains Lorraine?",
-                "answers": [
-                    "111x111px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with \u00c9poux string contains en, have El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            }
-        ]
-    },
-    {
-        "id": "6540166",
-        "title": "Liste des \u00e9pouses des souverains de Bavi\u00e8re",
-        "url": "https://fr.wikipedia.org/?curid=6540166",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "102x102px",
-                "Caroline de Bade (1776-1841)",
-                "* (mariage en 1797)",
-                "* \u00c9lectrice (1799-1806) puis reine de Bavi\u00e8re (1806-1825)",
-                "* Princesse de la Maison de Bade. Fille de Charles-Louis de Bade et d'Am\u00e9lie de Hesse-Darmstadt.\n* M\u00e8re d'\u00c9lisabeth de Bavi\u00e8re, d'Am\u00e9lie de Bavi\u00e8re, de Sophie de Bavi\u00e8re, de Marie de Bavi\u00e8re et de Ludovica de Bavi\u00e8re.",
-                "80x80px"
-            ],
-            [
-                "118x118px",
-                "Th\u00e9r\u00e8se de Saxe-Hildburghausen (1792-1854)",
-                "* (mariage en 1810)",
-                "* Reine de Bavi\u00e8re (1825-1848)",
-                "* Princesse de la Maison de Wettin. Fille de  et de Charlotte de Meklembourg-Strelitz.\n* M\u00e8re de , de Mathilde de Bavi\u00e8re, d', de Luitpold de Bavi\u00e8re, d'Adelgonde de Bavi\u00e8re, d'Hildegarde de Bavi\u00e8re, d'Alexandra de Bavi\u00e8re et d'Adalbert de Bavi\u00e8re.",
-                ""
-            ],
-            [
-                "99x99px",
-                "Marie de Prusse (1825-1889)",
-                "* (mariage en 1842)",
-                "* Reine de Bavi\u00e8re (1848-1864)",
-                "* Princesse de la Maison de Hohenzollern. Fille de Guillaume de Prusse et de Marie-Anne-Am\u00e9lie de Hesse-Hombourg.\n* M\u00e8re de  et d'.",
-                "84x84px"
-            ],
-            [
-                "126x126px",
-                "Marie-Th\u00e9r\u00e8se de Mod\u00e8ne (1849-1919)",
-                "* (mariage en 1868)",
-                "* Reine de Bavi\u00e8re (1913-1918)",
-                "* Princesse de la Maison de Habsbourg-Este. Fille de Ferdinand-Charles-Victor d'Autriche-Este et d'\u00c9lisabeth de Habsbourg-Hongrie.\n* M\u00e8re de Rupprecht de Bavi\u00e8re, d'Adelgonde de Bavi\u00e8re, de Marie de Bavi\u00e8re, de Charles de Bavi\u00e8re, de Fran\u00e7ois de Bavi\u00e8re, de Mathilde de Bavi\u00e8re, de Wolfgang de Bavi\u00e8re, d'Hildegarde de Bavi\u00e8re, de Notburga de Bavi\u00e8re, de Wiltrud de Bavi\u00e8re, d'Helmtrud de Bavi\u00e8re, de Dietlinde de Bavi\u00e8re et de Gundelinde de Bavi\u00e8re.",
-                "120x120px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string starts with Caroline and the El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "102x102px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains en?",
+                "question": "How many Portrait had \u00c9poux string contains en and Nom\n(dates) string contains de?",
                 "answers": [
                     "4"
                 ],

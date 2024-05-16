@@ -514,9 +514,17 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many Noms originaux had Noms fran\u00e7ais string contains Bess?",
+                "question": "How many Noms originaux had Noms fran\u00e7ais string contains Bob?",
                 "answers": [
                     "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Noms originaux had Noms fran\u00e7ais string contains de?",
+                "answers": [
+                    "2"
                 ],
                 "reasoning_type": "counting"
             }
@@ -575,7 +583,16 @@
         "key_column": 0,
         "numeric_columns": [],
         "date_columns": {},
-        "qas": []
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many Volumes cartonn\u00e9s (1955 \u00e0 1987) had Volumes souples (1988 - 2016) string starts with Marguerite?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
     },
     {
         "id": "1424248",

@@ -1284,7 +1284,32 @@
                 9999
             ]
         },
-        "qas": []
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "Does every , with Ann\u00e9e was less than or equal to 2018, have Tournoi is Monterrey?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many  had # was greater than 20 and Ann\u00e9e was greater than 2016?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many  had # was greater than 3 and Ann\u00e9e was greater than 2015?",
+                "answers": [
+                    "18"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
     },
     {
         "id": "5510922",
@@ -1354,7 +1379,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the Date was on 31/10/2022 and the # was greater than or equal to 2?",
+                "question": "What was the Nom de l'\u00e9dition when the Date was on 31/10/2022 and the # was greater than or equal to 1?",
                 "answers": [
                     "WTA Finals Fort Worth"
                 ],
@@ -1362,7 +1387,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the Date was on 22/10/2017 and the # was less than 2?",
+                "question": "What was the Nom de l'\u00e9dition when the # was greater than or equal to 1 and the Ultime(s) adversaire(s) string contains Williams?",
                 "answers": [
                     "BNP Paribas WTA Finals Singapour"
                 ],
@@ -1370,7 +1395,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'\u00e9dition, with # was greater than 1, have Date was on 31/10/2022?",
+                "question": "Does only Nom de l'\u00e9dition, with Ultime(s) adversaire(s) string contains Williams, have # was less than or equal to 1?",
                 "answers": [
                     "Yes"
                 ],
@@ -1378,7 +1403,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'\u00e9dition, with # was greater than or equal to 1, have Ultime(s) adversaire(s) string contains Williams?",
+                "question": "Does every Nom de l'\u00e9dition, with # was equal to 1, have Date was on 22/10/2017?",
                 "answers": [
                     "Yes"
                 ],
@@ -1386,7 +1411,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had # was greater than 1?",
+                "question": "How many Nom de l'\u00e9dition had # was equal to 1 and Ultime(s) adversaire(s) string starts with Venus?",
                 "answers": [
                     "1"
                 ],
@@ -1394,7 +1419,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had # was less than or equal to 1?",
+                "question": "How many Nom de l'\u00e9dition had # was greater than 2?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'\u00e9dition had # was less than or equal to 2 and Date was before 31/10/2022?",
                 "answers": [
                     "1"
                 ],
@@ -1501,27 +1534,11 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the # was equal to 1 and the Date was on 25/10/2015?",
+                "question": "What was the Nom de l'\u00e9dition when the Date was on 25/10/2015 and the # was less than or equal to 1?",
                 "answers": [
                     "BNP Paribas WTA Finals Singapour"
                 ],
                 "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the Date was after 25/10/2015 and the # was greater than 1?",
-                "answers": [
-                    "BNP Paribas WTA Finals Singapour"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Nom de l'\u00e9dition, with # was equal to 1, have Date was before 23/10/2016?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
@@ -1533,7 +1550,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with # was equal to 1, happened the 1st according to Date?",
+                "question": "Does only Nom de l'\u00e9dition, with Date was on 25/10/2015, have # was greater than or equal to 1?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with # was greater than or equal to 1, happened the 4th according to Date?",
                 "answers": [
                     "BNP Paribas WTA Finals Singapour"
                 ],
@@ -1541,7 +1566,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Date was before 23/10/2016, has the 3rd largest #?",
+                "question": "Which Nom de l'\u00e9dition, with Date was on 25/10/2015, happened the 3rd according to Date?",
+                "answers": [
+                    "BNP Paribas WTA Finals Singapour"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with Date was on 25/10/2015, has the 2nd largest #?",
                 "answers": [
                     "BNP Paribas WTA Finals Singapour"
                 ],
@@ -1549,23 +1582,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Date was before 23/10/2016, has the 1st largest #?",
+                "question": "How many Nom de l'\u00e9dition had # was less than 1?",
                 "answers": [
-                    "BNP Paribas WTA Finals Singapour"
+                    "0"
                 ],
-                "reasoning_type": "numerical_comparison"
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Date was on 25/10/2015, has the 3rd largest #?",
+                "question": "How many Nom de l'\u00e9dition had Date was after 25/10/2015 and # was greater than or equal to 2?",
                 "answers": [
-                    "BNP Paribas WTA Finals Singapour"
+                    "1"
                 ],
-                "reasoning_type": "numerical_comparison"
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had # was equal to 1?",
+                "question": "How many Nom de l'\u00e9dition had Date was on 25/10/2015?",
                 "answers": [
                     "3"
                 ],
@@ -1573,23 +1606,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had # was greater than or equal to 1?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had Date was on 25/10/2015 and # was equal to 1?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the sum of # when the Date was before 23/10/2016?",
+                "question": "What was the sum of # when the Date was on 25/10/2015?",
                 "answers": [
                     "3.0"
                 ],
@@ -1597,9 +1614,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of # when the Date was on 25/10/2015?",
+                "question": "What was the sum of # when the Date was before 23/10/2016?",
                 "answers": [
-                    "1.0"
+                    "3.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -1738,7 +1755,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the Date was before 31/07/2021 and the Ultimes adversaires string contains Doi?",
+                "question": "What was the Nom de l'olympiade when the # was less than or equal to 1 and the Date was after 06/08/2016?",
+                "answers": [
+                    "Olympic Tennis Event Tokyo"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom de l'olympiade when the # was greater than or equal to 1 and the Ultimes adversaires string contains Doi?",
                 "answers": [
                     "Olympic Tennis Event Rio de Janeiro"
                 ],
@@ -1746,47 +1771,31 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the # was equal to 1 and the Ultimes adversaires string contains Doi?",
+                "question": "Does every Nom de l'olympiade, with # was greater than or equal to 1, have Ultimes adversaires string contains Doi?",
                 "answers": [
-                    "Olympic Tennis Event Rio de Janeiro"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom de l'olympiade, with Ultimes adversaires string contains Doi, have Date was before 31/07/2021?",
-                "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'olympiade, with # was less than or equal to 1, have Date was on 06/08/2016?",
+                "question": "Does only Nom de l'olympiade, with Ultimes adversaires string contains Doi, have # was less than or equal to 1?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had # was less than 1?",
+                "question": "How many Nom de l'olympiade had # was greater than or equal to 1?",
                 "answers": [
-                    "0"
+                    "2"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had Date was before 31/07/2021 and # was greater than or equal to 1?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had # was equal to 1?",
+                "question": "How many Nom de l'olympiade had # was less than or equal to 1?",
                 "answers": [
                     "2"
                 ],
@@ -1849,7 +1858,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the Date was on 06/08/2016 and the # was equal to 1?",
+                "question": "What was the Nom de l'olympiade when the # was equal to 1 and the Date was on 06/08/2016?",
+                "answers": [
+                    "Olympic Tennis Event Rio de Janeiro"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom de l'olympiade when the Date was on 06/08/2016 and the # was greater than or equal to 1?",
                 "answers": [
                     "Olympic Tennis Event Rio de Janeiro"
                 ],
@@ -1865,7 +1882,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom de l'olympiade, with Date was on 06/08/2016, have # was equal to 1?",
+                "question": "Does only Nom de l'olympiade, with Date was on 06/08/2016, have # was greater than or equal to 1?",
                 "answers": [
                     "Yes"
                 ],
@@ -1873,7 +1890,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had # was less than or equal to 1 and Date was on 06/08/2016?",
+                "question": "How many Nom de l'olympiade had # was equal to 1 and Date was on 06/08/2016?",
                 "answers": [
                     "1"
                 ],

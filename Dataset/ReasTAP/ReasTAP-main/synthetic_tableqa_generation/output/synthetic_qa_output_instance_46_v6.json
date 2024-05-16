@@ -57,11 +57,13 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains en?",
+                "question": "What was the Portrait when the \u00c9poux string contains en and the Titres string contains de?",
                 "answers": [
-                    "4"
+                    "",
+                    "105x105px",
+                    "173x173px"
                 ],
-                "reasoning_type": "counting"
+                "reasoning_type": "conjunction"
             }
         ]
     },
@@ -96,7 +98,24 @@
         "key_column": 0,
         "numeric_columns": [],
         "date_columns": {},
-        "qas": []
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Titres string contains de and the \u00c9poux string contains en?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Nom\n(dates) string starts with Catherine and the Titres string contains de?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            }
+        ]
     },
     {
         "id": "12783280",
@@ -140,27 +159,11 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string starts with Marguerite and the Titres string contains de?",
+                "question": "What was the Portrait when the Titres string contains de and the Nom\n(dates) string starts with Marguerite?",
                 "answers": [
                     "106x106px"
                 ],
                 "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Nom\n(dates) string starts with Marguerite, have \u00c9poux string contains de?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains de?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
             }
         ]
     },
@@ -211,24 +214,7 @@
         "key_column": 0,
         "numeric_columns": [],
         "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Titres string contains France, have Nom\n(dates) string starts with Anne?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains France?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
+        "qas": []
     },
     {
         "id": "12783280",
@@ -272,7 +258,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the Titres string contains de?",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains Fille and the Titres string contains de?",
                 "answers": [
                     "Urraca des Asturies\n(?-855)",
                     "Leodegundia des Asturies"
@@ -281,9 +267,8 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains Fille and the \u00c9poux string contains de?",
+                "question": "What was the Nom\n(dates) when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains de?",
                 "answers": [
-                    "Urraca des Asturies\n(?-855)",
                     "Leodegundia des Asturies"
                 ],
                 "reasoning_type": "conjunction"
@@ -298,7 +283,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with Titres string contains de, have \u00c9poux string contains en?",
+                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains de, have \u00c9poux string contains Ier?",
                 "answers": [
                     "Yes"
                 ],
@@ -306,7 +291,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains la and Titres string contains de?",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains de?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains Fille?",
                 "answers": [
                     "2"
                 ],
@@ -314,17 +307,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de and Titres string contains de?",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains de and Titres string contains de?",
                 "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had Titres string contains de and El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "2"
+                    "3"
                 ],
                 "reasoning_type": "counting"
             }
@@ -467,19 +452,19 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de and \u00c9poux string contains II?",
+                "question": "What was the Portrait when the Nom\n(dates) string contains Constance and the Titres string contains de?",
                 "answers": [
-                    "6"
+                    ""
                 ],
-                "reasoning_type": "counting"
+                "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de?",
+                "question": "Does every Portrait, with \u00c9poux string contains de, have Titres string contains de?",
                 "answers": [
-                    "16"
+                    "Yes"
                 ],
-                "reasoning_type": "counting"
+                "reasoning_type": "quantifiers"
             }
         ]
     },
@@ -541,11 +526,19 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9poux string contains France and the Titres string contains de?",
+                "question": "What was the Portrait when the Nom\n(dates) string contains Marguerite and the Titres string contains Brie?",
                 "answers": [
-                    "139x139px"
+                    "151x151px"
                 ],
                 "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Titres string contains de and \u00c9poux string contains de?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
             }
         ]
     },
@@ -631,7 +624,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with Nom\n(dates) string contains de, have \u00c9poux string contains de?",
+                "question": "Does only Portrait, with \u00c9poux string contains IV, have Titres string contains de?",
                 "answers": [
                     "No"
                 ],
@@ -686,6 +679,15 @@
         "key_column": 0,
         "numeric_columns": [],
         "date_columns": {},
-        "qas": []
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with Titres string contains Dame, have \u00c9poux string contains en?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            }
+        ]
     }
 ]

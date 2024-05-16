@@ -1433,9 +1433,41 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many Date had # was less than or equal to 8?",
+                "question": "Does only Date, with # was greater than or equal to 2, have S\u00e9l. was greater than or equal to 29?",
                 "answers": [
-                    "8"
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Date, with # was less than or equal to 9, have S\u00e9l. was less than 50?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Date had S\u00e9l. was less than 45?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Date had # was greater than 2?",
+                "answers": [
+                    "12"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Date had # was less than or equal to 7 and S\u00e9l. was less than 45?",
+                "answers": [
+                    "3"
                 ],
                 "reasoning_type": "counting"
             }

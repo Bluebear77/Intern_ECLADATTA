@@ -5,6 +5,425 @@
         "url": "https://fr.wikipedia.org/?curid=150171",
         "header": [
             "Ann\u00e9e",
+            "C\u00e9r\u00e9monie",
+            "R\u00e9compense",
+            "Film"
+        ],
+        "rows": [
+            [
+                "1957",
+                "",
+                "",
+                ""
+            ],
+            [
+                "1958",
+                "Laurel Award",
+                "Meilleure Actrice dans un film dramatique R\u00e9compenses sur IMDb.",
+                "L\u2019Arbre de vie"
+            ],
+            [
+                "1960",
+                "",
+                "Meilleure Actrice dans un film dramatique",
+                "Soudain l\u2019\u00e9t\u00e9 dernier"
+            ],
+            [
+                "1960",
+                "",
+                "F\u00e9minine",
+                ""
+            ],
+            [
+                "1960",
+                "",
+                "Meilleure Performance dans un film dramatique",
+                "Soudain l\u2019\u00e9t\u00e9 dernier"
+            ],
+            [
+                "1961",
+                "Oscar du cin\u00e9ma",
+                "Meilleure actriceElizabeth Taylor sur le site des Oscars du cin\u00e9ma.",
+                "La V\u00e9nus au vison"
+            ],
+            [
+                "1961",
+                "",
+                "Meilleure Performance dans un film dramatique",
+                "La V\u00e9nus au vison"
+            ],
+            [
+                "1961",
+                "",
+                "F\u00e9minine",
+                ""
+            ],
+            [
+                "1963",
+                "",
+                "F\u00e9minine",
+                ""
+            ],
+            [
+                "1964",
+                "",
+                "F\u00e9minine",
+                ""
+            ],
+            [
+                "1965",
+                "",
+                "F\u00e9minine",
+                ""
+            ],
+            [
+                "1966",
+                "",
+                "F\u00e9minine",
+                ""
+            ],
+            [
+                "1966",
+                "",
+                "Meilleure Performance dans un film dramatique",
+                "Le Chevalier des sables"
+            ],
+            [
+                "1967",
+                "Oscar du cin\u00e9ma",
+                "Meilleure actrice",
+                "Qui a peur de Virginia Woolf ?"
+            ],
+            [
+                "1967",
+                "",
+                "Taylor&w=true Elizabeth Taylor sur .",
+                "Qui a peur de Virginia Woolf ?"
+            ],
+            [
+                "1967",
+                "",
+                "Meilleure actrice.",
+                "Qui a peur de Virginia Woolf ?"
+            ],
+            [
+                "1967",
+                "",
+                "Meilleure actriceElizabeth Taylor sur nbrpm.org.",
+                "Qui a peur de Virginia Woolf ?"
+            ],
+            [
+                "1968",
+                "Prix Bambi",
+                "",
+                ""
+            ],
+            [
+                "1972",
+                "Ours d'argent de la meilleure actrice",
+                "Meilleure actrice",
+                ""
+            ],
+            [
+                "1974",
+                "",
+                "Elizabeth Taylor sur .",
+                ""
+            ],
+            [
+                "1977",
+                "",
+                "",
+                ""
+            ],
+            [
+                "1993",
+                "Oscar du cin\u00e9ma",
+                "",
+                ""
+            ],
+            [
+                "1993",
+                "",
+                "pour l\u2019ensemble de sa carri\u00e8re Elizabeth Taylor sur .",
+                ""
+            ],
+            [
+                "1996",
+                "",
+                "",
+                ""
+            ],
+            [
+                "1998",
+                "",
+                "sur .",
+                ""
+            ],
+            [
+                "1999",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2001",
+                "",
+                "",
+                ""
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                1957,
+                1958,
+                1960,
+                1960,
+                1960,
+                1961,
+                1961,
+                1961,
+                1963,
+                1964,
+                1965,
+                1966,
+                1966,
+                1967,
+                1967,
+                1967,
+                1967,
+                1968,
+                1972,
+                1974,
+                1977,
+                1993,
+                1993,
+                1996,
+                1998,
+                1999,
+                2001
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the C\u00e9r\u00e9monie when the Ann\u00e9e was before 1961 and the R\u00e9compense string contains un?",
+                "answers": [
+                    "Laurel Award",
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every C\u00e9r\u00e9monie, with R\u00e9compense string contains sur, have Ann\u00e9e was after 1964?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which C\u00e9r\u00e9monie, with Ann\u00e9e was after 1967, happened the 10th according to Ann\u00e9e?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which C\u00e9r\u00e9monie, with Ann\u00e9e was after 1968, happened the 7th according to Ann\u00e9e?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many C\u00e9r\u00e9monie had Ann\u00e9e was on 1974?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many C\u00e9r\u00e9monie had Ann\u00e9e was before 1966?",
+                "answers": [
+                    "11"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "150171",
+        "title": "Elizabeth Taylor",
+        "url": "https://fr.wikipedia.org/?curid=150171",
+        "header": [
+            "Ann\u00e9e",
+            "C\u00e9r\u00e9monie",
+            "Nomination",
+            "Film"
+        ],
+        "rows": [
+            [
+                "1958",
+                "Oscar du cin\u00e9ma",
+                "Meilleure actrice",
+                "L\u2019Arbre de vie"
+            ],
+            [
+                "1958",
+                "",
+                "F\u00e9minine",
+                ""
+            ],
+            [
+                "1959",
+                "Oscar du cin\u00e9ma",
+                "Meilleure actrice",
+                "La Chatte sur un toit br\u00fblant"
+            ],
+            [
+                "1959",
+                "",
+                "Meilleure actrice",
+                "La Chatte sur un toit br\u00fblant"
+            ],
+            [
+                "1960",
+                "Oscar du cin\u00e9ma",
+                "Meilleure actrice",
+                "Soudain l\u2019\u00e9t\u00e9 dernier"
+            ],
+            [
+                "1961",
+                "",
+                "Meilleure Actrice dans un film dramatique",
+                "La V\u00e9nus au vison"
+            ],
+            [
+                "1962",
+                "",
+                "F\u00e9minine",
+                ""
+            ],
+            [
+                "1966",
+                "",
+                "",
+                ""
+            ],
+            [
+                "1967",
+                "",
+                "Meilleure Actrice dans un film dramatique",
+                "Qui a peur de Virginia Woolf ?"
+            ],
+            [
+                "1968",
+                "",
+                "Meilleure actrice",
+                "Soudain l\u2019\u00e9t\u00e9 dernier"
+            ],
+            [
+                "1968",
+                "Laurel Award",
+                "F\u00e9minine",
+                ""
+            ],
+            [
+                "1969",
+                "",
+                "",
+                ""
+            ],
+            [
+                "1971",
+                "",
+                "F\u00e9minine",
+                ""
+            ],
+            [
+                "1974",
+                "",
+                "Meilleure Actrice dans un film dramatique",
+                "Les Noces de cendre"
+            ],
+            [
+                "1994",
+                "",
+                "Pire Actrice dans un Second R\u00f4le.",
+                "La Famille Pierrafeu"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                1958,
+                1958,
+                1959,
+                1959,
+                1960,
+                1961,
+                1962,
+                1966,
+                1967,
+                1968,
+                1968,
+                1969,
+                1971,
+                1974,
+                1994
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the C\u00e9r\u00e9monie when the Ann\u00e9e was after 1958 and the Nomination string contains un?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every C\u00e9r\u00e9monie, with Nomination string contains un, have Ann\u00e9e was after 1958?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only C\u00e9r\u00e9monie, with Nomination string contains un, have Ann\u00e9e was before 1974?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            }
+        ]
+    },
+    {
+        "id": "150171",
+        "title": "Elizabeth Taylor",
+        "url": "https://fr.wikipedia.org/?curid=150171",
+        "header": [
+            "Ann\u00e9e",
             "Film",
             "Cachet Biographie sur IMDb."
         ],
@@ -162,21 +581,16 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Film when the Cachet Biographie sur IMDb. string starts with par and the Ann\u00e9e was before 1952?",
+                "question": "What was the Film when the Ann\u00e9e was before 1943 and the Cachet Biographie sur IMDb. string starts with par?",
                 "answers": [
-                    "",
-                    "Fid\u00e8le Lassie",
-                    "Le Courage de Lassie",
-                    "Une place au soleil"
+                    ""
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Film when the Cachet Biographie sur IMDb. string contains par and the Ann\u00e9e was before 1966?",
+                "question": "What was the Film when the Cachet Biographie sur IMDb. string contains par and the Ann\u00e9e was after 1943?",
                 "answers": [
-                    "",
-                    "Fid\u00e8le Lassie",
                     "Le Courage de Lassie",
                     "Une place au soleil",
                     "Ivanho\u00e9",
@@ -186,7 +600,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Film, with Cachet Biographie sur IMDb. string starts with par, have Ann\u00e9e was after 1944?",
+                "question": "Does every Film, with Ann\u00e9e was before 1952, have Cachet Biographie sur IMDb. string starts with par?",
                 "answers": [
                     "No"
                 ],
@@ -194,7 +608,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Film, with Ann\u00e9e was after 1944, have Cachet Biographie sur IMDb. string starts with par?",
+                "question": "Does every Film, with Cachet Biographie sur IMDb. string contains des, have Ann\u00e9e was after 1965?",
                 "answers": [
                     "No"
                 ],
@@ -202,49 +616,49 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Cachet Biographie sur IMDb. string starts with par, happened the 5th according to Ann\u00e9e?",
+                "question": "Which Film, with Cachet Biographie sur IMDb. string contains par, happened the 2nd according to Ann\u00e9e?",
                 "answers": [
-                    "Ivanho\u00e9"
+                    "Fid\u00e8le Lassie"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was before 1968, happened the 4th according to Ann\u00e9e?",
+                "question": "Which Film, with Ann\u00e9e was before 1967, happened the 10th according to Ann\u00e9e?",
                 "answers": [
-                    "Le Courage de Lassie"
+                    "La V\u00e9nus au vison"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was after 1958, happened the 11st according to Ann\u00e9e?",
+                "question": "Which Film, with Ann\u00e9e was before 1965, happened the 9th according to Ann\u00e9e?",
                 "answers": [
-                    "Las Vegas, un couple"
+                    "Soudain l\u2019\u00e9t\u00e9 dernier"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was after 1968?",
+                "question": "How many Film had Ann\u00e9e was before 1951?",
                 "answers": [
-                    "5"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was before 1987?",
+                "question": "How many Film had Ann\u00e9e was after 1956?",
                 "answers": [
-                    "21"
+                    "16"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Film had Cachet Biographie sur IMDb. string starts with par and Ann\u00e9e was before 1951?",
+                "question": "How many Film had Ann\u00e9e was before 1966 and Cachet Biographie sur IMDb. string starts with par?",
                 "answers": [
-                    "3"
+                    "6"
                 ],
                 "reasoning_type": "counting"
             }
@@ -861,276 +1275,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre du Film when the Ann\u00e9e was before 1988 and the R\u00e9alisateur string starts with Charles?",
-                "answers": [
-                    "Rhapsodie ()",
-                    "Anne des mille jours ( ou )"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Titre du Film, with Ann\u00e9e was after 1944, have R\u00e9alisateur string ends with Hussein?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Titre du Film, with Ann\u00e9e was on 1967, happened the 1st according to Ann\u00e9e?",
-                "answers": [
-                    "La M\u00e9g\u00e8re apprivois\u00e9e ()",
-                    "Doctor Faustus ()",
-                    "Reflets dans un \u0153il d\u2019or ()",
-                    "Les Com\u00e9diens ()"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Titre du Film, with Ann\u00e9e was after 1960, happened the 18th according to Ann\u00e9e?",
-                "answers": [
-                    "Divorce ()",
-                    "Terreur dans la nuit ()",
-                    "Les Noces de cendre ()"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Titre du Film, with Ann\u00e9e was after 1966, happened the 24th according to Ann\u00e9e?",
-                "answers": [
-                    "ou"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Titre du Film had Ann\u00e9e was before 1974?",
-                "answers": [
-                    "49"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "150171",
-        "title": "Elizabeth Taylor",
-        "url": "https://fr.wikipedia.org/?curid=150171",
-        "header": [
-            "Ann\u00e9e",
-            "C\u00e9r\u00e9monie",
-            "R\u00e9compense",
-            "Film"
-        ],
-        "rows": [
-            [
-                "1957",
-                "",
-                "",
-                ""
-            ],
-            [
-                "1958",
-                "Laurel Award",
-                "Meilleure Actrice dans un film dramatique R\u00e9compenses sur IMDb.",
-                "L\u2019Arbre de vie"
-            ],
-            [
-                "1960",
-                "",
-                "Meilleure Actrice dans un film dramatique",
-                "Soudain l\u2019\u00e9t\u00e9 dernier"
-            ],
-            [
-                "1960",
-                "",
-                "F\u00e9minine",
-                ""
-            ],
-            [
-                "1960",
-                "",
-                "Meilleure Performance dans un film dramatique",
-                "Soudain l\u2019\u00e9t\u00e9 dernier"
-            ],
-            [
-                "1961",
-                "Oscar du cin\u00e9ma",
-                "Meilleure actriceElizabeth Taylor sur le site des Oscars du cin\u00e9ma.",
-                "La V\u00e9nus au vison"
-            ],
-            [
-                "1961",
-                "",
-                "Meilleure Performance dans un film dramatique",
-                "La V\u00e9nus au vison"
-            ],
-            [
-                "1961",
-                "",
-                "F\u00e9minine",
-                ""
-            ],
-            [
-                "1963",
-                "",
-                "F\u00e9minine",
-                ""
-            ],
-            [
-                "1964",
-                "",
-                "F\u00e9minine",
-                ""
-            ],
-            [
-                "1965",
-                "",
-                "F\u00e9minine",
-                ""
-            ],
-            [
-                "1966",
-                "",
-                "F\u00e9minine",
-                ""
-            ],
-            [
-                "1966",
-                "",
-                "Meilleure Performance dans un film dramatique",
-                "Le Chevalier des sables"
-            ],
-            [
-                "1967",
-                "Oscar du cin\u00e9ma",
-                "Meilleure actrice",
-                "Qui a peur de Virginia Woolf ?"
-            ],
-            [
-                "1967",
-                "",
-                "Taylor&w=true Elizabeth Taylor sur .",
-                "Qui a peur de Virginia Woolf ?"
-            ],
-            [
-                "1967",
-                "",
-                "Meilleure actrice.",
-                "Qui a peur de Virginia Woolf ?"
-            ],
-            [
-                "1967",
-                "",
-                "Meilleure actriceElizabeth Taylor sur nbrpm.org.",
-                "Qui a peur de Virginia Woolf ?"
-            ],
-            [
-                "1968",
-                "Prix Bambi",
-                "",
-                ""
-            ],
-            [
-                "1972",
-                "Ours d'argent de la meilleure actrice",
-                "Meilleure actrice",
-                ""
-            ],
-            [
-                "1974",
-                "",
-                "Elizabeth Taylor sur .",
-                ""
-            ],
-            [
-                "1977",
-                "",
-                "",
-                ""
-            ],
-            [
-                "1993",
-                "Oscar du cin\u00e9ma",
-                "",
-                ""
-            ],
-            [
-                "1993",
-                "",
-                "pour l\u2019ensemble de sa carri\u00e8re Elizabeth Taylor sur .",
-                ""
-            ],
-            [
-                "1996",
-                "",
-                "",
-                ""
-            ],
-            [
-                "1998",
-                "",
-                "sur .",
-                ""
-            ],
-            [
-                "1999",
-                "",
-                "",
-                ""
-            ],
-            [
-                "2001",
-                "",
-                "",
-                ""
-            ]
-        ],
-        "column_types": [
-            "datetime",
-            "string",
-            "string"
-        ],
-        "key_column": 1,
-        "numeric_columns": [],
-        "date_columns": {
-            "0": [
-                1957,
-                1958,
-                1960,
-                1960,
-                1960,
-                1961,
-                1961,
-                1961,
-                1963,
-                1964,
-                1965,
-                1966,
-                1966,
-                1967,
-                1967,
-                1967,
-                1967,
-                1968,
-                1972,
-                1974,
-                1977,
-                1993,
-                1993,
-                1996,
-                1998,
-                1999,
-                2001
-            ]
-        },
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the C\u00e9r\u00e9monie when the Ann\u00e9e was before 1966 and the R\u00e9compense string contains Performance?",
+                "question": "What was the Titre du Film when the Ann\u00e9e was after 1967 and the R\u00e9alisateur string contains Sinclair?",
                 "answers": [
                     ""
                 ],
@@ -1138,188 +1283,34 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only C\u00e9r\u00e9monie, with R\u00e9compense string starts with sur, have Ann\u00e9e was after 1965?",
+                "question": "What was the Titre du Film when the R\u00e9alisateur string starts with Charles and the Ann\u00e9e was before 1968?",
                 "answers": [
-                    "No"
+                    "Rhapsodie ()"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Taylor&w=true Elizabeth Taylor sur . and when the R\u00e9compense was sur .?",
+                "question": "Which Titre du Film, with Ann\u00e9e was after 1973, happened the 1st according to Ann\u00e9e?",
                 "answers": [
-                    "31"
+                    "Identikit ( ou )",
+                    "Il \u00e9tait une fois Hollywood ()"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9alisateur was Daniel Mann and when the R\u00e9alisateur was Fran Drescher?",
+                "answers": [
+                    "36"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many C\u00e9r\u00e9monie had Ann\u00e9e was on 1967 and R\u00e9compense string contains sur?",
+                "question": "How many Titre du Film had Ann\u00e9e was on 1954?",
                 "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "150171",
-        "title": "Elizabeth Taylor",
-        "url": "https://fr.wikipedia.org/?curid=150171",
-        "header": [
-            "Ann\u00e9e",
-            "C\u00e9r\u00e9monie",
-            "Nomination",
-            "Film"
-        ],
-        "rows": [
-            [
-                "1958",
-                "Oscar du cin\u00e9ma",
-                "Meilleure actrice",
-                "L\u2019Arbre de vie"
-            ],
-            [
-                "1958",
-                "",
-                "F\u00e9minine",
-                ""
-            ],
-            [
-                "1959",
-                "Oscar du cin\u00e9ma",
-                "Meilleure actrice",
-                "La Chatte sur un toit br\u00fblant"
-            ],
-            [
-                "1959",
-                "",
-                "Meilleure actrice",
-                "La Chatte sur un toit br\u00fblant"
-            ],
-            [
-                "1960",
-                "Oscar du cin\u00e9ma",
-                "Meilleure actrice",
-                "Soudain l\u2019\u00e9t\u00e9 dernier"
-            ],
-            [
-                "1961",
-                "",
-                "Meilleure Actrice dans un film dramatique",
-                "La V\u00e9nus au vison"
-            ],
-            [
-                "1962",
-                "",
-                "F\u00e9minine",
-                ""
-            ],
-            [
-                "1966",
-                "",
-                "",
-                ""
-            ],
-            [
-                "1967",
-                "",
-                "Meilleure Actrice dans un film dramatique",
-                "Qui a peur de Virginia Woolf ?"
-            ],
-            [
-                "1968",
-                "",
-                "Meilleure actrice",
-                "Soudain l\u2019\u00e9t\u00e9 dernier"
-            ],
-            [
-                "1968",
-                "Laurel Award",
-                "F\u00e9minine",
-                ""
-            ],
-            [
-                "1969",
-                "",
-                "",
-                ""
-            ],
-            [
-                "1971",
-                "",
-                "F\u00e9minine",
-                ""
-            ],
-            [
-                "1974",
-                "",
-                "Meilleure Actrice dans un film dramatique",
-                "Les Noces de cendre"
-            ],
-            [
-                "1994",
-                "",
-                "Pire Actrice dans un Second R\u00f4le.",
-                "La Famille Pierrafeu"
-            ]
-        ],
-        "column_types": [
-            "datetime",
-            "string",
-            "string"
-        ],
-        "key_column": 1,
-        "numeric_columns": [],
-        "date_columns": {
-            "0": [
-                1958,
-                1958,
-                1959,
-                1959,
-                1960,
-                1961,
-                1962,
-                1966,
-                1967,
-                1968,
-                1968,
-                1969,
-                1971,
-                1974,
-                1994
-            ]
-        },
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the C\u00e9r\u00e9monie when the Nomination string contains film and the Ann\u00e9e was after 1960?",
-                "answers": [
-                    ""
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which C\u00e9r\u00e9monie, with Ann\u00e9e was after 1958, happened the 7th according to Ann\u00e9e?",
-                "answers": [
-                    ""
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many C\u00e9r\u00e9monie had Ann\u00e9e was on 1958?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many C\u00e9r\u00e9monie had Ann\u00e9e was after 1971?",
-                "answers": [
-                    "2"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             }

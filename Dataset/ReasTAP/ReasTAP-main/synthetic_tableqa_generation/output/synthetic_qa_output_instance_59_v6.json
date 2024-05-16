@@ -159,7 +159,41 @@
         "key_column": 0,
         "numeric_columns": [],
         "date_columns": {},
-        "qas": []
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Saison / \u00c9preuve when the Combin\u00e9 is 1 and the Descente is 3?",
+                "answers": [
+                    "Total"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Saison / \u00c9preuve when the Slalom string starts with Levi and the G\u00e9ant string contains s?",
+                "answers": [
+                    "2018-2019",
+                    "2022-2023"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Saison / \u00c9preuve, with Super-G is 5, have G\u00e9ant is 21?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Saison / \u00c9preuve had Slalom string starts with Levi?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
     },
     {
         "id": "5892703",
@@ -249,6 +283,14 @@
         "qas": [
             {
                 "source": "synthetic_qa",
+                "question": "What was the \u00c9dition / \u00c9preuve when the Combin\u00e9 alpin is Argent and the Slalom g\u00e9ant is Or?",
+                "answers": [
+                    "JO 2018 Pyeongchang"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
                 "question": "What was the \u00c9dition / \u00c9preuve when the Slalom g\u00e9ant is Or and the Combin\u00e9 alpin is Argent?",
                 "answers": [
                     "JO 2018 Pyeongchang"
@@ -265,7 +307,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u00c9dition / \u00c9preuve, with Combin\u00e9 alpin is Argent, have Slalom g\u00e9ant is Or?",
+                "question": "Does every \u00c9dition / \u00c9preuve, with Slalom g\u00e9ant is Or, have Combin\u00e9 alpin is Argent?",
                 "answers": [
                     "Yes"
                 ],
@@ -273,23 +315,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u00c9dition / \u00c9preuve had Slalom is Or?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u00c9dition / \u00c9preuve had Slalom g\u00e9ant is Or and Combin\u00e9 alpin is Argent?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u00c9dition / \u00c9preuve had Slalom g\u00e9ant is Or?",
+                "question": "How many \u00c9dition / \u00c9preuve had Combin\u00e9 alpin is Argent and Slalom g\u00e9ant is Or?",
                 "answers": [
                     "1"
                 ],
@@ -366,14 +392,6 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9dition / \u00c9preuve when the Slalom g\u00e9ant is Argent and the Slalom is Bronze?",
-                "answers": [
-                    "Mondiaux 2021 Cortina d'Ampezzo"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
                 "question": "What was the \u00c9dition / \u00c9preuve when the Slalom is Or and the Super G is Or?",
                 "answers": [
                     "Mondiaux 2019 \u00c5re"
@@ -382,15 +400,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u00c9dition / \u00c9preuve, with Slalom is Or, have Slalom g\u00e9ant is Bronze?",
+                "question": "What was the \u00c9dition / \u00c9preuve when the Super G is Argent and the Slalom is Argent?",
                 "answers": [
-                    "No"
+                    "Mondiaux 2023 M\u00e9ribel/Courchevel"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u00c9dition / \u00c9preuve, with Combin\u00e9 is Or, have Slalom g\u00e9ant is Argent?",
+                "question": "Does only \u00c9dition / \u00c9preuve, with Combin\u00e9 is Or, have Super G is Bronze?",
                 "answers": [
                     "Yes"
                 ],
@@ -398,15 +416,31 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u00c9dition / \u00c9preuve had Slalom is Or?",
+                "question": "Does only \u00c9dition / \u00c9preuve, with Combin\u00e9 is Or, have Slalom g\u00e9ant is Argent?",
                 "answers": [
-                    "4"
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u00c9dition / \u00c9preuve had Super G is Bronze and Slalom g\u00e9ant is Argent?",
+                "answers": [
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u00c9dition / \u00c9preuve had Slalom is Or and Slalom g\u00e9ant is Argent?",
+                "question": "How many \u00c9dition / \u00c9preuve had Slalom g\u00e9ant is Argent and Combin\u00e9 is Or?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u00c9dition / \u00c9preuve had Slalom g\u00e9ant is Bronze?",
                 "answers": [
                     "1"
                 ],

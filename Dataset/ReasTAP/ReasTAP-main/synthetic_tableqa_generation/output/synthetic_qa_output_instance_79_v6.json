@@ -272,7 +272,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Saison \\ \u00c9preuve when the Poursuite is 2 and the Mass start is 4?",
+                "question": "What was the Saison \\ \u00c9preuve when the Poursuite is 2 and the Sprint is 4?",
                 "answers": [
                     "Total"
                 ],
@@ -280,7 +280,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Saison \\ \u00c9preuve, with Mass start is 4, have Sprint is 4?",
+                "question": "What was the Saison \\ \u00c9preuve when the Individuel is 6 and the Poursuite is 2?",
+                "answers": [
+                    "Total"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Saison \\ \u00c9preuve, with Poursuite is 2, have Individuel is 6?",
                 "answers": [
                     "Yes"
                 ],
@@ -288,7 +296,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Saison \\ \u00c9preuve, with Individuel is 6, have Poursuite is 2?",
+                "question": "Does every Saison \\ \u00c9preuve, with Sprint is 4, have Individuel is 6?",
                 "answers": [
                     "Yes"
                 ],

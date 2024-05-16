@@ -764,23 +764,18 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the First Lady when the First Lady was greater than 7 and the Pr\u00e9sident(\u00c9poux) string starts with Jimmy?",
+                "question": "What was the First Lady when the Pr\u00e9sident(\u00c9poux) string starts with John and the First Lady was less than or equal to 25?",
                 "answers": [
-                    "Portrait of Rosalynn Carter"
+                    "Portrait painting of Abigail Adams",
+                    "Portrait engraving of Louisa Adams",
+                    "Portrait painting of Letitia Tyler",
+                    "Portrait painting of Julia Tyler"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the First Lady when the First Lady string contains Elizabeth and the First Lady was equal to 5?",
-                "answers": [
-                    "Portrait painting of Elizabeth Monroe"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every First Lady, with Pr\u00e9sident(\u00c9poux) string starts with James, have First Lady was less than or equal to 44?",
+                "question": "Does only First Lady, with First Lady was less than or equal to 17, have First Lady string contains Rachel?",
                 "answers": [
                     "Yes"
                 ],
@@ -788,47 +783,31 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only First Lady, with Dur\u00e9e dela retraite string contains En, have First Lady was greater than 47?",
+                "question": "Does every First Lady, with First Lady was greater than 16, have Dur\u00e9e dela retraite string contains En?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which First Lady, with First Lady string starts with Anna, has the 2nd largest First Lady?",
+                "question": "Which First Lady, with Pr\u00e9sident(\u00c9poux) string contains Wilson, has the 2nd largest First Lady?",
                 "answers": [
-                    "Portrait painting of Anna Harrison"
+                    "Portrait of Ellen Wilson"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which First Lady, with First Lady string contains Elizabeth, has the 3rd largest First Lady?",
+                "question": "Which First Lady, with Pr\u00e9sident(\u00c9poux) string contains James, has the 5th largest First Lady?",
                 "answers": [
-                    "Portrait painting of Elizabeth Monroe"
+                    "Portrait painting of Dolley Madison"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which First Lady, with Pr\u00e9sident(\u00c9poux) string starts with George, has the 3rd largest First Lady?",
-                "answers": [
-                    "80px"
-                ],
-                "reasoning_type": "numerical_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many First Lady had First Lady was greater than 28?",
-                "answers": [
-                    "20"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many First Lady had Pr\u00e9sident(\u00c9poux) string contains Franklin and First Lady string starts with Anna?",
+                "question": "How many First Lady had First Lady was less than 39 and First Lady string starts with Ida?",
                 "answers": [
                     "1"
                 ],
@@ -836,33 +815,33 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many First Lady had Pr\u00e9sident(\u00c9poux) string starts with George and First Lady was greater than or equal to 20?",
+                "question": "How many First Lady had First Lady was less than or equal to 3?",
                 "answers": [
-                    "2"
+                    "3"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of First Lady when the Pr\u00e9sident(\u00c9poux) string starts with George?",
+                "question": "How many First Lady had First Lady was less than or equal to 35?",
                 "answers": [
-                    "29.67"
+                    "35"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of First Lady when the Pr\u00e9sident(\u00c9poux) string starts with John?",
+                "answers": [
+                    "13.2"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of First Lady when the First Lady string starts with Elizabeth?",
+                "question": "What was the sum of First Lady when the Pr\u00e9sident(\u00c9poux) string starts with Andrew?",
                 "answers": [
-                    "26.67"
-                ],
-                "reasoning_type": "numerical_operation"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the sum of First Lady when the First Lady string starts with Elizabeth?",
-                "answers": [
-                    "80.0"
+                    "25.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }

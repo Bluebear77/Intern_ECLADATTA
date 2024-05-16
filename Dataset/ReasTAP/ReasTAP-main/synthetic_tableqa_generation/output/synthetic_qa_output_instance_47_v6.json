@@ -5,535 +5,6 @@
         "url": "https://fr.wikipedia.org/?curid=4171207",
         "header": [
             "Nom",
-            "Portrait",
-            "\u00c9poux",
-            "Ascendance",
-            "Descendance",
-            "Titres"
-        ],
-        "rows": [
-            [
-                "Marguerite de Huntingdon(1145-1201)",
-                "",
-                "* Conan IV de Bretagne(mariage en 1160)\n* Humphrey III de Bohun\n\n(mariage en 1174)",
-                "* Princesse de la Maison de Dunkeld. Fille d'Henri de Northumberland et d'Ada de Warenne.",
-                "* Constance de Bretagne 15 px\n* Henri de Bohun",
-                "* Duchesse de Bretagne (1160-1166)\n* Comtesse de Richmond (1160-1171)\n* Comtesse de Hereford (1174-1181)"
-            ],
-            [
-                "Constance de Bretagne\n(1161-1201)",
-                "",
-                "* Geoffroy II de Bretagne\n\n(mariage en 1181)\n* Ranulph de Blondeville\n\n(mariage en 1188)\n* Guy de Thouars\n\n(mariage en 1199)",
-                "* Princesse de la Maison de Penthi\u00e8vre. Fille de Conan IV de Bretagne et de Marguerite d'Huntingdon.",
-                "* Ali\u00e9nor de Bretagne\n* Arthur Ier de Bretagne\n* Alix de Thouars\n* Catherine de Thouars",
-                "* Duchesse de Bretagne (de plein droit, 1166-1201)\n* Comtesse de Richmond (de plein droit, 1071-1201)\n* Comtesse de Chester (1188-1198)"
-            ],
-            [
-                "Alix de Thouars\n(1200-1221)",
-                "",
-                "* Pierre  de Bretagne\n\n(mariage en 1214)",
-                "* Princesse de la Maison de Thouars. Fille de Guy de Thouars et de Constance de Bretagne.",
-                "* Jean Ier de Bretagne\n* Yolande de Bretagne\n*Arthur de Bretagne",
-                "* Duchesse de Bretagne et comtesse de Richmond (de plein droit, 1203-1221)"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "numeric"
-        ],
-        "key_column": 0,
-        "numeric_columns": [
-            6
-        ],
-        "date_columns": {},
-        "qas": []
-    },
-    {
-        "id": "4171207",
-        "title": "Liste des \u00e9pouses des rois et ducs de Bretagne",
-        "url": "https://fr.wikipedia.org/?curid=4171207",
-        "header": [
-            "Nom",
-            "Nom",
-            "\u00c9poux",
-            "Ascendance",
-            "Descendance",
-            "Titres",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "Blanche de Navarre(1226-1283)",
-                "132x132px",
-                "* Jean Ier de Bretagne(mariage en 1236)",
-                "* Princesse de la Maison de Blois. Fille de Thibaut  de Navarre et d'Agn\u00e8s de Beaujeu.",
-                "* Jean II de Bretagne 15 px\n* Alix de Bretagne",
-                "* Duchesse de Bretagne (1236-1283)",
-                ""
-            ],
-            [
-                "Yolande de Dreux(1269-1332)",
-                "144x144px",
-                "* Alexandre III d'\u00c9cosse\n\n(mariage en 1285)\n* Arthur II de Bretagne(mariage en 1294)",
-                "* Princesse de la Maison cap\u00e9tienne de Dreux. Fille de Robert IV de Dreux et de B\u00e9atrice de Montfort.",
-                "* Jean de Montfort 15 px\n* B\u00e9atrix de Bretagne\n* Alix de Bretagne",
-                "* Reine d'\u00c9cosse (1285-1286)\n* Duchesse de Bretagne (1305-1312)\n* Comtesse de Montfort (de plein droit, 1311-1322)",
-                ""
-            ],
-            [
-                "Isabelle de Castille(1283-1328)",
-                "80x80px",
-                "* Jacques II d'Aragon\n\n(mariage en 1291)\n* Jean III de Bretagne(mariage en 1310)",
-                "* Princesse de la Maison d'Ivr\u00e9e. Fille de Sanche IV de Castille et de Maria de Molina.",
-                "",
-                "* Reine de Sicile et d'Aragon (1291-1295)\n* Duchesse de Bretagne (1312-1328)",
-                ""
-            ],
-            [
-                "Jeanne de Savoie(1310-1344)",
-                "",
-                "* Jean III de Bretagne(mariage en 1330)",
-                "* Princesse de la Maison de Savoie. Fille d'\u00c9douard de Savoie et de Blanche de Bourgogne.",
-                "",
-                "* Duchesse de Bretagne (1330-1341)",
-                ""
-            ],
-            [
-                "Jeanne de Penthi\u00e8vre\n(1324-1384)",
-                "",
-                "* Charles de Blois\n\n(mariage en 1337)",
-                "* Princesse de la Maison cap\u00e9tienne de Dreux. Fille de Guy VII de Limoges et de Jeanne d'Avaugour.",
-                "* Marie de Blois\n* Jean  de Ch\u00e2tillon",
-                "* Pr\u00e9tendante au duch\u00e9 de Bretagne (de plein droit, 1341-1365)\n* Comtesse de Penthi\u00e8vre et vicomtesse de Limoges (de plein droit, 1331-1384)",
-                "80x80px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom when the Descendance string ends with Bretagne and the \u00c9poux string contains Jean?",
-                "answers": [
-                    "Blanche de Navarre(1226-1283)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom when the Ascendance string contains la and the Descendance string contains Montfort?",
-                "answers": [
-                    "Yolande de Dreux(1269-1332)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom, with Titres string contains de, have Descendance string contains 15?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom, with Ascendance string contains de, have Descendance string ends with Bretagne?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Ascendance string contains de?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Ascendance string contains de and Descendance string contains de?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Titres string contains de and Ascendance string contains la?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "4171207",
-        "title": "Liste des \u00e9pouses des rois et ducs de Bretagne",
-        "url": "https://fr.wikipedia.org/?curid=4171207",
-        "header": [
-            "Nom",
-            "Nom",
-            "\u00c9poux",
-            "Ascendance",
-            "Descendance",
-            "Titres",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "Jeanne de Flandre(1295-1374)",
-                "sans_cadre",
-                "* Jean de Montfort(mariage en 1329)",
-                "* Princesse de la Maison de Dampierre. Fille de Louis  de Nevers et de Jeanne de Rethel.",
-                "* Jean IV de Bretagne 15 px\n*Jeanne de Bretagne",
-                "* Comtesse de Montfort (1329-1345)\n* Duchesse de Bretagne (1341-1345)",
-                ""
-            ],
-            [
-                "Marie d'Angleterre(1344-1361)",
-                "233x233px",
-                "* Jean IV de Bretagne(mariage en 1361)",
-                "* Princesse de la Maison Plantagen\u00eat. Fille d'\u00c9douard III d'Angleterre et de Philippa de Hainaut.",
-                "",
-                "* Duchesse de Bretagne et comtesse de Montfort (1361)",
-                ""
-            ],
-            [
-                "Jeanne Holland(1350-1384)",
-                "",
-                "* Jean IV de Bretagne(mariage en 1366)",
-                "* Princesse de la Maison Holland. Fille de Thomas Holland et de Jeanne de Kent.",
-                "",
-                "* Duchesse de Bretagne (1366-1384)\n* Comtesse de Richmond (1372-1384)",
-                ""
-            ],
-            [
-                "Jeanne de Navarre(1370-1437)",
-                "136x136px",
-                "* Jean IV de Bretagne(mariage en 1386)\n* Henri IV d'Angleterre\n\n(mariage en 1403)",
-                "* Princesse de la Maison cap\u00e9tienne d\u2019\u00c9vreux-Navarre. Fille de Charles II de Navarre et de Jeanne de France.",
-                "* Jean V de Bretagne 15 px\n* Marie de Bretagne\n* Marguerite de Bretagne\n* Arthur III de Bretagne 15 px\n* Richard d'\u00c9tampes",
-                "* Duchesse de Bretagne et comtesse de Montfort (1386-1399)\n* Comtesse de Richmond (1386-1393)\n* Reine d'Angleterre (1403-1413)",
-                "93x93px"
-            ],
-            [
-                "Jeanne de France(1391-1433)",
-                "164x164px",
-                "* Jean V de Bretagne(mariage en 1396)",
-                "* Princesse de la Maison de Valois. Fille de Charles VI de France et d'Isabeau de Bavi\u00e8re.",
-                "* Isabelle de Bretagne\n* Fran\u00e7ois Ier de Bretagne 15 px\n* Pierre II de Bretagne 15 px\n* Gilles de Bretagne",
-                "* Duchesse de Bretagne et comtesse de Montfort (1399-1433)",
-                "80x80px"
-            ],
-            [
-                "Isabelle d'\u00c9cosse(1426-1494)",
-                "sans_cadre",
-                "* Fran\u00e7ois Ier de Bretagne(mariage en 1442)",
-                "* Princesse de la Maison Stuart. Fille de Jacques  d'\u00c9cosse et de Jeanne Beaufort.",
-                "* Marguerite de Bretagne\n* Marie de Bretagne",
-                "* Duchesse de Bretagne et comtesse de Montfort (1442-1450)",
-                "88x88px"
-            ],
-            [
-                "Fran\u00e7oise d'Amboise(1427-1485)",
-                "109x109px",
-                "* Pierre II de Bretagne(mariage en 1441)",
-                "* Princesse de la Maison d'Amboise. Fille de Louis d'Amboise et de Louise-Marie de Rieux.",
-                "",
-                "* Duchesse de Bretagne et comtesse de Montfort (1450-1457)",
-                "88x88px"
-            ],
-            [
-                "Catherine de Luxembourg-Saint-Pol(?-1492)",
-                "",
-                "* Arthur III de Bretagne(mariage en 1445)",
-                "* Princesse de la Maison de Luxembourg. Fille de Pierre  de Luxembourg-Saint-Pol et de Marguerite des Baux.",
-                "",
-                "* Duchesse de Bretagne et comtesse de Montfort (1457-1458)",
-                ""
-            ],
-            [
-                "Marguerite de Bretagne(1443-1469)",
-                "sans_cadre",
-                "* Fran\u00e7ois II de Bretagne(mariage en 1455)",
-                "* Princesse de la Maison de Montfort. Fille de Fran\u00e7ois  de Bretagne et d'Isabelle d'\u00c9cosse.",
-                "",
-                "*Comtesse d\u2019\u00c9tampes (1455-1469)\n* Duchesse de Bretagne et comtesse de Montfort (1458-1469)",
-                ""
-            ],
-            [
-                "Marguerite de Foix(1458-1486)",
-                "sans_cadre",
-                "* Fran\u00e7ois II de Bretagne(mariage en 1471)",
-                "* Princesse de la Maison de Grailly. Fille de Gaston IV de Foix-B\u00e9arn et d'\u00c9l\u00e9onore de Navarre.",
-                "* Anne de Bretagne 15 px\n* Isabeau de Bretagne",
-                "* Duchesse de Bretagne et comtesse de Montfort (1471-1486)\n* Comtesse d\u2019\u00c9tampes (1471-1477)",
-                ""
-            ],
-            [
-                "Anne de Bretagne\n(1477-1514)",
-                "128x128px",
-                "* Maximilien  d'Autriche\n\n(mariage en 1490)\n* Charles VIII de France\n\n(mariage en 1491)\n* Louis XII de France\n\n(mariage en 1499)",
-                "* Princesse de la Maison de Montfort. Fille de Fran\u00e7ois II de Bretagne et de Marguerite de Foix.",
-                "* Charles-Orland de France\n* Charles de France\n* Claude de France\n* Ren\u00e9e de France",
-                "* Duchesse de Bretagne et comtesse de Montfort (de plein droit, 1488-1514)\n* Reine des Romains (1490-1491)\n* Reine de France (1491-1498 puis 1499-1514)\n*Duchesse de Milan (1499-1500 puis 1501-1512)\n* Reine de Naples (1501-1503)\n* Comtesse d'\u00c9tampes (de plein droit, 1512-1514)",
-                "86x86px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom when the Ascendance string contains de and the \u00c9poux string contains de?",
-                "answers": [
-                    "Jeanne de Flandre(1295-1374)",
-                    "Marie d'Angleterre(1344-1361)",
-                    "Jeanne Holland(1350-1384)",
-                    "Jeanne de Navarre(1370-1437)",
-                    "Jeanne de France(1391-1433)",
-                    "Isabelle d'\u00c9cosse(1426-1494)",
-                    "Fran\u00e7oise d'Amboise(1427-1485)",
-                    "Catherine de Luxembourg-Saint-Pol(?-1492)",
-                    "Marguerite de Bretagne(1443-1469)",
-                    "Marguerite de Foix(1458-1486)",
-                    "Anne de Bretagne\n(1477-1514)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom when the Titres string contains Montfort and the \u00c9poux string contains en?",
-                "answers": [
-                    "Jeanne de Flandre(1295-1374)",
-                    "Marie d'Angleterre(1344-1361)",
-                    "Jeanne de Navarre(1370-1437)",
-                    "Jeanne de France(1391-1433)",
-                    "Isabelle d'\u00c9cosse(1426-1494)",
-                    "Fran\u00e7oise d'Amboise(1427-1485)",
-                    "Catherine de Luxembourg-Saint-Pol(?-1492)",
-                    "Marguerite de Bretagne(1443-1469)",
-                    "Marguerite de Foix(1458-1486)",
-                    "Anne de Bretagne\n(1477-1514)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Nom, with Titres string contains Montfort, have Descendance string contains de?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom, with Descendance string contains de, have \u00c9poux string contains IV?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Descendance string ends with Bretagne?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Ascendance string contains Fille and \u00c9poux string contains de?",
-                "answers": [
-                    "11"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had \u00c9poux string contains de and Ascendance string contains de?",
-                "answers": [
-                    "11"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "4171207",
-        "title": "Liste des \u00e9pouses des rois et ducs de Bretagne",
-        "url": "https://fr.wikipedia.org/?curid=4171207",
-        "header": [
-            "Nom",
-            "Portrait",
-            "\u00c9poux",
-            "Ascendance",
-            "Descendance",
-            "Titres",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "Claude de France\n(1499-1524)",
-                "",
-                "*Fran\u00e7ois  de France (mariage en 1514)",
-                "* Princesse de la Maison de Valois. Fille de Louis XII de France et d'Anne de Bretagne.",
-                "* Louise de France\n* Charlotte de France\n* Fran\u00e7ois III de Bretagne\n* Henri II de France\n* Madeleine de France\n* Charles II d'Orl\u00e9ans\n* Marguerite de France",
-                "* Duchesse de Bretagne, comtesse de Montfort et d\u2019\u00c9tampes (de plein droit, 1514-1524)\n* Duchesse de Valois et comtesse d'Angoul\u00eame (1514-1515)\n* Reine de France et duchesse de Milan (1515-1524)",
-                "119x119px"
-            ],
-            [
-                "Catherine de M\u00e9dicis(1519-1589)",
-                "114x114px",
-                "* Henri II de France(mariage en 1533)",
-                "* Princesse de la Maison de M\u00e9dicis. Fille de Laurent II de M\u00e9dicis et de Madeleine de la Tour d'Auvergne.",
-                "* Fran\u00e7ois II de France\n* \u00c9lisabeth de France\n* Claude de France\n* Louis de France\n* Charles IX de France\n* Henri III de France\n* Marguerite de France\n* Fran\u00e7ois de France\n* Jeanne de France\n* Victoire de France",
-                "* Comtesse de Lauragais (de plein droit, 1519-1589)\n* Comtesse d'Auvergne (de plein droit, 1524-1589)\n* Duchesse d'Orl\u00e9ans (1533-1536 puis 1566-1589)\n* Dauphine de France et duchesse de Bretagne (1536-1547)\n* Reine de France (1547-1559)\n*Duchesse d'Alen\u00e7on (1559-1566)\n*Comtesse de Dreux (1559-1569)\n* R\u00e9gente de France (1560-1563 puis 1574)",
-                "86x86px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom when the Ascendance string contains de and the \u00c9poux string contains II?",
-                "answers": [
-                    "Catherine de M\u00e9dicis(1519-1589)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom when the Ascendance string contains II and the \u00c9poux string contains France?",
-                "answers": [
-                    "Claude de France\n(1499-1524)",
-                    "Catherine de M\u00e9dicis(1519-1589)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom, with \u00c9poux string contains II, have Ascendance string contains Fille?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom, with \u00c9poux string contains France, have Titres string contains Milan?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Descendance string contains II?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Ascendance string contains Fille?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Descendance string contains France and Titres string contains de?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "4171207",
-        "title": "Liste des \u00e9pouses des rois et ducs de Bretagne",
-        "url": "https://fr.wikipedia.org/?curid=4171207",
-        "header": [
-            "",
-            "",
-            ""
-        ],
-        "rows": [
-            [
-                "",
-                "",
-                ""
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "numeric",
-            "numeric",
-            "numeric",
-            "numeric"
-        ],
-        "key_column": 0,
-        "numeric_columns": [
-            3,
-            4,
-            5,
-            6
-        ],
-        "date_columns": {},
-        "qas": []
-    },
-    {
-        "id": "4171207",
-        "title": "Liste des \u00e9pouses des rois et ducs de Bretagne",
-        "url": "https://fr.wikipedia.org/?curid=4171207",
-        "header": [
-            "Nom",
             "Nom",
             "\u00c9poux",
             "Ascendance",
@@ -612,7 +83,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the \u00c9poux string contains de and the Titres string contains de?",
+                "question": "What was the Nom when the \u00c9poux string contains Bretagne and the Ascendance string contains de?",
                 "answers": [
                     "B\u00e9atrice d'Angleterre(1242-1275)",
                     "Marie de Limoges(1260-1291)",
@@ -625,9 +96,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Titres string contains Richmond and the \u00c9poux string contains II?",
+                "question": "What was the Nom when the \u00c9poux string contains II and the Titres string contains de?",
                 "answers": [
                     "B\u00e9atrice d'Angleterre(1242-1275)",
+                    "Marie de Limoges(1260-1291)",
+                    "Isabelle de Valois(1292-1309)",
                     "Marguerite de Bourgogne(1393-1442)",
                     "Jeanne II d'Albret(1425-1444)"
                 ],
@@ -635,7 +108,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Descendance string contains de, have Ascendance string contains de?",
+                "question": "Does every Nom, with \u00c9poux string contains en, have Descendance string contains Bretagne?",
                 "answers": [
                     "No"
                 ],
@@ -643,33 +116,33 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with \u00c9poux string contains Arthur, have Titres string contains de?",
+                "question": "Does only Nom, with Descendance string contains Bretagne, have \u00c9poux string contains en?",
                 "answers": [
                     "No"
                 ],
                 "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had \u00c9poux string contains en and Titres string contains de?",
-                "answers": [
-                    "6"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Titres string contains Richmond and \u00c9poux string contains Bretagne?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
                 "question": "How many Nom had \u00c9poux string contains en?",
                 "answers": [
                     "6"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Titres string contains de and \u00c9poux string contains de?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Descendance string contains Bretagne?",
+                "answers": [
+                    "2"
                 ],
                 "reasoning_type": "counting"
             }
@@ -931,6 +404,520 @@
         ],
         "key_column": 0,
         "numeric_columns": [
+            6
+        ],
+        "date_columns": {},
+        "qas": []
+    },
+    {
+        "id": "4171207",
+        "title": "Liste des \u00e9pouses des rois et ducs de Bretagne",
+        "url": "https://fr.wikipedia.org/?curid=4171207",
+        "header": [
+            "Nom",
+            "Portrait",
+            "\u00c9poux",
+            "Ascendance",
+            "Descendance",
+            "Titres"
+        ],
+        "rows": [
+            [
+                "Marguerite de Huntingdon(1145-1201)",
+                "",
+                "* Conan IV de Bretagne(mariage en 1160)\n* Humphrey III de Bohun\n\n(mariage en 1174)",
+                "* Princesse de la Maison de Dunkeld. Fille d'Henri de Northumberland et d'Ada de Warenne.",
+                "* Constance de Bretagne 15 px\n* Henri de Bohun",
+                "* Duchesse de Bretagne (1160-1166)\n* Comtesse de Richmond (1160-1171)\n* Comtesse de Hereford (1174-1181)"
+            ],
+            [
+                "Constance de Bretagne\n(1161-1201)",
+                "",
+                "* Geoffroy II de Bretagne\n\n(mariage en 1181)\n* Ranulph de Blondeville\n\n(mariage en 1188)\n* Guy de Thouars\n\n(mariage en 1199)",
+                "* Princesse de la Maison de Penthi\u00e8vre. Fille de Conan IV de Bretagne et de Marguerite d'Huntingdon.",
+                "* Ali\u00e9nor de Bretagne\n* Arthur Ier de Bretagne\n* Alix de Thouars\n* Catherine de Thouars",
+                "* Duchesse de Bretagne (de plein droit, 1166-1201)\n* Comtesse de Richmond (de plein droit, 1071-1201)\n* Comtesse de Chester (1188-1198)"
+            ],
+            [
+                "Alix de Thouars\n(1200-1221)",
+                "",
+                "* Pierre  de Bretagne\n\n(mariage en 1214)",
+                "* Princesse de la Maison de Thouars. Fille de Guy de Thouars et de Constance de Bretagne.",
+                "* Jean Ier de Bretagne\n* Yolande de Bretagne\n*Arthur de Bretagne",
+                "* Duchesse de Bretagne et comtesse de Richmond (de plein droit, 1203-1221)"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "numeric"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            6
+        ],
+        "date_columns": {},
+        "qas": []
+    },
+    {
+        "id": "4171207",
+        "title": "Liste des \u00e9pouses des rois et ducs de Bretagne",
+        "url": "https://fr.wikipedia.org/?curid=4171207",
+        "header": [
+            "Nom",
+            "Nom",
+            "\u00c9poux",
+            "Ascendance",
+            "Descendance",
+            "Titres",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "Blanche de Navarre(1226-1283)",
+                "132x132px",
+                "* Jean Ier de Bretagne(mariage en 1236)",
+                "* Princesse de la Maison de Blois. Fille de Thibaut  de Navarre et d'Agn\u00e8s de Beaujeu.",
+                "* Jean II de Bretagne 15 px\n* Alix de Bretagne",
+                "* Duchesse de Bretagne (1236-1283)",
+                ""
+            ],
+            [
+                "Yolande de Dreux(1269-1332)",
+                "144x144px",
+                "* Alexandre III d'\u00c9cosse\n\n(mariage en 1285)\n* Arthur II de Bretagne(mariage en 1294)",
+                "* Princesse de la Maison cap\u00e9tienne de Dreux. Fille de Robert IV de Dreux et de B\u00e9atrice de Montfort.",
+                "* Jean de Montfort 15 px\n* B\u00e9atrix de Bretagne\n* Alix de Bretagne",
+                "* Reine d'\u00c9cosse (1285-1286)\n* Duchesse de Bretagne (1305-1312)\n* Comtesse de Montfort (de plein droit, 1311-1322)",
+                ""
+            ],
+            [
+                "Isabelle de Castille(1283-1328)",
+                "80x80px",
+                "* Jacques II d'Aragon\n\n(mariage en 1291)\n* Jean III de Bretagne(mariage en 1310)",
+                "* Princesse de la Maison d'Ivr\u00e9e. Fille de Sanche IV de Castille et de Maria de Molina.",
+                "",
+                "* Reine de Sicile et d'Aragon (1291-1295)\n* Duchesse de Bretagne (1312-1328)",
+                ""
+            ],
+            [
+                "Jeanne de Savoie(1310-1344)",
+                "",
+                "* Jean III de Bretagne(mariage en 1330)",
+                "* Princesse de la Maison de Savoie. Fille d'\u00c9douard de Savoie et de Blanche de Bourgogne.",
+                "",
+                "* Duchesse de Bretagne (1330-1341)",
+                ""
+            ],
+            [
+                "Jeanne de Penthi\u00e8vre\n(1324-1384)",
+                "",
+                "* Charles de Blois\n\n(mariage en 1337)",
+                "* Princesse de la Maison cap\u00e9tienne de Dreux. Fille de Guy VII de Limoges et de Jeanne d'Avaugour.",
+                "* Marie de Blois\n* Jean  de Ch\u00e2tillon",
+                "* Pr\u00e9tendante au duch\u00e9 de Bretagne (de plein droit, 1341-1365)\n* Comtesse de Penthi\u00e8vre et vicomtesse de Limoges (de plein droit, 1331-1384)",
+                "80x80px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the Titres string contains de and the Descendance string contains Jean?",
+                "answers": [
+                    "Blanche de Navarre(1226-1283)",
+                    "Yolande de Dreux(1269-1332)",
+                    "Jeanne de Penthi\u00e8vre\n(1324-1384)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the \u00c9poux string contains en and the Descendance string ends with Bretagne?",
+                "answers": [
+                    "Blanche de Navarre(1226-1283)",
+                    "Yolande de Dreux(1269-1332)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom, with Titres string contains de, have Ascendance string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom, with \u00c9poux string contains de, have Ascendance string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Descendance string contains Bretagne?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Titres string contains de and \u00c9poux string contains de?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Titres string contains Bretagne?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "4171207",
+        "title": "Liste des \u00e9pouses des rois et ducs de Bretagne",
+        "url": "https://fr.wikipedia.org/?curid=4171207",
+        "header": [
+            "Nom",
+            "Nom",
+            "\u00c9poux",
+            "Ascendance",
+            "Descendance",
+            "Titres",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "Jeanne de Flandre(1295-1374)",
+                "sans_cadre",
+                "* Jean de Montfort(mariage en 1329)",
+                "* Princesse de la Maison de Dampierre. Fille de Louis  de Nevers et de Jeanne de Rethel.",
+                "* Jean IV de Bretagne 15 px\n*Jeanne de Bretagne",
+                "* Comtesse de Montfort (1329-1345)\n* Duchesse de Bretagne (1341-1345)",
+                ""
+            ],
+            [
+                "Marie d'Angleterre(1344-1361)",
+                "233x233px",
+                "* Jean IV de Bretagne(mariage en 1361)",
+                "* Princesse de la Maison Plantagen\u00eat. Fille d'\u00c9douard III d'Angleterre et de Philippa de Hainaut.",
+                "",
+                "* Duchesse de Bretagne et comtesse de Montfort (1361)",
+                ""
+            ],
+            [
+                "Jeanne Holland(1350-1384)",
+                "",
+                "* Jean IV de Bretagne(mariage en 1366)",
+                "* Princesse de la Maison Holland. Fille de Thomas Holland et de Jeanne de Kent.",
+                "",
+                "* Duchesse de Bretagne (1366-1384)\n* Comtesse de Richmond (1372-1384)",
+                ""
+            ],
+            [
+                "Jeanne de Navarre(1370-1437)",
+                "136x136px",
+                "* Jean IV de Bretagne(mariage en 1386)\n* Henri IV d'Angleterre\n\n(mariage en 1403)",
+                "* Princesse de la Maison cap\u00e9tienne d\u2019\u00c9vreux-Navarre. Fille de Charles II de Navarre et de Jeanne de France.",
+                "* Jean V de Bretagne 15 px\n* Marie de Bretagne\n* Marguerite de Bretagne\n* Arthur III de Bretagne 15 px\n* Richard d'\u00c9tampes",
+                "* Duchesse de Bretagne et comtesse de Montfort (1386-1399)\n* Comtesse de Richmond (1386-1393)\n* Reine d'Angleterre (1403-1413)",
+                "93x93px"
+            ],
+            [
+                "Jeanne de France(1391-1433)",
+                "164x164px",
+                "* Jean V de Bretagne(mariage en 1396)",
+                "* Princesse de la Maison de Valois. Fille de Charles VI de France et d'Isabeau de Bavi\u00e8re.",
+                "* Isabelle de Bretagne\n* Fran\u00e7ois Ier de Bretagne 15 px\n* Pierre II de Bretagne 15 px\n* Gilles de Bretagne",
+                "* Duchesse de Bretagne et comtesse de Montfort (1399-1433)",
+                "80x80px"
+            ],
+            [
+                "Isabelle d'\u00c9cosse(1426-1494)",
+                "sans_cadre",
+                "* Fran\u00e7ois Ier de Bretagne(mariage en 1442)",
+                "* Princesse de la Maison Stuart. Fille de Jacques  d'\u00c9cosse et de Jeanne Beaufort.",
+                "* Marguerite de Bretagne\n* Marie de Bretagne",
+                "* Duchesse de Bretagne et comtesse de Montfort (1442-1450)",
+                "88x88px"
+            ],
+            [
+                "Fran\u00e7oise d'Amboise(1427-1485)",
+                "109x109px",
+                "* Pierre II de Bretagne(mariage en 1441)",
+                "* Princesse de la Maison d'Amboise. Fille de Louis d'Amboise et de Louise-Marie de Rieux.",
+                "",
+                "* Duchesse de Bretagne et comtesse de Montfort (1450-1457)",
+                "88x88px"
+            ],
+            [
+                "Catherine de Luxembourg-Saint-Pol(?-1492)",
+                "",
+                "* Arthur III de Bretagne(mariage en 1445)",
+                "* Princesse de la Maison de Luxembourg. Fille de Pierre  de Luxembourg-Saint-Pol et de Marguerite des Baux.",
+                "",
+                "* Duchesse de Bretagne et comtesse de Montfort (1457-1458)",
+                ""
+            ],
+            [
+                "Marguerite de Bretagne(1443-1469)",
+                "sans_cadre",
+                "* Fran\u00e7ois II de Bretagne(mariage en 1455)",
+                "* Princesse de la Maison de Montfort. Fille de Fran\u00e7ois  de Bretagne et d'Isabelle d'\u00c9cosse.",
+                "",
+                "*Comtesse d\u2019\u00c9tampes (1455-1469)\n* Duchesse de Bretagne et comtesse de Montfort (1458-1469)",
+                ""
+            ],
+            [
+                "Marguerite de Foix(1458-1486)",
+                "sans_cadre",
+                "* Fran\u00e7ois II de Bretagne(mariage en 1471)",
+                "* Princesse de la Maison de Grailly. Fille de Gaston IV de Foix-B\u00e9arn et d'\u00c9l\u00e9onore de Navarre.",
+                "* Anne de Bretagne 15 px\n* Isabeau de Bretagne",
+                "* Duchesse de Bretagne et comtesse de Montfort (1471-1486)\n* Comtesse d\u2019\u00c9tampes (1471-1477)",
+                ""
+            ],
+            [
+                "Anne de Bretagne\n(1477-1514)",
+                "128x128px",
+                "* Maximilien  d'Autriche\n\n(mariage en 1490)\n* Charles VIII de France\n\n(mariage en 1491)\n* Louis XII de France\n\n(mariage en 1499)",
+                "* Princesse de la Maison de Montfort. Fille de Fran\u00e7ois II de Bretagne et de Marguerite de Foix.",
+                "* Charles-Orland de France\n* Charles de France\n* Claude de France\n* Ren\u00e9e de France",
+                "* Duchesse de Bretagne et comtesse de Montfort (de plein droit, 1488-1514)\n* Reine des Romains (1490-1491)\n* Reine de France (1491-1498 puis 1499-1514)\n*Duchesse de Milan (1499-1500 puis 1501-1512)\n* Reine de Naples (1501-1503)\n* Comtesse d'\u00c9tampes (de plein droit, 1512-1514)",
+                "86x86px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the Descendance string contains px and the Ascendance string contains Fille?",
+                "answers": [
+                    "Jeanne de Flandre(1295-1374)",
+                    "Jeanne de Navarre(1370-1437)",
+                    "Jeanne de France(1391-1433)",
+                    "Marguerite de Foix(1458-1486)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the \u00c9poux string contains de and the Descendance string contains de?",
+                "answers": [
+                    "Jeanne de Flandre(1295-1374)",
+                    "Jeanne de Navarre(1370-1437)",
+                    "Jeanne de France(1391-1433)",
+                    "Isabelle d'\u00c9cosse(1426-1494)",
+                    "Marguerite de Foix(1458-1486)",
+                    "Anne de Bretagne\n(1477-1514)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom, with \u00c9poux string contains en, have Titres string contains Bretagne?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom, with \u00c9poux string contains de, have Ascendance string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had \u00c9poux string contains en?",
+                "answers": [
+                    "11"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Descendance string contains px?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Ascendance string contains de?",
+                "answers": [
+                    "11"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "4171207",
+        "title": "Liste des \u00e9pouses des rois et ducs de Bretagne",
+        "url": "https://fr.wikipedia.org/?curid=4171207",
+        "header": [
+            "Nom",
+            "Portrait",
+            "\u00c9poux",
+            "Ascendance",
+            "Descendance",
+            "Titres",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "Claude de France\n(1499-1524)",
+                "",
+                "*Fran\u00e7ois  de France (mariage en 1514)",
+                "* Princesse de la Maison de Valois. Fille de Louis XII de France et d'Anne de Bretagne.",
+                "* Louise de France\n* Charlotte de France\n* Fran\u00e7ois III de Bretagne\n* Henri II de France\n* Madeleine de France\n* Charles II d'Orl\u00e9ans\n* Marguerite de France",
+                "* Duchesse de Bretagne, comtesse de Montfort et d\u2019\u00c9tampes (de plein droit, 1514-1524)\n* Duchesse de Valois et comtesse d'Angoul\u00eame (1514-1515)\n* Reine de France et duchesse de Milan (1515-1524)",
+                "119x119px"
+            ],
+            [
+                "Catherine de M\u00e9dicis(1519-1589)",
+                "114x114px",
+                "* Henri II de France(mariage en 1533)",
+                "* Princesse de la Maison de M\u00e9dicis. Fille de Laurent II de M\u00e9dicis et de Madeleine de la Tour d'Auvergne.",
+                "* Fran\u00e7ois II de France\n* \u00c9lisabeth de France\n* Claude de France\n* Louis de France\n* Charles IX de France\n* Henri III de France\n* Marguerite de France\n* Fran\u00e7ois de France\n* Jeanne de France\n* Victoire de France",
+                "* Comtesse de Lauragais (de plein droit, 1519-1589)\n* Comtesse d'Auvergne (de plein droit, 1524-1589)\n* Duchesse d'Orl\u00e9ans (1533-1536 puis 1566-1589)\n* Dauphine de France et duchesse de Bretagne (1536-1547)\n* Reine de France (1547-1559)\n*Duchesse d'Alen\u00e7on (1559-1566)\n*Comtesse de Dreux (1559-1569)\n* R\u00e9gente de France (1560-1563 puis 1574)",
+                "86x86px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the Descendance string ends with France and the \u00c9poux string contains en?",
+                "answers": [
+                    "Claude de France\n(1499-1524)",
+                    "Catherine de M\u00e9dicis(1519-1589)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the \u00c9poux string contains en and the Descendance string ends with France?",
+                "answers": [
+                    "Claude de France\n(1499-1524)",
+                    "Catherine de M\u00e9dicis(1519-1589)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom, with \u00c9poux string contains en, have Titres string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom, with Descendance string contains Marguerite, have Ascendance string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Titres string contains France?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Descendance string contains de?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "4171207",
+        "title": "Liste des \u00e9pouses des rois et ducs de Bretagne",
+        "url": "https://fr.wikipedia.org/?curid=4171207",
+        "header": [
+            "",
+            "",
+            ""
+        ],
+        "rows": [
+            [
+                "",
+                "",
+                ""
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            3,
+            4,
+            5,
             6
         ],
         "date_columns": {},

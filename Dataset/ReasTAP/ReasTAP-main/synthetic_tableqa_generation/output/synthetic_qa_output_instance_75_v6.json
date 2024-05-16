@@ -84,15 +84,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre Fran\u00e7ais when the Ann\u00e9e de parution was after 1981 and the Titre original string starts with While?",
-                "answers": [
-                    "Tant que brillera le jour"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Titre Fran\u00e7ais when the Ann\u00e9e de parution was after 1985 and the Type string contains de?",
+                "question": "What was the Titre Fran\u00e7ais when the Type string contains de and the Ann\u00e9e de parution was after 1985?",
                 "answers": [
                     "Marple, Poirot, Pyne... et les autres",
                     "Tant que brillera le jour"
@@ -101,15 +93,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre Fran\u00e7ais, with H\u00e9ros principal string starts with Mr, have Type string contains de?",
+                "question": "What was the Titre Fran\u00e7ais when the Titre original string ends with Hour and the Type string contains de?",
                 "answers": [
-                    "No"
+                    "Dix Br\u00e8ves Rencontres"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre Fran\u00e7ais, with Titre original string contains Miss, have H\u00e9ros principal string starts with Miss?",
+                "question": "Does every Titre Fran\u00e7ais, with Ann\u00e9e de parution was on 1976, have H\u00e9ros principal string contains Miss?",
                 "answers": [
                     "Yes"
                 ],
@@ -117,9 +109,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre Fran\u00e7ais, with Ann\u00e9e de parution was before 1986, happened the 3rd according to Ann\u00e9e de parution?",
+                "question": "Does only Titre Fran\u00e7ais, with Ann\u00e9e de parution was on 1976, have Titre original string ends with Case?",
                 "answers": [
-                    "Le Flambeau"
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Titre Fran\u00e7ais, with H\u00e9ros principal string contains Miss, happened the 3rd according to Ann\u00e9e de parution?",
+                "answers": [
+                    "Trois Souris..."
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Titre Fran\u00e7ais, with Ann\u00e9e de parution was before 1997, happened the 6th according to Ann\u00e9e de parution?",
+                "answers": [
+                    "Marple, Poirot, Pyne... et les autres"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
@@ -133,39 +141,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre Fran\u00e7ais, with Ann\u00e9e de parution was after 1982, happened the 2nd according to Ann\u00e9e de parution?",
+                "question": "How many years had passed between when the Titre original was Sleeping Murder: Miss Marple's Last Case and when the Titre original was ?",
                 "answers": [
-                    "Marple, Poirot, Pyne... et les autres"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre original was Miss Marple\u2019s Final Cases and when the Titre original was The Agatha Christie Hour?",
-                "answers": [
-                    "3"
+                    "10"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre original was  and when the Titre original was Three Blind Mice and Other Stories?",
+                "question": "How many years had passed between when the H\u00e9ros principal was H. Poirot, Miss Marple, P. Pyne and when the H\u00e9ros principal was Hercule Poirot?",
                 "answers": [
-                    "1"
+                    "11"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre Fran\u00e7ais had Ann\u00e9e de parution was on 1986?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Titre Fran\u00e7ais had Ann\u00e9e de parution was after 1976?",
+                "question": "How many Titre Fran\u00e7ais had Type string contains de?",
                 "answers": [
                     "6"
                 ],
@@ -173,9 +165,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre Fran\u00e7ais had Ann\u00e9e de parution was after 1981 and Titre original string starts with Three?",
+                "question": "How many Titre Fran\u00e7ais had Ann\u00e9e de parution was before 1986?",
                 "answers": [
-                    "1"
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre Fran\u00e7ais had Ann\u00e9e de parution was before 1985?",
+                "answers": [
+                    "4"
                 ],
                 "reasoning_type": "counting"
             }
@@ -826,23 +826,33 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre fran\u00e7ais when the Ann\u00e9e de parution was before 1962 and the Titre britannique string ends with Dies?",
+                "question": "What was the Titre fran\u00e7ais when the Titre britannique string contains Came and the Ann\u00e9e de parution was after 1922?",
                 "answers": [
-                    "Le Couteau sur la nuque"
+                    "Rendez-vous \u00e0 Bagdad"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre fran\u00e7ais when the Type string starts with roman and the Ann\u00e9e de parution was on 1966?",
+                "question": "What was the Titre fran\u00e7ais when the Ann\u00e9e de parution was after 1930 and the H\u00e9ros principal string starts with Miss?",
                 "answers": [
-                    "La Troisi\u00e8me Fille"
+                    "Miss Marple au Club du Mardi et Le Club du Mardi continue",
+                    "Un cadavre dans la biblioth\u00e8que",
+                    "La Plume empoisonn\u00e9e",
+                    "Un meurtre sera commis le...",
+                    "Jeux de glaces",
+                    "Une poign\u00e9e de seigle",
+                    "Le Train de 16 h 50",
+                    "Le miroir se brisa",
+                    "Le major parlait trop",
+                    "\u00c0 l'h\u00f4tel Bertram",
+                    "N\u00e9m\u00e9sis"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Titre fran\u00e7ais, with Ann\u00e9e de parution was after 1962, have Type string contains roman?",
+                "question": "Does only Titre fran\u00e7ais, with Ann\u00e9e de parution was before 1968, have H\u00e9ros principal string starts with Miss?",
                 "answers": [
                     "No"
                 ],
@@ -850,7 +860,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Titre fran\u00e7ais, with Titre britannique string ends with Easy, have Ann\u00e9e de parution was before 1945?",
+                "question": "Does every Titre fran\u00e7ais, with Titre britannique is Nemesis, have H\u00e9ros principal string starts with Miss?",
                 "answers": [
                     "Yes"
                 ],
@@ -858,67 +868,66 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre fran\u00e7ais, with Type string starts with roman, happened the 30th according to Ann\u00e9e de parution?",
+                "question": "Which Titre fran\u00e7ais, with Ann\u00e9e de parution was after 1924, happened the 64th according to Ann\u00e9e de parution?",
                 "answers": [
-                    "Cinq Petits Cochons",
-                    "Un cadavre dans la biblioth\u00e8que",
-                    "La Plume empoisonn\u00e9e"
+                    "La F\u00eate du potiron",
+                    "T\u00e9moin \u00e0 charge"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre fran\u00e7ais, with Type string contains roman, happened the 31st according to Ann\u00e9e de parution?",
+                "question": "Which Titre fran\u00e7ais, with Ann\u00e9e de parution was after 1962, happened the 5th according to Ann\u00e9e de parution?",
                 "answers": [
-                    "L'Heure z\u00e9ro"
+                    "La Nuit qui ne finit pas"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre fran\u00e7ais, with Type string contains Roman, happened the 3rd according to Ann\u00e9e de parution?",
+                "question": "Which Titre fran\u00e7ais, with H\u00e9ros principal string starts with Miss, happened the 2nd according to Ann\u00e9e de parution?",
                 "answers": [
-                    "Les Sept Cadrans"
+                    "Miss Marple au Club du Mardi et Le Club du Mardi continue"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre britannique was Death Comes as the End and when the Titre britannique was The Mysterious Affair at Styles?",
+                "question": "How many years had passed between when the Titre britannique was Mrs McGinty's Dead and when the Titre britannique was The Sittaford Mystery?",
                 "answers": [
-                    "25"
+                    "21"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre britannique was Sad Cypress and when the Titre britannique was After the Funeral?",
+                "question": "How many years had passed between when the Titre britannique was At Bertram's Hotel and when the Titre britannique was Dumb Witness?",
                 "answers": [
-                    "13"
+                    "28"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre fran\u00e7ais had Type string starts with roman and Ann\u00e9e de parution was after 1934?",
+                "question": "How many Titre fran\u00e7ais had Ann\u00e9e de parution was after 1936?",
                 "answers": [
-                    "49"
+                    "51"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre fran\u00e7ais had Ann\u00e9e de parution was after 1937?",
+                "question": "How many Titre fran\u00e7ais had Type string starts with roman and Ann\u00e9e de parution was before 1939?",
                 "answers": [
-                    "48"
+                    "21"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre fran\u00e7ais had Ann\u00e9e de parution was on 1929?",
+                "question": "How many Titre fran\u00e7ais had Ann\u00e9e de parution was after 1924 and H\u00e9ros principal string starts with Miss?",
                 "answers": [
-                    "2"
+                    "12"
                 ],
                 "reasoning_type": "counting"
             }

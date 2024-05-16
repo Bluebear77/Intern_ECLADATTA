@@ -179,24 +179,7 @@
                 9999
             ]
         },
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had Conjoint string contains II and El\u00e9ments biographiques string contains la?",
-                "answers": [
-                    "7"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains Ier and Conjoint string contains Ier?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
+        "qas": []
     },
     {
         "id": "12444871",
@@ -273,9 +256,9 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had Conjoint string contains Ferdinand?",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de?",
                 "answers": [
-                    "3"
+                    "5"
                 ],
                 "reasoning_type": "counting"
             }
@@ -358,7 +341,17 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the Conjoint string contains II and the El\u00e9ments biographiques string contains Fille?",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains la and the Conjoint string contains de?",
+                "answers": [
+                    "Matrona d'Aragon\n(795-825)",
+                    "Oneca Garc\u00e9s de Pampelune\n(838-?)",
+                    "Garc\u00eda II de Navarre\n(919-970)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the Conjoint string contains II and the El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "Oneca Garc\u00e9s de Pampelune\n(838-?)",
                     "Acibelle de Gascogne\n(?-905)",
@@ -368,17 +361,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the Conjoint string contains II?",
-                "answers": [
-                    "Oneca Garc\u00e9s de Pampelune\n(838-?)",
-                    "Acibelle de Gascogne\n(?-905)",
-                    "Sancha Garc\u00e9s de Pampelune\n(862-?)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with Conjoint string contains II, have El\u00e9ments biographiques string contains de?",
+                "question": "Does every Nom\n(dates), with El\u00e9ments biographiques string contains la, have Conjoint string contains II?",
                 "answers": [
                     "No"
                 ],
@@ -386,23 +369,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had Conjoint string contains II and El\u00e9ments biographiques string contains la?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
                 "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains la?",
                 "answers": [
                     "5"
                 ],
@@ -463,13 +430,30 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the Conjoint string contains en and the El\u00e9ments biographiques string contains la?",
+                "question": "What was the Nom\n(dates) when the Conjoint string contains en and the El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "Urraca de Castille\n(?-1007)",
                     "Chim\u00e8ne de Cea\n(?-1035)",
                     "Munia Mayor de Castille\n(995-1067)"
                 ],
                 "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the Conjoint string contains de?",
+                "answers": [
+                    "Urraca de Castille\n(?-1007)",
+                    "Chim\u00e8ne de Cea\n(?-1035)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom\n(dates), with Conjoint string contains II, have El\u00e9ments biographiques string contains Fille?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
@@ -481,17 +465,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom\n(dates), with Conjoint string contains de, have El\u00e9ments biographiques string contains de?",
+                "question": "How many Nom\n(dates) had Conjoint string contains en and El\u00e9ments biographiques string contains de?",
                 "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains Ferdinand and Conjoint string contains de?",
-                "answers": [
-                    "1"
+                    "3"
                 ],
                 "reasoning_type": "counting"
             }
@@ -598,31 +574,31 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the Conjoint string contains en and the El\u00e9ments biographiques string contains de?",
+                "question": "What was the Nom\n(dates) when the Conjoint string contains en and the El\u00e9ments biographiques string contains Constance?",
                 "answers": [
-                    "Ermesinde de Foix\n(1015-1049)",
-                    "Agn\u00e8s de Poitiers\n(1052-1089)",
-                    "Isabelle d'Urgell\n(?-1071)",
-                    "F\u00e9licie de Roucy\n(1060-1123)",
-                    "Agn\u00e8s d'Aquitaine\n(1072-1097)",
-                    "Urraque Ire de Le\u00f3n\n(1081-1126)",
-                    "Agn\u00e8s de Poitiers\n(1103-1160)",
-                    "Raimond-B\u00e9renger IV de Barcelone\n(1113-1162)"
+                    "Urraque Ire de Le\u00f3n\n(1081-1126)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the Conjoint string contains Pierre and the El\u00e9ments biographiques string contains de?",
+                "question": "What was the Nom\n(dates) when the Conjoint string contains Bourgogne and the El\u00e9ments biographiques string contains de?",
                 "answers": [
-                    "Agn\u00e8s de Poitiers\n(1052-1089)",
-                    "Agn\u00e8s d'Aquitaine\n(1072-1097)"
+                    "Urraque Ire de Le\u00f3n\n(1081-1126)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom\n(dates), with Conjoint string contains en, have El\u00e9ments biographiques string contains Fille?",
+                "question": "Does every Nom\n(dates), with El\u00e9ments biographiques string contains III, have Conjoint string contains en?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom\n(dates), with El\u00e9ments biographiques string contains de, have Conjoint string contains Ier?",
                 "answers": [
                     "No"
                 ],
@@ -630,25 +606,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains VII, have Conjoint string contains en?",
+                "question": "How many Nom\n(dates) had Conjoint string contains Pierre and El\u00e9ments biographiques string contains la?",
                 "answers": [
-                    "No"
+                    "2"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
                 "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "8"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had Conjoint string contains en?",
-                "answers": [
-                    "9"
                 ],
                 "reasoning_type": "counting"
             }

@@ -1085,61 +1085,8 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Top 10 was greater than or equal to 0 and the D\u00e9parts was less than or equal to 2?",
+                "question": "What was the Nom when the Victoires was less than or equal to 0 and the Top 10 was equal to 0?",
                 "answers": [
-                    "Marguerite Mareuse\u00c9galement Coupe des Dames au Rallye Monte-Carlo en 1933.",
-                    "Joan Chetwynd",
-                    "H.H. Stisted",
-                    "Marie Desprez",
-                    "Dorothy Champney",
-                    "Stewart Gwenda Hawkes",
-                    "Gordon Simpson",
-                    "Joan Richmond",
-                    "Doreen Evans",
-                    "Barbara Skinner",
-                    "Collen Eaton",
-                    "Margaret Allen",
-                    "Dorothy Stanley-Turner",
-                    "Fernande Roux",
-                    "Joan Riddell",
-                    "Marjorie Eccles",
-                    "Marjorie Fawcett",
-                    "Germaine Rouault",
-                    "Viviane Elder",
-                    "R\u00e9gine Gordine",
-                    "Yvonne Simon",
-                    "Betty Haig",
-                    "Gilberte Thirion",
-                    "Yvette Fontaine",
-                    "Marie Laurent",
-                    "Martine R\u00e9nier",
-                    "Corinne Tarnaud",
-                    "Mich\u00e8le Mouton",
-                    "Anna Cambiaghi",
-                    "Juliette Slaughter",
-                    "Margie Smith-Haas",
-                    "Lyn St. James",
-                    "Cathy Muller",
-                    "Milka Duno",
-                    "",
-                    "Natacha Gachnang",
-                    "Cyndie Allemann",
-                    "Andrea Robertson",
-                    "In\u00e8s Taittinger",
-                    "Manuela Gostner",
-                    "Tatiana Calder\u00f3n",
-                    "Beitske Visser",
-                    "Lilou Wadoux",
-                    "Doriane Pin"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom when the Top 10 was greater than or equal to 0 and the Victoires was less than or equal to 0?",
-                "answers": [
-                    "Odette Siko",
-                    "Marguerite Mareuse\u00c9galement Coupe des Dames au Rallye Monte-Carlo en 1933.",
                     "Joan Chetwynd",
                     "H.H. Stisted",
                     "Elsie Wisdom",
@@ -1168,7 +1115,6 @@
                     "Gilberte Thirion",
                     "Marie-Claude Beaumont",
                     "Christine Beckers",
-                    "Anne-Charlotte Verney",
                     "Yvette Fontaine",
                     "Marie Laurent",
                     "Martine R\u00e9nier",
@@ -1176,6 +1122,66 @@
                     "Christine Dacremont",
                     "Mich\u00e8le Mouton",
                     "Marianne Hoepfner",
+                    "Lella Lombardi",
+                    "Anna Cambiaghi",
+                    "Juliette Slaughter",
+                    "Margie Smith-Haas",
+                    "Lyn St. James",
+                    "Tomiko Yoshikawa",
+                    "Cathy Muller",
+                    "Claudia H\u00fcrtgen",
+                    "",
+                    "Milka Duno",
+                    "Natacha Gachnang",
+                    "Cyndie Allemann",
+                    "Rahel Frey",
+                    "Andrea Robertson",
+                    "Keiko Ihara",
+                    "In\u00e8s Taittinger",
+                    "Christina Nielsen",
+                    "Michelle Gatting",
+                    "Manuela Gostner",
+                    "Tatiana Calder\u00f3n",
+                    "Sophia Fl\u00f6rsch",
+                    "Beitske Visser",
+                    "Sarah Bovy",
+                    "Lilou Wadoux",
+                    "Doriane Pin"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the Top 10 was greater than or equal to 0 and the Victoiresen cat\u00e9gorie was equal to 0?",
+                "answers": [
+                    "Marguerite Mareuse\u00c9galement Coupe des Dames au Rallye Monte-Carlo en 1933.",
+                    "Joan Chetwynd",
+                    "H.H. Stisted",
+                    "Elsie Wisdom",
+                    "Marie Desprez",
+                    "Dorothy Champney",
+                    "Kay Petre",
+                    "Anne-Cecile Rose-Itier",
+                    "Stewart Gwenda Hawkes",
+                    "Gordon Simpson",
+                    "Joan Richmond",
+                    "Doreen Evans",
+                    "Barbara Skinner",
+                    "Collen Eaton",
+                    "Margaret Allen",
+                    "Dorothy Stanley-Turner",
+                    "Fernande Roux",
+                    "Joan Riddell",
+                    "Marjorie Eccles",
+                    "Marjorie Fawcett",
+                    "Germaine Rouault",
+                    "Viviane Elder",
+                    "R\u00e9gine Gordine",
+                    "Yvonne Simon",
+                    "Betty Haig",
+                    "Gilberte Thirion",
+                    "Martine R\u00e9nier",
+                    "Corinne Tarnaud",
                     "Lella Lombardi",
                     "Anna Cambiaghi",
                     "Juliette Slaughter",
@@ -1209,15 +1215,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with D\u00e9parts was less than 2, have Victoires was greater than or equal to 0?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom, with Victoiresen cat\u00e9gorie was greater than or equal to 0, have D\u00e9parts was less than or equal to 5?",
+                "question": "Does only Nom, with Victoires was less than or equal to 0, have Top 10 was greater than 0?",
                 "answers": [
                     "Yes"
                 ],
@@ -1225,15 +1223,74 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with D\u00e9parts was less than or equal to 1, happened the 15th according to Ann\u00e9es?",
+                "question": "Does every Nom, with D\u00e9parts was greater than or equal to 2, have Victoires was less than or equal to 0?",
                 "answers": [
-                    "Viviane Elder"
+                    "Yes"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with Victoiresen cat\u00e9gorie was greater than or equal to 0, has the 54th largest D\u00e9parts?",
+                "question": "Which Nom, with Victoiresen cat\u00e9gorie was less than 1, has the 36th largest Top 10?",
+                "answers": [
+                    "Joan Chetwynd",
+                    "H.H. Stisted",
+                    "Elsie Wisdom",
+                    "Marie Desprez",
+                    "Dorothy Champney",
+                    "Kay Petre",
+                    "Anne-Cecile Rose-Itier",
+                    "Stewart Gwenda Hawkes",
+                    "Gordon Simpson",
+                    "Joan Richmond",
+                    "Doreen Evans",
+                    "Barbara Skinner",
+                    "Collen Eaton",
+                    "Margaret Allen",
+                    "Dorothy Stanley-Turner",
+                    "Fernande Roux",
+                    "Joan Riddell",
+                    "Marjorie Eccles",
+                    "Marjorie Fawcett",
+                    "Germaine Rouault",
+                    "Viviane Elder",
+                    "R\u00e9gine Gordine",
+                    "Yvonne Simon",
+                    "Betty Haig",
+                    "Gilberte Thirion",
+                    "Martine R\u00e9nier",
+                    "Corinne Tarnaud",
+                    "Lella Lombardi",
+                    "Anna Cambiaghi",
+                    "Juliette Slaughter",
+                    "Margie Smith-Haas",
+                    "Lyn St. James",
+                    "Tomiko Yoshikawa",
+                    "Cathy Muller",
+                    "Claudia H\u00fcrtgen",
+                    "",
+                    "Milka Duno",
+                    "Natacha Gachnang",
+                    "Cyndie Allemann",
+                    "Rahel Frey",
+                    "Andrea Robertson",
+                    "Keiko Ihara",
+                    "In\u00e8s Taittinger",
+                    "Christina Nielsen",
+                    "Michelle Gatting",
+                    "Manuela Gostner",
+                    "Tatiana Calder\u00f3n",
+                    "Sophia Fl\u00f6rsch",
+                    "Beitske Visser",
+                    "Sarah Bovy",
+                    "Lilou Wadoux",
+                    "Doriane Pin"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom, with D\u00e9parts was equal to 1, has the 26th largest Top 10?",
                 "answers": [
                     "Joan Chetwynd",
                     "H.H. Stisted",
@@ -1269,39 +1326,66 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with Top 10 was greater than 0, has the 2nd largest D\u00e9parts?",
+                "question": "Which Nom, with Top 10 was less than or equal to 0, has the 16th largest Victoiresen cat\u00e9gorie?",
                 "answers": [
-                    "Vanina Ickx"
-                ],
-                "reasoning_type": "numerical_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Nom, with D\u00e9parts was equal to 3, has the 2nd largest Victoiresen cat\u00e9gorie?",
-                "answers": [
-                    "Sarah Bovy",
+                    "Joan Chetwynd",
+                    "H.H. Stisted",
                     "Elsie Wisdom",
+                    "Marie Desprez",
+                    "Dorothy Champney",
                     "Kay Petre",
-                    "Desir\u00e9 Wilson",
+                    "Anne-Cecile Rose-Itier",
+                    "Stewart Gwenda Hawkes",
+                    "Gordon Simpson",
+                    "Joan Richmond",
+                    "Doreen Evans",
+                    "Barbara Skinner",
+                    "Collen Eaton",
+                    "Margaret Allen",
+                    "Dorothy Stanley-Turner",
+                    "Fernande Roux",
+                    "Joan Riddell",
+                    "Marjorie Eccles",
+                    "Marjorie Fawcett",
+                    "Germaine Rouault",
+                    "Viviane Elder",
+                    "R\u00e9gine Gordine",
+                    "Yvonne Simon",
+                    "Betty Haig",
+                    "Gilberte Thirion",
+                    "Martine R\u00e9nier",
+                    "Corinne Tarnaud",
+                    "Lella Lombardi",
+                    "Anna Cambiaghi",
+                    "Juliette Slaughter",
+                    "Margie Smith-Haas",
+                    "Lyn St. James",
                     "Tomiko Yoshikawa",
+                    "Cathy Muller",
+                    "Claudia H\u00fcrtgen",
                     "",
+                    "Milka Duno",
+                    "Natacha Gachnang",
+                    "Cyndie Allemann",
+                    "Rahel Frey",
+                    "Andrea Robertson",
                     "Keiko Ihara",
+                    "In\u00e8s Taittinger",
                     "Christina Nielsen",
-                    "Sophia Fl\u00f6rsch"
+                    "Michelle Gatting",
+                    "Manuela Gostner",
+                    "Tatiana Calder\u00f3n",
+                    "Sophia Fl\u00f6rsch",
+                    "Beitske Visser",
+                    "Sarah Bovy",
+                    "Lilou Wadoux",
+                    "Doriane Pin"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Victoires was equal to 0 and Top 10 was less than or equal to 0?",
-                "answers": [
-                    "61"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had D\u00e9parts was equal to 1 and Top 10 was equal to 0?",
+                "question": "How many Nom had D\u00e9parts was equal to 1 and Victoires was less than or equal to 0?",
                 "answers": [
                     "29"
                 ],
@@ -1309,33 +1393,41 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had D\u00e9parts was less than or equal to 2 and Victoiresen cat\u00e9gorie was equal to 0?",
+                "question": "How many Nom had Top 10 was equal to 0 and Victoires was less than or equal to 0?",
                 "answers": [
-                    "41"
+                    "61"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Victoires when the Victoiresen cat\u00e9gorie was less than or equal to 0?",
+                "question": "How many Nom had Top 10 was less than or equal to 0?",
                 "answers": [
-                    "0.0"
+                    "61"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Victoiresen cat\u00e9gorie when the Top 10 was greater than 0?",
+                "answers": [
+                    "0.33"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of D\u00e9parts when the Victoiresen cat\u00e9gorie was greater than or equal to 0?",
+                "question": "What was the average of D\u00e9parts when the Top 10 was greater than 0?",
+                "answers": [
+                    "5.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of D\u00e9parts when the Top 10 was greater than or equal to 0?",
                 "answers": [
                     "2.33"
-                ],
-                "reasoning_type": "numerical_operation"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the sum of Top 10 when the Victoiresen cat\u00e9gorie was less than or equal to 0?",
-                "answers": [
-                    "4.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }

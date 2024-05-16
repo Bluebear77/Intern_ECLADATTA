@@ -53,7 +53,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the R\u00e9sultat string contains finale and the # was greater than or equal to 1?",
+                "question": "What was the Nom de l'olympiade when the Date was on 11/08/2008 and the R\u00e9sultat string contains de?",
                 "answers": [
                     "Olympic Tennis Event P\u00e9kin"
                 ],
@@ -61,7 +61,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the R\u00e9sultat string contains de and the # was less than or equal to 1?",
+                "question": "What was the Nom de l'olympiade when the Date was on 11/08/2008 and the R\u00e9sultat string contains finale?",
                 "answers": [
                     "Olympic Tennis Event P\u00e9kin"
                 ],
@@ -69,7 +69,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom de l'olympiade, with Date was on 11/08/2008, have # was less than or equal to 1?",
+                "question": "Does only Nom de l'olympiade, with # was less than or equal to 1, have Date was on 11/08/2008?",
                 "answers": [
                     "Yes"
                 ],
@@ -77,7 +77,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'olympiade, with R\u00e9sultat string contains de, have Ultimes adversaires string contains Williams?",
+                "question": "Does every Nom de l'olympiade, with R\u00e9sultat string ends with finale, have # was less than or equal to 1?",
                 "answers": [
                     "Yes"
                 ],
@@ -85,7 +85,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had Date was on 11/08/2008 and # was less than or equal to 1?",
+                "question": "How many Nom de l'olympiade had Date was on 11/08/2008?",
                 "answers": [
                     "1"
                 ],
@@ -93,15 +93,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had Ultimes adversaires string ends with Williams?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had Ultimes adversaires string ends with Williams and # was greater than or equal to 1?",
+                "question": "How many Nom de l'olympiade had # was greater than or equal to 1?",
                 "answers": [
                     "1"
                 ],
@@ -593,23 +585,24 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the # was greater than or equal to 1 and the Date was on 08/11/2004?",
+                "question": "What was the Nom de l'\u00e9dition when the Date was after 08/11/2004 and the R\u00e9sultat string contains finale?",
                 "answers": [
-                    "Tour Championships Los Angeles"
+                    "WTA Championships Doha",
+                    "WTA Championships Istanbul"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the Date was before 04/11/2008 and the # was less than or equal to 1?",
+                "question": "What was the Nom de l'\u00e9dition when the R\u00e9sultat string starts with Round and the Ultime adversaire string starts with Caroline?",
                 "answers": [
-                    "Tour Championships Los Angeles"
+                    "Sony Ericsson Championships Doha"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom de l'\u00e9dition, with R\u00e9sultat string starts with Round, have Date was on 08/11/2004?",
+                "question": "Does only Nom de l'\u00e9dition, with # was less than or equal to 1, have Date was before 25/10/2011?",
                 "answers": [
                     "No"
                 ],
@@ -617,17 +610,49 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'\u00e9dition, with R\u00e9sultat string contains finale, have Date was on 26/10/2010?",
+                "question": "Does every Nom de l'\u00e9dition, with # was greater than 1, have Ultime adversaire string starts with Venus?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with R\u00e9sultat string starts with Round, has the 4th largest #?",
+                "question": "Which Nom de l'\u00e9dition, with Date was on 08/11/2004, happened the 2nd according to Date?",
                 "answers": [
                     "Tour Championships Los Angeles"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with R\u00e9sultat string starts with Round, happened the 2nd according to Date?",
+                "answers": [
+                    "Tour Championships Los Angeles"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with Date was before 04/11/2008, happened the 3rd according to Date?",
+                "answers": [
+                    "Tour Championships Los Angeles"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with Ultime adversaire string contains Caroline, has the 2nd largest #?",
+                "answers": [
+                    "Sony Ericsson Championships Doha"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with Date was after 04/11/2008, has the 1st largest #?",
+                "answers": [
+                    "WTA Championships Istanbul"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
@@ -641,15 +666,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with R\u00e9sultat string starts with Round, has the 1st largest #?",
+                "question": "How many Nom de l'\u00e9dition had # was greater than or equal to 4 and Date was after 27/10/2009?",
                 "answers": [
-                    "Sony Ericsson Championships Doha"
+                    "2"
                 ],
-                "reasoning_type": "numerical_comparison"
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had Date was after 08/11/2004 and # was greater than 1?",
+                "question": "How many Nom de l'\u00e9dition had Date was before 26/10/2010 and R\u00e9sultat string starts with Round?",
                 "answers": [
                     "4"
                 ],
@@ -657,7 +682,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had Ultime adversaire string contains Caroline and R\u00e9sultat string contains Round?",
+                "question": "How many Nom de l'\u00e9dition had # was greater than or equal to 4 and Date was on 25/10/2011?",
                 "answers": [
                     "1"
                 ],
@@ -665,23 +690,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had # was greater than 1 and Ultime adversaire string starts with Victoria?",
+                "question": "What was the average of # when the Date was on 08/11/2004?",
                 "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the average of # when the Date was after 08/11/2004?",
-                "answers": [
-                    "3.5"
+                    "1.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of # when the Date was on 08/11/2004?",
+                "question": "What was the average of # when the Date was before 26/10/2010?",
+                "answers": [
+                    "1.6"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of # when the Date was before 04/11/2008?",
                 "answers": [
                     "3.0"
                 ],
@@ -745,7 +770,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the # was equal to 1 and the Date was on 07/11/2005?",
+                "question": "What was the Nom de l'\u00e9dition when the Date was on 07/11/2005 and the # was less than or equal to 1?",
                 "answers": [
                     "Tour Championships Los Angeles"
                 ],
@@ -761,7 +786,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom de l'\u00e9dition, with Date was on 07/11/2005, have # was greater than or equal to 1?",
+                "question": "Does every Nom de l'\u00e9dition, with # was greater than or equal to 1, have R\u00e9sultat string ends with finale?",
                 "answers": [
                     "Yes"
                 ],
@@ -769,7 +794,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom de l'\u00e9dition, with R\u00e9sultat string contains finale, have Date was on 07/11/2005?",
+                "question": "Does every Nom de l'\u00e9dition, with # was equal to 1, have Date was on 07/11/2005?",
                 "answers": [
                     "Yes"
                 ],
@@ -777,7 +802,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had R\u00e9sultat string contains finale?",
+                "question": "How many Nom de l'\u00e9dition had Date was on 07/11/2005 and # was greater than or equal to 1?",
                 "answers": [
                     "1"
                 ],
@@ -785,17 +810,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had # was less than 1?",
+                "question": "How many Nom de l'\u00e9dition had # was less than or equal to 1 and Date was on 07/11/2005?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'\u00e9dition had Date was after 07/11/2005?",
                 "answers": [
                     "0"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had # was less than or equal to 1?",
-                "answers": [
-                    "1"
                 ],
                 "reasoning_type": "counting"
             }

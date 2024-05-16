@@ -1610,7 +1610,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Semaine # when the Th\u00e8me is Hollywood and the Chanson choisie string contains Say?",
+                "question": "What was the Semaine # when the Artiste original string starts with Vanessa and the Th\u00e8me is Hollywood?",
+                "answers": [
+                    "Top 45"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Semaine # when the Artiste original string contains Warwick and the Th\u00e8me is Hollywood?",
                 "answers": [
                     "Top 65"
                 ],
@@ -1618,15 +1626,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Semaine # when the Chanson choisie string contains I and the Artiste original string contains Weather?",
-                "answers": [
-                    "Top 4"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Semaine #, with Th\u00e8me is Hollywood, have Artiste original string starts with Vanessa?",
+                "question": "Does every Semaine #, with Th\u00e8me is Hollywood, have Artiste original string contains Otis?",
                 "answers": [
                     "No"
                 ],
@@ -1634,15 +1634,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Semaine #, with Artiste original string starts with Kelly, have Chanson choisie string starts with A?",
+                "question": "Does every Semaine #, with Th\u00e8me is Hollywood, have Artiste original string starts with Otis?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Semaine # had Th\u00e8me is Hollywood and Chanson choisie is Respect?",
+                "question": "How many Semaine # had Artiste original string contains Otis and Th\u00e8me is Semifinal?",
                 "answers": [
                     "1"
                 ],
@@ -1650,7 +1650,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Semaine # had Artiste original string starts with Otis?",
+                "question": "How many Semaine # had Artiste original string starts with Otis and Chanson choisie is Respect?",
                 "answers": [
                     "2"
                 ],
@@ -1658,7 +1658,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Semaine # had Chanson choisie is Respect and Artiste original string starts with Otis?",
+                "question": "How many Semaine # had Artiste original string contains Redding and Chanson choisie is Respect?",
                 "answers": [
                     "2"
                 ],

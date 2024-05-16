@@ -668,17 +668,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the Date was after 07/11/2005 and the # was less than or equal to 7?",
+                "question": "What was the Nom de l'\u00e9dition when the Date was on 25/10/2015 and the # was greater than 2?",
                 "answers": [
-                    "Sony Ericsson Championships Madrid",
-                    "TEB BNP Paribas WTA Championships Istanbul",
-                    "BNP Paribas WTA Finals Singapour"
+                    "BNP Paribas WTA Finals by SC Global Singapour"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the R\u00e9sultat string starts with Round and the Ultime adversaire string starts with Caroline?",
+                "question": "What was the Nom de l'\u00e9dition when the Ultime adversaire string starts with Caroline and the R\u00e9sultat string contains Robin?",
                 "answers": [
                     "BNP Paribas WTA Finals Singapour"
                 ],
@@ -686,7 +684,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom de l'\u00e9dition, with Date was after 08/11/2004, have # was equal to 4?",
+                "question": "Does every Nom de l'\u00e9dition, with # was greater than or equal to 5, have R\u00e9sultat string contains finale?",
                 "answers": [
                     "No"
                 ],
@@ -694,7 +692,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'\u00e9dition, with # was less than or equal to 5, have Date was before 20/10/2014?",
+                "question": "Does only Nom de l'\u00e9dition, with # was greater than 5, have R\u00e9sultat is Finale?",
                 "answers": [
                     "No"
                 ],
@@ -702,15 +700,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Date was after 25/10/2011, has the 3rd largest #?",
+                "question": "Which Nom de l'\u00e9dition, with # was greater than 5, happened the 4th according to Date?",
                 "answers": [
                     "BNP Paribas WTA Finals Singapour"
                 ],
-                "reasoning_type": "numerical_comparison"
+                "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Date was on 25/10/2011, has the 2nd largest #?",
+                "question": "Which Nom de l'\u00e9dition, with Date was after 05/11/2007, happened the 1st according to Date?",
+                "answers": [
+                    "TEB BNP Paribas WTA Championships Istanbul"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with Date was on 25/10/2011, has the 1st largest #?",
                 "answers": [
                     "TEB BNP Paribas WTA Championships Istanbul"
                 ],
@@ -718,7 +724,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Date was after 08/11/2004, has the 7th largest #?",
+                "question": "Which Nom de l'\u00e9dition, with R\u00e9sultat string starts with Round, has the 5th largest #?",
                 "answers": [
                     "TEB BNP Paribas WTA Championships Istanbul"
                 ],
@@ -726,25 +732,33 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had # was greater than or equal to 5 and R\u00e9sultat string starts with Round?",
+                "question": "Which Nom de l'\u00e9dition, with R\u00e9sultat string starts with Round, has the 4th largest #?",
                 "answers": [
-                    "5"
+                    "TEB BNP Paribas WTA Championships Istanbul"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'\u00e9dition had # was less than 7 and Date was after 06/11/2006?",
+                "answers": [
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had R\u00e9sultat string starts with Round?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had # was less than or equal to 6 and Date was before 23/10/2012?",
+                "question": "How many Nom de l'\u00e9dition had # was less than 6 and Date was before 20/10/2014?",
                 "answers": [
                     "6"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'\u00e9dition had # was greater than 5?",
+                "answers": [
+                    "5"
                 ],
                 "reasoning_type": "counting"
             },
@@ -758,17 +772,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of # when the Date was before 20/10/2014?",
+                "question": "What was the average of # when the Date was after 07/11/2005?",
                 "answers": [
-                    "3.71"
+                    "5.78"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of # when the R\u00e9sultat string contains Robin?",
+                "question": "What was the average of # when the Date was after 25/10/2011?",
                 "answers": [
-                    "31.0"
+                    "7.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -1159,7 +1173,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the 2003 when the 2006 was equal to 2 and the 2009 was less than or equal to 14?",
+                "question": "What was the 2003 when the 2006 was greater than or equal to 2 and the 2005 was equal to 4?",
                 "answers": [
                     "32"
                 ],

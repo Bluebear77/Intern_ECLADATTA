@@ -12,6 +12,287 @@
         "rows": [
             [
                 "2002",
+                "Acad\u00e9mie des films fantastiques et d'horreur",
+                "Saturn Award..",
+                "Harry Potter \u00e0 l'\u00e9cole des sorciers"
+            ],
+            [
+                "2002",
+                "Empire",
+                "Empire Award. Meilleur d\u00e9but, avec Daniel Radcliffe et Rupert Grint",
+                "Harry Potter \u00e0 l'\u00e9cole des sorciers"
+            ],
+            [
+                "2002",
+                "American Moviegoer Awards",
+                "Actrice de Soutien remarquable",
+                "Harry Potter \u00e0 l'\u00e9cole des sorciers"
+            ],
+            [
+                "2002",
+                "Young Artist Awards",
+                "Meilleur ensemble dans un long-m\u00e9trage.",
+                "Harry Potter \u00e0 l'\u00e9cole des sorciers"
+            ],
+            [
+                "2004",
+                "Broadcast Film Critics Association",
+                "Meilleure actrice",
+                "Harry Potter et le Prisonnier d'Azkaban"
+            ],
+            [
+                "2005",
+                "Broadcast Film Critics Association",
+                "Meilleure Jeune Actrice",
+                "Harry Potter et la Coupe de feu"
+            ],
+            [
+                "2006",
+                "MTV Movie Awards",
+                "Meilleure \u00e9quipe \u00e0 l'\u00e9cran (avec Daniel Radcliffe et Rupert Grint)",
+                "Harry Potter et la Coupe de feu"
+            ],
+            [
+                "2008",
+                "Sony Ericsson Empire Awards britanniques",
+                "Meilleure actrice.",
+                "Harry Potter et l'Ordre du Ph\u00e9nix"
+            ],
+            [
+                "2008",
+                "Glamour Awards",
+                "Meilleure Actrice TV au Royaume-Uni.",
+                "L'\u00c9cole de tous les talents"
+            ],
+            [
+                "2009",
+                "Scream Awards",
+                "Harry Potter et le Prince de sang-m\u00eal\u00e9",
+                ""
+            ],
+            [
+                "2010",
+                "National Movie Awards",
+                "Interpr\u00e9tation de l'Ann\u00e9e",
+                "Harry Potter et le Prince de sang-m\u00eal\u00e9"
+            ],
+            [
+                "2010",
+                "MTV Movie Awards",
+                "Meilleure interpr\u00e9tation f\u00e9minine",
+                "Harry Potter et le Prince de sang-m\u00eal\u00e9"
+            ],
+            [
+                "2011",
+                "Scream Awards",
+                "Meilleure actrice fantastique",
+                "Harry Potter et les Reliques de la Mort"
+            ],
+            [
+                "2011",
+                "Nickelodeon Kids' Choice Awards",
+                "Actrice Favorite dans un film",
+                "Harry Potter et les Reliques de la Mort"
+            ],
+            [
+                "2011",
+                "Saturn Awards",
+                "Meilleure Actrice dans un r\u00f4le secondaire",
+                "Harry Potter et les Reliques de la Mort"
+            ],
+            [
+                "2012",
+                "Teen Choice Award",
+                "Meilleur baiser",
+                "Harry Potter et les Reliques de la Mort"
+            ],
+            [
+                "2012",
+                "MTV Movie Award",
+                "Meilleure performance f\u00e9minine",
+                "Harry Potter et les Reliques de la Mort"
+            ],
+            [
+                "2012",
+                "St. Louis Critics Awards",
+                "Meilleure actrice dans un second r\u00f4le",
+                "Le Monde de Charlie (The Perks of Being a Wallflower)"
+            ],
+            [
+                "2012",
+                "Phoenix Film Critics Society Awards",
+                "Meilleure actrice dans un second r\u00f4le",
+                "Le Monde de Charlie (The Perks of Being a Wallflower)"
+            ],
+            [
+                "2012",
+                "Boston Society of Film Critics Awards",
+                "Meilleure actrice dans un second r\u00f4le",
+                "Le Monde de Charlie (The Perks of Being a Wallflower)"
+            ],
+            [
+                "2014",
+                "People's Choice Award",
+                "Meilleure actrice dans une com\u00e9die",
+                "C'est la fin"
+            ],
+            [
+                "2014",
+                "American Comedy Awards",
+                "Meilleure actrice pour un second r\u00f4le dans une com\u00e9die",
+                "C'est la fin"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2002,
+                2002,
+                2002,
+                2002,
+                2004,
+                2005,
+                2006,
+                2008,
+                2008,
+                2009,
+                2010,
+                2010,
+                2011,
+                2011,
+                2011,
+                2012,
+                2012,
+                2012,
+                2012,
+                2012,
+                2014,
+                2014
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Organisation when the Ann\u00e9e was after 2002 and the Cat\u00e9gorie string contains Rupert?",
+                "answers": [
+                    "MTV Movie Awards"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Organisation when the Ann\u00e9e was on 2006 and the Film string starts with Harry?",
+                "answers": [
+                    "MTV Movie Awards"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Organisation, with Ann\u00e9e was before 2004, have Cat\u00e9gorie string starts with Saturn?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Organisation, with Ann\u00e9e was on 2011, have Cat\u00e9gorie string contains Favorite?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Organisation, with Film string starts with Le, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "St. Louis Critics Awards",
+                    "Phoenix Film Critics Society Awards",
+                    "Boston Society of Film Critics Awards"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Organisation, with Film string starts with Harry, happened the 13rd according to Ann\u00e9e?",
+                "answers": [
+                    "Scream Awards",
+                    "Nickelodeon Kids' Choice Awards",
+                    "Saturn Awards"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Organisation, with Film string starts with Harry, happened the 5th according to Ann\u00e9e?",
+                "answers": [
+                    "Broadcast Film Critics Association"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Cat\u00e9gorie was Meilleure actrice and when the Cat\u00e9gorie was Meilleure actrice dans une com\u00e9die?",
+                "answers": [
+                    "10"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Cat\u00e9gorie was Meilleure actrice fantastique and when the Cat\u00e9gorie was Meilleure \u00e9quipe \u00e0 l'\u00e9cran (avec Daniel Radcliffe et Rupert Grint)?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Organisation had Ann\u00e9e was after 2008 and Film string starts with Harry?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Organisation had Ann\u00e9e was after 2011 and Cat\u00e9gorie string contains un?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Organisation had Ann\u00e9e was after 2010?",
+                "answers": [
+                    "10"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "1279461",
+        "title": "Emma Watson",
+        "url": "https://fr.wikipedia.org/?curid=1279461",
+        "header": [
+            "Ann\u00e9e",
+            "Organisation",
+            "Cat\u00e9gorie",
+            "Film"
+        ],
+        "rows": [
+            [
+                "2002",
                 "Young Artist Awards",
                 "Meilleure interpr\u00e9tation de jeune",
                 "Harry Potter \u00e0 l'\u00e9cole des sorciers"
@@ -194,52 +475,46 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Organisation when the Cat\u00e9gorie string contains un and the Film string contains Potter?",
+                "question": "What was the Organisation when the Cat\u00e9gorie string contains talent and the Ann\u00e9e was before 2017?",
+                "answers": [
+                    "Total Film"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Organisation when the Film string starts with Harry and the Ann\u00e9e was before 2019?",
                 "answers": [
                     "Young Artist Awards",
+                    "Otto Awards",
                     "Total Film",
-                    "Otto Awards",
-                    "Nickelodeon Kids' Choice Awards britanniques"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Organisation when the Ann\u00e9e was before 2014 and the Cat\u00e9gorie string ends with film?",
-                "answers": [
-                    "People's Choice Awards"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Organisation, with Cat\u00e9gorie string contains film, have Film string starts with Harry?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Organisation, with Film string starts with Harry, have Ann\u00e9e was before 2005?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Organisation, with Ann\u00e9e was before 2012, happened the 9th according to Ann\u00e9e?",
-                "answers": [
+                    "National Film Awards d'ITV",
+                    "Nickelodeon Kids' Choice Awards britanniques",
                     "Constellation Awards",
-                    "Otto Awards",
-                    "SyFy Genre Awards"
+                    "SyFy Genre Awards",
+                    "Teen Choice Awards"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Organisation, with Ann\u00e9e was before 2008, happened the 3rd according to Ann\u00e9e?",
+                "question": "Does only Organisation, with Cat\u00e9gorie string contains ensemble, have Film string starts with Le?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Organisation, with Ann\u00e9e was before 2013, have Cat\u00e9gorie string contains ensemble?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Organisation, with Ann\u00e9e was before 2019, happened the 4th according to Ann\u00e9e?",
                 "answers": [
                     "Otto Awards",
                     "Total Film"
@@ -248,40 +523,40 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Organisation, with Ann\u00e9e was before 2019, happened the 13rd according to Ann\u00e9e?",
+                "question": "Which Organisation, with Ann\u00e9e was after 2003, happened the 17th according to Ann\u00e9e?",
                 "answers": [
-                    "Teen Choice Awards",
-                    "Capri, Hollywood"
+                    "Britannia Awards"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Film was Harry Potter et la Chambre des secrets and when the Film was La Belle et la B\u00eateThe Circle?",
+                "question": "Which Organisation, with Ann\u00e9e was before 2017, happened the 8th according to Ann\u00e9e?",
                 "answers": [
-                    "14"
+                    "National Film Awards d'ITV",
+                    "Nickelodeon Kids' Choice Awards britanniques"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Cat\u00e9gorie was Meilleure actrice (Argent) and when the Cat\u00e9gorie was Meilleure artiste de l'ann\u00e9e.?",
+                "answers": [
+                    "10"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Cat\u00e9gorie was Meilleur ensemble pour la distribution and when the Cat\u00e9gorie was Meilleure Actrice (Bronze).?",
+                "question": "How many years had passed between when the Cat\u00e9gorie was Carri\u00e8re honorable and when the Cat\u00e9gorie was Meilleure artiste de l'ann\u00e9e.?",
                 "answers": [
-                    "5"
+                    "1"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Organisation had Cat\u00e9gorie string contains film and Ann\u00e9e was after 2003?",
-                "answers": [
-                    "6"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Organisation had Film string starts with Le?",
+                "question": "How many Organisation had Ann\u00e9e was after 2011 and Film string starts with Le?",
                 "answers": [
                     "7"
                 ],
@@ -289,290 +564,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Organisation had Film string contains Harry and Cat\u00e9gorie string contains de?",
+                "question": "How many Organisation had Film string starts with Harry?",
                 "answers": [
-                    "5"
+                    "12"
                 ],
                 "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "1279461",
-        "title": "Emma Watson",
-        "url": "https://fr.wikipedia.org/?curid=1279461",
-        "header": [
-            "Ann\u00e9e",
-            "Organisation",
-            "Cat\u00e9gorie",
-            "Film"
-        ],
-        "rows": [
-            [
-                "2002",
-                "Acad\u00e9mie des films fantastiques et d'horreur",
-                "Saturn Award..",
-                "Harry Potter \u00e0 l'\u00e9cole des sorciers"
-            ],
-            [
-                "2002",
-                "Empire",
-                "Empire Award. Meilleur d\u00e9but, avec Daniel Radcliffe et Rupert Grint",
-                "Harry Potter \u00e0 l'\u00e9cole des sorciers"
-            ],
-            [
-                "2002",
-                "American Moviegoer Awards",
-                "Actrice de Soutien remarquable",
-                "Harry Potter \u00e0 l'\u00e9cole des sorciers"
-            ],
-            [
-                "2002",
-                "Young Artist Awards",
-                "Meilleur ensemble dans un long-m\u00e9trage.",
-                "Harry Potter \u00e0 l'\u00e9cole des sorciers"
-            ],
-            [
-                "2004",
-                "Broadcast Film Critics Association",
-                "Meilleure actrice",
-                "Harry Potter et le Prisonnier d'Azkaban"
-            ],
-            [
-                "2005",
-                "Broadcast Film Critics Association",
-                "Meilleure Jeune Actrice",
-                "Harry Potter et la Coupe de feu"
-            ],
-            [
-                "2006",
-                "MTV Movie Awards",
-                "Meilleure \u00e9quipe \u00e0 l'\u00e9cran (avec Daniel Radcliffe et Rupert Grint)",
-                "Harry Potter et la Coupe de feu"
-            ],
-            [
-                "2008",
-                "Sony Ericsson Empire Awards britanniques",
-                "Meilleure actrice.",
-                "Harry Potter et l'Ordre du Ph\u00e9nix"
-            ],
-            [
-                "2008",
-                "Glamour Awards",
-                "Meilleure Actrice TV au Royaume-Uni.",
-                "L'\u00c9cole de tous les talents"
-            ],
-            [
-                "2009",
-                "Scream Awards",
-                "Harry Potter et le Prince de sang-m\u00eal\u00e9",
-                ""
-            ],
-            [
-                "2010",
-                "National Movie Awards",
-                "Interpr\u00e9tation de l'Ann\u00e9e",
-                "Harry Potter et le Prince de sang-m\u00eal\u00e9"
-            ],
-            [
-                "2010",
-                "MTV Movie Awards",
-                "Meilleure interpr\u00e9tation f\u00e9minine",
-                "Harry Potter et le Prince de sang-m\u00eal\u00e9"
-            ],
-            [
-                "2011",
-                "Scream Awards",
-                "Meilleure actrice fantastique",
-                "Harry Potter et les Reliques de la Mort"
-            ],
-            [
-                "2011",
-                "Nickelodeon Kids' Choice Awards",
-                "Actrice Favorite dans un film",
-                "Harry Potter et les Reliques de la Mort"
-            ],
-            [
-                "2011",
-                "Saturn Awards",
-                "Meilleure Actrice dans un r\u00f4le secondaire",
-                "Harry Potter et les Reliques de la Mort"
-            ],
-            [
-                "2012",
-                "Teen Choice Award",
-                "Meilleur baiser",
-                "Harry Potter et les Reliques de la Mort"
-            ],
-            [
-                "2012",
-                "MTV Movie Award",
-                "Meilleure performance f\u00e9minine",
-                "Harry Potter et les Reliques de la Mort"
-            ],
-            [
-                "2012",
-                "St. Louis Critics Awards",
-                "Meilleure actrice dans un second r\u00f4le",
-                "Le Monde de Charlie (The Perks of Being a Wallflower)"
-            ],
-            [
-                "2012",
-                "Phoenix Film Critics Society Awards",
-                "Meilleure actrice dans un second r\u00f4le",
-                "Le Monde de Charlie (The Perks of Being a Wallflower)"
-            ],
-            [
-                "2012",
-                "Boston Society of Film Critics Awards",
-                "Meilleure actrice dans un second r\u00f4le",
-                "Le Monde de Charlie (The Perks of Being a Wallflower)"
-            ],
-            [
-                "2014",
-                "People's Choice Award",
-                "Meilleure actrice dans une com\u00e9die",
-                "C'est la fin"
-            ],
-            [
-                "2014",
-                "American Comedy Awards",
-                "Meilleure actrice pour un second r\u00f4le dans une com\u00e9die",
-                "C'est la fin"
-            ]
-        ],
-        "column_types": [
-            "datetime",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 1,
-        "numeric_columns": [],
-        "date_columns": {
-            "0": [
-                2002,
-                2002,
-                2002,
-                2002,
-                2004,
-                2005,
-                2006,
-                2008,
-                2008,
-                2009,
-                2010,
-                2010,
-                2011,
-                2011,
-                2011,
-                2012,
-                2012,
-                2012,
-                2012,
-                2012,
-                2014,
-                2014
-            ]
-        },
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Organisation when the Film string contains Harry and the Cat\u00e9gorie string starts with Empire?",
-                "answers": [
-                    "Empire"
-                ],
-                "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Organisation when the Ann\u00e9e was on 2004 and the Film string contains Harry?",
-                "answers": [
-                    "Broadcast Film Critics Association"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Organisation, with Cat\u00e9gorie string contains Saturn, have Ann\u00e9e was before 2014?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Organisation, with Ann\u00e9e was before 2012, have Cat\u00e9gorie string contains Daniel?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Organisation, with Film string starts with Harry, happened the 10th according to Ann\u00e9e?",
-                "answers": [
-                    "National Movie Awards",
-                    "MTV Movie Awards"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Organisation, with Film string contains Harry, happened the 13rd according to Ann\u00e9e?",
-                "answers": [
-                    "Scream Awards",
-                    "Nickelodeon Kids' Choice Awards",
-                    "Saturn Awards"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Organisation, with Film string starts with Harry, happened the 14th according to Ann\u00e9e?",
-                "answers": [
-                    "Teen Choice Award",
-                    "MTV Movie Award"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Cat\u00e9gorie was Meilleure actrice. and when the Cat\u00e9gorie was Saturn Award..?",
-                "answers": [
-                    "6"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Cat\u00e9gorie was Meilleure \u00e9quipe \u00e0 l'\u00e9cran (avec Daniel Radcliffe et Rupert Grint) and when the Cat\u00e9gorie was Interpr\u00e9tation de l'Ann\u00e9e?",
+                "question": "How many Organisation had Ann\u00e9e was before 2014 and Film string starts with Le?",
                 "answers": [
                     "4"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Organisation had Film string starts with Harry and Ann\u00e9e was before 2006?",
-                "answers": [
-                    "6"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Organisation had Ann\u00e9e was after 2005?",
-                "answers": [
-                    "16"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Organisation had Cat\u00e9gorie string starts with Empire and Film string starts with Harry?",
-                "answers": [
-                    "1"
                 ],
                 "reasoning_type": "counting"
             }

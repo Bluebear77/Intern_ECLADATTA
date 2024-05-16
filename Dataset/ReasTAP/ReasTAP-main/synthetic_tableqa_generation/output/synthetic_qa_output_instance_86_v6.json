@@ -209,41 +209,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the S\u00e9rie when the R\u00f4le is Principal and the Ann\u00e9e was after 2015?",
+                "question": "What was the S\u00e9rie when the Ann\u00e9e was before 2014 and the Nom du R\u00f4le string starts with Dong?",
                 "answers": [
-                    "Love in the Moonlight",
-                    "Clean Up Like It's Hot",
-                    "Backstreet Rookie"
+                    "Dong Yi"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the S\u00e9rie when the R\u00f4le is Principal and the Ann\u00e9e was on 2016?",
+                "question": "Does every S\u00e9rie, with Ann\u00e9e was before 2015, have Nom du R\u00f4le string contains de?",
                 "answers": [
-                    "Love in the Moonlight"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only S\u00e9rie, with Ann\u00e9e was after 2010, have Nom du R\u00f4le string contains Ji?",
-                "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only S\u00e9rie, with Ann\u00e9e was after 2010, have Nom du R\u00f4le string contains Oh?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which S\u00e9rie, with Ann\u00e9e was after 2015, happened the 1st according to Ann\u00e9e?",
+                "question": "Which S\u00e9rie, with Ann\u00e9e was after 2012, happened the 6th according to Ann\u00e9e?",
                 "answers": [
                     "Love in the Moonlight"
                 ],
@@ -251,33 +233,43 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which S\u00e9rie, with Ann\u00e9e was after 2015, happened the 3rd according to Ann\u00e9e?",
+                "question": "Which S\u00e9rie, with Ann\u00e9e was on 2008, happened the 2nd according to Ann\u00e9e?",
                 "answers": [
-                    "Backstreet Rookie"
+                    "Powerful Opponents",
+                    "Iljimae",
+                    "Painter of The Wind"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre Original was \uc575\uadf8\ub9ac \ub9d8 and when the Titre Original was \ube44\ubc00\uc758 \ubb38 - \uc758\uada4 \uc0b4\uc778\uc0ac\uac74?",
+                "question": "Which S\u00e9rie, with R\u00f4le is Principal, happened the 1st according to Ann\u00e9e?",
                 "answers": [
-                    "1"
+                    "Gumiho"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Nom du R\u00f4le was Jang Beo Seol and when the Nom du R\u00f4le was Eun Jae, enfant?",
+                "answers": [
+                    "2"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many S\u00e9rie had R\u00f4le is Principal?",
+                "question": "How many S\u00e9rie had Ann\u00e9e was after 2015?",
                 "answers": [
-                    "8"
+                    "3"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many S\u00e9rie had Ann\u00e9e was after 2014?",
+                "question": "How many S\u00e9rie had R\u00f4le is Principal and Titre Original string ends with 2?",
                 "answers": [
-                    "5"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -408,15 +400,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Film when the Nom du R\u00f4le string contains Lee and the R\u00f4le is Principal?",
-                "answers": [
-                    "Circle of Atonement"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Film when the Ann\u00e9e was after 2007 and the R\u00f4le is Principal?",
+                "question": "What was the Film when the R\u00f4le is Principal and the Ann\u00e9e was after 2006?",
                 "answers": [
                     "Thread of Lies",
                     "Circle of Atonement",
@@ -427,31 +411,40 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Film, with Nom du R\u00f4le string starts with Si, have Ann\u00e9e was before 2009?",
+                "question": "What was the Film when the Ann\u00e9e was before 2009 and the Nom du R\u00f4le string contains Ji?",
                 "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Film, with Ann\u00e9e was on 2009, have Nom du R\u00f4le string starts with Ji?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was before 2009, happened the 5th according to Ann\u00e9e?",
-                "answers": [
+                    "Hwang Jin Yi",
                     "The Chaser"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Film, with Ann\u00e9e was after 2014, have R\u00f4le is Principal?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Film, with Nom du R\u00f4le string starts with La, have Ann\u00e9e was before 2013?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Film, with Ann\u00e9e was after 2009, happened the 3rd according to Ann\u00e9e?",
+                "answers": [
+                    "Circle of Atonement"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was before 2013, happened the 6th according to Ann\u00e9e?",
+                "question": "Which Film, with Nom du R\u00f4le string contains Ji, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
                     "The Last Day",
                     "Possessed"
@@ -460,49 +453,50 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was after 2006, happened the 9th according to Ann\u00e9e?",
+                "question": "Which Film, with Ann\u00e9e was after 2006, happened the 4th according to Ann\u00e9e?",
                 "answers": [
-                    "20th Century Girl"
+                    "The Last Day",
+                    "Possessed"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre Original was \ud574\uc6b4\ub300 and when the Titre Original was 20\uc138\uae30 \uc18c\ub140?",
-                "answers": [
-                    "13"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Nom du R\u00f4le was Ji Min and when the Nom du R\u00f4le was Na Bo-ra?",
-                "answers": [
-                    "13"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was before 2022?",
-                "answers": [
-                    "11"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was on 2009 and Nom du R\u00f4le string starts with Ji?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was before 2009?",
+                "question": "How many years had passed between when the Titre Original was \ud574\uc6b4\ub300 and when the Titre Original was \uc6b0\uc544\ud55c \uac70\uc9d3\ub9d0?",
                 "answers": [
                     "5"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Titre Original was \ubd88\uc2e0\uc9c0\uc625 and when the Titre Original was \ucd94\uaca9\uc790?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Film had R\u00f4le is Principal?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Film had Ann\u00e9e was after 2006 and R\u00f4le is Principal?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Film had Ann\u00e9e was after 2008 and R\u00f4le is Principal?",
+                "answers": [
+                    "4"
                 ],
                 "reasoning_type": "counting"
             }
