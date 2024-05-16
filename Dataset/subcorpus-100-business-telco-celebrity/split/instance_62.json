@@ -1,0 +1,681 @@
+{
+    "_index": "corpus_doc_telco100_en",
+    "_id": "4055437",
+    "_source": {
+        "identificationMetadata": {
+            "id": "4055437",
+            "title": "Picocell",
+            "url": [
+                "https://en.wikipedia.org/?curid=4055437",
+                "https://en.wikipedia.org/wiki/Picocell"
+            ],
+            "version": 1151492462,
+            "versionDate": "2023-04-24T12:03:24Z",
+            "hash": "9e64f0ee036e8a8ceb592355297c203e",
+            "wikidata": "Q1235914"
+        },
+        "descriptionMetadata": {
+            "categories": [
+                "Articles needing additional references from March 2009",
+                "All articles needing additional references",
+                "Mobile telecommunications",
+                "Webarchive template wayback links"
+            ],
+            "language": "en",
+            "source": "wikipedia"
+        },
+        "contentMetadata": {
+            "format": "wikitext",
+            "content": "{{Refimprove|date=March 2009}}\nA '''picocell''' is a small cellular [[base station]] typically covering a small area, such as in-building (offices, shopping malls, train stations, stock exchanges, etc.), or more recently in-aircraft. In cellular networks, picocells are typically used to extend coverage to indoor areas where outdoor signals do not reach well, or to add [[Cellular network|network]] capacity in areas with very dense phone usage, such as train stations or stadiums. Picocells provide coverage and capacity in areas difficult or expensive to reach using the more traditional [[macrocell]] approach.<ref>{{cite web |url= http://www.eetimes.com/design/audio-design/4012603/A-picocell-primer |title= picocell primer |accessdate=2010-12-21 |publisher= Eetimes}}</ref>\n\n==Overview==\nIn cellular wireless networks, such as [[GSM]], the picocell base station<ref>{{cite web |url= http://www.ipaccess.com/picocells/nanoBTS_picocells.php |title= ip.access nanoBTS picocell |accessdate= 2010-12-21 |publisher= ip.access |archive-date= 2011-01-01 |archive-url= https://web.archive.org/web/20110101180112/http://www.ipaccess.com/picocells/nanoBTS_picocells.php |url-status= dead }}</ref> is typically a low-cost, small (typically the size of a [[paper ream|ream]] of [[A4 paper]]), reasonably simple unit that connects to a [[Base station subsystem#Base station controller|base station controller]] (BSC). Multiple picocell 'heads' connect to each BSC: the BSC performs radio resource management and hand-over functions, and aggregates data to be passed to the [[Network switching subsystem#Mobile switching center (MSC)|mobile switching centre]] (MSC) or the gateway [[GPRS]] support node ([[GPRS core network#Gateway GPRS support node (GGSN)|GGSN]]).\n\nConnectivity between the picocell heads and the BSC typically consists of in-building wiring. Although originally deployed systems (1990s) used [[plesiochronous digital hierarchy]] (PDH) links such as E1/T1 links, more recent systems use [[Ethernet]] cabling. Aircraft use satellite links.<ref>{{cite web |url= http://www.radio-electronics.com/analysis/satellite/2010-04/thales-in-flight-connectivity.php |title= In-flight picocell connectivity |accessdate= 2010-12-21 |publisher= Radio-Electronics |archive-url= https://web.archive.org/web/20101007182018/http://radio-electronics.com/analysis/satellite/2010-04/thales-in-flight-connectivity.php |archive-date= 2010-10-07 |url-status= dead }}</ref>\n\nMore recent work has developed the concept towards a head unit containing not only a picocell, but also many of the functions of the BSC and some of the MSC. This form of picocell is sometimes called an [[access point base station]] or 'enterprise [[femtocell]]'. In this case, the unit contains all the capability required to connect directly to the Internet, without the need for the BSC/MSC infrastructure. This is a potentially more cost-effective approach.\n\nPicocells offer many of the benefits of \"[[small cell]]s\" (similar to femtocells) in that they improve data throughput for mobile users and increase capacity in the mobile network. In particular, the integration of picocells with macrocells through a heterogeneous network can be useful in seamless hand-offs and increased mobile data capacity.<ref>{{cite web|title=Mobile Experts Picocell Forecast|url=http://mobile-experts.net/product_info.php?products_id=41}}</ref>\n\nPicocells are available for most cellular technologies including GSM, CDMA, UMTS and LTE from manufacturers including [[ip.access]], ZTE, Huawei and Airwalk.<ref>{{cite web |url= http://www.abiresearch.com/research/1003580-Picocell+Equipment+Vendor+Matrix |title= picocell vendor matrix |accessdate= 2010-12-21 |publisher= ABI Research |archive-url= https://web.archive.org/web/20110718112342/http://www.abiresearch.com/research/1003580-Picocell+Equipment+Vendor+Matrix |archive-date= 2011-07-18 |url-status= dead }}</ref>\n\n==Range==\nTypically the range of a [[microcell]] is less than two kilometers wide, a picocell is 200 meters or less, and a femtocell is on the order of 10 meters,<ref>{{Cite web |url=http://www.visionmobile.com/blog/2007/12/do-we-really-need-femto-cells/ |title=Do we really need femto cells? &#124; VisionMobile :: Blog |access-date=2010-09-14 |archive-url=https://web.archive.org/web/20110416235037/http://www.visionmobile.com/blog/2007/12/do-we-really-need-femto-cells/ |archive-date=2011-04-16 |url-status=dead }}</ref> although AT&T calls its product, with a range of {{convert|40|ft|m}}, a \"microcell\".<ref>{{Cite web |url=http://www.wireless.att.com/learn/why/3gmicrocell/faq.jsp |title=AT&T; 3G Microcell™ - Wireless from AT&T |access-date=2010-09-14 |archive-url=https://web.archive.org/web/20100221133651/http://www.wireless.att.com/learn/why/3gmicrocell/faq.jsp |archive-date=2010-02-21 |url-status=dead }}</ref> AT&T uses \"AT&T 3G MicroCell\" as a trademark and not necessarily the \"microcell\" technology, however.<ref>{{cite web |url=http://www.wireless.att.com/learn/why/3gmicrocell/faq.jsp |title=AT&T 3G MicroCell - Wireless Signal Booster - Wireless from AT&T |publisher=Wireless.att.com |date= |accessdate=2014-03-17 |archive-url=https://web.archive.org/web/20100221133651/http://www.wireless.att.com/learn/why/3gmicrocell/faq.jsp |archive-date=2010-02-21 |url-status=dead }}</ref>\n\n== See also ==\n* [[Femtocell]]\n* [[Macrocell]]\n* [[Microcell]]\n* [[Small cell]]\n\n== References ==\n{{reflist}}\n\n[[Category:Mobile telecommunications]]\n   9. http://defenseelectronicsmag.com/site-files/defenseelectronicsmag.com/files/archive/rfdesign.com/mag/407rfdf1.pdf {{Webarchive|url=https://web.archive.org/web/20160812180031/http://defenseelectronicsmag.com/site-files/defenseelectronicsmag.com/files/archive/rfdesign.com/mag/407rfdf1.pdf |date=2016-08-12 }}",
+            "text": "A picocell is a small cellular base station typically covering a small area, such as in-building (offices, shopping malls, train stations, stock exchanges, etc.), or more recently in-aircraft. In cellular networks, picocells are typically used to extend coverage to indoor areas where outdoor signals do not reach well, or to add network capacity in areas with very dense phone usage, such as train stations or stadiums. Picocells provide coverage and capacity in areas difficult or expensive to reach using the more traditional macrocell approach. In cellular wireless networks, such as GSM, the picocell base station is typically a low-cost, small (typically the size of a ream of A4 paper), reasonably simple unit that connects to a base station controller (BSC). Multiple picocell 'heads' connect to each BSC: the BSC performs radio resource management and hand-over functions, and aggregates data to be passed to the mobile switching centre (MSC) or the gateway GPRS support node (GGSN). Connectivity between the picocell heads and the BSC typically consists of in-building wiring. Although originally deployed systems (1990s) used plesiochronous digital hierarchy (PDH) links such as E1/T1 links, more recent systems use Ethernet cabling. Aircraft use satellite links. More recent work has developed the concept towards a head unit containing not only a picocell, but also many of the functions of the BSC and some of the MSC. This form of picocell is sometimes called an access point base station or 'enterprise femtocell'. In this case, the unit contains all the capability required to connect directly to the Internet, without the need for the BSC/MSC infrastructure. This is a potentially more cost-effective approach. Picocells offer many of the benefits of \"small cells\" (similar to femtocells) in that they improve data throughput for mobile users and increase capacity in the mobile network. In particular, the integration of picocells with macrocells through a heterogeneous network can be useful in seamless hand-offs and increased mobile data capacity. Picocells are available for most cellular technologies including GSM, CDMA, UMTS and LTE from manufacturers including ip.access, ZTE, Huawei and Airwalk. Typically the range of a microcell is less than two kilometers wide, a picocell is 200 meters or less, and a femtocell is on the order of 10 meters, although AT&T calls its product, with a range of 40 feet (12 m), a \"microcell\". AT&T uses \"AT&T 3G MicroCell\" as a trademark and not necessarily the \"microcell\" technology, however. Femtocell Macrocell Microcell Small cell \"picocell primer\". Eetimes. Retrieved 2010-12-21. \"ip.access nanoBTS picocell\". ip.access. Archived from the original on 2011-01-01. Retrieved 2010-12-21. \"In-flight picocell connectivity\". Radio-Electronics. Archived from the original on 2010-10-07. Retrieved 2010-12-21. \"Mobile Experts Picocell Forecast\". \"picocell vendor matrix\". ABI Research. Archived from the original on 2011-07-18. Retrieved 2010-12-21. \"Do we really need femto cells? | VisionMobile :: Blog\". Archived from the original on 2011-04-16. Retrieved 2010-09-14. \"AT&T; 3G Microcell™ - Wireless from AT&T\". Archived from the original on 2010-02-21. Retrieved 2010-09-14. \"AT&T 3G MicroCell - Wireless Signal Booster - Wireless from AT&T\". Wireless.att.com. Archived from the original on 2010-02-21. Retrieved 2014-03-17. 9. http://defenseelectronicsmag.com/site-files/defenseelectronicsmag.com/files/archive/rfdesign.com/mag/407rfdf1.pdf Archived 2016-08-12 at the Wayback Machine"
+        },
+        "collectMetadata": {
+            "requestedDate": "2023-10-16T00:00:00",
+            "ingestedDate": "2023-10-21T04:47:06.840143"
+        },
+        "extractionMetadata": [
+            {
+                "id": "WikitextExtractor",
+                "linkExtractionDate": "2023-10-21T04:47:06.842824",
+                "links": [
+                    {
+                        "fragment": null,
+                        "link": "Base_station",
+                        "text": null,
+                        "title": "base station"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Cellular_network",
+                        "text": "network",
+                        "title": "Cellular network"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Macrocell",
+                        "text": null,
+                        "title": "macrocell"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GSM",
+                        "text": null,
+                        "title": "GSM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Paper_ream",
+                        "text": "ream",
+                        "title": "paper ream"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "A4_paper",
+                        "text": null,
+                        "title": "A4 paper"
+                    },
+                    {
+                        "fragment": "Base station controller",
+                        "link": "Base_station_subsystem",
+                        "text": "base station controller",
+                        "title": "Base station subsystem"
+                    },
+                    {
+                        "fragment": "Mobile switching center (MSC)",
+                        "link": "Network_switching_subsystem",
+                        "text": "mobile switching centre",
+                        "title": "Network switching subsystem"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GPRS",
+                        "text": null,
+                        "title": "GPRS"
+                    },
+                    {
+                        "fragment": "Gateway GPRS support node (GGSN)",
+                        "link": "GPRS_core_network",
+                        "text": "GGSN",
+                        "title": "GPRS core network"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Plesiochronous_digital_hierarchy",
+                        "text": null,
+                        "title": "plesiochronous digital hierarchy"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Ethernet",
+                        "text": null,
+                        "title": "Ethernet"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Access_point_base_station",
+                        "text": null,
+                        "title": "access point base station"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Femtocell",
+                        "text": null,
+                        "title": "femtocell"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Small_cell",
+                        "text": null,
+                        "title": "small cell"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Ip.access",
+                        "text": null,
+                        "title": "ip.access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Microcell",
+                        "text": null,
+                        "title": "microcell"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Femtocell",
+                        "text": null,
+                        "title": "Femtocell"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Macrocell",
+                        "text": null,
+                        "title": "Macrocell"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Microcell",
+                        "text": null,
+                        "title": "Microcell"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Small_cell",
+                        "text": null,
+                        "title": "Small cell"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Mobile_telecommunications",
+                        "text": null,
+                        "title": "Category:Mobile telecommunications"
+                    }
+                ],
+                "nbLinks": 22,
+                "nbTables": 0,
+                "nbTexts": 5,
+                "tableExtractionDate": "2023-10-21T04:47:06.842824",
+                "tables": [],
+                "technology": "WikitextExtractor",
+                "textExtractionDate": "2023-10-21T04:47:06.842824",
+                "texts": [
+                    {
+                        "endOffset": 781,
+                        "index": 0,
+                        "level": 0,
+                        "startOffset": 0,
+                        "title": null,
+                        "value": "{{Refimprove|date=March 2009}}\nA picocell is a small cellular [[base station]] typically covering a small area, such as in-building (offices, shopping malls, train stations, stock exchanges, etc.), or more recently in-aircraft. In cellular networks, picocells are typically used to extend coverage to indoor areas where outdoor signals do not reach well, or to add [[Cellular network|network]] capacity in areas with very dense phone usage, such as train stations or stadiums. Picocells provide coverage and capacity in areas difficult or expensive to reach using the more traditional [[macrocell]] approach.<ref>{{cite web |url= http://www.eetimes.com/design/audio-design/4012603/A-picocell-primer |title= picocell primer |accessdate=2010-12-21 |publisher= Eetimes}}</ref>"
+                    },
+                    {
+                        "endOffset": 3915,
+                        "index": 1,
+                        "level": 2,
+                        "startOffset": 781,
+                        "title": "Overview",
+                        "value": "In cellular wireless networks, such as [[GSM]], the picocell base station<ref>{{cite web |url= http://www.ipaccess.com/picocells/nanoBTS_picocells.php |title= ip.access nanoBTS picocell |accessdate= 2010-12-21 |publisher= ip.access |archive-date= 2011-01-01 |archive-url= https://web.archive.org/web/20110101180112/http://www.ipaccess.com/picocells/nanoBTS_picocells.php |url-status= dead }}</ref> is typically a low-cost, small (typically the size of a [[paper ream|ream]] of [[A4 paper]]), reasonably simple unit that connects to a [[Base station subsystem#Base station controller|base station controller]] (BSC). Multiple picocell 'heads' connect to each BSC: the BSC performs radio resource management and hand-over functions, and aggregates data to be passed to the [[Network switching subsystem#Mobile switching center (MSC)|mobile switching centre]] (MSC) or the gateway [[GPRS]] support node ([[GPRS core network#Gateway GPRS support node (GGSN)|GGSN]]).\n\nConnectivity between the picocell heads and the BSC typically consists of in-building wiring. Although originally deployed systems (1990s) used [[plesiochronous digital hierarchy]] (PDH) links such as E1/T1 links, more recent systems use [[Ethernet]] cabling. Aircraft use satellite links.<ref>{{cite web |url= http://www.radio-electronics.com/analysis/satellite/2010-04/thales-in-flight-connectivity.php |title= In-flight picocell connectivity |accessdate= 2010-12-21 |publisher= Radio-Electronics |archive-url= https://web.archive.org/web/20101007182018/http://radio-electronics.com/analysis/satellite/2010-04/thales-in-flight-connectivity.php |archive-date= 2010-10-07 |url-status= dead }}</ref>\n\nMore recent work has developed the concept towards a head unit containing not only a picocell, but also many of the functions of the BSC and some of the MSC. This form of picocell is sometimes called an [[access point base station]] or 'enterprise [[femtocell]]'. In this case, the unit contains all the capability required to connect directly to the Internet, without the need for the BSC/MSC infrastructure. This is a potentially more cost-effective approach.\n\nPicocells offer many of the benefits of \"[[small cell]]s\" (similar to femtocells) in that they improve data throughput for mobile users and increase capacity in the mobile network. In particular, the integration of picocells with macrocells through a heterogeneous network can be useful in seamless hand-offs and increased mobile data capacity.<ref>{{cite web|title=Mobile Experts Picocell Forecast|url=http://mobile-experts.net/product_info.php?products_id=41}}</ref>\n\nPicocells are available for most cellular technologies including GSM, CDMA, UMTS and LTE from manufacturers including [[ip.access]], ZTE, Huawei and Airwalk.<ref>{{cite web |url= http://www.abiresearch.com/research/1003580-Picocell+Equipment+Vendor+Matrix |title= picocell vendor matrix |accessdate= 2010-12-21 |publisher= ABI Research |archive-url= https://web.archive.org/web/20110718112342/http://www.abiresearch.com/research/1003580-Picocell+Equipment+Vendor+Matrix |archive-date= 2011-07-18 |url-status= dead }}</ref>"
+                    },
+                    {
+                        "endOffset": 5315,
+                        "index": 2,
+                        "level": 2,
+                        "startOffset": 3915,
+                        "title": "Range",
+                        "value": "Typically the range of a [[microcell]] is less than two kilometers wide, a picocell is 200 meters or less, and a femtocell is on the order of 10 meters,<ref>{{Cite web |url=http://www.visionmobile.com/blog/2007/12/do-we-really-need-femto-cells/ |title=Do we really need femto cells? | VisionMobile :: Blog |access-date=2010-09-14 |archive-url=https://web.archive.org/web/20110416235037/http://www.visionmobile.com/blog/2007/12/do-we-really-need-femto-cells/ |archive-date=2011-04-16 |url-status=dead }}</ref> although AT&T calls its product, with a range of {{convert|40|ft|m}}, a \"microcell\".<ref>{{Cite web |url=http://www.wireless.att.com/learn/why/3gmicrocell/faq.jsp |title=AT&T; 3G Microcell™ - Wireless from AT&T |access-date=2010-09-14 |archive-url=https://web.archive.org/web/20100221133651/http://www.wireless.att.com/learn/why/3gmicrocell/faq.jsp |archive-date=2010-02-21 |url-status=dead }}</ref> AT&T uses \"AT&T 3G MicroCell\" as a trademark and not necessarily the \"microcell\" technology, however.<ref>{{cite web |url=http://www.wireless.att.com/learn/why/3gmicrocell/faq.jsp |title=AT&T 3G MicroCell - Wireless Signal Booster - Wireless from AT&T |publisher=Wireless.att.com |date= |accessdate=2014-03-17 |archive-url=https://web.archive.org/web/20100221133651/http://www.wireless.att.com/learn/why/3gmicrocell/faq.jsp |archive-date=2010-02-21 |url-status=dead }}</ref>"
+                    },
+                    {
+                        "endOffset": 5396,
+                        "index": 3,
+                        "level": 2,
+                        "startOffset": 5315,
+                        "title": "See also",
+                        "value": "* [[Femtocell]]\n* [[Macrocell]]\n* [[Microcell]]\n* [[Small cell]]"
+                    },
+                    {
+                        "endOffset": 5778,
+                        "index": 4,
+                        "level": 2,
+                        "startOffset": 5396,
+                        "title": "References",
+                        "value": "{{reflist}}\n\n[[Category:Mobile telecommunications]]\n   9. http://defenseelectronicsmag.com/site-files/defenseelectronicsmag.com/files/archive/rfdesign.com/mag/407rfdf1.pdf {{Webarchive|url=https://web.archive.org/web/20160812180031/http://defenseelectronicsmag.com/site-files/defenseelectronicsmag.com/files/archive/rfdesign.com/mag/407rfdf1.pdf |date=2016-08-12 }}"
+                    }
+                ]
+            }
+        ],
+        "statsMetadata": {
+            "textSize": 5704
+        },
+        "preprocessingMetadata": [
+            {
+                "technologyResults": [
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Small cell",
+                                "Small Cells",
+                                "Small cells"
+                            ],
+                            "uriSent": "Small_cell",
+                            "wikipediaId": "33593212",
+                            "id": "Q7543020",
+                            "label": "Small cell"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "GEA-2",
+                                "Global System For Mobile Communications",
+                                "Global System for Mobile communications",
+                                "SGSM",
+                                "GSM phone system",
+                                "Global System for Mobile",
+                                "GEA/1",
+                                "GEA/2",
+                                "GSM Gateway",
+                                "GEA-1",
+                                "Digital Communications System",
+                                "Extended Global System",
+                                "2G",
+                                "Mobile phone base station",
+                                "GSM 07.07",
+                                "Extended Global System for Mobile Communications",
+                                "GSM",
+                                "Gsm",
+                                "Mobile phone base stations",
+                                "GSM mobile phone base station",
+                                "Global System for Mobile Communication",
+                                "Global System for Mobile Communications",
+                                "Groupe Spécial Mobile",
+                                "Global system for mobile communications",
+                                "History of GSM",
+                                "GSM network",
+                                "Groupe Special Mobile",
+                                "Global system for mobile cellular communications"
+                            ],
+                            "uriSent": "GSM",
+                            "wikipediaId": "12808",
+                            "id": "Q46904",
+                            "label": "Global System for Mobile Communications"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "BS",
+                                "Base stations",
+                                "Mobile phone base stations",
+                                "Base communications",
+                                "Base Station",
+                                "Basestation",
+                                "Wireless base station",
+                                "base station",
+                                "Radio base station"
+                            ],
+                            "uriSent": "Base_station",
+                            "wikipediaId": "510114",
+                            "id": "Q1379116",
+                            "label": "base station"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "A4 sheet",
+                                "A3 paper",
+                                "DIN ISO 216",
+                                "A3",
+                                "A4",
+                                "DIN A0",
+                                "A7 paper",
+                                "A10 paper",
+                                "DIN A1",
+                                "A4 paper size",
+                                "DIN A4",
+                                "DIN A5",
+                                "DIN A2",
+                                "ISO216",
+                                "DIN A3",
+                                "DIN A8",
+                                "DIN A9",
+                                "DIN A6",
+                                "A4 Paper Size",
+                                "DIN A7",
+                                "Lichtenberg Ratio",
+                                "A5 sheet",
+                                "ISO 216:1975",
+                                "A5 format",
+                                "A4 letter",
+                                "A2 paper",
+                                "ISO 216",
+                                "A5 paper size",
+                                "ISO paper sizes",
+                                "B1",
+                                "A4 rectangle",
+                                "Lichtenberg's ratio",
+                                "ISO paper size",
+                                "A6 paper size",
+                                "A8 paper",
+                                "DIN-A4",
+                                "DIN 476",
+                                "A5 paper",
+                                "B1 paper",
+                                "DIN paper size",
+                                "A3 paper size",
+                                "A1 paper",
+                                "A2 sheet",
+                                "A0 paper size",
+                                "ISO-216",
+                                "A4 paper",
+                                "A4 format",
+                                "A1 paper size",
+                                "A size",
+                                "A9 paper",
+                                "DIN",
+                                "ISO A5",
+                                "ISO A4",
+                                "B1 paper size",
+                                "A0 paper",
+                                "A6 paper",
+                                "A2 paper size",
+                                "Lichtenberg ratio",
+                                "A3 sheet",
+                                "Metric paper",
+                                "DIN A10"
+                            ],
+                            "uriSent": "A4_paper",
+                            "wikipediaId": "15275",
+                            "id": "Q839751",
+                            "label": "ISO 216"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Cellular concepts",
+                                "Mobile telephone network",
+                                "Mobile network",
+                                "Mobile Telephone Network",
+                                "Cell network",
+                                "Digital Cellular System",
+                                "Reuse pattern",
+                                "Cell",
+                                "Cell phone network",
+                                "Cellular communication system",
+                                "Frequency reuse factor",
+                                "Cellular communication networks",
+                                "mobile phone network",
+                                "Cellular connectivity",
+                                "cellular network",
+                                "Frequency reuse",
+                                "Cellular networks",
+                                "Radio cell",
+                                "Cellular communications network",
+                                "Cellular Network",
+                                "cellular phone network",
+                                "Cell radius",
+                                "Cellular Concepts",
+                                "Mobile phone network",
+                                "mobile network"
+                            ],
+                            "uriSent": "Cellular_network",
+                            "wikipediaId": "735672",
+                            "id": "Q535695",
+                            "label": "cellular network"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "GTP-U",
+                                "Packet Switched Core Network",
+                                "SGSN",
+                                "GPRS Gateway Support Node",
+                                "Gateway GPRS Support Node",
+                                "Serving GPRS Support Node",
+                                "PDP context",
+                                "Packet Data Protocol",
+                                "GPRS core network",
+                                "PDP Context",
+                                "GGSN",
+                                "GPRS Core Network",
+                                "Serving GPRS support node"
+                            ],
+                            "uriSent": "GPRS_core_network",
+                            "wikipediaId": "658203",
+                            "id": "Q2642473",
+                            "label": "GPRS core network"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "signed response",
+                                "Visitor Location Register",
+                                "Network Switching Subsystem",
+                                "Switching and Management Subsystem",
+                                "GSM core network",
+                                "SRES",
+                                "Visitor Location Registers",
+                                "network switching subsystem",
+                                "NSS",
+                                "Mobile Switching Centre",
+                                "Mobile switching center",
+                                "GMSC",
+                                "Qualdir",
+                                "Mobile switching centre",
+                                "Home Location Register",
+                                "Network and Switching Subsystem",
+                                "Visitors Location Register",
+                                "Home location register",
+                                "Visitor location register",
+                                "Mobile Switching Center",
+                                "Authentication Center"
+                            ],
+                            "uriSent": "Network_switching_subsystem",
+                            "wikipediaId": "664022",
+                            "id": "Q779475",
+                            "label": "network switching subsystem"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Multislot Class",
+                                "GPRS modem",
+                                "CELLPAC",
+                                "General Packet Radio Service",
+                                "General packet radio service",
+                                "GPRS",
+                                "Gprs",
+                                "Coding Scheme"
+                            ],
+                            "uriSent": "GPRS",
+                            "wikipediaId": "12920",
+                            "id": "Q79708",
+                            "label": "General Packet Radio Service"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Access point base station",
+                                "Femptocell",
+                                "Femtocell",
+                                "Femto cell",
+                                "Base Station Repeater",
+                                "Access Point Base Station",
+                                "Femtocells",
+                                "Femtobox"
+                            ],
+                            "uriSent": "Femtocell",
+                            "wikipediaId": "7756768",
+                            "id": "Q572455",
+                            "label": "Femtocell"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "ip.access",
+                                "NanoGSM",
+                                "NanoLTE",
+                                "PresenceCell",
+                                "NanoVirt",
+                                "NanoCBRS",
+                                "Nano3G"
+                            ],
+                            "uriSent": "Ip.access",
+                            "wikipediaId": "32261703",
+                            "id": "Q6064828",
+                            "label": "ip.access"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Ethernet port",
+                                "Ethernet cables",
+                                "Embedded Ethernet",
+                                "Xerox Ethernet",
+                                "Ethernets",
+                                "Higher Speed Ethernet",
+                                "Ethernet network",
+                                "Jabber",
+                                "Ether net",
+                                "Etherand",
+                                "Full-duplex ethernet",
+                                "Ethernet",
+                                "ENET",
+                                "Original Ethernet",
+                                "Ethernet cable",
+                                "Full-duplex Ethernet"
+                            ],
+                            "uriSent": "Ethernet",
+                            "wikipediaId": "9499",
+                            "id": "Q79984",
+                            "label": "Ethernet"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Base-station subsystem",
+                                "Base Station Subsystem",
+                                "base station subsystem",
+                                "BSS",
+                                "Base Transciever Station",
+                                "Base station controller",
+                                "Abis",
+                                "Packet control unit",
+                                "Base Station subsystem",
+                                "Packet Control Unit",
+                                "Base Station Controller"
+                            ],
+                            "uriSent": "Base_station_subsystem",
+                            "wikipediaId": "672137",
+                            "id": "Q809834",
+                            "label": "base station subsystem"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Micro Cellular Network",
+                                "Microcell",
+                                "Microcellular network",
+                                "Micro-cellular network",
+                                "Micro cellular network"
+                            ],
+                            "uriSent": "Microcell",
+                            "wikipediaId": "992829",
+                            "id": "Q1177092",
+                            "label": "Microcell"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Mobile phone communication",
+                                "Mobile Telecommunications",
+                                "Mobile data connection",
+                                "Mobile communications",
+                                "Mobile telecommunications",
+                                "mobile telephony",
+                                "Cellular telephony",
+                                "Mobile Telephony",
+                                "Mobile communication",
+                                "Mobile phone telephony",
+                                "Mobile telecommunication",
+                                "Mobile telecommunication technology"
+                            ],
+                            "uriSent": "Mobile_telecommunications",
+                            "wikipediaId": "1145887",
+                            "id": "Q992968",
+                            "label": "mobile telephony"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Quires",
+                                "Ries",
+                                "Bundle",
+                                "Paper packing standard",
+                                "Reams",
+                                "Paper quire",
+                                "Bale",
+                                "Paper ream",
+                                "ream",
+                                "Perfect ream",
+                                "Short ream",
+                                "Quire",
+                                "Rieß",
+                                "Paper bale"
+                            ],
+                            "uriSent": "Paper_ream",
+                            "wikipediaId": "10868187",
+                            "id": "Q927068",
+                            "label": "ream"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Access point base station",
+                                "Femptocell",
+                                "Femtocell",
+                                "Femto cell",
+                                "Base Station Repeater",
+                                "Access Point Base Station",
+                                "Femtocells",
+                                "Femtobox"
+                            ],
+                            "uriSent": "Access_point_base_station",
+                            "wikipediaId": "7756768",
+                            "id": "Q572455",
+                            "label": "Femtocell"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Macrosite",
+                                "Macrocell"
+                            ],
+                            "uriSent": "Macrocell",
+                            "wikipediaId": "17196610",
+                            "id": "Q1163937",
+                            "label": "Macrocell"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Plesiochronous digital hierarchy",
+                                "Independent clocks",
+                                "Plesiochronous Digital Hierarchy",
+                                "Independent clock"
+                            ],
+                            "uriSent": "Plesiochronous_digital_hierarchy",
+                            "wikipediaId": "38512",
+                            "id": "Q51832",
+                            "label": "Plesiochronous digital hierarchy"
+                        }
+                    }
+                ],
+                "technologyExecution": {
+                    "beginDate": "2024-01-17T13:11:04.413799",
+                    "endDate": "2024-01-17T13:11:04.744781"
+                },
+                "technology": {
+                    "name": "WikiLink Alias",
+                    "company": "Orange",
+                    "id": "wikilink_alias",
+                    "type": "link",
+                    "version": "Unknown"
+                }
+            }
+        ]
+    }
+}

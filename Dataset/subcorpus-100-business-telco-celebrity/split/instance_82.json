@@ -1,0 +1,2555 @@
+{
+    "_index": "corpus_doc_telco100_en",
+    "_id": "8354756",
+    "_source": {
+        "identificationMetadata": {
+            "id": "8354756",
+            "title": "High Speed Packet Access",
+            "url": [
+                "https://en.wikipedia.org/?curid=8354756",
+                "https://en.wikipedia.org/wiki/High Speed Packet Access"
+            ],
+            "version": 1178544716,
+            "versionDate": "2023-10-04T09:58:40Z",
+            "hash": "ef6db95f3b96cd1dd45a79febc7e9d64",
+            "wikidata": "Q731991"
+        },
+        "descriptionMetadata": {
+            "categories": [
+                "Webarchive template wayback links",
+                "Articles with short description",
+                "Short description matches Wikidata",
+                "Use American English from January 2019",
+                "All Wikipedia articles written in American English",
+                "Use mdy dates from January 2019",
+                "Articles containing potentially dated statements from August 2009",
+                "All articles containing potentially dated statements",
+                "All articles with unsourced statements",
+                "Articles with unsourced statements from November 2021",
+                "Commons category link is on Wikidata",
+                "CS1 maint: location missing publisher",
+                "3GPP standards",
+                "Mobile broadband",
+                "UMTS",
+                "Wireless communication systems"
+            ],
+            "language": "en",
+            "source": "wikipedia"
+        },
+        "contentMetadata": {
+            "format": "wikitext",
+            "content": "{{Short description|Communications protocols}}\n{{Use American English|date=January 2019}}\n{{Use mdy dates|date=January 2019}}\n[[File:HSPA sign shown in notification bar on an Android powered smartphone- 2014-04-28 13-56.png|thumbnail|HSPA icon on an [[Android (operating system)|Android]] smartphone ]]\n{{List of mobile phone generations}}\n'''High Speed Packet Access''' ('''HSPA''')<ref>[http://www.nomor.de/home/technology/white-papers/technology-of-high-speed-packet-access-hspa Nomor Research: White Paper \"Technology of High Speed Packet Access\"] {{Webarchive|url=https://web.archive.org/web/20090123120114/http://www.nomor.de/home/technology/white-papers/technology-of-high-speed-packet-access-hspa |date=January 23, 2009 }}, nomor.de</ref> is an amalgamation of two [[mobile telephony|mobile]] [[Communications protocol|protocols]]—High Speed Downlink Packet Access (HSDPA) and High Speed Uplink Packet Access (HSUPA)—that extends and improves the performance of existing [[3G]] mobile telecommunication networks using the [[WCDMA]] protocols. A further-improved [[3GPP]] standard called [[Evolved High Speed Packet Access]] (also known as HSPA+) was released late in 2008, with subsequent worldwide adoption beginning in 2010. The newer standard allows [[Bit rate|bit rates]] to reach as high as 337&nbsp;Mbit/s in the downlink and 34&nbsp;Mbit/s in the uplink; however, these speeds are rarely achieved in practice.<ref>{{cite web| title = Universal Mobile Telecommunications System (UMTS); UE Radio Access capabilities| publisher = ETSI| date = January 2014| url= http://www.etsi.org/deliver/etsi_ts/125300_125399/125306/11.08.00_60/ts_125306v110800p.pdf| access-date = March 4, 2014}}</ref>\n\n== Overview ==\nThe first HSPA specifications supported increased peak data rates of up to 14&nbsp;Mbit/s in the downlink and 5.76&nbsp;Mbit/s in the uplink. They also reduced latency and provided up to five times more system capacity in the downlink and up to twice as much system capacity in the uplink compared with original WCDMA protocol.\n\n==High Speed Downlink Packet Access (HSDPA)== <!-- This section is linked from redirects [[High Speed Downlink Packet Access]], [[High-Speed Downlink Packet Access]] and [[HSDPA]]. -->\n[[File:Cellular network standards and generation timeline.svg|thumb|Cellular network standards and generation timeline]]\n'''High Speed Downlink Packet Access''' ('''HSDPA''') is an enhanced [[3G]] (third-generation) [[mobile telephony|mobile]] [[communications protocol]] in the High-Speed Packet Access (HSPA) family. HSDPA is also known as '''3.5G''' and ''3G+''. It allows networks based on the [[UMTS|Universal Mobile Telecommunications System]] (UMTS) to have higher data speeds and capacity. HSDPA also decreases [[latency (engineering)|latency]], and therefore the [[round-trip time]] for applications.\n\nHSDPA was introduced in [[3GPP]] Release 5. It was accompanied by an improvement to the uplink that provided a new bearer of 384&nbsp;kbit/s (the previous maximum bearer was 128&nbsp;kbit/s). [[Evolved High Speed Packet Access]] (HSPA+), introduced in 3GPP Release 7, further increased data rates by adding 64QAM modulation, [[MIMO]], and [[Evolved High Speed Packet Access#Dual-Carrier HSDPA (DC-HSDPA)|Dual-Carrier HSDPA]] operation. Under 3GPP Release 11, even higher speeds of up to 337.5&nbsp;Mbit/s were possible.<ref name=\"gsmworld\">{{cite web | url=http://www.gsma.com/aboutus/gsm-technology/hspa | title=HSPA | work=About Us}}</ref>\n\nThe first phase of HSDPA was specified in 3GPP Release 5. This phase introduced new basic functions and was aimed to achieve peak data rates of 14.0&nbsp;Mbit/s with significantly reduced latency. The improvement in speed and latency reduced the cost per bit and enhanced support for high-performance packet data applications. HSDPA is based on shared channel transmission, and its key features are shared channel and multi-code transmission, [[higher-order modulation]], short [[Transmission Time Interval]] (TTI), fast link adaptation and scheduling, and fast [[hybrid automatic repeat request]] (HARQ). Additional new features include the High Speed Downlink Shared Channels (HS-DSCH), [[phase-shift keying#Quadrature phase-shift keying (QPSK)|quadrature phase-shift keying]], 16-[[quadrature amplitude modulation]], and the High Speed Medium Access protocol (MAC-hs) in base stations.\n\nThe upgrade to HSDPA is often just a software update for WCDMA networks. In HSDPA, voice calls are usually prioritized over data transfer.\n\n===User equipment categories===\nThe following table is derived from table 5.1a of the release 11 of 3GPP TS 25.306<ref>3GPP TS 25.306 v11.0.0 http://www.3gpp.org/ftp/Specs/html-info/25306.htm</ref> and shows maximum data rates of different device classes and by what combination of features they are achieved. The per-cell, per-stream data rate is limited by the \"maximum number of bits of an HS-DSCH transport block received within an HS-DSCH TTI\" and the \"minimum inter-TTI interval\". The TTI is 2&nbsp;milliseconds. So, for example, Cat&nbsp;10 can decode 27,952&nbsp;bits / 2&nbsp;ms = 13.976&nbsp;Mbit/s (and not 14.4&nbsp;Mbit/s as often claimed incorrectly). Categories 1-4 and 11 have inter-TTI intervals of 2 or 3, which reduces the maximum data rate by that factor. Dual-Cell and MIMO 2x2 each multiply the maximum data rate by 2, because multiple independent transport blocks are transmitted over different carriers or spatial streams, respectively. The data rates given in the table are rounded to one decimal point.\n\n{|class=\"wikitable collapsible collapsed\" style=\"text-align:center\"\n|-\n!colspan=\"7\"| HSDPA User Equipment (UE) categories\n|-\n! Category\n! Release\n! Max. number of HS-DSCH codes (per cell)\n! Modulation <ref group=\"note\">16-QAM implies QPSK support, 64-QAM implies 16-QAM and QPSK support.</ref>\n! MIMO, Multi-Cell\n! [[Code rate]] at max. data rate<ref group=\"note\">The maximal code rate is not limited. A value close to 1 in this column indicates that the maximum data rate can be achieved only in ideal conditions. The device is therefore connected directly to the transmitter to demonstrate these data rates.</ref>\n! Max. downlink speed (Mbit/s)<ref group=\"note\">The maximum data rates given in the table are physical layer data rates. Application layer data rate is approximately 85% of that, due to the inclusion of IP headers ([[overhead information]]) etc.</ref>\n|-\n| 1\n| 5\n| 5\n| [[16-QAM]]\n| \n| .76\n| 1.2\n|-\n| 2\n| 5\n| 5\n| 16-QAM\n| \n| .76\n| 1.2\n|-\n| 3\n| 5\n| 5\n| 16-QAM\n| \n| .76\n| 1.8\n|-\n| 4\n| 5\n| 5\n| 16-QAM\n| \n| .76\n| 1.8\n|-\n| 5\n| 5\n| 5\n| 16-QAM\n| \n| .76\n| 3.6\n|-\n| 6\n| 5\n| 5\n| 16-QAM\n| \n| .76\n| 3.6\n|-\n| 7\n| 5\n| 10\n| 16-QAM\n| \n| .75\n| 7.2\n|-\n| 8\n| 5\n| 10\n| 16-QAM\n| \n| .76\n| 7.2\n|-\n| 9\n| 5\n| 15\n| 16-QAM\n| \n| .70\n| 10.1\n|-\n| 10\n| 5\n| 15\n| 16-QAM\n| \n| .97\n| 14.0\n|-\n| 11\n| 5\n| 5\n| [[QPSK]]\n| \n| .76\n| 0.9\n|-\n| 12\n| 5\n| 5\n| QPSK\n| \n| .76\n| 1.8\n|}\n\nFurther UE categories were defined from 3GGP Release 7 onwards as '''Evolved HSPA''' ('''HSPA+''') and are listed in [[Evolved High Speed Packet Access#User Equipment (UE) Categories|Evolved HSDPA UE Categories]].\n\n====Notes====\n{{Reflist| group=note}}\n\n=== Adoption ===\n[[File:O2-DE-UMTS-reduced-bandwidth-as-GPRS.png|thumb|[[GPRS]]-speed in a [[mobile broadband|HSDPA]] plan]]\n{{as of|2009|8|28}}, 250 HSDPA networks had commercially launched [[mobile broadband]] services in 109 countries. 169 HSDPA networks supported 3.6&nbsp;Mbit/s peak downlink data throughput, and a growing number delivered 21&nbsp;Mbit/s peak data downlink.{{source?|date=November 2021}}\n\n[[CDMA2000]]-[[Evolution-Data Optimized|EVDO]] networks had the early lead on performance. In particular, [[Japan]]ese providers were highly successful benchmarks for this network standard. However, this later changed in favor of HSDPA, as an increasing number of providers worldwide began adopting it.\n\nIn 2007, an increasing number of telcos worldwide began selling [[mobile broadband modem|HSDPA USB modems]] to provide mobile broadband connections. In addition, the popularity of HSDPA landline replacement boxes grew—these provided HSDPA for data via [[Ethernet]] and [[Wi-Fi]], as well as ports for connecting traditional landline telephones. Some were marketed with connection speeds of \"up to 7.2&nbsp;Mbit/s\"<ref>{{cite web|url=http://online.vodafone.co.uk/dispatch/Portal/appmanager/vodafone/wrp?_nfpb=true&_pageLabel=template12&pageID=PPP_0026|title=Vodafone UK - Maintenance|work=vodafone.co.uk}}</ref> under ideal conditions. However, these services could be slower, such as when in fringe coverage indoors.\n\n== High Speed Uplink Packet Access (HSUPA) ==\n'''High-Speed Uplink Packet Access''' ('''HSUPA''') is a 3G mobile telephony [[communications protocol|protocol]] in the HSPA family. It is specified and standardized in 3GPP Release 6 to improve the uplink data rate to 5.76&nbsp;Mbit/s, extend capacity, and reduce latency. Together with additional improvements, this allows for new features such as [[VoIP|Voice over Internet Protocol]] (VoIP), uploading pictures, and sending large e-mail messages.\n\nHSUPA was the second major step in the UMTS evolution process. It has since been superseded by newer technologies with higher transfer rates, such as [[LTE (telecommunication)|LTE]] (150&nbsp;Mbit/s for downlink and 50&nbsp;Mbit/s for uplink) and [[LTE Advanced]] (maximum downlink rates of over 1&nbsp;Gbit/s).\n\n===Technology===\nHSUPA adds a new transport channel to WCDMA, called the Enhanced Dedicated Channel (E-DCH). It also features several improvements similar to those of HSDPA, including multi-code transmission, shorter transmission time interval enabling faster [[link adaptation]], fast scheduling, and fast [[hybrid automatic repeat request]] (HARQ) with incremental redundancy, making [[retransmission (data networks)|retransmissions]] more effective. Similar to HSDPA, HSUPA uses a \"packet scheduler\", but it operates on a \"request-grant\" principle where the [[user equipment]] (UE) requests permission to send data and the scheduler decides when and how many UEs will be allowed to do so. A request for transmission contains data about the state of the transmission buffer and the queue at the UE and its available power margin. However, unlike HSDPA, uplink transmissions are not [[orthogonality#Communications|orthogonal]] to each other.\n\nIn addition to this \"scheduled\" mode of transmission, the standards allow a self-initiated transmission mode from the UEs, denoted \"non-scheduled\". The non-scheduled mode can, for example, be used for VoIP services for which even the reduced TTI and the [[Node B]] based scheduler are unable to provide the necessary short delay time and constant bandwidth.\n\nEach MAC-d flow (i.e., QoS flow) is configured to use either scheduled or non-scheduled modes. The UE adjusts the data rate for scheduled and non-scheduled flows independently. The maximum data rate of each non-scheduled flow is configured at call setup, and typically not frequently changed. The power used by the scheduled flows is controlled dynamically by the Node B through absolute grant (consisting of an actual value) and relative grant (consisting of a single up/down bit) messages.\n\nAt the [[physical layer]], HSUPA introduces the following new channels:\n\n* E-AGCH (Absolute Grant Channel)\n* E-RGCH (Relative Grant Channel)\n* F-DPCH (Fractional-DPCH)\n* E-HICH (E-DCH Hybrid ARQ Indicator Channel)\n* E-DPCCH (E-DCH Dedicated Physical Control Channel) – carries the control information associated with the E-DCH Transport Channel\n* E-DPDCH (E-DCH Dedicated Physical Data Channel) – carries the E-DCH Transport Channel\n\n===User equipment categories===\nThe following table shows uplink speeds for the different categories of HSUPA:\n\n{|class=\"wikitable collapsible collapsed\" style=\"text-align:center\"\n|-\n!colspan=\"4\"| HSUPA User Equipment (UE) categories\n|-\n! HSUPA<br />Category\n! Release\n! Max.<br />Uplink<br />Speed<br /><small>(Mbit/s)</small>\n! Modulation\n|-\n| 1\n| 6\n| 0.73\n| [[QPSK]]\n|-\n| 2\n| 6\n| 1.46\n| QPSK\n|-\n| 3\n| 6\n| 1.46\n| QPSK\n|-\n| 4\n| 6\n| 2.93\n| QPSK\n|-\n| 5\n| 6\n| 2.00\n| QPSK\n|-\n| 6\n| 6\n| 5.76\n| QPSK\n|}\n\nFurther UE categories were defined from 3GGP Release 7 onwards as Evolved HSPA (HSPA+) and are listed in [[Evolved High Speed Packet Access#User Equipment (UE) Categories 2|Evolved HSUPA UE Categories]].\n\n== Evolved High Speed Packet Access (HSPA+) ==\n{{main|Evolved High Speed Packet Access}}\n[[Evolved HSPA]] (also known as HSPA Evolution, HSPA+) is a wireless broadband standard defined in [[3GPP]] release 7 of the WCDMA specification. It provides extensions to the existing HSPA definitions and is therefore [[backward compatible]] all the way to the original Release 99 WCDMA network releases. Evolved HSPA provides data rates between 42.2 and 56 Mbit/s in the downlink and 22&nbsp;Mbit/s in the uplink (per 5&nbsp;MHz carrier) with multiple input, multiple output (2x2&nbsp;MIMO) technologies and higher order modulation (64&nbsp;QAM). With Dual Cell technology, these can be doubled.\n\nSince 2011, HSPA+ has been widely deployed among WCDMA operators, with nearly 200 commitments.<ref>{{cite web|title=DC-HSPA+ brings 42&nbsp;Mbps to 39 networks|url=http://www.3gpp.org/news-events/partners-news/1398-DC-HSPA-brings-42-Mbps-to-39-networks|website=3GPP|access-date=8 July 2017}}</ref>\n\n== See also ==\n{{Commons category|High Speed Packet Access}}\n* [[Broadband]]\n* [[Cellular router]]\n* [[DigRF V3]]\n* [[Global mobile Suppliers Association]]\n* [[Internet access]]\n* [[List of device bandwidths]]\n* [[List of HSDPA networks]]\n* [[List of HSUPA networks]]\n* [[Mobile Broadband Alliance]]\n* [[Multi-band device]] (dual-band, tri-band, quad-band, penta-band)\n* [[UMTS frequency bands]]\n\n== References ==\n{{Reflist|30em}}\n\n== Bibliography ==\n*{{cite book |title=Communication Systems for the Mobile Information Society |last=Sauter |first=Martin |year=2006 |publisher=John Wiley |location=Chichester |isbn=0-470-02676-6 |url=https://archive.org/details/communicationsys0000saut|url-access=registration }}\n*{{Cite book|title=HSDPA/HSUPA for UMTS: High Speed Radio Access for Mobile Communications |author=Harri Holma and Antti Toskala |year=2006 |publisher=Wiley |isbn=0-470-01884-4}}\n*{{cite book |title=High Speed Packet Access: Technology and measurement aspects of HSDPA and HSUPA mobile radio systems |last=Stuhlfauth |first=Reiner |year=2012 |location=Munich |isbn=978-3-939837-14-5 }}\n\n== External links ==\n* [http://www.3gpp.org/ 3GPP]\n* [http://www.3gpp.org/specs/specs.htm 3GPP Specifications Home Page] {{Webarchive|url=https://web.archive.org/web/20081026202407/http://www.3gpp.org/specs/specs.htm |date=October 26, 2008 }}\n* [https://web.archive.org/web/20111219180937/http://www.gsmworld.com/HSPA/ GSM Association on HSPA]\n* [http://www.linkedin.com/groups?gid=1888232 Public HSPA Discussion Forum]\n* [http://www.news.com/3.5G-driving-rapid-mobile-broadband-growth/2100-1039_3-6225531.html?part=rss&tag=2547-1_3-0-20&subj=news 3.5G drivin)], ericsson.com\n* [http://www.radio-electronics.com/info/cellulartelecomms/3g-hspa/dc-dual-carrier-hspa-hsdpa.php Dual carrier HSPA: DC-HSPA, DC-HSDPA], radio-electronics.com\n* [http://www.mobilehandsetdesignline.com/howto/170703686 Understand HSDPA's implementation challenges] {{Webarchive|url=https://web.archive.org/web/20100216161035/http://www.mobilehandsetdesignline.com/howto/170703686 |date=February 16, 2010 }}\n* [http://www.nomor.de/home/technology/white-papers/technology-of-high-speed-packet-access-hspa Nomor Research: White Paper \"Technology of High Speed Packet Access\"] {{Webarchive|url=https://web.archive.org/web/20090123120114/http://www.nomor.de/home/technology/white-papers/technology-of-high-speed-packet-access-hspa |date=January 23, 2009 }}\n* [http://www.nomor.de/home/technology/3gpp-newsletter/2009-03-standardisation-updates-on-hspa-evolution Nomor 3GPP Newsletter 2009-03: Standardisation updates on HSPA Evolution] {{Webarchive|url=https://web.archive.org/web/20140201161322/http://www.nomor.de/home/technology/3gpp-newsletter/2009-03-standardisation-updates-on-hspa-evolution |date=February 1, 2014 }}\n\n{{Mobile telecommunications standards}}\n{{Internet Access}}\n{{Telecommunications}}\n\n[[Category:3GPP standards]]\n[[Category:Mobile broadband]]\n[[Category:UMTS]]\n[[Category:Wireless communication systems]]",
+            "text": "High Speed Packet Access (HSPA) is an amalgamation of two mobile protocols—High Speed Downlink Packet Access (HSDPA) and High Speed Uplink Packet Access (HSUPA)—that extends and improves the performance of existing 3G mobile telecommunication networks using the WCDMA protocols. A further-improved 3GPP standard called Evolved High Speed Packet Access (also known as HSPA+) was released late in 2008, with subsequent worldwide adoption beginning in 2010. The newer standard allows bit rates to reach as high as 337 Mbit/s in the downlink and 34 Mbit/s in the uplink; however, these speeds are rarely achieved in practice. The first HSPA specifications supported increased peak data rates of up to 14 Mbit/s in the downlink and 5.76 Mbit/s in the uplink. They also reduced latency and provided up to five times more system capacity in the downlink and up to twice as much system capacity in the uplink compared with original WCDMA protocol. High Speed Downlink Packet Access (HSDPA) is an enhanced 3G (third-generation) mobile communications protocol in the High-Speed Packet Access (HSPA) family. HSDPA is also known as 3.5G and 3G+. It allows networks based on the Universal Mobile Telecommunications System (UMTS) to have higher data speeds and capacity. HSDPA also decreases latency, and therefore the round-trip time for applications. HSDPA was introduced in 3GPP Release 5. It was accompanied by an improvement to the uplink that provided a new bearer of 384 kbit/s (the previous maximum bearer was 128 kbit/s). Evolved High Speed Packet Access (HSPA+), introduced in 3GPP Release 7, further increased data rates by adding 64QAM modulation, MIMO, and Dual-Carrier HSDPA operation. Under 3GPP Release 11, even higher speeds of up to 337.5 Mbit/s were possible. The first phase of HSDPA was specified in 3GPP Release 5. This phase introduced new basic functions and was aimed to achieve peak data rates of 14.0 Mbit/s with significantly reduced latency. The improvement in speed and latency reduced the cost per bit and enhanced support for high-performance packet data applications. HSDPA is based on shared channel transmission, and its key features are shared channel and multi-code transmission, higher-order modulation, short Transmission Time Interval (TTI), fast link adaptation and scheduling, and fast hybrid automatic repeat request (HARQ). Additional new features include the High Speed Downlink Shared Channels (HS-DSCH), quadrature phase-shift keying, 16-quadrature amplitude modulation, and the High Speed Medium Access protocol (MAC-hs) in base stations. The upgrade to HSDPA is often just a software update for WCDMA networks. In HSDPA, voice calls are usually prioritized over data transfer. The following table is derived from table 5.1a of the release 11 of 3GPP TS 25.306 and shows maximum data rates of different device classes and by what combination of features they are achieved. The per-cell, per-stream data rate is limited by the \"maximum number of bits of an HS-DSCH transport block received within an HS-DSCH TTI\" and the \"minimum inter-TTI interval\". The TTI is 2 milliseconds. So, for example, Cat 10 can decode 27,952 bits / 2 ms = 13.976 Mbit/s (and not 14.4 Mbit/s as often claimed incorrectly). Categories 1-4 and 11 have inter-TTI intervals of 2 or 3, which reduces the maximum data rate by that factor. Dual-Cell and MIMO 2x2 each multiply the maximum data rate by 2, because multiple independent transport blocks are transmitted over different carriers or spatial streams, respectively. The data rates given in the table are rounded to one decimal point. Further UE categories were defined from 3GGP Release 7 onwards as Evolved HSPA (HSPA+) and are listed in Evolved HSDPA UE Categories. 16-QAM implies QPSK support, 64-QAM implies 16-QAM and QPSK support. The maximal code rate is not limited. A value close to 1 in this column indicates that the maximum data rate can be achieved only in ideal conditions. The device is therefore connected directly to the transmitter to demonstrate these data rates. The maximum data rates given in the table are physical layer data rates. Application layer data rate is approximately 85% of that, due to the inclusion of IP headers (overhead information) etc. As of 28 August 2009[update], 250 HSDPA networks had commercially launched mobile broadband services in 109 countries. 169 HSDPA networks supported 3.6 Mbit/s peak downlink data throughput, and a growing number delivered 21 Mbit/s peak data downlink.[citation needed] CDMA2000-EVDO networks had the early lead on performance. In particular, Japanese providers were highly successful benchmarks for this network standard. However, this later changed in favor of HSDPA, as an increasing number of providers worldwide began adopting it. In 2007, an increasing number of telcos worldwide began selling HSDPA USB modems to provide mobile broadband connections. In addition, the popularity of HSDPA landline replacement boxes grew—these provided HSDPA for data via Ethernet and Wi-Fi, as well as ports for connecting traditional landline telephones. Some were marketed with connection speeds of \"up to 7.2 Mbit/s\" under ideal conditions. However, these services could be slower, such as when in fringe coverage indoors. High-Speed Uplink Packet Access (HSUPA) is a 3G mobile telephony protocol in the HSPA family. It is specified and standardized in 3GPP Release 6 to improve the uplink data rate to 5.76 Mbit/s, extend capacity, and reduce latency. Together with additional improvements, this allows for new features such as Voice over Internet Protocol (VoIP), uploading pictures, and sending large e-mail messages. HSUPA was the second major step in the UMTS evolution process. It has since been superseded by newer technologies with higher transfer rates, such as LTE (150 Mbit/s for downlink and 50 Mbit/s for uplink) and LTE Advanced (maximum downlink rates of over 1 Gbit/s). HSUPA adds a new transport channel to WCDMA, called the Enhanced Dedicated Channel (E-DCH). It also features several improvements similar to those of HSDPA, including multi-code transmission, shorter transmission time interval enabling faster link adaptation, fast scheduling, and fast hybrid automatic repeat request (HARQ) with incremental redundancy, making retransmissions more effective. Similar to HSDPA, HSUPA uses a \"packet scheduler\", but it operates on a \"request-grant\" principle where the user equipment (UE) requests permission to send data and the scheduler decides when and how many UEs will be allowed to do so. A request for transmission contains data about the state of the transmission buffer and the queue at the UE and its available power margin. However, unlike HSDPA, uplink transmissions are not orthogonal to each other. In addition to this \"scheduled\" mode of transmission, the standards allow a self-initiated transmission mode from the UEs, denoted \"non-scheduled\". The non-scheduled mode can, for example, be used for VoIP services for which even the reduced TTI and the Node B based scheduler are unable to provide the necessary short delay time and constant bandwidth. Each MAC-d flow (i.e., QoS flow) is configured to use either scheduled or non-scheduled modes. The UE adjusts the data rate for scheduled and non-scheduled flows independently. The maximum data rate of each non-scheduled flow is configured at call setup, and typically not frequently changed. The power used by the scheduled flows is controlled dynamically by the Node B through absolute grant (consisting of an actual value) and relative grant (consisting of a single up/down bit) messages. At the physical layer, HSUPA introduces the following new channels: E-AGCH (Absolute Grant Channel) E-RGCH (Relative Grant Channel) F-DPCH (Fractional-DPCH) E-HICH (E-DCH Hybrid ARQ Indicator Channel) E-DPCCH (E-DCH Dedicated Physical Control Channel) – carries the control information associated with the E-DCH Transport Channel E-DPDCH (E-DCH Dedicated Physical Data Channel) – carries the E-DCH Transport Channel The following table shows uplink speeds for the different categories of HSUPA: Further UE categories were defined from 3GGP Release 7 onwards as Evolved HSPA (HSPA+) and are listed in Evolved HSUPA UE Categories. Evolved HSPA (also known as HSPA Evolution, HSPA+) is a wireless broadband standard defined in 3GPP release 7 of the WCDMA specification. It provides extensions to the existing HSPA definitions and is therefore backward compatible all the way to the original Release 99 WCDMA network releases. Evolved HSPA provides data rates between 42.2 and 56 Mbit/s in the downlink and 22 Mbit/s in the uplink (per 5 MHz carrier) with multiple input, multiple output (2x2 MIMO) technologies and higher order modulation (64 QAM). With Dual Cell technology, these can be doubled. Since 2011, HSPA+ has been widely deployed among WCDMA operators, with nearly 200 commitments. Wikimedia Commons has media related to High Speed Packet Access. Broadband Cellular router DigRF V3 Global mobile Suppliers Association Internet access List of device bandwidths List of HSDPA networks List of HSUPA networks Mobile Broadband Alliance Multi-band device (dual-band, tri-band, quad-band, penta-band) UMTS frequency bands Nomor Research: White Paper \"Technology of High Speed Packet Access\" Archived January 23, 2009, at the Wayback Machine, nomor.de \"Universal Mobile Telecommunications System (UMTS); UE Radio Access capabilities\" (PDF). ETSI. January 2014. Retrieved March 4, 2014. \"HSPA\". About Us. 3GPP TS 25.306 v11.0.0 http://www.3gpp.org/ftp/Specs/html-info/25306.htm \"Vodafone UK - Maintenance\". vodafone.co.uk. \"DC-HSPA+ brings 42 Mbps to 39 networks\". 3GPP. Retrieved July 8, 2017. Sauter, Martin (2006). Communication Systems for the Mobile Information Society. Chichester: John Wiley. ISBN 0-470-02676-6. Harri Holma and Antti Toskala (2006). HSDPA/HSUPA for UMTS: High Speed Radio Access for Mobile Communications. Wiley. ISBN 0-470-01884-4. Stuhlfauth, Reiner (2012). High Speed Packet Access: Technology and measurement aspects of HSDPA and HSUPA mobile radio systems. Munich. ISBN 978-3-939837-14-5.{{cite book}}: CS1 maint: location missing publisher (link) 3GPP 3GPP Specifications Home Page Archived October 26, 2008, at the Wayback Machine GSM Association on HSPA Public HSPA Discussion Forum 3.5G drivin), ericsson.com Dual carrier HSPA: DC-HSPA, DC-HSDPA, radio-electronics.com Understand HSDPA's implementation challenges Archived February 16, 2010, at the Wayback Machine Nomor Research: White Paper \"Technology of High Speed Packet Access\" Archived January 23, 2009, at the Wayback Machine Nomor 3GPP Newsletter 2009-03: Standardisation updates on HSPA Evolution Archived February 1, 2014, at the Wayback Machine"
+        },
+        "collectMetadata": {
+            "requestedDate": "2023-10-16T00:00:00",
+            "ingestedDate": "2023-10-22T19:14:30.904183"
+        },
+        "extractionMetadata": [
+            {
+                "id": "WikitextExtractor",
+                "linkExtractionDate": "2023-10-22T19:14:30.907512",
+                "links": [
+                    {
+                        "fragment": null,
+                        "link": "File:HSPA_sign_shown_in_notification_bar_on_an_Android_powered_smartphone-_2014-04-28_13-56.png",
+                        "text": "thumbnail|HSPA icon on an [[Android (operating system)|Android]] smartphone ",
+                        "title": "File:HSPA sign shown in notification bar on an Android powered smartphone- 2014-04-28 13-56.png"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Android_(operating_system)",
+                        "text": "Android",
+                        "title": "Android (operating system)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_telephony",
+                        "text": "mobile",
+                        "title": "mobile telephony"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Communications_protocol",
+                        "text": "protocols",
+                        "title": "Communications protocol"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3G",
+                        "text": null,
+                        "title": "3G"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "WCDMA",
+                        "text": null,
+                        "title": "WCDMA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3GPP",
+                        "text": null,
+                        "title": "3GPP"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Evolved_High_Speed_Packet_Access",
+                        "text": null,
+                        "title": "Evolved High Speed Packet Access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Bit_rate",
+                        "text": "bit rates",
+                        "title": "Bit rate"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "File:Cellular_network_standards_and_generation_timeline.svg",
+                        "text": "thumb|Cellular network standards and generation timeline",
+                        "title": "File:Cellular network standards and generation timeline.svg"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3G",
+                        "text": null,
+                        "title": "3G"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_telephony",
+                        "text": "mobile",
+                        "title": "mobile telephony"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Communications_protocol",
+                        "text": null,
+                        "title": "communications protocol"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "UMTS",
+                        "text": "Universal Mobile Telecommunications System",
+                        "title": "UMTS"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Latency_(engineering)",
+                        "text": "latency",
+                        "title": "latency (engineering)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Round-trip_time",
+                        "text": null,
+                        "title": "round-trip time"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3GPP",
+                        "text": null,
+                        "title": "3GPP"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Evolved_High_Speed_Packet_Access",
+                        "text": null,
+                        "title": "Evolved High Speed Packet Access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "MIMO",
+                        "text": null,
+                        "title": "MIMO"
+                    },
+                    {
+                        "fragment": "Dual-Carrier HSDPA (DC-HSDPA)",
+                        "link": "Evolved_High_Speed_Packet_Access",
+                        "text": "Dual-Carrier HSDPA",
+                        "title": "Evolved High Speed Packet Access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Higher-order_modulation",
+                        "text": null,
+                        "title": "higher-order modulation"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Transmission_Time_Interval",
+                        "text": null,
+                        "title": "Transmission Time Interval"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Hybrid_automatic_repeat_request",
+                        "text": null,
+                        "title": "hybrid automatic repeat request"
+                    },
+                    {
+                        "fragment": "Quadrature phase-shift keying (QPSK)",
+                        "link": "Phase-shift_keying",
+                        "text": "quadrature phase-shift keying",
+                        "title": "phase-shift keying"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Quadrature_amplitude_modulation",
+                        "text": null,
+                        "title": "quadrature amplitude modulation"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Code_rate",
+                        "text": null,
+                        "title": "Code rate"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Overhead_information",
+                        "text": null,
+                        "title": "overhead information"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "16-QAM",
+                        "text": null,
+                        "title": "16-QAM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "QPSK",
+                        "text": null,
+                        "title": "QPSK"
+                    },
+                    {
+                        "fragment": "User Equipment (UE) Categories",
+                        "link": "Evolved_High_Speed_Packet_Access",
+                        "text": "Evolved HSDPA UE Categories",
+                        "title": "Evolved High Speed Packet Access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "File:O2-DE-UMTS-reduced-bandwidth-as-GPRS.png",
+                        "text": "thumb|[[GPRS]]-speed in a [[mobile broadband|HSDPA]] plan",
+                        "title": "File:O2-DE-UMTS-reduced-bandwidth-as-GPRS.png"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GPRS",
+                        "text": null,
+                        "title": "GPRS"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_broadband",
+                        "text": "HSDPA",
+                        "title": "mobile broadband"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_broadband",
+                        "text": null,
+                        "title": "mobile broadband"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA2000",
+                        "text": null,
+                        "title": "CDMA2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Evolution-Data_Optimized",
+                        "text": "EVDO",
+                        "title": "Evolution-Data Optimized"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Japan",
+                        "text": null,
+                        "title": "Japan"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_broadband_modem",
+                        "text": "HSDPA USB modems",
+                        "title": "mobile broadband modem"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Ethernet",
+                        "text": null,
+                        "title": "Ethernet"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Wi-Fi",
+                        "text": null,
+                        "title": "Wi-Fi"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Communications_protocol",
+                        "text": "protocol",
+                        "title": "communications protocol"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "VoIP",
+                        "text": "Voice over Internet Protocol",
+                        "title": "VoIP"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "LTE_(telecommunication)",
+                        "text": "LTE",
+                        "title": "LTE (telecommunication)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "LTE_Advanced",
+                        "text": null,
+                        "title": "LTE Advanced"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Link_adaptation",
+                        "text": null,
+                        "title": "link adaptation"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Hybrid_automatic_repeat_request",
+                        "text": null,
+                        "title": "hybrid automatic repeat request"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Retransmission_(data_networks)",
+                        "text": "retransmissions",
+                        "title": "retransmission (data networks)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "User_equipment",
+                        "text": null,
+                        "title": "user equipment"
+                    },
+                    {
+                        "fragment": "Communications",
+                        "link": "Orthogonality",
+                        "text": "orthogonal",
+                        "title": "orthogonality"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Node_B",
+                        "text": null,
+                        "title": "Node B"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Physical_layer",
+                        "text": null,
+                        "title": "physical layer"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "QPSK",
+                        "text": null,
+                        "title": "QPSK"
+                    },
+                    {
+                        "fragment": "User Equipment (UE) Categories 2",
+                        "link": "Evolved_High_Speed_Packet_Access",
+                        "text": "Evolved HSUPA UE Categories",
+                        "title": "Evolved High Speed Packet Access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Evolved_HSPA",
+                        "text": null,
+                        "title": "Evolved HSPA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3GPP",
+                        "text": null,
+                        "title": "3GPP"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Backward_compatible",
+                        "text": null,
+                        "title": "backward compatible"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Broadband",
+                        "text": null,
+                        "title": "Broadband"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Cellular_router",
+                        "text": null,
+                        "title": "Cellular router"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "DigRF_V3",
+                        "text": null,
+                        "title": "DigRF V3"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Global_mobile_Suppliers_Association",
+                        "text": null,
+                        "title": "Global mobile Suppliers Association"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Internet_access",
+                        "text": null,
+                        "title": "Internet access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "List_of_device_bandwidths",
+                        "text": null,
+                        "title": "List of device bandwidths"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "List_of_HSDPA_networks",
+                        "text": null,
+                        "title": "List of HSDPA networks"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "List_of_HSUPA_networks",
+                        "text": null,
+                        "title": "List of HSUPA networks"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_Broadband_Alliance",
+                        "text": null,
+                        "title": "Mobile Broadband Alliance"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Multi-band_device",
+                        "text": null,
+                        "title": "Multi-band device"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "UMTS_frequency_bands",
+                        "text": null,
+                        "title": "UMTS frequency bands"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:3GPP_standards",
+                        "text": null,
+                        "title": "Category:3GPP standards"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Mobile_broadband",
+                        "text": null,
+                        "title": "Category:Mobile broadband"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:UMTS",
+                        "text": null,
+                        "title": "Category:UMTS"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Wireless_communication_systems",
+                        "text": null,
+                        "title": "Category:Wireless communication systems"
+                    }
+                ],
+                "nbLinks": 71,
+                "nbTables": 2,
+                "nbTexts": 13,
+                "tableExtractionDate": "2023-10-22T19:14:30.907512",
+                "tables": [
+                    {
+                        "endOffset": 6897,
+                        "startOffset": 5546,
+                        "tableCaption": null,
+                        "tableContent": "{|class=\"wikitable collapsible collapsed\" style=\"text-align:center\"\n|-\n!colspan=\"7\"| HSDPA User Equipment (UE) categories\n|-\n! Category\n! Release\n! Max. number of HS-DSCH codes (per cell)\n! Modulation <ref group=\"note\">16-QAM implies QPSK support, 64-QAM implies 16-QAM and QPSK support.</ref>\n! MIMO, Multi-Cell\n! [[Code rate]] at max. data rate<ref group=\"note\">The maximal code rate is not limited. A value close to 1 in this column indicates that the maximum data rate can be achieved only in ideal conditions. The device is therefore connected directly to the transmitter to demonstrate these data rates.</ref>\n! Max. downlink speed (Mbit/s)<ref group=\"note\">The maximum data rates given in the table are physical layer data rates. Application layer data rate is approximately 85% of that, due to the inclusion of IP headers ([[overhead information]]) etc.</ref>\n|-\n| 1\n| 5\n| 5\n| [[16-QAM]]\n| \n| .76\n| 1.2\n|-\n| 2\n| 5\n| 5\n| 16-QAM\n| \n| .76\n| 1.2\n|-\n| 3\n| 5\n| 5\n| 16-QAM\n| \n| .76\n| 1.8\n|-\n| 4\n| 5\n| 5\n| 16-QAM\n| \n| .76\n| 1.8\n|-\n| 5\n| 5\n| 5\n| 16-QAM\n| \n| .76\n| 3.6\n|-\n| 6\n| 5\n| 5\n| 16-QAM\n| \n| .76\n| 3.6\n|-\n| 7\n| 5\n| 10\n| 16-QAM\n| \n| .75\n| 7.2\n|-\n| 8\n| 5\n| 10\n| 16-QAM\n| \n| .76\n| 7.2\n|-\n| 9\n| 5\n| 15\n| 16-QAM\n| \n| .70\n| 10.1\n|-\n| 10\n| 5\n| 15\n| 16-QAM\n| \n| .97\n| 14.0\n|-\n| 11\n| 5\n| 5\n| [[QPSK]]\n| \n| .76\n| 0.9\n|-\n| 12\n| 5\n| 5\n| QPSK\n| \n| .76\n| 1.8\n|}",
+                        "tableData": [
+                            [
+                                "HSDPA User Equipment (UE) categories",
+                                "HSDPA User Equipment (UE) categories",
+                                "HSDPA User Equipment (UE) categories",
+                                "HSDPA User Equipment (UE) categories",
+                                "HSDPA User Equipment (UE) categories",
+                                "HSDPA User Equipment (UE) categories",
+                                "HSDPA User Equipment (UE) categories"
+                            ],
+                            [
+                                "Category",
+                                "Release",
+                                "Max. number of HS-DSCH codes (per cell)",
+                                "Modulation 16-QAM implies QPSK support, 64-QAM implies 16-QAM and QPSK support.",
+                                "MIMO, Multi-Cell",
+                                "Code rate at max. data rateThe maximal code rate is not limited. A value close to 1 in this column indicates that the maximum data rate can be achieved only in ideal conditions. The device is therefore connected directly to the transmitter to demonstrate these data rates.",
+                                "Max. downlink speed (Mbit/s)The maximum data rates given in the table are physical layer data rates. Application layer data rate is approximately 85% of that, due to the inclusion of IP headers (overhead information) etc."
+                            ],
+                            [
+                                "1",
+                                "5",
+                                "5",
+                                "16-QAM",
+                                "",
+                                ".76",
+                                "1.2"
+                            ],
+                            [
+                                "2",
+                                "5",
+                                "5",
+                                "16-QAM",
+                                "",
+                                ".76",
+                                "1.2"
+                            ],
+                            [
+                                "3",
+                                "5",
+                                "5",
+                                "16-QAM",
+                                "",
+                                ".76",
+                                "1.8"
+                            ],
+                            [
+                                "4",
+                                "5",
+                                "5",
+                                "16-QAM",
+                                "",
+                                ".76",
+                                "1.8"
+                            ],
+                            [
+                                "5",
+                                "5",
+                                "5",
+                                "16-QAM",
+                                "",
+                                ".76",
+                                "3.6"
+                            ],
+                            [
+                                "6",
+                                "5",
+                                "5",
+                                "16-QAM",
+                                "",
+                                ".76",
+                                "3.6"
+                            ],
+                            [
+                                "7",
+                                "5",
+                                "10",
+                                "16-QAM",
+                                "",
+                                ".75",
+                                "7.2"
+                            ],
+                            [
+                                "8",
+                                "5",
+                                "10",
+                                "16-QAM",
+                                "",
+                                ".76",
+                                "7.2"
+                            ],
+                            [
+                                "9",
+                                "5",
+                                "15",
+                                "16-QAM",
+                                "",
+                                ".70",
+                                "10.1"
+                            ],
+                            [
+                                "10",
+                                "5",
+                                "15",
+                                "16-QAM",
+                                "",
+                                ".97",
+                                "14.0"
+                            ],
+                            [
+                                "11",
+                                "5",
+                                "5",
+                                "QPSK",
+                                "",
+                                ".76",
+                                "0.9"
+                            ],
+                            [
+                                "12",
+                                "5",
+                                "5",
+                                "QPSK",
+                                "",
+                                ".76",
+                                "1.8"
+                            ]
+                        ],
+                        "tableNum": 0
+                    },
+                    {
+                        "endOffset": 12126,
+                        "startOffset": 11741,
+                        "tableCaption": null,
+                        "tableContent": "{|class=\"wikitable collapsible collapsed\" style=\"text-align:center\"\n|-\n!colspan=\"4\"| HSUPA User Equipment (UE) categories\n|-\n! HSUPA<br />Category\n! Release\n! Max.<br />Uplink<br />Speed<br /><small>(Mbit/s)</small>\n! Modulation\n|-\n| 1\n| 6\n| 0.73\n| [[QPSK]]\n|-\n| 2\n| 6\n| 1.46\n| QPSK\n|-\n| 3\n| 6\n| 1.46\n| QPSK\n|-\n| 4\n| 6\n| 2.93\n| QPSK\n|-\n| 5\n| 6\n| 2.00\n| QPSK\n|-\n| 6\n| 6\n| 5.76\n| QPSK\n|}",
+                        "tableData": [
+                            [
+                                "HSUPA User Equipment (UE) categories",
+                                "HSUPA User Equipment (UE) categories",
+                                "HSUPA User Equipment (UE) categories",
+                                "HSUPA User Equipment (UE) categories"
+                            ],
+                            [
+                                "HSUPACategory",
+                                "Release",
+                                "Max.UplinkSpeed(Mbit/s)",
+                                "Modulation"
+                            ],
+                            [
+                                "1",
+                                "6",
+                                "0.73",
+                                "QPSK"
+                            ],
+                            [
+                                "2",
+                                "6",
+                                "1.46",
+                                "QPSK"
+                            ],
+                            [
+                                "3",
+                                "6",
+                                "1.46",
+                                "QPSK"
+                            ],
+                            [
+                                "4",
+                                "6",
+                                "2.93",
+                                "QPSK"
+                            ],
+                            [
+                                "5",
+                                "6",
+                                "2.00",
+                                "QPSK"
+                            ],
+                            [
+                                "6",
+                                "6",
+                                "5.76",
+                                "QPSK"
+                            ]
+                        ],
+                        "tableNum": 1
+                    }
+                ],
+                "technology": "WikitextExtractor",
+                "textExtractionDate": "2023-10-22T19:14:30.907512",
+                "texts": [
+                    {
+                        "endOffset": 1703,
+                        "index": 0,
+                        "level": 0,
+                        "startOffset": 0,
+                        "title": null,
+                        "value": "{{Short description|Communications protocols}}\n{{Use American English|date=January 2019}}\n{{Use mdy dates|date=January 2019}}\n[[File:HSPA sign shown in notification bar on an Android powered smartphone- 2014-04-28 13-56.png|thumbnail|HSPA icon on an [[Android (operating system)|Android]] smartphone ]]\n{{List of mobile phone generations}}\nHigh Speed Packet Access (HSPA)<ref>Nomor Research: White Paper \"Technology of High Speed Packet Access\" {{Webarchive|url=https://web.archive.org/web/20090123120114/http://www.nomor.de/home/technology/white-papers/technology-of-high-speed-packet-access-hspa |date=January 23, 2009 }}, nomor.de</ref> is an amalgamation of two [[mobile telephony|mobile]] [[Communications protocol|protocols]]—High Speed Downlink Packet Access (HSDPA) and High Speed Uplink Packet Access (HSUPA)—that extends and improves the performance of existing [[3G]] mobile telecommunication networks using the [[WCDMA]] protocols. A further-improved [[3GPP]] standard called [[Evolved High Speed Packet Access]] (also known as HSPA+) was released late in 2008, with subsequent worldwide adoption beginning in 2010. The newer standard allows [[Bit rate|bit rates]] to reach as high as 337 Mbit/s in the downlink and 34 Mbit/s in the uplink; however, these speeds are rarely achieved in practice.<ref>{{cite web| title = Universal Mobile Telecommunications System (UMTS); UE Radio Access capabilities| publisher = ETSI| date = January 2014| url= http://www.etsi.org/deliver/etsi_ts/125300_125399/125306/11.08.00_60/ts_125306v110800p.pdf| access-date = March 4, 2014}}</ref>"
+                    },
+                    {
+                        "endOffset": 8587,
+                        "index": 1,
+                        "level": 2,
+                        "startOffset": 1703,
+                        "title": "Overview",
+                        "value": "The first HSPA specifications supported increased peak data rates of up to 14 Mbit/s in the downlink and 5.76 Mbit/s in the uplink. They also reduced latency and provided up to five times more system capacity in the downlink and up to twice as much system capacity in the uplink compared with original WCDMA protocol.\n\n==High Speed Downlink Packet Access (HSDPA)== \n[[File:Cellular network standards and generation timeline.svg|thumb|Cellular network standards and generation timeline]]\nHigh Speed Downlink Packet Access (HSDPA) is an enhanced [[3G]] (third-generation) [[mobile telephony|mobile]] [[communications protocol]] in the High-Speed Packet Access (HSPA) family. HSDPA is also known as 3.5G and 3G+. It allows networks based on the [[UMTS|Universal Mobile Telecommunications System]] (UMTS) to have higher data speeds and capacity. HSDPA also decreases [[latency (engineering)|latency]], and therefore the [[round-trip time]] for applications.\n\nHSDPA was introduced in [[3GPP]] Release 5. It was accompanied by an improvement to the uplink that provided a new bearer of 384 kbit/s (the previous maximum bearer was 128 kbit/s). [[Evolved High Speed Packet Access]] (HSPA+), introduced in 3GPP Release 7, further increased data rates by adding 64QAM modulation, [[MIMO]], and [[Evolved High Speed Packet Access#Dual-Carrier HSDPA (DC-HSDPA)|Dual-Carrier HSDPA]] operation. Under 3GPP Release 11, even higher speeds of up to 337.5 Mbit/s were possible.<ref name=\"gsmworld\">{{cite web | url=http://www.gsma.com/aboutus/gsm-technology/hspa | title=HSPA | work=About Us}}</ref>\n\nThe first phase of HSDPA was specified in 3GPP Release 5. This phase introduced new basic functions and was aimed to achieve peak data rates of 14.0 Mbit/s with significantly reduced latency. The improvement in speed and latency reduced the cost per bit and enhanced support for high-performance packet data applications. HSDPA is based on shared channel transmission, and its key features are shared channel and multi-code transmission, [[higher-order modulation]], short [[Transmission Time Interval]] (TTI), fast link adaptation and scheduling, and fast [[hybrid automatic repeat request]] (HARQ). Additional new features include the High Speed Downlink Shared Channels (HS-DSCH), [[phase-shift keying#Quadrature phase-shift keying (QPSK)|quadrature phase-shift keying]], 16-[[quadrature amplitude modulation]], and the High Speed Medium Access protocol (MAC-hs) in base stations.\n\nThe upgrade to HSDPA is often just a software update for WCDMA networks. In HSDPA, voice calls are usually prioritized over data transfer."
+                    },
+                    {
+                        "endOffset": 7153,
+                        "index": 2,
+                        "level": 3,
+                        "startOffset": 4516,
+                        "title": "User equipment categories",
+                        "value": "The following table is derived from table 5.1a of the release 11 of 3GPP TS 25.306<ref>3GPP TS 25.306 v11.0.0 http://www.3gpp.org/ftp/Specs/html-info/25306.htm</ref> and shows maximum data rates of different device classes and by what combination of features they are achieved. The per-cell, per-stream data rate is limited by the \"maximum number of bits of an HS-DSCH transport block received within an HS-DSCH TTI\" and the \"minimum inter-TTI interval\". The TTI is 2 milliseconds. So, for example, Cat 10 can decode 27,952 bits / 2 ms = 13.976 Mbit/s (and not 14.4 Mbit/s as often claimed incorrectly). Categories 1-4 and 11 have inter-TTI intervals of 2 or 3, which reduces the maximum data rate by that factor. Dual-Cell and MIMO 2x2 each multiply the maximum data rate by 2, because multiple independent transport blocks are transmitted over different carriers or spatial streams, respectively. The data rates given in the table are rounded to one decimal point.\n\n\n\nFurther UE categories were defined from 3GGP Release 7 onwards as Evolved HSPA (HSPA+) and are listed in [[Evolved High Speed Packet Access#User Equipment (UE) Categories|Evolved HSDPA UE Categories]]."
+                    },
+                    {
+                        "endOffset": 7153,
+                        "index": 3,
+                        "level": 4,
+                        "startOffset": 7114,
+                        "title": "Notes",
+                        "value": "{{Reflist| group=note}}"
+                    },
+                    {
+                        "endOffset": 8587,
+                        "index": 4,
+                        "level": 3,
+                        "startOffset": 7153,
+                        "title": "Adoption",
+                        "value": "[[File:O2-DE-UMTS-reduced-bandwidth-as-GPRS.png|thumb|[[GPRS]]-speed in a [[mobile broadband|HSDPA]] plan]]\n{{as of|2009|8|28}}, 250 HSDPA networks had commercially launched [[mobile broadband]] services in 109 countries. 169 HSDPA networks supported 3.6 Mbit/s peak downlink data throughput, and a growing number delivered 21 Mbit/s peak data downlink.{{source?|date=November 2021}}\n\n[[CDMA2000]]-[[Evolution-Data Optimized|EVDO]] networks had the early lead on performance. In particular, [[Japan]]ese providers were highly successful benchmarks for this network standard. However, this later changed in favor of HSDPA, as an increasing number of providers worldwide began adopting it.\n\nIn 2007, an increasing number of telcos worldwide began selling [[mobile broadband modem|HSDPA USB modems]] to provide mobile broadband connections. In addition, the popularity of HSDPA landline replacement boxes grew—these provided HSDPA for data via [[Ethernet]] and [[Wi-Fi]], as well as ports for connecting traditional landline telephones. Some were marketed with connection speeds of \"up to 7.2 Mbit/s\"<ref>{{cite web|url=http://online.vodafone.co.uk/dispatch/Portal/appmanager/vodafone/wrp?_nfpb=true&_pageLabel=template12&pageID=PPP_0026|title=Vodafone UK - Maintenance|work=vodafone.co.uk}}</ref> under ideal conditions. However, these services could be slower, such as when in fringe coverage indoors."
+                    },
+                    {
+                        "endOffset": 12333,
+                        "index": 5,
+                        "level": 2,
+                        "startOffset": 8587,
+                        "title": "High Speed Uplink Packet Access (HSUPA)",
+                        "value": "High-Speed Uplink Packet Access (HSUPA) is a 3G mobile telephony [[communications protocol|protocol]] in the HSPA family. It is specified and standardized in 3GPP Release 6 to improve the uplink data rate to 5.76 Mbit/s, extend capacity, and reduce latency. Together with additional improvements, this allows for new features such as [[VoIP|Voice over Internet Protocol]] (VoIP), uploading pictures, and sending large e-mail messages.\n\nHSUPA was the second major step in the UMTS evolution process. It has since been superseded by newer technologies with higher transfer rates, such as [[LTE (telecommunication)|LTE]] (150 Mbit/s for downlink and 50 Mbit/s for uplink) and [[LTE Advanced]] (maximum downlink rates of over 1 Gbit/s)."
+                    },
+                    {
+                        "endOffset": 11629,
+                        "index": 6,
+                        "level": 3,
+                        "startOffset": 9399,
+                        "title": "Technology",
+                        "value": "HSUPA adds a new transport channel to WCDMA, called the Enhanced Dedicated Channel (E-DCH). It also features several improvements similar to those of HSDPA, including multi-code transmission, shorter transmission time interval enabling faster [[link adaptation]], fast scheduling, and fast [[hybrid automatic repeat request]] (HARQ) with incremental redundancy, making [[retransmission (data networks)|retransmissions]] more effective. Similar to HSDPA, HSUPA uses a \"packet scheduler\", but it operates on a \"request-grant\" principle where the [[user equipment]] (UE) requests permission to send data and the scheduler decides when and how many UEs will be allowed to do so. A request for transmission contains data about the state of the transmission buffer and the queue at the UE and its available power margin. However, unlike HSDPA, uplink transmissions are not [[orthogonality#Communications|orthogonal]] to each other.\n\nIn addition to this \"scheduled\" mode of transmission, the standards allow a self-initiated transmission mode from the UEs, denoted \"non-scheduled\". The non-scheduled mode can, for example, be used for VoIP services for which even the reduced TTI and the [[Node B]] based scheduler are unable to provide the necessary short delay time and constant bandwidth.\n\nEach MAC-d flow (i.e., QoS flow) is configured to use either scheduled or non-scheduled modes. The UE adjusts the data rate for scheduled and non-scheduled flows independently. The maximum data rate of each non-scheduled flow is configured at call setup, and typically not frequently changed. The power used by the scheduled flows is controlled dynamically by the Node B through absolute grant (consisting of an actual value) and relative grant (consisting of a single up/down bit) messages.\n\nAt the [[physical layer]], HSUPA introduces the following new channels:\n\n* E-AGCH (Absolute Grant Channel)\n* E-RGCH (Relative Grant Channel)\n* F-DPCH (Fractional-DPCH)\n* E-HICH (E-DCH Hybrid ARQ Indicator Channel)\n* E-DPCCH (E-DCH Dedicated Physical Control Channel) – carries the control information associated with the E-DCH Transport Channel\n* E-DPDCH (E-DCH Dedicated Physical Data Channel) – carries the E-DCH Transport Channel"
+                    },
+                    {
+                        "endOffset": 12333,
+                        "index": 7,
+                        "level": 3,
+                        "startOffset": 11629,
+                        "title": "User equipment categories",
+                        "value": "The following table shows uplink speeds for the different categories of HSUPA:\n\n\n\nFurther UE categories were defined from 3GGP Release 7 onwards as Evolved HSPA (HSPA+) and are listed in [[Evolved High Speed Packet Access#User Equipment (UE) Categories 2|Evolved HSUPA UE Categories]]."
+                    },
+                    {
+                        "endOffset": 13320,
+                        "index": 8,
+                        "level": 2,
+                        "startOffset": 12333,
+                        "title": "Evolved High Speed Packet Access (HSPA+)",
+                        "value": "{{main|Evolved High Speed Packet Access}}\n[[Evolved HSPA]] (also known as HSPA Evolution, HSPA+) is a wireless broadband standard defined in [[3GPP]] release 7 of the WCDMA specification. It provides extensions to the existing HSPA definitions and is therefore [[backward compatible]] all the way to the original Release 99 WCDMA network releases. Evolved HSPA provides data rates between 42.2 and 56 Mbit/s in the downlink and 22 Mbit/s in the uplink (per 5 MHz carrier) with multiple input, multiple output (2x2 MIMO) technologies and higher order modulation (64 QAM). With Dual Cell technology, these can be doubled.\n\nSince 2011, HSPA+ has been widely deployed among WCDMA operators, with nearly 200 commitments.<ref>{{cite web|title=DC-HSPA+ brings 42 Mbps to 39 networks|url=http://www.3gpp.org/news-events/partners-news/1398-DC-HSPA-brings-42-Mbps-to-39-networks|website=3GPP|access-date=8 July 2017}}</ref>"
+                    },
+                    {
+                        "endOffset": 13717,
+                        "index": 9,
+                        "level": 2,
+                        "startOffset": 13320,
+                        "title": "See also",
+                        "value": "{{Commons category|High Speed Packet Access}}\n* [[Broadband]]\n* [[Cellular router]]\n* [[DigRF V3]]\n* [[Global mobile Suppliers Association]]\n* [[Internet access]]\n* [[List of device bandwidths]]\n* [[List of HSDPA networks]]\n* [[List of HSUPA networks]]\n* [[Mobile Broadband Alliance]]\n* [[Multi-band device]] (dual-band, tri-band, quad-band, penta-band)\n* [[UMTS frequency bands]]"
+                    },
+                    {
+                        "endOffset": 13752,
+                        "index": 10,
+                        "level": 2,
+                        "startOffset": 13717,
+                        "title": "References",
+                        "value": "{{Reflist|30em}}"
+                    },
+                    {
+                        "endOffset": 14421,
+                        "index": 11,
+                        "level": 2,
+                        "startOffset": 13752,
+                        "title": "Bibliography",
+                        "value": "*{{cite book |title=Communication Systems for the Mobile Information Society |last=Sauter |first=Martin |year=2006 |publisher=John Wiley |location=Chichester |isbn=0-470-02676-6 |url=https://archive.org/details/communicationsys0000saut|url-access=registration }}\n*{{Cite book|title=HSDPA/HSUPA for UMTS: High Speed Radio Access for Mobile Communications |author=Harri Holma and Antti Toskala |year=2006 |publisher=Wiley |isbn=0-470-01884-4}}\n*{{cite book |title=High Speed Packet Access: Technology and measurement aspects of HSDPA and HSUPA mobile radio systems |last=Stuhlfauth |first=Reiner |year=2012 |location=Munich |isbn=978-3-939837-14-5 }}"
+                    },
+                    {
+                        "endOffset": 16318,
+                        "index": 12,
+                        "level": 2,
+                        "startOffset": 14421,
+                        "title": "External links",
+                        "value": "* 3GPP\n* 3GPP Specifications Home Page {{Webarchive|url=https://web.archive.org/web/20081026202407/http://www.3gpp.org/specs/specs.htm |date=October 26, 2008 }}\n* GSM Association on HSPA\n* Public HSPA Discussion Forum\n* 3.5G drivin), ericsson.com\n* Dual carrier HSPA: DC-HSPA, DC-HSDPA, radio-electronics.com\n* Understand HSDPA's implementation challenges {{Webarchive|url=https://web.archive.org/web/20100216161035/http://www.mobilehandsetdesignline.com/howto/170703686 |date=February 16, 2010 }}\n* Nomor Research: White Paper \"Technology of High Speed Packet Access\" {{Webarchive|url=https://web.archive.org/web/20090123120114/http://www.nomor.de/home/technology/white-papers/technology-of-high-speed-packet-access-hspa |date=January 23, 2009 }}\n* Nomor 3GPP Newsletter 2009-03: Standardisation updates on HSPA Evolution {{Webarchive|url=https://web.archive.org/web/20140201161322/http://www.nomor.de/home/technology/3gpp-newsletter/2009-03-standardisation-updates-on-hspa-evolution |date=February 1, 2014 }}\n\n{{Mobile telecommunications standards}}\n{{Internet Access}}\n{{Telecommunications}}\n\n[[Category:3GPP standards]]\n[[Category:Mobile broadband]]\n[[Category:UMTS]]\n[[Category:Wireless communication systems]]"
+                    }
+                ]
+            }
+        ],
+        "statsMetadata": {
+            "textSize": 13184
+        },
+        "preprocessingMetadata": [
+            {
+                "technologyResults": [
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "3G shutdown in Maryland",
+                                "3GSP",
+                                "3rd-Generation",
+                                "Evolution to 3G",
+                                "3G cellular",
+                                "3G cellular network",
+                                "3G Mobile Service Provider",
+                                "3gphones",
+                                "3G networking",
+                                "3g phone",
+                                "Video mobile",
+                                "3G phones",
+                                "3rd Generation",
+                                "International Mobile Telecommunications-2000",
+                                "3G network",
+                                "3G shutdown",
+                                "3G technology",
+                                "Pre-4G",
+                                "3gphone",
+                                "3G Canada",
+                                "3G mobile",
+                                "3G wireless",
+                                "Evolution to 3g",
+                                "IMT2000",
+                                "3G phone",
+                                "2G evolution",
+                                "3G cellular networks",
+                                "3G",
+                                "3G networks",
+                                "2G transitional"
+                            ],
+                            "uriSent": "3G",
+                            "wikipediaId": "282450",
+                            "id": "Q79692",
+                            "label": "3G"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "UE",
+                                "user equipment",
+                                "User equipment",
+                                "User Equipment"
+                            ],
+                            "uriSent": "User_equipment",
+                            "wikipediaId": "427292",
+                            "id": "Q3552547",
+                            "label": "User equipment"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Quadriphase",
+                                "Staggered phase shift keying",
+                                "Binary phase-shift keying",
+                                "Offset psk",
+                                "SDPSK",
+                                "Binary Phase Shift Keying",
+                                "QPSK",
+                                "M PSK",
+                                "DQPSK",
+                                "GPSK",
+                                "Phase Shift Keying",
+                                "Coherent differential phase-shift keying",
+                                "PSK",
+                                "Differential phase-shift keying",
+                                "Quaternary phase shift keying",
+                                "Phase shift keying",
+                                "Phase Shift Modulation",
+                                "8 Phase Shift Keying",
+                                "DBPSK",
+                                "BPSK",
+                                "8-PSK",
+                                "Opsk",
+                                "SQPSK",
+                                "HPSK",
+                                "256psk",
+                                "DPSK",
+                                "Gaussian Phase Shift Keying",
+                                "128psk",
+                                "512psk",
+                                "Quaternary phase-shift keying",
+                                "2psk",
+                                "16psk",
+                                "1024psk",
+                                "64psk",
+                                "Differential phase shift keying",
+                                "Quadrature Phase Shift Keying",
+                                "Quatenary phase shift keying",
+                                "Filtered symmetric differential phase-shift keying",
+                                "phase-shift keying",
+                                "8 phase shift keying",
+                                "8PSK",
+                                "Staggered quadrature phase-shift keying",
+                                "4PSK",
+                                "32psk",
+                                "Biphase modulation",
+                                "Differential Phase Shift Keying",
+                                "Binary pase shift keying",
+                                "Biphase Shift Keying",
+                                "Quadrature phase-shift keying",
+                                "Offset QPSK",
+                                "CDPSK",
+                                "OQPSK",
+                                "Offset quadrature phase-shift keying",
+                                "4-PSK",
+                                "Mpsk"
+                            ],
+                            "uriSent": "Phase-shift_keying",
+                            "wikipediaId": "41551",
+                            "id": "Q4874866",
+                            "label": "phase-shift keying"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Re-transmission",
+                                "Resend",
+                                "retransmission",
+                                "Re-send",
+                                "Selective ACK",
+                                "Positive acknowledgment with re-transmission"
+                            ],
+                            "uriSent": "Retransmission_(data_networks)",
+                            "wikipediaId": "2667648",
+                            "id": "Q7316902",
+                            "label": "retransmission"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Broadband Internet",
+                                "wideband",
+                                "Broadband modem",
+                                "Broadband speed",
+                                "High speed internet",
+                                "Broad-band",
+                                "broadband",
+                                "Carrierband",
+                                "WB",
+                                "Broadband internet",
+                                "Braodband",
+                                "Broad band"
+                            ],
+                            "uriSent": "Broadband",
+                            "wikipediaId": "147184",
+                            "id": "Q194163",
+                            "label": "wideband"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Transmission Time Interval"
+                            ],
+                            "uriSent": "Transmission_Time_Interval",
+                            "wikipediaId": "2413288",
+                            "id": "Q7834629",
+                            "label": "Transmission Time Interval"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "3G U900",
+                                "3G UMTS 900",
+                                "UMTS 900",
+                                "UMTS frequency band",
+                                "W-CDMA 900"
+                            ],
+                            "uriSent": "UMTS_frequency_bands",
+                            "wikipediaId": "11678343",
+                            "id": "Q3633928",
+                            "label": "UMTS frequency band"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Digrf v3",
+                                "DigRF V3",
+                                "DigRF",
+                                "Digrf"
+                            ],
+                            "uriSent": "DigRF_V3",
+                            "wikipediaId": "10319663",
+                            "id": "Q5275467",
+                            "label": "DigRF"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Wideband CDMA",
+                                "Universal Mobile Telecommunications System",
+                                "UTRA-TDD HCR",
+                                "UTRA TDD-LCR",
+                                "TD SCDMA",
+                                "List of TD-SCDMA networks",
+                                "UMTS-FDD",
+                                "Wideband Code Division Multiple Access",
+                                "UTRA-TDD LCR",
+                                "UTRA TDD-HCR",
+                                "Wideband code division multiple access",
+                                "UMTS-TDD",
+                                "TD-CDMA",
+                                "TDSCDMA",
+                                "Umts",
+                                "W-CDMA",
+                                "WCDMA",
+                                "UTRA",
+                                "UARFCN",
+                                "TD-SCDMA",
+                                "UMTS",
+                                "UTRA-TDD",
+                                "Universal mobile telecommunications system",
+                                "Time Division-Synchronous Code Division Multiple Access",
+                                "Time Division Synchronous Code Division Multiple Access",
+                                "Universal Mobile Telephone System",
+                                "Uu interface"
+                            ],
+                            "uriSent": "UMTS",
+                            "wikipediaId": "32237",
+                            "id": "Q79686",
+                            "label": "Universal Mobile Telecommunications System"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "1xrtt",
+                                "CDMA 1X WIN",
+                                "Cdma2000 1xEV-DO",
+                                "Cdma-2000",
+                                "CDMA2000 1x",
+                                "CDMA2000",
+                                "IMT Multi‑Carrier",
+                                "1x Advanced",
+                                "IMT‑MC",
+                                "3XRTT",
+                                "IS-2000",
+                                "C2K",
+                                "Cdma2000",
+                                "1xRTT",
+                                "CDMA-2000",
+                                "CDMA-2000 1x-EvDO",
+                                "Cdma2000 1X",
+                                "1X Advanced",
+                                "1XRTT",
+                                "CDMA2000 1xRTT",
+                                "CDMA 1X",
+                                "CDMA 2000",
+                                "CDMA network",
+                                "CDMA2K",
+                                "CDMA2000 1xEV-DO"
+                            ],
+                            "uriSent": "CDMA2000",
+                            "wikipediaId": "481213",
+                            "id": "Q1023122",
+                            "label": "CDMA2000"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "PHY",
+                                "Physical channel",
+                                "OSI Layer 1",
+                                "PHY chip",
+                                "Physical-layer",
+                                "OSI layer 1",
+                                "High PHY",
+                                "Layer-1",
+                                "Ethernet PHY",
+                                "PHYceiver",
+                                "Physical signaling sublayer",
+                                "physical layer",
+                                "Low PHY",
+                                "Physical link",
+                                "Physical Layer",
+                                "Layer 1",
+                                "Physical protocol layer",
+                                "layer 1"
+                            ],
+                            "uriSent": "Physical_layer",
+                            "wikipediaId": "78300",
+                            "id": "Q192727",
+                            "label": "physical layer"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Legacy compatibility",
+                                "Backward-compatible",
+                                "Bugwards compatibility",
+                                "Backwards-compatibility",
+                                "backwards-compatible",
+                                "Format rot",
+                                "Breaking changes",
+                                "Translation compatibility",
+                                "downward-compatible",
+                                "Backwards Compatibility",
+                                "retrocompatible",
+                                "Backwards compatibility",
+                                "retrocompatibility",
+                                "backward-compatible",
+                                "Hysterical raisins",
+                                "Backwards compatability",
+                                "Backward-incompatible",
+                                "Retrocompatible",
+                                "backward compatibility",
+                                "Hysterical reasons",
+                                "Backwards compatible",
+                                "backwards compatibility",
+                                "Breaking change",
+                                "Downward Compatibility",
+                                "Downward compatibility",
+                                "Backwards-compatible",
+                                "Backward compatible",
+                                "downward compatibility",
+                                "Bugwards compatible",
+                                "Bugward compatibility",
+                                "Bugward compatible",
+                                "Retrocompatibility",
+                                "Backward-compatibility",
+                                "Downward compatible"
+                            ],
+                            "uriSent": "Backward_compatible",
+                            "wikipediaId": "4459",
+                            "id": "Q844605",
+                            "label": "backward compatibility"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "VOSIP",
+                                "Packetized voice",
+                                "Voice over Internet Protocol",
+                                "VOIP",
+                                "VOip",
+                                "VoiP",
+                                "broadband telephony",
+                                "IP voice",
+                                "Voiceover IP",
+                                "Voice Over IP industry",
+                                "Voice over internet protocol",
+                                "Internet Protocol telephone",
+                                "Packet voice",
+                                "Broadband telephone",
+                                "IP telephony",
+                                "Telephony portal",
+                                "Broadband Telephony",
+                                "VOiP",
+                                "Telephony Portal",
+                                "TeleCable Services",
+                                "Retail VoIP",
+                                "Web-to-phone",
+                                "Internet phone service",
+                                "Vodsl",
+                                "Internet-based telephony",
+                                "Internet Telephony",
+                                "Voice over IP",
+                                "Voice over ip",
+                                "Web phone",
+                                "Web phoning",
+                                "Voice over IP industry",
+                                "Internet telephones",
+                                "IP telephone",
+                                "VoPI",
+                                "Broadband Phone",
+                                "Voice over Internet protocol",
+                                "Broadband phone service",
+                                "VoIP carrier",
+                                "Voice-over-IP",
+                                "IP telephony signaling protocol",
+                                "Security vulnerabilities in VoIP systems",
+                                "VoIp",
+                                "SVOIP",
+                                "Real time audio using VoIP",
+                                "VoDSL",
+                                "Broadband telephone provider",
+                                "Web call",
+                                "Digital Phone",
+                                "Voip Call",
+                                "IP Telephony",
+                                "Voip hosting",
+                                "VolP",
+                                "Broadband telephony",
+                                "Voice Over IP",
+                                "Broadband phone",
+                                "Internet telephone service",
+                                "IPTel",
+                                "Broadband phone company",
+                                "Internet telephone",
+                                "Web calling",
+                                "VoIP",
+                                "Business VOIP Telephones & Office Phones",
+                                "Voip",
+                                "VOIp",
+                                "VoIP Terminology",
+                                "Voice on IP",
+                                "Managed VoIP Service",
+                                "Internet Protocol telephony",
+                                "Internet phone",
+                                "Internet Phone",
+                                "Net phone",
+                                "Backdoor dialing",
+                                "VoIP telephony",
+                                "broadband phone service",
+                                "VOIP Call",
+                                "IPTelephony",
+                                "Internet call",
+                                "Internet telephony"
+                            ],
+                            "uriSent": "VoIP",
+                            "wikipediaId": "75028",
+                            "id": "Q81945",
+                            "label": "Voice over IP"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Multislot Class",
+                                "GPRS modem",
+                                "CELLPAC",
+                                "General Packet Radio Service",
+                                "General packet radio service",
+                                "GPRS",
+                                "Gprs",
+                                "Coding Scheme"
+                            ],
+                            "uriSent": "GPRS",
+                            "wikipediaId": "12920",
+                            "id": "Q79708",
+                            "label": "General Packet Radio Service"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Cellular router",
+                                "mobile broadband modem",
+                                "Mobile modem",
+                                "Wireless Modem",
+                                "Connect card",
+                                "Connect cards",
+                                "USB modem",
+                                "Cellular Modem",
+                                "3G router",
+                                "Cellular Routers",
+                                "PCMCIA modem",
+                                "Cellular modem",
+                                "PC Card modem",
+                                "PC card modem",
+                                "Wireless modem",
+                                "Data cards"
+                            ],
+                            "uriSent": "Mobile_broadband_modem",
+                            "wikipediaId": "27350573",
+                            "id": "Q1549420",
+                            "label": "mobile broadband modem"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Dual-band",
+                                "Quad-band",
+                                "Tri-band",
+                                "Triband",
+                                "Quad band",
+                                "Tri band",
+                                "Multi-band",
+                                "Quadband",
+                                "Multi band",
+                                "tri-band",
+                                "Dual band",
+                                "Dual Band",
+                                "Tri-Band"
+                            ],
+                            "uriSent": "Multi-band_device",
+                            "wikipediaId": "26274846",
+                            "id": "Q1756885",
+                            "label": "tri-band"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "RTD",
+                                "Ping delay",
+                                "Round-trip latency",
+                                "Round trip time",
+                                "round-trip time",
+                                "ping time",
+                                "RTT",
+                                "Response time",
+                                "Round-trip delay time",
+                                "round-trip delay time",
+                                "Round trip delay",
+                                "Round-trip-time",
+                                "Round Trip Light Time",
+                                "round-trip delay",
+                                "Ping time",
+                                "Round-trip time"
+                            ],
+                            "uriSent": "Round-trip_time",
+                            "wikipediaId": "41672",
+                            "id": "Q1346398",
+                            "label": "round-trip delay time"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "8-QAM",
+                                "quadrature amplitude modulation",
+                                "4QAM",
+                                "32-QAM",
+                                "4-QAM",
+                                "32QAM",
+                                "1024-QAM",
+                                "512-QAM",
+                                "256QAM",
+                                "2QAM",
+                                "512QAM",
+                                "128QAM",
+                                "8QAM",
+                                "QAM-modulated",
+                                "IQ Modulation",
+                                "128-QAM",
+                                "Quadrature Amplitude Modulation",
+                                "2048QAM",
+                                "4096QAM",
+                                "64QAM",
+                                "1024QAM",
+                                "4096-QAM",
+                                "256-QAM",
+                                "16QAM",
+                                "2-QAM",
+                                "64-QAM",
+                                "16-QAM",
+                                "QAM",
+                                "Qam",
+                                "2048-QAM"
+                            ],
+                            "uriSent": "Quadrature_amplitude_modulation",
+                            "wikipediaId": "25316",
+                            "id": "Q749753",
+                            "label": "quadrature amplitude modulation"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Data communication protocol",
+                                "Protocols",
+                                "Networking protocols",
+                                "Network protocols",
+                                "communication protocol",
+                                "Networking protocol",
+                                "Web protocol",
+                                "Protocol versioning",
+                                "Computer protocol",
+                                "Data transmission protocol",
+                                "protocol",
+                                "Network Protocols",
+                                "Communications protocols",
+                                "Wire image",
+                                "Internetwork protocol",
+                                "Protocol",
+                                "Telecommunications protocol",
+                                "History of communication protocols",
+                                "Transmission protocol",
+                                "computer communications protocol",
+                                "Binary protocols",
+                                "Telecommunication protocol",
+                                "computer protocol",
+                                "Plain text protocol",
+                                "Communication protocols",
+                                "Internetworking Protocol",
+                                "Protocol layer",
+                                "Protocol design",
+                                "Protocol testing",
+                                "Protocol set",
+                                "computer communication protocol",
+                                "Network protocol",
+                                "Text-based protocol",
+                                "Network protocol design principles",
+                                "Binary protocol",
+                                "Universal protocols",
+                                "Communications protocol"
+                            ],
+                            "uriSent": "Communications_protocol",
+                            "wikipediaId": "28030850",
+                            "id": "Q132364",
+                            "label": "communication protocol"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Wi-fi 802.11b",
+                                "Wi-fi",
+                                "WiFi, 802.11",
+                                "Wi-fi 802.11a",
+                                "Wi-Fi ZONE",
+                                "Wi-Fi Protected System",
+                                "Wi-Fi-cafe",
+                                "Wifi access",
+                                "Wi fi",
+                                "Wi-Fi café",
+                                "Wifi technology",
+                                "Wi-Spy",
+                                "Wi-Fi-café",
+                                "Wifi-café",
+                                "Intel My WiFi Technology",
+                                "Wireless Fidelity",
+                                "History of Wi-Fi",
+                                "Wifi café",
+                                "Wifi-cafe",
+                                "Wi-fi 802.11g",
+                                "Wifi",
+                                "Chanalyzer",
+                                "Free Wifi",
+                                "Wifi cafe",
+                                "Wireless fidelity",
+                                "Wi-Fi",
+                                "Wi-Fi versions",
+                                "Wi-Fi network",
+                                "Wi-Fi signature",
+                                "Wi Fi",
+                                "WPA-OTP",
+                                "Wi-Fi 802.11g",
+                                "Wi-Fi 802.11",
+                                "Wireless Ethernet",
+                                "Wi‑Fi",
+                                "Wi-Fi Network",
+                                "Wi-Fi cafe",
+                                "Wi-fi technology",
+                                "WiFi md emon",
+                                "Wi-Fi 802.11b",
+                                "Wi-Fi 802.11a",
+                                "Wifi selling",
+                                "WI-FI",
+                                "ITaiwan",
+                                "WiFi Internet",
+                                "Alternatives to Wi-Fi",
+                                "Wi FiKingtiow",
+                                "WiFi"
+                            ],
+                            "uriSent": "Wi-Fi",
+                            "wikipediaId": "63973",
+                            "id": "Q29643",
+                            "label": "Wi-Fi"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "4.5G mobile",
+                                "Long term evolution advanced",
+                                "LTE Advanced",
+                                "LTE-A",
+                                "LTE+",
+                                "LTE-Advanced",
+                                "Lte advanced wireless network",
+                                "LTE Advanced Pro",
+                                "LTE-advanced",
+                                "4.9G",
+                                "LTE hetnet",
+                                "LTE-A Pro",
+                                "4,5G",
+                                "4.5G",
+                                "LTE-Advanced Pro",
+                                "4G+",
+                                "Long-Term Evolution Advanced"
+                            ],
+                            "uriSent": "LTE_Advanced",
+                            "wikipediaId": "19285762",
+                            "id": "Q1345402",
+                            "label": "LTE Advanced"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Node B",
+                                "Node-B",
+                                "NodeBs",
+                                "NodeB"
+                            ],
+                            "uriSent": "Node_B",
+                            "wikipediaId": "2319998",
+                            "id": "Q1995297",
+                            "label": "Node B"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "HSIA",
+                                "Broadband Internet connection",
+                                "New Media Speed",
+                                "internet connectivity",
+                                "Web access",
+                                "Internet connectivity",
+                                "Types of broadband connections",
+                                "Internet access program",
+                                "High speed Internet connection",
+                                "High Speed Internet Access",
+                                "Internet broadband",
+                                "High-speed Internet",
+                                "Digital connectivity",
+                                "High-speed internet",
+                                "High-speed internet connection",
+                                "High speed Internet",
+                                "Internet-Speed",
+                                "Broadband internet access",
+                                "Slow internet",
+                                "Internet usage",
+                                "Internet connection",
+                                "Accessing the Internet",
+                                "Broadband Internet access",
+                                "Internet access",
+                                "High-Speed Internet",
+                                "Internet Access",
+                                "High-speed broadband",
+                                "Bandwidth constraints",
+                                "Accessing the internet",
+                                "Broadband access",
+                                "Via broadband",
+                                "internet access"
+                            ],
+                            "uriSent": "Internet_access",
+                            "wikipediaId": "300602",
+                            "id": "Q1472399",
+                            "label": "internet access"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Cellular router",
+                                "mobile broadband modem",
+                                "Mobile modem",
+                                "Wireless Modem",
+                                "Connect card",
+                                "Connect cards",
+                                "USB modem",
+                                "Cellular Modem",
+                                "3G router",
+                                "Cellular Routers",
+                                "PCMCIA modem",
+                                "Cellular modem",
+                                "PC Card modem",
+                                "PC card modem",
+                                "Wireless modem",
+                                "Data cards"
+                            ],
+                            "uriSent": "Cellular_router",
+                            "wikipediaId": "27350573",
+                            "id": "Q1549420",
+                            "label": "mobile broadband modem"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Mobile data",
+                                "mobile broadband",
+                                "Cellular broadband",
+                                "Mobile Broadband",
+                                "Cellular broadband service"
+                            ],
+                            "uriSent": "Mobile_broadband",
+                            "wikipediaId": "8879085",
+                            "id": "Q640394",
+                            "label": "mobile broadband"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "code rate",
+                                "information rate"
+                            ],
+                            "uriSent": "Code_rate",
+                            "wikipediaId": "7981806",
+                            "id": "Q834373",
+                            "label": "code rate"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "8-QAM",
+                                "quadrature amplitude modulation",
+                                "4QAM",
+                                "32-QAM",
+                                "4-QAM",
+                                "32QAM",
+                                "1024-QAM",
+                                "512-QAM",
+                                "256QAM",
+                                "2QAM",
+                                "512QAM",
+                                "128QAM",
+                                "8QAM",
+                                "QAM-modulated",
+                                "IQ Modulation",
+                                "128-QAM",
+                                "Quadrature Amplitude Modulation",
+                                "2048QAM",
+                                "4096QAM",
+                                "64QAM",
+                                "1024QAM",
+                                "4096-QAM",
+                                "256-QAM",
+                                "16QAM",
+                                "2-QAM",
+                                "64-QAM",
+                                "16-QAM",
+                                "QAM",
+                                "Qam",
+                                "2048-QAM"
+                            ],
+                            "uriSent": "16-QAM",
+                            "wikipediaId": "25316",
+                            "id": "Q749753",
+                            "label": "quadrature amplitude modulation"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Bit per second",
+                                "Gigabit/s",
+                                "Bit/s",
+                                "Bit rates",
+                                "Bytes per second",
+                                "Bit transfer rate",
+                                "Line bitrate",
+                                "Bit Rate",
+                                "Line rate",
+                                "data rate",
+                                "Information rate",
+                                "bitrate",
+                                "Transfer rate",
+                                "Net Bit Rate",
+                                "Byte per second",
+                                "Gross bitrate",
+                                "Gigabytes per second",
+                                "Bits/s",
+                                "Millibit",
+                                "bit rate",
+                                "Uncoded transfer rate",
+                                "Line-rate",
+                                "Bit-rate",
+                                "transfer rate for binary digits",
+                                "Bits per second",
+                                "Raw bitrate",
+                                "bandwidth",
+                                "B/s",
+                                "Net bit rate",
+                                "Useful bit rate",
+                                "Bitrate",
+                                "Useful bitrate",
+                                "Peak bitrate",
+                                "binary digit rate",
+                                "Gross bit rate",
+                                "Data transfer rates",
+                                "Gross data transfer rate",
+                                "Transmission speed",
+                                "Net bitrate",
+                                "Bits Per Second"
+                            ],
+                            "uriSent": "Bit_rate",
+                            "wikipediaId": "272290",
+                            "id": "Q194158",
+                            "label": "bit rate"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Quadriphase",
+                                "Staggered phase shift keying",
+                                "Binary phase-shift keying",
+                                "Offset psk",
+                                "SDPSK",
+                                "Binary Phase Shift Keying",
+                                "QPSK",
+                                "M PSK",
+                                "DQPSK",
+                                "GPSK",
+                                "Phase Shift Keying",
+                                "Coherent differential phase-shift keying",
+                                "PSK",
+                                "Differential phase-shift keying",
+                                "Quaternary phase shift keying",
+                                "Phase shift keying",
+                                "Phase Shift Modulation",
+                                "8 Phase Shift Keying",
+                                "DBPSK",
+                                "BPSK",
+                                "8-PSK",
+                                "Opsk",
+                                "SQPSK",
+                                "HPSK",
+                                "256psk",
+                                "DPSK",
+                                "Gaussian Phase Shift Keying",
+                                "128psk",
+                                "512psk",
+                                "Quaternary phase-shift keying",
+                                "2psk",
+                                "16psk",
+                                "1024psk",
+                                "64psk",
+                                "Differential phase shift keying",
+                                "Quadrature Phase Shift Keying",
+                                "Quatenary phase shift keying",
+                                "Filtered symmetric differential phase-shift keying",
+                                "phase-shift keying",
+                                "8 phase shift keying",
+                                "8PSK",
+                                "Staggered quadrature phase-shift keying",
+                                "4PSK",
+                                "32psk",
+                                "Biphase modulation",
+                                "Differential Phase Shift Keying",
+                                "Binary pase shift keying",
+                                "Biphase Shift Keying",
+                                "Quadrature phase-shift keying",
+                                "Offset QPSK",
+                                "CDPSK",
+                                "OQPSK",
+                                "Offset quadrature phase-shift keying",
+                                "4-PSK",
+                                "Mpsk"
+                            ],
+                            "uriSent": "QPSK",
+                            "wikipediaId": "41551",
+                            "id": "Q4874866",
+                            "label": "phase-shift keying"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Global mobile Suppliers Association"
+                            ],
+                            "uriSent": "Global_mobile_Suppliers_Association",
+                            "wikipediaId": "12383018",
+                            "id": "Q5570502",
+                            "label": "Global mobile Suppliers Association"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "DC-HSDPA",
+                                "HSPA(Plus)",
+                                "HSPAP",
+                                "3.75G",
+                                "3G++",
+                                "Dual-Cell HSUPA",
+                                "DC-HSPA",
+                                "Dual-Carrier HSDPA",
+                                "3,75G",
+                                "HSPA Evolution",
+                                "DC-HSPA+",
+                                "Dual-Carrier HSUPA",
+                                "DC HSDPA",
+                                "Dual-Carrier HSPA",
+                                "H+",
+                                "3G Dual Carrier",
+                                "HSDPA+",
+                                "EHSPA",
+                                "Evolved High-Speed Packet Access",
+                                "DC HSUPA",
+                                "HSPA+",
+                                "4G HSPA+",
+                                "DC-HSUPA",
+                                "Evolved HSPA",
+                                "Dual-Cell HSPA",
+                                "Dual-Cell HSDPA"
+                            ],
+                            "uriSent": "Evolved_HSPA",
+                            "wikipediaId": "11728415",
+                            "id": "Q1071187",
+                            "label": "Evolved HSPA"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Higher-order modulation"
+                            ],
+                            "uriSent": "Higher-order_modulation",
+                            "wikipediaId": "4450334",
+                            "id": "Q5757968",
+                            "label": "Higher-order modulation"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Wideband CDMA",
+                                "Universal Mobile Telecommunications System",
+                                "UTRA-TDD HCR",
+                                "UTRA TDD-LCR",
+                                "TD SCDMA",
+                                "List of TD-SCDMA networks",
+                                "UMTS-FDD",
+                                "Wideband Code Division Multiple Access",
+                                "UTRA-TDD LCR",
+                                "UTRA TDD-HCR",
+                                "Wideband code division multiple access",
+                                "UMTS-TDD",
+                                "TD-CDMA",
+                                "TDSCDMA",
+                                "Umts",
+                                "W-CDMA",
+                                "WCDMA",
+                                "UTRA",
+                                "UARFCN",
+                                "TD-SCDMA",
+                                "UMTS",
+                                "UTRA-TDD",
+                                "Universal mobile telecommunications system",
+                                "Time Division-Synchronous Code Division Multiple Access",
+                                "Time Division Synchronous Code Division Multiple Access",
+                                "Universal Mobile Telephone System",
+                                "Uu interface"
+                            ],
+                            "uriSent": "WCDMA",
+                            "wikipediaId": "32237",
+                            "id": "Q79686",
+                            "label": "Universal Mobile Telecommunications System"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "overhead information"
+                            ],
+                            "uriSent": "Overhead_information",
+                            "wikipediaId": "41476",
+                            "id": "Q7113691",
+                            "label": "overhead information"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Android security",
+                                "ANR dialog",
+                                "Android.os",
+                                "Clock",
+                                "Google android",
+                                "Android-powered device",
+                                "Google Android Linux OS",
+                                "Green robot",
+                                "Android mobile phone platform",
+                                "Toxic hellstew",
+                                "Android application",
+                                "Settings",
+                                "Andromeda",
+                                "@Android",
+                                "Android Device Manager",
+                                "Android, Inc.",
+                                "Mobile Android",
+                                "Android malware",
+                                "Android device",
+                                "Android client",
+                                "Android",
+                                "Criticism of Android",
+                                "History of the Android operating system",
+                                "Android cell phone",
+                                "IDroid",
+                                "Android cellphone",
+                                "Android platform",
+                                "Android google",
+                                "Android system",
+                                "Android OS",
+                                "Android os",
+                                "Security vulnerabilities in Android",
+                                "App Ops",
+                                "Droiddream",
+                                "Android Open Source Project",
+                                "Android fork",
+                                "Android Inc.",
+                                "android",
+                                "Privacy features of Android",
+                                "Ashmem",
+                                "Android (operating system)",
+                                "Android Operating System",
+                                "Android Linux",
+                                "Google Android",
+                                "Android mobile phone",
+                                "Android mobile",
+                                "Android software",
+                                "Android.com",
+                                "Android Inc",
+                                "Logo Android",
+                                "Google Android One",
+                                "Android Apps",
+                                "Android devices",
+                                "Android app",
+                                "Os android",
+                                "Android logo",
+                                "Bugdroid",
+                                "Google's Android",
+                                "TaintDroid",
+                                "Android Phone",
+                                "Quantum",
+                                "Android phone operating system",
+                                "Wakelock",
+                                "Android operating system"
+                            ],
+                            "uriSent": "Android_(operating_system)",
+                            "wikipediaId": "12610483",
+                            "id": "Q94",
+                            "label": "Android"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Single user MIMO",
+                                "Multiple-input multiple-output Communications",
+                                "multiple-input and multiple-output",
+                                "MIMO commmunications",
+                                "SU-MIMO",
+                                "Multiple-input multiple-output",
+                                "MIMO Communications",
+                                "Multi-input Multi-output",
+                                "Multiple-input and multiple-output",
+                                "Multiple antenna research",
+                                "MIMO communications",
+                                "Multiple-input multiple-output system",
+                                "MIMO",
+                                "Mimo",
+                                "Multiple-input multiple-output communications"
+                            ],
+                            "uriSent": "MIMO",
+                            "wikipediaId": "13544419",
+                            "id": "Q176862",
+                            "label": "MIMO"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "3rd Generation Partnership Project",
+                                "Third Generation Partnership Project",
+                                "3GPP",
+                                "3gpp"
+                            ],
+                            "uriSent": "3GPP",
+                            "wikipediaId": "397301",
+                            "id": "Q229804",
+                            "label": "3rd Generation Partnership Project"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Ethernet port",
+                                "Ethernet cables",
+                                "Embedded Ethernet",
+                                "Xerox Ethernet",
+                                "Ethernets",
+                                "Higher Speed Ethernet",
+                                "Ethernet network",
+                                "Jabber",
+                                "Ether net",
+                                "Etherand",
+                                "Full-duplex ethernet",
+                                "Ethernet",
+                                "ENET",
+                                "Original Ethernet",
+                                "Ethernet cable",
+                                "Full-duplex Ethernet"
+                            ],
+                            "uriSent": "Ethernet",
+                            "wikipediaId": "9499",
+                            "id": "Q79984",
+                            "label": "Ethernet"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "3.9 G",
+                                "4G LTE",
+                                "LTE telecommunication",
+                                "Lte wireless standard",
+                                "TD-LTE",
+                                "Long-term Evolution",
+                                "Long-Term Evolution Time-Division Duplex",
+                                "3,9G",
+                                "3GPP-LTE",
+                                "TDD LTE",
+                                "3.95G",
+                                "LTE-TDD",
+                                "Long term evolution",
+                                "Long-term evolution",
+                                "LTE timeline",
+                                "Long Term Evolution",
+                                "3.9G",
+                                "Long-Term Evolution",
+                                "Long term evolution wireless",
+                                "Lte standard",
+                                "3GPP long-term evolution",
+                                "LTE-FDD",
+                                "3GPP Long Term Evolution",
+                                "Lte wireless",
+                                "TDD-LTE",
+                                "Advanced eXtended Global Platform",
+                                "Advance 4G",
+                                "3GPP Long-Term Evolution",
+                                "3GPP long term evolution",
+                                "LTE (telecommunication)",
+                                "Long term evolution wireless standard",
+                                "Time-Division Long-Term Evolution",
+                                "LTE 4G",
+                                "Long term evolution standard",
+                                "LTE",
+                                "LTE network",
+                                "LTE phone",
+                                "LTE TDD",
+                                "AXGP",
+                                "Long-Term evolution"
+                            ],
+                            "uriSent": "LTE_(telecommunication)",
+                            "wikipediaId": "19752979",
+                            "id": "Q79703",
+                            "label": "Long Term Evolution"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Delayed data feed",
+                                "lag",
+                                "Network Lag",
+                                "latency",
+                                "Lag time",
+                                "Low latency",
+                                "Motion To Photon Latency",
+                                "One-way latency",
+                                "Transit delay",
+                                "Low-latency"
+                            ],
+                            "uriSent": "Latency_(engineering)",
+                            "wikipediaId": "17933",
+                            "id": "Q1771903",
+                            "label": "latency"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "DC-HSDPA",
+                                "HSPA(Plus)",
+                                "HSPAP",
+                                "3.75G",
+                                "3G++",
+                                "Dual-Cell HSUPA",
+                                "DC-HSPA",
+                                "Dual-Carrier HSDPA",
+                                "3,75G",
+                                "HSPA Evolution",
+                                "DC-HSPA+",
+                                "Dual-Carrier HSUPA",
+                                "DC HSDPA",
+                                "Dual-Carrier HSPA",
+                                "H+",
+                                "3G Dual Carrier",
+                                "HSDPA+",
+                                "EHSPA",
+                                "Evolved High-Speed Packet Access",
+                                "DC HSUPA",
+                                "HSPA+",
+                                "4G HSPA+",
+                                "DC-HSUPA",
+                                "Evolved HSPA",
+                                "Dual-Cell HSPA",
+                                "Dual-Cell HSDPA"
+                            ],
+                            "uriSent": "Evolved_High_Speed_Packet_Access",
+                            "wikipediaId": "11728415",
+                            "id": "Q1071187",
+                            "label": "Evolved HSPA"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Link adaptation",
+                                "Modulation and coding scheme",
+                                "Adaptive modulation and error coding",
+                                "Adaptive modulation scheme",
+                                "Adaptive modulation and coding",
+                                "Modulation and Coding Scheme",
+                                "Adaptive coding and modulation",
+                                "Adaptive modulation"
+                            ],
+                            "uriSent": "Link_adaptation",
+                            "wikipediaId": "2321017",
+                            "id": "Q2714551",
+                            "label": "Link adaptation"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Orthoganal",
+                                "orthogonal",
+                                "Orthogonal subspace",
+                                "Statistically orthogonal",
+                                "Ortogonal",
+                                "Orthogonal",
+                                "Orthogonal subspaces",
+                                "Orthogonak",
+                                "Statistical orthogonality",
+                                "orthogonality",
+                                "Orthogonality",
+                                "Orthogonally"
+                            ],
+                            "uriSent": "Orthogonality",
+                            "wikipediaId": "102221",
+                            "id": "Q215067",
+                            "label": "orthogonality"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Mobile Broadband Alliance"
+                            ],
+                            "uriSent": "Mobile_Broadband_Alliance",
+                            "wikipediaId": "20515857",
+                            "id": "Q16942565",
+                            "label": "Mobile Broadband Alliance"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "JP",
+                                "jp",
+                                "JapaN",
+                                "The State of Japan",
+                                "JPN",
+                                "Modern–era Japan",
+                                "🇯🇵",
+                                "Nihon-koku",
+                                "日本國",
+                                "Japang",
+                                "State of Japan",
+                                "P:JP",
+                                "Biodiversity in Japan",
+                                "Ja",
+                                "JAPAN",
+                                "Public infrastructure in Japan",
+                                "Jepan",
+                                "Land of the Rising Sun",
+                                "P:JAPAN",
+                                "Japan",
+                                "日本",
+                                "Nippon",
+                                "Japanese",
+                                "Japian",
+                                "Nihon",
+                                "Jpan",
+                                "Modern-era Japan",
+                                "Nippon-koku",
+                                "JA",
+                                "The Land of the Rising Sun",
+                                "JAP",
+                                "Jap",
+                                "ISO 3166-1:JP",
+                                "🗾",
+                                "日本国"
+                            ],
+                            "uriSent": "Japan",
+                            "wikipediaId": "15573",
+                            "id": "Q17",
+                            "label": "Japan"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "IS683C",
+                                "EVDO Rev. A",
+                                "Evolution-Data Only",
+                                "Ev-DO",
+                                "EV-DO Rev. B",
+                                "EV-DO Rev. A",
+                                "Evolution Data Only",
+                                "Evolution-Data Optimized",
+                                "1xEV-DO",
+                                "IS-856",
+                                "1XEv",
+                                "Evolution Data Optimized",
+                                "EV-DO",
+                                "1x-EVDO",
+                                "High data rate",
+                                "Ultra Mobile Broadband",
+                                "1xEVDO",
+                                "1xEvDO",
+                                "EV-DV",
+                                "EVDO",
+                                "EvDO",
+                                "Evdo",
+                                "EvDo",
+                                "EvDo-rev.A"
+                            ],
+                            "uriSent": "Evolution-Data_Optimized",
+                            "wikipediaId": "949984",
+                            "id": "Q155028",
+                            "label": "Evolution-Data Optimized"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Mobile phone communication",
+                                "Mobile Telecommunications",
+                                "Mobile data connection",
+                                "Mobile communications",
+                                "Mobile telecommunications",
+                                "mobile telephony",
+                                "Cellular telephony",
+                                "Mobile Telephony",
+                                "Mobile communication",
+                                "Mobile phone telephony",
+                                "Mobile telecommunication",
+                                "Mobile telecommunication technology"
+                            ],
+                            "uriSent": "Mobile_telephony",
+                            "wikipediaId": "1145887",
+                            "id": "Q992968",
+                            "label": "mobile telephony"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Hybrid automatic repeat request",
+                                "Chase combining",
+                                "Hybrid automatic repeat-request",
+                                "HARQ",
+                                "Hybrid ARQ"
+                            ],
+                            "uriSent": "Hybrid_automatic_repeat_request",
+                            "wikipediaId": "3546973",
+                            "id": "Q1017139",
+                            "label": "Hybrid automatic repeat request"
+                        }
+                    }
+                ],
+                "technologyExecution": {
+                    "beginDate": "2024-01-17T13:11:50.585330",
+                    "endDate": "2024-01-17T13:11:51.473990"
+                },
+                "technology": {
+                    "name": "WikiLink Alias",
+                    "company": "Orange",
+                    "id": "wikilink_alias",
+                    "type": "link",
+                    "version": "Unknown"
+                }
+            },
+            {
+                "technologyResults": [
+                    {
+                        "dagobah": {
+                            "debug": {
+                                "cpaTaskTimeSec": 0.0,
+                                "memoryUsage": 0.0,
+                                "entityScoringTimeSec": 0.0,
+                                "ceaTaskTimeSec": 0.0,
+                                "abnormalLookupMentions": [],
+                                "ctaTaskTimeSec": 0.0,
+                                "avgLookupCandidate": 0.0,
+                                "subgraphConstructionTimeSec": 0.0
+                            },
+                            "preprocessed": {},
+                            "executionTimeSec": {
+                                "preprocessingTime": 0.0,
+                                "totalTime": 4.17,
+                                "lookupTime": 0.0
+                            },
+                            "annotated": {}
+                        },
+                        "index": 0
+                    },
+                    {
+                        "dagobah": {
+                            "debug": {
+                                "cpaTaskTimeSec": 0.0,
+                                "memoryUsage": 0.0,
+                                "entityScoringTimeSec": 0.01,
+                                "ceaTaskTimeSec": 4.09,
+                                "abnormalLookupMentions": [],
+                                "ctaTaskTimeSec": 0.55,
+                                "avgLookupCandidate": 62.86,
+                                "subgraphConstructionTimeSec": 1.56
+                            },
+                            "preprocessed": {
+                                "primitiveTyping": [
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "ORDINAL",
+                                                "typingScore": 0.86
+                                            },
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 0.14
+                                            }
+                                        ],
+                                        "columnIndex": 0
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 0.86
+                                            },
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 0.14
+                                            }
+                                        ],
+                                        "columnIndex": 1
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 0.86
+                                            },
+                                            {
+                                                "typingLabel": "QUANTITY",
+                                                "typingScore": 0.14
+                                            }
+                                        ],
+                                        "columnIndex": 2
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "ORG",
+                                                "typingScore": 0.86
+                                            },
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 0.14
+                                            }
+                                        ],
+                                        "columnIndex": 3
+                                    }
+                                ],
+                                "headerInfo": {
+                                    "hasHeader": true,
+                                    "headerScore": 0.62,
+                                    "headerLabel": [
+                                        "HSUPA User Equipment (UE) categories",
+                                        "HSUPA User Equipment (UE) categories",
+                                        "HSUPA User Equipment (UE) categories",
+                                        "HSUPA User Equipment (UE) categories"
+                                    ],
+                                    "headerPosition": 0
+                                },
+                                "primaryKeyInfo": {
+                                    "primaryKeyScore": 0.0,
+                                    "primaryKeyPosition": null,
+                                    "hasPrimaryKey": false
+                                },
+                                "tableOrientation": {
+                                    "orientationScore": 0.7,
+                                    "orientationLabel": "HORIZONTAL"
+                                }
+                            },
+                            "executionTimeSec": {
+                                "preprocessingTime": 0.22,
+                                "totalTime": 11.23,
+                                "lookupTime": 0.81
+                            },
+                            "annotated": {
+                                "CTA": [
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 0.86,
+                                                "score": 0.07,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q170474"
+                                            },
+                                            {
+                                                "coverage": 0.86,
+                                                "score": 0.05,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q418"
+                                            }
+                                        ],
+                                        "column": 3
+                                    }
+                                ],
+                                "tableDataRevised": [
+                                    [
+                                        "HSUPA User Equipment (UE) categories",
+                                        "HSUPA User Equipment (UE) categories",
+                                        "HSUPA User Equipment (UE) categories",
+                                        "HSUPA User Equipment (UE) categories"
+                                    ],
+                                    [
+                                        "HSUPACategory",
+                                        "Release",
+                                        "Max.UplinkSpeed(Mbit/s)",
+                                        "Modulation"
+                                    ],
+                                    [
+                                        "1",
+                                        "6",
+                                        "0.73",
+                                        "QPSK"
+                                    ],
+                                    [
+                                        "2",
+                                        "6",
+                                        "1.46",
+                                        "QPSK"
+                                    ],
+                                    [
+                                        "3",
+                                        "6",
+                                        "1.46",
+                                        "QPSK"
+                                    ],
+                                    [
+                                        "4",
+                                        "6",
+                                        "2.93",
+                                        "QPSK"
+                                    ],
+                                    [
+                                        "5",
+                                        "6",
+                                        "2.00",
+                                        "QPSK"
+                                    ],
+                                    [
+                                        "6",
+                                        "6",
+                                        "5.76",
+                                        "QPSK"
+                                    ]
+                                ],
+                                "CPA": [],
+                                "CEA": [
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q170474"
+                                        },
+                                        "column": 3,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q13377152"
+                                        },
+                                        "column": 3,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q13377152"
+                                        },
+                                        "column": 3,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q13377152"
+                                        },
+                                        "column": 3,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q13377152"
+                                        },
+                                        "column": 3,
+                                        "row": 5
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q13377152"
+                                        },
+                                        "column": 3,
+                                        "row": 6
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q13377152"
+                                        },
+                                        "column": 3,
+                                        "row": 7
+                                    }
+                                ]
+                            }
+                        },
+                        "index": 1
+                    }
+                ],
+                "technologyExecution": {
+                    "beginDate": "2024-01-17T15:22:26.783992",
+                    "endDate": "2024-01-17T15:22:44.006364"
+                },
+                "technology": {
+                    "name": "DAGOBAH Table Annotation",
+                    "company": "Orange",
+                    "id": "dagobah_anotation",
+                    "type": "table",
+                    "version": "Unknown"
+                }
+            }
+        ]
+    }
+}

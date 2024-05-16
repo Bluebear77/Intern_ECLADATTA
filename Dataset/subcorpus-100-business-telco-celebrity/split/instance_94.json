@@ -1,0 +1,2829 @@
+{
+    "_index": "corpus_doc_telco100_en",
+    "_id": "10213",
+    "_source": {
+        "identificationMetadata": {
+            "id": "10213",
+            "title": "Enhanced Data rates for GSM Evolution",
+            "url": [
+                "https://en.wikipedia.org/?curid=10213",
+                "https://en.wikipedia.org/wiki/Enhanced Data rates for GSM Evolution"
+            ],
+            "version": 1176705354,
+            "versionDate": "2023-09-23T13:26:35Z",
+            "hash": "57c9c623f340189d9ad748cda42e7264",
+            "wikidata": "Q204833"
+        },
+        "descriptionMetadata": {
+            "categories": [
+                "CS1 maint: archived copy as title",
+                "CS1 errors: missing title",
+                "CS1 errors: bare URL",
+                "All articles with dead external links",
+                "Articles with dead external links from June 2016",
+                "Articles with short description",
+                "Short description is different from Wikidata",
+                "GSM standard",
+                "Telecommunications-related introductions in 2003",
+                "Videotelephony"
+            ],
+            "language": "en",
+            "source": "wikipedia"
+        },
+        "contentMetadata": {
+            "format": "wikitext",
+            "content": "{{Short description|Digital mobile phone technology}}\n{{redirect|EDGE}}\n{{redirect|Edge network|devices at the edge of a network|Edge device}} \n[[File:EDGE symbol Android.png|thumbnail|EDGE sign shown in notification bar on an Android-based smartphone.]]\n{{List of mobile phone generations}}\n\n'''Enhanced Data rates for GSM Evolution''' ('''EDGE'''), also known as '''2.75G''', '''Enhanced [[General Packet Radio Service|GPRS]]''' ('''EGPRS'''), '''[[IMT-2000|IMT]] Single Carrier''' ('''IMT-SC'''), and '''Enhanced Data rates for Global Evolution''', is a digital [[mobile phone]] technology that allows improved data transmission rates as a [[backward-compatible]] extension of [[GSM]]. EDGE is considered a pre-3G radio technology and is part of [[ITU]]'s [[3G]] definition.<ref name=\"ref1\">{{cite web|url=http://www.itu.int/ITU-D/imt-2000/DocumentsIMT2000/IMT-2000.pdf |title=Archived copy |access-date=2011-05-10 |url-status=dead |archive-url=https://web.archive.org/web/20090306095648/http://www.itu.int/ITU-D/imt-2000/DocumentsIMT2000/IMT-2000.pdf |archive-date=2009-03-06 }}</ref> EDGE was deployed on GSM networks beginning in 2003 – initially by [[Cingular]] (now [[AT&T]]) in the United States.<ref>{{cite web|url=http://www.itu.int/ITU-D/imt-2000/MiscDocuments/IMT-Deployments-Rev3.pdf |access-date=April 16, 2008 }}{{dead link|date=June 2016|bot=medic}}{{cbignore|bot=medic}}</ref>\n\nEDGE is standardized also by [[3GPP]] as part of the GSM family. A variant, so called Compact-EDGE, was developed for use in a portion of [[Digital AMPS]] network spectrum.<ref>ETSI SMG2 99/872</ref>\n\nThrough the introduction of sophisticated methods of coding and transmitting data, EDGE delivers higher bit-rates per radio channel, resulting in a threefold increase in capacity and performance compared with an ordinary GSM/GPRS connection.\n\nEDGE can be used for any [[packet switching|packet switched]] application, such as an [[Internet]] connection.\n\nEvolved EDGE continues in release 7 of the [[3GPP]] standard providing reduced latency and more than doubled performance e.g. to complement High-Speed Packet Access ([[High Speed Packet Access|HSPA]]). Peak bit-rates of up to 1 Mbit/s and typical bit-rates of 400 kbit/s can be expected.\n\n== Technology ==\n[[File:Cellular network standards and generation timeline.svg|thumb|Cellular network standards and generation timeline.]]\nEDGE/EGPRS is implemented as a bolt-on enhancement for [[2G#2.5G (GPRS)|2.5G]] GSM/GPRS networks, making it easier for existing GSM carriers to upgrade to it. EDGE is a superset to GPRS and can function on any network with GPRS deployed on it, provided the carrier implements the necessary upgrade.\nEDGE requires no hardware or software changes to be made in GSM core networks. EDGE-compatible transceiver units must be installed and the base station subsystem needs to be upgraded to support EDGE. If the operator already has this in place, which is often the case today, the network can be upgraded to EDGE by activating an optional software feature. Today EDGE is supported by all major chip vendors for both GSM and [[WCDMA]]/[[High Speed Packet Access|HSPA]].\n\n=== Transmission techniques ===\nIn addition to [[Gaussian minimum-shift keying]] (GMSK), EDGE uses [[phase-shift keying#Higher-order PSK|higher-order PSK/8 phase-shift keying]] (8PSK) for the upper five of its nine modulation and coding schemes. EDGE produces a 3-bit word for every change in carrier phase. This effectively triples the gross data rate offered by GSM. EDGE, like [[GPRS]], uses a rate adaptation algorithm that adapts the modulation and coding scheme (MCS) according to the quality of the radio channel, and thus the bit rate and robustness of data transmission. It introduces a new technology not found in GPRS, [[Hybrid ARQ|incremental redundancy]], which, instead of retransmitting disturbed packets, sends more redundancy information to be combined in the receiver. This increases the probability of correct decoding.\n\nEDGE can carry a bandwidth up to 236&nbsp;kbit/s (with end-to-end latency of less than 150&nbsp;ms) for 4 [[timeslot]]s (theoretical maximum is 473.6&nbsp;kbit/s for 8 timeslots) in packet mode. This means it can handle four times as much traffic as standard GPRS. EDGE meets the [[International Telecommunication Union]]'s requirement for a [[3G]] network, and has been accepted by the ITU as part of the [[IMT-2000]] family of 3G standards.<ref name=\"ref1\"/> It also enhances the circuit data mode called [[HSCSD]], increasing the data rate of this service.\n\n=== EDGE modulation and coding scheme (MCS) ===\nThe channel encoding process in GPRS as well as EGPRS/EDGE consists of two steps: first, a cyclic code is used to add parity bits, which are also referred to as the Block Check Sequence, followed by coding with a possibly punctured [[convolutional code]].<ref name=TS45001>{{cite web |url=http://www.3gpp.org/ftp/Specs/html-info/45001.htm |title=3GGP TS45.001: Technical Specification Group GSM/EDGE Radio Access Network; Physical layer on the radio path; General description |author=3rd Generation Partnership Project |date=September 2012 |access-date=2013-07-20}}</ref> In GPRS, the Coding Schemes CS-1 to CS-4 specify the number of parity bits generated by the cyclic code and the puncturing rate of the convolutional code.<ref name=TS45001/> In GPRS Coding Schemes CS-1 through CS-3, the convolutional code is of rate 1/2, i.e. each input bit is converted into two coded bits.<ref name=TS45001/> In Coding Schemes CS-2 and CS-3, the output of the convolutional code is [[punctured code|punctured]] to achieve the desired code rate.<ref name=TS45001/> In GPRS Coding Scheme CS-4, no convolutional coding is applied.<ref name=TS45001/>\n\nIn EGPRS/EDGE, the [[Modulation (disambiguation)|modulation]] and coding schemes MCS-1 to MCS-9 take the place of the coding schemes of GPRS, and additionally specify which modulation scheme is used, GMSK or 8PSK.<ref name=TS45001/> MCS-1 through MCS-4 use GMSK and have performance similar (but not equal) to GPRS, while MCS-5 through MCS-9 use 8PSK.<ref name=TS45001/> In all EGPRS modulation and coding schemes, a convolutional code of rate 1/3 is used, and puncturing is used to achieve the desired code rate.<ref name=TS45001/> In contrast to GPRS, the [[Radio Link Control]] (RLC) and [[Media Access Control]] (MAC) headers and the payload data are coded separately in EGPRS.<ref name=TS45001/> The headers are coded more robustly than the data.<ref name=TS45001/>\n\n{| class=\"wikitable\" align=center\n! GPRS<br/>coding scheme\n! Bitrate including RLC/MAC overhead{{efn|name=gross|This is rate at which the RLC/MAC layer [[protocol data unit]] (PDU) (called a radio block) is transmitted. As shown in TS 44.060 section 10.0a.1,<ref name=\"TS44060-section-10.0a.1\">{{cite web |url=http://www.3gpp.org/ftp/Specs/html-info/45001.htm |title=3GGP TS45.001: Technical Specification Group GSM/EDGE Radio Access Network; Mobile Station (MS) - Base Station System (BSS) interface; Radio Link Control / Medium Access Control (RLC/MAC) protocol; section 10.0a.1 - GPRS RLC/MAC block for data transfer |author=3rd Generation Partnership Project |version=12.5.0 |date=June 2015 |access-date=2015-12-05}}</ref> a radio block consists of MAC header, RLC header, RLC data unit and spare bits. The RLC data unit represents the payload, the rest is overhead. The radio block is coded by the convolutional code specified for a particular Coding Scheme, which yields the same PHY layer data rate for all Coding Schemes.}}{{efn|name=usf|Cited in various sources, e.g. in TS 45.001 table 1.<ref name=TS45001/> is the bitrate including the RLC/MAC headers, but excluding the uplink state flag (USF), which is part of the MAC header,<ref name=\"TS44060-section-10.2.1\">{{cite web |url=http://www.3gpp.org/ftp/Specs/html-info/45001.htm |title=3GGP TS45.001: Technical Specification Group GSM/EDGE Radio Access Network; Mobile Station (MS) - Base Station System (BSS) interface; Radio Link Control / Medium Access Control (RLC/MAC) protocol; section 10.2.1 - Downlink RLC data block |author=3rd Generation Partnership Project |version=12.5.0 |date=June 2015 |access-date=2015-12-05}}</ref> yielding a bitrate that is 0.15 kbit/s lower.}}<br/>(kbit/s/slot)\n! Bitrate excluding RLC/MAC overhead{{efn|name=net|The net bitrate here is the rate at which the RLC/MAC layer payload (the RLC data unit) is transmitted. As such, this bit rate excludes the header overhead from the RLC/MAC layers.}}<br/>(kbit/s/slot)\n! [[Modulation]]\n! Code rate\n|- align=center\n| CS-1\n| 9.20\n| 8.00\n| GMSK\n| 1/2\n|- align=center\n| CS-2\n| 13.55\n| 12.00\n| GMSK\n| ≈2/3\n|- align=center\n| CS-3\n| 15.75\n| 14.40\n| GMSK\n| ≈3/4\n|- align=center\n| CS-4\n| 21.55\n| 20.00\n| GMSK\n| 1\n|}\n\n{| class=\"wikitable\" align=center style=\"float:left; margin:0.26em 0.8em; margin-right:0.2em; margin-left:0px;\"\n! EDGE modulation and coding <br />scheme (MCS)\n! Bitrate including RLC/MAC overhead{{efn|name=gross}}<br />(kbit/s/slot)\n! Bitrate excluding RLC/MAC overhead{{efn|name=net}}<br/>(kbit/s/slot)\n! Modulation\n! Data<br />code rate\n! Header<br />code rate\n|- align=center\n| MCS-1\n| 9.20\n| 8.00\n| GMSK\n| ≈0.53\n| ≈0.53\n|- align=center\n| MCS-2\n| 11.60\n| 10.40\n| GMSK\n| ≈0.66\n| ≈0.53\n|- align=center\n| MCS-3\n| 15.20\n| 14.80\n| GMSK\n| ≈0.85\n| ≈0.53\n|- align=center\n| MCS-4\n| 18.00\n| 16.80\n| GMSK\n| 1\n| ≈0.53\n|- align=center\n| MCS-5\n| 22.80\n| 21.60\n| 8PSK\n| ≈0.37\n| 1/3\n|- align=center\n| MCS-6\n| 30.00\n| 28.80\n| 8PSK\n| ≈0.49\n| 1/3\n|- align=center\n| MCS-7\n| 45.20\n| 44.00\n| 8PSK\n| ≈0.76\n| ≈0.39\n|- align=center\n| MCS-8\n| 54.80\n| 53.60\n| 8PSK\n| ≈0.92\n| ≈0.39\n|- align=center\n| MCS-9\n| 59.60\n| 58.40\n| 8PSK\n| 1\n| ≈0.39\n|}\n{{clear|both}}\n\n{{notelist}}\n\n== Evolved EDGE ==\n'''Evolved EDGE''', also called '''EDGE Evolution''' and '''2.875G''', is a bolt-on extension to the [[GSM]] mobile telephony standard, which improves on EDGE in a number of ways. Latencies are reduced by lowering the [[Transmission Time Interval]] by half (from 20 ms to 10 ms). Bit rates are increased up to 1 Mbit/s peak bandwidth and latencies down to 80 ms using dual carrier, higher symbol rate and [[higher-order modulation]] (32QAM and 16QAM instead of 8PSK), and [[turbo code]]s to improve error correction. This results in real world downlink speeds of up to 600kbit/s.<ref>{{cite web |url=http://developer.att.com/devcentral/tools_technologies/network/docs/DataCapabilities_GPRS__to_HSDPA.pdf |title=EDGE, HSPA and LTE: The Mobile Broadband Advantage |publisher=Rysavy Research and 3G Americas |pages=58–65 |date=2007-09-01 |access-date=2010-09-27 |url-status=dead |archive-url=https://web.archive.org/web/20091007091901/http://developer.att.com/devcentral/tools_technologies/network/docs/DataCapabilities_GPRS__to_HSDPA.pdf |archive-date=2009-10-07 }}</ref> Further the signal quality is improved using dual antennas improving average bit-rates and spectrum efficiency.\n\nThe main intention of increasing the existing EDGE throughput is that many operators would like to upgrade their existing infrastructure rather than invest on new network infrastructure. Mobile operators have invested billions in GSM networks, many of which are already capable of supporting EDGE data speeds up to 236.8 kbit/s. With a software upgrade and a new device compliant with Evolved EDGE (like an Evolved EDGE [[smartphone]]) for the user, these data rates can be boosted to speeds approaching 1 Mbit/s (i.e. 98.6 kbit/s per timeslot for 32QAM). Many service providers may not invest in a completely new technology like [[3G]] networks.<ref name=\"engadgetmobile.com\">{{cite web|url=http://www.engadgetmobile.com/2009/09/14/nokia-siemens-fires-off-first-edge-evolution-downlink-dual-carrier/|title=Yahoo!|website=www.engadgetmobile.com|access-date=2016-03-14|archive-date=2018-11-17|archive-url=https://web.archive.org/web/20181117151434/http://www.engadgetmobile.com/2009/09/14/nokia-siemens-fires-off-first-edge-evolution-downlink-dual-carrier/|url-status=dead}}</ref>\n\nConsiderable research and development happened throughout the world for this new technology. A successful trial by Nokia Siemens and \"one of China's leading operators\" has been achieved in a live environment.<ref name=\"engadgetmobile.com\"/> With the introduction for more advanced wireless technologies like UMTS and LTE, which also focus on a network coverage layer on low frequencies and the upcoming phase-out and shutdown of [[2G]] mobile networks, it is very unlikely that Evolved EDGE will ever see any deployment on live networks. Up to now (as of 2016) there are no [[Wireless network|commercial networks]] which support the Evolved EDGE standard (3GPP Rel-7).\n\n=== Technology ===\n\n==== Reduced Latency ====\nWith Evolved EDGE come three major features designed to reduce latency over the air interface.\n\nIn EDGE, a single RLC data block (ranging from 23 to 148 bytes of data) is transmitted over four frames, using a single time slot. On average, this requires 20 ms for one way transmission. Under the RTTI scheme, one data block is transmitted over two frames in two timeslots, reducing the latency of the air interface to 10 ms.\n\nIn addition, Reduced Latency also implies support of Piggy-backed [[ACK (TCP)|ACK]]/[[NACK]] (PAN), in which a bitmap of blocks not received is included in normal data blocks. Using the PAN field, the receiver may report missing data blocks immediately, rather than waiting to send a dedicated PAN message.\n\nA final enhancement is RLC-non persistent mode. With EDGE, the RLC interface could operate in either acknowledged mode, or unacknowledged mode. In unacknowledged mode, there is no retransmission of missing data blocks, so a single corrupt block would cause an entire upper-layer IP packet to be lost. With non-persistent mode, an RLC data block may be retransmitted if it is less than a certain age. Once this time expires, it is considered lost, and subsequent data blocks may then be forwarded to upper layers.\n\n==== Higher modulation schemes ====\nBoth uplink and downlink throughput is improved by using 16 or 32 QAM (quadrature amplitude modulation), along with turbo codes and higher symbol rates.\n\n== Networks ==\n\nThe Global mobile Suppliers Association (GSA) states that,<ref>{{cite web|url=http://www.gsacom.com/downloads/pdf/EDGE_Fact_Sheet_030513.php4 |title=GSA – The Global mobile Suppliers Association EDGE Databank |publisher=Gsacom.com |access-date=2013-03-05}}</ref> as of May 2013, there were 604 GSM/EDGE networks in 213 countries, from a total of 606 mobile network operator commitments in 213 countries.\n\n== See also ==\n{{portal|Telecommunication}}\n* [[Broadband Internet access]]\n* [[CDMA2000]]\n* [[Evolution-Data Optimized]]\n* [[List of device bandwidths]]\n* [[Mobile broadband]]\n* [[Spectral efficiency#Comparison table|Spectral efficiency comparison table]]\n* [[UMTS]]\n* [[IDEN#WiDEN|WiDEN]]\n* [[Wi-Fi]]\n* [[Comparison of mobile phone standards]] including LTE\n* [[Comparison of wireless data standards]] including WiMAX and HSPA+\n\n== References ==\n{{Reflist}}\n\n== External links ==\n* [http://www.gsacom.com/ The Global mobile Suppliers Association]\n* [https://web.archive.org/web/20160303212257/http://www.3g.co.uk/PR/Nov2006/3897.htm Evolved EDGE as an alternative to 3G]\n* [https://web.archive.org/web/20081021132523/http://www.3gamericas.org/English/About_3G_Americas/ A technical document by the 3G Americas association]\n* [https://web.archive.org/web/20160315034947/http://mobilesociety.typepad.com/mobile_life/2006/11/evolved_edge_th.html An opinion on evolved EDGE by Martin Sauter]\n* [https://web.archive.org/web/20130306012136/http://www.visantstrategies.com/market_research/edge_evolution_egprs_evolved.html An EDGE Evolution report by Visant Strategies]\n\n{{Mobile telecommunications standards}}\n{{Telecommunications}}\n\n{{DEFAULTSORT:Enhanced Data Rates For Gsm Evolution}}\n[[Category:GSM standard]]\n[[Category:Telecommunications-related introductions in 2003]]\n[[Category:Videotelephony]]",
+            "text": "Enhanced Data rates for GSM Evolution (EDGE), also known as 2.75G, Enhanced GPRS (EGPRS), IMT Single Carrier (IMT-SC), and Enhanced Data rates for Global Evolution, is a digital mobile phone technology that allows improved data transmission rates as a backward-compatible extension of GSM. EDGE is considered a pre-3G radio technology and is part of ITU's 3G definition. EDGE was deployed on GSM networks beginning in 2003 – initially by Cingular (now AT&T) in the United States. EDGE is standardized also by 3GPP as part of the GSM family. A variant, so called Compact-EDGE, was developed for use in a portion of Digital AMPS network spectrum. Through the introduction of sophisticated methods of coding and transmitting data, EDGE delivers higher bit-rates per radio channel, resulting in a threefold increase in capacity and performance compared with an ordinary GSM/GPRS connection. EDGE can be used for any packet switched application, such as an Internet connection. Evolved EDGE continues in release 7 of the 3GPP standard providing reduced latency and more than doubled performance e.g. to complement High-Speed Packet Access (HSPA). Peak bit-rates of up to 1 Mbit/s and typical bit-rates of 400 kbit/s can be expected. EDGE/EGPRS is implemented as a bolt-on enhancement for 2.5G GSM/GPRS networks, making it easier for existing GSM carriers to upgrade to it. EDGE is a superset to GPRS and can function on any network with GPRS deployed on it, provided the carrier implements the necessary upgrade. EDGE requires no hardware or software changes to be made in GSM core networks. EDGE-compatible transceiver units must be installed and the base station subsystem needs to be upgraded to support EDGE. If the operator already has this in place, which is often the case today, the network can be upgraded to EDGE by activating an optional software feature. Today EDGE is supported by all major chip vendors for both GSM and WCDMA/HSPA. In addition to Gaussian minimum-shift keying (GMSK), EDGE uses higher-order PSK/8 phase-shift keying (8PSK) for the upper five of its nine modulation and coding schemes. EDGE produces a 3-bit word for every change in carrier phase. This effectively triples the gross data rate offered by GSM. EDGE, like GPRS, uses a rate adaptation algorithm that adapts the modulation and coding scheme (MCS) according to the quality of the radio channel, and thus the bit rate and robustness of data transmission. It introduces a new technology not found in GPRS, incremental redundancy, which, instead of retransmitting disturbed packets, sends more redundancy information to be combined in the receiver. This increases the probability of correct decoding. EDGE can carry a bandwidth up to 236 kbit/s (with end-to-end latency of less than 150 ms) for 4 timeslots (theoretical maximum is 473.6 kbit/s for 8 timeslots) in packet mode. This means it can handle four times as much traffic as standard GPRS. EDGE meets the International Telecommunication Union's requirement for a 3G network, and has been accepted by the ITU as part of the IMT-2000 family of 3G standards. It also enhances the circuit data mode called HSCSD, increasing the data rate of this service. The channel encoding process in GPRS as well as EGPRS/EDGE consists of two steps: first, a cyclic code is used to add parity bits, which are also referred to as the Block Check Sequence, followed by coding with a possibly punctured convolutional code. In GPRS, the Coding Schemes CS-1 to CS-4 specify the number of parity bits generated by the cyclic code and the puncturing rate of the convolutional code. In GPRS Coding Schemes CS-1 through CS-3, the convolutional code is of rate 1/2, i.e. each input bit is converted into two coded bits. In Coding Schemes CS-2 and CS-3, the output of the convolutional code is punctured to achieve the desired code rate. In GPRS Coding Scheme CS-4, no convolutional coding is applied. In EGPRS/EDGE, the modulation and coding schemes MCS-1 to MCS-9 take the place of the coding schemes of GPRS, and additionally specify which modulation scheme is used, GMSK or 8PSK. MCS-1 through MCS-4 use GMSK and have performance similar (but not equal) to GPRS, while MCS-5 through MCS-9 use 8PSK. In all EGPRS modulation and coding schemes, a convolutional code of rate 1/3 is used, and puncturing is used to achieve the desired code rate. In contrast to GPRS, the Radio Link Control (RLC) and Media Access Control (MAC) headers and the payload data are coded separately in EGPRS. The headers are coded more robustly than the data. This is rate at which the RLC/MAC layer protocol data unit (PDU) (called a radio block) is transmitted. As shown in TS 44.060 section 10.0a.1, a radio block consists of MAC header, RLC header, RLC data unit and spare bits. The RLC data unit represents the payload, the rest is overhead. The radio block is coded by the convolutional code specified for a particular Coding Scheme, which yields the same PHY layer data rate for all Coding Schemes. Cited in various sources, e.g. in TS 45.001 table 1. is the bitrate including the RLC/MAC headers, but excluding the uplink state flag (USF), which is part of the MAC header, yielding a bitrate that is 0.15 kbit/s lower. The net bitrate here is the rate at which the RLC/MAC layer payload (the RLC data unit) is transmitted. As such, this bit rate excludes the header overhead from the RLC/MAC layers. Evolved EDGE, also called EDGE Evolution and 2.875G, is a bolt-on extension to the GSM mobile telephony standard, which improves on EDGE in a number of ways. Latencies are reduced by lowering the Transmission Time Interval by half (from 20 ms to 10 ms). Bit rates are increased up to 1 Mbit/s peak bandwidth and latencies down to 80 ms using dual carrier, higher symbol rate and higher-order modulation (32QAM and 16QAM instead of 8PSK), and turbo codes to improve error correction. This results in real world downlink speeds of up to 600kbit/s. Further the signal quality is improved using dual antennas improving average bit-rates and spectrum efficiency. The main intention of increasing the existing EDGE throughput is that many operators would like to upgrade their existing infrastructure rather than invest on new network infrastructure. Mobile operators have invested billions in GSM networks, many of which are already capable of supporting EDGE data speeds up to 236.8 kbit/s. With a software upgrade and a new device compliant with Evolved EDGE (like an Evolved EDGE smartphone) for the user, these data rates can be boosted to speeds approaching 1 Mbit/s (i.e. 98.6 kbit/s per timeslot for 32QAM). Many service providers may not invest in a completely new technology like 3G networks. Considerable research and development happened throughout the world for this new technology. A successful trial by Nokia Siemens and \"one of China's leading operators\" has been achieved in a live environment. With the introduction for more advanced wireless technologies like UMTS and LTE, which also focus on a network coverage layer on low frequencies and the upcoming phase-out and shutdown of 2G mobile networks, it is very unlikely that Evolved EDGE will ever see any deployment on live networks. Up to now (as of 2016) there are no commercial networks which support the Evolved EDGE standard (3GPP Rel-7). With Evolved EDGE come three major features designed to reduce latency over the air interface. In EDGE, a single RLC data block (ranging from 23 to 148 bytes of data) is transmitted over four frames, using a single time slot. On average, this requires 20 ms for one way transmission. Under the RTTI scheme, one data block is transmitted over two frames in two timeslots, reducing the latency of the air interface to 10 ms. In addition, Reduced Latency also implies support of Piggy-backed ACK/NACK (PAN), in which a bitmap of blocks not received is included in normal data blocks. Using the PAN field, the receiver may report missing data blocks immediately, rather than waiting to send a dedicated PAN message. A final enhancement is RLC-non persistent mode. With EDGE, the RLC interface could operate in either acknowledged mode, or unacknowledged mode. In unacknowledged mode, there is no retransmission of missing data blocks, so a single corrupt block would cause an entire upper-layer IP packet to be lost. With non-persistent mode, an RLC data block may be retransmitted if it is less than a certain age. Once this time expires, it is considered lost, and subsequent data blocks may then be forwarded to upper layers. Both uplink and downlink throughput is improved by using 16 or 32 QAM (quadrature amplitude modulation), along with turbo codes and higher symbol rates. The Global mobile Suppliers Association (GSA) states that, as of May 2013, there were 604 GSM/EDGE networks in 213 countries, from a total of 606 mobile network operator commitments in 213 countries. Telecommunication portal Broadband Internet access CDMA2000 Evolution-Data Optimized List of device bandwidths Mobile broadband Spectral efficiency comparison table UMTS WiDEN Wi-Fi Comparison of mobile phone standards including LTE Comparison of wireless data standards including WiMAX and HSPA+ \"Archived copy\" (PDF). Archived from the original (PDF) on 2009-03-06. Retrieved 2011-05-10.{{cite web}}: CS1 maint: archived copy as title (link) (PDF) http://www.itu.int/ITU-D/imt-2000/MiscDocuments/IMT-Deployments-Rev3.pdf. Retrieved April 16, 2008. {{cite web}}: Missing or empty |title= (help)[dead link] ETSI SMG2 99/872 3rd Generation Partnership Project (September 2012). \"3GGP TS45.001: Technical Specification Group GSM/EDGE Radio Access Network; Physical layer on the radio path; General description\". Retrieved 2013-07-20. 3rd Generation Partnership Project (June 2015). \"3GGP TS45.001: Technical Specification Group GSM/EDGE Radio Access Network; Mobile Station (MS) - Base Station System (BSS) interface; Radio Link Control / Medium Access Control (RLC/MAC) protocol; section 10.0a.1 - GPRS RLC/MAC block for data transfer\". 12.5.0. Retrieved 2015-12-05. 3rd Generation Partnership Project (June 2015). \"3GGP TS45.001: Technical Specification Group GSM/EDGE Radio Access Network; Mobile Station (MS) - Base Station System (BSS) interface; Radio Link Control / Medium Access Control (RLC/MAC) protocol; section 10.2.1 - Downlink RLC data block\". 12.5.0. Retrieved 2015-12-05. \"EDGE, HSPA and LTE: The Mobile Broadband Advantage\" (PDF). Rysavy Research and 3G Americas. 2007-09-01. pp. 58–65. Archived from the original (PDF) on 2009-10-07. Retrieved 2010-09-27. \"Yahoo!\". www.engadgetmobile.com. Archived from the original on 2018-11-17. Retrieved 2016-03-14. \"GSA – The Global mobile Suppliers Association EDGE Databank\". Gsacom.com. Retrieved 2013-03-05. The Global mobile Suppliers Association Evolved EDGE as an alternative to 3G A technical document by the 3G Americas association An opinion on evolved EDGE by Martin Sauter An EDGE Evolution report by Visant Strategies"
+        },
+        "collectMetadata": {
+            "requestedDate": "2023-10-16T00:00:00",
+            "ingestedDate": "2023-10-19T15:06:39.461341"
+        },
+        "extractionMetadata": [
+            {
+                "id": "WikitextExtractor",
+                "linkExtractionDate": "2023-10-19T15:06:39.465037",
+                "links": [
+                    {
+                        "fragment": null,
+                        "link": "File:EDGE_symbol_Android.png",
+                        "text": "thumbnail|EDGE sign shown in notification bar on an Android-based smartphone.",
+                        "title": "File:EDGE symbol Android.png"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "General_Packet_Radio_Service",
+                        "text": "GPRS",
+                        "title": "General Packet Radio Service"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "IMT-2000",
+                        "text": "IMT",
+                        "title": "IMT-2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_phone",
+                        "text": null,
+                        "title": "mobile phone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Backward-compatible",
+                        "text": null,
+                        "title": "backward-compatible"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GSM",
+                        "text": null,
+                        "title": "GSM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "ITU",
+                        "text": null,
+                        "title": "ITU"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3G",
+                        "text": null,
+                        "title": "3G"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Cingular",
+                        "text": null,
+                        "title": "Cingular"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "AT&T",
+                        "text": null,
+                        "title": "AT&T"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3GPP",
+                        "text": null,
+                        "title": "3GPP"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Digital_AMPS",
+                        "text": null,
+                        "title": "Digital AMPS"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Packet_switching",
+                        "text": "packet switched",
+                        "title": "packet switching"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Internet",
+                        "text": null,
+                        "title": "Internet"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3GPP",
+                        "text": null,
+                        "title": "3GPP"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "High_Speed_Packet_Access",
+                        "text": "HSPA",
+                        "title": "High Speed Packet Access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "File:Cellular_network_standards_and_generation_timeline.svg",
+                        "text": "thumb|Cellular network standards and generation timeline.",
+                        "title": "File:Cellular network standards and generation timeline.svg"
+                    },
+                    {
+                        "fragment": "2.5G (GPRS)",
+                        "link": "2G",
+                        "text": "2.5G",
+                        "title": "2G"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "WCDMA",
+                        "text": null,
+                        "title": "WCDMA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "High_Speed_Packet_Access",
+                        "text": "HSPA",
+                        "title": "High Speed Packet Access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Gaussian_minimum-shift_keying",
+                        "text": null,
+                        "title": "Gaussian minimum-shift keying"
+                    },
+                    {
+                        "fragment": "Higher-order PSK",
+                        "link": "Phase-shift_keying",
+                        "text": "higher-order PSK/8 phase-shift keying",
+                        "title": "phase-shift keying"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GPRS",
+                        "text": null,
+                        "title": "GPRS"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Hybrid_ARQ",
+                        "text": "incremental redundancy",
+                        "title": "Hybrid ARQ"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Timeslot",
+                        "text": null,
+                        "title": "timeslot"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "International_Telecommunication_Union",
+                        "text": null,
+                        "title": "International Telecommunication Union"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3G",
+                        "text": null,
+                        "title": "3G"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "IMT-2000",
+                        "text": null,
+                        "title": "IMT-2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "HSCSD",
+                        "text": null,
+                        "title": "HSCSD"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Convolutional_code",
+                        "text": null,
+                        "title": "convolutional code"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Punctured_code",
+                        "text": "punctured",
+                        "title": "punctured code"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Modulation_(disambiguation)",
+                        "text": "modulation",
+                        "title": "Modulation (disambiguation)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Radio_Link_Control",
+                        "text": null,
+                        "title": "Radio Link Control"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Media_Access_Control",
+                        "text": null,
+                        "title": "Media Access Control"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Protocol_data_unit",
+                        "text": null,
+                        "title": "protocol data unit"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Modulation",
+                        "text": null,
+                        "title": "Modulation"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GSM",
+                        "text": null,
+                        "title": "GSM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Transmission_Time_Interval",
+                        "text": null,
+                        "title": "Transmission Time Interval"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Higher-order_modulation",
+                        "text": null,
+                        "title": "higher-order modulation"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Turbo_code",
+                        "text": null,
+                        "title": "turbo code"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Smartphone",
+                        "text": null,
+                        "title": "smartphone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3G",
+                        "text": null,
+                        "title": "3G"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "2G",
+                        "text": null,
+                        "title": "2G"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Wireless_network",
+                        "text": "commercial networks",
+                        "title": "Wireless network"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "ACK_(TCP)",
+                        "text": "ACK",
+                        "title": "ACK (TCP)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "NACK",
+                        "text": null,
+                        "title": "NACK"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Broadband_Internet_access",
+                        "text": null,
+                        "title": "Broadband Internet access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA2000",
+                        "text": null,
+                        "title": "CDMA2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Evolution-Data_Optimized",
+                        "text": null,
+                        "title": "Evolution-Data Optimized"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "List_of_device_bandwidths",
+                        "text": null,
+                        "title": "List of device bandwidths"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_broadband",
+                        "text": null,
+                        "title": "Mobile broadband"
+                    },
+                    {
+                        "fragment": "Comparison table",
+                        "link": "Spectral_efficiency",
+                        "text": "Spectral efficiency comparison table",
+                        "title": "Spectral efficiency"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "UMTS",
+                        "text": null,
+                        "title": "UMTS"
+                    },
+                    {
+                        "fragment": "WiDEN",
+                        "link": "IDEN",
+                        "text": "WiDEN",
+                        "title": "IDEN"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Wi-Fi",
+                        "text": null,
+                        "title": "Wi-Fi"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Comparison_of_mobile_phone_standards",
+                        "text": null,
+                        "title": "Comparison of mobile phone standards"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Comparison_of_wireless_data_standards",
+                        "text": null,
+                        "title": "Comparison of wireless data standards"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:GSM_standard",
+                        "text": null,
+                        "title": "Category:GSM standard"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Telecommunications-related_introductions_in_2003",
+                        "text": null,
+                        "title": "Category:Telecommunications-related introductions in 2003"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Videotelephony",
+                        "text": null,
+                        "title": "Category:Videotelephony"
+                    }
+                ],
+                "nbLinks": 60,
+                "nbTables": 2,
+                "nbTexts": 12,
+                "tableExtractionDate": "2023-10-19T15:06:39.465037",
+                "tables": [
+                    {
+                        "endOffset": 8754,
+                        "startOffset": 6506,
+                        "tableCaption": null,
+                        "tableContent": "{| class=\"wikitable\" align=center\n! GPRS<br/>coding scheme\n! Bitrate including RLC/MAC overhead{{efn|name=gross|This is rate at which the RLC/MAC layer [[protocol data unit]] (PDU) (called a radio block) is transmitted. As shown in TS 44.060 section 10.0a.1,<ref name=\"TS44060-section-10.0a.1\">{{cite web |url=http://www.3gpp.org/ftp/Specs/html-info/45001.htm |title=3GGP TS45.001: Technical Specification Group GSM/EDGE Radio Access Network; Mobile Station (MS) - Base Station System (BSS) interface; Radio Link Control / Medium Access Control (RLC/MAC) protocol; section 10.0a.1 - GPRS RLC/MAC block for data transfer |author=3rd Generation Partnership Project |version=12.5.0 |date=June 2015 |access-date=2015-12-05}}</ref> a radio block consists of MAC header, RLC header, RLC data unit and spare bits. The RLC data unit represents the payload, the rest is overhead. The radio block is coded by the convolutional code specified for a particular Coding Scheme, which yields the same PHY layer data rate for all Coding Schemes.}}{{efn|name=usf|Cited in various sources, e.g. in TS 45.001 table 1.<ref name=TS45001/> is the bitrate including the RLC/MAC headers, but excluding the uplink state flag (USF), which is part of the MAC header,<ref name=\"TS44060-section-10.2.1\">{{cite web |url=http://www.3gpp.org/ftp/Specs/html-info/45001.htm |title=3GGP TS45.001: Technical Specification Group GSM/EDGE Radio Access Network; Mobile Station (MS) - Base Station System (BSS) interface; Radio Link Control / Medium Access Control (RLC/MAC) protocol; section 10.2.1 - Downlink RLC data block |author=3rd Generation Partnership Project |version=12.5.0 |date=June 2015 |access-date=2015-12-05}}</ref> yielding a bitrate that is 0.15 kbit/s lower.}}<br/>(kbit/s/slot)\n! Bitrate excluding RLC/MAC overhead{{efn|name=net|The net bitrate here is the rate at which the RLC/MAC layer payload (the RLC data unit) is transmitted. As such, this bit rate excludes the header overhead from the RLC/MAC layers.}}<br/>(kbit/s/slot)\n! [[Modulation]]\n! Code rate\n|- align=center\n| CS-1\n| 9.20\n| 8.00\n| GMSK\n| 1/2\n|- align=center\n| CS-2\n| 13.55\n| 12.00\n| GMSK\n| ≈2/3\n|- align=center\n| CS-3\n| 15.75\n| 14.40\n| GMSK\n| ≈3/4\n|- align=center\n| CS-4\n| 21.55\n| 20.00\n| GMSK\n| 1\n|}",
+                        "tableData": [
+                            [
+                                "GPRScoding scheme",
+                                "Bitrate including RLC/MAC overhead(kbit/s/slot)",
+                                "Bitrate excluding RLC/MAC overhead(kbit/s/slot)",
+                                "Modulation",
+                                "Code rate"
+                            ],
+                            [
+                                "CS-1",
+                                "9.20",
+                                "8.00",
+                                "GMSK",
+                                "1/2"
+                            ],
+                            [
+                                "CS-2",
+                                "13.55",
+                                "12.00",
+                                "GMSK",
+                                "≈2/3"
+                            ],
+                            [
+                                "CS-3",
+                                "15.75",
+                                "14.40",
+                                "GMSK",
+                                "≈3/4"
+                            ],
+                            [
+                                "CS-4",
+                                "21.55",
+                                "20.00",
+                                "GMSK",
+                                "1"
+                            ]
+                        ],
+                        "tableNum": 0
+                    },
+                    {
+                        "endOffset": 9675,
+                        "startOffset": 8756,
+                        "tableCaption": null,
+                        "tableContent": "{| class=\"wikitable\" align=center style=\"float:left; margin:0.26em 0.8em; margin-right:0.2em; margin-left:0px;\"\n! EDGE modulation and coding <br />scheme (MCS)\n! Bitrate including RLC/MAC overhead{{efn|name=gross}}<br />(kbit/s/slot)\n! Bitrate excluding RLC/MAC overhead{{efn|name=net}}<br/>(kbit/s/slot)\n! Modulation\n! Data<br />code rate\n! Header<br />code rate\n|- align=center\n| MCS-1\n| 9.20\n| 8.00\n| GMSK\n| ≈0.53\n| ≈0.53\n|- align=center\n| MCS-2\n| 11.60\n| 10.40\n| GMSK\n| ≈0.66\n| ≈0.53\n|- align=center\n| MCS-3\n| 15.20\n| 14.80\n| GMSK\n| ≈0.85\n| ≈0.53\n|- align=center\n| MCS-4\n| 18.00\n| 16.80\n| GMSK\n| 1\n| ≈0.53\n|- align=center\n| MCS-5\n| 22.80\n| 21.60\n| 8PSK\n| ≈0.37\n| 1/3\n|- align=center\n| MCS-6\n| 30.00\n| 28.80\n| 8PSK\n| ≈0.49\n| 1/3\n|- align=center\n| MCS-7\n| 45.20\n| 44.00\n| 8PSK\n| ≈0.76\n| ≈0.39\n|- align=center\n| MCS-8\n| 54.80\n| 53.60\n| 8PSK\n| ≈0.92\n| ≈0.39\n|- align=center\n| MCS-9\n| 59.60\n| 58.40\n| 8PSK\n| 1\n| ≈0.39\n|}",
+                        "tableData": [
+                            [
+                                "EDGE modulation and coding scheme (MCS)",
+                                "Bitrate including RLC/MAC overhead(kbit/s/slot)",
+                                "Bitrate excluding RLC/MAC overhead(kbit/s/slot)",
+                                "Modulation",
+                                "Datacode rate",
+                                "Headercode rate"
+                            ],
+                            [
+                                "MCS-1",
+                                "9.20",
+                                "8.00",
+                                "GMSK",
+                                "≈0.53",
+                                "≈0.53"
+                            ],
+                            [
+                                "MCS-2",
+                                "11.60",
+                                "10.40",
+                                "GMSK",
+                                "≈0.66",
+                                "≈0.53"
+                            ],
+                            [
+                                "MCS-3",
+                                "15.20",
+                                "14.80",
+                                "GMSK",
+                                "≈0.85",
+                                "≈0.53"
+                            ],
+                            [
+                                "MCS-4",
+                                "18.00",
+                                "16.80",
+                                "GMSK",
+                                "1",
+                                "≈0.53"
+                            ],
+                            [
+                                "MCS-5",
+                                "22.80",
+                                "21.60",
+                                "8PSK",
+                                "≈0.37",
+                                "1/3"
+                            ],
+                            [
+                                "MCS-6",
+                                "30.00",
+                                "28.80",
+                                "8PSK",
+                                "≈0.49",
+                                "1/3"
+                            ],
+                            [
+                                "MCS-7",
+                                "45.20",
+                                "44.00",
+                                "8PSK",
+                                "≈0.76",
+                                "≈0.39"
+                            ],
+                            [
+                                "MCS-8",
+                                "54.80",
+                                "53.60",
+                                "8PSK",
+                                "≈0.92",
+                                "≈0.39"
+                            ],
+                            [
+                                "MCS-9",
+                                "59.60",
+                                "58.40",
+                                "8PSK",
+                                "1",
+                                "≈0.39"
+                            ]
+                        ],
+                        "tableNum": 1
+                    }
+                ],
+                "technology": "WikitextExtractor",
+                "textExtractionDate": "2023-10-19T15:06:39.465037",
+                "texts": [
+                    {
+                        "endOffset": 2241,
+                        "index": 0,
+                        "level": 0,
+                        "startOffset": 0,
+                        "title": null,
+                        "value": "{{Short description|Digital mobile phone technology}}\n{{redirect|EDGE}}\n{{redirect|Edge network|devices at the edge of a network|Edge device}} \n[[File:EDGE symbol Android.png|thumbnail|EDGE sign shown in notification bar on an Android-based smartphone.]]\n{{List of mobile phone generations}}\n\nEnhanced Data rates for GSM Evolution (EDGE), also known as 2.75G, Enhanced [[General Packet Radio Service|GPRS]] (EGPRS), [[IMT-2000|IMT]] Single Carrier (IMT-SC), and Enhanced Data rates for Global Evolution, is a digital [[mobile phone]] technology that allows improved data transmission rates as a [[backward-compatible]] extension of [[GSM]]. EDGE is considered a pre-3G radio technology and is part of [[ITU]]'s [[3G]] definition.<ref name=\"ref1\">{{cite web|url=http://www.itu.int/ITU-D/imt-2000/DocumentsIMT2000/IMT-2000.pdf |title=Archived copy |access-date=2011-05-10 |url-status=dead |archive-url=https://web.archive.org/web/20090306095648/http://www.itu.int/ITU-D/imt-2000/DocumentsIMT2000/IMT-2000.pdf |archive-date=2009-03-06 }}</ref> EDGE was deployed on GSM networks beginning in 2003 – initially by [[Cingular]] (now [[AT&T]]) in the United States.<ref>{{cite web|url=http://www.itu.int/ITU-D/imt-2000/MiscDocuments/IMT-Deployments-Rev3.pdf |access-date=April 16, 2008 }}{{dead link|date=June 2016|bot=medic}}{{cbignore|bot=medic}}</ref>\n\nEDGE is standardized also by [[3GPP]] as part of the GSM family. A variant, so called Compact-EDGE, was developed for use in a portion of [[Digital AMPS]] network spectrum.<ref>ETSI SMG2 99/872</ref>\n\nThrough the introduction of sophisticated methods of coding and transmitting data, EDGE delivers higher bit-rates per radio channel, resulting in a threefold increase in capacity and performance compared with an ordinary GSM/GPRS connection.\n\nEDGE can be used for any [[packet switching|packet switched]] application, such as an [[Internet]] connection.\n\nEvolved EDGE continues in release 7 of the [[3GPP]] standard providing reduced latency and more than doubled performance e.g. to complement High-Speed Packet Access ([[High Speed Packet Access|HSPA]]). Peak bit-rates of up to 1 Mbit/s and typical bit-rates of 400 kbit/s can be expected."
+                    },
+                    {
+                        "endOffset": 9706,
+                        "index": 1,
+                        "level": 2,
+                        "startOffset": 2241,
+                        "title": "Technology",
+                        "value": "[[File:Cellular network standards and generation timeline.svg|thumb|Cellular network standards and generation timeline.]]\nEDGE/EGPRS is implemented as a bolt-on enhancement for [[2G#2.5G (GPRS)|2.5G]] GSM/GPRS networks, making it easier for existing GSM carriers to upgrade to it. EDGE is a superset to GPRS and can function on any network with GPRS deployed on it, provided the carrier implements the necessary upgrade.\nEDGE requires no hardware or software changes to be made in GSM core networks. EDGE-compatible transceiver units must be installed and the base station subsystem needs to be upgraded to support EDGE. If the operator already has this in place, which is often the case today, the network can be upgraded to EDGE by activating an optional software feature. Today EDGE is supported by all major chip vendors for both GSM and [[WCDMA]]/[[High Speed Packet Access|HSPA]]."
+                    },
+                    {
+                        "endOffset": 4547,
+                        "index": 2,
+                        "level": 3,
+                        "startOffset": 3146,
+                        "title": "Transmission techniques",
+                        "value": "In addition to [[Gaussian minimum-shift keying]] (GMSK), EDGE uses [[phase-shift keying#Higher-order PSK|higher-order PSK/8 phase-shift keying]] (8PSK) for the upper five of its nine modulation and coding schemes. EDGE produces a 3-bit word for every change in carrier phase. This effectively triples the gross data rate offered by GSM. EDGE, like [[GPRS]], uses a rate adaptation algorithm that adapts the modulation and coding scheme (MCS) according to the quality of the radio channel, and thus the bit rate and robustness of data transmission. It introduces a new technology not found in GPRS, [[Hybrid ARQ|incremental redundancy]], which, instead of retransmitting disturbed packets, sends more redundancy information to be combined in the receiver. This increases the probability of correct decoding.\n\nEDGE can carry a bandwidth up to 236 kbit/s (with end-to-end latency of less than 150 ms) for 4 [[timeslot]]s (theoretical maximum is 473.6 kbit/s for 8 timeslots) in packet mode. This means it can handle four times as much traffic as standard GPRS. EDGE meets the [[International Telecommunication Union]]'s requirement for a [[3G]] network, and has been accepted by the ITU as part of the [[IMT-2000]] family of 3G standards.<ref name=\"ref1\"/> It also enhances the circuit data mode called [[HSCSD]], increasing the data rate of this service."
+                    },
+                    {
+                        "endOffset": 9706,
+                        "index": 3,
+                        "level": 3,
+                        "startOffset": 4547,
+                        "title": "EDGE modulation and coding scheme (MCS)",
+                        "value": "The channel encoding process in GPRS as well as EGPRS/EDGE consists of two steps: first, a cyclic code is used to add parity bits, which are also referred to as the Block Check Sequence, followed by coding with a possibly punctured [[convolutional code]].<ref name=TS45001>{{cite web |url=http://www.3gpp.org/ftp/Specs/html-info/45001.htm |title=3GGP TS45.001: Technical Specification Group GSM/EDGE Radio Access Network; Physical layer on the radio path; General description |author=3rd Generation Partnership Project |date=September 2012 |access-date=2013-07-20}}</ref> In GPRS, the Coding Schemes CS-1 to CS-4 specify the number of parity bits generated by the cyclic code and the puncturing rate of the convolutional code.<ref name=TS45001/> In GPRS Coding Schemes CS-1 through CS-3, the convolutional code is of rate 1/2, i.e. each input bit is converted into two coded bits.<ref name=TS45001/> In Coding Schemes CS-2 and CS-3, the output of the convolutional code is [[punctured code|punctured]] to achieve the desired code rate.<ref name=TS45001/> In GPRS Coding Scheme CS-4, no convolutional coding is applied.<ref name=TS45001/>\n\nIn EGPRS/EDGE, the [[Modulation (disambiguation)|modulation]] and coding schemes MCS-1 to MCS-9 take the place of the coding schemes of GPRS, and additionally specify which modulation scheme is used, GMSK or 8PSK.<ref name=TS45001/> MCS-1 through MCS-4 use GMSK and have performance similar (but not equal) to GPRS, while MCS-5 through MCS-9 use 8PSK.<ref name=TS45001/> In all EGPRS modulation and coding schemes, a convolutional code of rate 1/3 is used, and puncturing is used to achieve the desired code rate.<ref name=TS45001/> In contrast to GPRS, the [[Radio Link Control]] (RLC) and [[Media Access Control]] (MAC) headers and the payload data are coded separately in EGPRS.<ref name=TS45001/> The headers are coded more robustly than the data.<ref name=TS45001/>\n\n\n\n\n{{clear|both}}\n\n{{notelist}}"
+                    },
+                    {
+                        "endOffset": 14142,
+                        "index": 4,
+                        "level": 2,
+                        "startOffset": 9706,
+                        "title": "Evolved EDGE",
+                        "value": "Evolved EDGE, also called EDGE Evolution and 2.875G, is a bolt-on extension to the [[GSM]] mobile telephony standard, which improves on EDGE in a number of ways. Latencies are reduced by lowering the [[Transmission Time Interval]] by half (from 20 ms to 10 ms). Bit rates are increased up to 1 Mbit/s peak bandwidth and latencies down to 80 ms using dual carrier, higher symbol rate and [[higher-order modulation]] (32QAM and 16QAM instead of 8PSK), and [[turbo code]]s to improve error correction. This results in real world downlink speeds of up to 600kbit/s.<ref>{{cite web |url=http://developer.att.com/devcentral/tools_technologies/network/docs/DataCapabilities_GPRS__to_HSDPA.pdf |title=EDGE, HSPA and LTE: The Mobile Broadband Advantage |publisher=Rysavy Research and 3G Americas |pages=58–65 |date=2007-09-01 |access-date=2010-09-27 |url-status=dead |archive-url=https://web.archive.org/web/20091007091901/http://developer.att.com/devcentral/tools_technologies/network/docs/DataCapabilities_GPRS__to_HSDPA.pdf |archive-date=2009-10-07 }}</ref> Further the signal quality is improved using dual antennas improving average bit-rates and spectrum efficiency.\n\nThe main intention of increasing the existing EDGE throughput is that many operators would like to upgrade their existing infrastructure rather than invest on new network infrastructure. Mobile operators have invested billions in GSM networks, many of which are already capable of supporting EDGE data speeds up to 236.8 kbit/s. With a software upgrade and a new device compliant with Evolved EDGE (like an Evolved EDGE [[smartphone]]) for the user, these data rates can be boosted to speeds approaching 1 Mbit/s (i.e. 98.6 kbit/s per timeslot for 32QAM). Many service providers may not invest in a completely new technology like [[3G]] networks.<ref name=\"engadgetmobile.com\">{{cite web|url=http://www.engadgetmobile.com/2009/09/14/nokia-siemens-fires-off-first-edge-evolution-downlink-dual-carrier/|title=Yahoo!|website=www.engadgetmobile.com|access-date=2016-03-14|archive-date=2018-11-17|archive-url=https://web.archive.org/web/20181117151434/http://www.engadgetmobile.com/2009/09/14/nokia-siemens-fires-off-first-edge-evolution-downlink-dual-carrier/|url-status=dead}}</ref>\n\nConsiderable research and development happened throughout the world for this new technology. A successful trial by Nokia Siemens and \"one of China's leading operators\" has been achieved in a live environment.<ref name=\"engadgetmobile.com\"/> With the introduction for more advanced wireless technologies like UMTS and LTE, which also focus on a network coverage layer on low frequencies and the upcoming phase-out and shutdown of [[2G]] mobile networks, it is very unlikely that Evolved EDGE will ever see any deployment on live networks. Up to now (as of 2016) there are no [[Wireless network|commercial networks]] which support the Evolved EDGE standard (3GPP Rel-7)."
+                    },
+                    {
+                        "endOffset": 14142,
+                        "index": 5,
+                        "level": 3,
+                        "startOffset": 12659,
+                        "title": "Technology",
+                        "value": ""
+                    },
+                    {
+                        "endOffset": 13952,
+                        "index": 6,
+                        "level": 4,
+                        "startOffset": 12679,
+                        "title": "Reduced Latency",
+                        "value": "With Evolved EDGE come three major features designed to reduce latency over the air interface.\n\nIn EDGE, a single RLC data block (ranging from 23 to 148 bytes of data) is transmitted over four frames, using a single time slot. On average, this requires 20 ms for one way transmission. Under the RTTI scheme, one data block is transmitted over two frames in two timeslots, reducing the latency of the air interface to 10 ms.\n\nIn addition, Reduced Latency also implies support of Piggy-backed [[ACK (TCP)|ACK]]/[[NACK]] (PAN), in which a bitmap of blocks not received is included in normal data blocks. Using the PAN field, the receiver may report missing data blocks immediately, rather than waiting to send a dedicated PAN message.\n\nA final enhancement is RLC-non persistent mode. With EDGE, the RLC interface could operate in either acknowledged mode, or unacknowledged mode. In unacknowledged mode, there is no retransmission of missing data blocks, so a single corrupt block would cause an entire upper-layer IP packet to be lost. With non-persistent mode, an RLC data block may be retransmitted if it is less than a certain age. Once this time expires, it is considered lost, and subsequent data blocks may then be forwarded to upper layers."
+                    },
+                    {
+                        "endOffset": 14142,
+                        "index": 7,
+                        "level": 4,
+                        "startOffset": 13952,
+                        "title": "Higher modulation schemes",
+                        "value": "Both uplink and downlink throughput is improved by using 16 or 32 QAM (quadrature amplitude modulation), along with turbo codes and higher symbol rates."
+                    },
+                    {
+                        "endOffset": 14563,
+                        "index": 8,
+                        "level": 2,
+                        "startOffset": 14142,
+                        "title": "Networks",
+                        "value": "The Global mobile Suppliers Association (GSA) states that,<ref>{{cite web|url=http://www.gsacom.com/downloads/pdf/EDGE_Fact_Sheet_030513.php4 |title=GSA – The Global mobile Suppliers Association EDGE Databank |publisher=Gsacom.com |access-date=2013-03-05}}</ref> as of May 2013, there were 604 GSM/EDGE networks in 213 countries, from a total of 606 mobile network operator commitments in 213 countries."
+                    },
+                    {
+                        "endOffset": 14994,
+                        "index": 9,
+                        "level": 2,
+                        "startOffset": 14563,
+                        "title": "See also",
+                        "value": "{{portal|Telecommunication}}\n* [[Broadband Internet access]]\n* [[CDMA2000]]\n* [[Evolution-Data Optimized]]\n* [[List of device bandwidths]]\n* [[Mobile broadband]]\n* [[Spectral efficiency#Comparison table|Spectral efficiency comparison table]]\n* [[UMTS]]\n* [[IDEN#WiDEN|WiDEN]]\n* [[Wi-Fi]]\n* [[Comparison of mobile phone standards]] including LTE\n* [[Comparison of wireless data standards]] including WiMAX and HSPA+"
+                    },
+                    {
+                        "endOffset": 15024,
+                        "index": 10,
+                        "level": 2,
+                        "startOffset": 14994,
+                        "title": "References",
+                        "value": "{{Reflist}}"
+                    },
+                    {
+                        "endOffset": 15962,
+                        "index": 11,
+                        "level": 2,
+                        "startOffset": 15024,
+                        "title": "External links",
+                        "value": "* The Global mobile Suppliers Association\n* Evolved EDGE as an alternative to 3G\n* A technical document by the 3G Americas association\n* An opinion on evolved EDGE by Martin Sauter\n* An EDGE Evolution report by Visant Strategies\n\n{{Mobile telecommunications standards}}\n{{Telecommunications}}\n\n\n[[Category:GSM standard]]\n[[Category:Telecommunications-related introductions in 2003]]\n[[Category:Videotelephony]]"
+                    }
+                ]
+            }
+        ],
+        "statsMetadata": {
+            "textSize": 11920
+        },
+        "preprocessingMetadata": [
+            {
+                "technologyResults": [
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "GEA-2",
+                                "Global System For Mobile Communications",
+                                "Global System for Mobile communications",
+                                "SGSM",
+                                "GSM phone system",
+                                "Global System for Mobile",
+                                "GEA/1",
+                                "GEA/2",
+                                "GSM Gateway",
+                                "GEA-1",
+                                "Digital Communications System",
+                                "Extended Global System",
+                                "2G",
+                                "Mobile phone base station",
+                                "GSM 07.07",
+                                "Extended Global System for Mobile Communications",
+                                "GSM",
+                                "Gsm",
+                                "Mobile phone base stations",
+                                "GSM mobile phone base station",
+                                "Global System for Mobile Communication",
+                                "Global System for Mobile Communications",
+                                "Groupe Spécial Mobile",
+                                "Global system for mobile communications",
+                                "History of GSM",
+                                "GSM network",
+                                "Groupe Special Mobile",
+                                "Global system for mobile cellular communications"
+                            ],
+                            "uriSent": "GSM",
+                            "wikipediaId": "12808",
+                            "id": "Q46904",
+                            "label": "Global System for Mobile Communications"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Convolutional codes",
+                                "Convolutional coding",
+                                "convolutional code",
+                                "Trellis diagram",
+                                "Recursive Systematic Convolutional code",
+                                "Convolution coding",
+                                "Convolution code",
+                                "Convolutional coders",
+                                "Constraint length",
+                                "Convolution encoding",
+                                "Feed forward Convolutional code",
+                                "Recursive Convolutional code"
+                            ],
+                            "uriSent": "Convolutional_code",
+                            "wikipediaId": "40962",
+                            "id": "Q1395022",
+                            "label": "convolutional code"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Transmission Time Interval"
+                            ],
+                            "uriSent": "Transmission_Time_Interval",
+                            "wikipediaId": "2413288",
+                            "id": "Q7834629",
+                            "label": "Transmission Time Interval"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "modulation",
+                                "Pulse modulation methods",
+                                "Pulse time modulation",
+                                "waveform modulation",
+                                "wave modulation",
+                                "Analog carrier modulation",
+                                "Mode of transmission",
+                                "Modulation",
+                                "Analog modulation",
+                                "Analog modulation method",
+                                "Digital modulation method",
+                                "Modulator",
+                                "Pulse Modulation",
+                                "Digital modulation",
+                                "Modulated",
+                                "signal modulation",
+                                "Periodic current reversal",
+                                "Digital carrier modulation",
+                                "Demod",
+                                "Modulating signal",
+                                "Digital Modem",
+                                "Pulse modulation",
+                                "Pulse modulator",
+                                "Multi Carrier Modulation",
+                                "Modulation memory",
+                                "Shift keying",
+                                "Automatic digital modulation recognition",
+                                "Modulated wave"
+                            ],
+                            "uriSent": "Modulation",
+                            "wikipediaId": "20637",
+                            "id": "Q170474",
+                            "label": "modulation"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Spectral efficiency comparison table",
+                                "Spectral efficiency、Spectrum efficiency",
+                                "Spectral efficiency",
+                                "Bit/s/Hz",
+                                "BandWidth efficiency",
+                                "Channel spectral efficiency",
+                                "Modulation efficiency",
+                                "Spectrum efficiency",
+                                "Bits/s/Hz",
+                                "Area spectral efficiency",
+                                "System spectrum efficiency",
+                                "(bit/s)/Hertz",
+                                "System spectral efficiency",
+                                "Bandwidth efficiency",
+                                "(bit/s)/Hz",
+                                "spectrum efficiency",
+                                "Link spectral efficiency"
+                            ],
+                            "uriSent": "Spectral_efficiency",
+                            "wikipediaId": "1652911",
+                            "id": "Q583970",
+                            "label": "Spectral efficiency"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Wideband CDMA",
+                                "Universal Mobile Telecommunications System",
+                                "UTRA-TDD HCR",
+                                "UTRA TDD-LCR",
+                                "TD SCDMA",
+                                "List of TD-SCDMA networks",
+                                "UMTS-FDD",
+                                "Wideband Code Division Multiple Access",
+                                "UTRA-TDD LCR",
+                                "UTRA TDD-HCR",
+                                "Wideband code division multiple access",
+                                "UMTS-TDD",
+                                "TD-CDMA",
+                                "TDSCDMA",
+                                "Umts",
+                                "W-CDMA",
+                                "WCDMA",
+                                "UTRA",
+                                "UARFCN",
+                                "TD-SCDMA",
+                                "UMTS",
+                                "UTRA-TDD",
+                                "Universal mobile telecommunications system",
+                                "Time Division-Synchronous Code Division Multiple Access",
+                                "Time Division Synchronous Code Division Multiple Access",
+                                "Universal Mobile Telephone System",
+                                "Uu interface"
+                            ],
+                            "uriSent": "UMTS",
+                            "wikipediaId": "32237",
+                            "id": "Q79686",
+                            "label": "Universal Mobile Telecommunications System"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "3G transition",
+                                "2G wireless",
+                                "2G",
+                                "2g",
+                                "2.5G",
+                                "2,75G",
+                                "2.75G",
+                                "2,5G",
+                                "2G GSM",
+                                "2.5G wireless",
+                                "2-G",
+                                "2-g"
+                            ],
+                            "uriSent": "2G",
+                            "wikipediaId": "282460",
+                            "id": "Q845349",
+                            "label": "2G"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "puncturing",
+                                "Puncturing"
+                            ],
+                            "uriSent": "Punctured_code",
+                            "wikipediaId": "3547060",
+                            "id": "Q3899825",
+                            "label": "puncturing"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "3G shutdown in Maryland",
+                                "3GSP",
+                                "3rd-Generation",
+                                "Evolution to 3G",
+                                "3G cellular",
+                                "3G cellular network",
+                                "3G Mobile Service Provider",
+                                "3gphones",
+                                "3G networking",
+                                "3g phone",
+                                "Video mobile",
+                                "3G phones",
+                                "3rd Generation",
+                                "International Mobile Telecommunications-2000",
+                                "3G network",
+                                "3G shutdown",
+                                "3G technology",
+                                "Pre-4G",
+                                "3gphone",
+                                "3G Canada",
+                                "3G mobile",
+                                "3G wireless",
+                                "Evolution to 3g",
+                                "IMT2000",
+                                "3G phone",
+                                "2G evolution",
+                                "3G cellular networks",
+                                "3G",
+                                "3G networks",
+                                "2G transitional"
+                            ],
+                            "uriSent": "3G",
+                            "wikipediaId": "282450",
+                            "id": "Q79692",
+                            "label": "3G"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "ATT",
+                                "Sbcglobal.net",
+                                "SBC Global Networks",
+                                "Interwise",
+                                "Sbc communications",
+                                "10-10-345",
+                                "AT&T Incorporated",
+                                "AT&T Business",
+                                "AT&T Connect",
+                                "At&T Inc",
+                                "America's largest telephone company",
+                                "AT&T payphone",
+                                "At&T",
+                                "Your world. Delivered.",
+                                "American Telephone and Telegraph Company",
+                                "Sbcglobal",
+                                "AT&T Inc.",
+                                "ATNT",
+                                "SBC Communication, Inc.",
+                                "ATandT",
+                                "My AT&T",
+                                "The new American Telephone and Telegraph",
+                                "At7t",
+                                "AT&T logo",
+                                "Ma Bell 2.0",
+                                "AT&T International",
+                                "1-800-225-5288",
+                                "SBC Communications, Inc.",
+                                "At&t",
+                                "SBC AT&T",
+                                "AT&T Inc",
+                                "Southwestern Bell Corp.",
+                                "AT and T",
+                                "A.T.& T.",
+                                "AT&T, Inc.",
+                                "1800-CALL-ATT",
+                                "AT&T America",
+                                "A.T.&T.",
+                                "NYSE:T",
+                                "AT&T Advertising and Analytics",
+                                "SBC",
+                                "Acquisition of WarnerMedia by AT&T",
+                                "SBCGlobal",
+                                "@ATT",
+                                "SBC BellSouth",
+                                "AT+T",
+                                "AT&T Telephone",
+                                "10-10-345 Lucky Dog Phone Company",
+                                "AT&T d/b/a names",
+                                "The world's networking company.",
+                                "SBC communications",
+                                "American Tel. & Tel.",
+                                "Criticism of AT&T",
+                                "The New AT&T",
+                                "AT&T+SBC",
+                                "10-10-345 Lucky Dog",
+                                "At & t",
+                                "A. T. & T.",
+                                "Att.com",
+                                "SBC Communications Inc.",
+                                "SBC Corporation",
+                                "Southwestern Bell Corporation",
+                                "SBC Global",
+                                "At t",
+                                "Rethink possible.",
+                                "1800-dial-att",
+                                "SBC East",
+                                "1-800-CALL-ATT",
+                                "AT&T",
+                                "SBC Communications Incorporated",
+                                "AT&T Global Info Solutions"
+                            ],
+                            "uriSent": "AT&T",
+                            "wikipediaId": "17555269",
+                            "id": "Q35476",
+                            "label": "AT&T"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Quadriphase",
+                                "Staggered phase shift keying",
+                                "Binary phase-shift keying",
+                                "Offset psk",
+                                "SDPSK",
+                                "Binary Phase Shift Keying",
+                                "QPSK",
+                                "M PSK",
+                                "DQPSK",
+                                "GPSK",
+                                "Phase Shift Keying",
+                                "Coherent differential phase-shift keying",
+                                "PSK",
+                                "Differential phase-shift keying",
+                                "Quaternary phase shift keying",
+                                "Phase shift keying",
+                                "Phase Shift Modulation",
+                                "8 Phase Shift Keying",
+                                "DBPSK",
+                                "BPSK",
+                                "8-PSK",
+                                "Opsk",
+                                "SQPSK",
+                                "HPSK",
+                                "256psk",
+                                "DPSK",
+                                "Gaussian Phase Shift Keying",
+                                "128psk",
+                                "512psk",
+                                "Quaternary phase-shift keying",
+                                "2psk",
+                                "16psk",
+                                "1024psk",
+                                "64psk",
+                                "Differential phase shift keying",
+                                "Quadrature Phase Shift Keying",
+                                "Quatenary phase shift keying",
+                                "Filtered symmetric differential phase-shift keying",
+                                "phase-shift keying",
+                                "8 phase shift keying",
+                                "8PSK",
+                                "Staggered quadrature phase-shift keying",
+                                "4PSK",
+                                "32psk",
+                                "Biphase modulation",
+                                "Differential Phase Shift Keying",
+                                "Binary pase shift keying",
+                                "Biphase Shift Keying",
+                                "Quadrature phase-shift keying",
+                                "Offset QPSK",
+                                "CDPSK",
+                                "OQPSK",
+                                "Offset quadrature phase-shift keying",
+                                "4-PSK",
+                                "Mpsk"
+                            ],
+                            "uriSent": "Phase-shift_keying",
+                            "wikipediaId": "41551",
+                            "id": "Q4874866",
+                            "label": "phase-shift keying"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "International Mobile Telecommunications-2000",
+                                "IMT-2000",
+                                "IMT 2000"
+                            ],
+                            "uriSent": "IMT-2000",
+                            "wikipediaId": "481662",
+                            "id": "Q1206939",
+                            "label": "IMT-2000"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Acknowledge character",
+                                "Control-U",
+                                "acknowledgement",
+                                "ASCII 21",
+                                "␆",
+                                "Negative-acknowledge character",
+                                "Acknowledgment code",
+                                "ACK",
+                                "Negative-Acknowledge",
+                                "ASCII 6",
+                                "␕",
+                                "Acknowledgment",
+                                "NAK",
+                                "Negative Acknowledge",
+                                "Nak",
+                                "U+0015",
+                                "Negative acknowledge character",
+                                "⍻",
+                                "U+0006",
+                                "x15",
+                                "x6",
+                                "NACK",
+                                "Ctrl-U",
+                                "x06"
+                            ],
+                            "uriSent": "NACK",
+                            "wikipediaId": "29145018",
+                            "id": "Q4674282",
+                            "label": "acknowledgement"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Multislot Class",
+                                "GPRS modem",
+                                "CELLPAC",
+                                "General Packet Radio Service",
+                                "General packet radio service",
+                                "GPRS",
+                                "Gprs",
+                                "Coding Scheme"
+                            ],
+                            "uriSent": "General_Packet_Radio_Service",
+                            "wikipediaId": "12920",
+                            "id": "Q79708",
+                            "label": "General Packet Radio Service"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "31/2G",
+                                "HSUPA",
+                                "High-Speed Packet Access",
+                                "Turbo 3g",
+                                "HS-DSCH",
+                                "High-Speed Uplink Packet Access",
+                                "High Speed Data Packet Access",
+                                "Enhanced Downlink",
+                                "HSDPA",
+                                "High-Speed Downlink Packet Access",
+                                "3.5G",
+                                "High-Speed Downlink Shared Channel",
+                                "3,5G",
+                                "HSPA",
+                                "3½G",
+                                "HDSPA",
+                                "High-speed packet access",
+                                "High Speed Packet Access",
+                                "Hsdpa",
+                                "3.5G mobile",
+                                "High-Speed Data Packet Access",
+                                "Comgt",
+                                "Hdspa",
+                                "High Speed Uplink Packet Access",
+                                "Enhanced Uplink",
+                                "Hsupa",
+                                "3G+",
+                                "High Speed Downlink Packet Access",
+                                "HSPDA"
+                            ],
+                            "uriSent": "High_Speed_Packet_Access",
+                            "wikipediaId": "8354756",
+                            "id": "Q731991",
+                            "label": "High Speed Packet Access"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "WiDEN",
+                                "Chirp",
+                                "Integrated Digital Enhanced Network",
+                                "iDEN",
+                                "Integrated Digital Enhanced Network，iDEN"
+                            ],
+                            "uriSent": "IDEN",
+                            "wikipediaId": "184891",
+                            "id": "Q1531090",
+                            "label": "Integrated Digital Enhanced Network"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "1xrtt",
+                                "CDMA 1X WIN",
+                                "Cdma2000 1xEV-DO",
+                                "Cdma-2000",
+                                "CDMA2000 1x",
+                                "CDMA2000",
+                                "IMT Multi‑Carrier",
+                                "1x Advanced",
+                                "IMT‑MC",
+                                "3XRTT",
+                                "IS-2000",
+                                "C2K",
+                                "Cdma2000",
+                                "1xRTT",
+                                "CDMA-2000",
+                                "CDMA-2000 1x-EvDO",
+                                "Cdma2000 1X",
+                                "1X Advanced",
+                                "1XRTT",
+                                "CDMA2000 1xRTT",
+                                "CDMA 1X",
+                                "CDMA 2000",
+                                "CDMA network",
+                                "CDMA2K",
+                                "CDMA2000 1xEV-DO"
+                            ],
+                            "uriSent": "CDMA2000",
+                            "wikipediaId": "481213",
+                            "id": "Q1023122",
+                            "label": "CDMA2000"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Celluar telephone",
+                                "Secret cell phone",
+                                "Hand Phone",
+                                "mobile phones",
+                                "Mobile cellular",
+                                "Mobile Phones",
+                                "Mobile handsets",
+                                "Hand telephones",
+                                "Cellphone video",
+                                "Mobile wireless communication",
+                                "Mobile cellular wireless",
+                                "Cellular communication",
+                                "Cellular mobile",
+                                "Mobile telephone",
+                                "Mobile number",
+                                "hand phone",
+                                "Cellular Telephone Technology",
+                                "cellular phone",
+                                "Cellular telephone",
+                                "Cell-phone",
+                                "Cell phone",
+                                "Hand phone",
+                                "Hand phones",
+                                "Cellular device",
+                                "Cellphones",
+                                "Mobile Telephone",
+                                "Cell phones",
+                                "Cellular Telephone",
+                                "Cell Phones",
+                                "Cell telephones",
+                                "Mobile wireless",
+                                "Cellphone",
+                                "Cellular phone",
+                                "Health effects of mobile phone usage",
+                                "Cellular phones",
+                                "cellphones",
+                                "phone",
+                                "mobile phone",
+                                "Cell Phone",
+                                "Mobile Phone",
+                                "Hand telephone",
+                                "Mobile communication standard",
+                                "Criticism of cell phone",
+                                "Handphone",
+                                "cellular mobile",
+                                "Cell phone carrier",
+                                "Flip fone",
+                                "Handphones",
+                                "Mobile phones",
+                                "Kosher phone",
+                                "Kosher phones",
+                                "cell phone",
+                                "Mobile terminal",
+                                "Mobil phone",
+                                "Environmental impact of mobile phones",
+                                "cellphone",
+                                "Mobile loop",
+                                "GSM phone",
+                                "Cell telephone",
+                                "Cellular radio",
+                                "Mobile telephones",
+                                "Cellular communication standard",
+                                "mobile",
+                                "Mobilephone",
+                                "mobile telephone",
+                                "Radio Common Carrier",
+                                "Radio common carrier",
+                                "Celphone",
+                                "Mobile phone safety",
+                                "Mobile screen",
+                                "Mobil Phone",
+                                "Cellular telephones",
+                                "Mobile handset",
+                                "Flipfone",
+                                "Mobile telecom",
+                                "Cellular Radio",
+                                "Mobile display",
+                                "cellular telephone"
+                            ],
+                            "uriSent": "Mobile_phone",
+                            "wikipediaId": "19644137",
+                            "id": "Q17517",
+                            "label": "mobile phone"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "The International Bureau",
+                                "Bureau Internationale de L'Union Télégraphique",
+                                "UN International Telecommunication Union",
+                                "Telegraphic Union",
+                                "Union internationale des télécommunications",
+                                "WCIT-12",
+                                "International Telecommunications Union",
+                                "ITU",
+                                "International Telecomunications Union",
+                                "10.52953",
+                                "Union Internationale des Télécommunications",
+                                "International Telecommunication Union",
+                                "ITU Focus Group on Artificial Intelligence for Autonomous and Assisted Driving",
+                                "International Telegraph Union",
+                                "ITU Focus Group on Artificial Intelligence for Assisted and Autonomous Driving",
+                                "International Telecom Union",
+                                "World Conference on International Telecommunications",
+                                "ITU Telecom World 2009",
+                                "Unión Internacional de Telecomunicaciones",
+                                "International Telecomunication Union"
+                            ],
+                            "uriSent": "International_Telecommunication_Union",
+                            "wikipediaId": "14836",
+                            "id": "Q376150",
+                            "label": "International Telecommunication Union"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "PDU",
+                                "MPDU",
+                                "Protocol Data Unit",
+                                "MAC protocol data unit",
+                                "MAC Protocol Data Unit",
+                                "PPDU",
+                                "Protocol data units",
+                                "Media access control protocol data unit",
+                                "MAC PDU",
+                                "Protocol data unit"
+                            ],
+                            "uriSent": "Protocol_data_unit",
+                            "wikipediaId": "41591",
+                            "id": "Q2634565",
+                            "label": "Protocol data unit"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "smartphone",
+                                "PDA phone",
+                                "📲",
+                                "📱",
+                                "Smartphones",
+                                "SmartPhone",
+                                "Display notch",
+                                "smartphones",
+                                "Smart telephone",
+                                "Smart-phone",
+                                "Pocket computer phone",
+                                "Touchscreen mobile phones",
+                                "Smart phone",
+                                "PDA Phone",
+                                "Smartphone marketshare",
+                                "Front camera",
+                                "Notch display",
+                                "smart phone",
+                                "SmartPhones",
+                                "Smart Phone",
+                                "Ethical, legal and security issues of Smartphones",
+                                "Smartphone market share",
+                                "Smart-phones",
+                                "Smart Phones",
+                                "Smart phones",
+                                "Phone PDA"
+                            ],
+                            "uriSent": "Smartphone",
+                            "wikipediaId": "167079",
+                            "id": "Q22645",
+                            "label": "smartphone"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "TCP handshake",
+                                "TCP receive window",
+                                "Tcp receive window",
+                                "Transmission control protocol",
+                                "Sequence number",
+                                "TCP packet",
+                                "Cumulative ack",
+                                "SACK",
+                                "TCP header",
+                                "SYN-RECEIVED",
+                                "TCP/IP port",
+                                "LAST-ACK",
+                                "SYN Packets",
+                                "TCP window",
+                                "TCP SYN",
+                                "SYN SENT",
+                                "ACK flag",
+                                "SYN-ACK",
+                                "SYN packet",
+                                "Triple-ack",
+                                "FIN-WAIT-1",
+                                "SYN RECEIVED",
+                                "TCP segment",
+                                "TCP SACK",
+                                "SYN Packet",
+                                "TCP protocol",
+                                "Transfer Control Protocol",
+                                "SYN",
+                                "TCP Header",
+                                "Cumulative ACK",
+                                "TCP checksum offload",
+                                "FIN WAIT",
+                                "Transport Control Protocol",
+                                "Protect Against Wrapped Sequence numbers",
+                                "Three way handshake",
+                                "three times handshake",
+                                "Tcp checksum offload",
+                                "FIN WAIT 2",
+                                "FIN WAIT 1",
+                                "TIME-WAIT",
+                                "TCP",
+                                "LAST ACK",
+                                "TCP/IP port number",
+                                "CLOSE-WAIT",
+                                "TCP Acceleration",
+                                "SYN_(TCP)",
+                                "TCP SYNACK",
+                                "TCP protocols",
+                                "SYN-SENT",
+                                "Selective acknowledgement",
+                                "TCP windowing",
+                                "Forcing Data Delivery",
+                                "Tcp protocol",
+                                "SYN+ACK",
+                                "SYN/ACK",
+                                "Three-way handshake",
+                                "CLOSE WAIT",
+                                "Transmission Control Protocol",
+                                "ACK",
+                                "FIN",
+                                "ACK packet",
+                                "Protection Against Wrapped Sequence Numbers",
+                                "TCP connection state",
+                                "TCP connection",
+                                "TCP acceleration",
+                                "TIME WAIT",
+                                "Tcp handshake",
+                                "3 way handshake"
+                            ],
+                            "uriSent": "ACK_(TCP)",
+                            "wikipediaId": "30538",
+                            "id": "Q8803",
+                            "label": "Transmission Control Protocol"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Wi-fi 802.11b",
+                                "Wi-fi",
+                                "WiFi, 802.11",
+                                "Wi-fi 802.11a",
+                                "Wi-Fi ZONE",
+                                "Wi-Fi Protected System",
+                                "Wi-Fi-cafe",
+                                "Wifi access",
+                                "Wi fi",
+                                "Wi-Fi café",
+                                "Wifi technology",
+                                "Wi-Spy",
+                                "Wi-Fi-café",
+                                "Wifi-café",
+                                "Intel My WiFi Technology",
+                                "Wireless Fidelity",
+                                "History of Wi-Fi",
+                                "Wifi café",
+                                "Wifi-cafe",
+                                "Wi-fi 802.11g",
+                                "Wifi",
+                                "Chanalyzer",
+                                "Free Wifi",
+                                "Wifi cafe",
+                                "Wireless fidelity",
+                                "Wi-Fi",
+                                "Wi-Fi versions",
+                                "Wi-Fi network",
+                                "Wi-Fi signature",
+                                "Wi Fi",
+                                "WPA-OTP",
+                                "Wi-Fi 802.11g",
+                                "Wi-Fi 802.11",
+                                "Wireless Ethernet",
+                                "Wi‑Fi",
+                                "Wi-Fi Network",
+                                "Wi-Fi cafe",
+                                "Wi-fi technology",
+                                "WiFi md emon",
+                                "Wi-Fi 802.11b",
+                                "Wi-Fi 802.11a",
+                                "Wifi selling",
+                                "WI-FI",
+                                "ITaiwan",
+                                "WiFi Internet",
+                                "Alternatives to Wi-Fi",
+                                "Wi FiKingtiow",
+                                "WiFi"
+                            ],
+                            "uriSent": "Wi-Fi",
+                            "wikipediaId": "63973",
+                            "id": "Q29643",
+                            "label": "Wi-Fi"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "L.A. Cellular",
+                                "AT&T Mobility",
+                                "Cingular Wireless LLC",
+                                "AT&T GoPhone",
+                                "AT&T Mobility L..L.C.",
+                                "5G Evolution",
+                                "Cingular.com",
+                                "Cingular phones",
+                                "AT&T Mobility Corporation",
+                                "AT&T Wireless LLC",
+                                "5G E",
+                                "AT&T Mobility LLC v. National Ass'n for Stock Car Auto Racing, Inc.",
+                                "At&t unity",
+                                "At&t wireless",
+                                "AT&T Mobility.",
+                                "Cingular Blue",
+                                "Cingular Wireless, LLC",
+                                "AT&T Unity",
+                                "GoPhone",
+                                "ATT Mobility",
+                                "Cingular Wireless GoPhone",
+                                "AT&T Mobility LLC",
+                                "AT&T mobility",
+                                "Wireless from at&t",
+                                "Cingular ringtones",
+                                "Attwireless",
+                                "AT&T Mobility, LLC",
+                                "Wireless From AT&T",
+                                "At&t Mobility",
+                                "Cingular.net",
+                                "Att wireless",
+                                "Cingularwireless",
+                                "Cingular Orange",
+                                "AT&T Mobility L..LC.",
+                                "AT&T Mobility LLC.",
+                                "AT&T Mobility, LLC.",
+                                "AT&T wireless",
+                                "Cingular",
+                                "AT&T Prepaid",
+                                "ATT Wireless",
+                                "Mymmode.com",
+                                "AT&T Mobility L.L.C.",
+                                "Gophone",
+                                "AT&T Wireless",
+                                "AT+T Wireless",
+                                "At&T Mobility Llc",
+                                "Cingular Wireless",
+                                "At&t mobility"
+                            ],
+                            "uriSent": "Cingular",
+                            "wikipediaId": "468431",
+                            "id": "Q298594",
+                            "label": "AT&T Mobility"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Multislot Class",
+                                "GPRS modem",
+                                "CELLPAC",
+                                "General Packet Radio Service",
+                                "General packet radio service",
+                                "GPRS",
+                                "Gprs",
+                                "Coding Scheme"
+                            ],
+                            "uriSent": "GPRS",
+                            "wikipediaId": "12920",
+                            "id": "Q79708",
+                            "label": "General Packet Radio Service"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Public concern over the Internet",
+                                "Internet failure",
+                                "TheInternet",
+                                "The internet",
+                                "global Internet",
+                                "Interwebz",
+                                "Internet cutoff",
+                                "InterNet",
+                                "On the Internet",
+                                "Inter-Net",
+                                "The e-net",
+                                "Politics and the Internet",
+                                "the Net",
+                                "Cyber surfer",
+                                "Itnernet",
+                                "Public internet",
+                                "Significant Internet event",
+                                "Interwebs",
+                                "Inter web",
+                                "Cybersurfer",
+                                "Worldwide internet",
+                                "Inter webs",
+                                "Internet",
+                                "Public Internet",
+                                "Internet energy usage",
+                                "Inter-net",
+                                "Internet electricity use",
+                                "Interweb",
+                                "Intarwebs",
+                                "Intetnet",
+                                "The Internet",
+                                "Internet users",
+                                "Internet 1.0",
+                                "Internet loss",
+                                "Interpersonal computing",
+                                "Intrernet",
+                                "Political impact of the Internet",
+                                "Significant Internet events",
+                                "Online collaborative publishing",
+                                "Web vs. Internet",
+                                "Internett",
+                                "Inter Net",
+                                "Internet user",
+                                "INTERNET",
+                                "Intternett",
+                                "the Internet",
+                                "Internet disruption",
+                                "Net",
+                                "Inter net",
+                                "Internet performance"
+                            ],
+                            "uriSent": "Internet",
+                            "wikipediaId": "14539",
+                            "id": "Q75",
+                            "label": "Internet"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Turbocodes",
+                                "Turbocode",
+                                "Turbo-code",
+                                "Turbo coding",
+                                "Turbo product code",
+                                "Turbo codes",
+                                "Turbo Code",
+                                "Parallel concatenated convolutional code",
+                                "turbo code"
+                            ],
+                            "uriSent": "Turbo_code",
+                            "wikipediaId": "497535",
+                            "id": "Q2164281",
+                            "label": "turbo code"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "TDMA IS-136",
+                                "IS-54",
+                                "IS-136",
+                                "Digital AMPS",
+                                "D-AMPS",
+                                "Is 136",
+                                "Is 54",
+                                "DAMPS"
+                            ],
+                            "uriSent": "Digital_AMPS",
+                            "wikipediaId": "483974",
+                            "id": "Q887303",
+                            "label": "Digital AMPS"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Video teleconference",
+                                "Video-conferencing",
+                                "Videophones",
+                                "VisiTel LU-500 videophone",
+                                "Video telephone",
+                                "Video teleconferencing",
+                                "Sony PCT-15 videophone",
+                                "Visiophone",
+                                "See-talk telephone",
+                                "Telephone-television",
+                                "Video instant messaging",
+                                "Phone TV",
+                                "Matra videophone",
+                                "Kyocera VP-210 Visual Phone",
+                                "Video conferencing",
+                                "Modern Sign Language communication",
+                                "Press Videoconferencing",
+                                "See-talk phone",
+                                "Video chat",
+                                "Ikonophone",
+                                "Video linkup",
+                                "Multipoint conferencing",
+                                "Videolink",
+                                "Video phone",
+                                "Videoconfernecing",
+                                "Fernsehsprechstellen",
+                                "Visual collaboration",
+                                "Video Conferencing",
+                                "Ericsson videophone",
+                                "Videoconferencings",
+                                "Imagephone",
+                                "Virtual ceremony",
+                                "Lumaphone",
+                                "Vidioconferencing",
+                                "Nortel IP Video Phone 1535",
+                                "Video-teleconference",
+                                "Tele-videoconferencing",
+                                "Videoconferencing",
+                                "AT&T Picturephone",
+                                "Pictaphone",
+                                "Video talk",
+                                "Videophone",
+                                "Video conference call",
+                                "View phone",
+                                "Picture-telephone",
+                                "Television-telephone",
+                                "Videophony",
+                                "Video calling",
+                                "Videoconference",
+                                "AT&T VideoPhone 2500",
+                                "Video conference",
+                                "Videocall",
+                                "Viewphone",
+                                "Kyocera VP-210 VisualPhone",
+                                "Fernseh sprechstellen",
+                                "Deutsche Telekom T-View 100",
+                                "Mitsubishi Lumaphone",
+                                "Beeldtelefoon",
+                                "Videochat",
+                                "Video call",
+                                "Realtime conferencing",
+                                "videotelephony",
+                                "Philips videophone",
+                                "Sight-sound television system",
+                                "Sight-sound telephone",
+                                "Image telephone",
+                                "Video telephony",
+                                "Bildtelefon",
+                                "Videotelephone",
+                                "3D Videoconference",
+                                "Visual telephone",
+                                "Picture-Phone TV",
+                                "video teleconference",
+                                "Picture phone",
+                                "Vidéophone",
+                                "Videotalk",
+                                "Television phone",
+                                "Relate 2000",
+                                "Panasonic KX-TV10 videophone",
+                                "Video link",
+                                "See-and-talk telephone",
+                                "Pictoral phone",
+                                "Videoconferences"
+                            ],
+                            "uriSent": "Videotelephony",
+                            "wikipediaId": "2304367",
+                            "id": "Q854954",
+                            "label": "videotelephony"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Gaussian minimum-shift keying",
+                                "MSK",
+                                "Gaussian MSK",
+                                "Minimum shift keying",
+                                "minimum-shift keying",
+                                "Gaussian minimum shift keying",
+                                "Gaussian Minimum Shift Keying",
+                                "GMSK"
+                            ],
+                            "uriSent": "Gaussian_minimum-shift_keying",
+                            "wikipediaId": "2261515",
+                            "id": "Q4156818",
+                            "label": "minimum-shift keying"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Hybrid automatic repeat request",
+                                "Chase combining",
+                                "Hybrid automatic repeat-request",
+                                "HARQ",
+                                "Hybrid ARQ"
+                            ],
+                            "uriSent": "Hybrid_ARQ",
+                            "wikipediaId": "3546973",
+                            "id": "Q1017139",
+                            "label": "Hybrid automatic repeat request"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Wideband CDMA",
+                                "Universal Mobile Telecommunications System",
+                                "UTRA-TDD HCR",
+                                "UTRA TDD-LCR",
+                                "TD SCDMA",
+                                "List of TD-SCDMA networks",
+                                "UMTS-FDD",
+                                "Wideband Code Division Multiple Access",
+                                "UTRA-TDD LCR",
+                                "UTRA TDD-HCR",
+                                "Wideband code division multiple access",
+                                "UMTS-TDD",
+                                "TD-CDMA",
+                                "TDSCDMA",
+                                "Umts",
+                                "W-CDMA",
+                                "WCDMA",
+                                "UTRA",
+                                "UARFCN",
+                                "TD-SCDMA",
+                                "UMTS",
+                                "UTRA-TDD",
+                                "Universal mobile telecommunications system",
+                                "Time Division-Synchronous Code Division Multiple Access",
+                                "Time Division Synchronous Code Division Multiple Access",
+                                "Universal Mobile Telephone System",
+                                "Uu interface"
+                            ],
+                            "uriSent": "WCDMA",
+                            "wikipediaId": "32237",
+                            "id": "Q79686",
+                            "label": "Universal Mobile Telecommunications System"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Capacity of wireless networks",
+                                "Wireless Network",
+                                "Wireless connection",
+                                "Central Regulatory Domain Agent",
+                                "🛜",
+                                "Wireless computer network",
+                                "Hosted Network",
+                                "Wireless Networking",
+                                "Wireless networking",
+                                "Wireless Networks",
+                                "Wireless computer",
+                                "Wireless computing",
+                                "Wireless networks",
+                                "Wireless IP transport",
+                                "Wireless infrastructure",
+                                "Wireless computer networking",
+                                "wireless network",
+                                "Wireless terminal"
+                            ],
+                            "uriSent": "Wireless_network",
+                            "wikipediaId": "33172",
+                            "id": "Q11375",
+                            "label": "wireless network"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Mobile data",
+                                "mobile broadband",
+                                "Cellular broadband",
+                                "Mobile Broadband",
+                                "Cellular broadband service"
+                            ],
+                            "uriSent": "Mobile_broadband",
+                            "wikipediaId": "8879085",
+                            "id": "Q640394",
+                            "label": "mobile broadband"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Packet-oriented",
+                                "Packet mode communication",
+                                "packet switching",
+                                "Packet-switching",
+                                "Packet-switched radio",
+                                "Octopus network",
+                                "Packet switched",
+                                "Packet Switching",
+                                "SCANNET",
+                                "Packet-switched computer network",
+                                "Packet Switch",
+                                "OCTOPUS",
+                                "Packet-switched data network",
+                                "Packet switch",
+                                "Packet manager",
+                                "packet-switched",
+                                "Packet switched network",
+                                "Packet-switched",
+                                "Octopus",
+                                "Datapackets",
+                                "Datex-P",
+                                "European Informatics Network",
+                                "Packet network",
+                                "Transpac",
+                                "Private data network",
+                                "International packet network",
+                                "RCP",
+                                "Packet-switched network",
+                                "Packet based"
+                            ],
+                            "uriSent": "Packet_switching",
+                            "wikipediaId": "43339",
+                            "id": "Q193446",
+                            "label": "packet switching"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "3rd Generation Partnership Project",
+                                "Third Generation Partnership Project",
+                                "3GPP",
+                                "3gpp"
+                            ],
+                            "uriSent": "3GPP",
+                            "wikipediaId": "397301",
+                            "id": "Q229804",
+                            "label": "3rd Generation Partnership Project"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "MAC sublayer",
+                                "Media access controller",
+                                "Media access control",
+                                "Media Access Control",
+                                "Medium access control sublayer",
+                                "medium access control",
+                                "Medium Access Control",
+                                "Media access control sublayer",
+                                "media access control",
+                                "Medium access controller",
+                                "MAC",
+                                "MAC protocol",
+                                "MAC layer"
+                            ],
+                            "uriSent": "Media_Access_Control",
+                            "wikipediaId": "207472",
+                            "id": "Q3295108",
+                            "label": "medium access control"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "IS683C",
+                                "EVDO Rev. A",
+                                "Evolution-Data Only",
+                                "Ev-DO",
+                                "EV-DO Rev. B",
+                                "EV-DO Rev. A",
+                                "Evolution Data Only",
+                                "Evolution-Data Optimized",
+                                "1xEV-DO",
+                                "IS-856",
+                                "1XEv",
+                                "Evolution Data Optimized",
+                                "EV-DO",
+                                "1x-EVDO",
+                                "High data rate",
+                                "Ultra Mobile Broadband",
+                                "1xEVDO",
+                                "1xEvDO",
+                                "EV-DV",
+                                "EVDO",
+                                "EvDO",
+                                "Evdo",
+                                "EvDo",
+                                "EvDo-rev.A"
+                            ],
+                            "uriSent": "Evolution-Data_Optimized",
+                            "wikipediaId": "949984",
+                            "id": "Q155028",
+                            "label": "Evolution-Data Optimized"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "HSIA",
+                                "Broadband Internet connection",
+                                "New Media Speed",
+                                "internet connectivity",
+                                "Web access",
+                                "Internet connectivity",
+                                "Types of broadband connections",
+                                "Internet access program",
+                                "High speed Internet connection",
+                                "High Speed Internet Access",
+                                "Internet broadband",
+                                "High-speed Internet",
+                                "Digital connectivity",
+                                "High-speed internet",
+                                "High-speed internet connection",
+                                "High speed Internet",
+                                "Internet-Speed",
+                                "Broadband internet access",
+                                "Slow internet",
+                                "Internet usage",
+                                "Internet connection",
+                                "Accessing the Internet",
+                                "Broadband Internet access",
+                                "Internet access",
+                                "High-Speed Internet",
+                                "Internet Access",
+                                "High-speed broadband",
+                                "Bandwidth constraints",
+                                "Accessing the internet",
+                                "Broadband access",
+                                "Via broadband",
+                                "internet access"
+                            ],
+                            "uriSent": "Broadband_Internet_access",
+                            "wikipediaId": "300602",
+                            "id": "Q1472399",
+                            "label": "internet access"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Higher-order modulation"
+                            ],
+                            "uriSent": "Higher-order_modulation",
+                            "wikipediaId": "4450334",
+                            "id": "Q5757968",
+                            "label": "Higher-order modulation"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Radio Link Control"
+                            ],
+                            "uriSent": "Radio_Link_Control",
+                            "wikipediaId": "48372367",
+                            "id": "Q22913013",
+                            "label": "Radio Link Control"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Circuit Switched Data",
+                                "High Speed Circuit Switched Data",
+                                "High-speed circuit-switched data",
+                                "High-Speed Circuit-Switched Data",
+                                "HSCSD",
+                                "CSD",
+                                "Circuit-Switched Data",
+                                "CDMA Circuit Switched Data",
+                                "Circuit-Switched-Data",
+                                "GSM CSD",
+                                "Cellular Switched Data"
+                            ],
+                            "uriSent": "HSCSD",
+                            "wikipediaId": "959943",
+                            "id": "Q278321",
+                            "label": "Circuit Switched Data"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Legacy compatibility",
+                                "Backward-compatible",
+                                "Bugwards compatibility",
+                                "Backwards-compatibility",
+                                "backwards-compatible",
+                                "Format rot",
+                                "Breaking changes",
+                                "Translation compatibility",
+                                "downward-compatible",
+                                "Backwards Compatibility",
+                                "retrocompatible",
+                                "Backwards compatibility",
+                                "retrocompatibility",
+                                "backward-compatible",
+                                "Hysterical raisins",
+                                "Backwards compatability",
+                                "Backward-incompatible",
+                                "Retrocompatible",
+                                "backward compatibility",
+                                "Hysterical reasons",
+                                "Backwards compatible",
+                                "backwards compatibility",
+                                "Breaking change",
+                                "Downward Compatibility",
+                                "Downward compatibility",
+                                "Backwards-compatible",
+                                "Backward compatible",
+                                "downward compatibility",
+                                "Bugwards compatible",
+                                "Bugward compatibility",
+                                "Bugward compatible",
+                                "Retrocompatibility",
+                                "Backward-compatibility",
+                                "Downward compatible"
+                            ],
+                            "uriSent": "Backward-compatible",
+                            "wikipediaId": "4459",
+                            "id": "Q844605",
+                            "label": "backward compatibility"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Network programming,",
+                                "Network programming",
+                                "Linear TV",
+                                "Television schedule",
+                                "Scheduling",
+                                "Linear channel",
+                                "Television scheduling",
+                                "Linear viewers",
+                                "Radio programmer",
+                                "Television programming",
+                                "broadcasting programming",
+                                "Linear broadcasting",
+                                "Schedule",
+                                "Time slot",
+                                "Television network programming",
+                                "Linear television",
+                                "TV programming",
+                                "Timeslot"
+                            ],
+                            "uriSent": "Timeslot",
+                            "wikipediaId": "1068736",
+                            "id": "Q374638",
+                            "label": "broadcasting programming"
+                        }
+                    }
+                ],
+                "technologyExecution": {
+                    "beginDate": "2024-01-17T13:10:15.250720",
+                    "endDate": "2024-01-17T13:10:16.187185"
+                },
+                "technology": {
+                    "name": "WikiLink Alias",
+                    "company": "Orange",
+                    "id": "wikilink_alias",
+                    "type": "link",
+                    "version": "Unknown"
+                }
+            },
+            {
+                "technologyResults": [
+                    {
+                        "dagobah": {
+                            "debug": {
+                                "cpaTaskTimeSec": 0.04,
+                                "memoryUsage": 0.0,
+                                "entityScoringTimeSec": 0.46,
+                                "ceaTaskTimeSec": 4.589999999999999,
+                                "abnormalLookupMentions": [],
+                                "ctaTaskTimeSec": 0.03,
+                                "avgLookupCandidate": 200.0,
+                                "subgraphConstructionTimeSec": 0.21
+                            },
+                            "preprocessed": {
+                                "primitiveTyping": [
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 0
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 1
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "TIME",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 2
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "ORG",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 3
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 4
+                                    }
+                                ],
+                                "headerInfo": {
+                                    "hasHeader": true,
+                                    "headerScore": 0.68,
+                                    "headerLabel": [
+                                        "GPRScoding scheme",
+                                        "Bitrate including RLC/MAC overhead(kbit/s/slot)",
+                                        "Bitrate excluding RLC/MAC overhead(kbit/s/slot)",
+                                        "Modulation",
+                                        "Code rate"
+                                    ],
+                                    "headerPosition": 0
+                                },
+                                "primaryKeyInfo": {
+                                    "primaryKeyScore": 0.0,
+                                    "primaryKeyPosition": null,
+                                    "hasPrimaryKey": false
+                                },
+                                "tableOrientation": {
+                                    "orientationScore": 0.85,
+                                    "orientationLabel": "HORIZONTAL"
+                                }
+                            },
+                            "executionTimeSec": {
+                                "preprocessingTime": 0.29,
+                                "totalTime": 12.14,
+                                "lookupTime": 2.53
+                            },
+                            "annotated": {
+                                "CTA": [
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 0.5,
+                                                "score": 0.02,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q20937557"
+                                            },
+                                            {
+                                                "coverage": 0.25,
+                                                "score": 0.01,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q16889133"
+                                            }
+                                        ],
+                                        "column": 0
+                                    },
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.09,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q11016"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.06,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q28797"
+                                            }
+                                        ],
+                                        "column": 3
+                                    }
+                                ],
+                                "tableDataRevised": [
+                                    [
+                                        "GPRScoding scheme",
+                                        "Bitrate including RLC/MAC overhead(kbit/s/slot)",
+                                        "Bitrate excluding RLC/MAC overhead(kbit/s/slot)",
+                                        "Modulation",
+                                        "Code rate"
+                                    ],
+                                    [
+                                        "CS-1",
+                                        "9.20",
+                                        "8.00",
+                                        "GMSK",
+                                        "1/2"
+                                    ],
+                                    [
+                                        "CS-2",
+                                        "13.55",
+                                        "12.00",
+                                        "GMSK",
+                                        "≈2/3"
+                                    ],
+                                    [
+                                        "CS-3",
+                                        "15.75",
+                                        "14.40",
+                                        "GMSK",
+                                        "≈3/4"
+                                    ],
+                                    [
+                                        "CS-4",
+                                        "21.55",
+                                        "20.00",
+                                        "GMSK",
+                                        "1"
+                                    ]
+                                ],
+                                "CPA": [],
+                                "CEA": [
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q54814518"
+                                        },
+                                        "column": 0,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q78583866"
+                                        },
+                                        "column": 0,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q18048584"
+                                        },
+                                        "column": 0,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q5014008"
+                                        },
+                                        "column": 0,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q10290274"
+                                        },
+                                        "column": 3,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q10290274"
+                                        },
+                                        "column": 3,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q10290274"
+                                        },
+                                        "column": 3,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q10290274"
+                                        },
+                                        "column": 3,
+                                        "row": 4
+                                    }
+                                ]
+                            }
+                        },
+                        "index": 0
+                    },
+                    {
+                        "dagobah": {
+                            "debug": {
+                                "cpaTaskTimeSec": 0.08,
+                                "memoryUsage": 0.0,
+                                "entityScoringTimeSec": 0.78,
+                                "ceaTaskTimeSec": 2.2399999999999984,
+                                "abnormalLookupMentions": [],
+                                "ctaTaskTimeSec": 2.29,
+                                "avgLookupCandidate": 187.39,
+                                "subgraphConstructionTimeSec": 5.8
+                            },
+                            "preprocessed": {
+                                "primitiveTyping": [
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 0
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 1
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 2
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 0.56
+                                            },
+                                            {
+                                                "typingLabel": "ORG",
+                                                "typingScore": 0.44
+                                            }
+                                        ],
+                                        "columnIndex": 3
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 4
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 5
+                                    }
+                                ],
+                                "headerInfo": {
+                                    "hasHeader": true,
+                                    "headerScore": 0.6,
+                                    "headerLabel": [
+                                        "EDGE modulation and coding scheme (MCS)",
+                                        "Bitrate including RLC/MAC overhead(kbit/s/slot)",
+                                        "Bitrate excluding RLC/MAC overhead(kbit/s/slot)",
+                                        "Modulation",
+                                        "Datacode rate",
+                                        "Headercode rate"
+                                    ],
+                                    "headerPosition": 0
+                                },
+                                "primaryKeyInfo": {
+                                    "primaryKeyScore": 0.8,
+                                    "primaryKeyPosition": 0,
+                                    "hasPrimaryKey": true
+                                },
+                                "tableOrientation": {
+                                    "orientationScore": 0.8,
+                                    "orientationLabel": "HORIZONTAL"
+                                }
+                            },
+                            "executionTimeSec": {
+                                "preprocessingTime": 0.56,
+                                "totalTime": 17.56,
+                                "lookupTime": 1.86
+                            },
+                            "annotated": {
+                                "CTA": [
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.07,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q7187"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.05,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q3511065"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.05,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q863908"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.05,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q50365914"
+                                            }
+                                        ],
+                                        "column": 0
+                                    },
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.08,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q11016"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.06,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q28797"
+                                            }
+                                        ],
+                                        "column": 3
+                                    }
+                                ],
+                                "tableDataRevised": [
+                                    [
+                                        "EDGE modulation and coding scheme (MCS)",
+                                        "Bitrate including RLC/MAC overhead(kbit/s/slot)",
+                                        "Bitrate excluding RLC/MAC overhead(kbit/s/slot)",
+                                        "Modulation",
+                                        "Datacode rate",
+                                        "Headercode rate"
+                                    ],
+                                    [
+                                        "MCS-1",
+                                        "9.20",
+                                        "8.00",
+                                        "GMSK",
+                                        "≈0.53",
+                                        "≈0.53"
+                                    ],
+                                    [
+                                        "MCS-2",
+                                        "11.60",
+                                        "10.40",
+                                        "GMSK",
+                                        "≈0.66",
+                                        "≈0.53"
+                                    ],
+                                    [
+                                        "MCS-3",
+                                        "15.20",
+                                        "14.80",
+                                        "GMSK",
+                                        "≈0.85",
+                                        "≈0.53"
+                                    ],
+                                    [
+                                        "MCS-4",
+                                        "18.00",
+                                        "16.80",
+                                        "GMSK",
+                                        "1",
+                                        "≈0.53"
+                                    ],
+                                    [
+                                        "MCS-5",
+                                        "22.80",
+                                        "21.60",
+                                        "8PSK",
+                                        "≈0.37",
+                                        "1/3"
+                                    ],
+                                    [
+                                        "MCS-6",
+                                        "30.00",
+                                        "28.80",
+                                        "8PSK",
+                                        "≈0.49",
+                                        "1/3"
+                                    ],
+                                    [
+                                        "MCS-7",
+                                        "45.20",
+                                        "44.00",
+                                        "8PSK",
+                                        "≈0.76",
+                                        "≈0.39"
+                                    ],
+                                    [
+                                        "MCS-8",
+                                        "54.80",
+                                        "53.60",
+                                        "8PSK",
+                                        "≈0.92",
+                                        "≈0.39"
+                                    ],
+                                    [
+                                        "MCS-9",
+                                        "59.60",
+                                        "58.40",
+                                        "8PSK",
+                                        "1",
+                                        "≈0.39"
+                                    ]
+                                ],
+                                "CPA": [],
+                                "CEA": [
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29662923"
+                                        },
+                                        "column": 0,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29661272"
+                                        },
+                                        "column": 0,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29689583"
+                                        },
+                                        "column": 0,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29659778"
+                                        },
+                                        "column": 0,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29664984"
+                                        },
+                                        "column": 0,
+                                        "row": 5
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29706604"
+                                        },
+                                        "column": 0,
+                                        "row": 6
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29673054"
+                                        },
+                                        "column": 0,
+                                        "row": 7
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q63014148"
+                                        },
+                                        "column": 0,
+                                        "row": 8
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29695879"
+                                        },
+                                        "column": 0,
+                                        "row": 9
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q10290274"
+                                        },
+                                        "column": 3,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q10290274"
+                                        },
+                                        "column": 3,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q10290274"
+                                        },
+                                        "column": 3,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q10290274"
+                                        },
+                                        "column": 3,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q10355896"
+                                        },
+                                        "column": 3,
+                                        "row": 5
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q10355896"
+                                        },
+                                        "column": 3,
+                                        "row": 6
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q10355896"
+                                        },
+                                        "column": 3,
+                                        "row": 7
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q10355896"
+                                        },
+                                        "column": 3,
+                                        "row": 8
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q10355896"
+                                        },
+                                        "column": 3,
+                                        "row": 9
+                                    }
+                                ]
+                            }
+                        },
+                        "index": 1
+                    }
+                ],
+                "technologyExecution": {
+                    "beginDate": "2024-01-17T14:41:35.051942",
+                    "endDate": "2024-01-17T14:42:06.411404"
+                },
+                "technology": {
+                    "name": "DAGOBAH Table Annotation",
+                    "company": "Orange",
+                    "id": "dagobah_anotation",
+                    "type": "table",
+                    "version": "Unknown"
+                }
+            }
+        ]
+    }
+}

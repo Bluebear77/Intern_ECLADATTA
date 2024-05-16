@@ -1,0 +1,2412 @@
+{
+    "_index": "corpus_doc_telco100_en",
+    "_id": "418118",
+    "_source": {
+        "identificationMetadata": {
+            "id": "418118",
+            "title": "International Mobile Equipment Identity",
+            "url": [
+                "https://en.wikipedia.org/?curid=418118",
+                "https://en.wikipedia.org/wiki/International Mobile Equipment Identity"
+            ],
+            "version": 1179883387,
+            "versionDate": "2023-10-13T01:52:16Z",
+            "hash": "84285dc2107b5c1131af9f23edf463b2",
+            "wikidata": "Q334832"
+        },
+        "descriptionMetadata": {
+            "categories": [
+                "Webarchive template archiveis links",
+                "Articles with short description",
+                "Short description matches Wikidata",
+                "All articles with unsourced statements",
+                "Articles with unsourced statements from November 2022",
+                "All articles lacking reliable references",
+                "Articles lacking reliable references from June 2023",
+                "Articles with unsourced statements from June 2013",
+                "Articles with unsourced statements from October 2016",
+                "Articles containing potentially dated statements from 2004",
+                "All articles containing potentially dated statements",
+                "Mobile telecommunications",
+                "Checksum algorithms",
+                "Mobile telecommunications standards",
+                "Unique identifiers"
+            ],
+            "language": "en",
+            "source": "wikipedia"
+        },
+        "contentMetadata": {
+            "format": "wikitext",
+            "content": "{{short description|Cellphone identification code}}\n[[File:IMEI number of Nokia 6030 20110805.png|thumb|IMEI number - an example]]\n\nThe '''International Mobile Equipment Identity''' ('''IMEI''')<ref name=3gppspec>{{cite web | url = http://www.3gpp.org/ftp/Specs/archive/22_series/22.016/22016-900.zip | title = 3GPP TS 22.016: International Mobile Equipment Identities (IMEI) | access-date = 2009-12-03 | date = 2009-10-01 | format = ZIP/DOC; 36 KB }}</ref> is a numeric [[identifier]], usually [[Unique identifier|unique]],<ref name=bbcnews>{{cite news | title = Phone firms defend security record | publisher = BBC News | date = January 8, 2002 | url = http://news.bbc.co.uk/1/hi/uk/1749215.stm | access-date = August 25, 2011 }}</ref><ref>GSM Europe, {{cite web|url=https://docs.google.com/viewer?a=v&q=cache:0mXtXE_yM3EJ:www.gsmeurope.org/documents/positions/gsme_proposals_mobile_thefts_imei_security.pdf+imei+standard&hl=en&gl=au&pid=bl&srcid=ADGEESgutC2Wv66x8SweH6Tb3AIpZ_e0FtPSpsHeFrswQiPqnm5TgPV440ooDWS_ElQc8aPkeimqNLbd969ngHkpbIbtCcVHQzi_PyYDa0LTFY1m7Pf0Fuh40RUMIpUq4Hf0cAl8ZND4&sig=AHIEtbStnM1cqejWPnMi2PpVLCDSSfJgJQ|title=\"GSME proposals regarding mobile theft and IMEI security\"}}, 2003-06 <!-- accessed 2010-04-17 --></ref> for [[3GPP]] and [[iDEN]] [[mobile phone]]s, as well as some [[satellite phone]]s. It is usually found printed inside the battery compartment of the phone but can also be displayed on-screen on most phones by entering the [[Unstructured Supplementary Service Data#Code table|MMI Supplementary Service code]] <nowiki>*#06#</nowiki> on the dialpad, or alongside other system information in the settings menu on smartphone operating systems.\n\n[[GSM]] networks use the IMEI number to identify valid devices, and can stop a stolen phone from accessing the network. For example, if a [[mobile phone]] is stolen, the owner can have their network provider use the IMEI number to blocklist the phone. This renders the phone useless on that network and sometimes other networks, even if the thief changes the phone's [[subscriber identity module|SIM]] card.\n\nDevices without a SIM card slot or [[eSIM]] capability usually do not have an IMEI code.<ref>{{cite web | url = https://www.sygic.com/it/developers/professional-navigation-sdk/android/faq/how-to-activate-license-when-no-imei-available | title = How to activate license when no IMEI available | archive-url = https://archive.today/20190719100548/https://www.sygic.com/it/developers/professional-navigation-sdk/android/faq/how-to-activate-license-when-no-imei-available | archive-date = 19 July 2019 | url-status = live | access-date = 19 July 2019 }}</ref> However, the IMEI only identifies the device and has no particular relationship to the subscriber. The phone identifies the subscriber by transmitting the [[International mobile subscriber identity]] (IMSI) number, which is stored on a SIM card that can, in theory, be transferred to any handset. However, the network's ability to know a subscriber's current, individual device enables many network and security features.{{Citation needed|date=November 2022}}\n\nDual SIM enabled phones will have two IMEI numbers.\n\n==IMEI and the law==\nMany countries have acknowledged the use of the IMEI in reducing the effect of mobile phone thefts. For example, in the [[United Kingdom]], under the Mobile Telephones (Re-programming) Act, changing the IMEI of a phone, or possessing equipment that can change it, is considered an offence under some circumstances.<ref>{{cite web|url=http://www.legislation.gov.uk/ukpga/2002/31/contents|title=Mobile Telephones (Re-programming) Act 2002|website=Legislation.gov.uk|access-date=2013-09-18}}</ref><ref>{{cite web|url=http://www.vvc.gov.lv/export/sites/default/docs/LRTA/Likumi/The_Criminal_Law.doc|title=The Criminal Law|website=VVC.gov.lv|publisher=[[Latvian State Language Center]]|access-date=2012-10-08|archive-date=2012-03-14|archive-url=https://web.archive.org/web/20120314063903/http://www.vvc.gov.lv/export/sites/default/docs/LRTA/Likumi/The_Criminal_Law.doc|url-status=dead}}</ref>\nA bill was introduced in the United States by Senator [[Chuck Schumer]] in 2012 that would have made the changing of an IMEI illegal, but the bill was not enacted.<ref>{{cite web|url=https://www.congress.gov/bill/112th-congress/senate-bill/3186/text/is|title=S.3186 - Mobile Device Theft Deterrence Act of 2012|website=Congress.gov|publisher=[[Library of Congress]]}}</ref>\n\nIMEI blocking is not the only way to fight phone theft. Instead, mobile operators are encouraged to take measures such as immediate suspension of service and replacement of SIM cards in case of loss or theft.<ref>{{cite web|url=https://techpayout.com/imei-number?alias=imei-number|title=What is an IMEI number? - Where Can You Find It? - Activation|website=TechPayout.com|access-date=16 September 2016}}</ref>\n\nThe existence of a formally allocated IMEI number range for a GSM terminal does not mean that the terminal is approved or complies with regulatory requirements. The linkage between regulatory approval and IMEI allocation was removed in April 2000, with the introduction of the European R&TTE Directive.<ref>{{cite web|url=http://www.rtte.org/|title=The Radio and Telecommunications Terminal Equipment Directive|access-date=16 September 2016}}</ref> Since that date, IMEIs have been allocated by [[British Approvals Board for Telecommunications|BABT]] (or one of several other regional administrators acting on behalf of the [[GSM Association]]) to legitimate GSM terminal manufacturers without the need to provide evidence of approval.\n\n=== Blocklists of stolen devices ===\nWhen someone has their mobile equipment stolen or lost, they can ask their service provider to block the phone from their network, and the operator may do so, especially if required by law. If the local operator maintains an Equipment Identity Register (EIR), it adds the device IMEI to it. Optionally, it also adds the IMEI to shared registries, such as the [[Central Equipment Identity Register]] (CEIR), which blocklists the device with other operators that use the CEIR. This blocklisting makes the device unusable on any operator that uses the CEIR, which makes mobile equipment theft pointless, except for parts.\n\nTo make blocklisting effective, the IMEI number is supposed to be difficult to change. However, a phone's IMEI may be easy to change with special tools.<ref>{{cite web | url = http://www.imeichanger.net/ | title = How To Change IMEI, Device ID of Any Android Device | date = 2 December 2016 | archive-url = https://archive.today/20190719110818/https://www.gadgetcouncil.com/free-android-device-id-and-imei-number-changer/ | archive-date = 19 July 2019 | url-status = live | access-date = 12 August 2019 }}</ref>{{Better source needed|reason=The tool used to change the IMEI that is referenced in this source is given as link to a web search for \"Device-id-changer-download\".|date=June 2023}} In addition, IMEI is an un-authenticated mobile identifier (as opposed to IMSI, which is routinely authenticated by home and serving mobile networks.) Using a spoofed IMEI can thwart some efforts to track handsets, or target handsets for lawful intercept.{{Citation needed|reason=extraordinary claim|date=June 2013}}\n\nAustralia was the first nation to implement IMEI blocking across all GSM networks, in 2003.<ref>{{cite web|url=http://www.amta.org.au/default.asp?id=210|title=FAQs on mobile security|website=AMTA.org.au|access-date=2013-09-18|archive-url=https://web.archive.org/web/20130522211614/http://www.amta.org.au/pages/amta/FAQs.on.mobile.security|archive-date=2013-05-22}}</ref> In Australia the Electronic Information Exchange (EIE) Administration Node provides a blocked IMEI lookup service for Australian customers.<ref>{{Cite web|url=https://prod.eie.net.au/portal/template/MYMIMEIInquiry.vm|title=Check the status of your Handset|website=prod.EIE.net.au}}</ref>\n\nIn the UK, a voluntary charter operated by the mobile networks ensures that any operator's blocklisting of a handset is communicated to the CEIR and subsequently to all other networks. This ensures that the handset is quickly unusable for calls, at most within 48 hours.\n\nSome UK Police forces, including the [[Metropolitan Police Service]], actively check IMEI numbers of phones found involved in crime.\n\nIn New Zealand the NZ Telecommunications Forum Inc<ref>{{cite web|url=http://www.tcf.org.nz|title=TCF – NZ Telecommunications Forum|access-date=16 September 2016}}</ref> provides a blocked IMEI lookup service for New Zealand consumers.  The service allows up to three lookups per day<ref>{{cite web|url=http://www.tcf.org.nz/content/cfa46b54-509c-44aa-91da-3bfe14d20f8f.html|title=Check whether your mobile handset has been blocked - TCF|access-date=16 September 2016|archive-date=27 September 2016|archive-url=https://web.archive.org/web/20160927180911/http://www.tcf.org.nz/content/cfa46b54-509c-44aa-91da-3bfe14d20f8f.html|url-status=dead}}</ref> and checks against a database that is updated daily by the three major mobile network operators.  A blocked IMEI cannot be connected to any of these three operators.\n\nIn Latvia the SIA \"Datorikas institūts DIVI\"<ref>{{cite web|url=http://www.numuri.lv|title=Numuri.lv|access-date=6 August 2017}}</ref> provides a blocked IMEI lookup service for checks against a database that is updated by all major mobile network operators in Latvia.\n\nIn some countries, such blocklisting is not customary. In 2012, major network companies in the United States, under government pressure, committed to introducing a blocklisting service, but it's not clear whether it will interoperate with the CEIR.<ref>[http://www.washingtoncitypaper.com/blogs/citydesk/2012/04/10/lanier-fcc-and-wireless-carriers-to-allow-customers-to-brick-stolen-phones/ Carriers to allow Customers to Brick Stolen Phones]  by Shani Hilton, Apr. 10, 2012, Washington City Paper</ref><ref>[https://www.washingtonpost.com/2012/04/10/gIQAZG9L7S_story.html Wireless carriers partner with FCC, police on database of stolen cellphones]. The Washington Post (2011-02-28). Retrieved on 2013-09-18.</ref> GSM carriers AT&T and T-Mobile began blocking newly reported IMEIs in November 2012.<ref>[http://www.checkmend.com/us/latest_news Checkmend.com] Accessed: 2012-12-26. [https://web.archive.org/web/20121228232400/http://www.checkmend.com/us/latest_news (Archived by WebCite Webcitation.org]</ref>  Thefts reported prior to November 2012 were not added to the database. The [[CTIA (organization)|CTIA]] refers users to websites at [https://www.stolenphonechecker.org www.stolenphonechecker.org]<ref name=\"CTIAundated\"/> and [https://www.gsma.com/managedservices/device-blacklist-services/about-device-check/ the GSMA]<ref name=\"CTIAundated\"/> where consumers can check whether a smartphone has been reported as lost or stolen to its member carriers.  The relationship between the former and any national or international [[Central Equipment Identity Register|IMEI blocklists]] is unclear.<ref name=\"CTIAundated\">{{cite press release|url=https://www.ctia.org/news/us-wireless-industry-combats-smartphone-theft|title=U.S. Wireless Industry Launches Free Consumer Tool To Combat Smartphone Theft|publisher=[[CTIA (organization)|CTIA]]|date=May 11, 2017|access-date=2018-08-20|archive-url=https://archive.today/20180820060011/https://www.ctia.org/news/us-wireless-industry-combats-smartphone-theft|archive-date=2018-08-20|url-status=live|df=dmy-all}}</ref>\n\nIt is unclear whether local barring of IMEI has any positive effect, as it may result in international smuggling of stolen phones.<ref>{{cite web|url=http://www.huffingtonpost.com/2013/07/13/smartphone-black-market_n_3510341.html|website=[[The Huffington Post]]|access-date=2013-10-13|date=2013-07-13|title=Inside The Massive Global Black Market For Smartphones|first=Gerry|last=Smith|archive-url=https://web.archive.org/web/20130917004648/http://www.huffingtonpost.com/2013/07/13/smartphone-black-market_n_3510341.html|archive-date=2013-09-17|url-status=live}}</ref>\n\n===Limitations===\nIMEIs can sometimes be removed from a blocklist, depending on local arrangements. This would typically include quoting a password chosen at the time of blocklisting.{{Citation needed|date=October 2016}}\n\n===Law enforcement and intelligence use===\nLaw enforcement and intelligence services can use an IMEI number as input for tracking devices that are able to locate a cell phone with an accuracy of a few meters. Saudi Arabian government agencies have reportedly used IMEI numbers retrieved from cell phone packaging to locate and detain women who fled Saudi Arabia's patriarchal society in other countries.<ref>{{cite news |last1=Bostock |first1=Bill |date=12 June 2019 |title=The Saudi government is hunting down women who flee the country by tracking the IMEI number on their cellphones |work=Business Insider |url=https://www.businessinsider.com/saudi-arabia-imei-track-runaways-2019-5 |access-date=13 June 2019}}</ref>\n\n===Allowlists===\nSome countries use allowlists instead of blocklists for IMEI numbers, so that any mobile phone needs to be legally registered in the country in order to be able to access mobile networks of the country, with possible exceptions for international roaming and a grace period for registering.<ref>{{cite web|url=https://greenash.net.au/thoughts/2017/12/mobile-phone-imei-whitelisting-in-chile-and-elsewhere/|access-date=2021-05-27|date=2017-12-11|title=Mobile phone IMEI whitelisting in Chile and elsewhere|first=Jeremy|last=Epstein|archive-url=https://web.archive.org/web/20210325035928/https://greenash.net.au/thoughts/2017/12/mobile-phone-imei-whitelisting-in-chile-and-elsewhere/|archive-date=2021-03-25|url-status=live}}</ref> These include Chile,<ref>{{cite web|url=https://www.subtel.gob.cl/homologacion-y-recepcion-de-alertas-de-emergencia-seran-obligatorias-en-telefonos-celulares-a-contar-del-23-de-septiembre/|access-date=2021-05-27|date=2017-09-06|title=Homologación y recepción de alertas de emergencia serán obligatorias en teléfonos celulares a contar del 23 de septiembre|archive-url=https://web.archive.org/web/20180727061648/http://www.subtel.gob.cl/homologacion-y-recepcion-de-alertas-de-emergencia-seran-obligatorias-en-telefonos-celulares-a-contar-del-23-de-septiembre/|archive-date=2018-07-27|url-status=live}}</ref> Turkey,<ref>{{cite web|url=https://adventuresinankara.com/2015/03/16/mission-accomplished-how-to-register-a-foreign-mobile-phone-in-turkey/|access-date=2021-05-27|date=2015-03-16|title=Mission Accomplished! How to Register a Foreign Mobile Phone in Turkey|archive-url=https://web.archive.org/web/20210505214352/https://adventuresinankara.com/2015/03/16/mission-accomplished-how-to-register-a-foreign-mobile-phone-in-turkey/|archive-date=2021-05-05|url-status=live}}</ref> Azerbaijan,<ref>{{cite web|url=http://www.rabita.az/en/c-projects/mdrsen|access-date=2019-04-03|title=Mobile Devices Registration System\n|archive-url=https://web.archive.org/web/20190403100242/http://www.rabita.az/en/c-projects/mdrsen|archive-date=2019-04-03|url-status=dead}}</ref> Colombia,<ref>{{cite web|url=https://thebogotapost.com/register-mobile-phone/17409/|access-date=2021-05-27|date=2016-08-10|title=Register your mobile phone|archive-url=https://web.archive.org/web/20160817030136/http://thebogotapost.com/2016/08/10/register-mobile-phone/|archive-date=2016-08-17|url-status=live}}</ref> and Nepal.<ref>{{cite web|url=https://www.deltadigit.com/everything-ntas-imei-number-registration-program/|access-date=2021-05-27|date=2016-05-06|title=Everything about NTA's IMEI number registration program|first=Abhishek|last=Chand|archive-url=https://web.archive.org/web/20210123120749/https://www.deltadigit.com/everything-ntas-imei-number-registration-program/|archive-date=2021-01-23|url-status=live}}</ref> Other countries that have adopted some form of mandatory IMEI registration include India, Pakistan, Indonesia, Cambodia, Thailand, Iran, Nigeria, Ecuador, Ukraine and Lebanon.<ref>{{cite web|url=https://techpoint.africa/2021/05/21/ncc-imei-policy/|access-date=2021-05-27|date=2021-05-21|title=Does the Nigerian government want safety or surveillance with its new IMEI policy?\n|first=Chimgozirim|last=Nwokoma|archive-url=https://web.archive.org/web/20210524113923/https://techpoint.africa/2021/05/21/ncc-imei-policy/|archive-date=2021-05-24|url-status=live}}</ref>\n\n==Structure of the IMEI and IMEISV (IMEI software version)==\nThe IMEI (15 decimal digits: 14 digits plus a check digit) or IMEISV (16 decimal digits: 14 digits plus two software version digits) includes information on the origin, model, and serial number of the device. The structure of the IMEI/SV is specified in [http://www.3gpp.org/ftp/Specs/html-info/23003.htm 3GPP TS 23.003]. The model and origin comprise the initial 8-digit portion of the IMEI/SV, known as the [[Type Allocation Code]] (TAC). The remainder of the IMEI is manufacturer-defined, with a [[Luhn algorithm|Luhn check digit]] at the end. For the IMEI format prior to 2003, the GSMA guideline was to have this Check Digit always transmitted to the network as zero. This guideline seems to have disappeared for the format valid from 2003 onwards.<ref>GSM Association, [http://www.gsma.com/documents/ts-06-6-0-imei-allocation-and-approval-guidelines/20164/ IMEI Allocation and Approval Guidelines] {{Webarchive|url=https://archive.today/20120908040850/http://www.gsma.com/documents/ts-06-6-0-imei-allocation-and-approval-guidelines/20164/ |date=2012-09-08 }}, Version 5.0, 2010-09-01, chapter 2.1.5 vs. D.1.6</ref>\n\n{{As of|2004}}, the format of the IMEI is ''AA-BBBBBB-CCCCCC-D'', although it may not always be displayed this way. The IMEISV does not have the Luhn check digit but instead has two digits for the Software Version Number (SVN), making the format ''AA-BBBBBB-CCCCCC-EE''\n{| class=\"wikitable\" style=\"margin:auto;\"\n!\n! AA\n! -\n! BB\n! BB\n! BB\n! -\n! CC\n! CC\n! CC\n! D or EE\n|-\n| Old IMEI\n| style=\"text-align:center;\" colspan=\"4\"| TAC\n| style=\"text-align:center;\"| FAC\n| style=\"text-align:center;\" colspan=\"4\" rowspan=\"4\"| Serial number\n| style=\"text-align:center;\" rowspan=\"2\"| D = Check Digit (CD) (Optional)\n|-\n| New IMEI\n| style=\"text-align:center;\" colspan=\"5\"| TAC\n|-\n| Old IMEISV\n| style=\"text-align:center;\" colspan=\"4\"| TAC\n| style=\"text-align:center;\"| FAC\n| style=\"text-align:center;\" rowspan=\"2\"| EE = Software Version Number (SVN)\n|-\n| New IMEISV\n| style=\"text-align:center;\" colspan=\"5\"| TAC\n|}\nPrior to 2002, the TAC was six digits and followed by a two-digit [[Final Assembly Code]] (FAC), which was a manufacturer-specific code indicating the location of the device's construction.\nFrom January 1, 2003 until April 1, 2004, the [[Final Assembly Code|FAC]] for all phones was 00.\nAfter April 1, 2004, the Final Assembly Code ceased to exist and the Type Allocation Code increased to eight digits in length.\n\nIn any of the above cases, the first two digits of the TAC are the [[Reporting Body Identifier]], which identifies the GSMA-approved group that allocated the TAC.  The RBI numbers are allocated by the Global Decimal Administrator. IMEI numbers being decimal helps distinguish them from an [[MEID]], which is hexadecimal and always has 0xA0 or larger as the first two hexadecimal digits.\n\nFor example, the old style IMEI code 35-209900-176148-1 or IMEISV code 35-209900-176148-23 tells us the following:\n<blockquote>\n'''[[Type Allocation Code|TAC]]''': 35-2099  - issued by the [[British Approvals Board for Telecommunications|BABT]] (code 35) with the allocation number 2099<br />\n'''FAC''': 00 - indicating the phone was made during the transition period when FACs were being removed.<br />\n'''SNR''': 176148 - uniquely identifying a unit of this model<br />\n'''CD''': 1 so it is a GSM Phase 2 or higher<br />\n'''SVN''': 23 - The \"software version number\" identifying the revision of the software installed on the phone. 99 is reserved.\n</blockquote>\n\nBy contrast, the new style IMEI code 49-015420-323751-8 has an 8-digit TAC of 49-015420.\n\nThe new CDMA Mobile Equipment Identifier ([[MEID]]) uses the same basic format as the IMEI.\n\n=== Check digit computation ===\n{{see also|Luhn algorithm}}\nThe last number of the IMEI is a [[check digit]], calculated using the [[Luhn algorithm]], as defined in the [https://web.archive.org/web/20170911150130/https://www.gsma.com/newsroom/wp-content/uploads/2012/06/ts0660tacallocationprocessapproved.pdf IMEI Allocation and Approval Guidelines]:\n<blockquote>\nThe Check Digit shall be calculated according to [[Luhn algorithm|Luhn formula]] (ISO/IEC 7812). (See GSM 02.16 / 3GPP 22.016). The Check Digit is a function of all other digits in the IMEI. The Software Version Number (SVN) of a mobile is not included in the calculation.\n\nThe purpose of the Check Digit is to help guard against the possibility of incorrect entries to the CEIR and EIR equipment.\n\nThe presentation of the Check Digit both electronically and in printed form on the label and packaging is very important. Logistics (using bar-code reader) and EIR/CEIR administration cannot use the Check Digit unless it is printed outside of the packaging, and on the ME IMEI/Type Accreditation label.\n\nThe check digit is not transmitted over the radio interface, nor is it stored in the EIR database at any point. Therefore, all references to the last three or six digits of an IMEI refer to the actual IMEI number, to which the check digit does not belong.\n</blockquote>\n\nThe check digit is validated in three steps:\n# Starting from the right, double every other digit (e.g., 7 → 14).\n# Sum the digits (e.g., 14 → 1 + 4).\n# Check if the sum is divisible by 10.\nConversely, one can calculate the IMEI by choosing the check digit that would give a sum divisible by 10. For the example IMEI 49015420323751''?'',\n{| class=\"wikitable\" style=\"text-align:center\"\n|-\n! IMEI\n| style=\"width:1.5em\" |4\n| style=\"width:1.5em\" |9\n| style=\"width:1.5em\" |0\n| style=\"width:1.5em\" |1\n| style=\"width:1.5em\" |5\n| style=\"width:1.5em\" |4\n| style=\"width:1.5em\" |2\n| style=\"width:1.5em\" |0\n| style=\"width:1.5em\" |3\n| style=\"width:1.5em\" |2\n| style=\"width:1.5em\" |3\n| style=\"width:1.5em\" |7\n| style=\"width:1.5em\" |5\n| style=\"width:1.5em\" |1\n| style=\"width:1.5em\" | {{math|x}}\n|-\n! Double every other\n|4\n| style=\"background: #FFA;\" |18\n| 0\n| style=\"background: #FFA;\" |2\n| 5\n| style=\"background: #FFA;\" |8\n|2\n| style=\"background: #FFA;\" |0\n| 3\n| style=\"background: #FFA;\" |4\n| 3\n| style=\"background: #FFA;\" |14\n|5\n| style=\"background: #FFA;\" |2\n| {{math|x}}\n|-\n! Sum digits\n| colspan=\"15\" style=\"white-space: nowrap\" | 4 + (1 + 8) + 0 + 2 + 5 + 8 + 2 + 0 + 3 + 4 + 3 + (1 + 4) + 5 + 2 + {{math|x}} = 52 + {{math|x}}\n|}\nTo make the sum divisible by 10, we set {{math|x}} = 8, so the complete IMEI becomes 49015420323751'''8'''.\n\n==Usage on satellite phone networks==\nThe [[Broadband Global Area Network]] (BGAN), [[Iridium Communications|Iridium]] and [[Thuraya]] [[satellite phone]] networks all use IMEI numbers on their transceiver units as well as SIM cards in much the same way as GSM phones do. The Iridium 9601 modem relies solely on its IMEI number for identification and uses no SIM card; however, Iridium is a proprietary network and the device is incompatible with terrestrial GSM networks.\n\n==See also==\n* [[International Mobile Subscriber Identity]]\n* [[Mobile Equipment Identifier]]\n* [[Mobile phone]]\n* [[SIM lock]]\n\n==References==\n\n{{reflist|2}}\n\n[[Category:Mobile telecommunications]]\n[[Category:Checksum algorithms]]\n[[Category:Mobile telecommunications standards]]\n[[Category:Unique identifiers]]",
+            "text": "The International Mobile Equipment Identity (IMEI) is a numeric identifier, usually unique, for 3GPP and iDEN mobile phones, as well as some satellite phones. It is usually found printed inside the battery compartment of the phone but can also be displayed on-screen on most phones by entering the MMI Supplementary Service code *#06# on the dialpad, or alongside other system information in the settings menu on smartphone operating systems. GSM networks use the IMEI number to identify valid devices, and can stop a stolen phone from accessing the network. For example, if a mobile phone is stolen, the owner can have their network provider use the IMEI number to blocklist the phone. This renders the phone useless on that network and sometimes other networks, even if the thief changes the phone's SIM card. Devices without a SIM card slot or eSIM capability usually do not have an IMEI code. However, the IMEI only identifies the device and has no particular relationship to the subscriber. The phone identifies the subscriber by transmitting the International mobile subscriber identity (IMSI) number, which is stored on a SIM card that can, in theory, be transferred to any handset. However, the network's ability to know a subscriber's current, individual device enables many network and security features.[citation needed] Dual SIM enabled phones will have two IMEI numbers. Many countries have acknowledged the use of the IMEI in reducing the effect of mobile phone thefts. For example, in the United Kingdom, under the Mobile Telephones (Re-programming) Act, changing the IMEI of a phone, or possessing equipment that can change it, is considered an offence under some circumstances. A bill was introduced in the United States by Senator Chuck Schumer in 2012 that would have made the changing of an IMEI illegal, but the bill was not enacted. IMEI blocking is not the only way to fight phone theft. Instead, mobile operators are encouraged to take measures such as immediate suspension of service and replacement of SIM cards in case of loss or theft. The existence of a formally allocated IMEI number range for a GSM terminal does not mean that the terminal is approved or complies with regulatory requirements. The linkage between regulatory approval and IMEI allocation was removed in April 2000, with the introduction of the European R&TTE Directive. Since that date, IMEIs have been allocated by BABT (or one of several other regional administrators acting on behalf of the GSM Association) to legitimate GSM terminal manufacturers without the need to provide evidence of approval. When someone has their mobile equipment stolen or lost, they can ask their service provider to block the phone from their network, and the operator may do so, especially if required by law. If the local operator maintains an Equipment Identity Register (EIR), it adds the device IMEI to it. Optionally, it also adds the IMEI to shared registries, such as the Central Equipment Identity Register (CEIR), which blocklists the device with other operators that use the CEIR. This blocklisting makes the device unusable on any operator that uses the CEIR, which makes mobile equipment theft pointless, except for parts. To make blocklisting effective, the IMEI number is supposed to be difficult to change. However, a phone's IMEI may be easy to change with special tools.[better source needed] In addition, IMEI is an un-authenticated mobile identifier (as opposed to IMSI, which is routinely authenticated by home and serving mobile networks.) Using a spoofed IMEI can thwart some efforts to track handsets, or target handsets for lawful intercept.[citation needed] Australia was the first nation to implement IMEI blocking across all GSM networks, in 2003. In Australia the Electronic Information Exchange (EIE) Administration Node provides a blocked IMEI lookup service for Australian customers. In the UK, a voluntary charter operated by the mobile networks ensures that any operator's blocklisting of a handset is communicated to the CEIR and subsequently to all other networks. This ensures that the handset is quickly unusable for calls, at most within 48 hours. Some UK Police forces, including the Metropolitan Police Service, actively check IMEI numbers of phones found involved in crime. In New Zealand the NZ Telecommunications Forum Inc provides a blocked IMEI lookup service for New Zealand consumers. The service allows up to three lookups per day and checks against a database that is updated daily by the three major mobile network operators. A blocked IMEI cannot be connected to any of these three operators. In Latvia the SIA \"Datorikas institūts DIVI\" provides a blocked IMEI lookup service for checks against a database that is updated by all major mobile network operators in Latvia. In some countries, such blocklisting is not customary. In 2012, major network companies in the United States, under government pressure, committed to introducing a blocklisting service, but it's not clear whether it will interoperate with the CEIR. GSM carriers AT&T and T-Mobile began blocking newly reported IMEIs in November 2012. Thefts reported prior to November 2012 were not added to the database. The CTIA refers users to websites at www.stolenphonechecker.org and the GSMA where consumers can check whether a smartphone has been reported as lost or stolen to its member carriers. The relationship between the former and any national or international IMEI blocklists is unclear. It is unclear whether local barring of IMEI has any positive effect, as it may result in international smuggling of stolen phones. IMEIs can sometimes be removed from a blocklist, depending on local arrangements. This would typically include quoting a password chosen at the time of blocklisting.[citation needed] Law enforcement and intelligence services can use an IMEI number as input for tracking devices that are able to locate a cell phone with an accuracy of a few meters. Saudi Arabian government agencies have reportedly used IMEI numbers retrieved from cell phone packaging to locate and detain women who fled Saudi Arabia's patriarchal society in other countries. Some countries use allowlists instead of blocklists for IMEI numbers, so that any mobile phone needs to be legally registered in the country in order to be able to access mobile networks of the country, with possible exceptions for international roaming and a grace period for registering. These include Chile, Turkey, Azerbaijan, Colombia, and Nepal. Other countries that have adopted some form of mandatory IMEI registration include India, Pakistan, Indonesia, Cambodia, Thailand, Iran, Nigeria, Ecuador, Ukraine and Lebanon. The IMEI (15 decimal digits: 14 digits plus a check digit) or IMEISV (16 decimal digits: 14 digits plus two software version digits) includes information on the origin, model, and serial number of the device. The structure of the IMEI/SV is specified in 3GPP TS 23.003. The model and origin comprise the initial 8-digit portion of the IMEI/SV, known as the Type Allocation Code (TAC). The remainder of the IMEI is manufacturer-defined, with a Luhn check digit at the end. For the IMEI format prior to 2003, the GSMA guideline was to have this Check Digit always transmitted to the network as zero. This guideline seems to have disappeared for the format valid from 2003 onwards. As of 2004[update], the format of the IMEI is AA-BBBBBB-CCCCCC-D, although it may not always be displayed this way. The IMEISV does not have the Luhn check digit but instead has two digits for the Software Version Number (SVN), making the format AA-BBBBBB-CCCCCC-EE Prior to 2002, the TAC was six digits and followed by a two-digit Final Assembly Code (FAC), which was a manufacturer-specific code indicating the location of the device's construction. From January 1, 2003 until April 1, 2004, the FAC for all phones was 00. After April 1, 2004, the Final Assembly Code ceased to exist and the Type Allocation Code increased to eight digits in length. In any of the above cases, the first two digits of the TAC are the Reporting Body Identifier, which identifies the GSMA-approved group that allocated the TAC. The RBI numbers are allocated by the Global Decimal Administrator. IMEI numbers being decimal helps distinguish them from an MEID, which is hexadecimal and always has 0xA0 or larger as the first two hexadecimal digits. For example, the old style IMEI code 35-209900-176148-1 or IMEISV code 35-209900-176148-23 tells us the following: TAC: 35-2099 - issued by the BABT (code 35) with the allocation number 2099 FAC: 00 - indicating the phone was made during the transition period when FACs were being removed. SNR: 176148 - uniquely identifying a unit of this model CD: 1 so it is a GSM Phase 2 or higher SVN: 23 - The \"software version number\" identifying the revision of the software installed on the phone. 99 is reserved. By contrast, the new style IMEI code 49-015420-323751-8 has an 8-digit TAC of 49-015420. The new CDMA Mobile Equipment Identifier (MEID) uses the same basic format as the IMEI. The last number of the IMEI is a check digit, calculated using the Luhn algorithm, as defined in the IMEI Allocation and Approval Guidelines: The Check Digit shall be calculated according to Luhn formula (ISO/IEC 7812). (See GSM 02.16 / 3GPP 22.016). The Check Digit is a function of all other digits in the IMEI. The Software Version Number (SVN) of a mobile is not included in the calculation. The purpose of the Check Digit is to help guard against the possibility of incorrect entries to the CEIR and EIR equipment. The presentation of the Check Digit both electronically and in printed form on the label and packaging is very important. Logistics (using bar-code reader) and EIR/CEIR administration cannot use the Check Digit unless it is printed outside of the packaging, and on the ME IMEI/Type Accreditation label. The check digit is not transmitted over the radio interface, nor is it stored in the EIR database at any point. Therefore, all references to the last three or six digits of an IMEI refer to the actual IMEI number, to which the check digit does not belong. The check digit is validated in three steps: Starting from the right, double every other digit (e.g., 7 → 14). Sum the digits (e.g., 14 → 1 + 4). Check if the sum is divisible by 10. Conversely, one can calculate the IMEI by choosing the check digit that would give a sum divisible by 10. For the example IMEI 49015420323751?, To make the sum divisible by 10, we set x = 8, so the complete IMEI becomes 490154203237518. The Broadband Global Area Network (BGAN), Iridium and Thuraya satellite phone networks all use IMEI numbers on their transceiver units as well as SIM cards in much the same way as GSM phones do. The Iridium 9601 modem relies solely on its IMEI number for identification and uses no SIM card; however, Iridium is a proprietary network and the device is incompatible with terrestrial GSM networks. International Mobile Subscriber Identity Mobile Equipment Identifier Mobile phone SIM lock \"3GPP TS 22.016: International Mobile Equipment Identities (IMEI)\" (ZIP/DOC; 36 KB). 2009-10-01. Retrieved 2009-12-03. \"Phone firms defend security record\". BBC News. January 8, 2002. Retrieved August 25, 2011. GSM Europe, \"\"GSME proposals regarding mobile theft and IMEI security\"\"., 2003-06 \"How to activate license when no IMEI available\". Archived from the original on 19 July 2019. Retrieved 19 July 2019. \"Mobile Telephones (Re-programming) Act 2002\". Legislation.gov.uk. Retrieved 2013-09-18. \"The Criminal Law\". VVC.gov.lv. Latvian State Language Center. Archived from the original on 2012-03-14. Retrieved 2012-10-08. \"S.3186 - Mobile Device Theft Deterrence Act of 2012\". Congress.gov. Library of Congress. \"What is an IMEI number? - Where Can You Find It? - Activation\". TechPayout.com. Retrieved 16 September 2016. \"The Radio and Telecommunications Terminal Equipment Directive\". Retrieved 16 September 2016. \"How To Change IMEI, Device ID of Any Android Device\". 2 December 2016. Archived from the original on 19 July 2019. Retrieved 12 August 2019. \"FAQs on mobile security\". AMTA.org.au. Archived from the original on 2013-05-22. Retrieved 2013-09-18. \"Check the status of your Handset\". prod.EIE.net.au. \"TCF – NZ Telecommunications Forum\". Retrieved 16 September 2016. \"Check whether your mobile handset has been blocked - TCF\". Archived from the original on 27 September 2016. Retrieved 16 September 2016. \"Numuri.lv\". Retrieved 6 August 2017. Carriers to allow Customers to Brick Stolen Phones by Shani Hilton, Apr. 10, 2012, Washington City Paper Wireless carriers partner with FCC, police on database of stolen cellphones. The Washington Post (2011-02-28). Retrieved on 2013-09-18. Checkmend.com Accessed: 2012-12-26. (Archived by WebCite Webcitation.org \"U.S. Wireless Industry Launches Free Consumer Tool To Combat Smartphone Theft\" (Press release). CTIA. 11 May 2017. Archived from the original on 20 August 2018. Retrieved 20 August 2018. Smith, Gerry (2013-07-13). \"Inside The Massive Global Black Market For Smartphones\". The Huffington Post. Archived from the original on 2013-09-17. Retrieved 2013-10-13. Bostock, Bill (12 June 2019). \"The Saudi government is hunting down women who flee the country by tracking the IMEI number on their cellphones\". Business Insider. Retrieved 13 June 2019. Epstein, Jeremy (2017-12-11). \"Mobile phone IMEI whitelisting in Chile and elsewhere\". Archived from the original on 2021-03-25. Retrieved 2021-05-27. \"Homologación y recepción de alertas de emergencia serán obligatorias en teléfonos celulares a contar del 23 de septiembre\". 2017-09-06. Archived from the original on 2018-07-27. Retrieved 2021-05-27. \"Mission Accomplished! How to Register a Foreign Mobile Phone in Turkey\". 2015-03-16. Archived from the original on 2021-05-05. Retrieved 2021-05-27. \"Mobile Devices Registration System\". Archived from the original on 2019-04-03. Retrieved 2019-04-03. \"Register your mobile phone\". 2016-08-10. Archived from the original on 2016-08-17. Retrieved 2021-05-27. Chand, Abhishek (2016-05-06). \"Everything about NTA's IMEI number registration program\". Archived from the original on 2021-01-23. Retrieved 2021-05-27. Nwokoma, Chimgozirim (2021-05-21). \"Does the Nigerian government want safety or surveillance with its new IMEI policy?\". Archived from the original on 2021-05-24. Retrieved 2021-05-27. GSM Association, IMEI Allocation and Approval Guidelines Archived 2012-09-08 at archive.today, Version 5.0, 2010-09-01, chapter 2.1.5 vs. D.1.6"
+        },
+        "collectMetadata": {
+            "requestedDate": "2023-10-16T00:00:00",
+            "ingestedDate": "2023-10-21T06:16:56.827728"
+        },
+        "extractionMetadata": [
+            {
+                "id": "WikitextExtractor",
+                "linkExtractionDate": "2023-10-21T06:16:56.832596",
+                "links": [
+                    {
+                        "fragment": null,
+                        "link": "File:IMEI_number_of_Nokia_6030_20110805.png",
+                        "text": "thumb|IMEI number - an example",
+                        "title": "File:IMEI number of Nokia 6030 20110805.png"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Identifier",
+                        "text": null,
+                        "title": "identifier"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Unique_identifier",
+                        "text": "unique",
+                        "title": "Unique identifier"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3GPP",
+                        "text": null,
+                        "title": "3GPP"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "IDEN",
+                        "text": null,
+                        "title": "iDEN"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_phone",
+                        "text": null,
+                        "title": "mobile phone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Satellite_phone",
+                        "text": null,
+                        "title": "satellite phone"
+                    },
+                    {
+                        "fragment": "Code table",
+                        "link": "Unstructured_Supplementary_Service_Data",
+                        "text": "MMI Supplementary Service code",
+                        "title": "Unstructured Supplementary Service Data"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GSM",
+                        "text": null,
+                        "title": "GSM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_phone",
+                        "text": null,
+                        "title": "mobile phone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Subscriber_identity_module",
+                        "text": "SIM",
+                        "title": "subscriber identity module"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "ESIM",
+                        "text": null,
+                        "title": "eSIM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "International_mobile_subscriber_identity",
+                        "text": null,
+                        "title": "International mobile subscriber identity"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "United_Kingdom",
+                        "text": null,
+                        "title": "United Kingdom"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Latvian_State_Language_Center",
+                        "text": null,
+                        "title": "Latvian State Language Center"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Chuck_Schumer",
+                        "text": null,
+                        "title": "Chuck Schumer"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Library_of_Congress",
+                        "text": null,
+                        "title": "Library of Congress"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "British_Approvals_Board_for_Telecommunications",
+                        "text": "BABT",
+                        "title": "British Approvals Board for Telecommunications"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GSM_Association",
+                        "text": null,
+                        "title": "GSM Association"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Central_Equipment_Identity_Register",
+                        "text": null,
+                        "title": "Central Equipment Identity Register"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Metropolitan_Police_Service",
+                        "text": null,
+                        "title": "Metropolitan Police Service"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CTIA_(organization)",
+                        "text": "CTIA",
+                        "title": "CTIA (organization)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Central_Equipment_Identity_Register",
+                        "text": "IMEI blocklists",
+                        "title": "Central Equipment Identity Register"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CTIA_(organization)",
+                        "text": "CTIA",
+                        "title": "CTIA (organization)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "The_Huffington_Post",
+                        "text": null,
+                        "title": "The Huffington Post"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Type_Allocation_Code",
+                        "text": null,
+                        "title": "Type Allocation Code"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Luhn_algorithm",
+                        "text": "Luhn check digit",
+                        "title": "Luhn algorithm"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Final_Assembly_Code",
+                        "text": null,
+                        "title": "Final Assembly Code"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Final_Assembly_Code",
+                        "text": "FAC",
+                        "title": "Final Assembly Code"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Reporting_Body_Identifier",
+                        "text": null,
+                        "title": "Reporting Body Identifier"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "MEID",
+                        "text": null,
+                        "title": "MEID"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Type_Allocation_Code",
+                        "text": "TAC",
+                        "title": "Type Allocation Code"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "British_Approvals_Board_for_Telecommunications",
+                        "text": "BABT",
+                        "title": "British Approvals Board for Telecommunications"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "MEID",
+                        "text": null,
+                        "title": "MEID"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Check_digit",
+                        "text": null,
+                        "title": "check digit"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Luhn_algorithm",
+                        "text": null,
+                        "title": "Luhn algorithm"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Luhn_algorithm",
+                        "text": "Luhn formula",
+                        "title": "Luhn algorithm"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Broadband_Global_Area_Network",
+                        "text": null,
+                        "title": "Broadband Global Area Network"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Iridium_Communications",
+                        "text": "Iridium",
+                        "title": "Iridium Communications"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Thuraya",
+                        "text": null,
+                        "title": "Thuraya"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Satellite_phone",
+                        "text": null,
+                        "title": "satellite phone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "International_Mobile_Subscriber_Identity",
+                        "text": null,
+                        "title": "International Mobile Subscriber Identity"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_Equipment_Identifier",
+                        "text": null,
+                        "title": "Mobile Equipment Identifier"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_phone",
+                        "text": null,
+                        "title": "Mobile phone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "SIM_lock",
+                        "text": null,
+                        "title": "SIM lock"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Mobile_telecommunications",
+                        "text": null,
+                        "title": "Category:Mobile telecommunications"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Checksum_algorithms",
+                        "text": null,
+                        "title": "Category:Checksum algorithms"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Mobile_telecommunications_standards",
+                        "text": null,
+                        "title": "Category:Mobile telecommunications standards"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Unique_identifiers",
+                        "text": null,
+                        "title": "Category:Unique identifiers"
+                    }
+                ],
+                "nbLinks": 49,
+                "nbTables": 2,
+                "nbTexts": 11,
+                "tableExtractionDate": "2023-10-21T06:16:56.832596",
+                "tables": [
+                    {
+                        "endOffset": 18477,
+                        "startOffset": 17847,
+                        "tableCaption": null,
+                        "tableContent": "{| class=\"wikitable\" style=\"margin:auto;\"\n!\n! AA\n! -\n! BB\n! BB\n! BB\n! -\n! CC\n! CC\n! CC\n! D or EE\n|-\n| Old IMEI\n| style=\"text-align:center;\" colspan=\"4\"| TAC\n| style=\"text-align:center;\"| FAC\n| style=\"text-align:center;\" colspan=\"4\" rowspan=\"4\"| Serial number\n| style=\"text-align:center;\" rowspan=\"2\"| D = Check Digit (CD) (Optional)\n|-\n| New IMEI\n| style=\"text-align:center;\" colspan=\"5\"| TAC\n|-\n| Old IMEISV\n| style=\"text-align:center;\" colspan=\"4\"| TAC\n| style=\"text-align:center;\"| FAC\n| style=\"text-align:center;\" rowspan=\"2\"| EE = Software Version Number (SVN)\n|-\n| New IMEISV\n| style=\"text-align:center;\" colspan=\"5\"| TAC\n|}",
+                        "tableData": [
+                            [
+                                "",
+                                "AA",
+                                "-",
+                                "BB",
+                                "BB",
+                                "BB",
+                                "-",
+                                "CC",
+                                "CC",
+                                "CC",
+                                "D or EE"
+                            ],
+                            [
+                                "Old IMEI",
+                                "TAC",
+                                "TAC",
+                                "TAC",
+                                "TAC",
+                                "FAC",
+                                "Serial number",
+                                "Serial number",
+                                "Serial number",
+                                "Serial number",
+                                "D = Check Digit (CD) (Optional)"
+                            ],
+                            [
+                                "New IMEI",
+                                "TAC",
+                                "TAC",
+                                "TAC",
+                                "TAC",
+                                "TAC",
+                                "Serial number",
+                                "Serial number",
+                                "Serial number",
+                                "Serial number",
+                                "D = Check Digit (CD) (Optional)"
+                            ],
+                            [
+                                "Old IMEISV",
+                                "TAC",
+                                "TAC",
+                                "TAC",
+                                "TAC",
+                                "FAC",
+                                "Serial number",
+                                "Serial number",
+                                "Serial number",
+                                "Serial number",
+                                "EE = Software Version Number (SVN)"
+                            ],
+                            [
+                                "New IMEISV",
+                                "TAC",
+                                "TAC",
+                                "TAC",
+                                "TAC",
+                                "TAC",
+                                "Serial number",
+                                "Serial number",
+                                "Serial number",
+                                "Serial number",
+                                "EE = Software Version Number (SVN)"
+                            ]
+                        ],
+                        "tableNum": 0
+                    },
+                    {
+                        "endOffset": 22687,
+                        "startOffset": 21804,
+                        "tableCaption": null,
+                        "tableContent": "{| class=\"wikitable\" style=\"text-align:center\"\n|-\n! IMEI\n| style=\"width:1.5em\" |4\n| style=\"width:1.5em\" |9\n| style=\"width:1.5em\" |0\n| style=\"width:1.5em\" |1\n| style=\"width:1.5em\" |5\n| style=\"width:1.5em\" |4\n| style=\"width:1.5em\" |2\n| style=\"width:1.5em\" |0\n| style=\"width:1.5em\" |3\n| style=\"width:1.5em\" |2\n| style=\"width:1.5em\" |3\n| style=\"width:1.5em\" |7\n| style=\"width:1.5em\" |5\n| style=\"width:1.5em\" |1\n| style=\"width:1.5em\" | {{math|x}}\n|-\n! Double every other\n|4\n| style=\"background: #FFA;\" |18\n| 0\n| style=\"background: #FFA;\" |2\n| 5\n| style=\"background: #FFA;\" |8\n|2\n| style=\"background: #FFA;\" |0\n| 3\n| style=\"background: #FFA;\" |4\n| 3\n| style=\"background: #FFA;\" |14\n|5\n| style=\"background: #FFA;\" |2\n| {{math|x}}\n|-\n! Sum digits\n| colspan=\"15\" style=\"white-space: nowrap\" | 4 + (1 + 8) + 0 + 2 + 5 + 8 + 2 + 0 + 3 + 4 + 3 + (1 + 4) + 5 + 2 + {{math|x}} = 52 + {{math|x}}\n|}",
+                        "tableData": [
+                            [
+                                "IMEI",
+                                "4",
+                                "9",
+                                "0",
+                                "1",
+                                "5",
+                                "4",
+                                "2",
+                                "0",
+                                "3",
+                                "2",
+                                "3",
+                                "7",
+                                "5",
+                                "1",
+                                ""
+                            ],
+                            [
+                                "Double every other",
+                                "4",
+                                "18",
+                                "0",
+                                "2",
+                                "5",
+                                "8",
+                                "2",
+                                "0",
+                                "3",
+                                "4",
+                                "3",
+                                "14",
+                                "5",
+                                "2",
+                                ""
+                            ],
+                            [
+                                "Sum digits",
+                                "4 + (1 + 8) + 0 + 2 + 5 + 8 + 2 + 0 + 3 + 4 + 3 + (1 + 4) + 5 + 2 +  = 52 +",
+                                "4 + (1 + 8) + 0 + 2 + 5 + 8 + 2 + 0 + 3 + 4 + 3 + (1 + 4) + 5 + 2 +  = 52 +",
+                                "4 + (1 + 8) + 0 + 2 + 5 + 8 + 2 + 0 + 3 + 4 + 3 + (1 + 4) + 5 + 2 +  = 52 +",
+                                "4 + (1 + 8) + 0 + 2 + 5 + 8 + 2 + 0 + 3 + 4 + 3 + (1 + 4) + 5 + 2 +  = 52 +",
+                                "4 + (1 + 8) + 0 + 2 + 5 + 8 + 2 + 0 + 3 + 4 + 3 + (1 + 4) + 5 + 2 +  = 52 +",
+                                "4 + (1 + 8) + 0 + 2 + 5 + 8 + 2 + 0 + 3 + 4 + 3 + (1 + 4) + 5 + 2 +  = 52 +",
+                                "4 + (1 + 8) + 0 + 2 + 5 + 8 + 2 + 0 + 3 + 4 + 3 + (1 + 4) + 5 + 2 +  = 52 +",
+                                "4 + (1 + 8) + 0 + 2 + 5 + 8 + 2 + 0 + 3 + 4 + 3 + (1 + 4) + 5 + 2 +  = 52 +",
+                                "4 + (1 + 8) + 0 + 2 + 5 + 8 + 2 + 0 + 3 + 4 + 3 + (1 + 4) + 5 + 2 +  = 52 +",
+                                "4 + (1 + 8) + 0 + 2 + 5 + 8 + 2 + 0 + 3 + 4 + 3 + (1 + 4) + 5 + 2 +  = 52 +",
+                                "4 + (1 + 8) + 0 + 2 + 5 + 8 + 2 + 0 + 3 + 4 + 3 + (1 + 4) + 5 + 2 +  = 52 +",
+                                "4 + (1 + 8) + 0 + 2 + 5 + 8 + 2 + 0 + 3 + 4 + 3 + (1 + 4) + 5 + 2 +  = 52 +",
+                                "4 + (1 + 8) + 0 + 2 + 5 + 8 + 2 + 0 + 3 + 4 + 3 + (1 + 4) + 5 + 2 +  = 52 +",
+                                "4 + (1 + 8) + 0 + 2 + 5 + 8 + 2 + 0 + 3 + 4 + 3 + (1 + 4) + 5 + 2 +  = 52 +",
+                                "4 + (1 + 8) + 0 + 2 + 5 + 8 + 2 + 0 + 3 + 4 + 3 + (1 + 4) + 5 + 2 +  = 52 +"
+                            ]
+                        ],
+                        "tableNum": 1
+                    }
+                ],
+                "technology": "WikitextExtractor",
+                "textExtractionDate": "2023-10-21T06:16:56.832596",
+                "texts": [
+                    {
+                        "endOffset": 3158,
+                        "index": 0,
+                        "level": 0,
+                        "startOffset": 0,
+                        "title": null,
+                        "value": "{{short description|Cellphone identification code}}\n[[File:IMEI number of Nokia 6030 20110805.png|thumb|IMEI number - an example]]\n\nThe International Mobile Equipment Identity (IMEI)<ref name=3gppspec>{{cite web | url = http://www.3gpp.org/ftp/Specs/archive/22_series/22.016/22016-900.zip | title = 3GPP TS 22.016: International Mobile Equipment Identities (IMEI) | access-date = 2009-12-03 | date = 2009-10-01 | format = ZIP/DOC; 36 KB }}</ref> is a numeric [[identifier]], usually [[Unique identifier|unique]],<ref name=bbcnews>{{cite news | title = Phone firms defend security record | publisher = BBC News | date = January 8, 2002 | url = http://news.bbc.co.uk/1/hi/uk/1749215.stm | access-date = August 25, 2011 }}</ref><ref>GSM Europe, {{cite web|url=https://docs.google.com/viewer?a=v&q=cache:0mXtXE_yM3EJ:www.gsmeurope.org/documents/positions/gsme_proposals_mobile_thefts_imei_security.pdf+imei+standard&hl=en&gl=au&pid=bl&srcid=ADGEESgutC2Wv66x8SweH6Tb3AIpZ_e0FtPSpsHeFrswQiPqnm5TgPV440ooDWS_ElQc8aPkeimqNLbd969ngHkpbIbtCcVHQzi_PyYDa0LTFY1m7Pf0Fuh40RUMIpUq4Hf0cAl8ZND4&sig=AHIEtbStnM1cqejWPnMi2PpVLCDSSfJgJQ|title=\"GSME proposals regarding mobile theft and IMEI security\"}}, 2003-06 </ref> for [[3GPP]] and [[iDEN]] [[mobile phone]]s, as well as some [[satellite phone]]s. It is usually found printed inside the battery compartment of the phone but can also be displayed on-screen on most phones by entering the [[Unstructured Supplementary Service Data#Code table|MMI Supplementary Service code]] <nowiki>*#06#</nowiki> on the dialpad, or alongside other system information in the settings menu on smartphone operating systems.\n\n[[GSM]] networks use the IMEI number to identify valid devices, and can stop a stolen phone from accessing the network. For example, if a [[mobile phone]] is stolen, the owner can have their network provider use the IMEI number to blocklist the phone. This renders the phone useless on that network and sometimes other networks, even if the thief changes the phone's [[subscriber identity module|SIM]] card.\n\nDevices without a SIM card slot or [[eSIM]] capability usually do not have an IMEI code.<ref>{{cite web | url = https://www.sygic.com/it/developers/professional-navigation-sdk/android/faq/how-to-activate-license-when-no-imei-available | title = How to activate license when no IMEI available | archive-url = https://archive.today/20190719100548/https://www.sygic.com/it/developers/professional-navigation-sdk/android/faq/how-to-activate-license-when-no-imei-available | archive-date = 19 July 2019 | url-status = live | access-date = 19 July 2019 }}</ref> However, the IMEI only identifies the device and has no particular relationship to the subscriber. The phone identifies the subscriber by transmitting the [[International mobile subscriber identity]] (IMSI) number, which is stored on a SIM card that can, in theory, be transferred to any handset. However, the network's ability to know a subscriber's current, individual device enables many network and security features.{{Citation needed|date=November 2022}}\n\nDual SIM enabled phones will have two IMEI numbers."
+                    },
+                    {
+                        "endOffset": 16394,
+                        "index": 1,
+                        "level": 2,
+                        "startOffset": 3158,
+                        "title": "IMEI and the law",
+                        "value": "Many countries have acknowledged the use of the IMEI in reducing the effect of mobile phone thefts. For example, in the [[United Kingdom]], under the Mobile Telephones (Re-programming) Act, changing the IMEI of a phone, or possessing equipment that can change it, is considered an offence under some circumstances.<ref>{{cite web|url=http://www.legislation.gov.uk/ukpga/2002/31/contents|title=Mobile Telephones (Re-programming) Act 2002|website=Legislation.gov.uk|access-date=2013-09-18}}</ref><ref>{{cite web|url=http://www.vvc.gov.lv/export/sites/default/docs/LRTA/Likumi/The_Criminal_Law.doc|title=The Criminal Law|website=VVC.gov.lv|publisher=[[Latvian State Language Center]]|access-date=2012-10-08|archive-date=2012-03-14|archive-url=https://web.archive.org/web/20120314063903/http://www.vvc.gov.lv/export/sites/default/docs/LRTA/Likumi/The_Criminal_Law.doc|url-status=dead}}</ref>\nA bill was introduced in the United States by Senator [[Chuck Schumer]] in 2012 that would have made the changing of an IMEI illegal, but the bill was not enacted.<ref>{{cite web|url=https://www.congress.gov/bill/112th-congress/senate-bill/3186/text/is|title=S.3186 - Mobile Device Theft Deterrence Act of 2012|website=Congress.gov|publisher=[[Library of Congress]]}}</ref>\n\nIMEI blocking is not the only way to fight phone theft. Instead, mobile operators are encouraged to take measures such as immediate suspension of service and replacement of SIM cards in case of loss or theft.<ref>{{cite web|url=https://techpayout.com/imei-number?alias=imei-number|title=What is an IMEI number? - Where Can You Find It? - Activation|website=TechPayout.com|access-date=16 September 2016}}</ref>\n\nThe existence of a formally allocated IMEI number range for a GSM terminal does not mean that the terminal is approved or complies with regulatory requirements. The linkage between regulatory approval and IMEI allocation was removed in April 2000, with the introduction of the European R&TTE Directive.<ref>{{cite web|url=http://www.rtte.org/|title=The Radio and Telecommunications Terminal Equipment Directive|access-date=16 September 2016}}</ref> Since that date, IMEIs have been allocated by [[British Approvals Board for Telecommunications|BABT]] (or one of several other regional administrators acting on behalf of the [[GSM Association]]) to legitimate GSM terminal manufacturers without the need to provide evidence of approval."
+                    },
+                    {
+                        "endOffset": 12046,
+                        "index": 2,
+                        "level": 3,
+                        "startOffset": 5590,
+                        "title": "Blocklists of stolen devices",
+                        "value": "When someone has their mobile equipment stolen or lost, they can ask their service provider to block the phone from their network, and the operator may do so, especially if required by law. If the local operator maintains an Equipment Identity Register (EIR), it adds the device IMEI to it. Optionally, it also adds the IMEI to shared registries, such as the [[Central Equipment Identity Register]] (CEIR), which blocklists the device with other operators that use the CEIR. This blocklisting makes the device unusable on any operator that uses the CEIR, which makes mobile equipment theft pointless, except for parts.\n\nTo make blocklisting effective, the IMEI number is supposed to be difficult to change. However, a phone's IMEI may be easy to change with special tools.<ref>{{cite web | url = http://www.imeichanger.net/ | title = How To Change IMEI, Device ID of Any Android Device | date = 2 December 2016 | archive-url = https://archive.today/20190719110818/https://www.gadgetcouncil.com/free-android-device-id-and-imei-number-changer/ | archive-date = 19 July 2019 | url-status = live | access-date = 12 August 2019 }}</ref>{{Better source needed|reason=The tool used to change the IMEI that is referenced in this source is given as link to a web search for \"Device-id-changer-download\".|date=June 2023}} In addition, IMEI is an un-authenticated mobile identifier (as opposed to IMSI, which is routinely authenticated by home and serving mobile networks.) Using a spoofed IMEI can thwart some efforts to track handsets, or target handsets for lawful intercept.{{Citation needed|reason=extraordinary claim|date=June 2013}}\n\nAustralia was the first nation to implement IMEI blocking across all GSM networks, in 2003.<ref>{{cite web|url=http://www.amta.org.au/default.asp?id=210|title=FAQs on mobile security|website=AMTA.org.au|access-date=2013-09-18|archive-url=https://web.archive.org/web/20130522211614/http://www.amta.org.au/pages/amta/FAQs.on.mobile.security|archive-date=2013-05-22}}</ref> In Australia the Electronic Information Exchange (EIE) Administration Node provides a blocked IMEI lookup service for Australian customers.<ref>{{Cite web|url=https://prod.eie.net.au/portal/template/MYMIMEIInquiry.vm|title=Check the status of your Handset|website=prod.EIE.net.au}}</ref>\n\nIn the UK, a voluntary charter operated by the mobile networks ensures that any operator's blocklisting of a handset is communicated to the CEIR and subsequently to all other networks. This ensures that the handset is quickly unusable for calls, at most within 48 hours.\n\nSome UK Police forces, including the [[Metropolitan Police Service]], actively check IMEI numbers of phones found involved in crime.\n\nIn New Zealand the NZ Telecommunications Forum Inc<ref>{{cite web|url=http://www.tcf.org.nz|title=TCF – NZ Telecommunications Forum|access-date=16 September 2016}}</ref> provides a blocked IMEI lookup service for New Zealand consumers.  The service allows up to three lookups per day<ref>{{cite web|url=http://www.tcf.org.nz/content/cfa46b54-509c-44aa-91da-3bfe14d20f8f.html|title=Check whether your mobile handset has been blocked - TCF|access-date=16 September 2016|archive-date=27 September 2016|archive-url=https://web.archive.org/web/20160927180911/http://www.tcf.org.nz/content/cfa46b54-509c-44aa-91da-3bfe14d20f8f.html|url-status=dead}}</ref> and checks against a database that is updated daily by the three major mobile network operators.  A blocked IMEI cannot be connected to any of these three operators.\n\nIn Latvia the SIA \"Datorikas institūts DIVI\"<ref>{{cite web|url=http://www.numuri.lv|title=Numuri.lv|access-date=6 August 2017}}</ref> provides a blocked IMEI lookup service for checks against a database that is updated by all major mobile network operators in Latvia.\n\nIn some countries, such blocklisting is not customary. In 2012, major network companies in the United States, under government pressure, committed to introducing a blocklisting service, but it's not clear whether it will interoperate with the CEIR.<ref>Carriers to allow Customers to Brick Stolen Phones  by Shani Hilton, Apr. 10, 2012, Washington City Paper</ref><ref>Wireless carriers partner with FCC, police on database of stolen cellphones. The Washington Post (2011-02-28). Retrieved on 2013-09-18.</ref> GSM carriers AT&T and T-Mobile began blocking newly reported IMEIs in November 2012.<ref>Checkmend.com Accessed: 2012-12-26. (Archived by WebCite Webcitation.org</ref>  Thefts reported prior to November 2012 were not added to the database. The [[CTIA (organization)|CTIA]] refers users to websites at www.stolenphonechecker.org<ref name=\"CTIAundated\"/> and the GSMA<ref name=\"CTIAundated\"/> where consumers can check whether a smartphone has been reported as lost or stolen to its member carriers.  The relationship between the former and any national or international [[Central Equipment Identity Register|IMEI blocklists]] is unclear.<ref name=\"CTIAundated\">{{cite press release|url=https://www.ctia.org/news/us-wireless-industry-combats-smartphone-theft|title=U.S. Wireless Industry Launches Free Consumer Tool To Combat Smartphone Theft|publisher=[[CTIA (organization)|CTIA]]|date=May 11, 2017|access-date=2018-08-20|archive-url=https://archive.today/20180820060011/https://www.ctia.org/news/us-wireless-industry-combats-smartphone-theft|archive-date=2018-08-20|url-status=live|df=dmy-all}}</ref>\n\nIt is unclear whether local barring of IMEI has any positive effect, as it may result in international smuggling of stolen phones.<ref>{{cite web|url=http://www.huffingtonpost.com/2013/07/13/smartphone-black-market_n_3510341.html|website=[[The Huffington Post]]|access-date=2013-10-13|date=2013-07-13|title=Inside The Massive Global Black Market For Smartphones|first=Gerry|last=Smith|archive-url=https://web.archive.org/web/20130917004648/http://www.huffingtonpost.com/2013/07/13/smartphone-black-market_n_3510341.html|archive-date=2013-09-17|url-status=live}}</ref>"
+                    },
+                    {
+                        "endOffset": 12268,
+                        "index": 3,
+                        "level": 3,
+                        "startOffset": 12046,
+                        "title": "Limitations",
+                        "value": "IMEIs can sometimes be removed from a blocklist, depending on local arrangements. This would typically include quoting a password chosen at the time of blocklisting.{{Citation needed|date=October 2016}}"
+                    },
+                    {
+                        "endOffset": 12989,
+                        "index": 4,
+                        "level": 3,
+                        "startOffset": 12268,
+                        "title": "Law enforcement and intelligence use",
+                        "value": "Law enforcement and intelligence services can use an IMEI number as input for tracking devices that are able to locate a cell phone with an accuracy of a few meters. Saudi Arabian government agencies have reportedly used IMEI numbers retrieved from cell phone packaging to locate and detain women who fled Saudi Arabia's patriarchal society in other countries.<ref>{{cite news |last1=Bostock |first1=Bill |date=12 June 2019 |title=The Saudi government is hunting down women who flee the country by tracking the IMEI number on their cellphones |work=Business Insider |url=https://www.businessinsider.com/saudi-arabia-imei-track-runaways-2019-5 |access-date=13 June 2019}}</ref>"
+                    },
+                    {
+                        "endOffset": 16394,
+                        "index": 5,
+                        "level": 3,
+                        "startOffset": 12989,
+                        "title": "Allowlists",
+                        "value": "Some countries use allowlists instead of blocklists for IMEI numbers, so that any mobile phone needs to be legally registered in the country in order to be able to access mobile networks of the country, with possible exceptions for international roaming and a grace period for registering.<ref>{{cite web|url=https://greenash.net.au/thoughts/2017/12/mobile-phone-imei-whitelisting-in-chile-and-elsewhere/|access-date=2021-05-27|date=2017-12-11|title=Mobile phone IMEI whitelisting in Chile and elsewhere|first=Jeremy|last=Epstein|archive-url=https://web.archive.org/web/20210325035928/https://greenash.net.au/thoughts/2017/12/mobile-phone-imei-whitelisting-in-chile-and-elsewhere/|archive-date=2021-03-25|url-status=live}}</ref> These include Chile,<ref>{{cite web|url=https://www.subtel.gob.cl/homologacion-y-recepcion-de-alertas-de-emergencia-seran-obligatorias-en-telefonos-celulares-a-contar-del-23-de-septiembre/|access-date=2021-05-27|date=2017-09-06|title=Homologación y recepción de alertas de emergencia serán obligatorias en teléfonos celulares a contar del 23 de septiembre|archive-url=https://web.archive.org/web/20180727061648/http://www.subtel.gob.cl/homologacion-y-recepcion-de-alertas-de-emergencia-seran-obligatorias-en-telefonos-celulares-a-contar-del-23-de-septiembre/|archive-date=2018-07-27|url-status=live}}</ref> Turkey,<ref>{{cite web|url=https://adventuresinankara.com/2015/03/16/mission-accomplished-how-to-register-a-foreign-mobile-phone-in-turkey/|access-date=2021-05-27|date=2015-03-16|title=Mission Accomplished! How to Register a Foreign Mobile Phone in Turkey|archive-url=https://web.archive.org/web/20210505214352/https://adventuresinankara.com/2015/03/16/mission-accomplished-how-to-register-a-foreign-mobile-phone-in-turkey/|archive-date=2021-05-05|url-status=live}}</ref> Azerbaijan,<ref>{{cite web|url=http://www.rabita.az/en/c-projects/mdrsen|access-date=2019-04-03|title=Mobile Devices Registration System\n|archive-url=https://web.archive.org/web/20190403100242/http://www.rabita.az/en/c-projects/mdrsen|archive-date=2019-04-03|url-status=dead}}</ref> Colombia,<ref>{{cite web|url=https://thebogotapost.com/register-mobile-phone/17409/|access-date=2021-05-27|date=2016-08-10|title=Register your mobile phone|archive-url=https://web.archive.org/web/20160817030136/http://thebogotapost.com/2016/08/10/register-mobile-phone/|archive-date=2016-08-17|url-status=live}}</ref> and Nepal.<ref>{{cite web|url=https://www.deltadigit.com/everything-ntas-imei-number-registration-program/|access-date=2021-05-27|date=2016-05-06|title=Everything about NTA's IMEI number registration program|first=Abhishek|last=Chand|archive-url=https://web.archive.org/web/20210123120749/https://www.deltadigit.com/everything-ntas-imei-number-registration-program/|archive-date=2021-01-23|url-status=live}}</ref> Other countries that have adopted some form of mandatory IMEI registration include India, Pakistan, Indonesia, Cambodia, Thailand, Iran, Nigeria, Ecuador, Ukraine and Lebanon.<ref>{{cite web|url=https://techpoint.africa/2021/05/21/ncc-imei-policy/|access-date=2021-05-27|date=2021-05-21|title=Does the Nigerian government want safety or surveillance with its new IMEI policy?\n|first=Chimgozirim|last=Nwokoma|archive-url=https://web.archive.org/web/20210524113923/https://techpoint.africa/2021/05/21/ncc-imei-policy/|archive-date=2021-05-24|url-status=live}}</ref>"
+                    },
+                    {
+                        "endOffset": 22797,
+                        "index": 6,
+                        "level": 2,
+                        "startOffset": 16394,
+                        "title": "Structure of the IMEI and IMEISV (IMEI software version)",
+                        "value": "The IMEI (15 decimal digits: 14 digits plus a check digit) or IMEISV (16 decimal digits: 14 digits plus two software version digits) includes information on the origin, model, and serial number of the device. The structure of the IMEI/SV is specified in 3GPP TS 23.003. The model and origin comprise the initial 8-digit portion of the IMEI/SV, known as the [[Type Allocation Code]] (TAC). The remainder of the IMEI is manufacturer-defined, with a [[Luhn algorithm|Luhn check digit]] at the end. For the IMEI format prior to 2003, the GSMA guideline was to have this Check Digit always transmitted to the network as zero. This guideline seems to have disappeared for the format valid from 2003 onwards.<ref>GSM Association, IMEI Allocation and Approval Guidelines {{Webarchive|url=https://archive.today/20120908040850/http://www.gsma.com/documents/ts-06-6-0-imei-allocation-and-approval-guidelines/20164/ |date=2012-09-08 }}, Version 5.0, 2010-09-01, chapter 2.1.5 vs. D.1.6</ref>\n\n{{As of|2004}}, the format of the IMEI is AA-BBBBBB-CCCCCC-D, although it may not always be displayed this way. The IMEISV does not have the Luhn check digit but instead has two digits for the Software Version Number (SVN), making the format AA-BBBBBB-CCCCCC-EE\n\nPrior to 2002, the TAC was six digits and followed by a two-digit [[Final Assembly Code]] (FAC), which was a manufacturer-specific code indicating the location of the device's construction.\nFrom January 1, 2003 until April 1, 2004, the [[Final Assembly Code|FAC]] for all phones was 00.\nAfter April 1, 2004, the Final Assembly Code ceased to exist and the Type Allocation Code increased to eight digits in length.\n\nIn any of the above cases, the first two digits of the TAC are the [[Reporting Body Identifier]], which identifies the GSMA-approved group that allocated the TAC.  The RBI numbers are allocated by the Global Decimal Administrator. IMEI numbers being decimal helps distinguish them from an [[MEID]], which is hexadecimal and always has 0xA0 or larger as the first two hexadecimal digits.\n\nFor example, the old style IMEI code 35-209900-176148-1 or IMEISV code 35-209900-176148-23 tells us the following:\n<blockquote>\n[[Type Allocation Code|TAC]]: 35-2099  - issued by the [[British Approvals Board for Telecommunications|BABT]] (code 35) with the allocation number 2099<br />\nFAC: 00 - indicating the phone was made during the transition period when FACs were being removed.<br />\nSNR: 176148 - uniquely identifying a unit of this model<br />\nCD: 1 so it is a GSM Phase 2 or higher<br />\nSVN: 23 - The \"software version number\" identifying the revision of the software installed on the phone. 99 is reserved.\n</blockquote>\n\nBy contrast, the new style IMEI code 49-015420-323751-8 has an 8-digit TAC of 49-015420.\n\nThe new CDMA Mobile Equipment Identifier ([[MEID]]) uses the same basic format as the IMEI."
+                    },
+                    {
+                        "endOffset": 22797,
+                        "index": 7,
+                        "level": 3,
+                        "startOffset": 20129,
+                        "title": "Check digit computation",
+                        "value": "{{see also|Luhn algorithm}}\nThe last number of the IMEI is a [[check digit]], calculated using the [[Luhn algorithm]], as defined in the IMEI Allocation and Approval Guidelines:\n<blockquote>\nThe Check Digit shall be calculated according to [[Luhn algorithm|Luhn formula]] (ISO/IEC 7812). (See GSM 02.16 / 3GPP 22.016). The Check Digit is a function of all other digits in the IMEI. The Software Version Number (SVN) of a mobile is not included in the calculation.\n\nThe purpose of the Check Digit is to help guard against the possibility of incorrect entries to the CEIR and EIR equipment.\n\nThe presentation of the Check Digit both electronically and in printed form on the label and packaging is very important. Logistics (using bar-code reader) and EIR/CEIR administration cannot use the Check Digit unless it is printed outside of the packaging, and on the ME IMEI/Type Accreditation label.\n\nThe check digit is not transmitted over the radio interface, nor is it stored in the EIR database at any point. Therefore, all references to the last three or six digits of an IMEI refer to the actual IMEI number, to which the check digit does not belong.\n</blockquote>\n\nThe check digit is validated in three steps:\n# Starting from the right, double every other digit (e.g., 7 → 14).\n# Sum the digits (e.g., 14 → 1 + 4).\n# Check if the sum is divisible by 10.\nConversely, one can calculate the IMEI by choosing the check digit that would give a sum divisible by 10. For the example IMEI 49015420323751?,\n\nTo make the sum divisible by 10, we set {{math|x}} = 8, so the complete IMEI becomes 490154203237518."
+                    },
+                    {
+                        "endOffset": 23271,
+                        "index": 8,
+                        "level": 2,
+                        "startOffset": 22797,
+                        "title": "Usage on satellite phone networks",
+                        "value": "The [[Broadband Global Area Network]] (BGAN), [[Iridium Communications|Iridium]] and [[Thuraya]] [[satellite phone]] networks all use IMEI numbers on their transceiver units as well as SIM cards in much the same way as GSM phones do. The Iridium 9601 modem relies solely on its IMEI number for identification and uses no SIM card; however, Iridium is a proprietary network and the device is incompatible with terrestrial GSM networks."
+                    },
+                    {
+                        "endOffset": 23400,
+                        "index": 9,
+                        "level": 2,
+                        "startOffset": 23271,
+                        "title": "See also",
+                        "value": "* [[International Mobile Subscriber Identity]]\n* [[Mobile Equipment Identifier]]\n* [[Mobile phone]]\n* [[SIM lock]]"
+                    },
+                    {
+                        "endOffset": 23583,
+                        "index": 10,
+                        "level": 2,
+                        "startOffset": 23400,
+                        "title": "References",
+                        "value": "{{reflist|2}}\n\n[[Category:Mobile telecommunications]]\n[[Category:Checksum algorithms]]\n[[Category:Mobile telecommunications standards]]\n[[Category:Unique identifiers]]"
+                    }
+                ]
+            }
+        ],
+        "statsMetadata": {
+            "textSize": 20930
+        },
+        "preprocessingMetadata": [
+            {
+                "technologyResults": [
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Broadband Global Area Network",
+                                "BGAN"
+                            ],
+                            "uriSent": "Broadband_Global_Area_Network",
+                            "wikipediaId": "2015018",
+                            "id": "Q922018",
+                            "label": "Broadband Global Area Network"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Latvian State Language Center"
+                            ],
+                            "uriSent": "Latvian_State_Language_Center",
+                            "wikipediaId": "18630687",
+                            "id": "Q2328361",
+                            "label": "Latvian State Language Center"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "GEA-2",
+                                "Global System For Mobile Communications",
+                                "Global System for Mobile communications",
+                                "SGSM",
+                                "GSM phone system",
+                                "Global System for Mobile",
+                                "GEA/1",
+                                "GEA/2",
+                                "GSM Gateway",
+                                "GEA-1",
+                                "Digital Communications System",
+                                "Extended Global System",
+                                "2G",
+                                "Mobile phone base station",
+                                "GSM 07.07",
+                                "Extended Global System for Mobile Communications",
+                                "GSM",
+                                "Gsm",
+                                "Mobile phone base stations",
+                                "GSM mobile phone base station",
+                                "Global System for Mobile Communication",
+                                "Global System for Mobile Communications",
+                                "Groupe Spécial Mobile",
+                                "Global system for mobile communications",
+                                "History of GSM",
+                                "GSM network",
+                                "Groupe Special Mobile",
+                                "Global system for mobile cellular communications"
+                            ],
+                            "uriSent": "GSM",
+                            "wikipediaId": "12808",
+                            "id": "Q46904",
+                            "label": "Global System for Mobile Communications"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Type Approval Code",
+                                "Type allocation code",
+                                "Type Allocation Code"
+                            ],
+                            "uriSent": "Type_Allocation_Code",
+                            "wikipediaId": "1042293",
+                            "id": "Q4405342",
+                            "label": "Type Allocation Code"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "identifier",
+                                "code",
+                                "Identification number",
+                                "representation",
+                                "Code",
+                                "Name",
+                                "ID code",
+                                "Name and identifier",
+                                "Identifier",
+                                "reality encoding",
+                                "ID",
+                                "minimal information unit",
+                                "Identifiers"
+                            ],
+                            "uriSent": "Identifier",
+                            "wikipediaId": "41250",
+                            "id": "Q853614",
+                            "label": "identifier"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Mobile phone communication",
+                                "Mobile Telecommunications",
+                                "Mobile data connection",
+                                "Mobile communications",
+                                "Mobile telecommunications",
+                                "mobile telephony",
+                                "Cellular telephony",
+                                "Mobile Telephony",
+                                "Mobile communication",
+                                "Mobile phone telephony",
+                                "Mobile telecommunication",
+                                "Mobile telecommunication technology"
+                            ],
+                            "uriSent": "Mobile_telecommunications",
+                            "wikipediaId": "1145887",
+                            "id": "Q992968",
+                            "label": "mobile telephony"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "CEIR",
+                                "Central Equipment Identity Register",
+                                "EIR"
+                            ],
+                            "uriSent": "Central_Equipment_Identity_Register",
+                            "wikipediaId": "10733467",
+                            "id": "Q1347847",
+                            "label": "Central Equipment Identity Register"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "The Huffington Post Canada",
+                                "Le Huffington Post",
+                                "Huff Post",
+                                "El Huffington Post",
+                                "Huffpo",
+                                "HuffPost Parents",
+                                "The Huffington Post Australia",
+                                "HufPo",
+                                "Michael weinberger",
+                                "The HuffingtonPost",
+                                "Le Huffington Post Québec",
+                                "Huffington Post Australia",
+                                "The World Post",
+                                "PopEater",
+                                "Huffington post",
+                                "AOL Huffington Post",
+                                "Huffpost",
+                                "Arianna Huffington Blog",
+                                "The Huffington Post UK",
+                                "Huffington Post Quebec",
+                                "El HuffPost",
+                                "Huffington Post UK",
+                                "HuffPost Greece",
+                                "HuffPost Voces",
+                                "AOL The Huffington Post",
+                                "huffingtonpost.com",
+                                "Popeater.com",
+                                "Huffingtonpost.com",
+                                "HuffPost",
+                                "HuffPost India",
+                                "Huffingtonpost.ca",
+                                "Criticism of the Huffington Post",
+                                "Huffington Post India",
+                                "HuffPost Highline",
+                                "Huffington Post South Africa",
+                                "The Huffington Post Quebec",
+                                "Huff Po",
+                                "Huffpost Canada",
+                                "The HuffPost",
+                                "Huffington Post Live",
+                                "Huffington Post Highline",
+                                "The Huffington Post Gay Voices",
+                                "HuffingtonPost.com",
+                                "Huffington Post-AOL News",
+                                "HuffPost Canada",
+                                "HuffPost TV",
+                                "Huffington Post Deutschland",
+                                "L'Huffington Post",
+                                "Huffington Post Media Group",
+                                "@HuffPost",
+                                "HuffPost South Africa",
+                                "HuffpostTV",
+                                "Le HuffPost",
+                                "HuffPost Australia",
+                                "TheHuffingtonPost.com",
+                                "HuffingtonPost",
+                                "Michael Weinberger",
+                                "The Huffington Post",
+                                "Huffington Post Québec",
+                                "HuffPost Pollster",
+                                "HuffPost.com",
+                                "Huffington Post",
+                                "HuffPost UK",
+                                "HuffPost Japan",
+                                "HuffPost Latest News",
+                                "HuffintingPost",
+                                "Al Huffington Post",
+                                "HuffPo",
+                                "Huffpost.com",
+                                "Huffington Post Canada",
+                                "Huffingtonpost",
+                                "Popeater",
+                                "PopEater.com"
+                            ],
+                            "uriSent": "The_Huffington_Post",
+                            "wikipediaId": "1890505",
+                            "id": "Q18049522",
+                            "label": "HuffPost"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "WiDEN",
+                                "Chirp",
+                                "Integrated Digital Enhanced Network",
+                                "iDEN",
+                                "Integrated Digital Enhanced Network，iDEN"
+                            ],
+                            "uriSent": "IDEN",
+                            "wikipediaId": "184891",
+                            "id": "Q1531090",
+                            "label": "Integrated Digital Enhanced Network"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "British approvals board for telecommunications",
+                                "British Approvals Board for Telecommunications",
+                                "BABT"
+                            ],
+                            "uriSent": "British_Approvals_Board_for_Telecommunications",
+                            "wikipediaId": "2960543",
+                            "id": "Q4969452",
+                            "label": "British Approvals Board for Telecommunications"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Celluar telephone",
+                                "Secret cell phone",
+                                "Hand Phone",
+                                "mobile phones",
+                                "Mobile cellular",
+                                "Mobile Phones",
+                                "Mobile handsets",
+                                "Hand telephones",
+                                "Cellphone video",
+                                "Mobile wireless communication",
+                                "Mobile cellular wireless",
+                                "Cellular communication",
+                                "Cellular mobile",
+                                "Mobile telephone",
+                                "Mobile number",
+                                "hand phone",
+                                "Cellular Telephone Technology",
+                                "cellular phone",
+                                "Cellular telephone",
+                                "Cell-phone",
+                                "Cell phone",
+                                "Hand phone",
+                                "Hand phones",
+                                "Cellular device",
+                                "Cellphones",
+                                "Mobile Telephone",
+                                "Cell phones",
+                                "Cellular Telephone",
+                                "Cell Phones",
+                                "Cell telephones",
+                                "Mobile wireless",
+                                "Cellphone",
+                                "Cellular phone",
+                                "Health effects of mobile phone usage",
+                                "Cellular phones",
+                                "cellphones",
+                                "phone",
+                                "mobile phone",
+                                "Cell Phone",
+                                "Mobile Phone",
+                                "Hand telephone",
+                                "Mobile communication standard",
+                                "Criticism of cell phone",
+                                "Handphone",
+                                "cellular mobile",
+                                "Cell phone carrier",
+                                "Flip fone",
+                                "Handphones",
+                                "Mobile phones",
+                                "Kosher phone",
+                                "Kosher phones",
+                                "cell phone",
+                                "Mobile terminal",
+                                "Mobil phone",
+                                "Environmental impact of mobile phones",
+                                "cellphone",
+                                "Mobile loop",
+                                "GSM phone",
+                                "Cell telephone",
+                                "Cellular radio",
+                                "Mobile telephones",
+                                "Cellular communication standard",
+                                "mobile",
+                                "Mobilephone",
+                                "mobile telephone",
+                                "Radio Common Carrier",
+                                "Radio common carrier",
+                                "Celphone",
+                                "Mobile phone safety",
+                                "Mobile screen",
+                                "Mobil Phone",
+                                "Cellular telephones",
+                                "Mobile handset",
+                                "Flipfone",
+                                "Mobile telecom",
+                                "Cellular Radio",
+                                "Mobile display",
+                                "cellular telephone"
+                            ],
+                            "uriSent": "Mobile_phone",
+                            "wikipediaId": "19644137",
+                            "id": "Q17517",
+                            "label": "mobile phone"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Unique identifiers",
+                                "identifier",
+                                "UID",
+                                "Unique Identification Number",
+                                "unique ID code",
+                                "unique identifier",
+                                "Unique identifying code",
+                                "ID",
+                                "identification number",
+                                "Unique Object Identifier",
+                                "identifier system",
+                                "Unique Identifier(UID)"
+                            ],
+                            "uriSent": "Unique_identifiers",
+                            "wikipediaId": "3444411",
+                            "id": "Q6545185",
+                            "label": "unique identifier"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "International mobile subscriber identity",
+                                "IMSI",
+                                "E.212",
+                                "International Mobile Subscriber Identities",
+                                "International Mobile Subscriber Identity",
+                                "IMSI 334050155284370",
+                                "Jonathan Ulises Ramirez morales"
+                            ],
+                            "uriSent": "International_Mobile_Subscriber_Identity",
+                            "wikipediaId": "105868",
+                            "id": "Q2218407",
+                            "label": "International mobile subscriber identity"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "LOC",
+                                "LoC",
+                                "Quarterly Journal of Current Acquisitions",
+                                "Library of the Congress of the United States",
+                                "National Jukebox",
+                                "US Library of Congress",
+                                "LoC.gov",
+                                "National Library of the United States",
+                                "Loc.gov",
+                                "The library of congress",
+                                "LIBRARY of CONGRESS",
+                                "Library Of Congress",
+                                "U.S. Library of Congress",
+                                "loc.gov",
+                                "Congressional Library",
+                                "Library of congress",
+                                "LC",
+                                "United States. Library of Congress",
+                                "United States Library of Congress",
+                                "The Library of Congress",
+                                "Library of Congress",
+                                "Congress Library",
+                                "Library of Congress Magazine"
+                            ],
+                            "uriSent": "Library_of_Congress",
+                            "wikipediaId": "18944081",
+                            "id": "Q131454",
+                            "label": "Library of Congress"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Reporting Body Identifier"
+                            ],
+                            "uriSent": "Reporting_Body_Identifier",
+                            "wikipediaId": "2802111",
+                            "id": "Q7314163",
+                            "label": "Reporting Body Identifier"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Check digit verification",
+                                "Check Digit Verification",
+                                "check digit",
+                                "Check string",
+                                "Checksum digit"
+                            ],
+                            "uriSent": "Check_digit",
+                            "wikipediaId": "486938",
+                            "id": "Q1337960",
+                            "label": "check digit"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Unstructured Supplementary Service Data",
+                                "USSD code",
+                                "Ussd",
+                                "USSD",
+                                "USSD codes",
+                                "Supplementary service string",
+                                "Supplementary service codes",
+                                "Unstructured supplementary service"
+                            ],
+                            "uriSent": "Unstructured_Supplementary_Service_Data",
+                            "wikipediaId": "864491",
+                            "id": "Q1569935",
+                            "label": "Unstructured Supplementary Service Data"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "GSM Association",
+                                "GSMA",
+                                "Groupe Speciale Mobile Association",
+                                "GSM  Association",
+                                "Personal im",
+                                "MSAI",
+                                "Mobile Standards Alliance of India"
+                            ],
+                            "uriSent": "GSM_Association",
+                            "wikipediaId": "23993874",
+                            "id": "Q795901",
+                            "label": "GSM Association"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Satellite telephone",
+                                "Satphone",
+                                "satellite phone",
+                                "Sat phones",
+                                "Satellite-telephone",
+                                "Satellite telephony",
+                                "Satellite phones",
+                                "satellite telephone",
+                                "GMPCS",
+                                "Satellite Phones",
+                                "Satellite telephones",
+                                "satphone",
+                                "Sat phone"
+                            ],
+                            "uriSent": "Satellite_phone",
+                            "wikipediaId": "618063",
+                            "id": "Q248903",
+                            "label": "satellite phone"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "3rd Generation Partnership Project",
+                                "Third Generation Partnership Project",
+                                "3GPP",
+                                "3gpp"
+                            ],
+                            "uriSent": "3GPP",
+                            "wikipediaId": "397301",
+                            "id": "Q229804",
+                            "label": "3rd Generation Partnership Project"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "International mobile subscriber identity",
+                                "IMSI",
+                                "E.212",
+                                "International Mobile Subscriber Identities",
+                                "International Mobile Subscriber Identity",
+                                "IMSI 334050155284370",
+                                "Jonathan Ulises Ramirez morales"
+                            ],
+                            "uriSent": "International_mobile_subscriber_identity",
+                            "wikipediaId": "105868",
+                            "id": "Q2218407",
+                            "label": "International mobile subscriber identity"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Iridium Communications",
+                                "Iridium phone",
+                                "Iridium Inc.",
+                                "Iridium satellite phone",
+                                "Short Burst Data",
+                                "Iridium Short Burst Data",
+                                "IRDM",
+                                "Iridium Communications Inc.",
+                                "Iridium Communications Inc",
+                                "Iridium Satellite LLC",
+                                "Iridium SSC",
+                                "Iridium handset",
+                                "Iridium",
+                                "Iridium satellite"
+                            ],
+                            "uriSent": "Iridium_Communications",
+                            "wikipediaId": "53008",
+                            "id": "Q154387",
+                            "label": "Iridium Communications"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Thuraya",
+                                "Thuraya-3",
+                                "Thuraya-2",
+                                "Thuraya-1",
+                                "Thuraya 3",
+                                "Thuraya satellite phone",
+                                "Thuraya Satellite Telecommunications Company"
+                            ],
+                            "uriSent": "Thuraya",
+                            "wikipediaId": "2108313",
+                            "id": "Q1349140",
+                            "label": "Thuraya"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Cellular Telephone Industries Association",
+                                "CTIA – The Wireless Association",
+                                "Cellular Telecommunications Industry Association",
+                                "CTIA",
+                                "Cibernet",
+                                "Cellular Telecommunications and Internet Association",
+                                "CTIA-The Wireless Association®",
+                                "CTIA - The Wireless Association",
+                                "Cellular Telecommunications & Internet Association",
+                                "CTIA-The Wireless Association(r)",
+                                "CTIA The Wireless Association"
+                            ],
+                            "uriSent": "CTIA_(organization)",
+                            "wikipediaId": "4673613",
+                            "id": "Q5014574",
+                            "label": "CTIA"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Luhn formula",
+                                "Modulus+10",
+                                "Mod 10",
+                                "Luhn checksum",
+                                "Luhn Algorithm",
+                                "Luhn validation",
+                                "Luhn algorithm",
+                                "Mod+10",
+                                "Modulus 10",
+                                "Luhn",
+                                "Luhn check"
+                            ],
+                            "uriSent": "Luhn_algorithm",
+                            "wikipediaId": "582440",
+                            "id": "Q915402",
+                            "label": "Luhn algorithm"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "MicroSIM",
+                                "Nano-SIM",
+                                "ID-1 SIM card",
+                                "Integrated Circuit Card ID",
+                                "Plug-in SIM card",
+                                "SIM Card",
+                                "subscriber identity module",
+                                "NanoSIM",
+                                "Subscriber identification module",
+                                "Full-size SIM",
+                                "International SIM card",
+                                "MFF SIM chip",
+                                "SIM Serial Number",
+                                "SIM card holder",
+                                "Sim only",
+                                "SIM card formats",
+                                "Virtual sim",
+                                "Micro SIM",
+                                "Micro Sim",
+                                "SIM card tray",
+                                "Universal Subscriber Identity Module",
+                                "2FF SIM card",
+                                "ID-1/000 SIM card",
+                                "ICC-ID",
+                                "M2M Identification Module",
+                                "Full-size SIM card",
+                                "Embedded SIM chip",
+                                "SIM card",
+                                "1FF SIM",
+                                "Mini-UICC",
+                                "Electronic SIM",
+                                "3FF SIM card",
+                                "4FF card",
+                                "4FF SIM",
+                                "SIM card reader",
+                                "MFF chip",
+                                "Plug-in SIM",
+                                "Universal Identity Module",
+                                "2FF card",
+                                "SIM sizes",
+                                "Embedded-SIM chip",
+                                "1FF",
+                                "GSM SIM",
+                                "3FF",
+                                "Sim number",
+                                "Virtual SIM",
+                                "SIM",
+                                "Sim card",
+                                "UIM",
+                                "Micro-SIM",
+                                "Universal subscriber identity module",
+                                "Mini SIM",
+                                "ID-000 SIM card",
+                                "ID-1/000 SIM",
+                                "User Identity Module",
+                                "1FF SIM card",
+                                "SIM card format",
+                                "4FF SIM card",
+                                "Subscriber identity module",
+                                "SIM cardreader",
+                                "SIM card-reader",
+                                "Simcard",
+                                "MiniSIM",
+                                "MFF",
+                                "SIM size",
+                                "SIM-card",
+                                "Micro-SIM-adapter",
+                                "Nano SIM",
+                                "SIM card-holder",
+                                "Overlay SIM",
+                                "Subscriber Identity Module Card",
+                                "Mini-SIM",
+                                "SIM cards",
+                                "2FF SIM",
+                                "Subscriber Identity Module",
+                                "SIM cardholder",
+                                "ICCID",
+                                "USIM",
+                                "Thin SIM",
+                                "3FF card",
+                                "SIM chip",
+                                "1FF card",
+                                "ID-000 SIM",
+                                "SIM only",
+                                "3FF SIM",
+                                "2FF",
+                                "4FF",
+                                "subscriber identification module",
+                                "User identity module",
+                                "SIM tray",
+                                "MFF SIM",
+                                "3ff-plug-in",
+                                "SIM number",
+                                "SIM card sizes",
+                                "ID-1 SIM"
+                            ],
+                            "uriSent": "Subscriber_identity_module",
+                            "wikipediaId": "197489",
+                            "id": "Q230110",
+                            "label": "SIM card"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "GSM unlocking",
+                                "Mobile phone unlocking",
+                                "network lock",
+                                "Remote unlocking",
+                                "simlock",
+                                "SIMLOCKS",
+                                "Subsidy lock",
+                                "Master Subsidy Lock",
+                                "Perso lock",
+                                "Unlocked gsm phone",
+                                "Unlocked phone",
+                                "Network lock",
+                                "Unlock phone",
+                                "Cellphone unlocking",
+                                "SIM Lock",
+                                "Unlock cell phone",
+                                "Simlock",
+                                "SIM unlocking",
+                                "Cellphone lock",
+                                "subsidy lock",
+                                "Simlocked",
+                                "Cell phone unlocking",
+                                "Carrier lock",
+                                "Unlock mobile phone",
+                                "SIM-free",
+                                "SIM lock",
+                                "SIM-lock",
+                                "Phone unlocking"
+                            ],
+                            "uriSent": "SIM_lock",
+                            "wikipediaId": "210476",
+                            "id": "Q1330218",
+                            "label": "SIM lock"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Unique identifiers",
+                                "identifier",
+                                "UID",
+                                "Unique Identification Number",
+                                "unique ID code",
+                                "unique identifier",
+                                "Unique identifying code",
+                                "ID",
+                                "identification number",
+                                "Unique Object Identifier",
+                                "identifier system",
+                                "Unique Identifier(UID)"
+                            ],
+                            "uriSent": "Unique_identifier",
+                            "wikipediaId": "3444411",
+                            "id": "Q6545185",
+                            "label": "unique identifier"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "United Kingdom of Great Britain and Ulster",
+                                "UKoGBaNI",
+                                "United kingdom",
+                                "Great Britain & N.I.",
+                                "Union between Great Britain and Northern Ireland",
+                                "U. K.",
+                                "United kingom",
+                                "United Kingdom's",
+                                "British State",
+                                "United Kindom",
+                                "Great Britain",
+                                "G.B.",
+                                "UK",
+                                "Y Deyrnas Unedig",
+                                "United kingdom of great britain and northern ireland",
+                                "United Kingdom of England",
+                                "ISO 3166-1:GB",
+                                "UKGBNI",
+                                "British United Kingdom",
+                                "Royaume Uni",
+                                "United Kingdom of Britain",
+                                "P:UK",
+                                "UKOGBANI",
+                                "Verenigd Koninkrijk",
+                                "Unitit Kinrick",
+                                "G B",
+                                "UK of GB & NI",
+                                "Royaume-Uni",
+                                "Britain",
+                                "U. K. G. B. N. I.",
+                                "Briton",
+                                "United Kingsom",
+                                "The United Kingdom of Great Britain and Northern Ireland",
+                                "Uk",
+                                "UnitedKingdom",
+                                "United-Kingdom",
+                                "The United Kingdom of Great Britain & Ulster",
+                                "Uk.",
+                                "United Kingdom of Great Britain & Ulster",
+                                "G.B.R.",
+                                "U K",
+                                "The U.K.",
+                                "Great Britain and Ulster",
+                                "United Kingdom of Great Britain and Northern Ireland",
+                                "United Kingom",
+                                "Britland",
+                                "UK of GB and NI",
+                                "UKGBR",
+                                "United Kindgom",
+                                "U-K",
+                                "GBR",
+                                "U.K.G.B.N.I.",
+                                "UKGB",
+                                "G. B.",
+                                "U.K.",
+                                "GB",
+                                "Great britain and northern ireland",
+                                "Etymology of the United Kingdom",
+                                "U k",
+                                "British",
+                                "G B R",
+                                "Great Britain and Northern Ireland",
+                                "Kingdom of Great Britain and Northern Ireland",
+                                "UK's",
+                                "United Kingdom of Great Britain and North Ireland",
+                                "United Kingdon",
+                                "United Kingdom",
+                                "British state",
+                                "Untied Kingdom",
+                                "Reino Unido",
+                                "United Kingdom of Great Britain and Northern Island",
+                                "U.K",
+                                "Regno Unito",
+                                "The UK",
+                                "United Kingdom of Great Britain & Northern Ireland",
+                                "The uk",
+                                "U.k.",
+                                "🇬🇧",
+                                "UNITED KINGDOM",
+                                "Great Britain & Ulster",
+                                "TUKOGBANI",
+                                "The United Kingdom",
+                                "Vereinigtes Königreich",
+                                "The united kingdom"
+                            ],
+                            "uriSent": "United_Kingdom",
+                            "wikipediaId": "31717",
+                            "id": "Q145",
+                            "label": "United Kingdom"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Charles Ellis Schumer",
+                                "Charles Schumer",
+                                "Senator Charles E. Schumer",
+                                "Schumie",
+                                "Sen. Chuck Schumer",
+                                "Charles Ellis \"Chuck\" Schumer",
+                                "Schumer, Charles E.",
+                                "Charles E. Schumer",
+                                "Chuck Schumer",
+                                "Senator Schumer",
+                                "Sen. Charles Schumer",
+                                "Schumer",
+                                "Representative Schumer",
+                                "Chuck",
+                                "Senator Chuck Schumer",
+                                "Chuck Schummer"
+                            ],
+                            "uriSent": "Chuck_Schumer",
+                            "wikipediaId": "326708",
+                            "id": "Q380900",
+                            "label": "Chuck Schumer"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "London Met Police",
+                                "Met officer",
+                                "London bobby",
+                                "MPS",
+                                "Metropolitan police",
+                                "Metropolitan Police",
+                                "London Metropolitan police",
+                                "Met Police",
+                                "London Metropolitan Police",
+                                "Metropolitian Police",
+                                "Metropolitan Police Officer",
+                                "London Metroplitan Police",
+                                "The Metropolitan Police Service",
+                                "Met.police.uk",
+                                "Metropolitan Police of 1829",
+                                "the Met",
+                                "The London Police",
+                                "Metropolitan Police Force",
+                                "Metropolitan Police Service",
+                                "Metropolitan police force",
+                                "Borough Operational Command Units",
+                                "The Metropolitan Police",
+                                "Scotland Yard",
+                                "Controversies involving the Metropolitan Police",
+                                "Detective Branch",
+                                "Criminal Investigation Department",
+                                "Metropolitan Police Department",
+                                "New police",
+                                "London Metropolitan Police Service"
+                            ],
+                            "uriSent": "Metropolitan_Police_Service",
+                            "wikipediaId": "192450",
+                            "id": "Q1139213",
+                            "label": "Metropolitan Police"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "mobile equipment identifier",
+                                "MEID",
+                                "Mobile Equipment Identifier"
+                            ],
+                            "uriSent": "MEID",
+                            "wikipediaId": "6726416",
+                            "id": "Q6887119",
+                            "label": "mobile equipment identifier"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Integrated SIM for IoT",
+                                "Telekom nuSIM",
+                                "embedded SIM",
+                                "Embedded Subscriber Identity Module",
+                                "embedded universal integrated circuit card",
+                                "Integrated subscriber identity module",
+                                "EmbeddedSIM",
+                                "Embedded subscriber identification module",
+                                "E-SIM",
+                                "Embedded subscriber identity module",
+                                "Integrated SIM",
+                                "Integrated subscriber identification module",
+                                "embedded-SIM",
+                                "eSIM",
+                                "embedded subscriber identification module",
+                                "IntegratedSIM",
+                                "Embedded-SIM",
+                                "Embedded Subscriber Identification Module",
+                                "e-SIM",
+                                "ISIM",
+                                "Embedded SIM",
+                                "virtual SIM",
+                                "eUICC",
+                                "NuSIM",
+                                "ESIM",
+                                "Integrated Subscriber Identification Module",
+                                "Integrated Subscriber Identity Module"
+                            ],
+                            "uriSent": "ESIM",
+                            "wikipediaId": "49515985",
+                            "id": "Q56315412",
+                            "label": "eSIM"
+                        }
+                    }
+                ],
+                "technologyExecution": {
+                    "beginDate": "2024-01-17T13:10:03.186465",
+                    "endDate": "2024-01-17T13:10:03.770285"
+                },
+                "technology": {
+                    "name": "WikiLink Alias",
+                    "company": "Orange",
+                    "id": "wikilink_alias",
+                    "type": "link",
+                    "version": "Unknown"
+                }
+            },
+            {
+                "technologyResults": [
+                    {
+                        "dagobah": {
+                            "debug": {
+                                "cpaTaskTimeSec": 1.7100000000000009,
+                                "memoryUsage": 0.0,
+                                "entityScoringTimeSec": 16.18,
+                                "ceaTaskTimeSec": 12.430000000000014,
+                                "abnormalLookupMentions": [],
+                                "ctaTaskTimeSec": 3.129999999999998,
+                                "avgLookupCandidate": 185.43,
+                                "subgraphConstructionTimeSec": 8.05
+                            },
+                            "preprocessed": {
+                                "primitiveTyping": [
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 0
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "ORG",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 1
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "ORG",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 2
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "ORG",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 3
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "ORG",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 4
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "ORG",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 5
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 6
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 7
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 8
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 9
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 10
+                                    }
+                                ],
+                                "headerInfo": {
+                                    "hasHeader": true,
+                                    "headerScore": 0.33,
+                                    "headerLabel": [
+                                        "",
+                                        "AA",
+                                        "-",
+                                        "BB",
+                                        "BB",
+                                        "BB",
+                                        "-",
+                                        "CC",
+                                        "CC",
+                                        "CC",
+                                        "D or EE"
+                                    ],
+                                    "headerPosition": 0
+                                },
+                                "primaryKeyInfo": {
+                                    "primaryKeyScore": 0.91,
+                                    "primaryKeyPosition": 0,
+                                    "hasPrimaryKey": true
+                                },
+                                "tableOrientation": {
+                                    "orientationScore": 0.91,
+                                    "orientationLabel": "HORIZONTAL"
+                                }
+                            },
+                            "executionTimeSec": {
+                                "preprocessingTime": 0.2,
+                                "totalTime": 49.94,
+                                "lookupTime": 3.49
+                            },
+                            "annotated": {
+                                "CTA": [
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 0.5,
+                                                "score": 0.02,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q2004972"
+                                            },
+                                            {
+                                                "coverage": 0.5,
+                                                "score": 0.02,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q853614"
+                                            }
+                                        ],
+                                        "column": 0
+                                    },
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.28,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q853614"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.19,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q100792256"
+                                            }
+                                        ],
+                                        "column": 1
+                                    },
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.28,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q853614"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.19,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q100792256"
+                                            }
+                                        ],
+                                        "column": 2
+                                    },
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.28,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q853614"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.19,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q100792256"
+                                            }
+                                        ],
+                                        "column": 3
+                                    },
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.28,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q853614"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.19,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q100792256"
+                                            }
+                                        ],
+                                        "column": 4
+                                    },
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 0.5,
+                                                "score": 0.03,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q853614"
+                                            },
+                                            {
+                                                "coverage": 0.5,
+                                                "score": 0.02,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q100792256"
+                                            }
+                                        ],
+                                        "column": 5
+                                    }
+                                ],
+                                "tableDataRevised": [
+                                    [
+                                        "",
+                                        "AA",
+                                        "-",
+                                        "BB",
+                                        "BB",
+                                        "BB",
+                                        "-",
+                                        "CC",
+                                        "CC",
+                                        "CC",
+                                        "D or EE"
+                                    ],
+                                    [
+                                        "Old IMEI",
+                                        "TAC",
+                                        "TAC",
+                                        "TAC",
+                                        "TAC",
+                                        "FAC",
+                                        "Serial number",
+                                        "Serial number",
+                                        "Serial number",
+                                        "Serial number",
+                                        "D = Check Digit (CD) (Optional)"
+                                    ],
+                                    [
+                                        "New IMEI",
+                                        "TAC",
+                                        "TAC",
+                                        "TAC",
+                                        "TAC",
+                                        "TAC",
+                                        "Serial number",
+                                        "Serial number",
+                                        "Serial number",
+                                        "Serial number",
+                                        "D = Check Digit (CD) (Optional)"
+                                    ],
+                                    [
+                                        "Old IMEISV",
+                                        "TAC",
+                                        "TAC",
+                                        "TAC",
+                                        "TAC",
+                                        "FAC",
+                                        "Serial number",
+                                        "Serial number",
+                                        "Serial number",
+                                        "Serial number",
+                                        "EE = Software Version Number (SVN)"
+                                    ],
+                                    [
+                                        "New IMEISV",
+                                        "TAC",
+                                        "TAC",
+                                        "TAC",
+                                        "TAC",
+                                        "TAC",
+                                        "Serial number",
+                                        "Serial number",
+                                        "Serial number",
+                                        "Serial number",
+                                        "EE = Software Version Number (SVN)"
+                                    ]
+                                ],
+                                "CPA": [
+                                    {
+                                        "annotation": {
+                                            "coverage": 0.5,
+                                            "score": 0.15,
+                                            "label": "(-)part of",
+                                            "uri": "(-)http://www.wikidata.org/prop/direct/P361"
+                                        },
+                                        "tailColumn": 1,
+                                        "headColumn": 0
+                                    },
+                                    {
+                                        "annotation": {
+                                            "coverage": 0.5,
+                                            "score": 0.15,
+                                            "label": "(-)part of",
+                                            "uri": "(-)http://www.wikidata.org/prop/direct/P361"
+                                        },
+                                        "tailColumn": 2,
+                                        "headColumn": 0
+                                    },
+                                    {
+                                        "annotation": {
+                                            "coverage": 0.5,
+                                            "score": 0.15,
+                                            "label": "(-)part of",
+                                            "uri": "(-)http://www.wikidata.org/prop/direct/P361"
+                                        },
+                                        "tailColumn": 3,
+                                        "headColumn": 0
+                                    },
+                                    {
+                                        "annotation": {
+                                            "coverage": 0.5,
+                                            "score": 0.15,
+                                            "label": "(-)part of",
+                                            "uri": "(-)http://www.wikidata.org/prop/direct/P361"
+                                        },
+                                        "tailColumn": 4,
+                                        "headColumn": 0
+                                    },
+                                    {
+                                        "annotation": {
+                                            "coverage": 0.25,
+                                            "score": 0.02,
+                                            "label": "(-)part of",
+                                            "uri": "(-)http://www.wikidata.org/prop/direct/P361"
+                                        },
+                                        "tailColumn": 5,
+                                        "headColumn": 0
+                                    },
+                                    {
+                                        "annotation": {
+                                            "coverage": 0.5,
+                                            "score": 0.05,
+                                            "label": "subclass of",
+                                            "uri": "http://www.wikidata.org/prop/direct/P279"
+                                        },
+                                        "tailColumn": 6,
+                                        "headColumn": 0
+                                    },
+                                    {
+                                        "annotation": {
+                                            "coverage": 0.5,
+                                            "score": 0.05,
+                                            "label": "subclass of",
+                                            "uri": "http://www.wikidata.org/prop/direct/P279"
+                                        },
+                                        "tailColumn": 7,
+                                        "headColumn": 0
+                                    },
+                                    {
+                                        "annotation": {
+                                            "coverage": 0.5,
+                                            "score": 0.05,
+                                            "label": "subclass of",
+                                            "uri": "http://www.wikidata.org/prop/direct/P279"
+                                        },
+                                        "tailColumn": 8,
+                                        "headColumn": 0
+                                    },
+                                    {
+                                        "annotation": {
+                                            "coverage": 0.5,
+                                            "score": 0.05,
+                                            "label": "subclass of",
+                                            "uri": "http://www.wikidata.org/prop/direct/P279"
+                                        },
+                                        "tailColumn": 9,
+                                        "headColumn": 0
+                                    }
+                                ],
+                                "CEA": [
+                                    {
+                                        "annotation": {
+                                            "score": 0.04,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q3050611"
+                                        },
+                                        "column": 0,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.05,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q3050611"
+                                        },
+                                        "column": 0,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q9296266"
+                                        },
+                                        "column": 0,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q9296266"
+                                        },
+                                        "column": 0,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.24,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 1,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.28,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 1,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.29,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 1,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.29,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 1,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.24,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 2,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.28,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 2,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.29,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 2,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.29,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 2,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.24,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 3,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.28,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 3,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.29,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 3,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.29,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 3,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.24,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 4,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.28,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 4,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.29,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 4,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.29,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 4,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.03,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q500407"
+                                        },
+                                        "column": 5,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.05,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 5,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.03,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q500407"
+                                        },
+                                        "column": 5,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4405342"
+                                        },
+                                        "column": 5,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1198578"
+                                        },
+                                        "column": 6,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1198578"
+                                        },
+                                        "column": 6,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1198578"
+                                        },
+                                        "column": 6,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1198578"
+                                        },
+                                        "column": 6,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1198578"
+                                        },
+                                        "column": 7,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1198578"
+                                        },
+                                        "column": 7,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1198578"
+                                        },
+                                        "column": 7,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1198578"
+                                        },
+                                        "column": 7,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1198578"
+                                        },
+                                        "column": 8,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1198578"
+                                        },
+                                        "column": 8,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1198578"
+                                        },
+                                        "column": 8,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1198578"
+                                        },
+                                        "column": 8,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1198578"
+                                        },
+                                        "column": 9,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1198578"
+                                        },
+                                        "column": 9,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1198578"
+                                        },
+                                        "column": 9,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1198578"
+                                        },
+                                        "column": 9,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q10859422"
+                                        },
+                                        "column": 10,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q10859422"
+                                        },
+                                        "column": 10,
+                                        "row": 4
+                                    }
+                                ]
+                            }
+                        },
+                        "index": 0
+                    },
+                    {
+                        "dagobah": {
+                            "debug": {
+                                "cpaTaskTimeSec": 0.0,
+                                "memoryUsage": 0.0,
+                                "entityScoringTimeSec": 0.0,
+                                "ceaTaskTimeSec": 0.0,
+                                "abnormalLookupMentions": [],
+                                "ctaTaskTimeSec": 0.0,
+                                "avgLookupCandidate": 0.0,
+                                "subgraphConstructionTimeSec": 0.0
+                            },
+                            "preprocessed": {},
+                            "executionTimeSec": {
+                                "preprocessingTime": 0.0,
+                                "totalTime": 4.13,
+                                "lookupTime": 0.0
+                            },
+                            "annotated": {}
+                        },
+                        "index": 1
+                    }
+                ],
+                "technologyExecution": {
+                    "beginDate": "2024-01-17T14:26:23.244870",
+                    "endDate": "2024-01-17T14:27:18.761975"
+                },
+                "technology": {
+                    "name": "DAGOBAH Table Annotation",
+                    "company": "Orange",
+                    "id": "dagobah_anotation",
+                    "type": "table",
+                    "version": "Unknown"
+                }
+            }
+        ]
+    }
+}

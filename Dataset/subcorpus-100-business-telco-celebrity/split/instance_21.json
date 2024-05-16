@@ -1,0 +1,2801 @@
+{
+    "_index": "corpus_doc_telco100_en",
+    "_id": "664022",
+    "_source": {
+        "identificationMetadata": {
+            "id": "664022",
+            "title": "Network switching subsystem",
+            "url": [
+                "https://en.wikipedia.org/?curid=664022",
+                "https://en.wikipedia.org/wiki/Network switching subsystem"
+            ],
+            "version": 1166717840,
+            "versionDate": "2023-07-23T09:44:09Z",
+            "hash": "b08a85195ae72c0d01424683c6e3fd0a",
+            "wikidata": "Q779475"
+        },
+        "descriptionMetadata": {
+            "categories": [
+                "Articles with short description",
+                "Short description matches Wikidata",
+                "Use American English from March 2019",
+                "All Wikipedia articles written in American English",
+                "Articles lacking in-text citations from March 2019",
+                "All articles lacking in-text citations",
+                "Articles needing additional references from March 2009",
+                "All articles needing additional references",
+                "Articles with multiple maintenance issues",
+                "GSM standard",
+                "Telecommunications infrastructure"
+            ],
+            "language": "en",
+            "source": "wikipedia"
+        },
+        "contentMetadata": {
+            "format": "wikitext",
+            "content": "{{Short description|Component of the Global System for Mobile Communications (GSM)}}\n{{Use American English|date = March 2019}}\n{{multiple issues|\n{{no footnotes|date=March 2019}}\n{{Refimprove|date=March 2009}}}}\n'''Network switching subsystem'''  ('''NSS''') (or '''GSM core network''') is the component of a [[GSM]] system that carries out [[telephone exchange|call out]] and [[mobility management]] functions for [[mobile phones]] [[roaming]] on the [[Base Station subsystem|network of base stations]]. It is owned and deployed by [[mobile phone operator]]s and allows mobile devices to communicate with each other and [[telephone]]s in the wider [[public switched telephone network]] (PSTN). The architecture contains specific features and functions which are needed because the phones are not fixed in one location.\n\nThe NSS originally consisted of the circuit-switched [[core network]], used for traditional [[GSM services]] such as voice calls, [[Short message service|SMS]], and [[Circuit Switched Data|circuit switched data]] calls. It was extended with an overlay architecture to provide packet-switched data services known as the [[GPRS core network]]. This allows mobile phones to have access to services such as [[Wireless Application Protocol|WAP]], [[Multimedia Messaging Service|MMS]] and the [[Internet]].\n\n==Mobile switching center (MSC)==\n<!-- This section is linked from [[Short message service]] -->\n\n===Description===\nThe '''mobile switching center''' (MSC) is the primary service delivery node for GSM/CDMA, responsible for [[routing in the PSTN|routing]] voice calls and SMS as well as other services (such as conference calls, FAX, and circuit-switched data).\n\nThe MSC sets up and releases the '''end-to-end connection''', handles mobility and hand-over requirements during the call and takes care of charging and real-time prepaid account monitoring.\n\nIn the GSM mobile phone system, in contrast with earlier analogue services, fax and data information is sent digitally encoded directly to the MSC. Only at the MSC is this re-coded into an \"analogue\" signal (although actually this will almost certainly mean sound is encoded digitally as a [[pulse-code modulation]] (PCM) signal in a 64-kbit/s timeslot, known as a [[DS0]] in America).\n\nThere are various different names for MSCs in different contexts which reflects their complex role in the network, all of these terms though could refer to the same MSC, but doing different things at different times.\n\nThe '''gateway MSC''' (G-MSC) is the MSC that determines which \"visited MSC\" (V-MSC) the subscriber who is being called is currently located at. It also interfaces with the PSTN. All mobile to mobile calls and PSTN to mobile calls are routed through a G-MSC. The term is only valid in the context of one call, since any MSC may provide both the gateway function and the visited MSC function. However, some manufacturers design dedicated high capacity MSCs which do not have any [[base station subsystem]]s (BSS) connected to them. These MSCs will then be the gateway MSC for many of the calls they handle.\n\nThe '''visited MSC''' (V-MSC) is the MSC where a customer is currently located. The [[Network_switching_subsystem#Visitor_location_register_(VLR)|visitor location register]] (VLR) associated with this MSC will have the subscriber's data in it.\n\nThe '''anchor MSC''' is the MSC from which a [[handover]] has been initiated. The '''target MSC''' is the MSC toward which a handover should take place. A [[mobile switching center server]] is a part of the redesigned MSC concept starting from [[3GPP#Standards|3GPP Release 4]].\n\n===Mobile switching center server (MSC-Server, MSCS or MSS)===\n{{main article|Mobile switching centre server}}\n\nThe '''mobile switching center server''' is a soft-switch variant (therefore it may be referred to as mobile soft switch, MSS) of the mobile switching center, which provides circuit-switched calling mobility management, and GSM services to the mobile phones [[roaming]] within the area that it serves. The functionality enables split control between (signaling ) and user plane (bearer in network element called as media gateway/MG), which guarantees better placement of network elements within the network.\n\nMSS and [[Media Gateway|media gateway]] (MGW) makes it possible to cross-connect circuit-switched calls switched by using IP, ATM AAL2 as well as [[Time-division multiplexing|TDM]]. More information is available in 3GPP TS 23.205.\n\nThe term [[Circuit switching]] (CS) used here originates from traditional telecommunications systems. However, modern MSS and MGW devices mostly use generic [[Internet]] technologies and form [[Next-generation network|next-generation telecommunication networks]]. MSS software may run on generic computers or [[virtual machine]]s in [[Cloud computing|cloud]] environment.\n\n===Other GSM core network elements connected to the MSC===\nThe MSC connects to the following elements:\n* The [[Network switching subsystem#Home location register (HLR)|home location register]] (HLR) for obtaining data about the [[Subscriber Identity Module|SIM]] and [[MSISDN|mobile services ISDN]] number (MSISDN; i.e., the telephone number).\n* The [[Base Station Subsystem|base station subsystems]] (BSS) which handles the radio communication with [[2G]] and [[2.5G]] mobile phones.\n* The [[UTRAN|UMTS terrestrial radio access network]] (UTRAN) which handles the radio communication with [[3G]] mobile phones.\n* The [[Network switching subsystem#Visitor location register (VLR)|visitor location register]] (VLR) provides subscriber information when the subscriber is outside its home network.\n* Other MSCs for procedures such as [[handoff|hand over]].\n\n===Procedures implemented===\nTasks of the MSC include:\n* [[GSM services#Call set up process for incoming calls|Delivering calls to subscribers]] as they arrive based on information from the VLR.\n* Connecting outgoing calls to other mobile subscribers or the PSTN.\n* Delivering SMSs from subscribers to the [[short message service center]] (SMSC) and vice versa.\n* Arranging handovers from BSC to BSC.\n* Carrying out handovers from this MSC to another.\n* Supporting [[supplementary services]] such as conference calls or call hold.\n* Generating billing information.\n\n==Home location register (HLR) {{anchor|HLR}}==\nThe '''home location register''' (HLR) is a central database that contains details of each mobile phone subscriber that is authorized to use the GSM core network. There can be several logical, and physical, HLRs per [[Public Land Mobile Network|public land mobile network]] (PLMN), though one [[international mobile subscriber identity]] (IMSI)/MSISDN pair can be associated with only one logical HLR (which can span several physical nodes) at a time.\n\nThe HLRs store details of every [[SIM card]] issued by the mobile phone operator. Each SIM has a unique identifier called an IMSI which is the [[primary key]] to each HLR record.\n\nAnother important item of data associated with the SIM are the MSISDNs, which are the [[telephone number]]s used by mobile phones to make and receive calls.  The primary MSISDN is the number used for making and receiving voice calls and SMS, but it is possible for a SIM to have other secondary MSISDNs associated with it for [[fax]] and data calls. Each MSISDN is also a [[unique key]] to the HLR record. The HLR data is stored for as long as a subscriber remains with the mobile phone operator.\n\nExamples of other data stored in the HLR against an IMSI record is:\n* GSM services that the subscriber has requested or been given.\n* [[General Packet Radio Service]] (GPRS) settings to allow the subscriber to access packet services.\n* Current location of subscriber (VLR and [[SGSN|serving GPRS support node]]/SGSN).\n* [[Call forwarding|Call divert]] settings applicable for each associated MSISDN.\n\nThe HLR is a system which directly receives and processes [[Mobile Application Part|MAP]] transactions and messages from elements in the GSM network, for example, the location update messages received as mobile phones roam around.\n\n===Other GSM core network elements connected to the HLR===\nThe HLR connects to the following elements:\n* The G-MSC for handling incoming calls\n* The VLR for handling requests from mobile phones to attach to the network\n* The SMSC for handling incoming SMSs\n* The [[voice mail]] system for delivering notifications to the mobile phone that a message is waiting\n* The AuC for authentication and ciphering and exchange of data (triplets)\n\n===Procedures implemented===\nThe main function of the HLR is to manage the fact that SIMs and phones move around a lot. The following procedures are implemented to deal with this:\n* Manage the mobility of subscribers by means of updating their position in administrative areas called 'location areas', which are identified with a LAC. The action of a user of moving from one LA to another is followed by the HLR with a Location area update procedure.\n* Send the subscriber data to a VLR or SGSN when a subscriber first roams there.\n* Broker between the G-MSC or SMSC and the subscriber's current VLR in order to allow [[GSM services#Call set up process for incoming calls|incoming calls or text messages to be delivered]].\n* Remove subscriber data from the previous VLR when a subscriber has roamed away from it.\n* Responsible for all SRI related queries (i.e. for invoke SRI, HLR should give sack SRI or SRI reply).\n\n=={{anchor|AuC}} Authentication center (AuC)==\n\n===Description===\nThe '''authentication center''' (AuC) is a function to [[authentication|authenticate]] each [[SIM card]] that attempts to connect to the '''gsm''' core network (typically when the phone is powered on). Once the authentication is successful, the HLR is allowed to manage the SIM and services described above. An [[encryption key]] is also generated that is subsequently used to encrypt all wireless communications (voice, SMS, etc.) between the mobile phone and the GSM core network.\n\nIf the authentication fails, then no services are possible from that particular combination of SIM card and mobile phone operator attempted. There is an additional form of identification check performed on the serial number of the mobile phone described in the EIR section below, but this is not relevant to the AuC processing.\n\nProper implementation of security in and around the AuC is a key part of an operator's strategy to avoid [[SIM cloning]].\n\nThe AuC does not engage directly in the authentication process, but instead generates data known as ''triplets'' for the MSC to use during the procedure.  The security of the process depends upon a [[shared secret]] between the AuC and the SIM called the ''K<sub>i</sub>''. The ''K<sub>i</sub>'' is securely burned into the SIM during manufacture and is also securely replicated onto the AuC. This ''K<sub>i</sub>'' is never transmitted between the AuC and SIM, but is combined with the IMSI to produce a [[Challenge–response authentication|challenge/response]] for identification purposes and an encryption key called ''K<sub>c</sub>'' for use in over the air communications.\n\n===Other GSM core network elements connected to the AuC===\nThe AuC connects to the following elements:\n* The MSC which requests a new batch of triplet data for an IMSI after the previous data have been used. This ensures that same keys and challenge responses are not used twice for a particular mobile.\n\n===Procedures implemented===\nThe AuC stores the following data for each IMSI:\n* the ''K<sub>i</sub>''\n* Algorithm id. (the standard algorithms are called A3 or A8, but an operator may choose a proprietary one).\n\nWhen the MSC asks the AuC for a new set of triplets for a particular IMSI, the AuC first generates a random number known as ''RAND''. This ''RAND'' is then combined with the ''K<sub>i</sub>'' to produce two numbers as follows:\n* The ''K<sub>i</sub>'' and ''RAND'' are fed into the A3 algorithm and the signed response (SRES) is calculated.\n* The ''K<sub>i</sub>'' and ''RAND'' are fed into the A8 algorithm and a session key called ''K<sub>c</sub>'' is calculated.\nThe numbers (''RAND'', SRES, ''K<sub>c</sub>'') form the triplet sent back to the MSC. When a particular IMSI requests access to the GSM core network, the MSC sends the ''RAND'' part of the triplet to the SIM. The SIM then feeds this number and the ''K<sub>i</sub>'' (which is burned onto the SIM) into the A3 algorithm as appropriate and an SRES is calculated and sent back to the MSC. If this SRES matches with the SRES in the triplet (which it should if it is a valid SIM), then the mobile is allowed to attach and proceed with GSM services.\n\nAfter successful authentication, the MSC sends the encryption key ''K<sub>c</sub>'' to the [[Base Station Subsystem#Base station controller|base station controller]] (BSC) so that all communications can be encrypted and decrypted. Of course, the mobile phone can generate the ''K<sub>c</sub>'' itself by feeding the same RAND supplied during authentication and the ''K<sub>i</sub>'' into the A8 algorithm.\n\nThe AuC is usually collocated with the HLR, although this is not necessary. Whilst the procedure is secure for most everyday use, it is by no means hack proof. Therefore, a new set of security methods was designed for 3G phones.\n\nIn practice, A3 and A8 algorithms are generally implemented together (known as A3/A8, see [[COMP128]]). An A3/A8 algorithm is implemented in Subscriber Identity Module (SIM) cards and in GSM network Authentication Centers. It is used to authenticate the customer and generate a key for encrypting voice and data traffic, as defined in 3GPP TS 43.020 (03.20 before Rel-4). Development of A3 and A8 algorithms is considered a matter for individual GSM network operators, although example implementations are available. To encrypt Global System for Mobile Communications (GSM) cellular communications A5 algorithm is used.<ref>{{cite book | title = A Comprehensive Guide to 5G Security | publisher = John Wiley & Sons Ltd. | first1 = Shahria | last1 = Shahabuddin | first2 = Sadiqur | last2 = Rahaman | first3 = Faisal | last3 = Rehman | first4 = Ijaz | last4 = Ahmad | first5 = Zaheer | last5 = Khan | year = 2018 | page = 12}}</ref> \n\n==Visitor location register (VLR)==<!-- inbound links -->\n\n===Description===\nThe '''Visitor Location Register (VLR)''' is a database of the MSs ([[Mobile station]]s) that have roamed into the jurisdiction of the Mobile Switching Center (MSC) which it serves. Each main [[Base Transceiver Station|base transceiver station]] in the network is served by exactly one VLR (one [[Base transceiver station|BTS]] may be served by many MSCs in case of MSC in pool), hence a subscriber cannot be present in more than one VLR at a time.\n\nThe data stored in the VLR has either been received from the [[Network_switching_subsystem#Home_location_register_.28HLR.29|'''Home Location Register (HLR)''']], or collected from the MS. In practice, for performance reasons, most vendors integrate the VLR directly to the V-MSC and, where this is not done, the VLR is very tightly linked with the MSC via a proprietary interface. Whenever an MSC detects a new MS in its network, in addition to creating a new record in the VLR, it also updates the HLR of the mobile subscriber, apprising it of the new location of that MS. If VLR data is corrupted it can lead to serious issues with text messaging and call services.\n\nData stored include:  \n* [[International mobile subscriber identity|IMSI]] (the subscriber's identity number).\n* Authentication data.\n* MSISDN (the subscriber's phone number).\n* GSM services that the subscriber is allowed to access.\n* [[GPRS Access Points|access point (GPRS)]] subscribed.\n* The HLR address of the subscriber.\n* SCP Address(For Prepaid Subscriber).\n\n===Procedures implemented===\nThe primary functions of the VLR are:\n* To inform the HLR that a subscriber has arrived in the particular area covered by the VLR.\n* To track where the subscriber is within the VLR area (location area) when no call is ongoing.\n* To allow or disallow which services the subscriber may use.\n* To allocate roaming numbers during the processing of incoming calls.\n* To purge the subscriber record if a subscriber becomes inactive whilst in the area of a VLR. The VLR deletes the subscriber's data after a fixed time period of inactivity and informs the HLR (e.g., when the phone has been switched off and left off or when the subscriber has moved to an area with no coverage for a long time).\n* To delete the subscriber record when a subscriber explicitly moves to another, as instructed by the HLR.\n\n==Equipment identity register (EIR)==\n'''EIR''' is a system that handles real-time requests to check the [[International Mobile Equipment Identity|IMEI]] (checkIMEI) of mobile devices that come from the switching equipment (MSC, [[SGSN]], [[Mobility Management Entity|MME]]). The answer contains the result of the check:\n\n* whitelisted – the device is allowed to register on the network.\n* blacklisted – the device is prohibited from registering on the network.\n* greylisted – the device is allowed to register on the network temporarily.\n* An error ‘unknown equipment’ may also be returned.\n\nThe switching equipment must use the EIR response to determine whether or not to allow the device to register or re-register on the network. Since the response of switching equipment to ‘greylisted’ and ‘unknown equipment’ responses is not clearly described in the standard, they are most often not used.\n\nMost often, EIR uses the IMEI blacklist feature, which contains the IMEI of the devices that need to be banned from the network. As a rule, these are stolen or lost devices. Mobile operators rarely use EIR capabilities to block devices on their own. Usually blocking begins when there is a law in the country, which obliges all cellular operators of the country to do so. Therefore, in the delivery of the basic components of the network switching subsystem (core network) is often already present EIR with basic functionality, which includes a ‘whitelisted’ response to all CheckIMEI and the ability to fill IMEI blacklist, which will be given a ‘blacklisted’ response. \n\nWhen the legislative framework for blocking registration of devices in cellular networks appears in the country, the telecommunications regulator usually has a Central EIR ([[Central Equipment Identity Register|CEIR]]) system, which is integrated with the EIR of all operators and transmits to them the actual lists of identifiers that must be used when processing CheckIMEI requests. In doing so, there may be many new requirements for EIR systems that are not present in the legacy EIR:\n\n* Synchronizing lists with CEIR. CEIR systems are not described by a standard, so the protocols and exchange mode may differ from country to country.\n* Supporting additional lists – IMEI white list, IMEI grey list, list of allocated [[Type Allocation Code|TACs]], etc.\n* Support in lists not only IMEI but also bindings – IMEI-IMSI, IMEI-MSISDN, IMEI-[[International mobile subscriber identity|IMSI]]-[[MSISDN]].\n* Supporting the customized logic of lists applying. \n* Automatic adding the item to a list in separate scenarios.\n* Sending [[SMS]] notifications to subscribers in separate scenarios.\n* Integration with the billing system to receive IMSI-MSISDN bundles.\n* Accumulating the subscribers’ profiles (history of device changing).\n* Long-term storage of processing of all CheckIMEI requests.\n\nOther functions may be required in individual cases. For example, Kazakhstan has introduced mandatory registration of devices and their binding to subscribers. But when a subscriber appears in the network with a new device, the network operation is not blocked completely, and the subscriber is allowed to register the device. To do this, there are blocked all services, except the following: calls to a specific service number, sending SMS to a specific service number, and all Internet traffic is redirected to a specific landing page. This is achieved by the fact that EIR can send commands to several MNO systems (HLR, [[Policy and charging rules function|PCRF]], [[Short Message service center|SMSC]], etc.).\n\nThe most common suppliers of individual EIR systems (not as part of a complex solution) are the companies BroadForward, Mahindra Comviva, Mavenir, Nokia, Svyazcom.\n\n==Other support functions==\nConnected more or less directly to the GSM core network are many other functions.\n\n===Billing center (BC)===\nThe '''billing center''' is responsible for processing the toll tickets generated by the VLRs and HLRs and generating a bill for each subscriber. It is also responsible for generating billing data of roaming subscriber.\n\n===Multimedia messaging service center (MMSC)===\nThe '''[[multimedia messaging service]] center''' supports the sending of multimedia messages (e.g., images, [[Sound|audio]], [[video]] and their combinations) to (or from) MMS-bluetooth.\n\n===Voicemail system (VMS)===\nThe '''[[voicemail]] system''' records and stores voicemail.\n\n===Lawful interception functions===\n{{main|Lawful interception}}\nAccording to U.S. law, which has also been copied into many other countries, especially in Europe, all telecommunications equipment must provide facilities for monitoring the calls of selected users. There must be some level of support for this built into any of the different elements. The concept of ''lawful interception'' is also known, following the relevant U.S. law, as [[Communications Assistance for Law Enforcement Act|CALEA]].\nGenerally, lawful Interception implementation is similar to the implementation of conference call. While A and B are talking with each other, C can join the call and listen silently.\n\n==See also==\n* The GSM core network.\n* Base station subsystem\n*COM 128\n*4GLET \n\n== References ==\n{{reflist}}\n\n==External links==\n* 4GLET - the standardisation body for GSM and UMTS\n* [http://www.elektroda.pl/rtvforum/download.php?id=338749 UMTS Networks: Protocols, Terminology and Implementation] - a PDF eBook by Gunnar Heine\n{{Mobile telecommunications standards}}\n\n[[Category:GSM standard]]\n[[Category:Telecommunications infrastructure]]",
+            "text": "Network switching subsystem (NSS) (or GSM core network) is the component of a GSM system that carries out call out and mobility management functions for mobile phones roaming on the network of base stations. It is owned and deployed by mobile phone operators and allows mobile devices to communicate with each other and telephones in the wider public switched telephone network (PSTN). The architecture contains specific features and functions which are needed because the phones are not fixed in one location. The NSS originally consisted of the circuit-switched core network, used for traditional GSM services such as voice calls, SMS, and circuit switched data calls. It was extended with an overlay architecture to provide packet-switched data services known as the GPRS core network. This allows mobile phones to have access to services such as WAP, MMS and the Internet. The mobile switching center (MSC) is the primary service delivery node for GSM/CDMA, responsible for routing voice calls and SMS as well as other services (such as conference calls, FAX, and circuit-switched data). The MSC sets up and releases the end-to-end connection, handles mobility and hand-over requirements during the call and takes care of charging and real-time prepaid account monitoring. In the GSM mobile phone system, in contrast with earlier analogue services, fax and data information is sent digitally encoded directly to the MSC. Only at the MSC is this re-coded into an \"analogue\" signal (although actually this will almost certainly mean sound is encoded digitally as a pulse-code modulation (PCM) signal in a 64-kbit/s timeslot, known as a DS0 in America). There are various different names for MSCs in different contexts which reflects their complex role in the network, all of these terms though could refer to the same MSC, but doing different things at different times. The gateway MSC (G-MSC) is the MSC that determines which \"visited MSC\" (V-MSC) the subscriber who is being called is currently located at. It also interfaces with the PSTN. All mobile to mobile calls and PSTN to mobile calls are routed through a G-MSC. The term is only valid in the context of one call, since any MSC may provide both the gateway function and the visited MSC function. However, some manufacturers design dedicated high capacity MSCs which do not have any base station subsystems (BSS) connected to them. These MSCs will then be the gateway MSC for many of the calls they handle. The visited MSC (V-MSC) is the MSC where a customer is currently located. The visitor location register (VLR) associated with this MSC will have the subscriber's data in it. The anchor MSC is the MSC from which a handover has been initiated. The target MSC is the MSC toward which a handover should take place. A mobile switching center server is a part of the redesigned MSC concept starting from 3GPP Release 4. The mobile switching center server is a soft-switch variant (therefore it may be referred to as mobile soft switch, MSS) of the mobile switching center, which provides circuit-switched calling mobility management, and GSM services to the mobile phones roaming within the area that it serves. The functionality enables split control between (signaling ) and user plane (bearer in network element called as media gateway/MG), which guarantees better placement of network elements within the network. MSS and media gateway (MGW) makes it possible to cross-connect circuit-switched calls switched by using IP, ATM AAL2 as well as TDM. More information is available in 3GPP TS 23.205. The term Circuit switching (CS) used here originates from traditional telecommunications systems. However, modern MSS and MGW devices mostly use generic Internet technologies and form next-generation telecommunication networks. MSS software may run on generic computers or virtual machines in cloud environment. The MSC connects to the following elements: The home location register (HLR) for obtaining data about the SIM and mobile services ISDN number (MSISDN; i.e., the telephone number). The base station subsystems (BSS) which handles the radio communication with 2G and 2.5G mobile phones. The UMTS terrestrial radio access network (UTRAN) which handles the radio communication with 3G mobile phones. The visitor location register (VLR) provides subscriber information when the subscriber is outside its home network. Other MSCs for procedures such as hand over. Tasks of the MSC include: Delivering calls to subscribers as they arrive based on information from the VLR. Connecting outgoing calls to other mobile subscribers or the PSTN. Delivering SMSs from subscribers to the short message service center (SMSC) and vice versa. Arranging handovers from BSC to BSC. Carrying out handovers from this MSC to another. Supporting supplementary services such as conference calls or call hold. Generating billing information. The home location register (HLR) is a central database that contains details of each mobile phone subscriber that is authorized to use the GSM core network. There can be several logical, and physical, HLRs per public land mobile network (PLMN), though one international mobile subscriber identity (IMSI)/MSISDN pair can be associated with only one logical HLR (which can span several physical nodes) at a time. The HLRs store details of every SIM card issued by the mobile phone operator. Each SIM has a unique identifier called an IMSI which is the primary key to each HLR record. Another important item of data associated with the SIM are the MSISDNs, which are the telephone numbers used by mobile phones to make and receive calls. The primary MSISDN is the number used for making and receiving voice calls and SMS, but it is possible for a SIM to have other secondary MSISDNs associated with it for fax and data calls. Each MSISDN is also a unique key to the HLR record. The HLR data is stored for as long as a subscriber remains with the mobile phone operator. Examples of other data stored in the HLR against an IMSI record is: GSM services that the subscriber has requested or been given. General Packet Radio Service (GPRS) settings to allow the subscriber to access packet services. Current location of subscriber (VLR and serving GPRS support node/SGSN). Call divert settings applicable for each associated MSISDN. The HLR is a system which directly receives and processes MAP transactions and messages from elements in the GSM network, for example, the location update messages received as mobile phones roam around. The HLR connects to the following elements: The G-MSC for handling incoming calls The VLR for handling requests from mobile phones to attach to the network The SMSC for handling incoming SMSs The voice mail system for delivering notifications to the mobile phone that a message is waiting The AuC for authentication and ciphering and exchange of data (triplets) The main function of the HLR is to manage the fact that SIMs and phones move around a lot. The following procedures are implemented to deal with this: Manage the mobility of subscribers by means of updating their position in administrative areas called 'location areas', which are identified with a LAC. The action of a user of moving from one LA to another is followed by the HLR with a Location area update procedure. Send the subscriber data to a VLR or SGSN when a subscriber first roams there. Broker between the G-MSC or SMSC and the subscriber's current VLR in order to allow incoming calls or text messages to be delivered. Remove subscriber data from the previous VLR when a subscriber has roamed away from it. Responsible for all SRI related queries (i.e. for invoke SRI, HLR should give sack SRI or SRI reply). The authentication center (AuC) is a function to authenticate each SIM card that attempts to connect to the gsm core network (typically when the phone is powered on). Once the authentication is successful, the HLR is allowed to manage the SIM and services described above. An encryption key is also generated that is subsequently used to encrypt all wireless communications (voice, SMS, etc.) between the mobile phone and the GSM core network. If the authentication fails, then no services are possible from that particular combination of SIM card and mobile phone operator attempted. There is an additional form of identification check performed on the serial number of the mobile phone described in the EIR section below, but this is not relevant to the AuC processing. Proper implementation of security in and around the AuC is a key part of an operator's strategy to avoid SIM cloning. The AuC does not engage directly in the authentication process, but instead generates data known as triplets for the MSC to use during the procedure. The security of the process depends upon a shared secret between the AuC and the SIM called the Ki. The Ki is securely burned into the SIM during manufacture and is also securely replicated onto the AuC. This Ki is never transmitted between the AuC and SIM, but is combined with the IMSI to produce a challenge/response for identification purposes and an encryption key called Kc for use in over the air communications. The AuC connects to the following elements: The MSC which requests a new batch of triplet data for an IMSI after the previous data have been used. This ensures that same keys and challenge responses are not used twice for a particular mobile. The AuC stores the following data for each IMSI: the Ki Algorithm id. (the standard algorithms are called A3 or A8, but an operator may choose a proprietary one). When the MSC asks the AuC for a new set of triplets for a particular IMSI, the AuC first generates a random number known as RAND. This RAND is then combined with the Ki to produce two numbers as follows: The Ki and RAND are fed into the A3 algorithm and the signed response (SRES) is calculated. The Ki and RAND are fed into the A8 algorithm and a session key called Kc is calculated. The numbers (RAND, SRES, Kc) form the triplet sent back to the MSC. When a particular IMSI requests access to the GSM core network, the MSC sends the RAND part of the triplet to the SIM. The SIM then feeds this number and the Ki (which is burned onto the SIM) into the A3 algorithm as appropriate and an SRES is calculated and sent back to the MSC. If this SRES matches with the SRES in the triplet (which it should if it is a valid SIM), then the mobile is allowed to attach and proceed with GSM services. After successful authentication, the MSC sends the encryption key Kc to the base station controller (BSC) so that all communications can be encrypted and decrypted. Of course, the mobile phone can generate the Kc itself by feeding the same RAND supplied during authentication and the Ki into the A8 algorithm. The AuC is usually collocated with the HLR, although this is not necessary. Whilst the procedure is secure for most everyday use, it is by no means hack proof. Therefore, a new set of security methods was designed for 3G phones. In practice, A3 and A8 algorithms are generally implemented together (known as A3/A8, see COMP128). An A3/A8 algorithm is implemented in Subscriber Identity Module (SIM) cards and in GSM network Authentication Centers. It is used to authenticate the customer and generate a key for encrypting voice and data traffic, as defined in 3GPP TS 43.020 (03.20 before Rel-4). Development of A3 and A8 algorithms is considered a matter for individual GSM network operators, although example implementations are available. To encrypt Global System for Mobile Communications (GSM) cellular communications A5 algorithm is used. The Visitor Location Register (VLR) is a database of the MSs (Mobile stations) that have roamed into the jurisdiction of the Mobile Switching Center (MSC) which it serves. Each main base transceiver station in the network is served by exactly one VLR (one BTS may be served by many MSCs in case of MSC in pool), hence a subscriber cannot be present in more than one VLR at a time. The data stored in the VLR has either been received from the Home Location Register (HLR), or collected from the MS. In practice, for performance reasons, most vendors integrate the VLR directly to the V-MSC and, where this is not done, the VLR is very tightly linked with the MSC via a proprietary interface. Whenever an MSC detects a new MS in its network, in addition to creating a new record in the VLR, it also updates the HLR of the mobile subscriber, apprising it of the new location of that MS. If VLR data is corrupted it can lead to serious issues with text messaging and call services. Data stored include: IMSI (the subscriber's identity number). Authentication data. MSISDN (the subscriber's phone number). GSM services that the subscriber is allowed to access. access point (GPRS) subscribed. The HLR address of the subscriber. SCP Address(For Prepaid Subscriber). The primary functions of the VLR are: To inform the HLR that a subscriber has arrived in the particular area covered by the VLR. To track where the subscriber is within the VLR area (location area) when no call is ongoing. To allow or disallow which services the subscriber may use. To allocate roaming numbers during the processing of incoming calls. To purge the subscriber record if a subscriber becomes inactive whilst in the area of a VLR. The VLR deletes the subscriber's data after a fixed time period of inactivity and informs the HLR (e.g., when the phone has been switched off and left off or when the subscriber has moved to an area with no coverage for a long time). To delete the subscriber record when a subscriber explicitly moves to another, as instructed by the HLR. EIR is a system that handles real-time requests to check the IMEI (checkIMEI) of mobile devices that come from the switching equipment (MSC, SGSN, MME). The answer contains the result of the check: whitelisted – the device is allowed to register on the network. blacklisted – the device is prohibited from registering on the network. greylisted – the device is allowed to register on the network temporarily. An error ‘unknown equipment’ may also be returned. The switching equipment must use the EIR response to determine whether or not to allow the device to register or re-register on the network. Since the response of switching equipment to ‘greylisted’ and ‘unknown equipment’ responses is not clearly described in the standard, they are most often not used. Most often, EIR uses the IMEI blacklist feature, which contains the IMEI of the devices that need to be banned from the network. As a rule, these are stolen or lost devices. Mobile operators rarely use EIR capabilities to block devices on their own. Usually blocking begins when there is a law in the country, which obliges all cellular operators of the country to do so. Therefore, in the delivery of the basic components of the network switching subsystem (core network) is often already present EIR with basic functionality, which includes a ‘whitelisted’ response to all CheckIMEI and the ability to fill IMEI blacklist, which will be given a ‘blacklisted’ response. When the legislative framework for blocking registration of devices in cellular networks appears in the country, the telecommunications regulator usually has a Central EIR (CEIR) system, which is integrated with the EIR of all operators and transmits to them the actual lists of identifiers that must be used when processing CheckIMEI requests. In doing so, there may be many new requirements for EIR systems that are not present in the legacy EIR: Synchronizing lists with CEIR. CEIR systems are not described by a standard, so the protocols and exchange mode may differ from country to country. Supporting additional lists – IMEI white list, IMEI grey list, list of allocated TACs, etc. Support in lists not only IMEI but also bindings – IMEI-IMSI, IMEI-MSISDN, IMEI-IMSI-MSISDN. Supporting the customized logic of lists applying. Automatic adding the item to a list in separate scenarios. Sending SMS notifications to subscribers in separate scenarios. Integration with the billing system to receive IMSI-MSISDN bundles. Accumulating the subscribers’ profiles (history of device changing). Long-term storage of processing of all CheckIMEI requests. Other functions may be required in individual cases. For example, Kazakhstan has introduced mandatory registration of devices and their binding to subscribers. But when a subscriber appears in the network with a new device, the network operation is not blocked completely, and the subscriber is allowed to register the device. To do this, there are blocked all services, except the following: calls to a specific service number, sending SMS to a specific service number, and all Internet traffic is redirected to a specific landing page. This is achieved by the fact that EIR can send commands to several MNO systems (HLR, PCRF, SMSC, etc.). The most common suppliers of individual EIR systems (not as part of a complex solution) are the companies BroadForward, Mahindra Comviva, Mavenir, Nokia, Svyazcom. Connected more or less directly to the GSM core network are many other functions. The billing center is responsible for processing the toll tickets generated by the VLRs and HLRs and generating a bill for each subscriber. It is also responsible for generating billing data of roaming subscriber. The multimedia messaging service center supports the sending of multimedia messages (e.g., images, audio, video and their combinations) to (or from) MMS-bluetooth. The voicemail system records and stores voicemail. According to U.S. law, which has also been copied into many other countries, especially in Europe, all telecommunications equipment must provide facilities for monitoring the calls of selected users. There must be some level of support for this built into any of the different elements. The concept of lawful interception is also known, following the relevant U.S. law, as CALEA. Generally, lawful Interception implementation is similar to the implementation of conference call. While A and B are talking with each other, C can join the call and listen silently. The GSM core network. Base station subsystem COM 128 4GLET Shahabuddin, Shahria; Rahaman, Sadiqur; Rehman, Faisal; Ahmad, Ijaz; Khan, Zaheer (2018). A Comprehensive Guide to 5G Security. John Wiley & Sons Ltd. p. 12. 4GLET - the standardisation body for GSM and UMTS UMTS Networks: Protocols, Terminology and Implementation - a PDF eBook by Gunnar Heine"
+        },
+        "collectMetadata": {
+            "requestedDate": "2023-10-16T00:00:00",
+            "ingestedDate": "2023-10-22T09:17:02.073730"
+        },
+        "extractionMetadata": [
+            {
+                "id": "WikitextExtractor",
+                "linkExtractionDate": "2023-10-22T09:17:02.077959",
+                "links": [
+                    {
+                        "fragment": null,
+                        "link": "GSM",
+                        "text": null,
+                        "title": "GSM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Telephone_exchange",
+                        "text": "call out",
+                        "title": "telephone exchange"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobility_management",
+                        "text": null,
+                        "title": "mobility management"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_phones",
+                        "text": null,
+                        "title": "mobile phones"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Roaming",
+                        "text": null,
+                        "title": "roaming"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Base_Station_subsystem",
+                        "text": "network of base stations",
+                        "title": "Base Station subsystem"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_phone_operator",
+                        "text": null,
+                        "title": "mobile phone operator"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Telephone",
+                        "text": null,
+                        "title": "telephone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Public_switched_telephone_network",
+                        "text": null,
+                        "title": "public switched telephone network"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Core_network",
+                        "text": null,
+                        "title": "core network"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GSM_services",
+                        "text": null,
+                        "title": "GSM services"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Short_message_service",
+                        "text": "SMS",
+                        "title": "Short message service"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Circuit_Switched_Data",
+                        "text": "circuit switched data",
+                        "title": "Circuit Switched Data"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GPRS_core_network",
+                        "text": null,
+                        "title": "GPRS core network"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Wireless_Application_Protocol",
+                        "text": "WAP",
+                        "title": "Wireless Application Protocol"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Multimedia_Messaging_Service",
+                        "text": "MMS",
+                        "title": "Multimedia Messaging Service"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Internet",
+                        "text": null,
+                        "title": "Internet"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Routing_in_the_PSTN",
+                        "text": "routing",
+                        "title": "routing in the PSTN"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Pulse-code_modulation",
+                        "text": null,
+                        "title": "pulse-code modulation"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "DS0",
+                        "text": null,
+                        "title": "DS0"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Base_station_subsystem",
+                        "text": null,
+                        "title": "base station subsystem"
+                    },
+                    {
+                        "fragment": "Visitor_location_register_(VLR)",
+                        "link": "Network_switching_subsystem",
+                        "text": "visitor location register",
+                        "title": "Network_switching_subsystem"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Handover",
+                        "text": null,
+                        "title": "handover"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_switching_center_server",
+                        "text": null,
+                        "title": "mobile switching center server"
+                    },
+                    {
+                        "fragment": "Standards",
+                        "link": "3GPP",
+                        "text": "3GPP Release 4",
+                        "title": "3GPP"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Roaming",
+                        "text": null,
+                        "title": "roaming"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Media_Gateway",
+                        "text": "media gateway",
+                        "title": "Media Gateway"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Time-division_multiplexing",
+                        "text": "TDM",
+                        "title": "Time-division multiplexing"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Circuit_switching",
+                        "text": null,
+                        "title": "Circuit switching"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Internet",
+                        "text": null,
+                        "title": "Internet"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Next-generation_network",
+                        "text": "next-generation telecommunication networks",
+                        "title": "Next-generation network"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Virtual_machine",
+                        "text": null,
+                        "title": "virtual machine"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Cloud_computing",
+                        "text": "cloud",
+                        "title": "Cloud computing"
+                    },
+                    {
+                        "fragment": "Home location register (HLR)",
+                        "link": "Network_switching_subsystem",
+                        "text": "home location register",
+                        "title": "Network switching subsystem"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Subscriber_Identity_Module",
+                        "text": "SIM",
+                        "title": "Subscriber Identity Module"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "MSISDN",
+                        "text": "mobile services ISDN",
+                        "title": "MSISDN"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Base_Station_Subsystem",
+                        "text": "base station subsystems",
+                        "title": "Base Station Subsystem"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "2G",
+                        "text": null,
+                        "title": "2G"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "2.5G",
+                        "text": null,
+                        "title": "2.5G"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "UTRAN",
+                        "text": "UMTS terrestrial radio access network",
+                        "title": "UTRAN"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3G",
+                        "text": null,
+                        "title": "3G"
+                    },
+                    {
+                        "fragment": "Visitor location register (VLR)",
+                        "link": "Network_switching_subsystem",
+                        "text": "visitor location register",
+                        "title": "Network switching subsystem"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Handoff",
+                        "text": "hand over",
+                        "title": "handoff"
+                    },
+                    {
+                        "fragment": "Call set up process for incoming calls",
+                        "link": "GSM_services",
+                        "text": "Delivering calls to subscribers",
+                        "title": "GSM services"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Short_message_service_center",
+                        "text": null,
+                        "title": "short message service center"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Supplementary_services",
+                        "text": null,
+                        "title": "supplementary services"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Public_Land_Mobile_Network",
+                        "text": "public land mobile network",
+                        "title": "Public Land Mobile Network"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "International_mobile_subscriber_identity",
+                        "text": null,
+                        "title": "international mobile subscriber identity"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "SIM_card",
+                        "text": null,
+                        "title": "SIM card"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Primary_key",
+                        "text": null,
+                        "title": "primary key"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Telephone_number",
+                        "text": null,
+                        "title": "telephone number"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Fax",
+                        "text": null,
+                        "title": "fax"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Unique_key",
+                        "text": null,
+                        "title": "unique key"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "General_Packet_Radio_Service",
+                        "text": null,
+                        "title": "General Packet Radio Service"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "SGSN",
+                        "text": "serving GPRS support node",
+                        "title": "SGSN"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Call_forwarding",
+                        "text": "Call divert",
+                        "title": "Call forwarding"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_Application_Part",
+                        "text": "MAP",
+                        "title": "Mobile Application Part"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Voice_mail",
+                        "text": null,
+                        "title": "voice mail"
+                    },
+                    {
+                        "fragment": "Call set up process for incoming calls",
+                        "link": "GSM_services",
+                        "text": "incoming calls or text messages to be delivered",
+                        "title": "GSM services"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Authentication",
+                        "text": "authenticate",
+                        "title": "authentication"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "SIM_card",
+                        "text": null,
+                        "title": "SIM card"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Encryption_key",
+                        "text": null,
+                        "title": "encryption key"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "SIM_cloning",
+                        "text": null,
+                        "title": "SIM cloning"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Shared_secret",
+                        "text": null,
+                        "title": "shared secret"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Challenge–response_authentication",
+                        "text": "challenge/response",
+                        "title": "Challenge–response authentication"
+                    },
+                    {
+                        "fragment": "Base station controller",
+                        "link": "Base_Station_Subsystem",
+                        "text": "base station controller",
+                        "title": "Base Station Subsystem"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "COMP128",
+                        "text": null,
+                        "title": "COMP128"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_station",
+                        "text": null,
+                        "title": "Mobile station"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Base_Transceiver_Station",
+                        "text": "base transceiver station",
+                        "title": "Base Transceiver Station"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Base_transceiver_station",
+                        "text": "BTS",
+                        "title": "Base transceiver station"
+                    },
+                    {
+                        "fragment": "Home_location_register_.28HLR.29",
+                        "link": "Network_switching_subsystem",
+                        "text": "'''Home Location Register (HLR)'''",
+                        "title": "Network_switching_subsystem"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "International_mobile_subscriber_identity",
+                        "text": "IMSI",
+                        "title": "International mobile subscriber identity"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GPRS_Access_Points",
+                        "text": "access point (GPRS)",
+                        "title": "GPRS Access Points"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "International_Mobile_Equipment_Identity",
+                        "text": "IMEI",
+                        "title": "International Mobile Equipment Identity"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "SGSN",
+                        "text": null,
+                        "title": "SGSN"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobility_Management_Entity",
+                        "text": "MME",
+                        "title": "Mobility Management Entity"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Central_Equipment_Identity_Register",
+                        "text": "CEIR",
+                        "title": "Central Equipment Identity Register"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Type_Allocation_Code",
+                        "text": "TACs",
+                        "title": "Type Allocation Code"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "International_mobile_subscriber_identity",
+                        "text": "IMSI",
+                        "title": "International mobile subscriber identity"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "MSISDN",
+                        "text": null,
+                        "title": "MSISDN"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "SMS",
+                        "text": null,
+                        "title": "SMS"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Policy_and_charging_rules_function",
+                        "text": "PCRF",
+                        "title": "Policy and charging rules function"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Short_Message_service_center",
+                        "text": "SMSC",
+                        "title": "Short Message service center"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Multimedia_messaging_service",
+                        "text": null,
+                        "title": "multimedia messaging service"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Sound",
+                        "text": "audio",
+                        "title": "Sound"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Video",
+                        "text": null,
+                        "title": "video"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Voicemail",
+                        "text": null,
+                        "title": "voicemail"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Communications_Assistance_for_Law_Enforcement_Act",
+                        "text": "CALEA",
+                        "title": "Communications Assistance for Law Enforcement Act"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:GSM_standard",
+                        "text": null,
+                        "title": "Category:GSM standard"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Telecommunications_infrastructure",
+                        "text": null,
+                        "title": "Category:Telecommunications infrastructure"
+                    }
+                ],
+                "nbLinks": 90,
+                "nbTables": 0,
+                "nbTexts": 24,
+                "tableExtractionDate": "2023-10-22T09:17:02.077959",
+                "tables": [],
+                "technology": "WikitextExtractor",
+                "textExtractionDate": "2023-10-22T09:17:02.077959",
+                "texts": [
+                    {
+                        "endOffset": 1324,
+                        "index": 0,
+                        "level": 0,
+                        "startOffset": 0,
+                        "title": null,
+                        "value": "{{Short description|Component of the Global System for Mobile Communications (GSM)}}\n{{Use American English|date = March 2019}}\n{{multiple issues|\n{{no footnotes|date=March 2019}}\n{{Refimprove|date=March 2009}}}}\nNetwork switching subsystem  (NSS) (or GSM core network) is the component of a [[GSM]] system that carries out [[telephone exchange|call out]] and [[mobility management]] functions for [[mobile phones]] [[roaming]] on the [[Base Station subsystem|network of base stations]]. It is owned and deployed by [[mobile phone operator]]s and allows mobile devices to communicate with each other and [[telephone]]s in the wider [[public switched telephone network]] (PSTN). The architecture contains specific features and functions which are needed because the phones are not fixed in one location.\n\nThe NSS originally consisted of the circuit-switched [[core network]], used for traditional [[GSM services]] such as voice calls, [[Short message service|SMS]], and [[Circuit Switched Data|circuit switched data]] calls. It was extended with an overlay architecture to provide packet-switched data services known as the [[GPRS core network]]. This allows mobile phones to have access to services such as [[Wireless Application Protocol|WAP]], [[Multimedia Messaging Service|MMS]] and the [[Internet]]."
+                    },
+                    {
+                        "endOffset": 6262,
+                        "index": 1,
+                        "level": 2,
+                        "startOffset": 1324,
+                        "title": "Mobile switching center (MSC)",
+                        "value": ""
+                    },
+                    {
+                        "endOffset": 3615,
+                        "index": 2,
+                        "level": 3,
+                        "startOffset": 1422,
+                        "title": "Description",
+                        "value": "The mobile switching center (MSC) is the primary service delivery node for GSM/CDMA, responsible for [[routing in the PSTN|routing]] voice calls and SMS as well as other services (such as conference calls, FAX, and circuit-switched data).\n\nThe MSC sets up and releases the end-to-end connection, handles mobility and hand-over requirements during the call and takes care of charging and real-time prepaid account monitoring.\n\nIn the GSM mobile phone system, in contrast with earlier analogue services, fax and data information is sent digitally encoded directly to the MSC. Only at the MSC is this re-coded into an \"analogue\" signal (although actually this will almost certainly mean sound is encoded digitally as a [[pulse-code modulation]] (PCM) signal in a 64-kbit/s timeslot, known as a [[DS0]] in America).\n\nThere are various different names for MSCs in different contexts which reflects their complex role in the network, all of these terms though could refer to the same MSC, but doing different things at different times.\n\nThe gateway MSC (G-MSC) is the MSC that determines which \"visited MSC\" (V-MSC) the subscriber who is being called is currently located at. It also interfaces with the PSTN. All mobile to mobile calls and PSTN to mobile calls are routed through a G-MSC. The term is only valid in the context of one call, since any MSC may provide both the gateway function and the visited MSC function. However, some manufacturers design dedicated high capacity MSCs which do not have any [[base station subsystem]]s (BSS) connected to them. These MSCs will then be the gateway MSC for many of the calls they handle.\n\nThe visited MSC (V-MSC) is the MSC where a customer is currently located. The [[Network_switching_subsystem#Visitor_location_register_(VLR)|visitor location register]] (VLR) associated with this MSC will have the subscriber's data in it.\n\nThe anchor MSC is the MSC from which a [[handover]] has been initiated. The target MSC is the MSC toward which a handover should take place. A [[mobile switching center server]] is a part of the redesigned MSC concept starting from [[3GPP#Standards|3GPP Release 4]]."
+                    },
+                    {
+                        "endOffset": 4841,
+                        "index": 3,
+                        "level": 3,
+                        "startOffset": 3615,
+                        "title": "Mobile switching center server (MSC-Server, MSCS or MSS)",
+                        "value": "{{main article|Mobile switching centre server}}\n\nThe mobile switching center server is a soft-switch variant (therefore it may be referred to as mobile soft switch, MSS) of the mobile switching center, which provides circuit-switched calling mobility management, and GSM services to the mobile phones [[roaming]] within the area that it serves. The functionality enables split control between (signaling ) and user plane (bearer in network element called as media gateway/MG), which guarantees better placement of network elements within the network.\n\nMSS and [[Media Gateway|media gateway]] (MGW) makes it possible to cross-connect circuit-switched calls switched by using IP, ATM AAL2 as well as [[Time-division multiplexing|TDM]]. More information is available in 3GPP TS 23.205.\n\nThe term [[Circuit switching]] (CS) used here originates from traditional telecommunications systems. However, modern MSS and MGW devices mostly use generic [[Internet]] technologies and form [[Next-generation network|next-generation telecommunication networks]]. MSS software may run on generic computers or [[virtual machine]]s in [[Cloud computing|cloud]] environment."
+                    },
+                    {
+                        "endOffset": 5696,
+                        "index": 4,
+                        "level": 3,
+                        "startOffset": 4841,
+                        "title": "Other GSM core network elements connected to the MSC",
+                        "value": "The MSC connects to the following elements:\n* The [[Network switching subsystem#Home location register (HLR)|home location register]] (HLR) for obtaining data about the [[Subscriber Identity Module|SIM]] and [[MSISDN|mobile services ISDN]] number (MSISDN; i.e., the telephone number).\n* The [[Base Station Subsystem|base station subsystems]] (BSS) which handles the radio communication with [[2G]] and [[2.5G]] mobile phones.\n* The [[UTRAN|UMTS terrestrial radio access network]] (UTRAN) which handles the radio communication with [[3G]] mobile phones.\n* The [[Network switching subsystem#Visitor location register (VLR)|visitor location register]] (VLR) provides subscriber information when the subscriber is outside its home network.\n* Other MSCs for procedures such as [[handoff|hand over]]."
+                    },
+                    {
+                        "endOffset": 6262,
+                        "index": 5,
+                        "level": 3,
+                        "startOffset": 5696,
+                        "title": "Procedures implemented",
+                        "value": "Tasks of the MSC include:\n* [[GSM services#Call set up process for incoming calls|Delivering calls to subscribers]] as they arrive based on information from the VLR.\n* Connecting outgoing calls to other mobile subscribers or the PSTN.\n* Delivering SMSs from subscribers to the [[short message service center]] (SMSC) and vice versa.\n* Arranging handovers from BSC to BSC.\n* Carrying out handovers from this MSC to another.\n* Supporting [[supplementary services]] such as conference calls or call hold.\n* Generating billing information."
+                    },
+                    {
+                        "endOffset": 9428,
+                        "index": 6,
+                        "level": 2,
+                        "startOffset": 6262,
+                        "title": "Home location register (HLR)",
+                        "value": ""
+                    },
+                    {
+                        "endOffset": 8510,
+                        "index": 7,
+                        "level": 3,
+                        "startOffset": 8074,
+                        "title": "Other GSM core network elements connected to the HLR",
+                        "value": "The HLR connects to the following elements:\n* The G-MSC for handling incoming calls\n* The VLR for handling requests from mobile phones to attach to the network\n* The SMSC for handling incoming SMSs\n* The [[voice mail]] system for delivering notifications to the mobile phone that a message is waiting\n* The AuC for authentication and ciphering and exchange of data (triplets)"
+                    },
+                    {
+                        "endOffset": 9428,
+                        "index": 8,
+                        "level": 3,
+                        "startOffset": 8510,
+                        "title": "Procedures implemented",
+                        "value": "The main function of the HLR is to manage the fact that SIMs and phones move around a lot. The following procedures are implemented to deal with this:\n* Manage the mobility of subscribers by means of updating their position in administrative areas called 'location areas', which are identified with a LAC. The action of a user of moving from one LA to another is followed by the HLR with a Location area update procedure.\n* Send the subscriber data to a VLR or SGSN when a subscriber first roams there.\n* Broker between the G-MSC or SMSC and the subscriber's current VLR in order to allow [[GSM services#Call set up process for incoming calls|incoming calls or text messages to be delivered]].\n* Remove subscriber data from the previous VLR when a subscriber has roamed away from it.\n* Responsible for all SRI related queries (i.e. for invoke SRI, HLR should give sack SRI or SRI reply)."
+                    },
+                    {
+                        "endOffset": 16596,
+                        "index": 9,
+                        "level": 2,
+                        "startOffset": 9428,
+                        "title": "Authentication center (AuC)",
+                        "value": ""
+                    },
+                    {
+                        "endOffset": 11108,
+                        "index": 10,
+                        "level": 3,
+                        "startOffset": 9476,
+                        "title": "Description",
+                        "value": "The authentication center (AuC) is a function to [[authentication|authenticate]] each [[SIM card]] that attempts to connect to the gsm core network (typically when the phone is powered on). Once the authentication is successful, the HLR is allowed to manage the SIM and services described above. An [[encryption key]] is also generated that is subsequently used to encrypt all wireless communications (voice, SMS, etc.) between the mobile phone and the GSM core network.\n\nIf the authentication fails, then no services are possible from that particular combination of SIM card and mobile phone operator attempted. There is an additional form of identification check performed on the serial number of the mobile phone described in the EIR section below, but this is not relevant to the AuC processing.\n\nProper implementation of security in and around the AuC is a key part of an operator's strategy to avoid [[SIM cloning]].\n\nThe AuC does not engage directly in the authentication process, but instead generates data known as triplets for the MSC to use during the procedure.  The security of the process depends upon a [[shared secret]] between the AuC and the SIM called the K<sub>i</sub>. The K<sub>i</sub> is securely burned into the SIM during manufacture and is also securely replicated onto the AuC. This K<sub>i</sub> is never transmitted between the AuC and SIM, but is combined with the IMSI to produce a [[Challenge–response authentication|challenge/response]] for identification purposes and an encryption key called K<sub>c</sub> for use in over the air communications."
+                    },
+                    {
+                        "endOffset": 11413,
+                        "index": 11,
+                        "level": 3,
+                        "startOffset": 11108,
+                        "title": "Other GSM core network elements connected to the AuC",
+                        "value": "The AuC connects to the following elements:\n* The MSC which requests a new batch of triplet data for an IMSI after the previous data have been used. This ensures that same keys and challenge responses are not used twice for a particular mobile."
+                    },
+                    {
+                        "endOffset": 14266,
+                        "index": 12,
+                        "level": 3,
+                        "startOffset": 11413,
+                        "title": "Procedures implemented",
+                        "value": "The AuC stores the following data for each IMSI:\n* the K<sub>i</sub>\n* Algorithm id. (the standard algorithms are called A3 or A8, but an operator may choose a proprietary one).\n\nWhen the MSC asks the AuC for a new set of triplets for a particular IMSI, the AuC first generates a random number known as RAND. This RAND is then combined with the K<sub>i</sub> to produce two numbers as follows:\n* The K<sub>i</sub> and RAND are fed into the A3 algorithm and the signed response (SRES) is calculated.\n* The K<sub>i</sub> and RAND are fed into the A8 algorithm and a session key called K<sub>c</sub> is calculated.\nThe numbers (RAND, SRES, K<sub>c</sub>) form the triplet sent back to the MSC. When a particular IMSI requests access to the GSM core network, the MSC sends the RAND part of the triplet to the SIM. The SIM then feeds this number and the K<sub>i</sub> (which is burned onto the SIM) into the A3 algorithm as appropriate and an SRES is calculated and sent back to the MSC. If this SRES matches with the SRES in the triplet (which it should if it is a valid SIM), then the mobile is allowed to attach and proceed with GSM services.\n\nAfter successful authentication, the MSC sends the encryption key K<sub>c</sub> to the [[Base Station Subsystem#Base station controller|base station controller]] (BSC) so that all communications can be encrypted and decrypted. Of course, the mobile phone can generate the K<sub>c</sub> itself by feeding the same RAND supplied during authentication and the K<sub>i</sub> into the A8 algorithm.\n\nThe AuC is usually collocated with the HLR, although this is not necessary. Whilst the procedure is secure for most everyday use, it is by no means hack proof. Therefore, a new set of security methods was designed for 3G phones.\n\nIn practice, A3 and A8 algorithms are generally implemented together (known as A3/A8, see [[COMP128]]). An A3/A8 algorithm is implemented in Subscriber Identity Module (SIM) cards and in GSM network Authentication Centers. It is used to authenticate the customer and generate a key for encrypting voice and data traffic, as defined in 3GPP TS 43.020 (03.20 before Rel-4). Development of A3 and A8 algorithms is considered a matter for individual GSM network operators, although example implementations are available. To encrypt Global System for Mobile Communications (GSM) cellular communications A5 algorithm is used.<ref>{{cite book | title = A Comprehensive Guide to 5G Security | publisher = John Wiley & Sons Ltd. | first1 = Shahria | last1 = Shahabuddin | first2 = Sadiqur | last2 = Rahaman | first3 = Faisal | last3 = Rehman | first4 = Ijaz | last4 = Ahmad | first5 = Zaheer | last5 = Khan | year = 2018 | page = 12}}</ref> \n\n==Visitor location register (VLR)=="
+                    },
+                    {
+                        "endOffset": 15770,
+                        "index": 13,
+                        "level": 3,
+                        "startOffset": 14266,
+                        "title": "Description",
+                        "value": "The Visitor Location Register (VLR) is a database of the MSs ([[Mobile station]]s) that have roamed into the jurisdiction of the Mobile Switching Center (MSC) which it serves. Each main [[Base Transceiver Station|base transceiver station]] in the network is served by exactly one VLR (one [[Base transceiver station|BTS]] may be served by many MSCs in case of MSC in pool), hence a subscriber cannot be present in more than one VLR at a time.\n\nThe data stored in the VLR has either been received from the [[Network_switching_subsystem#Home_location_register_.28HLR.29|Home Location Register (HLR)]], or collected from the MS. In practice, for performance reasons, most vendors integrate the VLR directly to the V-MSC and, where this is not done, the VLR is very tightly linked with the MSC via a proprietary interface. Whenever an MSC detects a new MS in its network, in addition to creating a new record in the VLR, it also updates the HLR of the mobile subscriber, apprising it of the new location of that MS. If VLR data is corrupted it can lead to serious issues with text messaging and call services.\n\nData stored include:  \n* [[International mobile subscriber identity|IMSI]] (the subscriber's identity number).\n* Authentication data.\n* MSISDN (the subscriber's phone number).\n* GSM services that the subscriber is allowed to access.\n* [[GPRS Access Points|access point (GPRS)]] subscribed.\n* The HLR address of the subscriber.\n* SCP Address(For Prepaid Subscriber)."
+                    },
+                    {
+                        "endOffset": 16596,
+                        "index": 14,
+                        "level": 3,
+                        "startOffset": 15770,
+                        "title": "Procedures implemented",
+                        "value": "The primary functions of the VLR are:\n* To inform the HLR that a subscriber has arrived in the particular area covered by the VLR.\n* To track where the subscriber is within the VLR area (location area) when no call is ongoing.\n* To allow or disallow which services the subscriber may use.\n* To allocate roaming numbers during the processing of incoming calls.\n* To purge the subscriber record if a subscriber becomes inactive whilst in the area of a VLR. The VLR deletes the subscriber's data after a fixed time period of inactivity and informs the HLR (e.g., when the phone has been switched off and left off or when the subscriber has moved to an area with no coverage for a long time).\n* To delete the subscriber record when a subscriber explicitly moves to another, as instructed by the HLR."
+                    },
+                    {
+                        "endOffset": 20339,
+                        "index": 15,
+                        "level": 2,
+                        "startOffset": 16596,
+                        "title": "Equipment identity register (EIR)",
+                        "value": "EIR is a system that handles real-time requests to check the [[International Mobile Equipment Identity|IMEI]] (checkIMEI) of mobile devices that come from the switching equipment (MSC, [[SGSN]], [[Mobility Management Entity|MME]]). The answer contains the result of the check:\n\n* whitelisted – the device is allowed to register on the network.\n* blacklisted – the device is prohibited from registering on the network.\n* greylisted – the device is allowed to register on the network temporarily.\n* An error ‘unknown equipment’ may also be returned.\n\nThe switching equipment must use the EIR response to determine whether or not to allow the device to register or re-register on the network. Since the response of switching equipment to ‘greylisted’ and ‘unknown equipment’ responses is not clearly described in the standard, they are most often not used.\n\nMost often, EIR uses the IMEI blacklist feature, which contains the IMEI of the devices that need to be banned from the network. As a rule, these are stolen or lost devices. Mobile operators rarely use EIR capabilities to block devices on their own. Usually blocking begins when there is a law in the country, which obliges all cellular operators of the country to do so. Therefore, in the delivery of the basic components of the network switching subsystem (core network) is often already present EIR with basic functionality, which includes a ‘whitelisted’ response to all CheckIMEI and the ability to fill IMEI blacklist, which will be given a ‘blacklisted’ response. \n\nWhen the legislative framework for blocking registration of devices in cellular networks appears in the country, the telecommunications regulator usually has a Central EIR ([[Central Equipment Identity Register|CEIR]]) system, which is integrated with the EIR of all operators and transmits to them the actual lists of identifiers that must be used when processing CheckIMEI requests. In doing so, there may be many new requirements for EIR systems that are not present in the legacy EIR:\n\n* Synchronizing lists with CEIR. CEIR systems are not described by a standard, so the protocols and exchange mode may differ from country to country.\n* Supporting additional lists – IMEI white list, IMEI grey list, list of allocated [[Type Allocation Code|TACs]], etc.\n* Support in lists not only IMEI but also bindings – IMEI-IMSI, IMEI-MSISDN, IMEI-[[International mobile subscriber identity|IMSI]]-[[MSISDN]].\n* Supporting the customized logic of lists applying. \n* Automatic adding the item to a list in separate scenarios.\n* Sending [[SMS]] notifications to subscribers in separate scenarios.\n* Integration with the billing system to receive IMSI-MSISDN bundles.\n* Accumulating the subscribers’ profiles (history of device changing).\n* Long-term storage of processing of all CheckIMEI requests.\n\nOther functions may be required in individual cases. For example, Kazakhstan has introduced mandatory registration of devices and their binding to subscribers. But when a subscriber appears in the network with a new device, the network operation is not blocked completely, and the subscriber is allowed to register the device. To do this, there are blocked all services, except the following: calls to a specific service number, sending SMS to a specific service number, and all Internet traffic is redirected to a specific landing page. This is achieved by the fact that EIR can send commands to several MNO systems (HLR, [[Policy and charging rules function|PCRF]], [[Short Message service center|SMSC]], etc.).\n\nThe most common suppliers of individual EIR systems (not as part of a complex solution) are the companies BroadForward, Mahindra Comviva, Mavenir, Nokia, Svyazcom."
+                    },
+                    {
+                        "endOffset": 21713,
+                        "index": 16,
+                        "level": 2,
+                        "startOffset": 20339,
+                        "title": "Other support functions",
+                        "value": "Connected more or less directly to the GSM core network are many other functions."
+                    },
+                    {
+                        "endOffset": 20697,
+                        "index": 17,
+                        "level": 3,
+                        "startOffset": 20450,
+                        "title": "Billing center (BC)",
+                        "value": "The billing center is responsible for processing the toll tickets generated by the VLRs and HLRs and generating a bill for each subscriber. It is also responsible for generating billing data of roaming subscriber."
+                    },
+                    {
+                        "endOffset": 20935,
+                        "index": 18,
+                        "level": 3,
+                        "startOffset": 20697,
+                        "title": "Multimedia messaging service center (MMSC)",
+                        "value": "The [[multimedia messaging service]] center supports the sending of multimedia messages (e.g., images, [[Sound|audio]], [[video]] and their combinations) to (or from) MMS-bluetooth."
+                    },
+                    {
+                        "endOffset": 21026,
+                        "index": 19,
+                        "level": 3,
+                        "startOffset": 20935,
+                        "title": "Voicemail system (VMS)",
+                        "value": "The [[voicemail]] system records and stores voicemail."
+                    },
+                    {
+                        "endOffset": 21713,
+                        "index": 20,
+                        "level": 3,
+                        "startOffset": 21026,
+                        "title": "Lawful interception functions",
+                        "value": "{{main|Lawful interception}}\nAccording to U.S. law, which has also been copied into many other countries, especially in Europe, all telecommunications equipment must provide facilities for monitoring the calls of selected users. There must be some level of support for this built into any of the different elements. The concept of lawful interception is also known, following the relevant U.S. law, as [[Communications Assistance for Law Enforcement Act|CALEA]].\nGenerally, lawful Interception implementation is similar to the implementation of conference call. While A and B are talking with each other, C can join the call and listen silently."
+                    },
+                    {
+                        "endOffset": 21793,
+                        "index": 21,
+                        "level": 2,
+                        "startOffset": 21713,
+                        "title": "See also",
+                        "value": "* The GSM core network.\n* Base station subsystem\n*COM 128\n*4GLET"
+                    },
+                    {
+                        "endOffset": 21823,
+                        "index": 22,
+                        "level": 2,
+                        "startOffset": 21793,
+                        "title": "References",
+                        "value": "{{reflist}}"
+                    },
+                    {
+                        "endOffset": 22154,
+                        "index": 23,
+                        "level": 2,
+                        "startOffset": 21823,
+                        "title": "External links",
+                        "value": "* 4GLET - the standardisation body for GSM and UMTS\n* UMTS Networks: Protocols, Terminology and Implementation - a PDF eBook by Gunnar Heine\n{{Mobile telecommunications standards}}\n\n[[Category:GSM standard]]\n[[Category:Telecommunications infrastructure]]"
+                    }
+                ]
+            }
+        ],
+        "statsMetadata": {
+            "textSize": 19214
+        },
+        "preprocessingMetadata": [
+            {
+                "technologyResults": [
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Challenge-response test",
+                                "Challenge-response system",
+                                "challenge–response authentication",
+                                "Challenge–response system",
+                                "Challenge/response system",
+                                "Challenge",
+                                "Challenge/response",
+                                "Challenge-response",
+                                "Challenge-response authentication",
+                                "Lamport's scheme",
+                                "Challenge–response",
+                                "challenge response authentication",
+                                "Challenge–response test",
+                                "Challenge response"
+                            ],
+                            "uriSent": "Challenge–response_authentication",
+                            "wikipediaId": "412627",
+                            "id": "Q1059963",
+                            "label": "challenge–response authentication"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Short Message Service Center",
+                                "Short Message Service Centres",
+                                "Short message service center",
+                                "Short Message Service center",
+                                "SMS C",
+                                "Short message service centre",
+                                "SMS-C",
+                                "SMSC",
+                                "Short Message Service Centre"
+                            ],
+                            "uriSent": "Short_message_service_center",
+                            "wikipediaId": "2601173",
+                            "id": "Q2067024",
+                            "label": "Short Message Service Center"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Base-station subsystem",
+                                "Base Station Subsystem",
+                                "base station subsystem",
+                                "BSS",
+                                "Base Transciever Station",
+                                "Base station controller",
+                                "Abis",
+                                "Packet control unit",
+                                "Base Station subsystem",
+                                "Packet Control Unit",
+                                "Base Station Controller"
+                            ],
+                            "uriSent": "Base_station_subsystem",
+                            "wikipediaId": "672137",
+                            "id": "Q809834",
+                            "label": "base station subsystem"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Mobile switching center server",
+                                "Mobile Switching Center Server",
+                                "Mobile switching centre server",
+                                "Mobile Switching Centre Server"
+                            ],
+                            "uriSent": "Mobile_switching_center_server",
+                            "wikipediaId": "14313408",
+                            "id": "Q12071697",
+                            "label": "Mobile switching centre server"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Cryptovariables",
+                                "Encryption key",
+                                "Cryptography/Key",
+                                "Cryptographic keys",
+                                "Secret key",
+                                "Cryptographic key",
+                                "cryptographic key",
+                                "key",
+                                "Key",
+                                "Cryptovariable"
+                            ],
+                            "uriSent": "Encryption_key",
+                            "wikipediaId": "53039",
+                            "id": "Q471771",
+                            "label": "key"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "signed response",
+                                "Visitor Location Register",
+                                "Network Switching Subsystem",
+                                "Switching and Management Subsystem",
+                                "GSM core network",
+                                "SRES",
+                                "Visitor Location Registers",
+                                "network switching subsystem",
+                                "NSS",
+                                "Mobile Switching Centre",
+                                "Mobile switching center",
+                                "GMSC",
+                                "Qualdir",
+                                "Mobile switching centre",
+                                "Home Location Register",
+                                "Network and Switching Subsystem",
+                                "Visitors Location Register",
+                                "Home location register",
+                                "Visitor location register",
+                                "Mobile Switching Center",
+                                "Authentication Center"
+                            ],
+                            "uriSent": "Network_switching_subsystem",
+                            "wikipediaId": "664022",
+                            "id": "Q779475",
+                            "label": "network switching subsystem"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Process virtual machine",
+                                "Amiga virtual machine",
+                                "Virtual computing",
+                                "Application virtual machine",
+                                "Virtual platform",
+                                "Virtual processing",
+                                "Overlay computer",
+                                "Virtual platforms",
+                                "Virtual operating system",
+                                "Managed runtime environment",
+                                "virtual machine",
+                                "Virtual Platform",
+                                "VM",
+                                "Systems virtualization",
+                                "Virtual machines",
+                                "Virtual computer",
+                                "Virtual Machine"
+                            ],
+                            "uriSent": "Virtual_machine",
+                            "wikipediaId": "32353",
+                            "id": "Q192726",
+                            "label": "virtual machine"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Multislot Class",
+                                "GPRS modem",
+                                "CELLPAC",
+                                "General Packet Radio Service",
+                                "General packet radio service",
+                                "GPRS",
+                                "Gprs",
+                                "Coding Scheme"
+                            ],
+                            "uriSent": "General_Packet_Radio_Service",
+                            "wikipediaId": "12920",
+                            "id": "Q79708",
+                            "label": "General Packet Radio Service"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Shared secret",
+                                "Shared secrets"
+                            ],
+                            "uriSent": "Shared_secret",
+                            "wikipediaId": "7111246",
+                            "id": "Q462624",
+                            "label": "Shared secret"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Multimedia Message Service",
+                                "Multimedia messaging service",
+                                "Video messaging",
+                                "Pxt",
+                                "PXT",
+                                "Multimedia Messaging Service",
+                                "mms",
+                                "MMS",
+                                "Multi-media Messaging Service",
+                                "Multimedia Messaging System",
+                                "Picture messages",
+                                "Wireless Imaging",
+                                "mms messaging",
+                                "Picture messaging",
+                                "Multimedia message",
+                                "Multimedia texting",
+                                "Picture message"
+                            ],
+                            "uriSent": "Multimedia_Messaging_Service",
+                            "wikipediaId": "242406",
+                            "id": "Q189443",
+                            "label": "Multimedia Messaging Service"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "System Architecture Evolution",
+                                "Evolved Packet Data Gateway",
+                                "Evolved Packet System",
+                                "PDN Gateway",
+                                "Evolved Packet Core",
+                                "4G Core",
+                                "LTE Core",
+                                "SAE",
+                                "AIPN",
+                                "System architecture evolution",
+                                "Mobility Management Entity",
+                                "Serving Gateway"
+                            ],
+                            "uriSent": "Mobility_Management_Entity",
+                            "wikipediaId": "13774696",
+                            "id": "Q1099695",
+                            "label": "System Architecture Evolution"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Routing in the public switched telephone network",
+                                "Teletraffic routing",
+                                "Dynamic Alternative Routing",
+                                "Teletraffic Routing",
+                                "Hybrid routing",
+                                "Routing in the PSTN"
+                            ],
+                            "uriSent": "Routing_in_the_PSTN",
+                            "wikipediaId": "925465",
+                            "id": "Q7371623",
+                            "label": "Routing in the PSTN"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Phone numbers",
+                                "telephone number",
+                                "Mobile telephone number",
+                                "tel:",
+                                "phone number",
+                                "Phone Numbers",
+                                "Mobile dialable number",
+                                "landline number",
+                                "Cellphone number",
+                                "mobile number",
+                                "VOIP number",
+                                "Telephone numbers",
+                                "Mobile device number",
+                                "Phone number",
+                                "Mobile directory number",
+                                "Tel. Nos.",
+                                "Directory number",
+                                "Phone Number"
+                            ],
+                            "uriSent": "Telephone_number",
+                            "wikipediaId": "18790468",
+                            "id": "Q214995",
+                            "label": "telephone number"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Media Gateway",
+                                "Media Gateways",
+                                "Media gateway"
+                            ],
+                            "uriSent": "Media_Gateway",
+                            "wikipediaId": "425417",
+                            "id": "Q1602623",
+                            "label": "Media gateway"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "🖷",
+                                "Virtual fax delivery",
+                                "🕼",
+                                "Fax Machine",
+                                "telecopying",
+                                "Faxing",
+                                "Telefacsimile",
+                                "Telecopying",
+                                "Facsimilie",
+                                "Digital facsimile equipment",
+                                "Facsimile machine",
+                                "Stroke speed",
+                                "Mojo wire",
+                                "Class 1 fax",
+                                "T.30",
+                                "Fax messaging",
+                                "Telefax",
+                                "Wire picture",
+                                "📠",
+                                "T.4",
+                                "fax",
+                                "Facsimile transmission",
+                                "T.6",
+                                "T.31",
+                                "T.32",
+                                "Fax machines",
+                                "Class 2 fax",
+                                "Faxes",
+                                "Fax machine",
+                                "FAX machines",
+                                "Facsimile Transmission",
+                                "Facimile",
+                                "facsimiles",
+                                "Fax mail",
+                                "Telecopier",
+                                "Fax classes",
+                                "Exxon Qwip",
+                                "T.30 ITU-T recommendation",
+                                "℻",
+                                "Fax number",
+                                "FAX",
+                                "telefax",
+                                "Telecopy"
+                            ],
+                            "uriSent": "Fax",
+                            "wikipediaId": "10826",
+                            "id": "Q132744",
+                            "label": "fax"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Domestic roaming",
+                                "roaming",
+                                "National Roaming",
+                                "Inter standard roaming",
+                                "International roaming"
+                            ],
+                            "uriSent": "Roaming",
+                            "wikipediaId": "226769",
+                            "id": "Q680016",
+                            "label": "roaming"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Linear Pulse Code Modulation",
+                                "P.C.M.",
+                                "Pulse Code Modulation",
+                                "Pulse-code-modulation",
+                                "PCM audio",
+                                "Lpcm",
+                                "Linear pulse code modulation",
+                                "Pulse-code modulated",
+                                "pulse code modulation",
+                                "LPCM",
+                                "Linear PCM",
+                                "Linear pcm",
+                                "Pulse code modulation",
+                                "Adapted Differential Pulse Code Modulation",
+                                "Linear pulse-code modulation",
+                                "Adaptive Differential PCM",
+                                "PCM synthesis",
+                                "pulse-code modulation",
+                                "PCM",
+                                "Pcm",
+                                "Pulse-code-modulated"
+                            ],
+                            "uriSent": "Pulse-code_modulation",
+                            "wikipediaId": "25513330",
+                            "id": "Q13043846",
+                            "label": "pulse-code modulation"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "MicroSIM",
+                                "Nano-SIM",
+                                "ID-1 SIM card",
+                                "Integrated Circuit Card ID",
+                                "Plug-in SIM card",
+                                "SIM Card",
+                                "subscriber identity module",
+                                "NanoSIM",
+                                "Subscriber identification module",
+                                "Full-size SIM",
+                                "International SIM card",
+                                "MFF SIM chip",
+                                "SIM Serial Number",
+                                "SIM card holder",
+                                "Sim only",
+                                "SIM card formats",
+                                "Virtual sim",
+                                "Micro SIM",
+                                "Micro Sim",
+                                "SIM card tray",
+                                "Universal Subscriber Identity Module",
+                                "2FF SIM card",
+                                "ID-1/000 SIM card",
+                                "ICC-ID",
+                                "M2M Identification Module",
+                                "Full-size SIM card",
+                                "Embedded SIM chip",
+                                "SIM card",
+                                "1FF SIM",
+                                "Mini-UICC",
+                                "Electronic SIM",
+                                "3FF SIM card",
+                                "4FF card",
+                                "4FF SIM",
+                                "SIM card reader",
+                                "MFF chip",
+                                "Plug-in SIM",
+                                "Universal Identity Module",
+                                "2FF card",
+                                "SIM sizes",
+                                "Embedded-SIM chip",
+                                "1FF",
+                                "GSM SIM",
+                                "3FF",
+                                "Sim number",
+                                "Virtual SIM",
+                                "SIM",
+                                "Sim card",
+                                "UIM",
+                                "Micro-SIM",
+                                "Universal subscriber identity module",
+                                "Mini SIM",
+                                "ID-000 SIM card",
+                                "ID-1/000 SIM",
+                                "User Identity Module",
+                                "1FF SIM card",
+                                "SIM card format",
+                                "4FF SIM card",
+                                "Subscriber identity module",
+                                "SIM cardreader",
+                                "SIM card-reader",
+                                "Simcard",
+                                "MiniSIM",
+                                "MFF",
+                                "SIM size",
+                                "SIM-card",
+                                "Micro-SIM-adapter",
+                                "Nano SIM",
+                                "SIM card-holder",
+                                "Overlay SIM",
+                                "Subscriber Identity Module Card",
+                                "Mini-SIM",
+                                "SIM cards",
+                                "2FF SIM",
+                                "Subscriber Identity Module",
+                                "SIM cardholder",
+                                "ICCID",
+                                "USIM",
+                                "Thin SIM",
+                                "3FF card",
+                                "SIM chip",
+                                "1FF card",
+                                "ID-000 SIM",
+                                "SIM only",
+                                "3FF SIM",
+                                "2FF",
+                                "4FF",
+                                "subscriber identification module",
+                                "User identity module",
+                                "SIM tray",
+                                "MFF SIM",
+                                "3ff-plug-in",
+                                "SIM number",
+                                "SIM card sizes",
+                                "ID-1 SIM"
+                            ],
+                            "uriSent": "Subscriber_Identity_Module",
+                            "wikipediaId": "197489",
+                            "id": "Q230110",
+                            "label": "SIM card"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Test Messaging",
+                                "SMS chat",
+                                "Mobile messaging",
+                                "PSMS",
+                                "Short message service",
+                                "Short message service\"",
+                                "SMS text message",
+                                "SMs",
+                                "Phone text message",
+                                "Premium rate SMS",
+                                "2 way SMS",
+                                "SMS message",
+                                "Premium SMS",
+                                "Short Message Services",
+                                "Short messaging",
+                                "Short messaging service",
+                                "Short Messaging Service",
+                                "SMS text-messaging",
+                                "Short message system",
+                                "SMS-MO",
+                                "MOSMS",
+                                "SMS Message",
+                                "SMS",
+                                "Short Message Service",
+                                "Sms"
+                            ],
+                            "uriSent": "SMS",
+                            "wikipediaId": "28207",
+                            "id": "Q43024",
+                            "label": "SMS"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "DS0",
+                                "DS-0",
+                                "Digital Signal 0",
+                                "Digital signal 0"
+                            ],
+                            "uriSent": "DS0",
+                            "wikipediaId": "41037",
+                            "id": "Q4036939",
+                            "label": "Digital Signal 0"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Alternate key",
+                                "primary key",
+                                "primary key constraint",
+                                "Primary Key"
+                            ],
+                            "uriSent": "Primary_key",
+                            "wikipediaId": "259056",
+                            "id": "Q934729",
+                            "label": "primary key"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Multimedia Message Service",
+                                "Multimedia messaging service",
+                                "Video messaging",
+                                "Pxt",
+                                "PXT",
+                                "Multimedia Messaging Service",
+                                "mms",
+                                "MMS",
+                                "Multi-media Messaging Service",
+                                "Multimedia Messaging System",
+                                "Picture messages",
+                                "Wireless Imaging",
+                                "mms messaging",
+                                "Picture messaging",
+                                "Multimedia message",
+                                "Multimedia texting",
+                                "Picture message"
+                            ],
+                            "uriSent": "Multimedia_messaging_service",
+                            "wikipediaId": "242406",
+                            "id": "Q189443",
+                            "label": "Multimedia Messaging Service"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Time multiplexing",
+                                "Teletraffic time division multiplexing",
+                                "Time division switch",
+                                "time-division multiplexing",
+                                "Ping pong protocol",
+                                "Time-Division Multiplexing",
+                                "Time division multiplexing",
+                                "MF-TDMA",
+                                "Time-division switching",
+                                "Teletraffic Time Division Multiplexing",
+                                "Time-multiplexing",
+                                "Time-division multiplex",
+                                "Multi-frequency time division multiple access",
+                                "Time-division",
+                                "Time division multiplex",
+                                "Statistical Time Division Multiplexing",
+                                "TDM",
+                                "Time-division multiplexer"
+                            ],
+                            "uriSent": "Time-division_multiplexing",
+                            "wikipediaId": "41796",
+                            "id": "Q901831",
+                            "label": "time-division multiplexing"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Base-station subsystem",
+                                "Base Station Subsystem",
+                                "base station subsystem",
+                                "BSS",
+                                "Base Transciever Station",
+                                "Base station controller",
+                                "Abis",
+                                "Packet control unit",
+                                "Base Station subsystem",
+                                "Packet Control Unit",
+                                "Base Station Controller"
+                            ],
+                            "uriSent": "Base_Station_subsystem",
+                            "wikipediaId": "672137",
+                            "id": "Q809834",
+                            "label": "base station subsystem"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Location area",
+                                "Temporary Mobile Subscriber Identity",
+                                "Random location update",
+                                "mobility management",
+                                "Periodic location update"
+                            ],
+                            "uriSent": "Mobility_management",
+                            "wikipediaId": "658749",
+                            "id": "Q4476379",
+                            "label": "mobility management"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "WAP push",
+                                "WAP 1.3",
+                                "Wireless Application Protocol",
+                                "Wireless application protocol",
+                                "Wap2",
+                                "WAP 2.0",
+                                "WAP",
+                                "WAP browser",
+                                "Wap push",
+                                "WAP Browser",
+                                "Mobile Telephony Protocol",
+                                "WAP protocol suite",
+                                "WAP browsing",
+                                "Wap site",
+                                "WAP Push"
+                            ],
+                            "uriSent": "Wireless_Application_Protocol",
+                            "wikipediaId": "10174473",
+                            "id": "Q186224",
+                            "label": "Wireless Application Protocol"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Circuit Switched Data",
+                                "High Speed Circuit Switched Data",
+                                "High-speed circuit-switched data",
+                                "High-Speed Circuit-Switched Data",
+                                "HSCSD",
+                                "CSD",
+                                "Circuit-Switched Data",
+                                "CDMA Circuit Switched Data",
+                                "Circuit-Switched-Data",
+                                "GSM CSD",
+                                "Cellular Switched Data"
+                            ],
+                            "uriSent": "Circuit_Switched_Data",
+                            "wikipediaId": "959943",
+                            "id": "Q278321",
+                            "label": "Circuit Switched Data"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "3G transition",
+                                "2G wireless",
+                                "2G",
+                                "2g",
+                                "2.5G",
+                                "2,75G",
+                                "2.75G",
+                                "2,5G",
+                                "2G GSM",
+                                "2.5G wireless",
+                                "2-G",
+                                "2-g"
+                            ],
+                            "uriSent": "2.5G",
+                            "wikipediaId": "282460",
+                            "id": "Q845349",
+                            "label": "2G"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Advice of charge",
+                                "Mobile data service",
+                                "GSM services",
+                                "Advice Of Charge",
+                                "Advice of Charge"
+                            ],
+                            "uriSent": "GSM_services",
+                            "wikipediaId": "1080759",
+                            "id": "Q15811187",
+                            "label": "GSM services"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "MSISDN",
+                                "Mobile Station International ISDN Number",
+                                "Mobile International ISDN Number",
+                                "Mobile Subscriber ISDN Number",
+                                "Mobile Station Integrated Services Digital Network Number",
+                                "Mobile Station International Subscriber Directory Number",
+                                "Mobile Station Integrated Services Digital Network",
+                                "Mobile Station International ISDN Numbers",
+                                "Mobile Station International Integrated Services Digital Network Number"
+                            ],
+                            "uriSent": "MSISDN",
+                            "wikipediaId": "1031810",
+                            "id": "Q786900",
+                            "label": "MSISDN"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Serial Backbone",
+                                "Parallel backbone",
+                                "Network backbone",
+                                "Core Network Services",
+                                "Parallel Backbone",
+                                "Core network services",
+                                "Collapsed backbone network",
+                                "distributed backbone",
+                                "Distributed Backbone",
+                                "Collapsed Backbone",
+                                "Serial backbone",
+                                "Distributed backbone",
+                                "Core network",
+                                "Network core",
+                                "Collapsed backbone",
+                                "Backbone net",
+                                "backbone network",
+                                "backbone",
+                                "Core services",
+                                "serial backbone"
+                            ],
+                            "uriSent": "Core_network",
+                            "wikipediaId": "2853516",
+                            "id": "Q1142907",
+                            "label": "backbone network"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "CD",
+                                "Call diverting",
+                                "Call Forwarding",
+                                "call deflection",
+                                "*72",
+                                "*73",
+                                "call forwarding",
+                                "Call fwd",
+                                "Call diversion",
+                                "Call forward",
+                                "Follow-Me"
+                            ],
+                            "uriSent": "Call_forwarding",
+                            "wikipediaId": "406816",
+                            "id": "Q240215",
+                            "label": "call forwarding"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "3rd Generation Partnership Project",
+                                "Third Generation Partnership Project",
+                                "3GPP",
+                                "3gpp"
+                            ],
+                            "uriSent": "3GPP",
+                            "wikipediaId": "397301",
+                            "id": "Q229804",
+                            "label": "3rd Generation Partnership Project"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Type Approval Code",
+                                "Type allocation code",
+                                "Type Allocation Code"
+                            ],
+                            "uriSent": "Type_Allocation_Code",
+                            "wikipediaId": "1042293",
+                            "id": "Q4405342",
+                            "label": "Type Allocation Code"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "BTS",
+                                "Base Transceiver Station",
+                                "BTS tower",
+                                "Mobile base station",
+                                "Base station transceiver",
+                                "Mobile Base Station",
+                                "base transceiver station",
+                                "GSM cell"
+                            ],
+                            "uriSent": "Base_transceiver_station",
+                            "wikipediaId": "672999",
+                            "id": "Q17005322",
+                            "label": "base transceiver station"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "COMP128",
+                                "Comp128v2"
+                            ],
+                            "uriSent": "COMP128",
+                            "wikipediaId": "3206049",
+                            "id": "Q1024002",
+                            "label": "COMP128"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "core network",
+                                "backbone"
+                            ],
+                            "uriSent": "Core_network",
+                            "id": "Q3933645",
+                            "label": "core network"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "handover",
+                                "Handoff",
+                                "Handover",
+                                "handoff"
+                            ],
+                            "uriSent": "Handoff",
+                            "wikipediaId": "27313582",
+                            "id": "Q1414679",
+                            "label": "handover"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Unique id",
+                                "uniqueness constraint",
+                                "key constraint",
+                                "Key field",
+                                "Primary keys",
+                                "Unique keys",
+                                "unique key",
+                                "k",
+                                "key",
+                                "Key",
+                                "Composite primary key"
+                            ],
+                            "uriSent": "Unique_key",
+                            "wikipediaId": "6850099",
+                            "id": "Q3667566",
+                            "label": "unique key"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "☎️",
+                                "🕻",
+                                "✆",
+                                "Corded telephone",
+                                "Station set",
+                                "☎",
+                                "☏",
+                                "Telephone bell",
+                                "Phones",
+                                "⌕",
+                                "Phone",
+                                "℡",
+                                "Telpehone",
+                                "telephone",
+                                "Telephone and Telephone System",
+                                "Telophone",
+                                "Phone development",
+                                "Telephone receiver",
+                                "phone",
+                                "Telephones",
+                                "Telephone cord",
+                                "Telephone communication",
+                                "🕿",
+                                "🕾",
+                                "Telephone set",
+                                "telephone set",
+                                "🕽"
+                            ],
+                            "uriSent": "Telephone",
+                            "wikipediaId": "30003",
+                            "id": "Q11035",
+                            "label": "telephone"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Celluar telephone",
+                                "Secret cell phone",
+                                "Hand Phone",
+                                "mobile phones",
+                                "Mobile cellular",
+                                "Mobile Phones",
+                                "Mobile handsets",
+                                "Hand telephones",
+                                "Cellphone video",
+                                "Mobile wireless communication",
+                                "Mobile cellular wireless",
+                                "Cellular communication",
+                                "Cellular mobile",
+                                "Mobile telephone",
+                                "Mobile number",
+                                "hand phone",
+                                "Cellular Telephone Technology",
+                                "cellular phone",
+                                "Cellular telephone",
+                                "Cell-phone",
+                                "Cell phone",
+                                "Hand phone",
+                                "Hand phones",
+                                "Cellular device",
+                                "Cellphones",
+                                "Mobile Telephone",
+                                "Cell phones",
+                                "Cellular Telephone",
+                                "Cell Phones",
+                                "Cell telephones",
+                                "Mobile wireless",
+                                "Cellphone",
+                                "Cellular phone",
+                                "Health effects of mobile phone usage",
+                                "Cellular phones",
+                                "cellphones",
+                                "phone",
+                                "mobile phone",
+                                "Cell Phone",
+                                "Mobile Phone",
+                                "Hand telephone",
+                                "Mobile communication standard",
+                                "Criticism of cell phone",
+                                "Handphone",
+                                "cellular mobile",
+                                "Cell phone carrier",
+                                "Flip fone",
+                                "Handphones",
+                                "Mobile phones",
+                                "Kosher phone",
+                                "Kosher phones",
+                                "cell phone",
+                                "Mobile terminal",
+                                "Mobil phone",
+                                "Environmental impact of mobile phones",
+                                "cellphone",
+                                "Mobile loop",
+                                "GSM phone",
+                                "Cell telephone",
+                                "Cellular radio",
+                                "Mobile telephones",
+                                "Cellular communication standard",
+                                "mobile",
+                                "Mobilephone",
+                                "mobile telephone",
+                                "Radio Common Carrier",
+                                "Radio common carrier",
+                                "Celphone",
+                                "Mobile phone safety",
+                                "Mobile screen",
+                                "Mobil Phone",
+                                "Cellular telephones",
+                                "Mobile handset",
+                                "Flipfone",
+                                "Mobile telecom",
+                                "Cellular Radio",
+                                "Mobile display",
+                                "cellular telephone"
+                            ],
+                            "uriSent": "Mobile_phones",
+                            "wikipediaId": "19644137",
+                            "id": "Q17517",
+                            "label": "mobile phone"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "BTS",
+                                "Base Transceiver Station",
+                                "BTS tower",
+                                "Mobile base station",
+                                "Base station transceiver",
+                                "Mobile Base Station",
+                                "base transceiver station",
+                                "GSM cell"
+                            ],
+                            "uriSent": "Base_Transceiver_Station",
+                            "wikipediaId": "672999",
+                            "id": "Q17005322",
+                            "label": "base transceiver station"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Video standards",
+                                "video recording",
+                                "Video standard",
+                                "Video feed",
+                                "Video signal",
+                                "Video format",
+                                "videotape recording",
+                                "Analogue video",
+                                "Analog video",
+                                "video",
+                                "Video-feed",
+                                "Video recording",
+                                "Videos",
+                                "History of video",
+                                "Vedio",
+                                "Line",
+                                "Video cables",
+                                "History of video technology",
+                                "Videofeed",
+                                "Video formats",
+                                "Video Recording",
+                                "Video engineering",
+                                "Motion video"
+                            ],
+                            "uriSent": "Video",
+                            "wikipediaId": "32441",
+                            "id": "Q34508",
+                            "label": "video recording"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Public Switched Telephone Network",
+                                "North American Public Switched Telephone Network",
+                                "Switched Circuit Network",
+                                "International telephone network",
+                                "General Switched Telephone Network",
+                                "Public telephone network",
+                                "Circuit-switched telephone network",
+                                "Plain Old Telephone System",
+                                "Office classification",
+                                "Public switched network",
+                                "public switched telephone network",
+                                "PSTN",
+                                "PTSN",
+                                "Public Switched Telephone network",
+                                "Pstn",
+                                "Switched circuit network",
+                                "Global telephone network",
+                                "Generalised switched telephone network"
+                            ],
+                            "uriSent": "Public_switched_telephone_network",
+                            "wikipediaId": "468436",
+                            "id": "Q243961",
+                            "label": "public switched telephone network"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "GTP-U",
+                                "Packet Switched Core Network",
+                                "SGSN",
+                                "GPRS Gateway Support Node",
+                                "Gateway GPRS Support Node",
+                                "Serving GPRS Support Node",
+                                "PDP context",
+                                "Packet Data Protocol",
+                                "GPRS core network",
+                                "PDP Context",
+                                "GGSN",
+                                "GPRS Core Network",
+                                "Serving GPRS support node"
+                            ],
+                            "uriSent": "GPRS_core_network",
+                            "wikipediaId": "658203",
+                            "id": "Q2642473",
+                            "label": "GPRS core network"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Test Messaging",
+                                "SMS chat",
+                                "Mobile messaging",
+                                "PSMS",
+                                "Short message service",
+                                "Short message service\"",
+                                "SMS text message",
+                                "SMs",
+                                "Phone text message",
+                                "Premium rate SMS",
+                                "2 way SMS",
+                                "SMS message",
+                                "Premium SMS",
+                                "Short Message Services",
+                                "Short messaging",
+                                "Short messaging service",
+                                "Short Messaging Service",
+                                "SMS text-messaging",
+                                "Short message system",
+                                "SMS-MO",
+                                "MOSMS",
+                                "SMS Message",
+                                "SMS",
+                                "Short Message Service",
+                                "Sms"
+                            ],
+                            "uriSent": "Short_message_service",
+                            "wikipediaId": "28207",
+                            "id": "Q43024",
+                            "label": "SMS"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "CEIR",
+                                "Central Equipment Identity Register",
+                                "EIR"
+                            ],
+                            "uriSent": "Central_Equipment_Identity_Register",
+                            "wikipediaId": "10733467",
+                            "id": "Q1347847",
+                            "label": "Central Equipment Identity Register"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Next Generation Network",
+                                "Next Generation Networks",
+                                "NGN",
+                                "ITU-T NGN",
+                                "Next generation network",
+                                "All IP",
+                                "Next Generation Networking",
+                                "ALL IP",
+                                "All-IP",
+                                "next-generation network",
+                                "Next generation networking"
+                            ],
+                            "uriSent": "Next-generation_network",
+                            "wikipediaId": "1876458",
+                            "id": "Q661020",
+                            "label": "next-generation network"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "GEA-2",
+                                "Global System For Mobile Communications",
+                                "Global System for Mobile communications",
+                                "SGSM",
+                                "GSM phone system",
+                                "Global System for Mobile",
+                                "GEA/1",
+                                "GEA/2",
+                                "GSM Gateway",
+                                "GEA-1",
+                                "Digital Communications System",
+                                "Extended Global System",
+                                "2G",
+                                "Mobile phone base station",
+                                "GSM 07.07",
+                                "Extended Global System for Mobile Communications",
+                                "GSM",
+                                "Gsm",
+                                "Mobile phone base stations",
+                                "GSM mobile phone base station",
+                                "Global System for Mobile Communication",
+                                "Global System for Mobile Communications",
+                                "Groupe Spécial Mobile",
+                                "Global system for mobile communications",
+                                "History of GSM",
+                                "GSM network",
+                                "Groupe Special Mobile",
+                                "Global system for mobile cellular communications"
+                            ],
+                            "uriSent": "GSM",
+                            "wikipediaId": "12808",
+                            "id": "Q46904",
+                            "label": "Global System for Mobile Communications"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Traffic access point",
+                                "Communications Assistance for Law Enforcement Act",
+                                "Communications assistance for law enforcement act",
+                                "Traffic Access Point",
+                                "Communications Assistance For Law Enforcement Act"
+                            ],
+                            "uriSent": "Communications_Assistance_for_Law_Enforcement_Act",
+                            "wikipediaId": "530413",
+                            "id": "Q5154160",
+                            "label": "Communications Assistance for Law Enforcement Act"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "3G shutdown in Maryland",
+                                "3GSP",
+                                "3rd-Generation",
+                                "Evolution to 3G",
+                                "3G cellular",
+                                "3G cellular network",
+                                "3G Mobile Service Provider",
+                                "3gphones",
+                                "3G networking",
+                                "3g phone",
+                                "Video mobile",
+                                "3G phones",
+                                "3rd Generation",
+                                "International Mobile Telecommunications-2000",
+                                "3G network",
+                                "3G shutdown",
+                                "3G technology",
+                                "Pre-4G",
+                                "3gphone",
+                                "3G Canada",
+                                "3G mobile",
+                                "3G wireless",
+                                "Evolution to 3g",
+                                "IMT2000",
+                                "3G phone",
+                                "2G evolution",
+                                "3G cellular networks",
+                                "3G",
+                                "3G networks",
+                                "2G transitional"
+                            ],
+                            "uriSent": "3G",
+                            "wikipediaId": "282450",
+                            "id": "Q79692",
+                            "label": "3G"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Short Message Service Center",
+                                "Short Message Service Centres",
+                                "Short message service center",
+                                "Short Message Service center",
+                                "SMS C",
+                                "Short message service centre",
+                                "SMS-C",
+                                "SMSC",
+                                "Short Message Service Centre"
+                            ],
+                            "uriSent": "Short_Message_service_center",
+                            "wikipediaId": "2601173",
+                            "id": "Q2067024",
+                            "label": "Short Message Service Center"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "UMTS Terrestrial Radio Access Network",
+                                "Universal Mobile Telecommunications System Terrestrial Radio Access Network",
+                                "UTRAN",
+                                "UMTS TRA",
+                                "UMTS Terrestrial Radio Access"
+                            ],
+                            "uriSent": "UTRAN",
+                            "wikipediaId": "2239953",
+                            "id": "Q283455",
+                            "label": "UMTS Terrestrial Radio Access Network"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Base-station subsystem",
+                                "Base Station Subsystem",
+                                "base station subsystem",
+                                "BSS",
+                                "Base Transciever Station",
+                                "Base station controller",
+                                "Abis",
+                                "Packet control unit",
+                                "Base Station subsystem",
+                                "Packet Control Unit",
+                                "Base Station Controller"
+                            ],
+                            "uriSent": "Base_Station_Subsystem",
+                            "wikipediaId": "672137",
+                            "id": "Q809834",
+                            "label": "base station subsystem"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Public Land Mobile Network",
+                                "PLMN"
+                            ],
+                            "uriSent": "Public_Land_Mobile_Network",
+                            "wikipediaId": "41598",
+                            "id": "Q915808",
+                            "label": "Public Land Mobile Network"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "GTP-U",
+                                "Packet Switched Core Network",
+                                "SGSN",
+                                "GPRS Gateway Support Node",
+                                "Gateway GPRS Support Node",
+                                "Serving GPRS Support Node",
+                                "PDP context",
+                                "Packet Data Protocol",
+                                "GPRS core network",
+                                "PDP Context",
+                                "GGSN",
+                                "GPRS Core Network",
+                                "Serving GPRS support node"
+                            ],
+                            "uriSent": "SGSN",
+                            "wikipediaId": "658203",
+                            "id": "Q2642473",
+                            "label": "GPRS core network"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "3G transition",
+                                "2G wireless",
+                                "2G",
+                                "2g",
+                                "2.5G",
+                                "2,75G",
+                                "2.75G",
+                                "2,5G",
+                                "2G GSM",
+                                "2.5G wireless",
+                                "2-G",
+                                "2-g"
+                            ],
+                            "uriSent": "2G",
+                            "wikipediaId": "282460",
+                            "id": "Q845349",
+                            "label": "2G"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "handover",
+                                "Handoff",
+                                "Handover",
+                                "handoff"
+                            ],
+                            "uriSent": "Handover",
+                            "wikipediaId": "27313582",
+                            "id": "Q1414679",
+                            "label": "handover"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Mobile phone operators",
+                                "carrier",
+                                "Mobile telecommunications company",
+                                "wireless provider",
+                                "mobile phone operator"
+                            ],
+                            "uriSent": "Mobile_phone_operator",
+                            "wikipediaId": "2381616",
+                            "id": "Q6887204",
+                            "label": "mobile phone operator"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Enterprise Cloud Computing",
+                                "Hybrid cloud",
+                                "Cloud Hosting",
+                                "Content Marketing Cloud",
+                                "Cloud distribution",
+                                "In the cloud",
+                                "Cloud hardware",
+                                "Cloud services provider",
+                                "Cloudware",
+                                "Cloud Infrastructure",
+                                "Online integration",
+                                "cloud",
+                                "Cloud architecture",
+                                "Cloud processing",
+                                "Cloud software",
+                                "Computing in the cloud",
+                                "Cloud Computing",
+                                "Cloud transformation",
+                                "Cross-Platform Hybrid Cloud",
+                                "Cloud networking",
+                                "Communication as a service",
+                                "Introduction to Cloud computing",
+                                "Cloud computer",
+                                "Could computing",
+                                "Online software",
+                                "Cloud users",
+                                "Cloud service provider",
+                                "Privacy implications of cloud computing",
+                                "Cloud vendors",
+                                "Computer cloud",
+                                "Cloud-hosted",
+                                "Cloud computing vendor",
+                                "Cloud service",
+                                "Cloud Provider Interface",
+                                "Computing cloud",
+                                "utility computing",
+                                "Cloudosphere",
+                                "Internet of Services",
+                                "Privacy concerns with cloud computing",
+                                "Cloud service models",
+                                "Cloud computing platforms",
+                                "Cloud-based",
+                                "Security vulnerabilities in cloud applications",
+                                "Cloud computing user",
+                                "Cloud vendor",
+                                "Privacy issues in cloud computing",
+                                "Cloud computing provider",
+                                "Cloud deployment models",
+                                "Cloud infrastructure",
+                                "Cloud computing platform",
+                                "Public Cloud",
+                                "Cloud technology",
+                                "Cloud services",
+                                "cloud computing",
+                                "Member Only Cloud",
+                                "Cloud provider",
+                                "Computing-in-the-cloud",
+                                "Cloud client",
+                                "Cloud clients",
+                                "Cloud Service",
+                                "Burst computing",
+                                "Cloud-computing",
+                                "Cloud standards",
+                                "Cloud Applications",
+                                "Private Cloud",
+                                "Cloud user",
+                                "Cloud Software",
+                                "Cloud Technology",
+                                "History of cloud computing",
+                                "IoT Cloud",
+                                "cloud platform",
+                                "EaaS",
+                                "Cloud-based computing",
+                                "Public cloud",
+                                "Cloud",
+                                "Private cloud",
+                                "Cloud hosting",
+                                "Hybrid Cloud"
+                            ],
+                            "uriSent": "Cloud_computing",
+                            "wikipediaId": "19541494",
+                            "id": "Q483639",
+                            "label": "cloud computing"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Public concern over the Internet",
+                                "Internet failure",
+                                "TheInternet",
+                                "The internet",
+                                "global Internet",
+                                "Interwebz",
+                                "Internet cutoff",
+                                "InterNet",
+                                "On the Internet",
+                                "Inter-Net",
+                                "The e-net",
+                                "Politics and the Internet",
+                                "the Net",
+                                "Cyber surfer",
+                                "Itnernet",
+                                "Public internet",
+                                "Significant Internet event",
+                                "Interwebs",
+                                "Inter web",
+                                "Cybersurfer",
+                                "Worldwide internet",
+                                "Inter webs",
+                                "Internet",
+                                "Public Internet",
+                                "Internet energy usage",
+                                "Inter-net",
+                                "Internet electricity use",
+                                "Interweb",
+                                "Intarwebs",
+                                "Intetnet",
+                                "The Internet",
+                                "Internet users",
+                                "Internet 1.0",
+                                "Internet loss",
+                                "Interpersonal computing",
+                                "Intrernet",
+                                "Political impact of the Internet",
+                                "Significant Internet events",
+                                "Online collaborative publishing",
+                                "Web vs. Internet",
+                                "Internett",
+                                "Inter Net",
+                                "Internet user",
+                                "INTERNET",
+                                "Intternett",
+                                "the Internet",
+                                "Internet disruption",
+                                "Net",
+                                "Inter net",
+                                "Internet performance"
+                            ],
+                            "uriSent": "Internet",
+                            "wikipediaId": "14539",
+                            "id": "Q75",
+                            "label": "Internet"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "International mobile subscriber identity",
+                                "IMSI",
+                                "E.212",
+                                "International Mobile Subscriber Identities",
+                                "International Mobile Subscriber Identity",
+                                "IMSI 334050155284370",
+                                "Jonathan Ulises Ramirez morales"
+                            ],
+                            "uriSent": "International_mobile_subscriber_identity",
+                            "wikipediaId": "105868",
+                            "id": "Q2218407",
+                            "label": "International mobile subscriber identity"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "CS",
+                                "Circuit-switching",
+                                "Circuit-switched network",
+                                "Circuit switched",
+                                "Circuit-switched",
+                                "Circuit switch",
+                                "Circuit transfer mode",
+                                "Circuit Switched",
+                                "circuit switching",
+                                "Circuit mode",
+                                "circuit switched",
+                                "Circuit switched network"
+                            ],
+                            "uriSent": "Circuit_switching",
+                            "wikipediaId": "40874",
+                            "id": "Q506273",
+                            "label": "circuit switching"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Phone switch",
+                                "Phone exchange",
+                                "Private Integrated Services Network",
+                                "Telephone Exchanges",
+                                "Public telephone exchange",
+                                "Central office switching",
+                                "NXX",
+                                "Automatic exchange",
+                                "Local exchanges",
+                                "Wire center",
+                                "TDM switch",
+                                "Wire centre",
+                                "telephone exchange",
+                                "Telephone switch",
+                                "Central Office Switching",
+                                "Central Offices",
+                                "Telephone exchanges",
+                                "Telephone switches",
+                                "Automatic telephony",
+                                "Telecom switch",
+                                "Switching facility",
+                                "Automatic telephone exchange",
+                                "Local telephone exchange",
+                                "Telephone switching",
+                                "Switching center",
+                                "ATE",
+                                "Central office",
+                                "telephone switch",
+                                "Telephone Exchange",
+                                "Digital switch",
+                                "Digital switching system",
+                                "Local exchange"
+                            ],
+                            "uriSent": "Telephone_exchange",
+                            "wikipediaId": "26668156",
+                            "id": "Q256132",
+                            "label": "telephone exchange"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "PCRF",
+                                "Policy charging and rules function",
+                                "Policy Charging and Rules Function"
+                            ],
+                            "uriSent": "Policy_and_charging_rules_function",
+                            "wikipediaId": "27815296",
+                            "id": "Q2101282",
+                            "label": "Policy charging and rules function"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Voice Messaging",
+                                "Voice mail box",
+                                "voice-mail",
+                                "telephone answer machine",
+                                "Messagebank",
+                                "voicemail system",
+                                "voice messaging",
+                                "*98",
+                                "Voice bank",
+                                "Voice mailbox",
+                                "Voice mail",
+                                "Voice-mail",
+                                "Voice messaging",
+                                "Phone mail",
+                                "voice mail system",
+                                "Voice Mail",
+                                "Voice Mail System",
+                                "voice mail",
+                                "voice bank",
+                                "message bank",
+                                "voicemail",
+                                "Voicemail mailbox",
+                                "voice message",
+                                "Voice message",
+                                "Message bank",
+                                "answering machine",
+                                "VM",
+                                "messagebank",
+                                "voice-messaging service",
+                                "voice mail box",
+                                "VMS",
+                                "voice messaging system"
+                            ],
+                            "uriSent": "Voicemail",
+                            "wikipediaId": "254867",
+                            "id": "Q2734312",
+                            "label": "voicemail"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Telephone cloning",
+                                "SIM card cloning",
+                                "Cloning",
+                                "phone cloning",
+                                "SIM cloning",
+                                "Wireless Telephone Protection Act of 1998"
+                            ],
+                            "uriSent": "SIM_cloning",
+                            "wikipediaId": "8580596",
+                            "id": "Q4224066",
+                            "label": "phone cloning"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Single-factor authentication",
+                                "Authenticated",
+                                "Product authentication",
+                                "Client authentication",
+                                "Server authentication",
+                                "Authentication factor",
+                                "Authenticated copy",
+                                "AuthN",
+                                "Authn",
+                                "Forgery detection",
+                                "Authentication factors",
+                                "Authenticates",
+                                "Authenticate",
+                                "Service authentication",
+                                "Continuous authentication",
+                                "Authentification",
+                                "Authentications",
+                                "Authenticating",
+                                "validation",
+                                "authentication"
+                            ],
+                            "uriSent": "Authentication",
+                            "wikipediaId": "47967",
+                            "id": "Q212108",
+                            "label": "authentication"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "imsi catcher",
+                                "mobile station",
+                                "Mobile Station"
+                            ],
+                            "uriSent": "Mobile_station",
+                            "wikipediaId": "1186795",
+                            "id": "Q384018",
+                            "label": "mobile station"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Mobile application part",
+                                "Mobile Application Part"
+                            ],
+                            "uriSent": "Mobile_Application_Part",
+                            "wikipediaId": "2768452",
+                            "id": "Q4863657",
+                            "label": "Mobile Application Part"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Airborne sound",
+                                "Acoustic Radiation",
+                                "Sound waves",
+                                "Auditory Range",
+                                "Sonida",
+                                "Acoustic energy",
+                                "Auditory range",
+                                "sound",
+                                "Sound duration",
+                                "acoustic vibration",
+                                "Sounds",
+                                "Characteristics of sound",
+                                "Sound propagation",
+                                "Radiation of sound",
+                                "acoustic oscillation",
+                                "Duration of sound",
+                                "Sound wave"
+                            ],
+                            "uriSent": "Sound",
+                            "wikipediaId": "18994087",
+                            "id": "Q11461",
+                            "label": "sound"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "*Hash06Hash",
+                                "IMIE",
+                                "StarHash06Hash",
+                                "IMEISV",
+                                "International Mobile Equipment Identity",
+                                "* Hash 0 6 Hash",
+                                "IMEI",
+                                "IMIE number",
+                                "Imei",
+                                "International Mobile Station Equipment Identity",
+                                "IMEI number",
+                                "International mobile equipment identity",
+                                "Star Hash 06 Hash"
+                            ],
+                            "uriSent": "International_Mobile_Equipment_Identity",
+                            "wikipediaId": "418118",
+                            "id": "Q334832",
+                            "label": "International Mobile Equipment Identity"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Voice Messaging",
+                                "Voice mail box",
+                                "voice-mail",
+                                "telephone answer machine",
+                                "Messagebank",
+                                "voicemail system",
+                                "voice messaging",
+                                "*98",
+                                "Voice bank",
+                                "Voice mailbox",
+                                "Voice mail",
+                                "Voice-mail",
+                                "Voice messaging",
+                                "Phone mail",
+                                "voice mail system",
+                                "Voice Mail",
+                                "Voice Mail System",
+                                "voice mail",
+                                "voice bank",
+                                "message bank",
+                                "voicemail",
+                                "Voicemail mailbox",
+                                "voice message",
+                                "Voice message",
+                                "Message bank",
+                                "answering machine",
+                                "VM",
+                                "messagebank",
+                                "voice-messaging service",
+                                "voice mail box",
+                                "VMS",
+                                "voice messaging system"
+                            ],
+                            "uriSent": "Voice_mail",
+                            "wikipediaId": "254867",
+                            "id": "Q2734312",
+                            "label": "voicemail"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "MicroSIM",
+                                "Nano-SIM",
+                                "ID-1 SIM card",
+                                "Integrated Circuit Card ID",
+                                "Plug-in SIM card",
+                                "SIM Card",
+                                "subscriber identity module",
+                                "NanoSIM",
+                                "Subscriber identification module",
+                                "Full-size SIM",
+                                "International SIM card",
+                                "MFF SIM chip",
+                                "SIM Serial Number",
+                                "SIM card holder",
+                                "Sim only",
+                                "SIM card formats",
+                                "Virtual sim",
+                                "Micro SIM",
+                                "Micro Sim",
+                                "SIM card tray",
+                                "Universal Subscriber Identity Module",
+                                "2FF SIM card",
+                                "ID-1/000 SIM card",
+                                "ICC-ID",
+                                "M2M Identification Module",
+                                "Full-size SIM card",
+                                "Embedded SIM chip",
+                                "SIM card",
+                                "1FF SIM",
+                                "Mini-UICC",
+                                "Electronic SIM",
+                                "3FF SIM card",
+                                "4FF card",
+                                "4FF SIM",
+                                "SIM card reader",
+                                "MFF chip",
+                                "Plug-in SIM",
+                                "Universal Identity Module",
+                                "2FF card",
+                                "SIM sizes",
+                                "Embedded-SIM chip",
+                                "1FF",
+                                "GSM SIM",
+                                "3FF",
+                                "Sim number",
+                                "Virtual SIM",
+                                "SIM",
+                                "Sim card",
+                                "UIM",
+                                "Micro-SIM",
+                                "Universal subscriber identity module",
+                                "Mini SIM",
+                                "ID-000 SIM card",
+                                "ID-1/000 SIM",
+                                "User Identity Module",
+                                "1FF SIM card",
+                                "SIM card format",
+                                "4FF SIM card",
+                                "Subscriber identity module",
+                                "SIM cardreader",
+                                "SIM card-reader",
+                                "Simcard",
+                                "MiniSIM",
+                                "MFF",
+                                "SIM size",
+                                "SIM-card",
+                                "Micro-SIM-adapter",
+                                "Nano SIM",
+                                "SIM card-holder",
+                                "Overlay SIM",
+                                "Subscriber Identity Module Card",
+                                "Mini-SIM",
+                                "SIM cards",
+                                "2FF SIM",
+                                "Subscriber Identity Module",
+                                "SIM cardholder",
+                                "ICCID",
+                                "USIM",
+                                "Thin SIM",
+                                "3FF card",
+                                "SIM chip",
+                                "1FF card",
+                                "ID-000 SIM",
+                                "SIM only",
+                                "3FF SIM",
+                                "2FF",
+                                "4FF",
+                                "subscriber identification module",
+                                "User identity module",
+                                "SIM tray",
+                                "MFF SIM",
+                                "3ff-plug-in",
+                                "SIM number",
+                                "SIM card sizes",
+                                "ID-1 SIM"
+                            ],
+                            "uriSent": "SIM_card",
+                            "wikipediaId": "197489",
+                            "id": "Q230110",
+                            "label": "SIM card"
+                        }
+                    }
+                ],
+                "technologyExecution": {
+                    "beginDate": "2024-01-17T13:10:06.206399",
+                    "endDate": "2024-01-17T13:10:07.416563"
+                },
+                "technology": {
+                    "name": "WikiLink Alias",
+                    "company": "Orange",
+                    "id": "wikilink_alias",
+                    "type": "link",
+                    "version": "Unknown"
+                }
+            }
+        ]
+    }
+}

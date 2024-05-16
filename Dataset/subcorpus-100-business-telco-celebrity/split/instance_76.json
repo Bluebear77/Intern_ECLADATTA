@@ -1,0 +1,2711 @@
+{
+    "_index": "corpus_doc_telco100_en",
+    "_id": "5426470",
+    "_source": {
+        "identificationMetadata": {
+            "id": "5426470",
+            "title": "SMS gateway",
+            "url": [
+                "https://en.wikipedia.org/?curid=5426470",
+                "https://en.wikipedia.org/wiki/SMS gateway"
+            ],
+            "version": 1162048952,
+            "versionDate": "2023-06-26T18:05:18Z",
+            "hash": "e26c5679b88ed60e0f8bc526ce643eac",
+            "wikidata": "Q2006602"
+        },
+        "descriptionMetadata": {
+            "categories": [
+                "Articles with short description",
+                "Short description is different from Wikidata",
+                "Articles needing additional references from February 2008",
+                "All articles needing additional references",
+                "Wikipedia articles that are too technical from May 2008",
+                "All articles that are too technical",
+                "Articles with multiple maintenance issues",
+                "Mobile telecommunications",
+                "Text messaging"
+            ],
+            "language": "en",
+            "source": "wikipedia"
+        },
+        "contentMetadata": {
+            "format": "wikitext",
+            "content": "{{Short description|Software to send or receive text messages}}\n\n{{multiple issues|\n{{Refimprove|date=February 2008}}\n{{Technical|date=May 2008}}\n}}\n\nAn '''SMS gateway''' or '''MMS gateway''' allows a computer (also known as a Server) to send or receive text messages in the form of [[Short Message Service]] (SMS) or [[Multimedia Messaging Service]] (MMS) transmissions between local and/or international telecommunications networks. In most cases, SMS and MMS are eventually routed to a [[Mobile phones|mobile phone]] through a wireless carrier. SMS gateways are commonly used as a method for person-to-person to device-to-person (also known as application-to-person) communications. Many SMS gateways support content and media conversions from [[email]], push, voice, and other formats.\n\n==Gateway types==\nSeveral mobile telephone network operators have true fixed-wire SMS services. These are based on extensions to the [[European Telecommunications Standards Institute]] (ETSI) [[Global System for Mobile Communications]] (GSM) SMS standards and allow messaging between any mix of fixed and mobile equipment. These use [[frequency-shift keying]] to transfer the message between the terminal and the [[Short Message Service Center]] (SMSC). Terminals are usually based on [[Digital Enhanced Cordless Telecommunications]] (DECT), but wired handsets and wired text-only (no voice) devices exist.  Messages are received by the terminal recognising that the [[Caller ID]] is that of the SMSC and going off-hook silently to receive the message.\n\n==Implementations==\n\n===GSM gateway appliance===\nA direct-to-mobile gateway is a device that has built-in wireless GSM connectivity. It allows SMS text messages to be sent and/or received by email, from Web pages or from other software applications by acquiring a unique identifier from the mobile phone's [[Subscriber identity module|Subscriber Identity Module]], or \"SIM card\". Direct-to-mobile gateways are different from SMS aggregators because they are installed on an organization's own network and connect to a local mobile network.\n\nThe connection to the mobile network is made by acquiring a SIM card number from the mobile operator and installing it in the gateway. Typically, direct-to-mobile gateway appliances are used for hundreds to thousands of text messages per month. More modern appliances now offer the capability of sending up to 100,000 messages each day. Several vendors that have historically provided GSM Gateway equipment for voice also have SMS capability. Some are more primitive than others. The more capable devices are designed with SIM management to regulate the number of SMS messages per SIM, ODBC to connect to a database, and HTTP interfaces to interact with third-party applications.\n\n====Regulation====\nGSM gateway equipment is covered by the [[Wireless Telegraphy Acts|Wireless Telegraphy Act]] in the UK and can legally be used by any business to send SMS to their own customers or prospects when using their own gateway equipment. In Canada, SMS gateway providers are regulated by the Canadian Wireless Telecommunications Association (CWTA/txt.ca).\nIn India, it is regulated by the [[Telecom Regulatory Authority of India]] (TRAI).\nIn Pakistan, it is regulated by the [[Pakistan Telecommunication Authority]](PTA).\n\n===Direct-to-SMSC===\nA direct-to-[[short message service centre]] (SMSC) gateway is a software application, or a component within a software application, that connects directly to a mobile operator's SMSC via the Internet or direct leased line connections. The [[Short Message Peer-to-Peer]] (SMPP) protocol is typically used to convey SMS between an application and the SMSC. Direct-to-SMSC gateways are used by SMS aggregators to provide SMS services to their clients and large businesses who can justify such use. They are typically employed for high volume messaging and require a contract directly with a mobile operator.\n\n===Direct-to-SMS gateway===\nAn SMS gateway typically sits between the end-user who needs to send/receive SMS and a mobile network's SMSC. Such gateways provide their customers with a choice of protocols, including HTTP, SMTP, [[Short Message Peer-to-Peer]] and Web Services. Providers of SMS gateway services include SMS aggregators and mobile operators. SMS gateways are also available as part of messaging services such as AOL, ICQ and others.\n\nIn order to send/receive messages with mobile subscribers, an SMS gateway connects with (i) mobile network SMSCs and/or (ii) other SMS gateways. It is, therefore, possible that an SMS gateway has a combination of connections with mobile network SMSCs and connections with other SMS gateways in order to provide its services. However, there is an increasing potential for delivery problems with SMS with increasing number of SMS gateways in the delivery chain.\n\n==Email clients==\nText messages can be sent from a personal computer to mobile devices via an SMS gateway or [[Multimedia Messaging Service]] (MMS) gateway, using the most popular [[email client]] programs, such as Outlook, Thunderbird, and so on.  The messages must be sent in [[ASCII]] \"text-only\" mode.  If they are sent in HTML mode or using non-ASCII characters, they will most likely appear as nonsense on the recipient's mobile telephone.\n\nBefore the message can be sent, one must determine the domain of the mobile carrier's SMS gateway.  For example, if one wants to send a message to a mobile telephone in the United States serviced by AT&T, and the telephone number is +1 415-123-4567, the email would be addressed as\n\n<div align=\"center\"><code>4151234567@txt.att.net</code></div>\n\nTo determine the SMS gateway domain, ''e.g.'', <code>txt.att.net</code>, may require research - but most users know who their carrier is.  The telephone number in this example for a US number is expressed as ten (10) digits, without the country code (1) and without dashes or other separator characters when composing the email address.  The country code is not needed, as the 10-digit telephone number, together with the email domain, are sufficient to send the email from any location in the world.\n\nIt is useful to perform a character count before sending the message to ensure that it is within the 160-character limit.  If it exceeds the limit, the SMS gateway should break the message into a set of consecutive 160-character, or shorter, messages to the mobile equipment, although breaks may occur in the middle of words.\n\nA message sent with an email client can be simultaneously addressed to multiple mobile telephones - just as text messages sent in the usual manner between mobile telephones can be sent to multiple recipients.\n\n{{anchor|gateways}}\nSMS gateway domains for other carriers (US-based):\n{| class=\"wikitable\"\n! Mobile carrier\n! SMS gateway domain\n! MMS gateway domain\n|-\n! [[Alltel]]<ref name=\"Pot2016\">{{cite web|url=http://www.digitaltrends.com/computing/how-to-send-free-text-messages-online/2/|title=How to send free text messages from your PC: Send texts via your email client|work=Digital Trends|date=February 3, 2016|page=2|archive-url=https://web.archive.org/web/20160205022939/http://www.digitaltrends.com/computing/how-to-send-free-text-messages-online/2/|archive-date=February 5, 2016|url-status=live|first=Justin|last=Pot|via=Tara&nbsp;Calishain}}</ref>\n| sms.alltelwireless.com\n| mms.alltelwireless.com\n|-\n! [[AT&T Mobility|AT&T]]<ref name=\"ATT\">{{cite web|title=Register for email-to-text message preferences|url=https://www.att.com/esupport/ref/showarticle.jsp?appId=mycsp&sid=KB92125|publisher=AT&T|archive-date=February 5, 2016|url-status=live|archive-url=https://web.archive.org/web/20160205015428/http://www.att.com/esupport/ref/showarticle.jsp?appId=mycsp&sid=KB92125}}</ref>\n| txt.att.net\n| mms.att.net\n|-\n! [[Boost Mobile (United States)|Boost Mobile]]<ref name=\"Pot2016\"/>\n| sms.myboostmobile.com\n| myboostmobile.com\n|-\n![[Consumer Cellular]]<ref name=\":0\">{{Cite web |title=Sending emails to SMS or MMS |url=https://help.inteliquent.com/sending-emails-to-sms-or-mms |access-date=2023-01-10 |website=help.inteliquent.com |language=en}}</ref>\n|mailmymobile.net\n|mailmymobile.net\n|-\n! [[Cricket Wireless]]\n|mms.cricketwireless.net\n| mms.cricketwireless.net<ref>{{cite web | url=https://community.cricketwireless.com/service-features-13/email-to-sms-gateway-address-1089 | title=Email to SMS gateway address &#124; Community | date=9 October 2018 }}</ref>\n|-\n![[Google Fi Wireless]]<ref name=\"Esparza2016\">{{cite web|url=https://productforums.google.com/forum/#!topic/project-fi/_1wI6z2GXQk|title={{bracket|Launch}} Send and receive emails over text message|last=Esparza|first=Jordan|date=February 10, 2016|access-date=February 17, 2016|work=Project&nbsp;Fi Help Forum|quote=To get emails&nbsp;... have them sent to your {{bracket|ten‑}}digit&nbsp;Fi&nbsp;number at <code>msg.fi.google.com</code>.... You can receive text messages as well as attachments, including images, video, and audio files up to 8MB in size.}}</ref>\n| msg.fi.google.com\n| msg.fi.google.com\n|-\n! [[MetroPCS]]\n| mymetropcs.com\n| mymetropcs.com\n|-\n! [[Republic Wireless]]<ref>{{Cite news|url=https://pwk.republicwireless.com/announcing-email-to-sms-for-your-phone/|title=Announcing Email to SMS for Your Phone! {{!}} Republic Blog|date=2015-09-24|work=Republic Blog|access-date=2018-03-19|language=en-US}}</ref>\n| text.republicwireless.com\n| \n|-\n! [[Sprint Corporation|Sprint]]<ref name=\"Pot2016\"/>\n| messaging.sprintpcs.com\n| pm.sprint.com\n|-\n! [[T-Mobile International AG|T-Mobile]]<ref name=\"Pot2016\"/>\n| tmomail.net\n| tmomail.net\n|-\n![[Ting Mobile|Ting]]<ref name=\":0\" />\n|message.ting.com\n|\n|-\n! [[U.S. Cellular]]<ref name=\"Pot2016\"/>\n|email.uscc.net\n| mms.uscc.net\n|-\n! [[Verizon Wireless]]<ref name=\"Verizon\">{{cite web|title=Vtext.com FAQs &#124; Verizon Wireless|url=http://www.verizonwireless.com/support/vtext-website-faqs/|website=www.verizonwireless.com|access-date=23 October 2015}}</ref>\n| vtext.com\n| vzwpix.com\n|-\n! [[Virgin Mobile]]<ref name=\"Pot2016\"/>\n| vmobl.com\n| vmpix.com\n|-\n![[Xfinity#Xfinity Mobile|XFinity Mobile]]<ref name=\":0\" />\n|vtext.com\n|mypixmessages.com\n|}\n\nSMS gateway domains for Canadian carriers:\n\n{| class=\"wikitable\"\n|-\n! Mobile carrier !! SMS gateway domain\n|-\n! [[Bell Canada]]<ref name=\"Bell1\">{{cite web |title=What is text messaging and how do I use it? |url=https://support.bell.ca/Mobility/Rate_plans_features/What_is_text_messaging_and_how_to_use_it?step=4#displayStep |website=Bell |access-date=19 July 2018}}</ref>\n| txt.bell.ca \n|-\n! [[Bell MTS]]<ref name=\"BellMTS1\">{{cite web |title=Text Messaging Instructions |url=https://www3.bellmts.ca/mts/support/wireless/features/text+messaging+instructions |website=BellMTS |access-date=19 July 2018}}</ref>\n| text.mts.net \n|-\n! [[Fido Solutions]]<ref name=\"Fido1\">{{cite web |title=Email to Text Messaging |url=https://www.fido.ca/consumer/content/email-to-text |website=Fido |access-date=8 August 2018}}</ref>\n| fido.ca\n|-\n! [[Freedom Mobile]]<ref name=\"Freedom1\">{{cite web |title=What is email to text? |url=https://www.freedommobile.ca/my-account/support/services/lists/products-services/what-is-email-to-text |website=Freedom Mobile |access-date=8 August 2018}}</ref>\n| txt.freedommobile.ca\n|-\n! [[Koodo Mobile]]<ref name=\"Koodo1\">{{cite web |title=Email to Text |url=https://community.koodomobile.com/koodo/topics/email_to_text-ig2y4 |website=community.koodomobile.com |access-date=8 August 2018}}</ref>\n| msg.telus.com\n|-\n! [[PC Mobile]]<ref name=\"PcMobile1\">{{cite web |title=How Do I ...? |url=https://www.pcmobile.ca/support_topic.jsp?topic=700004i |website=PC Mobile |access-date=8 August 2018}}</ref>\n| mobiletxt.ca\n|-\n! [[Rogers Communications]]<ref name=\"Rogers1\">{{cite web |title=Email to SMS - Set Up Email to Text on Your Phone |url=https://www.rogers.com/customer/support/article/set-up-email-to-text |website=Rogers |access-date=19 July 2018}}</ref>\n| pcs.rogers.com \n|-\n! [[SaskTel]]<ref name=\"SaskTel1\">{{cite web |title=Sending an email message using text messaging |url=https://support.sasktel.com/app/answers/detail/a_id/10675/~/sending-an-email-message-using-text-messaging |website=SaskTel |access-date=19 July 2018}}</ref>\n| sms.sasktel.com \n|-\n! [[Telus]]<ref name=\"Telus1\">{{cite web|url=http://www.telus.com:80/en/on/support/article/send-a-text-message-by-email|archive-url=https://web.archive.org/web/20161110202514/http://www.telus.com:80/en/on/support/article/send-a-text-message-by-email|url-status=dead|archive-date=10 November 2016|title=Send a text message by email|website=Telus|access-date=19 July 2018}}</ref>\n| msg.telus.com\n|}\n\n==SMS gateway features ==\nThere are several applications for SMS gateways, including:\n* Bulk/mass SMS messaging communications commonly used for customer care to marketing campaigns\n* Two-way SMS messaging, designed for the exchange of messages from clients to a customer portal\n* To enable the development of an SMS widget for newsletters and updates\n* API allowing systems to integrate with 3rd party systems including common CRM, e-commerce, ERP, and internal platforms\n*For multi-factor authentication or two-factor authentication using SMS as a channel for delivering one-time-passwords (OTPs)\n\n==See also==\n* [[Kannel (telecommunications)]]\n* [[Videoconferencing]]\n* [[Voice over IP]]\n\n==References==\n{{reflist|30em}}\n[[Category:Mobile telecommunications]]\n[[Category:Text messaging]]",
+            "text": "An SMS gateway or MMS gateway allows a computer (also known as a Server) to send or receive text messages in the form of Short Message Service (SMS) or Multimedia Messaging Service (MMS) transmissions between local and/or international telecommunications networks. In most cases, SMS and MMS are eventually routed to a mobile phone through a wireless carrier. SMS gateways are commonly used as a method for person-to-person to device-to-person (also known as application-to-person) communications. Many SMS gateways support content and media conversions from email, push, voice, and other formats. Several mobile telephone network operators have true fixed-wire SMS services. These are based on extensions to the European Telecommunications Standards Institute (ETSI) Global System for Mobile Communications (GSM) SMS standards and allow messaging between any mix of fixed and mobile equipment. These use frequency-shift keying to transfer the message between the terminal and the Short Message Service Center (SMSC). Terminals are usually based on Digital Enhanced Cordless Telecommunications (DECT), but wired handsets and wired text-only (no voice) devices exist. Messages are received by the terminal recognising that the Caller ID is that of the SMSC and going off-hook silently to receive the message. A direct-to-mobile gateway is a device that has built-in wireless GSM connectivity. It allows SMS text messages to be sent and/or received by email, from Web pages or from other software applications by acquiring a unique identifier from the mobile phone's Subscriber Identity Module, or \"SIM card\". Direct-to-mobile gateways are different from SMS aggregators because they are installed on an organization's own network and connect to a local mobile network. The connection to the mobile network is made by acquiring a SIM card number from the mobile operator and installing it in the gateway. Typically, direct-to-mobile gateway appliances are used for hundreds to thousands of text messages per month. More modern appliances now offer the capability of sending up to 100,000 messages each day. Several vendors that have historically provided GSM Gateway equipment for voice also have SMS capability. Some are more primitive than others. The more capable devices are designed with SIM management to regulate the number of SMS messages per SIM, ODBC to connect to a database, and HTTP interfaces to interact with third-party applications. GSM gateway equipment is covered by the Wireless Telegraphy Act in the UK and can legally be used by any business to send SMS to their own customers or prospects when using their own gateway equipment. In Canada, SMS gateway providers are regulated by the Canadian Wireless Telecommunications Association (CWTA/txt.ca). In India, it is regulated by the Telecom Regulatory Authority of India (TRAI). In Pakistan, it is regulated by the Pakistan Telecommunication Authority(PTA). A direct-to-short message service centre (SMSC) gateway is a software application, or a component within a software application, that connects directly to a mobile operator's SMSC via the Internet or direct leased line connections. The Short Message Peer-to-Peer (SMPP) protocol is typically used to convey SMS between an application and the SMSC. Direct-to-SMSC gateways are used by SMS aggregators to provide SMS services to their clients and large businesses who can justify such use. They are typically employed for high volume messaging and require a contract directly with a mobile operator. An SMS gateway typically sits between the end-user who needs to send/receive SMS and a mobile network's SMSC. Such gateways provide their customers with a choice of protocols, including HTTP, SMTP, Short Message Peer-to-Peer and Web Services. Providers of SMS gateway services include SMS aggregators and mobile operators. SMS gateways are also available as part of messaging services such as AOL, ICQ and others. In order to send/receive messages with mobile subscribers, an SMS gateway connects with (i) mobile network SMSCs and/or (ii) other SMS gateways. It is, therefore, possible that an SMS gateway has a combination of connections with mobile network SMSCs and connections with other SMS gateways in order to provide its services. However, there is an increasing potential for delivery problems with SMS with increasing number of SMS gateways in the delivery chain. Text messages can be sent from a personal computer to mobile devices via an SMS gateway or Multimedia Messaging Service (MMS) gateway, using the most popular email client programs, such as Outlook, Thunderbird, and so on. The messages must be sent in ASCII \"text-only\" mode. If they are sent in HTML mode or using non-ASCII characters, they will most likely appear as nonsense on the recipient's mobile telephone. Before the message can be sent, one must determine the domain of the mobile carrier's SMS gateway. For example, if one wants to send a message to a mobile telephone in the United States serviced by AT&T, and the telephone number is +1 415-123-4567, the email would be addressed as 4151234567@txt.att.net To determine the SMS gateway domain, e.g., txt.att.net, may require research - but most users know who their carrier is. The telephone number in this example for a US number is expressed as ten (10) digits, without the country code (1) and without dashes or other separator characters when composing the email address. The country code is not needed, as the 10-digit telephone number, together with the email domain, are sufficient to send the email from any location in the world. It is useful to perform a character count before sending the message to ensure that it is within the 160-character limit. If it exceeds the limit, the SMS gateway should break the message into a set of consecutive 160-character, or shorter, messages to the mobile equipment, although breaks may occur in the middle of words. A message sent with an email client can be simultaneously addressed to multiple mobile telephones - just as text messages sent in the usual manner between mobile telephones can be sent to multiple recipients. SMS gateway domains for other carriers (US-based): SMS gateway domains for Canadian carriers: There are several applications for SMS gateways, including: Bulk/mass SMS messaging communications commonly used for customer care to marketing campaigns Two-way SMS messaging, designed for the exchange of messages from clients to a customer portal To enable the development of an SMS widget for newsletters and updates API allowing systems to integrate with 3rd party systems including common CRM, e-commerce, ERP, and internal platforms For multi-factor authentication or two-factor authentication using SMS as a channel for delivering one-time-passwords (OTPs) Kannel (telecommunications) Videoconferencing Voice over IP Pot, Justin (February 3, 2016). \"How to send free text messages from your PC: Send texts via your email client\". Digital Trends. p. 2. Archived from the original on February 5, 2016 – via Tara Calishain. \"Register for email-to-text message preferences\". AT&T. Archived from the original on February 5, 2016. \"Sending emails to SMS or MMS\". help.inteliquent.com. Retrieved 2023-01-10. \"Email to SMS gateway address | Community\". 9 October 2018. Esparza, Jordan (February 10, 2016). \"[Launch] Send and receive emails over text message\". Project Fi Help Forum. Retrieved February 17, 2016. To get emails ... have them sent to your [ten‑]digit Fi number at msg.fi.google.com.... You can receive text messages as well as attachments, including images, video, and audio files up to 8MB in size. \"Announcing Email to SMS for Your Phone! | Republic Blog\". Republic Blog. 2015-09-24. Retrieved 2018-03-19. \"Vtext.com FAQs | Verizon Wireless\". www.verizonwireless.com. Retrieved 23 October 2015. \"What is text messaging and how do I use it?\". Bell. Retrieved 19 July 2018. \"Text Messaging Instructions\". BellMTS. Retrieved 19 July 2018. \"Email to Text Messaging\". Fido. Retrieved 8 August 2018. \"What is email to text?\". Freedom Mobile. Retrieved 8 August 2018. \"Email to Text\". community.koodomobile.com. Retrieved 8 August 2018. \"How Do I ...?\". PC Mobile. Retrieved 8 August 2018. \"Email to SMS - Set Up Email to Text on Your Phone\". Rogers. Retrieved 19 July 2018. \"Sending an email message using text messaging\". SaskTel. Retrieved 19 July 2018. \"Send a text message by email\". Telus. Archived from the original on 10 November 2016. Retrieved 19 July 2018."
+        },
+        "collectMetadata": {
+            "requestedDate": "2023-10-16T00:00:00",
+            "ingestedDate": "2023-10-21T19:50:13.507665"
+        },
+        "extractionMetadata": [
+            {
+                "id": "WikitextExtractor",
+                "linkExtractionDate": "2023-10-21T19:50:13.511305",
+                "links": [
+                    {
+                        "fragment": null,
+                        "link": "Short_Message_Service",
+                        "text": null,
+                        "title": "Short Message Service"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Multimedia_Messaging_Service",
+                        "text": null,
+                        "title": "Multimedia Messaging Service"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_phones",
+                        "text": "mobile phone",
+                        "title": "Mobile phones"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Email",
+                        "text": null,
+                        "title": "email"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "European_Telecommunications_Standards_Institute",
+                        "text": null,
+                        "title": "European Telecommunications Standards Institute"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Global_System_for_Mobile_Communications",
+                        "text": null,
+                        "title": "Global System for Mobile Communications"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Frequency-shift_keying",
+                        "text": null,
+                        "title": "frequency-shift keying"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Short_Message_Service_Center",
+                        "text": null,
+                        "title": "Short Message Service Center"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Digital_Enhanced_Cordless_Telecommunications",
+                        "text": null,
+                        "title": "Digital Enhanced Cordless Telecommunications"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Caller_ID",
+                        "text": null,
+                        "title": "Caller ID"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Subscriber_identity_module",
+                        "text": "Subscriber Identity Module",
+                        "title": "Subscriber identity module"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Wireless_Telegraphy_Acts",
+                        "text": "Wireless Telegraphy Act",
+                        "title": "Wireless Telegraphy Acts"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Telecom_Regulatory_Authority_of_India",
+                        "text": null,
+                        "title": "Telecom Regulatory Authority of India"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Pakistan_Telecommunication_Authority",
+                        "text": null,
+                        "title": "Pakistan Telecommunication Authority"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Short_message_service_centre",
+                        "text": null,
+                        "title": "short message service centre"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Short_Message_Peer-to-Peer",
+                        "text": null,
+                        "title": "Short Message Peer-to-Peer"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Short_Message_Peer-to-Peer",
+                        "text": null,
+                        "title": "Short Message Peer-to-Peer"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Multimedia_Messaging_Service",
+                        "text": null,
+                        "title": "Multimedia Messaging Service"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Email_client",
+                        "text": null,
+                        "title": "email client"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "ASCII",
+                        "text": null,
+                        "title": "ASCII"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Alltel",
+                        "text": null,
+                        "title": "Alltel"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "AT&T_Mobility",
+                        "text": "AT&T",
+                        "title": "AT&T Mobility"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Boost_Mobile_(United_States)",
+                        "text": "Boost Mobile",
+                        "title": "Boost Mobile (United States)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Consumer_Cellular",
+                        "text": null,
+                        "title": "Consumer Cellular"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Cricket_Wireless",
+                        "text": null,
+                        "title": "Cricket Wireless"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Google_Fi_Wireless",
+                        "text": null,
+                        "title": "Google Fi Wireless"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "MetroPCS",
+                        "text": null,
+                        "title": "MetroPCS"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Republic_Wireless",
+                        "text": null,
+                        "title": "Republic Wireless"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Sprint_Corporation",
+                        "text": "Sprint",
+                        "title": "Sprint Corporation"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "T-Mobile_International_AG",
+                        "text": "T-Mobile",
+                        "title": "T-Mobile International AG"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Ting_Mobile",
+                        "text": "Ting",
+                        "title": "Ting Mobile"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "U.S._Cellular",
+                        "text": null,
+                        "title": "U.S. Cellular"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Verizon_Wireless",
+                        "text": null,
+                        "title": "Verizon Wireless"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Virgin_Mobile",
+                        "text": null,
+                        "title": "Virgin Mobile"
+                    },
+                    {
+                        "fragment": "Xfinity Mobile",
+                        "link": "Xfinity",
+                        "text": "XFinity Mobile",
+                        "title": "Xfinity"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Bell_Canada",
+                        "text": null,
+                        "title": "Bell Canada"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Bell_MTS",
+                        "text": null,
+                        "title": "Bell MTS"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Fido_Solutions",
+                        "text": null,
+                        "title": "Fido Solutions"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Freedom_Mobile",
+                        "text": null,
+                        "title": "Freedom Mobile"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Koodo_Mobile",
+                        "text": null,
+                        "title": "Koodo Mobile"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "PC_Mobile",
+                        "text": null,
+                        "title": "PC Mobile"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Rogers_Communications",
+                        "text": null,
+                        "title": "Rogers Communications"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "SaskTel",
+                        "text": null,
+                        "title": "SaskTel"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Telus",
+                        "text": null,
+                        "title": "Telus"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Kannel_(telecommunications)",
+                        "text": null,
+                        "title": "Kannel (telecommunications)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Videoconferencing",
+                        "text": null,
+                        "title": "Videoconferencing"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Voice_over_IP",
+                        "text": null,
+                        "title": "Voice over IP"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Mobile_telecommunications",
+                        "text": null,
+                        "title": "Category:Mobile telecommunications"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Text_messaging",
+                        "text": null,
+                        "title": "Category:Text messaging"
+                    }
+                ],
+                "nbLinks": 49,
+                "nbTables": 2,
+                "nbTexts": 11,
+                "tableExtractionDate": "2023-10-21T19:50:13.511305",
+                "tables": [
+                    {
+                        "endOffset": 10134,
+                        "startOffset": 6741,
+                        "tableCaption": null,
+                        "tableContent": "{| class=\"wikitable\"\n! Mobile carrier\n! SMS gateway domain\n! MMS gateway domain\n|-\n! [[Alltel]]<ref name=\"Pot2016\">{{cite web|url=http://www.digitaltrends.com/computing/how-to-send-free-text-messages-online/2/|title=How to send free text messages from your PC: Send texts via your email client|work=Digital Trends|date=February 3, 2016|page=2|archive-url=https://web.archive.org/web/20160205022939/http://www.digitaltrends.com/computing/how-to-send-free-text-messages-online/2/|archive-date=February 5, 2016|url-status=live|first=Justin|last=Pot|via=Tara&nbsp;Calishain}}</ref>\n| sms.alltelwireless.com\n| mms.alltelwireless.com\n|-\n! [[AT&T Mobility|AT&T]]<ref name=\"ATT\">{{cite web|title=Register for email-to-text message preferences|url=https://www.att.com/esupport/ref/showarticle.jsp?appId=mycsp&sid=KB92125|publisher=AT&T|archive-date=February 5, 2016|url-status=live|archive-url=https://web.archive.org/web/20160205015428/http://www.att.com/esupport/ref/showarticle.jsp?appId=mycsp&sid=KB92125}}</ref>\n| txt.att.net\n| mms.att.net\n|-\n! [[Boost Mobile (United States)|Boost Mobile]]<ref name=\"Pot2016\"/>\n| sms.myboostmobile.com\n| myboostmobile.com\n|-\n![[Consumer Cellular]]<ref name=\":0\">{{Cite web |title=Sending emails to SMS or MMS |url=https://help.inteliquent.com/sending-emails-to-sms-or-mms |access-date=2023-01-10 |website=help.inteliquent.com |language=en}}</ref>\n|mailmymobile.net\n|mailmymobile.net\n|-\n! [[Cricket Wireless]]\n|mms.cricketwireless.net\n| mms.cricketwireless.net<ref>{{cite web | url=https://community.cricketwireless.com/service-features-13/email-to-sms-gateway-address-1089 | title=Email to SMS gateway address &#124; Community | date=9 October 2018 }}</ref>\n|-\n![[Google Fi Wireless]]<ref name=\"Esparza2016\">{{cite web|url=https://productforums.google.com/forum/#!topic/project-fi/_1wI6z2GXQk|title={{bracket|Launch}} Send and receive emails over text message|last=Esparza|first=Jordan|date=February 10, 2016|access-date=February 17, 2016|work=Project&nbsp;Fi Help Forum|quote=To get emails&nbsp;... have them sent to your {{bracket|ten‑}}digit&nbsp;Fi&nbsp;number at <code>msg.fi.google.com</code>.... You can receive text messages as well as attachments, including images, video, and audio files up to 8MB in size.}}</ref>\n| msg.fi.google.com\n| msg.fi.google.com\n|-\n! [[MetroPCS]]\n| mymetropcs.com\n| mymetropcs.com\n|-\n! [[Republic Wireless]]<ref>{{Cite news|url=https://pwk.republicwireless.com/announcing-email-to-sms-for-your-phone/|title=Announcing Email to SMS for Your Phone! {{!}} Republic Blog|date=2015-09-24|work=Republic Blog|access-date=2018-03-19|language=en-US}}</ref>\n| text.republicwireless.com\n| \n|-\n! [[Sprint Corporation|Sprint]]<ref name=\"Pot2016\"/>\n| messaging.sprintpcs.com\n| pm.sprint.com\n|-\n! [[T-Mobile International AG|T-Mobile]]<ref name=\"Pot2016\"/>\n| tmomail.net\n| tmomail.net\n|-\n![[Ting Mobile|Ting]]<ref name=\":0\" />\n|message.ting.com\n|\n|-\n! [[U.S. Cellular]]<ref name=\"Pot2016\"/>\n|email.uscc.net\n| mms.uscc.net\n|-\n! [[Verizon Wireless]]<ref name=\"Verizon\">{{cite web|title=Vtext.com FAQs &#124; Verizon Wireless|url=http://www.verizonwireless.com/support/vtext-website-faqs/|website=www.verizonwireless.com|access-date=23 October 2015}}</ref>\n| vtext.com\n| vzwpix.com\n|-\n! [[Virgin Mobile]]<ref name=\"Pot2016\"/>\n| vmobl.com\n| vmpix.com\n|-\n![[Xfinity#Xfinity Mobile|XFinity Mobile]]<ref name=\":0\" />\n|vtext.com\n|mypixmessages.com\n|}",
+                        "tableData": [
+                            [
+                                "Mobile carrier",
+                                "SMS gateway domain",
+                                "MMS gateway domain"
+                            ],
+                            [
+                                "Alltel",
+                                "sms.alltelwireless.com",
+                                "mms.alltelwireless.com"
+                            ],
+                            [
+                                "AT&T",
+                                "txt.att.net",
+                                "mms.att.net"
+                            ],
+                            [
+                                "Boost Mobile",
+                                "sms.myboostmobile.com",
+                                "myboostmobile.com"
+                            ],
+                            [
+                                "Consumer Cellular",
+                                "mailmymobile.net",
+                                "mailmymobile.net"
+                            ],
+                            [
+                                "Cricket Wireless",
+                                "mms.cricketwireless.net",
+                                "mms.cricketwireless.net"
+                            ],
+                            [
+                                "Google Fi Wireless",
+                                "msg.fi.google.com",
+                                "msg.fi.google.com"
+                            ],
+                            [
+                                "MetroPCS",
+                                "mymetropcs.com",
+                                "mymetropcs.com"
+                            ],
+                            [
+                                "Republic Wireless",
+                                "text.republicwireless.com",
+                                ""
+                            ],
+                            [
+                                "Sprint",
+                                "messaging.sprintpcs.com",
+                                "pm.sprint.com"
+                            ],
+                            [
+                                "T-Mobile",
+                                "tmomail.net",
+                                "tmomail.net"
+                            ],
+                            [
+                                "Ting",
+                                "message.ting.com",
+                                ""
+                            ],
+                            [
+                                "U.S. Cellular",
+                                "email.uscc.net",
+                                "mms.uscc.net"
+                            ],
+                            [
+                                "Verizon Wireless",
+                                "vtext.com",
+                                "vzwpix.com"
+                            ],
+                            [
+                                "Virgin Mobile",
+                                "vmobl.com",
+                                "vmpix.com"
+                            ],
+                            [
+                                "XFinity Mobile",
+                                "vtext.com",
+                                "mypixmessages.com"
+                            ]
+                        ],
+                        "tableNum": 0
+                    },
+                    {
+                        "endOffset": 12608,
+                        "startOffset": 10180,
+                        "tableCaption": null,
+                        "tableContent": "{| class=\"wikitable\"\n|-\n! Mobile carrier !! SMS gateway domain\n|-\n! [[Bell Canada]]<ref name=\"Bell1\">{{cite web |title=What is text messaging and how do I use it? |url=https://support.bell.ca/Mobility/Rate_plans_features/What_is_text_messaging_and_how_to_use_it?step=4#displayStep |website=Bell |access-date=19 July 2018}}</ref>\n| txt.bell.ca \n|-\n! [[Bell MTS]]<ref name=\"BellMTS1\">{{cite web |title=Text Messaging Instructions |url=https://www3.bellmts.ca/mts/support/wireless/features/text+messaging+instructions |website=BellMTS |access-date=19 July 2018}}</ref>\n| text.mts.net \n|-\n! [[Fido Solutions]]<ref name=\"Fido1\">{{cite web |title=Email to Text Messaging |url=https://www.fido.ca/consumer/content/email-to-text |website=Fido |access-date=8 August 2018}}</ref>\n| fido.ca\n|-\n! [[Freedom Mobile]]<ref name=\"Freedom1\">{{cite web |title=What is email to text? |url=https://www.freedommobile.ca/my-account/support/services/lists/products-services/what-is-email-to-text |website=Freedom Mobile |access-date=8 August 2018}}</ref>\n| txt.freedommobile.ca\n|-\n! [[Koodo Mobile]]<ref name=\"Koodo1\">{{cite web |title=Email to Text |url=https://community.koodomobile.com/koodo/topics/email_to_text-ig2y4 |website=community.koodomobile.com |access-date=8 August 2018}}</ref>\n| msg.telus.com\n|-\n! [[PC Mobile]]<ref name=\"PcMobile1\">{{cite web |title=How Do I ...? |url=https://www.pcmobile.ca/support_topic.jsp?topic=700004i |website=PC Mobile |access-date=8 August 2018}}</ref>\n| mobiletxt.ca\n|-\n! [[Rogers Communications]]<ref name=\"Rogers1\">{{cite web |title=Email to SMS - Set Up Email to Text on Your Phone |url=https://www.rogers.com/customer/support/article/set-up-email-to-text |website=Rogers |access-date=19 July 2018}}</ref>\n| pcs.rogers.com \n|-\n! [[SaskTel]]<ref name=\"SaskTel1\">{{cite web |title=Sending an email message using text messaging |url=https://support.sasktel.com/app/answers/detail/a_id/10675/~/sending-an-email-message-using-text-messaging |website=SaskTel |access-date=19 July 2018}}</ref>\n| sms.sasktel.com \n|-\n! [[Telus]]<ref name=\"Telus1\">{{cite web|url=http://www.telus.com:80/en/on/support/article/send-a-text-message-by-email|archive-url=https://web.archive.org/web/20161110202514/http://www.telus.com:80/en/on/support/article/send-a-text-message-by-email|url-status=dead|archive-date=10 November 2016|title=Send a text message by email|website=Telus|access-date=19 July 2018}}</ref>\n| msg.telus.com\n|}",
+                        "tableData": [
+                            [
+                                "Mobile carrier",
+                                "SMS gateway domain"
+                            ],
+                            [
+                                "Bell Canada",
+                                "txt.bell.ca"
+                            ],
+                            [
+                                "Bell MTS",
+                                "text.mts.net"
+                            ],
+                            [
+                                "Fido Solutions",
+                                "fido.ca"
+                            ],
+                            [
+                                "Freedom Mobile",
+                                "txt.freedommobile.ca"
+                            ],
+                            [
+                                "Koodo Mobile",
+                                "msg.telus.com"
+                            ],
+                            [
+                                "PC Mobile",
+                                "mobiletxt.ca"
+                            ],
+                            [
+                                "Rogers Communications",
+                                "pcs.rogers.com"
+                            ],
+                            [
+                                "SaskTel",
+                                "sms.sasktel.com"
+                            ],
+                            [
+                                "Telus",
+                                "msg.telus.com"
+                            ]
+                        ],
+                        "tableNum": 1
+                    }
+                ],
+                "technology": "WikitextExtractor",
+                "textExtractionDate": "2023-10-21T19:50:13.511305",
+                "texts": [
+                    {
+                        "endOffset": 791,
+                        "index": 0,
+                        "level": 0,
+                        "startOffset": 0,
+                        "title": null,
+                        "value": "{{Short description|Software to send or receive text messages}}\n\n{{multiple issues|\n{{Refimprove|date=February 2008}}\n{{Technical|date=May 2008}}\n}}\n\nAn SMS gateway or MMS gateway allows a computer (also known as a Server) to send or receive text messages in the form of [[Short Message Service]] (SMS) or [[Multimedia Messaging Service]] (MMS) transmissions between local and/or international telecommunications networks. In most cases, SMS and MMS are eventually routed to a [[Mobile phones|mobile phone]] through a wireless carrier. SMS gateways are commonly used as a method for person-to-person to device-to-person (also known as application-to-person) communications. Many SMS gateways support content and media conversions from [[email]], push, voice, and other formats."
+                    },
+                    {
+                        "endOffset": 1545,
+                        "index": 1,
+                        "level": 2,
+                        "startOffset": 791,
+                        "title": "Gateway types",
+                        "value": "Several mobile telephone network operators have true fixed-wire SMS services. These are based on extensions to the [[European Telecommunications Standards Institute]] (ETSI) [[Global System for Mobile Communications]] (GSM) SMS standards and allow messaging between any mix of fixed and mobile equipment. These use [[frequency-shift keying]] to transfer the message between the terminal and the [[Short Message Service Center]] (SMSC). Terminals are usually based on [[Digital Enhanced Cordless Telecommunications]] (DECT), but wired handsets and wired text-only (no voice) devices exist.  Messages are received by the terminal recognising that the [[Caller ID]] is that of the SMSC and going off-hook silently to receive the message."
+                    },
+                    {
+                        "endOffset": 4838,
+                        "index": 2,
+                        "level": 2,
+                        "startOffset": 1545,
+                        "title": "Implementations",
+                        "value": ""
+                    },
+                    {
+                        "endOffset": 3302,
+                        "index": 3,
+                        "level": 3,
+                        "startOffset": 1566,
+                        "title": "GSM gateway appliance",
+                        "value": "A direct-to-mobile gateway is a device that has built-in wireless GSM connectivity. It allows SMS text messages to be sent and/or received by email, from Web pages or from other software applications by acquiring a unique identifier from the mobile phone's [[Subscriber identity module|Subscriber Identity Module]], or \"SIM card\". Direct-to-mobile gateways are different from SMS aggregators because they are installed on an organization's own network and connect to a local mobile network.\n\nThe connection to the mobile network is made by acquiring a SIM card number from the mobile operator and installing it in the gateway. Typically, direct-to-mobile gateway appliances are used for hundreds to thousands of text messages per month. More modern appliances now offer the capability of sending up to 100,000 messages each day. Several vendors that have historically provided GSM Gateway equipment for voice also have SMS capability. Some are more primitive than others. The more capable devices are designed with SIM management to regulate the number of SMS messages per SIM, ODBC to connect to a database, and HTTP interfaces to interact with third-party applications."
+                    },
+                    {
+                        "endOffset": 3302,
+                        "index": 4,
+                        "level": 4,
+                        "startOffset": 2767,
+                        "title": "Regulation",
+                        "value": "GSM gateway equipment is covered by the [[Wireless Telegraphy Acts|Wireless Telegraphy Act]] in the UK and can legally be used by any business to send SMS to their own customers or prospects when using their own gateway equipment. In Canada, SMS gateway providers are regulated by the Canadian Wireless Telecommunications Association (CWTA/txt.ca).\nIn India, it is regulated by the [[Telecom Regulatory Authority of India]] (TRAI).\nIn Pakistan, it is regulated by the [[Pakistan Telecommunication Authority]](PTA)."
+                    },
+                    {
+                        "endOffset": 3930,
+                        "index": 5,
+                        "level": 3,
+                        "startOffset": 3302,
+                        "title": "Direct-to-SMSC",
+                        "value": "A direct-to-[[short message service centre]] (SMSC) gateway is a software application, or a component within a software application, that connects directly to a mobile operator's SMSC via the Internet or direct leased line connections. The [[Short Message Peer-to-Peer]] (SMPP) protocol is typically used to convey SMS between an application and the SMSC. Direct-to-SMSC gateways are used by SMS aggregators to provide SMS services to their clients and large businesses who can justify such use. They are typically employed for high volume messaging and require a contract directly with a mobile operator."
+                    },
+                    {
+                        "endOffset": 4838,
+                        "index": 6,
+                        "level": 3,
+                        "startOffset": 3930,
+                        "title": "Direct-to-SMS gateway",
+                        "value": "An SMS gateway typically sits between the end-user who needs to send/receive SMS and a mobile network's SMSC. Such gateways provide their customers with a choice of protocols, including HTTP, SMTP, [[Short Message Peer-to-Peer]] and Web Services. Providers of SMS gateway services include SMS aggregators and mobile operators. SMS gateways are also available as part of messaging services such as AOL, ICQ and others.\n\nIn order to send/receive messages with mobile subscribers, an SMS gateway connects with (i) mobile network SMSCs and/or (ii) other SMS gateways. It is, therefore, possible that an SMS gateway has a combination of connections with mobile network SMSCs and connections with other SMS gateways in order to provide its services. However, there is an increasing potential for delivery problems with SMS with increasing number of SMS gateways in the delivery chain."
+                    },
+                    {
+                        "endOffset": 12610,
+                        "index": 7,
+                        "level": 2,
+                        "startOffset": 4838,
+                        "title": "Email clients",
+                        "value": "Text messages can be sent from a personal computer to mobile devices via an SMS gateway or [[Multimedia Messaging Service]] (MMS) gateway, using the most popular [[email client]] programs, such as Outlook, Thunderbird, and so on.  The messages must be sent in [[ASCII]] \"text-only\" mode.  If they are sent in HTML mode or using non-ASCII characters, they will most likely appear as nonsense on the recipient's mobile telephone.\n\nBefore the message can be sent, one must determine the domain of the mobile carrier's SMS gateway.  For example, if one wants to send a message to a mobile telephone in the United States serviced by AT&T, and the telephone number is +1 415-123-4567, the email would be addressed as\n\n<div align=\"center\"><code>4151234567@txt.att.net</code></div>\n\nTo determine the SMS gateway domain, e.g., <code>txt.att.net</code>, may require research - but most users know who their carrier is.  The telephone number in this example for a US number is expressed as ten (10) digits, without the country code (1) and without dashes or other separator characters when composing the email address.  The country code is not needed, as the 10-digit telephone number, together with the email domain, are sufficient to send the email from any location in the world.\n\nIt is useful to perform a character count before sending the message to ensure that it is within the 160-character limit.  If it exceeds the limit, the SMS gateway should break the message into a set of consecutive 160-character, or shorter, messages to the mobile equipment, although breaks may occur in the middle of words.\n\nA message sent with an email client can be simultaneously addressed to multiple mobile telephones - just as text messages sent in the usual manner between mobile telephones can be sent to multiple recipients.\n\n{{anchor|gateways}}\nSMS gateway domains for other carriers (US-based):\n\n\nSMS gateway domains for Canadian carriers:"
+                    },
+                    {
+                        "endOffset": 13210,
+                        "index": 8,
+                        "level": 2,
+                        "startOffset": 12610,
+                        "title": "SMS gateway features",
+                        "value": "There are several applications for SMS gateways, including:\n* Bulk/mass SMS messaging communications commonly used for customer care to marketing campaigns\n* Two-way SMS messaging, designed for the exchange of messages from clients to a customer portal\n* To enable the development of an SMS widget for newsletters and updates\n* API allowing systems to integrate with 3rd party systems including common CRM, e-commerce, ERP, and internal platforms\n*For multi-factor authentication or two-factor authentication using SMS as a channel for delivering one-time-passwords (OTPs)"
+                    },
+                    {
+                        "endOffset": 13302,
+                        "index": 9,
+                        "level": 2,
+                        "startOffset": 13210,
+                        "title": "See also",
+                        "value": "* [[Kannel (telecommunications)]]\n* [[Videoconferencing]]\n* [[Voice over IP]]"
+                    },
+                    {
+                        "endOffset": 13400,
+                        "index": 10,
+                        "level": 2,
+                        "startOffset": 13302,
+                        "title": "References",
+                        "value": "{{reflist|30em}}\n[[Category:Mobile telecommunications]]\n[[Category:Text messaging]]"
+                    }
+                ]
+            }
+        ],
+        "statsMetadata": {
+            "textSize": 7336
+        },
+        "preprocessingMetadata": [
+            {
+                "technologyResults": [
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Ting Mobile"
+                            ],
+                            "uriSent": "Ting_Mobile",
+                            "wikipediaId": "68561652",
+                            "id": "Q113715159",
+                            "label": "Ting Mobile"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Cellco Partnership d.b.a. Verizon Wireless",
+                                "Inpulse",
+                                "Verizon cell phones",
+                                "Bell Atlantic Mobile",
+                                "Verizon Wireless",
+                                "AirTouch Cellular",
+                                "XLTE",
+                                "Verizon mobile network",
+                                "Verizon wireless",
+                                "Verizon Wireless G'zOne Boulder",
+                                "Myvzw.com",
+                                "Vodafone America",
+                                "Cellco Partnership",
+                                "INpulse",
+                                "Cellco",
+                                "Verizonwireless.com",
+                                "Verizon",
+                                "Verizonwireless",
+                                "Bell Atlantic/NYNEX mobile",
+                                "CLLC"
+                            ],
+                            "uriSent": "Verizon_Wireless",
+                            "wikipediaId": "468631",
+                            "id": "Q919641",
+                            "label": "Verizon"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Consumer Cellular",
+                                "Consumer cellular"
+                            ],
+                            "uriSent": "Consumer_Cellular",
+                            "wikipediaId": "22984794",
+                            "id": "Q5164645",
+                            "label": "Consumer Cellular"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Single Data Message Format",
+                                "SDMF",
+                                "Calling Line Identification",
+                                "Caller display",
+                                "Call Waiting ID",
+                                "Caller ID Display",
+                                "Call ID",
+                                "Caller-ID",
+                                "Caller-id",
+                                "Calling line identity",
+                                "Caller ID",
+                                "Caller id",
+                                "CallerID",
+                                "Cli localisation",
+                                "Caller Identity Display",
+                                "Multiple Data Message Format",
+                                "Telephone Caller Identification",
+                                "Incoming call identification",
+                                "Caller Line Identification",
+                                "Calling ID",
+                                "Calling id",
+                                "*85",
+                                "Caller identification",
+                                "*65",
+                                "Caller line identification",
+                                "Caller number identification",
+                                "Type II Caller ID",
+                                "Calling line identification presentation",
+                                "Calling Line Identification Presentation",
+                                "Private caller",
+                                "Caller-Id",
+                                "Calling line identification restriction",
+                                "Calling number identification",
+                                "Caller ID blocking",
+                                "Incoming Call Identification",
+                                "Mobile Caller ID"
+                            ],
+                            "uriSent": "Caller_ID",
+                            "wikipediaId": "162281",
+                            "id": "Q747865",
+                            "label": "Caller ID"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Mobile phone communication",
+                                "Mobile Telecommunications",
+                                "Mobile data connection",
+                                "Mobile communications",
+                                "Mobile telecommunications",
+                                "mobile telephony",
+                                "Cellular telephony",
+                                "Mobile Telephony",
+                                "Mobile communication",
+                                "Mobile phone telephony",
+                                "Mobile telecommunication",
+                                "Mobile telecommunication technology"
+                            ],
+                            "uriSent": "Mobile_telecommunications",
+                            "wikipediaId": "1145887",
+                            "id": "Q992968",
+                            "label": "mobile telephony"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Saskatchewan Telecommunications",
+                                "SaskTel International",
+                                "Sasknet.sk.ca",
+                                "SaskTel Mobility",
+                                "SaskTel",
+                                "Saskatchewan Telecommunications Holding Corporation",
+                                "Sasktel",
+                                "Saskatchewan Government Telephones",
+                                "Sask Tel"
+                            ],
+                            "uriSent": "SaskTel",
+                            "wikipediaId": "2053009",
+                            "id": "Q339928",
+                            "label": "SaskTel"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Test Messaging",
+                                "SMS chat",
+                                "Mobile messaging",
+                                "PSMS",
+                                "Short message service",
+                                "Short message service\"",
+                                "SMS text message",
+                                "SMs",
+                                "Phone text message",
+                                "Premium rate SMS",
+                                "2 way SMS",
+                                "SMS message",
+                                "Premium SMS",
+                                "Short Message Services",
+                                "Short messaging",
+                                "Short messaging service",
+                                "Short Messaging Service",
+                                "SMS text-messaging",
+                                "Short message system",
+                                "SMS-MO",
+                                "MOSMS",
+                                "SMS Message",
+                                "SMS",
+                                "Short Message Service",
+                                "Sms"
+                            ],
+                            "uriSent": "Short_Message_Service",
+                            "wikipediaId": "28207",
+                            "id": "Q43024",
+                            "label": "SMS"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Us cellular",
+                                "Us cell",
+                                "U.s. cell",
+                                "Uscellular",
+                                "United States Cellular Corporation",
+                                "Telephone and Data Systems United States Cellular Corporation",
+                                "UScellular",
+                                "US Cellular",
+                                "U S Cellular",
+                                "U. S. Cellular",
+                                "U.S. Cellular"
+                            ],
+                            "uriSent": "U.S._Cellular",
+                            "wikipediaId": "1756545",
+                            "id": "Q2466256",
+                            "label": "U.S. Cellular"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Space tone",
+                                "frequency-shift keying",
+                                "Space frequency",
+                                "AFSK",
+                                "BFSK",
+                                "Audio fsk",
+                                "Mark frequency",
+                                "Frequency Shift Keying",
+                                "Gaussian frequency-shift keying",
+                                "GFSK modulation",
+                                "Fsk standards for use in caller id and remote metering",
+                                "Audio frequency shift keying",
+                                "FSK standards for use in Caller ID and remote metering",
+                                "GFSK",
+                                "Frequency shift keying",
+                                "Mark tone",
+                                "Audio frequency-shift keying",
+                                "FSK"
+                            ],
+                            "uriSent": "Frequency-shift_keying",
+                            "wikipediaId": "41193",
+                            "id": "Q1166054",
+                            "label": "frequency-shift keying"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Bell.ca",
+                                "Bell Home Monitoring",
+                                "Bell Canada",
+                                "Today Just Got Better",
+                                "The Bell Telephone Company of Canada",
+                                "BCE Nexxia",
+                                "Bell Nexxia",
+                                "Bell",
+                                "Bell Telephone Company of Canada",
+                                "Bell Canada Enterprises Inc.",
+                                "Bellnexxia.net"
+                            ],
+                            "uriSent": "Bell_Canada",
+                            "wikipediaId": "252579",
+                            "id": "Q815694",
+                            "label": "Bell Canada"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Multimedia Message Service",
+                                "Multimedia messaging service",
+                                "Video messaging",
+                                "Pxt",
+                                "PXT",
+                                "Multimedia Messaging Service",
+                                "mms",
+                                "MMS",
+                                "Multi-media Messaging Service",
+                                "Multimedia Messaging System",
+                                "Picture messages",
+                                "Wireless Imaging",
+                                "mms messaging",
+                                "Picture messaging",
+                                "Multimedia message",
+                                "Multimedia texting",
+                                "Picture message"
+                            ],
+                            "uriSent": "Multimedia_Messaging_Service",
+                            "wikipediaId": "242406",
+                            "id": "Q189443",
+                            "label": "Multimedia Messaging Service"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "E-mail headers",
+                                "Internet Mail",
+                                "Internet Message Format",
+                                "E-Mail",
+                                "E mail",
+                                "Premiumemail",
+                                "Public email address",
+                                "RFC 5322",
+                                "Message Handling Service",
+                                "Electronic mail",
+                                "EMAIL",
+                                "Emailed",
+                                "Corporate Email",
+                                "E-mail message",
+                                "Message handling service",
+                                "E-mails",
+                                "RFC 822",
+                                "e-mail",
+                                "Email account",
+                                "Premium e-mail",
+                                "Emails",
+                                "Mail headers",
+                                "Premium email",
+                                "Electronic mail box",
+                                "Courriel",
+                                "Outbox",
+                                "Electron Mail",
+                                "E-mailed",
+                                "Email security",
+                                "Rfc822",
+                                "RFC 2822",
+                                ".eml",
+                                "Reply-To",
+                                "Email headers",
+                                "E-mail header",
+                                "electronic mail",
+                                "Email header fields",
+                                "Email etiquettes",
+                                "Email message",
+                                "Electronic mails",
+                                "Reply all",
+                                "How email works",
+                                "📨",
+                                "📧",
+                                "Benefits of e-mail",
+                                "Internet mail",
+                                "📥",
+                                "E-mail",
+                                "📩",
+                                "E mails",
+                                "Email system",
+                                "📤",
+                                "email",
+                                "E-mail account",
+                                "Emailing",
+                                "Inbox",
+                                "Email accounts",
+                                "Email types",
+                                "Protected email",
+                                "Paid email",
+                                "Anonymous mailer",
+                                "Email backbone",
+                                "Mass email",
+                                "Electropost",
+                                "EMail",
+                                "Email Backbone",
+                                "RFC822",
+                                "Email stationery",
+                                "E-address",
+                                "E Mail",
+                                "Electronic Mail",
+                                "🖄"
+                            ],
+                            "uriSent": "Email",
+                            "wikipediaId": "9738",
+                            "id": "Q9158",
+                            "label": "email"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Kannel gateway",
+                                "Kannel sms",
+                                "Kannel",
+                                "Kannel wap"
+                            ],
+                            "uriSent": "Kannel_(telecommunications)",
+                            "wikipediaId": "372950",
+                            "id": "Q6364030",
+                            "label": "Kannel"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Wireless Telegraphy Act 1967",
+                                "Wireless Telegraphy Act 1904",
+                                "Wireless Telegraphy Act 1949",
+                                "Wireless Telegraphy Act 1906",
+                                "Wireless Telegraphy Acts",
+                                "Wireless Telegraphy Act",
+                                "Wireless Telegraphy Act 1998"
+                            ],
+                            "uriSent": "Wireless_Telegraphy_Acts",
+                            "wikipediaId": "1417773",
+                            "id": "Q8026869",
+                            "label": "Wireless Telegraphy Acts"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Tmobile",
+                                "T-D1",
+                                "Tmobil",
+                                "T-moible",
+                                "T-moble",
+                                "T-Mobile International AG",
+                                "MoNet",
+                                "T-Home",
+                                "TMobile",
+                                "Monet GSM",
+                                "T-Mobile Montenegro",
+                                "T, mobile",
+                                "@TMobile",
+                                "Telering",
+                                "T-Mobile Slovensko",
+                                "T-Mobile International",
+                                "T Mobile",
+                                "T-mo.co",
+                                "MONET GSM",
+                                "Get More",
+                                "T-mobile",
+                                "MyFaves",
+                                "T-Mobile(R)"
+                            ],
+                            "uriSent": "T-Mobile_International_AG",
+                            "wikipediaId": "151799",
+                            "id": "Q327634",
+                            "label": "T-Mobile International"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Edmonton Telephones Corporation",
+                                "EdTel",
+                                "Telus SmartHome Security",
+                                "Telus Communications",
+                                "QuébecTel",
+                                "Telus Home Phone",
+                                "Telus.net",
+                                "The Telus Corporation",
+                                "Telus Communications Inc",
+                                "Telus Communications Company",
+                                "TELUS",
+                                "Edmonton Telephone",
+                                "TELUS Communications Inc.",
+                                "Telus Internet",
+                                "Telus Communications Inc.",
+                                "Edmonton Telephones"
+                            ],
+                            "uriSent": "Telus",
+                            "wikipediaId": "160073",
+                            "id": "Q165858",
+                            "label": "TELUS"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "WIND Mobile",
+                                "Wind",
+                                "Globalive Wireless Management Corporation",
+                                "Globalive Wireless",
+                                "Wind Mobile",
+                                "Freedom Mobile Inc",
+                                "Freedom Mobile"
+                            ],
+                            "uriSent": "Freedom_Mobile",
+                            "wikipediaId": "25427431",
+                            "id": "Q8023931",
+                            "label": "Freedom Mobile"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Communications in European Union",
+                                "European Telecommunications Standards Institute",
+                                "Etsi",
+                                "ETSI",
+                                "Special Mobile Group",
+                                "Communications in europe",
+                                "European Telecommunication Standard",
+                                "Communications in Europe"
+                            ],
+                            "uriSent": "European_Telecommunications_Standards_Institute",
+                            "wikipediaId": "18934452",
+                            "id": "Q899383",
+                            "label": "European Telecommunications Standards Institute"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Republic wireless",
+                                "Republic Wireless"
+                            ],
+                            "uriSent": "Republic_Wireless",
+                            "wikipediaId": "33686548",
+                            "id": "Q7314422",
+                            "label": "Republic Wireless"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "email reader",
+                                "E-mail Client",
+                                "E-mail appliance",
+                                "E-mail client",
+                                "Mail user agent",
+                                "e-mail client",
+                                "Email Client",
+                                "E-mail program",
+                                "Email program",
+                                "Email clients",
+                                "mail user agent",
+                                "Message user agent",
+                                "Mail User Agent",
+                                "Mail program",
+                                "Mail reader",
+                                "Mailclient",
+                                "MUA",
+                                "e-mail reader",
+                                "E-mail reader",
+                                "email client",
+                                "Email browser",
+                                "Mail client"
+                            ],
+                            "uriSent": "Email_client",
+                            "wikipediaId": "43478",
+                            "id": "Q570871",
+                            "label": "email client"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "The Sprint Corporation",
+                                "Sprint PCS",
+                                "The Big Yellow Bus",
+                                "Sprint Corporation",
+                                "Sprintlink",
+                                "Sprintpcs",
+                                "The big yellow bus",
+                                "Sprint Mobility",
+                                "United Telephone",
+                                "Sprint Direct Connect",
+                                "Sprint Communications",
+                                "360 Communications",
+                                "Sprint Nextel Corporation",
+                                "S PCS",
+                                "Sprint/Centel",
+                                "Sprint spark",
+                                "SprintNextel",
+                                "Sprint Nextel Corp.",
+                                "Nextel ringtones",
+                                "Sprint Framily",
+                                "Sprint-Nextel",
+                                "Nextel",
+                                "Sprint wireless",
+                                "Sprint Nextel",
+                                "Nextel phones",
+                                "SprintLink",
+                                "Sprint Corporation/version 3",
+                                "Sprint pcs",
+                                "Sprint/Nextel",
+                                "@sprint",
+                                "Sprint Nextel Corp",
+                                "Sprint Corp. FON",
+                                "Sprint Spark",
+                                "Sprint Mobile",
+                                "Scooter my daisy heads",
+                                "Sprint",
+                                "Brown Telephone Company",
+                                "Simply Everything",
+                                ".koz"
+                            ],
+                            "uriSent": "Sprint_Corporation",
+                            "wikipediaId": "2380393",
+                            "id": "Q301965",
+                            "label": "Sprint Corporation"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Celluar telephone",
+                                "Secret cell phone",
+                                "Hand Phone",
+                                "mobile phones",
+                                "Mobile cellular",
+                                "Mobile Phones",
+                                "Mobile handsets",
+                                "Hand telephones",
+                                "Cellphone video",
+                                "Mobile wireless communication",
+                                "Mobile cellular wireless",
+                                "Cellular communication",
+                                "Cellular mobile",
+                                "Mobile telephone",
+                                "Mobile number",
+                                "hand phone",
+                                "Cellular Telephone Technology",
+                                "cellular phone",
+                                "Cellular telephone",
+                                "Cell-phone",
+                                "Cell phone",
+                                "Hand phone",
+                                "Hand phones",
+                                "Cellular device",
+                                "Cellphones",
+                                "Mobile Telephone",
+                                "Cell phones",
+                                "Cellular Telephone",
+                                "Cell Phones",
+                                "Cell telephones",
+                                "Mobile wireless",
+                                "Cellphone",
+                                "Cellular phone",
+                                "Health effects of mobile phone usage",
+                                "Cellular phones",
+                                "cellphones",
+                                "phone",
+                                "mobile phone",
+                                "Cell Phone",
+                                "Mobile Phone",
+                                "Hand telephone",
+                                "Mobile communication standard",
+                                "Criticism of cell phone",
+                                "Handphone",
+                                "cellular mobile",
+                                "Cell phone carrier",
+                                "Flip fone",
+                                "Handphones",
+                                "Mobile phones",
+                                "Kosher phone",
+                                "Kosher phones",
+                                "cell phone",
+                                "Mobile terminal",
+                                "Mobil phone",
+                                "Environmental impact of mobile phones",
+                                "cellphone",
+                                "Mobile loop",
+                                "GSM phone",
+                                "Cell telephone",
+                                "Cellular radio",
+                                "Mobile telephones",
+                                "Cellular communication standard",
+                                "mobile",
+                                "Mobilephone",
+                                "mobile telephone",
+                                "Radio Common Carrier",
+                                "Radio common carrier",
+                                "Celphone",
+                                "Mobile phone safety",
+                                "Mobile screen",
+                                "Mobil Phone",
+                                "Cellular telephones",
+                                "Mobile handset",
+                                "Flipfone",
+                                "Mobile telecom",
+                                "Cellular Radio",
+                                "Mobile display",
+                                "cellular telephone"
+                            ],
+                            "uriSent": "Mobile_phones",
+                            "wikipediaId": "19644137",
+                            "id": "Q17517",
+                            "label": "mobile phone"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Short Message Service Center",
+                                "Short Message Service Centres",
+                                "Short message service center",
+                                "Short Message Service center",
+                                "SMS C",
+                                "Short message service centre",
+                                "SMS-C",
+                                "SMSC",
+                                "Short Message Service Centre"
+                            ],
+                            "uriSent": "Short_Message_Service_Center",
+                            "wikipediaId": "2601173",
+                            "id": "Q2067024",
+                            "label": "Short Message Service Center"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Bell MTS",
+                                "MTS Ultimate TV",
+                                "MTS Mobility",
+                                "Manitoba Telecom",
+                                "MTS",
+                                "Manitoba Telephone System",
+                                "Manitoba Telecom Services Inc.",
+                                "MTS Classic TV",
+                                "Manitoba Telecom Services",
+                                "Manitoba Government Telephones",
+                                "MTS Allstream",
+                                "Manitoba Telecom Systems",
+                                "Manitoba Telecom Service",
+                                "Mtsallstream.net",
+                                "MTS TV"
+                            ],
+                            "uriSent": "Bell_MTS",
+                            "wikipediaId": "706817",
+                            "id": "Q1890462",
+                            "label": "Bell MTS"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "TRAI",
+                                "SaveTheInternet.in",
+                                "Telecom Regulatory Authority of India",
+                                "Telecommunications Regulatory Authority of India",
+                                "Telecom Regulatory Authority Of India",
+                                "TRAI Bangalore Regional Office"
+                            ],
+                            "uriSent": "Telecom_Regulatory_Authority_of_India",
+                            "wikipediaId": "532465",
+                            "id": "Q7695822",
+                            "label": "Telecom Regulatory Authority of India"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "ALLTEL",
+                                "Allied Telephone",
+                                "Alltel Wireless",
+                                "Mid-Penn Telephone Company",
+                                "Altell",
+                                "Mid Continent Telephone",
+                                "Alltel wireless",
+                                "ALLTEL Corp.",
+                                "All Tell",
+                                "Alltel",
+                                "My Circle",
+                                "Alltell",
+                                "Kittanning Telephone Company",
+                                "Alltel Corporation",
+                                "All tel"
+                            ],
+                            "uriSent": "Alltel",
+                            "wikipediaId": "1741459",
+                            "id": "Q684083",
+                            "label": "Alltel"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Koodo",
+                                "El Tabador",
+                                "Koodo Mobile"
+                            ],
+                            "uriSent": "Koodo_Mobile",
+                            "wikipediaId": "17010718",
+                            "id": "Q6430529",
+                            "label": "Koodo Mobile"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "MicroSIM",
+                                "Nano-SIM",
+                                "ID-1 SIM card",
+                                "Integrated Circuit Card ID",
+                                "Plug-in SIM card",
+                                "SIM Card",
+                                "subscriber identity module",
+                                "NanoSIM",
+                                "Subscriber identification module",
+                                "Full-size SIM",
+                                "International SIM card",
+                                "MFF SIM chip",
+                                "SIM Serial Number",
+                                "SIM card holder",
+                                "Sim only",
+                                "SIM card formats",
+                                "Virtual sim",
+                                "Micro SIM",
+                                "Micro Sim",
+                                "SIM card tray",
+                                "Universal Subscriber Identity Module",
+                                "2FF SIM card",
+                                "ID-1/000 SIM card",
+                                "ICC-ID",
+                                "M2M Identification Module",
+                                "Full-size SIM card",
+                                "Embedded SIM chip",
+                                "SIM card",
+                                "1FF SIM",
+                                "Mini-UICC",
+                                "Electronic SIM",
+                                "3FF SIM card",
+                                "4FF card",
+                                "4FF SIM",
+                                "SIM card reader",
+                                "MFF chip",
+                                "Plug-in SIM",
+                                "Universal Identity Module",
+                                "2FF card",
+                                "SIM sizes",
+                                "Embedded-SIM chip",
+                                "1FF",
+                                "GSM SIM",
+                                "3FF",
+                                "Sim number",
+                                "Virtual SIM",
+                                "SIM",
+                                "Sim card",
+                                "UIM",
+                                "Micro-SIM",
+                                "Universal subscriber identity module",
+                                "Mini SIM",
+                                "ID-000 SIM card",
+                                "ID-1/000 SIM",
+                                "User Identity Module",
+                                "1FF SIM card",
+                                "SIM card format",
+                                "4FF SIM card",
+                                "Subscriber identity module",
+                                "SIM cardreader",
+                                "SIM card-reader",
+                                "Simcard",
+                                "MiniSIM",
+                                "MFF",
+                                "SIM size",
+                                "SIM-card",
+                                "Micro-SIM-adapter",
+                                "Nano SIM",
+                                "SIM card-holder",
+                                "Overlay SIM",
+                                "Subscriber Identity Module Card",
+                                "Mini-SIM",
+                                "SIM cards",
+                                "2FF SIM",
+                                "Subscriber Identity Module",
+                                "SIM cardholder",
+                                "ICCID",
+                                "USIM",
+                                "Thin SIM",
+                                "3FF card",
+                                "SIM chip",
+                                "1FF card",
+                                "ID-000 SIM",
+                                "SIM only",
+                                "3FF SIM",
+                                "2FF",
+                                "4FF",
+                                "subscriber identification module",
+                                "User identity module",
+                                "SIM tray",
+                                "MFF SIM",
+                                "3ff-plug-in",
+                                "SIM number",
+                                "SIM card sizes",
+                                "ID-1 SIM"
+                            ],
+                            "uriSent": "Subscriber_identity_module",
+                            "wikipediaId": "197489",
+                            "id": "Q230110",
+                            "label": "SIM card"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "List of Virgin Mobile USA phones",
+                                "Virginmobile",
+                                "Broadband2Go",
+                                "Virgin Moble",
+                                "VirginXtras",
+                                "Virgin Mobile Holdings",
+                                "Virgin Broadband",
+                                "VirginXL",
+                                "Virgin Mobile",
+                                "Virgin XL",
+                                "Virgin mobile",
+                                "Virgin Mobile Australia",
+                                "Virgin Xtras"
+                            ],
+                            "uriSent": "Virgin_Mobile",
+                            "wikipediaId": "764035",
+                            "id": "Q1325951",
+                            "label": "Virgin Mobile"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "GEA-2",
+                                "Global System For Mobile Communications",
+                                "Global System for Mobile communications",
+                                "SGSM",
+                                "GSM phone system",
+                                "Global System for Mobile",
+                                "GEA/1",
+                                "GEA/2",
+                                "GSM Gateway",
+                                "GEA-1",
+                                "Digital Communications System",
+                                "Extended Global System",
+                                "2G",
+                                "Mobile phone base station",
+                                "GSM 07.07",
+                                "Extended Global System for Mobile Communications",
+                                "GSM",
+                                "Gsm",
+                                "Mobile phone base stations",
+                                "GSM mobile phone base station",
+                                "Global System for Mobile Communication",
+                                "Global System for Mobile Communications",
+                                "Groupe Spécial Mobile",
+                                "Global system for mobile communications",
+                                "History of GSM",
+                                "GSM network",
+                                "Groupe Special Mobile",
+                                "Global system for mobile cellular communications"
+                            ],
+                            "uriSent": "Global_System_for_Mobile_Communications",
+                            "wikipediaId": "12808",
+                            "id": "Q46904",
+                            "label": "Global System for Mobile Communications"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Rogers Communications Inc.",
+                                "OutRank by Rogers",
+                                "Fcibroadband.com",
+                                "Zoocasa",
+                                "Rogers Communication",
+                                "Rogers Communications",
+                                "Rogers Communications, Inc.",
+                                "Nadir Mohamed",
+                                "Rogers.com",
+                                "Rogers Bank"
+                            ],
+                            "uriSent": "Rogers_Communications",
+                            "wikipediaId": "372874",
+                            "id": "Q165684",
+                            "label": "Rogers Communications"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Microcell Telecommunications",
+                                "Fido solutions",
+                                "Fido Solutions",
+                                "Fido.ca"
+                            ],
+                            "uriSent": "Fido_Solutions",
+                            "wikipediaId": "959763",
+                            "id": "Q3071471",
+                            "label": "Fido Solutions"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Texting",
+                                "Group text",
+                                "Text-messages",
+                                "Txts",
+                                "Texters",
+                                "Tattle texting",
+                                "Group texting",
+                                "SMS security",
+                                "Mobile phone text messaging",
+                                "text messaging",
+                                "Text messaged",
+                                "Premium texting",
+                                "Texting messages",
+                                "Texter",
+                                "texting",
+                                "Craig Crosbie",
+                                "Text messages",
+                                "Text message",
+                                "Txt msg",
+                                "Texted",
+                                "Text-message",
+                                "Typing awareness indicator",
+                                "Text-messaging",
+                                "Text-messaged",
+                                "SMS",
+                                "Text Messaging",
+                                "Txting",
+                                "Group texts",
+                                "Nmy",
+                                "Txt message"
+                            ],
+                            "uriSent": "Text_messaging",
+                            "wikipediaId": "305854",
+                            "id": "Q17166101",
+                            "label": "text messaging"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Video teleconference",
+                                "Video-conferencing",
+                                "Videophones",
+                                "VisiTel LU-500 videophone",
+                                "Video telephone",
+                                "Video teleconferencing",
+                                "Sony PCT-15 videophone",
+                                "Visiophone",
+                                "See-talk telephone",
+                                "Telephone-television",
+                                "Video instant messaging",
+                                "Phone TV",
+                                "Matra videophone",
+                                "Kyocera VP-210 Visual Phone",
+                                "Video conferencing",
+                                "Modern Sign Language communication",
+                                "Press Videoconferencing",
+                                "See-talk phone",
+                                "Video chat",
+                                "Ikonophone",
+                                "Video linkup",
+                                "Multipoint conferencing",
+                                "Videolink",
+                                "Video phone",
+                                "Videoconfernecing",
+                                "Fernsehsprechstellen",
+                                "Visual collaboration",
+                                "Video Conferencing",
+                                "Ericsson videophone",
+                                "Videoconferencings",
+                                "Imagephone",
+                                "Virtual ceremony",
+                                "Lumaphone",
+                                "Vidioconferencing",
+                                "Nortel IP Video Phone 1535",
+                                "Video-teleconference",
+                                "Tele-videoconferencing",
+                                "Videoconferencing",
+                                "AT&T Picturephone",
+                                "Pictaphone",
+                                "Video talk",
+                                "Videophone",
+                                "Video conference call",
+                                "View phone",
+                                "Picture-telephone",
+                                "Television-telephone",
+                                "Videophony",
+                                "Video calling",
+                                "Videoconference",
+                                "AT&T VideoPhone 2500",
+                                "Video conference",
+                                "Videocall",
+                                "Viewphone",
+                                "Kyocera VP-210 VisualPhone",
+                                "Fernseh sprechstellen",
+                                "Deutsche Telekom T-View 100",
+                                "Mitsubishi Lumaphone",
+                                "Beeldtelefoon",
+                                "Videochat",
+                                "Video call",
+                                "Realtime conferencing",
+                                "videotelephony",
+                                "Philips videophone",
+                                "Sight-sound television system",
+                                "Sight-sound telephone",
+                                "Image telephone",
+                                "Video telephony",
+                                "Bildtelefon",
+                                "Videotelephone",
+                                "3D Videoconference",
+                                "Visual telephone",
+                                "Picture-Phone TV",
+                                "video teleconference",
+                                "Picture phone",
+                                "Vidéophone",
+                                "Videotalk",
+                                "Television phone",
+                                "Relate 2000",
+                                "Panasonic KX-TV10 videophone",
+                                "Video link",
+                                "See-and-talk telephone",
+                                "Pictoral phone",
+                                "Videoconferences"
+                            ],
+                            "uriSent": "Videoconferencing",
+                            "wikipediaId": "2304367",
+                            "id": "Q854954",
+                            "label": "videotelephony"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Metro Pcs Communications Incorporated",
+                                "Metropcs Communications Inc",
+                                "Metro by T-Mobile",
+                                "MetroPCS Wireless",
+                                "Metro PCS",
+                                "Metro pcs",
+                                "Metro Pcs",
+                                "MetroPCS Wireless, Inc.",
+                                "Metro Pcs Communications",
+                                "MetroPCS Communications Inc.",
+                                "MetroPCS Communications, Inc.",
+                                "MetroPCS",
+                                "Metropcs",
+                                "MetroPCS Communications"
+                            ],
+                            "uriSent": "MetroPCS",
+                            "wikipediaId": "2661814",
+                            "id": "Q1925685",
+                            "label": "Metro by T-Mobile"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Cricket Wireless.com",
+                                "Cricket Communications",
+                                "Cricket Wireless",
+                                "Cricket Communications, Inc",
+                                "Cricket mobile"
+                            ],
+                            "uriSent": "Cricket_Wireless",
+                            "wikipediaId": "2855952",
+                            "id": "Q5184987",
+                            "label": "Cricket Wireless"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "L.A. Cellular",
+                                "AT&T Mobility",
+                                "Cingular Wireless LLC",
+                                "AT&T GoPhone",
+                                "AT&T Mobility L..L.C.",
+                                "5G Evolution",
+                                "Cingular.com",
+                                "Cingular phones",
+                                "AT&T Mobility Corporation",
+                                "AT&T Wireless LLC",
+                                "5G E",
+                                "AT&T Mobility LLC v. National Ass'n for Stock Car Auto Racing, Inc.",
+                                "At&t unity",
+                                "At&t wireless",
+                                "AT&T Mobility.",
+                                "Cingular Blue",
+                                "Cingular Wireless, LLC",
+                                "AT&T Unity",
+                                "GoPhone",
+                                "ATT Mobility",
+                                "Cingular Wireless GoPhone",
+                                "AT&T Mobility LLC",
+                                "AT&T mobility",
+                                "Wireless from at&t",
+                                "Cingular ringtones",
+                                "Attwireless",
+                                "AT&T Mobility, LLC",
+                                "Wireless From AT&T",
+                                "At&t Mobility",
+                                "Cingular.net",
+                                "Att wireless",
+                                "Cingularwireless",
+                                "Cingular Orange",
+                                "AT&T Mobility L..LC.",
+                                "AT&T Mobility LLC.",
+                                "AT&T Mobility, LLC.",
+                                "AT&T wireless",
+                                "Cingular",
+                                "AT&T Prepaid",
+                                "ATT Wireless",
+                                "Mymmode.com",
+                                "AT&T Mobility L.L.C.",
+                                "Gophone",
+                                "AT&T Wireless",
+                                "AT+T Wireless",
+                                "At&T Mobility Llc",
+                                "Cingular Wireless",
+                                "At&t mobility"
+                            ],
+                            "uriSent": "AT&T_Mobility",
+                            "wikipediaId": "468431",
+                            "id": "Q298594",
+                            "label": "AT&T Mobility"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "VOSIP",
+                                "Packetized voice",
+                                "Voice over Internet Protocol",
+                                "VOIP",
+                                "VOip",
+                                "VoiP",
+                                "broadband telephony",
+                                "IP voice",
+                                "Voiceover IP",
+                                "Voice Over IP industry",
+                                "Voice over internet protocol",
+                                "Internet Protocol telephone",
+                                "Packet voice",
+                                "Broadband telephone",
+                                "IP telephony",
+                                "Telephony portal",
+                                "Broadband Telephony",
+                                "VOiP",
+                                "Telephony Portal",
+                                "TeleCable Services",
+                                "Retail VoIP",
+                                "Web-to-phone",
+                                "Internet phone service",
+                                "Vodsl",
+                                "Internet-based telephony",
+                                "Internet Telephony",
+                                "Voice over IP",
+                                "Voice over ip",
+                                "Web phone",
+                                "Web phoning",
+                                "Voice over IP industry",
+                                "Internet telephones",
+                                "IP telephone",
+                                "VoPI",
+                                "Broadband Phone",
+                                "Voice over Internet protocol",
+                                "Broadband phone service",
+                                "VoIP carrier",
+                                "Voice-over-IP",
+                                "IP telephony signaling protocol",
+                                "Security vulnerabilities in VoIP systems",
+                                "VoIp",
+                                "SVOIP",
+                                "Real time audio using VoIP",
+                                "VoDSL",
+                                "Broadband telephone provider",
+                                "Web call",
+                                "Digital Phone",
+                                "Voip Call",
+                                "IP Telephony",
+                                "Voip hosting",
+                                "VolP",
+                                "Broadband telephony",
+                                "Voice Over IP",
+                                "Broadband phone",
+                                "Internet telephone service",
+                                "IPTel",
+                                "Broadband phone company",
+                                "Internet telephone",
+                                "Web calling",
+                                "VoIP",
+                                "Business VOIP Telephones & Office Phones",
+                                "Voip",
+                                "VOIp",
+                                "VoIP Terminology",
+                                "Voice on IP",
+                                "Managed VoIP Service",
+                                "Internet Protocol telephony",
+                                "Internet phone",
+                                "Internet Phone",
+                                "Net phone",
+                                "Backdoor dialing",
+                                "VoIP telephony",
+                                "broadband phone service",
+                                "VOIP Call",
+                                "IPTelephony",
+                                "Internet call",
+                                "Internet telephony"
+                            ],
+                            "uriSent": "Voice_over_IP",
+                            "wikipediaId": "75028",
+                            "id": "Q81945",
+                            "label": "Voice over IP"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "PC Telecom",
+                                "The Mobile Shop"
+                            ],
+                            "uriSent": "PC_Mobile",
+                            "wikipediaId": "39504531",
+                            "id": "Q17074397",
+                            "label": "PC Telecom"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "WDECT",
+                                "Wideband Digital Enhanced Cordless Telecommunications",
+                                "XDECT R",
+                                "Radio fixed part",
+                                "DECT 6.0",
+                                "DECT",
+                                "Dect",
+                                "XDECT",
+                                "Digital European cordless telephone",
+                                "Radio Fixed Part",
+                                "Digital Enhanced Cordless Telecommunications",
+                                "DECT telephone",
+                                "Digital European Cordless Telecommunications",
+                                "DECT Standard Cipher",
+                                "IMT-FT"
+                            ],
+                            "uriSent": "Digital_Enhanced_Cordless_Telecommunications",
+                            "wikipediaId": "8674",
+                            "id": "Q1224749",
+                            "label": "Digital Enhanced Cordless Telecommunications"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Boost Mobile"
+                            ],
+                            "uriSent": "Boost_Mobile_(United_States)",
+                            "wikipediaId": "69489312",
+                            "id": "Q4943790",
+                            "label": "Boost Mobile"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Pakistan Telecommunications Authority",
+                                "Pakistan Telecommunication Authority",
+                                "Next Generation Mobile Services"
+                            ],
+                            "uriSent": "Pakistan_Telecommunication_Authority",
+                            "wikipediaId": "4763292",
+                            "id": "Q7125717",
+                            "label": "Pakistan Telecommunication Authority"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "United States of America Standard Code for Information Interchange",
+                                "Us-ascii",
+                                "7-bit ASCII",
+                                "Standard X3.4-1963",
+                                "ASCII char",
+                                "ASC-2",
+                                "USAS X3.4",
+                                "ASCII order",
+                                "Standard X3.4",
+                                "USASCII 77",
+                                "Standard X3.4-1965",
+                                "ASCII character encoding",
+                                "USAS X3.4-1967",
+                                "USAS X3.4-1968",
+                                "ASA Standard X3.4",
+                                "ASCIIbetical order",
+                                "ASC2",
+                                "ASCII character set",
+                                "INCITS 4-1986",
+                                "American national standard code for information interchange",
+                                "USASCII 1986",
+                                "ASCII value",
+                                "ASCII stick",
+                                "USA Standard X3.4",
+                                "USASCII 86",
+                                "ASCII-only text",
+                                "IBM367",
+                                "Code page 20127",
+                                "ANSI INCITS 4",
+                                "ASCII Control Characters",
+                                "INCITS 4-1986(R2012)",
+                                "Asciibetical",
+                                "ASCII 1977",
+                                "ASCII Character Set",
+                                "ANSCII",
+                                "ASCII printable characters",
+                                "American National Standard X3.4-1986",
+                                "Ascii7",
+                                "Codepage 367",
+                                "USASI X3.4",
+                                "ASCII text",
+                                "USASCII 1977",
+                                "Iso-ir-6",
+                                "Code Page 20127",
+                                "Printable characters",
+                                "Codepage 20127",
+                                "CSASCII",
+                                "128 USASCII",
+                                "ASCII 1986",
+                                "American National Standard X3.4-1977",
+                                "Cp367",
+                                "Ascii table",
+                                "CP00367",
+                                "Oracle US7ASCII",
+                                "USASCII 1963",
+                                "USASCII 1965",
+                                "USASCII 1968",
+                                "USASCII 1967",
+                                "American standard code for information interchange",
+                                "USASCII 68",
+                                "USASCII 67",
+                                "CP367",
+                                "USASCII 65",
+                                "USASCII 63",
+                                "American Standard Code for Information Interchange",
+                                "CP20127",
+                                "ASCII chr",
+                                "Ascii code",
+                                "American National Standard X3.4-1968",
+                                "ASCII letters",
+                                "ANSI X3.4",
+                                "Code page 367",
+                                "US7ASCII",
+                                "USA Standard X3.4-1967",
+                                "ASCII-1968",
+                                "ASA Standard X3.4-1963",
+                                "ASCII",
+                                "ASCII-1967",
+                                "ASCII-1965",
+                                "Bemer–Ross Code",
+                                "ASCII-1963",
+                                "ANSI X3.4-1977",
+                                "US ASCII",
+                                "ASCII code",
+                                "CsASCII",
+                                "ASC 2",
+                                "USA Standard X3.4-1968",
+                                "USASCII",
+                                "Ascii chart",
+                                "ASCII 1965",
+                                "ASCII 1963",
+                                "ANSI INCITS 4-1986(R2017)",
+                                "ASCII-1977",
+                                "Ascii invisible characters",
+                                "ASCII printable character",
+                                "ASCII protocol",
+                                "ASCII 1968",
+                                "US-ASCII",
+                                "ASCII 1967",
+                                "ANSI X3.4-1986",
+                                "American Standard Code For Information Interchange",
+                                "ASCII characters",
+                                "Stick",
+                                "ASA X3.4",
+                                "Us",
+                                "ASCII text file",
+                                "ASA standard X3.4",
+                                "American standard code",
+                                "ASCIIbetical",
+                                "ASCII character",
+                                "X3.4",
+                                "ASCII chart",
+                                "ASCII File",
+                                "ASCII-1986",
+                                "Ibm-367",
+                                "ASCII table",
+                                "List of ascii characters",
+                                "ANSI INCITS 4-1986(R2012)",
+                                "ASA standard X3.4-1965",
+                                "INCITS 4-1986(R2017)",
+                                "Bemer-Ross Code",
+                                "Code Page 367",
+                                "ACSII",
+                                "ASA X3.4-1965",
+                                "American National Standard X3.4",
+                                "ASA X3.4-1963",
+                                "ASA standard X3.4-1963",
+                                "ANSI INCITS 4-1986",
+                                "Binary ASCII",
+                                "ASA Standard X3.4-1965",
+                                "Ascii",
+                                "American Standard Code for Information Exchange",
+                                "American National Standard Code for Information Interchange",
+                                "ASCII file",
+                                "United States of America standard code for information interchange",
+                                "USASI X3.4-1968",
+                                "Cp20127",
+                                "Seven-bit ASCII",
+                                "USASI X3.4-1967",
+                                "ANSI X3.4-1968",
+                                "ASCII letter",
+                                "ANSI X3.4-1967"
+                            ],
+                            "uriSent": "ASCII",
+                            "wikipediaId": "586",
+                            "id": "Q8815",
+                            "label": "ASCII"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Comcast Cable Communications",
+                                "Comcast Mobile",
+                                "Xfinitywifi",
+                                "Comcast Cable Communications, LLC",
+                                "Comcast Cable Communications Holdings, Inc.",
+                                "Xfinity Wifi",
+                                "Comcast Xfinity",
+                                "Comcast Cable Communications, Inc.",
+                                "Comcast Digital Cable",
+                                "XFINITY",
+                                "Digital voice",
+                                "Comcast Cable Communications Holdings, Inc",
+                                "Comcast Cable Communications Inc",
+                                "@Xfinity",
+                                "Comcast Cable",
+                                "Xfiniti",
+                                "XFinity",
+                                "Comcast Cable Communications, IP Services",
+                                "Comcast Digital Voice",
+                                "Comcast Spotlight",
+                                "COMCAST CABLE COMM.",
+                                "Exfinity",
+                                "Xfinity TV",
+                                "Xfinity",
+                                "XFi Advanced Gateway",
+                                "Xfinity Mobile",
+                                "Comcast Cable Communications Inc."
+                            ],
+                            "uriSent": "Xfinity",
+                            "wikipediaId": "2013139",
+                            "id": "Q5151002",
+                            "label": "Xfinity"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "SMS Forum",
+                                "Short Message Peer-to-Peer",
+                                "Short Message Peer-to-peer Protocol",
+                                "Short message peer-to-peer protocol",
+                                "Short Message Peer-to-Peer Protocol",
+                                "SMPP"
+                            ],
+                            "uriSent": "Short_Message_Peer-to-Peer",
+                            "wikipediaId": "28904",
+                            "id": "Q1886728",
+                            "label": "Short Message Peer-to-Peer"
+                        }
+                    }
+                ],
+                "technologyExecution": {
+                    "beginDate": "2024-01-17T13:11:21.465397",
+                    "endDate": "2024-01-17T13:11:22.200676"
+                },
+                "technology": {
+                    "name": "WikiLink Alias",
+                    "company": "Orange",
+                    "id": "wikilink_alias",
+                    "type": "link",
+                    "version": "Unknown"
+                }
+            },
+            {
+                "technologyResults": [
+                    {
+                        "dagobah": {
+                            "debug": {
+                                "cpaTaskTimeSec": 0.0,
+                                "memoryUsage": 0.0,
+                                "entityScoringTimeSec": 0.22,
+                                "ceaTaskTimeSec": 0.05,
+                                "abnormalLookupMentions": [],
+                                "ctaTaskTimeSec": 2.3,
+                                "avgLookupCandidate": 156.73,
+                                "subgraphConstructionTimeSec": 11.62
+                            },
+                            "preprocessed": {
+                                "primitiveTyping": [
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "ORG",
+                                                "typingScore": 0.73
+                                            },
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 0.2
+                                            },
+                                            {
+                                                "typingLabel": "PERSON",
+                                                "typingScore": 0.07
+                                            }
+                                        ],
+                                        "columnIndex": 0
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "URL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 1
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "URL",
+                                                "typingScore": 0.87
+                                            }
+                                        ],
+                                        "columnIndex": 2
+                                    }
+                                ],
+                                "headerInfo": {
+                                    "hasHeader": true,
+                                    "headerScore": 0.18,
+                                    "headerLabel": [
+                                        "Mobile carrier",
+                                        "SMS gateway domain",
+                                        "MMS gateway domain"
+                                    ],
+                                    "headerPosition": 0
+                                },
+                                "primaryKeyInfo": {
+                                    "primaryKeyScore": 0.2,
+                                    "primaryKeyPosition": 0,
+                                    "hasPrimaryKey": true
+                                },
+                                "tableOrientation": {
+                                    "orientationScore": 0.2,
+                                    "orientationLabel": "HORIZONTAL"
+                                }
+                            },
+                            "executionTimeSec": {
+                                "preprocessingTime": 0.38,
+                                "totalTime": 23.0,
+                                "lookupTime": 4.16
+                            },
+                            "annotated": {
+                                "CTA": [
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.09,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q4830453"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.06,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q43229"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.06,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q155076"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.06,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q12569864"
+                                            }
+                                        ],
+                                        "column": 0
+                                    }
+                                ],
+                                "tableDataRevised": [
+                                    [
+                                        "Mobile carrier",
+                                        "SMS gateway domain",
+                                        "MMS gateway domain"
+                                    ],
+                                    [
+                                        "Alltel",
+                                        "sms.alltelwireless.com",
+                                        "mms.alltelwireless.com"
+                                    ],
+                                    [
+                                        "AT&T",
+                                        "txt.att.net",
+                                        "mms.att.net"
+                                    ],
+                                    [
+                                        "Boost Mobile",
+                                        "sms.myboostmobile.com",
+                                        "myboostmobile.com"
+                                    ],
+                                    [
+                                        "Consumer Cellular",
+                                        "mailmymobile.net",
+                                        "mailmymobile.net"
+                                    ],
+                                    [
+                                        "Cricket Wireless",
+                                        "mms.cricketwireless.net",
+                                        "mms.cricketwireless.net"
+                                    ],
+                                    [
+                                        "Google Fi Wireless",
+                                        "msg.fi.google.com",
+                                        "msg.fi.google.com"
+                                    ],
+                                    [
+                                        "MetroPCS",
+                                        "mymetropcs.com",
+                                        "mymetropcs.com"
+                                    ],
+                                    [
+                                        "Republic Wireless",
+                                        "text.republicwireless.com",
+                                        ""
+                                    ],
+                                    [
+                                        "Sprint",
+                                        "messaging.sprintpcs.com",
+                                        "pm.sprint.com"
+                                    ],
+                                    [
+                                        "T-Mobile",
+                                        "tmomail.net",
+                                        "tmomail.net"
+                                    ],
+                                    [
+                                        "Ting",
+                                        "message.ting.com",
+                                        ""
+                                    ],
+                                    [
+                                        "U.S. Cellular",
+                                        "email.uscc.net",
+                                        "mms.uscc.net"
+                                    ],
+                                    [
+                                        "Verizon Wireless",
+                                        "vtext.com",
+                                        "vzwpix.com"
+                                    ],
+                                    [
+                                        "Virgin Mobile",
+                                        "vmobl.com",
+                                        "vmpix.com"
+                                    ],
+                                    [
+                                        "XFinity Mobile",
+                                        "vtext.com",
+                                        "mypixmessages.com"
+                                    ]
+                                ],
+                                "CPA": [],
+                                "CEA": [
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q684083"
+                                        },
+                                        "column": 0,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q35476"
+                                        },
+                                        "column": 0,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q4943790"
+                                        },
+                                        "column": 0,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q5164645"
+                                        },
+                                        "column": 0,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q5184987"
+                                        },
+                                        "column": 0,
+                                        "row": 5
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q111944093"
+                                        },
+                                        "column": 0,
+                                        "row": 6
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1925685"
+                                        },
+                                        "column": 0,
+                                        "row": 7
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q7314422"
+                                        },
+                                        "column": 0,
+                                        "row": 8
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q301965"
+                                        },
+                                        "column": 0,
+                                        "row": 9
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q327634"
+                                        },
+                                        "column": 0,
+                                        "row": 10
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q106649382"
+                                        },
+                                        "column": 0,
+                                        "row": 11
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q2466256"
+                                        },
+                                        "column": 0,
+                                        "row": 12
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q467752"
+                                        },
+                                        "column": 0,
+                                        "row": 13
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1325951"
+                                        },
+                                        "column": 0,
+                                        "row": 14
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q5151002"
+                                        },
+                                        "column": 0,
+                                        "row": 15
+                                    }
+                                ]
+                            }
+                        },
+                        "index": 0
+                    },
+                    {
+                        "dagobah": {
+                            "debug": {
+                                "cpaTaskTimeSec": 0.0,
+                                "memoryUsage": 0.0,
+                                "entityScoringTimeSec": 0.06,
+                                "ceaTaskTimeSec": 0.12999999999999998,
+                                "abnormalLookupMentions": [],
+                                "ctaTaskTimeSec": 1.41,
+                                "avgLookupCandidate": 186.44,
+                                "subgraphConstructionTimeSec": 4.23
+                            },
+                            "preprocessed": {
+                                "primitiveTyping": [
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "ORG",
+                                                "typingScore": 0.89
+                                            },
+                                            {
+                                                "typingLabel": "PRODUCT",
+                                                "typingScore": 0.11
+                                            }
+                                        ],
+                                        "columnIndex": 0
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "URL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 1
+                                    }
+                                ],
+                                "headerInfo": {
+                                    "hasHeader": true,
+                                    "headerScore": 0.1,
+                                    "headerLabel": [
+                                        "Mobile carrier",
+                                        "SMS gateway domain"
+                                    ],
+                                    "headerPosition": 0
+                                },
+                                "primaryKeyInfo": {
+                                    "primaryKeyScore": 0.1,
+                                    "primaryKeyPosition": 0,
+                                    "hasPrimaryKey": true
+                                },
+                                "tableOrientation": {
+                                    "orientationScore": 0.1,
+                                    "orientationLabel": "HORIZONTAL"
+                                }
+                            },
+                            "executionTimeSec": {
+                                "preprocessingTime": 0.2,
+                                "totalTime": 12.17,
+                                "lookupTime": 2.06
+                            },
+                            "annotated": {
+                                "CTA": [
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.08,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q4830453"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.06,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q155076"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.06,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q43229"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.06,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q12569864"
+                                            }
+                                        ],
+                                        "column": 0
+                                    }
+                                ],
+                                "tableDataRevised": [
+                                    [
+                                        "Mobile carrier",
+                                        "SMS gateway domain"
+                                    ],
+                                    [
+                                        "Bell Canada",
+                                        "txt.bell.ca"
+                                    ],
+                                    [
+                                        "Bell MTS",
+                                        "text.mts.net"
+                                    ],
+                                    [
+                                        "Fido Solutions",
+                                        "fido.ca"
+                                    ],
+                                    [
+                                        "Freedom Mobile",
+                                        "txt.freedommobile.ca"
+                                    ],
+                                    [
+                                        "Koodo Mobile",
+                                        "msg.telus.com"
+                                    ],
+                                    [
+                                        "PC Mobile",
+                                        "mobiletxt.ca"
+                                    ],
+                                    [
+                                        "Rogers Communications",
+                                        "pcs.rogers.com"
+                                    ],
+                                    [
+                                        "SaskTel",
+                                        "sms.sasktel.com"
+                                    ],
+                                    [
+                                        "Telus",
+                                        "msg.telus.com"
+                                    ]
+                                ],
+                                "CPA": [],
+                                "CEA": [
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q815694"
+                                        },
+                                        "column": 0,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q1890462"
+                                        },
+                                        "column": 0,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q3071471"
+                                        },
+                                        "column": 0,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8023931"
+                                        },
+                                        "column": 0,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q6430529"
+                                        },
+                                        "column": 0,
+                                        "row": 5
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q7876226"
+                                        },
+                                        "column": 0,
+                                        "row": 6
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q165684"
+                                        },
+                                        "column": 0,
+                                        "row": 7
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q339928"
+                                        },
+                                        "column": 0,
+                                        "row": 8
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.09,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q165858"
+                                        },
+                                        "column": 0,
+                                        "row": 9
+                                    }
+                                ]
+                            }
+                        },
+                        "index": 1
+                    }
+                ],
+                "technologyExecution": {
+                    "beginDate": "2024-01-17T15:04:22.732976",
+                    "endDate": "2024-01-17T15:04:59.156521"
+                },
+                "technology": {
+                    "name": "DAGOBAH Table Annotation",
+                    "company": "Orange",
+                    "id": "dagobah_anotation",
+                    "type": "table",
+                    "version": "Unknown"
+                }
+            }
+        ]
+    }
+}

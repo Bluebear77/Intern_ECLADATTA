@@ -1,0 +1,1713 @@
+{
+    "_index": "corpus_doc_telco100_en",
+    "_id": "11728415",
+    "_source": {
+        "identificationMetadata": {
+            "id": "11728415",
+            "title": "Evolved High Speed Packet Access",
+            "url": [
+                "https://en.wikipedia.org/?curid=11728415",
+                "https://en.wikipedia.org/wiki/Evolved High Speed Packet Access"
+            ],
+            "version": 1156835713,
+            "versionDate": "2023-05-24T21:36:45Z",
+            "hash": "97577ca2799dadcb712fe03f99f0fd57",
+            "wikidata": "Q1071187"
+        },
+        "descriptionMetadata": {
+            "categories": [
+                "Webarchive template wayback links",
+                "Articles with short description",
+                "Short description is different from Wikidata",
+                "Wikipedia external links cleanup from February 2015",
+                "Wikipedia articles that are too technical from September 2017",
+                "All articles that are too technical",
+                "Articles with multiple maintenance issues",
+                "3GPP standards",
+                "UMTS",
+                "Year of introduction missing"
+            ],
+            "language": "en",
+            "source": "wikipedia"
+        },
+        "contentMetadata": {
+            "format": "wikitext",
+            "content": "{{short description|Technical standard}}\n{{Multiple issues|\n{{External links|date=February 2015}}\n{{Technical|reason=Article uses jargon extensively without explanation||date=September 2017}}\n}}\n{{List of mobile phone generations}}\n[[File:HSPA plus logo Android Screenshot.jpg|thumbnail|250px|HSPA+ sign shown in notification bar on an Android-based smartphone.]]\n'''Evolved High Speed Packet Access''', '''HSPA+''', '''HSPA''' ('''Plus''') or '''HSPAP''', is a [[technical standard]] for [[wireless broadband]] telecommunication. It is the second phase of [[High Speed Packet Access|HSPA]] which has been introduced in 3GPP release 7 and being further improved in later 3GPP releases. HSPA+ can achieve data rates of up to 42.2&nbsp;Mbit/s.<ref name=gsmworld>{{cite web|url=http://www.gsma.com/aboutus/gsm-technology/hspa|title=HSPA|work=About Us|access-date=2016-03-30|archive-url=https://web.archive.org/web/20170709180358/https://www.gsma.com/aboutus/gsm-technology/hspa|archive-date=2017-07-09|url-status=dead}}</ref> It introduces antenna array technologies such as [[beamforming]] and [[multiple-input multiple-output communications]] (MIMO). Beam forming focuses the transmitted power of an antenna in a beam towards the user's direction. MIMO uses multiple antennas at the sending and receiving side. Further releases of the standard have introduced dual carrier operation, i.e. the simultaneous use of two 5&nbsp;MHz carriers. HSPA+ is an evolution of HSPA that upgrades the existing 3G network and provides a method for telecom operators to migrate towards 4G speeds that are more comparable to the initially available speeds of newer [[LTE (telecommunication)|LTE]] networks without deploying a new radio interface. HSPA+ should not be confused with [[LTE (telecommunication)|LTE]] though, which uses an air interface based on [[Orthogonal frequency-division multiple access|orthogonal frequency-division]] modulation and multiple access.<ref name=\"ericsson2\">{{cite web|url=http://www.ericsson.com/res/thecompany/docs/publications/ericsson_review/2009/issue1/hspa.pdf|date=27 January 2009|title=Ericsson Review #1 2009 - Continued HSPA Evolution of mobile broadband|publisher=Ericsson.com|access-date=2014-06-01|archive-url=https://web.archive.org/web/20140605052949/http://www.ericsson.com/res/thecompany/docs/publications/ericsson_review/2009/issue1/hspa.pdf|archive-date=5 June 2014|url-status=dead}}</ref>\n\nAdvanced HSPA+ is a further evolution of HSPA and provides [[Bit rate|data rate]]s up to 84.4 and 168&nbsp;[[Megabits per second]] (Mbit/s) to the mobile device (downlink) and 22&nbsp;Mbit/s from the mobile device (uplink) under ideal signal conditions. Technically these are achieved through the use of a multiple-antenna technique known as [[MIMO]] (for \"multiple-input and multiple-output\") and higher [[modulation order|order modulation]] (64QAM) or combining multiple cells into one with a technique known as Dual-Cell HSDPA.\n\n==Downlink==\n=== Evolved HSDPA (HSPA+) ===\n{{main|HSPA+}}\n[[File:Cellular network standards and generation timeline.svg|thumb|Cellular network standards and generation timeline.]]\nAn '''Evolved HSDPA''' network can theoretically support up to 28&nbsp;Mbit/s and 42&nbsp;Mbit/s with a single 5&nbsp;MHz carrier for Rel7 (MIMO with 16QAM) and Rel8 ([[64-QAM]] + [[MIMO]]), in good channel conditions with low correlation between transmit antennas.  Although real speeds are far lower. Besides the throughput gain from doubling the number of cells to be used, some diversity and joint scheduling gains can also be achieved.<ref>R1-081546, “Initial multi-carrier HSPA performance evaluation”, Ericsson, 3GPP TSG-RAN WG1 #52bis, April, 2008</ref> The QoS (Quality of Service) can be particularly improved for end users in poor radio reception where they cannot benefit from the other WCDMA capacity improvements (MIMO and higher order modulations) due to poor radio signal quality. In 3GPP a study item was completed in June 2008. The outcome can be found in technical report 25.825.<ref>{{cite web|url=http://www.3gpp.org/ftp/Specs/html-info/25825.htm|title=3GPP specification: 25.825|work=3gpp.org}}</ref> An alternative method to double the data rates is to double the bandwidth to 10&nbsp;MHz (i.e. 2×5&nbsp;MHz) by using DC-HSDPA.\n\n=== Dual-Carrier HSDPA (DC-HSDPA) ===\n'''Dual-Carrier HSDPA''', also known as Dual-Cell HSDPA, is part of [[3GPP]] Release 8 specification. It is the natural evolution of HSPA by means of [[carrier aggregation]] in the downlink. UMTS licenses are often issued as 5, 10, or 20&nbsp;MHz paired spectrum allocations. The basic idea of the multicarrier feature is to achieve better resource utilization and spectrum efficiency by means of joint resource allocation and load balancing across the downlink carriers.<ref name=\"Nomor 1\">{{cite web |url=http://www.nomor.de/home/technology/white-papers/dual-cell-hspa-and-its-future-evolution |title=Dual-Cell HSPA and its Future Evolution - Nomor Research |publisher=nomor |date=2010-10-10 |access-date=2016-03-30 |archive-url=https://web.archive.org/web/20140201161319/http://www.nomor.de/home/technology/white-papers/dual-cell-hspa-and-its-future-evolution |archive-date=2014-02-01 |url-status=dead }}</ref>\n\nNew HSDPA [[High-Speed Downlink Packet Access#User Equipment (UE) categories|User Equipment categories 21-24]] have been introduced that support DC-HSDPA. DC-HSDPA can support up to 42.2&nbsp;Mbit/s, but unlike HSPA, it does not need to rely on MIMO transmission.\n\nThe support of MIMO in combination with DC-HSDPA will allow operators deploying Release 7 MIMO to benefit from the DC-HSDPA functionality as defined in Release 8. While in Release 8 DC-HSDPA can only operate on adjacent carriers, Release 9 also allows that the paired cells can operate on two different frequency bands. Later releases allow the use of up to four carriers simultaneously.\n\nFrom Release 9 onwards it will be possible to use DC-HSDPA in combination with MIMO being used on both carriers. The support of MIMO in combination with DC-HSDPA will allow operators even more capacity improvements within their network. This will allow theoretical speed of up to 84.4&nbsp;Mbit/s.<ref name=\"Nomor 2\">{{cite web |url=http://www.nomor.de/home/technology/3gpp-newsletter/2009-03-standardisation-updates-on-hspa-evolution |title=2009-03: Standardisation updates on HSPA Evolution - Nomor Research |publisher=nomor |date=2010-10-10 |access-date=2016-03-30 |archive-url=https://web.archive.org/web/20140201161322/http://www.nomor.de/home/technology/3gpp-newsletter/2009-03-standardisation-updates-on-hspa-evolution |archive-date=2014-02-01 |url-status=dead }}</ref><ref>{{Cite web |url=http://www.radio-electronics.com/info/cellulartelecomms/3g-hspa/dc-dual-carrier-hspa-hsdpa.php |title=Dual carrier HSPA: DC-HSPA, DC-HSPDA |access-date=2016-03-14 |archive-url=https://web.archive.org/web/20181120055200/https://www.radio-electronics.com/info/cellulartelecomms/3g-hspa/dc-dual-carrier-hspa-hsdpa.php |archive-date=2018-11-20 |url-status=dead }}</ref>\n\n=== User Equipment (UE) Categories ===\nThe following table is derived from table 5.1a of the release 11 of 3GPP TS 25.306<ref>3GPP TS 25.306 v11.0.0 http://www.3gpp.org/ftp/Specs/html-info/25306.htm</ref> and shows maximum data rates of different device classes and by what combination of features they are achieved. The per-cell per-stream data rate is limited by the ''Maximum number of bits of an HS-DSCH transport block received within an HS-DSCH TTI'' and the ''Minimum inter-TTI interval''. The TTI is 2 ms. So for example Cat 10 can decode 27,952 bits/2 ms = 13.976&nbsp;Mbit/s (and not 14.4&nbsp;Mbit/s as often claimed incorrectly). Categories 1-4 and 11 have inter-TTI intervals of 2 or 3, which reduces the maximum data rate by that factor. Dual-Cell and MIMO 2x2 each multiply the maximum data rate by 2, because multiple independent transport blocks are transmitted over different carriers or spatial streams, respectively. The data rates given in the table are rounded to one decimal point.\n\n{|class=\"wikitable collapsible collapsed\" style=\"text-align:center\"\n|-\n!colspan=\"7\"| Evolved HSDPA User Equipment (UE) categories\n|-\n! Category\n! Release\n! Max. number<br />of HS-DSCH<br />codes (per cell)\n! Modulation <ref group=\"note\">16-QAM implies QPSK support, 64-QAM implies 16-QAM and QPSK support.</ref>\n! MIMO, Multi-Cell\n! [[Code rate]]<br />at max. Data<br />Rate <ref group=\"note\">The maximal code rate is not limited. A value close to 1 in this column indicates that the maximum data rate can be achieved only in ideal conditions. The device is therefore connected directly to the transmitter to demonstrate these data rates.</ref>\n! Max. Downlink<br />Speed<br /><small>(Mbit/s)</small> <ref group=\"note\">The maximum data rates given in the table are physical layer data rates. Application layer data rate is approximately 85% of that, due to the inclusion of IP headers ([[overhead information]]) etc.</ref>\n|-\n| 13\n| 7\n| 15\n| [[64-QAM]]\n|\n| .82\n| 17.6\n|-\n| 14\n| 7\n| 15\n| 64-QAM\n|\n| .98\n| 21.1\n|-\n| 15\n| 7\n| 15\n| 16-QAM\n| [[MIMO]] 2x2\n| .81\n| 23.4\n|-\n| 16\n| 7\n| 15\n| 16-QAM\n| MIMO 2x2\n| .97\n| 28.0\n|-\n| rowspan=\"2\" | 17\n| rowspan=\"2\" | 7\n| 15\n| 64-QAM\n| \n| .82\n| 17.6\n|-\n| 15\n| 16-QAM\n| MIMO 2x2\n| .81\n| 23.4\n|-\n| rowspan=\"2\" | 18\n| rowspan=\"2\" | 7\n| 15\n| 64-QAM\n|\n| .98\n| 21.1\n|-\n| 15\n| 16-QAM\n| MIMO 2x2\n| .97\n| 28.0\n|-\n| 19\n| 8 <ref group=\"note\">Category 19 was specified in Release 7 as \"For further use\". Not until Release 8 simultaneous use of 64QAM and MIMO were allowed to obtain the specified max. data rate.</ref>\n| 15\n| 64-QAM\n| MIMO 2x2\n| .82\n| 35.3\n|-\n| 20\n| 8 <ref group=\"note\">Category 20 was specified in Release 7 as \"For further use\". Not until Release 8 simultaneous use of 64QAM and MIMO were allowed to obtain the specified max. data rate.</ref>\n| 15\n| 64-QAM\n| MIMO 2x2\n| .98\n| 42.2\n|-\n| 21\n| 8\n| 15\n| 16-QAM\n| [[Dual-Cell HSDPA|Dual-Cell]]\n| .81\n| 23.4\n|-\n| 22\n| 8\n| 15\n| 16-QAM\n| Dual-Cell\n| .97\n| 28.0\n|-\n| 23\n| 8\n| 15\n| 64-QAM\n| Dual-Cell\n| .82\n| 35.3\n|-\n| 24\n| 8\n| 15\n| 64-QAM\n| Dual-Cell\n| .98\n| 42.2\n|-\n| 25\n| 9\n| 15\n| 16-QAM\n| Dual-Cell + MIMO 2x2\n| .81\n| 46.7\n|-\n| 26\n| 9\n| 15\n| 16-QAM\n| Dual-Cell + MIMO 2x2\n| .97\n| 55.9\n|-\n| 27\n| 9\n| 15\n| 64-QAM\n| Dual-Cell + MIMO 2x2\n| .82\n| 70.6\n|-\n| 28\n| 9\n| 15\n| 64-QAM\n| Dual-Cell + MIMO 2x2\n| .98\n| 84.4\n|-\n| 29\n| 10\n| 15\n| 64-QAM\n| Triple-Cell \n| .98\n| 63.3\n|-\n| 30\n| 10\n| 15\n| 64-QAM\n| Triple-Cell + MIMO 2x2\n| .98\n| 126.6\n|-\n| 31\n| 10\n| 15\n| 64-QAM\n| Quad-Cell \n| .98\n| 84.4\n|-\n| 32\n| 10\n| 15\n| 64-QAM\n| Quad-Cell + MIMO 2x2\n| .98\n| 168.8\n|-\n| 33\n| 11\n| 15\n| 64-QAM\n| Hexa-Cell \n| .98\n| 126.6\n|-\n| 34\n| 11\n| 15\n| 64-QAM\n| Hexa-Cell + MIMO 2x2\n| .98\n| 253.2\n|-\n| 35\n| 11\n| 15\n| 64-QAM\n| Octa-Cell \n| .98\n| 168.8\n|-\n| 36\n| 11\n| 15\n| 64-QAM\n| Octa-Cell + MIMO 2x2\n| .98\n| 337.5\n|-\n| 37\n| 11\n| 15\n| 64-QAM\n| Dual-Cell + MIMO 4x4\n| .98\n| 168.8\n|-\n| 38\n| 11\n| 15\n| 64-QAM\n| Quad-Cell + MIMO 4x4\n| .98\n| 337.5\n|}\n:'''Notes''':\n{{Reflist| group=note}}\n\n== Uplink ==\n=== Dual-Carrier HSUPA (DC-HSUPA) ===\n'''Dual-Carrier HSUPA''', also known as ''Dual-Cell HSUPA'', is a wireless broadband standard based on HSPA that is defined in [[3GPP]] [[Universal mobile telecommunications system|UMTS]] release 9.\nDual Cell (DC-)HSUPA is the natural evolution of HSPA by means of carrier aggregation in the uplink.<ref name=\"Nomor\">{{Cite web |url=http://www.nomor.de/home/technology/3gpp-newsletter/2009-03-standardisation-updates-on-hspa-evolution |title=Nomor 3GPP Newsletter 2009-03: Standardisation updates on HSPA Evolution<!-- Bot generated title --> |access-date=2016-03-14 |archive-url=https://web.archive.org/web/20140201161322/http://www.nomor.de/home/technology/3gpp-newsletter/2009-03-standardisation-updates-on-hspa-evolution |archive-date=2014-02-01 |url-status=dead }}</ref>  UMTS licenses are often issued as 10 or 15&nbsp;MHz paired spectrum allocations. The basic idea of the multicarrier feature is to achieve better resource utilization and spectrum efficiency by means of joint resource allocation and load balancing across the uplink carriers.\n\nSimilar enhancements as introduced with [[Dual-Cell HSDPA]] in the downlink for 3GPP Release 8 were standardized for the uplink in 3GPP Release 9, called Dual-Cell HSUPA. The standardisation of Release 9 was completed in December 2009.<ref>[http://www.3gpp.org/releases 3GPP releases]</ref><ref name=\"DC-HSUPA\">[http://www.nomor.de/home/technology/3gpp-newsletter/2009-03-standardisation-updates-on-hspa-evolution Nomor 3GPP Newsletter 2009-03: Standardisation updates on HSPA Evolution<!-- Bot generated title -->] {{Webarchive|url=https://web.archive.org/web/20140201161322/http://www.nomor.de/home/technology/3gpp-newsletter/2009-03-standardisation-updates-on-hspa-evolution |date=2014-02-01 }}, nomor.de</ref><ref>{{Cite web |url=http://www.nomor.de/home/technology/white-papers/dual-cell-hspa-and-its-future-evolution |title=Nomor Research White Paper: Dual-Cell HSDPA and its Evolution |access-date=2016-03-14 |archive-url=https://web.archive.org/web/20140201161319/http://www.nomor.de/home/technology/white-papers/dual-cell-hspa-and-its-future-evolution |archive-date=2014-02-01 |url-status=dead }}</ref>\n\n=== User Equipment (UE) Categories ===\nThe following table shows uplink speeds for the different categories of Evolved HSUPA.\n\n{|class=\"wikitable collapsible collapsed\" style=\"text-align:center\"\n|-\n!colspan=\"4\"| Evolved HSUPA User Equipment (UE) categories\n|-\n! HSUPA<br />Category\n! Release\n! Max.<br />Uplink<br />Speed<br /><small>(Mbit/s)</small>\n! Modulation\n|-\n| 7\n| 7\n| 11.5\n| QPSK & 16QAM\n|-\n| 8\n| 9\n| 11.5\n| 2 ms, dual cell E-DCH operation, QPSK only;<br />(see 3GPP Rel 11 TS 25.306 table 5.1g)\n|-\n| 9\n| 9\n| 22.9\n| 2 ms, dual cell E-DCH operation, QPSK and 16QAM;<br />(see 3GPP Rel 11 TS 25.306 table 5.1g)\n|-\n| 10\n| 11\n| 17.25\n| 2 ms, QPSK, 16QAM, and 64QAM;<br />(see 3GPP Rel 11 TS 25.306 table 5.1g)\n|-\n| 11\n| 11\n| 22.9\n| 2 ms, uplink MIMO, QPSK and 16QAM;<br />(see 3GPP Rel 11 TS 25.306 table 5.1g)\n|-\n| 12\n| 11\n| 34.5\n| 2 ms, uplink MIMO, QPSK, 16QAM, and 64QAM;<br />(see 3GPP Rel 11 TS 25.306 table 5.1g)\n|}\n\n== Multi-carrier HSPA (MC-HSPA) ==\nThe aggregation of more than two carriers has been studied and [[3GPP]] Release 11 is scheduled to include 4-carrier HSPA. The standard was scheduled to be finalised in Q3&nbsp;2012 and first chipsets supporting MC-HSPA in late 2013. Release 11 specifies 8-carrier HSPA allowed in non-contiguous bands with 4&nbsp;×&nbsp;4&nbsp;[[MIMO]] offering peak transfer rates up to {{nowrap|672 Mbit/s.}}\n\nThe 168&nbsp;Mbit/s and 22&nbsp;Mbit/s represent theoretical peak speeds. The actual speed for a user will be lower. In general, HSPA+ offers higher bitrates only in very good radio conditions (very close to the cell tower) or if the terminal and network both support either [[MIMO]] or [[Dual-Cell HSDPA]], which effectively use two parallel transmit channels with different technical implementations.\n\nThe higher 168&nbsp;Mbit/s speeds are achieved by using multiple carriers with [[Dual-Cell HSDPA]] and 4-way [[MIMO]] together simultaneously.<ref name=\"ericsson\">{{cite web|url=http://www.ericsson.com/res/thecompany/docs/journal_conference_papers/atsp/multi-carrier_hspa_evolution.pdf|date=28 January 2009|title=Multi-Carrier HSPA Evolution|author1=Klas Johansson|author2=Johan Bergman|author3=Dirk Gerstenberger|author4=Mats Blomgren|author5=Anders Wallén|publisher=Ericsson.com|access-date=2014-06-01|archive-url=https://web.archive.org/web/20130526034623/http://www.ericsson.com/res/thecompany/docs/journal_conference_papers/atsp/multi-carrier_hspa_evolution.pdf|archive-date=26 May 2013|url-status=dead}}</ref><ref name=\"nokiasiemensnetworks\">{{cite web|url=http://www.nokiasiemensnetworks.com/sites/default/files/document/HSPA_evolution_white_paper_low_res_141220.pdf|date=14 December 2010|title=White paper Long Term HSPA Evolution Mobile broadband evolution beyond 3GPP Release 10|publisher=Nokiaslemensnetworks.com|access-date=2014-06-01}}</ref>\n\n== All-IP architecture ==\nA flattened all-IP architecture is an option for the network within HSPA+. In this architecture, the base stations connect to the network via IP (often Ethernet providing the transmission), bypassing legacy elements for the user's data connections. This makes the network faster and cheaper to deploy and operate. The legacy architecture is still permitted with the Evolved HSPA and is likely to exist for several years after adoption of the other aspects of HSPA+ (higher order modulation, multiple streams, etc.).\n\nThis 'flat architecture' connects the 'user plane' directly from the base station to the [[GGSN]] external gateway, using any available link technology supporting TCP/IP. The definition can be found in [http://ftp.3gpp.org/Specs/archive/25_series/25.999/ 3GPP TR25.999]. The user's data flow bypasses the Radio Network Controller (RNC) and the [[SGSN]] of the previous 3GPP UMTS architecture versions, thus simplifying the architecture, reducing costs and delays. This is nearly identical to the [[3GPP Long Term Evolution]] (LTE) flat architecture as defined in the 3GPP standard Rel-8. The changes allow cost effective modern link layer technologies such as xDSL or Ethernet, and these technologies are no longer tied to the more expensive and rigid requirements of the older standard of SONET/SDH and E1/T1 infrastructure.\n\nThere are no changes to the 'control plane'.\n\n[[Nokia Siemens Networks]] '''Internet HSPA''' ('''I-HSPA''') was the first commercial solution implementing the Evolved HSPA flattened all-IP architecture.<ref>[http://www.nokiasiemensnetworks.com/products/mobile-broadband/internet-hspa ] {{webarchive |url=https://web.archive.org/web/20110102060653/http://www.nokiasiemensnetworks.com/products/mobile-broadband/internet-hspa |date=January 2, 2011 }}</ref>\n\n== See also ==\n* [[Comparison of wireless data standards]]\n* [[High Speed Packet Access]]\n* [[List of UMTS networks]]\n\n== References ==\n{{Reflist|30em}}\n\n== External links ==\n* [https://web.archive.org/web/20081026202407/http://www.3gpp.org/specs/specs.htm 3GPP Specifications Home Page]\n* [http://webapp.etsi.org/key/queryform.asp ETSI GSM UMTS 3GPP Numbering Cross Reference]\n* [http://sites.google.com/site/lteencyclopedia/lte-radio-link-budgeting-and-rf-planning/lte-link-budget-comparison HSPA LTE Link Budget Comparison]\n* [http://www.linkedin.com/groups?gid=1888232 Public HSPA Discussion Forum]\n* [https://web.archive.org/web/20090327022059/http://www.3gamericas.org/documents/2006_Rysavy_Data_Paper_FINAL_09.15.06.pdf EDGE, HSPA & LTE]\n* [https://web.archive.org/web/20070716125438/http://www.qualcomm.com/press/releases/2007/070212_deliver_28_mbps.html QUALCOMM to Deliver 28&nbsp;Mbps Mobile Broadband with HSPA+]\n* HSPA+ Upgrade in Sri Lanka [http://www.cellular-news.com/story/37088.php]\n* Sri Lanka; Local 28.8&nbsp;Mbit/s downlink HSPA trial a 'success'[http://www.sundaytimes.lk/091220/BusinessTimes/bt12.html]\n* [http://www.tmonews.com/2010/12/hspa-now-officially-4g-according-to-itu/ HSPA+ Now “Officially” 4G According to ITU]\n\n{{Mobile telecommunications standards}}\n\n[[Category:3GPP standards]]\n[[Category:UMTS]]\n[[Category:Year of introduction missing]]",
+            "text": "Evolved High Speed Packet Access, HSPA+, HSPA (Plus) or HSPAP, is a technical standard for wireless broadband telecommunication. It is the second phase of HSPA which has been introduced in 3GPP release 7 and being further improved in later 3GPP releases. HSPA+ can achieve data rates of up to 42.2 Mbit/s. It introduces antenna array technologies such as beamforming and multiple-input multiple-output communications (MIMO). Beam forming focuses the transmitted power of an antenna in a beam towards the user's direction. MIMO uses multiple antennas at the sending and receiving side. Further releases of the standard have introduced dual carrier operation, i.e. the simultaneous use of two 5 MHz carriers. HSPA+ is an evolution of HSPA that upgrades the existing 3G network and provides a method for telecom operators to migrate towards 4G speeds that are more comparable to the initially available speeds of newer LTE networks without deploying a new radio interface. HSPA+ should not be confused with LTE though, which uses an air interface based on orthogonal frequency-division modulation and multiple access. Advanced HSPA+ is a further evolution of HSPA and provides data rates up to 84.4 and 168 Megabits per second (Mbit/s) to the mobile device (downlink) and 22 Mbit/s from the mobile device (uplink) under ideal signal conditions. Technically these are achieved through the use of a multiple-antenna technique known as MIMO (for \"multiple-input and multiple-output\") and higher order modulation (64QAM) or combining multiple cells into one with a technique known as Dual-Cell HSDPA. An Evolved HSDPA network can theoretically support up to 28 Mbit/s and 42 Mbit/s with a single 5 MHz carrier for Rel7 (MIMO with 16QAM) and Rel8 (64-QAM + MIMO), in good channel conditions with low correlation between transmit antennas. Although real speeds are far lower. Besides the throughput gain from doubling the number of cells to be used, some diversity and joint scheduling gains can also be achieved. The QoS (Quality of Service) can be particularly improved for end users in poor radio reception where they cannot benefit from the other WCDMA capacity improvements (MIMO and higher order modulations) due to poor radio signal quality. In 3GPP a study item was completed in June 2008. The outcome can be found in technical report 25.825. An alternative method to double the data rates is to double the bandwidth to 10 MHz (i.e. 2×5 MHz) by using DC-HSDPA. Dual-Carrier HSDPA, also known as Dual-Cell HSDPA, is part of 3GPP Release 8 specification. It is the natural evolution of HSPA by means of carrier aggregation in the downlink. UMTS licenses are often issued as 5, 10, or 20 MHz paired spectrum allocations. The basic idea of the multicarrier feature is to achieve better resource utilization and spectrum efficiency by means of joint resource allocation and load balancing across the downlink carriers. New HSDPA User Equipment categories 21-24 have been introduced that support DC-HSDPA. DC-HSDPA can support up to 42.2 Mbit/s, but unlike HSPA, it does not need to rely on MIMO transmission. The support of MIMO in combination with DC-HSDPA will allow operators deploying Release 7 MIMO to benefit from the DC-HSDPA functionality as defined in Release 8. While in Release 8 DC-HSDPA can only operate on adjacent carriers, Release 9 also allows that the paired cells can operate on two different frequency bands. Later releases allow the use of up to four carriers simultaneously. From Release 9 onwards it will be possible to use DC-HSDPA in combination with MIMO being used on both carriers. The support of MIMO in combination with DC-HSDPA will allow operators even more capacity improvements within their network. This will allow theoretical speed of up to 84.4 Mbit/s. The following table is derived from table 5.1a of the release 11 of 3GPP TS 25.306 and shows maximum data rates of different device classes and by what combination of features they are achieved. The per-cell per-stream data rate is limited by the Maximum number of bits of an HS-DSCH transport block received within an HS-DSCH TTI and the Minimum inter-TTI interval. The TTI is 2 ms. So for example Cat 10 can decode 27,952 bits/2 ms = 13.976 Mbit/s (and not 14.4 Mbit/s as often claimed incorrectly). Categories 1-4 and 11 have inter-TTI intervals of 2 or 3, which reduces the maximum data rate by that factor. Dual-Cell and MIMO 2x2 each multiply the maximum data rate by 2, because multiple independent transport blocks are transmitted over different carriers or spatial streams, respectively. The data rates given in the table are rounded to one decimal point. Notes: 16-QAM implies QPSK support, 64-QAM implies 16-QAM and QPSK support. The maximal code rate is not limited. A value close to 1 in this column indicates that the maximum data rate can be achieved only in ideal conditions. The device is therefore connected directly to the transmitter to demonstrate these data rates. The maximum data rates given in the table are physical layer data rates. Application layer data rate is approximately 85% of that, due to the inclusion of IP headers (overhead information) etc. Category 19 was specified in Release 7 as \"For further use\". Not until Release 8 simultaneous use of 64QAM and MIMO were allowed to obtain the specified max. data rate. Category 20 was specified in Release 7 as \"For further use\". Not until Release 8 simultaneous use of 64QAM and MIMO were allowed to obtain the specified max. data rate. Dual-Carrier HSUPA, also known as Dual-Cell HSUPA, is a wireless broadband standard based on HSPA that is defined in 3GPP UMTS release 9. Dual Cell (DC-)HSUPA is the natural evolution of HSPA by means of carrier aggregation in the uplink. UMTS licenses are often issued as 10 or 15 MHz paired spectrum allocations. The basic idea of the multicarrier feature is to achieve better resource utilization and spectrum efficiency by means of joint resource allocation and load balancing across the uplink carriers. Similar enhancements as introduced with Dual-Cell HSDPA in the downlink for 3GPP Release 8 were standardized for the uplink in 3GPP Release 9, called Dual-Cell HSUPA. The standardisation of Release 9 was completed in December 2009. The following table shows uplink speeds for the different categories of Evolved HSUPA. The aggregation of more than two carriers has been studied and 3GPP Release 11 is scheduled to include 4-carrier HSPA. The standard was scheduled to be finalised in Q3 2012 and first chipsets supporting MC-HSPA in late 2013. Release 11 specifies 8-carrier HSPA allowed in non-contiguous bands with 4 × 4 MIMO offering peak transfer rates up to 672 Mbit/s. The 168 Mbit/s and 22 Mbit/s represent theoretical peak speeds. The actual speed for a user will be lower. In general, HSPA+ offers higher bitrates only in very good radio conditions (very close to the cell tower) or if the terminal and network both support either MIMO or Dual-Cell HSDPA, which effectively use two parallel transmit channels with different technical implementations. The higher 168 Mbit/s speeds are achieved by using multiple carriers with Dual-Cell HSDPA and 4-way MIMO together simultaneously. A flattened all-IP architecture is an option for the network within HSPA+. In this architecture, the base stations connect to the network via IP (often Ethernet providing the transmission), bypassing legacy elements for the user's data connections. This makes the network faster and cheaper to deploy and operate. The legacy architecture is still permitted with the Evolved HSPA and is likely to exist for several years after adoption of the other aspects of HSPA+ (higher order modulation, multiple streams, etc.). This 'flat architecture' connects the 'user plane' directly from the base station to the GGSN external gateway, using any available link technology supporting TCP/IP. The definition can be found in 3GPP TR25.999. The user's data flow bypasses the Radio Network Controller (RNC) and the SGSN of the previous 3GPP UMTS architecture versions, thus simplifying the architecture, reducing costs and delays. This is nearly identical to the 3GPP Long Term Evolution (LTE) flat architecture as defined in the 3GPP standard Rel-8. The changes allow cost effective modern link layer technologies such as xDSL or Ethernet, and these technologies are no longer tied to the more expensive and rigid requirements of the older standard of SONET/SDH and E1/T1 infrastructure. There are no changes to the 'control plane'. Nokia Siemens Networks Internet HSPA (I-HSPA) was the first commercial solution implementing the Evolved HSPA flattened all-IP architecture. Comparison of wireless data standards High Speed Packet Access List of UMTS networks \"HSPA\". About Us. Archived from the original on 2017-07-09. Retrieved 2016-03-30. \"Ericsson Review #1 2009 - Continued HSPA Evolution of mobile broadband\" (PDF). Ericsson.com. 27 January 2009. Archived from the original (PDF) on 5 June 2014. Retrieved 2014-06-01. R1-081546, “Initial multi-carrier HSPA performance evaluation”, Ericsson, 3GPP TSG-RAN WG1 #52bis, April, 2008 \"3GPP specification: 25.825\". 3gpp.org. \"Dual-Cell HSPA and its Future Evolution - Nomor Research\". nomor. 2010-10-10. Archived from the original on 2014-02-01. Retrieved 2016-03-30. \"2009-03: Standardisation updates on HSPA Evolution - Nomor Research\". nomor. 2010-10-10. Archived from the original on 2014-02-01. Retrieved 2016-03-30. \"Dual carrier HSPA: DC-HSPA, DC-HSPDA\". Archived from the original on 2018-11-20. Retrieved 2016-03-14. 3GPP TS 25.306 v11.0.0 http://www.3gpp.org/ftp/Specs/html-info/25306.htm \"Nomor 3GPP Newsletter 2009-03: Standardisation updates on HSPA Evolution\". Archived from the original on 2014-02-01. Retrieved 2016-03-14. 3GPP releases Nomor 3GPP Newsletter 2009-03: Standardisation updates on HSPA Evolution Archived 2014-02-01 at the Wayback Machine, nomor.de \"Nomor Research White Paper: Dual-Cell HSDPA and its Evolution\". Archived from the original on 2014-02-01. Retrieved 2016-03-14. Klas Johansson; Johan Bergman; Dirk Gerstenberger; Mats Blomgren; Anders Wallén (28 January 2009). \"Multi-Carrier HSPA Evolution\" (PDF). Ericsson.com. Archived from the original (PDF) on 26 May 2013. Retrieved 2014-06-01. \"White paper Long Term HSPA Evolution Mobile broadband evolution beyond 3GPP Release 10\" (PDF). Nokiaslemensnetworks.com. 14 December 2010. Retrieved 2014-06-01. [1] Archived January 2, 2011, at the Wayback Machine 3GPP Specifications Home Page ETSI GSM UMTS 3GPP Numbering Cross Reference HSPA LTE Link Budget Comparison Public HSPA Discussion Forum EDGE, HSPA & LTE QUALCOMM to Deliver 28 Mbps Mobile Broadband with HSPA+ HSPA+ Upgrade in Sri Lanka [2] Sri Lanka; Local 28.8 Mbit/s downlink HSPA trial a 'success'[3] HSPA+ Now “Officially” 4G According to ITU"
+        },
+        "collectMetadata": {
+            "requestedDate": "2023-10-16T00:00:00",
+            "ingestedDate": "2023-10-19T17:15:51.150685"
+        },
+        "extractionMetadata": [
+            {
+                "id": "WikitextExtractor",
+                "linkExtractionDate": "2023-10-19T17:15:51.154817",
+                "links": [
+                    {
+                        "fragment": null,
+                        "link": "File:HSPA_plus_logo_Android_Screenshot.jpg",
+                        "text": "thumbnail|250px|HSPA+ sign shown in notification bar on an Android-based smartphone.",
+                        "title": "File:HSPA plus logo Android Screenshot.jpg"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Technical_standard",
+                        "text": null,
+                        "title": "technical standard"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Wireless_broadband",
+                        "text": null,
+                        "title": "wireless broadband"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "High_Speed_Packet_Access",
+                        "text": "HSPA",
+                        "title": "High Speed Packet Access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Beamforming",
+                        "text": null,
+                        "title": "beamforming"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Multiple-input_multiple-output_communications",
+                        "text": null,
+                        "title": "multiple-input multiple-output communications"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "LTE_(telecommunication)",
+                        "text": "LTE",
+                        "title": "LTE (telecommunication)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "LTE_(telecommunication)",
+                        "text": "LTE",
+                        "title": "LTE (telecommunication)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Orthogonal_frequency-division_multiple_access",
+                        "text": "orthogonal frequency-division",
+                        "title": "Orthogonal frequency-division multiple access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Bit_rate",
+                        "text": "data rate",
+                        "title": "Bit rate"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Megabits_per_second",
+                        "text": null,
+                        "title": "Megabits per second"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "MIMO",
+                        "text": null,
+                        "title": "MIMO"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Modulation_order",
+                        "text": "order modulation",
+                        "title": "modulation order"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "File:Cellular_network_standards_and_generation_timeline.svg",
+                        "text": "thumb|Cellular network standards and generation timeline.",
+                        "title": "File:Cellular network standards and generation timeline.svg"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "64-QAM",
+                        "text": null,
+                        "title": "64-QAM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "MIMO",
+                        "text": null,
+                        "title": "MIMO"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3GPP",
+                        "text": null,
+                        "title": "3GPP"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Carrier_aggregation",
+                        "text": null,
+                        "title": "carrier aggregation"
+                    },
+                    {
+                        "fragment": "User Equipment (UE) categories",
+                        "link": "High-Speed_Downlink_Packet_Access",
+                        "text": "User Equipment categories 21-24",
+                        "title": "High-Speed Downlink Packet Access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Code_rate",
+                        "text": null,
+                        "title": "Code rate"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Overhead_information",
+                        "text": null,
+                        "title": "overhead information"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "64-QAM",
+                        "text": null,
+                        "title": "64-QAM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "MIMO",
+                        "text": null,
+                        "title": "MIMO"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Dual-Cell_HSDPA",
+                        "text": "Dual-Cell",
+                        "title": "Dual-Cell HSDPA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3GPP",
+                        "text": null,
+                        "title": "3GPP"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Universal_mobile_telecommunications_system",
+                        "text": "UMTS",
+                        "title": "Universal mobile telecommunications system"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Dual-Cell_HSDPA",
+                        "text": null,
+                        "title": "Dual-Cell HSDPA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3GPP",
+                        "text": null,
+                        "title": "3GPP"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "MIMO",
+                        "text": null,
+                        "title": "MIMO"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "MIMO",
+                        "text": null,
+                        "title": "MIMO"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Dual-Cell_HSDPA",
+                        "text": null,
+                        "title": "Dual-Cell HSDPA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Dual-Cell_HSDPA",
+                        "text": null,
+                        "title": "Dual-Cell HSDPA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "MIMO",
+                        "text": null,
+                        "title": "MIMO"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GGSN",
+                        "text": null,
+                        "title": "GGSN"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "SGSN",
+                        "text": null,
+                        "title": "SGSN"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3GPP_Long_Term_Evolution",
+                        "text": null,
+                        "title": "3GPP Long Term Evolution"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Nokia_Siemens_Networks",
+                        "text": null,
+                        "title": "Nokia Siemens Networks"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Comparison_of_wireless_data_standards",
+                        "text": null,
+                        "title": "Comparison of wireless data standards"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "High_Speed_Packet_Access",
+                        "text": null,
+                        "title": "High Speed Packet Access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "List_of_UMTS_networks",
+                        "text": null,
+                        "title": "List of UMTS networks"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:3GPP_standards",
+                        "text": null,
+                        "title": "Category:3GPP standards"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:UMTS",
+                        "text": null,
+                        "title": "Category:UMTS"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Year_of_introduction_missing",
+                        "text": null,
+                        "title": "Category:Year of introduction missing"
+                    }
+                ],
+                "nbLinks": 43,
+                "nbTables": 2,
+                "nbTexts": 13,
+                "tableExtractionDate": "2023-10-19T17:15:51.154817",
+                "tables": [
+                    {
+                        "endOffset": 10961,
+                        "startOffset": 8065,
+                        "tableCaption": null,
+                        "tableContent": "{|class=\"wikitable collapsible collapsed\" style=\"text-align:center\"\n|-\n!colspan=\"7\"| Evolved HSDPA User Equipment (UE) categories\n|-\n! Category\n! Release\n! Max. number<br />of HS-DSCH<br />codes (per cell)\n! Modulation <ref group=\"note\">16-QAM implies QPSK support, 64-QAM implies 16-QAM and QPSK support.</ref>\n! MIMO, Multi-Cell\n! [[Code rate]]<br />at max. Data<br />Rate <ref group=\"note\">The maximal code rate is not limited. A value close to 1 in this column indicates that the maximum data rate can be achieved only in ideal conditions. The device is therefore connected directly to the transmitter to demonstrate these data rates.</ref>\n! Max. Downlink<br />Speed<br /><small>(Mbit/s)</small> <ref group=\"note\">The maximum data rates given in the table are physical layer data rates. Application layer data rate is approximately 85% of that, due to the inclusion of IP headers ([[overhead information]]) etc.</ref>\n|-\n| 13\n| 7\n| 15\n| [[64-QAM]]\n|\n| .82\n| 17.6\n|-\n| 14\n| 7\n| 15\n| 64-QAM\n|\n| .98\n| 21.1\n|-\n| 15\n| 7\n| 15\n| 16-QAM\n| [[MIMO]] 2x2\n| .81\n| 23.4\n|-\n| 16\n| 7\n| 15\n| 16-QAM\n| MIMO 2x2\n| .97\n| 28.0\n|-\n| rowspan=\"2\" | 17\n| rowspan=\"2\" | 7\n| 15\n| 64-QAM\n| \n| .82\n| 17.6\n|-\n| 15\n| 16-QAM\n| MIMO 2x2\n| .81\n| 23.4\n|-\n| rowspan=\"2\" | 18\n| rowspan=\"2\" | 7\n| 15\n| 64-QAM\n|\n| .98\n| 21.1\n|-\n| 15\n| 16-QAM\n| MIMO 2x2\n| .97\n| 28.0\n|-\n| 19\n| 8 <ref group=\"note\">Category 19 was specified in Release 7 as \"For further use\". Not until Release 8 simultaneous use of 64QAM and MIMO were allowed to obtain the specified max. data rate.</ref>\n| 15\n| 64-QAM\n| MIMO 2x2\n| .82\n| 35.3\n|-\n| 20\n| 8 <ref group=\"note\">Category 20 was specified in Release 7 as \"For further use\". Not until Release 8 simultaneous use of 64QAM and MIMO were allowed to obtain the specified max. data rate.</ref>\n| 15\n| 64-QAM\n| MIMO 2x2\n| .98\n| 42.2\n|-\n| 21\n| 8\n| 15\n| 16-QAM\n| [[Dual-Cell HSDPA|Dual-Cell]]\n| .81\n| 23.4\n|-\n| 22\n| 8\n| 15\n| 16-QAM\n| Dual-Cell\n| .97\n| 28.0\n|-\n| 23\n| 8\n| 15\n| 64-QAM\n| Dual-Cell\n| .82\n| 35.3\n|-\n| 24\n| 8\n| 15\n| 64-QAM\n| Dual-Cell\n| .98\n| 42.2\n|-\n| 25\n| 9\n| 15\n| 16-QAM\n| Dual-Cell + MIMO 2x2\n| .81\n| 46.7\n|-\n| 26\n| 9\n| 15\n| 16-QAM\n| Dual-Cell + MIMO 2x2\n| .97\n| 55.9\n|-\n| 27\n| 9\n| 15\n| 64-QAM\n| Dual-Cell + MIMO 2x2\n| .82\n| 70.6\n|-\n| 28\n| 9\n| 15\n| 64-QAM\n| Dual-Cell + MIMO 2x2\n| .98\n| 84.4\n|-\n| 29\n| 10\n| 15\n| 64-QAM\n| Triple-Cell \n| .98\n| 63.3\n|-\n| 30\n| 10\n| 15\n| 64-QAM\n| Triple-Cell + MIMO 2x2\n| .98\n| 126.6\n|-\n| 31\n| 10\n| 15\n| 64-QAM\n| Quad-Cell \n| .98\n| 84.4\n|-\n| 32\n| 10\n| 15\n| 64-QAM\n| Quad-Cell + MIMO 2x2\n| .98\n| 168.8\n|-\n| 33\n| 11\n| 15\n| 64-QAM\n| Hexa-Cell \n| .98\n| 126.6\n|-\n| 34\n| 11\n| 15\n| 64-QAM\n| Hexa-Cell + MIMO 2x2\n| .98\n| 253.2\n|-\n| 35\n| 11\n| 15\n| 64-QAM\n| Octa-Cell \n| .98\n| 168.8\n|-\n| 36\n| 11\n| 15\n| 64-QAM\n| Octa-Cell + MIMO 2x2\n| .98\n| 337.5\n|-\n| 37\n| 11\n| 15\n| 64-QAM\n| Dual-Cell + MIMO 4x4\n| .98\n| 168.8\n|-\n| 38\n| 11\n| 15\n| 64-QAM\n| Quad-Cell + MIMO 4x4\n| .98\n| 337.5\n|}",
+                        "tableData": [
+                            [
+                                "Evolved HSDPA User Equipment (UE) categories",
+                                "Evolved HSDPA User Equipment (UE) categories",
+                                "Evolved HSDPA User Equipment (UE) categories",
+                                "Evolved HSDPA User Equipment (UE) categories",
+                                "Evolved HSDPA User Equipment (UE) categories",
+                                "Evolved HSDPA User Equipment (UE) categories",
+                                "Evolved HSDPA User Equipment (UE) categories"
+                            ],
+                            [
+                                "Category",
+                                "Release",
+                                "Max. numberof HS-DSCHcodes (per cell)",
+                                "Modulation 16-QAM implies QPSK support, 64-QAM implies 16-QAM and QPSK support.",
+                                "MIMO, Multi-Cell",
+                                "Code rateat max. DataRate The maximal code rate is not limited. A value close to 1 in this column indicates that the maximum data rate can be achieved only in ideal conditions. The device is therefore connected directly to the transmitter to demonstrate these data rates.",
+                                "Max. DownlinkSpeed(Mbit/s) The maximum data rates given in the table are physical layer data rates. Application layer data rate is approximately 85% of that, due to the inclusion of IP headers (overhead information) etc."
+                            ],
+                            [
+                                "13",
+                                "7",
+                                "15",
+                                "64-QAM",
+                                "",
+                                ".82",
+                                "17.6"
+                            ],
+                            [
+                                "14",
+                                "7",
+                                "15",
+                                "64-QAM",
+                                "",
+                                ".98",
+                                "21.1"
+                            ],
+                            [
+                                "15",
+                                "7",
+                                "15",
+                                "16-QAM",
+                                "MIMO 2x2",
+                                ".81",
+                                "23.4"
+                            ],
+                            [
+                                "16",
+                                "7",
+                                "15",
+                                "16-QAM",
+                                "MIMO 2x2",
+                                ".97",
+                                "28.0"
+                            ],
+                            [
+                                "17",
+                                "7",
+                                "15",
+                                "64-QAM",
+                                "",
+                                ".82",
+                                "17.6"
+                            ],
+                            [
+                                "17",
+                                "7",
+                                "15",
+                                "16-QAM",
+                                "MIMO 2x2",
+                                ".81",
+                                "23.4"
+                            ],
+                            [
+                                "18",
+                                "7",
+                                "15",
+                                "64-QAM",
+                                "",
+                                ".98",
+                                "21.1"
+                            ],
+                            [
+                                "18",
+                                "7",
+                                "15",
+                                "16-QAM",
+                                "MIMO 2x2",
+                                ".97",
+                                "28.0"
+                            ],
+                            [
+                                "19",
+                                "8 Category 19 was specified in Release 7 as \"For further use\". Not until Release 8 simultaneous use of 64QAM and MIMO were allowed to obtain the specified max. data rate.",
+                                "15",
+                                "64-QAM",
+                                "MIMO 2x2",
+                                ".82",
+                                "35.3"
+                            ],
+                            [
+                                "20",
+                                "8 Category 20 was specified in Release 7 as \"For further use\". Not until Release 8 simultaneous use of 64QAM and MIMO were allowed to obtain the specified max. data rate.",
+                                "15",
+                                "64-QAM",
+                                "MIMO 2x2",
+                                ".98",
+                                "42.2"
+                            ],
+                            [
+                                "21",
+                                "8",
+                                "15",
+                                "16-QAM",
+                                "Dual-Cell",
+                                ".81",
+                                "23.4"
+                            ],
+                            [
+                                "22",
+                                "8",
+                                "15",
+                                "16-QAM",
+                                "Dual-Cell",
+                                ".97",
+                                "28.0"
+                            ],
+                            [
+                                "23",
+                                "8",
+                                "15",
+                                "64-QAM",
+                                "Dual-Cell",
+                                ".82",
+                                "35.3"
+                            ],
+                            [
+                                "24",
+                                "8",
+                                "15",
+                                "64-QAM",
+                                "Dual-Cell",
+                                ".98",
+                                "42.2"
+                            ],
+                            [
+                                "25",
+                                "9",
+                                "15",
+                                "16-QAM",
+                                "Dual-Cell + MIMO 2x2",
+                                ".81",
+                                "46.7"
+                            ],
+                            [
+                                "26",
+                                "9",
+                                "15",
+                                "16-QAM",
+                                "Dual-Cell + MIMO 2x2",
+                                ".97",
+                                "55.9"
+                            ],
+                            [
+                                "27",
+                                "9",
+                                "15",
+                                "64-QAM",
+                                "Dual-Cell + MIMO 2x2",
+                                ".82",
+                                "70.6"
+                            ],
+                            [
+                                "28",
+                                "9",
+                                "15",
+                                "64-QAM",
+                                "Dual-Cell + MIMO 2x2",
+                                ".98",
+                                "84.4"
+                            ],
+                            [
+                                "29",
+                                "10",
+                                "15",
+                                "64-QAM",
+                                "Triple-Cell",
+                                ".98",
+                                "63.3"
+                            ],
+                            [
+                                "30",
+                                "10",
+                                "15",
+                                "64-QAM",
+                                "Triple-Cell + MIMO 2x2",
+                                ".98",
+                                "126.6"
+                            ],
+                            [
+                                "31",
+                                "10",
+                                "15",
+                                "64-QAM",
+                                "Quad-Cell",
+                                ".98",
+                                "84.4"
+                            ],
+                            [
+                                "32",
+                                "10",
+                                "15",
+                                "64-QAM",
+                                "Quad-Cell + MIMO 2x2",
+                                ".98",
+                                "168.8"
+                            ],
+                            [
+                                "33",
+                                "11",
+                                "15",
+                                "64-QAM",
+                                "Hexa-Cell",
+                                ".98",
+                                "126.6"
+                            ],
+                            [
+                                "34",
+                                "11",
+                                "15",
+                                "64-QAM",
+                                "Hexa-Cell + MIMO 2x2",
+                                ".98",
+                                "253.2"
+                            ],
+                            [
+                                "35",
+                                "11",
+                                "15",
+                                "64-QAM",
+                                "Octa-Cell",
+                                ".98",
+                                "168.8"
+                            ],
+                            [
+                                "36",
+                                "11",
+                                "15",
+                                "64-QAM",
+                                "Octa-Cell + MIMO 2x2",
+                                ".98",
+                                "337.5"
+                            ],
+                            [
+                                "37",
+                                "11",
+                                "15",
+                                "64-QAM",
+                                "Dual-Cell + MIMO 4x4",
+                                ".98",
+                                "168.8"
+                            ],
+                            [
+                                "38",
+                                "11",
+                                "15",
+                                "64-QAM",
+                                "Quad-Cell + MIMO 4x4",
+                                ".98",
+                                "337.5"
+                            ]
+                        ],
+                        "tableNum": 0
+                    },
+                    {
+                        "endOffset": 14145,
+                        "startOffset": 13345,
+                        "tableCaption": null,
+                        "tableContent": "{|class=\"wikitable collapsible collapsed\" style=\"text-align:center\"\n|-\n!colspan=\"4\"| Evolved HSUPA User Equipment (UE) categories\n|-\n! HSUPA<br />Category\n! Release\n! Max.<br />Uplink<br />Speed<br /><small>(Mbit/s)</small>\n! Modulation\n|-\n| 7\n| 7\n| 11.5\n| QPSK & 16QAM\n|-\n| 8\n| 9\n| 11.5\n| 2 ms, dual cell E-DCH operation, QPSK only;<br />(see 3GPP Rel 11 TS 25.306 table 5.1g)\n|-\n| 9\n| 9\n| 22.9\n| 2 ms, dual cell E-DCH operation, QPSK and 16QAM;<br />(see 3GPP Rel 11 TS 25.306 table 5.1g)\n|-\n| 10\n| 11\n| 17.25\n| 2 ms, QPSK, 16QAM, and 64QAM;<br />(see 3GPP Rel 11 TS 25.306 table 5.1g)\n|-\n| 11\n| 11\n| 22.9\n| 2 ms, uplink MIMO, QPSK and 16QAM;<br />(see 3GPP Rel 11 TS 25.306 table 5.1g)\n|-\n| 12\n| 11\n| 34.5\n| 2 ms, uplink MIMO, QPSK, 16QAM, and 64QAM;<br />(see 3GPP Rel 11 TS 25.306 table 5.1g)\n|}",
+                        "tableData": [
+                            [
+                                "Evolved HSUPA User Equipment (UE) categories",
+                                "Evolved HSUPA User Equipment (UE) categories",
+                                "Evolved HSUPA User Equipment (UE) categories",
+                                "Evolved HSUPA User Equipment (UE) categories"
+                            ],
+                            [
+                                "HSUPACategory",
+                                "Release",
+                                "Max.UplinkSpeed(Mbit/s)",
+                                "Modulation"
+                            ],
+                            [
+                                "7",
+                                "7",
+                                "11.5",
+                                "QPSK & 16QAM"
+                            ],
+                            [
+                                "8",
+                                "9",
+                                "11.5",
+                                "2 ms, dual cell E-DCH operation, QPSK only;(see 3GPP Rel 11 TS 25.306 table 5.1g)"
+                            ],
+                            [
+                                "9",
+                                "9",
+                                "22.9",
+                                "2 ms, dual cell E-DCH operation, QPSK and 16QAM;(see 3GPP Rel 11 TS 25.306 table 5.1g)"
+                            ],
+                            [
+                                "10",
+                                "11",
+                                "17.25",
+                                "2 ms, QPSK, 16QAM, and 64QAM;(see 3GPP Rel 11 TS 25.306 table 5.1g)"
+                            ],
+                            [
+                                "11",
+                                "11",
+                                "22.9",
+                                "2 ms, uplink MIMO, QPSK and 16QAM;(see 3GPP Rel 11 TS 25.306 table 5.1g)"
+                            ],
+                            [
+                                "12",
+                                "11",
+                                "34.5",
+                                "2 ms, uplink MIMO, QPSK, 16QAM, and 64QAM;(see 3GPP Rel 11 TS 25.306 table 5.1g)"
+                            ]
+                        ],
+                        "tableNum": 1
+                    }
+                ],
+                "technology": "WikitextExtractor",
+                "textExtractionDate": "2023-10-19T17:15:51.154817",
+                "texts": [
+                    {
+                        "endOffset": 2956,
+                        "index": 0,
+                        "level": 0,
+                        "startOffset": 0,
+                        "title": null,
+                        "value": "{{short description|Technical standard}}\n{{Multiple issues|\n{{External links|date=February 2015}}\n{{Technical|reason=Article uses jargon extensively without explanation||date=September 2017}}\n}}\n{{List of mobile phone generations}}\n[[File:HSPA plus logo Android Screenshot.jpg|thumbnail|250px|HSPA+ sign shown in notification bar on an Android-based smartphone.]]\nEvolved High Speed Packet Access, HSPA+, HSPA (Plus) or HSPAP, is a [[technical standard]] for [[wireless broadband]] telecommunication. It is the second phase of [[High Speed Packet Access|HSPA]] which has been introduced in 3GPP release 7 and being further improved in later 3GPP releases. HSPA+ can achieve data rates of up to 42.2 Mbit/s.<ref name=gsmworld>{{cite web|url=http://www.gsma.com/aboutus/gsm-technology/hspa|title=HSPA|work=About Us|access-date=2016-03-30|archive-url=https://web.archive.org/web/20170709180358/https://www.gsma.com/aboutus/gsm-technology/hspa|archive-date=2017-07-09|url-status=dead}}</ref> It introduces antenna array technologies such as [[beamforming]] and [[multiple-input multiple-output communications]] (MIMO). Beam forming focuses the transmitted power of an antenna in a beam towards the user's direction. MIMO uses multiple antennas at the sending and receiving side. Further releases of the standard have introduced dual carrier operation, i.e. the simultaneous use of two 5 MHz carriers. HSPA+ is an evolution of HSPA that upgrades the existing 3G network and provides a method for telecom operators to migrate towards 4G speeds that are more comparable to the initially available speeds of newer [[LTE (telecommunication)|LTE]] networks without deploying a new radio interface. HSPA+ should not be confused with [[LTE (telecommunication)|LTE]] though, which uses an air interface based on [[Orthogonal frequency-division multiple access|orthogonal frequency-division]] modulation and multiple access.<ref name=\"ericsson2\">{{cite web|url=http://www.ericsson.com/res/thecompany/docs/publications/ericsson_review/2009/issue1/hspa.pdf|date=27 January 2009|title=Ericsson Review #1 2009 - Continued HSPA Evolution of mobile broadband|publisher=Ericsson.com|access-date=2014-06-01|archive-url=https://web.archive.org/web/20140605052949/http://www.ericsson.com/res/thecompany/docs/publications/ericsson_review/2009/issue1/hspa.pdf|archive-date=5 June 2014|url-status=dead}}</ref>\n\nAdvanced HSPA+ is a further evolution of HSPA and provides [[Bit rate|data rate]]s up to 84.4 and 168 [[Megabits per second]] (Mbit/s) to the mobile device (downlink) and 22 Mbit/s from the mobile device (uplink) under ideal signal conditions. Technically these are achieved through the use of a multiple-antenna technique known as [[MIMO]] (for \"multiple-input and multiple-output\") and higher [[modulation order|order modulation]] (64QAM) or combining multiple cells into one with a technique known as Dual-Cell HSDPA."
+                    },
+                    {
+                        "endOffset": 11001,
+                        "index": 1,
+                        "level": 2,
+                        "startOffset": 2956,
+                        "title": "Downlink",
+                        "value": ""
+                    },
+                    {
+                        "endOffset": 4288,
+                        "index": 2,
+                        "level": 3,
+                        "startOffset": 2969,
+                        "title": "Evolved HSDPA (HSPA+)",
+                        "value": "{{main|HSPA+}}\n[[File:Cellular network standards and generation timeline.svg|thumb|Cellular network standards and generation timeline.]]\nAn Evolved HSDPA network can theoretically support up to 28 Mbit/s and 42 Mbit/s with a single 5 MHz carrier for Rel7 (MIMO with 16QAM) and Rel8 ([[64-QAM]] + [[MIMO]]), in good channel conditions with low correlation between transmit antennas.  Although real speeds are far lower. Besides the throughput gain from doubling the number of cells to be used, some diversity and joint scheduling gains can also be achieved.<ref>R1-081546, “Initial multi-carrier HSPA performance evaluation”, Ericsson, 3GPP TSG-RAN WG1 #52bis, April, 2008</ref> The QoS (Quality of Service) can be particularly improved for end users in poor radio reception where they cannot benefit from the other WCDMA capacity improvements (MIMO and higher order modulations) due to poor radio signal quality. In 3GPP a study item was completed in June 2008. The outcome can be found in technical report 25.825.<ref>{{cite web|url=http://www.3gpp.org/ftp/Specs/html-info/25825.htm|title=3GPP specification: 25.825|work=3gpp.org}}</ref> An alternative method to double the data rates is to double the bandwidth to 10 MHz (i.e. 2×5 MHz) by using DC-HSDPA."
+                    },
+                    {
+                        "endOffset": 7059,
+                        "index": 3,
+                        "level": 3,
+                        "startOffset": 4288,
+                        "title": "Dual-Carrier HSDPA (DC-HSDPA)",
+                        "value": "Dual-Carrier HSDPA, also known as Dual-Cell HSDPA, is part of [[3GPP]] Release 8 specification. It is the natural evolution of HSPA by means of [[carrier aggregation]] in the downlink. UMTS licenses are often issued as 5, 10, or 20 MHz paired spectrum allocations. The basic idea of the multicarrier feature is to achieve better resource utilization and spectrum efficiency by means of joint resource allocation and load balancing across the downlink carriers.<ref name=\"Nomor 1\">{{cite web |url=http://www.nomor.de/home/technology/white-papers/dual-cell-hspa-and-its-future-evolution |title=Dual-Cell HSPA and its Future Evolution - Nomor Research |publisher=nomor |date=2010-10-10 |access-date=2016-03-30 |archive-url=https://web.archive.org/web/20140201161319/http://www.nomor.de/home/technology/white-papers/dual-cell-hspa-and-its-future-evolution |archive-date=2014-02-01 |url-status=dead }}</ref>\n\nNew HSDPA [[High-Speed Downlink Packet Access#User Equipment (UE) categories|User Equipment categories 21-24]] have been introduced that support DC-HSDPA. DC-HSDPA can support up to 42.2 Mbit/s, but unlike HSPA, it does not need to rely on MIMO transmission.\n\nThe support of MIMO in combination with DC-HSDPA will allow operators deploying Release 7 MIMO to benefit from the DC-HSDPA functionality as defined in Release 8. While in Release 8 DC-HSDPA can only operate on adjacent carriers, Release 9 also allows that the paired cells can operate on two different frequency bands. Later releases allow the use of up to four carriers simultaneously.\n\nFrom Release 9 onwards it will be possible to use DC-HSDPA in combination with MIMO being used on both carriers. The support of MIMO in combination with DC-HSDPA will allow operators even more capacity improvements within their network. This will allow theoretical speed of up to 84.4 Mbit/s.<ref name=\"Nomor 2\">{{cite web |url=http://www.nomor.de/home/technology/3gpp-newsletter/2009-03-standardisation-updates-on-hspa-evolution |title=2009-03: Standardisation updates on HSPA Evolution - Nomor Research |publisher=nomor |date=2010-10-10 |access-date=2016-03-30 |archive-url=https://web.archive.org/web/20140201161322/http://www.nomor.de/home/technology/3gpp-newsletter/2009-03-standardisation-updates-on-hspa-evolution |archive-date=2014-02-01 |url-status=dead }}</ref><ref>{{Cite web |url=http://www.radio-electronics.com/info/cellulartelecomms/3g-hspa/dc-dual-carrier-hspa-hsdpa.php |title=Dual carrier HSPA: DC-HSPA, DC-HSPDA |access-date=2016-03-14 |archive-url=https://web.archive.org/web/20181120055200/https://www.radio-electronics.com/info/cellulartelecomms/3g-hspa/dc-dual-carrier-hspa-hsdpa.php |archive-date=2018-11-20 |url-status=dead }}</ref>"
+                    },
+                    {
+                        "endOffset": 11001,
+                        "index": 4,
+                        "level": 3,
+                        "startOffset": 7059,
+                        "title": "User Equipment (UE) Categories",
+                        "value": "The following table is derived from table 5.1a of the release 11 of 3GPP TS 25.306<ref>3GPP TS 25.306 v11.0.0 http://www.3gpp.org/ftp/Specs/html-info/25306.htm</ref> and shows maximum data rates of different device classes and by what combination of features they are achieved. The per-cell per-stream data rate is limited by the Maximum number of bits of an HS-DSCH transport block received within an HS-DSCH TTI and the Minimum inter-TTI interval. The TTI is 2 ms. So for example Cat 10 can decode 27,952 bits/2 ms = 13.976 Mbit/s (and not 14.4 Mbit/s as often claimed incorrectly). Categories 1-4 and 11 have inter-TTI intervals of 2 or 3, which reduces the maximum data rate by that factor. Dual-Cell and MIMO 2x2 each multiply the maximum data rate by 2, because multiple independent transport blocks are transmitted over different carriers or spatial streams, respectively. The data rates given in the table are rounded to one decimal point.\n\n\n:Notes:\n{{Reflist| group=note}}"
+                    },
+                    {
+                        "endOffset": 14147,
+                        "index": 5,
+                        "level": 2,
+                        "startOffset": 11001,
+                        "title": "Uplink",
+                        "value": ""
+                    },
+                    {
+                        "endOffset": 13218,
+                        "index": 6,
+                        "level": 3,
+                        "startOffset": 11014,
+                        "title": "Dual-Carrier HSUPA (DC-HSUPA)",
+                        "value": "Dual-Carrier HSUPA, also known as Dual-Cell HSUPA, is a wireless broadband standard based on HSPA that is defined in [[3GPP]] [[Universal mobile telecommunications system|UMTS]] release 9.\nDual Cell (DC-)HSUPA is the natural evolution of HSPA by means of carrier aggregation in the uplink.<ref name=\"Nomor\">{{Cite web |url=http://www.nomor.de/home/technology/3gpp-newsletter/2009-03-standardisation-updates-on-hspa-evolution |title=Nomor 3GPP Newsletter 2009-03: Standardisation updates on HSPA Evolution |access-date=2016-03-14 |archive-url=https://web.archive.org/web/20140201161322/http://www.nomor.de/home/technology/3gpp-newsletter/2009-03-standardisation-updates-on-hspa-evolution |archive-date=2014-02-01 |url-status=dead }}</ref>  UMTS licenses are often issued as 10 or 15 MHz paired spectrum allocations. The basic idea of the multicarrier feature is to achieve better resource utilization and spectrum efficiency by means of joint resource allocation and load balancing across the uplink carriers.\n\nSimilar enhancements as introduced with [[Dual-Cell HSDPA]] in the downlink for 3GPP Release 8 were standardized for the uplink in 3GPP Release 9, called Dual-Cell HSUPA. The standardisation of Release 9 was completed in December 2009.<ref>3GPP releases</ref><ref name=\"DC-HSUPA\">Nomor 3GPP Newsletter 2009-03: Standardisation updates on HSPA Evolution {{Webarchive|url=https://web.archive.org/web/20140201161322/http://www.nomor.de/home/technology/3gpp-newsletter/2009-03-standardisation-updates-on-hspa-evolution |date=2014-02-01 }}, nomor.de</ref><ref>{{Cite web |url=http://www.nomor.de/home/technology/white-papers/dual-cell-hspa-and-its-future-evolution |title=Nomor Research White Paper: Dual-Cell HSDPA and its Evolution |access-date=2016-03-14 |archive-url=https://web.archive.org/web/20140201161319/http://www.nomor.de/home/technology/white-papers/dual-cell-hspa-and-its-future-evolution |archive-date=2014-02-01 |url-status=dead }}</ref>"
+                    },
+                    {
+                        "endOffset": 14147,
+                        "index": 7,
+                        "level": 3,
+                        "startOffset": 13218,
+                        "title": "User Equipment (UE) Categories",
+                        "value": "The following table shows uplink speeds for the different categories of Evolved HSUPA."
+                    },
+                    {
+                        "endOffset": 16038,
+                        "index": 8,
+                        "level": 2,
+                        "startOffset": 14147,
+                        "title": "Multi-carrier HSPA (MC-HSPA)",
+                        "value": "The aggregation of more than two carriers has been studied and [[3GPP]] Release 11 is scheduled to include 4-carrier HSPA. The standard was scheduled to be finalised in Q3 2012 and first chipsets supporting MC-HSPA in late 2013. Release 11 specifies 8-carrier HSPA allowed in non-contiguous bands with 4 × 4 [[MIMO]] offering peak transfer rates up to {{nowrap|672 Mbit/s.}}\n\nThe 168 Mbit/s and 22 Mbit/s represent theoretical peak speeds. The actual speed for a user will be lower. In general, HSPA+ offers higher bitrates only in very good radio conditions (very close to the cell tower) or if the terminal and network both support either [[MIMO]] or [[Dual-Cell HSDPA]], which effectively use two parallel transmit channels with different technical implementations.\n\nThe higher 168 Mbit/s speeds are achieved by using multiple carriers with [[Dual-Cell HSDPA]] and 4-way [[MIMO]] together simultaneously.<ref name=\"ericsson\">{{cite web|url=http://www.ericsson.com/res/thecompany/docs/journal_conference_papers/atsp/multi-carrier_hspa_evolution.pdf|date=28 January 2009|title=Multi-Carrier HSPA Evolution|author1=Klas Johansson|author2=Johan Bergman|author3=Dirk Gerstenberger|author4=Mats Blomgren|author5=Anders Wallén|publisher=Ericsson.com|access-date=2014-06-01|archive-url=https://web.archive.org/web/20130526034623/http://www.ericsson.com/res/thecompany/docs/journal_conference_papers/atsp/multi-carrier_hspa_evolution.pdf|archive-date=26 May 2013|url-status=dead}}</ref><ref name=\"nokiasiemensnetworks\">{{cite web|url=http://www.nokiasiemensnetworks.com/sites/default/files/document/HSPA_evolution_white_paper_low_res_141220.pdf|date=14 December 2010|title=White paper Long Term HSPA Evolution Mobile broadband evolution beyond 3GPP Release 10|publisher=Nokiaslemensnetworks.com|access-date=2014-06-01}}</ref>"
+                    },
+                    {
+                        "endOffset": 17863,
+                        "index": 9,
+                        "level": 2,
+                        "startOffset": 16038,
+                        "title": "All-IP architecture",
+                        "value": "A flattened all-IP architecture is an option for the network within HSPA+. In this architecture, the base stations connect to the network via IP (often Ethernet providing the transmission), bypassing legacy elements for the user's data connections. This makes the network faster and cheaper to deploy and operate. The legacy architecture is still permitted with the Evolved HSPA and is likely to exist for several years after adoption of the other aspects of HSPA+ (higher order modulation, multiple streams, etc.).\n\nThis 'flat architecture' connects the 'user plane' directly from the base station to the [[GGSN]] external gateway, using any available link technology supporting TCP/IP. The definition can be found in 3GPP TR25.999. The user's data flow bypasses the Radio Network Controller (RNC) and the [[SGSN]] of the previous 3GPP UMTS architecture versions, thus simplifying the architecture, reducing costs and delays. This is nearly identical to the [[3GPP Long Term Evolution]] (LTE) flat architecture as defined in the 3GPP standard Rel-8. The changes allow cost effective modern link layer technologies such as xDSL or Ethernet, and these technologies are no longer tied to the more expensive and rigid requirements of the older standard of SONET/SDH and E1/T1 infrastructure.\n\nThere are no changes to the 'control plane'.\n\n[[Nokia Siemens Networks]] Internet HSPA (I-HSPA) was the first commercial solution implementing the Evolved HSPA flattened all-IP architecture.<ref> {{webarchive |url=https://web.archive.org/web/20110102060653/http://www.nokiasiemensnetworks.com/products/mobile-broadband/internet-hspa |date=January 2, 2011 }}</ref>"
+                    },
+                    {
+                        "endOffset": 17982,
+                        "index": 10,
+                        "level": 2,
+                        "startOffset": 17863,
+                        "title": "See also",
+                        "value": "* [[Comparison of wireless data standards]]\n* [[High Speed Packet Access]]\n* [[List of UMTS networks]]"
+                    },
+                    {
+                        "endOffset": 18017,
+                        "index": 11,
+                        "level": 2,
+                        "startOffset": 17982,
+                        "title": "References",
+                        "value": "{{Reflist|30em}}"
+                    },
+                    {
+                        "endOffset": 19238,
+                        "index": 12,
+                        "level": 2,
+                        "startOffset": 18017,
+                        "title": "External links",
+                        "value": "* 3GPP Specifications Home Page\n* ETSI GSM UMTS 3GPP Numbering Cross Reference\n* HSPA LTE Link Budget Comparison\n* Public HSPA Discussion Forum\n* EDGE, HSPA & LTE\n* QUALCOMM to Deliver 28 Mbps Mobile Broadband with HSPA+\n* HSPA+ Upgrade in Sri Lanka \n* Sri Lanka; Local 28.8 Mbit/s downlink HSPA trial a 'success'\n* HSPA+ Now “Officially” 4G According to ITU\n\n{{Mobile telecommunications standards}}\n\n[[Category:3GPP standards]]\n[[Category:UMTS]]\n[[Category:Year of introduction missing]]"
+                    }
+                ]
+            }
+        ],
+        "statsMetadata": {
+            "textSize": 13973
+        },
+        "preprocessingMetadata": [
+            {
+                "technologyResults": [
+                    {
+                        "dagobah": {
+                            "debug": {
+                                "cpaTaskTimeSec": 0.05,
+                                "memoryUsage": 0.0,
+                                "entityScoringTimeSec": 0.71,
+                                "ceaTaskTimeSec": 5.589999999999988,
+                                "abnormalLookupMentions": [],
+                                "ctaTaskTimeSec": 2.97,
+                                "avgLookupCandidate": 101.71,
+                                "subgraphConstructionTimeSec": 7.38
+                            },
+                            "preprocessed": {
+                                "primitiveTyping": [
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "ORDINAL",
+                                                "typingScore": 0.97
+                                            },
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 0.03
+                                            }
+                                        ],
+                                        "columnIndex": 0
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 0.9
+                                            },
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 0.1
+                                            }
+                                        ],
+                                        "columnIndex": 1
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 0.97
+                                            },
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 0.03
+                                            }
+                                        ],
+                                        "columnIndex": 2
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 0.72
+                                            },
+                                            {
+                                                "typingLabel": "TIME",
+                                                "typingScore": 0.28
+                                            }
+                                        ],
+                                        "columnIndex": 3
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 0.86
+                                            }
+                                        ],
+                                        "columnIndex": 4
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 0.97
+                                            },
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 0.03
+                                            }
+                                        ],
+                                        "columnIndex": 5
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 0.97
+                                            },
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 0.03
+                                            }
+                                        ],
+                                        "columnIndex": 6
+                                    }
+                                ],
+                                "headerInfo": {
+                                    "hasHeader": true,
+                                    "headerScore": 0.42,
+                                    "headerLabel": [
+                                        "Evolved HSDPA User Equipment (UE) categories",
+                                        "Evolved HSDPA User Equipment (UE) categories",
+                                        "Evolved HSDPA User Equipment (UE) categories",
+                                        "Evolved HSDPA User Equipment (UE) categories",
+                                        "Evolved HSDPA User Equipment (UE) categories",
+                                        "Evolved HSDPA User Equipment (UE) categories",
+                                        "Evolved HSDPA User Equipment (UE) categories"
+                                    ],
+                                    "headerPosition": 0
+                                },
+                                "primaryKeyInfo": {
+                                    "primaryKeyScore": 0.0,
+                                    "primaryKeyPosition": null,
+                                    "hasPrimaryKey": false
+                                },
+                                "tableOrientation": {
+                                    "orientationScore": 0.59,
+                                    "orientationLabel": "HORIZONTAL"
+                                }
+                            },
+                            "executionTimeSec": {
+                                "preprocessingTime": 0.68,
+                                "totalTime": 31.74,
+                                "lookupTime": 7.46
+                            },
+                            "annotated": {
+                                "CTA": [
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 0.97,
+                                                "score": 0.06,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q11446"
+                                            },
+                                            {
+                                                "coverage": 0.97,
+                                                "score": 0.04,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q1229765"
+                                            },
+                                            {
+                                                "coverage": 0.97,
+                                                "score": 0.04,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q16391167"
+                                            }
+                                        ],
+                                        "column": 3
+                                    },
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 0.17,
+                                                "score": 0.01,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q13442814"
+                                            },
+                                            {
+                                                "coverage": 0.17,
+                                                "score": 0.01,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q55915575"
+                                            },
+                                            {
+                                                "coverage": 0.17,
+                                                "score": 0.01,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q191067"
+                                            },
+                                            {
+                                                "coverage": 0.17,
+                                                "score": 0.01,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q591041"
+                                            },
+                                            {
+                                                "coverage": 0.17,
+                                                "score": 0.01,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q12042160"
+                                            }
+                                        ],
+                                        "column": 4
+                                    }
+                                ],
+                                "tableDataRevised": [
+                                    [
+                                        "Evolved HSDPA User Equipment (UE) categories",
+                                        "Evolved HSDPA User Equipment (UE) categories",
+                                        "Evolved HSDPA User Equipment (UE) categories",
+                                        "Evolved HSDPA User Equipment (UE) categories",
+                                        "Evolved HSDPA User Equipment (UE) categories",
+                                        "Evolved HSDPA User Equipment (UE) categories",
+                                        "Evolved HSDPA User Equipment (UE) categories"
+                                    ],
+                                    [
+                                        "Category",
+                                        "Release",
+                                        "Max. numberof HS-DSCHcodes (per cell)",
+                                        "Modulation 16-QAM implies QPSK support, 64-QAM implies 16-QAM and QPSK support.",
+                                        "MIMO, Multi-Cell",
+                                        "Code rateat max. DataRate The maximal code rate is not limited. A value close to 1 in this column indicates that the maximum data rate can be achieved only in ideal conditions. The device is therefore connected directly to the transmitter to demonstrate these data rates.",
+                                        "Max. DownlinkSpeed(Mbit/s) The maximum data rates given in the table are physical layer data rates. Application layer data rate is approximately 85% of that, due to the inclusion of IP headers (overhead information) etc."
+                                    ],
+                                    [
+                                        "13",
+                                        "7",
+                                        "15",
+                                        "64-QAM",
+                                        "",
+                                        ".82",
+                                        "17.6"
+                                    ],
+                                    [
+                                        "14",
+                                        "7",
+                                        "15",
+                                        "64-QAM",
+                                        "",
+                                        ".98",
+                                        "21.1"
+                                    ],
+                                    [
+                                        "15",
+                                        "7",
+                                        "15",
+                                        "16-QAM",
+                                        "MIMO 2x2",
+                                        ".81",
+                                        "23.4"
+                                    ],
+                                    [
+                                        "16",
+                                        "7",
+                                        "15",
+                                        "16-QAM",
+                                        "MIMO 2x2",
+                                        ".97",
+                                        "28.0"
+                                    ],
+                                    [
+                                        "17",
+                                        "7",
+                                        "15",
+                                        "64-QAM",
+                                        "",
+                                        ".82",
+                                        "17.6"
+                                    ],
+                                    [
+                                        "17",
+                                        "7",
+                                        "15",
+                                        "16-QAM",
+                                        "MIMO 2x2",
+                                        ".81",
+                                        "23.4"
+                                    ],
+                                    [
+                                        "18",
+                                        "7",
+                                        "15",
+                                        "64-QAM",
+                                        "",
+                                        ".98",
+                                        "21.1"
+                                    ],
+                                    [
+                                        "18",
+                                        "7",
+                                        "15",
+                                        "16-QAM",
+                                        "MIMO 2x2",
+                                        ".97",
+                                        "28.0"
+                                    ],
+                                    [
+                                        "19",
+                                        "8 Category 19 was specified in Release 7 as \"For further use\". Not until Release 8 simultaneous use of 64QAM and MIMO were allowed to obtain the specified max. data rate.",
+                                        "15",
+                                        "64-QAM",
+                                        "MIMO 2x2",
+                                        ".82",
+                                        "35.3"
+                                    ],
+                                    [
+                                        "20",
+                                        "8 Category 20 was specified in Release 7 as \"For further use\". Not until Release 8 simultaneous use of 64QAM and MIMO were allowed to obtain the specified max. data rate.",
+                                        "15",
+                                        "64-QAM",
+                                        "MIMO 2x2",
+                                        ".98",
+                                        "42.2"
+                                    ],
+                                    [
+                                        "21",
+                                        "8",
+                                        "15",
+                                        "16-QAM",
+                                        "Dual-Cell",
+                                        ".81",
+                                        "23.4"
+                                    ],
+                                    [
+                                        "22",
+                                        "8",
+                                        "15",
+                                        "16-QAM",
+                                        "Dual-Cell",
+                                        ".97",
+                                        "28.0"
+                                    ],
+                                    [
+                                        "23",
+                                        "8",
+                                        "15",
+                                        "64-QAM",
+                                        "Dual-Cell",
+                                        ".82",
+                                        "35.3"
+                                    ],
+                                    [
+                                        "24",
+                                        "8",
+                                        "15",
+                                        "64-QAM",
+                                        "Dual-Cell",
+                                        ".98",
+                                        "42.2"
+                                    ],
+                                    [
+                                        "25",
+                                        "9",
+                                        "15",
+                                        "16-QAM",
+                                        "Dual-Cell + MIMO 2x2",
+                                        ".81",
+                                        "46.7"
+                                    ],
+                                    [
+                                        "26",
+                                        "9",
+                                        "15",
+                                        "16-QAM",
+                                        "Dual-Cell + MIMO 2x2",
+                                        ".97",
+                                        "55.9"
+                                    ],
+                                    [
+                                        "27",
+                                        "9",
+                                        "15",
+                                        "64-QAM",
+                                        "Dual-Cell + MIMO 2x2",
+                                        ".82",
+                                        "70.6"
+                                    ],
+                                    [
+                                        "28",
+                                        "9",
+                                        "15",
+                                        "64-QAM",
+                                        "Dual-Cell + MIMO 2x2",
+                                        ".98",
+                                        "84.4"
+                                    ],
+                                    [
+                                        "29",
+                                        "10",
+                                        "15",
+                                        "64-QAM",
+                                        "Triple-Cell",
+                                        ".98",
+                                        "63.3"
+                                    ],
+                                    [
+                                        "30",
+                                        "10",
+                                        "15",
+                                        "64-QAM",
+                                        "Triple-Cell + MIMO 2x2",
+                                        ".98",
+                                        "126.6"
+                                    ],
+                                    [
+                                        "31",
+                                        "10",
+                                        "15",
+                                        "64-QAM",
+                                        "Quad-Cell",
+                                        ".98",
+                                        "84.4"
+                                    ],
+                                    [
+                                        "32",
+                                        "10",
+                                        "15",
+                                        "64-QAM",
+                                        "Quad-Cell + MIMO 2x2",
+                                        ".98",
+                                        "168.8"
+                                    ],
+                                    [
+                                        "33",
+                                        "11",
+                                        "15",
+                                        "64-QAM",
+                                        "Hexa-Cell",
+                                        ".98",
+                                        "126.6"
+                                    ],
+                                    [
+                                        "34",
+                                        "11",
+                                        "15",
+                                        "64-QAM",
+                                        "Hexa-Cell + MIMO 2x2",
+                                        ".98",
+                                        "253.2"
+                                    ],
+                                    [
+                                        "35",
+                                        "11",
+                                        "15",
+                                        "64-QAM",
+                                        "Octa-Cell",
+                                        ".98",
+                                        "168.8"
+                                    ],
+                                    [
+                                        "36",
+                                        "11",
+                                        "15",
+                                        "64-QAM",
+                                        "Octa-Cell + MIMO 2x2",
+                                        ".98",
+                                        "337.5"
+                                    ],
+                                    [
+                                        "37",
+                                        "11",
+                                        "15",
+                                        "64-QAM",
+                                        "Dual-Cell + MIMO 4x4",
+                                        ".98",
+                                        "168.8"
+                                    ],
+                                    [
+                                        "38",
+                                        "11",
+                                        "15",
+                                        "64-QAM",
+                                        "Quad-Cell + MIMO 4x4",
+                                        ".98",
+                                        "337.5"
+                                    ]
+                                ],
+                                "CPA": [],
+                                "CEA": [
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q7872673"
+                                        },
+                                        "column": 3,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q7872673"
+                                        },
+                                        "column": 3,
+                                        "row": 5
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 6
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q7872673"
+                                        },
+                                        "column": 3,
+                                        "row": 7
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 8
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q7872673"
+                                        },
+                                        "column": 3,
+                                        "row": 9
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 10
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 11
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q7872673"
+                                        },
+                                        "column": 3,
+                                        "row": 12
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q7872673"
+                                        },
+                                        "column": 3,
+                                        "row": 13
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 14
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 15
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q7872673"
+                                        },
+                                        "column": 3,
+                                        "row": 16
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q7872673"
+                                        },
+                                        "column": 3,
+                                        "row": 17
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 18
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 19
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 20
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 21
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 22
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 23
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 24
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 25
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 26
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 27
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 28
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q8182952"
+                                        },
+                                        "column": 3,
+                                        "row": 29
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q738298"
+                                        },
+                                        "column": 4,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q176862"
+                                        },
+                                        "column": 4,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q176862"
+                                        },
+                                        "column": 4,
+                                        "row": 5
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q176862"
+                                        },
+                                        "column": 4,
+                                        "row": 7
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q176862"
+                                        },
+                                        "column": 4,
+                                        "row": 9
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q176862"
+                                        },
+                                        "column": 4,
+                                        "row": 10
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q176862"
+                                        },
+                                        "column": 4,
+                                        "row": 11
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q180253"
+                                        },
+                                        "column": 4,
+                                        "row": 12
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q180253"
+                                        },
+                                        "column": 4,
+                                        "row": 13
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q180253"
+                                        },
+                                        "column": 4,
+                                        "row": 14
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q180253"
+                                        },
+                                        "column": 4,
+                                        "row": 15
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.05,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q59043998"
+                                        },
+                                        "column": 4,
+                                        "row": 16
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.05,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q59043998"
+                                        },
+                                        "column": 4,
+                                        "row": 17
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.05,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q59043998"
+                                        },
+                                        "column": 4,
+                                        "row": 18
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.05,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q59043998"
+                                        },
+                                        "column": 4,
+                                        "row": 19
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q16004144"
+                                        },
+                                        "column": 4,
+                                        "row": 20
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q16004144"
+                                        },
+                                        "column": 4,
+                                        "row": 21
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q492591"
+                                        },
+                                        "column": 4,
+                                        "row": 22
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q110081816"
+                                        },
+                                        "column": 4,
+                                        "row": 24
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q2179978"
+                                        },
+                                        "column": 4,
+                                        "row": 26
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.05,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q59043998"
+                                        },
+                                        "column": 4,
+                                        "row": 28
+                                    }
+                                ]
+                            }
+                        },
+                        "index": 0
+                    },
+                    {
+                        "dagobah": {
+                            "debug": {
+                                "cpaTaskTimeSec": 0.0,
+                                "memoryUsage": 0.0,
+                                "entityScoringTimeSec": 0.0,
+                                "ceaTaskTimeSec": 0.0,
+                                "abnormalLookupMentions": [],
+                                "ctaTaskTimeSec": 0.0,
+                                "avgLookupCandidate": 0.0,
+                                "subgraphConstructionTimeSec": 0.0
+                            },
+                            "preprocessed": {},
+                            "executionTimeSec": {
+                                "preprocessingTime": 0.0,
+                                "totalTime": 4.13,
+                                "lookupTime": 0.0
+                            },
+                            "annotated": {}
+                        },
+                        "index": 1
+                    }
+                ],
+                "technologyExecution": {
+                    "beginDate": "2024-01-17T14:28:29.530595",
+                    "endDate": "2024-01-17T14:29:06.937660"
+                },
+                "technology": {
+                    "name": "DAGOBAH Table Annotation",
+                    "company": "Orange",
+                    "id": "dagobah_anotation",
+                    "type": "table",
+                    "version": "Unknown"
+                }
+            }
+        ]
+    }
+}

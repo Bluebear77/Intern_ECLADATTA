@@ -1,0 +1,1552 @@
+{
+    "_index": "corpus_doc_telco100_en",
+    "_id": "7143",
+    "_source": {
+        "identificationMetadata": {
+            "id": "7143",
+            "title": "Code-division multiple access",
+            "url": [
+                "https://en.wikipedia.org/?curid=7143",
+                "https://en.wikipedia.org/wiki/Code-division multiple access"
+            ],
+            "version": 1175668603,
+            "versionDate": "2023-09-16T15:50:32Z",
+            "hash": "0714abb4bba2bdf7d7236a64434a933c",
+            "wikidata": "Q233394"
+        },
+        "descriptionMetadata": {
+            "categories": [
+                "CS1 maint: multiple names: authors list",
+                "Articles with short description",
+                "Short description is different from Wikidata",
+                "Wikipedia articles needing clarification from August 2020",
+                "Commons category link is on Wikidata",
+                "Articles with FAST identifiers",
+                "Articles with BNF identifiers",
+                "Articles with BNFdata identifiers",
+                "Articles with GND identifiers",
+                "Articles with J9U identifiers",
+                "Articles with LCCN identifiers",
+                "Articles with SUDOC identifiers",
+                "Code division multiple access",
+                "Multiplexing",
+                "Radio resource management",
+                "Media access control"
+            ],
+            "language": "en",
+            "source": "wikipedia"
+        },
+        "contentMetadata": {
+            "format": "wikitext",
+            "content": "{{Short description|Channel access method used by various radio communication technologies}}\n{{About|a channel access method|the mobile phone technology referred to as CDMA|cdmaOne|and|CDMA2000}}\n{{Multiplex_techniques}}\n\n'''Code-division multiple access''' ('''CDMA''') is a [[channel access method]] used by various [[radio]] communication technologies. CDMA is an example of [[channel access method|multiple access]],  where several transmitters can send information simultaneously over a single communication channel. This allows several users to share a band of frequencies (see [[bandwidth (signal processing)|bandwidth]]). To permit this without undue interference between the users, CDMA employs [[spread spectrum]] technology and a special coding scheme (where each transmitter is assigned a code).<ref name=\"ref 1\">{{cite book| title=Principles of Spread-Spectrum Communication Systems, 4th ed.| year=2018|last1=Torrieri|first1=Don}}</ref><ref name=\"ref 2\">{{cite book| title=Principles of Mobile Communication, 4th ed.| year=2017|last1=Stuber|first1=Gordon L.}}</ref>\n\nCDMA optimizes the use of available bandwidth as it transmits over the entire frequency range and does not limit the user's frequency range.\n\nIt is used as the access method in many [[mobile phone standards]]. [[cdmaOne|IS-95]], also called \"cdmaOne\", and its [[3G]] evolution [[CDMA2000]], are often simply referred to as \"CDMA\", but [[UMTS]], the 3G standard used by [[GSM]] carriers, also uses \"wideband CDMA\", or W-CDMA, as well as TD-CDMA and TD-SCDMA, as its radio technologies.  Many carriers (such as [[AT&T Corporation|AT&T]] and [[Verizon (mobile network)|Verizon]]) shut down 3G CDMA-based networks in 2022, rendering handsets supporting only those protocols unusable for calls, even to [[9-1-1|911]].<ref>{{cite web|url=https://www.cnn.com/2022/02/22/tech/att-3g-network-shutdown/index.html|title=AT&T is shutting down its 3G network. Here's how it could impact you|first=Samantha Murphy|last=Kelly|date=February 22, 2022|website=[[CNN]]}}</ref><ref>{{Cite web|last=Johnson|first=Allison|date=2021-03-30|title=Verizon will shutter its 3G CDMA by the end of 2022|url=https://www.theverge.com/2021/3/30/22358628/verizon-3g-cdma-shutdown-date-2022|access-date=2021-10-09|website=The Verge|language=en}}</ref>\n\nIt can be also used as a channel or medium access technology, like [[ALOHA]] for example or as a permanent pilot/signalling channel to allow users to synchronize their local oscillators to a common system frequency, thereby also estimating the channel parameters permanently.\n\nIn these schemes, the message is modulated on a longer spreading sequence, consisting of several chips (0es and 1es). Due to their very advantageous auto- and crosscorrelation characteristics, these spreading sequences have also been used for radar applications for many decades, where they are called [[Barker code]]s (with a very short sequence length of typically 8 to 32).\n\nFor space-based communication applications, CDMA has been used for many decades due to the large path loss and Doppler shift caused by satellite motion. CDMA is often used with [[binary phase-shift keying]] (BPSK) in its simplest form, but can be combined with any modulation scheme like (in advanced cases) [[quadrature amplitude modulation]] (QAM) or [[orthogonal frequency-division multiplexing]] (OFDM), which typically makes it very robust and efficient (and equipping them with accurate ranging capabilities, which is difficult without CDMA). Other schemes use subcarriers based on [[binary offset carrier modulation]] (BOC modulation), which is inspired by [[Manchester code]]s and enable a larger gap between the virtual center frequency and the subcarriers, which is not the case for OFDM subcarriers.\n\n==History==\nThe technology of code-division multiple access channels has long been known.\n===USA===\nIn the US, one of the earliest descriptions of CDMA can be found in the summary report of Project Hartwell on \"The Security of Overseas Transport\", which was a summer research project carried out at the [[Massachusetts Institute of Technology]] from June to August 1950.<ref name=Scholtz_1982May_IEEE>{{cite journal| author=Robert A. Scholtz| date=May 1982| url=https://ieeexplore.ieee.org/document/1095547| title=The Origins of Spread-Spectrum Communications| journal=[[IEEE Transactions on Communications]]| volume=30| issue=5| pages=822–854| doi=10.1109/TCOM.1982.1095547| access-date=30 January 2022}}</ref> Further research in the context of [[Radio jamming|jamming]] and [[Electronic counter-countermeasure|anti-jamming]] was carried out in 1952 at [[MIT_Lincoln_Laboratory|Lincoln Lab]].<ref name=Price_Shannon_19820728>{{cite web| author=Robert Price| date=28 July 1982| url=https://ethw.org/Oral-History:Claude_E._Shannon| title=Oral-History: Claude E. Shannon| publisher=[[Engineering and Technology History Wiki]]| access-date=30 January 2022}}</ref>\n\n===USSR===\nIn the [[Soviet Union]] (USSR), the first work devoted to this subject was published in 1935 by [[Dmitry Vasiliyevich Ageev|Dmitry Ageev]].<ref>{{cite journal|last=Ageev|first=D. V.|title=Bases of the Theory of Linear Selection. Code Demultiplexing|journal=Proceedings of the Leningrad Experimental Institute of Communication|year=1935|pages=3–35}}</ref> It was shown that through the use of linear methods, there are three types of signal separation: frequency, time and compensatory.{{clarify|date=August 2020|reason=No such thing.}} The technology of CDMA was used in 1957, when the young military radio engineer [[Leonid Kupriyanovich]] in Moscow made an experimental model of a wearable automatic mobile phone, called LK-1 by him, with a base station.<ref>{{Cite patent | country = Soviet Union\n| number = 115494 | title = Устройства вызова и коммутации каналов радиотелефонной связи (Devices for calling and switching radio communication channels) | pubdate = 1957-11-04 | inventor = Куприянович (Leonid Kupriyanovich) | url = https://patents.su/7-115494-ustrojjstva-vyzova-i-kommutacii-kanalov-radiotelefonnojj-svyazi.html}}</ref> LK-1 has a weight of 3&nbsp;kg, 20–30&nbsp;km operating distance, and 20–30 hours of battery life.<ref>''[[Nauka i Zhizn]]'' 8, 1957, p. 49.</ref><ref>''Yuniy technik'' 7, 1957, p. 43–44.</ref> The base station, as described by the author, could serve several customers. In 1958, Kupriyanovich made the new experimental \"pocket\" model of mobile phone. This phone weighed 0.5&nbsp;kg. To serve more customers, Kupriyanovich proposed the device, which he called \"correlator.\"<ref>''Nauka i Zhizn'' 10, 1958, p. 66.</ref><ref>''[[Tekhnika Molodezhi]]'' 2, 1959, p. 18–19.</ref> In 1958, the USSR also started the development of the \"[[Altai (mobile telephone system)|Altai]]\" national civil mobile phone service for cars, based on the Soviet MRT-1327 standard. The phone system weighed {{convert|11|kg|abbr=on}}.  It was placed in the trunk of the vehicles of high-ranking officials and used a standard handset in the passenger compartment. The main developers of the Altai system were VNIIS (Voronezh Science Research Institute of Communications) and GSPI (State Specialized Project Institute). In 1963 this service started in Moscow, and in 1970 Altai service was used in 30 USSR cities.<ref>{{cite web|url=http://englishrussia.com/2006/09/18/first-russian-mobile-phone/|title=First Russian Mobile Phone|date=September 18, 2006}}</ref>\n\n== Uses ==\n[[File:Au CDMA 1X WIN W31SAII gravelly silver expansion.jpg|thumb|A CDMA2000 [[mobile phone]]]]\n\n* Synchronous CDM (code-division 'multiplexing', an early generation of CDMA) was implemented in the [[Global Positioning System]] (GPS). This predates and is distinct from its use in [[mobile phone]]s.\n* The [[Qualcomm]] standard [[IS-95]], marketed as cdmaOne.\n* The Qualcomm standard [[IS-2000]], known as CDMA2000, is used by several mobile phone companies, including the [[Globalstar]] network.{{refn|group=nb|Globalstar uses elements of CDMA, [[time-division multiple access|TDMA]] and [[FDMA]] combining with satellite multiple beam antennas.<ref>M. Mazzella, M. Cohen, D. Rouffet, M. Louie and K. S. Gilhousen, \"Multiple access techniques and spectrum utilisation of the GLOBALSTAR mobile satellite system,\" Fourth IEE Conference on Telecommunications 1993, Manchester, UK, 1993, pp. 306-311.</ref>}}\n* The [[UMTS]] 3G mobile phone standard, which uses [[W-CDMA]].{{refn|group=nb|The UMTS networks and other CDMA based systems are also known as a kind of ''interference-limited'' systems.<ref>{{cite book|editor-last1=Holma|editor-first1=H.|editor-last2=Toskala|editor-first2=A.|date=2007|url=https://books.google.com/books?id=7m-MnwW_o7AC&q=lte+umts+are+interference+limited&pg=PT439|title=WCDMA for UMTS: HSPA Evolution and LTE|publisher=[[Wiley (publisher)|John Wiley & Sons]]|isbn=9781119991908}}</ref><ref>{{cite book|editor-last1=Laiho|editor-first1=J.|editor-last2=Wacker|editor-first2=A.|editor-last3=Novosad|editor-first3=T.|date=2002|url=https://books.google.com/books?id=9RE32TlXZBQC&q=is+umts+interference+limited+systems&pg=PA303|title=Radio Network Planning and Optimisation for UMTS (Vol. 2)|location=New York|publisher=[[Wiley (publisher)|John Wiley & Sons]]|page=303|isbn=9780470031391}}</ref> This relates to the properties of the CDMA technology: all users operate in the same frequency range that impacts [[Signal-to-interference-plus-noise ratio|SINR]] and, hence, reduces coverage and capacity.<ref name=\"Walke-Seidenberg-Althoff_2003\">{{cite book |title=UMTS: The Fundamentals |author-first1=Bernhard H. |author-last1=Walke |author-link1=Bernhard Walke |author-first2=Peter |author-last2=Seidenberg |author-first3=Marc Peter |author-last3=Althoff |translator-first=Hedwig Jourdan |translator-last=von Schmoeger |date=March 2003 |orig-date=2001 |publisher=[[John Wiley & Sons, Ltd]] |edition=First English |isbn=0-470-84557-0 |pages=18–19 |url=https://books.google.com/books?id=KRlUvPWeTYQC&pg=PA18}} (NB. Based on the 2001 German edition.)</ref>}}\n* CDMA has been used in the '''OmniTRACS''' satellite system for transportation [[logistics]].\n\n==Steps in CDMA modulation==\nCDMA is a spread-spectrum multiple-access technique. A spread-spectrum technique spreads the bandwidth of the data uniformly for the same transmitted power.  A spreading code is a pseudo-random code that has a narrow [[ambiguity function]], unlike other narrow pulse codes. In CDMA a locally generated code runs at a much higher rate than the data to be transmitted.  Data for transmission is combined by bitwise [[XOR#Bitwise operation|XOR]] (exclusive OR) with the faster code.  The figure shows how a spread-spectrum signal is generated. The data signal with pulse duration of <math>T_b</math> (symbol period) is XORed with the code signal with pulse duration of <math>T_c</math> (chip period). (Note: [[Bandwidth (signal processing)|bandwidth]] is proportional to <math>1/T</math>, where <math>T</math> = bit time.) Therefore, the bandwidth of the data signal is <math>1/T_b</math> and the bandwidth of the spread spectrum signal is <math>1/T_c</math>.  Since <math>T_c</math> is much smaller than <math>T_b</math>, the bandwidth of the spread-spectrum signal is much larger than the bandwidth of the original signal. The ratio <math>T_b/T_c</math> is called the spreading factor or processing gain and determines to a certain extent the upper limit of the total number of users supported simultaneously by a base station.<ref name=\"ref 1\"/><ref name=\"ref 2\"/>\n\n[[File:Generation of CDMA.svg|thumb|500px|center|Generation of a CDMA signal]]\n\nEach user in a CDMA system uses a different code to modulate their signal. Choosing the codes used to modulate the signal is very important in the performance of CDMA systems. The best performance occurs when there is good separation between the signal of a desired user and the signals of other users. The separation of the signals is made by [[Cross-correlation|correlating]] the received signal with the locally generated code of the desired user. If the signal matches the desired user's code, then the correlation function will be high and the system can extract that signal.  If the desired user's code has nothing in common with the signal, the correlation should be as close to zero as possible (thus eliminating the signal); this is referred to as [[cross-correlation]]. If the code is correlated with the signal at any time offset other than zero, the correlation should be as close to zero as possible.  This is referred to as auto-correlation and is used to reject multi-path interference.<ref name=\"ref 3\">{{cite book| title= Digital Communications: Fundamentals and Applications, 2nd ed.| year=2014|last1=Sklar|first1=Bernard|last2=Ray|first2=Pabitra K.}}</ref><ref name=\"ref 4\">{{cite book| title=Wireless Communications, 2nd ed.| year=2010|last1=Molisch|first1=Andreas}}</ref>\n\nAn analogy to the problem of multiple access is a room (channel) in which people wish to talk to each other simultaneously.  To avoid confusion, people could take turns speaking (time division), speak at different pitches (frequency division), or speak in different languages (code division). CDMA is analogous to the last example where people speaking the same language can understand each other, but other languages are perceived as [[noise]] and rejected.  Similarly, in radio CDMA, each group of users is given a shared code.  Many codes occupy the same channel, but only users associated with a particular code can communicate.\n\nIn general, CDMA belongs to two basic categories: synchronous (orthogonal codes) and asynchronous (pseudorandom codes).\n\n==Code-division multiplexing (synchronous CDMA)==\nThe digital modulation method is analogous to those used in simple radio transceivers. In the analog case, a low-frequency data signal is time-multiplied with a high-frequency pure sine-wave carrier and transmitted. This is effectively a frequency convolution ([[Wiener–Khinchin theorem]]) of the two signals, resulting in a carrier with narrow sidebands. In the digital case, the sinusoidal carrier is replaced by [[Walsh function]]s. These are binary square waves that form a complete orthonormal set. The data signal is also binary and the time multiplication is achieved with a simple XOR function. This is usually a [[Gilbert cell]] mixer in the circuitry.\n\nSynchronous CDMA exploits mathematical properties of [[orthogonality]] between [[coordinate vector|vectors]] representing the data strings. For example, the binary string ''1011'' is represented by the vector (1, 0, 1, 1). Vectors can be multiplied by taking their [[dot product]], by summing the products of their respective components (for example, if '''u''' = (''a'', ''b'') and '''v''' = (''c'', ''d''), then their dot product '''u'''·'''v''' = ''ac'' + ''bd'').  If the dot product is zero, the two vectors are said to be ''orthogonal'' to each other. Some properties of the dot product aid understanding of how [[W-CDMA]] works. If vectors '''a''' and '''b''' are orthogonal, then <math>\\mathbf{a}\\cdot\\mathbf{b} = 0</math> and:\n:<math>\n\\mathbf{a}\\cdot(\\mathbf{a} + \\mathbf{b}) = \\|\\mathbf{a}\\|^2,\\ \\text{since}\\ \\mathbf{a}\\cdot\\mathbf{a} + \\mathbf{a}\\cdot\\mathbf{b} = \\|\\mathbf{a}\\|^2 + 0, \n</math>\n:<math>\n\\mathbf{a}\\cdot(-\\mathbf{a} + \\mathbf{b}) = -\\|\\mathbf{a}\\|^2,\\ \\text{since}\\ {-\\mathbf{a}}\\cdot\\mathbf{a} + \\mathbf{a}\\cdot\\mathbf{b} = -\\|\\mathbf{a}\\|^2 + 0,\n</math>\n:<math>\n\\mathbf{b}\\cdot(\\mathbf{a} + \\mathbf{b}) = \\|\\mathbf{b}\\|^2,\\ \\text{since}\\ \\mathbf{b}\\cdot\\mathbf{a} + \\mathbf{b}\\cdot\\mathbf{b} = 0 + \\|\\mathbf{b}\\|^2,\n</math>\n:<math>\n\\mathbf{b}\\cdot(\\mathbf{a} - \\mathbf{b}) = -\\|\\mathbf{b}\\|^2,\\ \\text{since}\\ \\mathbf{b}\\cdot\\mathbf{a} - \\mathbf{b}\\cdot\\mathbf{b} = 0 - \\|\\mathbf{b}\\|^2.\n</math>\n\nEach user in synchronous CDMA uses a code orthogonal to the others' codes to modulate their signal.  An example of 4 mutually orthogonal digital signals is shown in the figure below.  Orthogonal codes have a cross-correlation equal to zero; in other words, they do not interfere with each other.  In the case of IS-95, 64-bit [[Walsh code]]s are used to encode the signal to separate different users.  Since each of the 64 Walsh codes is orthogonal to all other, the signals are channelized into 64 orthogonal signals.  The following example demonstrates how each user's signal can be encoded and decoded.\n\n===Example===\n[[Image:Cdma orthogonal signals.png|thumb|right|An example of 4 mutually orthogonal digital signals]]\n\nStart with a set of vectors that are mutually [[orthogonality|orthogonal]]. (Although mutual orthogonality is the only condition, these vectors are usually constructed for ease of decoding, for example columns or rows from [[Walsh matrix|Walsh matrices]].) An example of orthogonal functions is shown in the adjacent picture.  These vectors will be assigned to individual users and are called the ''code'', ''[[chip (CDMA)|chip]] code'', or ''chipping code''.  In the interest of brevity, the rest of this example uses codes '''v''' with only two bits.\n\nEach user is associated with a different code, say '''v'''. A 1 bit is represented by transmitting a positive code '''v''', and a 0 bit is represented by a negative code '''−v'''.  For example, if '''v''' = (''v''<sub>0</sub>, ''v''<sub>1</sub>) = (1, −1) and the data that the user wishes to transmit is (1, 0, 1, 1), then the transmitted symbols would be\n:('''v''', '''−v''', '''v''', '''v''') = (''v''<sub>0</sub>, ''v''<sub>1</sub>, −''v''<sub>0</sub>, −''v''<sub>1</sub>, ''v''<sub>0</sub>, ''v''<sub>1</sub>, ''v''<sub>0</sub>, ''v''<sub>1</sub>) = (1, −1, −1, 1, 1, −1, 1, −1).\nFor the purposes of this article, we call this constructed vector the ''transmitted vector''.\n\nEach sender has a different, unique vector '''v''' chosen from that set, but the construction method of the transmitted vector is identical.\n\nNow, due to physical properties of interference, if two signals at a point are in phase, they add to give twice the amplitude of each signal, but if they are out of phase, they subtract and give a signal that is the difference of the amplitudes. Digitally, this behaviour can be modelled by the addition of the transmission vectors, component by component.\n\nIf sender0 has code (1, −1) and data (1, 0, 1, 1), and sender1 has code (1, 1) and data (0, 0, 1, 1), and both senders transmit simultaneously, then this table describes the coding steps:\n\n{| style=\"border: 1px #aaaaaa solid; background-color: #f7f8ff; margin-left: auto; margin-right: auto;\"\n| align=center bgcolor=\"#CCCCCC\" | Step\n| align=center bgcolor=\"#CCCCCC\" | Encode sender0\n| align=center bgcolor=\"#CCCCCC\" | Encode sender1\n|-\n| valign=top | 0\n| code0 = (1, −1), data0 = (1, 0, 1, 1)\n| code1 = (1, 1), data1 = (0, 0, 1, 1)\n|-\n| valign=top | 1\n| encode0 = 2(1, 0, 1, 1) − (1, 1, 1, 1) = (1, −1, 1, 1)\n| encode1 = 2(0, 0, 1, 1) − (1, 1, 1, 1) = (−1, −1, 1, 1)\n|-\n| valign=top | 2\n| signal0 = encode0 ⊗ code0<br />= (1, −1, 1, 1) ⊗ (1, −1)<br />= (1, −1, −1, 1, 1, −1, 1, −1)\n| signal1 = encode1 ⊗ code1<br />= (−1, −1, 1, 1) ⊗ (1, 1)<br />= (−1, −1, −1, −1, 1, 1, 1, 1)\n|}\n\nBecause signal0 and signal1 are transmitted at the same time into the air, they add to produce the raw signal\n\n:(1, −1, −1, 1, 1, −1, 1, −1) + (−1, −1, −1, −1, 1, 1, 1, 1) = (0, −2, −2, 0, 2, 0, 2, 0).\n\nThis raw signal is called an interference pattern.  The receiver then extracts an intelligible signal for any known sender by combining the sender's code with the interference pattern. The following table explains how this works and shows that the signals do not interfere with one another:\n\n{|style=\"border: 1px #aaaaaa solid; background-color: #f7f8ff; margin-left: auto; margin-right: auto;\"\n|align=center bgcolor=\"#CCCCCC\"|Step\n|align=center bgcolor=\"#CCCCCC\"|Decode sender0\n|align=center bgcolor=\"#CCCCCC\"|Decode sender1\n|-\n|0\n|code0 = (1, −1), signal = (0, −2, −2, 0, 2, 0, 2, 0)\n|code1 = (1, 1), signal = (0, −2, −2, 0, 2, 0, 2, 0)\n|-\n|1\n|decode0 = pattern.vector0\n|decode1 = pattern.vector1\n|-\n|2\n|decode0 = ((0, −2), (−2, 0), (2, 0), (2, 0)) · (1, −1)\n|decode1 = ((0, −2), (−2, 0), (2, 0), (2, 0)) · (1, 1)\n|-\n|3\n|decode0 = ((0 + 2), (−2 + 0), (2 + 0), (2 + 0))\n|decode1 = ((0 − 2), (−2 + 0), (2 + 0), (2 + 0))\n|-\n|4\n|data0=(2, −2, 2, 2), meaning (1, 0, 1, 1)\n|data1=(−2, −2, 2, 2), meaning (0, 0, 1, 1)\n|}\n\nFurther, after decoding, all values greater than 0 are interpreted as 1, while all values less than zero are interpreted as 0. For example, after decoding, data0 is (2, −2, 2, 2), but the receiver interprets this as (1, 0, 1, 1). Values of exactly 0 mean that the sender did not transmit any data, as in the following example:\n\nAssume signal0 = (1, −1, −1, 1, 1, −1, 1, −1) is transmitted alone.  The following table shows the decode at the receiver:\n\n{|style=\"border: 1px #aaaaaa solid; background-color: #f7f8ff; margin-left: auto; margin-right: auto;\"\n|align=center bgcolor=\"#CCCCCC\"|Step\n|align=center bgcolor=\"#CCCCCC\"|Decode sender0\n|align=center bgcolor=\"#CCCCCC\"|Decode sender1\n|-\n|0\n|code0 = (1, −1), signal = (1, −1, −1, 1, 1, −1, 1, −1)\n|code1 = (1, 1), signal = (1, −1, −1, 1, 1, −1, 1, −1)\n|-\n|1\n|decode0 = pattern.vector0\n|decode1 = pattern.vector1\n|-\n|2\n|decode0 = ((1, −1), (−1, 1), (1, −1), (1, −1)) · (1, −1)\n|decode1 = ((1, −1), (−1, 1), (1, −1), (1, −1)) · (1, 1)\n|-\n|3\n|decode0 = ((1 + 1), (−1 − 1), (1 + 1), (1 + 1))\n|decode1 = ((1 − 1), (−1 + 1), (1 − 1), (1 − 1))\n|-\n|4\n|data0 = (2, −2, 2, 2), meaning (1, 0, 1, 1)\n|data1 = (0, 0, 0, 0), meaning no data\n|}\n\nWhen the receiver attempts to decode the signal using sender1's code, the data is all zeros; therefore the cross-correlation is equal to zero and it is clear that sender1 did not transmit any data.\n\n==Asynchronous CDMA==\n{{See also|Direct-sequence spread spectrum|near–far problem}}\nWhen mobile-to-base links cannot be precisely coordinated, particularly due to the mobility of the handsets, a different  approach is required.  Since it is not mathematically possible to create signature sequences that are both orthogonal for arbitrarily random starting points and which make full use of the code space, unique \"pseudo-random\" or \"pseudo-noise\" sequences called spreading sequences are used in ''asynchronous'' CDMA systems. A spreading sequence is a binary sequence that appears random but can be reproduced in a deterministic manner by intended receivers. These spreading sequences are used to encode and decode a user's signal in asynchronous CDMA in the same manner as the orthogonal codes in synchronous CDMA (shown in the example above). These spreading sequences are statistically uncorrelated, and the sum of a large number of spreading sequences results in ''multiple access interference'' (MAI) that is approximated by a Gaussian noise process (following the [[central limit theorem]] in statistics).  [[Gold code]]s are an example of a spreading sequence suitable for this purpose, as there is low correlation between the codes. If all of the users are received with the same power level, then the variance (e.g., the noise power) of the MAI increases in direct proportion to the number of users. In other words, unlike synchronous CDMA, the signals of other users will appear as noise to the signal of interest and interfere slightly with the desired signal in proportion to number of users.\n\nAll forms of CDMA use the [[spread-spectrum]] [[spreading factor]] to allow receivers to partially discriminate against unwanted signals. Signals encoded with the specified spreading sequences are received, while signals with different sequences (or the same sequences but different timing offsets) appear as wideband noise reduced by the spreading factor.\n\nSince each user generates MAI, controlling the signal strength is an important issue with CDMA transmitters. A CDM (synchronous CDMA), TDMA, or FDMA receiver can in theory completely reject arbitrarily strong signals using different codes, time slots or frequency channels due to the orthogonality of these systems. This is not true for asynchronous CDMA; rejection of unwanted signals is only partial. If any or all of the unwanted signals are much stronger than the desired signal, they will overwhelm it. This leads to a general requirement in any asynchronous CDMA system to approximately match the various signal power levels as seen at the receiver. In CDMA cellular, the base station uses a fast closed-loop power-control scheme to tightly control each mobile's transmit power.\n\nIn 2019, schemes to precisely estimate the required length of the codes in dependence of Doppler and delay characteristics have been developed.<ref>{{Cite conference|last=Enneking, Antreich, Appel, Almeida|date=2019|title=Pure Pilot Signals: How short can we choose GNSS spreading codes?|url=https://www.researchgate.net/publication/331065214|book-title=Proceedings of the 2019 International Technical Meeting of the Institute of Navigation|pages=925–935|doi=10.33012/2019.16737|isbn=978-0-936406-21-3|s2cid=86666944}}</ref> Soon after, machine learning based techniques that generate sequences of a desired length and spreading properties have been published as well. These are highly competitive with the classic Gold and Welch sequences. These are not generated by linear-feedback-shift-registers, but have to be stored in lookup tables.\n\n===Advantages of asynchronous CDMA over other techniques===\n\n====Efficient practical utilization of the fixed frequency spectrum====\nIn theory CDMA, TDMA and FDMA have exactly the same spectral efficiency, but, in practice, each has its own challenges – power control in the case of CDMA, timing in the case of TDMA, and frequency generation/filtering in the case of FDMA.\n\nTDMA systems must carefully synchronize the transmission times of all the users to ensure that they are received in the correct time slot and do not cause interference.  Since this cannot be perfectly controlled in a mobile environment, each time slot must have a guard time, which reduces the probability that users will interfere, but decreases the spectral efficiency.\n\nSimilarly, FDMA systems must use a guard band between adjacent channels, due to the unpredictable [[Doppler effect|Doppler shift]] of the signal spectrum because of user mobility. The guard bands will reduce the probability that adjacent channels will interfere, but decrease the utilization of the spectrum.\n\n====Flexible allocation of resources====\nAsynchronous CDMA offers a key advantage in the flexible allocation of resources i.e. allocation of spreading sequences to active users.  In the case of CDM (synchronous CDMA), TDMA, and FDMA the number of simultaneous orthogonal codes, time slots, and frequency slots respectively are fixed, hence the capacity in terms of the number of simultaneous users is limited. There are a fixed number of orthogonal codes, time slots or frequency bands that can be allocated for CDM, TDMA, and FDMA systems, which remain underutilized due to the bursty nature of telephony and packetized data transmissions.  There is no strict limit to the number of users that can be supported in an asynchronous CDMA system, only a practical limit governed by the desired bit error probability since the SIR (signal-to-interference ratio) varies inversely with the number of users.  In a bursty traffic environment like mobile telephony, the advantage afforded by asynchronous CDMA is that the performance (bit error rate) is allowed to fluctuate randomly, with an average value determined by the number of users times the percentage of utilization.  Suppose there are 2''N'' users that only talk half of the time, then 2''N'' users can be accommodated with the same ''average'' bit error probability as ''N'' users that talk all of the time.  The key difference here is that the bit error probability for ''N'' users talking all of the time is constant, whereas it is a ''random'' quantity (with the same mean) for 2''N'' users talking half of the time.\n\nIn other words, asynchronous CDMA is ideally suited to a mobile network where large numbers of transmitters each generate a relatively small amount of traffic at irregular intervals. CDM (synchronous CDMA), TDMA, and FDMA systems cannot recover the underutilized resources inherent to bursty traffic due to the fixed number of [[orthogonal]] codes, time slots or frequency channels that can be assigned to individual transmitters. For instance, if there are ''N'' time slots in a TDMA system and 2''N'' users that talk half of the time, then half of the time there will be more than ''N'' users needing to use more than ''N'' time slots.  Furthermore, it would require significant overhead to continually allocate and deallocate the orthogonal-code, time-slot or frequency-channel resources. By comparison, asynchronous CDMA transmitters simply send when they have something to say and go off the air when they do not, keeping the same signature sequence as long as they are connected to the system.\n\n===Spread-spectrum characteristics of CDMA===\nMost modulation schemes try to minimize the bandwidth of this signal since bandwidth is a limited resource.  However, spread-spectrum techniques use a transmission bandwidth that is several orders of magnitude greater than the minimum required signal bandwidth.  One of the initial reasons for doing this was military applications including guidance and communication systems. These systems were designed using spread spectrum because of its security and resistance to jamming.  Asynchronous CDMA has some level of privacy built in because the signal is spread using a pseudo-random code; this code makes the spread-spectrum signals appear random or have noise-like properties.  A receiver cannot demodulate this transmission without knowledge of the pseudo-random sequence used to encode the data.  CDMA is also resistant to jamming.  A jamming signal only has a finite amount of power available to jam the signal.  The jammer can either spread its energy over the entire bandwidth of the signal or jam only part of the entire signal.<ref name=\"ref 3\"/><ref name=\"ref 4\"/>\n \nCDMA can also effectively reject narrow-band interference.  Since narrow-band interference affects only a small portion of the spread-spectrum signal, it can easily be removed through notch filtering without much loss of information.  [[Convolution encoding]] and [[forward error correction#Interleaving|interleaving]] can be used to assist in recovering this lost data.  CDMA signals are also resistant to multipath fading.  Since the spread-spectrum signal occupies a large bandwidth, only a small portion of this will undergo fading due to multipath at any given time.  Like the narrow-band interference, this will result in only a small loss of data and can be overcome.\n\nAnother reason CDMA is resistant to multipath interference is because the delayed versions of the transmitted pseudo-random codes will have poor correlation with the original pseudo-random code, and will thus appear as another user, which is ignored at the receiver.  In other words, as long as the multipath channel induces at least one chip of delay, the multipath signals will arrive at the receiver such that they are shifted in time by at least one chip from the intended signal.  The correlation properties of the pseudo-random codes are such that this slight delay causes the multipath to appear uncorrelated with the intended signal, and it is thus ignored.\n\nSome CDMA devices use a [[rake receiver]], which exploits multipath delay components to improve the performance of the system. A rake receiver combines the information from several correlators, each one tuned to a different path delay, producing a stronger version of the signal than a simple receiver with a single correlation tuned to the path delay of the strongest signal.<ref name=\"ref 1\"/><ref name=\"ref 2\"/>\n\nFrequency reuse is the ability to reuse the same radio channel frequency at other cell sites within a cellular system.  In the FDMA and TDMA systems, frequency planning is an important consideration.  The frequencies used in different cells must be planned carefully to ensure signals from different cells do not interfere with each other.  In a CDMA system, the same frequency can be used in every cell, because channelization is done using the pseudo-random codes.  Reusing the same frequency in every cell eliminates the need for frequency planning in a CDMA system; however, planning of the different pseudo-random sequences must be done to ensure that the received signal from one cell does not correlate with the signal from a nearby cell.<ref name=\"ref 1\"/>\n\nSince adjacent cells use the same frequencies, CDMA systems have the ability to perform soft hand-offs.  Soft hand-offs allow the mobile telephone to communicate simultaneously with two or more cells.  The best signal quality is selected until the hand-off is complete.  This is different from hard hand-offs utilized in other cellular systems.  In a hard-hand-off situation, as the mobile telephone approaches a hand-off, signal strength may vary abruptly. In contrast, CDMA systems use the soft hand-off, which is undetectable and provides a more reliable and higher-quality signal.<ref name=\"ref 2\"/>\n\n==Collaborative CDMA==\nA novel collaborative multi-user transmission and detection scheme called collaborative CDMA<ref>{{cite news\n | first = Indu L.\n | last = Shakya\n | year = 2011\n | title = High User Capacity Collaborative CDMA\n | publisher = IET Communications\n}}</ref> has been investigated for the uplink that exploits the differences between users' fading channel signatures to increase the user capacity well beyond the spreading length in the MAI-limited environment. The authors show that it is possible to achieve this increase at a low complexity and high [[bit error rate]] performance in flat fading channels, which is a major research challenge for overloaded CDMA systems. In this approach, instead of using one sequence per user as in conventional CDMA, the authors group a small number of users to share the same spreading sequence and enable group spreading and despreading operations. The new collaborative multi-user receiver consists of two stages: group multi-user detection (MUD) stage to suppress the MAI between the groups and a low-complexity maximum-likelihood detection stage to recover jointly the co-spread users' data using minimal Euclidean-distance measure and users' channel-gain coefficients. An enhanced CDMA version known as interleave-division multiple access (IDMA) uses the orthogonal interleaving as the only means of user separation in place of signature sequence used in CDMA system.\n\n==See also==\n{{Div col|colwidth=25em}}\n* [[CDMA spectral efficiency]]\n* [[CDMA2000]]\n* [[Comparison of mobile phone standards]]\n* [[cdmaOne]]\n* [[Orthogonal variable spreading factor]] (OVSF), an implementation of CDMA\n* [[Pseudo-random noise]]\n* [[Quadrature-division multiple access]] (QDMA), an implementation of CDMA\n* [[Rise over thermal]]\n* [[Spread spectrum]]\n* [[W-CDMA]]\n\n{{Div col end}}\n\n==Notes==\n{{Reflist|group=nb}}\n\n==References==\n{{Reflist|30em}}\n\n==Further reading==\n* Papathanassiou, A., Salkintzis, A. K., & Mathiopoulos, P. T. (2001). [https://www.researchgate.net/publication/3344159_A_comparison_study_of_the_uplink_performance_of_W-CDMA_and_OFDM_for_mobile_multimedia_communications_via_LEO_satellites \"A comparison study of the uplink performance of W-CDMA and OFDM for mobile multimedia communications via LEO satellites\"]. ''IEEE Personal Communications'', 8(3), 35–43.\n\n==External links==\n{{Commons category|CDMA}}\n* [http://video.ias.edu/goresky-lecture-4-13   Talk at Princeton Institute for Advanced Study on Solomon Golomb's work on pseudorandom sequences]\n\n{{cdma|state=uncollapsed}}\n{{Channel access methods}}\n{{Authority control}}\n\n{{DEFAULTSORT:Code Division Multiple Access}}\n[[Category:Code division multiple access| ]]\n[[Category:Multiplexing]]\n[[Category:Radio resource management]]\n[[Category:Media access control]]",
+            "text": "Code-division multiple access (CDMA) is a channel access method used by various radio communication technologies. CDMA is an example of multiple access, where several transmitters can send information simultaneously over a single communication channel. This allows several users to share a band of frequencies (see bandwidth). To permit this without undue interference between the users, CDMA employs spread spectrum technology and a special coding scheme (where each transmitter is assigned a code). CDMA optimizes the use of available bandwidth as it transmits over the entire frequency range and does not limit the user's frequency range. It is used as the access method in many mobile phone standards. IS-95, also called \"cdmaOne\", and its 3G evolution CDMA2000, are often simply referred to as \"CDMA\", but UMTS, the 3G standard used by GSM carriers, also uses \"wideband CDMA\", or W-CDMA, as well as TD-CDMA and TD-SCDMA, as its radio technologies. Many carriers (such as AT&T and Verizon) shut down 3G CDMA-based networks in 2022, rendering handsets supporting only those protocols unusable for calls, even to 911. It can be also used as a channel or medium access technology, like ALOHA for example or as a permanent pilot/signalling channel to allow users to synchronize their local oscillators to a common system frequency, thereby also estimating the channel parameters permanently. In these schemes, the message is modulated on a longer spreading sequence, consisting of several chips (0es and 1es). Due to their very advantageous auto- and crosscorrelation characteristics, these spreading sequences have also been used for radar applications for many decades, where they are called Barker codes (with a very short sequence length of typically 8 to 32). For space-based communication applications, CDMA has been used for many decades due to the large path loss and Doppler shift caused by satellite motion. CDMA is often used with binary phase-shift keying (BPSK) in its simplest form, but can be combined with any modulation scheme like (in advanced cases) quadrature amplitude modulation (QAM) or orthogonal frequency-division multiplexing (OFDM), which typically makes it very robust and efficient (and equipping them with accurate ranging capabilities, which is difficult without CDMA). Other schemes use subcarriers based on binary offset carrier modulation (BOC modulation), which is inspired by Manchester codes and enable a larger gap between the virtual center frequency and the subcarriers, which is not the case for OFDM subcarriers. The technology of code-division multiple access channels has long been known. In the US, one of the earliest descriptions of CDMA can be found in the summary report of Project Hartwell on \"The Security of Overseas Transport\", which was a summer research project carried out at the Massachusetts Institute of Technology from June to August 1950. Further research in the context of jamming and anti-jamming was carried out in 1952 at Lincoln Lab. In the Soviet Union (USSR), the first work devoted to this subject was published in 1935 by Dmitry Ageev. It was shown that through the use of linear methods, there are three types of signal separation: frequency, time and compensatory.[clarification needed] The technology of CDMA was used in 1957, when the young military radio engineer Leonid Kupriyanovich in Moscow made an experimental model of a wearable automatic mobile phone, called LK-1 by him, with a base station. LK-1 has a weight of 3 kg, 20–30 km operating distance, and 20–30 hours of battery life. The base station, as described by the author, could serve several customers. In 1958, Kupriyanovich made the new experimental \"pocket\" model of mobile phone. This phone weighed 0.5 kg. To serve more customers, Kupriyanovich proposed the device, which he called \"correlator.\" In 1958, the USSR also started the development of the \"Altai\" national civil mobile phone service for cars, based on the Soviet MRT-1327 standard. The phone system weighed 11 kg (24 lb). It was placed in the trunk of the vehicles of high-ranking officials and used a standard handset in the passenger compartment. The main developers of the Altai system were VNIIS (Voronezh Science Research Institute of Communications) and GSPI (State Specialized Project Institute). In 1963 this service started in Moscow, and in 1970 Altai service was used in 30 USSR cities. Synchronous CDM (code-division 'multiplexing', an early generation of CDMA) was implemented in the Global Positioning System (GPS). This predates and is distinct from its use in mobile phones. The Qualcomm standard IS-95, marketed as cdmaOne. The Qualcomm standard IS-2000, known as CDMA2000, is used by several mobile phone companies, including the Globalstar network. The UMTS 3G mobile phone standard, which uses W-CDMA. CDMA has been used in the OmniTRACS satellite system for transportation logistics. CDMA is a spread-spectrum multiple-access technique. A spread-spectrum technique spreads the bandwidth of the data uniformly for the same transmitted power. A spreading code is a pseudo-random code that has a narrow ambiguity function, unlike other narrow pulse codes. In CDMA a locally generated code runs at a much higher rate than the data to be transmitted. Data for transmission is combined by bitwise XOR (exclusive OR) with the faster code. The figure shows how a spread-spectrum signal is generated. The data signal with pulse duration of T b {\\displaystyle T_{b}} (symbol period) is XORed with the code signal with pulse duration of T c {\\displaystyle T_{c}} (chip period). (Note: bandwidth is proportional to 1 / T {\\displaystyle 1/T} , where T {\\displaystyle T} = bit time.) Therefore, the bandwidth of the data signal is 1 / T b {\\displaystyle 1/T_{b}} and the bandwidth of the spread spectrum signal is 1 / T c {\\displaystyle 1/T_{c}} . Since T c {\\displaystyle T_{c}} is much smaller than T b {\\displaystyle T_{b}} , the bandwidth of the spread-spectrum signal is much larger than the bandwidth of the original signal. The ratio T b / T c {\\displaystyle T_{b}/T_{c}} is called the spreading factor or processing gain and determines to a certain extent the upper limit of the total number of users supported simultaneously by a base station. Each user in a CDMA system uses a different code to modulate their signal. Choosing the codes used to modulate the signal is very important in the performance of CDMA systems. The best performance occurs when there is good separation between the signal of a desired user and the signals of other users. The separation of the signals is made by correlating the received signal with the locally generated code of the desired user. If the signal matches the desired user's code, then the correlation function will be high and the system can extract that signal. If the desired user's code has nothing in common with the signal, the correlation should be as close to zero as possible (thus eliminating the signal); this is referred to as cross-correlation. If the code is correlated with the signal at any time offset other than zero, the correlation should be as close to zero as possible. This is referred to as auto-correlation and is used to reject multi-path interference. An analogy to the problem of multiple access is a room (channel) in which people wish to talk to each other simultaneously. To avoid confusion, people could take turns speaking (time division), speak at different pitches (frequency division), or speak in different languages (code division). CDMA is analogous to the last example where people speaking the same language can understand each other, but other languages are perceived as noise and rejected. Similarly, in radio CDMA, each group of users is given a shared code. Many codes occupy the same channel, but only users associated with a particular code can communicate. In general, CDMA belongs to two basic categories: synchronous (orthogonal codes) and asynchronous (pseudorandom codes). The digital modulation method is analogous to those used in simple radio transceivers. In the analog case, a low-frequency data signal is time-multiplied with a high-frequency pure sine-wave carrier and transmitted. This is effectively a frequency convolution (Wiener–Khinchin theorem) of the two signals, resulting in a carrier with narrow sidebands. In the digital case, the sinusoidal carrier is replaced by Walsh functions. These are binary square waves that form a complete orthonormal set. The data signal is also binary and the time multiplication is achieved with a simple XOR function. This is usually a Gilbert cell mixer in the circuitry. Synchronous CDMA exploits mathematical properties of orthogonality between vectors representing the data strings. For example, the binary string 1011 is represented by the vector (1, 0, 1, 1). Vectors can be multiplied by taking their dot product, by summing the products of their respective components (for example, if u = (a, b) and v = (c, d), then their dot product u·v = ac + bd). If the dot product is zero, the two vectors are said to be orthogonal to each other. Some properties of the dot product aid understanding of how W-CDMA works. If vectors a and b are orthogonal, then a ⋅ b = 0 {\\displaystyle \\mathbf {a} \\cdot \\mathbf {b} =0} and: a ⋅ ( a + b ) = ‖ a ‖ 2 ,   since   a ⋅ a + a ⋅ b = ‖ a ‖ 2 + 0 , {\\displaystyle \\mathbf {a} \\cdot (\\mathbf {a} +\\mathbf {b} )=\\|\\mathbf {a} \\|^{2},\\ {\\text{since}}\\ \\mathbf {a} \\cdot \\mathbf {a} +\\mathbf {a} \\cdot \\mathbf {b} =\\|\\mathbf {a} \\|^{2}+0,} a ⋅ ( − a + b ) = − ‖ a ‖ 2 ,   since   − a ⋅ a + a ⋅ b = − ‖ a ‖ 2 + 0 , {\\displaystyle \\mathbf {a} \\cdot (-\\mathbf {a} +\\mathbf {b} )=-\\|\\mathbf {a} \\|^{2},\\ {\\text{since}}\\ {-\\mathbf {a} }\\cdot \\mathbf {a} +\\mathbf {a} \\cdot \\mathbf {b} =-\\|\\mathbf {a} \\|^{2}+0,} b ⋅ ( a + b ) = ‖ b ‖ 2 ,   since   b ⋅ a + b ⋅ b = 0 + ‖ b ‖ 2 , {\\displaystyle \\mathbf {b} \\cdot (\\mathbf {a} +\\mathbf {b} )=\\|\\mathbf {b} \\|^{2},\\ {\\text{since}}\\ \\mathbf {b} \\cdot \\mathbf {a} +\\mathbf {b} \\cdot \\mathbf {b} =0+\\|\\mathbf {b} \\|^{2},} b ⋅ ( a − b ) = − ‖ b ‖ 2 ,   since   b ⋅ a − b ⋅ b = 0 − ‖ b ‖ 2 . {\\displaystyle \\mathbf {b} \\cdot (\\mathbf {a} -\\mathbf {b} )=-\\|\\mathbf {b} \\|^{2},\\ {\\text{since}}\\ \\mathbf {b} \\cdot \\mathbf {a} -\\mathbf {b} \\cdot \\mathbf {b} =0-\\|\\mathbf {b} \\|^{2}.} Each user in synchronous CDMA uses a code orthogonal to the others' codes to modulate their signal. An example of 4 mutually orthogonal digital signals is shown in the figure below. Orthogonal codes have a cross-correlation equal to zero; in other words, they do not interfere with each other. In the case of IS-95, 64-bit Walsh codes are used to encode the signal to separate different users. Since each of the 64 Walsh codes is orthogonal to all other, the signals are channelized into 64 orthogonal signals. The following example demonstrates how each user's signal can be encoded and decoded. Start with a set of vectors that are mutually orthogonal. (Although mutual orthogonality is the only condition, these vectors are usually constructed for ease of decoding, for example columns or rows from Walsh matrices.) An example of orthogonal functions is shown in the adjacent picture. These vectors will be assigned to individual users and are called the code, chip code, or chipping code. In the interest of brevity, the rest of this example uses codes v with only two bits. Each user is associated with a different code, say v. A 1 bit is represented by transmitting a positive code v, and a 0 bit is represented by a negative code −v. For example, if v = (v0, v1) = (1, −1) and the data that the user wishes to transmit is (1, 0, 1, 1), then the transmitted symbols would be (v, −v, v, v) = (v0, v1, −v0, −v1, v0, v1, v0, v1) = (1, −1, −1, 1, 1, −1, 1, −1). For the purposes of this article, we call this constructed vector the transmitted vector. Each sender has a different, unique vector v chosen from that set, but the construction method of the transmitted vector is identical. Now, due to physical properties of interference, if two signals at a point are in phase, they add to give twice the amplitude of each signal, but if they are out of phase, they subtract and give a signal that is the difference of the amplitudes. Digitally, this behaviour can be modelled by the addition of the transmission vectors, component by component. If sender0 has code (1, −1) and data (1, 0, 1, 1), and sender1 has code (1, 1) and data (0, 0, 1, 1), and both senders transmit simultaneously, then this table describes the coding steps: Because signal0 and signal1 are transmitted at the same time into the air, they add to produce the raw signal (1, −1, −1, 1, 1, −1, 1, −1) + (−1, −1, −1, −1, 1, 1, 1, 1) = (0, −2, −2, 0, 2, 0, 2, 0). This raw signal is called an interference pattern. The receiver then extracts an intelligible signal for any known sender by combining the sender's code with the interference pattern. The following table explains how this works and shows that the signals do not interfere with one another: Further, after decoding, all values greater than 0 are interpreted as 1, while all values less than zero are interpreted as 0. For example, after decoding, data0 is (2, −2, 2, 2), but the receiver interprets this as (1, 0, 1, 1). Values of exactly 0 mean that the sender did not transmit any data, as in the following example: Assume signal0 = (1, −1, −1, 1, 1, −1, 1, −1) is transmitted alone. The following table shows the decode at the receiver: When the receiver attempts to decode the signal using sender1's code, the data is all zeros; therefore the cross-correlation is equal to zero and it is clear that sender1 did not transmit any data. When mobile-to-base links cannot be precisely coordinated, particularly due to the mobility of the handsets, a different approach is required. Since it is not mathematically possible to create signature sequences that are both orthogonal for arbitrarily random starting points and which make full use of the code space, unique \"pseudo-random\" or \"pseudo-noise\" sequences called spreading sequences are used in asynchronous CDMA systems. A spreading sequence is a binary sequence that appears random but can be reproduced in a deterministic manner by intended receivers. These spreading sequences are used to encode and decode a user's signal in asynchronous CDMA in the same manner as the orthogonal codes in synchronous CDMA (shown in the example above). These spreading sequences are statistically uncorrelated, and the sum of a large number of spreading sequences results in multiple access interference (MAI) that is approximated by a Gaussian noise process (following the central limit theorem in statistics). Gold codes are an example of a spreading sequence suitable for this purpose, as there is low correlation between the codes. If all of the users are received with the same power level, then the variance (e.g., the noise power) of the MAI increases in direct proportion to the number of users. In other words, unlike synchronous CDMA, the signals of other users will appear as noise to the signal of interest and interfere slightly with the desired signal in proportion to number of users. All forms of CDMA use the spread-spectrum spreading factor to allow receivers to partially discriminate against unwanted signals. Signals encoded with the specified spreading sequences are received, while signals with different sequences (or the same sequences but different timing offsets) appear as wideband noise reduced by the spreading factor. Since each user generates MAI, controlling the signal strength is an important issue with CDMA transmitters. A CDM (synchronous CDMA), TDMA, or FDMA receiver can in theory completely reject arbitrarily strong signals using different codes, time slots or frequency channels due to the orthogonality of these systems. This is not true for asynchronous CDMA; rejection of unwanted signals is only partial. If any or all of the unwanted signals are much stronger than the desired signal, they will overwhelm it. This leads to a general requirement in any asynchronous CDMA system to approximately match the various signal power levels as seen at the receiver. In CDMA cellular, the base station uses a fast closed-loop power-control scheme to tightly control each mobile's transmit power. In 2019, schemes to precisely estimate the required length of the codes in dependence of Doppler and delay characteristics have been developed. Soon after, machine learning based techniques that generate sequences of a desired length and spreading properties have been published as well. These are highly competitive with the classic Gold and Welch sequences. These are not generated by linear-feedback-shift-registers, but have to be stored in lookup tables. In theory CDMA, TDMA and FDMA have exactly the same spectral efficiency, but, in practice, each has its own challenges – power control in the case of CDMA, timing in the case of TDMA, and frequency generation/filtering in the case of FDMA. TDMA systems must carefully synchronize the transmission times of all the users to ensure that they are received in the correct time slot and do not cause interference. Since this cannot be perfectly controlled in a mobile environment, each time slot must have a guard time, which reduces the probability that users will interfere, but decreases the spectral efficiency. Similarly, FDMA systems must use a guard band between adjacent channels, due to the unpredictable Doppler shift of the signal spectrum because of user mobility. The guard bands will reduce the probability that adjacent channels will interfere, but decrease the utilization of the spectrum. Asynchronous CDMA offers a key advantage in the flexible allocation of resources i.e. allocation of spreading sequences to active users. In the case of CDM (synchronous CDMA), TDMA, and FDMA the number of simultaneous orthogonal codes, time slots, and frequency slots respectively are fixed, hence the capacity in terms of the number of simultaneous users is limited. There are a fixed number of orthogonal codes, time slots or frequency bands that can be allocated for CDM, TDMA, and FDMA systems, which remain underutilized due to the bursty nature of telephony and packetized data transmissions. There is no strict limit to the number of users that can be supported in an asynchronous CDMA system, only a practical limit governed by the desired bit error probability since the SIR (signal-to-interference ratio) varies inversely with the number of users. In a bursty traffic environment like mobile telephony, the advantage afforded by asynchronous CDMA is that the performance (bit error rate) is allowed to fluctuate randomly, with an average value determined by the number of users times the percentage of utilization. Suppose there are 2N users that only talk half of the time, then 2N users can be accommodated with the same average bit error probability as N users that talk all of the time. The key difference here is that the bit error probability for N users talking all of the time is constant, whereas it is a random quantity (with the same mean) for 2N users talking half of the time. In other words, asynchronous CDMA is ideally suited to a mobile network where large numbers of transmitters each generate a relatively small amount of traffic at irregular intervals. CDM (synchronous CDMA), TDMA, and FDMA systems cannot recover the underutilized resources inherent to bursty traffic due to the fixed number of orthogonal codes, time slots or frequency channels that can be assigned to individual transmitters. For instance, if there are N time slots in a TDMA system and 2N users that talk half of the time, then half of the time there will be more than N users needing to use more than N time slots. Furthermore, it would require significant overhead to continually allocate and deallocate the orthogonal-code, time-slot or frequency-channel resources. By comparison, asynchronous CDMA transmitters simply send when they have something to say and go off the air when they do not, keeping the same signature sequence as long as they are connected to the system. Most modulation schemes try to minimize the bandwidth of this signal since bandwidth is a limited resource. However, spread-spectrum techniques use a transmission bandwidth that is several orders of magnitude greater than the minimum required signal bandwidth. One of the initial reasons for doing this was military applications including guidance and communication systems. These systems were designed using spread spectrum because of its security and resistance to jamming. Asynchronous CDMA has some level of privacy built in because the signal is spread using a pseudo-random code; this code makes the spread-spectrum signals appear random or have noise-like properties. A receiver cannot demodulate this transmission without knowledge of the pseudo-random sequence used to encode the data. CDMA is also resistant to jamming. A jamming signal only has a finite amount of power available to jam the signal. The jammer can either spread its energy over the entire bandwidth of the signal or jam only part of the entire signal. CDMA can also effectively reject narrow-band interference. Since narrow-band interference affects only a small portion of the spread-spectrum signal, it can easily be removed through notch filtering without much loss of information. Convolution encoding and interleaving can be used to assist in recovering this lost data. CDMA signals are also resistant to multipath fading. Since the spread-spectrum signal occupies a large bandwidth, only a small portion of this will undergo fading due to multipath at any given time. Like the narrow-band interference, this will result in only a small loss of data and can be overcome. Another reason CDMA is resistant to multipath interference is because the delayed versions of the transmitted pseudo-random codes will have poor correlation with the original pseudo-random code, and will thus appear as another user, which is ignored at the receiver. In other words, as long as the multipath channel induces at least one chip of delay, the multipath signals will arrive at the receiver such that they are shifted in time by at least one chip from the intended signal. The correlation properties of the pseudo-random codes are such that this slight delay causes the multipath to appear uncorrelated with the intended signal, and it is thus ignored. Some CDMA devices use a rake receiver, which exploits multipath delay components to improve the performance of the system. A rake receiver combines the information from several correlators, each one tuned to a different path delay, producing a stronger version of the signal than a simple receiver with a single correlation tuned to the path delay of the strongest signal. Frequency reuse is the ability to reuse the same radio channel frequency at other cell sites within a cellular system. In the FDMA and TDMA systems, frequency planning is an important consideration. The frequencies used in different cells must be planned carefully to ensure signals from different cells do not interfere with each other. In a CDMA system, the same frequency can be used in every cell, because channelization is done using the pseudo-random codes. Reusing the same frequency in every cell eliminates the need for frequency planning in a CDMA system; however, planning of the different pseudo-random sequences must be done to ensure that the received signal from one cell does not correlate with the signal from a nearby cell. Since adjacent cells use the same frequencies, CDMA systems have the ability to perform soft hand-offs. Soft hand-offs allow the mobile telephone to communicate simultaneously with two or more cells. The best signal quality is selected until the hand-off is complete. This is different from hard hand-offs utilized in other cellular systems. In a hard-hand-off situation, as the mobile telephone approaches a hand-off, signal strength may vary abruptly. In contrast, CDMA systems use the soft hand-off, which is undetectable and provides a more reliable and higher-quality signal. A novel collaborative multi-user transmission and detection scheme called collaborative CDMA has been investigated for the uplink that exploits the differences between users' fading channel signatures to increase the user capacity well beyond the spreading length in the MAI-limited environment. The authors show that it is possible to achieve this increase at a low complexity and high bit error rate performance in flat fading channels, which is a major research challenge for overloaded CDMA systems. In this approach, instead of using one sequence per user as in conventional CDMA, the authors group a small number of users to share the same spreading sequence and enable group spreading and despreading operations. The new collaborative multi-user receiver consists of two stages: group multi-user detection (MUD) stage to suppress the MAI between the groups and a low-complexity maximum-likelihood detection stage to recover jointly the co-spread users' data using minimal Euclidean-distance measure and users' channel-gain coefficients. An enhanced CDMA version known as interleave-division multiple access (IDMA) uses the orthogonal interleaving as the only means of user separation in place of signature sequence used in CDMA system. CDMA spectral efficiency CDMA2000 Comparison of mobile phone standards cdmaOne Orthogonal variable spreading factor (OVSF), an implementation of CDMA Pseudo-random noise Quadrature-division multiple access (QDMA), an implementation of CDMA Rise over thermal Spread spectrum W-CDMA Globalstar uses elements of CDMA, TDMA and FDMA combining with satellite multiple beam antennas. The UMTS networks and other CDMA based systems are also known as a kind of interference-limited systems. This relates to the properties of the CDMA technology: all users operate in the same frequency range that impacts SINR and, hence, reduces coverage and capacity. Torrieri, Don (2018). Principles of Spread-Spectrum Communication Systems, 4th ed. Stuber, Gordon L. (2017). Principles of Mobile Communication, 4th ed. Kelly, Samantha Murphy (February 22, 2022). \"AT&T is shutting down its 3G network. Here's how it could impact you\". CNN. Johnson, Allison (2021-03-30). \"Verizon will shutter its 3G CDMA by the end of 2022\". The Verge. Retrieved 2021-10-09. Robert A. Scholtz (May 1982). \"The Origins of Spread-Spectrum Communications\". IEEE Transactions on Communications. 30 (5): 822–854. doi:10.1109/TCOM.1982.1095547. Retrieved 30 January 2022. Robert Price (28 July 1982). \"Oral-History: Claude E. Shannon\". Engineering and Technology History Wiki. Retrieved 30 January 2022. Ageev, D. V. (1935). \"Bases of the Theory of Linear Selection. Code Demultiplexing\". Proceedings of the Leningrad Experimental Institute of Communication: 3–35. Soviet Union 115494, Куприянович (Leonid Kupriyanovich), \"Устройства вызова и коммутации каналов радиотелефонной связи (Devices for calling and switching radio communication channels)\", published 1957-11-04  Nauka i Zhizn 8, 1957, p. 49. Yuniy technik 7, 1957, p. 43–44. Nauka i Zhizn 10, 1958, p. 66. Tekhnika Molodezhi 2, 1959, p. 18–19. \"First Russian Mobile Phone\". September 18, 2006. M. Mazzella, M. Cohen, D. Rouffet, M. Louie and K. S. Gilhousen, \"Multiple access techniques and spectrum utilisation of the GLOBALSTAR mobile satellite system,\" Fourth IEE Conference on Telecommunications 1993, Manchester, UK, 1993, pp. 306-311. Holma, H.; Toskala, A., eds. (2007). WCDMA for UMTS: HSPA Evolution and LTE. John Wiley & Sons. ISBN 9781119991908. Laiho, J.; Wacker, A.; Novosad, T., eds. (2002). Radio Network Planning and Optimisation for UMTS (Vol. 2). New York: John Wiley & Sons. p. 303. ISBN 9780470031391. Walke, Bernhard H.; Seidenberg, Peter; Althoff, Marc Peter (March 2003) [2001]. UMTS: The Fundamentals. Translated by von Schmoeger, Hedwig Jourdan (First English ed.). John Wiley & Sons, Ltd. pp. 18–19. ISBN 0-470-84557-0. (NB. Based on the 2001 German edition.) Sklar, Bernard; Ray, Pabitra K. (2014). Digital Communications: Fundamentals and Applications, 2nd ed. Molisch, Andreas (2010). Wireless Communications, 2nd ed. Enneking, Antreich, Appel, Almeida (2019). \"Pure Pilot Signals: How short can we choose GNSS spreading codes?\". Proceedings of the 2019 International Technical Meeting of the Institute of Navigation. pp. 925–935. doi:10.33012/2019.16737. ISBN 978-0-936406-21-3. S2CID 86666944.{{cite conference}}: CS1 maint: multiple names: authors list (link) Shakya, Indu L. (2011). \"High User Capacity Collaborative CDMA\". IET Communications. Papathanassiou, A., Salkintzis, A. K., & Mathiopoulos, P. T. (2001). \"A comparison study of the uplink performance of W-CDMA and OFDM for mobile multimedia communications via LEO satellites\". IEEE Personal Communications, 8(3), 35–43. Wikimedia Commons has media related to CDMA. Talk at Princeton Institute for Advanced Study on Solomon Golomb's work on pseudorandom sequences"
+        },
+        "collectMetadata": {
+            "requestedDate": "2023-10-16T00:00:00",
+            "ingestedDate": "2023-10-22T14:37:38.272530"
+        },
+        "extractionMetadata": [
+            {
+                "id": "WikitextExtractor",
+                "linkExtractionDate": "2023-10-22T14:37:38.279101",
+                "links": [
+                    {
+                        "fragment": null,
+                        "link": "Channel_access_method",
+                        "text": null,
+                        "title": "channel access method"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Radio",
+                        "text": null,
+                        "title": "radio"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Channel_access_method",
+                        "text": "multiple access",
+                        "title": "channel access method"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Bandwidth_(signal_processing)",
+                        "text": "bandwidth",
+                        "title": "bandwidth (signal processing)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Spread_spectrum",
+                        "text": null,
+                        "title": "spread spectrum"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_phone_standards",
+                        "text": null,
+                        "title": "mobile phone standards"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CdmaOne",
+                        "text": "IS-95",
+                        "title": "cdmaOne"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3G",
+                        "text": null,
+                        "title": "3G"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA2000",
+                        "text": null,
+                        "title": "CDMA2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "UMTS",
+                        "text": null,
+                        "title": "UMTS"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GSM",
+                        "text": null,
+                        "title": "GSM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "AT&T_Corporation",
+                        "text": "AT&T",
+                        "title": "AT&T Corporation"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Verizon_(mobile_network)",
+                        "text": "Verizon",
+                        "title": "Verizon (mobile network)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "9-1-1",
+                        "text": "911",
+                        "title": "9-1-1"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CNN",
+                        "text": null,
+                        "title": "CNN"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "ALOHA",
+                        "text": null,
+                        "title": "ALOHA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Barker_code",
+                        "text": null,
+                        "title": "Barker code"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Binary_phase-shift_keying",
+                        "text": null,
+                        "title": "binary phase-shift keying"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Quadrature_amplitude_modulation",
+                        "text": null,
+                        "title": "quadrature amplitude modulation"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Orthogonal_frequency-division_multiplexing",
+                        "text": null,
+                        "title": "orthogonal frequency-division multiplexing"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Binary_offset_carrier_modulation",
+                        "text": null,
+                        "title": "binary offset carrier modulation"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Manchester_code",
+                        "text": null,
+                        "title": "Manchester code"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Massachusetts_Institute_of_Technology",
+                        "text": null,
+                        "title": "Massachusetts Institute of Technology"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "IEEE_Transactions_on_Communications",
+                        "text": null,
+                        "title": "IEEE Transactions on Communications"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Radio_jamming",
+                        "text": "jamming",
+                        "title": "Radio jamming"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Electronic_counter-countermeasure",
+                        "text": "anti-jamming",
+                        "title": "Electronic counter-countermeasure"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "MIT_Lincoln_Laboratory",
+                        "text": "Lincoln Lab",
+                        "title": "MIT_Lincoln_Laboratory"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Engineering_and_Technology_History_Wiki",
+                        "text": null,
+                        "title": "Engineering and Technology History Wiki"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Soviet_Union",
+                        "text": null,
+                        "title": "Soviet Union"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Dmitry_Vasiliyevich_Ageev",
+                        "text": "Dmitry Ageev",
+                        "title": "Dmitry Vasiliyevich Ageev"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Leonid_Kupriyanovich",
+                        "text": null,
+                        "title": "Leonid Kupriyanovich"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Nauka_i_Zhizn",
+                        "text": null,
+                        "title": "Nauka i Zhizn"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Tekhnika_Molodezhi",
+                        "text": null,
+                        "title": "Tekhnika Molodezhi"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Altai_(mobile_telephone_system)",
+                        "text": "Altai",
+                        "title": "Altai (mobile telephone system)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "File:Au_CDMA_1X_WIN_W31SAII_gravelly_silver_expansion.jpg",
+                        "text": "thumb|A CDMA2000 [[mobile phone]]",
+                        "title": "File:Au CDMA 1X WIN W31SAII gravelly silver expansion.jpg"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_phone",
+                        "text": null,
+                        "title": "mobile phone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Global_Positioning_System",
+                        "text": null,
+                        "title": "Global Positioning System"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_phone",
+                        "text": null,
+                        "title": "mobile phone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Qualcomm",
+                        "text": null,
+                        "title": "Qualcomm"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "IS-95",
+                        "text": null,
+                        "title": "IS-95"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "IS-2000",
+                        "text": null,
+                        "title": "IS-2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Globalstar",
+                        "text": null,
+                        "title": "Globalstar"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Time-division_multiple_access",
+                        "text": "TDMA",
+                        "title": "time-division multiple access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "FDMA",
+                        "text": null,
+                        "title": "FDMA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "UMTS",
+                        "text": null,
+                        "title": "UMTS"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "W-CDMA",
+                        "text": null,
+                        "title": "W-CDMA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Wiley_(publisher)",
+                        "text": "John Wiley & Sons",
+                        "title": "Wiley (publisher)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Wiley_(publisher)",
+                        "text": "John Wiley & Sons",
+                        "title": "Wiley (publisher)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Signal-to-interference-plus-noise_ratio",
+                        "text": "SINR",
+                        "title": "Signal-to-interference-plus-noise ratio"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "John_Wiley_&_Sons,_Ltd",
+                        "text": null,
+                        "title": "John Wiley & Sons, Ltd"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Logistics",
+                        "text": null,
+                        "title": "logistics"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Ambiguity_function",
+                        "text": null,
+                        "title": "ambiguity function"
+                    },
+                    {
+                        "fragment": "Bitwise operation",
+                        "link": "XOR",
+                        "text": "XOR",
+                        "title": "XOR"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Bandwidth_(signal_processing)",
+                        "text": "bandwidth",
+                        "title": "Bandwidth (signal processing)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "File:Generation_of_CDMA.svg",
+                        "text": "thumb|500px|center|Generation of a CDMA signal",
+                        "title": "File:Generation of CDMA.svg"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Cross-correlation",
+                        "text": "correlating",
+                        "title": "Cross-correlation"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Cross-correlation",
+                        "text": null,
+                        "title": "cross-correlation"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Noise",
+                        "text": null,
+                        "title": "noise"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Wiener–Khinchin_theorem",
+                        "text": null,
+                        "title": "Wiener–Khinchin theorem"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Walsh_function",
+                        "text": null,
+                        "title": "Walsh function"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Gilbert_cell",
+                        "text": null,
+                        "title": "Gilbert cell"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Orthogonality",
+                        "text": null,
+                        "title": "orthogonality"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Coordinate_vector",
+                        "text": "vectors",
+                        "title": "coordinate vector"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Dot_product",
+                        "text": null,
+                        "title": "dot product"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "W-CDMA",
+                        "text": null,
+                        "title": "W-CDMA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Walsh_code",
+                        "text": null,
+                        "title": "Walsh code"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Image:Cdma_orthogonal_signals.png",
+                        "text": "thumb|right|An example of 4 mutually orthogonal digital signals",
+                        "title": "Image:Cdma orthogonal signals.png"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Orthogonality",
+                        "text": "orthogonal",
+                        "title": "orthogonality"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Walsh_matrix",
+                        "text": "Walsh matrices",
+                        "title": "Walsh matrix"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Chip_(CDMA)",
+                        "text": "chip",
+                        "title": "chip (CDMA)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Central_limit_theorem",
+                        "text": null,
+                        "title": "central limit theorem"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Gold_code",
+                        "text": null,
+                        "title": "Gold code"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Spread-spectrum",
+                        "text": null,
+                        "title": "spread-spectrum"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Spreading_factor",
+                        "text": null,
+                        "title": "spreading factor"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Doppler_effect",
+                        "text": "Doppler shift",
+                        "title": "Doppler effect"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Orthogonal",
+                        "text": null,
+                        "title": "orthogonal"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Convolution_encoding",
+                        "text": null,
+                        "title": "Convolution encoding"
+                    },
+                    {
+                        "fragment": "Interleaving",
+                        "link": "Forward_error_correction",
+                        "text": "interleaving",
+                        "title": "forward error correction"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Rake_receiver",
+                        "text": null,
+                        "title": "rake receiver"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Bit_error_rate",
+                        "text": null,
+                        "title": "bit error rate"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA_spectral_efficiency",
+                        "text": null,
+                        "title": "CDMA spectral efficiency"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA2000",
+                        "text": null,
+                        "title": "CDMA2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Comparison_of_mobile_phone_standards",
+                        "text": null,
+                        "title": "Comparison of mobile phone standards"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CdmaOne",
+                        "text": null,
+                        "title": "cdmaOne"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Orthogonal_variable_spreading_factor",
+                        "text": null,
+                        "title": "Orthogonal variable spreading factor"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Pseudo-random_noise",
+                        "text": null,
+                        "title": "Pseudo-random noise"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Quadrature-division_multiple_access",
+                        "text": null,
+                        "title": "Quadrature-division multiple access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Rise_over_thermal",
+                        "text": null,
+                        "title": "Rise over thermal"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Spread_spectrum",
+                        "text": null,
+                        "title": "Spread spectrum"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "W-CDMA",
+                        "text": null,
+                        "title": "W-CDMA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Code_division_multiple_access",
+                        "text": " ",
+                        "title": "Category:Code division multiple access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Multiplexing",
+                        "text": null,
+                        "title": "Category:Multiplexing"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Radio_resource_management",
+                        "text": null,
+                        "title": "Category:Radio resource management"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Media_access_control",
+                        "text": null,
+                        "title": "Category:Media access control"
+                    }
+                ],
+                "nbLinks": 94,
+                "nbTables": 3,
+                "nbTexts": 19,
+                "tableExtractionDate": "2023-10-22T14:37:38.279101",
+                "tables": [
+                    {
+                        "endOffset": 19096,
+                        "startOffset": 18406,
+                        "tableCaption": null,
+                        "tableContent": "{| style=\"border: 1px #aaaaaa solid; background-color: #f7f8ff; margin-left: auto; margin-right: auto;\"\n| align=center bgcolor=\"#CCCCCC\" | Step\n| align=center bgcolor=\"#CCCCCC\" | Encode sender0\n| align=center bgcolor=\"#CCCCCC\" | Encode sender1\n|-\n| valign=top | 0\n| code0 = (1, −1), data0 = (1, 0, 1, 1)\n| code1 = (1, 1), data1 = (0, 0, 1, 1)\n|-\n| valign=top | 1\n| encode0 = 2(1, 0, 1, 1) − (1, 1, 1, 1) = (1, −1, 1, 1)\n| encode1 = 2(0, 0, 1, 1) − (1, 1, 1, 1) = (−1, −1, 1, 1)\n|-\n| valign=top | 2\n| signal0 = encode0 ⊗ code0<br />= (1, −1, 1, 1) ⊗ (1, −1)<br />= (1, −1, −1, 1, 1, −1, 1, −1)\n| signal1 = encode1 ⊗ code1<br />= (−1, −1, 1, 1) ⊗ (1, 1)<br />= (−1, −1, −1, −1, 1, 1, 1, 1)\n|}",
+                        "tableData": [
+                            [
+                                "Step",
+                                "Encode sender0",
+                                "Encode sender1"
+                            ],
+                            [
+                                "0",
+                                "code0 = (1, −1), data0 = (1, 0, 1, 1)",
+                                "code1 = (1, 1), data1 = (0, 0, 1, 1)"
+                            ],
+                            [
+                                "1",
+                                "encode0 = 2(1, 0, 1, 1) − (1, 1, 1, 1) = (1, −1, 1, 1)",
+                                "encode1 = 2(0, 0, 1, 1) − (1, 1, 1, 1) = (−1, −1, 1, 1)"
+                            ],
+                            [
+                                "2",
+                                "signal0 = encode0 ⊗ code0= (1, −1, 1, 1) ⊗ (1, −1)= (1, −1, −1, 1, 1, −1, 1, −1)",
+                                "signal1 = encode1 ⊗ code1= (−1, −1, 1, 1) ⊗ (1, 1)= (−1, −1, −1, −1, 1, 1, 1, 1)"
+                            ]
+                        ],
+                        "tableNum": 0
+                    },
+                    {
+                        "endOffset": 20316,
+                        "startOffset": 19593,
+                        "tableCaption": null,
+                        "tableContent": "{|style=\"border: 1px #aaaaaa solid; background-color: #f7f8ff; margin-left: auto; margin-right: auto;\"\n|align=center bgcolor=\"#CCCCCC\"|Step\n|align=center bgcolor=\"#CCCCCC\"|Decode sender0\n|align=center bgcolor=\"#CCCCCC\"|Decode sender1\n|-\n|0\n|code0 = (1, −1), signal = (0, −2, −2, 0, 2, 0, 2, 0)\n|code1 = (1, 1), signal = (0, −2, −2, 0, 2, 0, 2, 0)\n|-\n|1\n|decode0 = pattern.vector0\n|decode1 = pattern.vector1\n|-\n|2\n|decode0 = ((0, −2), (−2, 0), (2, 0), (2, 0)) · (1, −1)\n|decode1 = ((0, −2), (−2, 0), (2, 0), (2, 0)) · (1, 1)\n|-\n|3\n|decode0 = ((0 + 2), (−2 + 0), (2 + 0), (2 + 0))\n|decode1 = ((0 − 2), (−2 + 0), (2 + 0), (2 + 0))\n|-\n|4\n|data0=(2, −2, 2, 2), meaning (1, 0, 1, 1)\n|data1=(−2, −2, 2, 2), meaning (0, 0, 1, 1)\n|}",
+                        "tableData": [
+                            [
+                                "Step",
+                                "Decode sender0",
+                                "Decode sender1"
+                            ],
+                            [
+                                "0",
+                                "code0 = (1, −1), signal = (0, −2, −2, 0, 2, 0, 2, 0)",
+                                "code1 = (1, 1), signal = (0, −2, −2, 0, 2, 0, 2, 0)"
+                            ],
+                            [
+                                "1",
+                                "decode0 = pattern.vector0",
+                                "decode1 = pattern.vector1"
+                            ],
+                            [
+                                "2",
+                                "decode0 = ((0, −2), (−2, 0), (2, 0), (2, 0)) · (1, −1)",
+                                "decode1 = ((0, −2), (−2, 0), (2, 0), (2, 0)) · (1, 1)"
+                            ],
+                            [
+                                "3",
+                                "decode0 = ((0 + 2), (−2 + 0), (2 + 0), (2 + 0))",
+                                "decode1 = ((0 − 2), (−2 + 0), (2 + 0), (2 + 0))"
+                            ],
+                            [
+                                "4",
+                                "data0=(2, −2, 2, 2), meaning (1, 0, 1, 1)",
+                                "data1=(−2, −2, 2, 2), meaning (0, 0, 1, 1)"
+                            ]
+                        ],
+                        "tableNum": 1
+                    },
+                    {
+                        "endOffset": 21498,
+                        "startOffset": 20770,
+                        "tableCaption": null,
+                        "tableContent": "{|style=\"border: 1px #aaaaaa solid; background-color: #f7f8ff; margin-left: auto; margin-right: auto;\"\n|align=center bgcolor=\"#CCCCCC\"|Step\n|align=center bgcolor=\"#CCCCCC\"|Decode sender0\n|align=center bgcolor=\"#CCCCCC\"|Decode sender1\n|-\n|0\n|code0 = (1, −1), signal = (1, −1, −1, 1, 1, −1, 1, −1)\n|code1 = (1, 1), signal = (1, −1, −1, 1, 1, −1, 1, −1)\n|-\n|1\n|decode0 = pattern.vector0\n|decode1 = pattern.vector1\n|-\n|2\n|decode0 = ((1, −1), (−1, 1), (1, −1), (1, −1)) · (1, −1)\n|decode1 = ((1, −1), (−1, 1), (1, −1), (1, −1)) · (1, 1)\n|-\n|3\n|decode0 = ((1 + 1), (−1 − 1), (1 + 1), (1 + 1))\n|decode1 = ((1 − 1), (−1 + 1), (1 − 1), (1 − 1))\n|-\n|4\n|data0 = (2, −2, 2, 2), meaning (1, 0, 1, 1)\n|data1 = (0, 0, 0, 0), meaning no data\n|}",
+                        "tableData": [
+                            [
+                                "Step",
+                                "Decode sender0",
+                                "Decode sender1"
+                            ],
+                            [
+                                "0",
+                                "code0 = (1, −1), signal = (1, −1, −1, 1, 1, −1, 1, −1)",
+                                "code1 = (1, 1), signal = (1, −1, −1, 1, 1, −1, 1, −1)"
+                            ],
+                            [
+                                "1",
+                                "decode0 = pattern.vector0",
+                                "decode1 = pattern.vector1"
+                            ],
+                            [
+                                "2",
+                                "decode0 = ((1, −1), (−1, 1), (1, −1), (1, −1)) · (1, −1)",
+                                "decode1 = ((1, −1), (−1, 1), (1, −1), (1, −1)) · (1, 1)"
+                            ],
+                            [
+                                "3",
+                                "decode0 = ((1 + 1), (−1 − 1), (1 + 1), (1 + 1))",
+                                "decode1 = ((1 − 1), (−1 + 1), (1 − 1), (1 − 1))"
+                            ],
+                            [
+                                "4",
+                                "data0 = (2, −2, 2, 2), meaning (1, 0, 1, 1)",
+                                "data1 = (0, 0, 0, 0), meaning no data"
+                            ]
+                        ],
+                        "tableNum": 2
+                    }
+                ],
+                "technology": "WikitextExtractor",
+                "textExtractionDate": "2023-10-22T14:37:38.279101",
+                "texts": [
+                    {
+                        "endOffset": 3766,
+                        "index": 0,
+                        "level": 0,
+                        "startOffset": 0,
+                        "title": null,
+                        "value": "{{Short description|Channel access method used by various radio communication technologies}}\n{{About|a channel access method|the mobile phone technology referred to as CDMA|cdmaOne|and|CDMA2000}}\n{{Multiplex_techniques}}\n\nCode-division multiple access (CDMA) is a [[channel access method]] used by various [[radio]] communication technologies. CDMA is an example of [[channel access method|multiple access]],  where several transmitters can send information simultaneously over a single communication channel. This allows several users to share a band of frequencies (see [[bandwidth (signal processing)|bandwidth]]). To permit this without undue interference between the users, CDMA employs [[spread spectrum]] technology and a special coding scheme (where each transmitter is assigned a code).<ref name=\"ref 1\">{{cite book| title=Principles of Spread-Spectrum Communication Systems, 4th ed.| year=2018|last1=Torrieri|first1=Don}}</ref><ref name=\"ref 2\">{{cite book| title=Principles of Mobile Communication, 4th ed.| year=2017|last1=Stuber|first1=Gordon L.}}</ref>\n\nCDMA optimizes the use of available bandwidth as it transmits over the entire frequency range and does not limit the user's frequency range.\n\nIt is used as the access method in many [[mobile phone standards]]. [[cdmaOne|IS-95]], also called \"cdmaOne\", and its [[3G]] evolution [[CDMA2000]], are often simply referred to as \"CDMA\", but [[UMTS]], the 3G standard used by [[GSM]] carriers, also uses \"wideband CDMA\", or W-CDMA, as well as TD-CDMA and TD-SCDMA, as its radio technologies.  Many carriers (such as [[AT&T Corporation|AT&T]] and [[Verizon (mobile network)|Verizon]]) shut down 3G CDMA-based networks in 2022, rendering handsets supporting only those protocols unusable for calls, even to [[9-1-1|911]].<ref>{{cite web|url=https://www.cnn.com/2022/02/22/tech/att-3g-network-shutdown/index.html|title=AT&T is shutting down its 3G network. Here's how it could impact you|first=Samantha Murphy|last=Kelly|date=February 22, 2022|website=[[CNN]]}}</ref><ref>{{Cite web|last=Johnson|first=Allison|date=2021-03-30|title=Verizon will shutter its 3G CDMA by the end of 2022|url=https://www.theverge.com/2021/3/30/22358628/verizon-3g-cdma-shutdown-date-2022|access-date=2021-10-09|website=The Verge|language=en}}</ref>\n\nIt can be also used as a channel or medium access technology, like [[ALOHA]] for example or as a permanent pilot/signalling channel to allow users to synchronize their local oscillators to a common system frequency, thereby also estimating the channel parameters permanently.\n\nIn these schemes, the message is modulated on a longer spreading sequence, consisting of several chips (0es and 1es). Due to their very advantageous auto- and crosscorrelation characteristics, these spreading sequences have also been used for radar applications for many decades, where they are called [[Barker code]]s (with a very short sequence length of typically 8 to 32).\n\nFor space-based communication applications, CDMA has been used for many decades due to the large path loss and Doppler shift caused by satellite motion. CDMA is often used with [[binary phase-shift keying]] (BPSK) in its simplest form, but can be combined with any modulation scheme like (in advanced cases) [[quadrature amplitude modulation]] (QAM) or [[orthogonal frequency-division multiplexing]] (OFDM), which typically makes it very robust and efficient (and equipping them with accurate ranging capabilities, which is difficult without CDMA). Other schemes use subcarriers based on [[binary offset carrier modulation]] (BOC modulation), which is inspired by [[Manchester code]]s and enable a larger gap between the virtual center frequency and the subcarriers, which is not the case for OFDM subcarriers."
+                    },
+                    {
+                        "endOffset": 7414,
+                        "index": 1,
+                        "level": 2,
+                        "startOffset": 3766,
+                        "title": "History",
+                        "value": "The technology of code-division multiple access channels has long been known."
+                    },
+                    {
+                        "endOffset": 4929,
+                        "index": 2,
+                        "level": 3,
+                        "startOffset": 3856,
+                        "title": "USA",
+                        "value": "In the US, one of the earliest descriptions of CDMA can be found in the summary report of Project Hartwell on \"The Security of Overseas Transport\", which was a summer research project carried out at the [[Massachusetts Institute of Technology]] from June to August 1950.<ref name=Scholtz_1982May_IEEE>{{cite journal| author=Robert A. Scholtz| date=May 1982| url=https://ieeexplore.ieee.org/document/1095547| title=The Origins of Spread-Spectrum Communications| journal=[[IEEE Transactions on Communications]]| volume=30| issue=5| pages=822–854| doi=10.1109/TCOM.1982.1095547| access-date=30 January 2022}}</ref> Further research in the context of [[Radio jamming|jamming]] and [[Electronic counter-countermeasure|anti-jamming]] was carried out in 1952 at [[MIT_Lincoln_Laboratory|Lincoln Lab]].<ref name=Price_Shannon_19820728>{{cite web| author=Robert Price| date=28 July 1982| url=https://ethw.org/Oral-History:Claude_E._Shannon| title=Oral-History: Claude E. Shannon| publisher=[[Engineering and Technology History Wiki]]| access-date=30 January 2022}}</ref>"
+                    },
+                    {
+                        "endOffset": 7414,
+                        "index": 3,
+                        "level": 3,
+                        "startOffset": 4929,
+                        "title": "USSR",
+                        "value": "In the [[Soviet Union]] (USSR), the first work devoted to this subject was published in 1935 by [[Dmitry Vasiliyevich Ageev|Dmitry Ageev]].<ref>{{cite journal|last=Ageev|first=D. V.|title=Bases of the Theory of Linear Selection. Code Demultiplexing|journal=Proceedings of the Leningrad Experimental Institute of Communication|year=1935|pages=3–35}}</ref> It was shown that through the use of linear methods, there are three types of signal separation: frequency, time and compensatory.{{clarify|date=August 2020|reason=No such thing.}} The technology of CDMA was used in 1957, when the young military radio engineer [[Leonid Kupriyanovich]] in Moscow made an experimental model of a wearable automatic mobile phone, called LK-1 by him, with a base station.<ref>{{Cite patent | country = Soviet Union\n| number = 115494 | title = Устройства вызова и коммутации каналов радиотелефонной связи (Devices for calling and switching radio communication channels) | pubdate = 1957-11-04 | inventor = Куприянович (Leonid Kupriyanovich) | url = https://patents.su/7-115494-ustrojjstva-vyzova-i-kommutacii-kanalov-radiotelefonnojj-svyazi.html}}</ref> LK-1 has a weight of 3 kg, 20–30 km operating distance, and 20–30 hours of battery life.<ref>[[Nauka i Zhizn]] 8, 1957, p. 49.</ref><ref>Yuniy technik 7, 1957, p. 43–44.</ref> The base station, as described by the author, could serve several customers. In 1958, Kupriyanovich made the new experimental \"pocket\" model of mobile phone. This phone weighed 0.5 kg. To serve more customers, Kupriyanovich proposed the device, which he called \"correlator.\"<ref>Nauka i Zhizn 10, 1958, p. 66.</ref><ref>[[Tekhnika Molodezhi]] 2, 1959, p. 18–19.</ref> In 1958, the USSR also started the development of the \"[[Altai (mobile telephone system)|Altai]]\" national civil mobile phone service for cars, based on the Soviet MRT-1327 standard. The phone system weighed {{convert|11|kg|abbr=on}}.  It was placed in the trunk of the vehicles of high-ranking officials and used a standard handset in the passenger compartment. The main developers of the Altai system were VNIIS (Voronezh Science Research Institute of Communications) and GSPI (State Specialized Project Institute). In 1963 this service started in Moscow, and in 1970 Altai service was used in 30 USSR cities.<ref>{{cite web|url=http://englishrussia.com/2006/09/18/first-russian-mobile-phone/|title=First Russian Mobile Phone|date=September 18, 2006}}</ref>"
+                    },
+                    {
+                        "endOffset": 10097,
+                        "index": 4,
+                        "level": 2,
+                        "startOffset": 7414,
+                        "title": "Uses",
+                        "value": "[[File:Au CDMA 1X WIN W31SAII gravelly silver expansion.jpg|thumb|A CDMA2000 [[mobile phone]]]]\n\n* Synchronous CDM (code-division 'multiplexing', an early generation of CDMA) was implemented in the [[Global Positioning System]] (GPS). This predates and is distinct from its use in [[mobile phone]]s.\n* The [[Qualcomm]] standard [[IS-95]], marketed as cdmaOne.\n* The Qualcomm standard [[IS-2000]], known as CDMA2000, is used by several mobile phone companies, including the [[Globalstar]] network.{{refn|group=nb|Globalstar uses elements of CDMA, [[time-division multiple access|TDMA]] and [[FDMA]] combining with satellite multiple beam antennas.<ref>M. Mazzella, M. Cohen, D. Rouffet, M. Louie and K. S. Gilhousen, \"Multiple access techniques and spectrum utilisation of the GLOBALSTAR mobile satellite system,\" Fourth IEE Conference on Telecommunications 1993, Manchester, UK, 1993, pp. 306-311.</ref>}}\n* The [[UMTS]] 3G mobile phone standard, which uses [[W-CDMA]].{{refn|group=nb|The UMTS networks and other CDMA based systems are also known as a kind of interference-limited systems.<ref>{{cite book|editor-last1=Holma|editor-first1=H.|editor-last2=Toskala|editor-first2=A.|date=2007|url=https://books.google.com/books?id=7m-MnwW_o7AC&q=lte+umts+are+interference+limited&pg=PT439|title=WCDMA for UMTS: HSPA Evolution and LTE|publisher=[[Wiley (publisher)|John Wiley & Sons]]|isbn=9781119991908}}</ref><ref>{{cite book|editor-last1=Laiho|editor-first1=J.|editor-last2=Wacker|editor-first2=A.|editor-last3=Novosad|editor-first3=T.|date=2002|url=https://books.google.com/books?id=9RE32TlXZBQC&q=is+umts+interference+limited+systems&pg=PA303|title=Radio Network Planning and Optimisation for UMTS (Vol. 2)|location=New York|publisher=[[Wiley (publisher)|John Wiley & Sons]]|page=303|isbn=9780470031391}}</ref> This relates to the properties of the CDMA technology: all users operate in the same frequency range that impacts [[Signal-to-interference-plus-noise ratio|SINR]] and, hence, reduces coverage and capacity.<ref name=\"Walke-Seidenberg-Althoff_2003\">{{cite book |title=UMTS: The Fundamentals |author-first1=Bernhard H. |author-last1=Walke |author-link1=Bernhard Walke |author-first2=Peter |author-last2=Seidenberg |author-first3=Marc Peter |author-last3=Althoff |translator-first=Hedwig Jourdan |translator-last=von Schmoeger |date=March 2003 |orig-date=2001 |publisher=[[John Wiley & Sons, Ltd]] |edition=First English |isbn=0-470-84557-0 |pages=18–19 |url=https://books.google.com/books?id=KRlUvPWeTYQC&pg=PA18}} (NB. Based on the 2001 German edition.)</ref>}}\n* CDMA has been used in the OmniTRACS satellite system for transportation [[logistics]]."
+                    },
+                    {
+                        "endOffset": 13621,
+                        "index": 5,
+                        "level": 2,
+                        "startOffset": 10097,
+                        "title": "Steps in CDMA modulation",
+                        "value": "CDMA is a spread-spectrum multiple-access technique. A spread-spectrum technique spreads the bandwidth of the data uniformly for the same transmitted power.  A spreading code is a pseudo-random code that has a narrow [[ambiguity function]], unlike other narrow pulse codes. In CDMA a locally generated code runs at a much higher rate than the data to be transmitted.  Data for transmission is combined by bitwise [[XOR#Bitwise operation|XOR]] (exclusive OR) with the faster code.  The figure shows how a spread-spectrum signal is generated. The data signal with pulse duration of <math>T_b</math> (symbol period) is XORed with the code signal with pulse duration of <math>T_c</math> (chip period). (Note: [[Bandwidth (signal processing)|bandwidth]] is proportional to <math>1/T</math>, where <math>T</math> = bit time.) Therefore, the bandwidth of the data signal is <math>1/T_b</math> and the bandwidth of the spread spectrum signal is <math>1/T_c</math>.  Since <math>T_c</math> is much smaller than <math>T_b</math>, the bandwidth of the spread-spectrum signal is much larger than the bandwidth of the original signal. The ratio <math>T_b/T_c</math> is called the spreading factor or processing gain and determines to a certain extent the upper limit of the total number of users supported simultaneously by a base station.<ref name=\"ref 1\"/><ref name=\"ref 2\"/>\n\n[[File:Generation of CDMA.svg|thumb|500px|center|Generation of a CDMA signal]]\n\nEach user in a CDMA system uses a different code to modulate their signal. Choosing the codes used to modulate the signal is very important in the performance of CDMA systems. The best performance occurs when there is good separation between the signal of a desired user and the signals of other users. The separation of the signals is made by [[Cross-correlation|correlating]] the received signal with the locally generated code of the desired user. If the signal matches the desired user's code, then the correlation function will be high and the system can extract that signal.  If the desired user's code has nothing in common with the signal, the correlation should be as close to zero as possible (thus eliminating the signal); this is referred to as [[cross-correlation]]. If the code is correlated with the signal at any time offset other than zero, the correlation should be as close to zero as possible.  This is referred to as auto-correlation and is used to reject multi-path interference.<ref name=\"ref 3\">{{cite book| title= Digital Communications: Fundamentals and Applications, 2nd ed.| year=2014|last1=Sklar|first1=Bernard|last2=Ray|first2=Pabitra K.}}</ref><ref name=\"ref 4\">{{cite book| title=Wireless Communications, 2nd ed.| year=2010|last1=Molisch|first1=Andreas}}</ref>\n\nAn analogy to the problem of multiple access is a room (channel) in which people wish to talk to each other simultaneously.  To avoid confusion, people could take turns speaking (time division), speak at different pitches (frequency division), or speak in different languages (code division). CDMA is analogous to the last example where people speaking the same language can understand each other, but other languages are perceived as [[noise]] and rejected.  Similarly, in radio CDMA, each group of users is given a shared code.  Many codes occupy the same channel, but only users associated with a particular code can communicate.\n\nIn general, CDMA belongs to two basic categories: synchronous (orthogonal codes) and asynchronous (pseudorandom codes)."
+                    },
+                    {
+                        "endOffset": 21699,
+                        "index": 6,
+                        "level": 2,
+                        "startOffset": 13621,
+                        "title": "Code-division multiplexing (synchronous CDMA)",
+                        "value": "The digital modulation method is analogous to those used in simple radio transceivers. In the analog case, a low-frequency data signal is time-multiplied with a high-frequency pure sine-wave carrier and transmitted. This is effectively a frequency convolution ([[Wiener–Khinchin theorem]]) of the two signals, resulting in a carrier with narrow sidebands. In the digital case, the sinusoidal carrier is replaced by [[Walsh function]]s. These are binary square waves that form a complete orthonormal set. The data signal is also binary and the time multiplication is achieved with a simple XOR function. This is usually a [[Gilbert cell]] mixer in the circuitry.\n\nSynchronous CDMA exploits mathematical properties of [[orthogonality]] between [[coordinate vector|vectors]] representing the data strings. For example, the binary string 1011 is represented by the vector (1, 0, 1, 1). Vectors can be multiplied by taking their [[dot product]], by summing the products of their respective components (for example, if u = (a, b) and v = (c, d), then their dot product u·v = ac + bd).  If the dot product is zero, the two vectors are said to be orthogonal to each other. Some properties of the dot product aid understanding of how [[W-CDMA]] works. If vectors a and b are orthogonal, then <math>\\mathbf{a}\\cdot\\mathbf{b} = 0</math> and:\n:<math>\n\\mathbf{a}\\cdot(\\mathbf{a} + \\mathbf{b}) = \\|\\mathbf{a}\\|^2,\\ \\text{since}\\ \\mathbf{a}\\cdot\\mathbf{a} + \\mathbf{a}\\cdot\\mathbf{b} = \\|\\mathbf{a}\\|^2 + 0, \n</math>\n:<math>\n\\mathbf{a}\\cdot(-\\mathbf{a} + \\mathbf{b}) = -\\|\\mathbf{a}\\|^2,\\ \\text{since}\\ {-\\mathbf{a}}\\cdot\\mathbf{a} + \\mathbf{a}\\cdot\\mathbf{b} = -\\|\\mathbf{a}\\|^2 + 0,\n</math>\n:<math>\n\\mathbf{b}\\cdot(\\mathbf{a} + \\mathbf{b}) = \\|\\mathbf{b}\\|^2,\\ \\text{since}\\ \\mathbf{b}\\cdot\\mathbf{a} + \\mathbf{b}\\cdot\\mathbf{b} = 0 + \\|\\mathbf{b}\\|^2,\n</math>\n:<math>\n\\mathbf{b}\\cdot(\\mathbf{a} - \\mathbf{b}) = -\\|\\mathbf{b}\\|^2,\\ \\text{since}\\ \\mathbf{b}\\cdot\\mathbf{a} - \\mathbf{b}\\cdot\\mathbf{b} = 0 - \\|\\mathbf{b}\\|^2.\n</math>\n\nEach user in synchronous CDMA uses a code orthogonal to the others' codes to modulate their signal.  An example of 4 mutually orthogonal digital signals is shown in the figure below.  Orthogonal codes have a cross-correlation equal to zero; in other words, they do not interfere with each other.  In the case of IS-95, 64-bit [[Walsh code]]s are used to encode the signal to separate different users.  Since each of the 64 Walsh codes is orthogonal to all other, the signals are channelized into 64 orthogonal signals.  The following example demonstrates how each user's signal can be encoded and decoded."
+                    },
+                    {
+                        "endOffset": 21699,
+                        "index": 7,
+                        "level": 3,
+                        "startOffset": 16366,
+                        "title": "Example",
+                        "value": "[[Image:Cdma orthogonal signals.png|thumb|right|An example of 4 mutually orthogonal digital signals]]\n\nStart with a set of vectors that are mutually [[orthogonality|orthogonal]]. (Although mutual orthogonality is the only condition, these vectors are usually constructed for ease of decoding, for example columns or rows from [[Walsh matrix|Walsh matrices]].) An example of orthogonal functions is shown in the adjacent picture.  These vectors will be assigned to individual users and are called the code, [[chip (CDMA)|chip]] code, or chipping code.  In the interest of brevity, the rest of this example uses codes v with only two bits.\n\nEach user is associated with a different code, say v. A 1 bit is represented by transmitting a positive code v, and a 0 bit is represented by a negative code −v.  For example, if v = (v<sub>0</sub>, v<sub>1</sub>) = (1, −1) and the data that the user wishes to transmit is (1, 0, 1, 1), then the transmitted symbols would be\n:(v, −v, v, v) = (v<sub>0</sub>, v<sub>1</sub>, −v<sub>0</sub>, −v<sub>1</sub>, v<sub>0</sub>, v<sub>1</sub>, v<sub>0</sub>, v<sub>1</sub>) = (1, −1, −1, 1, 1, −1, 1, −1).\nFor the purposes of this article, we call this constructed vector the transmitted vector.\n\nEach sender has a different, unique vector v chosen from that set, but the construction method of the transmitted vector is identical.\n\nNow, due to physical properties of interference, if two signals at a point are in phase, they add to give twice the amplitude of each signal, but if they are out of phase, they subtract and give a signal that is the difference of the amplitudes. Digitally, this behaviour can be modelled by the addition of the transmission vectors, component by component.\n\nIf sender0 has code (1, −1) and data (1, 0, 1, 1), and sender1 has code (1, 1) and data (0, 0, 1, 1), and both senders transmit simultaneously, then this table describes the coding steps:\n\n\n\nBecause signal0 and signal1 are transmitted at the same time into the air, they add to produce the raw signal\n\n:(1, −1, −1, 1, 1, −1, 1, −1) + (−1, −1, −1, −1, 1, 1, 1, 1) = (0, −2, −2, 0, 2, 0, 2, 0).\n\nThis raw signal is called an interference pattern.  The receiver then extracts an intelligible signal for any known sender by combining the sender's code with the interference pattern. The following table explains how this works and shows that the signals do not interfere with one another:\n\n\n\nFurther, after decoding, all values greater than 0 are interpreted as 1, while all values less than zero are interpreted as 0. For example, after decoding, data0 is (2, −2, 2, 2), but the receiver interprets this as (1, 0, 1, 1). Values of exactly 0 mean that the sender did not transmit any data, as in the following example:\n\nAssume signal0 = (1, −1, −1, 1, 1, −1, 1, −1) is transmitted alone.  The following table shows the decode at the receiver:\n\n\n\nWhen the receiver attempts to decode the signal using sender1's code, the data is all zeros; therefore the cross-correlation is equal to zero and it is clear that sender1 did not transmit any data."
+                    },
+                    {
+                        "endOffset": 33177,
+                        "index": 8,
+                        "level": 2,
+                        "startOffset": 21699,
+                        "title": "Asynchronous CDMA",
+                        "value": "{{See also|Direct-sequence spread spectrum|near–far problem}}\nWhen mobile-to-base links cannot be precisely coordinated, particularly due to the mobility of the handsets, a different  approach is required.  Since it is not mathematically possible to create signature sequences that are both orthogonal for arbitrarily random starting points and which make full use of the code space, unique \"pseudo-random\" or \"pseudo-noise\" sequences called spreading sequences are used in asynchronous CDMA systems. A spreading sequence is a binary sequence that appears random but can be reproduced in a deterministic manner by intended receivers. These spreading sequences are used to encode and decode a user's signal in asynchronous CDMA in the same manner as the orthogonal codes in synchronous CDMA (shown in the example above). These spreading sequences are statistically uncorrelated, and the sum of a large number of spreading sequences results in multiple access interference (MAI) that is approximated by a Gaussian noise process (following the [[central limit theorem]] in statistics).  [[Gold code]]s are an example of a spreading sequence suitable for this purpose, as there is low correlation between the codes. If all of the users are received with the same power level, then the variance (e.g., the noise power) of the MAI increases in direct proportion to the number of users. In other words, unlike synchronous CDMA, the signals of other users will appear as noise to the signal of interest and interfere slightly with the desired signal in proportion to number of users.\n\nAll forms of CDMA use the [[spread-spectrum]] [[spreading factor]] to allow receivers to partially discriminate against unwanted signals. Signals encoded with the specified spreading sequences are received, while signals with different sequences (or the same sequences but different timing offsets) appear as wideband noise reduced by the spreading factor.\n\nSince each user generates MAI, controlling the signal strength is an important issue with CDMA transmitters. A CDM (synchronous CDMA), TDMA, or FDMA receiver can in theory completely reject arbitrarily strong signals using different codes, time slots or frequency channels due to the orthogonality of these systems. This is not true for asynchronous CDMA; rejection of unwanted signals is only partial. If any or all of the unwanted signals are much stronger than the desired signal, they will overwhelm it. This leads to a general requirement in any asynchronous CDMA system to approximately match the various signal power levels as seen at the receiver. In CDMA cellular, the base station uses a fast closed-loop power-control scheme to tightly control each mobile's transmit power.\n\nIn 2019, schemes to precisely estimate the required length of the codes in dependence of Doppler and delay characteristics have been developed.<ref>{{Cite conference|last=Enneking, Antreich, Appel, Almeida|date=2019|title=Pure Pilot Signals: How short can we choose GNSS spreading codes?|url=https://www.researchgate.net/publication/331065214|book-title=Proceedings of the 2019 International Technical Meeting of the Institute of Navigation|pages=925–935|doi=10.33012/2019.16737|isbn=978-0-936406-21-3|s2cid=86666944}}</ref> Soon after, machine learning based techniques that generate sequences of a desired length and spreading properties have been published as well. These are highly competitive with the classic Gold and Welch sequences. These are not generated by linear-feedback-shift-registers, but have to be stored in lookup tables."
+                    },
+                    {
+                        "endOffset": 28925,
+                        "index": 9,
+                        "level": 3,
+                        "startOffset": 25292,
+                        "title": "Advantages of asynchronous CDMA over other techniques",
+                        "value": ""
+                    },
+                    {
+                        "endOffset": 26349,
+                        "index": 10,
+                        "level": 4,
+                        "startOffset": 25353,
+                        "title": "Efficient practical utilization of the fixed frequency spectrum",
+                        "value": "In theory CDMA, TDMA and FDMA have exactly the same spectral efficiency, but, in practice, each has its own challenges – power control in the case of CDMA, timing in the case of TDMA, and frequency generation/filtering in the case of FDMA.\n\nTDMA systems must carefully synchronize the transmission times of all the users to ensure that they are received in the correct time slot and do not cause interference.  Since this cannot be perfectly controlled in a mobile environment, each time slot must have a guard time, which reduces the probability that users will interfere, but decreases the spectral efficiency.\n\nSimilarly, FDMA systems must use a guard band between adjacent channels, due to the unpredictable [[Doppler effect|Doppler shift]] of the signal spectrum because of user mobility. The guard bands will reduce the probability that adjacent channels will interfere, but decrease the utilization of the spectrum."
+                    },
+                    {
+                        "endOffset": 28925,
+                        "index": 11,
+                        "level": 4,
+                        "startOffset": 26349,
+                        "title": "Flexible allocation of resources",
+                        "value": "Asynchronous CDMA offers a key advantage in the flexible allocation of resources i.e. allocation of spreading sequences to active users.  In the case of CDM (synchronous CDMA), TDMA, and FDMA the number of simultaneous orthogonal codes, time slots, and frequency slots respectively are fixed, hence the capacity in terms of the number of simultaneous users is limited. There are a fixed number of orthogonal codes, time slots or frequency bands that can be allocated for CDM, TDMA, and FDMA systems, which remain underutilized due to the bursty nature of telephony and packetized data transmissions.  There is no strict limit to the number of users that can be supported in an asynchronous CDMA system, only a practical limit governed by the desired bit error probability since the SIR (signal-to-interference ratio) varies inversely with the number of users.  In a bursty traffic environment like mobile telephony, the advantage afforded by asynchronous CDMA is that the performance (bit error rate) is allowed to fluctuate randomly, with an average value determined by the number of users times the percentage of utilization.  Suppose there are 2N users that only talk half of the time, then 2N users can be accommodated with the same average bit error probability as N users that talk all of the time.  The key difference here is that the bit error probability for N users talking all of the time is constant, whereas it is a random quantity (with the same mean) for 2N users talking half of the time.\n\nIn other words, asynchronous CDMA is ideally suited to a mobile network where large numbers of transmitters each generate a relatively small amount of traffic at irregular intervals. CDM (synchronous CDMA), TDMA, and FDMA systems cannot recover the underutilized resources inherent to bursty traffic due to the fixed number of [[orthogonal]] codes, time slots or frequency channels that can be assigned to individual transmitters. For instance, if there are N time slots in a TDMA system and 2N users that talk half of the time, then half of the time there will be more than N users needing to use more than N time slots.  Furthermore, it would require significant overhead to continually allocate and deallocate the orthogonal-code, time-slot or frequency-channel resources. By comparison, asynchronous CDMA transmitters simply send when they have something to say and go off the air when they do not, keeping the same signature sequence as long as they are connected to the system."
+                    },
+                    {
+                        "endOffset": 33177,
+                        "index": 12,
+                        "level": 3,
+                        "startOffset": 28925,
+                        "title": "Spread-spectrum characteristics of CDMA",
+                        "value": "Most modulation schemes try to minimize the bandwidth of this signal since bandwidth is a limited resource.  However, spread-spectrum techniques use a transmission bandwidth that is several orders of magnitude greater than the minimum required signal bandwidth.  One of the initial reasons for doing this was military applications including guidance and communication systems. These systems were designed using spread spectrum because of its security and resistance to jamming.  Asynchronous CDMA has some level of privacy built in because the signal is spread using a pseudo-random code; this code makes the spread-spectrum signals appear random or have noise-like properties.  A receiver cannot demodulate this transmission without knowledge of the pseudo-random sequence used to encode the data.  CDMA is also resistant to jamming.  A jamming signal only has a finite amount of power available to jam the signal.  The jammer can either spread its energy over the entire bandwidth of the signal or jam only part of the entire signal.<ref name=\"ref 3\"/><ref name=\"ref 4\"/>\n \nCDMA can also effectively reject narrow-band interference.  Since narrow-band interference affects only a small portion of the spread-spectrum signal, it can easily be removed through notch filtering without much loss of information.  [[Convolution encoding]] and [[forward error correction#Interleaving|interleaving]] can be used to assist in recovering this lost data.  CDMA signals are also resistant to multipath fading.  Since the spread-spectrum signal occupies a large bandwidth, only a small portion of this will undergo fading due to multipath at any given time.  Like the narrow-band interference, this will result in only a small loss of data and can be overcome.\n\nAnother reason CDMA is resistant to multipath interference is because the delayed versions of the transmitted pseudo-random codes will have poor correlation with the original pseudo-random code, and will thus appear as another user, which is ignored at the receiver.  In other words, as long as the multipath channel induces at least one chip of delay, the multipath signals will arrive at the receiver such that they are shifted in time by at least one chip from the intended signal.  The correlation properties of the pseudo-random codes are such that this slight delay causes the multipath to appear uncorrelated with the intended signal, and it is thus ignored.\n\nSome CDMA devices use a [[rake receiver]], which exploits multipath delay components to improve the performance of the system. A rake receiver combines the information from several correlators, each one tuned to a different path delay, producing a stronger version of the signal than a simple receiver with a single correlation tuned to the path delay of the strongest signal.<ref name=\"ref 1\"/><ref name=\"ref 2\"/>\n\nFrequency reuse is the ability to reuse the same radio channel frequency at other cell sites within a cellular system.  In the FDMA and TDMA systems, frequency planning is an important consideration.  The frequencies used in different cells must be planned carefully to ensure signals from different cells do not interfere with each other.  In a CDMA system, the same frequency can be used in every cell, because channelization is done using the pseudo-random codes.  Reusing the same frequency in every cell eliminates the need for frequency planning in a CDMA system; however, planning of the different pseudo-random sequences must be done to ensure that the received signal from one cell does not correlate with the signal from a nearby cell.<ref name=\"ref 1\"/>\n\nSince adjacent cells use the same frequencies, CDMA systems have the ability to perform soft hand-offs.  Soft hand-offs allow the mobile telephone to communicate simultaneously with two or more cells.  The best signal quality is selected until the hand-off is complete.  This is different from hard hand-offs utilized in other cellular systems.  In a hard-hand-off situation, as the mobile telephone approaches a hand-off, signal strength may vary abruptly. In contrast, CDMA systems use the soft hand-off, which is undetectable and provides a more reliable and higher-quality signal.<ref name=\"ref 2\"/>"
+                    },
+                    {
+                        "endOffset": 34607,
+                        "index": 13,
+                        "level": 2,
+                        "startOffset": 33177,
+                        "title": "Collaborative CDMA",
+                        "value": "A novel collaborative multi-user transmission and detection scheme called collaborative CDMA<ref>{{cite news\n | first = Indu L.\n | last = Shakya\n | year = 2011\n | title = High User Capacity Collaborative CDMA\n | publisher = IET Communications\n}}</ref> has been investigated for the uplink that exploits the differences between users' fading channel signatures to increase the user capacity well beyond the spreading length in the MAI-limited environment. The authors show that it is possible to achieve this increase at a low complexity and high [[bit error rate]] performance in flat fading channels, which is a major research challenge for overloaded CDMA systems. In this approach, instead of using one sequence per user as in conventional CDMA, the authors group a small number of users to share the same spreading sequence and enable group spreading and despreading operations. The new collaborative multi-user receiver consists of two stages: group multi-user detection (MUD) stage to suppress the MAI between the groups and a low-complexity maximum-likelihood detection stage to recover jointly the co-spread users' data using minimal Euclidean-distance measure and users' channel-gain coefficients. An enhanced CDMA version known as interleave-division multiple access (IDMA) uses the orthogonal interleaving as the only means of user separation in place of signature sequence used in CDMA system."
+                    },
+                    {
+                        "endOffset": 35005,
+                        "index": 14,
+                        "level": 2,
+                        "startOffset": 34607,
+                        "title": "See also",
+                        "value": "{{Div col|colwidth=25em}}\n* [[CDMA spectral efficiency]]\n* [[CDMA2000]]\n* [[Comparison of mobile phone standards]]\n* [[cdmaOne]]\n* [[Orthogonal variable spreading factor]] (OVSF), an implementation of CDMA\n* [[Pseudo-random noise]]\n* [[Quadrature-division multiple access]] (QDMA), an implementation of CDMA\n* [[Rise over thermal]]\n* [[Spread spectrum]]\n* [[W-CDMA]]\n\n{{Div col end}}"
+                    },
+                    {
+                        "endOffset": 35037,
+                        "index": 15,
+                        "level": 2,
+                        "startOffset": 35005,
+                        "title": "Notes",
+                        "value": "{{Reflist|group=nb}}"
+                    },
+                    {
+                        "endOffset": 35070,
+                        "index": 16,
+                        "level": 2,
+                        "startOffset": 35037,
+                        "title": "References",
+                        "value": "{{Reflist|30em}}"
+                    },
+                    {
+                        "endOffset": 35503,
+                        "index": 17,
+                        "level": 2,
+                        "startOffset": 35070,
+                        "title": "Further reading",
+                        "value": "* Papathanassiou, A., Salkintzis, A. K., & Mathiopoulos, P. T. (2001). \"A comparison study of the uplink performance of W-CDMA and OFDM for mobile multimedia communications via LEO satellites\". IEEE Personal Communications, 8(3), 35–43."
+                    },
+                    {
+                        "endOffset": 35961,
+                        "index": 18,
+                        "level": 2,
+                        "startOffset": 35503,
+                        "title": "External links",
+                        "value": "{{Commons category|CDMA}}\n*   Talk at Princeton Institute for Advanced Study on Solomon Golomb's work on pseudorandom sequences\n\n{{cdma|state=uncollapsed}}\n{{Channel access methods}}\n{{Authority control}}\n\n\n[[Category:Code division multiple access| ]]\n[[Category:Multiplexing]]\n[[Category:Radio resource management]]\n[[Category:Media access control]]"
+                    }
+                ]
+            }
+        ],
+        "statsMetadata": {
+            "textSize": 32755
+        },
+        "preprocessingMetadata": [
+            {
+                "technologyResults": [
+                    {
+                        "dagobah": {
+                            "debug": {
+                                "cpaTaskTimeSec": 0.0,
+                                "memoryUsage": 0.0,
+                                "entityScoringTimeSec": 0.05,
+                                "ceaTaskTimeSec": 0.63,
+                                "abnormalLookupMentions": [],
+                                "ctaTaskTimeSec": 0.91,
+                                "avgLookupCandidate": 112.0,
+                                "subgraphConstructionTimeSec": 1.97
+                            },
+                            "preprocessed": {
+                                "primitiveTyping": [
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 0
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 1
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 2
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 3
+                                    }
+                                ],
+                                "headerInfo": {
+                                    "hasHeader": false,
+                                    "headerScore": 0.89,
+                                    "headerLabel": [],
+                                    "headerPosition": null
+                                },
+                                "primaryKeyInfo": {
+                                    "primaryKeyScore": 0.89,
+                                    "primaryKeyPosition": 0,
+                                    "hasPrimaryKey": true
+                                },
+                                "tableOrientation": {
+                                    "orientationScore": 0.89,
+                                    "orientationLabel": "VERTICAL"
+                                }
+                            },
+                            "executionTimeSec": {
+                                "preprocessingTime": 0.29,
+                                "totalTime": 11.03,
+                                "lookupTime": 3.24
+                            },
+                            "annotated": {
+                                "CTA": [
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.07,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q36180"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.05,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q482980"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.05,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q483501"
+                                            }
+                                        ],
+                                        "column": 0
+                                    }
+                                ],
+                                "tableDataRevised": [
+                                    [
+                                        "Step",
+                                        "0",
+                                        "1",
+                                        "2"
+                                    ],
+                                    [
+                                        "Encode sender0",
+                                        "code0 = (1, −1), data0 = (1, 0, 1, 1)",
+                                        "encode0 = 2(1, 0, 1, 1) − (1, 1, 1, 1) = (1, −1, 1, 1)",
+                                        "signal0 = encode0 ⊗ code0= (1, −1, 1, 1) ⊗ (1, −1)= (1, −1, −1, 1, 1, −1, 1, −1)"
+                                    ],
+                                    [
+                                        "Encode sender1",
+                                        "code1 = (1, 1), data1 = (0, 0, 1, 1)",
+                                        "encode1 = 2(0, 0, 1, 1) − (1, 1, 1, 1) = (−1, −1, 1, 1)",
+                                        "signal1 = encode1 ⊗ code1= (−1, −1, 1, 1) ⊗ (1, 1)= (−1, −1, −1, −1, 1, 1, 1, 1)"
+                                    ]
+                                ],
+                                "CPA": [],
+                                "CEA": [
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q397146"
+                                        },
+                                        "column": 0,
+                                        "row": 0
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q17107220"
+                                        },
+                                        "column": 0,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q17107220"
+                                        },
+                                        "column": 0,
+                                        "row": 2
+                                    }
+                                ]
+                            }
+                        },
+                        "index": 0
+                    },
+                    {
+                        "dagobah": {
+                            "debug": {
+                                "cpaTaskTimeSec": 0.0,
+                                "memoryUsage": 0.0,
+                                "entityScoringTimeSec": 0.07,
+                                "ceaTaskTimeSec": 3.8799999999999994,
+                                "abnormalLookupMentions": [],
+                                "ctaTaskTimeSec": 0.16,
+                                "avgLookupCandidate": 78.0,
+                                "subgraphConstructionTimeSec": 0.38
+                            },
+                            "preprocessed": {
+                                "primitiveTyping": [
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 0
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 1
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 2
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 0.5
+                                            },
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 0.5
+                                            }
+                                        ],
+                                        "columnIndex": 3
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 4
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 5
+                                    }
+                                ],
+                                "headerInfo": {
+                                    "hasHeader": false,
+                                    "headerScore": 0.48,
+                                    "headerLabel": [],
+                                    "headerPosition": null
+                                },
+                                "primaryKeyInfo": {
+                                    "primaryKeyScore": 0.26,
+                                    "primaryKeyPosition": 0,
+                                    "hasPrimaryKey": true
+                                },
+                                "tableOrientation": {
+                                    "orientationScore": 0.48,
+                                    "orientationLabel": "VERTICAL"
+                                }
+                            },
+                            "executionTimeSec": {
+                                "preprocessingTime": 0.45,
+                                "totalTime": 15.8,
+                                "lookupTime": 7.09
+                            },
+                            "annotated": {
+                                "CTA": [
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.07,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q7725634"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.05,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q838948"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.05,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q47461344"
+                                            }
+                                        ],
+                                        "column": 0
+                                    },
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 0.67,
+                                                "score": 0.04,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q7889"
+                                            },
+                                            {
+                                                "coverage": 0.67,
+                                                "score": 0.03,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q2249149"
+                                            },
+                                            {
+                                                "coverage": 0.67,
+                                                "score": 0.03,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q115920686"
+                                            },
+                                            {
+                                                "coverage": 0.67,
+                                                "score": 0.03,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q2431196"
+                                            },
+                                            {
+                                                "coverage": 0.67,
+                                                "score": 0.03,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q166142"
+                                            },
+                                            {
+                                                "coverage": 0.67,
+                                                "score": 0.03,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q51938570"
+                                            },
+                                            {
+                                                "coverage": 0.67,
+                                                "score": 0.03,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q1485500"
+                                            }
+                                        ],
+                                        "column": 2
+                                    }
+                                ],
+                                "tableDataRevised": [
+                                    [
+                                        "Step",
+                                        "0",
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4"
+                                    ],
+                                    [
+                                        "Decode sender0",
+                                        "code0 = (1, −1), signal = (0, −2, −2, 0, 2, 0, 2, 0)",
+                                        "decode0 = pattern.vector0",
+                                        "decode0 = ((0, −2), (−2, 0), (2, 0), (2, 0)) · (1, −1)",
+                                        "decode0 = ((0 + 2), (−2 + 0), (2 + 0), (2 + 0))",
+                                        "data0=(2, −2, 2, 2), meaning (1, 0, 1, 1)"
+                                    ],
+                                    [
+                                        "Decode sender1",
+                                        "code1 = (1, 1), signal = (0, −2, −2, 0, 2, 0, 2, 0)",
+                                        "decode1 = pattern.vector1",
+                                        "decode1 = ((0, −2), (−2, 0), (2, 0), (2, 0)) · (1, 1)",
+                                        "decode1 = ((0 − 2), (−2 + 0), (2 + 0), (2 + 0))",
+                                        "data1=(−2, −2, 2, 2), meaning (0, 0, 1, 1)"
+                                    ]
+                                ],
+                                "CPA": [],
+                                "CEA": [
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q83921389"
+                                        },
+                                        "column": 0,
+                                        "row": 0
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q7771307"
+                                        },
+                                        "column": 0,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q7771307"
+                                        },
+                                        "column": 0,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q5139991"
+                                        },
+                                        "column": 2,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q5139991"
+                                        },
+                                        "column": 2,
+                                        "row": 2
+                                    }
+                                ]
+                            }
+                        },
+                        "index": 1
+                    },
+                    {
+                        "dagobah": {
+                            "debug": {
+                                "cpaTaskTimeSec": 0.0,
+                                "memoryUsage": 0.0,
+                                "entityScoringTimeSec": 0.05,
+                                "ceaTaskTimeSec": 3.8699999999999997,
+                                "abnormalLookupMentions": [],
+                                "ctaTaskTimeSec": 0.01,
+                                "avgLookupCandidate": 78.0,
+                                "subgraphConstructionTimeSec": 0.03
+                            },
+                            "preprocessed": {
+                                "primitiveTyping": [
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 0
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 1
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 2
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 3
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 4
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 0.5
+                                            },
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 0.5
+                                            }
+                                        ],
+                                        "columnIndex": 5
+                                    }
+                                ],
+                                "headerInfo": {
+                                    "hasHeader": false,
+                                    "headerScore": 0.48,
+                                    "headerLabel": [],
+                                    "headerPosition": null
+                                },
+                                "primaryKeyInfo": {
+                                    "primaryKeyScore": 0.26,
+                                    "primaryKeyPosition": 0,
+                                    "hasPrimaryKey": true
+                                },
+                                "tableOrientation": {
+                                    "orientationScore": 0.48,
+                                    "orientationLabel": "VERTICAL"
+                                }
+                            },
+                            "executionTimeSec": {
+                                "preprocessingTime": 0.45,
+                                "totalTime": 12.22,
+                                "lookupTime": 4.03
+                            },
+                            "annotated": {
+                                "CTA": [
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.07,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q7725634"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.05,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q838948"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.05,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q47461344"
+                                            }
+                                        ],
+                                        "column": 0
+                                    },
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 0.67,
+                                                "score": 0.04,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q7889"
+                                            },
+                                            {
+                                                "coverage": 0.67,
+                                                "score": 0.03,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q2249149"
+                                            },
+                                            {
+                                                "coverage": 0.67,
+                                                "score": 0.03,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q115920686"
+                                            },
+                                            {
+                                                "coverage": 0.67,
+                                                "score": 0.03,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q2431196"
+                                            },
+                                            {
+                                                "coverage": 0.67,
+                                                "score": 0.03,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q166142"
+                                            },
+                                            {
+                                                "coverage": 0.67,
+                                                "score": 0.03,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q51938570"
+                                            },
+                                            {
+                                                "coverage": 0.67,
+                                                "score": 0.03,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q1485500"
+                                            }
+                                        ],
+                                        "column": 2
+                                    }
+                                ],
+                                "tableDataRevised": [
+                                    [
+                                        "Step",
+                                        "0",
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4"
+                                    ],
+                                    [
+                                        "Decode sender0",
+                                        "code0 = (1, −1), signal = (1, −1, −1, 1, 1, −1, 1, −1)",
+                                        "decode0 = pattern.vector0",
+                                        "decode0 = ((1, −1), (−1, 1), (1, −1), (1, −1)) · (1, −1)",
+                                        "decode0 = ((1 + 1), (−1 − 1), (1 + 1), (1 + 1))",
+                                        "data0 = (2, −2, 2, 2), meaning (1, 0, 1, 1)"
+                                    ],
+                                    [
+                                        "Decode sender1",
+                                        "code1 = (1, 1), signal = (1, −1, −1, 1, 1, −1, 1, −1)",
+                                        "decode1 = pattern.vector1",
+                                        "decode1 = ((1, −1), (−1, 1), (1, −1), (1, −1)) · (1, 1)",
+                                        "decode1 = ((1 − 1), (−1 + 1), (1 − 1), (1 − 1))",
+                                        "data1 = (0, 0, 0, 0), meaning no data"
+                                    ]
+                                ],
+                                "CPA": [],
+                                "CEA": [
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q83921389"
+                                        },
+                                        "column": 0,
+                                        "row": 0
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q7771307"
+                                        },
+                                        "column": 0,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q7771307"
+                                        },
+                                        "column": 0,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q5139991"
+                                        },
+                                        "column": 2,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q5139991"
+                                        },
+                                        "column": 2,
+                                        "row": 2
+                                    }
+                                ]
+                            }
+                        },
+                        "index": 2
+                    }
+                ],
+                "technologyExecution": {
+                    "beginDate": "2024-01-17T14:08:48.178871",
+                    "endDate": "2024-01-17T14:09:28.613799"
+                },
+                "technology": {
+                    "name": "DAGOBAH Table Annotation",
+                    "company": "Orange",
+                    "id": "dagobah_anotation",
+                    "type": "table",
+                    "version": "Unknown"
+                }
+            }
+        ]
+    }
+}

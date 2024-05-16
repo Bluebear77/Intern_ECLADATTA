@@ -1,0 +1,894 @@
+{
+    "_index": "corpus_doc_telco100_en",
+    "_id": "226769",
+    "_source": {
+        "identificationMetadata": {
+            "id": "226769",
+            "title": "Roaming",
+            "url": [
+                "https://en.wikipedia.org/?curid=226769",
+                "https://en.wikipedia.org/wiki/Roaming"
+            ],
+            "version": 1169932454,
+            "versionDate": "2023-08-12T06:35:29Z",
+            "hash": "be502e9a210ea63a599ca64490b0204d",
+            "wikidata": "Q680016"
+        },
+        "descriptionMetadata": {
+            "categories": [
+                "Webarchive template wayback links",
+                "CS1 errors: generic name",
+                "Articles with short description",
+                "Short description is different from Wikidata",
+                "Articles with limited geographic scope from January 2014",
+                "Articles needing additional references from January 2008",
+                "All articles needing additional references",
+                "Articles with multiple maintenance issues",
+                "All articles with unsourced statements",
+                "Articles with unsourced statements from November 2018",
+                "All articles with specifically marked weasel-worded phrases",
+                "Articles with specifically marked weasel-worded phrases from December 2021",
+                "Articles with unsourced statements from December 2020",
+                "Articles with J9U identifiers",
+                "Articles with LCCN identifiers",
+                "GSM standard",
+                "Mobile technology"
+            ],
+            "language": "en",
+            "source": "wikipedia"
+        },
+        "contentMetadata": {
+            "format": "wikitext",
+            "content": "{{Short description|Wireless telecommunication term}}\n{{About|mobile phone term||Roaming (disambiguation)}}\n{{multiple issues|\n{{globalize|date=January 2014}}\n{{more citations needed|date=January 2008}}\n}}\n[[File:T-Mobile roaming welcome message - Redvers.jpg|thumb|An [[SMS]] welcome to [[Proximus]] ([[Belgium]]) customers who have roamed onto [[T-Mobile UK|T-Mobile]] (now [[EE Limited|EE]]) in the UK]]\n\n'''Roaming''' is a [[wireless]] [[telecommunication]] term typically used with mobile devices, such as [[mobile phone]]s. It refers to a mobile phone being used outside the range of its native network and connecting to another available cell network.\n\n== Technical definition ==\nIn more technical terms, roaming refers to ''the ability for a [[cellular network|cellular]] customer to automatically make and receive voice calls, send and receive data, or access other services, including home data services, when travelling outside the geographical coverage area of the home [[Telecommunications network|network]], by means of using a visited network''. For example: should a subscriber travel beyond their cell phone company's transmitter range, their cell phone would automatically hop onto another phone company's service, if available.\n\nThe process is supported by the Telecommunication processes of mobility management, [[authentication]], [[authorization]] and [[accounting]] [[Bill (payment)|billing]] procedures (known as AAA or 'triple A').\n\n== Roaming in general ==\n\nRoaming is divided into \"SIM-based roaming\" and \"username/password-based roaming\", whereby the technical term \"roaming\" also encompasses roaming between networks of different network standards, e.g. [[Wireless LAN|WLAN (Wireless Local Area Network)]] or [[GSM|GSM (Global System for Mobile Communications)]]. Device equipment and functionality, such as [[Subscriber identity module|SIM card]] capability, [[Radio antenna|antenna]] and [[Computer interface|network interfaces]], and [[power management]], determine the access possibilities.<ref>{{cite book|last1=IEEE|title=5th IEEE International Conference on High Speed Networks and Multimedia Communications, HSNMC 2002 : July 3 - 5, 2002, Jeju Island, Korea|pages=356–360|date=2002|publisher=IEEE Operations Center|location=Piscataway, NJ|isbn=978-0-7803-7600-7|doi=10.1109/HSNMC.2002.1032607|chapter=QoS classification for mobile networks: International roaming case study|s2cid=61454234}}</ref>\n\nUsing the example of WLAN/GSM roaming, the following scenarios can be differentiated (cf. GSM Association Permanent Reference Document AA.39):\n* SIM-based (roaming): GSM subscriber roams onto a public WLAN operated by:\n** their GSM operator, or\n** another operator who has a roaming agreement with their GSM operator.\n* Username/password based roaming: GSM subscriber roams onto a public WLAN operated by:\n** their GSM operator, or\n** another operator who has a roaming agreement with their GSM operator.\n\nAlthough these user/network scenarios focus on roaming from GSM network operator's networks, clearly roaming can be bi-directional, i.e. from public WLAN operators to GSM networks. Traditional roaming in networks of the same standard, e.g. from a WLAN to a WLAN or a GSM network to a GSM network, has already been described above and is likewise defined by the foreignness of the network based on the type of subscriber entry in the home subscriber register.\n\nIn the case of session continuity, seamless access to these services across different access types is provided.\n\nRoaming can also be relevant on other networks including [[Electric vehicle charging network|Electric Vehicle Charging Networks]]\n\n== Home and visited networks ==\n{{Main|Network switching subsystem#Home location register|l1=Home location register|Network switching subsystem#Visitor location register|l2=Visitor location register}}\n\"Home network\" refers to the network the subscriber is registered with.\n\n\"Visitor network\" refers to the network a subscriber roams temporarily and is outside the bounds of the \"home network\".\n\n== Roaming agreements ==\n\nThe legal roaming business aspects negotiated between the roaming partners for billing of the services obtained are usually stipulated in so called ''roaming agreements.'' The [[GSMA|GSM Association]] broadly outlines the content of such roaming agreements in standardized form for its members. For the legal aspects of authentication, authorization and billing of the visiting subscriber, the roaming agreements typically can comprise minimal safety standards, as e.g. [[Periodic location update|location update procedures]] or financial security or warranty procedures.\n\n== The roaming process ==\nThe details of the roaming process differ among types of cellular networks, but in general, the process resembles the following:\n\n=== Location update ===\nLocation updating is the mechanism that is used to determine the location of an [[Mobile station|MS]] in the idle state (connected to the network, but with no active call).\n# When the mobile device is turned on or is transferred via a [[handoff|handover]] to the network, this new \"visited\" network sees the device, notices that it is not registered with its own system, and attempts to identify its home network. If there is no roaming agreement between the two networks, maintenance of service is impossible, and service is denied by the visited network.\n# The visited network contacts the home network and requests service information (including whether or not the mobile should be allowed to roam) about the roaming device using the [[International mobile subscriber identity|IMSI]] number.\n# If successful, the visited network begins to maintain a temporary subscriber record for the device. Likewise, the home network updates its information to indicate that the cell phone is on the visited network so that any information sent to that device can be correctly routed.\n\n=== Mobile terminated call ===\nIt occurs for example when a call is made to a roaming cell phone.\n\nSignaling process:\n# The calling subscriber (from within the [[PSTN|public telephone network]]) dials the mobile subscriber's [[MSISDN]] (the telephone number) of the roaming cell phone.\n# Based on the information contained in the MSISDN (national destination code and the country code), the call is routed to the [[Network switching subsystem|mobile network gateway MSC (GMSC)]]. It's done with an [[ISDN User Part|ISUP]] IAM message.\n# To locate the [[Mobile station|MS]], the GMSC sends to the HLR a [[Mobile Application Part|MAP]] SRI (Send Routing Information) message. The MAP SRI message contains the MSISDN number and with this MSISDN the HLR will obtain the [[International mobile subscriber identity|IMSI]].\n# Because of past location updates, the HLR already knows the VLR that currently serves the subscriber. The HLR will send to the VLR a [[Mobile Application Part|MAP]] PRN (Provide Roaming Number) message to obtain the [[Mobile Station Roaming Number|MSRN]] of the roaming cell phone. Like that the HLR will be able to route the call to the correct MSC.\n# With the IMSI contained in the MAP PRN message, the VLR assigns a temporary number known as the [[Mobile Station Roaming Number|mobile station roaming number (MSRN)]] to the roaming cell phone. This MSRN number is sent back to the HLR in a MAP RIA (Routing Information Acknowledgement) message.\n# Now with the MSRN number, the [[Network switching subsystem|GMSC]] knows how to route the call to reach the roaming cell phone. Then, the call is made using ISUP (or TUP) signaling between the GMSC and the visited MSC. The GMSC will generate an [[ISDN User Part|ISUP]] IAM message with the [[Mobile Station Roaming Number|MSRN]] as the called party number (and NOT the MSISDN as the called party number).\n# When the MSC of the visitor network receives the IAM, it recognizes the MSRN and knows the IMSI for which the MSRN was allocated. The MSC then returns the MSRN to the pool for future use on another call. Afterwards, the MSC sends to the VLR a [[Mobile Application Part|MAP]] SI (Send Information) message to request information like the called MS's capabilities, services subscribed to, and so on. If the called MS is authorized and capable of taking the call, the VLR sends a MAP CC (Complete Call) message back to the MSC.\n\nIn order that a subscriber is able to register on to a visited network, a roaming agreement needs to be in place between the visited network and the home network. This agreement is established after a series of testing processes called IREG (International Roaming Expert Group) and [[Transferred Account Data Interchange Group|TADIG]] (Transferred Account Data Interchange Group). While the IREG testing is to test the proper functioning of the established communication links, the TADIG testing is to check the billability of the calls.\n\nThe usage by a subscriber in a visited network is captured in a file called the TAP (Transferred Account Procedure) for GSM / CIBER (Cellular Intercarrier Billing Exchange Record) for CDMA, AMPS etc... file and is transferred to the home network. A TAP/CIBER file contains details of the calls made by the subscriber viz. location, calling party, called party, time of call and duration, etc. The TAP/CIBER files are rated as per the tariffs charged by the visited operator. The home operator then bills these calls to its subscribers and may charge a mark-up/tax applicable locally.\nAs recently many carriers launched own retail rate plans and bundles for Roaming, TAP records are generally used for wholesale Inter-Operators settlements only\n\n== Tariffs ==\n\nRoaming fees are typically charged on a per-minute basis for wireless voice service, per text message sent and received and per megabyte of data used for data service, and they are typically determined by the service provider's pricing plan.\n\nSeveral carriers in both the United States and India have eliminated these fees in their nationwide pricing plans. All of the major carriers{{citation needed|date=November 2018}}{{which|date=December 2021}} now offer pricing plans that allow consumers to purchase nationwide roaming-free minutes. However, carriers define \"nationwide\" in different ways. For example, some carriers define \"nationwide\" as anywhere in the U.S., whereas others define it as anywhere within the carrier's network.<ref>{{cite web|title=Reduce international roaming by up to 85%|url=https://www.worldsim.com/international-roaming-tariffs|publisher=worldsim.com|access-date=13 October 2015}}</ref>\n\nIn the UK, the main network providers generally send text alerts to advise users that they will now be charged international rates so it is clear when this will apply. UK data roaming charges abroad vary depending on the nature of the phone agreement (either [[Prepaid mobile phone|pay as you go]] or [[Postpaid mobile phone|monthly contracts]]). Some carriers, including [[T-Mobile International AG|T-Mobile]] and [[Virgin Mobile]], do not allow pay as you go customers to use international roaming without pre-purchase of an international \"add on\" or \"bolt on.\"<ref>{{cite web|last=Winstone|first=Liz |url=http://www.aph.com/community/know-before-you-go/aph-compares-data-roaming-charges-of-all-uk-mobile-networks/ |title=APH Compares Data Roaming Charges of all UK mobile networks |publisher=Airport Parking and Hotels |date=2014-09-09 |access-date=2014-09-18}}</ref>\n\nAn operator intending to provide roaming services to visitors publishes the tariffs that would be charged in their network at least sixty days prior to its implementation under normal situations. The visited operator tariffs may include tax, discounts etc. and would be based on duration in case of voice calls. For data calls, the charging may be based on the data volume sent and received. Some operators also charge a separate fee for call setup i.e. for the establishment of a call. This charge is called a ''[[flagfall]]'' charge.\n\n=== Roaming within the EU ===\n{{Main|European Union roaming regulations}}\nIn the [[European Union]], regulation on roaming charges began on 30 June 2007, forcing service providers to lower their roaming fees across the 28-member bloc. It later also included [[European Economic Area|EEA]] member states. The regulation set a price cap of €0.39 (€0.49 in 2007, €0.46 in 2008, €0.43 in 2009) per minute for outgoing calls, and  €0.15 (€0.24 in 2007, €0.22 in 2008, €0.19 in 2009) per minute for incoming calls - excluding tax.<ref name=\"test1\">[http://www.euractiv.com/en/infosociety/new-caps-roaming-charges-place-august/article-164430 \"New caps on roaming charges in place for August\"] {{Webarchive|url=https://web.archive.org/web/20171230172359/http://www.euractiv.com/en/infosociety/new-caps-roaming-charges-place-august/article-164430 |date=2017-12-30 }}, 8 June 2007</ref> Having still found that market conditions did not justify lifting the capping of roaming within the EEA, the [[European Commission|Commission]] replaced the law in 2012. Under the 2012 Regulation, retail roaming capping charges expired in 2017 and wholesale capping charges are due to expire in 2022. In mid-2009 there was also an €0.11 (excluding tax) maximum price for SMS text message included into this regulation.\n\nOn 11 June 2013, the European Commission voted to end mobile roaming charges for the first time.<ref>{{cite web|last=Williams |first=Christopher |url=https://www.telegraph.co.uk/finance/newsbysector/mediatechnologyandtelecoms/telecoms/10119159/EU-to-end-mobile-roaming-charges-next-year.html |title=EU to end mobile roaming charges next year |publisher=The Telegraph |date=2013-06-13 |access-date=2013-06-30}}</ref>\n\nFollowing a European Commission vote on 15 December 2016, roaming charges within the European Union were to be abolished by June 2017. While the European Commission (EC) believed that ending roaming charges would stimulate entrepreneurship and trade, mobile operators had their doubts about the changes.<ref>{{cite web|last=Mináriková|first=Katarína  |url=http://spectator.sme.sk/articles/view/53924/20/roaming_charges_to_drop_end.html |title=Roaming charges to drop, end |publisher=The Slovak Spectator |date=2014-05-12 |access-date=2014-06-08}}</ref>\n\nOn 15 June 2017, Regulation (EU) 2016/2286, nicknamed \"Roam like at Home\" and having been signed by the European Parliament and Commission in May of the same year came into force. It abolished all roaming charges within the EU, Iceland, Liechtenstein and Norway.{{citation needed|date=December 2020}}\n\n=== Roaming between other countries ===\nCountries that do not share a supra-national authority have also begun examining the provision of international roaming services. In April 2011, Singapore and Malaysia announced that they had agreed with operators to reduce voice and SMS rates for roaming between their two countries.<ref>http://www.ida.gov.sg/News%20and%20Events/20110316121622.aspx?getPagetype=20 {{webarchive |url=https://web.archive.org/web/20110607143255/http://www.ida.gov.sg/News%20and%20Events/20110316121622.aspx?getPagetype=20 |date=June 7, 2011 }}</ref> In August 2012, Australia and New Zealand published a draft report proposing coordinated action on roaming services.<ref>{{cite web|url=http://www.med.govt.nz/sectors-industries/technology-communication/pdf-docs-library/communications/mobile-phones/trans-tasman-roaming/TTR%20Draft%20Report.pdf |title=Trans-Tasman Roaming - Draft Report |publisher=Ministry of Business, Innovation and Employment |access-date=2013-06-30}}</ref> This was followed by a final report in February 2013 recommending that the two countries equip their telecommunications regulators with an extended palette of regulatory remedies, when they investigate international roaming.<ref>{{cite web|url=http://www.med.govt.nz/sectors-industries/technology-communication/communications/mobile-phones/trans-tasman-roaming|title=Trans-Tasman roaming|work=med.govt.nz}}</ref> The Australian and New Zealand prime ministers subsequently announced that they would introduce legislation to effect the recommendations of the final report.<ref>{{cite web |url=http://www.pm.gov.au/press-office/joint-statement-prime-ministers-key-and-gillard-february-2013 |title=Press Office {{!}} Prime Minister of Australia |website=www.pm.gov.au |url-status=dead |archive-url=https://web.archive.org/web/20130728234600/http://www.pm.gov.au/press-office/joint-statement-prime-ministers-key-and-gillard-february-2013 |archive-date=2013-07-28}}</ref>\n\nOn 19 February 2020, [[Bolivia]], [[Colombia]], [[Ecuador]] and [[Peru]] voted, through the auspice of the [[Andean Community]], to eliminate roaming fees amongst themselves. The agreement is set to start in 2022.<ref>{{Cite web|url=https://www.eltiempo.com/economia/empresas/eliminacion-del-costo-del-roaming-internacional-entre-bolivia-colombia-ecuador-y-peru-463954|title=Comunidad Andina anuncia eliminación de costos del 'roaming'|date=19 February 2020}}</ref>\n\nOn 1 July 2021, [[Serbia]], [[Albania]], [[Montenegro]], [[Bosnia & Herzegovina]], [[North Macedonia]] and [[Kosovo]] abolished roaming fees as part of [[Mini Schengen]] project, allowing SIM holders on those countries to use their domestic packages on another country in the agreement without having to pay their roaming fee. The agreement was signed in April 2019. There are no additional charges, just like in EU's \"Roaming like home\" project.<ref>{{Cite web|date=2019-04-05|title=Western Balkans to abolish roaming charges by 2021|url=https://www.euractiv.com/section/enlargement/news/western-balkans-to-abolish-roaming-charges-by-2021/|access-date=2021-07-22|website=www.euractiv.com|language=en-GB}}</ref><ref>{{Cite web|last=EWB|date=2021-07-01|title=Roaming charges abolished for users across Western Balkans|url=https://europeanwesternbalkans.com/2021/07/01/roaming-charges-abolished-for-users-across-western-balkans/|access-date=2021-07-22|website=European Western Balkans|language=en-US}}</ref>\n\nOn November 2021, Cameroon, Central African Republic, Congo, Equatorial Guinea, Chad and Gabon committed to bilateral agreements to lift charges and cut interconnection tariffs.<ref>{{cite web | url=https://itweb.africa/amp/content/j5alrvQajm8vpYQk | title=Free roaming now official in central Africa | date=10 November 2021 }}</ref>\n\n== Other types of roaming ==\n[[File:Roaming symbol Android.png|thumbnail|Roaming sign shown in notification bar on an [[Android (operating system)|Android]] powered [[smartphone]].]]\n\n===Regional or internal roaming===\nThis type refers to the ability of moving from one region to another region inside national coverage of the mobile operator (\"internal roaming\"). Initially, operators may have provided commercial offers restricted to a region (sometimes to a town). Due to the success of GSM and the decrease in cost, regional roaming is rarely offered to clients except in nations with wide geographic areas like the US, Russia, India, etc., in which there are a number of regional operators.\n\nIn Russia even country-wide operators charge different tariffs depending on whether the users are within or outside of their \"home region\". A number of legislative attempts to remove the \"internal roaming\" failed due to opposition from operators.<ref>{{Cite news|url=https://tvrain.ru/news/rouming-474243/|title=В правительстве отказались от полной отмены платы за национальный роуминг|last=Inc.|first=TV Rain|access-date=2018-10-31}}</ref> Following the annexation of Crimea in 2014 the Russian operators are facing significant criticism as they do not offer their services inside Crimea directly, even though formally it's recognized as a regular federal subject inside Russia.<ref>{{Cite news|url=http://krymsos.com/en/news/cherez-sanktsiyi-v-krimu-ne-bude-velikikh-operatoriv-zvyazku-rf/|title=Crimea will not have large telecom operators of Russian Federation because of sanctions|work=CrimeaSOS|access-date=2018-10-31|language=en|archive-date=2018-07-11|archive-url=https://web.archive.org/web/20180711022744/http://krymsos.com/en/news/cherez-sanktsiyi-v-krimu-ne-bude-velikikh-operatoriv-zvyazku-rf/|url-status=dead}}</ref>\n\n===National roaming===\nThis type refers to the ability to move from one mobile operator to another in the same country. For example, a [[Postpaid mobile phone|postpaid]] subscriber of [[T-Mobile USA]] who is allowed to roam on [[AT&T Mobility]] and/or the regional carriers [[Cellular One|Viaero Wireless]] and [[U.S. Cellular]]'s networks would have national roaming rights; [[Prepaid mobile phone|prepaid]] providers on the other hand typically only allow a more restricted national roaming ability for cost reasons. For commercial and license reasons, this type of roaming is not allowed unless under very specific circumstances and under regulatory scrutiny. This has often taken place when a new company is assigned a mobile telephony license (such as [[Iliad Italia|Free Italia]]'s 10-year national roaming deal with [[Wind Tre]]), to create a more competitive market by allowing the new entrant to offer coverage comparable to that of established operators (by requiring the existing operators to allow roaming while the new entrant has time to build up its own network), or where mobile network infrastructure has been destroyed by natural or man-made means, such as during the [[2022 Russian invasion of Ukraine]] where Ukrainian mobile operators had to quickly implement national roaming with each other to compensate for network infrastructure destroyed in said invasion.<ref>{{Cite web | url=https://visitukraine.today/blog/163/ukrainian-mobile-operators-launch-national-roaming | title=Ukrainian mobile operators launch national roaming }}</ref>\n\nIn a country like India, where the number of regional operators is high and the country is divided into ''[[telecom circle]]s,'' this type of roaming is common. Following the launch of the [https://pebblenetwork.ltd.uk Pebble Network] in the UK on 15 July 2015, national roaming has been possible across the major UK networks at no additional cost using a Pebble Network SIM card.\n\n===International roaming===\nThis type of roaming refers to the ability to move to a foreign service provider's network. It is, consequently, of particular interest to international tourists and business travelers. Broadly speaking, international roaming is typically easiest when using the GSM standard, as it is used by over 80% of the world's mobile operators, and most devices support it. However, even then, there may be problems, since countries have allocated different frequency bands for GSM communications (there are two groups of countries: most GSM countries use 900/1800&nbsp;MHz, but the [[United States]] and some other countries in the Americas have allocated 850/1900&nbsp;MHz): for a phone to work in a country with a different frequency allocation, it must support one or both of that country's frequencies, and thus be [[Tri band|tri]] or [[quad band]]. If international roaming allows the traveler to stay connected during their trip, it can also generate significant costs for users, due to the trend of carriers pricing GSM usage internationally outrageously high if the traveler elects to not purchase an optional addon to their current phone service. In fact, the use of mobile networks outside its original country can lead to significant billing by its original mobile data operator without an addon to their current phone service.<ref>{{Cite news|url=https://www.telegraph.co.uk/travel/advice/How-to-avoid-data-roaming-charges/|title=How to avoid data roaming charges|last=Porter|first=Lizzie|date=2016-02-04|work=The Telegraph|access-date=2018-09-10|language=en-GB|issn=0307-1235}}</ref>\n\n===Inter-standards roaming===\nThis type refers to roaming between two standards. This term is now widely used in mobile communications where especially [[CDMA]] customers want to use their phone in areas where there is no CDMA network or there is no roaming agreement in place to support roaming on the used standard. In Europe there are hardly any CDMA networks. Most CDMA customers originate from the Americas or the Far East. In order to enable them to roam in Europe inter-standard roaming is the solution. The CDMA customers arriving in Europe can register on the available [[GSM]] networks.\n\nSince mobile communication technologies have evolved independently across continents, there is significant challenge in achieving seamless roaming across these technologies. Typically, these technologies were implemented in accordance with technological standards laid down by different industry bodies and hence the name. A number of the standards making industry bodies have come together to define and achieve interoperability between the technologies as a means to achieve inter-standards roaming. This is currently an ongoing effort.\n\n===Mobile signature roaming===\n{{Main|Mobile signature roaming}}\n[[Mobile signature roaming]] allows an [[Wireless access point|access point]] to get a [[mobile signature]] from any end-user, even if the AP and the end-user have not contracted a commercial relationship with the same [[Service Switching Point|MSSP]]. Otherwise, an AP would have to build commercial terms with as many MSSPs as possible, and this might be a cost burden. This means that a mobile signature transaction issued by an Application Provider should be able to reach the appropriate MSSP, and this should be transparent for the AP.<ref>{{cite web|url=http://portal.etsi.org/docbox/EC_Files/EC_Files/ts_102207v010103p.pdf|title=Restricted Access|work=etsi.org}}</ref>\n\n===Inter-MSC roaming===\nNetwork elements belonging to the same Operator but located in different areas (a typical situation where assignment of local licenses is a common practice) pair depends on the switch and its location. Hence, software changes and a greater processing capability are required, but furthermore this situation could introduce the fairly new concept of roaming on a per MSC basis instead of per Operator basis. But this is actually a burden, so it is avoided.<ref>{{cite book|chapter=Signalling interoperability as a key enabler to GSM/PCS roaming with North America |doi=10.1109/VETEC.1998.686490 |publisher=IEEE Xplore |title=VTC '98. 48th IEEE Vehicular Technology Conference. Pathway to Global Wireless Revolution (Cat. No.98CH36151) |volume=1 |pages=122–126 |year=1998 |last1=Beccaris |first1=R. |last2=Albacar |first2=X.P. |last3=Proulx |first3=M. |last4=Settimo |first4=F. |isbn=978-0-7803-4320-7 |s2cid=61666579 }}</ref>\n\n===Permanent roaming===\nThis type refers to customers who purchase service with a [[mobile phone operator]] intending to permanently roam, or be off-network. This becomes possible because of the increasing popularity and availability of \"free roaming\" service plan, where there is no cost difference between on and off network usage. The benefits of getting service from a mobile phone operator, that is not local to a user, can include cheaper rates, or features and phones that are not available on their local mobile phone operator, or to get to a particular mobile phone operator's network to get free calls to other customers of that mobile phone operator through a free unlimited mobile to mobile feature.\n\nMost mobile phone operators will require the customer's living or billing address be inside their coverage area or less often inside the government issued [[radio frequency]] license of the mobile phone operator, this is usually determined by a computer estimate because it is [[Dead zone (cell phone)|impossible to guarantee coverage]]. If a potential customer's address is not within the requirements of that mobile phone operator, they will be denied service. In order to permanently roam customers may use a false address and [[Electronic billing|online billing]], or a relative or friend's address which is in the required area, and a 3rd party billing option.\n\nMost mobile phone operators discourage or prohibit permanent roaming since they must pay per minute rates to the network operator their customer is roaming onto. This is because they can not pass that extra cost onto customers (\"free roaming\").\n\n===Trombone roaming===\n{{Main|Tromboning}}\nRoaming calls within a local tariff area, when at least one of the phones belong outside that area. Usually implemented with ''trombone routing'' also known as ''tromboning''.<ref>{{Cite news|url=https://www.networkworld.com/article/2224213/cisco-subnet/why-the--trombone--effect-is-problematic-for-enterprise-internet-access.html|title=Why the 'trombone' effect is problematic for Enterprise Internet access|last=Gottlieb|first=Andy|work=Network World|access-date=2017-10-18|language=en}}</ref>\n\n==See also==<!-- PLEASE RESPECT ALPHABETICAL ORDER -->\n* [[5G NR frequency bands]]\n* [[European Union roaming regulations]]\n* [[GSM frequency bands]]\n* [[Handoff]]\n* [[GSM core network#HLR|Home Location Register]]\n* [[IEEE 802.11]]\n** [[IEEE 802.11f]]\n** [[IEEE 802.11r]]\n* [[LTE frequency bands]]\n* [[Mobile IP]]\n* [[Mobile phone]]\n* [[Mobile phones on aircraft]]\n* [[Mobility management]]\n* [[Roaming SIM]]\n* [[TADIG code]]s\n* [[UMTS frequency bands]]\n* [[Vertical handoff]]\n* [[GSM core network#Visitor Location Register (VLR)|Visitor Location Register]]\n\n==References==\n{{Reflist|30em}}\n\n==External links==\n{{Wiktionary}}\n* [http://ec.europa.eu/information_society/activities/roaming/index_en.htm Roaming - Using my mobile abroad: are prices dropping ?] - ''European Commission''\n* [http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=686490 Intra MSC Roaming]\n* [http://www.mobileeurope.co.uk/magazine/features.ehtml?o=2101 Mobile Europe describes how the roaming industry will cope with pending EU legislation and the arrival of mobile VoIP] {{Webarchive|url=https://web.archive.org/web/20060708111314/http://www.mobileeurope.co.uk/magazine/features.ehtml?o=2101 |date=2006-07-08 }}\n* [http://gsmworld.com/roaming/gsminfo/index.shtml GSM operators and their roaming agreements] {{Webarchive|url=https://web.archive.org/web/20100210074241/http://www.gsmworld.com/Roaming/GSMinfo/index.shtml |date=2010-02-10 }} - ''Index of GSM operators in a country, and their roaming partners indexed by country. Maintained by GSM Alliance''\n\n{{Mobile phones}}\n{{Telecommunications}}\n\n<!-- [[cn:漫游]] -->\n\n{{Authority control}}\n\n[[Category:GSM standard]]\n[[Category:Mobile technology]]",
+            "text": "Roaming is a wireless telecommunication term typically used with mobile devices, such as mobile phones. It refers to a mobile phone being used outside the range of its native network and connecting to another available cell network. In more technical terms, roaming refers to the ability for a cellular customer to automatically make and receive voice calls, send and receive data, or access other services, including home data services, when travelling outside the geographical coverage area of the home network, by means of using a visited network. For example: should a subscriber travel beyond their cell phone company's transmitter range, their cell phone would automatically hop onto another phone company's service, if available. The process is supported by the Telecommunication processes of mobility management, authentication, authorization and accounting billing procedures (known as AAA or 'triple A'). Roaming is divided into \"SIM-based roaming\" and \"username/password-based roaming\", whereby the technical term \"roaming\" also encompasses roaming between networks of different network standards, e.g. WLAN (Wireless Local Area Network) or GSM (Global System for Mobile Communications). Device equipment and functionality, such as SIM card capability, antenna and network interfaces, and power management, determine the access possibilities. Using the example of WLAN/GSM roaming, the following scenarios can be differentiated (cf. GSM Association Permanent Reference Document AA.39): SIM-based (roaming): GSM subscriber roams onto a public WLAN operated by: their GSM operator, or another operator who has a roaming agreement with their GSM operator. Username/password based roaming: GSM subscriber roams onto a public WLAN operated by: their GSM operator, or another operator who has a roaming agreement with their GSM operator. Although these user/network scenarios focus on roaming from GSM network operator's networks, clearly roaming can be bi-directional, i.e. from public WLAN operators to GSM networks. Traditional roaming in networks of the same standard, e.g. from a WLAN to a WLAN or a GSM network to a GSM network, has already been described above and is likewise defined by the foreignness of the network based on the type of subscriber entry in the home subscriber register. In the case of session continuity, seamless access to these services across different access types is provided. Roaming can also be relevant on other networks including Electric Vehicle Charging Networks \"Home network\" refers to the network the subscriber is registered with. \"Visitor network\" refers to the network a subscriber roams temporarily and is outside the bounds of the \"home network\". The legal roaming business aspects negotiated between the roaming partners for billing of the services obtained are usually stipulated in so called roaming agreements. The GSM Association broadly outlines the content of such roaming agreements in standardized form for its members. For the legal aspects of authentication, authorization and billing of the visiting subscriber, the roaming agreements typically can comprise minimal safety standards, as e.g. location update procedures or financial security or warranty procedures. The details of the roaming process differ among types of cellular networks, but in general, the process resembles the following: Location updating is the mechanism that is used to determine the location of an MS in the idle state (connected to the network, but with no active call). When the mobile device is turned on or is transferred via a handover to the network, this new \"visited\" network sees the device, notices that it is not registered with its own system, and attempts to identify its home network. If there is no roaming agreement between the two networks, maintenance of service is impossible, and service is denied by the visited network. The visited network contacts the home network and requests service information (including whether or not the mobile should be allowed to roam) about the roaming device using the IMSI number. If successful, the visited network begins to maintain a temporary subscriber record for the device. Likewise, the home network updates its information to indicate that the cell phone is on the visited network so that any information sent to that device can be correctly routed. It occurs for example when a call is made to a roaming cell phone. Signaling process: The calling subscriber (from within the public telephone network) dials the mobile subscriber's MSISDN (the telephone number) of the roaming cell phone. Based on the information contained in the MSISDN (national destination code and the country code), the call is routed to the mobile network gateway MSC (GMSC). It's done with an ISUP IAM message. To locate the MS, the GMSC sends to the HLR a MAP SRI (Send Routing Information) message. The MAP SRI message contains the MSISDN number and with this MSISDN the HLR will obtain the IMSI. Because of past location updates, the HLR already knows the VLR that currently serves the subscriber. The HLR will send to the VLR a MAP PRN (Provide Roaming Number) message to obtain the MSRN of the roaming cell phone. Like that the HLR will be able to route the call to the correct MSC. With the IMSI contained in the MAP PRN message, the VLR assigns a temporary number known as the mobile station roaming number (MSRN) to the roaming cell phone. This MSRN number is sent back to the HLR in a MAP RIA (Routing Information Acknowledgement) message. Now with the MSRN number, the GMSC knows how to route the call to reach the roaming cell phone. Then, the call is made using ISUP (or TUP) signaling between the GMSC and the visited MSC. The GMSC will generate an ISUP IAM message with the MSRN as the called party number (and NOT the MSISDN as the called party number). When the MSC of the visitor network receives the IAM, it recognizes the MSRN and knows the IMSI for which the MSRN was allocated. The MSC then returns the MSRN to the pool for future use on another call. Afterwards, the MSC sends to the VLR a MAP SI (Send Information) message to request information like the called MS's capabilities, services subscribed to, and so on. If the called MS is authorized and capable of taking the call, the VLR sends a MAP CC (Complete Call) message back to the MSC. In order that a subscriber is able to register on to a visited network, a roaming agreement needs to be in place between the visited network and the home network. This agreement is established after a series of testing processes called IREG (International Roaming Expert Group) and TADIG (Transferred Account Data Interchange Group). While the IREG testing is to test the proper functioning of the established communication links, the TADIG testing is to check the billability of the calls. The usage by a subscriber in a visited network is captured in a file called the TAP (Transferred Account Procedure) for GSM / CIBER (Cellular Intercarrier Billing Exchange Record) for CDMA, AMPS etc... file and is transferred to the home network. A TAP/CIBER file contains details of the calls made by the subscriber viz. location, calling party, called party, time of call and duration, etc. The TAP/CIBER files are rated as per the tariffs charged by the visited operator. The home operator then bills these calls to its subscribers and may charge a mark-up/tax applicable locally. As recently many carriers launched own retail rate plans and bundles for Roaming, TAP records are generally used for wholesale Inter-Operators settlements only Roaming fees are typically charged on a per-minute basis for wireless voice service, per text message sent and received and per megabyte of data used for data service, and they are typically determined by the service provider's pricing plan. Several carriers in both the United States and India have eliminated these fees in their nationwide pricing plans. All of the major carriers[citation needed][which?] now offer pricing plans that allow consumers to purchase nationwide roaming-free minutes. However, carriers define \"nationwide\" in different ways. For example, some carriers define \"nationwide\" as anywhere in the U.S., whereas others define it as anywhere within the carrier's network. In the UK, the main network providers generally send text alerts to advise users that they will now be charged international rates so it is clear when this will apply. UK data roaming charges abroad vary depending on the nature of the phone agreement (either pay as you go or monthly contracts). Some carriers, including T-Mobile and Virgin Mobile, do not allow pay as you go customers to use international roaming without pre-purchase of an international \"add on\" or \"bolt on.\" An operator intending to provide roaming services to visitors publishes the tariffs that would be charged in their network at least sixty days prior to its implementation under normal situations. The visited operator tariffs may include tax, discounts etc. and would be based on duration in case of voice calls. For data calls, the charging may be based on the data volume sent and received. Some operators also charge a separate fee for call setup i.e. for the establishment of a call. This charge is called a flagfall charge. In the European Union, regulation on roaming charges began on 30 June 2007, forcing service providers to lower their roaming fees across the 28-member bloc. It later also included EEA member states. The regulation set a price cap of €0.39 (€0.49 in 2007, €0.46 in 2008, €0.43 in 2009) per minute for outgoing calls, and €0.15 (€0.24 in 2007, €0.22 in 2008, €0.19 in 2009) per minute for incoming calls - excluding tax. Having still found that market conditions did not justify lifting the capping of roaming within the EEA, the Commission replaced the law in 2012. Under the 2012 Regulation, retail roaming capping charges expired in 2017 and wholesale capping charges are due to expire in 2022. In mid-2009 there was also an €0.11 (excluding tax) maximum price for SMS text message included into this regulation. On 11 June 2013, the European Commission voted to end mobile roaming charges for the first time. Following a European Commission vote on 15 December 2016, roaming charges within the European Union were to be abolished by June 2017. While the European Commission (EC) believed that ending roaming charges would stimulate entrepreneurship and trade, mobile operators had their doubts about the changes. On 15 June 2017, Regulation (EU) 2016/2286, nicknamed \"Roam like at Home\" and having been signed by the European Parliament and Commission in May of the same year came into force. It abolished all roaming charges within the EU, Iceland, Liechtenstein and Norway.[citation needed] Countries that do not share a supra-national authority have also begun examining the provision of international roaming services. In April 2011, Singapore and Malaysia announced that they had agreed with operators to reduce voice and SMS rates for roaming between their two countries. In August 2012, Australia and New Zealand published a draft report proposing coordinated action on roaming services. This was followed by a final report in February 2013 recommending that the two countries equip their telecommunications regulators with an extended palette of regulatory remedies, when they investigate international roaming. The Australian and New Zealand prime ministers subsequently announced that they would introduce legislation to effect the recommendations of the final report. On 19 February 2020, Bolivia, Colombia, Ecuador and Peru voted, through the auspice of the Andean Community, to eliminate roaming fees amongst themselves. The agreement is set to start in 2022. On 1 July 2021, Serbia, Albania, Montenegro, Bosnia & Herzegovina, North Macedonia and Kosovo abolished roaming fees as part of Mini Schengen project, allowing SIM holders on those countries to use their domestic packages on another country in the agreement without having to pay their roaming fee. The agreement was signed in April 2019. There are no additional charges, just like in EU's \"Roaming like home\" project. On November 2021, Cameroon, Central African Republic, Congo, Equatorial Guinea, Chad and Gabon committed to bilateral agreements to lift charges and cut interconnection tariffs. This type refers to the ability of moving from one region to another region inside national coverage of the mobile operator (\"internal roaming\"). Initially, operators may have provided commercial offers restricted to a region (sometimes to a town). Due to the success of GSM and the decrease in cost, regional roaming is rarely offered to clients except in nations with wide geographic areas like the US, Russia, India, etc., in which there are a number of regional operators. In Russia even country-wide operators charge different tariffs depending on whether the users are within or outside of their \"home region\". A number of legislative attempts to remove the \"internal roaming\" failed due to opposition from operators. Following the annexation of Crimea in 2014 the Russian operators are facing significant criticism as they do not offer their services inside Crimea directly, even though formally it's recognized as a regular federal subject inside Russia. This type refers to the ability to move from one mobile operator to another in the same country. For example, a postpaid subscriber of T-Mobile USA who is allowed to roam on AT&T Mobility and/or the regional carriers Viaero Wireless and U.S. Cellular's networks would have national roaming rights; prepaid providers on the other hand typically only allow a more restricted national roaming ability for cost reasons. For commercial and license reasons, this type of roaming is not allowed unless under very specific circumstances and under regulatory scrutiny. This has often taken place when a new company is assigned a mobile telephony license (such as Free Italia's 10-year national roaming deal with Wind Tre), to create a more competitive market by allowing the new entrant to offer coverage comparable to that of established operators (by requiring the existing operators to allow roaming while the new entrant has time to build up its own network), or where mobile network infrastructure has been destroyed by natural or man-made means, such as during the 2022 Russian invasion of Ukraine where Ukrainian mobile operators had to quickly implement national roaming with each other to compensate for network infrastructure destroyed in said invasion. In a country like India, where the number of regional operators is high and the country is divided into telecom circles, this type of roaming is common. Following the launch of the Pebble Network in the UK on 15 July 2015, national roaming has been possible across the major UK networks at no additional cost using a Pebble Network SIM card. This type of roaming refers to the ability to move to a foreign service provider's network. It is, consequently, of particular interest to international tourists and business travelers. Broadly speaking, international roaming is typically easiest when using the GSM standard, as it is used by over 80% of the world's mobile operators, and most devices support it. However, even then, there may be problems, since countries have allocated different frequency bands for GSM communications (there are two groups of countries: most GSM countries use 900/1800 MHz, but the United States and some other countries in the Americas have allocated 850/1900 MHz): for a phone to work in a country with a different frequency allocation, it must support one or both of that country's frequencies, and thus be tri or quad band. If international roaming allows the traveler to stay connected during their trip, it can also generate significant costs for users, due to the trend of carriers pricing GSM usage internationally outrageously high if the traveler elects to not purchase an optional addon to their current phone service. In fact, the use of mobile networks outside its original country can lead to significant billing by its original mobile data operator without an addon to their current phone service. This type refers to roaming between two standards. This term is now widely used in mobile communications where especially CDMA customers want to use their phone in areas where there is no CDMA network or there is no roaming agreement in place to support roaming on the used standard. In Europe there are hardly any CDMA networks. Most CDMA customers originate from the Americas or the Far East. In order to enable them to roam in Europe inter-standard roaming is the solution. The CDMA customers arriving in Europe can register on the available GSM networks. Since mobile communication technologies have evolved independently across continents, there is significant challenge in achieving seamless roaming across these technologies. Typically, these technologies were implemented in accordance with technological standards laid down by different industry bodies and hence the name. A number of the standards making industry bodies have come together to define and achieve interoperability between the technologies as a means to achieve inter-standards roaming. This is currently an ongoing effort. Mobile signature roaming allows an access point to get a mobile signature from any end-user, even if the AP and the end-user have not contracted a commercial relationship with the same MSSP. Otherwise, an AP would have to build commercial terms with as many MSSPs as possible, and this might be a cost burden. This means that a mobile signature transaction issued by an Application Provider should be able to reach the appropriate MSSP, and this should be transparent for the AP. Network elements belonging to the same Operator but located in different areas (a typical situation where assignment of local licenses is a common practice) pair depends on the switch and its location. Hence, software changes and a greater processing capability are required, but furthermore this situation could introduce the fairly new concept of roaming on a per MSC basis instead of per Operator basis. But this is actually a burden, so it is avoided. This type refers to customers who purchase service with a mobile phone operator intending to permanently roam, or be off-network. This becomes possible because of the increasing popularity and availability of \"free roaming\" service plan, where there is no cost difference between on and off network usage. The benefits of getting service from a mobile phone operator, that is not local to a user, can include cheaper rates, or features and phones that are not available on their local mobile phone operator, or to get to a particular mobile phone operator's network to get free calls to other customers of that mobile phone operator through a free unlimited mobile to mobile feature. Most mobile phone operators will require the customer's living or billing address be inside their coverage area or less often inside the government issued radio frequency license of the mobile phone operator, this is usually determined by a computer estimate because it is impossible to guarantee coverage. If a potential customer's address is not within the requirements of that mobile phone operator, they will be denied service. In order to permanently roam customers may use a false address and online billing, or a relative or friend's address which is in the required area, and a 3rd party billing option. Most mobile phone operators discourage or prohibit permanent roaming since they must pay per minute rates to the network operator their customer is roaming onto. This is because they can not pass that extra cost onto customers (\"free roaming\"). Roaming calls within a local tariff area, when at least one of the phones belong outside that area. Usually implemented with trombone routing also known as tromboning. 5G NR frequency bands European Union roaming regulations GSM frequency bands Handoff Home Location Register IEEE 802.11 IEEE 802.11f IEEE 802.11r LTE frequency bands Mobile IP Mobile phone Mobile phones on aircraft Mobility management Roaming SIM TADIG codes UMTS frequency bands Vertical handoff Visitor Location Register IEEE (2002). \"QoS classification for mobile networks: International roaming case study\". 5th IEEE International Conference on High Speed Networks and Multimedia Communications, HSNMC 2002 : July 3 - 5, 2002, Jeju Island, Korea. Piscataway, NJ: IEEE Operations Center. pp. 356–360. doi:10.1109/HSNMC.2002.1032607. ISBN 978-0-7803-7600-7. S2CID 61454234. \"Reduce international roaming by up to 85%\". worldsim.com. Retrieved 13 October 2015. Winstone, Liz (2014-09-09). \"APH Compares Data Roaming Charges of all UK mobile networks\". Airport Parking and Hotels. Retrieved 2014-09-18. \"New caps on roaming charges in place for August\" Archived 2017-12-30 at the Wayback Machine, 8 June 2007 Williams, Christopher (2013-06-13). \"EU to end mobile roaming charges next year\". The Telegraph. Retrieved 2013-06-30. Mináriková, Katarína (2014-05-12). \"Roaming charges to drop, end\". The Slovak Spectator. Retrieved 2014-06-08. http://www.ida.gov.sg/News%20and%20Events/20110316121622.aspx?getPagetype=20 Archived June 7, 2011, at the Wayback Machine \"Trans-Tasman Roaming - Draft Report\" (PDF). Ministry of Business, Innovation and Employment. Retrieved 2013-06-30. \"Trans-Tasman roaming\". med.govt.nz. \"Press Office | Prime Minister of Australia\". www.pm.gov.au. Archived from the original on 2013-07-28. \"Comunidad Andina anuncia eliminación de costos del 'roaming'\". 19 February 2020. \"Western Balkans to abolish roaming charges by 2021\". www.euractiv.com. 2019-04-05. Retrieved 2021-07-22. EWB (2021-07-01). \"Roaming charges abolished for users across Western Balkans\". European Western Balkans. Retrieved 2021-07-22. \"Free roaming now official in central Africa\". 10 November 2021. Inc., TV Rain. \"В правительстве отказались от полной отмены платы за национальный роуминг\". Retrieved 2018-10-31. {{cite news}}: |last= has generic name (help) \"Crimea will not have large telecom operators of Russian Federation because of sanctions\". CrimeaSOS. Archived from the original on 2018-07-11. Retrieved 2018-10-31. \"Ukrainian mobile operators launch national roaming\". Porter, Lizzie (2016-02-04). \"How to avoid data roaming charges\". The Telegraph. ISSN 0307-1235. Retrieved 2018-09-10. \"Restricted Access\" (PDF). etsi.org. Beccaris, R.; Albacar, X.P.; Proulx, M.; Settimo, F. (1998). \"Signalling interoperability as a key enabler to GSM/PCS roaming with North America\". VTC '98. 48th IEEE Vehicular Technology Conference. Pathway to Global Wireless Revolution (Cat. No.98CH36151). Vol. 1. IEEE Xplore. pp. 122–126. doi:10.1109/VETEC.1998.686490. ISBN 978-0-7803-4320-7. S2CID 61666579. Gottlieb, Andy. \"Why the 'trombone' effect is problematic for Enterprise Internet access\". Network World. Retrieved 2017-10-18. Look up roaming in Wiktionary, the free dictionary. Roaming - Using my mobile abroad: are prices dropping ? - European Commission Intra MSC Roaming Mobile Europe describes how the roaming industry will cope with pending EU legislation and the arrival of mobile VoIP Archived 2006-07-08 at the Wayback Machine GSM operators and their roaming agreements Archived 2010-02-10 at the Wayback Machine - Index of GSM operators in a country, and their roaming partners indexed by country. Maintained by GSM Alliance"
+        },
+        "collectMetadata": {
+            "requestedDate": "2023-10-16T00:00:00",
+            "ingestedDate": "2023-10-20T07:42:10.490773"
+        },
+        "extractionMetadata": [
+            {
+                "id": "WikitextExtractor",
+                "linkExtractionDate": "2023-10-20T07:42:10.496897",
+                "links": [
+                    {
+                        "fragment": null,
+                        "link": "File:T-Mobile_roaming_welcome_message_-_Redvers.jpg",
+                        "text": "thumb|An [[SMS]] welcome to [[Proximus]] ([[Belgium]]) customers who have roamed onto [[T-Mobile UK|T-Mobile]] (now [[EE Limited|EE]]) in the UK",
+                        "title": "File:T-Mobile roaming welcome message - Redvers.jpg"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "SMS",
+                        "text": null,
+                        "title": "SMS"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Proximus",
+                        "text": null,
+                        "title": "Proximus"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Belgium",
+                        "text": null,
+                        "title": "Belgium"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "T-Mobile_UK",
+                        "text": "T-Mobile",
+                        "title": "T-Mobile UK"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "EE_Limited",
+                        "text": "EE",
+                        "title": "EE Limited"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Wireless",
+                        "text": null,
+                        "title": "wireless"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Telecommunication",
+                        "text": null,
+                        "title": "telecommunication"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_phone",
+                        "text": null,
+                        "title": "mobile phone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Cellular_network",
+                        "text": "cellular",
+                        "title": "cellular network"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Telecommunications_network",
+                        "text": "network",
+                        "title": "Telecommunications network"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Authentication",
+                        "text": null,
+                        "title": "authentication"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Authorization",
+                        "text": null,
+                        "title": "authorization"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Accounting",
+                        "text": null,
+                        "title": "accounting"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Bill_(payment)",
+                        "text": "billing",
+                        "title": "Bill (payment)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Wireless_LAN",
+                        "text": "WLAN (Wireless Local Area Network)",
+                        "title": "Wireless LAN"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GSM",
+                        "text": "GSM (Global System for Mobile Communications)",
+                        "title": "GSM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Subscriber_identity_module",
+                        "text": "SIM card",
+                        "title": "Subscriber identity module"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Radio_antenna",
+                        "text": "antenna",
+                        "title": "Radio antenna"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Computer_interface",
+                        "text": "network interfaces",
+                        "title": "Computer interface"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Power_management",
+                        "text": null,
+                        "title": "power management"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Electric_vehicle_charging_network",
+                        "text": "Electric Vehicle Charging Networks",
+                        "title": "Electric vehicle charging network"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GSMA",
+                        "text": "GSM Association",
+                        "title": "GSMA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Periodic_location_update",
+                        "text": "location update procedures",
+                        "title": "Periodic location update"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_station",
+                        "text": "MS",
+                        "title": "Mobile station"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Handoff",
+                        "text": "handover",
+                        "title": "handoff"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "International_mobile_subscriber_identity",
+                        "text": "IMSI",
+                        "title": "International mobile subscriber identity"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "PSTN",
+                        "text": "public telephone network",
+                        "title": "PSTN"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "MSISDN",
+                        "text": null,
+                        "title": "MSISDN"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Network_switching_subsystem",
+                        "text": "mobile network gateway MSC (GMSC)",
+                        "title": "Network switching subsystem"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "ISDN_User_Part",
+                        "text": "ISUP",
+                        "title": "ISDN User Part"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_station",
+                        "text": "MS",
+                        "title": "Mobile station"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_Application_Part",
+                        "text": "MAP",
+                        "title": "Mobile Application Part"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "International_mobile_subscriber_identity",
+                        "text": "IMSI",
+                        "title": "International mobile subscriber identity"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_Application_Part",
+                        "text": "MAP",
+                        "title": "Mobile Application Part"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_Station_Roaming_Number",
+                        "text": "MSRN",
+                        "title": "Mobile Station Roaming Number"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_Station_Roaming_Number",
+                        "text": "mobile station roaming number (MSRN)",
+                        "title": "Mobile Station Roaming Number"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Network_switching_subsystem",
+                        "text": "GMSC",
+                        "title": "Network switching subsystem"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "ISDN_User_Part",
+                        "text": "ISUP",
+                        "title": "ISDN User Part"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_Station_Roaming_Number",
+                        "text": "MSRN",
+                        "title": "Mobile Station Roaming Number"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_Application_Part",
+                        "text": "MAP",
+                        "title": "Mobile Application Part"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Transferred_Account_Data_Interchange_Group",
+                        "text": "TADIG",
+                        "title": "Transferred Account Data Interchange Group"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Prepaid_mobile_phone",
+                        "text": "pay as you go",
+                        "title": "Prepaid mobile phone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Postpaid_mobile_phone",
+                        "text": "monthly contracts",
+                        "title": "Postpaid mobile phone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "T-Mobile_International_AG",
+                        "text": "T-Mobile",
+                        "title": "T-Mobile International AG"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Virgin_Mobile",
+                        "text": null,
+                        "title": "Virgin Mobile"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Flagfall",
+                        "text": null,
+                        "title": "flagfall"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "European_Union",
+                        "text": null,
+                        "title": "European Union"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "European_Economic_Area",
+                        "text": "EEA",
+                        "title": "European Economic Area"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "European_Commission",
+                        "text": "Commission",
+                        "title": "European Commission"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Bolivia",
+                        "text": null,
+                        "title": "Bolivia"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Colombia",
+                        "text": null,
+                        "title": "Colombia"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Ecuador",
+                        "text": null,
+                        "title": "Ecuador"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Peru",
+                        "text": null,
+                        "title": "Peru"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Andean_Community",
+                        "text": null,
+                        "title": "Andean Community"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Serbia",
+                        "text": null,
+                        "title": "Serbia"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Albania",
+                        "text": null,
+                        "title": "Albania"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Montenegro",
+                        "text": null,
+                        "title": "Montenegro"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Bosnia_&_Herzegovina",
+                        "text": null,
+                        "title": "Bosnia & Herzegovina"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "North_Macedonia",
+                        "text": null,
+                        "title": "North Macedonia"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Kosovo",
+                        "text": null,
+                        "title": "Kosovo"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mini_Schengen",
+                        "text": null,
+                        "title": "Mini Schengen"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "File:Roaming_symbol_Android.png",
+                        "text": "thumbnail|Roaming sign shown in notification bar on an [[Android (operating system)|Android]] powered [[smartphone]].",
+                        "title": "File:Roaming symbol Android.png"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Android_(operating_system)",
+                        "text": "Android",
+                        "title": "Android (operating system)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Smartphone",
+                        "text": null,
+                        "title": "smartphone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Postpaid_mobile_phone",
+                        "text": "postpaid",
+                        "title": "Postpaid mobile phone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "T-Mobile_USA",
+                        "text": null,
+                        "title": "T-Mobile USA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "AT&T_Mobility",
+                        "text": null,
+                        "title": "AT&T Mobility"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Cellular_One",
+                        "text": "Viaero Wireless",
+                        "title": "Cellular One"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "U.S._Cellular",
+                        "text": null,
+                        "title": "U.S. Cellular"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Prepaid_mobile_phone",
+                        "text": "prepaid",
+                        "title": "Prepaid mobile phone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Iliad_Italia",
+                        "text": "Free Italia",
+                        "title": "Iliad Italia"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Wind_Tre",
+                        "text": null,
+                        "title": "Wind Tre"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "2022_Russian_invasion_of_Ukraine",
+                        "text": null,
+                        "title": "2022 Russian invasion of Ukraine"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Telecom_circle",
+                        "text": null,
+                        "title": "telecom circle"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "United_States",
+                        "text": null,
+                        "title": "United States"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Tri_band",
+                        "text": "tri",
+                        "title": "Tri band"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Quad_band",
+                        "text": null,
+                        "title": "quad band"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA",
+                        "text": null,
+                        "title": "CDMA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GSM",
+                        "text": null,
+                        "title": "GSM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_signature_roaming",
+                        "text": null,
+                        "title": "Mobile signature roaming"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Wireless_access_point",
+                        "text": "access point",
+                        "title": "Wireless access point"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_signature",
+                        "text": null,
+                        "title": "mobile signature"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Service_Switching_Point",
+                        "text": "MSSP",
+                        "title": "Service Switching Point"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_phone_operator",
+                        "text": null,
+                        "title": "mobile phone operator"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Radio_frequency",
+                        "text": null,
+                        "title": "radio frequency"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Dead_zone_(cell_phone)",
+                        "text": "impossible to guarantee coverage",
+                        "title": "Dead zone (cell phone)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Electronic_billing",
+                        "text": "online billing",
+                        "title": "Electronic billing"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "5G_NR_frequency_bands",
+                        "text": null,
+                        "title": "5G NR frequency bands"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "European_Union_roaming_regulations",
+                        "text": null,
+                        "title": "European Union roaming regulations"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GSM_frequency_bands",
+                        "text": null,
+                        "title": "GSM frequency bands"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Handoff",
+                        "text": null,
+                        "title": "Handoff"
+                    },
+                    {
+                        "fragment": "HLR",
+                        "link": "GSM_core_network",
+                        "text": "Home Location Register",
+                        "title": "GSM core network"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "IEEE_802.11",
+                        "text": null,
+                        "title": "IEEE 802.11"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "IEEE_802.11f",
+                        "text": null,
+                        "title": "IEEE 802.11f"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "IEEE_802.11r",
+                        "text": null,
+                        "title": "IEEE 802.11r"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "LTE_frequency_bands",
+                        "text": null,
+                        "title": "LTE frequency bands"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_IP",
+                        "text": null,
+                        "title": "Mobile IP"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_phone",
+                        "text": null,
+                        "title": "Mobile phone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_phones_on_aircraft",
+                        "text": null,
+                        "title": "Mobile phones on aircraft"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobility_management",
+                        "text": null,
+                        "title": "Mobility management"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Roaming_SIM",
+                        "text": null,
+                        "title": "Roaming SIM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "TADIG_code",
+                        "text": null,
+                        "title": "TADIG code"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "UMTS_frequency_bands",
+                        "text": null,
+                        "title": "UMTS frequency bands"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Vertical_handoff",
+                        "text": null,
+                        "title": "Vertical handoff"
+                    },
+                    {
+                        "fragment": "Visitor Location Register (VLR)",
+                        "link": "GSM_core_network",
+                        "text": "Visitor Location Register",
+                        "title": "GSM core network"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:GSM_standard",
+                        "text": null,
+                        "title": "Category:GSM standard"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Mobile_technology",
+                        "text": null,
+                        "title": "Category:Mobile technology"
+                    }
+                ],
+                "nbLinks": 108,
+                "nbTables": 0,
+                "nbTexts": 22,
+                "tableExtractionDate": "2023-10-20T07:42:10.496897",
+                "tables": [],
+                "technology": "WikitextExtractor",
+                "textExtractionDate": "2023-10-20T07:42:10.496897",
+                "texts": [
+                    {
+                        "endOffset": 660,
+                        "index": 0,
+                        "level": 0,
+                        "startOffset": 0,
+                        "title": null,
+                        "value": "{{Short description|Wireless telecommunication term}}\n{{About|mobile phone term||Roaming (disambiguation)}}\n{{multiple issues|\n{{globalize|date=January 2014}}\n{{more citations needed|date=January 2008}}\n}}\n[[File:T-Mobile roaming welcome message - Redvers.jpg|thumb|An [[SMS]] welcome to [[Proximus]] ([[Belgium]]) customers who have roamed onto [[T-Mobile UK|T-Mobile]] (now [[EE Limited|EE]]) in the UK]]\n\nRoaming is a [[wireless]] [[telecommunication]] term typically used with mobile devices, such as [[mobile phone]]s. It refers to a mobile phone being used outside the range of its native network and connecting to another available cell network."
+                    },
+                    {
+                        "endOffset": 1458,
+                        "index": 1,
+                        "level": 2,
+                        "startOffset": 660,
+                        "title": "Technical definition",
+                        "value": "In more technical terms, roaming refers to the ability for a [[cellular network|cellular]] customer to automatically make and receive voice calls, send and receive data, or access other services, including home data services, when travelling outside the geographical coverage area of the home [[Telecommunications network|network]], by means of using a visited network. For example: should a subscriber travel beyond their cell phone company's transmitter range, their cell phone would automatically hop onto another phone company's service, if available.\n\nThe process is supported by the Telecommunication processes of mobility management, [[authentication]], [[authorization]] and [[accounting]] [[Bill (payment)|billing]] procedures (known as AAA or 'triple A')."
+                    },
+                    {
+                        "endOffset": 3645,
+                        "index": 2,
+                        "level": 2,
+                        "startOffset": 1458,
+                        "title": "Roaming in general",
+                        "value": "Roaming is divided into \"SIM-based roaming\" and \"username/password-based roaming\", whereby the technical term \"roaming\" also encompasses roaming between networks of different network standards, e.g. [[Wireless LAN|WLAN (Wireless Local Area Network)]] or [[GSM|GSM (Global System for Mobile Communications)]]. Device equipment and functionality, such as [[Subscriber identity module|SIM card]] capability, [[Radio antenna|antenna]] and [[Computer interface|network interfaces]], and [[power management]], determine the access possibilities.<ref>{{cite book|last1=IEEE|title=5th IEEE International Conference on High Speed Networks and Multimedia Communications, HSNMC 2002 : July 3 - 5, 2002, Jeju Island, Korea|pages=356–360|date=2002|publisher=IEEE Operations Center|location=Piscataway, NJ|isbn=978-0-7803-7600-7|doi=10.1109/HSNMC.2002.1032607|chapter=QoS classification for mobile networks: International roaming case study|s2cid=61454234}}</ref>\n\nUsing the example of WLAN/GSM roaming, the following scenarios can be differentiated (cf. GSM Association Permanent Reference Document AA.39):\n* SIM-based (roaming): GSM subscriber roams onto a public WLAN operated by:\n** their GSM operator, or\n** another operator who has a roaming agreement with their GSM operator.\n* Username/password based roaming: GSM subscriber roams onto a public WLAN operated by:\n** their GSM operator, or\n** another operator who has a roaming agreement with their GSM operator.\n\nAlthough these user/network scenarios focus on roaming from GSM network operator's networks, clearly roaming can be bi-directional, i.e. from public WLAN operators to GSM networks. Traditional roaming in networks of the same standard, e.g. from a WLAN to a WLAN or a GSM network to a GSM network, has already been described above and is likewise defined by the foreignness of the network based on the type of subscriber entry in the home subscriber register.\n\nIn the case of session continuity, seamless access to these services across different access types is provided.\n\nRoaming can also be relevant on other networks including [[Electric vehicle charging network|Electric Vehicle Charging Networks]]"
+                    },
+                    {
+                        "endOffset": 4040,
+                        "index": 3,
+                        "level": 2,
+                        "startOffset": 3645,
+                        "title": "Home and visited networks",
+                        "value": "{{Main|Network switching subsystem#Home location register|l1=Home location register|Network switching subsystem#Visitor location register|l2=Visitor location register}}\n\"Home network\" refers to the network the subscriber is registered with.\n\n\"Visitor network\" refers to the network a subscriber roams temporarily and is outside the bounds of the \"home network\"."
+                    },
+                    {
+                        "endOffset": 4639,
+                        "index": 4,
+                        "level": 2,
+                        "startOffset": 4040,
+                        "title": "Roaming agreements",
+                        "value": "The legal roaming business aspects negotiated between the roaming partners for billing of the services obtained are usually stipulated in so called roaming agreements. The [[GSMA|GSM Association]] broadly outlines the content of such roaming agreements in standardized form for its members. For the legal aspects of authentication, authorization and billing of the visiting subscriber, the roaming agreements typically can comprise minimal safety standards, as e.g. [[Periodic location update|location update procedures]] or financial security or warranty procedures."
+                    },
+                    {
+                        "endOffset": 9581,
+                        "index": 5,
+                        "level": 2,
+                        "startOffset": 4639,
+                        "title": "The roaming process",
+                        "value": "The details of the roaming process differ among types of cellular networks, but in general, the process resembles the following:"
+                    },
+                    {
+                        "endOffset": 5895,
+                        "index": 6,
+                        "level": 3,
+                        "startOffset": 4795,
+                        "title": "Location update",
+                        "value": "Location updating is the mechanism that is used to determine the location of an [[Mobile station|MS]] in the idle state (connected to the network, but with no active call).\n# When the mobile device is turned on or is transferred via a [[handoff|handover]] to the network, this new \"visited\" network sees the device, notices that it is not registered with its own system, and attempts to identify its home network. If there is no roaming agreement between the two networks, maintenance of service is impossible, and service is denied by the visited network.\n# The visited network contacts the home network and requests service information (including whether or not the mobile should be allowed to roam) about the roaming device using the [[International mobile subscriber identity|IMSI]] number.\n# If successful, the visited network begins to maintain a temporary subscriber record for the device. Likewise, the home network updates its information to indicate that the cell phone is on the visited network so that any information sent to that device can be correctly routed."
+                    },
+                    {
+                        "endOffset": 9581,
+                        "index": 7,
+                        "level": 3,
+                        "startOffset": 5895,
+                        "title": "Mobile terminated call",
+                        "value": "It occurs for example when a call is made to a roaming cell phone.\n\nSignaling process:\n# The calling subscriber (from within the [[PSTN|public telephone network]]) dials the mobile subscriber's [[MSISDN]] (the telephone number) of the roaming cell phone.\n# Based on the information contained in the MSISDN (national destination code and the country code), the call is routed to the [[Network switching subsystem|mobile network gateway MSC (GMSC)]]. It's done with an [[ISDN User Part|ISUP]] IAM message.\n# To locate the [[Mobile station|MS]], the GMSC sends to the HLR a [[Mobile Application Part|MAP]] SRI (Send Routing Information) message. The MAP SRI message contains the MSISDN number and with this MSISDN the HLR will obtain the [[International mobile subscriber identity|IMSI]].\n# Because of past location updates, the HLR already knows the VLR that currently serves the subscriber. The HLR will send to the VLR a [[Mobile Application Part|MAP]] PRN (Provide Roaming Number) message to obtain the [[Mobile Station Roaming Number|MSRN]] of the roaming cell phone. Like that the HLR will be able to route the call to the correct MSC.\n# With the IMSI contained in the MAP PRN message, the VLR assigns a temporary number known as the [[Mobile Station Roaming Number|mobile station roaming number (MSRN)]] to the roaming cell phone. This MSRN number is sent back to the HLR in a MAP RIA (Routing Information Acknowledgement) message.\n# Now with the MSRN number, the [[Network switching subsystem|GMSC]] knows how to route the call to reach the roaming cell phone. Then, the call is made using ISUP (or TUP) signaling between the GMSC and the visited MSC. The GMSC will generate an [[ISDN User Part|ISUP]] IAM message with the [[Mobile Station Roaming Number|MSRN]] as the called party number (and NOT the MSISDN as the called party number).\n# When the MSC of the visitor network receives the IAM, it recognizes the MSRN and knows the IMSI for which the MSRN was allocated. The MSC then returns the MSRN to the pool for future use on another call. Afterwards, the MSC sends to the VLR a [[Mobile Application Part|MAP]] SI (Send Information) message to request information like the called MS's capabilities, services subscribed to, and so on. If the called MS is authorized and capable of taking the call, the VLR sends a MAP CC (Complete Call) message back to the MSC.\n\nIn order that a subscriber is able to register on to a visited network, a roaming agreement needs to be in place between the visited network and the home network. This agreement is established after a series of testing processes called IREG (International Roaming Expert Group) and [[Transferred Account Data Interchange Group|TADIG]] (Transferred Account Data Interchange Group). While the IREG testing is to test the proper functioning of the established communication links, the TADIG testing is to check the billability of the calls.\n\nThe usage by a subscriber in a visited network is captured in a file called the TAP (Transferred Account Procedure) for GSM / CIBER (Cellular Intercarrier Billing Exchange Record) for CDMA, AMPS etc... file and is transferred to the home network. A TAP/CIBER file contains details of the calls made by the subscriber viz. location, calling party, called party, time of call and duration, etc. The TAP/CIBER files are rated as per the tariffs charged by the visited operator. The home operator then bills these calls to its subscribers and may charge a mark-up/tax applicable locally.\nAs recently many carriers launched own retail rate plans and bundles for Roaming, TAP records are generally used for wholesale Inter-Operators settlements only"
+                    },
+                    {
+                        "endOffset": 18271,
+                        "index": 8,
+                        "level": 2,
+                        "startOffset": 9581,
+                        "title": "Tariffs",
+                        "value": "Roaming fees are typically charged on a per-minute basis for wireless voice service, per text message sent and received and per megabyte of data used for data service, and they are typically determined by the service provider's pricing plan.\n\nSeveral carriers in both the United States and India have eliminated these fees in their nationwide pricing plans. All of the major carriers{{citation needed|date=November 2018}}{{which|date=December 2021}} now offer pricing plans that allow consumers to purchase nationwide roaming-free minutes. However, carriers define \"nationwide\" in different ways. For example, some carriers define \"nationwide\" as anywhere in the U.S., whereas others define it as anywhere within the carrier's network.<ref>{{cite web|title=Reduce international roaming by up to 85%|url=https://www.worldsim.com/international-roaming-tariffs|publisher=worldsim.com|access-date=13 October 2015}}</ref>\n\nIn the UK, the main network providers generally send text alerts to advise users that they will now be charged international rates so it is clear when this will apply. UK data roaming charges abroad vary depending on the nature of the phone agreement (either [[Prepaid mobile phone|pay as you go]] or [[Postpaid mobile phone|monthly contracts]]). Some carriers, including [[T-Mobile International AG|T-Mobile]] and [[Virgin Mobile]], do not allow pay as you go customers to use international roaming without pre-purchase of an international \"add on\" or \"bolt on.\"<ref>{{cite web|last=Winstone|first=Liz |url=http://www.aph.com/community/know-before-you-go/aph-compares-data-roaming-charges-of-all-uk-mobile-networks/ |title=APH Compares Data Roaming Charges of all UK mobile networks |publisher=Airport Parking and Hotels |date=2014-09-09 |access-date=2014-09-18}}</ref>\n\nAn operator intending to provide roaming services to visitors publishes the tariffs that would be charged in their network at least sixty days prior to its implementation under normal situations. The visited operator tariffs may include tax, discounts etc. and would be based on duration in case of voice calls. For data calls, the charging may be based on the data volume sent and received. Some operators also charge a separate fee for call setup i.e. for the establishment of a call. This charge is called a [[flagfall]] charge."
+                    },
+                    {
+                        "endOffset": 14493,
+                        "index": 9,
+                        "level": 3,
+                        "startOffset": 11923,
+                        "title": "Roaming within the EU",
+                        "value": "{{Main|European Union roaming regulations}}\nIn the [[European Union]], regulation on roaming charges began on 30 June 2007, forcing service providers to lower their roaming fees across the 28-member bloc. It later also included [[European Economic Area|EEA]] member states. The regulation set a price cap of €0.39 (€0.49 in 2007, €0.46 in 2008, €0.43 in 2009) per minute for outgoing calls, and  €0.15 (€0.24 in 2007, €0.22 in 2008, €0.19 in 2009) per minute for incoming calls - excluding tax.<ref name=\"test1\">\"New caps on roaming charges in place for August\" {{Webarchive|url=https://web.archive.org/web/20171230172359/http://www.euractiv.com/en/infosociety/new-caps-roaming-charges-place-august/article-164430 |date=2017-12-30 }}, 8 June 2007</ref> Having still found that market conditions did not justify lifting the capping of roaming within the EEA, the [[European Commission|Commission]] replaced the law in 2012. Under the 2012 Regulation, retail roaming capping charges expired in 2017 and wholesale capping charges are due to expire in 2022. In mid-2009 there was also an €0.11 (excluding tax) maximum price for SMS text message included into this regulation.\n\nOn 11 June 2013, the European Commission voted to end mobile roaming charges for the first time.<ref>{{cite web|last=Williams |first=Christopher |url=https://www.telegraph.co.uk/finance/newsbysector/mediatechnologyandtelecoms/telecoms/10119159/EU-to-end-mobile-roaming-charges-next-year.html |title=EU to end mobile roaming charges next year |publisher=The Telegraph |date=2013-06-13 |access-date=2013-06-30}}</ref>\n\nFollowing a European Commission vote on 15 December 2016, roaming charges within the European Union were to be abolished by June 2017. While the European Commission (EC) believed that ending roaming charges would stimulate entrepreneurship and trade, mobile operators had their doubts about the changes.<ref>{{cite web|last=Mináriková|first=Katarína  |url=http://spectator.sme.sk/articles/view/53924/20/roaming_charges_to_drop_end.html |title=Roaming charges to drop, end |publisher=The Slovak Spectator |date=2014-05-12 |access-date=2014-06-08}}</ref>\n\nOn 15 June 2017, Regulation (EU) 2016/2286, nicknamed \"Roam like at Home\" and having been signed by the European Parliament and Commission in May of the same year came into force. It abolished all roaming charges within the EU, Iceland, Liechtenstein and Norway.{{citation needed|date=December 2020}}"
+                    },
+                    {
+                        "endOffset": 18271,
+                        "index": 10,
+                        "level": 3,
+                        "startOffset": 14493,
+                        "title": "Roaming between other countries",
+                        "value": "Countries that do not share a supra-national authority have also begun examining the provision of international roaming services. In April 2011, Singapore and Malaysia announced that they had agreed with operators to reduce voice and SMS rates for roaming between their two countries.<ref>http://www.ida.gov.sg/News%20and%20Events/20110316121622.aspx?getPagetype=20 {{webarchive |url=https://web.archive.org/web/20110607143255/http://www.ida.gov.sg/News%20and%20Events/20110316121622.aspx?getPagetype=20 |date=June 7, 2011 }}</ref> In August 2012, Australia and New Zealand published a draft report proposing coordinated action on roaming services.<ref>{{cite web|url=http://www.med.govt.nz/sectors-industries/technology-communication/pdf-docs-library/communications/mobile-phones/trans-tasman-roaming/TTR%20Draft%20Report.pdf |title=Trans-Tasman Roaming - Draft Report |publisher=Ministry of Business, Innovation and Employment |access-date=2013-06-30}}</ref> This was followed by a final report in February 2013 recommending that the two countries equip their telecommunications regulators with an extended palette of regulatory remedies, when they investigate international roaming.<ref>{{cite web|url=http://www.med.govt.nz/sectors-industries/technology-communication/communications/mobile-phones/trans-tasman-roaming|title=Trans-Tasman roaming|work=med.govt.nz}}</ref> The Australian and New Zealand prime ministers subsequently announced that they would introduce legislation to effect the recommendations of the final report.<ref>{{cite web |url=http://www.pm.gov.au/press-office/joint-statement-prime-ministers-key-and-gillard-february-2013 |title=Press Office {{!}} Prime Minister of Australia |website=www.pm.gov.au |url-status=dead |archive-url=https://web.archive.org/web/20130728234600/http://www.pm.gov.au/press-office/joint-statement-prime-ministers-key-and-gillard-february-2013 |archive-date=2013-07-28}}</ref>\n\nOn 19 February 2020, [[Bolivia]], [[Colombia]], [[Ecuador]] and [[Peru]] voted, through the auspice of the [[Andean Community]], to eliminate roaming fees amongst themselves. The agreement is set to start in 2022.<ref>{{Cite web|url=https://www.eltiempo.com/economia/empresas/eliminacion-del-costo-del-roaming-internacional-entre-bolivia-colombia-ecuador-y-peru-463954|title=Comunidad Andina anuncia eliminación de costos del 'roaming'|date=19 February 2020}}</ref>\n\nOn 1 July 2021, [[Serbia]], [[Albania]], [[Montenegro]], [[Bosnia & Herzegovina]], [[North Macedonia]] and [[Kosovo]] abolished roaming fees as part of [[Mini Schengen]] project, allowing SIM holders on those countries to use their domestic packages on another country in the agreement without having to pay their roaming fee. The agreement was signed in April 2019. There are no additional charges, just like in EU's \"Roaming like home\" project.<ref>{{Cite web|date=2019-04-05|title=Western Balkans to abolish roaming charges by 2021|url=https://www.euractiv.com/section/enlargement/news/western-balkans-to-abolish-roaming-charges-by-2021/|access-date=2021-07-22|website=www.euractiv.com|language=en-GB}}</ref><ref>{{Cite web|last=EWB|date=2021-07-01|title=Roaming charges abolished for users across Western Balkans|url=https://europeanwesternbalkans.com/2021/07/01/roaming-charges-abolished-for-users-across-western-balkans/|access-date=2021-07-22|website=European Western Balkans|language=en-US}}</ref>\n\nOn November 2021, Cameroon, Central African Republic, Congo, Equatorial Guinea, Chad and Gabon committed to bilateral agreements to lift charges and cut interconnection tariffs.<ref>{{cite web | url=https://itweb.africa/amp/content/j5alrvQajm8vpYQk | title=Free roaming now official in central Africa | date=10 November 2021 }}</ref>"
+                    },
+                    {
+                        "endOffset": 29215,
+                        "index": 11,
+                        "level": 2,
+                        "startOffset": 18271,
+                        "title": "Other types of roaming",
+                        "value": "[[File:Roaming symbol Android.png|thumbnail|Roaming sign shown in notification bar on an [[Android (operating system)|Android]] powered [[smartphone]].]]"
+                    },
+                    {
+                        "endOffset": 20100,
+                        "index": 12,
+                        "level": 3,
+                        "startOffset": 18455,
+                        "title": "Regional or internal roaming",
+                        "value": "This type refers to the ability of moving from one region to another region inside national coverage of the mobile operator (\"internal roaming\"). Initially, operators may have provided commercial offers restricted to a region (sometimes to a town). Due to the success of GSM and the decrease in cost, regional roaming is rarely offered to clients except in nations with wide geographic areas like the US, Russia, India, etc., in which there are a number of regional operators.\n\nIn Russia even country-wide operators charge different tariffs depending on whether the users are within or outside of their \"home region\". A number of legislative attempts to remove the \"internal roaming\" failed due to opposition from operators.<ref>{{Cite news|url=https://tvrain.ru/news/rouming-474243/|title=В правительстве отказались от полной отмены платы за национальный роуминг|last=Inc.|first=TV Rain|access-date=2018-10-31}}</ref> Following the annexation of Crimea in 2014 the Russian operators are facing significant criticism as they do not offer their services inside Crimea directly, even though formally it's recognized as a regular federal subject inside Russia.<ref>{{Cite news|url=http://krymsos.com/en/news/cherez-sanktsiyi-v-krimu-ne-bude-velikikh-operatoriv-zvyazku-rf/|title=Crimea will not have large telecom operators of Russian Federation because of sanctions|work=CrimeaSOS|access-date=2018-10-31|language=en|archive-date=2018-07-11|archive-url=https://web.archive.org/web/20180711022744/http://krymsos.com/en/news/cherez-sanktsiyi-v-krimu-ne-bude-velikikh-operatoriv-zvyazku-rf/|url-status=dead}}</ref>"
+                    },
+                    {
+                        "endOffset": 22042,
+                        "index": 13,
+                        "level": 3,
+                        "startOffset": 20100,
+                        "title": "National roaming",
+                        "value": "This type refers to the ability to move from one mobile operator to another in the same country. For example, a [[Postpaid mobile phone|postpaid]] subscriber of [[T-Mobile USA]] who is allowed to roam on [[AT&T Mobility]] and/or the regional carriers [[Cellular One|Viaero Wireless]] and [[U.S. Cellular]]'s networks would have national roaming rights; [[Prepaid mobile phone|prepaid]] providers on the other hand typically only allow a more restricted national roaming ability for cost reasons. For commercial and license reasons, this type of roaming is not allowed unless under very specific circumstances and under regulatory scrutiny. This has often taken place when a new company is assigned a mobile telephony license (such as [[Iliad Italia|Free Italia]]'s 10-year national roaming deal with [[Wind Tre]]), to create a more competitive market by allowing the new entrant to offer coverage comparable to that of established operators (by requiring the existing operators to allow roaming while the new entrant has time to build up its own network), or where mobile network infrastructure has been destroyed by natural or man-made means, such as during the [[2022 Russian invasion of Ukraine]] where Ukrainian mobile operators had to quickly implement national roaming with each other to compensate for network infrastructure destroyed in said invasion.<ref>{{Cite web | url=https://visitukraine.today/blog/163/ukrainian-mobile-operators-launch-national-roaming | title=Ukrainian mobile operators launch national roaming }}</ref>\n\nIn a country like India, where the number of regional operators is high and the country is divided into [[telecom circle]]s, this type of roaming is common. Following the launch of the Pebble Network in the UK on 15 July 2015, national roaming has been possible across the major UK networks at no additional cost using a Pebble Network SIM card."
+                    },
+                    {
+                        "endOffset": 23659,
+                        "index": 14,
+                        "level": 3,
+                        "startOffset": 22042,
+                        "title": "International roaming",
+                        "value": "This type of roaming refers to the ability to move to a foreign service provider's network. It is, consequently, of particular interest to international tourists and business travelers. Broadly speaking, international roaming is typically easiest when using the GSM standard, as it is used by over 80% of the world's mobile operators, and most devices support it. However, even then, there may be problems, since countries have allocated different frequency bands for GSM communications (there are two groups of countries: most GSM countries use 900/1800 MHz, but the [[United States]] and some other countries in the Americas have allocated 850/1900 MHz): for a phone to work in a country with a different frequency allocation, it must support one or both of that country's frequencies, and thus be [[Tri band|tri]] or [[quad band]]. If international roaming allows the traveler to stay connected during their trip, it can also generate significant costs for users, due to the trend of carriers pricing GSM usage internationally outrageously high if the traveler elects to not purchase an optional addon to their current phone service. In fact, the use of mobile networks outside its original country can lead to significant billing by its original mobile data operator without an addon to their current phone service.<ref>{{Cite news|url=https://www.telegraph.co.uk/travel/advice/How-to-avoid-data-roaming-charges/|title=How to avoid data roaming charges|last=Porter|first=Lizzie|date=2016-02-04|work=The Telegraph|access-date=2018-09-10|language=en-GB|issn=0307-1235}}</ref>"
+                    },
+                    {
+                        "endOffset": 24797,
+                        "index": 15,
+                        "level": 3,
+                        "startOffset": 23659,
+                        "title": "Inter-standards roaming",
+                        "value": "This type refers to roaming between two standards. This term is now widely used in mobile communications where especially [[CDMA]] customers want to use their phone in areas where there is no CDMA network or there is no roaming agreement in place to support roaming on the used standard. In Europe there are hardly any CDMA networks. Most CDMA customers originate from the Americas or the Far East. In order to enable them to roam in Europe inter-standard roaming is the solution. The CDMA customers arriving in Europe can register on the available [[GSM]] networks.\n\nSince mobile communication technologies have evolved independently across continents, there is significant challenge in achieving seamless roaming across these technologies. Typically, these technologies were implemented in accordance with technological standards laid down by different industry bodies and hence the name. A number of the standards making industry bodies have come together to define and achieve interoperability between the technologies as a means to achieve inter-standards roaming. This is currently an ongoing effort."
+                    },
+                    {
+                        "endOffset": 25540,
+                        "index": 16,
+                        "level": 3,
+                        "startOffset": 24797,
+                        "title": "Mobile signature roaming",
+                        "value": "{{Main|Mobile signature roaming}}\n[[Mobile signature roaming]] allows an [[Wireless access point|access point]] to get a [[mobile signature]] from any end-user, even if the AP and the end-user have not contracted a commercial relationship with the same [[Service Switching Point|MSSP]]. Otherwise, an AP would have to build commercial terms with as many MSSPs as possible, and this might be a cost burden. This means that a mobile signature transaction issued by an Application Provider should be able to reach the appropriate MSSP, and this should be transparent for the AP.<ref>{{cite web|url=http://portal.etsi.org/docbox/EC_Files/EC_Files/ts_102207v010103p.pdf|title=Restricted Access|work=etsi.org}}</ref>"
+                    },
+                    {
+                        "endOffset": 26490,
+                        "index": 17,
+                        "level": 3,
+                        "startOffset": 25540,
+                        "title": "Inter-MSC roaming",
+                        "value": "Network elements belonging to the same Operator but located in different areas (a typical situation where assignment of local licenses is a common practice) pair depends on the switch and its location. Hence, software changes and a greater processing capability are required, but furthermore this situation could introduce the fairly new concept of roaming on a per MSC basis instead of per Operator basis. But this is actually a burden, so it is avoided.<ref>{{cite book|chapter=Signalling interoperability as a key enabler to GSM/PCS roaming with North America |doi=10.1109/VETEC.1998.686490 |publisher=IEEE Xplore |title=VTC '98. 48th IEEE Vehicular Technology Conference. Pathway to Global Wireless Revolution (Cat. No.98CH36151) |volume=1 |pages=122–126 |year=1998 |last1=Beccaris |first1=R. |last2=Albacar |first2=X.P. |last3=Proulx |first3=M. |last4=Settimo |first4=F. |isbn=978-0-7803-4320-7 |s2cid=61666579 }}</ref>"
+                    },
+                    {
+                        "endOffset": 28116,
+                        "index": 18,
+                        "level": 3,
+                        "startOffset": 26490,
+                        "title": "Permanent roaming",
+                        "value": "This type refers to customers who purchase service with a [[mobile phone operator]] intending to permanently roam, or be off-network. This becomes possible because of the increasing popularity and availability of \"free roaming\" service plan, where there is no cost difference between on and off network usage. The benefits of getting service from a mobile phone operator, that is not local to a user, can include cheaper rates, or features and phones that are not available on their local mobile phone operator, or to get to a particular mobile phone operator's network to get free calls to other customers of that mobile phone operator through a free unlimited mobile to mobile feature.\n\nMost mobile phone operators will require the customer's living or billing address be inside their coverage area or less often inside the government issued [[radio frequency]] license of the mobile phone operator, this is usually determined by a computer estimate because it is [[Dead zone (cell phone)|impossible to guarantee coverage]]. If a potential customer's address is not within the requirements of that mobile phone operator, they will be denied service. In order to permanently roam customers may use a false address and [[Electronic billing|online billing]], or a relative or friend's address which is in the required area, and a 3rd party billing option.\n\nMost mobile phone operators discourage or prohibit permanent roaming since they must pay per minute rates to the network operator their customer is roaming onto. This is because they can not pass that extra cost onto customers (\"free roaming\")."
+                    },
+                    {
+                        "endOffset": 29215,
+                        "index": 19,
+                        "level": 3,
+                        "startOffset": 28116,
+                        "title": "Trombone roaming",
+                        "value": "{{Main|Tromboning}}\nRoaming calls within a local tariff area, when at least one of the phones belong outside that area. Usually implemented with trombone routing also known as tromboning.<ref>{{Cite news|url=https://www.networkworld.com/article/2224213/cisco-subnet/why-the--trombone--effect-is-problematic-for-enterprise-internet-access.html|title=Why the 'trombone' effect is problematic for Enterprise Internet access|last=Gottlieb|first=Andy|work=Network World|access-date=2017-10-18|language=en}}</ref>\n\n==See also==\n* [[5G NR frequency bands]]\n* [[European Union roaming regulations]]\n* [[GSM frequency bands]]\n* [[Handoff]]\n* [[GSM core network#HLR|Home Location Register]]\n* [[IEEE 802.11]]\n** [[IEEE 802.11f]]\n** [[IEEE 802.11r]]\n* [[LTE frequency bands]]\n* [[Mobile IP]]\n* [[Mobile phone]]\n* [[Mobile phones on aircraft]]\n* [[Mobility management]]\n* [[Roaming SIM]]\n* [[TADIG code]]s\n* [[UMTS frequency bands]]\n* [[Vertical handoff]]\n* [[GSM core network#Visitor Location Register (VLR)|Visitor Location Register]]"
+                    },
+                    {
+                        "endOffset": 29248,
+                        "index": 20,
+                        "level": 2,
+                        "startOffset": 29215,
+                        "title": "References",
+                        "value": "{{Reflist|30em}}"
+                    },
+                    {
+                        "endOffset": 30335,
+                        "index": 21,
+                        "level": 2,
+                        "startOffset": 29248,
+                        "title": "External links",
+                        "value": "{{Wiktionary}}\n* Roaming - Using my mobile abroad: are prices dropping ? - European Commission\n* Intra MSC Roaming\n* Mobile Europe describes how the roaming industry will cope with pending EU legislation and the arrival of mobile VoIP {{Webarchive|url=https://web.archive.org/web/20060708111314/http://www.mobileeurope.co.uk/magazine/features.ehtml?o=2101 |date=2006-07-08 }}\n* GSM operators and their roaming agreements {{Webarchive|url=https://web.archive.org/web/20100210074241/http://www.gsmworld.com/Roaming/GSMinfo/index.shtml |date=2010-02-10 }} - Index of GSM operators in a country, and their roaming partners indexed by country. Maintained by GSM Alliance\n\n{{Mobile phones}}\n{{Telecommunications}}\n\n\n\n{{Authority control}}\n\n[[Category:GSM standard]]\n[[Category:Mobile technology]]"
+                    }
+                ]
+            }
+        ],
+        "statsMetadata": {
+            "textSize": 29250
+        }
+    }
+}

@@ -1,0 +1,1258 @@
+{
+    "_index": "corpus_doc_telco100_en",
+    "_id": "59764200",
+    "_source": {
+        "identificationMetadata": {
+            "id": "59764200",
+            "title": "5G NR",
+            "url": [
+                "https://en.wikipedia.org/?curid=59764200",
+                "https://en.wikipedia.org/wiki/5G NR"
+            ],
+            "version": 1178477132,
+            "versionDate": "2023-10-03T22:30:09Z",
+            "hash": "5d7c11ffab840551ed9b3f0cf650c1f2",
+            "wikidata": "Q62029351"
+        },
+        "descriptionMetadata": {
+            "categories": [
+                "Articles with short description",
+                "Short description is different from Wikidata",
+                "Wikipedia articles in need of updating from July 2022",
+                "All Wikipedia articles in need of updating",
+                "Mobile telecommunications",
+                "3GPP standards",
+                "5G (telecommunication)",
+                "Internet of things",
+                "Computer-related introductions in 2018",
+                "Wireless networking standards"
+            ],
+            "language": "en",
+            "source": "wikipedia"
+        },
+        "contentMetadata": {
+            "format": "wikitext",
+            "content": "{{Short description|Radio access technology for 5G networks}}\n\n'''5G NR''' ('''New Radio''') is a new [[radio access technology]] (RAT) developed by the 3rd Generation Partnership Project ([[3GPP]]) for the [[5G]] (fifth generation) mobile network.<ref>{{cite web|url=https://5g.co.uk/guides/what-is-5g-new-radio/|title=What is 5G New Radio (5G NR)|website=5g.co.uk}}</ref> It was designed to be the global standard for the air interface of 5G networks.<ref>{{cite web|url=https://comsoc.org/webinars/making-5g-new-radio-nr-reality-%E2%80%93-global-5g-standard|title=Making 5G New Radio (NR) a Reality – The Global 5G Standard - IEEE Communications Society|website=comsoc.org}}</ref> It is based on [[orthogonal frequency-division multiplexing]] (OFDM), as is the [[4G]] (fourth generation) long-term evolution ([[LTE (telecommunication)|LTE]]) standard. \n\nThe 3GPP specification 38 series<ref>{{Cite web|url=http://www.3gpp.org/ftp/Specs/html-info/38-series.htm|title=3GPP specification series: 38series|website=www.3gpp.org|language=en-gb|access-date=2018-10-31}}</ref> provides the technical details behind 5G NR, the successor of LTE.\n\nThe study of NR within 3GPP started in 2015, and the first specification was made available by the end of 2017.  While the 3GPP standardization process was ongoing, the industry had already begun efforts to implement infrastructure compliant with the draft standard, with the first large-scale commercial launch of 5G NR having occurred in the end of 2018.  Since 2019, many operators have deployed 5G NR networks and handset manufacturers have developed 5G NR enabled handsets.\n\n== Frequency bands ==\n[[File:CableFree LTE Remote Radio Head (RRH).jpg|thumb|right|[[CableFree]] 5G Radio ([[remote radio unit|RRH]]) with 2x2 MIMO, 2x20W RF power and CPRI fibre interface]]\n\n{{main|5G NR frequency bands}}\n\n5G NR uses frequency bands in two broad frequency ranges:\n# Frequency Range 1 (FR1), for bands within {{formatnum:410}}&nbsp;MHz – {{formatnum:7125}}&nbsp;MHz\n# Frequency Range 2 (FR2), for bands within {{formatnum:24250}}&nbsp;MHz – {{formatnum:71000}}&nbsp;MHz\n\n== Network deployments ==\n{{main|List of 5G NR networks}}\n[[Ooredoo]] was the first carrier to launch a commercial 5G NR network, in May 2018 in [[Qatar]].  Other carriers around the world have been following suit.\n\n== Development ==\nIn 2018, [[3GPP]] published [[3GPP#Standards|Release 15]], which includes what is described as \"Phase 1\" standardization for 5G NR. The timeline for Release 16, which will be \"5G phase 2\", follows a freeze date of March 2020 and a completion date of June 2020,<ref>{{Cite web|title=Release 16|url=https://www.3gpp.org/release-16|access-date=2020-01-06|website=3GPP}}</ref> Release 17 was originally scheduled for delivery in September 2021.<ref>{{Cite web|title=Release 17|url=https://www.3gpp.org/release-17|access-date=2020-01-06|website=3GPP}}</ref> but, because of the [[COVID-19 pandemic]], it was rescheduled for June 2022.<ref>{{cite web |title=Release 17 timeline agreed |url=https://www.3gpp.org/news-events/2145-rel-17_newtimeline |website=3GPP}}</ref>\n\nRelease 18 work has started in 3GPP. Rel.18 is referred to as \"NR Advanced\" signifying another milestone in wireless communication systems. NR Advanced will include features such as eXtended Reality (XR), AI/ML studies, and Mobility enhancements. Mobility is in the core of 3GPP technology and has so far been handled on Layer 3 (RRC), now, in Rel-18 the work on mobility is to introduce lower layer triggered mobility.\n\n==Deployment modes==\nInitial 5G NR launches will depend on existing 4G LTE infrastructure in non-standalone (NSA) mode, before maturation of the standalone (SA) mode with the 5G core network.  Additionally, the spectrum can be dynamically shared between 4G LTE and 5G NR.\n\n=== Dynamic spectrum sharing ===\nTo make better use of existing assets, carriers may opt to dynamically share it between 4G LTE and 5G NR.  The spectrum is multiplexed over time between both generations of mobile networks, while still using the 4G LTE network for control functions, depending on user demand.  Dynamic spectrum sharing (DSS) may be deployed on existing 4G LTE equipment as long as it is compatible with 5G NR.  Only the 5G NR terminal needs to be compatible with DSS.<ref>{{Cite web|url=https://www.ericsson.com/en/networks/offerings/5g/sharing-spectrum-with-ericsson-spectrum-sharing|title=Spectrum sharing for fast & smooth 5G deployment|website=Ericsson|date=18 March 2019 |access-date=2020-04-22}}</ref>\n\n===Non-standalone mode===\nThe non-standalone (NSA) mode of 5G NR refers to an option of 5G NR deployment that depends on the control plane of an existing 4G LTE network for control functions, while 5G NR is exclusively focused on the user plane.<ref name=SANSA>{{cite web|url=http://rfwireless-world.com/Terminology/5G-NR-deployment-scenarios-or-modes.html|title=5G NR Deployment Scenarios or modes-NSA,SA,Homogeneous,Heterogeneous|website=rfwireless-world.com}}</ref><ref>{{cite web|author=Junko Yoshida |url=https://eetimes.com/author.asp?section_id=36&doc_id=1331434 |title=What's Behind 'Non-Standalone' 5G? |publisher=Eetimes.com |access-date=2018-11-13}}</ref> This is reported to speed up 5G adoption, however some operators and vendors have criticized prioritizing the introduction of 5G Dss NSA on the grounds that it could hinder the implementation of the standalone mode of the network.<ref name=\":0\">{{Cite web|url=https://res-www.zte.com.cn/mediares/zte/Files/PDF/white_book/5g-best-choice-architecture.pdf|title=5G best choice architecture|last=Teral|first=Stephane|date=2019-01-30|website=ZTE|access-date=2019-02-01}}</ref><ref>{{cite web|url=https://lightreading.com/mobile/5g/3gpp-approves-plans-to-fast-track-5g-nr/d/d-id/731018|title=3GPP Approves Plans to Fast Track 5G NR - Light Reading}}</ref>\n\n===Standalone mode===\nThe standalone (SA) mode of 5G NR refers to using 5G cells for both signalling and information transfer.<ref name=SANSA /> It includes the new [[5G Packet Core]] architecture instead of relying on the 4G [[Evolved Packet Core]],<ref>{{cite web|url=https://lightreading.com/mobile/5g/standalone-or-non-standalone-5g-trials-will-help-orange-decide/d/d-id/744057|title=Standalone or Non-Standalone? 5G Trials Will Help Orange Decide - Light Reading}}</ref><ref>{{cite web|url=https://cisco.com/c/en/us/td/docs/wireless/asr_5000/21-5_N5-8/5G-NSA/21-5-5G-NSA-Solution-Guide/21-5-5G-NSA-Solutions-Guide_chapter_01.pdf|title=5G Non Standalone Solution Overview|access-date=2019-02-03|archive-date=2020-09-15|archive-url=https://web.archive.org/web/20200915130454/https://www.cisco.com/c/en/us/td/docs/wireless/asr_5000/21-5_N5-8/5G-NSA/21-5-5G-NSA-Solution-Guide/21-5-5G-NSA-Solutions-Guide_chapter_01.pdf|url-status=dead}}</ref> to allow the deployment of 5G without the LTE network.<ref>{{cite web|url=https://lightreading.com/mobile/5g/defining-ng-core-for-5g-networks/a/d-id/730633|title=Defining NG Core for 5G Networks - Light Reading}}</ref> It is expected to have lower cost, better efficiency, and to assist development of new use cases.<ref name=\":0\" /><ref>{{cite web|url=https://www.mediatek.com/blog/5g-what-is-standalone-sa-vs-non-standalone-nsa|title=5G: What is Standalone (SA) vs Non-Standalone (NSA) Networks?|date=12 November 2018|website=MediaTek}}</ref> However, initial deployment might see slower speed than existing network due to the allocation of spectrum.<ref>[https://xtech.nikkei.com/atcl/nxt/column/18/01273/00025/ 真の5G「SA方式」の不都合な真実、当初遅くなるのはドコモだけ？]</ref>\n\n== Numerology (sub-carrier spacing) ==\n{{update section|date=July 2022}}\n5G NR supports seven subcarrier spacings:\n\n{| class=\"sortable wikitable\"\n! data-sort-type=\"number\" | Sub-Carrier Spacing <small>(kHz)</small>\n! data-sort-type=\"number\" | <abbr title=\"The duration of a timeslice allocated to a certain endpoint\">Slot duration <small>(ms)</small></abbr>\n! class=\"unsortable\" | Frequency Bands\n! class=\"unsortable\" | Notes\n|-\n| 15\n| 1\n| FR1\n| Same as LTE\n|-\n| 30\n| 0.5\n| FR1\n| \n|-\n| 60\n| 0.25\n| FR1 and FR2\n| Both normal [[Cyclic prefix|Cyclic Prefix]] (CP) and extended CP may be used with 60&nbsp;kHz subcarrier spacing\n|-\n| 120\n| 0.125\n| FR2\n| \n|-\n| 240\n| 0.0625\n| FR2\n| This is only possible for search and measurement purposes, using the Synchronization Signal Block (SSB)\n|-\n| 480\n| 0.03125\n| FR2\n|\n|-\n| 960\n| 0.01565\n| FR2\n|\n|}\n\nThe length of [[Cyclic prefix|Cyclic Prefix]] is inversely proportional to the subcarrier spacing. It is 4.7&nbsp;μs with 15&nbsp;kHz, and 4.7 / 16 = 0.29&nbsp;μs for 240&nbsp;kHz subcarrier spacing.\n\n== See also ==\n* [[IMT-2020]] – the International Telecommunication Union standards\n* [[Network service]]\n* [[Network virtualization]]\n\n==References==\n{{reflist}}\n\n{{Mobile telecommunications standards}}\n{{Mobile phones}}\n{{Internet Access}}\n{{Wireless video}}\n\n{{DEFAULTSORT:NR}}\n[[Category:Mobile telecommunications]]\n[[Category:3GPP standards]]\n[[Category:5G (telecommunication)]]\n[[Category:Internet of things]]\n[[Category:Computer-related introductions in 2018]]\n[[Category:Wireless networking standards]]",
+            "text": "5G NR (New Radio) is a new radio access technology (RAT) developed by the 3rd Generation Partnership Project (3GPP) for the 5G (fifth generation) mobile network. It was designed to be the global standard for the air interface of 5G networks. It is based on orthogonal frequency-division multiplexing (OFDM), as is the 4G (fourth generation) long-term evolution (LTE) standard. The 3GPP specification 38 series provides the technical details behind 5G NR, the successor of LTE. The study of NR within 3GPP started in 2015, and the first specification was made available by the end of 2017. While the 3GPP standardization process was ongoing, the industry had already begun efforts to implement infrastructure compliant with the draft standard, with the first large-scale commercial launch of 5G NR having occurred in the end of 2018. Since 2019, many operators have deployed 5G NR networks and handset manufacturers have developed 5G NR enabled handsets. 5G NR uses frequency bands in two broad frequency ranges: Frequency Range 1 (FR1), for bands within 410 MHz – 7,125 MHz Frequency Range 2 (FR2), for bands within 24,250 MHz – 71,000 MHz Ooredoo was the first carrier to launch a commercial 5G NR network, in May 2018 in Qatar. Other carriers around the world have been following suit. In 2018, 3GPP published Release 15, which includes what is described as \"Phase 1\" standardization for 5G NR. The timeline for Release 16, which will be \"5G phase 2\", follows a freeze date of March 2020 and a completion date of June 2020, Release 17 was originally scheduled for delivery in September 2021. but, because of the COVID-19 pandemic, it was rescheduled for June 2022. Release 18 work has started in 3GPP. Rel.18 is referred to as \"NR Advanced\" signifying another milestone in wireless communication systems. NR Advanced will include features such as eXtended Reality (XR), AI/ML studies, and Mobility enhancements. Mobility is in the core of 3GPP technology and has so far been handled on Layer 3 (RRC), now, in Rel-18 the work on mobility is to introduce lower layer triggered mobility. Initial 5G NR launches will depend on existing 4G LTE infrastructure in non-standalone (NSA) mode, before maturation of the standalone (SA) mode with the 5G core network. Additionally, the spectrum can be dynamically shared between 4G LTE and 5G NR. To make better use of existing assets, carriers may opt to dynamically share it between 4G LTE and 5G NR. The spectrum is multiplexed over time between both generations of mobile networks, while still using the 4G LTE network for control functions, depending on user demand. Dynamic spectrum sharing (DSS) may be deployed on existing 4G LTE equipment as long as it is compatible with 5G NR. Only the 5G NR terminal needs to be compatible with DSS. The non-standalone (NSA) mode of 5G NR refers to an option of 5G NR deployment that depends on the control plane of an existing 4G LTE network for control functions, while 5G NR is exclusively focused on the user plane. This is reported to speed up 5G adoption, however some operators and vendors have criticized prioritizing the introduction of 5G Dss NSA on the grounds that it could hinder the implementation of the standalone mode of the network. The standalone (SA) mode of 5G NR refers to using 5G cells for both signalling and information transfer. It includes the new 5G Packet Core architecture instead of relying on the 4G Evolved Packet Core, to allow the deployment of 5G without the LTE network. It is expected to have lower cost, better efficiency, and to assist development of new use cases. However, initial deployment might see slower speed than existing network due to the allocation of spectrum. 5G NR supports seven subcarrier spacings: The length of Cyclic Prefix is inversely proportional to the subcarrier spacing. It is 4.7 μs with 15 kHz, and 4.7 / 16 = 0.29 μs for 240 kHz subcarrier spacing. IMT-2020 – the International Telecommunication Union standards Network service Network virtualization \"What is 5G New Radio (5G NR)\". 5g.co.uk. \"Making 5G New Radio (NR) a Reality – The Global 5G Standard - IEEE Communications Society\". comsoc.org. \"3GPP specification series: 38series\". www.3gpp.org. Retrieved 2018-10-31. \"Release 16\". 3GPP. Retrieved 2020-01-06. \"Release 17\". 3GPP. Retrieved 2020-01-06. \"Release 17 timeline agreed\". 3GPP. \"Spectrum sharing for fast & smooth 5G deployment\". Ericsson. 18 March 2019. Retrieved 2020-04-22. \"5G NR Deployment Scenarios or modes-NSA,SA,Homogeneous,Heterogeneous\". rfwireless-world.com. Junko Yoshida. \"What's Behind 'Non-Standalone' 5G?\". Eetimes.com. Retrieved 2018-11-13. Teral, Stephane (2019-01-30). \"5G best choice architecture\" (PDF). ZTE. Retrieved 2019-02-01. \"3GPP Approves Plans to Fast Track 5G NR - Light Reading\". \"Standalone or Non-Standalone? 5G Trials Will Help Orange Decide - Light Reading\". \"5G Non Standalone Solution Overview\" (PDF). Archived from the original (PDF) on 2020-09-15. Retrieved 2019-02-03. \"Defining NG Core for 5G Networks - Light Reading\". \"5G: What is Standalone (SA) vs Non-Standalone (NSA) Networks?\". MediaTek. 12 November 2018. 真の5G「SA方式」の不都合な真実、当初遅くなるのはドコモだけ？"
+        },
+        "collectMetadata": {
+            "requestedDate": "2023-10-16T00:00:00",
+            "ingestedDate": "2023-10-22T02:01:08.986502"
+        },
+        "extractionMetadata": [
+            {
+                "id": "WikitextExtractor",
+                "linkExtractionDate": "2023-10-22T02:01:08.989837",
+                "links": [
+                    {
+                        "fragment": null,
+                        "link": "Radio_access_technology",
+                        "text": null,
+                        "title": "radio access technology"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3GPP",
+                        "text": null,
+                        "title": "3GPP"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "5G",
+                        "text": null,
+                        "title": "5G"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Orthogonal_frequency-division_multiplexing",
+                        "text": null,
+                        "title": "orthogonal frequency-division multiplexing"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "4G",
+                        "text": null,
+                        "title": "4G"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "LTE_(telecommunication)",
+                        "text": "LTE",
+                        "title": "LTE (telecommunication)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "File:CableFree_LTE_Remote_Radio_Head_(RRH).jpg",
+                        "text": "thumb|right|[[CableFree]] 5G Radio ([[remote radio unit|RRH]]) with 2x2 MIMO, 2x20W RF power and CPRI fibre interface",
+                        "title": "File:CableFree LTE Remote Radio Head (RRH).jpg"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CableFree",
+                        "text": null,
+                        "title": "CableFree"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Remote_radio_unit",
+                        "text": "RRH",
+                        "title": "remote radio unit"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Ooredoo",
+                        "text": null,
+                        "title": "Ooredoo"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Qatar",
+                        "text": null,
+                        "title": "Qatar"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3GPP",
+                        "text": null,
+                        "title": "3GPP"
+                    },
+                    {
+                        "fragment": "Standards",
+                        "link": "3GPP",
+                        "text": "Release 15",
+                        "title": "3GPP"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "COVID-19_pandemic",
+                        "text": null,
+                        "title": "COVID-19 pandemic"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "5G_Packet_Core",
+                        "text": null,
+                        "title": "5G Packet Core"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Evolved_Packet_Core",
+                        "text": null,
+                        "title": "Evolved Packet Core"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Cyclic_prefix",
+                        "text": "Cyclic Prefix",
+                        "title": "Cyclic prefix"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Cyclic_prefix",
+                        "text": "Cyclic Prefix",
+                        "title": "Cyclic prefix"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "IMT-2020",
+                        "text": null,
+                        "title": "IMT-2020"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Network_service",
+                        "text": null,
+                        "title": "Network service"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Network_virtualization",
+                        "text": null,
+                        "title": "Network virtualization"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Mobile_telecommunications",
+                        "text": null,
+                        "title": "Category:Mobile telecommunications"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:3GPP_standards",
+                        "text": null,
+                        "title": "Category:3GPP standards"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:5G_(telecommunication)",
+                        "text": null,
+                        "title": "Category:5G (telecommunication)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Internet_of_things",
+                        "text": null,
+                        "title": "Category:Internet of things"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Computer-related_introductions_in_2018",
+                        "text": null,
+                        "title": "Category:Computer-related introductions in 2018"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Wireless_networking_standards",
+                        "text": null,
+                        "title": "Category:Wireless networking standards"
+                    }
+                ],
+                "nbLinks": 27,
+                "nbTables": 1,
+                "nbTexts": 11,
+                "tableExtractionDate": "2023-10-22T02:01:08.989837",
+                "tables": [
+                    {
+                        "endOffset": 8381,
+                        "startOffset": 7660,
+                        "tableCaption": null,
+                        "tableContent": "{| class=\"sortable wikitable\"\n! data-sort-type=\"number\" | Sub-Carrier Spacing <small>(kHz)</small>\n! data-sort-type=\"number\" | <abbr title=\"The duration of a timeslice allocated to a certain endpoint\">Slot duration <small>(ms)</small></abbr>\n! class=\"unsortable\" | Frequency Bands\n! class=\"unsortable\" | Notes\n|-\n| 15\n| 1\n| FR1\n| Same as LTE\n|-\n| 30\n| 0.5\n| FR1\n| \n|-\n| 60\n| 0.25\n| FR1 and FR2\n| Both normal [[Cyclic prefix|Cyclic Prefix]] (CP) and extended CP may be used with 60&nbsp;kHz subcarrier spacing\n|-\n| 120\n| 0.125\n| FR2\n| \n|-\n| 240\n| 0.0625\n| FR2\n| This is only possible for search and measurement purposes, using the Synchronization Signal Block (SSB)\n|-\n| 480\n| 0.03125\n| FR2\n|\n|-\n| 960\n| 0.01565\n| FR2\n|\n|}",
+                        "tableData": [
+                            [
+                                "Sub-Carrier Spacing (kHz)",
+                                "Slot duration (ms)",
+                                "Frequency Bands",
+                                "Notes"
+                            ],
+                            [
+                                "15",
+                                "1",
+                                "FR1",
+                                "Same as LTE"
+                            ],
+                            [
+                                "30",
+                                "0.5",
+                                "FR1",
+                                ""
+                            ],
+                            [
+                                "60",
+                                "0.25",
+                                "FR1 and FR2",
+                                "Both normal Cyclic Prefix (CP) and extended CP may be used with 60 kHz subcarrier spacing"
+                            ],
+                            [
+                                "120",
+                                "0.125",
+                                "FR2",
+                                ""
+                            ],
+                            [
+                                "240",
+                                "0.0625",
+                                "FR2",
+                                "This is only possible for search and measurement purposes, using the Synchronization Signal Block (SSB)"
+                            ],
+                            [
+                                "480",
+                                "0.03125",
+                                "FR2",
+                                ""
+                            ],
+                            [
+                                "960",
+                                "0.01565",
+                                "FR2",
+                                ""
+                            ]
+                        ],
+                        "tableNum": 0
+                    }
+                ],
+                "technology": "WikitextExtractor",
+                "textExtractionDate": "2023-10-22T02:01:08.989837",
+                "texts": [
+                    {
+                        "endOffset": 1620,
+                        "index": 0,
+                        "level": 0,
+                        "startOffset": 0,
+                        "title": null,
+                        "value": "{{Short description|Radio access technology for 5G networks}}\n\n5G NR (New Radio) is a new [[radio access technology]] (RAT) developed by the 3rd Generation Partnership Project ([[3GPP]]) for the [[5G]] (fifth generation) mobile network.<ref>{{cite web|url=https://5g.co.uk/guides/what-is-5g-new-radio/|title=What is 5G New Radio (5G NR)|website=5g.co.uk}}</ref> It was designed to be the global standard for the air interface of 5G networks.<ref>{{cite web|url=https://comsoc.org/webinars/making-5g-new-radio-nr-reality-%E2%80%93-global-5g-standard|title=Making 5G New Radio (NR) a Reality – The Global 5G Standard - IEEE Communications Society|website=comsoc.org}}</ref> It is based on [[orthogonal frequency-division multiplexing]] (OFDM), as is the [[4G]] (fourth generation) long-term evolution ([[LTE (telecommunication)|LTE]]) standard. \n\nThe 3GPP specification 38 series<ref>{{Cite web|url=http://www.3gpp.org/ftp/Specs/html-info/38-series.htm|title=3GPP specification series: 38series|website=www.3gpp.org|language=en-gb|access-date=2018-10-31}}</ref> provides the technical details behind 5G NR, the successor of LTE.\n\nThe study of NR within 3GPP started in 2015, and the first specification was made available by the end of 2017.  While the 3GPP standardization process was ongoing, the industry had already begun efforts to implement infrastructure compliant with the draft standard, with the first large-scale commercial launch of 5G NR having occurred in the end of 2018.  Since 2019, many operators have deployed 5G NR networks and handset manufacturers have developed 5G NR enabled handsets."
+                    },
+                    {
+                        "endOffset": 2108,
+                        "index": 1,
+                        "level": 2,
+                        "startOffset": 1620,
+                        "title": "Frequency bands",
+                        "value": "[[File:CableFree LTE Remote Radio Head (RRH).jpg|thumb|right|[[CableFree]] 5G Radio ([[remote radio unit|RRH]]) with 2x2 MIMO, 2x20W RF power and CPRI fibre interface]]\n\n{{main|5G NR frequency bands}}\n\n5G NR uses frequency bands in two broad frequency ranges:\n# Frequency Range 1 (FR1), for bands within  MHz –  MHz\n# Frequency Range 2 (FR2), for bands within  MHz –  MHz"
+                    },
+                    {
+                        "endOffset": 2324,
+                        "index": 2,
+                        "level": 2,
+                        "startOffset": 2108,
+                        "title": "Network deployments",
+                        "value": "{{main|List of 5G NR networks}}\n[[Ooredoo]] was the first carrier to launch a commercial 5G NR network, in May 2018 in [[Qatar]].  Other carriers around the world have been following suit."
+                    },
+                    {
+                        "endOffset": 3527,
+                        "index": 3,
+                        "level": 2,
+                        "startOffset": 2324,
+                        "title": "Development",
+                        "value": "In 2018, [[3GPP]] published [[3GPP#Standards|Release 15]], which includes what is described as \"Phase 1\" standardization for 5G NR. The timeline for Release 16, which will be \"5G phase 2\", follows a freeze date of March 2020 and a completion date of June 2020,<ref>{{Cite web|title=Release 16|url=https://www.3gpp.org/release-16|access-date=2020-01-06|website=3GPP}}</ref> Release 17 was originally scheduled for delivery in September 2021.<ref>{{Cite web|title=Release 17|url=https://www.3gpp.org/release-17|access-date=2020-01-06|website=3GPP}}</ref> but, because of the [[COVID-19 pandemic]], it was rescheduled for June 2022.<ref>{{cite web |title=Release 17 timeline agreed |url=https://www.3gpp.org/news-events/2145-rel-17_newtimeline |website=3GPP}}</ref>\n\nRelease 18 work has started in 3GPP. Rel.18 is referred to as \"NR Advanced\" signifying another milestone in wireless communication systems. NR Advanced will include features such as eXtended Reality (XR), AI/ML studies, and Mobility enhancements. Mobility is in the core of 3GPP technology and has so far been handled on Layer 3 (RRC), now, in Rel-18 the work on mobility is to introduce lower layer triggered mobility."
+                    },
+                    {
+                        "endOffset": 7544,
+                        "index": 4,
+                        "level": 2,
+                        "startOffset": 3527,
+                        "title": "Deployment modes",
+                        "value": "Initial 5G NR launches will depend on existing 4G LTE infrastructure in non-standalone (NSA) mode, before maturation of the standalone (SA) mode with the 5G core network.  Additionally, the spectrum can be dynamically shared between 4G LTE and 5G NR."
+                    },
+                    {
+                        "endOffset": 4525,
+                        "index": 5,
+                        "level": 3,
+                        "startOffset": 3800,
+                        "title": "Dynamic spectrum sharing",
+                        "value": "To make better use of existing assets, carriers may opt to dynamically share it between 4G LTE and 5G NR.  The spectrum is multiplexed over time between both generations of mobile networks, while still using the 4G LTE network for control functions, depending on user demand.  Dynamic spectrum sharing (DSS) may be deployed on existing 4G LTE equipment as long as it is compatible with 5G NR.  Only the 5G NR terminal needs to be compatible with DSS.<ref>{{Cite web|url=https://www.ericsson.com/en/networks/offerings/5g/sharing-spectrum-with-ericsson-spectrum-sharing|title=Spectrum sharing for fast & smooth 5G deployment|website=Ericsson|date=18 March 2019 |access-date=2020-04-22}}</ref>"
+                    },
+                    {
+                        "endOffset": 5843,
+                        "index": 6,
+                        "level": 3,
+                        "startOffset": 4525,
+                        "title": "Non-standalone mode",
+                        "value": "The non-standalone (NSA) mode of 5G NR refers to an option of 5G NR deployment that depends on the control plane of an existing 4G LTE network for control functions, while 5G NR is exclusively focused on the user plane.<ref name=SANSA>{{cite web|url=http://rfwireless-world.com/Terminology/5G-NR-deployment-scenarios-or-modes.html|title=5G NR Deployment Scenarios or modes-NSA,SA,Homogeneous,Heterogeneous|website=rfwireless-world.com}}</ref><ref>{{cite web|author=Junko Yoshida |url=https://eetimes.com/author.asp?section_id=36&doc_id=1331434 |title=What's Behind 'Non-Standalone' 5G? |publisher=Eetimes.com |access-date=2018-11-13}}</ref> This is reported to speed up 5G adoption, however some operators and vendors have criticized prioritizing the introduction of 5G Dss NSA on the grounds that it could hinder the implementation of the standalone mode of the network.<ref name=\":0\">{{Cite web|url=https://res-www.zte.com.cn/mediares/zte/Files/PDF/white_book/5g-best-choice-architecture.pdf|title=5G best choice architecture|last=Teral|first=Stephane|date=2019-01-30|website=ZTE|access-date=2019-02-01}}</ref><ref>{{cite web|url=https://lightreading.com/mobile/5g/3gpp-approves-plans-to-fast-track-5g-nr/d/d-id/731018|title=3GPP Approves Plans to Fast Track 5G NR - Light Reading}}</ref>"
+                    },
+                    {
+                        "endOffset": 7544,
+                        "index": 7,
+                        "level": 3,
+                        "startOffset": 5843,
+                        "title": "Standalone mode",
+                        "value": "The standalone (SA) mode of 5G NR refers to using 5G cells for both signalling and information transfer.<ref name=SANSA /> It includes the new [[5G Packet Core]] architecture instead of relying on the 4G [[Evolved Packet Core]],<ref>{{cite web|url=https://lightreading.com/mobile/5g/standalone-or-non-standalone-5g-trials-will-help-orange-decide/d/d-id/744057|title=Standalone or Non-Standalone? 5G Trials Will Help Orange Decide - Light Reading}}</ref><ref>{{cite web|url=https://cisco.com/c/en/us/td/docs/wireless/asr_5000/21-5_N5-8/5G-NSA/21-5-5G-NSA-Solution-Guide/21-5-5G-NSA-Solutions-Guide_chapter_01.pdf|title=5G Non Standalone Solution Overview|access-date=2019-02-03|archive-date=2020-09-15|archive-url=https://web.archive.org/web/20200915130454/https://www.cisco.com/c/en/us/td/docs/wireless/asr_5000/21-5_N5-8/5G-NSA/21-5-5G-NSA-Solution-Guide/21-5-5G-NSA-Solutions-Guide_chapter_01.pdf|url-status=dead}}</ref> to allow the deployment of 5G without the LTE network.<ref>{{cite web|url=https://lightreading.com/mobile/5g/defining-ng-core-for-5g-networks/a/d-id/730633|title=Defining NG Core for 5G Networks - Light Reading}}</ref> It is expected to have lower cost, better efficiency, and to assist development of new use cases.<ref name=\":0\" /><ref>{{cite web|url=https://www.mediatek.com/blog/5g-what-is-standalone-sa-vs-non-standalone-nsa|title=5G: What is Standalone (SA) vs Non-Standalone (NSA) Networks?|date=12 November 2018|website=MediaTek}}</ref> However, initial deployment might see slower speed than existing network due to the allocation of spectrum.<ref>真の5G「SA方式」の不都合な真実、当初遅くなるのはドコモだけ？</ref>"
+                    },
+                    {
+                        "endOffset": 8584,
+                        "index": 8,
+                        "level": 2,
+                        "startOffset": 7544,
+                        "title": "Numerology (sub-carrier spacing)",
+                        "value": "{{update section|date=July 2022}}\n5G NR supports seven subcarrier spacings:\n\n\n\nThe length of [[Cyclic prefix|Cyclic Prefix]] is inversely proportional to the subcarrier spacing. It is 4.7 μs with 15 kHz, and 4.7 / 16 = 0.29 μs for 240 kHz subcarrier spacing."
+                    },
+                    {
+                        "endOffset": 8720,
+                        "index": 9,
+                        "level": 2,
+                        "startOffset": 8584,
+                        "title": "See also",
+                        "value": "* [[IMT-2020]] – the International Telecommunication Union standards\n* [[Network service]]\n* [[Network virtualization]]"
+                    },
+                    {
+                        "endOffset": 9094,
+                        "index": 10,
+                        "level": 2,
+                        "startOffset": 8720,
+                        "title": "References",
+                        "value": "{{reflist}}\n\n{{Mobile telecommunications standards}}\n{{Mobile phones}}\n{{Internet Access}}\n{{Wireless video}}\n\n\n[[Category:Mobile telecommunications]]\n[[Category:3GPP standards]]\n[[Category:5G (telecommunication)]]\n[[Category:Internet of things]]\n[[Category:Computer-related introductions in 2018]]\n[[Category:Wireless networking standards]]"
+                    }
+                ]
+            }
+        ],
+        "statsMetadata": {
+            "textSize": 7914
+        },
+        "preprocessingMetadata": [
+            {
+                "technologyResults": [
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "4G speed",
+                                "Beyond 3.75G",
+                                "4G mobile",
+                                "U.S. 4G",
+                                "Beyond 3.5G",
+                                "Beyond 3.9G",
+                                "4-G",
+                                "4-g",
+                                "4th Generation Network",
+                                "Fourth-generation mobile technology",
+                                "4G",
+                                "4g",
+                                "Sprint 4G",
+                                "4G confusion",
+                                "4th generation",
+                                "Beyond 3G",
+                                "B3G",
+                                "Fourth generation cellular network",
+                                "4g wireless",
+                                "AT&T 4G",
+                                "4G technology",
+                                "Verizon 4G"
+                            ],
+                            "uriSent": "4G",
+                            "wikipediaId": "486547",
+                            "id": "Q79697",
+                            "label": "4G"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Remote Radio Head",
+                                "Remote radio unit",
+                                "Remote radio head",
+                                "RRH"
+                            ],
+                            "uriSent": "Remote_radio_unit",
+                            "wikipediaId": "29152171",
+                            "id": "Q1555675",
+                            "label": "Remote radio head"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Network-services",
+                                "network service"
+                            ],
+                            "uriSent": "Network_service",
+                            "wikipediaId": "788676",
+                            "id": "Q1640628",
+                            "label": "network service"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Network virtualisation",
+                                "network virtualization",
+                                "VLAN, VPN and VPLS",
+                                "network virtualisation",
+                                "Virtual network"
+                            ],
+                            "uriSent": "Network_virtualization",
+                            "wikipediaId": "13588444",
+                            "id": "Q4112081",
+                            "label": "network virtualization"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "IMT-2020",
+                                "IMT 2020",
+                                "International Mobile Telecommunications-2020"
+                            ],
+                            "uriSent": "IMT-2020",
+                            "wikipediaId": "47032220",
+                            "id": "Q65090058",
+                            "label": "IMT-2020"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "5G in America",
+                                "EMBB",
+                                "5G conspiracy theories",
+                                "5th generation mobile networks",
+                                "Next Generation Core",
+                                "5g technology",
+                                "5-g",
+                                "5G in the United States",
+                                "5th-Generation Wireless Systems",
+                                "5g",
+                                "URLLC",
+                                "5G conspiracy theory",
+                                "Fifth-Generation wireless",
+                                "Misinformation about 5G",
+                                "5th Generation",
+                                "5g Core",
+                                "5G mobile",
+                                "5G conspiracies",
+                                "5G conspiracy",
+                                "5G wireless technology",
+                                "MMTC",
+                                "5-G",
+                                "5G",
+                                "Security issues surrounding 5G",
+                                "5G network",
+                                "5G-Advanced",
+                                "Controversies surrounding 5G"
+                            ],
+                            "uriSent": "5G",
+                            "wikipediaId": "23475353",
+                            "id": "Q1363408",
+                            "label": "5G"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Mobile phone communication",
+                                "Mobile Telecommunications",
+                                "Mobile data connection",
+                                "Mobile communications",
+                                "Mobile telecommunications",
+                                "mobile telephony",
+                                "Cellular telephony",
+                                "Mobile Telephony",
+                                "Mobile communication",
+                                "Mobile phone telephony",
+                                "Mobile telecommunication",
+                                "Mobile telecommunication technology"
+                            ],
+                            "uriSent": "Mobile_telecommunications",
+                            "wikipediaId": "1145887",
+                            "id": "Q992968",
+                            "label": "mobile telephony"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Rumaihi",
+                                "دولة قطر",
+                                "🇶🇦",
+                                "قطر",
+                                "Qtaar",
+                                "Dawlet al Qaṭar",
+                                "Dawlat Qatar",
+                                "Etymology of Qatar",
+                                "Romaihi",
+                                "qa",
+                                "Qatari",
+                                "Qtar",
+                                "Qater",
+                                "Qatar",
+                                "Dawlet Qaṭar",
+                                "Dawlat al Qaṭar",
+                                "Dawlat al-Qaṭar",
+                                "Al Bu Romaih",
+                                "Dawlat Qaṭar",
+                                "Biodiversity of Qatar",
+                                "State of Qatar",
+                                "Dawlet al-Qaṭar",
+                                "qat",
+                                "Dawlet Al-Qatar",
+                                "Museums in Qatar",
+                                "Languages of Qatar",
+                                "ISO 3166-1:QA",
+                                "Science and technology in Qatar",
+                                "Law of Qatar",
+                                "Qaṭar",
+                                "Name of Qatar",
+                                "Quatar"
+                            ],
+                            "uriSent": "Qatar",
+                            "wikipediaId": "8238258",
+                            "id": "Q846",
+                            "label": "Qatar"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "System Architecture Evolution",
+                                "Evolved Packet Data Gateway",
+                                "Evolved Packet System",
+                                "PDN Gateway",
+                                "Evolved Packet Core",
+                                "4G Core",
+                                "LTE Core",
+                                "SAE",
+                                "AIPN",
+                                "System architecture evolution",
+                                "Mobility Management Entity",
+                                "Serving Gateway"
+                            ],
+                            "uriSent": "Evolved_Packet_Core",
+                            "wikipediaId": "13774696",
+                            "id": "Q1099695",
+                            "label": "System Architecture Evolution"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "CP-OFDM",
+                                "Cyclic prefix",
+                                "Cyclic Prefix",
+                                "Cyclic prefix for optical OFDM"
+                            ],
+                            "uriSent": "Cyclic_prefix",
+                            "wikipediaId": "4772075",
+                            "id": "Q5198224",
+                            "label": "Cyclic prefix"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "3rd Generation Partnership Project",
+                                "Third Generation Partnership Project",
+                                "3GPP",
+                                "3gpp"
+                            ],
+                            "uriSent": "3GPP",
+                            "wikipediaId": "397301",
+                            "id": "Q229804",
+                            "label": "3rd Generation Partnership Project"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Ooredoo Q.P.S.C.",
+                                "Qatar Telecom",
+                                "Q-Tel",
+                                "Virgin Mobile Qatar",
+                                "Qtel",
+                                "Ooredoo",
+                                "Ooredo"
+                            ],
+                            "uriSent": "Ooredoo",
+                            "wikipediaId": "2041546",
+                            "id": "Q919935",
+                            "label": "Ooredoo"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Orthogonal frequency division modulation",
+                                "OFDM",
+                                "CODFM",
+                                "FLASH-OFDM",
+                                "Optical Orthogonal Code",
+                                "OFDM system comparison table",
+                                "Orthogonal frequency-division multiplexing",
+                                "Coded orthogonal frequency division modulation",
+                                "Coded OFDM",
+                                "Discrete Multitone Modulation",
+                                "Discrete Multi-Tone",
+                                "Discrete multitone",
+                                "Ofdm",
+                                "BST-COFDM",
+                                "Coded orthogonal frequency division multiplexing",
+                                "Coded orthogonal frequency-division multiplexing",
+                                "Orthogonal Frequency Division Multiplexing",
+                                "Ορθογώνια Πολύπλεξη Διαίρεσης Συχνότητας",
+                                "Discrete multi-tone modulation",
+                                "Bandwidth Efficiency Comparison between single carrier and multi carrier optical transmission system",
+                                "Optical orthogonal code",
+                                "Discrete multitone modulation",
+                                "Flash-OFDM",
+                                "Discrete multitone technique",
+                                "COFDM",
+                                "Orthogonal frequency division multiplexing",
+                                "ODFM",
+                                "Inter Carrier Interface"
+                            ],
+                            "uriSent": "Orthogonal_frequency-division_multiplexing",
+                            "wikipediaId": "22691",
+                            "id": "Q375889",
+                            "label": "Orthogonal frequency-division multiplexing"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "3.9 G",
+                                "4G LTE",
+                                "LTE telecommunication",
+                                "Lte wireless standard",
+                                "TD-LTE",
+                                "Long-term Evolution",
+                                "Long-Term Evolution Time-Division Duplex",
+                                "3,9G",
+                                "3GPP-LTE",
+                                "TDD LTE",
+                                "3.95G",
+                                "LTE-TDD",
+                                "Long term evolution",
+                                "Long-term evolution",
+                                "LTE timeline",
+                                "Long Term Evolution",
+                                "3.9G",
+                                "Long-Term Evolution",
+                                "Long term evolution wireless",
+                                "Lte standard",
+                                "3GPP long-term evolution",
+                                "LTE-FDD",
+                                "3GPP Long Term Evolution",
+                                "Lte wireless",
+                                "TDD-LTE",
+                                "Advanced eXtended Global Platform",
+                                "Advance 4G",
+                                "3GPP Long-Term Evolution",
+                                "3GPP long term evolution",
+                                "LTE (telecommunication)",
+                                "Long term evolution wireless standard",
+                                "Time-Division Long-Term Evolution",
+                                "LTE 4G",
+                                "Long term evolution standard",
+                                "LTE",
+                                "LTE network",
+                                "LTE phone",
+                                "LTE TDD",
+                                "AXGP",
+                                "Long-Term evolution"
+                            ],
+                            "uriSent": "LTE_(telecommunication)",
+                            "wikipediaId": "19752979",
+                            "id": "Q79703",
+                            "label": "Long Term Evolution"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "2019–20 novel coronavirus pandemic",
+                                "Covid 19 pandemic",
+                                "2019–2020 COVID-19 pandemic",
+                                "2019–20 Wuhan coronavirus outbreak",
+                                "2019–2022 outbreak of COVID-19",
+                                "2019–2022 coronavirus pandemic",
+                                "2019nCov outbreak",
+                                "Chinese coronavirus outbreak",
+                                "2019-2020 outbreak",
+                                "2019-2020 SARS-CoV-2 outbreak",
+                                "2019–20 coronavirus epidemic",
+                                "2020 covid-19 pandemic",
+                                "2019-nCoV epidemic",
+                                "2019-20 Wuhan coronavirus outbreak",
+                                "SARS-CoV-2 outbreak",
+                                "2019-20 novel coronavirus epidemic",
+                                "Corona2020",
+                                "Covid-19 Pandemic",
+                                "Coronavirus 2019 pandemic",
+                                "Controversies related to the 2019-20 Wuhan coronavirus outbreak",
+                                "Corona epidemic",
+                                "2019-2020 Coronavirus outbreak",
+                                "China coronavirus outbreak",
+                                "nCov2019 outbreak",
+                                "COVID-19 outbreak",
+                                "2019–2020 COVID-19 epidemic",
+                                "Coronavirus disease 2019 pandemic",
+                                "Controversies related to 2019–20 coronavirus outbreak",
+                                "2019-20 novel coronavirus pandemic",
+                                "COVID-19 health crisis",
+                                "2019 coronavirus epidemic",
+                                "Korona outbreak",
+                                "2019–20 China pneumonia outbreak",
+                                "The covid-19 pandemic",
+                                "COVID 19 pandemic",
+                                "2020 corona outbreak",
+                                "Coronavirus outbreak",
+                                "Pandemic of coronavirus disease 2019",
+                                "2019–20 SARS outbreak",
+                                "2019–2022 COVID-19 pandemic",
+                                "2019-present coronavirus pandemic",
+                                "Outbreak of COVID-19",
+                                "SARS CoV-2 pandemic",
+                                "2020 corona pandemic",
+                                "Coronavirus pandemic",
+                                "2020 coronavirus epidemic",
+                                "CoVid-19 outbreak",
+                                "2020 corona virus epidemic",
+                                "2019-20 coronavirus epidemic",
+                                "2020 CoViD pandemic",
+                                "2020 SARS-CoV-2 pandemic",
+                                "COVID-19 crisis",
+                                "Corona 2020",
+                                "Corona-19 pandemic",
+                                "2019-2020 novel coronavirus outbreak",
+                                "Covid 19 outbreak",
+                                "Covid19 outbreak",
+                                "Covid pandemic",
+                                "2019-20 China pneumonia outbreak",
+                                "2019–20 Coronavirus pandemic",
+                                "2020 corona virus pandemic",
+                                "2019–2020 COVID-19 outbreak",
+                                "Outbreak of the 2019-2020 novel coronavirus",
+                                "Coronacrisis",
+                                "Pandemic of COVID-19",
+                                "2019-20 outbreak of novel coronavirus 2019-nCoV",
+                                "2019-2020 COVID-19 epidemic",
+                                "Outbreak of novel coronavirus",
+                                "Wuhan coronavirus outbreak",
+                                "2019-20 Coronavirus disease outbreak",
+                                "2020 CoVid-19 pandemic",
+                                "Epidemiology of COVID-19",
+                                "2019-2020 outbreak of coronavirus",
+                                "COVID-19 pandemic, People's Republic of China",
+                                "2019–22 coronavirus pandemic",
+                                "2020 corona epidemic",
+                                "Cov-19 pandemic",
+                                "2019–2022 Wuhan coronavirus outbreak",
+                                "2019–2020 novel coronavirus pandemic",
+                                "2019-2020 coronavirus pandemic",
+                                "COVID-19 pandemic in the World",
+                                "Controversies related to the 2019–20 coronavirus outbreak",
+                                "2019 coronavirus pandemic",
+                                "Corona outbreak",
+                                "Korona epidemic",
+                                "2019–2020 SARS outbreak",
+                                "2020 covid pandemic",
+                                "2019-20 Wuhan pneumonia outbreak",
+                                "COVID–19 pandemic",
+                                "2019-21 coronavirus pandemic",
+                                "Epidemic of COVID-19",
+                                "2019–2021 coronavirus pandemic",
+                                "2019-nCoV pandemic",
+                                "2019–20 novel coronavirus epidemic",
+                                "2019-20 Coronavirus outbreak",
+                                "COVID pandemic",
+                                "2019–2020 coronavirus outbreak",
+                                "2019–20 coronavirus pandemic",
+                                "2019-20 coronavirus outbreak",
+                                "2019–22 outbreak of novel coronavirus (2019-nCoV)",
+                                "Controversies related to the 2019–20 Wuhan coronavirus outbreak",
+                                "COVID‑19 pandemic",
+                                "2020 COVID-19 epidemic",
+                                "2019-2022 SARS-CoV-2 outbreak",
+                                "2019–20 COVID-19 pandemic",
+                                "2020 coronavirus outbreak",
+                                "2019–20 outbreak of novel coronavirus 2019-nCoV",
+                                "COVID19 Pandemic",
+                                "2019–20 coronavirus disease pandemic",
+                                "Epidemic of coronavirus disease 2019",
+                                "2020–21 COVID-19 pandemic",
+                                "2019-20 COVID-19 pandemic",
+                                "2019–2020 China pneumonia outbreak",
+                                "2019–20 Wuhan pneumonia outbreak",
+                                "COVID-19 Crisis",
+                                "2019—20 coronavirus pandemic",
+                                "2019–22 COVID-19 pandemic",
+                                "2020 corona virus outbreak",
+                                "2020 Covid-19 pandemic",
+                                "2019-2020 novel coronavirus pandemic",
+                                "2019–22 coronavirus outbreak",
+                                "Global Coronavirus pandemic",
+                                "2019-20 Coronavirus pandemic",
+                                "2019-20 COVID-19 epidemic",
+                                "2019-21 COVID-19 pandemic",
+                                "Corona-virus crisis",
+                                "2020 COVID pandemic",
+                                "2019-20 SARS outbreak",
+                                "CoVid-19 pandemic",
+                                "CoViD pandemic",
+                                "2019–2020 novel coronavirus epidemic",
+                                "2019-2020 China pneumonia outbreak",
+                                "2019-2020 coronavirus epidemic",
+                                "2019-2020 novel coronavirus epidemic",
+                                "Wuhan Coronavirus outbreak",
+                                "2019-20 Coronavirus disease 2019 outbreak",
+                                "Wuhan Coronavirus Outbreak",
+                                "CoVid-19 epidemic",
+                                "Coronvirus pandemic",
+                                "2019-20 outbreak of coronavirus",
+                                "2019-2020 COVID-19 outbreak",
+                                "2019–present coronavirus pandemic",
+                                "2020 pandemic",
+                                "2019-20 outbreak",
+                                "2019 Chinese coronavirus outbreak",
+                                "2019–2020 outbreak",
+                                "2020 COVID-19 outbreak",
+                                "COVID–19 epidemic",
+                                "Coronavirus crisis",
+                                "2019–21 COVID-19 pandemic",
+                                "SARS2 pandemic",
+                                "2019–20 COVID-19 epidemic",
+                                "COVID-19 epidemic",
+                                "Corona-virus pandemic",
+                                "2020 COVID-19 pandemic",
+                                "2020 SARS outbreak",
+                                "2020-21 COVID-19 pandemic",
+                                "Outbreak of coronavirus disease 2019",
+                                "Corona virus pandemic",
+                                "2019–20 outbreak",
+                                "Covid crisis",
+                                "2019–20 novel coronavirus outbreak",
+                                "2020 Covid pandemic",
+                                "2019–20 Wuhan coronavirus pandemic",
+                                "2019-20 Wuhan coronavirus pandemic",
+                                "Coronavirus outbreak 2020",
+                                "Coronavirus outbreak of 2019-2020",
+                                "COVID-19 pandemic",
+                                "2019-20 outbreak of novel coronavirus",
+                                "2019 COVID-19 outbreak",
+                                "2019-2020 Severe acute respiratory syndrome outbreak",
+                                "2019-20 Wuhan coronavirus epidemic",
+                                "2019–2020 coronavirus epidemic",
+                                "Coronavirus disease 2019 outbreak",
+                                "Wuhan pneumonia outbreak",
+                                "2019冠状病毒病",
+                                "China pneumonia outbreak",
+                                "Corona Pandemic",
+                                "2019-20 novel coronavirus outbreak",
+                                "coronavirus pandemic",
+                                "2019-2020 COVID-19 pandemic",
+                                "COVID19 pandemic",
+                                "Pandemic 2020",
+                                "COVID-19 pandemic*",
+                                "2019–2020 novel coronavirus outbreak",
+                                "2019 coronavirus outbreak",
+                                "Corona virus crisis",
+                                "2019-2020 coronavirus outbreak",
+                                "2019-20 coronavirus disease pandemic",
+                                "2019–20 coronavirus outbreak",
+                                "2019–2020 coronavirus pandemic",
+                                "2019–21 coronavirus pandemic",
+                                "Corona crisis",
+                                "Corona pandemic",
+                                "2019-2020 SARS outbreak",
+                                "COVID–19 outbreak",
+                                "Covid-19 pandemic",
+                                "COVID-19 pandemic, China",
+                                "2019‒20 coronavirus pandemic",
+                                "COVID-19 Pandemic",
+                                "2019–20 outbreak of novel coronavirus",
+                                "2020 Coronavirus pandemic",
+                                "Controversies related to 2019-20 coronavirus outbreak",
+                                "Pandemic of coronavirus",
+                                "Controversies related to the 2019-20 coronavirus outbreak",
+                                "COVID-19 outbreak 2020",
+                                "nCov-2019 outbreak",
+                                "2020 coronavirus pandemic",
+                                "2019–22 outbreak of COVID-19",
+                                "2019-2021 coronavirus pandemic",
+                                "outbreak of 2019-nCoV acute respiratory disease",
+                                "SARS-CoV-2 pandemic",
+                                "2019-20 COVID-19 outbreak",
+                                "2019–20 COVID-19 outbreak",
+                                "Pandemic of the Unvaccinated",
+                                "2019–20 Coronavirus outbreak",
+                                "Coronavirus epidemic",
+                                "2019-20 coronavirus pandemic",
+                                "Covid19 pandemic",
+                                "2019-nCoV outbreak"
+                            ],
+                            "uriSent": "COVID-19_pandemic",
+                            "wikipediaId": "62750956",
+                            "id": "Q81068910",
+                            "label": "COVID-19 pandemic"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "radio access technology",
+                                "RAT"
+                            ],
+                            "uriSent": "Radio_access_technology",
+                            "wikipediaId": "40735869",
+                            "id": "Q17121585",
+                            "label": "radio access technology"
+                        }
+                    },
+                    {
+                        "wikilink": {
+                            "aliasesText": [
+                                "Privacy and the Internet of things",
+                                "Internet of Everything",
+                                "IoT data exchange",
+                                "Visual internet of things",
+                                "Applications for Internet of Things devices",
+                                "Criticism of the Internet of Things",
+                                "IoT",
+                                "Internet of thing",
+                                "Security flaws in the Internet of Things",
+                                "Internet of things",
+                                "Environmental impact of the Internet of Things",
+                                "Applications of Internet of Things devices",
+                                "IoT security",
+                                "Privacy issues with the Internet of Things",
+                                "Privacy implications of the Internet of things",
+                                "Intelligence of Things",
+                                "History of the Internet of Things",
+                                "Internet-of-Things",
+                                "Peter T. Lewis",
+                                "An internet of things",
+                                "Privacy risks of the Internet of Things",
+                                "Internet of Medical Things",
+                                "Internet of behavior",
+                                "Internet of Things",
+                                "Privacy concerns with the Internet of things",
+                                "The Internet of Things",
+                                "Privacy issues in the Internet of Things",
+                                "Security vulnerabilities in the Internet of Things",
+                                "Internet of data",
+                                "Internet Of Things",
+                                "IoT Data Exchange",
+                                "Security concerns about the Internet of Things"
+                            ],
+                            "uriSent": "Internet_of_things",
+                            "wikipediaId": "12057519",
+                            "id": "Q251212",
+                            "label": "Internet of things"
+                        }
+                    }
+                ],
+                "technologyExecution": {
+                    "beginDate": "2024-01-17T13:11:29.492654",
+                    "endDate": "2024-01-17T13:11:29.955446"
+                },
+                "technology": {
+                    "name": "WikiLink Alias",
+                    "company": "Orange",
+                    "id": "wikilink_alias",
+                    "type": "link",
+                    "version": "Unknown"
+                }
+            },
+            {
+                "technologyResults": [
+                    {
+                        "dagobah": {
+                            "debug": {
+                                "cpaTaskTimeSec": 0.0,
+                                "memoryUsage": 0.0,
+                                "entityScoringTimeSec": 0.06,
+                                "ceaTaskTimeSec": 0.51,
+                                "abnormalLookupMentions": [],
+                                "ctaTaskTimeSec": 0.43,
+                                "avgLookupCandidate": 70.0,
+                                "subgraphConstructionTimeSec": 1.81
+                            },
+                            "preprocessed": {
+                                "primitiveTyping": [
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 0
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 1
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 2
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 0.43
+                                            }
+                                        ],
+                                        "columnIndex": 3
+                                    }
+                                ],
+                                "headerInfo": {
+                                    "hasHeader": true,
+                                    "headerScore": 0.39,
+                                    "headerLabel": [
+                                        "Sub-Carrier Spacing (kHz)",
+                                        "Slot duration (ms)",
+                                        "Frequency Bands",
+                                        "Notes"
+                                    ],
+                                    "headerPosition": 0
+                                },
+                                "primaryKeyInfo": {
+                                    "primaryKeyScore": 0.78,
+                                    "primaryKeyPosition": 2,
+                                    "hasPrimaryKey": true
+                                },
+                                "tableOrientation": {
+                                    "orientationScore": 0.78,
+                                    "orientationLabel": "HORIZONTAL"
+                                }
+                            },
+                            "executionTimeSec": {
+                                "preprocessingTime": 0.22,
+                                "totalTime": 8.89,
+                                "lookupTime": 1.54
+                            },
+                            "annotated": {
+                                "CTA": [
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 0.57,
+                                                "score": 0.05,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q27555384"
+                                            },
+                                            {
+                                                "coverage": 0.57,
+                                                "score": 0.05,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q21014462"
+                                            },
+                                            {
+                                                "coverage": 0.57,
+                                                "score": 0.03,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q189082"
+                                            },
+                                            {
+                                                "coverage": 0.57,
+                                                "score": 0.03,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q16521"
+                                            }
+                                        ],
+                                        "column": 2
+                                    }
+                                ],
+                                "tableDataRevised": [
+                                    [
+                                        "Sub-Carrier Spacing (kHz)",
+                                        "Slot duration (ms)",
+                                        "Frequency Bands",
+                                        "Notes"
+                                    ],
+                                    [
+                                        "15",
+                                        "1",
+                                        "FR1",
+                                        "Same as LTE"
+                                    ],
+                                    [
+                                        "30",
+                                        "0.5",
+                                        "FR1",
+                                        ""
+                                    ],
+                                    [
+                                        "60",
+                                        "0.25",
+                                        "FR1 and FR2",
+                                        "Both normal Cyclic Prefix (CP) and extended CP may be used with 60 kHz subcarrier spacing"
+                                    ],
+                                    [
+                                        "120",
+                                        "0.125",
+                                        "FR2",
+                                        ""
+                                    ],
+                                    [
+                                        "240",
+                                        "0.0625",
+                                        "FR2",
+                                        "This is only possible for search and measurement purposes, using the Synchronization Signal Block (SSB)"
+                                    ],
+                                    [
+                                        "480",
+                                        "0.03125",
+                                        "FR2",
+                                        ""
+                                    ],
+                                    [
+                                        "960",
+                                        "0.01565",
+                                        "FR2",
+                                        ""
+                                    ]
+                                ],
+                                "CPA": [],
+                                "CEA": [
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q62657289"
+                                        },
+                                        "column": 2,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q62657289"
+                                        },
+                                        "column": 2,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.05,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29710154"
+                                        },
+                                        "column": 2,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q54835151"
+                                        },
+                                        "column": 2,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q54835151"
+                                        },
+                                        "column": 2,
+                                        "row": 5
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q54835151"
+                                        },
+                                        "column": 2,
+                                        "row": 6
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.08,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q54835151"
+                                        },
+                                        "column": 2,
+                                        "row": 7
+                                    }
+                                ]
+                            }
+                        },
+                        "index": 0
+                    }
+                ],
+                "technologyExecution": {
+                    "beginDate": "2024-01-17T15:10:28.432308",
+                    "endDate": "2024-01-17T15:10:38.583738"
+                },
+                "technology": {
+                    "name": "DAGOBAH Table Annotation",
+                    "company": "Orange",
+                    "id": "dagobah_anotation",
+                    "type": "table",
+                    "version": "Unknown"
+                }
+            }
+        ]
+    }
+}
