@@ -270,25 +270,34 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Which C\u00e9r\u00e9monie, with Ann\u00e9e was on 1999, happened the 3rd according to Ann\u00e9e?",
+                "question": "What was the C\u00e9r\u00e9monie when the Ann\u00e9e was before 2001 and the Titre string contains belle?",
                 "answers": [
-                    "FHM",
-                    "Saturn Awards",
-                    "Teen Choice Awards"
+                    "FHM"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only C\u00e9r\u00e9monie, with Ann\u00e9e was before 2001, have Titre string ends with vampires?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which C\u00e9r\u00e9monie, with Ann\u00e9e was before 2001, happened the 13rd according to Ann\u00e9e?",
+                "answers": [
+                    "Csapnival\u00f3 Awards",
+                    "MTV Movie Awards",
+                    "Teen Choice Awards",
+                    "Saturn Awards"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which C\u00e9r\u00e9monie, with Ann\u00e9e was after 2001, happened the 14th according to Ann\u00e9e?",
-                "answers": [
-                    "Teen Choice Awards"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre was Meilleure actrice dans une com\u00e9diepour Sexe Intentions and when the Titre was Meilleure r\u00e9v\u00e9lation f\u00e9minine de l'ann\u00e9epour Souviens-toi... l'\u00e9t\u00e9 dernier?",
+                "question": "How many years had passed between when the Titre was Meilleur m\u00e9chantpour Sexe Intentions and when the Titre was Meilleur couple dans un film de com\u00e9diepour Scooby-Doo (film) (avec Freddie Prinze Jr.)?",
                 "answers": [
                     "2"
                 ],
@@ -296,9 +305,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many C\u00e9r\u00e9monie had Ann\u00e9e was before 2000?",
+                "question": "How many C\u00e9r\u00e9monie had Ann\u00e9e was before 2004?",
                 "answers": [
-                    "10"
+                    "30"
                 ],
                 "reasoning_type": "counting"
             }

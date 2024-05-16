@@ -252,15 +252,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Tournoi when the R\u00e9sultaten 2014 is Finale and the Cat\u00e9gorie string starts with Premier?",
+                "question": "What was the Tournoi when the Cat\u00e9gorie string starts with Premier and the Lieu string starts with Sydney?",
                 "answers": [
-                    "Wuhan Open"
+                    "Sydney International"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Tournoi when the Surface string ends with battue and the Cat\u00e9gorie is International?",
+                "question": "What was the Tournoi when the Cat\u00e9gorie is International and the Surface string contains battue?",
                 "answers": [
                     "Portugal Open",
                     "N\u00fcrnberger Versicherungscup"
@@ -269,7 +269,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Tournoi, with Lieu string starts with New, have Cat\u00e9gorie string starts with Premier?",
+                "question": "Does every Tournoi, with Lieu string starts with Wimbledon, have R\u00e9sultaten 2014 is Finale?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Tournoi, with Surface string ends with battue, have Lieu string starts with Nuremberg?",
                 "answers": [
                     "No"
                 ],
@@ -277,11 +285,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Tournoi, with Cat\u00e9gorie string contains Premier, have Surface string ends with battue?",
+                "question": "How many Tournoi had R\u00e9sultaten 2014 string contains de?",
                 "answers": [
-                    "No"
+                    "3"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
@@ -293,17 +301,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Tournoi had Cat\u00e9gorie is International and R\u00e9sultaten 2014 string contains finale?",
+                "question": "How many Tournoi had Cat\u00e9gorie string starts with Premier and Surface string contains battue?",
                 "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Tournoi had Cat\u00e9gorie string starts with Premier?",
-                "answers": [
-                    "12"
+                    "3"
                 ],
                 "reasoning_type": "counting"
             }
@@ -541,19 +541,27 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Does every Tournoi, with R\u00e9sultaten 2015 string contains de, have Lieu string starts with Melbourne?",
+                "question": "Does every Tournoi, with R\u00e9sultaten 2015 string contains de, have Cat\u00e9gorie string starts with Grand?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Tournoi, with R\u00e9sultaten 2015 string contains finale, have Ultime adversaire string starts with Maria?",
+                "question": "How many Tournoi had Cat\u00e9gorie string starts with Premier?",
                 "answers": [
-                    "Yes"
+                    "13"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Tournoi had Cat\u00e9gorie is Premier?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
             }
         ]
     },
@@ -855,7 +863,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Tournoi when the Lieu string contains Hobart and the R\u00e9sultaten 2016 is Finale?",
+                "question": "What was the Tournoi when the R\u00e9sultaten 2016 is Finale and the Lieu string starts with Hobart?",
                 "answers": [
                     "Hobart International"
                 ],
@@ -863,17 +871,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Tournoi, with Lieu string starts with Rome, have Cat\u00e9gorie string starts with Premier?",
+                "question": "How many Tournoi had Cat\u00e9gorie string starts with Grand?",
                 "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Tournoi had Cat\u00e9gorie is International?",
-                "answers": [
-                    "9"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1133,7 +1133,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many Tournoi had Cat\u00e9gorie is Premier?",
+                "question": "How many Tournoi had Cat\u00e9gorie string starts with Grand?",
                 "answers": [
                     "4"
                 ],
@@ -1227,7 +1227,16 @@
                 9999
             ]
         },
-        "qas": []
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Tournoi, with Lieu string starts with Taipei, have R\u00e9sultaten 2018 string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            }
+        ]
     },
     {
         "id": "5581115",
@@ -1300,33 +1309,9 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Date when the # was on 1 and the Ultime adversaire string starts with Ana?",
-                "answers": [
-                    "20/10/2014"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Date when the # was on 1 and the Nom de l'\u00e9dition string contains Finals?",
-                "answers": [
-                    "20/10/2014"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Date, with Nom de l'\u00e9dition string contains Finals, have R\u00e9sultat string contains Round?",
+                "question": "Does only Date, with R\u00e9sultat string starts with Round, have # was on 1?",
                 "answers": [
                     "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Date, with Ultime adversaire string contains Ana, have # was on 1?",
-                "answers": [
-                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
@@ -1340,15 +1325,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Date had # was after 1?",
+                "question": "How many years had passed between when the Ultime adversaire was Serena Williams and when the Ultime adversaire was Ana Ivanovi\u0107?",
                 "answers": [
                     "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Date had R\u00e9sultat string starts with Round?",
+                "answers": [
+                    "3"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Date had # was on 1 and Ultime adversaire string contains Williams?",
+                "question": "How many Date had # was on 1 and Ultime adversaire string starts with Ana?",
                 "answers": [
                     "1"
                 ],
@@ -1401,7 +1394,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Date when the # was on 1 and the Nom de l'olympiade string starts with Olympic?",
+                "question": "What was the Date when the # was on 1 and the Ultime adversaire string starts with Angelique?",
                 "answers": [
                     "06/08/2016"
                 ],
@@ -1409,7 +1402,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Date when the Nom de l'olympiade string starts with Olympic and the # was on 1?",
+                "question": "What was the Date when the Nom de l'olympiade string contains Tennis and the # was on 1?",
                 "answers": [
                     "06/08/2016"
                 ],
@@ -1417,7 +1410,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Date, with Nom de l'olympiade string contains de, have Ultime adversaire string starts with Angelique?",
+                "question": "Does every Date, with # was on 1, have Nom de l'olympiade string starts with Olympic?",
                 "answers": [
                     "Yes"
                 ],
@@ -1425,7 +1418,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Date, with # was on 1, have Ultime adversaire string starts with Angelique?",
+                "question": "Does every Date, with Ultime adversaire string starts with Angelique, have Nom de l'olympiade string starts with Olympic?",
                 "answers": [
                     "Yes"
                 ],
@@ -1433,23 +1426,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Date had Nom de l'olympiade string contains Rio and # was on 1?",
+                "question": "How many Date had # was before 1?",
                 "answers": [
-                    "1"
+                    "0"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Date had Nom de l'olympiade string starts with Olympic and # was on 1?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Date had # was on 1 and Nom de l'olympiade string starts with Olympic?",
+                "question": "How many Date had # was on 1 and Ultime adversaire string contains Angelique?",
                 "answers": [
                     "1"
                 ],
@@ -1504,27 +1489,11 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Date when the Nom de l'olympiade string contains Event and the # was on 1?",
+                "question": "What was the Date when the # was on 1 and the Nom de l'olympiade string starts with Olympic?",
                 "answers": [
                     "06/08/2016"
                 ],
                 "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Date when the # was on 1 and the Nom de l'olympiade string contains Olympic?",
-                "answers": [
-                    "06/08/2016"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Date, with # was on 1, have Nom de l'olympiade string starts with Olympic?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
             }
         ]
     },
@@ -1793,17 +1762,20 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Does every Date, with Score string contains Ukraine, have Surface string contains Canada?",
+                "question": "What was the Date when the Score string contains Canada and the Surface string contains Barrage?",
                 "answers": [
-                    "Yes"
+                    "2011 -  Barrage (groupe mondial II) - Slov\u00e9nie - Canada -",
+                    "2013 -  Barrage (groupe mondial II) - Ukraine - Canada -",
+                    "2014 -  Barrage (groupe mondial I) - Canada - Slovaquie -",
+                    "2015 -  Barrage (groupe mondial I) - Canada - Roumanie -"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Date, with Gagnante(s) string contains Barrage, have Perdante(s) string contains Canada?",
+                "question": "Does only Date, with Perdante(s) string contains Canada, have Score string contains Barrage?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
@@ -1817,23 +1789,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Date, with Lieu is Kiev, happened the 3rd according to #?",
-                "answers": [
-                    "20/04/2013"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Gagnante(s) was Alexandra Dulgheru and when the Gagnante(s) was Polona Hercog?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Perdante(s) was Krist\u00edna Ku\u010dov\u00e1 and when the Perdante(s) was Lesia Tsurenko?",
+                "question": "How many years had passed between when the Score was 7-6, 2-6, 6-1 and when the Score was 6-4, 7-5?",
                 "answers": [
                     "2"
                 ],
@@ -1841,17 +1797,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Date had Lieu string contains Canada and Perdante(s) string contains Canada?",
+                "question": "How many years had passed between when the Gagnante(s) was Polona Hercog and when the Gagnante(s) was Sharon Fichman Eugenie Bouchard?",
                 "answers": [
-                    "5"
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Date had Lieu is Kiev?",
+                "answers": [
+                    "3"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Date had Lieu string contains Barrage?",
+                "question": "How many Date had Score string contains Canada and Surface string contains Canada?",
                 "answers": [
-                    "4"
+                    "5"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1953,15 +1917,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Meilleurclassement when the Derni\u00e8re confrontation string contains Madrid and the D\u00e9faites was greater than 1?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Meilleurclassement when the Confrontations is 5 and the Derni\u00e8re confrontation string contains Sydney?",
+                "question": "What was the Meilleurclassement when the Pourcentagede victoires is 80 and the D\u00e9faites was less than or equal to 5?",
                 "answers": [
                     "4"
                 ],
@@ -1969,7 +1925,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Meilleurclassement, with Pourcentagede victoires is 60, have D\u00e9faites was less than 4?",
+                "question": "What was the Meilleurclassement when the Pourcentagede victoires is 60 and the Victoires was less than 4?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Meilleurclassement, with Victoires was greater than 1, have Derni\u00e8re confrontation string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -1977,15 +1941,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Meilleurclassement, with Victoires was less than 4, have Derni\u00e8re confrontation string contains Washington?",
+                "question": "Does only Meilleurclassement, with D\u00e9faites was less than or equal to 3, have Victoires was greater than or equal to 1?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Meilleurclassement, with D\u00e9faites was greater than 1, has the 5th largest Victoires?",
+                "question": "Which Meilleurclassement, with Victoires was greater than or equal to 4, has the 1st largest D\u00e9faites?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Meilleurclassement, with D\u00e9faites was greater than 2, has the 2nd largest Victoires?",
                 "answers": [
                     "9",
                     "1"
@@ -1994,31 +1966,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Meilleurclassement, with Victoires was less than or equal to 4, has the 1st largest D\u00e9faites?",
-                "answers": [
-                    "9"
-                ],
-                "reasoning_type": "numerical_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Meilleurclassement, with Confrontations is 6, has the 2nd largest Victoires?",
-                "answers": [
-                    "9"
-                ],
-                "reasoning_type": "numerical_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Meilleurclassement had Pourcentagede victoires is 60 and Victoires was equal to 3?",
+                "question": "Which Meilleurclassement, with Confrontations is 5, has the 1st largest D\u00e9faites?",
                 "answers": [
                     "1"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Meilleurclassement had Confrontations is 5?",
+                "answers": [
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Meilleurclassement had Victoires was less than or equal to 2?",
+                "question": "How many Meilleurclassement had D\u00e9faites was less than or equal to 2?",
                 "answers": [
                     "3"
                 ],
@@ -2026,25 +1990,33 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Meilleurclassement had Victoires was less than or equal to 1?",
+                "question": "How many Meilleurclassement had D\u00e9faites was less than 4 and Victoires was greater than or equal to 3?",
                 "answers": [
-                    "2"
+                    "3"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Victoires when the D\u00e9faites was equal to 2?",
+                "question": "What was the average of Victoires when the D\u00e9faites was greater than 1?",
                 "answers": [
-                    "3.5"
+                    "2.2"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of D\u00e9faites when the Victoires was less than or equal to 3?",
+                "question": "What was the sum of D\u00e9faites when the Victoires was greater than 3?",
                 "answers": [
-                    "14.0"
+                    "3.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Victoires when the Confrontations is 5?",
+                "answers": [
+                    "10.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -2328,7 +2300,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Which , with Ann\u00e9e was less than or equal to 2017, happened the 10th according to #?",
+                "question": "Does only , with Surface string contains battue, have Tournoi is Charleston?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which , with # was after 9, happened the 2nd according to #?",
                 "answers": [
                     ""
                 ],
@@ -2336,17 +2316,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many  had # was after 10?",
+                "question": "How many  had Ann\u00e9e was equal to 2014?",
                 "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many  had # was before 12?",
-                "answers": [
-                    "11"
+                    "6"
                 ],
                 "reasoning_type": "counting"
             }

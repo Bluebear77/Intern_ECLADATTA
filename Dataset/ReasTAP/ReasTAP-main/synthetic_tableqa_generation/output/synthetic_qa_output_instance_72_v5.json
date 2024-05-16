@@ -251,7 +251,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the Chart is 73 and the Chart is 46?",
+                "question": "What was the Titre when the Chart is 46 and the Chart is 27?",
                 "answers": [
                     "Jennifer Hudson\n\n* \n* Sortie :"
                 ],
@@ -259,15 +259,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the Chart is 84 and the Ventes et Certifications string contains Ventes?",
+                "question": "What was the Titre when the Ventes et Certifications string contains Ventes and the Chart is NE?",
                 "answers": [
-                    "* \n* Sortie :"
+                    "Titre"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre, with Chart is 73, have Chart is 27?",
+                "question": "Does every Titre, with Ventes et Certifications string contains Certifications, have Chart is NE?",
                 "answers": [
                     "Yes"
                 ],
@@ -275,11 +275,19 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre, with Chart is CAN, have Ventes et Certifications string starts with Ventes?",
+                "question": "Does only Titre, with Chart is 27, have Chart is 73?",
                 "answers": [
                     "Yes"
                 ],
                 "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Ventes et Certifications was * RIAA :\n* Ventes mondiales : \u00c9tats-Unis : 459,000 (2014). and when the Ventes et Certifications was * RIAA : Disque d'Or aux \u00c9tats-Unis\n* Ventes mondiales : .?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
@@ -288,22 +296,6 @@
                     "6"
                 ],
                 "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Chart was 21 and when the Chart was 116?",
-                "answers": [
-                    "6"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Titre had Chart is NE?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
             }
         ]
     },
@@ -731,15 +723,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the Classement is 96 and the Classement is 58?",
-                "answers": [
-                    "Spotlight"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Titre when the Classement is 12 and the Classement is 38?",
+                "question": "What was the Titre when the Classement is 12 and the Classement is 35?",
                 "answers": [
                     "Night Of Your Life"
                 ],
@@ -747,7 +731,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Titre, with Classement is 24, have Classement is 37?",
+                "question": "What was the Titre when the Classement is 12 and the Album string contains Nothing?",
+                "answers": [
+                    "Night Of Your Life"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Titre, with Classement is 32, have Classement is 21?",
                 "answers": [
                     "Yes"
                 ],
@@ -755,7 +747,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre, with Classement is UK, have Classement is AUS?",
+                "question": "Does only Titre, with Classement is 24, have Classement is 35?",
                 "answers": [
                     "Yes"
                 ],
@@ -763,7 +755,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Album string starts with I, happened the 3rd according to Ann\u00e9e?",
+                "question": "Which Titre, with Album string ends with Me, happened the 1st according to Ann\u00e9e?",
                 "answers": [
                     "Where You At",
                     "No One Gonna Love You",
@@ -773,13 +765,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Album string starts with I, happened the 2nd according to Ann\u00e9e?",
+                "question": "How many years had passed between when the Classement was 33 and when the Classement was 10?",
                 "answers": [
-                    "Where You At",
-                    "No One Gonna Love You",
-                    "I Remember Me"
+                    "1"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
@@ -788,22 +778,6 @@
                     "3"
                 ],
                 "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Classement was 29 and when the Classement was 5?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Titre had Album string starts with I?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
             }
         ]
     }

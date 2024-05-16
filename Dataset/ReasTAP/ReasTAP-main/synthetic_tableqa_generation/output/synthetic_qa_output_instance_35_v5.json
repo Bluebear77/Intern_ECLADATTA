@@ -1134,7 +1134,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Does only Album, with Certifications is Certifications, have Ventes is Ventes?",
+                "question": "Does every Album, with Certifications is Certifications, have Ventes is Ventes?",
                 "answers": [
                     "Yes"
                 ],
@@ -1142,17 +1142,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Classement was 36 and when the Classement was 7?",
+                "question": "How many years had passed between when the Classement was 2 and when the Classement was 7?",
                 "answers": [
-                    "9"
+                    "1"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Classement was \u2014 and when the Classement was 4?",
+                "question": "How many years had passed between when the Classement was 84 and when the Classement was 5?",
                 "answers": [
-                    "9"
+                    "5"
                 ],
                 "reasoning_type": "date_difference"
             }
@@ -1386,22 +1386,6 @@
                     "Album d\u00e9tails"
                 ],
                 "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Album d\u00e9tails, with Certifications is Certifications, have Ventes is Ventes?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Album d\u00e9tails had Ventes is Ventes?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
             }
         ]
     },
@@ -11841,17 +11825,17 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many Ann\u00e9e had Album is Unbroken?",
+                "question": "Does only Ann\u00e9e, with Certifications is Certifications, have Album is Album?",
                 "answers": [
-                    "2"
+                    "Yes"
                 ],
-                "reasoning_type": "counting"
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Ann\u00e9e had Album string contains album?",
+                "question": "How many Ann\u00e9e had Album is Confident?",
                 "answers": [
-                    "4"
+                    "3"
                 ],
                 "reasoning_type": "counting"
             }

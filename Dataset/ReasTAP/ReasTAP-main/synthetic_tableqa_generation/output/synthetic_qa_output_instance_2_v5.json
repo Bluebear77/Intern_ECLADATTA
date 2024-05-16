@@ -194,50 +194,52 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Organisation when the Film string starts with Harry and the Ann\u00e9e was on 2006?",
+                "question": "What was the Organisation when the Ann\u00e9e was on 2004 and the Film string starts with Harry?",
+                "answers": [
+                    "Otto Awards",
+                    "Total Film"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Organisation when the Film string contains Harry and the Ann\u00e9e was before 2008?",
+                "answers": [
+                    "Young Artist Awards",
+                    "Otto Awards",
+                    "Total Film",
+                    "National Film Awards d'ITV",
+                    "Nickelodeon Kids' Choice Awards britanniques"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Organisation, with Ann\u00e9e was before 2013, have Film string starts with Harry?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Organisation, with Film string starts with Harry, have Cat\u00e9gorie string contains de?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Organisation, with Ann\u00e9e was after 2003, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
                     "Otto Awards"
                 ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Organisation when the Cat\u00e9gorie string contains ensemble and the Ann\u00e9e was after 2012?",
-                "answers": [
-                    "Boston Society of Film Critics",
-                    "Florida Film Critics Circle",
-                    "Georgia Film Critics Association"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Organisation, with Cat\u00e9gorie string contains film, have Ann\u00e9e was before 2011?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Organisation, with Ann\u00e9e was after 2004, have Film string starts with Harry?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Organisation, with Ann\u00e9e was after 2004, happened the 14th according to Ann\u00e9e?",
-                "answers": [
-                    "People's Choice Awards",
-                    "MTV Movie Awards"
-                ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Organisation, with Film string starts with Harry, happened the 9th according to Ann\u00e9e?",
+                "question": "Which Organisation, with Ann\u00e9e was on 2008, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
                     "Constellation Awards",
                     "Otto Awards",
@@ -247,51 +249,50 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Organisation, with Ann\u00e9e was after 2003, happened the 7th according to Ann\u00e9e?",
+                "question": "Which Organisation, with Film string starts with Harry, happened the 7th according to Ann\u00e9e?",
                 "answers": [
-                    "Constellation Awards",
-                    "Otto Awards",
-                    "SyFy Genre Awards"
+                    "National Film Awards d'ITV",
+                    "Nickelodeon Kids' Choice Awards britanniques"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Cat\u00e9gorie was Meilleure artiste de l'ann\u00e9e. and when the Cat\u00e9gorie was Meilleur baiser?",
+                "question": "How many years had passed between when the Cat\u00e9gorie was Meilleure actrice dans un film dramatique and when the Cat\u00e9gorie was Meilleure actrice (Argent)?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Cat\u00e9gorie was Meilleur casting d'ensemble and when the Cat\u00e9gorie was Gagnante du AOL Moviegoer Awards.?",
+                "answers": [
+                    "16"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Organisation had Cat\u00e9gorie string contains un and Ann\u00e9e was after 2008?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Organisation had Ann\u00e9e was before 2019 and Cat\u00e9gorie string contains de?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Organisation had Ann\u00e9e was after 2012 and Cat\u00e9gorie string contains ensemble?",
                 "answers": [
                     "3"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Cat\u00e9gorie was Prix de l'interpr\u00e9tation.Emma Watson remporte le premier prix \u00ab non-genr\u00e9 \u00bb remis par la cha\u00eene MTV, c'est-\u00e0-dire un prix mixte, qui pouvait \u00eatre remis \u00e0 un homme ou une femme (contrairement aux autres prix, qui distinguent la meilleure actrice, ou le meilleur acteur. and when the Cat\u00e9gorie was \u00ab Choice Movie Actress : Drama \u00bb?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Organisation had Ann\u00e9e was before 2017?",
-                "answers": [
-                    "19"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Organisation had Ann\u00e9e was after 2014?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Organisation had Ann\u00e9e was after 2004?",
-                "answers": [
-                    "20"
                 ],
                 "reasoning_type": "counting"
             }
@@ -478,29 +479,34 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Organisation when the Ann\u00e9e was before 2009 and the Cat\u00e9gorie string contains le?",
+                "question": "What was the Organisation when the Ann\u00e9e was before 2008 and the Film string starts with Harry?",
                 "answers": [
+                    "Acad\u00e9mie des films fantastiques et d'horreur",
                     "Empire",
                     "American Moviegoer Awards",
                     "Young Artist Awards",
                     "Broadcast Film Critics Association",
-                    "MTV Movie Awards",
-                    "Sony Ericsson Empire Awards britanniques",
-                    "Glamour Awards"
+                    "MTV Movie Awards"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Organisation when the Cat\u00e9gorie string contains Daniel and the Ann\u00e9e was on 2002?",
+                "question": "What was the Organisation when the Ann\u00e9e was after 2009 and the Cat\u00e9gorie string contains un?",
                 "answers": [
-                    "Empire"
+                    "Nickelodeon Kids' Choice Awards",
+                    "Saturn Awards",
+                    "St. Louis Critics Awards",
+                    "Phoenix Film Critics Society Awards",
+                    "Boston Society of Film Critics Awards",
+                    "People's Choice Award",
+                    "American Comedy Awards"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Organisation, with Ann\u00e9e was before 2006, have Cat\u00e9gorie string starts with Empire?",
+                "question": "Does every Organisation, with Film string starts with Harry, have Ann\u00e9e was on 2004?",
                 "answers": [
                     "No"
                 ],
@@ -508,26 +514,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Organisation, with Ann\u00e9e was before 2010, have Cat\u00e9gorie string contains au?",
+                "question": "Does every Organisation, with Ann\u00e9e was before 2012, have Cat\u00e9gorie string contains Daniel?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Organisation, with Ann\u00e9e was before 2011, happened the 2nd according to Ann\u00e9e?",
-                "answers": [
-                    "Acad\u00e9mie des films fantastiques et d'horreur",
-                    "Empire",
-                    "American Moviegoer Awards",
-                    "Young Artist Awards"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Organisation, with Film string starts with Harry, happened the 11st according to Ann\u00e9e?",
+                "question": "Which Organisation, with Ann\u00e9e was on 2011, happened the 1st according to Ann\u00e9e?",
                 "answers": [
                     "Scream Awards",
                     "Nickelodeon Kids' Choice Awards",
@@ -537,17 +532,24 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Organisation, with Ann\u00e9e was on 2011, happened the 2nd according to Ann\u00e9e?",
+                "question": "Which Organisation, with Ann\u00e9e was before 2010, happened the 9th according to Ann\u00e9e?",
                 "answers": [
-                    "Scream Awards",
-                    "Nickelodeon Kids' Choice Awards",
-                    "Saturn Awards"
+                    "Sony Ericsson Empire Awards britanniques",
+                    "Glamour Awards"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Cat\u00e9gorie was Meilleure actrice pour un second r\u00f4le dans une com\u00e9die and when the Cat\u00e9gorie was Meilleure actrice.?",
+                "question": "Which Organisation, with Film string starts with Harry, happened the 6th according to Ann\u00e9e?",
+                "answers": [
+                    "Broadcast Film Critics Association"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Cat\u00e9gorie was Meilleure actrice dans une com\u00e9die and when the Cat\u00e9gorie was Meilleure actrice.?",
                 "answers": [
                     "6"
                 ],
@@ -555,7 +557,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Cat\u00e9gorie was Meilleure interpr\u00e9tation f\u00e9minine and when the Cat\u00e9gorie was Meilleure actrice fantastique?",
+                "question": "How many years had passed between when the Cat\u00e9gorie was Harry Potter et le Prince de sang-m\u00eal\u00e9 and when the Cat\u00e9gorie was Interpr\u00e9tation de l'Ann\u00e9e?",
                 "answers": [
                     "1"
                 ],
@@ -563,25 +565,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Organisation had Ann\u00e9e was after 2008?",
+                "question": "How many Organisation had Ann\u00e9e was before 2012 and Cat\u00e9gorie string contains un?",
                 "answers": [
-                    "13"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Organisation had Ann\u00e9e was after 2004 and Film string contains Harry?",
+                "question": "How many Organisation had Ann\u00e9e was after 2005?",
                 "answers": [
-                    "10"
+                    "16"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Organisation had Ann\u00e9e was after 2002 and Cat\u00e9gorie string contains un?",
+                "question": "How many Organisation had Ann\u00e9e was after 2011?",
                 "answers": [
-                    "8"
+                    "7"
                 ],
                 "reasoning_type": "counting"
             }

@@ -162,7 +162,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Film when the Ann\u00e9e was before 1965 and the Cachet Biographie sur IMDb. string contains 10?",
+                "question": "What was the Film when the Ann\u00e9e was before 1965 and the Cachet Biographie sur IMDb. string contains des?",
                 "answers": [
                     "Cl\u00e9op\u00e2tre"
                 ],
@@ -170,28 +170,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Film when the Ann\u00e9e was before 1967 and the Cachet Biographie sur IMDb. string contains par?",
+                "question": "What was the Film when the Ann\u00e9e was on 1951 and the Cachet Biographie sur IMDb. string starts with par?",
                 "answers": [
-                    "",
-                    "Fid\u00e8le Lassie",
-                    "Le Courage de Lassie",
-                    "Une place au soleil",
-                    "Ivanho\u00e9",
-                    "La Chatte sur un toit br\u00fblant"
+                    "Une place au soleil"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Film, with Ann\u00e9e was before 1987, have Cachet Biographie sur IMDb. string contains par?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Film, with Cachet Biographie sur IMDb. string contains 10, have Ann\u00e9e was on 1966?",
+                "question": "Does every Film, with Cachet Biographie sur IMDb. string starts with par, have Ann\u00e9e was before 1956?",
                 "answers": [
                     "No"
                 ],
@@ -199,50 +186,57 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Cachet Biographie sur IMDb. string starts with par, happened the 3rd according to Ann\u00e9e?",
+                "question": "Does only Film, with Cachet Biographie sur IMDb. string starts with par, have Ann\u00e9e was before 1994?",
                 "answers": [
-                    "Le Courage de Lassie"
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Film, with Ann\u00e9e was before 1987, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    ""
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was after 1966, happened the 5th according to Ann\u00e9e?",
+                "question": "Which Film, with Ann\u00e9e was before 1994, happened the 1st according to Ann\u00e9e?",
                 "answers": [
-                    "Las Vegas, un couple"
+                    ""
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was after 1942, happened the 17th according to Ann\u00e9e?",
+                "question": "Which Film, with Ann\u00e9e was before 1965, happened the 10th according to Ann\u00e9e?",
                 "answers": [
-                    "Boom",
-                    "C\u00e9r\u00e9monie secr\u00e8te"
+                    "La V\u00e9nus au vison"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was after 1942 and Cachet Biographie sur IMDb. string starts with par?",
+                "question": "How many Film had Ann\u00e9e was after 1944?",
                 "answers": [
-                    "5"
+                    "20"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was before 1967?",
+                "question": "How many Film had Ann\u00e9e was after 1960?",
                 "answers": [
-                    "14"
+                    "13"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was before 1956?",
+                "question": "How many Film had Ann\u00e9e was on 1958 and Cachet Biographie sur IMDb. string starts with par?",
                 "answers": [
-                    "6"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -859,28 +853,28 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre du Film, with Ann\u00e9e was before 1947, happened the 3rd according to Ann\u00e9e?",
+                "question": "Does every Titre du Film, with Ann\u00e9e was before 1950, have R\u00e9alisateur string contains Thorpe?",
                 "answers": [
-                    "Jane Eyre ()",
-                    "Les Blanches Falaises de Douvres ()",
-                    "Le Grand National ()"
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Titre du Film, with Ann\u00e9e was before 1954, happened the 15th according to Ann\u00e9e?",
+                "answers": [
+                    "Allons donc, papa ! ()",
+                    "Une vedette dispara\u00eet ()",
+                    "Une place au soleil ()",
+                    "()"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre du Film, with Ann\u00e9e was before 1953, happened the 7th according to Ann\u00e9e?",
+                "question": "How many Titre du Film had Ann\u00e9e was on 1954?",
                 "answers": [
-                    "Mon p\u00e8re et nous ()",
-                    "Cynthia ( ou )"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Titre du Film had Ann\u00e9e was after 1972?",
-                "answers": [
-                    "27"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1101,27 +1095,36 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the C\u00e9r\u00e9monie when the Ann\u00e9e was on 1967 and the R\u00e9compense string contains sur?",
+                "question": "What was the C\u00e9r\u00e9monie when the Ann\u00e9e was before 1967 and the R\u00e9compense string contains un?",
                 "answers": [
+                    "Laurel Award",
                     ""
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every C\u00e9r\u00e9monie, with Ann\u00e9e was on 1993, have R\u00e9compense string contains le?",
+                "question": "Which C\u00e9r\u00e9monie, with Ann\u00e9e was before 1999, happened the 18th according to Ann\u00e9e?",
                 "answers": [
-                    "No"
+                    "Prix Bambi"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every C\u00e9r\u00e9monie, with Ann\u00e9e was after 1957, have R\u00e9compense string contains de?",
+                "question": "Which C\u00e9r\u00e9monie, with Ann\u00e9e was before 1998, happened the 2nd according to Ann\u00e9e?",
                 "answers": [
-                    "No"
+                    "Laurel Award"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which C\u00e9r\u00e9monie, with Ann\u00e9e was after 1968, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "Ours d'argent de la meilleure actrice"
+                ],
+                "reasoning_type": "temporal_comparison"
             }
         ]
     },
@@ -1256,7 +1259,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the C\u00e9r\u00e9monie when the Ann\u00e9e was before 1969 and the Nomination string contains film?",
+                "question": "What was the C\u00e9r\u00e9monie when the Ann\u00e9e was on 1974 and the Nomination string contains film?",
                 "answers": [
                     ""
                 ],
@@ -1264,7 +1267,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every C\u00e9r\u00e9monie, with Ann\u00e9e was after 1961, have Nomination string contains un?",
+                "question": "Does only C\u00e9r\u00e9monie, with Nomination string contains un, have Ann\u00e9e was before 1967?",
                 "answers": [
                     "No"
                 ],
@@ -1272,33 +1275,26 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every C\u00e9r\u00e9monie, with Ann\u00e9e was before 1969, have Nomination string contains film?",
+                "question": "Which C\u00e9r\u00e9monie, with Ann\u00e9e was before 1962, happened the 2nd according to Ann\u00e9e?",
                 "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which C\u00e9r\u00e9monie, with Ann\u00e9e was before 1966, happened the 7th according to Ann\u00e9e?",
-                "answers": [
+                    "Oscar du cin\u00e9ma",
                     ""
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many C\u00e9r\u00e9monie had Ann\u00e9e was after 1960 and Nomination string contains film?",
+                "question": "How many C\u00e9r\u00e9monie had Ann\u00e9e was before 1974?",
                 "answers": [
-                    "3"
+                    "13"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many C\u00e9r\u00e9monie had Ann\u00e9e was before 1971?",
+                "question": "How many C\u00e9r\u00e9monie had Ann\u00e9e was after 1994?",
                 "answers": [
-                    "12"
+                    "0"
                 ],
                 "reasoning_type": "counting"
             }

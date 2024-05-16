@@ -564,31 +564,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Noms cantonais when the Noms anglais string starts with Ten and the Year was after 1995?",
+                "question": "What was the Noms cantonais when the Langage is Mandarin and the Year was on 1997?",
                 "answers": [
-                    "\u6eab\u67d4"
+                    "\u70ba\u4f60\u7b49"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Noms cantonais when the Year was after 1997 and the Noms anglais string starts with East?",
+                "question": "What was the Noms cantonais when the Type is Album and the Noms anglais string contains Commandments?",
                 "answers": [
-                    "\u6771\u4e9e\u83ef\u661f\u6f14\u5531\u6703"
+                    "\u5341\u8aa1"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Noms cantonais, with Langage is Mandarin, have Noms anglais string starts with Worth?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Noms cantonais, with Langage is Mandarin, have Year was on 2002?",
+                "question": "Does every Noms cantonais, with Year was before 2010, have Type is Album?",
                 "answers": [
                     "No"
                 ],
@@ -596,73 +588,79 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Noms cantonais, with Year was before 2000, happened the 4th according to Year?",
+                "question": "Does only Noms cantonais, with Year was before 2006, have Langage is Mandarin?",
                 "answers": [
-                    "Never Too Late",
-                    "\u706b\u71b1\u52d5\u611f"
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Noms cantonais, with Type string starts with Album, happened the 9th according to Year?",
+                "answers": [
+                    "\u653e\u4e0d\u4f4e",
+                    "\u503c\u5f97",
+                    "\u6fc3\u60c5"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Noms cantonais, with Year was before 2001, happened the 35th according to Year?",
+                "question": "Which Noms cantonais, with Type is Album, happened the 24th according to Year?",
                 "answers": [
-                    "Sammi i Concert 1999",
-                    "\u591a\u8b1d",
-                    "\u53bb\u611b\u5427",
-                    "Ladies First",
-                    "\u7709\u98db\u8272\u821e",
-                    "Love Is..."
+                    "\u5b8c\u6574",
+                    "Shocking Pink",
+                    "\u6eab\u67d4"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Noms cantonais, with Type is Album, happened the 28th according to Year?",
+                "question": "Which Noms cantonais, with Year was after 1999, happened the 34th according to Year?",
                 "answers": [
-                    "\u6368\u5f97",
-                    "Becoming...",
-                    "Wonder Woman"
+                    "\u671b",
+                    "\u611b. Love Mi \u6f14\u5531\u6703",
+                    "\u4fe1\u8005\u5f97\u611b"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Noms anglais was Love Story Compilation and when the Noms anglais was Warner Music Special?",
+                "question": "How many years had passed between when the Noms anglais was Willing and when the Noms anglais was Sammi Star Show 1997?",
                 "answers": [
-                    "2"
+                    "4"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Noms anglais was Miracle Best Collection and when the Noms anglais was Sammi Ultimate Collection?",
+                "question": "How many years had passed between when the Noms anglais was Worth It and when the Noms anglais was Warner Music Special?",
                 "answers": [
-                    "8"
+                    "1"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Noms cantonais had Type is Album and Year was after 2008?",
+                "question": "How many Noms cantonais had Type is Album and Year was after 2000?",
                 "answers": [
-                    "4"
+                    "13"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Noms cantonais had Year was before 2000 and Langage is Mandarin?",
+                "question": "How many Noms cantonais had Noms anglais string starts with I and Year was before 2000?",
                 "answers": [
-                    "4"
+                    "3"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Noms cantonais had Year was before 2010 and Langage is Mandarin?",
+                "question": "How many Noms cantonais had Year was after 1990 and Type string contains Hits?",
                 "answers": [
-                    "11"
+                    "13"
                 ],
                 "reasoning_type": "counting"
             }

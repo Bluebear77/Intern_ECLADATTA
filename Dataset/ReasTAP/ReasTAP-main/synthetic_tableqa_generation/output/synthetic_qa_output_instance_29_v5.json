@@ -511,7 +511,24 @@
         "key_column": 0,
         "numeric_columns": [],
         "date_columns": {},
-        "qas": []
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many Noms originaux had Noms fran\u00e7ais string starts with Daniel?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Noms originaux had Noms fran\u00e7ais string contains Bob?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
     },
     {
         "id": "1424248",

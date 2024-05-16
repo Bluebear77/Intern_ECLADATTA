@@ -201,6 +201,14 @@
         "qas": [
             {
                 "source": "synthetic_qa",
+                "question": "Which Commune, with Parti is PS, happened the 4th according to Ann\u00e9e?",
+                "answers": [
+                    "Lille"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
                 "question": "How many Commune had Parti is PS?",
                 "answers": [
                     "4"
@@ -389,6 +397,15 @@
                 2011
             ]
         },
-        "qas": []
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many  had Parti is PS?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
     }
 ]

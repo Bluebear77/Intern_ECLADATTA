@@ -809,23 +809,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Temps en course when the saison 2006\u20132007 was on 5 / 24 and the saison 2011-2012 was on 6 / 25?",
+                "question": "What was the Temps en course when the saison 2011-2012 was before 6 / 25 and the saison 2006\u20132007 was after 5 / 24?",
                 "answers": [
-                    "Autre"
+                    "Meilleur temps"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Temps en course when the saison 2009-2010 was on 1 / 21 and the saison 2006\u20132007 was after 5 / 24?",
+                "question": "What was the Temps en course when the saison 2011-2012 was on 5 / 25 and the saison 2009-2010 was after 4 / 21?",
                 "answers": [
-                    "Troisi\u00e8me temps"
+                    "Meilleur temps"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Temps en course, with saison 2006\u20132007 was after 5 / 24, have saison 2009-2010 was on 9 / 21?",
+                "question": "Does only Temps en course, with saison 2009-2010 was before 4 / 21, have saison 2011-2012 was after 5 / 25?",
                 "answers": [
                     "No"
                 ],
@@ -833,20 +833,27 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Temps en course, with saison 2009-2010 was after 1 / 21, happened the 2nd according to saison 2009-2010?",
+                "question": "Does every Temps en course, with saison 2011-2012 was on 7 / 25, have saison 2009-2010 was before 9 / 21?",
                 "answers": [
-                    "Second temps"
+                    "Yes"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Temps en course, with saison 2009-2010 was after 1 / 21, happened the 2nd according to saison 2006\u20132007?",
+                "question": "How many Temps en course had saison 2011-2012 was on 7 / 25?",
                 "answers": [
-                    "Second temps",
-                    "Autre"
+                    "2"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Temps en course had saison 2009-2010 was after 1 / 21?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
             }
         ]
     },

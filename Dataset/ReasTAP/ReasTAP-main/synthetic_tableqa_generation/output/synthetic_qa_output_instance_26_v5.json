@@ -67,35 +67,24 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Conjoint string contains de and the Armoiries string contains son?",
+                "question": "What was the Portrait when the Conjoint string starts with Georges and the Nom et titre(s) string contains de?",
                 "answers": [
-                    "Marie Bonaparte",
-                    "H\u00e9l\u00e8ne Vladimirovna de Russie",
-                    "Fran\u00e7oise d'Orl\u00e9ans"
+                    "Marie Bonaparte"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Armoiries string contains son and the Nom et titre(s) string contains de?",
+                "question": "What was the Portrait when the Filiation string contains de and the \u00c9l\u00e9ments biographiques string contains la?",
                 "answers": [
-                    "Marie Bonaparte",
                     "H\u00e9l\u00e8ne Vladimirovna de Russie",
-                    "Fran\u00e7oise d'Orl\u00e9ans"
+                    "Anastasia de Gr\u00e8ce"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Conjoint string starts with Georges, have \u00c9l\u00e9ments biographiques string starts with Issue?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with \u00c9l\u00e9ments biographiques string contains a, have Armoiries string contains son?",
+                "question": "Does only Portrait, with \u00c9l\u00e9ments biographiques string starts with Fille, have Armoiries string contains de?",
                 "answers": [
                     "No"
                 ],
@@ -103,7 +92,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Armoiries string contains de and Nom et titre(s) string contains de?",
+                "question": "Does only Portrait, with Conjoint string starts with Georges, have \u00c9l\u00e9ments biographiques string contains sur?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Armoiries string contains de and Filiation string contains de?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had \u00c9l\u00e9ments biographiques string contains la?",
                 "answers": [
                     "4"
                 ],
@@ -111,15 +116,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Nom et titre(s) string contains de?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9l\u00e9ments biographiques string contains de?",
+                "question": "How many Portrait had Conjoint string contains de and \u00c9l\u00e9ments biographiques string contains prince?",
                 "answers": [
                     "4"
                 ],
@@ -187,7 +184,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Conjoint string starts with Philip and the Armoiries string contains la?",
+                "question": "What was the Portrait when the Filiation string contains VI and the Armoiries string ends with II?",
                 "answers": [
                     "\u00c9lisabeth II du Royaume-Uni"
                 ],
@@ -195,15 +192,16 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9l\u00e9ments biographiques string contains de and the Armoiries string contains la?",
+                "question": "What was the Portrait when the Nom et titre(s) string contains de and the Conjoint string contains de?",
                 "answers": [
-                    "Aspas\u00eda M\u00e1nos"
+                    "Aspas\u00eda M\u00e1nos",
+                    "\u00c9lisabeth II du Royaume-Uni"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with \u00c9l\u00e9ments biographiques string contains par, have Nom et titre(s) string contains de?",
+                "question": "Does every Portrait, with Armoiries string contains de, have \u00c9l\u00e9ments biographiques string contains la?",
                 "answers": [
                     "No"
                 ],
@@ -211,7 +209,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Armoiries string contains de, have \u00c9l\u00e9ments biographiques string contains au?",
+                "question": "Does only Portrait, with Conjoint string starts with Philip, have Nom et titre(s) string contains de?",
                 "answers": [
                     "No"
                 ],
@@ -219,7 +217,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Nom et titre(s) string contains de and \u00c9l\u00e9ments biographiques string contains au?",
+                "question": "How many Portrait had Armoiries string contains II and Conjoint string starts with Philip?",
                 "answers": [
                     "1"
                 ],
@@ -227,7 +225,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Conjoint string contains de and Armoiries string contains la?",
+                "question": "How many Portrait had Armoiries string contains de?",
                 "answers": [
                     "2"
                 ],
@@ -235,9 +233,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Conjoint string contains de and Nom et titre(s) string contains de?",
+                "question": "How many Portrait had Conjoint string starts with Philip?",
                 "answers": [
-                    "2"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -295,7 +293,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom et titre(s) string contains de and the Conjoint string starts with Paul?",
+                "question": "What was the Portrait when the Conjoint string starts with Paul and the Nom et titre(s) string contains de?",
                 "answers": [
                     "Marie-Chantal Miller"
                 ],
@@ -303,7 +301,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Filiation string contains Warren and the \u00c9l\u00e9ments biographiques string starts with Fille?",
+                "question": "What was the Portrait when the Nom et titre(s) string contains de and the \u00c9l\u00e9ments biographiques string starts with Fille?",
                 "answers": [
                     "Marie-Chantal Miller"
                 ],
@@ -311,7 +309,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with \u00c9l\u00e9ments biographiques string starts with Fille, have Conjoint string starts with Paul?",
+                "question": "Does every Portrait, with Conjoint string contains de, have Nom et titre(s) string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -319,7 +317,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with \u00c9l\u00e9ments biographiques string contains plus, have Conjoint string starts with Paul?",
+                "question": "Does every Portrait, with Conjoint string starts with Paul, have \u00c9l\u00e9ments biographiques string starts with Fille?",
                 "answers": [
                     "Yes"
                 ],
@@ -327,7 +325,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9l\u00e9ments biographiques string contains par and Conjoint string starts with Paul?",
+                "question": "How many Portrait had \u00c9l\u00e9ments biographiques string contains par and Conjoint string contains de?",
                 "answers": [
                     "1"
                 ],
@@ -335,17 +333,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Nom et titre(s) string contains de?",
+                "question": "How many Portrait had Nom et titre(s) string starts with Nina?",
                 "answers": [
-                    "3"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Conjoint string contains de?",
+                "question": "How many Portrait had \u00c9l\u00e9ments biographiques string starts with Fille?",
                 "answers": [
-                    "3"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }

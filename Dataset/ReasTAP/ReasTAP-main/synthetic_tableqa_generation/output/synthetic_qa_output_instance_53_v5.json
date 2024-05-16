@@ -275,81 +275,57 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the D\u00e9cern\u00e9 par\u2026 when the R\u00e9compens\u00e9 string contains Franklin and the Classement was on 1?",
+                "question": "Does every D\u00e9cern\u00e9 par\u2026, with R\u00e9compens\u00e9 string starts with Do, have Classement was before 2?",
                 "answers": [
-                    "Rolling Stone",
-                    "Rock and Roll Hall of Fame",
-                    "TIME",
-                    "Billboard",
-                    "YouGov"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the D\u00e9cern\u00e9 par\u2026 when the R\u00e9compens\u00e9 string contains Franklin and the Classement was after 248?",
-                "answers": [
-                    "Rolling Stone",
-                    "Rock and Roll Hall of Fame",
-                    "TIME",
-                    "Billboard",
-                    "YouGov",
-                    "",
-                    "Acclaimedmusic",
-                    "VH1"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only D\u00e9cern\u00e9 par\u2026, with R\u00e9compens\u00e9 string starts with Chain, have Titre string ends with temps?",
-                "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which D\u00e9cern\u00e9 par\u2026, with R\u00e9compens\u00e9 string contains Lady, happened the 2nd according to Classement?",
+                "question": "Which D\u00e9cern\u00e9 par\u2026, with Titre string starts with Plus, happened the 3rd according to Classement?",
                 "answers": [
-                    "Rolling Stone Magazine"
+                    "Billboard"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which D\u00e9cern\u00e9 par\u2026, with R\u00e9compens\u00e9 string starts with I, happened the 2nd according to Classement?",
+                "question": "Which D\u00e9cern\u00e9 par\u2026, with R\u00e9compens\u00e9 string contains Way, happened the 1st according to Classement?",
                 "answers": [
-                    "Rolling Stone Magazine"
+                    "Rolling Stone"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which D\u00e9cern\u00e9 par\u2026, with Classement was on 1, happened the 1st according to Classement?",
+                "question": "Which D\u00e9cern\u00e9 par\u2026, with Classement was after 13, happened the 5th according to Classement?",
                 "answers": [
-                    "Rolling Stone",
-                    "Rock and Roll Hall of Fame",
-                    "TIME",
-                    "Billboard",
-                    "New Musical Express",
-                    "YouGov"
+                    "VH1"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many D\u00e9cern\u00e9 par\u2026 had Classement was after 83?",
+                "question": "How many D\u00e9cern\u00e9 par\u2026 had Classement was on 1?",
                 "answers": [
-                    "22"
+                    "9"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many D\u00e9cern\u00e9 par\u2026 had Classement was before 2?",
+                "question": "How many D\u00e9cern\u00e9 par\u2026 had Titre string contains de and Classement was before 19?",
                 "answers": [
                     "19"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many D\u00e9cern\u00e9 par\u2026 had Titre string starts with 500 and Classement was after 1?",
+                "answers": [
+                    "2"
                 ],
                 "reasoning_type": "counting"
             }
@@ -501,23 +477,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Cat\u00e9gorie when the Ann\u00e9e was before 1975 and the Genre is Gospel?",
+                "question": "What was the Cat\u00e9gorie when the Ann\u00e9e was after 1973 and the Titre string starts with I?",
                 "answers": [
-                    "Best Soul Gospel Performance"
+                    "Best R&B Vocal By Duo Or Group"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Cat\u00e9gorie when the Ann\u00e9e was before 2006 and the Genre is General?",
+                "question": "What was the Cat\u00e9gorie when the Ann\u00e9e was before 2004 and the Titre string starts with I?",
                 "answers": [
-                    "Legend Award"
+                    "Best R&B Vocal By Duo Or Group"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Cat\u00e9gorie, with Titre is Wonderful, have Ann\u00e9e was after 1968?",
+                "question": "Does every Cat\u00e9gorie, with Ann\u00e9e was before 1986, have Titre is Respect?",
                 "answers": [
                     "No"
                 ],
@@ -525,7 +501,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Cat\u00e9gorie, with Ann\u00e9e was on 1968, have Titre is Respect?",
+                "question": "Does only Cat\u00e9gorie, with Ann\u00e9e was after 1970, have Genre is Gospel?",
                 "answers": [
                     "Yes"
                 ],
@@ -533,7 +509,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Cat\u00e9gorie, with Ann\u00e9e was after 1968, happened the 4th according to Ann\u00e9e?",
+                "question": "Which Cat\u00e9gorie, with Ann\u00e9e was after 1982, happened the 6th according to Ann\u00e9e?",
+                "answers": [
+                    "Best Traditional R&B Vocal Performance"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Cat\u00e9gorie, with Ann\u00e9e was before 1974, happened the 5th according to Ann\u00e9e?",
                 "answers": [
                     "Best Female R&B Vocal Performance"
                 ],
@@ -541,56 +525,47 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Cat\u00e9gorie, with Ann\u00e9e was before 1973, happened the 2nd according to Ann\u00e9e?",
+                "question": "Which Cat\u00e9gorie, with Ann\u00e9e was after 1988, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
-                    "Best Rhythm And Blues Recording",
-                    "Best Female R&B Vocal Performance"
+                    "Best Traditional R&B Vocal Performance"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Cat\u00e9gorie, with Ann\u00e9e was before 2004, happened the 12nd according to Ann\u00e9e?",
+                "question": "How many years had passed between when the Titre was Master of Eyes and when the Titre was Bridge over Troubled Water?",
                 "answers": [
-                    "Best Female R&B Vocal Performance"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre was Master of Eyes and when the Titre was Hold On, I'm Comin'?",
-                "answers": [
-                    "8"
+                    "2"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre was Hold On, I'm Comin' and when the Titre was --?",
+                "question": "How many years had passed between when the Titre was -- and when the Titre was I Knew You Were Waiting (For Me)avec George Michael?",
                 "answers": [
-                    "9"
+                    "3"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Cat\u00e9gorie had Titre is Wonderful and Ann\u00e9e was after 1968?",
+                "question": "How many Cat\u00e9gorie had Ann\u00e9e was before 1973 and Titre is Respect?",
                 "answers": [
-                    "1"
+                    "2"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Cat\u00e9gorie had Ann\u00e9e was after 1973?",
+                "question": "How many Cat\u00e9gorie had Titre is Respect?",
                 "answers": [
-                    "9"
+                    "2"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Cat\u00e9gorie had Ann\u00e9e was before 1969 and Titre is Respect?",
+                "question": "How many Cat\u00e9gorie had Ann\u00e9e was before 1974 and Titre is Respect?",
                 "answers": [
                     "2"
                 ],

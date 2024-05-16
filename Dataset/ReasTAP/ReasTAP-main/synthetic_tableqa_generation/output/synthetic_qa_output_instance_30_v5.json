@@ -129,15 +129,16 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse ou compagne) when the Portrait string contains px and the Pr\u00e9sident string starts with Charles?",
+                "question": "What was the Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse ou compagne) when the Pr\u00e9sident string contains de and the Vie string contains de?",
                 "answers": [
-                    "Yvonne de Gaulle\nn\u00e9e Vendroux"
+                    "C\u00e9libat de Nicolas Sarkozy ( - )",
+                    "C\u00e9libat de Fran\u00e7ois Hollande ( - )"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse ou compagne) when the Pr\u00e9sident string ends with Macron and the Vie string contains le?",
+                "question": "What was the Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse ou compagne) when the Vie string ends with le and the Pr\u00e9sident string contains Macron?",
                 "answers": [
                     "Brigitte Macron\nn\u00e9e Trogneux"
                 ],
@@ -145,7 +146,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse ou compagne), with Vie string ends with le, have Pr\u00e9sident string contains de?",
+                "question": "Does every Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse ou compagne), with Portrait string starts with 100, have Vie string contains le?",
                 "answers": [
                     "No"
                 ],
@@ -153,7 +154,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse ou compagne), with Pr\u00e9sident string contains de, have Vie string contains le?",
+                "question": "Does only Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse ou compagne), with Pr\u00e9sident string ends with Macron, have Portrait string contains px?",
                 "answers": [
                     "No"
                 ],
@@ -161,23 +162,31 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Pr\u00e9sident was Georges Pompidou and when the Pr\u00e9sident was Jacques Chirac?",
+                "question": "How many years had passed between when the Pr\u00e9sident was Emmanuel Macron and when the Pr\u00e9sident was Val\u00e9ry Giscard d'Estaing?",
                 "answers": [
-                    "21"
+                    "55"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Pr\u00e9sident was Charles de Gaulle and when the Pr\u00e9sident was Emmanuel Macron?",
+                "question": "How many years had passed between when the Pr\u00e9sident was Georges Pompidou and when the Pr\u00e9sident was Charles de Gaulle?",
                 "answers": [
-                    "86"
+                    "14"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse ou compagne) had Vie string ends with le?",
+                "question": "How many Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse ou compagne) had Portrait string contains 100 and Pr\u00e9sident string contains de?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse ou compagne) had Vie string contains le and Portrait string starts with 100?",
                 "answers": [
                     "6"
                 ],
@@ -185,15 +194,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse ou compagne) had Pr\u00e9sident string contains de?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse ou compagne) had Portrait string contains 100 and Vie string contains le?",
+                "question": "How many Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse ou compagne) had Vie string contains le?",
                 "answers": [
                     "6"
                 ],
@@ -367,27 +368,27 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse) when the Vie string contains de and the Pr\u00e9sident string contains de?",
+                "question": "How many years had passed between when the Pr\u00e9sident was Alexandre Millerand and when the Pr\u00e9sident was Paul Deschanel?",
                 "answers": [
-                    "C\u00e9libat de Gaston Doumergue ( - )"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Pr\u00e9sident was Alexandre Millerand and when the Pr\u00e9sident was F\u00e9lix Faure?",
-                "answers": [
-                    "33"
+                    "3"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Pr\u00e9sident was Sadi Carnot and when the Pr\u00e9sident was \u00c9mile Loubet?",
+                "question": "How many years had passed between when the Pr\u00e9sident was Paul Doumer and when the Pr\u00e9sident was Raymond Poincar\u00e9?",
                 "answers": [
-                    "6"
+                    "26"
                 ],
                 "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse) had Pr\u00e9sident string starts with Jean?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
             }
         ]
     },
@@ -449,7 +450,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse) when the Portrait string contains de and the Pr\u00e9sident string contains de?",
+                "question": "What was the Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse) when the Portrait string contains de and the Vie string contains de?",
                 "answers": [
                     "Veuvage de Ren\u00e9 Coty ( - )"
                 ],
@@ -457,9 +458,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse), with Pr\u00e9sident string contains de, have Dur\u00e9e string contains en?",
+                "question": "What was the Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse) when the Dur\u00e9e string contains de and the Pr\u00e9sident string contains de?",
                 "answers": [
-                    "No"
+                    "Veuvage de Ren\u00e9 Coty ( - )"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse), with Vie string contains de, have Portrait string contains de?",
+                "answers": [
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
@@ -470,6 +479,22 @@
                     "5"
                 ],
                 "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Dur\u00e9e was - Le mandat de son \u00e9poux prit fin en 1959. and when the Dur\u00e9e was -?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom d'usage (\u00e0 l'\u00e9poque o\u00f9 elle \u00e9tait \u00e9pouse) had Pr\u00e9sident string contains de?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
             }
         ]
     }

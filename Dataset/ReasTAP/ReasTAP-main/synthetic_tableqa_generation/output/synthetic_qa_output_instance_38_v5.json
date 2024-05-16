@@ -106,7 +106,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Ann\u00e9e when the R\u00e9compense string starts with Oscars and the Cat\u00e9gorie string contains second?",
+                "question": "What was the Ann\u00e9e when the Film string contains vie and the R\u00e9compense string starts with Oscars?",
                 "answers": [
                     "2000"
                 ],
@@ -114,15 +114,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Ann\u00e9e when the Cat\u00e9gorie string ends with Award and the Film string starts with Au?",
-                "answers": [
-                    "2011"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Ann\u00e9e, with Film string contains sang, have Cat\u00e9gorie string ends with Award?",
+                "question": "Does every Ann\u00e9e, with Film string starts with Au, have Cat\u00e9gorie string contains Heart?",
                 "answers": [
                     "No"
                 ],
@@ -130,11 +122,19 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Ann\u00e9e, with R\u00e9compense string starts with Oscars, have Cat\u00e9gorie string contains un?",
+                "question": "Does only Ann\u00e9e, with R\u00e9compense string starts with Oscars, have Cat\u00e9gorie string contains second?",
                 "answers": [
                     "No"
                 ],
                 "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ann\u00e9e had Film string contains vie and R\u00e9compense string starts with Oscars?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
@@ -146,17 +146,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Ann\u00e9e had Film string contains de?",
+                "question": "How many Ann\u00e9e had Cat\u00e9gorie string contains un?",
                 "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Ann\u00e9e had Film string contains le?",
-                "answers": [
-                    "2"
+                    "7"
                 ],
                 "reasoning_type": "counting"
             }
@@ -239,15 +231,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Ann\u00e9e when the Cat\u00e9gorie string contains un and the Film string starts with Un?",
-                "answers": [
-                    "2008"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Ann\u00e9e when the Film string starts with Au and the R\u00e9compense string starts with Golden?",
+                "question": "What was the Ann\u00e9e when the Film string starts with Au and the R\u00e9compense string contains film?",
                 "answers": [
                     "2012"
                 ],
@@ -255,15 +239,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Ann\u00e9e, with Cat\u00e9gorie string contains un, have Film string starts with Un?",
+                "question": "What was the Ann\u00e9e when the Cat\u00e9gorie string contains un and the Film string contains George?",
                 "answers": [
-                    "No"
+                    "1998"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Ann\u00e9e, with Film string starts with Au, have R\u00e9compense string contains Globe?",
+                "question": "Does only Ann\u00e9e, with Film string contains pays, have R\u00e9compense string starts with Golden?",
                 "answers": [
                     "Yes"
                 ],
@@ -271,7 +255,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Ann\u00e9e had Film string starts with Un?",
+                "question": "Does only Ann\u00e9e, with Cat\u00e9gorie string contains un, have Film string ends with Wallace?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ann\u00e9e had Film string contains Un and Cat\u00e9gorie string contains un?",
                 "answers": [
                     "2"
                 ],
@@ -279,9 +271,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Ann\u00e9e had R\u00e9compense string contains Globe?",
+                "question": "How many Ann\u00e9e had Film string contains Un?",
                 "answers": [
-                    "1"
+                    "2"
                 ],
                 "reasoning_type": "counting"
             }

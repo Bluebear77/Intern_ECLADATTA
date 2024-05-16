@@ -13,707 +13,6 @@
         ],
         "rows": [
             [
-                "142x142px",
-                "B\u00e9atrice de Provence\n(1229 - 23 septembre 1267)",
-                "* Charles Ier d'Anjou (mariage en 1246)",
-                "* Comtesse de Provence et de Forcalquier (de plein droit, 1245-1267)\n* Comtesse d'Anjou et du Maine (1246-1267)\n* Reine de Sicile et de Naples, princesse de Tarente (1266-1267)",
-                "* Princesse de la Maison de Barcelone. Fille de Raimond-B\u00e9renger V de Provence et de B\u00e9atrice de Savoie.\n* M\u00e8re de Blanche d'Anjou, de B\u00e9atrice de Sicile, de Charles II d'Anjou et d'Isabelle d'Anjou.",
-                ""
-            ],
-            [
-                "123x123px",
-                "Marguerite de Bourgogne-Tonnerre(Vers 1250 \u2013 )",
-                "* Charles Ier d'Anjou (mariage en 1268)",
-                "* Comtesse de Tonnerre (de plein droit, 1262-1308)\n* Reine de Sicile (1268-1282)\n* Reine de Naples, princesse de Tarente, comtesse d'Anjou et du Maine (1268-1285)\n* Reine d'Albanie (1272-1285)\n* Princesse d'Acha\u00efe (1278-1285)",
-                "* Princesse de la Maison cap\u00e9tienne de Bourgogne. Fille d'Eudes de Bourgogne et de Mathilde II de Bourbon.",
-                ""
-            ],
-            [
-                "134x134px",
-                "Marie de Hongrie(Vers 1257 \u2013 )",
-                "* Charles II d'Anjou (mariage en 1270)",
-                "* Comtesse de Provence et de Forcalquier (1270-1309)\n* Reine de Naples (1285-1309)\n* Reine d'Albanie et princesse de Tarente (1285-1294)\n* Comtesse d'Anjou et du Maine (1285-1290)\n* Princesse d'Acha\u00efe (1285-1289)",
-                "* Princesse de la dynastie \u00c1rp\u00e1d. Fille d'Etienne V de Hongrie et d'\u00c9lisabeth la Coumane.\n* M\u00e8re de Charles Martel de Hongrie, de Marguerite d'Anjou, de Louis d'Anjou, de Robert Ier de Naples, de Philippe  de Tarente, de Blanche d'Anjou, d'\u00c9l\u00e9onore d'Anjou, de Marie d'Anjou, de Jean de Durazzo et de B\u00e9atrice d'Anjou.",
-                ""
-            ],
-            [
-                "90x90px",
-                "Sancia de Majorque(Vers 1285 \u2013 )",
-                "* Robert Ier de Naples (mariage en 1304)",
-                "* Duchesse de Calabre (1304-1309)\n* Reine de Naples et comtesse de Provence (1309-1343)\n* R\u00e9gente de Naples et de Provence (1343-1345)",
-                "* Princesse de la Maison de Barcelone. Fille de Jacques II de Majorque et d'Esclarmonde de Foix.",
-                "105x105px"
-            ],
-            [
-                "90x90px",
-                "Andr\u00e9  de Naples( \u2013 )",
-                "* Jeanne Ire de Naples (mariage en 1333)",
-                "* Duc de Calabre (1333-1345)\n* Roi de Naples (1343-1345)",
-                "* Prince de la Maison cap\u00e9tienne d'Anjou-Sicile. Fils de Charles Robert de Hongrie, et d'\u00c9lisabeth de Pologne.",
-                "105x105px"
-            ],
-            [
-                "163x163px",
-                "Louis de Tarente(Vers 1320 \u2013 )",
-                "* Jeanne Ire de Naples (mariage en 1346)",
-                "* Roi de Naples (1346-1362)",
-                "* Prince de la Maison cap\u00e9tienne d'Anjou-Sicile. Fils de Philippe  de Tarente et de Catherine de Valois-Courtenay.",
-                "105x105px"
-            ],
-            [
-                "112x112px",
-                "Jacques IV de Majorque( \u2013 )",
-                "* Jeanne Ire de Naples (mariage en 1363)",
-                "* Roi titulaire de Majorque et prince titulaire d'Acha\u00efe (1349-1375)\n* Duc de Calabre (1363-1375)",
-                "* Prince de la Maison de Barcelone. Fils de Jacques III de Majorque et de Constance d\u2019Aragon.",
-                ""
-            ],
-            [
-                "",
-                "Othon IV de Brunswick-Grubenhagen(Vers 1320 \u2013 )",
-                "* Yolande de Villargut\n*Jeanne Ire de Naples (mariage en 1376)",
-                "* Prince de Tarente (1376-1381)",
-                "* Prince de la Maison de Brunswick. Fils d'Henri II de Brunswick-Grubenhagen et de Judith de Brandebourg.",
-                ""
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Titres string contains de and the Nom\n(dates) string contains IV?",
-                "answers": [
-                    "112x112px",
-                    ""
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Titres string contains Roi and the El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "90x90px",
-                    "163x163px",
-                    "112x112px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Conjoint string contains Charles, have Titres string contains de?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with Nom\n(dates) string contains de, have Titres string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de?",
-                "answers": [
-                    "8"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Conjoint string contains de and Nom\n(dates) string contains de?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "7524996",
-        "title": "Liste des conjoints des souverains de Naples",
-        "url": "https://fr.wikipedia.org/?curid=7524996",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "Conjoint",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "",
-                "Marguerite de Durazzo( \u2013 )",
-                "* Charles III de Naples (mariage en 1369)",
-                "* Reine de Naples (1382-1386)\n* Reine de Hongrie (1385-1386)\n* R\u00e9gente de Naples (1386-1390)",
-                "* Princesse de la Maison cap\u00e9tienne d'Anjou-Sicile. Fille de Charles de Durazzo et de Marie de Calabre.\n* M\u00e8re de Jeanne II de Naples et de Ladislas  de Naples.",
-                ""
-            ],
-            [
-                "",
-                "Constance Chiaromonte(Vers 1377 \u2013 Vers 1423)",
-                "* Ladislas Ier de Naples (mariage en 1390)",
-                "* Reine titulaire de Naples (1390-1392)",
-                "* Princesse de la Famille Chiaromonte. Fille de Manfredi III Chiaromonte et d'Eufemia Ventimiglia.",
-                ""
-            ],
-            [
-                "",
-                "Marie de Lusignan(Vers 1381 \u2013 )",
-                "* Ladislas Ier de Naples (mariage en 1403)",
-                "* Reine de Naples (1403-1404)",
-                "* Princesse de la Maison de Lusignan. Fille de Jacques  de Chypre et d'Helvis de Brunswick-Grubenhagen.",
-                ""
-            ],
-            [
-                "",
-                "Marie d'Enghien(Vers 1367 \u2013 )",
-                "* Raimondo del Balzo Orsini (mariage en 1385)\n*Ladislas Ier de Naples (mariage en 1406)",
-                "* Comtesse de Lecce (de plein droit, 1384-1446)\n* Duchesse d'Andria (1385-1406)\n* Princesse de Tarente (de plein droit, 1399-1414)\n* Reine de Naples (1406-1414)",
-                "* Princesse de la Maison d'Enghien. Fille de Jean d'Enghien et de Sancie Orsini des Baux.\n* M\u00e8re de Giovanni Antonio del Balzo Orsini et de Catherine del Balzo Orsini.",
-                "99x99px"
-            ],
-            [
-                "111x111px",
-                "Jacques II de Bourbon(Vers 1370 \u2013 )",
-                "* B\u00e9atrice de Navarre (mariage en 1406)\n*Jeanne II de Naples (mariage en 1415)",
-                "* Comte de la Marche et de Castres (1393-1438)\n* Grand chambellan de France (1397-1438)\n* Roi de Naples (1415-1419)",
-                "* Prince de la Maison de Bourbon-La Marche. Fils de Jean  de Bourbon-La Marche et de Catherine de Vend\u00f4me.\n* P\u00e8re d'\u00c9l\u00e9onore de Bourbon.",
-                "105x105px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Conjoint string contains en and the Nom\n(dates) string contains de?",
-                "answers": [
-                    "",
-                    "111x111px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains Fille and the Titres string contains de?",
-                "answers": [
-                    ""
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with Titres string contains Naples, have Nom\n(dates) string starts with Marguerite?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with Conjoint string contains de, have Titres string contains Naples?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Nom\n(dates) string contains de and Conjoint string contains de?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Conjoint string contains Ier?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "7524996",
-        "title": "Liste des conjoints des souverains de Naples",
-        "url": "https://fr.wikipedia.org/?curid=7524996",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "Conjoint",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "156x156px",
-                "Marie de Blois(Vers 1345 \u2013 )",
-                "* Louis Ier d'Anjou (mariage en 1360)",
-                "* Dame de Guise (de plein droit, 1360-1404)\n* Duchesse d'Anjou et de Touraine, comtesse du Maine (1360-1384)\n* Duchesse de Calabre (1380-1382)\n* Reine titulaire de Naples et comtesse de Provence (1382-1384)",
-                "* Princesse de la Maison de Blois. Fille de Charles de Blois et de Jeanne de Penthi\u00e8vre.\n* M\u00e8re de Louis II d'Anjou.",
-                "90x90px"
-            ],
-            [
-                "156x156px",
-                "Yolande d'Aragon( \u2013 )",
-                "* Louis II d'Anjou (mariage en 1400)",
-                "* Reine titulaire de Naples, duchesse d'Anjou et de Touraine, comtesse du Maine et de Provence (1400-1417)\n* Dame de Guise (1404-1417)",
-                "* Princesse de la Maison de Barcelone. Fille de Jean Ier d'Aragon et de Yolande de Bar.\n* M\u00e8re de Louis III d'Anjou, de Marie d'Anjou, de Ren\u00e9 d'Anjou, de Yolande d'Anjou et de Charles IV du Maine.",
-                "96x96px"
-            ],
-            [
-                "171x171px",
-                "Marguerite de Savoie( \u2013 )",
-                "* Louis III d'Anjou (mariage en 1431)\n* Louis  du Palatinat (mariage en 1445)\n* Ulrich  de Wurtemberg (mariage en 1453)",
-                "* Reine titulaire de Naples, duchesse d'Anjou, comtesse du Maine, de Provence et de Guise (1431-1434)\n* Duchesse de Calabre (1432-1434)\n* \u00c9lectrice palatine (1445-1449)\n* Comtesse de Wurtemberg (1453-1479)",
-                "* Princesse de la Maison de Savoie. Fille d'Am\u00e9d\u00e9e VIII de Savoie et de Marie de Bourgogne.\n* M\u00e8re de Philippe Ier du Palatinat.",
-                ""
-            ],
-            [
-                "115x115px",
-                "Isabelle  de Lorraine(Vers 1410 \u2013 )",
-                "* Ren\u00e9 d'Anjou (mariage en 1420)",
-                "* Comtesse de Guise (1420-1425)\n* Duchesse de Bar (1430-1453)\n* Duchesse de Lorraine (de plein droit, 1431-1453)\n* Duchesse de Calabre (1434-1435)\n* Duchesse d'Anjou et comtesse de Provence (1434-1453)\n* Reine de Naples (1435-1442)",
-                "* Princesse de la Maison de Lorraine. Fille de Charles II de Lorraine et de Marguerite de Wittelsbach.\n* M\u00e8re de Jean II de Lorraine, de Louis d'Anjou-Commercy, de Yolande d'Anjou et de Marguerite d'Anjou.",
-                "99x99px"
-            ],
-            [
-                "147x147px",
-                "Jeanne de Laval( \u2013 )",
-                "* Ren\u00e9 d'Anjou (mariage en 1454)",
-                "* Reine titulaire de Naples, duchesse d'Anjou et de Bar, comtesse du Maine et de Provence (1454-1480)",
-                "* Princesse de la Maison de Laval. Fille de Guy XIV de Laval et d'Isabelle de Bretagne.",
-                "99x99px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string contains de and the Titres string contains de?",
-                "answers": [
-                    "156x156px",
-                    "171x171px",
-                    "115x115px",
-                    "147x147px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string starts with Marguerite and the Titres string contains palatine?",
-                "answers": [
-                    "171x171px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Nom\n(dates) string starts with Marguerite, have Titres string contains de?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with El\u00e9ments biographiques string contains Louis, have Conjoint string contains en?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Nom\n(dates) string contains de?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains Guise?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "7524996",
-        "title": "Liste des conjoints des souverains de Naples",
-        "url": "https://fr.wikipedia.org/?curid=7524996",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "Conjoint",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "107x107px",
-                "Marie de Castille( \u2013 )",
-                "* Alphonse V d'Aragon (mariage en 1415)",
-                "* Princesse des Asturies (de plein droit, 1401-1405)\n* Reine d'Aragon, de Majorque, de Valence et de Sicile, comtesse de Barcelone (1416-1458)\n* Reine de Naples (1442-1458)",
-                "* Princesse de la Maison de Trastamare. Fille d'Henri III de Castille et de Catherine de Lancastre.",
-                "135x135px"
-            ],
-            [
-                "90x90px",
-                "Isabelle de Tarente(Vers 1424 \u2013 )",
-                "* Ferdinand  de Naples (mariage en 1444)",
-                "* Duchesse de Calabre (1444-1458)\n* Reine de Naples (1458-1465)\n* Princesse de Tarente (de plein droit, 1463-1465)",
-                "* Princesse de la Famille Chiaromonte. Fille de Tristan de Clermont-Lod\u00e8ve et de Catherine Orsini des Baux.\n* M\u00e8re d'Alphonse II de Naples, d'\u00c9l\u00e9onore de Naples, de Fr\u00e9d\u00e9ric Ier de Naples, de Jean d'Aragon et de B\u00e9atrice de Naples.",
-                ""
-            ],
-            [
-                "",
-                "Jeanne d'Aragon( \u2013 )",
-                "* Ferdinand  de Naples (mariage en 1476)",
-                "* Reine de Naples (1476-1494)",
-                "* Princesse de la Maison de Trastamare. Fille de Jean II d'Aragon et de Jeanne Enr\u00edquez.\n* M\u00e8re de Jeanne de Naples.",
-                ""
-            ],
-            [
-                "",
-                "Jeanne de Naples(Vers 1478 \u2013 )",
-                "* Ferdinand II de Naples (mariage en 1496)",
-                "* Reine de Naples (1496)",
-                "* Princesse de la Maison de Trastamare. Fille de Ferdinand  de Naples et de Jeanne d'Aragon.",
-                ""
-            ],
-            [
-                "",
-                "Isabelle des Baux( \u2013 )",
-                "* Fr\u00e9d\u00e9ric  de Naples (mariage en 1486)",
-                "* Duchesse d'Andria et de Venosa, princesse d'Altamura (de plein droit, 1487-1533)\n* Reine de Naples et princesse de Tarente (1496-1501)",
-                "* Princesse de la Maison des Baux. Fille de Pietro del Balzo et de Maria Donata Orsini.\n* M\u00e8re de Ferdinand d'Aragon.",
-                ""
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the Conjoint string contains en?",
-                "answers": [
-                    "107x107px",
-                    "90x90px",
-                    ""
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string contains de and the El\u00e9ments biographiques string contains Fille?",
-                "answers": [
-                    "107x107px",
-                    "90x90px",
-                    ""
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with Titres string contains de, have El\u00e9ments biographiques string contains Catherine?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with El\u00e9ments biographiques string contains de, have Titres string contains Valence?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Conjoint string contains Ferdinand?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains la and Conjoint string contains de?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Conjoint string contains en?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "7524996",
-        "title": "Liste des conjoints des souverains de Naples",
-        "url": "https://fr.wikipedia.org/?curid=7524996",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "Conjoint",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "115x115px",
-                "Anne de Bretagne( \u2013 )",
-                "* Maximilien  du Saint-Empire (mariage en 1490)\n* Charles VIII de France (mariage en 1491)\n* Louis XII de France (mariage en 1499)",
-                "* Duchesse de Bretagne et comtesse de Montfort (de plein droit, 1488-1514)\n* Reine des Romains (1490-1491)\n* Reine de France (1491-1498 puis 1499-1514)\n* Duchesse de Milan (1499-1500 puis 1501-1512)\n* Reine de Naples (1501-1503)\n* Comtesse d'\u00c9tampes (de plein droit, 1512-1514)",
-                "* Princesse de la Maison de Montfort. Fille de Fran\u00e7ois II de Bretagne et de Marguerite de Foix.\n* M\u00e8re de Charles-Orland de France, de Charles de France, de Claude de France et de Ren\u00e9e de France.",
-                "96x96px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains France and the Titres string contains de?",
-                "answers": [
-                    "115x115px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains Bretagne and the Nom\n(dates) string starts with Anne?",
-                "answers": [
-                    "115x115px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Titres string contains Milan, have Nom\n(dates) string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with El\u00e9ments biographiques string contains de, have Nom\n(dates) string starts with Anne?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Nom\n(dates) string starts with Anne?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Conjoint string contains France and Nom\n(dates) string starts with Anne?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "7524996",
-        "title": "Liste des conjoints des souverains de Naples",
-        "url": "https://fr.wikipedia.org/?curid=7524996",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "Conjoint",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "111x111px",
-                "Isabelle  de Castille( \u2013 )",
-                "* Ferdinand II d'Aragon (mariage en 1469)",
-                "* Reine de Castille et Le\u00f3n (de plein droit, 1474-1504)\n* Reine d'Aragon, de Majorque, de Valence et de Sicile, comtesse de Barcelone (1479-1504)\n* Reine de Naples (1503-1504)",
-                "* Princesse de la Maison de Trastamare. Fille de Jean II de Castille et d'Isabelle de Portugal.\n* M\u00e8re d'Isabelle d'Aragon, de Jean d'Aragon, de Jeanne  de Castille, de Marie d'Aragon et de Catherine d'Aragon.",
-                "90x90px"
-            ],
-            [
-                "159x159px",
-                "Germaine de Foix(Vers 1488 \u2013 )",
-                "* Ferdinand II d'Aragon (mariage en 1505)\n* Jean de Brandebourg-Ansbach (mariage en 1519)\n* Ferdinand d'Aragon (mariage en 1526)",
-                "* Reine d'Aragon, de Majorque, de Valence, de Sicile et de Naples, comtesse de Barcelone (1505-1516)\n* Reine de Navarre (1512-1516)\n* Duchesse de Calabre et vice-reine de Valence (1526-1536)",
-                "* Princesse de la Maison de Grailly. Fille de Jean de Foix et de Marie d'Orl\u00e9ans.",
-                "135x135px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string contains de and the Conjoint string contains Ferdinand?",
-                "answers": [
-                    "111x111px",
-                    "159x159px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string contains de and the El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "111x111px",
-                    "159x159px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with Titres string contains de, have Conjoint string contains en?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with Nom\n(dates) string contains de, have El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Nom\n(dates) string contains de and Titres string contains de?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains de and Nom\n(dates) string contains de?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "7524996",
-        "title": "Liste des conjoints des souverains de Naples",
-        "url": "https://fr.wikipedia.org/?curid=7524996",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "Conjoint",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
                 "109x109px",
                 "Isabelle de Portugal( \u2013 )",
                 "* Charles Quint (mariage en 1526)",
@@ -800,24 +99,40 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains IV and the Conjoint string contains en?",
+                "question": "What was the Portrait when the Nom\n(dates) string contains de and the Titres string contains des?",
                 "answers": [
-                    "105x105px",
+                    "109x109px",
+                    "130x130px",
                     "116x116px"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the Nom\n(dates) string starts with Marguerite?",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains la and the Titres string contains de?",
                 "answers": [
-                    "105x105px"
+                    "109x109px",
+                    "119x119px",
+                    "130x130px",
+                    "102x102px",
+                    "105x105px",
+                    "116x116px",
+                    "113x113px",
+                    "117x117px"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with Titres string contains de, have Nom\n(dates) string contains Anne?",
+                "question": "Does every Portrait, with Titres string contains de, have Nom\n(dates) string contains de?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with Conjoint string contains II, have Nom\n(dates) string contains Marguerite?",
                 "answers": [
                     "Yes"
                 ],
@@ -825,15 +140,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with El\u00e9ments biographiques string contains de, have Titres string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de and Nom\n(dates) string contains de?",
+                "question": "How many Portrait had Titres string contains Naples and Nom\n(dates) string contains de?",
                 "answers": [
                     "4"
                 ],
@@ -841,17 +148,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Conjoint string contains en and Titres string contains Naples?",
+                "question": "How many Portrait had Conjoint string contains II?",
                 "answers": [
-                    "9"
+                    "6"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de and Conjoint string contains en?",
+                "question": "How many Portrait had Titres string contains de and Conjoint string contains II?",
                 "answers": [
-                    "9"
+                    "6"
                 ],
                 "reasoning_type": "counting"
             }
@@ -893,7 +200,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains la and the Conjoint string contains en?",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains II and the Conjoint string contains en?",
                 "answers": [
                     "131x131px"
                 ],
@@ -901,7 +208,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Conjoint string contains V and the Titres string contains de?",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains Ier and the Titres string contains de?",
                 "answers": [
                     "131x131px"
                 ],
@@ -909,7 +216,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with Nom\n(dates) string contains de, have El\u00e9ments biographiques string contains de?",
+                "question": "Does only Portrait, with El\u00e9ments biographiques string contains de, have Conjoint string contains en?",
                 "answers": [
                     "Yes"
                 ],
@@ -917,7 +224,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with El\u00e9ments biographiques string contains de, have Nom\n(dates) string contains de?",
+                "question": "Does only Portrait, with Titres string contains de, have El\u00e9ments biographiques string contains Louis?",
                 "answers": [
                     "Yes"
                 ],
@@ -925,15 +232,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains des and Nom\n(dates) string contains de?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Nom\n(dates) string contains de?",
+                "question": "How many Portrait had Titres string contains des?",
                 "answers": [
                     "1"
                 ],
@@ -977,7 +276,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Titres string contains de and the Conjoint string contains Charles?",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the Conjoint string contains VI?",
                 "answers": [
                     "118x118px"
                 ],
@@ -985,7 +284,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string contains de and the Titres string contains de?",
+                "question": "What was the Portrait when the Conjoint string contains en and the El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "118x118px"
                 ],
@@ -993,7 +292,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Conjoint string contains en, have El\u00e9ments biographiques string contains la?",
+                "question": "Does only Portrait, with Nom\n(dates) string contains de, have Conjoint string contains VI?",
                 "answers": [
                     "Yes"
                 ],
@@ -1001,7 +300,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with Nom\n(dates) string contains de, have Titres string contains de?",
+                "question": "Does only Portrait, with Titres string contains Milan, have El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -1009,7 +308,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains Naples?",
+                "question": "How many Portrait had Titres string contains de and El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "1"
                 ],
@@ -1017,7 +316,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Conjoint string contains Charles and El\u00e9ments biographiques string contains de?",
+                "question": "How many Portrait had Nom\n(dates) string contains de and Titres string contains de?",
                 "answers": [
                     "1"
                 ],
@@ -1025,7 +324,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Nom\n(dates) string contains de?",
+                "question": "How many Portrait had El\u00e9ments biographiques string contains de and Conjoint string contains en?",
                 "answers": [
                     "1"
                 ],
@@ -1077,23 +376,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Conjoint string contains III and the El\u00e9ments biographiques string contains de?",
+                "question": "What was the Portrait when the Conjoint string contains des and the Titres string contains de?",
                 "answers": [
-                    "108x108px"
+                    "117x117px"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Conjoint string contains Charles and the Titres string contains de?",
+                "question": "What was the Portrait when the Conjoint string contains Ier and the Titres string contains de?",
                 "answers": [
-                    "108x108px"
+                    "117x117px"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Titres string contains Naples, have El\u00e9ments biographiques string contains de?",
+                "question": "Does every Portrait, with Nom\n(dates) string contains de, have Conjoint string contains III?",
                 "answers": [
                     "Yes"
                 ],
@@ -1101,7 +400,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Titres string contains Naples, have Conjoint string contains III?",
+                "question": "Does only Portrait, with Conjoint string contains Ier, have Titres string contains de?",
                 "answers": [
                     "No"
                 ],
@@ -1109,23 +408,23 @@
             },
             {
                 "source": "synthetic_qa",
+                "question": "How many Portrait had El\u00e9ments biographiques string contains de and Conjoint string contains en?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Titres string contains de and Conjoint string contains en?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
                 "question": "How many Portrait had El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains de and Titres string contains de?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains Naples?",
                 "answers": [
                     "2"
                 ],
@@ -1177,7 +476,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Conjoint string contains Joachim and the Nom\n(dates) string starts with Caroline?",
+                "question": "What was the Portrait when the Titres string contains Berg and the Conjoint string contains Joachim?",
                 "answers": [
                     "137x137px"
                 ],
@@ -1185,7 +484,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string starts with Caroline and the El\u00e9ments biographiques string contains Charles?",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the Titres string contains Berg?",
                 "answers": [
                     "137x137px"
                 ],
@@ -1193,7 +492,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with Titres string contains de, have Nom\n(dates) string contains Caroline?",
+                "question": "Does only Portrait, with El\u00e9ments biographiques string contains Fille, have Conjoint string contains Joseph?",
                 "answers": [
                     "Yes"
                 ],
@@ -1201,7 +500,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Nom\n(dates) string starts with Caroline, have Conjoint string contains en?",
+                "question": "Does only Portrait, with Titres string contains de, have Nom\n(dates) string starts with Caroline?",
                 "answers": [
                     "Yes"
                 ],
@@ -1209,7 +508,715 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Conjoint string contains en and El\u00e9ments biographiques string contains de?",
+                "question": "How many Portrait had Nom\n(dates) string starts with Caroline?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Conjoint string contains Bonaparte and El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Titres string contains Naples and Nom\n(dates) string starts with Caroline?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "7524996",
+        "title": "Liste des conjoints des souverains de Naples",
+        "url": "https://fr.wikipedia.org/?curid=7524996",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "Conjoint",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "142x142px",
+                "B\u00e9atrice de Provence\n(1229 - 23 septembre 1267)",
+                "* Charles Ier d'Anjou (mariage en 1246)",
+                "* Comtesse de Provence et de Forcalquier (de plein droit, 1245-1267)\n* Comtesse d'Anjou et du Maine (1246-1267)\n* Reine de Sicile et de Naples, princesse de Tarente (1266-1267)",
+                "* Princesse de la Maison de Barcelone. Fille de Raimond-B\u00e9renger V de Provence et de B\u00e9atrice de Savoie.\n* M\u00e8re de Blanche d'Anjou, de B\u00e9atrice de Sicile, de Charles II d'Anjou et d'Isabelle d'Anjou.",
+                ""
+            ],
+            [
+                "123x123px",
+                "Marguerite de Bourgogne-Tonnerre(Vers 1250 \u2013 )",
+                "* Charles Ier d'Anjou (mariage en 1268)",
+                "* Comtesse de Tonnerre (de plein droit, 1262-1308)\n* Reine de Sicile (1268-1282)\n* Reine de Naples, princesse de Tarente, comtesse d'Anjou et du Maine (1268-1285)\n* Reine d'Albanie (1272-1285)\n* Princesse d'Acha\u00efe (1278-1285)",
+                "* Princesse de la Maison cap\u00e9tienne de Bourgogne. Fille d'Eudes de Bourgogne et de Mathilde II de Bourbon.",
+                ""
+            ],
+            [
+                "134x134px",
+                "Marie de Hongrie(Vers 1257 \u2013 )",
+                "* Charles II d'Anjou (mariage en 1270)",
+                "* Comtesse de Provence et de Forcalquier (1270-1309)\n* Reine de Naples (1285-1309)\n* Reine d'Albanie et princesse de Tarente (1285-1294)\n* Comtesse d'Anjou et du Maine (1285-1290)\n* Princesse d'Acha\u00efe (1285-1289)",
+                "* Princesse de la dynastie \u00c1rp\u00e1d. Fille d'Etienne V de Hongrie et d'\u00c9lisabeth la Coumane.\n* M\u00e8re de Charles Martel de Hongrie, de Marguerite d'Anjou, de Louis d'Anjou, de Robert Ier de Naples, de Philippe  de Tarente, de Blanche d'Anjou, d'\u00c9l\u00e9onore d'Anjou, de Marie d'Anjou, de Jean de Durazzo et de B\u00e9atrice d'Anjou.",
+                ""
+            ],
+            [
+                "90x90px",
+                "Sancia de Majorque(Vers 1285 \u2013 )",
+                "* Robert Ier de Naples (mariage en 1304)",
+                "* Duchesse de Calabre (1304-1309)\n* Reine de Naples et comtesse de Provence (1309-1343)\n* R\u00e9gente de Naples et de Provence (1343-1345)",
+                "* Princesse de la Maison de Barcelone. Fille de Jacques II de Majorque et d'Esclarmonde de Foix.",
+                "105x105px"
+            ],
+            [
+                "90x90px",
+                "Andr\u00e9  de Naples( \u2013 )",
+                "* Jeanne Ire de Naples (mariage en 1333)",
+                "* Duc de Calabre (1333-1345)\n* Roi de Naples (1343-1345)",
+                "* Prince de la Maison cap\u00e9tienne d'Anjou-Sicile. Fils de Charles Robert de Hongrie, et d'\u00c9lisabeth de Pologne.",
+                "105x105px"
+            ],
+            [
+                "163x163px",
+                "Louis de Tarente(Vers 1320 \u2013 )",
+                "* Jeanne Ire de Naples (mariage en 1346)",
+                "* Roi de Naples (1346-1362)",
+                "* Prince de la Maison cap\u00e9tienne d'Anjou-Sicile. Fils de Philippe  de Tarente et de Catherine de Valois-Courtenay.",
+                "105x105px"
+            ],
+            [
+                "112x112px",
+                "Jacques IV de Majorque( \u2013 )",
+                "* Jeanne Ire de Naples (mariage en 1363)",
+                "* Roi titulaire de Majorque et prince titulaire d'Acha\u00efe (1349-1375)\n* Duc de Calabre (1363-1375)",
+                "* Prince de la Maison de Barcelone. Fils de Jacques III de Majorque et de Constance d\u2019Aragon.",
+                ""
+            ],
+            [
+                "",
+                "Othon IV de Brunswick-Grubenhagen(Vers 1320 \u2013 )",
+                "* Yolande de Villargut\n*Jeanne Ire de Naples (mariage en 1376)",
+                "* Prince de Tarente (1376-1381)",
+                "* Prince de la Maison de Brunswick. Fils d'Henri II de Brunswick-Grubenhagen et de Judith de Brandebourg.",
+                ""
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains Robert and the Titres string contains Naples?",
+                "answers": [
+                    "134x134px",
+                    "90x90px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Titres string contains Provence and the El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "142x142px",
+                    "134x134px",
+                    "90x90px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with Conjoint string contains de, have Nom\n(dates) string contains de?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with Conjoint string contains Ier, have El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Conjoint string contains Charles?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had El\u00e9ments biographiques string contains II?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "8"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "7524996",
+        "title": "Liste des conjoints des souverains de Naples",
+        "url": "https://fr.wikipedia.org/?curid=7524996",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "Conjoint",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "",
+                "Marguerite de Durazzo( \u2013 )",
+                "* Charles III de Naples (mariage en 1369)",
+                "* Reine de Naples (1382-1386)\n* Reine de Hongrie (1385-1386)\n* R\u00e9gente de Naples (1386-1390)",
+                "* Princesse de la Maison cap\u00e9tienne d'Anjou-Sicile. Fille de Charles de Durazzo et de Marie de Calabre.\n* M\u00e8re de Jeanne II de Naples et de Ladislas  de Naples.",
+                ""
+            ],
+            [
+                "",
+                "Constance Chiaromonte(Vers 1377 \u2013 Vers 1423)",
+                "* Ladislas Ier de Naples (mariage en 1390)",
+                "* Reine titulaire de Naples (1390-1392)",
+                "* Princesse de la Famille Chiaromonte. Fille de Manfredi III Chiaromonte et d'Eufemia Ventimiglia.",
+                ""
+            ],
+            [
+                "",
+                "Marie de Lusignan(Vers 1381 \u2013 )",
+                "* Ladislas Ier de Naples (mariage en 1403)",
+                "* Reine de Naples (1403-1404)",
+                "* Princesse de la Maison de Lusignan. Fille de Jacques  de Chypre et d'Helvis de Brunswick-Grubenhagen.",
+                ""
+            ],
+            [
+                "",
+                "Marie d'Enghien(Vers 1367 \u2013 )",
+                "* Raimondo del Balzo Orsini (mariage en 1385)\n*Ladislas Ier de Naples (mariage en 1406)",
+                "* Comtesse de Lecce (de plein droit, 1384-1446)\n* Duchesse d'Andria (1385-1406)\n* Princesse de Tarente (de plein droit, 1399-1414)\n* Reine de Naples (1406-1414)",
+                "* Princesse de la Maison d'Enghien. Fille de Jean d'Enghien et de Sancie Orsini des Baux.\n* M\u00e8re de Giovanni Antonio del Balzo Orsini et de Catherine del Balzo Orsini.",
+                "99x99px"
+            ],
+            [
+                "111x111px",
+                "Jacques II de Bourbon(Vers 1370 \u2013 )",
+                "* B\u00e9atrice de Navarre (mariage en 1406)\n*Jeanne II de Naples (mariage en 1415)",
+                "* Comte de la Marche et de Castres (1393-1438)\n* Grand chambellan de France (1397-1438)\n* Roi de Naples (1415-1419)",
+                "* Prince de la Maison de Bourbon-La Marche. Fils de Jean  de Bourbon-La Marche et de Catherine de Vend\u00f4me.\n* P\u00e8re d'\u00c9l\u00e9onore de Bourbon.",
+                "105x105px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Conjoint string contains en and the Titres string contains Naples?",
+                "answers": [
+                    "",
+                    "111x111px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Conjoint string contains en and the El\u00e9ments biographiques string contains Prince?",
+                "answers": [
+                    "",
+                    "111x111px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with Conjoint string contains en, have Titres string contains Naples?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Portrait, with Conjoint string contains de, have Nom\n(dates) string contains de?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Nom\n(dates) string contains de and Titres string contains de?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Conjoint string contains de?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "7524996",
+        "title": "Liste des conjoints des souverains de Naples",
+        "url": "https://fr.wikipedia.org/?curid=7524996",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "Conjoint",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "156x156px",
+                "Marie de Blois(Vers 1345 \u2013 )",
+                "* Louis Ier d'Anjou (mariage en 1360)",
+                "* Dame de Guise (de plein droit, 1360-1404)\n* Duchesse d'Anjou et de Touraine, comtesse du Maine (1360-1384)\n* Duchesse de Calabre (1380-1382)\n* Reine titulaire de Naples et comtesse de Provence (1382-1384)",
+                "* Princesse de la Maison de Blois. Fille de Charles de Blois et de Jeanne de Penthi\u00e8vre.\n* M\u00e8re de Louis II d'Anjou.",
+                "90x90px"
+            ],
+            [
+                "156x156px",
+                "Yolande d'Aragon( \u2013 )",
+                "* Louis II d'Anjou (mariage en 1400)",
+                "* Reine titulaire de Naples, duchesse d'Anjou et de Touraine, comtesse du Maine et de Provence (1400-1417)\n* Dame de Guise (1404-1417)",
+                "* Princesse de la Maison de Barcelone. Fille de Jean Ier d'Aragon et de Yolande de Bar.\n* M\u00e8re de Louis III d'Anjou, de Marie d'Anjou, de Ren\u00e9 d'Anjou, de Yolande d'Anjou et de Charles IV du Maine.",
+                "96x96px"
+            ],
+            [
+                "171x171px",
+                "Marguerite de Savoie( \u2013 )",
+                "* Louis III d'Anjou (mariage en 1431)\n* Louis  du Palatinat (mariage en 1445)\n* Ulrich  de Wurtemberg (mariage en 1453)",
+                "* Reine titulaire de Naples, duchesse d'Anjou, comtesse du Maine, de Provence et de Guise (1431-1434)\n* Duchesse de Calabre (1432-1434)\n* \u00c9lectrice palatine (1445-1449)\n* Comtesse de Wurtemberg (1453-1479)",
+                "* Princesse de la Maison de Savoie. Fille d'Am\u00e9d\u00e9e VIII de Savoie et de Marie de Bourgogne.\n* M\u00e8re de Philippe Ier du Palatinat.",
+                ""
+            ],
+            [
+                "115x115px",
+                "Isabelle  de Lorraine(Vers 1410 \u2013 )",
+                "* Ren\u00e9 d'Anjou (mariage en 1420)",
+                "* Comtesse de Guise (1420-1425)\n* Duchesse de Bar (1430-1453)\n* Duchesse de Lorraine (de plein droit, 1431-1453)\n* Duchesse de Calabre (1434-1435)\n* Duchesse d'Anjou et comtesse de Provence (1434-1453)\n* Reine de Naples (1435-1442)",
+                "* Princesse de la Maison de Lorraine. Fille de Charles II de Lorraine et de Marguerite de Wittelsbach.\n* M\u00e8re de Jean II de Lorraine, de Louis d'Anjou-Commercy, de Yolande d'Anjou et de Marguerite d'Anjou.",
+                "99x99px"
+            ],
+            [
+                "147x147px",
+                "Jeanne de Laval( \u2013 )",
+                "* Ren\u00e9 d'Anjou (mariage en 1454)",
+                "* Reine titulaire de Naples, duchesse d'Anjou et de Bar, comtesse du Maine et de Provence (1454-1480)",
+                "* Princesse de la Maison de Laval. Fille de Guy XIV de Laval et d'Isabelle de Bretagne.",
+                "99x99px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Titres string contains palatine and the El\u00e9ments biographiques string contains la?",
+                "answers": [
+                    "171x171px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Titres string contains de and the Conjoint string contains en?",
+                "answers": [
+                    "156x156px",
+                    "171x171px",
+                    "115x115px",
+                    "147x147px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with Conjoint string contains en, have El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Portrait, with Nom\n(dates) string starts with Marguerite, have El\u00e9ments biographiques string contains II?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Titres string contains de and Nom\n(dates) string contains de?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Conjoint string contains en?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "7524996",
+        "title": "Liste des conjoints des souverains de Naples",
+        "url": "https://fr.wikipedia.org/?curid=7524996",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "Conjoint",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "107x107px",
+                "Marie de Castille( \u2013 )",
+                "* Alphonse V d'Aragon (mariage en 1415)",
+                "* Princesse des Asturies (de plein droit, 1401-1405)\n* Reine d'Aragon, de Majorque, de Valence et de Sicile, comtesse de Barcelone (1416-1458)\n* Reine de Naples (1442-1458)",
+                "* Princesse de la Maison de Trastamare. Fille d'Henri III de Castille et de Catherine de Lancastre.",
+                "135x135px"
+            ],
+            [
+                "90x90px",
+                "Isabelle de Tarente(Vers 1424 \u2013 )",
+                "* Ferdinand  de Naples (mariage en 1444)",
+                "* Duchesse de Calabre (1444-1458)\n* Reine de Naples (1458-1465)\n* Princesse de Tarente (de plein droit, 1463-1465)",
+                "* Princesse de la Famille Chiaromonte. Fille de Tristan de Clermont-Lod\u00e8ve et de Catherine Orsini des Baux.\n* M\u00e8re d'Alphonse II de Naples, d'\u00c9l\u00e9onore de Naples, de Fr\u00e9d\u00e9ric Ier de Naples, de Jean d'Aragon et de B\u00e9atrice de Naples.",
+                ""
+            ],
+            [
+                "",
+                "Jeanne d'Aragon( \u2013 )",
+                "* Ferdinand  de Naples (mariage en 1476)",
+                "* Reine de Naples (1476-1494)",
+                "* Princesse de la Maison de Trastamare. Fille de Jean II d'Aragon et de Jeanne Enr\u00edquez.\n* M\u00e8re de Jeanne de Naples.",
+                ""
+            ],
+            [
+                "",
+                "Jeanne de Naples(Vers 1478 \u2013 )",
+                "* Ferdinand II de Naples (mariage en 1496)",
+                "* Reine de Naples (1496)",
+                "* Princesse de la Maison de Trastamare. Fille de Ferdinand  de Naples et de Jeanne d'Aragon.",
+                ""
+            ],
+            [
+                "",
+                "Isabelle des Baux( \u2013 )",
+                "* Fr\u00e9d\u00e9ric  de Naples (mariage en 1486)",
+                "* Duchesse d'Andria et de Venosa, princesse d'Altamura (de plein droit, 1487-1533)\n* Reine de Naples et princesse de Tarente (1496-1501)",
+                "* Princesse de la Maison des Baux. Fille de Pietro del Balzo et de Maria Donata Orsini.\n* M\u00e8re de Ferdinand d'Aragon.",
+                ""
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains la and the Conjoint string contains en?",
+                "answers": [
+                    "107x107px",
+                    "90x90px",
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Nom\n(dates) string contains des and the El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with Conjoint string contains en, have Titres string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with El\u00e9ments biographiques string contains la, have Titres string contains Naples?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Conjoint string contains en and Titres string contains Naples?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had El\u00e9ments biographiques string contains de and Conjoint string contains en?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Nom\n(dates) string contains de and El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "7524996",
+        "title": "Liste des conjoints des souverains de Naples",
+        "url": "https://fr.wikipedia.org/?curid=7524996",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "Conjoint",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "115x115px",
+                "Anne de Bretagne( \u2013 )",
+                "* Maximilien  du Saint-Empire (mariage en 1490)\n* Charles VIII de France (mariage en 1491)\n* Louis XII de France (mariage en 1499)",
+                "* Duchesse de Bretagne et comtesse de Montfort (de plein droit, 1488-1514)\n* Reine des Romains (1490-1491)\n* Reine de France (1491-1498 puis 1499-1514)\n* Duchesse de Milan (1499-1500 puis 1501-1512)\n* Reine de Naples (1501-1503)\n* Comtesse d'\u00c9tampes (de plein droit, 1512-1514)",
+                "* Princesse de la Maison de Montfort. Fille de Fran\u00e7ois II de Bretagne et de Marguerite de Foix.\n* M\u00e8re de Charles-Orland de France, de Charles de France, de Claude de France et de Ren\u00e9e de France.",
+                "96x96px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Titres string contains Naples and the Nom\n(dates) string starts with Anne?",
+                "answers": [
+                    "115x115px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Titres string contains de and the Nom\n(dates) string starts with Anne?",
+                "answers": [
+                    "115x115px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Portrait, with El\u00e9ments biographiques string contains de, have Conjoint string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Portrait, with El\u00e9ments biographiques string contains de, have Nom\n(dates) string starts with Anne?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Titres string contains de?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Conjoint string contains France and Nom\n(dates) string starts with Anne?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Nom\n(dates) string contains de and Titres string contains Milan?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "7524996",
+        "title": "Liste des conjoints des souverains de Naples",
+        "url": "https://fr.wikipedia.org/?curid=7524996",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "Conjoint",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "111x111px",
+                "Isabelle  de Castille( \u2013 )",
+                "* Ferdinand II d'Aragon (mariage en 1469)",
+                "* Reine de Castille et Le\u00f3n (de plein droit, 1474-1504)\n* Reine d'Aragon, de Majorque, de Valence et de Sicile, comtesse de Barcelone (1479-1504)\n* Reine de Naples (1503-1504)",
+                "* Princesse de la Maison de Trastamare. Fille de Jean II de Castille et d'Isabelle de Portugal.\n* M\u00e8re d'Isabelle d'Aragon, de Jean d'Aragon, de Jeanne  de Castille, de Marie d'Aragon et de Catherine d'Aragon.",
+                "90x90px"
+            ],
+            [
+                "159x159px",
+                "Germaine de Foix(Vers 1488 \u2013 )",
+                "* Ferdinand II d'Aragon (mariage en 1505)\n* Jean de Brandebourg-Ansbach (mariage en 1519)\n* Ferdinand d'Aragon (mariage en 1526)",
+                "* Reine d'Aragon, de Majorque, de Valence, de Sicile et de Naples, comtesse de Barcelone (1505-1516)\n* Reine de Navarre (1512-1516)\n* Duchesse de Calabre et vice-reine de Valence (1526-1536)",
+                "* Princesse de la Maison de Grailly. Fille de Jean de Foix et de Marie d'Orl\u00e9ans.",
+                "135x135px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the Titres string contains de?",
+                "answers": [
+                    "111x111px",
+                    "159x159px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Portrait when the Titres string contains de and the Nom\n(dates) string contains de?",
+                "answers": [
+                    "111x111px",
+                    "159x159px"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with Conjoint string contains Jean, have Nom\n(dates) string contains de?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Portrait, with El\u00e9ments biographiques string contains de, have Titres string contains Valence?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had El\u00e9ments biographiques string contains Jean and Conjoint string contains en?",
                 "answers": [
                     "2"
                 ],
@@ -1217,7 +1224,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains de?",
+                "question": "How many Portrait had El\u00e9ments biographiques string contains de and Conjoint string contains Ferdinand?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Conjoint string contains en?",
                 "answers": [
                     "2"
                 ],

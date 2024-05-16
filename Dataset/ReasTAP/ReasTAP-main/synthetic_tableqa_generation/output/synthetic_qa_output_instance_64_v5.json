@@ -1005,31 +1005,25 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the Metteur en sc\u00e8ne string contains Bob and the R\u00f4le is Orlando?",
+                "question": "What was the Titre when the Lieu(x) des repr\u00e9sentations string contains de and the Metteur en sc\u00e8ne string starts with Bob?",
                 "answers": [
-                    "Orlando"
+                    "Orlando",
+                    "Quartett",
+                    "Mary Said What She Said"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the Metteur en sc\u00e8ne string starts with Trip and the Lieu(x) des repr\u00e9sentations string contains la?",
+                "question": "What was the Titre when the R\u00f4le string contains de and the Metteur en sc\u00e8ne string contains Bob?",
                 "answers": [
-                    "The Mother"
+                    "Quartett"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre, with R\u00f4le string starts with Mary, have Metteur en sc\u00e8ne string starts with Bob?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Titre, with R\u00f4le is Anne, have Metteur en sc\u00e8ne string starts with Trip?",
+                "question": "Does only Titre, with Metteur en sc\u00e8ne string contains Caroline, have Auteur string starts with Alfred?",
                 "answers": [
                     "Yes"
                 ],
@@ -1037,33 +1031,49 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Lieu(x) des repr\u00e9sentations string contains York, happened the 1st according to Ann\u00e9e?",
+                "question": "Does only Titre, with Auteur string starts with Alfred, have Metteur en sc\u00e8ne string starts with Caroline?",
                 "answers": [
-                    "4.48 Psychose"
+                    "No"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00f4le was Camille and when the R\u00f4le was Isabella?",
+                "question": "How many years had passed between when the Metteur en sc\u00e8ne was Peter Zadek and when the Metteur en sc\u00e8ne was Ivo Van Hove?",
                 "answers": [
-                    "14"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Metteur en sc\u00e8ne was Robert Hossein and when the Metteur en sc\u00e8ne was \u00c9ric Lacascade?",
-                "answers": [
-                    "31"
+                    "29"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Metteur en sc\u00e8ne string starts with Bob?",
+                "question": "How many years had passed between when the Lieu(x) des repr\u00e9sentations was tourn\u00e9e S\u00e3o Paulo, Porto Alegre et New York (Brooklyn Academy of Music) and when the Lieu(x) des repr\u00e9sentations was Reims (Com\u00e9die de Reims)?",
                 "answers": [
-                    "4"
+                    "35"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Lieu(x) des repr\u00e9sentations string contains National?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Lieu(x) des repr\u00e9sentations string starts with Atlantic and Metteur en sc\u00e8ne string starts with Trip?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Auteur string starts with Paul?",
+                "answers": [
+                    "2"
                 ],
                 "reasoning_type": "counting"
             }

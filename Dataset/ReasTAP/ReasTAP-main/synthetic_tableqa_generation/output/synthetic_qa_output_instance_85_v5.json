@@ -141,23 +141,31 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Which Parti, with tour is Battue, happened the 1st according to Ann\u00e9e?",
+                "question": "Does every Parti, with tour is Battue, have Circonscription string contains de?",
                 "answers": [
-                    "CSA-PRG"
+                    "No"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Parti, with tour is Battue, happened the 2nd according to Ann\u00e9e?",
+                "question": "Does every Parti, with tour is Battue, have Circonscription string contains section?",
                 "answers": [
-                    "CSA-PRV"
+                    "No"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
                 "question": "How many Parti had Circonscription string contains section?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Parti had Circonscription string contains de?",
                 "answers": [
                     "4"
                 ],
@@ -270,14 +278,6 @@
                     "Parti"
                 ],
                 "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Parti had tour is Battue?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
             }
         ]
     },
@@ -402,7 +402,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the tour was 31,1 and when the tour was 65,5?",
+                "question": "Does every Parti, with tour is Issue, have tour is Issue?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the tour was 966 and when the tour was 465?",
                 "answers": [
                     "5"
                 ],
@@ -410,19 +418,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the tour was 65,5 and when the tour was 31,1?",
+                "question": "How many years had passed between when the tour was 465 and when the tour was 966?",
                 "answers": [
                     "5"
                 ],
                 "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Parti had tour is Issue and tour is Issue?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
             }
         ]
     },

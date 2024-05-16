@@ -267,23 +267,26 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Ann\u00e9e was on 2007 and the Film string starts with La?",
+                "question": "What was the R\u00e9compense when the Ann\u00e9e was after 1982 and the Film string starts with Le?",
                 "answers": [
+                    "C\u00e9sar de la meilleure actrice dans un second r\u00f4le",
+                    "Globe de Cristal de la meilleure actrice de com\u00e9die"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the R\u00e9compense when the Film string contains La and the Ann\u00e9e was after 1976?",
+                "answers": [
+                    "C\u00e9sar de la meilleure actrice",
+                    "Lumi\u00e8re de la meilleure actrice",
                     "Moli\u00e8re de la com\u00e9dienne"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Ann\u00e9e was before 2007 and the Film is Quartet?",
-                "answers": [
-                    "Prix d'interpr\u00e9tation f\u00e9minine du Festival de Cannes"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only R\u00e9compense, with Ann\u00e9e was after 1977, have Film is Kinship?",
+                "question": "Does only R\u00e9compense, with Ann\u00e9e was after 1977, have Film is Quartet?",
                 "answers": [
                     "Yes"
                 ],
@@ -291,7 +294,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only R\u00e9compense, with Ann\u00e9e was before 2020, have Film is Quartet?",
+                "question": "Does only R\u00e9compense, with Ann\u00e9e was before 1990, have Film is Possession?",
                 "answers": [
                     "Yes"
                 ],
@@ -299,7 +302,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Ann\u00e9e was before 1990, happened the 7th according to Ann\u00e9e?",
+                "question": "Which R\u00e9compense, with Ann\u00e9e was after 1984, happened the 5th according to Ann\u00e9e?",
                 "answers": [
                     "C\u00e9sar de la meilleure actrice"
                 ],
@@ -307,27 +310,20 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Ann\u00e9e was before 1986, happened the 6th according to Ann\u00e9e?",
+                "question": "Which R\u00e9compense, with Ann\u00e9e was after 2010, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
-                    "C\u00e9sar de la meilleure actrice"
+                    "C\u00e9sar de la meilleure actrice dans un second r\u00f4le",
+                    "Globe de Cristal de la meilleure actrice de com\u00e9die"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Ann\u00e9e was after 1986, happened the 9th according to Ann\u00e9e?",
+                "question": "Which R\u00e9compense, with Ann\u00e9e was after 1984, happened the 10th according to Ann\u00e9e?",
                 "answers": [
                     "Globe de Cristal de la meilleure com\u00e9dienne"
                 ],
                 "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Film was La Dame aux cam\u00e9lias and when the Film was La Derni\u00e8re nuit pour Marie Stuart?",
-                "answers": [
-                    "6"
-                ],
-                "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
@@ -339,6 +335,22 @@
             },
             {
                 "source": "synthetic_qa",
+                "question": "How many years had passed between when the Film was Barocco and when the Film was Subway?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many R\u00e9compense had Ann\u00e9e was before 2007?",
+                "answers": [
+                    "13"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
                 "question": "How many R\u00e9compense had Ann\u00e9e was after 2010?",
                 "answers": [
                     "4"
@@ -347,17 +359,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Film string contains la and Ann\u00e9e was after 1981?",
+                "question": "How many R\u00e9compense had Film string starts with La?",
                 "answers": [
                     "5"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was on 1981 and Film is Possession?",
-                "answers": [
-                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -553,9 +557,17 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many Ann\u00e9e had Film string contains de?",
+                "question": "How many Ann\u00e9e had Film string contains La?",
                 "answers": [
-                    "8"
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ann\u00e9e had Film string starts with La?",
+                "answers": [
+                    "7"
                 ],
                 "reasoning_type": "counting"
             }

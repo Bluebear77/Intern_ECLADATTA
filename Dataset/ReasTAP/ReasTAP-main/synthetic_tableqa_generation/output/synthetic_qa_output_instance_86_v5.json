@@ -5,232 +5,6 @@
         "url": "https://fr.wikipedia.org/?curid=12414208",
         "header": [
             "Ann\u00e9e",
-            "Film",
-            "Titre Original",
-            "Nom du R\u00f4le",
-            "R\u00f4le"
-        ],
-        "rows": [
-            [
-                "2006",
-                "Four Horror Tales - Hidden Floor",
-                "\uc5b4\ub290\ub0a0 \uac11\uc790\uae30 \ub450\ubc88\uc9f8",
-                "Su Hee",
-                "Principal"
-            ],
-            [
-                "2006",
-                "Lump of Sugar",
-                "\uac01\uc124\ud0d5",
-                "Si Eun, enfant",
-                "Secondaire"
-            ],
-            [
-                "2006",
-                "Dasepo Naughty Girls",
-                "\ub2e4\uc138\ud3ec\uc18c\ub140",
-                "La m\u00e8re de la fille pauvre jeune (photo",
-                "Cam\u00e9o"
-            ],
-            [
-                "2007",
-                "Hwang Jin Yi",
-                "\ud669\uc9c4\uc774",
-                "Hwang Jin Yi, jeune",
-                "Secondaire"
-            ],
-            [
-                "2008",
-                "The Chaser",
-                "\ucd94\uaca9\uc790",
-                "Eun Ji, la fille de Mi Jin",
-                "Secondaire"
-            ],
-            [
-                "2009",
-                "The Last Day",
-                "\ud574\uc6b4\ub300",
-                "Ji Min",
-                "Secondaire"
-            ],
-            [
-                "2009",
-                "Possessed",
-                "\ubd88\uc2e0\uc9c0\uc625",
-                "Ji Eun",
-                "Secondaire"
-            ],
-            [
-                "2013",
-                "Commitment",
-                "\ub3d9\ucc3d\uc0dd",
-                "Ri Hye In",
-                "Secondaire"
-            ],
-            [
-                "2014",
-                "Thread of Lies",
-                "\uc6b0\uc544\ud55c \uac70\uc9d3\ub9d0",
-                "Hwa Yeon",
-                "Principal"
-            ],
-            [
-                "2015",
-                "Circle of Atonement",
-                "\ube44\ubc00",
-                "Lee Jeong Hyeon",
-                "Principal"
-            ],
-            [
-                "2017",
-                "Saranghagi ttaemoone",
-                "\uc0ac\ub791\ud558\uae30 \ub54c\ubb38\uc5d0",
-                "Scully",
-                "Principal"
-            ],
-            [
-                "2022",
-                "20th Century Girl",
-                "20\uc138\uae30 \uc18c\ub140",
-                "Na Bo-ra",
-                "Principal"
-            ]
-        ],
-        "column_types": [
-            "datetime",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 1,
-        "numeric_columns": [],
-        "date_columns": {
-            "0": [
-                2006,
-                2006,
-                2006,
-                2007,
-                2008,
-                2009,
-                2009,
-                2013,
-                2014,
-                2015,
-                2017,
-                2022
-            ]
-        },
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Film when the Nom du R\u00f4le string contains Si and the Ann\u00e9e was before 2007?",
-                "answers": [
-                    "Lump of Sugar"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Film when the Ann\u00e9e was after 2009 and the R\u00f4le is Principal?",
-                "answers": [
-                    "Thread of Lies",
-                    "Circle of Atonement",
-                    "Saranghagi ttaemoone",
-                    "20th Century Girl"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Film, with Nom du R\u00f4le string contains fille, have Ann\u00e9e was after 2006?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Film, with Ann\u00e9e was before 2014, have Nom du R\u00f4le string contains Mi?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was after 2006, happened the 9th according to Ann\u00e9e?",
-                "answers": [
-                    "20th Century Girl"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was after 2009, happened the 5th according to Ann\u00e9e?",
-                "answers": [
-                    "20th Century Girl"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was on 2006, happened the 3rd according to Ann\u00e9e?",
-                "answers": [
-                    "Four Horror Tales - Hidden Floor",
-                    "Lump of Sugar",
-                    "Dasepo Naughty Girls"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre Original was 20\uc138\uae30 \uc18c\ub140 and when the Titre Original was \ubd88\uc2e0\uc9c0\uc625?",
-                "answers": [
-                    "13"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre Original was \ud669\uc9c4\uc774 and when the Titre Original was 20\uc138\uae30 \uc18c\ub140?",
-                "answers": [
-                    "15"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was after 2007 and R\u00f4le is Principal?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was after 2006 and Nom du R\u00f4le string starts with Ji?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was before 2008?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "12414208",
-        "title": "Kim Yoo-jung",
-        "url": "https://fr.wikipedia.org/?curid=12414208",
-        "header": [
-            "Ann\u00e9e",
             "S\u00e9rie",
             "Titre Original",
             "Nom du R\u00f4le",
@@ -435,7 +209,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the S\u00e9rie when the Ann\u00e9e was after 2009 and the Nom du R\u00f4le string starts with Dong?",
+                "question": "What was the S\u00e9rie when the Ann\u00e9e was before 2013 and the Nom du R\u00f4le string starts with Dong?",
                 "answers": [
                     "Dong Yi"
                 ],
@@ -443,7 +217,190 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every S\u00e9rie, with Ann\u00e9e was before 2016, have Titre Original string contains SEASON?",
+                "question": "What was the S\u00e9rie when the Ann\u00e9e was on 2016 and the R\u00f4le is Principal?",
+                "answers": [
+                    "Love in the Moonlight"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which S\u00e9rie, with R\u00f4le is Principal, happened the 3rd according to Ann\u00e9e?",
+                "answers": [
+                    "Secret Door",
+                    "Love Cells"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which S\u00e9rie, with Ann\u00e9e was after 2007, happened the 12nd according to Ann\u00e9e?",
+                "answers": [
+                    "Gold Rainbow"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Titre Original was \uce74\uc778\uacfc \uc544\ubca8 and when the Titre Original was \ud669\uae08\ubb34\uc9c0\uac1c?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many S\u00e9rie had Ann\u00e9e was on 2008?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "12414208",
+        "title": "Kim Yoo-jung",
+        "url": "https://fr.wikipedia.org/?curid=12414208",
+        "header": [
+            "Ann\u00e9e",
+            "Film",
+            "Titre Original",
+            "Nom du R\u00f4le",
+            "R\u00f4le"
+        ],
+        "rows": [
+            [
+                "2006",
+                "Four Horror Tales - Hidden Floor",
+                "\uc5b4\ub290\ub0a0 \uac11\uc790\uae30 \ub450\ubc88\uc9f8",
+                "Su Hee",
+                "Principal"
+            ],
+            [
+                "2006",
+                "Lump of Sugar",
+                "\uac01\uc124\ud0d5",
+                "Si Eun, enfant",
+                "Secondaire"
+            ],
+            [
+                "2006",
+                "Dasepo Naughty Girls",
+                "\ub2e4\uc138\ud3ec\uc18c\ub140",
+                "La m\u00e8re de la fille pauvre jeune (photo",
+                "Cam\u00e9o"
+            ],
+            [
+                "2007",
+                "Hwang Jin Yi",
+                "\ud669\uc9c4\uc774",
+                "Hwang Jin Yi, jeune",
+                "Secondaire"
+            ],
+            [
+                "2008",
+                "The Chaser",
+                "\ucd94\uaca9\uc790",
+                "Eun Ji, la fille de Mi Jin",
+                "Secondaire"
+            ],
+            [
+                "2009",
+                "The Last Day",
+                "\ud574\uc6b4\ub300",
+                "Ji Min",
+                "Secondaire"
+            ],
+            [
+                "2009",
+                "Possessed",
+                "\ubd88\uc2e0\uc9c0\uc625",
+                "Ji Eun",
+                "Secondaire"
+            ],
+            [
+                "2013",
+                "Commitment",
+                "\ub3d9\ucc3d\uc0dd",
+                "Ri Hye In",
+                "Secondaire"
+            ],
+            [
+                "2014",
+                "Thread of Lies",
+                "\uc6b0\uc544\ud55c \uac70\uc9d3\ub9d0",
+                "Hwa Yeon",
+                "Principal"
+            ],
+            [
+                "2015",
+                "Circle of Atonement",
+                "\ube44\ubc00",
+                "Lee Jeong Hyeon",
+                "Principal"
+            ],
+            [
+                "2017",
+                "Saranghagi ttaemoone",
+                "\uc0ac\ub791\ud558\uae30 \ub54c\ubb38\uc5d0",
+                "Scully",
+                "Principal"
+            ],
+            [
+                "2022",
+                "20th Century Girl",
+                "20\uc138\uae30 \uc18c\ub140",
+                "Na Bo-ra",
+                "Principal"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2006,
+                2006,
+                2006,
+                2007,
+                2008,
+                2009,
+                2009,
+                2013,
+                2014,
+                2015,
+                2017,
+                2022
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Film when the Ann\u00e9e was on 2014 and the R\u00f4le is Principal?",
+                "answers": [
+                    "Thread of Lies"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Film when the Ann\u00e9e was before 2014 and the Nom du R\u00f4le string contains de?",
+                "answers": [
+                    "Dasepo Naughty Girls",
+                    "The Chaser"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Film, with R\u00f4le is Principal, have Ann\u00e9e was after 2017?",
                 "answers": [
                     "No"
                 ],
@@ -451,35 +408,39 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which S\u00e9rie, with Ann\u00e9e was before 2020, happened the 4th according to Ann\u00e9e?",
+                "question": "Does only Film, with Ann\u00e9e was before 2022, have Nom du R\u00f4le string starts with Ji?",
                 "answers": [
-                    "Powerful Opponents",
-                    "Iljimae",
-                    "Painter of The Wind"
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Film, with Ann\u00e9e was before 2017, happened the 8th according to Ann\u00e9e?",
+                "answers": [
+                    "Commitment"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which S\u00e9rie, with Ann\u00e9e was after 2012, happened the 7th according to Ann\u00e9e?",
+                "question": "Which Film, with Ann\u00e9e was after 2013, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
-                    "Clean Up Like It's Hot"
+                    "Saranghagi ttaemoone"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which S\u00e9rie, with Ann\u00e9e was on 2008, happened the 2nd according to Ann\u00e9e?",
+                "question": "Which Film, with R\u00f4le is Principal, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
-                    "Powerful Opponents",
-                    "Iljimae",
-                    "Painter of The Wind"
+                    "Circle of Atonement"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Nom du R\u00f4le was Kim Baek Won, adolescente and when the Nom du R\u00f4le was Dong Yi, jeune?",
+                "question": "How many years had passed between when the Titre Original was \ubd88\uc2e0\uc9c0\uc625 and when the Titre Original was \uac01\uc124\ud0d5?",
                 "answers": [
                     "3"
                 ],
@@ -487,17 +448,33 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many S\u00e9rie had Ann\u00e9e was before 2015?",
+                "question": "How many years had passed between when the Titre Original was \uac01\uc124\ud0d5 and when the Titre Original was 20\uc138\uae30 \uc18c\ub140?",
                 "answers": [
-                    "15"
+                    "16"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Film had Ann\u00e9e was after 2009 and R\u00f4le is Principal?",
+                "answers": [
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many S\u00e9rie had R\u00f4le is Principal?",
+                "question": "How many Film had Ann\u00e9e was on 2008?",
                 "answers": [
-                    "8"
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Film had Nom du R\u00f4le string starts with Lee?",
+                "answers": [
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }

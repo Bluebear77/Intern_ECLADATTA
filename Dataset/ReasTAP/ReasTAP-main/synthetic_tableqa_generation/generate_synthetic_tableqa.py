@@ -33,7 +33,7 @@ type_func_map = {
     "numerical_operation": generate_numerical_operation_question
 }
 
-def generate_questions(table, template_data, max_trails=50):
+def generate_questions(table, template_data, file_name, max_trails=50):
     qas = []
     question_set = set()
     for template_dict in template_data:
@@ -51,7 +51,9 @@ def generate_questions(table, template_data, max_trails=50):
                 try:
                     question, answer = generate_question_func(table, template["template_str"], template_type)
                 except Exception as e:
-                    log_error(f"Error generating question for template {template}: {e}")
+                    log_error(f"Error generating question for template {template} in file {file_name}: {e}")
+                    #log_error(f"Error generating question for template {template} in file {file_name}: {e}")
+
                     break
                 time += 1
 
@@ -65,15 +67,16 @@ def generate_questions(table, template_data, max_trails=50):
                 question_set.add(question)
     return qas
 
-def worker(table_data_chunk, template_dict, q):
+def worker(table_data_chunk, template_dict, file_name, q):
     result = []
     for table_data in table_data_chunk:
         try:
-            qas = generate_questions(table_data, template_dict)
+            qas = generate_questions(table_data, template_dict, file_name)
             table_data["qas"] = qas
             result.append(table_data)
         except Exception as e:
-            log_error(f"Error processing table {table_data}: {e}")
+            log_error(f"Error processing table {table_data} in file {file_name}: {e}")
+            
     q.put(result)
 
 def log_error(message):
@@ -83,8 +86,7 @@ def log_error(message):
 
 def main():
     template_dict = json.load(open("question_template.json"))
-    # table_data_dir = "/mnt/data/P6/P6"
-    table_data_dir ="../../../100-female-celebrities/v2-100/P6"
+    table_data_dir = "../../../100-female-celebrities/v2-100/P6"
     
     files = [f for f in os.listdir(table_data_dir) if f.endswith(".json")]
     output_dir = "output"
@@ -105,7 +107,7 @@ def main():
             n_processes = mp.cpu_count()
             q = mp.Queue()
             table_chunks = split(data, n_processes)
-            processes = [mp.Process(target=worker, args=(table_chunk, template_dict, q)) for table_chunk in table_chunks]
+            processes = [mp.Process(target=worker, args=(table_chunk, template_dict, orig_file, q)) for table_chunk in table_chunks]
 
             for p in processes:
                 p.start()
@@ -123,7 +125,9 @@ def main():
             
             print(f"Generated {len(result)} questions for {orig_file}.")
         except Exception as e:
-            log_error(f"Error processing file {orig_file}: {e}")
+            #log_error(f"Error processing file {orig_file}: {e}")
+            log_error(f"Error processing file {orig_file_path}: {e}")
+
 
 if __name__ == '__main__':
     main()

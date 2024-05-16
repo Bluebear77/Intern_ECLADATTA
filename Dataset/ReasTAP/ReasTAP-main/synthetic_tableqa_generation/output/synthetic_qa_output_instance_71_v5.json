@@ -830,7 +830,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Cat\u00e9gorie string contains la and the Film string contains la?",
+                "question": "What was the R\u00e9compense when the Film string contains Le and the Cat\u00e9gorie string contains de?",
                 "answers": [
                     "Festival du film de Cabourg",
                     "Berlinale",
@@ -840,15 +840,18 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Cat\u00e9gorie string contains distribution and the Film string starts with Le?",
+                "question": "What was the R\u00e9compense when the Film string starts with Pour and the Cat\u00e9gorie string contains Award?",
                 "answers": [
-                    "Screen Actors Guild Awards"
+                    "UniFrance",
+                    "Prix du cin\u00e9ma europ\u00e9en",
+                    "Festival du film de Zurich",
+                    "Festival international du film de G\u00f6teborg"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every R\u00e9compense, with Film string contains Le, have Cat\u00e9gorie string contains de?",
+                "question": "Does only R\u00e9compense, with Cat\u00e9gorie string contains second, have Film string starts with Le?",
                 "answers": [
                     "No"
                 ],
@@ -856,45 +859,69 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Film string starts with Pour, happened the 4th according to Ann\u00e9e?",
+                "question": "Does only R\u00e9compense, with Film string starts with Le, have Cat\u00e9gorie string contains second?",
                 "answers": [
-                    "Festival du film de Zurich"
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which R\u00e9compense, with Film string starts with Le, happened the 25th according to Ann\u00e9e?",
+                "answers": [
+                    "Imagen Awards"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Cat\u00e9gorie string contains de, happened the 6th according to Ann\u00e9e?",
+                "question": "Which R\u00e9compense, with Film string contains Ma, happened the 5th according to Ann\u00e9e?",
                 "answers": [
-                    "Festival du film de Cabourg"
+                    "C\u00e9sar",
+                    "Lumi\u00e8res de la presse internationale",
+                    "Village Voice Film Poll"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Film string starts with Le, happened the 20th according to Ann\u00e9e?",
+                "question": "Which R\u00e9compense, with Film string contains Patient, happened the 5th according to Ann\u00e9e?",
                 "answers": [
+                    "Festival du film de Cabourg",
                     "Oscars",
                     "Screen Actors Guild Awards",
                     "Golden Globes",
+                    "Chicago Film Critics Association",
+                    "Chlotrudis Awards",
+                    "Dallas-Fort Worth Film Critics Association",
+                    "Southeastern Film Critics Association",
                     "BAFTA",
+                    "Berlinale",
                     "Prix du cin\u00e9ma europ\u00e9en"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Film string starts with Pour?",
+                "question": "How many years had passed between when the Cat\u00e9gorie was Dragon Award and when the Cat\u00e9gorie was Golden Icon Award?",
                 "answers": [
-                    "4"
+                    "2"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many R\u00e9compense had Film string contains Patient?",
+                "answers": [
+                    "12"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Film string starts with Le?",
+                "question": "How many R\u00e9compense had Cat\u00e9gorie string contains un?",
                 "answers": [
-                    "25"
+                    "9"
                 ],
                 "reasoning_type": "counting"
             }

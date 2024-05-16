@@ -12,647 +12,6 @@
         ],
         "rows": [
             [
-                "133x133px",
-                "Jeanne de Ro\u017emit\u00e1l\n\n(1432-1475)",
-                "* Georges de Boh\u00eame (mariage en 1450)",
-                "* Reine de Boh\u00eame (1458-1471)",
-                "* Fille de Jean de Ro\u017emit\u00e1l zu Blatna et de Ludmilla Bawor von Strakonicz.\n* M\u00e8re d'Henri II de Pod\u011bbrady et de Ludmilla de Pod\u011bbrady."
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 1,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the \u00c9poux string contains de and the El\u00e9ments biographiques string contains Fille?",
-                "answers": [
-                    "Jeanne de Ro\u017emit\u00e1l\n\n(1432-1475)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the \u00c9poux string contains Georges and the Titres string contains de?",
-                "answers": [
-                    "Jeanne de Ro\u017emit\u00e1l\n\n(1432-1475)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with Titres string contains de, have El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with \u00c9poux string contains de, have El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had Titres string contains de?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had Titres string contains de and \u00c9poux string contains de?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "5214852",
-        "title": "Liste des conjoints des souverains de Boh\u00eame",
-        "url": "https://fr.wikipedia.org/?curid=5214852",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "162x162px",
-                "Barbara de Brandebourg\n\n(1464-1515)",
-                "* Henri XI de G\u0142og\u00f3w (mariage en 1472)\n* Vladislas IV de Boh\u00eame (mariage en 1476)",
-                "* duchesse de G\u0142og\u00f3w (1472-1476)\n* Reine de Boh\u00eame (1471-1490)",
-                "* Princesse de la Maison de Hohenzollern. Fille d'Albert III Achille de Brandebourg et d'Anne de Saxe.",
-                ""
-            ],
-            [
-                "134x134px",
-                "B\u00e9atrice de Naples\n\n(1457-1508)",
-                "* Matthias  de Hongrie (mariage en 1476)\n* Vladislas IV de Boh\u00eame (mariage en 1490)",
-                "* Reine de Hongrie (1476-1490 puis 1490-1500)\n* Reine de Boh\u00eame (1490-1500)",
-                "* Princesse de la Maison de Trastamare. Fille de Ferdinand  de Naples et d'Isabelle de Tarente.",
-                ""
-            ],
-            [
-                "174x174px",
-                "Anne de Foix\n\n(1484-1506)",
-                "* Vladislas IV de Boh\u00eame (mariage en 1502)",
-                "* Reine de Hongrie et de Boh\u00eame (1502-1506)",
-                "* Princesse de la Maison de Grailly. Fille de Gaston II de Foix-Candale et de Catherine de Foix.\n* M\u00e8re d'Anne Jagellon et de Louis II de Hongrie.",
-                ""
-            ],
-            [
-                "136x136px",
-                "Marie de Habsbourg\n\n(1505-1558)",
-                "* Louis II de Hongrie (mariage en 1522)",
-                "* Reine de Hongrie et de Boh\u00eame (1522-1526)\n* Gouvernante des Pays-Bas (1531-1555)",
-                "* Princesse de la Maison de Habsbourg. Fille de Philippe Ier le Beau et de Jeanne Ire de Castille.",
-                "153x153px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 1,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains Fille and the \u00c9poux string contains de?",
-                "answers": [
-                    "Barbara de Brandebourg\n\n(1464-1515)",
-                    "B\u00e9atrice de Naples\n\n(1457-1508)",
-                    "Anne de Foix\n\n(1484-1506)",
-                    "Marie de Habsbourg\n\n(1505-1558)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the Titres string contains de?",
-                "answers": [
-                    "Barbara de Brandebourg\n\n(1464-1515)",
-                    "B\u00e9atrice de Naples\n\n(1457-1508)",
-                    "Anne de Foix\n\n(1484-1506)",
-                    "Marie de Habsbourg\n\n(1505-1558)"
-                ],
-                "reasoning_type": "conjunction"
-            }
-        ]
-    },
-    {
-        "id": "5214852",
-        "title": "Liste des conjoints des souverains de Boh\u00eame",
-        "url": "https://fr.wikipedia.org/?curid=5214852",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques"
-        ],
-        "rows": [
-            [
-                "142x142px",
-                "Anne Jagellon\n\n(1503-1547)",
-                "* Ferdinand  du Saint-Empire (mariage en 1521)",
-                "* Reine de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1521-1547)\n* Reine de Germanie (1531-1547)",
-                "* Princesse de la Maison Jagellon. Fille de Vladislas IV de Boh\u00eame et d'Anne de Foix.\n* M\u00e8re d'\u00c9lisabeth d'Autriche, de Maximilien II de Habsbourg, d'Anne d'Autriche, de Ferdinand de Tyrol, de Marie d'Autriche, de Madeleine d'Autriche, de Catherine d'Autriche, d'\u00c9l\u00e9onore d'Autriche, de Barbara d'Autriche, de Charles II d'Autriche-Styrie, d'H\u00e9l\u00e8ne d'Autriche et de Jeanne d'Autriche."
-            ],
-            [
-                "140x140px",
-                "Marie d'Autriche\n\n(1528-1603)",
-                "* Maximilien II de Habsbourg (mariage en 1548)",
-                "* Reine de Germanie et de Boh\u00eame (1562-1576)\n* Reine de Hongrie et de Croatie (1563-1576)\n* Imp\u00e9ratrice du Saint-Empire et archiduchesse d'Autriche (1564-1576)",
-                "* Princesse de la Maison de Habsbourg. Fille de Charles Quint et d'Isabelle de Portugal.\n* M\u00e8re d'Anne d'Autriche, de Rodolphe II du Saint-Empire, d'Ernest d'Autriche, d'\u00c9lisabeth d'Autriche, de Matthias  de Habsbourg, de Maximilien III d'Autriche, d'Albert d'Autriche, de Wenceslas d'Autriche et de Marguerite d'Autriche."
-            ],
-            [
-                "125x125px",
-                "Anne d'Autriche\n\n(1585-1618)",
-                "* Matthias  de Habsbourg  (mariage en 1611)",
-                "* Reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1611-1618)\n* Imp\u00e9ratrice du Saint-Empire (1612-1618)",
-                "* Princesse de la Maison de Habsbourg. Fille de Ferdinand de Tyrol et d'Anne-Catherine de Mantoue."
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 1,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the Titres string contains de?",
-                "answers": [
-                    "Anne Jagellon\n\n(1503-1547)",
-                    "Marie d'Autriche\n\n(1528-1603)",
-                    "Anne d'Autriche\n\n(1585-1618)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains Fille and the \u00c9poux string contains de?",
-                "answers": [
-                    "Marie d'Autriche\n\n(1528-1603)",
-                    "Anne d'Autriche\n\n(1585-1618)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Nom\n(dates), with Titres string contains de, have El\u00e9ments biographiques string contains Tyrol?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with \u00c9poux string contains II, have Titres string contains de?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had \u00c9poux string contains de and El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had Titres string contains de and El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "5214852",
-        "title": "Liste des conjoints des souverains de Boh\u00eame",
-        "url": "https://fr.wikipedia.org/?curid=5214852",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "126x126px",
-                "\u00c9lisabeth Stuart\n\n(1596-1662)",
-                "* Fr\u00e9d\u00e9ric V du Palatinat (mariage en 1613)",
-                "* \u00c9lectrice palatine (1613-1623)\n* Reine de Boh\u00eame (1619-1620)",
-                "* Princesse de la Maison Stuart. Fille de Jacques  d'Angleterre et d'Anne de Danemark.\n* M\u00e8re d'Henri-Fr\u00e9d\u00e9ric du Palatinat, de Charles  Louis du Palatinat, d'\u00c9lisabeth de Boh\u00eame, de Maurice du Palatinat, de Louise-Hollandine du Palatinat, d'\u00c9douard du Palatinat, d'Henriette-Marie du Palatinat, de Jean-Philippe-Fr\u00e9d\u00e9ric du Palatinat et de Sophie de Hanovre.",
-                "153x153px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 1,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Nom\n(dates), with \u00c9poux string contains V, have El\u00e9ments biographiques string contains la?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains de, have Titres string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            }
-        ]
-    },
-    {
-        "id": "5214852",
-        "title": "Liste des conjoints des souverains de Boh\u00eame",
-        "url": "https://fr.wikipedia.org/?curid=5214852",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "152x152px",
-                "\u00c9l\u00e9onore de Gonzague\n\n(1598-1655)",
-                "* Ferdinand II du Saint-Empire (mariage en 1622)",
-                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1622-1637)",
-                "* Princesse de la Maison de Gonzague. Fille de Vincent  de Mantoue et d'\u00c9l\u00e9onore de M\u00e9dicis.",
-                ""
-            ],
-            [
-                "136x136px",
-                "Marie-Anne d'Autriche\n\n(1606-1646)",
-                "* Ferdinand III de Habsbourg (mariage en 1631)",
-                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1637-1646)",
-                "* Princesse de la Maison de Habsbourg. Fille de Philippe III d'Espagne et de Marguerite d'Autriche-Styrie.\n* M\u00e8re de Ferdinand IV de Habsbourg, de Marie-Anne d'Autriche et de L\u00e9opold  du Saint-Empire.",
-                ""
-            ],
-            [
-                "176x176px",
-                "Marie-L\u00e9opoldine d'Autriche\n\n(1632-1649)",
-                "* Ferdinand III de Habsbourg (mariage en 1648)",
-                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1648-1649)",
-                "* Princesse de la Maison de Habsbourg. Fille de L\u00e9opold V d'Autriche-Tyrol et de Claude de M\u00e9dicis.\n* M\u00e8re de Charles-Joseph d'Autriche.",
-                ""
-            ],
-            [
-                "121x121px",
-                "\u00c9l\u00e9onore de Nevers-Mantoue\n\n(1630-1686)",
-                "* Ferdinand III de Habsbourg (mariage en 1651)",
-                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1651-1657)",
-                "* Princesse de la Maison de Gonzague-Nevers. Fille de Charles II de Nevers-Mantoue et de Marie de Mantoue.\n* M\u00e8re d'\u00c9l\u00e9onore d'Autriche et de Marie-Anne-Jos\u00e8phe d'Autriche.",
-                ""
-            ],
-            [
-                "145x145px",
-                "Marguerite-Th\u00e9r\u00e8se d'Autriche\n\n(1651-1673)",
-                "* L\u00e9opold  du Saint-Empire (mariage en 1666)",
-                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1666-1673)",
-                "* Princesse de la Maison de Habsbourg. Fille de Philippe IV d'Espagne et de Marie-Anne d'Autriche.\n* M\u00e8re de Marie-Antoinette d'Autriche.",
-                ""
-            ],
-            [
-                "129x129px",
-                "Claude-F\u00e9licit\u00e9 d'Autriche\n\n(1653-1676)",
-                "* L\u00e9opold  du Saint-Empire (mariage en 1673)",
-                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1673-1676)",
-                "* Princesse de la Maison de Habsbourg. Fille de Ferdinand-Charles d'Autriche et d'Anne de M\u00e9dicis.",
-                ""
-            ],
-            [
-                "130x130px",
-                "\u00c9l\u00e9onore de Neubourg\n\n(1655-1720)",
-                "* L\u00e9opold  du Saint-Empire (mariage en 1676)",
-                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1676-1705)\n* Princesse de Transylvanie (1692-1705)",
-                "* Princesse de la Maison de Wittelsbach. Fille de Philippe-Guillaume de Neubourg et d'\u00c9lisabeth-Am\u00e9lie de Hesse-Darmstadt.\n* M\u00e8re de Joseph  du Saint-Empire, de Marie-\u00c9lisabeth d'Autriche, de L\u00e9opold Joseph d'Autriche, de Marie-Anne d'Autriche, de Marie-Th\u00e9r\u00e8se d'Autriche, de Charles VI du Saint-Empire, de Marie-Jos\u00e8phe d'Autriche et de Marie-Madeleine d'Autriche.",
-                ""
-            ],
-            [
-                "128x128px",
-                "Wilhelmine-Am\u00e9lie de Brunswick-Lunebourg\n\n(1673-1742)",
-                "* Joseph  du Saint-Empire (mariage en 1699)",
-                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1705-1711)",
-                "* Princesse de la Maison de Brunswick. Fille de Jean-Fr\u00e9d\u00e9ric de Brunswick-Calenberg et de B\u00e9n\u00e9dicte-Henriette du Palatinat.\n* M\u00e8re de Marie-Jos\u00e8phe d'Autriche, de L\u00e9opold Joseph d'Autriche et de Marie-Am\u00e9lie d'Autriche.",
-                ""
-            ],
-            [
-                "122x122px",
-                "\u00c9lisabeth-Christine de Brunswick-Wolfenb\u00fcttel\n\n(1691-1750)",
-                "* Charles VI du Saint-Empire (mariage en 1708)",
-                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1711-1740)\n* Reine de Naples (1714-1735)\n* Duchesse de Milan (1714-1740)\n* Souveraine des Pays-Bas (1715-1740)\n* Duchesse de Parme et Plaisance (1735-1740)",
-                "* Princesse de la Maison de Brunswick. Fille de Louis-Rodolphe de Brunswick-Wolfenb\u00fcttel et de Christine-Louise d'Oettingen-Oettingen.\n* M\u00e8re de Marie-Th\u00e9r\u00e8se d'Autriche et de Marie-Anne d'Autriche.",
-                "139x139px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 1,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "9"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "5214852",
-        "title": "Liste des conjoints des souverains de Boh\u00eame",
-        "url": "https://fr.wikipedia.org/?curid=5214852",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques"
-        ],
-        "rows": [
-            [
-                "126x126px",
-                "Marie-Am\u00e9lie d'Autriche\n\n(1701-1756)",
-                "* Charles VII du Saint-Empire (mariage en 1722)",
-                "* \u00c9lectrice de Bavi\u00e8re (1726-1745)\n* Imp\u00e9ratrice du Saint-Empire, reine de Germanie et de Boh\u00eame (1741-1745)",
-                "* Princesse de la Maison de Habsbourg. Fille de Joseph  du Saint-Empire et de Wilhelmine-Am\u00e9lie de Brunswick-Lunebourg.\n* M\u00e8re de Marie-Antoinette de Bavi\u00e8re, de Th\u00e9r\u00e8se-B\u00e9n\u00e9dicte de Bavi\u00e8re, de Maximilien III Joseph de Bavi\u00e8re, de Marie-Anne de Bavi\u00e8re et de Jos\u00e9pha de Bavi\u00e8re."
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 1,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the \u00c9poux string contains Charles and the El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "Marie-Am\u00e9lie d'Autriche\n\n(1701-1756)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the Titres string contains de and the El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "Marie-Am\u00e9lie d'Autriche\n\n(1701-1756)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains de, have \u00c9poux string contains en?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with \u00c9poux string contains VII, have El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had \u00c9poux string contains en and El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de and Titres string contains de?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "5214852",
-        "title": "Liste des conjoints des souverains de Boh\u00eame",
-        "url": "https://fr.wikipedia.org/?curid=5214852",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9pouse",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "131x131px",
-                "Fran\u00e7ois  du Saint-Empire\n\n(1708-1765)",
-                "* Marie-Th\u00e9r\u00e8se d'Autriche (mariage en 1736)",
-                "* Duc de Lorraine (1729-1737)\n* Grand-duc de Toscane (1737-1765)\n* Roi de Hongrie et de Boh\u00eame, archiduc d'Autriche, duc de Milan, souverain des Pays-Bas (1740-1765)\n* Duc de Parme et Plaisance (1740-1748)\n* Empereur du Saint-Empire, roi de Germanie (1745-1765)",
-                "* Prince de la Maison de Lorraine. Fils de L\u00e9opold  de Lorraine et d\u2019\u00c9lisabeth-Charlotte d'Orl\u00e9ans.\n* P\u00e8re de Marie-\u00c9lisabeth d'Autriche, de Marie-Anne d'Autriche, de Marie-Caroline d'Autriche, de Joseph II du Saint-Empire, de Marie-Christine d'Autriche, de Marie-\u00c9lisabeth d'Autriche, de Charles-Joseph d'Autriche, de Marie-Am\u00e9lie d'Autriche, de L\u00e9opold II du Saint-Empire, de Marie-Caroline d'Autriche, de Marie-Jeanne-Gabrielle d'Autriche, de Marie-Jos\u00e8phe d'Autriche, de Marie-Caroline d'Autriche, de Ferdinand d'Autriche-Este, de Marie-Antoinette d'Autriche et de Maximilien-Fran\u00e7ois d'Autriche.",
-                "138x138px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 1,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Nom\n(dates), with Titres string contains de, have El\u00e9ments biographiques string contains Fils?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            }
-        ]
-    },
-    {
-        "id": "5214852",
-        "title": "Liste des conjoints des souverains de Boh\u00eame",
-        "url": "https://fr.wikipedia.org/?curid=5214852",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "128x128px",
-                "Marie-Louise d'Espagne\n\n(1745-1792)",
-                "* L\u00e9opold II du Saint-Empire (mariage en 1765)",
-                "* Grande-duchesse de Toscane (1765-1790)\n* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche, duchesse de Milan, souveraine des Pays-Bas (1790-1792)",
-                "* Princesse de la Maison de Bourbon. Fille de Charles III d'Espagne et de Marie-Am\u00e9lie de Saxe.\n* M\u00e8re de Marie-Th\u00e9r\u00e8se d'Autriche, de Fran\u00e7ois  d'Autriche, de Ferdinand III de Toscane, de Marie-Anne d'Autriche, de Charles-Louis d'Autriche-Teschen, d'Alexandre L\u00e9opold d'Autriche, de Joseph de Habsbourg-Lorraine, de Marie-Cl\u00e9mentine d'Autriche, d'Antoine-Victor d'Autriche, de Marie-Am\u00e9lie d'Autriche, de Jean-Baptiste d'Autriche, de Rainier d'Autriche, de Louis d'Autriche et de Rodolphe d'Autriche.",
-                ""
-            ],
-            [
-                "147x147px",
-                "Marie-Th\u00e9r\u00e8se de Bourbon-Naples\n\n(1772-1807)",
-                "* Fran\u00e7ois  d'Autriche (mariage en 1790)",
-                "* Duchesse de Milan (1792-1796)\n* Souveraine des Pays-Bas (1792-1797)\n* Imp\u00e9ratrice du Saint-Empire (1792-1806)\n* Archiduchesse d'Autriche (1792-1806)\n* Reine de Hongrie et de Boh\u00eame (1792-1807)\n* Imp\u00e9ratrice d'Autriche (1804-1807)",
-                "* Princesse de la Maison de Bourbon-Siciles. Fille de Ferdinand  des Deux-Siciles et de Marie-Caroline d'Autriche.\n* M\u00e8re de Marie-Louise d'Autriche, de Ferdinand Ier d'Autriche, de Marie-L\u00e9opoldine d'Autriche, de Marie-Cl\u00e9mentine de Habsbourg, de Caroline de Habsbourg-Lorraine, de Fran\u00e7ois-Charles d'Autriche et de Marie-Anne d'Autriche.",
-                ""
-            ],
-            [
-                "127x127px",
-                "Marie-Louise de Habsbourg-Lorraine-Este\n\n(1787-1816)",
-                "* Fran\u00e7ois  d'Autriche (mariage en 1808)",
-                "* Imp\u00e9ratrice d'Autriche, reine de Hongrie et de Boh\u00eame (1808-1816)\n* Reine de Lombardie-V\u00e9n\u00e9tie (1815-1816)",
-                "* Princesse de la Maison de Habsbourg-Este. Fille de Ferdinand d'Autriche-Este et de Marie-B\u00e9atrice d'Este.",
-                ""
-            ],
-            [
-                "113x113px",
-                "Caroline-Auguste de Bavi\u00e8re\n\n(1792-1873)",
-                "* Guillaume  de Wurtemberg (mariage en 1808)\n* Fran\u00e7ois  d'Autriche (mariage en 1816)",
-                "* Imp\u00e9ratrice d'Autriche, reine de Lombardie-V\u00e9n\u00e9tie, de Hongrie et de Boh\u00eame (1816-1835)",
-                "* Princesse de la Maison de Wittelsbach. Fille de Maximilien  de Bavi\u00e8re et de Wilhelmine de Hesse-Darmstadt.",
-                ""
-            ],
-            [
-                "130x130px",
-                "Marie-Anne de Sardaigne\n\n(1803-1884)",
-                "* Ferdinand  d'Autriche (mariage en 1831)",
-                "* Imp\u00e9ratrice d'Autriche, reine de Lombardie-V\u00e9n\u00e9tie, de Hongrie et de Boh\u00eame (1835-1848)",
-                "* Princesse de la Maison de Savoie. Fille de Victor-Emmanuel  de Sardaigne et de Marie-Th\u00e9r\u00e8se d'Autriche-Este.",
-                "118x118px"
-            ],
-            [
-                "163x163px",
-                "\u00c9lisabeth de Wittelsbach\n\n(1837-1898)",
-                "* Fran\u00e7ois-Joseph  d'Autriche (mariage en 1854)",
-                "* Imp\u00e9ratrice d'Autriche, reine de Hongrie et de Boh\u00eame (1854-1898)\n*Reine de Lombardie-V\u00e9n\u00e9tie (1854-1866)",
-                "* Princesse de la Maison de Wittelsbach. Fille de Maximilien en Bavi\u00e8re et de Ludovica de Bavi\u00e8re.\n* M\u00e8re de Sophie d'Autriche, de Gis\u00e8le d'Autriche, de Rodolphe d'Autriche et de Marie-Val\u00e9rie d'Autriche.",
-                "168x168px"
-            ],
-            [
-                "146x146px",
-                "Zita de Bourbon-Parme\n\n(1892-1989)",
-                "* Charles  d'Autriche (mariage en 1911)",
-                "* Imp\u00e9ratrice d'Autriche, reine de Hongrie et de Boh\u00eame (1916-1918)",
-                "* Princesse de la Maison de Bourbon-Parme. Fille de Robert  de Parme et d'Ant\u00f3nia de Bragance.\n* M\u00e8re d'Otto de Habsbourg-Lorraine, d'Ad\u00e9la\u00efde d'Autriche, de Robert d'Autriche-Este, de F\u00e9lix de Habsbourg-Lorraine, de Charles-Louis d'Autriche, de Rodolphe d'Autriche, de Charlotte d'Autriche et d\u2019\u00c9lisabeth d'Autriche.",
-                ""
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 1,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had Titres string contains de?",
-                "answers": [
-                    "7"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "5214852",
-        "title": "Liste des conjoints des souverains de Boh\u00eame",
-        "url": "https://fr.wikipedia.org/?curid=5214852",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques"
-        ],
-        "rows": [
-            [
                 "154x154px",
                 "Sainte Ludmila de Boh\u00eame\n(860-921)",
                 "* Bo\u0159ivoj Ier de Boh\u00eame (mariage en 874)",
@@ -729,7 +88,18 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains de?",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains Fille and the \u00c9poux string contains en?",
+                "answers": [
+                    "Sainte Ludmila de Boh\u00eame\n(860-921)",
+                    "Judith de Schweinfurt\n(1003-1058)",
+                    "Ad\u00e9la\u00efde de Hongrie\n(1045-1062)",
+                    "\u015awi\u0119tos\u0142awa de Pologne\n(1046/48-1126)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the Titres string contains de and the \u00c9poux string contains de?",
                 "answers": [
                     "Sainte Ludmila de Boh\u00eame\n(860-921)",
                     "Drahom\u00edra de Stodor\n(890-935)",
@@ -745,16 +115,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains II and the \u00c9poux string contains II?",
-                "answers": [
-                    "Ad\u00e9la\u00efde de Hongrie\n(1045-1062)",
-                    "\u015awi\u0119tos\u0142awa de Pologne\n(1046/48-1126)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with \u00c9poux string contains de, have El\u00e9ments biographiques string contains de?",
+                "question": "Does every Nom\n(dates), with \u00c9poux string contains de, have Titres string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -762,7 +123,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom\n(dates), with Titres string contains de, have El\u00e9ments biographiques string contains de?",
+                "question": "Does every Nom\n(dates), with El\u00e9ments biographiques string contains de, have \u00c9poux string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -770,7 +131,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had Titres string contains de?",
+                "question": "How many Nom\n(dates) had Titres string contains de and \u00c9poux string contains de?",
                 "answers": [
                     "9"
                 ],
@@ -778,7 +139,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had \u00c9poux string contains de?",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de and \u00c9poux string contains de?",
                 "answers": [
                     "9"
                 ],
@@ -786,9 +147,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had \u00c9poux string contains de and Titres string contains de?",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains en?",
                 "answers": [
-                    "9"
+                    "7"
                 ],
                 "reasoning_type": "counting"
             }
@@ -827,7 +188,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains II?",
+                "question": "What was the Nom\n(dates) when the Titres string contains de and the \u00c9poux string contains II?",
                 "answers": [
                     "\u015awi\u0119tos\u0142awa de Pologne\n(1046/48-1126)"
                 ],
@@ -835,7 +196,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains Ier and the Titres string contains de?",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains Maria and the \u00c9poux string contains en?",
                 "answers": [
                     "\u015awi\u0119tos\u0142awa de Pologne\n(1046/48-1126)"
                 ],
@@ -843,7 +204,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom\n(dates), with El\u00e9ments biographiques string contains de, have \u00c9poux string contains II?",
+                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains la, have \u00c9poux string contains en?",
                 "answers": [
                     "Yes"
                 ],
@@ -851,7 +212,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom\n(dates), with \u00c9poux string contains de, have El\u00e9ments biographiques string contains de?",
+                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains de, have \u00c9poux string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -859,7 +220,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de?",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de and \u00c9poux string contains en?",
                 "answers": [
                     "1"
                 ],
@@ -942,7 +303,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains de?",
+                "question": "What was the Nom\n(dates) when the Titres string contains de and the El\u00e9ments biographiques string contains Fille?",
                 "answers": [
                     "Wilpirk de Tenling",
                     "Gerberge d'Autriche\n(avant 1073-1142)",
@@ -955,7 +316,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains la and the Titres string contains de?",
+                "question": "What was the Nom\n(dates) when the Titres string contains de and the El\u00e9ments biographiques string contains II?",
                 "answers": [
                     "Gerberge d'Autriche\n(avant 1073-1142)",
                     "Richenza de Berg\n(1095-1125)",
@@ -967,17 +328,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with \u00c9poux string contains en, have Titres string contains de?",
+                "question": "Does every Nom\n(dates), with \u00c9poux string contains de, have El\u00e9ments biographiques string contains III?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with \u00c9poux string contains II, have El\u00e9ments biographiques string contains Ier?",
+                "question": "Does only Nom\n(dates), with \u00c9poux string contains de, have El\u00e9ments biographiques string contains de?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
@@ -991,15 +352,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had \u00c9poux string contains en and El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "6"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had \u00c9poux string contains en?",
+                "question": "How many Nom\n(dates) had Titres string contains de?",
                 "answers": [
                     "7"
                 ],
@@ -1164,19 +517,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains II?",
-                "answers": [
-                    "Marguerite d'Autriche\n\n(1204-1266)",
-                    "Cun\u00e9gonde de Slavonie\n\n(1245-1285)",
-                    "Judith de Habsbourg\n\n(1271-1297)",
-                    "\u00c9lisabeth Ryksa\n\n(1288-1335)",
-                    "Viola \u00c9lisabeth de Cieszyn\n\n(1291-1317)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains de?",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains en?",
                 "answers": [
                     "Constance de Hongrie\n\n(1180-1240)",
                     "Cun\u00e9gonde de Souabe\n\n(1202-1248)",
@@ -1190,7 +531,21 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains Fille, have Titres string contains de?",
+                "question": "What was the Nom\n(dates) when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains la?",
+                "answers": [
+                    "Constance de Hongrie\n\n(1180-1240)",
+                    "Cun\u00e9gonde de Souabe\n\n(1202-1248)",
+                    "Marguerite d'Autriche\n\n(1204-1266)",
+                    "Cun\u00e9gonde de Slavonie\n\n(1245-1285)",
+                    "Judith de Habsbourg\n\n(1271-1297)",
+                    "\u00c9lisabeth Ryksa\n\n(1288-1335)",
+                    "Viola \u00c9lisabeth de Cieszyn\n\n(1291-1317)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom\n(dates), with Titres string contains de, have \u00c9poux string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -1198,7 +553,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom\n(dates), with El\u00e9ments biographiques string contains II, have \u00c9poux string contains en?",
+                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains de, have \u00c9poux string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -1206,7 +561,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had Titres string contains de and El\u00e9ments biographiques string contains de?",
+                "question": "How many Nom\n(dates) had Titres string contains de?",
                 "answers": [
                     "7"
                 ],
@@ -1214,9 +569,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had \u00c9poux string contains de?",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains II and El\u00e9ments biographiques string contains de?",
                 "answers": [
-                    "7"
+                    "5"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1262,7 +617,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the Titres string contains de and the \u00c9poux string contains de?",
+                "question": "What was the Nom\n(dates) when the \u00c9poux string contains II and the Titres string contains de?",
+                "answers": [
+                    "\u00c9lisabeth Ryksa\n\n(1288-1335)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains II and the \u00c9poux string contains en?",
                 "answers": [
                     "Anne de Boh\u00eame\n\n(1290-1313)",
                     "\u00c9lisabeth Ryksa\n\n(1288-1335)"
@@ -1271,24 +634,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the \u00c9poux string contains en and the Titres string contains de?",
-                "answers": [
-                    "Anne de Boh\u00eame\n\n(1290-1313)",
-                    "\u00c9lisabeth Ryksa\n\n(1288-1335)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains de, have Titres string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains la, have \u00c9poux string contains II?",
+                "question": "Does only Nom\n(dates), with Titres string contains de, have El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -1304,9 +650,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had \u00c9poux string contains en?",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains II and Titres string contains de?",
                 "answers": [
-                    "2"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1401,10 +747,14 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains de?",
+                "question": "What was the Nom\n(dates) when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "\u00c9lisabeth de Boh\u00eame\n\n(1292-1330)",
                     "B\u00e9atrice de Bourbon\n\n(1320-1383)",
+                    "Blanche de Valois\n\n(1317-1348)",
+                    "Anne du Palatinat\n\n(1329-1353)",
+                    "Anne de Schweidnitz\n\n(1339-1362)",
+                    "\u00c9lisabeth de Pom\u00e9ranie\n\n(1347-1393)",
                     "Jeanne de Bavi\u00e8re\n\n(1362-1386)",
                     "Sophie de Bavi\u00e8re\n\n(1376-1428)",
                     "Barbe de Cilley\n\n(1392-1451)"
@@ -1413,28 +763,33 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the Titres string contains de and the \u00c9poux string contains Charles?",
+                "question": "What was the Nom\n(dates) when the Titres string contains de and the \u00c9poux string contains en?",
                 "answers": [
+                    "\u00c9lisabeth de Boh\u00eame\n\n(1292-1330)",
+                    "B\u00e9atrice de Bourbon\n\n(1320-1383)",
                     "Blanche de Valois\n\n(1317-1348)",
                     "Anne du Palatinat\n\n(1329-1353)",
                     "Anne de Schweidnitz\n\n(1339-1362)",
-                    "\u00c9lisabeth de Pom\u00e9ranie\n\n(1347-1393)"
+                    "\u00c9lisabeth de Pom\u00e9ranie\n\n(1347-1393)",
+                    "Jeanne de Bavi\u00e8re\n\n(1362-1386)",
+                    "Sophie de Bavi\u00e8re\n\n(1376-1428)",
+                    "Barbe de Cilley\n\n(1392-1451)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom\n(dates), with El\u00e9ments biographiques string contains Luxembourg, have \u00c9poux string contains IV?",
+                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains de, have \u00c9poux string contains en?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with \u00c9poux string contains Luxembourg, have El\u00e9ments biographiques string contains de?",
+                "question": "Does only Nom\n(dates), with Titres string contains de, have \u00c9poux string contains de?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
@@ -1448,7 +803,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de and Titres string contains de?",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains en and Titres string contains de?",
                 "answers": [
                     "9"
                 ],
@@ -1489,7 +852,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the Titres string contains Luxembourg and the \u00c9poux string contains Albert?",
+                "question": "What was the Nom\n(dates) when the \u00c9poux string contains Albert and the El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "\u00c9lisabeth de Luxembourg\n\n(1409-1442)"
                 ],
@@ -1497,7 +860,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the Titres string contains de and the El\u00e9ments biographiques string contains Luxembourg?",
+                "question": "What was the Nom\n(dates) when the Titres string contains de and the \u00c9poux string contains en?",
                 "answers": [
                     "\u00c9lisabeth de Luxembourg\n\n(1409-1442)"
                 ],
@@ -1505,7 +868,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom\n(dates), with El\u00e9ments biographiques string contains de, have Titres string contains de?",
+                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains de, have Titres string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -1513,7 +876,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains de, have Titres string contains Luxembourg?",
+                "question": "Does every Nom\n(dates), with \u00c9poux string contains Albert, have Titres string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -1521,12 +884,590 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had \u00c9poux string contains II?",
+                "question": "How many Nom\n(dates) had Titres string contains de and \u00c9poux string contains II?",
                 "answers": [
                     "1"
                 ],
                 "reasoning_type": "counting"
             }
         ]
+    },
+    {
+        "id": "5214852",
+        "title": "Liste des conjoints des souverains de Boh\u00eame",
+        "url": "https://fr.wikipedia.org/?curid=5214852",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "133x133px",
+                "Jeanne de Ro\u017emit\u00e1l\n\n(1432-1475)",
+                "* Georges de Boh\u00eame (mariage en 1450)",
+                "* Reine de Boh\u00eame (1458-1471)",
+                "* Fille de Jean de Ro\u017emit\u00e1l zu Blatna et de Ludmilla Bawor von Strakonicz.\n* M\u00e8re d'Henri II de Pod\u011bbrady et de Ludmilla de Pod\u011bbrady."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains en?",
+                "answers": [
+                    "Jeanne de Ro\u017emit\u00e1l\n\n(1432-1475)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the Titres string contains de?",
+                "answers": [
+                    "Jeanne de Ro\u017emit\u00e1l\n\n(1432-1475)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom\n(dates), with \u00c9poux string contains en, have Titres string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom\n(dates), with \u00c9poux string contains en, have El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            }
+        ]
+    },
+    {
+        "id": "5214852",
+        "title": "Liste des conjoints des souverains de Boh\u00eame",
+        "url": "https://fr.wikipedia.org/?curid=5214852",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "162x162px",
+                "Barbara de Brandebourg\n\n(1464-1515)",
+                "* Henri XI de G\u0142og\u00f3w (mariage en 1472)\n* Vladislas IV de Boh\u00eame (mariage en 1476)",
+                "* duchesse de G\u0142og\u00f3w (1472-1476)\n* Reine de Boh\u00eame (1471-1490)",
+                "* Princesse de la Maison de Hohenzollern. Fille d'Albert III Achille de Brandebourg et d'Anne de Saxe.",
+                ""
+            ],
+            [
+                "134x134px",
+                "B\u00e9atrice de Naples\n\n(1457-1508)",
+                "* Matthias  de Hongrie (mariage en 1476)\n* Vladislas IV de Boh\u00eame (mariage en 1490)",
+                "* Reine de Hongrie (1476-1490 puis 1490-1500)\n* Reine de Boh\u00eame (1490-1500)",
+                "* Princesse de la Maison de Trastamare. Fille de Ferdinand  de Naples et d'Isabelle de Tarente.",
+                ""
+            ],
+            [
+                "174x174px",
+                "Anne de Foix\n\n(1484-1506)",
+                "* Vladislas IV de Boh\u00eame (mariage en 1502)",
+                "* Reine de Hongrie et de Boh\u00eame (1502-1506)",
+                "* Princesse de la Maison de Grailly. Fille de Gaston II de Foix-Candale et de Catherine de Foix.\n* M\u00e8re d'Anne Jagellon et de Louis II de Hongrie.",
+                ""
+            ],
+            [
+                "136x136px",
+                "Marie de Habsbourg\n\n(1505-1558)",
+                "* Louis II de Hongrie (mariage en 1522)",
+                "* Reine de Hongrie et de Boh\u00eame (1522-1526)\n* Gouvernante des Pays-Bas (1531-1555)",
+                "* Princesse de la Maison de Habsbourg. Fille de Philippe Ier le Beau et de Jeanne Ire de Castille.",
+                "153x153px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the Titres string contains de and the El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "Barbara de Brandebourg\n\n(1464-1515)",
+                    "B\u00e9atrice de Naples\n\n(1457-1508)",
+                    "Anne de Foix\n\n(1484-1506)",
+                    "Marie de Habsbourg\n\n(1505-1558)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the Titres string contains de and the \u00c9poux string contains de?",
+                "answers": [
+                    "Barbara de Brandebourg\n\n(1464-1515)",
+                    "B\u00e9atrice de Naples\n\n(1457-1508)",
+                    "Anne de Foix\n\n(1484-1506)",
+                    "Marie de Habsbourg\n\n(1505-1558)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains IV?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "5214852",
+        "title": "Liste des conjoints des souverains de Boh\u00eame",
+        "url": "https://fr.wikipedia.org/?curid=5214852",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "142x142px",
+                "Anne Jagellon\n\n(1503-1547)",
+                "* Ferdinand  du Saint-Empire (mariage en 1521)",
+                "* Reine de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1521-1547)\n* Reine de Germanie (1531-1547)",
+                "* Princesse de la Maison Jagellon. Fille de Vladislas IV de Boh\u00eame et d'Anne de Foix.\n* M\u00e8re d'\u00c9lisabeth d'Autriche, de Maximilien II de Habsbourg, d'Anne d'Autriche, de Ferdinand de Tyrol, de Marie d'Autriche, de Madeleine d'Autriche, de Catherine d'Autriche, d'\u00c9l\u00e9onore d'Autriche, de Barbara d'Autriche, de Charles II d'Autriche-Styrie, d'H\u00e9l\u00e8ne d'Autriche et de Jeanne d'Autriche."
+            ],
+            [
+                "140x140px",
+                "Marie d'Autriche\n\n(1528-1603)",
+                "* Maximilien II de Habsbourg (mariage en 1548)",
+                "* Reine de Germanie et de Boh\u00eame (1562-1576)\n* Reine de Hongrie et de Croatie (1563-1576)\n* Imp\u00e9ratrice du Saint-Empire et archiduchesse d'Autriche (1564-1576)",
+                "* Princesse de la Maison de Habsbourg. Fille de Charles Quint et d'Isabelle de Portugal.\n* M\u00e8re d'Anne d'Autriche, de Rodolphe II du Saint-Empire, d'Ernest d'Autriche, d'\u00c9lisabeth d'Autriche, de Matthias  de Habsbourg, de Maximilien III d'Autriche, d'Albert d'Autriche, de Wenceslas d'Autriche et de Marguerite d'Autriche."
+            ],
+            [
+                "125x125px",
+                "Anne d'Autriche\n\n(1585-1618)",
+                "* Matthias  de Habsbourg  (mariage en 1611)",
+                "* Reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1611-1618)\n* Imp\u00e9ratrice du Saint-Empire (1612-1618)",
+                "* Princesse de la Maison de Habsbourg. Fille de Ferdinand de Tyrol et d'Anne-Catherine de Mantoue."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the \u00c9poux string contains Ferdinand and the El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "Anne Jagellon\n\n(1503-1547)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the \u00c9poux string contains II and the Titres string contains de?",
+                "answers": [
+                    "Marie d'Autriche\n\n(1528-1603)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom\n(dates), with El\u00e9ments biographiques string contains de, have \u00c9poux string contains en?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom\n(dates), with \u00c9poux string contains II, have Titres string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains de and Titres string contains de?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains Fille and Titres string contains de?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had Titres string contains de and El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "5214852",
+        "title": "Liste des conjoints des souverains de Boh\u00eame",
+        "url": "https://fr.wikipedia.org/?curid=5214852",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "126x126px",
+                "\u00c9lisabeth Stuart\n\n(1596-1662)",
+                "* Fr\u00e9d\u00e9ric V du Palatinat (mariage en 1613)",
+                "* \u00c9lectrice palatine (1613-1623)\n* Reine de Boh\u00eame (1619-1620)",
+                "* Princesse de la Maison Stuart. Fille de Jacques  d'Angleterre et d'Anne de Danemark.\n* M\u00e8re d'Henri-Fr\u00e9d\u00e9ric du Palatinat, de Charles  Louis du Palatinat, d'\u00c9lisabeth de Boh\u00eame, de Maurice du Palatinat, de Louise-Hollandine du Palatinat, d'\u00c9douard du Palatinat, d'Henriette-Marie du Palatinat, de Jean-Philippe-Fr\u00e9d\u00e9ric du Palatinat et de Sophie de Hanovre.",
+                "153x153px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": []
+    },
+    {
+        "id": "5214852",
+        "title": "Liste des conjoints des souverains de Boh\u00eame",
+        "url": "https://fr.wikipedia.org/?curid=5214852",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "152x152px",
+                "\u00c9l\u00e9onore de Gonzague\n\n(1598-1655)",
+                "* Ferdinand II du Saint-Empire (mariage en 1622)",
+                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1622-1637)",
+                "* Princesse de la Maison de Gonzague. Fille de Vincent  de Mantoue et d'\u00c9l\u00e9onore de M\u00e9dicis.",
+                ""
+            ],
+            [
+                "136x136px",
+                "Marie-Anne d'Autriche\n\n(1606-1646)",
+                "* Ferdinand III de Habsbourg (mariage en 1631)",
+                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1637-1646)",
+                "* Princesse de la Maison de Habsbourg. Fille de Philippe III d'Espagne et de Marguerite d'Autriche-Styrie.\n* M\u00e8re de Ferdinand IV de Habsbourg, de Marie-Anne d'Autriche et de L\u00e9opold  du Saint-Empire.",
+                ""
+            ],
+            [
+                "176x176px",
+                "Marie-L\u00e9opoldine d'Autriche\n\n(1632-1649)",
+                "* Ferdinand III de Habsbourg (mariage en 1648)",
+                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1648-1649)",
+                "* Princesse de la Maison de Habsbourg. Fille de L\u00e9opold V d'Autriche-Tyrol et de Claude de M\u00e9dicis.\n* M\u00e8re de Charles-Joseph d'Autriche.",
+                ""
+            ],
+            [
+                "121x121px",
+                "\u00c9l\u00e9onore de Nevers-Mantoue\n\n(1630-1686)",
+                "* Ferdinand III de Habsbourg (mariage en 1651)",
+                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1651-1657)",
+                "* Princesse de la Maison de Gonzague-Nevers. Fille de Charles II de Nevers-Mantoue et de Marie de Mantoue.\n* M\u00e8re d'\u00c9l\u00e9onore d'Autriche et de Marie-Anne-Jos\u00e8phe d'Autriche.",
+                ""
+            ],
+            [
+                "145x145px",
+                "Marguerite-Th\u00e9r\u00e8se d'Autriche\n\n(1651-1673)",
+                "* L\u00e9opold  du Saint-Empire (mariage en 1666)",
+                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1666-1673)",
+                "* Princesse de la Maison de Habsbourg. Fille de Philippe IV d'Espagne et de Marie-Anne d'Autriche.\n* M\u00e8re de Marie-Antoinette d'Autriche.",
+                ""
+            ],
+            [
+                "129x129px",
+                "Claude-F\u00e9licit\u00e9 d'Autriche\n\n(1653-1676)",
+                "* L\u00e9opold  du Saint-Empire (mariage en 1673)",
+                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1673-1676)",
+                "* Princesse de la Maison de Habsbourg. Fille de Ferdinand-Charles d'Autriche et d'Anne de M\u00e9dicis.",
+                ""
+            ],
+            [
+                "130x130px",
+                "\u00c9l\u00e9onore de Neubourg\n\n(1655-1720)",
+                "* L\u00e9opold  du Saint-Empire (mariage en 1676)",
+                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1676-1705)\n* Princesse de Transylvanie (1692-1705)",
+                "* Princesse de la Maison de Wittelsbach. Fille de Philippe-Guillaume de Neubourg et d'\u00c9lisabeth-Am\u00e9lie de Hesse-Darmstadt.\n* M\u00e8re de Joseph  du Saint-Empire, de Marie-\u00c9lisabeth d'Autriche, de L\u00e9opold Joseph d'Autriche, de Marie-Anne d'Autriche, de Marie-Th\u00e9r\u00e8se d'Autriche, de Charles VI du Saint-Empire, de Marie-Jos\u00e8phe d'Autriche et de Marie-Madeleine d'Autriche.",
+                ""
+            ],
+            [
+                "128x128px",
+                "Wilhelmine-Am\u00e9lie de Brunswick-Lunebourg\n\n(1673-1742)",
+                "* Joseph  du Saint-Empire (mariage en 1699)",
+                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1705-1711)",
+                "* Princesse de la Maison de Brunswick. Fille de Jean-Fr\u00e9d\u00e9ric de Brunswick-Calenberg et de B\u00e9n\u00e9dicte-Henriette du Palatinat.\n* M\u00e8re de Marie-Jos\u00e8phe d'Autriche, de L\u00e9opold Joseph d'Autriche et de Marie-Am\u00e9lie d'Autriche.",
+                ""
+            ],
+            [
+                "122x122px",
+                "\u00c9lisabeth-Christine de Brunswick-Wolfenb\u00fcttel\n\n(1691-1750)",
+                "* Charles VI du Saint-Empire (mariage en 1708)",
+                "* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche (1711-1740)\n* Reine de Naples (1714-1735)\n* Duchesse de Milan (1714-1740)\n* Souveraine des Pays-Bas (1715-1740)\n* Duchesse de Parme et Plaisance (1735-1740)",
+                "* Princesse de la Maison de Brunswick. Fille de Louis-Rodolphe de Brunswick-Wolfenb\u00fcttel et de Christine-Louise d'Oettingen-Oettingen.\n* M\u00e8re de Marie-Th\u00e9r\u00e8se d'Autriche et de Marie-Anne d'Autriche.",
+                "139x139px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": []
+    },
+    {
+        "id": "5214852",
+        "title": "Liste des conjoints des souverains de Boh\u00eame",
+        "url": "https://fr.wikipedia.org/?curid=5214852",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "126x126px",
+                "Marie-Am\u00e9lie d'Autriche\n\n(1701-1756)",
+                "* Charles VII du Saint-Empire (mariage en 1722)",
+                "* \u00c9lectrice de Bavi\u00e8re (1726-1745)\n* Imp\u00e9ratrice du Saint-Empire, reine de Germanie et de Boh\u00eame (1741-1745)",
+                "* Princesse de la Maison de Habsbourg. Fille de Joseph  du Saint-Empire et de Wilhelmine-Am\u00e9lie de Brunswick-Lunebourg.\n* M\u00e8re de Marie-Antoinette de Bavi\u00e8re, de Th\u00e9r\u00e8se-B\u00e9n\u00e9dicte de Bavi\u00e8re, de Maximilien III Joseph de Bavi\u00e8re, de Marie-Anne de Bavi\u00e8re et de Jos\u00e9pha de Bavi\u00e8re."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the \u00c9poux string contains VII and the El\u00e9ments biographiques string contains la?",
+                "answers": [
+                    "Marie-Am\u00e9lie d'Autriche\n\n(1701-1756)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the Titres string contains de and the El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "Marie-Am\u00e9lie d'Autriche\n\n(1701-1756)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains de, have \u00c9poux string contains Charles?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom\n(dates), with \u00c9poux string contains VII, have El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains VII and Titres string contains de?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "5214852",
+        "title": "Liste des conjoints des souverains de Boh\u00eame",
+        "url": "https://fr.wikipedia.org/?curid=5214852",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9pouse",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "131x131px",
+                "Fran\u00e7ois  du Saint-Empire\n\n(1708-1765)",
+                "* Marie-Th\u00e9r\u00e8se d'Autriche (mariage en 1736)",
+                "* Duc de Lorraine (1729-1737)\n* Grand-duc de Toscane (1737-1765)\n* Roi de Hongrie et de Boh\u00eame, archiduc d'Autriche, duc de Milan, souverain des Pays-Bas (1740-1765)\n* Duc de Parme et Plaisance (1740-1748)\n* Empereur du Saint-Empire, roi de Germanie (1745-1765)",
+                "* Prince de la Maison de Lorraine. Fils de L\u00e9opold  de Lorraine et d\u2019\u00c9lisabeth-Charlotte d'Orl\u00e9ans.\n* P\u00e8re de Marie-\u00c9lisabeth d'Autriche, de Marie-Anne d'Autriche, de Marie-Caroline d'Autriche, de Joseph II du Saint-Empire, de Marie-Christine d'Autriche, de Marie-\u00c9lisabeth d'Autriche, de Charles-Joseph d'Autriche, de Marie-Am\u00e9lie d'Autriche, de L\u00e9opold II du Saint-Empire, de Marie-Caroline d'Autriche, de Marie-Jeanne-Gabrielle d'Autriche, de Marie-Jos\u00e8phe d'Autriche, de Marie-Caroline d'Autriche, de Ferdinand d'Autriche-Este, de Marie-Antoinette d'Autriche et de Maximilien-Fran\u00e7ois d'Autriche.",
+                "138x138px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": []
+    },
+    {
+        "id": "5214852",
+        "title": "Liste des conjoints des souverains de Boh\u00eame",
+        "url": "https://fr.wikipedia.org/?curid=5214852",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "128x128px",
+                "Marie-Louise d'Espagne\n\n(1745-1792)",
+                "* L\u00e9opold II du Saint-Empire (mariage en 1765)",
+                "* Grande-duchesse de Toscane (1765-1790)\n* Imp\u00e9ratrice du Saint-Empire, reine de Germanie, de Hongrie et de Boh\u00eame, archiduchesse d'Autriche, duchesse de Milan, souveraine des Pays-Bas (1790-1792)",
+                "* Princesse de la Maison de Bourbon. Fille de Charles III d'Espagne et de Marie-Am\u00e9lie de Saxe.\n* M\u00e8re de Marie-Th\u00e9r\u00e8se d'Autriche, de Fran\u00e7ois  d'Autriche, de Ferdinand III de Toscane, de Marie-Anne d'Autriche, de Charles-Louis d'Autriche-Teschen, d'Alexandre L\u00e9opold d'Autriche, de Joseph de Habsbourg-Lorraine, de Marie-Cl\u00e9mentine d'Autriche, d'Antoine-Victor d'Autriche, de Marie-Am\u00e9lie d'Autriche, de Jean-Baptiste d'Autriche, de Rainier d'Autriche, de Louis d'Autriche et de Rodolphe d'Autriche.",
+                ""
+            ],
+            [
+                "147x147px",
+                "Marie-Th\u00e9r\u00e8se de Bourbon-Naples\n\n(1772-1807)",
+                "* Fran\u00e7ois  d'Autriche (mariage en 1790)",
+                "* Duchesse de Milan (1792-1796)\n* Souveraine des Pays-Bas (1792-1797)\n* Imp\u00e9ratrice du Saint-Empire (1792-1806)\n* Archiduchesse d'Autriche (1792-1806)\n* Reine de Hongrie et de Boh\u00eame (1792-1807)\n* Imp\u00e9ratrice d'Autriche (1804-1807)",
+                "* Princesse de la Maison de Bourbon-Siciles. Fille de Ferdinand  des Deux-Siciles et de Marie-Caroline d'Autriche.\n* M\u00e8re de Marie-Louise d'Autriche, de Ferdinand Ier d'Autriche, de Marie-L\u00e9opoldine d'Autriche, de Marie-Cl\u00e9mentine de Habsbourg, de Caroline de Habsbourg-Lorraine, de Fran\u00e7ois-Charles d'Autriche et de Marie-Anne d'Autriche.",
+                ""
+            ],
+            [
+                "127x127px",
+                "Marie-Louise de Habsbourg-Lorraine-Este\n\n(1787-1816)",
+                "* Fran\u00e7ois  d'Autriche (mariage en 1808)",
+                "* Imp\u00e9ratrice d'Autriche, reine de Hongrie et de Boh\u00eame (1808-1816)\n* Reine de Lombardie-V\u00e9n\u00e9tie (1815-1816)",
+                "* Princesse de la Maison de Habsbourg-Este. Fille de Ferdinand d'Autriche-Este et de Marie-B\u00e9atrice d'Este.",
+                ""
+            ],
+            [
+                "113x113px",
+                "Caroline-Auguste de Bavi\u00e8re\n\n(1792-1873)",
+                "* Guillaume  de Wurtemberg (mariage en 1808)\n* Fran\u00e7ois  d'Autriche (mariage en 1816)",
+                "* Imp\u00e9ratrice d'Autriche, reine de Lombardie-V\u00e9n\u00e9tie, de Hongrie et de Boh\u00eame (1816-1835)",
+                "* Princesse de la Maison de Wittelsbach. Fille de Maximilien  de Bavi\u00e8re et de Wilhelmine de Hesse-Darmstadt.",
+                ""
+            ],
+            [
+                "130x130px",
+                "Marie-Anne de Sardaigne\n\n(1803-1884)",
+                "* Ferdinand  d'Autriche (mariage en 1831)",
+                "* Imp\u00e9ratrice d'Autriche, reine de Lombardie-V\u00e9n\u00e9tie, de Hongrie et de Boh\u00eame (1835-1848)",
+                "* Princesse de la Maison de Savoie. Fille de Victor-Emmanuel  de Sardaigne et de Marie-Th\u00e9r\u00e8se d'Autriche-Este.",
+                "118x118px"
+            ],
+            [
+                "163x163px",
+                "\u00c9lisabeth de Wittelsbach\n\n(1837-1898)",
+                "* Fran\u00e7ois-Joseph  d'Autriche (mariage en 1854)",
+                "* Imp\u00e9ratrice d'Autriche, reine de Hongrie et de Boh\u00eame (1854-1898)\n*Reine de Lombardie-V\u00e9n\u00e9tie (1854-1866)",
+                "* Princesse de la Maison de Wittelsbach. Fille de Maximilien en Bavi\u00e8re et de Ludovica de Bavi\u00e8re.\n* M\u00e8re de Sophie d'Autriche, de Gis\u00e8le d'Autriche, de Rodolphe d'Autriche et de Marie-Val\u00e9rie d'Autriche.",
+                "168x168px"
+            ],
+            [
+                "146x146px",
+                "Zita de Bourbon-Parme\n\n(1892-1989)",
+                "* Charles  d'Autriche (mariage en 1911)",
+                "* Imp\u00e9ratrice d'Autriche, reine de Hongrie et de Boh\u00eame (1916-1918)",
+                "* Princesse de la Maison de Bourbon-Parme. Fille de Robert  de Parme et d'Ant\u00f3nia de Bragance.\n* M\u00e8re d'Otto de Habsbourg-Lorraine, d'Ad\u00e9la\u00efde d'Autriche, de Robert d'Autriche-Este, de F\u00e9lix de Habsbourg-Lorraine, de Charles-Louis d'Autriche, de Rodolphe d'Autriche, de Charlotte d'Autriche et d\u2019\u00c9lisabeth d'Autriche.",
+                ""
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": []
     }
 ]

@@ -40,7 +40,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the R\u00f4le string contains Patrick and the Notes string starts with Beats?",
+                "question": "What was the Titre when the Ann\u00e9e was on 2018 and the Notes string ends with 1?",
+                "answers": [
+                    "Groupies Have Feelings Too ep 1\nGroupies Have Feelings Too ep 2\n\nGroupies Have Feelings Too ep 3\n\nGroupies Have Feelings Too ep 4 \n\nGroupies Have Feelings Too ep 5\n\nGroupies Have Feelings Too ep 6"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Titre when the R\u00f4le string contains Patrick and the Ann\u00e9e was after 2018?",
                 "answers": [
                     "me & dad radio ep 1\nme & dad radio ep 2\n\nme & dad radio ep 3\n\nme & dad radio ep 4\n\nme & dad radio ep 5\n\nme & dad radio ep 6"
                 ],
@@ -48,7 +56,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Titre, with R\u00f4le string contains Patrick, have Ann\u00e9e was after 2018?",
+                "question": "Does every Titre, with Ann\u00e9e was on 2020, have Notes string contains Beats?",
                 "answers": [
                     "Yes"
                 ],
@@ -56,9 +64,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre, with Ann\u00e9e was on 2018, have Notes string contains Beats?",
+                "question": "Does only Titre, with Ann\u00e9e was after 2018, have R\u00f4le string contains Patrick?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
@@ -72,7 +80,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had R\u00f4le string contains Patrick and Notes string contains 1?",
+                "question": "How many Titre had Notes string contains Beats and Ann\u00e9e was after 2018?",
                 "answers": [
                     "1"
                 ],
@@ -80,17 +88,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Notes string contains 1?",
+                "question": "How many Titre had Ann\u00e9e was on 2020 and Notes string contains Beats?",
                 "answers": [
-                    "2"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Notes string starts with Beats?",
+                "question": "How many Titre had Ann\u00e9e was on 2020 and R\u00f4le string contains Patrick?",
                 "answers": [
-                    "2"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -144,7 +152,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the R\u00e9compense string starts with Auteur and the Ann\u00e9e was on 2019?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string starts with Artiste?",
                 "answers": [
                     "Billie Eilish"
                 ],
@@ -152,7 +160,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string starts with Album?",
+                "question": "What was the \u0152uvre when the R\u00e9compense string contains Album and the Ann\u00e9e was on 2019?",
                 "answers": [
                     "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
                 ],
@@ -160,23 +168,32 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u0152uvre, with R\u00e9compense string starts with Album, have Ann\u00e9e was on 2019?",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string starts with Artiste?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains de?",
+                "question": "Does only \u0152uvre, with R\u00e9compense string starts with Artiste, have Ann\u00e9e was on 2019?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
                 "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish",
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
                     "Billie Eilish",
                     "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
@@ -194,12 +211,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 2nd according to Ann\u00e9e?",
+                "question": "How many years had passed between when the R\u00e9compense was Album de l'ann\u00e9e and when the R\u00e9compense was Artiste global de l'ann\u00e9e?",
                 "answers": [
-                    "Billie Eilish",
-                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
+                    "0"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
@@ -211,23 +227,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Auteur compositeur de l'ann\u00e9e and when the R\u00e9compense was Album de l'ann\u00e9e?",
-                "answers": [
-                    "0"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was on 2019?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string starts with Auteur?",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string starts with Artiste?",
                 "answers": [
                     "1"
                 ],
@@ -235,7 +235,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string starts with Album?",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string starts with Auteur?",
                 "answers": [
                     "1"
                 ],
@@ -312,9 +312,9 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains album?",
+                "question": "What was the \u0152uvre when the R\u00e9compense string starts with Clip and the Ann\u00e9e was on 2019?",
                 "answers": [
-                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
+                    "Bad Guy - Billie Eilish"
                 ],
                 "reasoning_type": "conjunction"
             },
@@ -328,14 +328,6 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u0152uvre, with R\u00e9compense string contains artiste, have Ann\u00e9e was on 2019?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
                 "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string starts with Clip?",
                 "answers": [
                     "No"
@@ -344,15 +336,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which \u0152uvre, with R\u00e9compense string contains artiste, happened the 2nd according to Ann\u00e9e?",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains rock?",
                 "answers": [
-                    "Billie Eilish"
+                    "No"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 3rd according to Ann\u00e9e?",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 6th according to Ann\u00e9e?",
                 "answers": [
                     "Billie Eilish",
                     "Bad Guy - Billie Eilish",
@@ -372,7 +364,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Meilleur artiste - rock alternatif and when the R\u00e9compense was Clip de l'ann\u00e9e?",
+                "question": "How many years had passed between when the R\u00e9compense was Meilleure artiste f\u00e9minine - Pop/Rock and when the R\u00e9compense was Meilleur artiste social?",
                 "answers": [
                     "0"
                 ],
@@ -380,7 +372,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Meilleur album - Pop/Rock and when the R\u00e9compense was Clip de l'ann\u00e9e?",
+                "question": "How many years had passed between when the R\u00e9compense was Meilleur album - Pop/Rock and when the R\u00e9compense was Meilleur artiste social?",
                 "answers": [
                     "0"
                 ],
@@ -388,25 +380,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was before 2019?",
-                "answers": [
-                    "0"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was after 2019?",
-                "answers": [
-                    "0"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u0152uvre had R\u00e9compense string contains artiste and Ann\u00e9e was on 2019?",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string contains artiste?",
                 "answers": [
                     "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string contains artiste?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019?",
+                "answers": [
+                    "6"
                 ],
                 "reasoning_type": "counting"
             }
@@ -462,7 +454,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains international?",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains international?",
                 "answers": [
                     "Yes"
                 ],
@@ -470,7 +462,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string ends with international?",
+                "question": "Does only \u0152uvre, with R\u00e9compense string contains international, have Ann\u00e9e was on 2019?",
                 "answers": [
                     "Yes"
                 ],
@@ -478,25 +470,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was before 2019?",
+                "question": "How many \u0152uvre had R\u00e9compense string contains international?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string contains artiste?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was after 2019?",
                 "answers": [
                     "0"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u0152uvre had R\u00e9compense string ends with international and Ann\u00e9e was on 2019?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u0152uvre had R\u00e9compense string contains international and Ann\u00e9e was on 2019?",
-                "answers": [
-                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -534,14 +526,6 @@
             ]
         },
         "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was before 2019?",
-                "answers": [
-                    "0"
-                ],
-                "reasoning_type": "counting"
-            },
             {
                 "source": "synthetic_qa",
                 "question": "How many \u0152uvre had Ann\u00e9e was after 2019?",
@@ -608,23 +592,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains single?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string ends with international?",
                 "answers": [
-                    "Bad Guy - Billie Eilish"
+                    "Billie Eilish"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the R\u00e9compense string ends with single and the Ann\u00e9e was on 2019?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2018 and the R\u00e9compense string contains des?",
                 "answers": [
-                    "Bad Guy - Billie Eilish"
+                    "Billie Eilish"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u0152uvre, with Ann\u00e9e was after 2018, have R\u00e9compense string contains international?",
+                "question": "Does every \u0152uvre, with R\u00e9compense string ends with international, have Ann\u00e9e was on 2019?",
                 "answers": [
                     "Yes"
                 ],
@@ -632,19 +616,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u0152uvre, with Ann\u00e9e was after 2018, have R\u00e9compense string contains artiste?",
+                "question": "Does only \u0152uvre, with R\u00e9compense string contains single, have Ann\u00e9e was on 2019?",
                 "answers": [
                     "No"
                 ],
                 "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Meilleure star des r\u00e9seaux sociaux and when the R\u00e9compense was Meilleur artiste solo international?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
@@ -656,15 +632,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was after 2018?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was after 2018 and R\u00e9compense string contains single?",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string contains solo?",
                 "answers": [
                     "1"
                 ],
@@ -672,7 +640,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was on 2018 and R\u00e9compense string contains des?",
+                "question": "How many \u0152uvre had R\u00e9compense string contains star?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string contains artiste and Ann\u00e9e was on 2019?",
                 "answers": [
                     "1"
                 ],
@@ -749,7 +725,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the R\u00e9compense string ends with Push and the Ann\u00e9e was on 2019?",
+                "question": "What was the \u0152uvre when the R\u00e9compense string starts with Plus and the Ann\u00e9e was on 2019?",
                 "answers": [
                     "Billie Eilish"
                 ],
@@ -757,27 +733,35 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains clip?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains artiste?",
                 "answers": [
-                    "Bad Guy - Billie Eilish"
+                    "Billie Eilish"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains artiste?",
+                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains artiste?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains clip?",
+                "question": "Does every \u0152uvre, with R\u00e9compense string contains artiste, have Ann\u00e9e was on 2019?",
                 "answers": [
                     "Yes"
                 ],
                 "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with R\u00e9compense string contains artiste, happened the 2nd according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
@@ -790,15 +774,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which \u0152uvre, with R\u00e9compense string contains artiste, happened the 2nd according to Ann\u00e9e?",
-                "answers": [
-                    "Billie Eilish"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Meilleur clip and when the R\u00e9compense was Meilleure chanson?",
+                "question": "How many years had passed between when the R\u00e9compense was Meilleur clip and when the R\u00e9compense was Meilleur artiste MTV Push?",
                 "answers": [
                     "0"
                 ],
@@ -806,7 +782,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Meilleur artiste des \u0116tats-Unis and when the R\u00e9compense was Meilleur artiste MTV Push?",
+                "question": "How many years had passed between when the R\u00e9compense was Meilleur clip and when the R\u00e9compense was Meilleur artiste des \u0116tats-Unis?",
                 "answers": [
                     "0"
                 ],
@@ -814,7 +790,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string starts with Plus?",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string ends with clip?",
                 "answers": [
                     "1"
                 ],
@@ -822,9 +806,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was on 2019?",
+                "question": "How many \u0152uvre had R\u00e9compense string contains artiste and Ann\u00e9e was on 2019?",
                 "answers": [
-                    "6"
+                    "3"
                 ],
                 "reasoning_type": "counting"
             }
@@ -878,15 +862,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2020 and the R\u00e9compense string contains Artiste?",
-                "answers": [
-                    "Billie Eilish"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the R\u00e9compense string starts with Artiste and the Ann\u00e9e was on 2020?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2020 and the R\u00e9compense string starts with Artiste?",
                 "answers": [
                     "Billie Eilish"
                 ],
@@ -902,19 +878,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u0152uvre, with R\u00e9compense string starts with Artiste, have Ann\u00e9e was on 2020?",
+                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains artiste?",
                 "answers": [
                     "Yes"
                 ],
                 "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Artiste f\u00e9minine pr\u00e9f\u00e9r\u00e9e and when the R\u00e9compense was Nouvel artiste pr\u00e9f\u00e9r\u00e9?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
@@ -926,7 +894,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was on 2020 and R\u00e9compense string contains Artiste?",
+                "question": "How many years had passed between when the R\u00e9compense was Chanson pr\u00e9f\u00e9r\u00e9e and when the R\u00e9compense was Nouvel artiste pr\u00e9f\u00e9r\u00e9?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string starts with Artiste and Ann\u00e9e was after 2019?",
                 "answers": [
                     "1"
                 ],
@@ -934,15 +910,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was after 2019?",
+                "question": "How many \u0152uvre had Ann\u00e9e was before 2020 and R\u00e9compense string contains artiste?",
                 "answers": [
-                    "2"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string contains artiste?",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2020 and R\u00e9compense string contains Artiste?",
                 "answers": [
                     "1"
                 ],
@@ -1005,7 +981,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the R\u00e9compense string starts with Artiste and the Ann\u00e9e was on 2019?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string starts with Artiste?",
                 "answers": [
                     "Billie Eilish"
                 ],
@@ -1022,11 +998,29 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains de?",
+                "question": "Does every \u0152uvre, with R\u00e9compense string contains artiste, have Ann\u00e9e was on 2019?",
                 "answers": [
                     "Yes"
                 ],
                 "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains Artiste?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 3rd according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish",
+                    "When We All Fall Asleep Tour"
+                ],
+                "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
@@ -1039,16 +1033,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which \u0152uvre, with R\u00e9compense string contains de, happened the 2nd according to Ann\u00e9e?",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 4th according to Ann\u00e9e?",
                 "answers": [
                     "Billie Eilish",
+                    "Bad Guy - Billie Eilish",
                     "When We All Fall Asleep Tour"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Tourn\u00e9e de l'\u00e9t\u00e9 and when the R\u00e9compense was R\u00e9v\u00e9lation de l'ann\u00e9e?",
+                "question": "How many years had passed between when the R\u00e9compense was R\u00e9v\u00e9lation de l'ann\u00e9e and when the R\u00e9compense was Artiste f\u00e9minine de l'ann\u00e9e?",
                 "answers": [
                     "0"
                 ],
@@ -1056,17 +1051,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string contains de?",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019?",
                 "answers": [
-                    "3"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was before 2019?",
+                "question": "How many \u0152uvre had R\u00e9compense string starts with Artiste and Ann\u00e9e was on 2019?",
                 "answers": [
-                    "0"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
@@ -1143,15 +1138,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the R\u00e9compense string starts with Clip and the Ann\u00e9e was on 2019?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains Album?",
                 "answers": [
-                    "Bad Guy - Billie Eilish"
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u0152uvre, with R\u00e9compense string contains Artiste, have Ann\u00e9e was on 2019?",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string starts with Album?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string starts with Artiste?",
                 "answers": [
                     "Yes"
                 ],
@@ -1159,15 +1162,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u0152uvre, with R\u00e9compense string starts with Artiste, have Ann\u00e9e was on 2019?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 2nd according to Ann\u00e9e?",
+                "question": "Which \u0152uvre, with R\u00e9compense string contains de, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
                     "Billie Eilish",
                     "Bad Guy - Billie Eilish",
@@ -1177,7 +1172,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 1st according to Ann\u00e9e?",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
                     "Billie Eilish",
                     "Bad Guy - Billie Eilish",
@@ -1187,7 +1182,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Clip de l'ann\u00e9e and when the R\u00e9compense was Artiste f\u00e9minine de l'ann\u00e9e?",
+                "question": "How many years had passed between when the R\u00e9compense was Clip de l'ann\u00e9e and when the R\u00e9compense was Album de l'ann\u00e9e?",
                 "answers": [
                     "0"
                 ],
@@ -1195,7 +1190,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Chanson de l'ann\u00e9e and when the R\u00e9compense was Album de l'ann\u00e9e?",
+                "question": "How many years had passed between when the R\u00e9compense was Clip de l'ann\u00e9e and when the R\u00e9compense was Chanson de l'ann\u00e9e?",
                 "answers": [
                     "0"
                 ],
@@ -1203,7 +1198,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had R\u00e9compense string contains de and Ann\u00e9e was on 2019?",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string contains de?",
                 "answers": [
                     "4"
                 ],
@@ -1211,15 +1206,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was on 2019?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string starts with Clip?",
+                "question": "How many \u0152uvre had R\u00e9compense string starts with Album and Ann\u00e9e was on 2019?",
                 "answers": [
                     "1"
                 ],
@@ -1261,7 +1248,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string starts with Album?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains Album?",
                 "answers": [
                     "When we All Fall Asleep, Where do We Go? - Billie Eilish"
                 ],
@@ -1269,7 +1256,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains Album?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains international?",
                 "answers": [
                     "When we All Fall Asleep, Where do We Go? - Billie Eilish"
                 ],
@@ -1285,7 +1272,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u0152uvre, with R\u00e9compense string contains international, have Ann\u00e9e was on 2019?",
+                "question": "Does every \u0152uvre, with R\u00e9compense string starts with Album, have Ann\u00e9e was on 2019?",
                 "answers": [
                     "Yes"
                 ],
@@ -1301,17 +1288,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had R\u00e9compense string starts with Album and Ann\u00e9e was on 2019?",
+                "question": "How many \u0152uvre had Ann\u00e9e was after 2019?",
                 "answers": [
-                    "1"
+                    "0"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was after 2019?",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string starts with Album?",
                 "answers": [
-                    "0"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1351,15 +1338,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string ends with international?",
-                "answers": [
-                    "Billie Eilish"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the R\u00e9compense string contains international and the Ann\u00e9e was on 2019?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains international?",
                 "answers": [
                     "Billie Eilish"
                 ],
@@ -1375,11 +1354,19 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains international?",
+                "question": "Does only \u0152uvre, with R\u00e9compense string ends with international, have Ann\u00e9e was on 2019?",
                 "answers": [
                     "Yes"
                 ],
                 "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
@@ -1488,15 +1475,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains pop?",
+                "question": "What was the \u0152uvre when the R\u00e9compense string contains push and the Ann\u00e9e was on 2019?",
                 "answers": [
-                    "Bad Guy - Billie eilish"
+                    "Billie Eilish"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains montage?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains pop?",
                 "answers": [
                     "Bad Guy - Billie eilish"
                 ],
@@ -1512,15 +1499,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains montage?",
+                "question": "Does only \u0152uvre, with R\u00e9compense string ends with direction, have Ann\u00e9e was on 2019?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 8th according to Ann\u00e9e?",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 2nd according to Ann\u00e9e?",
                 "answers": [
                     "Billie Eilish",
                     "Bad Guy - Billie eilish",
@@ -1542,18 +1529,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 6th according to Ann\u00e9e?",
-                "answers": [
-                    "Billie Eilish",
-                    "Bad Guy - Billie eilish",
-                    "When the Party's Over - Billie Eilish",
-                    "Hostage - Billie eilish"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Chanson de l'\u00e9t\u00e9 and when the R\u00e9compense was Artiste de l'ann\u00e9e?",
+                "question": "How many years had passed between when the R\u00e9compense was Chanson de l'\u00e9t\u00e9 and when the R\u00e9compense was Meilleur montage?",
                 "answers": [
                     "0"
                 ],
@@ -1561,19 +1537,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Meilleure direction and when the R\u00e9compense was Chanson de l'\u00e9t\u00e9?",
+                "question": "How many years had passed between when the R\u00e9compense was Artiste MTV push de l'ann\u00e9e and when the R\u00e9compense was Meilleure direction?",
                 "answers": [
                     "0"
                 ],
                 "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string contains de?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
@@ -1585,9 +1553,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had R\u00e9compense string starts with Artiste and Ann\u00e9e was on 2019?",
+                "question": "How many \u0152uvre had R\u00e9compense string contains de and Ann\u00e9e was on 2019?",
                 "answers": [
-                    "2"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1641,33 +1609,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains de?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string starts with Album?",
                 "answers": [
-                    "When we All Fall Asleep, Where Do We Go? - Billie Eilish",
-                    "Billie Eilish",
-                    "Bad Guy - Billie Eilish"
+                    "When we All Fall Asleep, Where Do We Go? - Billie Eilish"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the R\u00e9compense string contains internationale and the Ann\u00e9e was on 2019?",
+                "question": "What was the \u0152uvre when the R\u00e9compense string starts with Album and the Ann\u00e9e was on 2019?",
                 "answers": [
-                    "Bad Guy - Billie Eilish"
+                    "When we All Fall Asleep, Where Do We Go? - Billie Eilish"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string starts with Album?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only \u0152uvre, with R\u00e9compense string starts with Album, have Ann\u00e9e was on 2019?",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains Album?",
                 "answers": [
                     "No"
                 ],
@@ -1675,13 +1633,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 1st according to Ann\u00e9e?",
+                "question": "Does every \u0152uvre, with R\u00e9compense string contains de, have Ann\u00e9e was on 2019?",
                 "answers": [
-                    "When we All Fall Asleep, Where Do We Go? - Billie Eilish",
-                    "Billie Eilish",
-                    "Bad Guy - Billie Eilish"
+                    "Yes"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
@@ -1695,15 +1651,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Vid\u00e9o internationale de l'ann\u00e9e and when the R\u00e9compense was Album international de l'ann\u00e9e?",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 1st according to Ann\u00e9e?",
                 "answers": [
-                    "0"
+                    "When we All Fall Asleep, Where Do We Go? - Billie Eilish",
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish"
                 ],
-                "reasoning_type": "date_difference"
+                "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Nouvel artiste international de l'ann\u00e9e and when the R\u00e9compense was Album international de l'ann\u00e9e?",
+                "question": "How many years had passed between when the R\u00e9compense was Nouvel artiste international de l'ann\u00e9e and when the R\u00e9compense was Vid\u00e9o internationale de l'ann\u00e9e?",
                 "answers": [
                     "0"
                 ],
@@ -1712,6 +1670,14 @@
             {
                 "source": "synthetic_qa",
                 "question": "How many \u0152uvre had Ann\u00e9e was on 2019?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string contains international and Ann\u00e9e was on 2019?",
                 "answers": [
                     "3"
                 ],
@@ -1775,23 +1741,24 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the R\u00e9compense string contains internationale and the Ann\u00e9e was on 2019?",
+                "question": "What was the \u0152uvre when the R\u00e9compense string contains de and the Ann\u00e9e was on 2019?",
                 "answers": [
-                    "Billie Eilish"
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the R\u00e9compense string contains internationale and the Ann\u00e9e was after 2019?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was before 2020 and the R\u00e9compense string starts with Clip?",
                 "answers": [
-                    "Billie Eilish"
+                    "Bad Guy - Billie Eilish"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u0152uvre, with R\u00e9compense string contains internationale, have Ann\u00e9e was after 2019?",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was after 2019, have R\u00e9compense string starts with Artiste?",
                 "answers": [
                     "Yes"
                 ],
@@ -1799,15 +1766,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u0152uvre, with R\u00e9compense string contains de, have Ann\u00e9e was on 2019?",
+                "question": "Does only \u0152uvre, with Ann\u00e9e was before 2020, have R\u00e9compense string contains de?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which \u0152uvre, with R\u00e9compense string contains de, happened the 2nd according to Ann\u00e9e?",
+                "question": "Which \u0152uvre, with R\u00e9compense string contains de, happened the 3rd according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with R\u00e9compense string contains de, happened the 1st according to Ann\u00e9e?",
                 "answers": [
                     "Billie Eilish",
                     "Bad Guy - Billie Eilish"
@@ -1817,6 +1792,14 @@
             {
                 "source": "synthetic_qa",
                 "question": "How many years had passed between when the R\u00e9compense was Artiste f\u00e9minine internationale de l'ann\u00e9e and when the R\u00e9compense was Clip de l'ann\u00e9e?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was R\u00e9v\u00e9lation internationale de l'ann\u00e9e and when the R\u00e9compense was Artiste f\u00e9minine internationale de l'ann\u00e9e?",
                 "answers": [
                     "1"
                 ],
@@ -1881,7 +1864,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the Ann\u00e9e was before 2021 and the R\u00e9compense string contains solo?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2021 and the R\u00e9compense string ends with international?",
                 "answers": [
                     "Billie Eilish"
                 ],
@@ -1889,7 +1872,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the R\u00e9compense string contains artiste and the Ann\u00e9e was after 2020?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2020 and the R\u00e9compense string ends with international?",
                 "answers": [
                     "Billie Eilish"
                 ],
@@ -1897,7 +1880,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u0152uvre, with R\u00e9compense string ends with international, have Ann\u00e9e was on 2020?",
+                "question": "Does only \u0152uvre, with R\u00e9compense string contains international, have Ann\u00e9e was after 2020?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2020, have R\u00e9compense string contains international?",
                 "answers": [
                     "No"
                 ],
@@ -1905,31 +1896,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u0152uvre, with R\u00e9compense string ends with international, have Ann\u00e9e was before 2021?",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2021 and R\u00e9compense string contains solo?",
                 "answers": [
-                    "No"
+                    "1"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
                 "question": "How many \u0152uvre had R\u00e9compense string contains international and Ann\u00e9e was on 2021?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was after 2020 and R\u00e9compense string ends with international?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u0152uvre had R\u00e9compense string ends with international and Ann\u00e9e was after 2020?",
                 "answers": [
                     "1"
                 ],
@@ -1985,23 +1960,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the R\u00e9compense string contains album and the Ann\u00e9e was on 2020?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2020 and the R\u00e9compense string contains artiste?",
                 "answers": [
-                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
+                    "Billie Eilish"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2020 and the R\u00e9compense string contains album?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2020 and the R\u00e9compense string contains solo?",
                 "answers": [
-                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
+                    "Billie Eilish"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u0152uvre, with R\u00e9compense string contains solo, have Ann\u00e9e was on 2020?",
+                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2020, have R\u00e9compense string contains album?",
                 "answers": [
                     "Yes"
                 ],
@@ -2009,9 +1984,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u0152uvre, with R\u00e9compense string contains album, have Ann\u00e9e was on 2020?",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2020, have R\u00e9compense string contains artiste?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
@@ -2037,7 +2012,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Meilleur album du monde and when the R\u00e9compense was Meilleur artiste solo du monde?",
+                "question": "How many years had passed between when the R\u00e9compense was Meilleur artiste solo du monde and when the R\u00e9compense was Meilleur album du monde?",
                 "answers": [
                     "0"
                 ],
@@ -2053,7 +2028,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was on 2020 and R\u00e9compense string contains album?",
+                "question": "How many \u0152uvre had R\u00e9compense string contains artiste and Ann\u00e9e was on 2020?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2020 and R\u00e9compense string contains artiste?",
                 "answers": [
                     "1"
                 ],
@@ -2166,7 +2149,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the Ann\u00e9e was after 2020 and the R\u00e9compense string contains de?",
+                "question": "What was the \u0152uvre when the R\u00e9compense string ends with solo and the Ann\u00e9e was on 2021?",
                 "answers": [
                     "Everything I wanted"
                 ],
@@ -2174,7 +2157,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u0152uvre when the Ann\u00e9e was after 2020 and the R\u00e9compense string contains pop?",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was after 2020 and the R\u00e9compense string contains performance?",
                 "answers": [
                     "Everything I wanted"
                 ],
@@ -2182,35 +2165,26 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2020, have R\u00e9compense string starts with Album?",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2020, have R\u00e9compense string starts with Album?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u0152uvre, with R\u00e9compense string starts with Album, have Ann\u00e9e was before 2021?",
+                "question": "Does only \u0152uvre, with Ann\u00e9e was before 2021, have R\u00e9compense string contains performance?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which \u0152uvre, with R\u00e9compense string contains de, happened the 3rd according to Ann\u00e9e?",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2021, happened the 2nd according to Ann\u00e9e?",
                 "answers": [
+                    "No Time To Die",
                     "Everything I wanted"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which \u0152uvre, with Ann\u00e9e was before 2021, happened the 1st according to Ann\u00e9e?",
-                "answers": [
-                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish",
-                    "Billie Eilish",
-                    "Bad Guy - Billie Eilish"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
@@ -2225,7 +2199,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Enregistrement de l'ann\u00e9e and when the R\u00e9compense was Meilleur nouvel artiste?",
+                "question": "Which \u0152uvre, with Ann\u00e9e was before 2021, happened the 2nd according to Ann\u00e9e?",
+                "answers": [
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish",
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Album de l'ann\u00e9e and when the R\u00e9compense was Enregistrement de l'ann\u00e9e?",
                 "answers": [
                     "1"
                 ],
@@ -2233,7 +2217,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9compense was Meilleur enregistrement and when the R\u00e9compense was Meilleure chanson \u00e9crite pour un media Visuel (Mourir peut attendre)?",
+                "question": "How many years had passed between when the R\u00e9compense was Meilleur album vocal pop and when the R\u00e9compense was Enregistrement de l'ann\u00e9e?",
                 "answers": [
                     "1"
                 ],
@@ -2241,25 +2225,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had R\u00e9compense string contains pop?",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2020?",
                 "answers": [
-                    "3"
+                    "6"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was on 2020 and R\u00e9compense string contains de?",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2020 and R\u00e9compense string starts with Album?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string contains de and Ann\u00e9e was on 2020?",
                 "answers": [
                     "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u0152uvre had R\u00e9compense string contains Album?",
-                "answers": [
-                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -2304,14 +2288,6 @@
                     "1"
                 ],
                 "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was before 2022?",
-                "answers": [
-                    "0"
-                ],
-                "reasoning_type": "counting"
             }
         ]
     },
@@ -2346,15 +2322,6 @@
                 2022
             ]
         },
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u0152uvre had Ann\u00e9e was before 2022?",
-                "answers": [
-                    "0"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
+        "qas": []
     }
 ]

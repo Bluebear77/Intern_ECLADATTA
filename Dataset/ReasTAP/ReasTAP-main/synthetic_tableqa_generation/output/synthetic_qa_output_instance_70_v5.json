@@ -63,15 +63,31 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the # was on 1 and the R\u00e9sultat string contains de?",
+                "question": "What was the Nom de l'olympiade when the R\u00e9sultat is Argent and the # was on 2?",
                 "answers": [
-                    "Olympic Tennis Event Atlanta"
+                    "Olympic Tennis Event Rio de Janeiro"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'olympiade, with # was after 1, have R\u00e9sultat is Argent?",
+                "question": "What was the Nom de l'olympiade when the R\u00e9sultat is Argent and the # was after 1?",
+                "answers": [
+                    "Olympic Tennis Event Rio de Janeiro"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom de l'olympiade, with # was on 2, have R\u00e9sultat is Argent?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom de l'olympiade, with R\u00e9sultat string contains finale, have # was on 1?",
                 "answers": [
                     "Yes"
                 ],
@@ -87,7 +103,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Date was 06/08/2016 and when the Date was 23/07/1996?",
+                "question": "How many years had passed between when the Partenaire was Patty Schnyder and when the Partenaire was Timea Bacsinszky?",
                 "answers": [
                     "1"
                 ],
@@ -95,9 +111,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had # was after 1 and R\u00e9sultat is Argent?",
+                "question": "How many Nom de l'olympiade had # was before 1?",
                 "answers": [
-                    "1"
+                    "0"
                 ],
                 "reasoning_type": "counting"
             }
@@ -637,15 +653,32 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Which Lieu, with Surface string starts with Moquette, happened the 7th according to #?",
+                "question": "What was the Lieu when the Gagnante(s) string contains de and the Surface string contains Moquette?",
                 "answers": [
+                    "Ko\u0161ice",
                     "Brno"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Lieu, with Surface string starts with Moquette, happened the 1st according to #?",
+                "question": "Does every Lieu, with Date string contains Suisse, have Score string contains Suisse?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Lieu, with Score string contains Barrage, have Surface string contains Suisse?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Lieu, with Surface string starts with Moquette, happened the 3rd according to #?",
                 "answers": [
                     "Ko\u0161ice"
                 ],
@@ -653,35 +686,19 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Perdante(s) was Katar\u00edna Studen\u00edkov\u00e1 and when the Perdante(s) was Olga Govortsova Vera Lapko?",
+                "question": "How many years had passed between when the Score was 6-4, 6-0 and when the Score was 7-6, 6-3?",
                 "answers": [
-                    "9"
+                    "1"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Perdante(s) was Katar\u00edna Studen\u00edkov\u00e1 and when the Perdante(s) was Amandine Hesse Kristina Mladenovic?",
+                "question": "How many years had passed between when the Perdante(s) was Am\u00e9lie Mauresmo and when the Perdante(s) was Martina Hingis Patty Schnyder?",
                 "answers": [
-                    "8"
+                    "1"
                 ],
                 "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Lieu had Gagnante(s) string contains Suisse and Score string contains Suisse?",
-                "answers": [
-                    "11"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Lieu had Surface string starts with Moquette?",
-                "answers": [
-                    "9"
-                ],
-                "reasoning_type": "counting"
             }
         ]
     },
@@ -751,7 +768,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the 1995 when the 1999 is 1 and the 2000 was greater than or equal to 1?",
+                "question": "What was the 1995 when the 1996 was greater than or equal to 6 and the 1994 was equal to 87?",
                 "answers": [
                     "16"
                 ],
@@ -759,15 +776,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the 1995 when the 1997 is 1 and the 2001 is 4?",
+                "question": "Does only 1995, with 2000 was greater than or equal to 1, have 1997 is 1?",
                 "answers": [
-                    "16"
+                    "Yes"
                 ],
-                "reasoning_type": "conjunction"
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many 1995 had 1998 was less than 2?",
+                "question": "How many 1995 had 1996 was greater than 6?",
                 "answers": [
                     "0"
                 ],
@@ -859,7 +876,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the 1996 when the 1995 was greater than or equal to 29 and the 1997 was equal to 3?",
+                "question": "What was the 1996 when the 1997 was equal to 3 and the 1999 was greater than or equal to 2?",
                 "answers": [
                     "10"
                 ],
@@ -867,19 +884,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the 1996 when the 1997 was equal to 3 and the 2001 was greater than or equal to 30?",
+                "question": "Does only 1996, with 1997 was greater than or equal to 3, have 1995 was equal to 29?",
                 "answers": [
-                    "10"
+                    "Yes"
                 ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many 1996 had 2000 is 3?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
+                "reasoning_type": "quantifiers"
             }
         ]
     },
@@ -1244,7 +1253,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Open d'Australie when the US Open string starts with Venus and the Internationaux de France string ends with finale?",
+                "question": "What was the Open d'Australie when the Internationaux de France string starts with Mary and the US Open string starts with Venus?",
                 "answers": [
                     "Lindsay Davenport"
                 ],
@@ -1252,28 +1261,43 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Open d'Australie when the US Open string ends with Williams and the Internationaux de France is Finale?",
+                "question": "What was the Open d'Australie when the Open d'Australie is Finale and the Internationaux de France string contains Pierce?",
                 "answers": [
-                    "Mary Pierce",
-                    "Am\u00e9lie Mauresmo"
+                    "Lindsay Davenport"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Open d'Australie, with Internationaux de France string ends with Seles, have US Open string starts with Lindsay?",
+                "question": "Does only Open d'Australie, with US Open string contains Venus, have Open d'Australie is Finale?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Open d'Australie, with Internationaux de France string starts with Mary, have Open d'Australie is Finale?",
+                "question": "Does every Open d'Australie, with Open d'Australie is Finale, have US Open string starts with Venus?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Open d'Australie, with US Open string contains Williams, happened the 4th according to Ann\u00e9e?",
+                "answers": [
+                    "Jennifer Capriati"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Open d'Australie, with Internationaux de France string contains finale, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "Conchita Mart\u00ednez"
+                ],
+                "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
@@ -1285,39 +1309,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Open d'Australie, with Open d'Australie string ends with finale, happened the 3rd according to Ann\u00e9e?",
+                "question": "How many years had passed between when the Wimbledon was Virginia Ruano and when the Wimbledon was Ai Sugiyama?",
                 "answers": [
-                    "Kim Clijsters"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Internationaux de France was Kim Clijsters and when the Internationaux de France was Iva Majoli?",
-                "answers": [
-                    "9"
+                    "5"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the US Open was Gabriela Sabatini and when the US Open was Lindsay Davenport?",
+                "question": "How many years had passed between when the Internationaux de France was Kim Clijsters and when the Internationaux de France was Steffi Graf?",
                 "answers": [
-                    "3"
+                    "7"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Open d'Australie had Open d'Australie is Finale?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Open d'Australie had Open d'Australie string contains de and Internationaux de France string ends with finale?",
+                "question": "How many Open d'Australie had Internationaux de France string starts with Iva and US Open string starts with Venus?",
                 "answers": [
                     "1"
                 ],
@@ -1325,9 +1333,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Open d'Australie had US Open string contains Seles?",
+                "question": "How many Open d'Australie had Internationaux de France is Finale and US Open string ends with Williams?",
                 "answers": [
-                    "1"
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Open d'Australie had Open d'Australie string contains de?",
+                "answers": [
+                    "3"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1565,25 +1581,17 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Which Open d'Australie, with Internationaux de France string contains finale, happened the 4th according to Ann\u00e9e?",
+                "question": "How many years had passed between when the US Open was (1/8) Iva Majoli and when the US Open was (1/32) D. Hantuchov\u00e1?",
                 "answers": [
-                    "Ashleigh Barty C. Dellacqua"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the US Open was (1/8) Mary Pierce and when the US Open was (1/8) Iva Majoli?",
-                "answers": [
-                    "5"
+                    "18"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Internationaux de France was 1/4 de finale Helena Sukov\u00e1 and when the Internationaux de France was 1/4 de finale Sania Mirza?",
+                "question": "How many years had passed between when the Open d'Australie was (1/32) A. Ellwood and when the Open d'Australie was 1/2 finale Monica Seles?",
                 "answers": [
-                    "19"
+                    "6"
                 ],
                 "reasoning_type": "date_difference"
             }
@@ -1773,7 +1781,16 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Open d'Australie when the Internationaux de France string contains Raven and the Wimbledon string starts with Heather?",
+                "question": "What was the Open d'Australie when the Wimbledon string starts with Heather and the Open d'Australie string contains Leander?",
+                "answers": [
+                    "Sania Mirza Ivan Dodig",
+                    "S. Stosur Sam Groth"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Open d'Australie when the Wimbledon string starts with Heather and the US Open string ends with Venus?",
                 "answers": [
                     "S. Stosur Sam Groth"
                 ],
@@ -1781,17 +1798,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Open d'Australie, with Wimbledon string contains Watson, have US Open string ends with Ram?",
+                "question": "Does every Open d'Australie, with Open d'Australie string contains de, have Wimbledon string starts with Heather?",
                 "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Open d'Australie, with Wimbledon string contains Watson, have Internationaux de France string contains Leander?",
-                "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
@@ -1805,39 +1814,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Open d'Australie, with Internationaux de France string contains Leander, happened the 1st according to Ann\u00e9e?",
+                "question": "How many years had passed between when the US Open was 1/2 finale van Rensburg and when the US Open was (1/8) Leander Paes?",
                 "answers": [
-                    "K. Mladenovic Daniel Nestor"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the US Open was 1/2 finale van Rensburg and when the US Open was Victoire Leander Paes?",
-                "answers": [
-                    "19"
+                    "20"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the US Open was (1/8) Leander Paes and when the US Open was 1/4 de finale J. Gambill?",
+                "question": "How many years had passed between when the US Open was (1/16) M. Bhupathi and when the US Open was 1/4 de finale J. Gambill?",
                 "answers": [
-                    "16"
+                    "13"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Open d'Australie had Open d'Australie string contains finale and Internationaux de France string contains de?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Open d'Australie had US Open string contains Leach and Internationaux de France string contains finale?",
+                "question": "How many Open d'Australie had US Open string contains Ram and Wimbledon string contains Watson?",
                 "answers": [
                     "1"
                 ],
@@ -1845,7 +1838,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Open d'Australie had Wimbledon string starts with Heather?",
+                "question": "How many Open d'Australie had Wimbledon string starts with Heather and Internationaux de France string contains Leander?",
                 "answers": [
                     "2"
                 ],
@@ -1989,7 +1982,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the # was on 3 and the Surface string starts with Moquette?",
+                "question": "What was the Nom de l'\u00e9dition when the # was on 4 and the Surface string starts with Moquette?",
                 "answers": [
                     "Chase Championships  New York"
                 ],
@@ -1997,7 +1990,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the # was before 6 and the Ultime adversaire string ends with Pierce?",
+                "question": "What was the Nom de l'\u00e9dition when the Surface string starts with Moquette and the Ultime adversaire string ends with Pierce?",
                 "answers": [
                     "Chase Championships  New York"
                 ],
@@ -2005,15 +1998,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom de l'\u00e9dition, with # was before 6, have Ultime adversaire string contains Davenport?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Nom de l'\u00e9dition, with Ultime adversaire string starts with Lindsay, have # was before 5?",
+                "question": "Does every Nom de l'\u00e9dition, with Ultime adversaire string ends with Graf, have Surface string starts with Moquette?",
                 "answers": [
                     "Yes"
                 ],
@@ -2021,31 +2006,39 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Surface string contains Moquette, happened the 1st according to #?",
+                "question": "Does every Nom de l'\u00e9dition, with Surface string starts with Moquette, have Ultime adversaire string contains Seles?",
                 "answers": [
-                    "Chase Championships New York"
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with Surface string starts with Moquette, happened the 4th according to #?",
+                "answers": [
+                    "Chase Championships  New York"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with # was on 6, happened the 1st according to #?",
+                "question": "Which Nom de l'\u00e9dition, with # was before 6, happened the 5th according to #?",
                 "answers": [
-                    "Sony Ericsson Championships Madrid"
+                    "Chase Championships  New York"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with # was after 2, happened the 6th according to #?",
+                "question": "Which Nom de l'\u00e9dition, with # was after 3, happened the 2nd according to #?",
                 "answers": [
-                    "Sony Ericsson Championships Madrid"
+                    "Chase Championships  New York"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Score was 6-3, 4-6, 6-0, 4-6, 6-0 and when the Score was 6-7, 6-4, 6-4?",
+                "question": "How many years had passed between when the R\u00e9sultat was Round Robin (victoire) and when the R\u00e9sultat was 1/4 de finale?",
                 "answers": [
                     "4"
                 ],
@@ -2053,33 +2046,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Score was 6-4, 6-2 and when the Score was 6-4, 3-6, 6-3?",
+                "question": "How many years had passed between when the Score was 6-7, 6-4, 6-4 and when the Score was 6-3, 2-6, 7-5?",
                 "answers": [
-                    "2"
+                    "3"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had Surface string contains Moquette?",
+                "question": "How many Nom de l'\u00e9dition had # was before 5?",
                 "answers": [
-                    "5"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had Surface string starts with Moquette and # was after 2?",
+                "question": "How many Nom de l'\u00e9dition had # was before 4?",
                 "answers": [
                     "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had Surface string starts with Moquette?",
-                "answers": [
-                    "5"
                 ],
                 "reasoning_type": "counting"
             }
@@ -2230,7 +2215,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the # was before 5 and the Partenaire string contains Anna?",
+                "question": "What was the Nom de l'\u00e9dition when the # was on 3 and the Surface string starts with Moquette?",
                 "answers": [
                     "Chase Championships New York"
                 ],
@@ -2238,7 +2223,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the Surface string starts with Moquette and the Partenaire string starts with Anna?",
+                "question": "What was the Nom de l'\u00e9dition when the # was before 2 and the Surface string starts with Moquette?",
                 "answers": [
                     "Chase Championships New York"
                 ],
@@ -2246,7 +2231,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom de l'\u00e9dition, with Surface string contains Moquette, have Partenaire string contains Anna?",
+                "question": "Does every Nom de l'\u00e9dition, with # was before 7, have Surface string contains Moquette?",
                 "answers": [
                     "No"
                 ],
@@ -2254,15 +2239,31 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'\u00e9dition, with Partenaire string starts with Anna, have Surface string starts with Moquette?",
+                "question": "Does only Nom de l'\u00e9dition, with # was before 6, have Partenaire string starts with Anna?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with # was after 3, happened the 4th according to #?",
+                "question": "Which Nom de l'\u00e9dition, with # was before 6, happened the 3rd according to #?",
+                "answers": [
+                    "Chase Championships New York"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with Surface string starts with Moquette, happened the 4th according to #?",
+                "answers": [
+                    "Chase Championships New York"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with # was after 5, happened the 1st according to #?",
                 "answers": [
                     "BNP Paribas WTA Finals by SC Global Singapour"
                 ],
@@ -2270,23 +2271,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Surface string starts with Moquette, happened the 2nd according to #?",
+                "question": "How many years had passed between when the Ultimes adversaires was Yayuk Basuki Caroline Vis and when the Ultimes adversaires was Jana Novotn\u00e1 Arantxa S\u00e1nchez?",
                 "answers": [
-                    "Chase Championships New York"
+                    "2"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Surface string starts with Moquette, happened the 5th according to #?",
-                "answers": [
-                    "Chase Championships New York"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Ultimes adversaires was Alexandra Fusai Nathalie Tauziat and when the Ultimes adversaires was T\u00edmea Babos Andrea Hlav\u00e1\u010dkov\u00e1?",
+                "question": "How many years had passed between when the Ultimes adversaires was T\u00edmea Babos Andrea Hlav\u00e1\u010dkov\u00e1 and when the Ultimes adversaires was Alexandra Fusai Nathalie Tauziat?",
                 "answers": [
                     "6"
                 ],
@@ -2294,23 +2287,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Score was 6-3, 6-1 and when the Score was 6-4, 2-6, 6-4?",
+                "question": "How many Nom de l'\u00e9dition had Partenaire string starts with Anna and # was before 6?",
                 "answers": [
-                    "1"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had Surface string contains Moquette and # was after 2?",
-                "answers": [
-                    "3"
+                    "2"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had # was before 2?",
+                "question": "How many Nom de l'\u00e9dition had # was on 4 and Surface string starts with Moquette?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'\u00e9dition had # was on 4 and Partenaire string starts with Anna?",
                 "answers": [
                     "1"
                 ],

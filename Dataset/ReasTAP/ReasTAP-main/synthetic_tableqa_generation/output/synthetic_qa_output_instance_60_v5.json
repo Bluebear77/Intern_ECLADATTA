@@ -1433,19 +1433,11 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Date when the # was greater than or equal to 13 and the S\u00e9l. was greater than or equal to 63?",
+                "question": "Does only Date, with S\u00e9l. was greater than or equal to 34, have # was greater than or equal to 3?",
                 "answers": [
-                    ""
+                    "Yes"
                 ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Date had # was greater than 7?",
-                "answers": [
-                    "7"
-                ],
-                "reasoning_type": "counting"
+                "reasoning_type": "quantifiers"
             }
         ]
     },

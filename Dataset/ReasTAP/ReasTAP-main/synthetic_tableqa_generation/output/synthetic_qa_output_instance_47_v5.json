@@ -83,33 +83,24 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the \u00c9poux string contains en and the Descendance string ends with Bretagne?",
+                "question": "What was the Nom when the Titres string contains de and the Ascendance string contains VI?",
                 "answers": [
-                    "B\u00e9atrice d'Angleterre(1242-1275)"
+                    "Marie de Limoges(1260-1291)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Titres string contains de and the Ascendance string contains II?",
+                "question": "What was the Nom when the Descendance string contains Bretagne and the \u00c9poux string contains en?",
                 "answers": [
                     "B\u00e9atrice d'Angleterre(1242-1275)",
-                    "Yolande d'Anjou(1412-1440)",
-                    "Jeanne II d'Albret(1425-1444)"
+                    "Marie de Limoges(1260-1291)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Descendance string contains Jean, have \u00c9poux string contains de?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom, with \u00c9poux string contains Bretagne, have Titres string contains de?",
+                "question": "Does every Nom, with Titres string contains Richmond, have \u00c9poux string contains en?",
                 "answers": [
                     "Yes"
                 ],
@@ -117,23 +108,31 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Titres string contains de and \u00c9poux string contains en?",
+                "question": "Does only Nom, with Ascendance string contains de, have Titres string contains Montfort?",
                 "answers": [
-                    "6"
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had \u00c9poux string contains Bretagne and Descendance string contains de?",
+                "answers": [
+                    "2"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had \u00c9poux string contains Bretagne?",
+                "question": "How many Nom had \u00c9poux string contains III?",
                 "answers": [
-                    "6"
+                    "3"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Ascendance string contains Fille and Descendance string contains px?",
+                "question": "How many Nom had Ascendance string contains de and Descendance string contains Jean?",
                 "answers": [
                     "2"
                 ],
@@ -531,26 +530,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Descendance string ends with Bretagne and the Titres string contains de?",
+                "question": "What was the Nom when the Descendance string contains de and the \u00c9poux string contains Jean?",
                 "answers": [
-                    "Blanche de Navarre(1226-1283)",
+                    "Blanche de Navarre(1226-1283)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the Titres string contains Montfort and the Ascendance string contains de?",
+                "answers": [
                     "Yolande de Dreux(1269-1332)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Descendance string contains Jean and the Titres string contains de?",
-                "answers": [
-                    "Blanche de Navarre(1226-1283)",
-                    "Yolande de Dreux(1269-1332)",
-                    "Jeanne de Penthi\u00e8vre\n(1324-1384)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom, with Descendance string contains de, have Ascendance string contains Fille?",
+                "question": "Does only Nom, with Descendance string contains de, have Ascendance string contains de?",
                 "answers": [
                     "No"
                 ],
@@ -558,15 +554,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Ascendance string contains de, have Descendance string contains de?",
+                "question": "Does only Nom, with \u00c9poux string contains Jean, have Ascendance string contains Fille?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had \u00c9poux string contains en and Descendance string contains Bretagne?",
+                "question": "How many Nom had Ascendance string contains IV and Titres string contains de?",
                 "answers": [
                     "2"
                 ],
@@ -574,9 +570,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Descendance string contains de?",
+                "question": "How many Nom had Descendance string contains de and \u00c9poux string contains en?",
                 "answers": [
                     "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Ascendance string contains de?",
+                "answers": [
+                    "5"
                 ],
                 "reasoning_type": "counting"
             }
@@ -711,27 +715,32 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Titres string contains Bretagne and the Descendance string ends with France?",
+                "question": "What was the Nom when the Ascendance string contains Louis and the Descendance string contains 15?",
                 "answers": [
-                    "Anne de Bretagne\n(1477-1514)"
+                    "Jeanne de Flandre(1295-1374)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Titres string contains de and the Descendance string contains Bretagne?",
+                "question": "What was the Nom when the Descendance string contains px and the \u00c9poux string contains V?",
                 "answers": [
-                    "Jeanne de Flandre(1295-1374)",
                     "Jeanne de Navarre(1370-1437)",
-                    "Jeanne de France(1391-1433)",
-                    "Isabelle d'\u00c9cosse(1426-1494)",
-                    "Marguerite de Foix(1458-1486)"
+                    "Jeanne de France(1391-1433)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Ascendance string contains Bretagne, have \u00c9poux string contains en?",
+                "question": "Does every Nom, with \u00c9poux string contains de, have Ascendance string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom, with Titres string contains de, have Descendance string contains de?",
                 "answers": [
                     "No"
                 ],
@@ -739,15 +748,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Descendance string ends with Bretagne, have Titres string contains de?",
+                "question": "How many Nom had Ascendance string contains Marguerite?",
                 "answers": [
-                    "No"
+                    "2"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Titres string contains de and Ascendance string contains de?",
+                "question": "How many Nom had Ascendance string contains Fille and Titres string contains Bretagne?",
                 "answers": [
                     "11"
                 ],
@@ -755,17 +764,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Titres string contains Montfort and Ascendance string contains la?",
+                "question": "How many Nom had Ascendance string contains de and \u00c9poux string contains de?",
                 "answers": [
-                    "10"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had \u00c9poux string contains IV and Titres string contains de?",
-                "answers": [
-                    "3"
+                    "11"
                 ],
                 "reasoning_type": "counting"
             }
@@ -819,7 +820,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the \u00c9poux string contains en and the Ascendance string contains de?",
+                "question": "What was the Nom when the Ascendance string contains Fille and the \u00c9poux string contains en?",
                 "answers": [
                     "Claude de France\n(1499-1524)",
                     "Catherine de M\u00e9dicis(1519-1589)"
@@ -828,7 +829,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Descendance string contains France and the Ascendance string contains de?",
+                "question": "What was the Nom when the \u00c9poux string contains en and the Ascendance string contains la?",
                 "answers": [
                     "Claude de France\n(1499-1524)",
                     "Catherine de M\u00e9dicis(1519-1589)"
@@ -837,7 +838,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Titres string contains Bretagne, have Ascendance string contains la?",
+                "question": "Does every Nom, with Ascendance string contains XII, have Descendance string contains France?",
                 "answers": [
                     "Yes"
                 ],
@@ -845,7 +846,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom, with Descendance string ends with France, have \u00c9poux string contains de?",
+                "question": "Does every Nom, with \u00c9poux string contains en, have Descendance string contains Charles?",
                 "answers": [
                     "Yes"
                 ],
@@ -853,7 +854,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Descendance string ends with France and Titres string contains de?",
+                "question": "How many Nom had Descendance string contains France?",
                 "answers": [
                     "2"
                 ],
@@ -861,7 +862,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Descendance string contains Marguerite?",
+                "question": "How many Nom had \u00c9poux string contains France and Titres string contains France?",
                 "answers": [
                     "2"
                 ],
@@ -869,7 +870,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Titres string contains de and Ascendance string contains de?",
+                "question": "How many Nom had \u00c9poux string contains France and Descendance string ends with France?",
                 "answers": [
                     "2"
                 ],

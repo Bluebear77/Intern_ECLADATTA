@@ -59,14 +59,6 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Lieu et date des Jeux when the Bronze string contains Brunet and the Or string contains Magdalena?",
-                "answers": [
-                    "Vancouver 2010(R\u00e9sultats d\u00e9taill\u00e9s)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
                 "question": "What was the Lieu et date des Jeux when the Or string starts with Magdalena and the Bronze string contains Brunet?",
                 "answers": [
                     "Vancouver 2010(R\u00e9sultats d\u00e9taill\u00e9s)"
@@ -75,7 +67,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Lieu et date des Jeux, with Or string contains Magdalena, have Bronze string contains Brunet?",
+                "question": "What was the Lieu et date des Jeux when the Or string contains Magdalena and the Bronze string contains Brunet?",
+                "answers": [
+                    "Vancouver 2010(R\u00e9sultats d\u00e9taill\u00e9s)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Lieu et date des Jeux, with Or string starts with Magdalena, have Bronze string contains Brunet?",
                 "answers": [
                     "Yes"
                 ],
@@ -83,11 +83,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Lieu et date des Jeux had Or string starts with Magdalena and Bronze string contains Brunet?",
+                "question": "Does every Lieu et date des Jeux, with Or string starts with Magdalena, have Bronze string contains Brunet?",
                 "answers": [
-                    "1"
+                    "Yes"
                 ],
-                "reasoning_type": "counting"
+                "reasoning_type": "quantifiers"
             }
         ]
     },
@@ -222,9 +222,9 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Lieu et date des Jeux when the Argent string starts with Yana and the Bronze string starts with Fanny?",
+                "question": "What was the Lieu et date des Jeux when the Argent string contains ROC and the Bronze string contains Vanessa?",
                 "answers": [
-                    "Sotchi 2014(R\u00e9sultats d\u00e9taill\u00e9s)"
+                    "P\u00e9kin 2022(R\u00e9sultats d\u00e9taill\u00e9s)"
                 ],
                 "reasoning_type": "conjunction"
             },
@@ -238,7 +238,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Lieu et date des Jeux, with Argent string starts with Yana, have Bronze string starts with Fanny?",
+                "question": "Does every Lieu et date des Jeux, with Bronze string starts with Fanny, have Argent string starts with Yana?",
                 "answers": [
                     "Yes"
                 ],
@@ -246,7 +246,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Lieu et date des Jeux, with Bronze string starts with Fanny, have Argent string contains Yana?",
+                "question": "Does every Lieu et date des Jeux, with Argent string starts with ROC, have Bronze string starts with Vanessa?",
                 "answers": [
                     "Yes"
                 ],
@@ -254,7 +254,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Lieu et date des Jeux had Bronze string starts with Fanny?",
+                "question": "How many Lieu et date des Jeux had Bronze string starts with Vanessa and Argent string starts with ROC?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Lieu et date des Jeux had Argent string starts with Yana and Bronze string starts with Fanny?",
                 "answers": [
                     "1"
                 ],
@@ -705,7 +713,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9dition when the Or string starts with Peter and the Argent string contains Frank?",
+                "question": "What was the \u00c9dition when the Or string starts with Peter and the Argent string starts with Frank?",
                 "answers": [
                     "Sarajevo 1984"
                 ],
@@ -713,15 +721,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u00c9dition, with Or string starts with Peter, have Argent string starts with Frank?",
+                "question": "What was the \u00c9dition when the Or string contains Peter and the Argent string starts with Frank?",
                 "answers": [
-                    "Yes"
+                    "Sarajevo 1984"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u00c9dition, with Or string starts with Peter, have Argent string contains Frank?",
+                "question": "Does every \u00c9dition, with Argent string starts with Frank, have Or string starts with Peter?",
                 "answers": [
                     "No"
                 ],
@@ -729,9 +737,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u00c9dition had Argent string contains Frank?",
+                "question": "Does only \u00c9dition, with Or string starts with Peter, have Argent string starts with Frank?",
                 "answers": [
-                    "4"
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u00c9dition had Or string contains Peter?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u00c9dition had Argent string contains Frank and Or string starts with Peter?",
+                "answers": [
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -833,11 +857,19 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many \u00c9dition had Or string starts with Frank?",
+                "question": "Does every \u00c9dition, with Bronze string contains Jacob, have Argent string contains Peter?",
                 "answers": [
-                    "2"
+                    "Yes"
                 ],
-                "reasoning_type": "counting"
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u00c9dition, with Bronze string contains Jacob, have Argent string starts with Peter?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
             }
         ]
     },
@@ -901,7 +933,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9dition when the Bronze string contains Doll and the Or string starts with Martin?",
+                "question": "What was the \u00c9dition when the Or string contains Martin and the Bronze string contains Doll?",
                 "answers": [
                     "Pyeongchang 2018(R\u00e9sultats d\u00e9taill\u00e9s)"
                 ],
@@ -909,19 +941,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9dition when the Or string starts with Martin and the Bronze string contains Doll?",
+                "question": "What was the \u00c9dition when the Bronze string contains Doll and the Or string contains Martin?",
                 "answers": [
                     "Pyeongchang 2018(R\u00e9sultats d\u00e9taill\u00e9s)"
                 ],
                 "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only \u00c9dition, with Or string starts with Martin, have Bronze string contains Doll?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
@@ -933,19 +957,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u00c9dition had Or string contains Ferry and Bronze string contains Jay?",
+                "question": "Does every \u00c9dition, with Or string starts with Martin, have Bronze string contains Doll?",
                 "answers": [
-                    "1"
+                    "No"
                 ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u00c9dition had Or string starts with Martin?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
+                "reasoning_type": "quantifiers"
             }
         ]
     },
@@ -1003,7 +1019,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9dition when the Or string starts with Martin and the Argent string starts with Simon?",
+                "question": "What was the \u00c9dition when the Argent string starts with Simon and the Or string starts with Martin?",
                 "answers": [
                     "Pyeongchang 2018(R\u00e9sultats d\u00e9taill\u00e9s)"
                 ],
@@ -1011,7 +1027,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9dition when the Or string starts with Martin and the Argent string contains Simon?",
+                "question": "What was the \u00c9dition when the Or string contains Martin and the Argent string contains Simon?",
                 "answers": [
                     "Pyeongchang 2018(R\u00e9sultats d\u00e9taill\u00e9s)"
                 ],
@@ -1019,11 +1035,19 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u00c9dition, with Or string starts with Martin, have Argent string starts with Simon?",
+                "question": "Does only \u00c9dition, with Argent string contains Simon, have Or string starts with Martin?",
                 "answers": [
                     "Yes"
                 ],
                 "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u00c9dition had Argent string starts with Simon?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
@@ -1035,9 +1059,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u00c9dition had Or string contains Martin and Argent string starts with Simon?",
+                "question": "How many \u00c9dition had Argent string contains Martin?",
                 "answers": [
-                    "1"
+                    "3"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1157,7 +1181,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9dition when the Bronze string ends with Fischer and the Argent string contains Odd?",
+                "question": "What was the \u00c9dition when the Argent string starts with Odd and the Bronze string starts with Ernst?",
                 "answers": [
                     "Sarajevo 1984"
                 ],
@@ -1165,15 +1189,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9dition when the Bronze string contains Frank and the Or string contains Alexander?",
+                "question": "What was the \u00c9dition when the Bronze string contains Peter and the Argent string starts with Mathias?",
                 "answers": [
-                    "Innsbruck 1976"
+                    "Lake Placid 1980"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u00c9dition, with Argent string contains Simon, have Bronze string starts with ROC?",
+                "question": "Does only \u00c9dition, with Or string contains Michael, have Argent string ends with Jr.?",
                 "answers": [
                     "Yes"
                 ],
@@ -1181,7 +1205,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u00c9dition, with Argent string starts with Odd, have Bronze string starts with Ernst?",
+                "question": "Does every \u00c9dition, with Bronze string starts with ROC, have Argent string contains Simon?",
                 "answers": [
                     "Yes"
                 ],
@@ -1189,9 +1213,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u00c9dition had Or string contains Frank?",
+                "question": "How many \u00c9dition had Argent string starts with Ola?",
                 "answers": [
-                    "2"
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u00c9dition had Argent string ends with Luck?",
+                "answers": [
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1275,7 +1307,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Lieu et date des Jeux when the Argent string starts with Liv and the Bronze string contains Magdalena?",
+                "question": "What was the Lieu et date des Jeux when the Bronze string starts with Magdalena and the Argent string starts with Liv?",
                 "answers": [
                     "Salt Lake City 2002"
                 ],
@@ -1291,7 +1323,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Lieu et date des Jeux, with Bronze string starts with Magdalena, have Argent string starts with Liv?",
+                "question": "Does only Lieu et date des Jeux, with Argent string starts with Liv, have Bronze string starts with Magdalena?",
                 "answers": [
                     "Yes"
                 ],
@@ -1299,15 +1331,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Lieu et date des Jeux, with Argent string contains Liv, have Bronze string starts with Magdalena?",
+                "question": "How many Lieu et date des Jeux had Argent string starts with Liv and Bronze string starts with Magdalena?",
                 "answers": [
-                    "Yes"
+                    "1"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Lieu et date des Jeux had Bronze string starts with Magdalena?",
+                "question": "How many Lieu et date des Jeux had Bronze string starts with Magdalena and Argent string starts with Liv?",
                 "answers": [
                     "1"
                 ],
@@ -1393,7 +1425,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Lieu et date des Jeux when the Argent string starts with Anna and the Or string contains Florence?",
+                "question": "What was the Lieu et date des Jeux when the Or string starts with Florence and the Argent string starts with Anna?",
                 "answers": [
                     "Turin 2006"
                 ],
@@ -1401,7 +1433,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Lieu et date des Jeux when the Argent string contains Anna and the Or string contains Florence?",
+                "question": "What was the Lieu et date des Jeux when the Argent string starts with Anna and the Or string starts with Florence?",
                 "answers": [
                     "Turin 2006"
                 ],
@@ -1409,7 +1441,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Lieu et date des Jeux, with Argent string contains Anna, have Or string starts with Florence?",
+                "question": "Does only Lieu et date des Jeux, with Or string contains Florence, have Argent string starts with Anna?",
                 "answers": [
                     "Yes"
                 ],
@@ -1417,7 +1449,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Lieu et date des Jeux, with Argent string starts with Anna, have Or string starts with Florence?",
+                "question": "Does every Lieu et date des Jeux, with Argent string starts with Anna, have Or string starts with Florence?",
                 "answers": [
                     "Yes"
                 ],

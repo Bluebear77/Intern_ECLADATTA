@@ -1085,46 +1085,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the D\u00e9parts was greater than or equal to 3 and the Victoires was greater than or equal to 0?",
+                "question": "What was the Nom when the Top 10 was less than or equal to 0 and the Victoiresen cat\u00e9gorie was greater than or equal to 0?",
                 "answers": [
-                    "Odette Siko",
-                    "Elsie Wisdom",
-                    "Kay Petre",
-                    "Anne-Cecile Rose-Itier",
-                    "Suzanne Largeot\u00c9galement Coupe des Dames au rallye Monte-Carlo en 1939.",
-                    "Marie-Claude Beaumont",
-                    "Christine Beckers",
-                    "Anne-Charlotte Verney",
-                    "Christine Dacremont",
-                    "Marianne Hoepfner",
-                    "Lella Lombardi",
-                    "Desir\u00e9 Wilson",
-                    "Tomiko Yoshikawa",
-                    "Lilian Bryner",
-                    "Claudia H\u00fcrtgen",
-                    "Vanina Ickx",
-                    "",
-                    "Rahel Frey",
-                    "Keiko Ihara",
-                    "Christina Nielsen",
-                    "Michelle Gatting",
-                    "Sophia Fl\u00f6rsch",
-                    "Sarah Bovy"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom when the D\u00e9parts was less than or equal to 4 and the Victoires was equal to 0?",
-                "answers": [
-                    "Odette Siko",
-                    "Marguerite Mareuse\u00c9galement Coupe des Dames au Rallye Monte-Carlo en 1933.",
                     "Joan Chetwynd",
                     "H.H. Stisted",
                     "Elsie Wisdom",
                     "Marie Desprez",
                     "Dorothy Champney",
                     "Kay Petre",
+                    "Anne-Cecile Rose-Itier",
                     "Stewart Gwenda Hawkes",
                     "Gordon Simpson",
                     "Joan Richmond",
@@ -1144,6 +1113,7 @@
                     "Yvonne Simon",
                     "Betty Haig",
                     "Gilberte Thirion",
+                    "Marie-Claude Beaumont",
                     "Christine Beckers",
                     "Yvette Fontaine",
                     "Marie Laurent",
@@ -1155,13 +1125,146 @@
                     "Lella Lombardi",
                     "Anna Cambiaghi",
                     "Juliette Slaughter",
+                    "Margie Smith-Haas",
+                    "Lyn St. James",
+                    "Tomiko Yoshikawa",
+                    "Cathy Muller",
+                    "Claudia H\u00fcrtgen",
+                    "",
+                    "Milka Duno",
+                    "Natacha Gachnang",
+                    "Cyndie Allemann",
+                    "Rahel Frey",
+                    "Andrea Robertson",
+                    "Keiko Ihara",
+                    "In\u00e8s Taittinger",
+                    "Christina Nielsen",
+                    "Michelle Gatting",
+                    "Manuela Gostner",
+                    "Tatiana Calder\u00f3n",
+                    "Sophia Fl\u00f6rsch",
+                    "Beitske Visser",
+                    "Sarah Bovy",
+                    "Lilou Wadoux",
+                    "Doriane Pin"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the D\u00e9parts was greater than or equal to 2 and the Victoiresen cat\u00e9gorie was greater than or equal to 0?",
+                "answers": [
+                    "Odette Siko",
+                    "Marguerite Mareuse\u00c9galement Coupe des Dames au Rallye Monte-Carlo en 1933.",
+                    "Elsie Wisdom",
+                    "Kay Petre",
+                    "Anne-Cecile Rose-Itier",
+                    "Stewart Gwenda Hawkes",
+                    "Joan Richmond",
+                    "Suzanne Largeot\u00c9galement Coupe des Dames au rallye Monte-Carlo en 1939.",
+                    "Germaine Rouault",
+                    "Yvonne Simon",
+                    "Marie-Claude Beaumont",
+                    "Christine Beckers",
+                    "Anne-Charlotte Verney",
+                    "Yvette Fontaine",
+                    "Martine R\u00e9nier",
+                    "Christine Dacremont",
+                    "Marianne Hoepfner",
+                    "Lella Lombardi",
                     "Desir\u00e9 Wilson",
                     "Margie Smith-Haas",
                     "Lyn St. James",
                     "Tomiko Yoshikawa",
                     "Lilian Bryner",
-                    "Cathy Muller",
                     "Claudia H\u00fcrtgen",
+                    "Vanina Ickx",
+                    "",
+                    "Milka Duno",
+                    "Natacha Gachnang",
+                    "Rahel Frey",
+                    "Keiko Ihara",
+                    "Christina Nielsen",
+                    "Michelle Gatting",
+                    "Manuela Gostner",
+                    "Tatiana Calder\u00f3n",
+                    "Sophia Fl\u00f6rsch",
+                    "Beitske Visser",
+                    "Sarah Bovy",
+                    "Lilou Wadoux"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom, with Victoires was greater than or equal to 0, have Victoiresen cat\u00e9gorie was greater than or equal to 1?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom, with Victoiresen cat\u00e9gorie was greater than or equal to 0, have Top 10 was greater than or equal to 0?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom, with Victoires was equal to 0, has the 12nd largest D\u00e9parts?",
+                "answers": [
+                    "Odette Siko",
+                    "Christine Beckers",
+                    "Christine Dacremont",
+                    "Marianne Hoepfner",
+                    "Lella Lombardi",
+                    "Lilian Bryner",
+                    "Claudia H\u00fcrtgen"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom, with D\u00e9parts was less than 4, has the 28th largest Top 10?",
+                "answers": [
+                    "Joan Chetwynd",
+                    "H.H. Stisted",
+                    "Elsie Wisdom",
+                    "Marie Desprez",
+                    "Dorothy Champney",
+                    "Kay Petre",
+                    "Stewart Gwenda Hawkes",
+                    "Gordon Simpson",
+                    "Joan Richmond",
+                    "Doreen Evans",
+                    "Barbara Skinner",
+                    "Collen Eaton",
+                    "Margaret Allen",
+                    "Dorothy Stanley-Turner",
+                    "Fernande Roux",
+                    "Joan Riddell",
+                    "Marjorie Eccles",
+                    "Suzanne Largeot\u00c9galement Coupe des Dames au rallye Monte-Carlo en 1939.",
+                    "Marjorie Fawcett",
+                    "Germaine Rouault",
+                    "Viviane Elder",
+                    "R\u00e9gine Gordine",
+                    "Yvonne Simon",
+                    "Betty Haig",
+                    "Gilberte Thirion",
+                    "Yvette Fontaine",
+                    "Marie Laurent",
+                    "Martine R\u00e9nier",
+                    "Corinne Tarnaud",
+                    "Mich\u00e8le Mouton",
+                    "Anna Cambiaghi",
+                    "Juliette Slaughter",
+                    "Margie Smith-Haas",
+                    "Lyn St. James",
+                    "Tomiko Yoshikawa",
+                    "Cathy Muller",
                     "",
                     "Milka Duno",
                     "Natacha Gachnang",
@@ -1178,46 +1281,12 @@
                     "Lilou Wadoux",
                     "Doriane Pin"
                 ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom, with Victoires was equal to 0, have Top 10 was greater than 0?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Nom, with Victoires was greater than or equal to 0, have D\u00e9parts was greater than 1?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Nom, with Victoiresen cat\u00e9gorie was greater than 0, has the 4th largest Victoires?",
-                "answers": [
-                    "Odette Siko",
-                    "Marie Laurent",
-                    "Christine Dacremont",
-                    "Mich\u00e8le Mouton",
-                    "Marianne Hoepfner",
-                    "Suzanne Largeot\u00c9galement Coupe des Dames au rallye Monte-Carlo en 1939.",
-                    "Marie-Claude Beaumont",
-                    "Christine Beckers",
-                    "Anne-Charlotte Verney",
-                    "Yvette Fontaine"
-                ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with Victoires was greater than or equal to 0, has the 61st largest Victoiresen cat\u00e9gorie?",
+                "question": "Which Nom, with Victoiresen cat\u00e9gorie was equal to 0, has the 31st largest Top 10?",
                 "answers": [
-                    "Marguerite Mareuse\u00c9galement Coupe des Dames au Rallye Monte-Carlo en 1933.",
                     "Joan Chetwynd",
                     "H.H. Stisted",
                     "Elsie Wisdom",
@@ -1248,14 +1317,11 @@
                     "Lella Lombardi",
                     "Anna Cambiaghi",
                     "Juliette Slaughter",
-                    "Desir\u00e9 Wilson",
                     "Margie Smith-Haas",
                     "Lyn St. James",
                     "Tomiko Yoshikawa",
-                    "Lilian Bryner",
                     "Cathy Muller",
                     "Claudia H\u00fcrtgen",
-                    "Vanina Ickx",
                     "",
                     "Milka Duno",
                     "Natacha Gachnang",
@@ -1278,26 +1344,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with Top 10 was greater than 0, has the 6th largest Victoiresen cat\u00e9gorie?",
-                "answers": [
-                    "Marguerite Mareuse\u00c9galement Coupe des Dames au Rallye Monte-Carlo en 1933.",
-                    "Desir\u00e9 Wilson",
-                    "Lilian Bryner",
-                    "Vanina Ickx"
-                ],
-                "reasoning_type": "numerical_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had D\u00e9parts was greater than or equal to 3 and Victoires was greater than or equal to 0?",
-                "answers": [
-                    "23"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Top 10 was greater than 0 and D\u00e9parts was greater than or equal to 1?",
+                "question": "How many Nom had D\u00e9parts was greater than 4?",
                 "answers": [
                     "6"
                 ],
@@ -1305,15 +1352,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had D\u00e9parts was less than or equal to 2?",
+                "question": "How many Nom had Victoiresen cat\u00e9gorie was equal to 1 and Victoires was equal to 0?",
                 "answers": [
-                    "44"
+                    "10"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Victoires when the Victoiresen cat\u00e9gorie was less than or equal to 0?",
+                "question": "How many Nom had D\u00e9parts was less than 5 and Victoires was less than or equal to 0?",
+                "answers": [
+                    "61"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Top 10 when the D\u00e9parts was equal to 1?",
                 "answers": [
                     "0.0"
                 ],
@@ -1321,17 +1376,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of Top 10 when the D\u00e9parts was equal to 4?",
+                "question": "What was the sum of D\u00e9parts when the Top 10 was less than 1?",
                 "answers": [
-                    "3.0"
+                    "126.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of D\u00e9parts when the Victoiresen cat\u00e9gorie was greater than or equal to 0?",
+                "question": "What was the average of Victoires when the Top 10 was greater than 0?",
                 "answers": [
-                    "2.33"
+                    "0.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }

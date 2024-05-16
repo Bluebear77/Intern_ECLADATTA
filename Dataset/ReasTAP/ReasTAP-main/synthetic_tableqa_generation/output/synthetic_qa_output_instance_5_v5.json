@@ -339,24 +339,7 @@
                 9999
             ]
         },
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "Does only , with Surface string ends with battue, have Tournoi is Rome?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many  had Ann\u00e9e was greater than or equal to 2023?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
+        "qas": []
     },
     {
         "id": "10792393",
@@ -409,7 +392,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the R\u00e9sultat is Argent and the # was equal to 1?",
+                "question": "What was the Nom de l'olympiade when the # was less than or equal to 1 and the R\u00e9sultat is Argent?",
                 "answers": [
                     "Olympic Tennis Event Tokyo"
                 ],
@@ -417,7 +400,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the Date was on 24/07/2021 and the # was less than or equal to 1?",
+                "question": "What was the Nom de l'olympiade when the # was greater than or equal to 1 and the R\u00e9sultat is Argent?",
                 "answers": [
                     "Olympic Tennis Event Tokyo"
                 ],
@@ -425,7 +408,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom de l'olympiade, with R\u00e9sultat is Argent, have Date was on 24/07/2021?",
+                "question": "Does only Nom de l'olympiade, with # was less than or equal to 1, have Date was on 24/07/2021?",
                 "answers": [
                     "Yes"
                 ],
@@ -433,35 +416,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'olympiade, with # was greater than or equal to 1, have R\u00e9sultat is Argent?",
+                "question": "Does every Nom de l'olympiade, with # was equal to 1, have R\u00e9sultat is Argent?",
                 "answers": [
                     "Yes"
                 ],
                 "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had # was equal to 1 and R\u00e9sultat is Argent?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had # was greater than or equal to 1?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had R\u00e9sultat is Argent and Date was on 24/07/2021?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
             }
         ]
     },
@@ -518,7 +477,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the # was greater than or equal to 1 and the Date was on 31/07/2021?",
+                "question": "What was the Nom de l'olympiade when the Date was on 31/07/2021 and the # was greater than or equal to 1?",
                 "answers": [
                     "Olympic Tennis Event Tokyo"
                 ],
@@ -526,15 +485,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the # was equal to 1 and the Date was on 31/07/2021?",
-                "answers": [
-                    "Olympic Tennis Event Tokyo"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Nom de l'olympiade, with # was equal to 1, have Date was on 31/07/2021?",
+                "question": "Does every Nom de l'olympiade, with # was greater than or equal to 1, have Date was on 31/07/2021?",
                 "answers": [
                     "Yes"
                 ],
@@ -542,7 +493,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'olympiade, with # was greater than or equal to 1, have Date was on 31/07/2021?",
+                "question": "Does only Nom de l'olympiade, with Date was on 31/07/2021, have # was greater than or equal to 1?",
                 "answers": [
                     "Yes"
                 ],
@@ -550,7 +501,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had R\u00e9sultat string contains de and Date was on 31/07/2021?",
+                "question": "How many Nom de l'olympiade had Date was on 31/07/2021 and # was greater than or equal to 1?",
                 "answers": [
                     "1"
                 ],
@@ -558,7 +509,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had Date was before 31/07/2021?",
+                "question": "How many Nom de l'olympiade had Date was on 31/07/2021 and # was less than or equal to 1?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'olympiade had # was less than 1?",
                 "answers": [
                     "0"
                 ],
@@ -650,6 +609,15 @@
                 9999
             ]
         },
-        "qas": []
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many Lieu had Gagnante(s) string contains finale?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
     }
 ]
