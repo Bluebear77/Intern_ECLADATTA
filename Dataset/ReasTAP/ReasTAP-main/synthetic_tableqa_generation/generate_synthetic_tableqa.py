@@ -1,14 +1,14 @@
+import os
+import random
+import json
+import warnings
+import multiprocessing as mp
+from tqdm import tqdm
+from nltk.corpus import wordnet
+import nltk
 from utils.generate_condition import *
 from utils.table_wrapper import WikiTable
 from utils.multiprocessing_utils import *
-
-from tqdm import tqdm
-import warnings
-import multiprocessing as mp
-import nltk
-nltk.download('wordnet')
-
-
 from question_generator.conjunction import *
 from question_generator.quantifiers import *
 from question_generator.temporal_comparison import *
@@ -16,6 +16,8 @@ from question_generator.numerical_comparison import *
 from question_generator.date_difference import *
 from question_generator.counting import *
 from question_generator.numerical_operation import *
+
+nltk.download('wordnet')
 
 random.seed(233)
 
@@ -31,7 +33,6 @@ type_func_map = {
     "numerical_operation": generate_numerical_operation_question
 }
 
-
 def generate_questions(table, template_data, max_trails=50):
     qas = []
     question_set = set()
@@ -46,11 +47,15 @@ def generate_questions(table, template_data, max_trails=50):
             generate_question_func = type_func_map[reasoning_type]
 
             time, question = 0, None
-            while question == None and time < max_trails:
-                question, answer = generate_question_func(table, template["template_str"], template_type)
+            while question is None and time < max_trails:
+                try:
+                    question, answer = generate_question_func(table, template["template_str"], template_type)
+                except Exception as e:
+                    log_error(f"Error generating question for template {template}: {e}")
+                    break
                 time += 1
-                
-            if question != None and len(answer) > 0 and question not in question_set:
+
+            if question is not None and len(answer) > 0 and question not in question_set:
                 qas.append({
                     "source": "synthetic_qa",
                     "question": question,
@@ -60,22 +65,31 @@ def generate_questions(table, template_data, max_trails=50):
                 question_set.add(question)
     return qas
 
-
 def worker(table_data_chunk, template_dict, q):
     result = []
     for table_data in table_data_chunk:
-        qas = generate_questions(table_data, template_dict)
-        table_data["qas"] = qas
-        result.append(table_data)
+        try:
+            qas = generate_questions(table_data, template_dict)
+            table_data["qas"] = qas
+            result.append(table_data)
+        except Exception as e:
+            log_error(f"Error processing table {table_data}: {e}")
     q.put(result)
 
+def log_error(message):
+    with open("log.txt", "a") as log_file:
+        log_file.write(message + "\n")
+    print(message)
 
 def main():
     template_dict = json.load(open("question_template.json"))
-    table_data_dir = "table_data"
+    # table_data_dir = "/mnt/data/P6/P6"
+    table_data_dir ="../../../100-female-celebrities/v2-100/P6"
     
-    result = []
     files = [f for f in os.listdir(table_data_dir) if f.endswith(".json")]
+    output_dir = "output"
+    os.makedirs(output_dir, exist_ok=True)
+
     for orig_file in tqdm(files):
         orig_file_path = os.path.join(table_data_dir, orig_file)
         
@@ -83,31 +97,33 @@ def main():
             with open(orig_file_path, 'r') as file:
                 data = json.load(file)
         except json.JSONDecodeError as e:
-            print(f"Error reading JSON from {orig_file_path}: {e}")
+            log_error(f"Error reading JSON from {orig_file_path}: {e}")
             continue
 
-        # Set up multiprocessing
-        n_processes = mp.cpu_count()
-        q = mp.Queue()
-        table_chunks = split(data, n_processes)
-        processes = [mp.Process(target=worker, args=(table_chunk, template_dict, q)) for table_chunk in table_chunks]
+        try:
+            # Set up multiprocessing
+            n_processes = mp.cpu_count()
+            q = mp.Queue()
+            table_chunks = split(data, n_processes)
+            processes = [mp.Process(target=worker, args=(table_chunk, template_dict, q)) for table_chunk in table_chunks]
 
-        for p in processes:
-            p.start()
+            for p in processes:
+                p.start()
 
-        for _ in range(n_processes):
-            result.extend(q.get())
+            result = []
+            for _ in range(n_processes):
+                result.extend(q.get())
 
-        for p in processes:
-            p.join()
+            for p in processes:
+                p.join()
 
-    output_dir = "output"
-    os.makedirs(output_dir, exist_ok=True)
-    json.dump(result, open(os.path.join(output_dir, "synthetic_qa_output.json"), "w"), indent=4)
-    if len(result) > 1000:
-        json.dump(random.sample(result, 1000), open(os.path.join(output_dir, "synthetic_qa_output_sample.json"), "w"), indent=4)
-    
-    print(f"Generated {len(result)} questions.")
+            output_file_path = os.path.join(output_dir, f"synthetic_qa_output_{orig_file}")
+            with open(output_file_path, 'w') as output_file:
+                json.dump(result, output_file, indent=4)
+            
+            print(f"Generated {len(result)} questions for {orig_file}.")
+        except Exception as e:
+            log_error(f"Error processing file {orig_file}: {e}")
 
 if __name__ == '__main__':
     main()

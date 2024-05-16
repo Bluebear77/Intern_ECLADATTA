@@ -75,27 +75,43 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Commentaire string contains en, happened the 5th according to Ann\u00e9e?",
+                "question": "Which Titre, with Commentaire string contains en, happened the 1st according to Ann\u00e9e?",
                 "answers": [
-                    "Taking Chances World Tour: The Concert"
+                    "C\u00e9line Dion en concert"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Commentaire was CD/DVD. Chiffre indiqu\u00e9 = certifications Canada et \u00c9tats-Unis uniquement. and when the Commentaire was Dont  aux \u00c9tats-Unis..?",
+                "question": "How many years had passed between when the Commentaire was 2 millions certifi\u00e9s en Europe en 2004. and when the Commentaire was 1 million certifi\u00e9 en Europe en 2004..?",
                 "answers": [
-                    "6"
+                    "2"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Commentaire was Sorti en 1999 en coffrets collector num\u00e9rot\u00e9s (France). and when the Commentaire was 2 millions certifi\u00e9s en Europe en 2004.?",
+                "question": "How many years had passed between when the Commentaire was CD/DVD. Chiffre indiqu\u00e9 = certifications Canada et \u00c9tats-Unis uniquement. and when the Commentaire was 1 million certifi\u00e9 en Europe en 2004..?",
                 "answers": [
-                    "3"
+                    "16"
                 ],
                 "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Commentaire string contains au?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Commentaire string contains en?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
             }
         ]
     },
@@ -161,19 +177,43 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Commentaire was Disponible en CD / Double-CD / Triple-CD. and when the Commentaire was Disponible en CD ou Double-CD.  le plus vendu dans le monde en 2008..?",
+                "question": "Which Titre, with Commentaire string contains en, happened the 1st according to Ann\u00e9e?",
                 "answers": [
-                    "3"
+                    "The Collector's Series, Volume One"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Titre, with Commentaire string contains en, happened the 3rd according to Ann\u00e9e?",
+                "answers": [
+                    "My Love: Essential Collection"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Commentaire was 7 nouveaux titres studio et compilation. and when the Commentaire was Sorti en France sous le nom Tout en amour.?",
+                "answers": [
+                    "1"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Commentaire was Disponible en CD ou Double-CD.  le plus vendu dans le monde en 2008.. and when the Commentaire was 7 nouveaux titres studio et compilation.?",
+                "question": "How many years had passed between when the Commentaire was Sorti en France sous le nom Tout en amour. and when the Commentaire was Disponible en CD ou Double-CD.  le plus vendu dans le monde en 2008..?",
                 "answers": [
-                    "9"
+                    "8"
                 ],
                 "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Commentaire string contains en?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
             }
         ]
     },
@@ -316,7 +356,31 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Commentaire string contains au, happened the 5th according to Ann\u00e9e?",
+                "question": "What was the Titre when the Ventes string contains En and the Commentaire string contains au?",
+                "answers": [
+                    "La Voix du Bon Dieu"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Titre when the Ventes string contains House and the Commentaire string contains au?",
+                "answers": [
+                    "La Voix du Bon Dieu"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Titre, with Commentaire string contains en, have Ventes string contains Communications?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Titre, with Commentaire string contains au, happened the 4th according to Ann\u00e9e?",
                 "answers": [
                     "Les Chemins de ma maison",
                     "Chants et contes de No\u00ebl"
@@ -325,41 +389,49 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Commentaire string contains de, happened the 5th according to Ann\u00e9e?",
+                "question": "Which Titre, with Commentaire string contains en, happened the 6th according to Ann\u00e9e?",
                 "answers": [
-                    "D'eux"
+                    "M\u00e9lanie"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Commentaire string contains au, happened the 3rd according to Ann\u00e9e?",
+                "question": "How many years had passed between when the Commentaire was Album francophone le plus vendu de l'histoire du disque. and when the Commentaire was Prix F\u00e9lix pour un de ses albums et   ; distribu\u00e9 exclusivement au Qu\u00e9bec.?",
                 "answers": [
-                    "Tellement j'ai d'amour\u2026"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Commentaire was Paru sous le titre Des mots qui sonnent en France. Disque de reprises avec 4 in\u00e9dits. and when the Commentaire was Seul disque distribu\u00e9 au Canada \u00e0 ne pas \u00eatre devenu au moins disque d'or ; distribu\u00e9 exclusivement au Qu\u00e9bec.?",
-                "answers": [
-                    "10"
+                    "13"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Commentaire was En m\u00e9moire de Ren\u00e9 Ang\u00e9lil. Certifi\u00e9 disque de diamant en France. Deuxi\u00e8me meilleure vente de l'ann\u00e9e 2016 en France and when the Commentaire was \u00e9coul\u00e9s en une semaine dans le monde. Certifi\u00e9 disque de diamant en France..?",
+                "question": "How many years had passed between when the Commentaire was Album francophone le plus vendu de l'histoire du disque. and when the Commentaire was Certifi\u00e9 disque de diamant en France.?",
                 "answers": [
-                    "4"
+                    "3"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Commentaire string contains le?",
+                "question": "How many Titre had Commentaire string contains en?",
                 "answers": [
-                    "4"
+                    "14"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Commentaire string contains de?",
+                "answers": [
+                    "8"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Commentaire string contains en and Ventes string contains House?",
+                "answers": [
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -491,308 +563,41 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Commentaire string contains en, happened the 1st according to Ann\u00e9e?",
+                "question": "Which Titre, with Commentaire string starts with le, happened the 4th according to Ann\u00e9e?",
                 "answers": [
-                    "Falling into You"
+                    ""
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Commentaire string contains le, happened the 2nd according to Ann\u00e9e?",
+                "question": "Which Titre, with Commentaire string starts with Un, happened the 2nd according to Ann\u00e9e?",
                 "answers": [
-                    "Falling into You"
+                    "Let's Talk About Love"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Commentaire was Dont  aux \u00c9tats-Unis. and when the Commentaire was le plus vendu dans le monde en 2007..?",
+                "question": "How many years had passed between when the Commentaire was Album-concept sur l'amour unissant une m\u00e8re et son b\u00e9b\u00e9. and when the Commentaire was ?",
                 "answers": [
-                    "14"
+                    "15"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Commentaire was Album-concept sur l'amour unissant une m\u00e8re et son b\u00e9b\u00e9. and when the Commentaire was le plus vendu dans le monde en 2013.?",
+                "question": "How many years had passed between when the Commentaire was Dont  aux \u00c9tats-Unis. and when the Commentaire was Un des albums de No\u00ebl les plus vendus.?",
                 "answers": [
-                    "9"
+                    "5"
                 ],
                 "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Titre had Commentaire string contains le?",
-                "answers": [
-                    "8"
-                ],
-                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
                 "question": "How many Titre had Commentaire string starts with le?",
                 "answers": [
                     "4"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "7406078-0",
-        "title": "Head coaches",
-        "url": "https://en.wikipedia.org/wiki/Nevada_Wolf_Pack_men's_basketball",
-        "header": [
-            "Name",
-            "Seasons",
-            "Record",
-            "Percentage"
-        ],
-        "rows": [
-            [
-                "C.E. Holway",
-                "1913\u20131913",
-                "3\u20131",
-                ".750"
-            ],
-            [
-                "Silas Ross",
-                "1914\u20131919",
-                "33\u201321",
-                ".611"
-            ],
-            [
-                "Ray Courtright",
-                "1920\u20131921",
-                "17\u20135",
-                ".773"
-            ],
-            [
-                "Jake Lawlor",
-                "1943\u20131948",
-                "70\u201338",
-                ".648"
-            ],
-            [
-                "Jim Aiken",
-                "1945",
-                "8\u20139",
-                ".471"
-            ],
-            [
-                "Jackson Spencer",
-                "1970\u20131972",
-                "10\u201364",
-                ".135"
-            ],
-            [
-                "Jim Padgett",
-                "1973\u20131976",
-                "43\u201361",
-                ".413"
-            ],
-            [
-                "Jim Carey",
-                "1977\u20131980",
-                "65\u201346",
-                ".586"
-            ],
-            [
-                "Sonny Allen",
-                "1981\u20131987",
-                "114\u201389",
-                ".562"
-            ],
-            [
-                "Len Stevens",
-                "1988\u20131993",
-                "91\u201379",
-                ".535"
-            ],
-            [
-                "Pat Foster",
-                "1994\u20131999",
-                "90\u201381",
-                ".526"
-            ],
-            [
-                "Trent Johnson",
-                "2000\u20132004",
-                "79\u201374",
-                ".516"
-            ],
-            [
-                "Mark Fox",
-                "2005\u20132009",
-                "123\u201343",
-                ".741"
-            ],
-            [
-                "David Carter",
-                "2010\u20132015",
-                "98\u201397",
-                ".503"
-            ],
-            [
-                "Eric Musselman",
-                "2016\u20132019",
-                "100\u201330",
-                ".769"
-            ],
-            [
-                "Steve Alford",
-                "2019\u2013",
-                "34\u201321",
-                ".618"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "numeric"
-        ],
-        "key_column": 0,
-        "numeric_columns": [
-            3
-        ],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "How many Name had Percentage was less than or equal to .773?",
-                "answers": [
-                    "16"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Name had Percentage was greater than .562?",
-                "answers": [
-                    "8"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "11570005-3",
-        "title": "Music videos",
-        "url": "https://en.wikipedia.org/wiki/Brad_Johner",
-        "header": [
-            "Year",
-            "Video",
-            "Director"
-        ],
-        "rows": [
-            [
-                "2002",
-                "\"Hello\"",
-                "Antonio Hrynchuk"
-            ],
-            [
-                "2003",
-                "\"Free\"",
-                "Stephano Barberis"
-            ],
-            [
-                "2003",
-                "\"Different\"",
-                "Antonio Hrynchuk"
-            ],
-            [
-                "2004",
-                "\"The Farmers Back\"",
-                "Antonio Hrynchuk"
-            ],
-            [
-                "2004",
-                "\"She Moved\"",
-                ""
-            ],
-            [
-                "2005",
-                "\"Ive Got It Good\"",
-                "Sean Danby"
-            ],
-            [
-                "2006",
-                "\"Id Rather Be Lucky\"",
-                ""
-            ],
-            [
-                "2006",
-                "\"Now Thats Christmas\"",
-                "Antonio Hrynchuk"
-            ],
-            [
-                "2008",
-                "\"The Other Side of the Radio\"",
-                "Antonio Hrynchuk"
-            ]
-        ],
-        "column_types": [
-            "datetime",
-            "string",
-            "string"
-        ],
-        "key_column": 1,
-        "numeric_columns": [],
-        "date_columns": {
-            "0": [
-                2002,
-                2003,
-                2003,
-                2004,
-                2004,
-                2005,
-                2006,
-                2006,
-                2008
-            ]
-        },
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "Which Video, with Year was before 2004, happened the 3rd according to Year?",
-                "answers": [
-                    "\"Free\"",
-                    "\"Different\""
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Video, with Year was after 2002, happened the 3rd according to Year?",
-                "answers": [
-                    "\"The Farmers Back\"",
-                    "\"She Moved\""
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Director was Sean Danby and when the Director was Stephano Barberis?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Video had Year was after 2004?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Video had Year was on 2006?",
-                "answers": [
-                    "2"
                 ],
                 "reasoning_type": "counting"
             }

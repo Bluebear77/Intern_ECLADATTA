@@ -1,0 +1,704 @@
+[
+    {
+        "id": "3935375",
+        "title": "Liste des conjoints des souverains anglais",
+        "url": "https://fr.wikipedia.org/?curid=3935375",
+        "header": [
+            "Portrait",
+            "Nom",
+            "Dates",
+            "Conjoint",
+            "Remarques",
+            "Blason"
+        ],
+        "rows": [
+            [
+                "Portrait imaginaire d'\u00c9lisabeth d'York.",
+                "\u00c9lisabeth d'York( \u2013 )",
+                "1486 \u2013 1503",
+                "",
+                "Fille du roi d'Angleterre  et d'\u00c9lisabeth Woodville, elle \u00e9pouse Henri le  et elle est sacr\u00e9e le . Ils ont sept enfants : Arthur, Marguerite, , \u00c9lisabeth, Marie, Edmond et Catherine.",
+                "Blason d'\u00c9lisabeth d'York."
+            ],
+            [
+                "Portrait de Catherine d'Aragon.",
+                "Catherine d'Aragon( \u2013 )",
+                "1509 \u2013 1533",
+                "",
+                "Fille du roi d'Aragon Ferdinand le Catholique et de la reine de Castille Isabelle la Catholique, veuve du prince Arthur Tudor, elle \u00e9pouse Henri le  et elle est sacr\u00e9e le 23. Ils ont sept enfants, dont Henri et . Leur mariage est annul\u00e9 par l'archev\u00eaque de Cantorb\u00e9ry Thomas Cranmer le .",
+                "Blason de Catherine d'Aragon."
+            ],
+            [
+                "Portrait d'Anne Boleyn.",
+                "Anne Boleyn(vers  \u2013 )",
+                "1533 \u2013 1536",
+                "",
+                "Fille du comte Thomas Boleyn et d'Elizabeth Howard, elle \u00e9pouse en secret Henri en 1533. Leur union est d\u00e9clar\u00e9e valide par l'archev\u00eaque de Cantorb\u00e9ry Thomas Cranmer le  et elle est sacr\u00e9e le . Ils ont une fille, . Arr\u00eat\u00e9e sous vingt-et-un chefs d'accusation, elle est condamn\u00e9e \u00e0 mort et ex\u00e9cut\u00e9e le .",
+                "Blason d'Anne Boleyn."
+            ],
+            [
+                "Portrait de Jeanne Seymour.",
+                "Jeanne Seymour(vers 1508 \u2013 )",
+                "1536 \u2013 1537",
+                "",
+                "Fille de  et de , elle \u00e9pouse Henri le . Proclam\u00e9e reine le , elle n'est jamais sacr\u00e9e. Elle a un fils, , et meurt des suites de l'accouchement.",
+                "Blason de Jeanne Seymour."
+            ],
+            [
+                "Portrait d'Anne de Cl\u00e8ves.",
+                "Anne de Cl\u00e8ves( \u2013 )",
+                "1540",
+                "",
+                "Fille du duc de Cl\u00e8ves  et de Marie de Juliers-Berg, elle \u00e9pouse Henri le . L'union n'est jamais consomm\u00e9e et annul\u00e9e le .",
+                "Blason d'Anne de Cl\u00e8ves."
+            ],
+            [
+                "Portrait suppos\u00e9 de Catherine Howard.",
+                "Catherine Howard(entre 1520 et 1525 \u2013 )",
+                "1540 \u2013 1541",
+                "",
+                "Fille d'Edmund Howard et de Joyce Culpeper, elle \u00e9pouse Henri le . Ils n'ont pas d'enfants. Accus\u00e9e d'adult\u00e8re, elle est d\u00e9chue de son titre de reine le , condamn\u00e9e \u00e0 mort et ex\u00e9cut\u00e9e le .",
+                "Blason de Catherine Howard."
+            ],
+            [
+                "Portrait imaginaire de Catherine Parr.",
+                "Catherine Parr(1512 \u2013 )",
+                "1543 \u2013 1547",
+                "",
+                "Fille de  et de , veuve d' et de John Neville, elle \u00e9pouse Henri le . Ils n'ont pas d'enfants. Apr\u00e8s la mort du roi, en 1547, elle se remarie avec le baron Thomas Seymour.",
+                "Blason de Catherine Parr."
+            ],
+            [
+                "Portrait de Guildford Dudley.",
+                "Guilford Dudley(1535 \u2013 )",
+                "1553",
+                "Jeanne Grey",
+                "Fils du duc de Northumberland John Dudley et de , il \u00e9pouse Jeanne le . Son \u00e9pouse est proclam\u00e9e reine \u00e0 la mort d', le , mais elle est d\u00e9pos\u00e9e d\u00e8s le 19 par sa cousine  et les deux \u00e9poux sont ex\u00e9cut\u00e9s l'ann\u00e9e suivante.",
+                "Blason de Guildford Dudley."
+            ],
+            [
+                "Portrait de Philippe de Habsbourg.",
+                "Philippe de Habsbourg( \u2013 )",
+                "1554 \u2013 1558",
+                "",
+                "Fils de l'empereur Charles Quint et d'Isabelle de Portugal, veuf de Marie-Manuelle de Portugal, il \u00e9pouse Marie le  et partage tous les titres de sa femme \u00e0 part enti\u00e8re. Ils n'ont pas d'enfants. Il est \u00e9galement roi d'Espagne \u00e0 partir de 1556. Apr\u00e8s la mort de Marie, il se remarie avec \u00c9lisabeth de Valois, puis avec Anne d'Autriche.",
+                "Blason de Philippe de Habsbourg."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "numeric",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            2
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the Conjoint string contains Grey and the Remarques string starts with Fils?",
+                "answers": [
+                    "Guilford Dudley(1535 \u2013 )"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom, with Conjoint string contains Grey, have Portrait string starts with Portrait?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Conjoint string contains Grey and Portrait string starts with Portrait?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "3935375",
+        "title": "Liste des conjoints des souverains anglais",
+        "url": "https://fr.wikipedia.org/?curid=3935375",
+        "header": [
+            "Portrait",
+            "Nom",
+            "Dates",
+            "Conjoint",
+            "Remarques",
+            "Blason"
+        ],
+        "rows": [
+            [
+                "Portrait d'Anne de Danemark.",
+                "Anne de Danemark( \u2013 )",
+                "1603 \u2013 1619",
+                "",
+                "Fille du roi de Danemark  et de Sophie de Mecklembourg-G\u00fcstrow, elle \u00e9pouse Jacques le , alors qu'il n'est que roi d'\u00c9cosse. Elle est sacr\u00e9e reine d'Angleterre le , le m\u00eame jour que son mari. Ils ont sept enfants, dont Henri-Fr\u00e9d\u00e9ric, \u00c9lisabeth, , Marie et Sophie.",
+                "Blason d'Anne de Danemark."
+            ],
+            [
+                "Portrait d'Henriette-Marie de France.",
+                "Henriette-Marie de France( \u2013 )",
+                "1625 \u2013 1649",
+                "",
+                "Fille du roi de France  et de Marie de M\u00e9dicis, elle \u00e9pouse Charles le . Elle n'est jamais sacr\u00e9e. Ils ont neuf enfants, dont , Marie-Henriette, , \u00c9lisabeth, Henri et Henriette. Apr\u00e8s la d\u00e9position et l'ex\u00e9cution de son mari, elle termine sa vie en France.",
+                "Blason d'Henriette-Marie de France."
+            ],
+            [
+                "Sous le Protectorat, l'\u00e9pouse du lord-protecteur porte le titre de \u00ab  \u00bb. Il est port\u00e9 de mani\u00e8re certaine par la femme d'Oliver Cromwell, , de 1653 \u00e0 1658, et peut-\u00eatre ensuite par , femme de Richard Cromwell, en 1659.",
+                "Sous le Protectorat, l'\u00e9pouse du lord-protecteur porte le titre de \u00ab  \u00bb. Il est port\u00e9 de mani\u00e8re certaine par la femme d'Oliver Cromwell, , de 1653 \u00e0 1658, et peut-\u00eatre ensuite par , femme de Richard Cromwell, en 1659.",
+                "Sous le Protectorat, l'\u00e9pouse du lord-protecteur porte le titre de \u00ab  \u00bb. Il est port\u00e9 de mani\u00e8re certaine par la femme d'Oliver Cromwell, , de 1653 \u00e0 1658, et peut-\u00eatre ensuite par , femme de Richard Cromwell, en 1659.",
+                "Sous le Protectorat, l'\u00e9pouse du lord-protecteur porte le titre de \u00ab  \u00bb. Il est port\u00e9 de mani\u00e8re certaine par la femme d'Oliver Cromwell, , de 1653 \u00e0 1658, et peut-\u00eatre ensuite par , femme de Richard Cromwell, en 1659.",
+                "Sous le Protectorat, l'\u00e9pouse du lord-protecteur porte le titre de \u00ab  \u00bb. Il est port\u00e9 de mani\u00e8re certaine par la femme d'Oliver Cromwell, , de 1653 \u00e0 1658, et peut-\u00eatre ensuite par , femme de Richard Cromwell, en 1659.",
+                "Sous le Protectorat, l'\u00e9pouse du lord-protecteur porte le titre de \u00ab  \u00bb. Il est port\u00e9 de mani\u00e8re certaine par la femme d'Oliver Cromwell, , de 1653 \u00e0 1658, et peut-\u00eatre ensuite par , femme de Richard Cromwell, en 1659."
+            ],
+            [
+                "Portrait de Catherine de Bragance.",
+                "Catherine de Bragance( \u2013 )",
+                "1662 \u2013 1685",
+                "",
+                "Fille du roi de Portugal  et de Louise-Fran\u00e7oise de Guzm\u00e1n, elle \u00e9pouse Charles le , mais elle n'est jamais sacr\u00e9e parce qu'elle est catholique. Ils n'ont pas d'enfants. Apr\u00e8s la mort de son mari, elle reste quelque temps en Angleterre avant de finir sa vie au Portugal.",
+                "Blason de Catherine de Bragance."
+            ],
+            [
+                "Portrait de Marie de Mod\u00e8ne.",
+                "Marie de Mod\u00e8ne( \u2013 )",
+                "1685 \u2013 1688",
+                "",
+                "Fille du duc de Mod\u00e8ne  et de Laure Martinozzi, elle se marie le  avec Jacques, veuf de sa premi\u00e8re femme Anne Hyde. Elle est sacr\u00e9e le m\u00eame jour que son mari, le . Ils ont sept enfants, dont Jacques-Fran\u00e7ois et Louise-Marie-Th\u00e9r\u00e8se. Apr\u00e8s la d\u00e9position de son mari, elle l'accompagne en exil et termine sa vie en France.",
+                "Blason de Marie de Mod\u00e8ne."
+            ],
+            [
+                "Portrait de Georges de Danemark.",
+                "Georges de Danemark( \u2013 )",
+                "1702 \u2013 1707",
+                "Anne",
+                "Fils du roi de Danemark  et de Sophie-Am\u00e9lie de Brunswick-Calenberg, il \u00e9pouse Anne le . De leurs enfants, seul Guillaume survit \u00e0 la petite enfance. Il est le dernier prince consort d'Angleterre et d'\u00c9cosse, ces royaumes \u00e9tant remplac\u00e9s par celui de Grande-Bretagne par les Actes d'Union de 1707.",
+                "Blason de Georges de Danemark."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "numeric",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            2
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the Portrait string starts with Portrait and the Remarques string contains le?",
+                "answers": [
+                    "Anne de Danemark( \u2013 )",
+                    "Henriette-Marie de France( \u2013 )",
+                    "Catherine de Bragance( \u2013 )",
+                    "Marie de Mod\u00e8ne( \u2013 )",
+                    "Georges de Danemark( \u2013 )"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom, with Portrait string starts with Portrait, have Remarques string contains Ils?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom, with Conjoint is Anne, have Remarques string contains les?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Portrait string starts with Portrait and Remarques string starts with Fille?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "3935375",
+        "title": "Liste des conjoints des souverains anglais",
+        "url": "https://fr.wikipedia.org/?curid=3935375",
+        "header": [
+            "Portrait",
+            "Nom",
+            "Dates",
+            "Conjoint",
+            "Remarques"
+        ],
+        "rows": [
+            [
+                "80px",
+                "\u00c6lfgifu de Shaftesbury(morte en 944)",
+                "vers 939 \u2013 944",
+                "",
+                "Fille d'une certaine Wynfl\u00e6d, elle \u00e9pouse Edmond aux alentours de son av\u00e8nement, en 939. Ils ont deux fils, Eadwig et Edgar."
+            ],
+            [
+                "80px",
+                "\u00c6thelfl\u00e6d de Damerham(morte entre 962 et 991)",
+                "944 \u2013 946",
+                "",
+                "Fille de l'ealdorman \u00c6lfgar, elle \u00e9pouse Edmond en 944. Ils n'ont pas d'enfants. Apr\u00e8s la mort du roi, elle se remarie avec l'ealdorman \u00c6thelstan Rota."
+            ],
+            [
+                "Portrait imaginaire d'\u00c6lfgifu.",
+                "\u00c6lfgifu(morte entre 966 et 975 ?)",
+                "955 \u2013 958",
+                "Eadwig",
+                "Fille d'une certaine \u00c6thelgifu, elle \u00e9pouse Eadwig aux alentours de son av\u00e8nement, mais leur mariage est annul\u00e9 pour raisons de consanguinit\u00e9 par l'archev\u00eaque Oda de Cantorb\u00e9ry."
+            ],
+            [
+                "Portrait imaginaire d'\u00c6lfthryth.",
+                "\u00c6lfthryth(morte entre 999 et 1001)",
+                "964/965 \u2013 975",
+                "Edgar",
+                "Fille de l'ealdorman Ordgar, elle \u00e9pouse Edgar en 964 ou 965, apr\u00e8s la mort de son premier mari, l'ealdorman \u00c6thelwald. Elle est couronn\u00e9e et ointe \u00e0 Bath le  : c'est le premier sacre connu d'une reine anglaise. Ils ont deux fils, dont le roi \u00c6thelred le Malavis\u00e9."
+            ],
+            [
+                "80px",
+                "\u00c6lfgifu(morte avant 1002 ?)",
+                "vers 985 \u2013 avant 1002",
+                "\u00c6thelred le Malavis\u00e9",
+                "Fille probable de l'ealdorman Thored, elle \u00e9pouse \u00c6thelred vers le milieu des ann\u00e9es 980. Ils ont dix enfants, dont le roi Edmond C\u00f4te-de-Fer et les princes \u00c6thelstan et Eadwig. Elle est r\u00e9pudi\u00e9e ou meurt avant 1002, date du second mariage d'\u00c6thelred."
+            ],
+            [
+                "Portrait imaginaire d'Emma de Normandie.",
+                "Emma de Normandie(vers 984 \u2013 )",
+                "1002 \u2013 10131014 \u2013 1016",
+                "\u00c6thelred le Malavis\u00e9",
+                "Fille du duc de Normandie  et de Gunnor, elle \u00e9pouse \u00c6thelred en 1002. Ils ont trois enfants : le roi \u00c9douard le Confesseur, Alfred et Godgifu."
+            ],
+            [
+                "80px",
+                "Ealdgyth(morte apr\u00e8s 1016)",
+                "1016",
+                "Edmond C\u00f4te-de-Fer",
+                "Veuve du thegn , elle \u00e9pouse Edmond en 1015. Ils ont deux enfants, \u00c9douard et Edmond."
+            ],
+            [
+                "Portrait imaginaire d'Emma de Normandie.",
+                "Emma de Normandie(vers 984 \u2013 )",
+                "1017 \u2013 1035",
+                "Knut le Grand",
+                "Veuve d'\u00c6thelred le Malavis\u00e9, elle se remarie avec Knut en 1017. Ils ont deux enfants, Hardeknut et Gunhild."
+            ],
+            [
+                "Portrait imaginaire d'\u00c9dith de Wessex.",
+                "\u00c9dith de Wessex(avant 1027 \u2013 )",
+                "1045 \u2013 1066",
+                "\u00c9douard le Confesseur",
+                "Fille du comte Godwin et de Gytha Thorkelsd\u00f3ttir, elle \u00e9pouse \u00c9douard le . Ils n'ont pas d'enfants."
+            ],
+            [
+                "80px",
+                "\u00c9dith de Mercie(morte apr\u00e8s 1066)",
+                "1066",
+                "Harold Godwinson",
+                "Fille du comte \u00c6lfgar, elle \u00e9pouse Harold apr\u00e8s la mort de son premier mari, le prince gallois Gruffydd ap Llywelyn, survenue en 1063. Elle est la m\u00e8re d'au moins un des fils de Harold, \u00e9galement nomm\u00e9 Harold."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "numeric",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            2
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the Portrait string starts with Portrait and the Conjoint string starts with Knut?",
+                "answers": [
+                    "Emma de Normandie(vers 984 \u2013 )"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the Remarques string contains un and the Conjoint string contains le?",
+                "answers": [
+                    "Emma de Normandie(vers 984 \u2013 )"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom, with Portrait string starts with Portrait, have Conjoint string contains le?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom, with Remarques string starts with Fille, have Portrait string starts with Portrait?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Portrait string starts with Portrait?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Remarques string contains milieu?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "3935375",
+        "title": "Liste des conjoints des souverains anglais",
+        "url": "https://fr.wikipedia.org/?curid=3935375",
+        "header": [
+            "Portrait",
+            "Nom",
+            "Dates",
+            "Conjoint",
+            "Remarques"
+        ],
+        "rows": [
+            [
+                "Statue \u00e0 l'effigie (imaginaire) de Mathilde de Flandre.",
+                "Mathilde de Flandre(vers 1031 \u2013 )",
+                "1066 \u2013 1083",
+                "Guillaume le Conqu\u00e9rant",
+                "Fille du comte de Flandre  et d'Ad\u00e8le de France, elle \u00e9pouse Guillaume en 1050 ou 1051. Ils ont huit enfants : Robert Courteheuse, Richard, Guillaume le Roux, , Ad\u00e9la\u00efde, C\u00e9cile, Constance et Ad\u00e8le. Elle est sacr\u00e9e le ."
+            ],
+            [
+                "Portrait imaginaire de Mathilde d'\u00c9cosse.",
+                "Mathilde d'\u00c9cosse(1080 \u2013 )",
+                "1100 \u2013 1118",
+                "",
+                "Fille du roi d'\u00c9cosse  et de Marguerite de Wessex, elle \u00e9pouse Henri le  et elle est sacr\u00e9e le m\u00eame jour. Ils ont deux enfants, Mathilde l'Emperesse et Guillaume Adelin."
+            ],
+            [
+                "Portrait imaginaire d'Ad\u00e9la\u00efde de Louvain.",
+                "Ad\u00e9la\u00efde de Louvain(vers 1103 \u2013 )",
+                "1121 \u2013 1135",
+                "",
+                "Fille du comte de Louvain  et d'Ida de Chiny, elle \u00e9pouse Henri le  et elle est sacr\u00e9e le 30. Ils n'ont pas d'enfants. Apr\u00e8s sa mort, elle se remarie avec le comte Guillaume d'Aubigny."
+            ],
+            [
+                "Portrait imaginaire de Mathilde de Boulogne.",
+                "Mathilde de Boulogne(vers 1103 \u2013 )",
+                "1135 \u2013 1152",
+                "\u00c9tienne",
+                "Fille du comte de Boulogne  et de Marie d'\u00c9cosse, elle \u00e9pouse \u00c9tienne en 1125 et elle est sacr\u00e9e le . Ils ont cinq enfants, dont , Guillaume et Marie."
+            ],
+            [
+                "Portrait de Geoffroy d'Anjou sur sa tombe.",
+                "Geoffroy d'Anjou( \u2013 )",
+                "1141",
+                "Mathilde l'Emperesse",
+                "Fils du comte d'Anjou  et d'Erembourg du Maine, il \u00e9pouse Mathilde le . Ils ont trois enfants : ,  et Guillaume. Sa femme est bri\u00e8vement reconnue \u00ab dame des Anglais \u00bb pendant l'Anarchie anglaise."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "numeric",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            2
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the Remarques string starts with Fille and the Conjoint string contains le?",
+                "answers": [
+                    "Mathilde de Flandre(vers 1031 \u2013 )"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the Portrait string starts with Portrait and the Remarques string starts with Fille?",
+                "answers": [
+                    "Mathilde d'\u00c9cosse(1080 \u2013 )",
+                    "Ad\u00e9la\u00efde de Louvain(vers 1103 \u2013 )",
+                    "Mathilde de Boulogne(vers 1103 \u2013 )"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom, with Remarques string contains il, have Conjoint string contains le?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom, with Portrait string contains Portrait, have Remarques string starts with Fille?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Remarques string starts with Fille and Portrait string starts with Portrait?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Conjoint string contains le and Portrait string starts with Statue?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Portrait string starts with Portrait?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "3935375",
+        "title": "Liste des conjoints des souverains anglais",
+        "url": "https://fr.wikipedia.org/?curid=3935375",
+        "header": [
+            "Portrait",
+            "Nom",
+            "Dates",
+            "Conjoint",
+            "Remarques",
+            "Blason"
+        ],
+        "rows": [
+            [
+                "Gisant d'Ali\u00e9nor d'Aquitaine.",
+                "Ali\u00e9nor d'Aquitaine(vers 1122 \u2013 )",
+                "1154 \u2013 1189",
+                "",
+                "Fille du duc d'Aquitaine  et d'A\u00e9nor de Ch\u00e2tellerault, elle \u00e9pouse Henri le , apr\u00e8s avoir divorc\u00e9 du roi de France  en 1152, et elle est sacr\u00e9e le m\u00eame jour. Ils ont huit enfants : , Henri le Jeune, Mathilde, Richard, , Ali\u00e9nor, Jeanne et Jean sans Terre.",
+                "Fille du duc d'Aquitaine  et d'A\u00e9nor de Ch\u00e2tellerault, elle \u00e9pouse Henri le , apr\u00e8s avoir divorc\u00e9 du roi de France  en 1152, et elle est sacr\u00e9e le m\u00eame jour. Ils ont huit enfants : , Henri le Jeune, Mathilde, Richard, , Ali\u00e9nor, Jeanne et Jean sans Terre."
+            ],
+            [
+                "Portrait imaginaire de Marguerite de France.",
+                "Marguerite de France(1158 \u2013 )",
+                "1172 \u2013 1183",
+                "Henri le Jeune",
+                "Fille du roi de France  et de Constance de Castille, elle \u00e9pouse Henri, roi associ\u00e9 \u00e0 son p\u00e8re, le , et elle est sacr\u00e9e le . Ils n'ont pas d'enfants. Apr\u00e8s la mort de son mari, elle se remarie avec le roi de Hongrie  en 1186.",
+                "Fille du roi de France  et de Constance de Castille, elle \u00e9pouse Henri, roi associ\u00e9 \u00e0 son p\u00e8re, le , et elle est sacr\u00e9e le . Ils n'ont pas d'enfants. Apr\u00e8s la mort de son mari, elle se remarie avec le roi de Hongrie  en 1186."
+            ],
+            [
+                "Gisant de B\u00e9reng\u00e8re de Navarre.",
+                "B\u00e9reng\u00e8re de Navarre(1163 \u2013 )",
+                "1191 \u2013 1199",
+                "Richard C\u0153ur de Lion",
+                "Fille du roi de Navarre  et de Sancha de Castille, elle \u00e9pouse Richard le  et elle est sacr\u00e9e le m\u00eame jour. Ils n'ont pas d'enfants.",
+                "Blason de B\u00e9reng\u00e8re de Navarre."
+            ],
+            [
+                "Gisant d'Isabelle d'Angoul\u00eame.",
+                "Isabelle d'Angoul\u00eame(vers 1190 \u2013 )",
+                "1200 \u2013 1216",
+                "Jean sans Terre",
+                "Fille du comte d'Angoul\u00eame Aymar Taillefer et d'Alix de Courtenay, elle se marie le  avec Jean, dont le premier mariage avec Isabelle de Gloucester a \u00e9t\u00e9 annul\u00e9 en 1199. Elle est sacr\u00e9e le . Ils ont cinq enfants : , Richard, Jeanne, Isabelle et Ali\u00e9nor. Apr\u00e8s la mort de son mari, elle se remarie avec le seigneur  en 1220.",
+                "Blason d'Isabelle d'Angoul\u00eame."
+            ],
+            [
+                "Portrait imaginaire d'\u00c9l\u00e9onore de Provence.",
+                "\u00c9l\u00e9onore de Provence(1223 \u2013 )",
+                "1236 \u2013 1272",
+                "",
+                "Fille du comte de Provence  et de B\u00e9atrice de Savoie, elle \u00e9pouse Henri le  et elle est sacr\u00e9e le 20. Ils ont neuf enfants, dont , Marguerite, B\u00e9atrice, Edmond et Catherine.",
+                "Blason d'\u00c9l\u00e9onore de Provence."
+            ],
+            [
+                "Portrait imaginaire d'\u00c9l\u00e9onore de Castille.",
+                "\u00c9l\u00e9onore de Castille(vers 1241 \u2013 )",
+                "1272 \u2013 1290",
+                "",
+                "Fille du roi de Castille  et de Jeanne de Dammartin, elle \u00e9pouse \u00c9douard le  et elle est sacr\u00e9e le . Ils ont seize enfants, dont Jean, Henri, Ali\u00e9nor, Jeanne, Alphonse, Marguerite, Marie, \u00c9lisabeth et .",
+                "Blason d'\u00c9l\u00e9onore de Castille."
+            ],
+            [
+                "Statue de Marguerite de France.",
+                "Marguerite de France(1279 ? \u2013 )",
+                "1299 \u2013 1307",
+                "",
+                "Fille du roi de France  et de Marie de Brabant, elle \u00e9pouse \u00c9douard le 8 ou le . Ils ont trois enfants : Thomas, Edmond et Ali\u00e9nor.",
+                "Blason de Marguerite de France."
+            ],
+            [
+                "Portrait imaginaire d'Isabelle de France.",
+                "Isabelle de France(vers 1295 \u2013 )",
+                "1308 \u2013 1327",
+                "",
+                "Fille du roi de France  et de Jeanne de Navarre, elle \u00e9pouse \u00c9douard le  et elle est sacr\u00e9e le . Ils ont quatre enfants : , Jean, Ali\u00e9nor et Jeanne.",
+                "Blason d'Isabelle de France."
+            ],
+            [
+                "Gisant de Philippa de Hainaut.",
+                "Philippa de Hainaut(vers 1314 \u2013 )",
+                "1328 \u2013 1369",
+                "",
+                "Fille du comte de Hainaut  et de Jeanne de Valois, elle \u00e9pouse \u00c9douard le  et elle est sacr\u00e9e le . Ils ont douze enfants, dont \u00c9douard, Isabelle, Jeanne, Lionel, Jean, Edmond, Marie, Marguerite et Thomas.",
+                "Blason de Philippa de Hainaut."
+            ],
+            [
+                "Portrait imaginaire d'Anne de Luxembourg.",
+                "Anne de Boh\u00eame( \u2013 )",
+                "1382 \u2013 1394",
+                "",
+                "Fille de l'empereur  et d'\u00c9lisabeth de Pom\u00e9ranie, elle \u00e9pouse Richard le  et elle est sacr\u00e9e le 22. Ils n'ont pas d'enfants.",
+                "Blason d'Anne de Boh\u00eame."
+            ],
+            [
+                "Portrait imaginaire d'Isabelle de Valois.",
+                "Isabelle de Valois( \u2013 )",
+                "1396 \u2013 1399",
+                "",
+                "Fille du roi de France  et d'Isabeau de Bavi\u00e8re, elle \u00e9pouse Richard le  et elle est sacr\u00e9e le . Ils n'ont pas d'enfants. Apr\u00e8s la mort de son mari en 1400, elle se remarie avec le duc Charles d'Orl\u00e9ans en 1406.",
+                "Blason d'Isabelle de Valois."
+            ],
+            [
+                "Gisant de Jeanne de Navarre.",
+                "Jeanne de Navarre(vers 1370 \u2013 )",
+                "1403 \u2013 1413",
+                "",
+                "Fille du roi de Navarre  et de Jeanne de Valois, veuve du duc de Bretagne , elle se remarie le  avec Henri, veuf de sa premi\u00e8re femme Marie de Bohun. Elle est sacr\u00e9e le 26. Ils n'ont pas d'enfants.",
+                "Blason de Jeanne de Navarre."
+            ],
+            [
+                "Portrait imaginaire de Catherine.",
+                "Catherine de Valois( \u2013 )",
+                "1420 \u2013 1422",
+                "",
+                "Fille du roi de France  et d'Isabeau de Bavi\u00e8re, elle \u00e9pouse Henri le  et elle est sacr\u00e9e le . Ils ont un fils, . Apr\u00e8s la mort de son mari, elle se remarie en secret avec le seigneur gallois Owen Tudor.",
+                "Blason de Catherine de Valois."
+            ],
+            [
+                "Portrait imaginaire de Marguerite.",
+                "Marguerite d'Anjou(23/ \u2013 )",
+                "1445 \u2013 1461",
+                "",
+                "Fille du duc Ren\u00e9 d'Anjou et d'Isabelle de Lorraine, elle \u00e9pouse Henri le  et elle est sacr\u00e9e le . Ils ont un fils, \u00c9douard. Elle rentre en France apr\u00e8s la d\u00e9position de son mari.",
+                "Blason de Marguerite d'Anjou."
+            ],
+            [
+                "Portrait imaginaire d'\u00c9lisabeth.",
+                "\u00c9lisabeth Woodville(1437 \u2013 )",
+                "1464 \u2013 1470",
+                "",
+                "Fille de Richard Woodville et de Jacquette de Luxembourg, veuve de John Grey, elle \u00e9pouse \u00c9douard en 1464 et elle est sacr\u00e9e le . Ils ont dix enfants : \u00c9lisabeth, Marie, C\u00e9cile, , Marguerite, Richard, Anne, Georges, Catherine et Brigitte.",
+                "Blason d'\u00c9lisabeth Woodville."
+            ],
+            [
+                "Portrait imaginaire de Marguerite.",
+                "Marguerite d'Anjou(23/ \u2013 )",
+                "1470 \u2013 1471",
+                "",
+                "Son mari est bri\u00e8vement restaur\u00e9 en , puis d\u00e9pos\u00e9 \u00e0 nouveau en  et meurt quelques mois plus tard. Elle est emprisonn\u00e9e jusqu'\u00e0 ce que son cousin  paie sa ran\u00e7on et finit sa vie en France.",
+                "Blason de Marguerite d'Anjou."
+            ],
+            [
+                "Portrait imaginaire d'\u00c9lisabeth.",
+                "\u00c9lisabeth Woodville(1437 \u2013 )",
+                "1471 \u2013 1483",
+                "",
+                "Son mari est restaur\u00e9 en  et r\u00e8gne jusqu'\u00e0 sa mort.",
+                "Blason d'\u00c9lisabeth Woodville."
+            ],
+            [
+                "Portrait imaginaire d'Anne.",
+                "Anne Neville( \u2013 )",
+                "1483 \u2013 1485",
+                "",
+                "Fille du comte de Warwick Richard Neville et d'Anne de Beauchamp, veuve du prince \u00c9douard (le fils d'), elle \u00e9pouse Richard le  et elle est sacr\u00e9e le . Ils ont un fils, \u00c9douard. Elle meurt quelques mois avant son mari.",
+                "Blason d'Anne Neville."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "numeric",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            2
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom, with Portrait string starts with Portrait, have Conjoint string contains le?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Remarques string contains le?",
+                "answers": [
+                    "17"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Remarques string contains Fille?",
+                "answers": [
+                    "16"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

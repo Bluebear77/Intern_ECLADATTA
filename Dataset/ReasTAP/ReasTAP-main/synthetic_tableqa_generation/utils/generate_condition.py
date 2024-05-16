@@ -13,11 +13,26 @@ def unify_answers(answer_list):
     return answers
     
 def generate_numeric_condition(column):
+    # Added check for empty column
+    if not column:
+        print("Empty column provided to generate_numeric_condition.")
+        return "", set()
+
     templates = ["was equal to", "was greater than", "was less than", "was greater than or equal to", "was less than or equal to"]
     template = random.sample(templates, 1)[0]
     
     _, parsed_column = try_parse_column_to_numeric_column(column)
+    # Added check for empty parsed column
+    if not parsed_column:
+        print("Parsed column is empty or invalid.")
+        return "", set()
+    
     selected_cell_idx = random.sample(range(len(column)), 1)[0]
+
+    # Added check for index range
+    if selected_cell_idx >= len(parsed_column):
+        print(f"Index out of range: {selected_cell_idx} for parsed_column of length {len(parsed_column)}.")
+        return "", set()
     
     selected_cell_value = parsed_column[selected_cell_idx]
     value = column[selected_cell_idx]
@@ -34,6 +49,7 @@ def generate_numeric_condition(column):
         row_ids = [i for i, x in enumerate(parsed_column) if x <= selected_cell_value]
         
     return f"{template} {value}", set(row_ids)
+
 
 def generate_datetime_condition(column):
     templates = ["was before", "was after", "was on"]
