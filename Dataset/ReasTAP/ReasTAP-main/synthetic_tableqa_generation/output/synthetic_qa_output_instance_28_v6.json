@@ -1,0 +1,2414 @@
+[
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "Titre",
+            "R\u00f4le",
+            "Notes"
+        ],
+        "rows": [
+            [
+                "2018",
+                "Groupies Have Feelings Too ep 1\nGroupies Have Feelings Too ep 2\n\nGroupies Have Feelings Too ep 3\n\nGroupies Have Feelings Too ep 4 \n\nGroupies Have Feelings Too ep 5\n\nGroupies Have Feelings Too ep 6",
+                "Co-pr\u00e9sentatrice (avec Finneas)",
+                "Beats 1"
+            ],
+            [
+                "2020",
+                "me & dad radio ep 1\nme & dad radio ep 2\n\nme & dad radio ep 3\n\nme & dad radio ep 4\n\nme & dad radio ep 5\n\nme & dad radio ep 6",
+                "Co-pr\u00e9sentatrice (avec Patrick O'Connell)",
+                "Beats 1"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2018,
+                2020
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Titre when the Ann\u00e9e was on 2020 and the Notes string contains Beats?",
+                "answers": [
+                    "me & dad radio ep 1\nme & dad radio ep 2\n\nme & dad radio ep 3\n\nme & dad radio ep 4\n\nme & dad radio ep 5\n\nme & dad radio ep 6"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Titre when the R\u00f4le string contains Patrick and the Ann\u00e9e was after 2018?",
+                "answers": [
+                    "me & dad radio ep 1\nme & dad radio ep 2\n\nme & dad radio ep 3\n\nme & dad radio ep 4\n\nme & dad radio ep 5\n\nme & dad radio ep 6"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Titre, with Notes string contains Beats, have R\u00f4le string contains Patrick?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Titre, with Notes string ends with 1, have R\u00f4le string contains Patrick?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00f4le was Co-pr\u00e9sentatrice (avec Finneas) and when the R\u00f4le was Co-pr\u00e9sentatrice (avec Patrick O'Connell)?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00f4le was Co-pr\u00e9sentatrice (avec Patrick O'Connell) and when the R\u00f4le was Co-pr\u00e9sentatrice (avec Finneas)?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Notes string starts with Beats?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Ann\u00e9e was after 2018?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Ann\u00e9e was on 2020?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2019",
+                "Billie Eilish",
+                "Artiste global de l'ann\u00e9e",
+                "Remport\u00e9"
+            ],
+            [
+                "2019",
+                "Billie Eilish",
+                "Auteur compositeur de l'ann\u00e9e",
+                "Remport\u00e9"
+            ],
+            [
+                "2019",
+                "When We All Fall Asleep, Where Do We Go? - Billie Eilish",
+                "Album de l'ann\u00e9e",
+                "Remport\u00e9"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2019,
+                2019,
+                2019
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string starts with Album?",
+                "answers": [
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string starts with Artiste?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string starts with Artiste?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with R\u00e9compense string starts with Album, have Ann\u00e9e was on 2019?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with R\u00e9compense string contains de, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish",
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 3rd according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish",
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 2nd according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish",
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Artiste global de l'ann\u00e9e and when the R\u00e9compense was Auteur compositeur de l'ann\u00e9e?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Auteur compositeur de l'ann\u00e9e and when the R\u00e9compense was Artiste global de l'ann\u00e9e?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string contains de?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string contains de?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2019",
+                "Billie Eilish",
+                "Nouvel artiste de l'ann\u00e9e",
+                "Remport\u00e9"
+            ],
+            [
+                "2019",
+                "Billie Eilish",
+                "Meilleur artiste - rock alternatif",
+                "Remport\u00e9"
+            ],
+            [
+                "2019",
+                "Billie Eilish",
+                "Meilleur artiste social",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "Billie Eilish",
+                "Meilleure artiste f\u00e9minine - Pop/Rock",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "Bad Guy - Billie Eilish",
+                "Clip de l'ann\u00e9e",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "When We All Fall Asleep, Where Do We Go? - Billie Eilish",
+                "Meilleur album - Pop/Rock",
+                "Nomin\u00e9e"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2019,
+                2019,
+                2019,
+                2019,
+                2019,
+                2019
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains social?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string starts with Clip?",
+                "answers": [
+                    "Bad Guy - Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains artiste?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string ends with social?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 3rd according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish",
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with R\u00e9compense string contains artiste, happened the 4th according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish",
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Meilleur album - Pop/Rock and when the R\u00e9compense was Meilleur artiste social?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Meilleur artiste social and when the R\u00e9compense was Meilleur artiste - rock alternatif?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string contains artiste?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string contains de and Ann\u00e9e was on 2019?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string starts with Clip and Ann\u00e9e was on 2019?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2019",
+                "Billie Eilish",
+                "Meilleur artiste international",
+                "Nomin\u00e9e"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2019
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains artiste?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the R\u00e9compense string contains international and the Ann\u00e9e was on 2019?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains international?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains artiste?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string contains artiste?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string ends with international and Ann\u00e9e was on 2019?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2019",
+                "Billie Eilish & Finneas",
+                "\"Vanguard (avant-garde) Award\"",
+                "Remport\u00e9"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2019
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was after 2019?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2018",
+                "Billie Eilish",
+                "Meilleure star des r\u00e9seaux sociaux",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "Billie Eilish",
+                "Meilleur artiste solo international",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "Bad Guy - Billie Eilish",
+                "Meilleur single",
+                "Nomin\u00e9e"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2018,
+                2019,
+                2019
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the R\u00e9compense string contains des and the Ann\u00e9e was before 2019?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains solo?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was before 2019, have R\u00e9compense string contains star?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was before 2019, have R\u00e9compense string contains des?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Meilleure star des r\u00e9seaux sociaux and when the R\u00e9compense was Meilleur single?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Meilleure star des r\u00e9seaux sociaux and when the R\u00e9compense was Meilleur artiste solo international?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was after 2018 and R\u00e9compense string contains artiste?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2018?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was after 2018 and R\u00e9compense string contains solo?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2019",
+                "Bad Guy - Billie Eilish",
+                "Meilleure chanson",
+                "Remport\u00e9"
+            ],
+            [
+                "2019",
+                "Billie Eilish",
+                "Meilleur nouvel artiste",
+                "Remport\u00e9"
+            ],
+            [
+                "2019",
+                "Billie Eilish",
+                "Meilleur artiste MTV Push",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "Billie Eilish",
+                "Plus grande fanbase",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "Billie Eilish",
+                "Meilleur artiste des \u0116tats-Unis",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "Bad Guy - Billie Eilish",
+                "Meilleur clip",
+                "Nomin\u00e9e"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2019,
+                2019,
+                2019,
+                2019,
+                2019,
+                2019
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the R\u00e9compense string starts with Plus and the Ann\u00e9e was on 2019?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains Push?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string ends with Push?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains artiste?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "Bad Guy - Billie Eilish",
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with R\u00e9compense string contains artiste, happened the 3rd according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with R\u00e9compense string contains artiste, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Plus grande fanbase and when the R\u00e9compense was Meilleur artiste MTV Push?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Meilleure chanson and when the R\u00e9compense was Meilleur clip?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string contains Plus?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string ends with artiste and Ann\u00e9e was on 2019?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2019",
+                "Billie Eilish",
+                "Nouvel artiste pr\u00e9f\u00e9r\u00e9",
+                "Remport\u00e9"
+            ],
+            [
+                "2020",
+                "Bad Guy - Billie Eilish",
+                "Chanson pr\u00e9f\u00e9r\u00e9e",
+                "Remport\u00e9"
+            ],
+            [
+                "2020",
+                "Billie Eilish",
+                "Artiste f\u00e9minine pr\u00e9f\u00e9r\u00e9e",
+                "Nomin\u00e9e"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2019,
+                2020,
+                2020
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the R\u00e9compense string starts with Artiste and the Ann\u00e9e was on 2020?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2020, have R\u00e9compense string starts with Artiste?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2020, have R\u00e9compense string starts with Artiste?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Nouvel artiste pr\u00e9f\u00e9r\u00e9 and when the R\u00e9compense was Chanson pr\u00e9f\u00e9r\u00e9e?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Artiste f\u00e9minine pr\u00e9f\u00e9r\u00e9e and when the R\u00e9compense was Chanson pr\u00e9f\u00e9r\u00e9e?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2020 and R\u00e9compense string starts with Artiste?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was after 2019 and R\u00e9compense string starts with Artiste?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2019",
+                "Billie Eilish",
+                "Artiste f\u00e9minine de l'ann\u00e9e",
+                "Remport\u00e9"
+            ],
+            [
+                "2019",
+                "Billie Eilish",
+                "R\u00e9v\u00e9lation de l'ann\u00e9e",
+                "Remport\u00e9"
+            ],
+            [
+                "2019",
+                "Bad Guy - Billie Eilish",
+                "Meilleur single par une artiste f\u00e9minine",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "When We All Fall Asleep Tour",
+                "Tourn\u00e9e de l'\u00e9t\u00e9",
+                "Nomin\u00e9e"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2019,
+                2019,
+                2019,
+                2019
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the R\u00e9compense string contains single and the Ann\u00e9e was on 2019?",
+                "answers": [
+                    "Bad Guy - Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the R\u00e9compense string contains Artiste and the Ann\u00e9e was on 2019?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only \u0152uvre, with R\u00e9compense string starts with Artiste, have Ann\u00e9e was on 2019?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains de?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with R\u00e9compense string contains de, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish",
+                    "When We All Fall Asleep Tour"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish",
+                    "When We All Fall Asleep Tour"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 3rd according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish",
+                    "When We All Fall Asleep Tour"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Artiste f\u00e9minine de l'ann\u00e9e and when the R\u00e9compense was Tourn\u00e9e de l'\u00e9t\u00e9?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Artiste f\u00e9minine de l'ann\u00e9e and when the R\u00e9compense was Meilleur single par une artiste f\u00e9minine?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string contains de and Ann\u00e9e was on 2019?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string contains de?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2019",
+                "Billie Eilish",
+                "Artiste f\u00e9minine de l'ann\u00e9e",
+                "Remport\u00e9"
+            ],
+            [
+                "2019",
+                "Bad Guy - Billie Eilish",
+                "Chanson de l'ann\u00e9e",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "Bad Guy - Billie Eilish",
+                "Clip de l'ann\u00e9e",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "When We All Fall Asleep, Where Do We Go? - Billie Eilish",
+                "Album de l'ann\u00e9e",
+                "Nomin\u00e9e"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2019,
+                2019,
+                2019,
+                2019
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the R\u00e9compense string contains de and the Ann\u00e9e was on 2019?",
+                "answers": [
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish",
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string starts with Clip?",
+                "answers": [
+                    "Bad Guy - Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with R\u00e9compense string starts with Clip, have Ann\u00e9e was on 2019?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string starts with Album?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 2nd according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish",
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 4th according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish",
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with R\u00e9compense string contains de, happened the 3rd according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish",
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Artiste f\u00e9minine de l'ann\u00e9e and when the R\u00e9compense was Chanson de l'ann\u00e9e?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Artiste f\u00e9minine de l'ann\u00e9e and when the R\u00e9compense was Album de l'ann\u00e9e?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string contains de?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string starts with Clip?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string starts with Album?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2019",
+                "When we All Fall Asleep, Where do We Go? - Billie Eilish",
+                "Album international",
+                "Remport\u00e9"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2019
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the R\u00e9compense string starts with Album and the Ann\u00e9e was on 2019?",
+                "answers": [
+                    "When we All Fall Asleep, Where do We Go? - Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string starts with Album?",
+                "answers": [
+                    "When we All Fall Asleep, Where do We Go? - Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string starts with Album?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with R\u00e9compense string contains international, have Ann\u00e9e was on 2019?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string starts with Album?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string starts with Album and Ann\u00e9e was on 2019?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2019",
+                "Billie Eilish",
+                "Chanteur international",
+                "Remport\u00e9"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2019
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the R\u00e9compense string contains international and the Ann\u00e9e was on 2019?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains international?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains international?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains international?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was after 2019?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string contains international and Ann\u00e9e was on 2019?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2019",
+                "Billie Eilish",
+                "Meilleur nouvel artiste",
+                "Remport\u00e9"
+            ],
+            [
+                "2019",
+                "Billie Eilish",
+                "Artiste MTV push de l'ann\u00e9e",
+                "Remport\u00e9"
+            ],
+            [
+                "2019",
+                "Bad Guy - Billie eilish",
+                "Meilleur montage",
+                "Remport\u00e9"
+            ],
+            [
+                "2019",
+                "Bad Guy - Billie eilish",
+                "Vid\u00e9o de l'ann\u00e9e",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "Bad Guy - Billie eilish",
+                "Meilleure chanson pop",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "Bad Guy - Billie eilish",
+                "Meilleure direction",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "Bad Guy - Billie eilish",
+                "Chanson de l'\u00e9t\u00e9",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "When the Party's Over - Billie Eilish",
+                "Meilleurs effets visuels",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "Billie Eilish",
+                "Artiste de l'ann\u00e9e",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "Hostage - Billie eilish",
+                "Meilleure cin\u00e9matographie",
+                "Nomin\u00e9e"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2019,
+                2019,
+                2019,
+                2019,
+                2019,
+                2019,
+                2019,
+                2019,
+                2019,
+                2019
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string starts with Artiste?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string contains Artiste?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with R\u00e9compense string contains de, have Ann\u00e9e was on 2019?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains pop?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 10th according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish",
+                    "Bad Guy - Billie eilish",
+                    "When the Party's Over - Billie Eilish",
+                    "Hostage - Billie eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 5th according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish",
+                    "Bad Guy - Billie eilish",
+                    "When the Party's Over - Billie Eilish",
+                    "Hostage - Billie eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Meilleur montage and when the R\u00e9compense was Chanson de l'\u00e9t\u00e9?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Artiste MTV push de l'ann\u00e9e and when the R\u00e9compense was Meilleure direction?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string starts with Artiste?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string starts with Artiste and Ann\u00e9e was on 2019?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string contains Artiste?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2019",
+                "When we All Fall Asleep, Where Do We Go? - Billie Eilish",
+                "Album international de l'ann\u00e9e",
+                "Remport\u00e9"
+            ],
+            [
+                "2019",
+                "Billie Eilish",
+                "Nouvel artiste international de l'ann\u00e9e",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2019",
+                "Bad Guy - Billie Eilish",
+                "Vid\u00e9o internationale de l'ann\u00e9e",
+                "Nomin\u00e9e"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2019,
+                2019,
+                2019
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the R\u00e9compense string contains international and the Ann\u00e9e was on 2019?",
+                "answers": [
+                    "When we All Fall Asleep, Where Do We Go? - Billie Eilish",
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2019 and the R\u00e9compense string starts with Album?",
+                "answers": [
+                    "When we All Fall Asleep, Where Do We Go? - Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with R\u00e9compense string contains Album, have Ann\u00e9e was on 2019?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string starts with Album?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with R\u00e9compense string contains de, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "When we All Fall Asleep, Where Do We Go? - Billie Eilish",
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "When we All Fall Asleep, Where Do We Go? - Billie Eilish",
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2019, happened the 3rd according to Ann\u00e9e?",
+                "answers": [
+                    "When we All Fall Asleep, Where Do We Go? - Billie Eilish",
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Album international de l'ann\u00e9e and when the R\u00e9compense was Nouvel artiste international de l'ann\u00e9e?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Nouvel artiste international de l'ann\u00e9e and when the R\u00e9compense was Vid\u00e9o internationale de l'ann\u00e9e?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string contains de?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string starts with Album and Ann\u00e9e was on 2019?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2019",
+                "Billie Eilish",
+                "R\u00e9v\u00e9lation internationale de l'ann\u00e9e",
+                "Remport\u00e9"
+            ],
+            [
+                "2019",
+                "Bad Guy - Billie Eilish",
+                "Clip de l'ann\u00e9e",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2020",
+                "Billie Eilish",
+                "Artiste f\u00e9minine internationale de l'ann\u00e9e",
+                "Nomin\u00e9e"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2019,
+                2019,
+                2020
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the R\u00e9compense string contains Clip and the Ann\u00e9e was on 2019?",
+                "answers": [
+                    "Bad Guy - Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2020 and the R\u00e9compense string contains internationale?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2019, have R\u00e9compense string contains Clip?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was on 2020, have R\u00e9compense string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with R\u00e9compense string contains de, happened the 2nd according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with R\u00e9compense string contains de, happened the 3rd according to Ann\u00e9e?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Clip de l'ann\u00e9e and when the R\u00e9compense was Artiste f\u00e9minine internationale de l'ann\u00e9e?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Clip de l'ann\u00e9e and when the R\u00e9compense was R\u00e9v\u00e9lation internationale de l'ann\u00e9e?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string contains de and Ann\u00e9e was on 2019?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2019 and R\u00e9compense string contains de?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string contains de?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2020",
+                "Billie Eilish",
+                "Meilleur artiste solo international",
+                "Remport\u00e9"
+            ],
+            [
+                "2021",
+                "Billie Eilish",
+                "Meilleur artiste solo international",
+                "Remport\u00e9"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2020,
+                2021
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was before 2021 and the R\u00e9compense string ends with international?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2020 and the R\u00e9compense string ends with international?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with R\u00e9compense string ends with international, have Ann\u00e9e was after 2020?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with R\u00e9compense string contains artiste, have Ann\u00e9e was on 2021?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string contains international and Ann\u00e9e was on 2021?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string contains international and Ann\u00e9e was after 2020?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2020",
+                "Bad Guy - Billie Eilish",
+                "Meilleure chanson du monde",
+                "Remport\u00e9"
+            ],
+            [
+                "2020",
+                "When We All Fall Asleep, Where Do We Go? - Billie Eilish",
+                "Meilleur album du monde",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2020",
+                "Billie Eilish",
+                "Meilleur artiste solo du monde",
+                "Nomin\u00e9e"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2020,
+                2020,
+                2020
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2020 and the R\u00e9compense string contains solo?",
+                "answers": [
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the R\u00e9compense string contains album and the Ann\u00e9e was on 2020?",
+                "answers": [
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only \u0152uvre, with Ann\u00e9e was on 2020, have R\u00e9compense string contains album?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only \u0152uvre, with R\u00e9compense string contains album, have Ann\u00e9e was on 2020?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2020, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "Bad Guy - Billie Eilish",
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish",
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2020, happened the 2nd according to Ann\u00e9e?",
+                "answers": [
+                    "Bad Guy - Billie Eilish",
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish",
+                    "Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Meilleur artiste solo du monde and when the R\u00e9compense was Meilleure chanson du monde?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Meilleur album du monde and when the R\u00e9compense was Meilleur artiste solo du monde?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2020 and R\u00e9compense string contains artiste?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2020 and R\u00e9compense string contains solo?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2020",
+                "When We All Fall Asleep, Where Do We Go? - Billie Eilish",
+                "Album de l'ann\u00e9e",
+                "Remport\u00e9"
+            ],
+            [
+                "2020",
+                "When We All Fall Asleep, Where Do We Go? - Billie Eilish",
+                "Meilleur album vocal pop",
+                "Remport\u00e9"
+            ],
+            [
+                "2020",
+                "Billie Eilish",
+                "Meilleur nouvel artiste",
+                "Remport\u00e9"
+            ],
+            [
+                "2020",
+                "Bad Guy - Billie Eilish",
+                "Chanson de l'ann\u00e9e",
+                "Remport\u00e9"
+            ],
+            [
+                "2020",
+                "Bad Guy - Billie Eilish",
+                "Meilleur enregistrement",
+                "Remport\u00e9"
+            ],
+            [
+                "2020",
+                "Bad Guy - Billie Eilish",
+                "Meilleure performance pop solo",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2021",
+                "No Time To Die",
+                "Meilleure chanson \u00e9crite pour un media Visuel (Mourir peut attendre)",
+                "Remport\u00e9"
+            ],
+            [
+                "2021",
+                "Everything I wanted",
+                "Enregistrement de l'ann\u00e9e",
+                "Remport\u00e9"
+            ],
+            [
+                "2021",
+                "Everything I wanted",
+                "Meilleure performance pop solo",
+                "Nomin\u00e9e"
+            ],
+            [
+                "2021",
+                "Everything I wanted",
+                "Chanson de l'ann\u00e9e",
+                "Nomin\u00e9e"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2020,
+                2020,
+                2020,
+                2020,
+                2020,
+                2020,
+                2021,
+                2021,
+                2021,
+                2021
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was on 2020 and the R\u00e9compense string starts with Album?",
+                "answers": [
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the \u0152uvre when the Ann\u00e9e was before 2021 and the R\u00e9compense string contains pop?",
+                "answers": [
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish",
+                    "Bad Guy - Billie Eilish"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with R\u00e9compense string ends with solo, have Ann\u00e9e was before 2021?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every \u0152uvre, with Ann\u00e9e was after 2020, have R\u00e9compense string contains pour?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2020, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish",
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with R\u00e9compense string contains de, happened the 3rd according to Ann\u00e9e?",
+                "answers": [
+                    "Everything I wanted"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which \u0152uvre, with Ann\u00e9e was on 2020, happened the 3rd according to Ann\u00e9e?",
+                "answers": [
+                    "When We All Fall Asleep, Where Do We Go? - Billie Eilish",
+                    "Billie Eilish",
+                    "Bad Guy - Billie Eilish"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Meilleure chanson \u00e9crite pour un media Visuel (Mourir peut attendre) and when the R\u00e9compense was Album de l'ann\u00e9e?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9compense was Meilleur enregistrement and when the R\u00e9compense was Enregistrement de l'ann\u00e9e?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2020?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had R\u00e9compense string contains pop and Ann\u00e9e was before 2021?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2022",
+                "No Time to Die",
+                "Meilleure chanson originale",
+                "Remport\u00e9"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2022
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many \u0152uvre had Ann\u00e9e was on 2022?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "11904611",
+        "title": "Billie Eilish",
+        "url": "https://fr.wikipedia.org/?curid=11904611",
+        "header": [
+            "Ann\u00e9e",
+            "\u0152uvre",
+            "R\u00e9compense",
+            "R\u00e9sultat"
+        ],
+        "rows": [
+            [
+                "2022",
+                "No Time to Die",
+                "Meilleure chanson originale",
+                "Remport\u00e9"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2022
+            ]
+        },
+        "qas": []
+    }
+]

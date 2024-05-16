@@ -82,7 +82,7 @@ def worker(table_data_chunk, template_dict, file_name, q):
 def log_error(message):
     with open("log.txt", "a") as log_file:
         log_file.write(message + "\n")
-    print(message)
+    # print(message)
 
 def main():
     template_dict = json.load(open("question_template.json"))

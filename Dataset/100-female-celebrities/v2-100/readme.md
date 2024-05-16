@@ -10,4 +10,7 @@ This is the 2nd version of 100 female celebrities data.
 
 - P4 >> P5: rct.py, refine the column type.
 
+- P5 >> P6: date.py, use 9999 as placeholder for empty date vlue in date_column.
+
+
 

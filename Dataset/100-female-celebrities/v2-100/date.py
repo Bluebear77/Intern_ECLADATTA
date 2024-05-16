@@ -24,9 +24,12 @@ def process_date_columns(data):
 
 # Process all JSON files in the input directory
 for filename in os.listdir(input_dir):
-    if filename.endswith('.json'):
+    if filename.startswith('instance_') and filename.endswith('_v5.json'):
+        instance_number = filename.split('_')[1]
+
         input_filepath = os.path.join(input_dir, filename)
-        output_filepath = os.path.join(output_processed_dir, filename)
+        output_filename = f'instance_{instance_number}_v6.json'
+        output_filepath = os.path.join(output_processed_dir, output_filename)
 
         # Load the data from the input file
         with open(input_filepath, 'r', encoding='utf-8') as file:
