@@ -26,14 +26,24 @@ def write_csv(error_data, csv_file):
         
         total_errors = 0
         sorted_files = sorted(error_data.keys())  # Sort the files with errors
+        instance_numbers = set()
+
         for file_name in sorted_files:
+            instance_match = re.search(r'instance_(\d+)_v\d+', file_name)
+            if instance_match:
+                instance_number = int(instance_match.group(1))
+                instance_numbers.add(instance_number)
+
             for error in error_data[file_name]:
                 writer.writerow([file_name, error])
                 total_errors += 1
 
+        sorted_instance_numbers = sorted(instance_numbers)  # Sort instance numbers in ascending order
+
         # Append statistical analysis
         writer.writerow([])
         writer.writerow(["Statistics"])
+        writer.writerow(["Instance number with errors"] + sorted_instance_numbers)
         writer.writerow(["Total Unique Errors", total_errors])
         writer.writerow(["Total Files with Errors", len(error_data)])
 
