@@ -121,17 +121,17 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many Name had Percentage was less than or equal to .648?",
+                "question": "How many Name had Percentage was less than .648?",
                 "answers": [
-                    "12"
+                    "11"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Name had Percentage was greater than or equal to .741?",
+                "question": "How many Name had Percentage was less than .562?",
                 "answers": [
-                    "4"
+                    "7"
                 ],
                 "reasoning_type": "counting"
             }
@@ -216,7 +216,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Which Video, with Year was after 2002, happened the 3rd according to Year?",
+                "question": "Which Video, with Year was before 2005, happened the 4th according to Year?",
                 "answers": [
                     "\"The Farmers Back\"",
                     "\"She Moved\""
@@ -225,29 +225,20 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Video, with Year was before 2005, happened the 5th according to Year?",
+                "question": "Which Video, with Year was before 2006, happened the 6th according to Year?",
                 "answers": [
-                    "\"The Farmers Back\"",
-                    "\"She Moved\""
+                    "\"Ive Got It Good\""
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Video, with Year was before 2008, happened the 7th according to Year?",
+                "question": "Which Video, with Year was before 2005, happened the 3rd according to Year?",
                 "answers": [
-                    "\"Id Rather Be Lucky\"",
-                    "\"Now Thats Christmas\""
+                    "\"Free\"",
+                    "\"Different\""
                 ],
                 "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Director was Stephano Barberis and when the Director was Sean Danby?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "date_difference"
             }
         ]
     }
