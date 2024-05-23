@@ -41,8 +41,8 @@ def split_json_file(file_path, output_folder, num_files=100):
     print(f"Data split into {num_files} files and saved in {output_folder}")
 
 # Specify the path to your large JSON file and the desired output folder
-file_path = 'wikipedia_en_telco100_en_doc.json'
-output_folder = '../split'
+file_path = 'wikipedia_en_business100_en_doc.json'
+output_folder = '../business-100'
 
 # Call the function
 split_json_file(file_path, output_folder)
