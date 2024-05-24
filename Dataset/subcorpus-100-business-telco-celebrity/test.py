@@ -3,8 +3,8 @@ import json
 from datetime import datetime
 
 # Set input and output directories
-input_dir = 'business-100'
-output_dir = 'business-100/result'
+input_dir = 'telco-100/Raw'
+output_dir = 'telco-100/result'
 
 # Ensure the output directory exists
 os.makedirs(output_dir, exist_ok=True)
