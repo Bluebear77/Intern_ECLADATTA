@@ -53,7 +53,7 @@ def get_unique_content(table):
     return ". ".join(unique_content)
 
 def main():
-    input_file = "./qtsumm_dev.json"
+    input_file = "./newdev.json"
     output_file = "./output_urls.csv"
 
     with open(input_file, 'r') as file:
