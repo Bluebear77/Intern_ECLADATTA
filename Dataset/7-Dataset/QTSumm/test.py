@@ -1,3 +1,6 @@
+#pip install lxml
+
+
 import json
 import pandas as pd
 import requests
@@ -36,7 +39,7 @@ def fetch_wikipedia_table(url):
         soup = BeautifulSoup(response.content, 'html.parser')
         tables = soup.find_all('table', {'class': 'wikitable'})
         if tables:
-            return pd.read_html(str(tables[0]))[0]
+            return pd.read_html(str(tables[0]), flavor='lxml')[0]
     except requests.RequestException as e:
         print(f"Request failed: {e}")
     except Exception as e:
@@ -45,7 +48,7 @@ def fetch_wikipedia_table(url):
 
 def extract_first_4x4(df):
     if not df.empty:
-        df = df.applymap(str)  # Ensure all data is string for fair comparison
+        df = df.astype(str)  # Ensure all data is string for fair comparison
         return df.iloc[:4, :4].fillna('')
     return pd.DataFrame()
 
@@ -71,13 +74,22 @@ def load_and_process_file(filename):
         else:
             actual_table = pd.DataFrame()
 
+        print(f"\nProcessing table: {title} with table_id: {table_id}")
+        print(f"Actual table (first 4 rows and columns):\n{extract_first_4x4(actual_table)}\n")
+
         found_url, matched_title = search_wikipedia(title)
+        print(f"Found URL: {found_url}, Matched Title: {matched_title}")
+        
         similarity = fuzz.ratio(title.lower(), matched_title.lower()) if found_url != "Not found" else 0.0
+        print(f"Title similarity: {similarity}")
         
         table_similarity = 0.0
         if found_url != "Not found":
             matched_table = fetch_wikipedia_table(found_url)
+            print(f"Matched table (first 4 rows and columns):\n{extract_first_4x4(matched_table)}\n")
             table_similarity = compare_tables(actual_table, matched_table)
+        
+        print(f"Table similarity: {table_similarity}\n")
         
         output_data.append({
             "URL": found_url,
