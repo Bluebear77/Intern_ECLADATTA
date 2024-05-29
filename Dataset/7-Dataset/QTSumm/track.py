@@ -1,91 +1,102 @@
-import requests
 import json
+import pandas as pd
+import requests
 from fuzzywuzzy import fuzz
 from tqdm import tqdm
-import csv
+from bs4 import BeautifulSoup
 
-def search_wikipedia(query):
-    url = "https://en.wikipedia.org/w/api.php"
+def search_wikipedia(title):
+    base_url = "https://en.wikipedia.org/w/api.php"
     params = {
-        "action": "query",
-        "list": "search",
-        "srsearch": query,
-        "format": "json"
+        'action': 'query',
+        'list': 'search',
+        'srsearch': title,
+        'format': 'json'
     }
-    response = requests.get(url, params=params)
-    return response.json()
+    try:
+        response = requests.get(base_url, params=params)
+        response.raise_for_status()  # This will raise an exception for HTTP errors
+        results = response.json().get('query', {}).get('search', [])
+        if results:
+            # Take the most relevant result
+            top_result = results[0]
+            page_id = top_result['pageid']
+            url = f"http://en.wikipedia.org/?curid={page_id}"
+            return url, top_result['title']
+    except requests.RequestException as e:
+        print(f"Request failed: {e}")
+    except json.JSONDecodeError:
+        print("Failed to decode JSON from response.")
+    return "Not found", "No title matched"
 
-def fetch_wikipedia_page(pageid):
-    url = "https://en.wikipedia.org/w/api.php"
-    params = {
-        "action": "parse",
-        "pageid": pageid,
-        "format": "json"
-    }
-    response = requests.get(url, params=params)
-    return response.json()
+def fetch_wikipedia_table(url):
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.content, 'html.parser')
+        tables = soup.find_all('table', {'class': 'wikitable'})
+        if tables:
+            return pd.read_html(str(tables[0]))[0]
+    except requests.RequestException as e:
+        print(f"Request failed: {e}")
+    except Exception as e:
+        print(f"Error fetching table: {e}")
+    return pd.DataFrame()
 
-def calculate_similarity(original_content, candidate_content):
-    return fuzz.ratio(original_content, candidate_content)
+def extract_first_4x4(df):
+    return df.iloc[:4, :4] if not df.empty else pd.DataFrame()
 
-def get_table_content(table):
-    header = " | ".join(table["header"])
-    rows = [" | ".join(map(str, row)) for row in table["rows"]]
-    return header + "\n" + "\n".join(rows)
+def compare_tables(actual_df, matched_df):
+    actual_sub = extract_first_4x4(actual_df)
+    matched_sub = extract_first_4x4(matched_df)
+    if actual_sub.empty or matched_sub.empty:
+        return 0.0
+    return fuzz.ratio(actual_sub.to_string(index=False, header=False), matched_sub.to_string(index=False, header=False))
 
-def get_unique_content(table):
-    unique_content = []
-    for row in table["rows"]:
-        unique_content.append(" | ".join(map(str, row)))
-        if len(unique_content) >= 3:  # Limit to the first 3 rows for uniqueness
-            break
-    return ". ".join(unique_content)
+def load_and_process_file(filename):
+    with open(filename, 'r') as file:
+        data = json.load(file)
+    
+    output_data = []
+    
+    for item in tqdm(data, desc=f"Processing {filename}"):
+        title = item['table']['title']
+        table_id = item['table']['table_id']
+        
+        if 'data' in item['table']:
+            actual_table = pd.DataFrame(item['table']['data'])
+        else:
+            actual_table = pd.DataFrame()
+
+        found_url, matched_title = search_wikipedia(title)
+        similarity = fuzz.ratio(title.lower(), matched_title.lower()) if found_url != "Not found" else 0.0
+        
+        table_similarity = 0.0
+        if found_url != "Not found":
+            matched_table = fetch_wikipedia_table(found_url)
+            table_similarity = compare_tables(actual_table, matched_table)
+        
+        output_data.append({
+            "URL": found_url,
+            "title": title,
+            "table_id": table_id,
+            "matched_title": matched_title,
+            "title_similarity": similarity,
+            "table_similarity": table_similarity
+        })
+        
+    return output_data
+
+def save_to_csv(data, filename):
+    df = pd.DataFrame(data)
+    csv_filename = filename.replace('.json', '.csv')
+    df.to_csv(csv_filename, index=False)
+    print(f"Saved data to {csv_filename}")
 
 def main():
-    input_file = "./newdev.json"
-    output_file = "./output_urls.csv"
-
-    with open(input_file, 'r') as file:
-        data = json.load(file)
-
-    results = []
-
-    for entry in tqdm(data):
-        table_title = entry["table"]["title"]
-        unique_content = get_unique_content(entry["table"])
-        search_query = f"{table_title} {unique_content}"
-        table_content = get_table_content(entry["table"])
-        
-        search_results = search_wikipedia(search_query)
-        
-        if 'query' not in search_results or 'search' not in search_results['query']:
-            continue
-        
-        candidates = []
-        for result in search_results["query"]["search"]:
-            pageid = result["pageid"]
-            page = fetch_wikipedia_page(pageid)
-            if "parse" in page:
-                text = page["parse"]["text"]["*"]
-                similarity = calculate_similarity(table_content, text)
-                candidates.append((pageid, result["title"], similarity))
-        
-        candidates = sorted(candidates, key=lambda x: x[2], reverse=True)[:5]
-
-        result_entry = [table_title]
-        for candidate in candidates:
-            url = f"https://en.wikipedia.org/?curid={candidate[0]}"
-            result_entry.extend([url, candidate[1], candidate[2]])
-        
-        results.append(result_entry)
-
-    with open(output_file, 'w', newline='') as csvfile:
-        csvwriter = csv.writer(csvfile)
-        header = ["Origin Table Title", "URL1", "Title1", "Score1", "URL2", "Title2", "Score2", "URL3", "Title3", "Score3", "URL4", "Title4", "Score4", "URL5", "Title5", "Score5"]
-        csvwriter.writerow(header)
-        csvwriter.writerows(results)
-
-    print(f"Results saved to {output_file}")
+    for file_name in ['newdev.json']:
+        data = load_and_process_file(file_name)
+        save_to_csv(data, file_name)
 
 if __name__ == "__main__":
     main()
