@@ -1,6 +1,4 @@
 #pip install lxml
-
-
 import json
 import pandas as pd
 import requests
@@ -77,6 +75,9 @@ def load_and_process_file(filename):
         data = json.load(file)
     
     output_data = []
+    highest_overall_similarity = 0
+    best_url = "Not found"
+    best_matched_table = pd.DataFrame()
     
     for item in tqdm(data, desc=f"Processing {filename}"):
         title = item['table']['title']
@@ -90,29 +91,41 @@ def load_and_process_file(filename):
         print(f"\nProcessing table: {title} with table_id: {table_id}")
         print(f"Actual table (first 4 rows and columns):\n{extract_first_4x4(actual_table)}\n")
 
-        found_url, matched_title = search_wikipedia(title)  # You should define this function
+        found_url, matched_title = search_wikipedia(title)
         print(f"Found URL: {found_url}, Matched Title: {matched_title}")
         
-        similarity = fuzz.ratio(title.lower(), matched_title.lower()) if found_url != "Not found" else 0.0
-        print(f"Title similarity: {similarity}")
+        title_similarity = fuzz.ratio(title.lower(), matched_title.lower()) if found_url != "Not found" else 0.0
+        print(f"Title similarity: {title_similarity}")
         
         table_similarity = 0.0
+        most_similar_table = pd.DataFrame()
         if found_url != "Not found":
             most_similar_table, table_similarity = find_most_similar_table(found_url, actual_table)
             print(f"Most similar table (first 4 rows and columns):\n{extract_first_4x4(most_similar_table)}\n")
         
         print(f"Table similarity: {table_similarity}\n")
         
+        overall_similarity = 0.7 * title_similarity + 0.3 * table_similarity
+        print(f"Overall similarity: {overall_similarity}\n")
+        
+        if overall_similarity > highest_overall_similarity:
+            highest_overall_similarity = overall_similarity
+            best_url = found_url
+            best_matched_table = most_similar_table
+        
         output_data.append({
             "URL": found_url,
             "title": title,
             "table_id": table_id,
             "matched_title": matched_title,
-            "title_similarity": similarity,
-            "table_similarity": table_similarity
+            "title_similarity": title_similarity,
+            "table_similarity": table_similarity,
+            "overall_similarity": overall_similarity
         })
         
-    return output_data
+    print(f"URL with highest overall similarity: {best_url}")
+    print(f"Best matched table (first 4 rows and columns):\n{extract_first_4x4(best_matched_table)}")
+    return output_data, best_url
 
 def save_to_csv(data, filename):
     df = pd.DataFrame(data)
@@ -122,8 +135,9 @@ def save_to_csv(data, filename):
 
 def main():
     for file_name in ['newdev.json']:
-        data = load_and_process_file(file_name)
+        data, best_url = load_and_process_file(file_name)
         save_to_csv(data, file_name)
+        print(f"URL with highest overall similarity for {file_name}: {best_url}")
 
 if __name__ == "__main__":
     main()
