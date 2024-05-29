@@ -32,19 +32,19 @@ def search_wikipedia(title):
         print("Failed to decode JSON from response.")
     return "Not found", "No title matched"
 
-def fetch_wikipedia_table(url):
+def fetch_all_wikipedia_tables(url):
     try:
         response = requests.get(url)
         response.raise_for_status()
         soup = BeautifulSoup(response.content, 'html.parser')
         tables = soup.find_all('table', {'class': 'wikitable'})
-        if tables:
-            return pd.read_html(str(tables[0]), flavor='lxml')[0]
+        dataframes = [pd.read_html(str(table), flavor='lxml')[0] for table in tables]
+        return dataframes
     except requests.RequestException as e:
         print(f"Request failed: {e}")
     except Exception as e:
-        print(f"Error fetching table: {e}")
-    return pd.DataFrame()
+        print(f"Error fetching tables: {e}")
+    return []
 
 def extract_first_4x4(df):
     if not df.empty:
@@ -58,6 +58,19 @@ def compare_tables(actual_df, matched_df):
     if actual_sub.empty or matched_sub.empty:
         return 0.0
     return fuzz.ratio(actual_sub.to_string(index=False, header=False), matched_sub.to_string(index=False, header=False))
+
+def find_most_similar_table(url, input_df):
+    extracted_tables = fetch_all_wikipedia_tables(url)
+    highest_score = 0
+    most_similar_table = pd.DataFrame()
+
+    for table in extracted_tables:
+        score = compare_tables(input_df, table)
+        if score > highest_score:
+            highest_score = score
+            most_similar_table = table
+
+    return most_similar_table, highest_score
 
 def load_and_process_file(filename):
     with open(filename, 'r') as file:
@@ -77,7 +90,7 @@ def load_and_process_file(filename):
         print(f"\nProcessing table: {title} with table_id: {table_id}")
         print(f"Actual table (first 4 rows and columns):\n{extract_first_4x4(actual_table)}\n")
 
-        found_url, matched_title = search_wikipedia(title)
+        found_url, matched_title = search_wikipedia(title)  # You should define this function
         print(f"Found URL: {found_url}, Matched Title: {matched_title}")
         
         similarity = fuzz.ratio(title.lower(), matched_title.lower()) if found_url != "Not found" else 0.0
@@ -85,9 +98,8 @@ def load_and_process_file(filename):
         
         table_similarity = 0.0
         if found_url != "Not found":
-            matched_table = fetch_wikipedia_table(found_url)
-            print(f"Matched table (first 4 rows and columns):\n{extract_first_4x4(matched_table)}\n")
-            table_similarity = compare_tables(actual_table, matched_table)
+            most_similar_table, table_similarity = find_most_similar_table(found_url, actual_table)
+            print(f"Most similar table (first 4 rows and columns):\n{extract_first_4x4(most_similar_table)}\n")
         
         print(f"Table similarity: {table_similarity}\n")
         
