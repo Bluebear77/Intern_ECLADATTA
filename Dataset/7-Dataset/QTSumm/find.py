@@ -11,6 +11,7 @@ import logging
 # pip install lxml
 # pip install tqdm
 # pip install fuzzywuzzy
+# pip install beautifulsoup4
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(message)s')
@@ -46,6 +47,46 @@ def search_wikipedia(title):
     except json.JSONDecodeError:
         logger.info("Failed to decode JSON from response.")
     return "Not found", "No title matched"
+
+def search_google(title):
+    search_url = f"https://www.google.com/search?q={title.replace(' ', '+')}+wikipedia"
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+    }
+    try:
+        response = requests.get(search_url, headers=headers)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, 'html.parser')
+        for link in soup.find_all('a'):
+            href = link.get('href')
+            if href and 'wikipedia.org' in href:
+                google_url = href.split('&')[0].replace('/url?q=', '')
+                google_url = google_url.split('%')[0]  # Truncate the URL at the first occurrence of '%'
+                google_title = link.get_text()
+                return google_url, google_title
+    except requests.RequestException as e:
+        logger.info(f"Request failed: {e}")
+    return "Not found", "No title matched"
+
+def search_combined(title):
+    wiki_url, wiki_title = search_wikipedia(title)
+    google_url, google_title = search_google(title)
+
+    # Calculate similarity scores
+    if wiki_title and google_title:
+        wiki_score = fuzz.ratio(title, wiki_title)
+        google_score = fuzz.ratio(title, google_title)
+
+        if google_score > wiki_score:
+            return google_url, google_title
+        else:
+            return wiki_url, wiki_title
+    elif google_title:
+        return google_url, google_title
+    elif wiki_title:
+        return wiki_url, wiki_title
+    else:
+        return "Not found", "No title matched"
 
 def fetch_all_wikipedia_tables(url):
     try:
@@ -108,7 +149,7 @@ def load_and_process_file(filename):
         logger.info(f"\nProcessing table: {title} with table_id: {table_id}")
         logger.info(f"Actual table (first 4 rows and columns):\n{extract_first_4x4(actual_table)}\n")
 
-        found_url, matched_title = search_wikipedia(title)
+        found_url, matched_title = search_combined(title)
         logger.info(f"Found URL: {found_url}, Matched Title: {matched_title}")
         
         title_similarity = fuzz.ratio(title.lower(), matched_title.lower()) if found_url != "Not found" else 0.0
@@ -118,7 +159,9 @@ def load_and_process_file(filename):
         most_similar_table = pd.DataFrame()
         if found_url != "Not found":
             most_similar_table, table_similarity = find_most_similar_table(found_url, actual_table)
+           
             logger.info(f"Most similar table (first 4 rows and columns):\n{extract_first_4x4(most_similar_table)}\n")
+
         
         logger.info(f"Table similarity: {table_similarity}\n")
         
@@ -150,6 +193,8 @@ def save_to_csv(data, filename):
     df.to_csv(csv_filename, index=False)
     logger.info(f"Saved data to {csv_filename}")
 
+
+
 def main():
     for file_name in ['qtsumm_dev.json', 'qtsumm_test.json', 'qtsumm_train.json']:
         data, best_url = load_and_process_file(file_name)
@@ -158,3 +203,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
