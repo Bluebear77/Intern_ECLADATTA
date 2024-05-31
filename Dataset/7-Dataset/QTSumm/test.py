@@ -1,3 +1,31 @@
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+# List of packages to ensure are installed
+required_packages = [
+    "pandas",
+    "requests",
+    "fuzzywuzzy",
+    "tqdm",
+    "beautifulsoup4",
+    "lxml"
+]
+
+for package in required_packages:
+    try:
+        __import__(package)
+    except ImportError:
+        install(package)
+
+# Ensure necessary packages are installed
+# pip install lxml
+# pip install tqdm
+# pip install fuzzywuzzy
+# pip install beautifulsoup4
+
 import json
 import pandas as pd
 import requests
@@ -7,11 +35,7 @@ from bs4 import BeautifulSoup
 from io import StringIO
 import logging
 
-# Ensure necessary packages are installed
-# pip install lxml
-# pip install tqdm
-# pip install fuzzywuzzy
-# pip install beautifulsoup4
+
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(message)s')
