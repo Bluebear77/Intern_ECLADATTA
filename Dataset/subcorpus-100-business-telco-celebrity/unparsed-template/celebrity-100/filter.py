@@ -42,23 +42,23 @@ def save_to_csv(template_names, output_file):
         for name in template_names:
             writer.writerow([name])
 
-# Main function
 def main():
     input_directory = '.'
-    for filename in os.listdir(input_directory):
-        if filename.endswith('.txt'):
-            input_file = os.path.join(input_directory, filename)
-            output_file = os.path.join(input_directory, filename.replace('.txt', '.csv'))
-            
-            template_names = extract_template_names_custom(input_file)
-            
-            # Print first 10 rows of the output for each file
-            print(f"First 10 extracted template names from {filename}:")
-            for name in template_names[:10]:
-                print(name)
-            
-            save_to_csv(template_names, output_file)
-            print(f"Extracted {len(template_names)} template names from {filename} and saved to {output_file}")
+    # Get list of all .txt files and corresponding .csv files
+    txt_files = [f for f in os.listdir(input_directory) if f.endswith('.txt')]
+    csv_files = [f.replace('.csv', '.txt') for f in os.listdir(input_directory) if f.endswith('.csv')]
+
+    # Identify .txt files that do not have a corresponding .csv file
+    txt_files_to_process = [f for f in txt_files if f not in csv_files]
+
+    for filename in txt_files_to_process:
+        input_file = os.path.join(input_directory, filename)
+        output_file = os.path.join(input_directory, filename.replace('.txt', '.csv'))
+        
+        template_names = extract_template_names_custom(input_file)
+        
+        save_to_csv(template_names, output_file)
+        print(f"Extracted {len(template_names)} template names from {filename} and saved to {output_file}")
 
 if __name__ == "__main__":
     main()
