@@ -27,12 +27,16 @@ def analyze_templates():
     # Compute percentages
     template_percentages = {template: (count / total_templates) * 100 for template, count in template_counts.items()}
     
+    # Combine counts and percentages for visualization
+    template_summary = {template: (count, template_percentages[template]) for template, count in template_counts.items()}
+    
     # Create a pie chart with better visualization
     fig, ax = plt.subplots(figsize=(12, 8))
-    wedges, texts, autotexts = ax.pie(template_percentages.values(), labels=template_percentages.keys(), autopct='%1.1f%%', startangle=140, textprops=dict(color="w"))
+    labels = [f"{template}\n{count} ({percentage:.2f}%)" for template, (count, percentage) in template_summary.items()]
+    wedges, texts, autotexts = ax.pie([percentage for count, percentage in template_summary.values()], labels=labels, autopct='%1.1f%%', startangle=140, textprops=dict(color="w"))
     
     # Improve the legend and labels
-    ax.legend(wedges, template_percentages.keys(), title="Templates", loc="center left", bbox_to_anchor=(1, 0, 0.5, 1))
+    ax.legend(wedges, labels, title="Templates", loc="center left", bbox_to_anchor=(1, 0, 0.5, 1))
     plt.setp(autotexts, size=10, weight="bold")
     ax.set_title('Template Distribution in CSV Files')
     
@@ -42,8 +46,8 @@ def analyze_templates():
 
     # Create a bar chart
     fig, ax = plt.subplots(figsize=(14, 8))
-    templates = list(template_percentages.keys())
-    percentages = list(template_percentages.values())
+    templates = [f"{template}\n{count} ({percentage:.2f}%)" for template, (count, percentage) in template_summary.items()]
+    percentages = [percentage for count, percentage in template_summary.values()]
     
     ax.barh(templates, percentages, color='skyblue')
     ax.set_xlabel('Percentage')
@@ -61,8 +65,8 @@ def analyze_templates():
         report_file.write(f'Total number of templates: {total_templates}\n\n')
         
         report_file.write('## Template Distribution\n')
-        for template, percentage in template_percentages.items():
-            report_file.write(f'- **{template}**: {percentage:.2f}%\n')
+        for template, (count, percentage) in template_summary.items():
+            report_file.write(f'- **{template}**: {count} ({percentage:.2f}%)\n')
         
         report_file.write('\n## Pie Chart\n')
         report_file.write('![Template Distribution Pie Chart](template_distribution_pie_chart.png)\n')

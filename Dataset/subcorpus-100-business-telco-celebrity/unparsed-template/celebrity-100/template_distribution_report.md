@@ -5,41 +5,41 @@ This report analyzes the distribution of templates across all CSV files in the c
 Total number of templates: 2647
 
 ## Template Distribution
-- **Historique tournoi tennis/début**: 0.11%
-- **Historique tournoi tennis/base double**: 22.63%
-- **Historique tournoi tennis/fin double**: 0.87%
-- **Premier/début**: 0.45%
-- **Premier/ligne**: 4.61%
-- **Premier/fin**: 0.45%
-- **Historique tournoi tennis/GC début double**: 0.76%
-- **Boîte déroulante/fin**: 0.26%
-- **Historique tournoi tennis/GC début**: 0.45%
-- **Historique tournoi tennis/GC base**: 27.09%
-- **Historique tournoi tennis/GC fin**: 0.45%
-- **Palmarès WTA/début**: 2.57%
-- **Palmarès WTA/ligne**: 27.50%
-- **Palmarès WTA/fin**: 2.61%
-- **WNBA player statistics start**: 0.11%
-- **Premier/WTA1000**: 0.34%
-- **Classements en fin de saison**: 0.38%
-- **Abbr**: 0.08%
-- **Lien web**: 3.74%
-- **abbr**: 0.34%
-- **Ouvrage**: 0.04%
-- **Référence souhaitée**: 0.53%
-- **pending**: 0.04%
-- **lien web**: 0.04%
-- **small**: 0.04%
-- **boîte déroulante/début**: 0.11%
-- **Récapitulatif MMA**: 0.04%
-- **Palmarès MMA début**: 0.04%
-- **Palmarès MMA entrée**: 0.53%
-- **Fstats début**: 0.08%
-- **Fstats**: 2.15%
-- **Fstats fin**: 0.11%
-- **Fstats total**: 0.26%
-- **Abréviation discrète**: 0.11%
-- **abréviation**: 0.08%
+- **Historique tournoi tennis/début**: 3 (0.11%)
+- **Historique tournoi tennis/base double**: 599 (22.63%)
+- **Historique tournoi tennis/fin double**: 23 (0.87%)
+- **Premier/début**: 12 (0.45%)
+- **Premier/ligne**: 122 (4.61%)
+- **Premier/fin**: 12 (0.45%)
+- **Historique tournoi tennis/GC début double**: 20 (0.76%)
+- **Boîte déroulante/fin**: 7 (0.26%)
+- **Historique tournoi tennis/GC début**: 12 (0.45%)
+- **Historique tournoi tennis/GC base**: 717 (27.09%)
+- **Historique tournoi tennis/GC fin**: 12 (0.45%)
+- **Palmarès WTA/début**: 68 (2.57%)
+- **Palmarès WTA/ligne**: 728 (27.50%)
+- **Palmarès WTA/fin**: 69 (2.61%)
+- **WNBA player statistics start**: 3 (0.11%)
+- **Premier/WTA1000**: 9 (0.34%)
+- **Classements en fin de saison**: 10 (0.38%)
+- **Abbr**: 2 (0.08%)
+- **Lien web**: 99 (3.74%)
+- **abbr**: 9 (0.34%)
+- **Ouvrage**: 1 (0.04%)
+- **Référence souhaitée**: 14 (0.53%)
+- **pending**: 1 (0.04%)
+- **lien web**: 1 (0.04%)
+- **small**: 1 (0.04%)
+- **boîte déroulante/début**: 3 (0.11%)
+- **Récapitulatif MMA**: 1 (0.04%)
+- **Palmarès MMA début**: 1 (0.04%)
+- **Palmarès MMA entrée**: 14 (0.53%)
+- **Fstats début**: 2 (0.08%)
+- **Fstats**: 57 (2.15%)
+- **Fstats fin**: 3 (0.11%)
+- **Fstats total**: 7 (0.26%)
+- **Abréviation discrète**: 3 (0.11%)
+- **abréviation**: 2 (0.08%)
 
 ## Pie Chart
 ![Template Distribution Pie Chart](template_distribution_pie_chart.png)
