@@ -43,3 +43,6 @@ Total number of templates: 2647
 
 ## Pie Chart
 ![Template Distribution Pie Chart](template_distribution_pie_chart.png)
+
+## Bar Chart
+![Template Distribution Bar Chart](template_distribution_bar_chart.png)

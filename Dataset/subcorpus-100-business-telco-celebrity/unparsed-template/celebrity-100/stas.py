@@ -27,12 +27,30 @@ def analyze_templates():
     # Compute percentages
     template_percentages = {template: (count / total_templates) * 100 for template, count in template_counts.items()}
     
-    # Create a pie chart
-    fig, ax = plt.subplots()
-    ax.pie(template_percentages.values(), labels=template_percentages.keys(), autopct='%1.1f%%', startangle=140)
-    ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
-    plt.title('Template Distribution in CSV Files')
+    # Create a pie chart with better visualization
+    fig, ax = plt.subplots(figsize=(12, 8))
+    wedges, texts, autotexts = ax.pie(template_percentages.values(), labels=template_percentages.keys(), autopct='%1.1f%%', startangle=140, textprops=dict(color="w"))
+    
+    # Improve the legend and labels
+    ax.legend(wedges, template_percentages.keys(), title="Templates", loc="center left", bbox_to_anchor=(1, 0, 0.5, 1))
+    plt.setp(autotexts, size=10, weight="bold")
+    ax.set_title('Template Distribution in CSV Files')
+    
+    plt.tight_layout()
     plt.savefig('template_distribution_pie_chart.png')
+    plt.close()
+
+    # Create a bar chart
+    fig, ax = plt.subplots(figsize=(14, 8))
+    templates = list(template_percentages.keys())
+    percentages = list(template_percentages.values())
+    
+    ax.barh(templates, percentages, color='skyblue')
+    ax.set_xlabel('Percentage')
+    ax.set_title('Template Distribution in CSV Files')
+    
+    plt.tight_layout()
+    plt.savefig('template_distribution_bar_chart.png')
     plt.close()
     
     # Generate the Markdown report
@@ -48,7 +66,9 @@ def analyze_templates():
         
         report_file.write('\n## Pie Chart\n')
         report_file.write('![Template Distribution Pie Chart](template_distribution_pie_chart.png)\n')
+        
+        report_file.write('\n## Bar Chart\n')
+        report_file.write('![Template Distribution Bar Chart](template_distribution_bar_chart.png)\n')
 
 if __name__ == '__main__':
     analyze_templates()
-
