@@ -47,4 +47,5 @@ Total number of templates: 2647
 
 
 ## Bar Chart
-![Template Distribution Bar Chart](template_distribution_bar_chart.png)
+![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/85d6125d-d08c-47a6-b7f5-ba4f54b33ba7)
+
