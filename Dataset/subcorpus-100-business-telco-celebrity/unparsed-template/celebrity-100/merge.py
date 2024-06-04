@@ -18,9 +18,9 @@ def merge_and_sort_csv_files(output_file):
     # Sort the DataFrame by 'Template Name'
     sorted_df = merged_df.sort_values(by='Template Name')
     
-    # Write the sorted DataFrame to an Excel file
-    sorted_df.to_excel(output_file, index=False)
+    # Write the sorted DataFrame to a new CSV file
+    sorted_df.to_csv(output_file, index=False)
 
 # Usage
-output_file = 'merged_sorted_templates.xlsx'
+output_file = 'merged_sorted_templates.csv'
 merge_and_sort_csv_files(output_file)
