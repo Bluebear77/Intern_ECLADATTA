@@ -41,8 +41,6 @@ Total number of templates: 2647
 - **Abréviation discrète**: 3 (0.11%)
 - **abréviation**: 2 (0.08%)
 
-## Pie Chart
-![image](https://github.com/Bluebear77/Intern_ECLADATTA/assets/119409649/36833337-2e89-4669-b6a6-108c12a7f089)
 
 
 
