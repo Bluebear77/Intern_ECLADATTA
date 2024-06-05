@@ -1,5 +1,6 @@
 import subprocess
 import sys
+from urllib.parse import urlparse, parse_qs
 
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
@@ -26,7 +27,6 @@ import requests
 from fuzzywuzzy import fuzz
 from tqdm import tqdm
 from bs4 import BeautifulSoup
-from urllib.parse import urlparse, parse_qs
 import logging
 
 # Set up logging
@@ -42,19 +42,27 @@ logger.addHandler(file_handler)
 
 def get_wikipedia_page_id(url):
     try:
-        response = requests.get(url)
+        # Extract the title from the URL
+        parsed_url = urlparse(url)
+        if 'title' in parse_qs(parsed_url.query):
+            title = parse_qs(parsed_url.query)['title'][0]
+        else:
+            title = parsed_url.path.split('/')[-1]
+        
+        # Make a request to the Wikipedia API to get the page ID
+        api_url = f"https://en.wikipedia.org/w/api.php?action=query&titles={title}&format=json"
+        response = requests.get(api_url)
         response.raise_for_status()
-        soup = BeautifulSoup(response.content, 'html.parser')
-        for link in soup.find_all('a', {'title': 'Page information'}):
-            page_info_url = 'https://en.wikipedia.org' + link.get('href')
-            page_info_response = requests.get(page_info_url)
-            page_info_response.raise_for_status()
-            page_info_soup = BeautifulSoup(page_info_response.content, 'html.parser')
-            for tr in page_info_soup.find_all('tr'):
-                if 'Page ID' in tr.text:
-                    return tr.find('td').text.strip()
+        data = response.json()
+        
+        # Extract the page ID from the API response
+        pages = data['query']['pages']
+        page_id = next(iter(pages))
+        
+        if page_id != "-1":  # Ensure page exists
+            return page_id
     except requests.RequestException as e:
-        logger.info(f"Request failed: {e}")
+        print(f"Request failed: {e}")
     return None
 
 def search_google(title):
@@ -71,11 +79,10 @@ def search_google(title):
             if href and 'wikipedia.org' in href:
                 full_url = href.split('&')[0].replace('/url?q=', '')
                 if 'en.wikipedia.org/wiki/' in full_url:
-                    return full_url, link.get_text()
-                page_id = get_wikipedia_page_id(full_url)
-                if page_id:
-                    wiki_url = f"http://en.wikipedia.org/?curid={page_id}"
-                    return wiki_url, link.get_text()
+                    page_id = get_wikipedia_page_id(full_url)
+                    if page_id:
+                        wiki_url = f"http://en.wikipedia.org/?curid={page_id}"
+                        return wiki_url, link.get_text()
     except requests.RequestException as e:
         logger.info(f"Request failed: {e}")
     return "Not found", "No title matched"

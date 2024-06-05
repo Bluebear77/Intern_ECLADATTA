@@ -7,14 +7,7 @@ Actual table (first 4 rows and columns):
 2  Iowa State   Isu , 10 - 9   Ut , 6 - 2       Isu , 5 - 2
 3      Kansas    Ut , 11 - 7   Ut , 4 - 3      Tied , 4 - 4
 
-Request failed: No connection adapters were found for '/search?q=Texas+Longhorns+Women+%27S+Basketball+site:wikipedia.org'
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Found URL: https://en.wikipedia.org/wiki/Texas_Longhorns_women%27s_basketball, Matched Title: Texas Longhorns women's basketballwikipedia.orghttps://en.wikipedia.org › wiki
+Found URL: http://en.wikipedia.org/?curid=10779468, Matched Title: Texas Longhorns women's basketballwikipedia.orghttps://en.wikipedia.org › wiki
 Title similarity: 60
 Most similar table (first 4 rows and columns):
       Texas vs. Overall record  at Austin at Opponent's  Venue
@@ -36,12 +29,7 @@ Actual table (first 4 rows and columns):
 2    3  October 12  Philadelphia Phillies – 2, Los Angeles Dodgers...      Dodger Stadium
 3    4  October 13  Philadelphia Phillies – 7, Los Angeles Dodgers...      Dodger Stadium
 
-Request failed: No connection adapters were found for '/search?q=2008+National+League+Championship+Series+-+Philadelphia+Phillies+vs.+Los+Angeles+Dodgers+site:wikipedia.org'
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Found URL: https://en.wikipedia.org/wiki/2008_National_League_Championship_Series, Matched Title: 2008 National League Championship Serieswikipedia.orghttps://en.wikipedia.org › wiki
+Found URL: http://en.wikipedia.org/?curid=17572011, Matched Title: 2008 National League Championship Serieswikipedia.orghttps://en.wikipedia.org › wiki
 Title similarity: 60
 Most similar table (first 4 rows and columns):
   Game        Date                                              Score            Location
@@ -63,12 +51,7 @@ Actual table (first 4 rows and columns):
 2     Bristol   Hartford     61,353                   1911
 3     Danbury  Fairfield     80,893                   1889
 
-Request failed: No connection adapters were found for '/search?q=List+of+cities+in+Connecticut+-+List+of+cities+in+Connecticut+site:wikipedia.org'
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Found URL: https://en.wikipedia.org/wiki/List_of_municipalities_in_Connecticut, Matched Title: List of municipalities in Connecticutwikipedia.orghttps://en.wikipedia.org › wiki
+Found URL: http://en.wikipedia.org/?curid=4190024, Matched Title: List of municipalities in Connecticutwikipedia.orghttps://en.wikipedia.org › wiki
 Title similarity: 52
 Most similar table (first 4 rows and columns):
          City     County      Planning region Population (2020)
@@ -90,12 +73,7 @@ Actual table (first 4 rows and columns):
 2      Venezuela    1      0      1
 3         Mexico    0      1      0
 
-Request failed: No connection adapters were found for '/search?q=Tennis+At+The+1999+Pan+American+Games+site:wikipedia.org'
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Found URL: https://en.wikipedia.org/wiki/Tennis_at_the_1999_Pan_American_Games, Matched Title: Tennis at the 1999 Pan American Gameswikipedia.orghttps://en.wikipedia.org › wiki
+Found URL: http://en.wikipedia.org/?curid=10964790, Matched Title: Tennis at the 1999 Pan American Gameswikipedia.orghttps://en.wikipedia.org › wiki
 Title similarity: 63
 Most similar table (first 4 rows and columns):
   Rank               Nation Gold Silver
@@ -117,12 +95,7 @@ Actual table (first 4 rows and columns):
 2     Cikobia-i-Lau                                          12.46
 3   Dogodogo Island                                           0.19
 
-Request failed: No connection adapters were found for '/search?q=List+of+islands+of+Fiji+-+Vanua+Levu+Group+site:wikipedia.org'
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Found URL: https://en.wikipedia.org/wiki/List_of_islands_of_Fiji, Matched Title: List of islands of Fijiwikipedia.orghttps://en.wikipedia.org › wiki
+Found URL: http://en.wikipedia.org/?curid=43395145, Matched Title: List of islands of Fijiwikipedia.orghttps://en.wikipedia.org › wiki
 Title similarity: 51
 Most similar table (first 4 rows and columns):
              Island Main Town or Capital    Other Towns Area (km2)
@@ -144,12 +117,7 @@ Actual table (first 4 rows and columns):
 2  Part 3  ISO/IEC 11172-3                                      1993              1996
 3  Part 4  ISO/IEC 11172-4                                      1995              2007
 
-Request failed: No connection adapters were found for '/search?q=MPEG-1+-+History+site:wikipedia.org'
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Found URL: https://en.wikipedia.org/wiki/MPEG-1, Matched Title: MPEG-1wikipedia.orghttps://en.wikipedia.org › wiki
+Found URL: http://en.wikipedia.org/?curid=20056, Matched Title: MPEG-1wikipedia.orghttps://en.wikipedia.org › wiki
 Title similarity: 30
 Most similar table (first 4 rows and columns):
      Part           Number First public release date (first edition) latest correction
@@ -171,12 +139,7 @@ Actual table (first 4 rows and columns):
 2    3             Lincoln Bank Tower   312 feet (95 m)                         -
 3    4        Allen County Courthouse   238 feet (73 m)                         -
 
-Request failed: No connection adapters were found for '/search?q=List+of+tallest+buildings+in+Fort+Wayne+-+Tallest+buildings+site:wikipedia.org'
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Found URL: https://en.wikipedia.org/wiki/List_of_tallest_buildings_in_Fort_Wayne, Matched Title: List of tallest buildings in Fort Waynewikipedia.orghttps://en.wikipedia.org › wiki
+Found URL: http://en.wikipedia.org/?curid=22131171, Matched Title: List of tallest buildings in Fort Waynewikipedia.orghttps://en.wikipedia.org › wiki
 Title similarity: 63
 Most similar table (first 4 rows and columns):
   Rank                           Name     Height ft / m Image
@@ -198,12 +161,7 @@ Actual table (first 4 rows and columns):
 2  20 Oct 2008  Mf         Alex Pla  Ud Cornellà
 3  20 Oct 2008  Mf  Jorge Guinovart  Ud Cornellà
 
-Request failed: No connection adapters were found for '/search?q=2008+-+09+Manchester+City+F.C.+Season+site:wikipedia.org'
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Found URL: https://en.wikipedia.org/wiki/2008%E2%80%9309_Manchester_City_F.C._season, Matched Title: 2008–09 Manchester City F.C. seasonwikipedia.orghttps://en.wikipedia.org › wiki › 2008–09_Manchester_...
+Found URL: http://en.wikipedia.org/?curid=17370522, Matched Title: 2008–09 Manchester City F.C. seasonwikipedia.orghttps://en.wikipedia.org › wiki › 2008–09_Manchester_...
 Title similarity: 48
 Most similar table (first 4 rows and columns):
               Date Pos.           Player    From club
@@ -225,12 +183,7 @@ Actual table (first 4 rows and columns):
 2    3    Oct 1  Louisiana State   Loss
 3    4   Oct 14          Georgia    Win
 
-Request failed: No connection adapters were found for '/search?q=1966+Miami+Hurricanes+Football+Team+site:wikipedia.org'
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Found URL: https://en.wikipedia.org/wiki/1966_Miami_Hurricanes_football_team, Matched Title: 1966 Miami Hurricanes football teamwikipedia.orghttps://en.wikipedia.org › wiki
+Found URL: http://en.wikipedia.org/?curid=20928682, Matched Title: 1966 Miami Hurricanes football teamwikipedia.orghttps://en.wikipedia.org › wiki
 Title similarity: 61
 Most similar table (first 4 rows and columns):
            Date       Opponent Rank                                  Site
@@ -252,12 +205,7 @@ Actual table (first 4 rows and columns):
 2     Maroon 5 featuring Christina Aguilera  "Moves like Jagger"     2011                13.9
 3                         Pharrell Williams              "Happy"     2013                13.9
 
-Request failed: No connection adapters were found for '/search?q=List+of+best-selling+singles+-+12%E2%80%9314.99+million+copies+site:wikipedia.org'
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Request failed: Invalid URL '/search?sca_esv=d2cafe13fa0d0685': No scheme supplied. Perhaps you meant https:///search?sca_esv=d2cafe13fa0d0685?
-Found URL: https://en.wikipedia.org/wiki/List_of_best-selling_singles, Matched Title: List of best-selling singleswikipedia.orghttps://en.wikipedia.org › wiki
+Found URL: http://en.wikipedia.org/?curid=7577577, Matched Title: List of best-selling singleswikipedia.orghttps://en.wikipedia.org › wiki
 Title similarity: 54
 Most similar table (first 4 rows and columns):
                                      Artist               Single Released Sales (in millions)
@@ -270,7 +218,7 @@ Table similarity: 65
 
 Overall similarity: 57
 
-URL with highest overall similarity: https://en.wikipedia.org/wiki/2008_National_League_Championship_Series
+URL with highest overall similarity: http://en.wikipedia.org/?curid=17572011
 Best matched table (first 4 rows and columns):
   Game        Date                                              Score            Location
 0    1   October 9  Los Angeles Dodgers – 2, Philadelphia Phillies...  Citizens Bank Park
@@ -278,4 +226,4 @@ Best matched table (first 4 rows and columns):
 2    3  October 12  Philadelphia Phillies – 2, Los Angeles Dodgers...      Dodger Stadium
 3    4  October 13  Philadelphia Phillies – 7, Los Angeles Dodgers...      Dodger Stadium
 Saved data to newdev.csv
-URL with highest overall similarity for newdev.json: https://en.wikipedia.org/wiki/2008_National_League_Championship_Series
+URL with highest overall similarity for newdev.json: http://en.wikipedia.org/?curid=17572011
