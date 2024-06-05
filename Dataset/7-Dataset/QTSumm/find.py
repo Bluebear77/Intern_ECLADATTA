@@ -73,7 +73,7 @@ def search_wikipedia(title):
     return "Not found", "No title matched"
 
 def search_google(title):
-    search_url = f"https://www.google.com/search?q={title.replace(' ', '+')}+wikipedia"
+    search_url = f"https://www.google.com/search?q={title.replace(' ', '+')}+site:wikipedia.org"
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }

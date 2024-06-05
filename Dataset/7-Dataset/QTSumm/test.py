@@ -42,7 +42,7 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
 logger = logging.getLogger()
 
 # Create file handler to log to a file
-file_handler = logging.FileHandler('log.md')
+file_handler = logging.FileHandler('testlog.md')
 file_handler.setLevel(logging.INFO)
 formatter = logging.Formatter('%(message)s')
 file_handler.setFormatter(formatter)
@@ -225,4 +225,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
