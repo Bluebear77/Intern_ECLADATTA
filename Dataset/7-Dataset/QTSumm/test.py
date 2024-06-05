@@ -65,6 +65,12 @@ def get_wikipedia_page_id(url):
         print(f"Request failed: {e}")
     return None
 
+def clean_matched_title(matched_title):
+    # Remove unwanted parts from matched_title
+    if 'wikipedia.org' in matched_title:
+        matched_title = matched_title.split('wikipedia.org')[0].strip()
+    return matched_title
+
 def search_google(title):
     search_url = f"https://www.google.com/search?q={title.replace(' ', '+')}+site:wikipedia.org"
     headers = {
@@ -82,7 +88,7 @@ def search_google(title):
                     page_id = get_wikipedia_page_id(full_url)
                     if page_id:
                         wiki_url = f"http://en.wikipedia.org/?curid={page_id}"
-                        return wiki_url, link.get_text()
+                        return wiki_url, clean_matched_title(link.get_text())
     except requests.RequestException as e:
         logger.info(f"Request failed: {e}")
     return "Not found", "No title matched"
@@ -154,7 +160,7 @@ def load_and_process_file(filename):
         else:
             actual_table = pd.DataFrame()
 
-        logger.info(f"\nProcessing table: {title} with table_id: {table_id}")
+        logger.info(f"\nProcessing table: {title}\nTable_id: {table_id}")
         logger.info(f"Actual table (first 4 rows and columns):\n{extract_first_4x4(actual_table)}\n")
 
         found_url, matched_title = search_combined(title)
