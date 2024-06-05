@@ -34,7 +34,7 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
 logger = logging.getLogger()
 
 # Create file handler to log to a file
-file_handler = logging.FileHandler('testlog.md')
+file_handler = logging.FileHandler('testlog.txt')
 file_handler.setLevel(logging.INFO)
 formatter = logging.Formatter('%(message)s')
 file_handler.setFormatter(formatter)
