@@ -8,7 +8,9 @@ Actual table (first 4 rows and columns):
 2  Iowa State   Isu , 10 - 9   Ut , 6 - 2       Isu , 5 - 2
 3      Kansas    Ut , 11 - 7   Ut , 4 - 3      Tied , 4 - 4
 
-Found URL: http://en.wikipedia.org/?curid=10779468, Matched Title: Texas Longhorns women's basketball
+Request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DTexas%2BLonghorns%2BWomen%2B%27S%2BBasketball%2Bsite:wikipedia.org&q=EgQ0sncMGOvbgbMGIjDlPyC7-s42qmyxnTKdnuYRfBg3t1eXnkpRbgODt5KIz1DpZfsexF5zSLb_KJYjhu8yAXJaAUM
+Found URL: http://en.wikipedia.org/?curid=10779468, 
+Matched Title: Texas Longhorns women's basketball
 Title similarity: 99
 Most similar table (first 4 rows and columns):
       Texas vs. Overall record  at Austin at Opponent's  Venue
@@ -25,24 +27,28 @@ Overall similarity: 84
 Processing table: 2008 National League Championship Series - Philadelphia Phillies vs. Los Angeles Dodgers
 Table_id: 6b23aaf9-1505-43ad-a443-f536eb4061f1
 Actual table (first 4 rows and columns):
-  Game        Date                                              Score            Location
-0    1   October 9  Los Angeles Dodgers – 2, Philadelphia Phillies...  Citizens Bank Park
-1    2  October 10  Los Angeles Dodgers – 5, Philadelphia Phillies...  Citizens Bank Park
-2    3  October 12  Philadelphia Phillies – 2, Los Angeles Dodgers...      Dodger Stadium
-3    4  October 13  Philadelphia Phillies – 7, Los Angeles Dodgers...      Dodger Stadium
+  Game  ...            Location
+0    1  ...  Citizens Bank Park
+1    2  ...  Citizens Bank Park
+2    3  ...      Dodger Stadium
+3    4  ...      Dodger Stadium
 
-Found URL: http://en.wikipedia.org/?curid=17572011, Matched Title: 2008 National League Championship Series
-Title similarity: 62
+[4 rows x 4 columns]
+
+Request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3D2008%2BNational%2BLeague%2BChampionship%2BSeries%2B-%2BPhiladelphia%2BPhillies%2Bvs.%2BLos%2BAngeles%2BDodgers%2Bsite:wikipedia.org&q=EgQ0sncMGOzbgbMGIjA7jCJRlogmeVIVORxWDuxA3UgOVzBYT_vQL2QlrknpJqKpVpHum6bOfsEANYLSclEyAXJaAUM
+Found URL: http://en.wikipedia.org/?curid=13810690, 
+Matched Title: 2008 Philadelphia Phillies season
+Title similarity: 51
 Most similar table (first 4 rows and columns):
-  Game        Date                                              Score            Location
-0    1   October 9  Los Angeles Dodgers – 2, Philadelphia Phillies...  Citizens Bank Park
-1    2  October 10  Los Angeles Dodgers – 5, Philadelphia Phillies...  Citizens Bank Park
-2    3  October 12  Philadelphia Phillies – 2, Los Angeles Dodgers...      Dodger Stadium
-3    4  October 13  Philadelphia Phillies – 7, Los Angeles Dodgers...      Dodger Stadium
+   #        Date   Opponent Score
+0  1   October 9    Dodgers   3–2
+1  2  October 10    Dodgers   8–5
+2  3  October 12  @ Dodgers   2–7
+3  4  October 13  @ Dodgers   7–5
 
-Table similarity: 100
+Table similarity: 46
 
-Overall similarity: 73
+Overall similarity: 49
 
 
 Processing table: List of cities in Connecticut - List of cities in Connecticut
@@ -54,7 +60,9 @@ Actual table (first 4 rows and columns):
 2     Bristol   Hartford     61,353                   1911
 3     Danbury  Fairfield     80,893                   1889
 
-Found URL: http://en.wikipedia.org/?curid=4190024, Matched Title: List of municipalities in Connecticut
+Request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DList%2Bof%2Bcities%2Bin%2BConnecticut%2B-%2BList%2Bof%2Bcities%2Bin%2BConnecticut%2Bsite:wikipedia.org&q=EgQ0sncMGO7bgbMGIjAEllEKwfuZmKpoa1x6etBcNcCysRhioCEQdVnid1ZE6vDHEf42a4LNkOOb5xJydBkyAXJaAUM
+Found URL: http://en.wikipedia.org/?curid=4190024, 
+Matched Title: List of municipalities in Connecticut
 Title similarity: 65
 Most similar table (first 4 rows and columns):
          City     County      Planning region Population (2020)
@@ -77,7 +85,9 @@ Actual table (first 4 rows and columns):
 2      Venezuela    1      0      1
 3         Mexico    0      1      0
 
-Found URL: http://en.wikipedia.org/?curid=10964790, Matched Title: Tennis at the 1999 Pan American Games
+Request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DTennis%2BAt%2BThe%2B1999%2BPan%2BAmerican%2BGames%2Bsite:wikipedia.org&q=EgQ0sncMGPDbgbMGIjDm352i-W62trbAZheNJnRSKpOQfNuWbgjtszsFtxqMpgI4aWH-gXCPsSliAu_kEmIyAXJaAUM
+Found URL: http://en.wikipedia.org/?curid=10964790, 
+Matched Title: Tennis at the 1999 Pan American Games
 Title similarity: 100
 Most similar table (first 4 rows and columns):
   Rank               Nation Gold Silver
@@ -100,7 +110,9 @@ Actual table (first 4 rows and columns):
 2     Cikobia-i-Lau                                          12.46
 3   Dogodogo Island                                           0.19
 
-Found URL: http://en.wikipedia.org/?curid=43395145, Matched Title: List of islands of Fiji
+Request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DList%2Bof%2Bislands%2Bof%2BFiji%2B-%2BVanua%2BLevu%2BGroup%2Bsite:wikipedia.org&q=EgQ0sncMGPDbgbMGIjBzYOOKNtzdl2KM_FjoIrGRyadnUN6Msw-fYNIkNrBYSu9YkRA54hUPaFGnwzEAwzwyAXJaAUM
+Found URL: http://en.wikipedia.org/?curid=43395145, 
+Matched Title: List of islands of Fiji
 Title similarity: 71
 Most similar table (first 4 rows and columns):
              Island Main Town or Capital    Other Towns Area (km2)
@@ -123,7 +135,9 @@ Actual table (first 4 rows and columns):
 2  Part 3  ISO/IEC 11172-3                                      1993              1996
 3  Part 4  ISO/IEC 11172-4                                      1995              2007
 
-Found URL: http://en.wikipedia.org/?curid=20056, Matched Title: MPEG-1
+Request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DMPEG-1%2B-%2BHistory%2Bsite:wikipedia.org&q=EgQ0sncMGPHbgbMGIjA8ZBARbbWDjd9Bgy6XQRRgwVU-HvmbbfJX6SNOV39LGuLgvAw9bkS7Kjj9Zm2waLkyAXJaAUM
+Found URL: http://en.wikipedia.org/?curid=20056, 
+Matched Title: MPEG-1
 Title similarity: 55
 Most similar table (first 4 rows and columns):
      Part           Number First public release date (first edition) latest correction
@@ -146,18 +160,20 @@ Actual table (first 4 rows and columns):
 2    3             Lincoln Bank Tower   312 feet (95 m)                         -
 3    4        Allen County Courthouse   238 feet (73 m)                         -
 
-Found URL: http://en.wikipedia.org/?curid=22131171, Matched Title: List of tallest buildings in Fort Wayne
-Title similarity: 80
+Request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DList%2Bof%2Btallest%2Bbuildings%2Bin%2BFort%2BWayne%2B-%2BTallest%2Bbuildings%2Bsite:wikipedia.org&q=EgQ0sncMGPPbgbMGIjCUqnLuE7myaIrCRnJpkoIrKkp_0NuU8kqymeW0Nl8CXG6KNX95QqsqCofDLU6iN1YyAXJaAUM
+Found URL: http://en.wikipedia.org/?curid=6672698, 
+Matched Title: List of tallest buildings in Detroit
+Title similarity: 67
 Most similar table (first 4 rows and columns):
-  Rank                           Name     Height ft / m Image
-0    1  Indiana Michigan Power Center  442 feet (135 m)   nan
-1    2                     PNC Center  339 feet (103 m)   nan
-2    3             Lincoln Bank Tower   312 feet (95 m)   nan
-3    4        Allen County Courthouse   238 feet (73 m)   nan
+  Rank                                        Name Image Height feet / m
+0    1  Detroit Marriott at the Renaissance Center   nan       727 / 222
+1    2                            Hudson's Detroit   nan       685 / 208
+2    3                         Ally Detroit Center   nan       619 / 189
+3    4                          Penobscot Building   nan       565 / 172
 
-Table similarity: 78
+Table similarity: 49
 
-Overall similarity: 79
+Overall similarity: 61
 
 
 Processing table: 2008 - 09 Manchester City F.C. Season
@@ -169,7 +185,9 @@ Actual table (first 4 rows and columns):
 2  20 Oct 2008  Mf         Alex Pla  Ud Cornellà
 3  20 Oct 2008  Mf  Jorge Guinovart  Ud Cornellà
 
-Found URL: http://en.wikipedia.org/?curid=17370522, Matched Title: 2008–09 Manchester City F.C. season
+Request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3D2008%2B-%2B09%2BManchester%2BCity%2BF.C.%2BSeason%2Bsite:wikipedia.org&q=EgQ0sncMGPTbgbMGIjAG4PcJhlIjT7Q_dNFh0F6iPgos3RBpKVXNEcdXPLNc7IR4NePG6d6f6gazZHEUHjkyAXJaAUM
+Found URL: http://en.wikipedia.org/?curid=17370522, 
+Matched Title: 2008–09 Manchester City F.C. season
 Title similarity: 94
 Most similar table (first 4 rows and columns):
               Date Pos.           Player    From club
@@ -192,7 +210,9 @@ Actual table (first 4 rows and columns):
 2    3    Oct 1  Louisiana State   Loss
 3    4   Oct 14          Georgia    Win
 
-Found URL: http://en.wikipedia.org/?curid=20928682, Matched Title: 1966 Miami Hurricanes football team
+Request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3D1966%2BMiami%2BHurricanes%2BFootball%2BTeam%2Bsite:wikipedia.org&q=EgQ0sncMGPbbgbMGIjCQuzCSi8uEy2m1eP9vzjJA0uhj7_Exm3gFK1Vdu8qydI81dw6OT0DN2McHWjHU7R8yAXJaAUM
+Found URL: http://en.wikipedia.org/?curid=20928682, 
+Matched Title: 1966 Miami Hurricanes football team
 Title similarity: 100
 Most similar table (first 4 rows and columns):
            Date       Opponent Rank                                  Site
@@ -215,7 +235,9 @@ Actual table (first 4 rows and columns):
 2     Maroon 5 featuring Christina Aguilera  "Moves like Jagger"     2011                13.9
 3                         Pharrell Williams              "Happy"     2013                13.9
 
-Found URL: http://en.wikipedia.org/?curid=7577577, Matched Title: List of best-selling singles
+Request failed: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DList%2Bof%2Bbest-selling%2Bsingles%2B-%2B12%25E2%2580%259314.99%2Bmillion%2Bcopies%2Bsite:wikipedia.org&q=EgQ0sncMGPfbgbMGIjBkJANFkS696kJXqKm0ZyxMCHoj5MW5amX50eNAarxVkGkMI0WwUU-qyzQV0zw5KdcyAXJaAUM
+Found URL: http://en.wikipedia.org/?curid=7577577, 
+Matched Title: List of best-selling singles
 Title similarity: 68
 Most similar table (first 4 rows and columns):
                                      Artist               Single Released Sales (in millions)

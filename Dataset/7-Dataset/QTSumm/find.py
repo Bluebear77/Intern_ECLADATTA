@@ -1,5 +1,6 @@
 import subprocess
 import sys
+from urllib.parse import urlparse, parse_qs
 
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
@@ -72,25 +73,7 @@ def search_wikipedia(title):
         logger.info("Failed to decode JSON from response.")
     return "Not found", "No title matched"
 
-def search_google(title):
-    search_url = f"https://www.google.com/search?q={title.replace(' ', '+')}+site:wikipedia.org"
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-    }
-    try:
-        response = requests.get(search_url, headers=headers)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, 'html.parser')
-        for link in soup.find_all('a'):
-            href = link.get('href')
-            if href and 'wikipedia.org' in href:
-                google_url = href.split('&')[0].replace('/url?q=', '')
-                google_url = google_url.split('%')[0]  # Truncate the URL at the first occurrence of '%'
-                google_title = link.get_text()
-                return google_url, google_title
-    except requests.RequestException as e:
-        logger.info(f"Request failed: {e}")
-    return "Not found", "No title matched"
+
 
 def search_combined(title):
     wiki_url, wiki_title = search_wikipedia(title)

@@ -93,12 +93,49 @@ def search_google(title):
         logger.info(f"Request failed: {e}")
     return "Not found", "No title matched"
 
+
+def search_wikipedia(title):
+    base_url = "https://en.wikipedia.org/w/api.php"
+    params = {
+        'action': 'query',
+        'list': 'search',
+        'srsearch': title,
+        'format': 'json'
+    }
+    try:
+        response = requests.get(base_url, params=params)
+        response.raise_for_status()  # This will raise an exception for HTTP errors
+        results = response.json().get('query', {}).get('search', [])
+        if results:
+            # Take the most relevant result
+            top_result = results[0]
+            page_id = top_result['pageid']
+            url = f"http://en.wikipedia.org/?curid={page_id}"
+            return url, top_result['title']
+    except requests.RequestException as e:
+        logger.info(f"Request failed: {e}")
+    except json.JSONDecodeError:
+        logger.info("Failed to decode JSON from response.")
+    return "Not found", "No title matched"
+
+
 def search_combined(title):
+    wiki_url, wiki_title = search_wikipedia(title)
     google_url, google_title = search_google(title)
 
-    if google_title:
+    # Calculate similarity scores
+    if wiki_title and google_title:
+        wiki_score = fuzz.ratio(title, wiki_title)
         google_score = fuzz.ratio(title, google_title)
+
+        if google_score > wiki_score:
+            return google_url, google_title
+        else:
+            return wiki_url, wiki_title
+    elif google_title:
         return google_url, google_title
+    elif wiki_title:
+        return wiki_url, wiki_title
     else:
         return "Not found", "No title matched"
 
@@ -164,7 +201,7 @@ def load_and_process_file(filename):
         logger.info(f"Actual table (first 4 rows and columns):\n{extract_first_4x4(actual_table)}\n")
 
         found_url, matched_title = search_combined(title)
-        logger.info(f"Found URL: {found_url}, Matched Title: {matched_title}")
+        logger.info(f"Found URL: {found_url}, \nMatched Title: {matched_title}")
         
         title_similarity = fuzz.ratio(title.lower(), matched_title.lower()) if found_url != "Not found" else 0.0
         logger.info(f"Title similarity: {title_similarity}")
