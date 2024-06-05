@@ -6,6 +6,12 @@ Source：
 https://huggingface.co/datasets/yale-nlp/QTSumm/tree/main
 
 ***
+
+_qtsumm_dev.json  qtsumm_test.json  qtsumm_train.json_ contains the raw json file of QTSumm dataset.
+
+_qtsumm_dev.csv   qtsumm_test.csv   qtsumm_train.csv_ contains the recovered URL of the QTSumm dataset.
+
+***
 ```
 {
     "example_id": "{example_id_placeholder}",

@@ -20,22 +20,14 @@ for package in required_packages:
     except ImportError:
         install(package)
 
-# Ensure necessary packages are installed
-# pip install lxml
-# pip install tqdm
-# pip install fuzzywuzzy
-# pip install beautifulsoup4
-
 import json
 import pandas as pd
 import requests
 from fuzzywuzzy import fuzz
 from tqdm import tqdm
 from bs4 import BeautifulSoup
-from io import StringIO
+from urllib.parse import urlparse, parse_qs
 import logging
-
-
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(message)s')
@@ -48,29 +40,22 @@ formatter = logging.Formatter('%(message)s')
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
-def search_wikipedia(title):
-    base_url = "https://en.wikipedia.org/w/api.php"
-    params = {
-        'action': 'query',
-        'list': 'search',
-        'srsearch': title,
-        'format': 'json'
-    }
+def get_wikipedia_page_id(url):
     try:
-        response = requests.get(base_url, params=params)
-        response.raise_for_status()  # This will raise an exception for HTTP errors
-        results = response.json().get('query', {}).get('search', [])
-        if results:
-            # Take the most relevant result
-            top_result = results[0]
-            page_id = top_result['pageid']
-            url = f"http://en.wikipedia.org/?curid={page_id}"
-            return url, top_result['title']
+        response = requests.get(url)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.content, 'html.parser')
+        for link in soup.find_all('a', {'title': 'Page information'}):
+            page_info_url = 'https://en.wikipedia.org' + link.get('href')
+            page_info_response = requests.get(page_info_url)
+            page_info_response.raise_for_status()
+            page_info_soup = BeautifulSoup(page_info_response.content, 'html.parser')
+            for tr in page_info_soup.find_all('tr'):
+                if 'Page ID' in tr.text:
+                    return tr.find('td').text.strip()
     except requests.RequestException as e:
         logger.info(f"Request failed: {e}")
-    except json.JSONDecodeError:
-        logger.info("Failed to decode JSON from response.")
-    return "Not found", "No title matched"
+    return None
 
 def search_google(title):
     search_url = f"https://www.google.com/search?q={title.replace(' ', '+')}+site:wikipedia.org"
@@ -84,31 +69,23 @@ def search_google(title):
         for link in soup.find_all('a'):
             href = link.get('href')
             if href and 'wikipedia.org' in href:
-                google_url = href.split('&')[0].replace('/url?q=', '')
-                google_url = google_url.split('%')[0]  # Truncate the URL at the first occurrence of '%'
-                google_title = link.get_text()
-                return google_url, google_title
+                full_url = href.split('&')[0].replace('/url?q=', '')
+                if 'en.wikipedia.org/wiki/' in full_url:
+                    return full_url, link.get_text()
+                page_id = get_wikipedia_page_id(full_url)
+                if page_id:
+                    wiki_url = f"http://en.wikipedia.org/?curid={page_id}"
+                    return wiki_url, link.get_text()
     except requests.RequestException as e:
         logger.info(f"Request failed: {e}")
     return "Not found", "No title matched"
 
 def search_combined(title):
-    wiki_url, wiki_title = search_wikipedia(title)
     google_url, google_title = search_google(title)
 
-    # Calculate similarity scores
-    if wiki_title and google_title:
-        wiki_score = fuzz.ratio(title, wiki_title)
+    if google_title:
         google_score = fuzz.ratio(title, google_title)
-
-        if google_score > wiki_score:
-            return google_url, google_title
-        else:
-            return wiki_url, wiki_title
-    elif google_title:
         return google_url, google_title
-    elif wiki_title:
-        return wiki_url, wiki_title
     else:
         return "Not found", "No title matched"
 
@@ -118,7 +95,7 @@ def fetch_all_wikipedia_tables(url):
         response.raise_for_status()
         soup = BeautifulSoup(response.content, 'html.parser')
         tables = soup.find_all('table', {'class': 'wikitable'})
-        dataframes = [pd.read_html(StringIO(str(table)), flavor='lxml')[0] for table in tables]
+        dataframes = [pd.read_html(str(table))[0] for table in tables]
         return dataframes
     except requests.RequestException as e:
         logger.info(f"Request failed: {e}")
@@ -128,7 +105,7 @@ def fetch_all_wikipedia_tables(url):
 
 def extract_first_4x4(df):
     if not df.empty:
-        df = df.astype(str)  # Ensure all data is string for fair comparison
+        df = df.astype(str)
         return df.iloc[:4, :4].fillna('')
     return pd.DataFrame()
 
@@ -189,7 +166,7 @@ def load_and_process_file(filename):
         
         logger.info(f"Table similarity: {table_similarity}\n")
         
-        overall_similarity = int(0.7 * title_similarity + 0.3 * table_similarity)  # Convert to integer
+        overall_similarity = int(0.7 * title_similarity + 0.3 * table_similarity)
         logger.info(f"Overall similarity: {overall_similarity}\n")
         
         if overall_similarity > highest_overall_similarity:
