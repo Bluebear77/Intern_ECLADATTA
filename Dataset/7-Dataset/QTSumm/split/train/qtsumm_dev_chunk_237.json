@@ -1,0 +1,834 @@
+[
+    {
+        "example_id": "97d6b225-7316-4146-856a-694d78dcdc22",
+        "table": {
+            "header": [
+                "Rank",
+                "Country",
+                "Athletes",
+                "Technical",
+                "Free",
+                "Total"
+            ],
+            "rows": [
+                [
+                    "",
+                    "Russia",
+                    "Elena Azarova, Olga Brusnikina, Anastasia Davydova, Anastasia Ermakova, Elvira Khasyanova, Maria Kiseleva, Olga Novokshchenova, Anna Shorina",
+                    "49.667",
+                    "49.834",
+                    "99.501"
+                ],
+                [
+                    "",
+                    "Japan",
+                    "Michiyo Fujimaru, Saho Harada, Kanako Kitao, Emiko Suzuki, Miya Tachibana, Miho Takeda, Juri Tatsumi, Yoko Yoneda",
+                    "49.167",
+                    "49.334",
+                    "98.501"
+                ],
+                [
+                    "",
+                    "United States",
+                    "Alison Bartosik, Tamara Crow, Erin Dobratz, Rebecca Jasontek, Anna Kozlova, Sara Lowe, Lauren McFall, Stephanie Nesbitt, Kendra Zanotto",
+                    "48.584",
+                    "48.834",
+                    "97.418"
+                ],
+                [
+                    "4",
+                    "Spain",
+                    "Raquel Corral, Andrea Fuentes, Tina Fuentes, Gemma Mengual, Ana Montero, Irina Rodr\u00edguez, Saray Serrano, Paola Tirados",
+                    "48.167",
+                    "48.500",
+                    "96.751"
+                ],
+                [
+                    "5",
+                    "Canada",
+                    "Erin Chan, Jessica Chase, Jessika Dubuc, Marie-Pierre Gagn\u00e9, Fanny L\u00e9tourneau, Shayna Nackoney, Anouk Reniere-Lafreniere, Courtenay Stewart",
+                    "47.584",
+                    "47.667",
+                    "95.251"
+                ],
+                [
+                    "6",
+                    "China",
+                    "Chen Yu, Gu Beibei, He Xiaochu, Hou Yingli, Hu Ni, Li Zhen, Wang Na, Zhang Xiaohuan",
+                    "47.084",
+                    "47.500",
+                    "94.584"
+                ],
+                [
+                    "7",
+                    "Italy",
+                    "Monica Cirulli, Costanza Fiorentini, Joey Paccagnella, Elisa Plaisant, Sara Savoia, Beatrice Spaziani, Lorena Zaffalon, Laura Zanazza",
+                    "46.834",
+                    "47.250",
+                    "94.084"
+                ],
+                [
+                    "8",
+                    "Greece",
+                    "Aglaia Anastasiou, Maria Christodoulou, Eleftheria Ftouli, Eleni Georgiou, Effrosyni Gouda, Apostolia Ioannou, Evgenia Koutsoudi, Olga Pelekanou",
+                    "46.250",
+                    "46.500",
+                    "92.750"
+                ]
+            ],
+            "title": "Synchronized swimming at the 2004 Summer Olympics \u2013 Women's team - Results",
+            "table_id": "412b8690-bfcf-4286-a793-e3330c74ebf4"
+        },
+        "query": "What is the difference between the total points of the top-ranking country (Russia) and the lowest-ranked team (Greece)?",
+        "summary": "Greece total point from Russia total point. In table, Russia get total point 99.501 and Greece have point 92.750. So, different between their point is 99.501 - 92.750 = 6.751 point.",
+        "row_ids": [
+            0,
+            7
+        ]
+    },
+    {
+        "example_id": "48cc0277-417f-4c13-a0d1-d5bb94da5cfa",
+        "table": {
+            "header": [
+                "Year",
+                "Builder serial number",
+                "Quantity",
+                "LSWR numbers",
+                "Notes"
+            ],
+            "rows": [
+                [
+                    "1882",
+                    "Beyer, Peacock & Co. 2167\u20132178",
+                    "12",
+                    "415\u2013426",
+                    ""
+                ],
+                [
+                    "1883",
+                    "Robert Stephenson & Co. 2501\u20132518",
+                    "18",
+                    "427\u2013432, 45, 47\u201357",
+                    ""
+                ],
+                [
+                    "1884",
+                    "D\u00fcbs & Co. 2000\u20132009",
+                    "10",
+                    "169\u2013171, 173, 490\u2013495",
+                    ""
+                ],
+                [
+                    "1885",
+                    "Neilson & Co. 3200\u20133210",
+                    "11",
+                    "479\u2013489",
+                    ""
+                ],
+                [
+                    "1885",
+                    "Robert Stephenson & Co. 2601\u20132610",
+                    "10",
+                    "68, 77\u201378, 82, 104, 106\u2013107, 125\u2013126, 129",
+                    "68, 77\u201378 renumbered 58\u201360 in 1889\u201390"
+                ],
+                [
+                    "1885",
+                    "D\u00fcbs & Co. 2105\u20132114",
+                    "10",
+                    "516\u2013525",
+                    ""
+                ]
+            ],
+            "title": "LSWR 415 class - Construction history",
+            "table_id": "f1d53c63-1430-470f-8e01-be70aefa06a0"
+        },
+        "query": "What can we decipher about the relationship between the builder serial numbers and the LSWR numbers for the year 1885?",
+        "summary": "In 1885, three different company join LSWR 415 class building: Neilson & Co., Robert Stephenson & Co., and D\u00fcbs & Co. The relationship of the builder serial numbers and the LSWR numbers is not same; every company have their own serial numbers for the locomotives they make. For example, Neilson & Co. have serial numbers 3200-3210 for LSWR numbers 479-489, Robert Stephenson & Co. have serial numbers 2601-2610 for LSWR numbers 68, 77-78, 82, 104, 106-107, 125-126, 129 with change number in 1889-90, and D\u00fcbs & Co. have serial numbers 2105-2114 for LSWR numbers 516-525.",
+        "row_ids": [
+            3,
+            4,
+            5
+        ]
+    },
+    {
+        "example_id": "ec0aaaa9-3dba-4f36-b656-781a828b93b4",
+        "table": {
+            "header": [
+                "Rank",
+                "Name",
+                "Club",
+                "Nation",
+                "Points"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Carolina Hermann / Daniel Hermann",
+                    "Ercw",
+                    "Nrw",
+                    "141.48"
+                ],
+                [
+                    "2",
+                    "Tanja Kolbe / Sascha Rabe",
+                    "Btsc",
+                    "Ber",
+                    "140.16"
+                ],
+                [
+                    "3",
+                    "Saskia Brall / Tim Giesen",
+                    "Nsk",
+                    "Nrw",
+                    "126.23"
+                ],
+                [
+                    "4",
+                    "Ashley Foy / Benjamin Blum",
+                    "Tscd",
+                    "Nrw",
+                    "124.51"
+                ],
+                [
+                    "5",
+                    "Ruth - Beatrice Lang / Michael Zenkner",
+                    "Tsva",
+                    "Bay",
+                    "98.53"
+                ],
+                [
+                    "6",
+                    "Carolin Frenzel / Clemens Dialer",
+                    "Tsva / Ercf\u00e3",
+                    "Bay",
+                    "93.96"
+                ]
+            ],
+            "title": "2007 German Figure Skating Championships",
+            "table_id": "a90f89aa-e75a-44b9-a064-6d7bb33d58d1"
+        },
+        "query": "What are the clubs that the skaters belong to?",
+        "summary": "The first place skaters, Carolina Hermann and Daniel Hermann, belong to the club Ercw, located in Nrw. The second place skaters, Tanja Kolbe and Sascha Rabe, are members of the Btsc in Ber. Saskia Brall and Tim Giesen skate for the Nsk in Nrw. Ashley Foy and Benjamin Blum are members of the Tscd in Nrw. Ruth-Beatrice Lang and Michael Zenkner skate for the Tsva club in Bay. The sixth place skaters, Carolin Frenzel and Clemens Dialer, represent Tsva/Ercf\u00e3 from Bay.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    },
+    {
+        "example_id": "723e0121-3a1f-4ad8-bbc5-2f9a8fe9657a",
+        "table": {
+            "header": [
+                "#",
+                "Event",
+                "Date",
+                "Venue",
+                "Location",
+                "Attendance"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Rizin 10 - Fukuoka",
+                    "May 6, 2018",
+                    "Marine Messe Fukuoka",
+                    "Japan Fukuoka, Japan",
+                    "7,910"
+                ],
+                [
+                    "2",
+                    "Rizin 11 - Saitama",
+                    "July 29, 2018",
+                    "Saitama Super Arena",
+                    "Japan Saitama, Japan",
+                    "17,912"
+                ],
+                [
+                    "3",
+                    "Rizin 12 - Aichi - Ken",
+                    "August 12, 2018",
+                    "Aichi Prefectural Gymnasium",
+                    "Japan Nagoya, Japan",
+                    "5,567"
+                ],
+                [
+                    "4",
+                    "Rizin 13 - Saitama",
+                    "September 30, 2018",
+                    "Saitama Super Arena",
+                    "Japan Saitama, Japan",
+                    "27,208"
+                ],
+                [
+                    "5",
+                    "Rizin - Heisei's Last Yarennoka",
+                    "December 31, 2018",
+                    "Saitama Super Arena",
+                    "Japan Saitama, Japan",
+                    "7,498"
+                ],
+                [
+                    "6",
+                    "Rizin 14 - Saitama",
+                    "December 31, 2018",
+                    "Saitama Super Arena",
+                    "Japan Saitama, Japan",
+                    "29,105"
+                ]
+            ],
+            "title": "2018 in Rizin Fighting Federation - List of events",
+            "table_id": "b39a2ec9-ce1c-4ed8-bbc9-37ade8a77786"
+        },
+        "query": "How many events did the Rizin Fighting Federation organize in 2018, and what were the venues of these events?",
+        "summary": "In 2018, Rizin Fighting Federation organize total of six events. Place for these events be at Marine Messe Fukuoka, Saitama Super Arena, Aichi Prefectural Gymnasium, and Saitama Super Arena again for last three events.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    },
+    {
+        "example_id": "31289fa1-80cb-442b-b0e5-896040eb7154",
+        "table": {
+            "header": [
+                "Municipality",
+                "Inhabitants",
+                "Mayor",
+                "Party",
+                "Election"
+            ],
+            "rows": [
+                [
+                    "Trieste",
+                    "205535",
+                    "Roberto Cosolini",
+                    "Democratic Party",
+                    "2011"
+                ],
+                [
+                    "Udine",
+                    "99627",
+                    "Furio Honsell",
+                    "Democratic Party",
+                    "2008"
+                ],
+                [
+                    "Pordenone",
+                    "51723",
+                    "Claudio Pedrotti",
+                    "Democratic Party",
+                    "2011"
+                ],
+                [
+                    "Gorizia",
+                    "35798",
+                    "Ettore Romoli",
+                    "The People Of Freedom",
+                    "2012"
+                ],
+                [
+                    "Monfalcone",
+                    "27877",
+                    "Silvia Altran",
+                    "Democratic Party",
+                    "2011"
+                ],
+                [
+                    "Sacile",
+                    "20227",
+                    "Roberto Ceraolo",
+                    "The People Of Freedom",
+                    "2009"
+                ],
+                [
+                    "Cordenons",
+                    "18470",
+                    "Mario Ongaro",
+                    "Lega Friuli - Vg",
+                    "2011"
+                ],
+                [
+                    "Codroipo",
+                    "15887",
+                    "Fabio Marchetti",
+                    "The People Of Freedom",
+                    "2011"
+                ],
+                [
+                    "Azzano Decimo",
+                    "15601",
+                    "Marco Putto",
+                    "Democratic Party",
+                    "2012"
+                ],
+                [
+                    "Porcia",
+                    "15443",
+                    "Stefano Turchet",
+                    "Lega Friuli - Vg",
+                    "2009"
+                ],
+                [
+                    "San Vito Al Tagliamento",
+                    "15015",
+                    "Antonio Di Bisceglie",
+                    "Democratic Party",
+                    "2011"
+                ]
+            ],
+            "title": "Politics Of Friuli - Venezia Giulia",
+            "table_id": "d8e1bf6d-0d38-46e0-a12b-f9e35ef296c9"
+        },
+        "query": "Summarize the municipalities in Friuli-Venezia Giulia where the mayors are from the Lega Friuli-VG party.",
+        "summary": "Friuli-Venezia Giulia consists of several municipalities, two of which have mayors from the Lega Friuli-VG political party. According to the table, the municipalities of Cordenons and Porcia are particularly diverse with mayors from the Lega Friuli-VG party. Cordenons is home to 18470 inhabitants and its mayor, Mario Ongaro was voted in during the 2011 election. Similarly, 15443 citizens inhabit Porcia where Stefano Turchet was elected as mayor in 2009.",
+        "row_ids": [
+            6,
+            9
+        ]
+    },
+    {
+        "example_id": "16baf030-71ee-423b-975c-183e7203752a",
+        "table": {
+            "header": [
+                "Metropolitan Area",
+                "Media Market Ranking",
+                "Since",
+                "Mlb Team (S)",
+                "Nba Team (S)"
+            ],
+            "rows": [
+                [
+                    "Boston , Massachusetts",
+                    "7",
+                    "1996",
+                    "Red Sox",
+                    "Celtics"
+                ],
+                [
+                    "Chicago , Illinois",
+                    "3",
+                    "1998",
+                    "Cubs White Sox",
+                    "Bulls"
+                ],
+                [
+                    "Dallasfort Worth Metroplex , Texas",
+                    "5",
+                    "1996",
+                    "Rangers ( Arlington , Tx )",
+                    "Mavericks"
+                ],
+                [
+                    "Denver , Colorado",
+                    "16",
+                    "1996",
+                    "Rockies",
+                    "Nuggets"
+                ],
+                [
+                    "New York , New York",
+                    "1",
+                    "1996",
+                    "Mets Yankees",
+                    "Knicks Nets"
+                ],
+                [
+                    "Philadelphia , Pennsylvania",
+                    "4",
+                    "2010",
+                    "Phillies",
+                    "76Ers"
+                ],
+                [
+                    "San Francisco Bay Area , California",
+                    "6",
+                    "2008",
+                    "Giants ( San Francisco , Ca ) Athletics (Oakland)",
+                    "Warriors (Oakland)"
+                ],
+                [
+                    "Washington , Dc",
+                    "9",
+                    "2005",
+                    "Nationals",
+                    "Wizards"
+                ]
+            ],
+            "title": "U.S. Cities With Teams From Four Major League Sports",
+            "table_id": "e41d7e06-6e1f-4611-8aa8-9bc28938fa7a"
+        },
+        "query": "What are the media market rankings for metropolitan areas that have teams from four major league sports?",
+        "summary": "The media market rankings for metropolitan areas that have teams from four major league sports are Boston , Massachusetts at 7, Chicago , Illinois 3, Dallasfort Worth Metroplex , Texas at 5. Denver , Colorado at 16, New York , New York at 1, Philadelphia , Pennsylvania at 4, San Francisco Bay Area , California at 6, and Washington , Dc at 9.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    },
+    {
+        "example_id": "64a8fb17-ed51-45bb-8c63-5f1bffbb1bf5",
+        "table": {
+            "header": [
+                "Venue name",
+                "Metro vicinity",
+                "Location",
+                "Address",
+                "Opened",
+                "Capacity",
+                "Notes"
+            ],
+            "rows": [
+                [
+                    "The Fillmore",
+                    "San Francisco Bay Area",
+                    "Fillmore District",
+                    "1805 Geary Blvd San Francisco, CA 94115-3519",
+                    "1954",
+                    "1,315",
+                    "Known as the \"Elite Club\" during the 1980s"
+                ],
+                [
+                    "Fillmore Auditorium",
+                    "Denver Metro",
+                    "Capitol Hill",
+                    "1510 Clarkson St Denver, CO 80210-2702",
+                    "1999",
+                    "3,900",
+                    "Formerly known as the \"Mammoth Events Center\""
+                ],
+                [
+                    "The Fillmore Detroit",
+                    "Metro Detroit",
+                    "Detroit Theatre District",
+                    "2115 Woodward Ave Detroit, MI 48201-3469",
+                    "2007",
+                    "2,900",
+                    "Formerly known as the \"State Theatre\", and the \"Palms Theatre\""
+                ],
+                [
+                    "The Fillmore Miami Beach",
+                    "Miami metropolitan area",
+                    "City Center",
+                    "1700 Washington Ave Miami Beach, FL 33139-7540",
+                    "2007",
+                    "3,230",
+                    "Historically known as the \"Jackie Gleason Theatre\""
+                ],
+                [
+                    "The Fillmore Charlotte",
+                    "Charlotte metropolitan area",
+                    "AvidxChange Music Factory",
+                    "820 Hamilton St Charlotte, NC 28206-2924",
+                    "2009",
+                    "2,000",
+                    ""
+                ],
+                [
+                    "The Fillmore Silver Spring",
+                    "Washington metropolitan area",
+                    "Downtown Silver Spring",
+                    "8656 Colesville Rd Silver Spring, MD 20910-3915",
+                    "2011",
+                    "2,000",
+                    ""
+                ],
+                [
+                    "The Fillmore Philadelphia",
+                    "Greater Philadelphia",
+                    "Fishtown",
+                    "29 E Allen St Philadelphia, PA 19123-1753",
+                    "2015",
+                    "2,600",
+                    "The smaller venue, \"The Foundry\", seats 400"
+                ]
+            ],
+            "title": "The Fillmore - Locations",
+            "table_id": "9cd83033-f26e-4398-9a24-063d017c0314"
+        },
+        "query": "What is the range of capacity for the Fillmore locations and how does it differ from one area to another?",
+        "summary": "The range of capacity for the Fillmore locations spans from 1,315 to 3,900. The smallest capacity is at the original Fillmore in the San Francisco Bay Area's Fillmore District, which holds 1,315 guests. In contrast, the Fillmore Auditorium in Denver Metro's Capitol Hill neighborhood boasts the largest capacity of 3,900. Other Fillmore locations fall within this range, such as the Fillmore Detroit, Fillmore Miami Beach, Fillmore Charlotte, Fillmore Silver Spring, and Fillmore Philadelphia, with capacities of 2,900, 3,230, 2,000, 2,000, and 2,600 respectively. The differences in capacity across locations highlight the varying sizes of venues within the Fillmore brand, catering to different markets and communities in each metropolitan area.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    },
+    {
+        "example_id": "7959f610-075d-44ee-b0a1-e198857b7fa8",
+        "table": {
+            "header": [
+                "Sport",
+                "Record",
+                "Nation - Athlete (S)",
+                "Date",
+                "Time (Seconds)"
+            ],
+            "rows": [
+                [
+                    "Luge - Men 'S Singles",
+                    "Start",
+                    "Johannes Ludwig - Germany",
+                    "24 January 2010",
+                    "4.285"
+                ],
+                [
+                    "Luge - Men 'S Singles",
+                    "Track",
+                    "Albert Demtschenko - Russia",
+                    "24 January 2010",
+                    "48.282"
+                ],
+                [
+                    "Luge - Women 'S Singles",
+                    "Start",
+                    "Tatjana H\u00fcfner - Germany",
+                    "15 February 2008",
+                    "1.799"
+                ],
+                [
+                    "Luge - Women 'S Singles",
+                    "Track",
+                    "Tatiana Ivanova - Russia",
+                    "23 January 2010",
+                    "42.679"
+                ],
+                [
+                    "Luge - Men 'S Doubles",
+                    "Start",
+                    "Germany - Patric Leitner & Alexander Resch",
+                    "6 December 2008",
+                    "1.698"
+                ],
+                [
+                    "Luge - Men 'S Doubles",
+                    "Track",
+                    "Austria - Andreas Linger & Wolfgang Linger",
+                    "23 January 2010",
+                    "42.172"
+                ]
+            ],
+            "title": "Sigulda Bobsleigh , Luge , And Skeleton Track",
+            "table_id": "874459e2-220a-42d4-9ec0-b2698433e30e"
+        },
+        "query": "Who holds the fastest track time in Men's Doubles Luge? Summarize the basic information of that record.",
+        "summary": "The record for fastest track time in Men's Doubles Luge is held by Andreas Linger and Wolfgang Linger of Austria. The recording was captured on 23 January 2010 with a time of 42.172 seconds.",
+        "row_ids": [
+            5
+        ]
+    },
+    {
+        "example_id": "fbf56d8e-9b31-4f33-8bbb-4f8e22f52a5a",
+        "table": {
+            "header": [
+                "Rank",
+                "Title",
+                "Artist",
+                "Released",
+                "Label(s)",
+                "Digital Downloads"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "\"All I Want for Christmas Is You\"",
+                    "Mariah Carey",
+                    "1994",
+                    "Columbia",
+                    "3,200,000"
+                ],
+                [
+                    "2",
+                    "\"Do You Want to Build a Snowman?\"",
+                    "Kristen Bell, Agatha Lee Monn & Katie Lopez",
+                    "2013",
+                    "Walt Disney",
+                    "1,600,000"
+                ],
+                [
+                    "3",
+                    "\"Christmas Eve/Sarajevo 12/24\"",
+                    "Trans-Siberian Orchestra",
+                    "1996",
+                    "Lava",
+                    "1,300,000"
+                ],
+                [
+                    "4",
+                    "\"Mistletoe\"",
+                    "Justin Bieber",
+                    "2011",
+                    "Island",
+                    "1,100,000"
+                ],
+                [
+                    "5",
+                    "\"Rockin' Around the Christmas Tree\"",
+                    "Brenda Lee",
+                    "1958",
+                    "Decca",
+                    "1,000,000"
+                ],
+                [
+                    "6",
+                    "\"Where Are You Christmas?\"",
+                    "Faith Hill",
+                    "2000",
+                    "Interscope",
+                    "977,000"
+                ],
+                [
+                    "7",
+                    "\"Christmas Canon\"",
+                    "Trans-Siberian Orchestra",
+                    "1998",
+                    "Lava",
+                    "918,000"
+                ],
+                [
+                    "8",
+                    "\"Feliz Navidad\"",
+                    "Jos\u00e9 Feliciano",
+                    "1970",
+                    "RCA",
+                    "808,000"
+                ],
+                [
+                    "9",
+                    "\"Jingle Bell Rock\"",
+                    "Bobby Helms",
+                    "1957",
+                    "Decca",
+                    "780,000"
+                ],
+                [
+                    "10",
+                    "\"Last Christmas\"",
+                    "Wham!",
+                    "1984",
+                    "Columbia",
+                    "751,000"
+                ]
+            ],
+            "title": "List of best-selling Christmas singles in the United States - Best-selling Christmas singles",
+            "table_id": "e9aa8ece-6596-4ab5-a200-7a311eeff410"
+        },
+        "query": "How do the digital downloads of the top three best-selling Christmas singles compare to each other?",
+        "summary": "The digital downloads of the top three best-selling Christmas singles vary quite significantly. Mariah Carey's iconic song \"All I Want for Christmas Is You,\" released in 1994 under Columbia label, takes the number one spot with a substantial lead, having been downloaded an impressive 3,200,000 times. In comparison, Kristen Bell, Agatha Lee Monn & Katie Lopez's \"Do You Want to Build a Snowman?\" from 2013, which was released by Walt Disney, claimed the second place with 1,600,000 digital downloads\u2014exactly half of the downloads of the top track. The third best-selling single, Trans-Siberian Orchestra's \"Christmas Eve/Sarajevo 12/24\" from 1996 under Lava label, trails behind the second-ranking track with 1,300,000 digital downloads, a difference of 300,000 downloads. ",
+        "row_ids": [
+            0,
+            1,
+            2
+        ]
+    },
+    {
+        "example_id": "1a428790-ebda-44ee-8241-08a871d60aa7",
+        "table": {
+            "header": [
+                "Rank",
+                "Lane",
+                "Name",
+                "Nationality",
+                "Time",
+                "Notes"
+            ],
+            "rows": [
+                [
+                    "",
+                    "5",
+                    "Usain Bolt",
+                    "Jamaica (JAM)",
+                    "9.79",
+                    "SB"
+                ],
+                [
+                    "",
+                    "7",
+                    "Justin Gatlin",
+                    "United States (USA)",
+                    "9.80",
+                    ""
+                ],
+                [
+                    "",
+                    "3",
+                    "Trayvon Bromell",
+                    "United States (USA)",
+                    "9.92",
+                    ""
+                ],
+                [
+                    "",
+                    "9",
+                    "Andre De Grasse",
+                    "Canada (CAN)",
+                    "9.92",
+                    "PB"
+                ],
+                [
+                    "5",
+                    "4",
+                    "Mike Rodgers",
+                    "United States (USA)",
+                    "9.94",
+                    ""
+                ],
+                [
+                    "6",
+                    "6",
+                    "Tyson Gay",
+                    "United States (USA)",
+                    "10.00",
+                    ""
+                ],
+                [
+                    "7",
+                    "8",
+                    "Asafa Powell",
+                    "Jamaica (JAM)",
+                    "10.00",
+                    ""
+                ],
+                [
+                    "8",
+                    "1",
+                    "Jimmy Vicaut",
+                    "France (FRA)",
+                    "10.00",
+                    ""
+                ],
+                [
+                    "9",
+                    "2",
+                    "Su Bingtian",
+                    "China (CHN)",
+                    "10.06",
+                    ""
+                ]
+            ],
+            "title": "2015 World Championships in Athletics \u2013 Men's 100 metres - Final",
+            "table_id": "32fb994e-0cf3-4ff2-a2d9-7fabfbbf7dd7"
+        },
+        "query": "What does the 'Notes' column indicate for each runner and how does it contribute to their performance?",
+        "summary": "The 'Notes' column in the table indicates specific information about each runner's performance during the 2015 World Championships in Athletics \u2013 Men's 100 metres final race. For Usain Bolt, the \"SB\" abbreviation stands for a season's best, which means that his time of 9.79 seconds was his best performance in that particular season. In contrast, the \"PB\" abbreviation for Andre De Grasse represents a personal best, signifying that his time of 9.92 seconds was the best time he had ever achieved in his career up to that point. The absence of any notation in the 'Notes' column for the other runners implies that their respective times were neither a season's best nor a personal best, but it still showcases their performance in the race.",
+        "row_ids": [
+            0,
+            3
+        ]
+    }
+]

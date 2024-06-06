@@ -1,0 +1,1411 @@
+[
+    {
+        "example_id": "b4b541d5-7c7a-4812-b32f-0cfab78a05ef",
+        "table": {
+            "header": [
+                "Club",
+                "Sport",
+                "Founded",
+                "League",
+                "Venue",
+                "Avg Attend",
+                "Ref"
+            ],
+            "rows": [
+                [
+                    "Cincinnati Reds",
+                    "Baseball",
+                    "1882",
+                    "Major League Baseball",
+                    "Great American Ball Park",
+                    "23,383",
+                    ""
+                ],
+                [
+                    "Cincinnati Bearcats",
+                    "Football",
+                    "1885",
+                    "NCAA Division I",
+                    "Nippert Stadium",
+                    "33,871",
+                    ""
+                ],
+                [
+                    "Cincinnati Bearcats",
+                    "Basketball",
+                    "1901",
+                    "NCAA Division I",
+                    "Fifth Third Arena",
+                    "9,415",
+                    ""
+                ],
+                [
+                    "Xavier Musketeers",
+                    "Basketball",
+                    "1920",
+                    "NCAA Division I",
+                    "Cintas Center",
+                    "10,281",
+                    ""
+                ],
+                [
+                    "Cincinnati Bengals",
+                    "Football",
+                    "1968",
+                    "National Football League",
+                    "Paul Brown Stadium",
+                    "60,511",
+                    ""
+                ],
+                [
+                    "FC Cincinnati",
+                    "Soccer",
+                    "2015",
+                    "Major League Soccer",
+                    "Nippert Stadium",
+                    "21,199",
+                    ""
+                ]
+            ],
+            "title": "Cincinnati - Sports",
+            "table_id": "5e8a7164-ce29-4141-b032-88fe9473c337"
+        },
+        "query": "How does the year of foundation differ among the various Cincinnati sports clubs listed in the table?",
+        "summary": "Year of foundation very different between Cincinnati sports clubs in table. Cincinnati Reds, which founded in 1882, oldest sports club in city, play Major League Baseball. In contrast, youngest sports club is FC Cincinnati, which established over hundred years later in 2015, compete in Major League Soccer. The other clubs, include Cincinnati Bearcats' football and basketball teams, Xavier Musketeers' basketball team, and Cincinnati Bengals, founded between late 19th century to late 20th century, span over 100 years in Cincinnati sports history.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    },
+    {
+        "example_id": "ef9d0777-6a75-43f1-8a6e-5dcf6cca56bf",
+        "table": {
+            "header": [
+                "Race group",
+                "Population (2000)",
+                "Percentage (2000)",
+                "Population (2010)",
+                "Percentage (2010)",
+                "Numeric change",
+                "Percent change"
+            ],
+            "rows": [
+                [
+                    "American Indian and Alaska native alone",
+                    "51",
+                    "0.58%",
+                    "85",
+                    "0.75%",
+                    "34",
+                    "66.67%"
+                ],
+                [
+                    "Asian alone",
+                    "64",
+                    "0.72%",
+                    "173",
+                    "1.53%",
+                    "109",
+                    "170.31%"
+                ],
+                [
+                    "Black or African American alone",
+                    "569",
+                    "6.44%",
+                    "1,744",
+                    "15.42%",
+                    "1,175",
+                    "206.50%"
+                ],
+                [
+                    "Native Hawaiian and Other Pacific native alone",
+                    "4",
+                    "0.05%",
+                    "18",
+                    "0.16%",
+                    "14",
+                    "350.00%"
+                ],
+                [
+                    "Some other race alone",
+                    "212",
+                    "2.40%",
+                    "881",
+                    "7.79%",
+                    "669",
+                    "315.57%"
+                ],
+                [
+                    "Two or more races",
+                    "252",
+                    "2.85%",
+                    "346",
+                    "3.06%",
+                    "94",
+                    "37.30%"
+                ],
+                [
+                    "White alone",
+                    "7,690",
+                    "86.97%",
+                    "8,066",
+                    "71.30%",
+                    "376",
+                    "4.89%"
+                ]
+            ],
+            "title": "Mango, Florida - Demographics",
+            "table_id": "6b473552-422c-4855-99f0-6be9a598de69"
+        },
+        "query": "How does the percentage change in White population between 2000 and 2010 compare to the percentage changes of other race groups in the same period?",
+        "summary": "Between 2000 and 2010, the percentage change of the White population in Mango, Florida up by 4.89%. Compare to other race groups in same period, this increase relatively small, as the percentage changes for other races much big. For example, the American Indian and Alaska Native population up by 66.67%, the Asian population up by 170.31%, and the Black or African American population up by 206.50%. Also, the Native Hawaiian and Other Pacific Native population had the highest percentage change at 350.00%, next by 315.57% increase for people thought to be some other race, while the population with two or more races up by 37.30%.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    },
+    {
+        "example_id": "5a57a5ec-873f-4f79-9daf-d3a22b04a582",
+        "table": {
+            "header": [
+                "Rank",
+                "Airport",
+                "Location",
+                "Code (IATA/ICAO)",
+                "Rank Change",
+                "Total Cargo (tonnes)",
+                "% Change"
+            ],
+            "rows": [
+                [
+                    "1.",
+                    "Hong Kong Hong Kong International Airport",
+                    "Chek Lap Kok, Islands, New Territories, Hong Kong",
+                    "HKG/VHHH",
+                    "",
+                    "5,049,898",
+                    "9.4%"
+                ],
+                [
+                    "2.",
+                    "United States Memphis International Airport",
+                    "Memphis, Tennessee, United States",
+                    "MEM/KMEM",
+                    "",
+                    "4,336,752",
+                    "0.3%"
+                ],
+                [
+                    "3.",
+                    "China Shanghai Pudong International Airport",
+                    "Pudong, Shanghai, China",
+                    "PVG/ZSPD",
+                    "",
+                    "3,824,280",
+                    "11.2%"
+                ],
+                [
+                    "4.",
+                    "South Korea Incheon International Airport",
+                    "Incheon, Seoul National Capital Area, South Korea",
+                    "ICN/RKSI",
+                    "1",
+                    "2,921,691",
+                    "7.6%"
+                ],
+                [
+                    "5.",
+                    "United States Ted Stevens Anchorage International Airport",
+                    "Anchorage, Alaska, United States",
+                    "ANC/PANC",
+                    "1",
+                    "2,713,230",
+                    "6.7%"
+                ],
+                [
+                    "6.",
+                    "United Arab Emirates Dubai International Airport",
+                    "Dubai, United Arab Emirates",
+                    "DXB/OMDB",
+                    "",
+                    "2,654,494",
+                    "2.40%"
+                ],
+                [
+                    "7.",
+                    "United States Louisville International Airport",
+                    "Louisville, Kentucky, United States",
+                    "SDF/KSDF",
+                    "",
+                    "2,602,695",
+                    "6.80%"
+                ],
+                [
+                    "8.",
+                    "Japan Narita International Airport",
+                    "Narita, Chiba, Kant\u014d, Honsh\u016b, Japan",
+                    "NRT/RJAA",
+                    "2",
+                    "2,336,427",
+                    "7.9%"
+                ],
+                [
+                    "9.",
+                    "Taiwan Taiwan Taoyuan International Airport",
+                    "Dayuan, Taoyuan, Taiwan",
+                    "TPE/RCTP",
+                    "4",
+                    "2,269,585",
+                    "8.2%"
+                ],
+                [
+                    "10.",
+                    "France Charles de Gaulle Airport",
+                    "Seine-et-Marne/Seine-Saint-Denis/Val-d'Oise, \u00cele-de-France, France",
+                    "CDG/LFPG",
+                    "1",
+                    "2,195,229",
+                    "2.8%"
+                ]
+            ],
+            "title": "List of busiest airports by cargo traffic - 2017 statistics",
+            "table_id": "5eefecdf-e667-4d4b-bb6e-30560536782f"
+        },
+        "query": "What are the IATA/ICAO codes for the top ten busiest airports by cargo traffic in 2017 and how many tonnes of cargo they handled during that year?",
+        "summary": "The IATA/ICAO codes for the top ten busiest airports by cargo traffic in 2017 were as follows: Hong Kong International Airport (HKG/VHHH), Memphis International Airport (MEM/KMEM), Shanghai Pudong International Airport (PVG/ZSPD), Incheon International Airport (ICN/RKSI), Ted Stevens Anchorage International Airport (ANC/PANC), Dubai International Airport (DXB/OMDB), Louisville International Airport (SDF/KSDF), Narita International Airport (NRT/RJAA), Taiwan Taoyuan International Airport (TPE/RCTP), and Charles de Gaulle Airport (CDG/LFPG). During this year, these airports handled the following tonnes of cargo: 5,049,898; 4,336,752; 3,824,280; 2,921,691; 2,713,230; 2,654,494; 2,602,695; 2,336,427; 2,269,585; and 2,195,229, respectively. ",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "example_id": "ed2cec79-6d09-4130-87cf-c1f11cb50430",
+        "table": {
+            "header": [
+                "Rank",
+                "Population",
+                "Name",
+                "Former Name",
+                "Municipality"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "17,796",
+                    "Nuuk",
+                    "Godth\u00e5b Godthaab Neu-Herrnhut",
+                    "Sermersooq"
+                ],
+                [
+                    "2",
+                    "5,491",
+                    "Sisimiut",
+                    "Holsteinsborg",
+                    "Qeqqata"
+                ],
+                [
+                    "3",
+                    "4,563",
+                    "Ilulissat",
+                    "Jakobshavn",
+                    "Avannaata"
+                ],
+                [
+                    "4",
+                    "3,120",
+                    "Aasiaat",
+                    "Egedesminde",
+                    "Qeqertalik"
+                ],
+                [
+                    "5",
+                    "3,093",
+                    "Qaqortoq",
+                    "Julianeh\u00e5b Julianehaab",
+                    "Kujalleq"
+                ],
+                [
+                    "6",
+                    "2,534",
+                    "Maniitsoq",
+                    "Nye-Sukkertoppen Sukkertoppen",
+                    "Qeqqata"
+                ],
+                [
+                    "7",
+                    "2,006",
+                    "Tasiilaq",
+                    "Ammassalik Angmagssalik",
+                    "Sermersooq"
+                ],
+                [
+                    "8",
+                    "1,365",
+                    "Narsaq",
+                    "Nordpr\u00f8ven",
+                    "Kujalleq"
+                ],
+                [
+                    "9",
+                    "1,359",
+                    "Uummannaq",
+                    "Omenak",
+                    "Avannaata"
+                ],
+                [
+                    "10",
+                    "1,355",
+                    "Paamiut",
+                    "Frederiksh\u00e5b Frederikshaab",
+                    "Sermersooq"
+                ],
+                [
+                    "11",
+                    "1,236",
+                    "Nanortalik",
+                    "Nennortalik",
+                    "Kujalleq"
+                ],
+                [
+                    "12",
+                    "1,105",
+                    "Qasigiannguit",
+                    "Christiansh\u00e5b Christianshaab",
+                    "Qeqertalik"
+                ],
+                [
+                    "13",
+                    "1,067",
+                    "Upernavik",
+                    "\u2014",
+                    "Avannaata"
+                ]
+            ],
+            "title": "List of cities and towns in Greenland - Towns with a population of more than 1,000",
+            "table_id": "44c3092f-64af-4e2e-8d17-1dc9c674c6b7"
+        },
+        "query": "Which towns have populations of less than 1500 individuals, and what municipalities are they a part of?",
+        "summary": "Town have population fewer than 1500 people have Narsaq, Uummannaq, Paamiut, Nanortalik, Qasigiannguit, and Upernavik. These town part of Kujalleq, Avannaata, Sermersooq, Kujalleq, Qeqertalik, and Avannaata municipality, respect.",
+        "row_ids": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "example_id": "6fff3f09-035a-49dd-8238-ca273e07a9df",
+        "table": {
+            "header": [
+                "Artist",
+                "Single",
+                "Released",
+                "Sales (in millions)",
+                "Source"
+            ],
+            "rows": [
+                [
+                    "Bing Crosby",
+                    "\"White Christmas\"",
+                    "1942",
+                    "50",
+                    ""
+                ],
+                [
+                    "Elton John",
+                    "\"Candle in the Wind 1997\" / \"Something About the Way You Look Tonight\"",
+                    "1997",
+                    "33",
+                    ""
+                ],
+                [
+                    "Mungo Jerry",
+                    "\"In the Summertime\"",
+                    "1970",
+                    "30",
+                    ""
+                ],
+                [
+                    "Bing Crosby",
+                    "\"Silent Night\"",
+                    "1935",
+                    "30",
+                    ""
+                ],
+                [
+                    "Bill Haley & His Comets",
+                    "\"Rock Around the Clock\"",
+                    "1954",
+                    "25",
+                    ""
+                ],
+                [
+                    "Whitney Houston",
+                    "\"I Will Always Love You\"",
+                    "1992",
+                    "20",
+                    ""
+                ],
+                [
+                    "Elvis Presley",
+                    "\"It's Now or Never\"",
+                    "1960",
+                    "20",
+                    ""
+                ],
+                [
+                    "USA for Africa",
+                    "\"We Are the World\"",
+                    "1985",
+                    "20",
+                    ""
+                ],
+                [
+                    "The Ink Spots",
+                    "\"If I Didn't Care\"",
+                    "1939",
+                    "19",
+                    ""
+                ],
+                [
+                    "Baccara",
+                    "\"Yes Sir, I Can Boogie\"",
+                    "1977",
+                    "18",
+                    ""
+                ],
+                [
+                    "Celine Dion",
+                    "\"My Heart Will Go On\"",
+                    "1997",
+                    "18",
+                    ""
+                ],
+                [
+                    "Mariah Carey",
+                    "\"All I Want for Christmas Is You\"",
+                    "1994",
+                    "16",
+                    ""
+                ],
+                [
+                    "Bryan Adams",
+                    "\"(Everything I Do) I Do It for You\"",
+                    "1991",
+                    "15",
+                    ""
+                ],
+                [
+                    "John Travolta and Olivia Newton-John",
+                    "\"You're the One That I Want\"",
+                    "1978",
+                    "15",
+                    ""
+                ]
+            ],
+            "title": "List of best-selling singles - 15 million copies or more",
+            "table_id": "93b3f0ef-0bba-4e3f-9cd0-898d7e36148f"
+        },
+        "query": "Which artist in the list has the highest selling single and how many copies did it sell?",
+        "summary": "\"White Christmas,\" sung by Bing Crosby, is indeed the highest-selling single of all time, with over 50 millions copies sold worldwide.",
+        "row_ids": [
+            0
+        ]
+    },
+    {
+        "example_id": "506eab4d-6253-4814-8116-a0c674260c86",
+        "table": {
+            "header": [
+                "Ethnic group",
+                "2001 population",
+                "2001 %",
+                "2011 population",
+                "2011 %"
+            ],
+            "rows": [
+                [
+                    "White: British",
+                    "517,747",
+                    "95.5",
+                    "522,922",
+                    "92.4"
+                ],
+                [
+                    "White: Irish",
+                    "4,163",
+                    "0.8",
+                    "3,480",
+                    "0.6"
+                ],
+                [
+                    "White: Irish Traveller/Gypsy",
+                    "",
+                    "",
+                    "1,165",
+                    "0.2"
+                ],
+                [
+                    "White: Other",
+                    "6,869",
+                    "1.27",
+                    "14,491",
+                    "2.6"
+                ],
+                [
+                    "White: Total",
+                    "528,779",
+                    "97.5",
+                    "542,058",
+                    "95.7"
+                ],
+                [
+                    "Asian or Asian British: Indian",
+                    "1,640",
+                    "0.3",
+                    "3,634",
+                    "0.6"
+                ],
+                [
+                    "Asian or Asian British: Pakistani",
+                    "2,917",
+                    "0.5",
+                    "4,984",
+                    "0.9"
+                ],
+                [
+                    "Asian or Asian British: Bangladeshi",
+                    "970",
+                    "0.2",
+                    "1,316",
+                    "0.2"
+                ],
+                [
+                    "Asian or Asian British: Chinese",
+                    "1,106",
+                    "0.2",
+                    "1,601",
+                    "0.3"
+                ],
+                [
+                    "Asian or Asian British: Asian Other",
+                    "455",
+                    "0.1",
+                    "2,206",
+                    "0.4"
+                ],
+                [
+                    "Asian or Asian British: Total",
+                    "7,088",
+                    "1.3",
+                    "13,741",
+                    "2.4"
+                ],
+                [
+                    "Black or Black British: Caribbean",
+                    "1,153",
+                    "0.2",
+                    "1,275",
+                    "0.2"
+                ],
+                [
+                    "Black or Black British: African",
+                    "332",
+                    "0.1",
+                    "767",
+                    "0.1"
+                ],
+                [
+                    "Black or Black British: Other",
+                    "153",
+                    "0.03",
+                    "330",
+                    "0.1"
+                ],
+                [
+                    "Black or Black British: Total",
+                    "1,638",
+                    "0.3",
+                    "2,372",
+                    "0.4"
+                ],
+                [
+                    "Mixed: White and Caribbean",
+                    "1,704",
+                    "0.3",
+                    "3,150",
+                    "0.6"
+                ],
+                [
+                    "Mixed: White and African",
+                    "221",
+                    "0.04",
+                    "592",
+                    "0.1"
+                ],
+                [
+                    "Mixed: White and Asian Other",
+                    "1,099",
+                    "0.2",
+                    "2,053",
+                    "0.4"
+                ],
+                [
+                    "Mixed: Other Mixed",
+                    "771",
+                    "0.1",
+                    "1,250",
+                    "0.2"
+                ],
+                [
+                    "British Mixed: Total",
+                    "3,795",
+                    "0.7",
+                    "7,045",
+                    "1.2"
+                ],
+                [
+                    "Other: Arab",
+                    "",
+                    "",
+                    "236",
+                    "0.04"
+                ],
+                [
+                    "Other: Any other ethnic group",
+                    "807",
+                    "0.1",
+                    "717",
+                    "0.1"
+                ],
+                [
+                    "Other: Total",
+                    "807",
+                    "0.1",
+                    "953",
+                    "0.2"
+                ],
+                [
+                    "Total",
+                    "542,107",
+                    "100",
+                    "566,169",
+                    "100"
+                ]
+            ],
+            "title": "Worcestershire - Ethnicity",
+            "table_id": "d74bc728-34b2-4d06-b017-c59189a842a8"
+        },
+        "query": "What percentages did the 'Black or Black British' and 'Other' ethnic groups represent of the total population in Worcestershire for the years 2001 and 2011, and were there any notable changes?",
+        "summary": "In Worcestershire, the 'Black or Black British' ethnic group was 0.3% of the whole population in 2001, and it become 0.4% in 2011, while the 'Other' ethnic group was 0.1% in 2001 and 0.2% in 2011. The change between these years that can be seen is the little more increase in 'Black or Black British' population percentage.",
+        "row_ids": [
+            14,
+            22
+        ]
+    },
+    {
+        "example_id": "c3ef832a-4465-413a-8f49-5e2990bbbbec",
+        "table": {
+            "header": [
+                "Year",
+                "",
+                "Democrat",
+                "Votes",
+                "Pct",
+                "",
+                "Republican",
+                "Votes",
+                "Pct",
+                "",
+                "3rd Party",
+                "Party",
+                "Votes",
+                "Pct",
+                "",
+                "3rd Party",
+                "Party",
+                "Votes",
+                "Pct",
+                ""
+            ],
+            "rows": [
+                [
+                    "1998",
+                    "",
+                    "Richard Stallings",
+                    "77,736",
+                    "44.7%",
+                    "",
+                    "Mike Simpson",
+                    "91,337",
+                    "52.5%",
+                    "",
+                    "Jonathan B. Ratner",
+                    "Natural Law",
+                    "4,854",
+                    "2.8%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    "2000",
+                    "",
+                    "Craig Williams",
+                    "58,265",
+                    "25.9%",
+                    "",
+                    "Mike Simpson (inc.)",
+                    "158,912",
+                    "70.7%",
+                    "",
+                    "Donovan Bramwell",
+                    "Libertarian",
+                    "7,542",
+                    "3.4%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    "2002",
+                    "",
+                    "Edward Kinghorn",
+                    "57,769",
+                    "29.0%",
+                    "",
+                    "Mike Simpson (inc.)",
+                    "135,605",
+                    "68.2%",
+                    "",
+                    "John A. Lewis",
+                    "Libertarian",
+                    "5,508",
+                    "2.8%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    "2004",
+                    "",
+                    "Lin Whitworth",
+                    "80,133",
+                    "29.3%",
+                    "",
+                    "Mike Simpson (inc.)",
+                    "193,704",
+                    "70.7%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    "2006",
+                    "",
+                    "Jim D. Hansen",
+                    "73,441",
+                    "34.4%",
+                    "",
+                    "Mike Simpson (inc.)",
+                    "132,262",
+                    "62.0%",
+                    "",
+                    "Cameron Forth",
+                    "Independent",
+                    "5,113",
+                    "2.4%",
+                    "",
+                    "Travis J. Hedrick",
+                    "Constitution",
+                    "2,516",
+                    "1.2%",
+                    ""
+                ],
+                [
+                    "2008",
+                    "",
+                    "Debbie Holmes",
+                    "83,878",
+                    "28.9%",
+                    "",
+                    "Mike Simpson (inc.)",
+                    "205,777",
+                    "70.9%",
+                    "",
+                    "Gregory Nemitz",
+                    "Write-in",
+                    "612",
+                    "0.2%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    "2010",
+                    "",
+                    "Mike Crawford",
+                    "48,749",
+                    "24.4%",
+                    "",
+                    "Mike Simpson (inc.)",
+                    "137,468",
+                    "68.8%",
+                    "",
+                    "Brian Schad",
+                    "Independent",
+                    "13,500",
+                    "6.8%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    "2012",
+                    "",
+                    "Nicole LeFavour",
+                    "110,847",
+                    "34.8%",
+                    "",
+                    "Mike Simpson (inc.)",
+                    "207,412",
+                    "65.1%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    "2014",
+                    "",
+                    "Richard Stallings",
+                    "82,801",
+                    "38.6%",
+                    "",
+                    "Mike Simpson (inc.)",
+                    "131,492",
+                    "61.4%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            ],
+            "title": "Mike Simpson - Election results",
+            "table_id": "0502a1fb-6f15-401e-a15a-d6fda1e6aa1c"
+        },
+        "query": "Which third party candidates managed to secure the highest percentage of votes in the elections and in which years?",
+        "summary": "In election table for Mike Simpson, 3rd Party candidate who got high percent of vote is Jonathan B. Ratner from Natural Law party in 1998 with 2.8% and John A. Lewis from Libertarian party in 2002 with 2.8%. These two elections are special because they have the high third-party percent than other year.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ]
+    },
+    {
+        "example_id": "fe6e7c37-d5bb-49a3-9306-e1b85d64f7c6",
+        "table": {
+            "header": [
+                "Year",
+                "Champions (number of titles)",
+                "Points",
+                "Runners-up",
+                "Points",
+                "Third place",
+                "Points",
+                "Top goalscorer",
+                "Goals"
+            ],
+            "rows": [
+                [
+                    "2004-05",
+                    "WAPDA (1)",
+                    "74",
+                    "Pakistan Army",
+                    "74",
+                    "Khan Research Laboratories",
+                    "73",
+                    "Pakistan Arif Mehmood (WAPDA)",
+                    "20"
+                ],
+                [
+                    "2005-06",
+                    "Pakistan Army (1)",
+                    "51",
+                    "WAPDA",
+                    "45",
+                    "Khan Research Laboratories",
+                    "41",
+                    "Pakistan Imran Hussain (Pakistan Army)",
+                    "21"
+                ],
+                [
+                    "2006\u201307",
+                    "Pakistan Army (2)",
+                    "49",
+                    "WAPDA (2)",
+                    "44",
+                    "Khan Research Laboratories",
+                    "44",
+                    "Pakistan Arif Mehmood (WAPDA)",
+                    "20"
+                ],
+                [
+                    "2007\u201308",
+                    "WAPDA (2)",
+                    "58",
+                    "Pakistan Army",
+                    "57",
+                    "Khan Research Laboratories",
+                    "53",
+                    "Pakistan Arif Mehmood (WAPDA)",
+                    "21"
+                ],
+                [
+                    "2008\u201309",
+                    "WAPDA (3)",
+                    "54",
+                    "Pakistan Army",
+                    "50",
+                    "Khan Research Laboratories",
+                    "47",
+                    "Pakistan Muhammad Rasool (Khan Research Laboratories)",
+                    "22"
+                ],
+                [
+                    "2009\u201310",
+                    "Khan Research Laboratories (1)",
+                    "60",
+                    "Pakistan Army",
+                    "60",
+                    "WAPDA",
+                    "57",
+                    "Pakistan Arif Mehmood (WAPDA)",
+                    "20"
+                ],
+                [
+                    "2010\u201311",
+                    "WAPDA (4)",
+                    "67",
+                    "Khan Research Laboratories",
+                    "58",
+                    "PIA",
+                    "57",
+                    "Pakistan Arif Mehmood (WAPDA)",
+                    "21"
+                ],
+                [
+                    "2011\u201312",
+                    "Khan Research Laboratories (2)",
+                    "77",
+                    "Afghan",
+                    "57",
+                    "Pakistan Army",
+                    "57",
+                    "Pakistan Jadid Khan Pathan (Afghan)",
+                    "22"
+                ],
+                [
+                    "2012\u201313",
+                    "Khan Research Laboratories (3)",
+                    "71",
+                    "K-Electric",
+                    "62",
+                    "Muslim",
+                    "62",
+                    "Pakistan Kaleemullah Khan (Khan Research Laboratories)",
+                    "35"
+                ],
+                [
+                    "2013\u201314",
+                    "Khan Research Laboratories (4)",
+                    "66",
+                    "K-Electric",
+                    "64",
+                    "WAPDA",
+                    "63",
+                    "Pakistan Kaleemullah Khan (Khan Research Laboratories)",
+                    "18"
+                ],
+                [
+                    "2014\u201315",
+                    "K-Electric (1)",
+                    "48",
+                    "Pakistan Army",
+                    "45",
+                    "Air Force",
+                    "42",
+                    "Pakistan Muhammad Rasool (K-Electric)",
+                    "22"
+                ],
+                [
+                    "2018\u201319",
+                    "Khan Research Laboratories (5)",
+                    "51",
+                    "Air Force",
+                    "51",
+                    "Sui Southern Gas",
+                    "50",
+                    "Pakistan Anser Abbas (Pakistan Army)",
+                    "15"
+                ]
+            ],
+            "title": "List of Pakistan football champions - Pakistan Premier League (2004-present)",
+            "table_id": "bf8f6101-0068-4e65-9b86-86eb8c7609e0"
+        },
+        "query": "Who repeatedly emerged as the top goalscorer from the seasons 2004-05 to 2014-15 and in which seasons were they awarded this distinction?",
+        "summary": "Arif Mehmood and Kaleemullah Khan many times become top goalscorer in Pakistan Premier League seasons from 2004-05 to 2014-15. Arif Mehmood get this honor in seasons 2004-05, 2006-07, 2007-08, 2009-10 and 2010-11, when he play for WAPDA. Kaleemullah Khan get this honor in seasons 2012-13 and 2013-14, when he play for Khan Research Laboratories. Their ability of score goals very important for his team get many titles in this time.",
+        "row_ids": [
+            0,
+            2,
+            3,
+            5,
+            6,
+            8,
+            9
+        ]
+    },
+    {
+        "example_id": "1c9f5649-906e-46f3-a9d0-9056199733d5",
+        "table": {
+            "header": [
+                "Conference",
+                "Nickname",
+                "Founded",
+                "Members",
+                "Sports",
+                "Headquarters",
+                "Map"
+            ],
+            "rows": [
+                [
+                    "America East Conference",
+                    "America East AmEast",
+                    "1979",
+                    "9",
+                    "19",
+                    "Boston, Massachusetts",
+                    "-"
+                ],
+                [
+                    "Atlantic Sun Conference",
+                    "ASUN",
+                    "1978",
+                    "9",
+                    "19",
+                    "Macon, Georgia",
+                    "-"
+                ],
+                [
+                    "Atlantic 10 Conference",
+                    "A-10",
+                    "1975",
+                    "14",
+                    "21",
+                    "Newport News, Virginia",
+                    "-"
+                ],
+                [
+                    "Big East Conference",
+                    "Big East",
+                    "2013",
+                    "10",
+                    "22",
+                    "New York City, New York",
+                    "-"
+                ],
+                [
+                    "Big West Conference",
+                    "Big West BWC",
+                    "1969",
+                    "9",
+                    "18",
+                    "Irvine, California",
+                    "-"
+                ],
+                [
+                    "Coastal Collegiate Sports Association",
+                    "CCSA",
+                    "2008",
+                    "24",
+                    "3",
+                    "Macon, Georgia",
+                    "-"
+                ],
+                [
+                    "Horizon League",
+                    "Horizon",
+                    "1979",
+                    "10",
+                    "19",
+                    "Indianapolis, Indiana",
+                    "-"
+                ],
+                [
+                    "Metro Atlantic Athletic Conference",
+                    "MAAC",
+                    "1980",
+                    "11",
+                    "24",
+                    "Edison, New Jersey",
+                    "-"
+                ],
+                [
+                    "Missouri Valley Conference",
+                    "MVC The Valley",
+                    "1907",
+                    "10",
+                    "17",
+                    "St. Louis, Missouri",
+                    "-"
+                ],
+                [
+                    "Mountain Pacific Sports Federation",
+                    "MPSF",
+                    "1992",
+                    "38",
+                    "10",
+                    "Woodland, California",
+                    "-"
+                ],
+                [
+                    "Summit League",
+                    "The Summit",
+                    "1982",
+                    "9",
+                    "19",
+                    "Sioux Falls, South Dakota",
+                    "-"
+                ],
+                [
+                    "West Coast Conference",
+                    "WCC",
+                    "1952",
+                    "10",
+                    "14",
+                    "San Bruno, California",
+                    "WCC West Coast Conference Map.PNG"
+                ],
+                [
+                    "Western Athletic Conference",
+                    "WAC",
+                    "1962",
+                    "9",
+                    "19",
+                    "Englewood, Colorado",
+                    "-"
+                ]
+            ],
+            "title": "List of NCAA conferences - Non-football, multi-sport conferences",
+            "table_id": "9cd69b44-504e-4729-b0c6-d05aefb1c9c2"
+        },
+        "query": "Which multi-sport conferences have the highest number of members and how do their founding dates, number of sports, and locations of headquarters differ?",
+        "summary": "The Mountain Pacific Sports Federation (MPSF) is multisport conference with many members, 38 total. It founded in 1992.The place of MPSF headquarters is Woodland, California.",
+        "row_ids": [
+            9
+        ]
+    },
+    {
+        "example_id": "ab6ba06e-c79c-4af1-8fba-bd7f966ea814",
+        "table": {
+            "header": [
+                "Draw",
+                "Country",
+                "Artist",
+                "Song",
+                "Language",
+                "Place",
+                "Points"
+            ],
+            "rows": [
+                [
+                    "01",
+                    "Sweden",
+                    "Eliias",
+                    "\"Det \u00e4r dit vi ska\"",
+                    "Swedish",
+                    "9",
+                    "46"
+                ],
+                [
+                    "02",
+                    "Azerbaijan",
+                    "Rustam Karimov",
+                    "\"Me and My Guitar\"",
+                    "Azerbaijani, English",
+                    "7",
+                    "66"
+                ],
+                [
+                    "03",
+                    "Armenia",
+                    "Monica Avanesyan",
+                    "\"Choco Factory\"",
+                    "Armenian, English",
+                    "6",
+                    "69"
+                ],
+                [
+                    "04",
+                    "San Marino",
+                    "Michele Perniola",
+                    "\"O-o-O Sole intorno a me\"",
+                    "Italian",
+                    "10",
+                    "42"
+                ],
+                [
+                    "05",
+                    "Macedonia",
+                    "Barbara Popovi\u0107",
+                    "\"Ohrid i muzika\" (\u041e\u0445\u0440\u0438\u0434 \u0438 \u043c\u0443\u0437\u0438\u043a\u0430)",
+                    "Macedonian",
+                    "12",
+                    "19"
+                ],
+                [
+                    "06",
+                    "Ukraine",
+                    "Sofia Tarasova",
+                    "\"We Are One\"",
+                    "Ukrainian, English",
+                    "2",
+                    "121"
+                ],
+                [
+                    "07",
+                    "Belarus",
+                    "Ilya Volkov",
+                    "\"Poy so mnoy\" (\u041f\u043e\u0439 \u0441\u043e \u043c\u043d\u043e\u0439)",
+                    "Russian",
+                    "3",
+                    "108"
+                ],
+                [
+                    "08",
+                    "Moldova",
+                    "Rafael Bobeica",
+                    "\"Cum s\u0103 fim\"",
+                    "Romanian, English",
+                    "11",
+                    "41"
+                ],
+                [
+                    "09",
+                    "Georgia",
+                    "The Smile Shop",
+                    "\"Give Me Your Smile\"",
+                    "Georgian, English",
+                    "5",
+                    "91"
+                ],
+                [
+                    "10",
+                    "Netherlands",
+                    "Myl\u00e8ne and Rosanne",
+                    "\"Double Me\"",
+                    "Dutch, English",
+                    "8",
+                    "59"
+                ],
+                [
+                    "11",
+                    "Malta",
+                    "Gaia Cauchi",
+                    "\"The Start\"",
+                    "English",
+                    "1",
+                    "130"
+                ],
+                [
+                    "12",
+                    "Russia",
+                    "Dayana Kirillova",
+                    "\"Dream On\"",
+                    "Russian",
+                    "4",
+                    "106"
+                ]
+            ],
+            "title": "Junior Eurovision Song Contest 2013 - Participating countries",
+            "table_id": "884415ac-3d77-46c9-bc64-565510ea8b4d"
+        },
+        "query": "How did the countries that performed songs in English fare compared to others in terms of points received and their final placement?",
+        "summary": "In Junior Eurovision Song Contest 2013, countries singing songs in English usually did good in getting points and their final position. Malta, who perform all in English, got first place, with 130 points. Other countries use English in their song, like Azerbaijan, Armenia, Ukraine, Belarus, Georgia, and Netherlands, all in top ten, with Ukraine and Belarus get second and third places, in order. ",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    }
+]

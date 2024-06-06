@@ -7,7 +7,7 @@ def split_data(data, chunk_size):
         yield data[i:i + chunk_size]
 
 # Path to the input JSON file in the parent directory
-input_file_path = os.path.join('..', 'qtsumm_dev.json')
+input_file_path = os.path.join('..', 'qtsumm_train.json')
 
 # Load the input JSON file
 with open(input_file_path, 'r') as file:

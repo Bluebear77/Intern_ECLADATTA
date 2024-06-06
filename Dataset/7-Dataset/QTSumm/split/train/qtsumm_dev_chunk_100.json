@@ -1,0 +1,957 @@
+[
+    {
+        "example_id": "e77ba6f6-e8b6-4428-bcbf-34634b1600db",
+        "table": {
+            "header": [
+                "Rank",
+                "Company",
+                "Headquarters",
+                "Industry",
+                "Employees",
+                "Reference Date"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Iss",
+                    "Copenhagen , Denmark",
+                    "Facility Management",
+                    "534500",
+                    "2011"
+                ],
+                [
+                    "2",
+                    "Securitas",
+                    "Stockholm , Sweden",
+                    "Security Services",
+                    "272425",
+                    "2011"
+                ],
+                [
+                    "3",
+                    "Nokia",
+                    "Espoo , Finland",
+                    "Technology",
+                    "130050",
+                    "2011"
+                ],
+                [
+                    "4",
+                    "Ap M\u00e3ller - Maersk",
+                    "Copenhagen , Denmark",
+                    "Transportation",
+                    "117080",
+                    "2011"
+                ],
+                [
+                    "5",
+                    "Ericsson",
+                    "Stockholm , Sweden",
+                    "Telecommunication",
+                    "104525",
+                    "2011"
+                ],
+                [
+                    "6",
+                    "Volvo",
+                    "Gothenburg , Sweden",
+                    "Automotive",
+                    "98162",
+                    "2011"
+                ],
+                [
+                    "7",
+                    "H&M",
+                    "Stockholm , Sweden",
+                    "Retailing",
+                    "64874",
+                    "2011"
+                ],
+                [
+                    "8",
+                    "Electrolux",
+                    "Stockholm , Sweden",
+                    "Manufacturing",
+                    "52916",
+                    "2011"
+                ],
+                [
+                    "9",
+                    "Skanska",
+                    "Stockholm , Sweden",
+                    "Construction",
+                    "52557",
+                    "2011"
+                ],
+                [
+                    "10",
+                    "Sandvik",
+                    "Sandviken , Sweden",
+                    "Capital Goods",
+                    "50030",
+                    "2011"
+                ]
+            ],
+            "title": "List Of Largest Nordic Companies",
+            "table_id": "d3ef3940-4fbd-4a5b-baee-93bb6a6f0914"
+        },
+        "query": "Summarize the basic information of the companies in the transportation industry.",
+        "summary": "The company in the transportation industry is Ap M\u00e3ller - Maersk with headquarters in Copenhagen, Denmark, and 117080 employees as of 2011.",
+        "row_ids": [
+            3
+        ]
+    },
+    {
+        "example_id": "11183826-0f04-4ad4-85a7-97cae47a9784",
+        "table": {
+            "header": [
+                "Draw",
+                "Artist",
+                "Song",
+                "Votes",
+                "Place"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Jaanika Vilipo",
+                    "I'M Falling",
+                    "49",
+                    "5"
+                ],
+                [
+                    "2",
+                    "Yvetta Kadakas & Ivo Linna",
+                    "Computer Love",
+                    "14",
+                    "10"
+                ],
+                [
+                    "3",
+                    "Maarja Kivi",
+                    "A Dream",
+                    "38",
+                    "7"
+                ],
+                [
+                    "4",
+                    "Lea Liitmaa & Jaagup Kreem",
+                    "What If I Fell",
+                    "31",
+                    "9"
+                ],
+                [
+                    "5",
+                    "Gerli Padar",
+                    "Need A Little Nothing",
+                    "60",
+                    "3"
+                ],
+                [
+                    "6",
+                    "Hatuna & Riina Riistop",
+                    "This Is (What Luv Can Do)",
+                    "32",
+                    "8"
+                ],
+                [
+                    "7",
+                    "Maarja T\u00e3\u00b5kke",
+                    "I'Ll Never Forget",
+                    "51",
+                    "4"
+                ],
+                [
+                    "8",
+                    "Nightlight Duo & Cowboys",
+                    "Another Country Song",
+                    "65",
+                    "2"
+                ],
+                [
+                    "9",
+                    "Sahlene",
+                    "Runaway",
+                    "85",
+                    "1"
+                ],
+                [
+                    "10",
+                    "Julia Hillens",
+                    "U Can'T",
+                    "39",
+                    "6"
+                ]
+            ],
+            "title": "Estonia In The Eurovision Song Contest 2002",
+            "table_id": "2fa5196d-a1a5-4674-8ede-1a69bbbc7f30"
+        },
+        "query": "Summarize the basic information of the songs that placed in the top three in the Eurovision Song Contest 2002.",
+        "summary": "The top three songs in the Eurovision Song Contest 2002 were \"Runaway\" by Sahlene which won with 85 votes, \"Another Country Song\" by Nightlight Duo & Cowboys which came in second with 65 votes and \"Need A Little Nothing\" by Gerli Padar which claimed third place with 60 votes.",
+        "row_ids": [
+            4,
+            7,
+            8
+        ]
+    },
+    {
+        "example_id": "b8f01237-7ffc-46a3-88f0-2a3d84467d11",
+        "table": {
+            "header": [
+                "Couple",
+                "Score",
+                "Style",
+                "Music",
+                "Result"
+            ],
+            "rows": [
+                [
+                    "Kristi & Mark",
+                    "30 (10 , 10 , 10)",
+                    "Cha - Cha - Cha",
+                    "Dancing On The Ceiling - Lionel Richie",
+                    "Winner"
+                ],
+                [
+                    "Kristi & Mark",
+                    "30 (10 , 10 , 10)",
+                    "Freestyle",
+                    "Workin' Day And Night- Michael Jackson",
+                    "Winner"
+                ],
+                [
+                    "Kristi & Mark",
+                    "30 (10 , 10 , 10)",
+                    "Jive",
+                    "Rip It Up- Little Richard",
+                    "Winner"
+                ],
+                [
+                    "Jason & Edyta",
+                    "24 (8 , 8 , 8)",
+                    "Cha - Cha - Cha",
+                    "Dancing On The Ceiling - Lionel Richie",
+                    "Runner - Up"
+                ],
+                [
+                    "Jason & Edyta",
+                    "27 (9 , 9 , 9)",
+                    "Freestyle",
+                    "Miami - Will Smith",
+                    "Runner - Up"
+                ],
+                [
+                    "Jason & Edyta",
+                    "30 (10 , 10 , 10)",
+                    "Quickstep",
+                    "The Dirty Boogie - The Brian Setzer Orchestra",
+                    "Runner - Up"
+                ],
+                [
+                    "Cristi\u00e1n & Cheryl",
+                    "26 (8 , 9 , 9)",
+                    "Cha - Cha - Cha",
+                    "Dancing On The Ceiling - Lionel Richie",
+                    "Third Place"
+                ],
+                [
+                    "Cristi\u00e1n & Cheryl",
+                    "26 (9 , 8 , 9)",
+                    "Freestyle",
+                    "Suavemente - Elvis Crespo",
+                    "Third Place"
+                ],
+                [
+                    "Cristi\u00e1n & Cheryl",
+                    "N / A",
+                    "Paso Doble",
+                    "La Virgen De La Macarena - Canadian Brass",
+                    "Third Place"
+                ]
+            ],
+            "title": "Dancing With The Stars (U.S. Season 6)",
+            "table_id": "259c4c9a-7706-4a9b-90ab-662e38a406d2"
+        },
+        "query": "Summarize the basic information of the couple(s) who won the competition.",
+        "summary": "Kristi & Mark emerged as the winners of Dancing With The Stars U.S. Season 6. On their way to the top, they achieved perfect scores in all three of their dances (Cha Cha Cha, Freestyle, and Jive). With music selections such as \"Dancing On The Ceiling\" by Lionel Richie, \"Workin' Day And Night\" by Michael Jackson and \"Rip It Up\" by Little Richard.",
+        "row_ids": [
+            0,
+            1,
+            2
+        ]
+    },
+    {
+        "example_id": "50b3683c-574a-488d-a550-5a0ac62b7927",
+        "table": {
+            "header": [
+                "Date",
+                "Opponents",
+                "H / A",
+                "Result F - A",
+                "Attendance"
+            ],
+            "rows": [
+                [
+                    "14 September 1994",
+                    "Ifk G\u00f6teborg",
+                    "H",
+                    "4 - 2",
+                    "33625"
+                ],
+                [
+                    "28 September 1994",
+                    "Galatasaray",
+                    "A",
+                    "0 - 0",
+                    "28605"
+                ],
+                [
+                    "19 October 1994",
+                    "Barcelona",
+                    "H",
+                    "2 - 2",
+                    "40064"
+                ],
+                [
+                    "2 November 1994",
+                    "Barcelona",
+                    "A",
+                    "0 - 4",
+                    "114273"
+                ],
+                [
+                    "23 November 1994",
+                    "Ifk G\u00f6teborg",
+                    "A",
+                    "1 - 3",
+                    "36350"
+                ],
+                [
+                    "7 December 1994",
+                    "Galatasaray",
+                    "H",
+                    "4 - 0",
+                    "39220"
+                ]
+            ],
+            "title": "1994 - 95 Manchester United F.C. Season",
+            "table_id": "31fc40fb-d63e-4931-bdc6-7da6c12c7ac4"
+        },
+        "query": "How many home games did Manchester United F.C. play during the 1994-95 season? Summarize the basic information of these games.",
+        "summary": "Manchester United F.C. played three home games during the 1994-95 season. On 14 September 1994, they played Ifk G\u00f6teborg, resulting in a 4-2 win with an attendance of 33,625. On 19 October 1994, they played Barcelona, resulting in a 2-2 draw with an attendance of 40,064. Lastly, on 7 December 1994, Manchester United F.C. played Galatasaray, resulting in a 4-0 win with an attendance of 39,220.",
+        "row_ids": [
+            0,
+            2,
+            5
+        ]
+    },
+    {
+        "example_id": "42e75a6e-6457-42d0-bbdc-d440edef90a4",
+        "table": {
+            "header": [
+                "Team",
+                "Match",
+                "Points",
+                "Draw",
+                "Lost"
+            ],
+            "rows": [
+                [
+                    "G\u00f3rnik Rybnik",
+                    "14",
+                    "28",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Sparta Wroc\u0142aw",
+                    "14",
+                    "18",
+                    "0",
+                    "5"
+                ],
+                [
+                    "Polonia Bydgoszcz",
+                    "14",
+                    "16",
+                    "0",
+                    "6"
+                ],
+                [
+                    "W\u0142\u00f3kniarz Cz\u0119stochowa",
+                    "14",
+                    "14",
+                    "0",
+                    "7"
+                ],
+                [
+                    "Legia Warszawa",
+                    "14",
+                    "14",
+                    "0",
+                    "7"
+                ],
+                [
+                    "Stal \u015awi\u0119toch\u0142owice",
+                    "14",
+                    "10",
+                    "0",
+                    "9"
+                ],
+                [
+                    "Tramwajarz \u0141\u00f3d\u017a",
+                    "14",
+                    "6",
+                    "0",
+                    "11"
+                ],
+                [
+                    "Kolejarz Rawicz",
+                    "14",
+                    "6",
+                    "0",
+                    "11"
+                ]
+            ],
+            "title": "1957 Team Speedway Polish Championship",
+            "table_id": "635277f3-df54-4878-adfb-65708d326066"
+        },
+        "query": "Who were the top three teams of the 1957 Team Speedway Polish Championship? Summarize the basic information of these teams.",
+        "summary": "The top three teams of the 1957 Team Speedway Polish Championship were G\u00f3rnik Rybnik, Sparta Wroc\u0142aw, and Polonia Bydgoszcz. All three teams had 14 matches and G\u00f3rnik Rybnik came in first with a total of 28 points, with neither draws nor losses. Sparta Wroc\u0142aw came in second place with 18 points, 0 draws and 5 losses. Finally, Polonia Bydgoszcz placed third with 16 points, 0 draws and 6 losses.",
+        "row_ids": [
+            0,
+            1,
+            2
+        ]
+    },
+    {
+        "example_id": "daea73c4-e802-4e7d-b333-5e4d7ed7db13",
+        "table": {
+            "header": [
+                "Year",
+                "# Finishers",
+                "Men's winner",
+                "Time (h:m:s)",
+                "Women's winner",
+                "Time (h:m:s)"
+            ],
+            "rows": [
+                [
+                    "2018",
+                    "4678",
+                    "Robert Chemonges (UGA)",
+                    "2:09:05",
+                    "Abeba-Tekulu Gebremeskel (ETH)",
+                    "2:30:13"
+                ],
+                [
+                    "2017",
+                    "4584",
+                    "Jackson Limo (KEN)",
+                    "2:11:34",
+                    "Monica Jepkoech (KEN)",
+                    "2:26:58"
+                ],
+                [
+                    "2016",
+                    "4752",
+                    "Samuel Mwaniki (KEN)",
+                    "2:11:48",
+                    "Loice Kiptoo (KEN)",
+                    "2:29:13"
+                ],
+                [
+                    "2015",
+                    "4558",
+                    "Gilbert Koech (KEN)",
+                    "2:14:04",
+                    "Brigid Kosgei (KEN)",
+                    "2:47:59"
+                ],
+                [
+                    "2014",
+                    "4042",
+                    "Workneh Fikre (ERI)",
+                    "2:13:10",
+                    "Marta Tigabea (ETH)",
+                    "2:31:54"
+                ],
+                [
+                    "2013",
+                    "2755",
+                    "Joash Mutai (KEN)",
+                    "2:13:04",
+                    "Chaltu Waka (ETH)",
+                    "2:37:47"
+                ],
+                [
+                    "2012",
+                    "1668",
+                    "Anthony Wairuri (KEN)",
+                    "2:12:14",
+                    "Abeba Gebremeskele (ETH)",
+                    "2:39:51"
+                ],
+                [
+                    "2011",
+                    "1545",
+                    "Philemon Baaru (KEN)",
+                    "2:09:51",
+                    "Pauline Chepchumba (KEN)",
+                    "2:41:24"
+                ],
+                [
+                    "2010",
+                    "1180",
+                    "Alex Kirui (KEN)",
+                    "2:14:25",
+                    "Beatrice Toroitich (KEN)",
+                    "2:37:49"
+                ],
+                [
+                    "2009",
+                    "857",
+                    "Johnstone Changwony (KEN)",
+                    "2:13:12",
+                    "Priscah Jeptoo (KEN)",
+                    "2:30:40"
+                ],
+                [
+                    "2008",
+                    "583",
+                    "Samuel Mugo (KEN)",
+                    "2:11:08",
+                    "Tirfi Tsegaye (ETH)",
+                    "2:35:31"
+                ],
+                [
+                    "2007",
+                    "412",
+                    "Edwin Kimutai (KEN)",
+                    "2:15:12",
+                    "Marisa Barros (POR)",
+                    "2:31:31"
+                ],
+                [
+                    "2006",
+                    "373",
+                    "Lawrence Saina (KEN)",
+                    "2:09:52",
+                    "Aureliana Edmundo (POR)",
+                    "2:57:35"
+                ],
+                [
+                    "2005",
+                    "310",
+                    "Ruben Chepkwick (KEN)",
+                    "2:22:27",
+                    "F\u00e1tima Silva (POR)",
+                    "2:45:09"
+                ],
+                [
+                    "2004",
+                    "317",
+                    "Steven Kiprotich (KEN)",
+                    "2:13:57",
+                    "Nat\u00e1lia Pinto (POR)",
+                    "2:58:09"
+                ]
+            ],
+            "title": "Porto Marathon - List of winners",
+            "table_id": "82e1eaf4-5216-4f76-a576-a264c3d1790e"
+        },
+        "query": "Who were the men's and women's winners in the year 2015, and what were their respective times?",
+        "summary": "In 2015, man winner of Porto Marathon was Gilbert Koech from KEN have time 2:14:04, and woman winner was Brigid Kosgei, also from KEN, have time 2:47:59.",
+        "row_ids": [
+            3
+        ]
+    },
+    {
+        "example_id": "d2cee261-7d94-408a-b361-3ac921223d30",
+        "table": {
+            "header": [
+                "Rank",
+                "Lane",
+                "Name",
+                "Nationality",
+                "Time",
+                "Notes"
+            ],
+            "rows": [
+                [
+                    "",
+                    "4",
+                    "Adam Peaty",
+                    "Great Britain",
+                    "57.13",
+                    "WR"
+                ],
+                [
+                    "",
+                    "3",
+                    "Cameron van der Burgh",
+                    "South Africa",
+                    "58.69",
+                    ""
+                ],
+                [
+                    "",
+                    "5",
+                    "Cody Miller",
+                    "United States",
+                    "58.87",
+                    "AM"
+                ],
+                [
+                    "4",
+                    "2",
+                    "Kevin Cordes",
+                    "United States",
+                    "59.22",
+                    ""
+                ],
+                [
+                    "5",
+                    "1",
+                    "Jo\u00e3o Gomes J\u00fanior",
+                    "Brazil",
+                    "59.31",
+                    ""
+                ],
+                [
+                    "6",
+                    "6",
+                    "Yasuhiro Koseki",
+                    "Japan",
+                    "59.37",
+                    ""
+                ],
+                [
+                    "7",
+                    "7",
+                    "Felipe Fran\u00e7a Silva",
+                    "Brazil",
+                    "59.38",
+                    ""
+                ],
+                [
+                    "8",
+                    "8",
+                    "Dmitriy Balandin",
+                    "Kazakhstan",
+                    "59.85",
+                    ""
+                ]
+            ],
+            "title": "Swimming at the 2016 Summer Olympics \u2013 Men's 100 metre breaststroke - Final",
+            "table_id": "367443cd-fd4a-4f1a-83df-5d3392e06068"
+        },
+        "query": "List the names of the athletes who belonged to United States and discuss their rankings and times in the Men's 100 metre breaststroke.",
+        "summary": "In Men's 100 meter breaststroke at 2016 Summer Olympics, two athletes are from United States. They are Cody Miller and Kevin Cordes. Cody Miller gets to third place and finish with time of 58.87 seconds. He sets American record. At the same time, Kevin Cordes get fourth place and his time is 59.22 seconds.",
+        "row_ids": [
+            2,
+            3
+        ]
+    },
+    {
+        "example_id": "9bd5d904-9236-4f91-a976-5f8e9b0720ae",
+        "table": {
+            "header": [
+                "#",
+                "Event",
+                "Entrants",
+                "Winner",
+                "Prize",
+                "Runner-up",
+                "Results"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "\u20ac550 Colossus",
+                    "2,992",
+                    "Tamir Segal",
+                    "\u20ac203,820",
+                    "Wojciech Wyrebski",
+                    "Results"
+                ],
+                [
+                    "2",
+                    "\u20ac1,650 No Limit Hold'em 6-Handed Deepstack",
+                    "221",
+                    "Asi Moshe",
+                    "\u20ac82,280",
+                    "Robert Schulz",
+                    "Results"
+                ],
+                [
+                    "3",
+                    "\u20ac550 Pot Limit Omaha 8-Handed",
+                    "572",
+                    "Hanh Tran",
+                    "\u20ac59,623",
+                    "Oleg Pavlyuchuk",
+                    "Results"
+                ],
+                [
+                    "4",
+                    "\u20ac1,100 No Limit Hold'em Turbo Bounty Hunter",
+                    "387",
+                    "Mykhailo Gutyi",
+                    "\u20ac61,000",
+                    "Florian Sarnow",
+                    "Results"
+                ],
+                [
+                    "5",
+                    "\u20ac1,100 Monster Stack",
+                    "666",
+                    "Timur Margolin",
+                    "\u20ac134,407",
+                    "Raul Villarroel",
+                    "Results"
+                ],
+                [
+                    "6",
+                    "\u20ac1,650 Mixed PLO/NLHE",
+                    "241",
+                    "Norbert Szecsi",
+                    "\u20ac86,956",
+                    "Shaun Deeb",
+                    "Results"
+                ],
+                [
+                    "7",
+                    "\u20ac2,200 Pot Limit Omaha 8-Handed",
+                    "187",
+                    "Anson Tsang",
+                    "\u20ac91,730",
+                    "Ilya Bulychev",
+                    "Results"
+                ],
+                [
+                    "8",
+                    "\u20ac25,500 Super High Roller",
+                    "133",
+                    "Michael Addamo",
+                    "\u20ac848,702",
+                    "Christian Rudolph",
+                    "Results"
+                ],
+                [
+                    "9",
+                    "\u20ac100,000 King's Super High Roller",
+                    "95",
+                    "Martin Kabrhel",
+                    "\u20ac2,624,340",
+                    "David Peters",
+                    "Results"
+                ],
+                [
+                    "10",
+                    "\u20ac10,350 Main Event",
+                    "534",
+                    "Jack Sinclair",
+                    "\u20ac1,122,239",
+                    "Laszlo Bujtas",
+                    "Results"
+                ]
+            ],
+            "title": "2018 World Series of Poker Europe - Event schedule",
+            "table_id": "be6fded7-d41d-469e-99af-360c8137b16e"
+        },
+        "query": "Which event had the lowest number of entrants and who took home the prize for that event?",
+        "summary": "The event with the lowest number of entrants during the 2018 World Series of Poker Europe was the \u20ac100,000 King's Super High Roller, which had 95 entrants. The winner of this event was Martin Kabrhel, who took home the prize of \u20ac2,624,340. ",
+        "row_ids": [
+            8
+        ]
+    },
+    {
+        "example_id": "bc398ad2-05cb-40ce-bbb9-e59f7efcbb7d",
+        "table": {
+            "header": [
+                "Year",
+                "Competition",
+                "Venue",
+                "Position",
+                "Event",
+                "Notes"
+            ],
+            "rows": [
+                [
+                    "2004",
+                    "World Half Marathon Championships",
+                    "New Delhi , India",
+                    "75Th",
+                    "Half Marathon",
+                    "1:16:45"
+                ],
+                [
+                    "2005",
+                    "World Half Marathon Championships",
+                    "Edmonton , Canada",
+                    "72Nd",
+                    "Half Marathon",
+                    "1:13:57"
+                ],
+                [
+                    "2007",
+                    "Games Of The Small States Of Europe",
+                    "Fontvieille , Monaco",
+                    "5Th",
+                    "5000 M",
+                    "15:41.58"
+                ],
+                [
+                    "2007",
+                    "Games Of The Small States Of Europe",
+                    "Fontvieille , Monaco",
+                    "6Th",
+                    "10000 M",
+                    "32:32.81"
+                ],
+                [
+                    "2007",
+                    "World Championships",
+                    "Osaka , Japan",
+                    "47Th",
+                    "Marathon",
+                    "2:33:42"
+                ],
+                [
+                    "2008",
+                    "Olympic Games",
+                    "Beijing , China",
+                    "74Th",
+                    "Marathon",
+                    "2:35:06"
+                ],
+                [
+                    "2009",
+                    "World Half Marathon Championships",
+                    "Birmingham , United Kingdom",
+                    "88Th",
+                    "Half Marathon",
+                    "1:10:28"
+                ],
+                [
+                    "2010",
+                    "European Championships",
+                    "Barcelona , Spain",
+                    "39Th",
+                    "Marathon",
+                    "2:37:14"
+                ],
+                [
+                    "2011",
+                    "Games Of The Small States Of Europe",
+                    "Schaan , Liechtenstein",
+                    "5Th",
+                    "5000 M",
+                    "15:48.15"
+                ],
+                [
+                    "2011",
+                    "Games Of The Small States Of Europe",
+                    "Schaan , Liechtenstein",
+                    "4Th",
+                    "10000 M",
+                    "32:44.74"
+                ],
+                [
+                    "2012",
+                    "Olympic Games",
+                    "London , United Kingdom",
+                    "75Th",
+                    "Marathon",
+                    "2:28:54"
+                ]
+            ],
+            "title": "Marcel Tschopp",
+            "table_id": "01002840-873d-41f7-b0bc-c2b4cb208923"
+        },
+        "query": "Summarize the results of Marcel Tschopp at the 2008 and 2012 Olympic Games.",
+        "summary": "Marcel Tschopp had a relatively consistent performance across the 2008 and 2012 Olympic Games. In 2008, he was positioned 74th in the Marathon event with a time of 2:35:06. Four years later, at the London Olympics in 2012, he was positioned 75th, completing the Marathon in 2:28:54.",
+        "row_ids": [
+            5,
+            10
+        ]
+    },
+    {
+        "example_id": "a888286e-75e2-41f8-870d-31632ce430ec",
+        "table": {
+            "header": [
+                "Unnamed: 0",
+                "Series Sorted",
+                "Title",
+                "Author",
+                "Doctor",
+                "Featuring",
+                "Released"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "6Y / Aa",
+                    "The Nightmare Fair",
+                    "Graham Williams (Adapted By John Ainsworth )",
+                    "6Th",
+                    "Peri , Celestial Toymaker",
+                    "November 2009"
+                ],
+                [
+                    "2",
+                    "6Y / Ab",
+                    "Mission To Magnus",
+                    "Philip Martin",
+                    "6Th",
+                    "Peri , S Ice Warrior , Sil",
+                    "December 2009"
+                ],
+                [
+                    "3",
+                    "6Y / Ac",
+                    "Leviathan",
+                    "Brian Finch (Adapted By Paul Finch )",
+                    "6Th",
+                    "Peri",
+                    "January 2010"
+                ],
+                [
+                    "5",
+                    "6Y / Ae",
+                    "Paradise 5",
+                    "Pj Hammond And Andy Lane",
+                    "6Th",
+                    "Peri",
+                    "March 2010"
+                ],
+                [
+                    "6",
+                    "6Y / Af",
+                    "Point Of Entry",
+                    "Barbara Clegg And Marc Platt",
+                    "6Th",
+                    "Peri",
+                    "April 2010"
+                ],
+                [
+                    "7",
+                    "6Y / Ag",
+                    "The Song Of Megaptera",
+                    "Pat Mills",
+                    "6Th",
+                    "Peri",
+                    "May 2010"
+                ]
+            ],
+            "title": "List Of Doctor Who Audio Plays By Big Finish",
+            "table_id": "70c8b346-cbc6-4260-b1fc-123f0f30dff3"
+        },
+        "query": "Who wrote the audio play Point Of Entry? Summarize the basic information of this audio play.",
+        "summary": "The audio play Point Of Entry was written by Barbara Clegg and Marc Platt. This audio play featured the 6th Doctor. It was released in April 2010 .",
+        "row_ids": [
+            4
+        ]
+    }
+]

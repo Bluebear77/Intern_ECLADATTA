@@ -1,0 +1,1090 @@
+[
+    {
+        "example_id": "e5a28c95-6bf2-424e-a204-f260cd07a8ba",
+        "table": {
+            "header": [
+                "School",
+                "Location",
+                "Enrolment",
+                "Founded",
+                "Denomination",
+                "Day / Boarding",
+                "School Colors"
+            ],
+            "rows": [
+                [
+                    "Iona Presentation College",
+                    "Mosman Park",
+                    "750",
+                    "1907",
+                    "Roman Catholic",
+                    "Day & Boarding",
+                    "Blue & Gold"
+                ],
+                [
+                    "Methodist Ladies' College",
+                    "Claremont",
+                    "1070",
+                    "1907",
+                    "Uniting Church",
+                    "Day & Boarding",
+                    "Green & Gold"
+                ],
+                [
+                    "Penrhos College",
+                    "Como",
+                    "1180",
+                    "1952",
+                    "Uniting Church",
+                    "Day & Boarding",
+                    "Green & Gold"
+                ],
+                [
+                    "Perth College",
+                    "Mt Lawley",
+                    "1000",
+                    "1902",
+                    "Anglican",
+                    "Day & Boarding",
+                    "Navy Blue & White"
+                ],
+                [
+                    "Presbyterian Ladies' College",
+                    "Peppermint Grove",
+                    "1100",
+                    "1915",
+                    "Uniting Church",
+                    "Day & Boarding",
+                    "Green , Navy Blue & White"
+                ],
+                [
+                    "Santa Maria College",
+                    "Attadale",
+                    "812",
+                    "1938",
+                    "Roman Catholic",
+                    "Day & Boarding",
+                    "Green , Red & White"
+                ],
+                [
+                    "St Hilda 'S Anglican School For Girls",
+                    "Mosman Park",
+                    "1052",
+                    "1896",
+                    "Anglican",
+                    "Day & Boarding",
+                    "Blue , Yellow & Grey"
+                ],
+                [
+                    "St Mary 'S Anglican Girls' School",
+                    "Karrinyup",
+                    "1000",
+                    "1921",
+                    "Anglican",
+                    "Day & Boarding",
+                    "Maroon , Navy & White"
+                ]
+            ],
+            "title": "Independent Girls Schools Sports Association (Perth)",
+            "table_id": "92123fc8-6eb8-4b97-b31b-e36612a7eb9c"
+        },
+        "query": "Summarize the basic information of school(s) located in Como and Mt Lawley.",
+        "summary": "The two schools located in Como and Mt Lawley are Penrhos College and Perth College, respectively. Penrhos College is an Uniting Church affiliated school founded in 1952 with 1180 enrolment. The school colors are green and gold and it offers day and boarding options. Meanwhile, Perth College is an Anglican affiliated school founded in 1902 with 1000 enrolment. It has navy blue and white as its school colors, offering both day and boarding options.",
+        "row_ids": [
+            2,
+            3
+        ]
+    },
+    {
+        "example_id": "1cb33995-7398-4376-81e4-77e72ecbda5a",
+        "table": {
+            "header": [
+                "Year",
+                "Stage",
+                "Start point",
+                "Distance (km)",
+                "Stage winner",
+                "Yellow jersey"
+            ],
+            "rows": [
+                [
+                    "2018",
+                    "10",
+                    "Annecy",
+                    "159",
+                    "Julian Alaphilippe (FRA)",
+                    "Greg Van Avermaet (BEL)"
+                ],
+                [
+                    "2013",
+                    "19",
+                    "Le Bourg-d'Oisans",
+                    "204.5",
+                    "Rui Costa (POR)",
+                    "Chris Froome (GBR)"
+                ],
+                [
+                    "2009",
+                    "17",
+                    "Bourg-Saint-Maurice",
+                    "169.5",
+                    "Fr\u00e4nk Schleck (LUX)",
+                    "Alberto Contador (ESP)"
+                ],
+                [
+                    "2007",
+                    "7",
+                    "Bourg-en-Bresse",
+                    "197.5",
+                    "Linus Gerdemann (GER)",
+                    "Linus Gerdemann (GER)"
+                ],
+                [
+                    "2004",
+                    "17",
+                    "Le Bourg-d'Oisans",
+                    "204.5",
+                    "Lance Armstrong (USA)",
+                    "Lance Armstrong (USA)"
+                ]
+            ],
+            "title": "Le Grand-Bornand - Finishes",
+            "table_id": "c56f94fe-e9fe-4bae-b252-643db2e9061b"
+        },
+        "query": "What differences can be found in the start points of the stages and how does this impact the distance of the race?",
+        "summary": "NoneThe begin place of stages in Le Grand-Bornand have changed over the years, with different places like Annecy, Le Bourg-d'Oisans, Bourg-Saint-Maurice, and Bourg-en-Bresse being the start points. This change in begin points also affects the total distance of every stage, from 159 kilometers in 2018 to 204.5 kilometers in 2013 and 2004. ",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    {
+        "example_id": "838bf015-9107-4584-9054-ef6da816e821",
+        "table": {
+            "header": [
+                "Team",
+                "P",
+                "W",
+                "D",
+                "L",
+                "Tries For",
+                "Tries Against",
+                "Try Diff",
+                "Points For",
+                "Points Against",
+                "Points Diff",
+                "Pts"
+            ],
+            "rows": [
+                [
+                    "Brive",
+                    "6",
+                    "5",
+                    "0",
+                    "1",
+                    "35",
+                    "14",
+                    "+ 21",
+                    "241",
+                    "102",
+                    "+ 139",
+                    "10"
+                ],
+                [
+                    "Agen",
+                    "6",
+                    "4",
+                    "0",
+                    "2",
+                    "30",
+                    "11",
+                    "+ 19",
+                    "231",
+                    "93",
+                    "+ 138",
+                    "8"
+                ],
+                [
+                    "Pau",
+                    "6",
+                    "4",
+                    "0",
+                    "2",
+                    "25",
+                    "8",
+                    "+ 17",
+                    "211",
+                    "87",
+                    "+ 124",
+                    "8"
+                ],
+                [
+                    "Biarritz",
+                    "6",
+                    "4",
+                    "0",
+                    "2",
+                    "30",
+                    "14",
+                    "+ 16",
+                    "187",
+                    "124",
+                    "+ 63",
+                    "8"
+                ],
+                [
+                    "Bridgend Rfc",
+                    "6",
+                    "2",
+                    "0",
+                    "4",
+                    "19",
+                    "28",
+                    "9",
+                    "158",
+                    "206",
+                    "48",
+                    "4"
+                ],
+                [
+                    "Dinamo Bucure\u015fti",
+                    "6",
+                    "2",
+                    "0",
+                    "4",
+                    "19",
+                    "31",
+                    "12",
+                    "131",
+                    "246",
+                    "115",
+                    "4"
+                ]
+            ],
+            "title": "1998 - 99 European Challenge Cup Pool Stage",
+            "table_id": "48ae0ddc-1e2f-4f15-97d0-dae6d9c1fcda"
+        },
+        "query": "Summarize the basic information of the teams with more than 8 points in the pool stage.",
+        "summary": "The 1998-99 European Challenge Cup Pool Stage included 6 teams. Of these, only one team had more than 8 points in the pool stage. This was Brive, who had 10 points. Brive won 5 out of their 6 games with only 1 loss, scoring 35 tries and just 14 against them for a try differential of +21. In terms of point scoring, they had 241 scored for them and 102 against them for a differential of +139.",
+        "row_ids": [
+            0
+        ]
+    },
+    {
+        "example_id": "1c25cb12-1238-48cd-94ab-dbce6fb03804",
+        "table": {
+            "header": [
+                "Year",
+                "Country",
+                "Video",
+                "Performer",
+                "Points",
+                "Host city"
+            ],
+            "rows": [
+                [
+                    "2003",
+                    "France",
+                    "\"Fan\"",
+                    "Pascal Obispo",
+                    "122",
+                    "Turkey Istanbul"
+                ],
+                [
+                    "2004",
+                    "Portugal",
+                    "\"Cavaleiro Monge\"",
+                    "Mariza",
+                    "133",
+                    "France Fontainebleau"
+                ],
+                [
+                    "2005",
+                    "Ukraine",
+                    "\"I Will Forget You\"",
+                    "Svetlana Loboda",
+                    "171",
+                    "Portugal Lisbon"
+                ],
+                [
+                    "2006",
+                    "Italy",
+                    "\"Contromano\"",
+                    "Nek",
+                    "106",
+                    "Turkey Izmir"
+                ],
+                [
+                    "2007",
+                    "Russia",
+                    "\"LML\"",
+                    "Via Gra",
+                    "198",
+                    "Italy Florence"
+                ],
+                [
+                    "2008",
+                    "Russia",
+                    "\"Potselui\"",
+                    "Via Gra",
+                    "140",
+                    "Russia Moscow"
+                ],
+                [
+                    "2009",
+                    "Russia",
+                    "\"Karma\"",
+                    "Yin-Yang",
+                    "142",
+                    "Russia Saint Petersburg"
+                ],
+                [
+                    "2010",
+                    "Poland",
+                    "\"Kim tu jestem\"",
+                    "Justyna Steczkowska",
+                    "85",
+                    "Russia Volgograd"
+                ],
+                [
+                    "2011",
+                    "France",
+                    "\"Lonely Lisa\"",
+                    "Myl\u00e8ne Farmer",
+                    "96",
+                    "Poland Wroc\u0142aw"
+                ],
+                [
+                    "2012",
+                    "Italy",
+                    "\"\u00c8 l'amore che conta\"",
+                    "Giorgia",
+                    "135",
+                    "France Paris"
+                ],
+                [
+                    "2013",
+                    "Belgium",
+                    "\"Papaoutai\"",
+                    "Stromae",
+                    "144",
+                    "Italy Turin"
+                ],
+                [
+                    "2014",
+                    "France",
+                    "\"Tourner dans le vide\"",
+                    "Indila",
+                    "141",
+                    "Belgium Brussels"
+                ],
+                [
+                    "2015",
+                    "Germany",
+                    "\"G\u00e4a\"",
+                    "Oonagh",
+                    "122",
+                    "France Paris"
+                ],
+                [
+                    "2016",
+                    "United Kingdom",
+                    "\"Hymn For The Weekend\"",
+                    "Coldplay",
+                    "673",
+                    "Germany L\u00fcneburg"
+                ],
+                [
+                    "2017",
+                    "Belgium",
+                    "\"Mud Blood\"",
+                    "Lo\u00efc Nottet",
+                    "184",
+                    "United Kingdom London"
+                ],
+                [
+                    "2018",
+                    "Czech Republic",
+                    "\"Me Gusta\"",
+                    "Mikolas Josef",
+                    "132",
+                    "Belgium"
+                ]
+            ],
+            "title": "OGAE Video Contest - Winners",
+            "table_id": "4ddb435d-2ca8-47bd-8c20-96f7e3bad1fa"
+        },
+        "query": "In which years did France win the contest and how many points did they receive in each of those years?",
+        "summary": "France won the OGAE Video Contest in 2003,2011 and 2014 with 122,96 and 141 points respectively.",
+        "row_ids": [
+            0,
+            8,
+            11
+        ]
+    },
+    {
+        "example_id": "d7389f8e-833e-4da3-9ce0-2855853df463",
+        "table": {
+            "header": [
+                "Name",
+                "Entity",
+                "Location",
+                "Founded",
+                "Students",
+                "Web address"
+            ],
+            "rows": [
+                [
+                    "University of Sarajevo",
+                    "FBiH",
+                    "Sarajevo",
+                    "1949",
+                    "30,866",
+                    "www.unsa.ba"
+                ],
+                [
+                    "University of Banja Luka",
+                    "RS",
+                    "Banja Luka",
+                    "1975",
+                    "20,000",
+                    "www.unibl.org"
+                ],
+                [
+                    "University of East Sarajevo",
+                    "RS",
+                    "East Sarajevo",
+                    "1992",
+                    "13,000",
+                    "www.unssa.rs.ba"
+                ],
+                [
+                    "University of Mostar",
+                    "FBiH",
+                    "Mostar",
+                    "1977",
+                    "14,000",
+                    "www.sve-mo.ba"
+                ],
+                [
+                    "University of Tuzla",
+                    "FBiH",
+                    "Tuzla",
+                    "1976",
+                    "10,683",
+                    "www.untz.ba"
+                ],
+                [
+                    "University of Zenica",
+                    "FBiH",
+                    "Zenica",
+                    "2000",
+                    "6,000",
+                    "www.unze.ba"
+                ],
+                [
+                    "University of Biha\u0107",
+                    "FBiH",
+                    "Biha\u0107",
+                    "1997",
+                    "4,881",
+                    "www.unbi.ba"
+                ],
+                [
+                    "University D\u017eemal Bijedi\u0107 of Mostar",
+                    "FBiH",
+                    "Mostar",
+                    "1993",
+                    "2,552",
+                    "www.unmo.ba"
+                ]
+            ],
+            "title": "List of universities in Bosnia and Herzegovina - Public",
+            "table_id": "f44d3631-a248-43c5-88c0-8836ec26b348"
+        },
+        "query": "How many universities stated in the given list are located in Mostar and what are their respective founding years?",
+        "summary": "There be two unversity locat in Mostar, name is University of Mostar, found in 1977, and other one is University Dzemal Bijedic of Mostar, found in 1993.",
+        "row_ids": [
+            3,
+            7
+        ]
+    },
+    {
+        "example_id": "4fc9755a-0c08-4ad7-9acc-c7cc0428893f",
+        "table": {
+            "header": [
+                "County",
+                "Clinton",
+                "Votes",
+                "Trump",
+                "Votes",
+                "Others",
+                "Votes",
+                "Total"
+            ],
+            "rows": [
+                [
+                    "Addison",
+                    "59.0%",
+                    "11,219",
+                    "27.8%",
+                    "5,297",
+                    "13.2%",
+                    "2,515",
+                    "19,031"
+                ],
+                [
+                    "Bennington",
+                    "54.9%",
+                    "9,539",
+                    "34.1%",
+                    "5,925",
+                    "11.0%",
+                    "1,917",
+                    "17,381"
+                ],
+                [
+                    "Caledonia",
+                    "45.8%",
+                    "6,445",
+                    "39.3%",
+                    "5,534",
+                    "14.9%",
+                    "2,095",
+                    "14,074"
+                ],
+                [
+                    "Chittenden",
+                    "65.7%",
+                    "54,814",
+                    "22.3%",
+                    "18,601",
+                    "12.0%",
+                    "10,001",
+                    "83,416"
+                ],
+                [
+                    "Essex",
+                    "34.8%",
+                    "1,019",
+                    "51.5%",
+                    "1,506",
+                    "13.7%",
+                    "400",
+                    "2,925"
+                ],
+                [
+                    "Franklin",
+                    "43.7%",
+                    "9,351",
+                    "40.9%",
+                    "8,752",
+                    "15.5%",
+                    "3,308",
+                    "21,411"
+                ],
+                [
+                    "Grand Isle",
+                    "51.0%",
+                    "2,094",
+                    "36.2%",
+                    "1,487",
+                    "12.9%",
+                    "528",
+                    "4,109"
+                ],
+                [
+                    "Lamoille",
+                    "56.7%",
+                    "7,241",
+                    "28.0%",
+                    "3,570",
+                    "15.3%",
+                    "1,951",
+                    "12,762"
+                ],
+                [
+                    "Orange",
+                    "51.5%",
+                    "7,541",
+                    "34.2%",
+                    "5,007",
+                    "14.3%",
+                    "2,101",
+                    "14,649"
+                ],
+                [
+                    "Orleans",
+                    "43.0%",
+                    "5,185",
+                    "42.8%",
+                    "5,159",
+                    "14.1%",
+                    "1,702",
+                    "12,046"
+                ],
+                [
+                    "Rutland",
+                    "46.0%",
+                    "13,635",
+                    "42.1%",
+                    "12,479",
+                    "11.8%",
+                    "3,501",
+                    "29,615"
+                ],
+                [
+                    "Washington",
+                    "59.8%",
+                    "18,594",
+                    "25.7%",
+                    "7,993",
+                    "14.5%",
+                    "4,499",
+                    "31,086"
+                ],
+                [
+                    "Windham",
+                    "63.4%",
+                    "14,340",
+                    "24.1%",
+                    "5,454",
+                    "12.6%",
+                    "2,840",
+                    "22,634"
+                ],
+                [
+                    "Windsor",
+                    "58.7%",
+                    "17,556",
+                    "28.8%",
+                    "6,805",
+                    "12.6%",
+                    "3,767",
+                    "28,128"
+                ]
+            ],
+            "title": "2016 United States presidential election in Vermont - Results by County",
+            "table_id": "57f32bad-aa3b-4222-bdb3-dfa72a75422d"
+        },
+        "query": "How does the number of votes received by Clinton in Chittenden County compare with her votes received in Essex County?",
+        "summary": "In 2016 United States president election, Clinton got more votes in Chittenden County than Essex County. In Chittenden County, she get 54,814 votes. But in Essex County, Clinton get only 1,019 votes .",
+        "row_ids": [
+            3,
+            4
+        ]
+    },
+    {
+        "example_id": "5264e74c-cb6a-4558-abaf-642393d47773",
+        "table": {
+            "header": [
+                "Artist",
+                "Single",
+                "Released",
+                "Sales (in millions)",
+                "Source"
+            ],
+            "rows": [
+                [
+                    "Bing Crosby",
+                    "\"White Christmas\"",
+                    "1942",
+                    "50",
+                    ""
+                ],
+                [
+                    "Elton John",
+                    "\"Candle in the Wind 1997\" / \"Something About the Way You Look Tonight\"",
+                    "1997",
+                    "33",
+                    ""
+                ],
+                [
+                    "Mungo Jerry",
+                    "\"In the Summertime\"",
+                    "1970",
+                    "30",
+                    ""
+                ],
+                [
+                    "Bing Crosby",
+                    "\"Silent Night\"",
+                    "1935",
+                    "30",
+                    ""
+                ],
+                [
+                    "Bill Haley & His Comets",
+                    "\"Rock Around the Clock\"",
+                    "1954",
+                    "25",
+                    ""
+                ],
+                [
+                    "Whitney Houston",
+                    "\"I Will Always Love You\"",
+                    "1992",
+                    "20",
+                    ""
+                ],
+                [
+                    "Elvis Presley",
+                    "\"It's Now or Never\"",
+                    "1960",
+                    "20",
+                    ""
+                ],
+                [
+                    "USA for Africa",
+                    "\"We Are the World\"",
+                    "1985",
+                    "20",
+                    ""
+                ],
+                [
+                    "The Ink Spots",
+                    "\"If I Didn't Care\"",
+                    "1939",
+                    "19",
+                    ""
+                ],
+                [
+                    "Baccara",
+                    "\"Yes Sir, I Can Boogie\"",
+                    "1977",
+                    "18",
+                    ""
+                ],
+                [
+                    "Celine Dion",
+                    "\"My Heart Will Go On\"",
+                    "1997",
+                    "18",
+                    ""
+                ],
+                [
+                    "Mariah Carey",
+                    "\"All I Want for Christmas Is You\"",
+                    "1994",
+                    "16",
+                    ""
+                ],
+                [
+                    "Bryan Adams",
+                    "\"(Everything I Do) I Do It for You\"",
+                    "1991",
+                    "15",
+                    ""
+                ],
+                [
+                    "John Travolta and Olivia Newton-John",
+                    "\"You're the One That I Want\"",
+                    "1978",
+                    "15",
+                    ""
+                ]
+            ],
+            "title": "List of best-selling singles - 15 million copies or more",
+            "table_id": "10740192-823c-4f3c-9a29-513cf8d341fb"
+        },
+        "query": "Between Bing Crosby and Elton John, who has the highest overall sales from their singles included in the table?",
+        "summary": "Between Bing Crosby and Elton John, Bing Crosby has the highest overall sales from their singles included in the table. Bing Crosby's \"White Christmas\" sold 50 million copies, and his \"Silent Night\" sold 30 million copies, bringing his total to 80 million. In comparison, Elton John's \"Candle in the Wind 1997\" / \"Something About the Way You Look Tonight\" had 33 million sales, which makes Bing Crosby's sales significantly higher.",
+        "row_ids": [
+            0,
+            1,
+            3
+        ]
+    },
+    {
+        "example_id": "3453cd66-40a8-4062-85a0-e76f2ffdd9ba",
+        "table": {
+            "header": [
+                "Rank",
+                "All - Time Rank",
+                "Name",
+                "Debut Year",
+                "Current Club",
+                "Apps"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "2",
+                    "Javier Zanetti",
+                    "1995",
+                    "Inter",
+                    "603"
+                ],
+                [
+                    "2",
+                    "6",
+                    "Francesco Totti",
+                    "1992",
+                    "Roma",
+                    "543"
+                ],
+                [
+                    "3",
+                    "13",
+                    "Gianluigi Buffon",
+                    "1995",
+                    "Juventus",
+                    "498"
+                ],
+                [
+                    "4",
+                    "27",
+                    "Andrea Pirlo",
+                    "1994",
+                    "Juventus",
+                    "453"
+                ],
+                [
+                    "5",
+                    "33",
+                    "Alberto Gilardino",
+                    "1999",
+                    "Genoa",
+                    "425"
+                ],
+                [
+                    "6",
+                    "86",
+                    "Massimo Ambrosini",
+                    "1995",
+                    "Fiorentina",
+                    "378"
+                ],
+                [
+                    "7",
+                    "101",
+                    "Antonio Di Natale",
+                    "2002",
+                    "Udinese",
+                    "368"
+                ],
+                [
+                    "8",
+                    "118",
+                    "Morgan De Sanctis",
+                    "1998",
+                    "Roma",
+                    "355"
+                ],
+                [
+                    "9",
+                    "N / A",
+                    "Cristian Zaccardo",
+                    "2001",
+                    "Milan",
+                    "345"
+                ],
+                [
+                    "10",
+                    "N / A",
+                    "David Pizarro",
+                    "1999",
+                    "Fiorentina",
+                    "335"
+                ]
+            ],
+            "title": "Football Records In Italy",
+            "table_id": "25a94d81-7b87-457d-b6f6-632d4de045f0"
+        },
+        "query": "Summarize the football players who have debuted in Italy before 2000.",
+        "summary": "The football players who debuted in Italy before 2000 include Javier Zanetti, Francesco Totti, Gianluigi Buffon, Andrea Pirlo, Alberto Gilardino, Massimo Ambrosini, Morgan De Sanctis and David Pizarro. They are all well-known figures in the Italian league, with Javier Zanetti holding the highest ranking amongst them at second nationally. His career has spanned over 603 appearances for Inter, making him second in total appearances for any one club internationally. Francesco Totti and Gianluigi Buffon follows closely behind him having made 543 and 498 appearances respectively since their debut. Andrea Pirlo has made 453 appearances whilst Alberto Gilardino appears 425 times. The other entrants in this list include Massimo Ambrosini (378), Morgan de Sanctis (355) David Pizarro (335).",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            9
+        ]
+    },
+    {
+        "example_id": "fc8886c7-c3c8-47f3-872f-393e8b1a782a",
+        "table": {
+            "header": [
+                "Pitcher",
+                "Strikeouts",
+                "Season",
+                "Team",
+                "League",
+                "Overall Rank"
+            ],
+            "rows": [
+                [
+                    "Matt Kilroy",
+                    "513",
+                    "1886",
+                    "Baltimore Orioles",
+                    "AA",
+                    "1"
+                ],
+                [
+                    "Toad Ramsey",
+                    "499",
+                    "1886",
+                    "Louisville Colonels",
+                    "AA",
+                    "2"
+                ],
+                [
+                    "Hugh Daily",
+                    "483",
+                    "1884",
+                    "Chicago Browns/Pittsburgh Stogies/Washington Nationals",
+                    "UA",
+                    "3"
+                ],
+                [
+                    "Dupee Shaw",
+                    "451",
+                    "1884",
+                    "Detroit Wolverines/Boston Reds",
+                    "NL/UA",
+                    "4"
+                ],
+                [
+                    "Old Hoss Radbourn",
+                    "441",
+                    "1884",
+                    "Providence Grays",
+                    "NL",
+                    "5"
+                ],
+                [
+                    "Charlie Buffington",
+                    "417",
+                    "1884",
+                    "Boston Beaneaters",
+                    "Da",
+                    "6"
+                ],
+                [
+                    "Guy Hecker",
+                    "385",
+                    "1884",
+                    "Louisville Eclipse",
+                    "AA",
+                    "7"
+                ],
+                [
+                    "Nolan Ryan",
+                    "383",
+                    "1973",
+                    "California Angels",
+                    "AL",
+                    "8"
+                ],
+                [
+                    "Sandy Koufax",
+                    "382",
+                    "1965",
+                    "Los Angeles Dodgers",
+                    "NL",
+                    "9"
+                ],
+                [
+                    "Bill Sweeney",
+                    "374",
+                    "1884",
+                    "Baltimore Monumentals",
+                    "UA",
+                    "10"
+                ]
+            ],
+            "title": "Strikeout - Pitchers",
+            "table_id": "7c7afcca-58c3-4000-99e4-4beaa36634f8"
+        },
+        "query": "With which team did Nolan Ryan play in the 1973 season and how many strikeouts did he achieve in that season?",
+        "summary": "Nolan Ryan play for California Angels in 1973 season and he achieve 383 strikeouts.",
+        "row_ids": [
+            7
+        ]
+    },
+    {
+        "example_id": "13eb2fc3-e985-4f1a-84eb-20026827c5d0",
+        "table": {
+            "header": [
+                "Country",
+                "Total",
+                "4000Ft +",
+                "3500 - 4000Ft",
+                "3000 - 3500Ft",
+                "2500 - 3000Ft",
+                "2000 - 2500Ft"
+            ],
+            "rows": [
+                [
+                    "Scotland",
+                    "82",
+                    "2",
+                    "21",
+                    "31",
+                    "21",
+                    "7"
+                ],
+                [
+                    "Ireland",
+                    "24",
+                    "0",
+                    "0",
+                    "4",
+                    "8",
+                    "12"
+                ],
+                [
+                    "Wales",
+                    "7",
+                    "0",
+                    "1",
+                    "2",
+                    "4",
+                    "0"
+                ],
+                [
+                    "England",
+                    "4",
+                    "0",
+                    "0",
+                    "3",
+                    "1",
+                    "0"
+                ],
+                [
+                    "Northern Ireland",
+                    "1",
+                    "0",
+                    "0",
+                    "0",
+                    "1",
+                    "0"
+                ],
+                [
+                    "Isle Of Man",
+                    "1",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "1"
+                ]
+            ],
+            "title": "List Of Mountains Of The British Isles By Relative Height",
+            "table_id": "57ef24b5-efab-488c-8719-c091a7e8e5a8"
+        },
+        "query": "How many mountains in the British Isles are higher than 3500ft?",
+        "summary": "The table shows that there are a total of 2 mountains higher than 3500ft across the British Isles. These two mountains are located in Scotland and Wales respectively. In Scotland, there are a total of 21 mountains between 3500 and 4000ft and 2 mountains are higher than 4000ft, while in Wales, there is only one mountain higher than 3500ft.",
+        "row_ids": [
+            0,
+            2
+        ]
+    }
+]

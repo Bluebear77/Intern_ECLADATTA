@@ -1,0 +1,1362 @@
+[
+    {
+        "example_id": "c8434482-0217-4ecd-bf9c-c95cdd2ef2a0",
+        "table": {
+            "header": [
+                "Date",
+                "Opponent",
+                "Venue",
+                "Result",
+                "Attendance",
+                "Competition",
+                "Man Of The Match"
+            ],
+            "rows": [
+                [
+                    "1St",
+                    "Milton Keynes Lightning",
+                    "Home",
+                    "Won 5 - 4",
+                    "1336",
+                    "League",
+                    "Terry Miles"
+                ],
+                [
+                    "8Th",
+                    "Bracknell Bees",
+                    "Away",
+                    "Won 4 - 3 (Ot)",
+                    "N / A",
+                    "League",
+                    "Ollie Bronnimann"
+                ],
+                [
+                    "14Th",
+                    "Peterborough Phantoms",
+                    "Away",
+                    "Won 4 - 2",
+                    "493",
+                    "League",
+                    "N / A"
+                ],
+                [
+                    "15Th",
+                    "Slough Jets",
+                    "Home",
+                    "Lost 3 - 2",
+                    "1634",
+                    "League",
+                    "Joe Watkins"
+                ],
+                [
+                    "19Th",
+                    "Slough Jets",
+                    "Home",
+                    "Drawn 1 - 1",
+                    "2057",
+                    "Cup Semi - Final (1St Leg)",
+                    "David Savage"
+                ],
+                [
+                    "21St",
+                    "Peterborough Phantoms",
+                    "Home",
+                    "Won 5 - 3",
+                    "1551",
+                    "League",
+                    "Ben Austin"
+                ],
+                [
+                    "22Nd",
+                    "Sheffield Scimitars",
+                    "Away",
+                    "Lost 5 - 4",
+                    "627",
+                    "League",
+                    "N / A"
+                ],
+                [
+                    "25Th",
+                    "Slough Jets",
+                    "Away",
+                    "Won 4 - 2",
+                    "702",
+                    "Cup Semi - Final (2Nd Leg)",
+                    "N / A"
+                ],
+                [
+                    "28Th",
+                    "Wightlink Raiders",
+                    "Away",
+                    "Lost 3 - 2 (So)",
+                    "582",
+                    "League",
+                    "Stuart Potts"
+                ]
+            ],
+            "title": "2008 - 09 Guildford Flames Season",
+            "table_id": "2946bef6-461f-4417-a3cf-1fe80eed147f"
+        },
+        "query": "Summarize the basic information of the game(s) that had an attendance higher than 1500.",
+        "summary": "The games that had an attendance higher than 1500 included the 1st of the 15th game against Slough Jets, in which Guildford Flames lost 3 - 2 at home with an attendance of 1634; the 19th game against Slough Jets, which ended in a draw with a score of 1 - 1 and an attendance of 2057. This last game was on the 21st between Peterborough Phantoms and Guildford Flames in which the Flames won 5 - 3 with an attendance of 1551.",
+        "row_ids": [
+            3,
+            4,
+            5
+        ]
+    },
+    {
+        "example_id": "fb386cb8-740c-44de-b762-c232fef575d8",
+        "table": {
+            "header": [
+                "Place",
+                "Artist",
+                "Song",
+                "Songwriter",
+                "Arranger",
+                "Total Points (out of 100)"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Lorenzo Antonio Y Su Grupo",
+                    "Vamos A Jugar",
+                    "Lorenzo Antonio",
+                    "Julio Jaramillo",
+                    "98"
+                ],
+                [
+                    "2",
+                    "Katy",
+                    "La Risa De Las Vocales",
+                    "Tirzo Paiz",
+                    "Gustavo A. Santiago",
+                    "92"
+                ],
+                [
+                    "2",
+                    "Byanka Y Malessa",
+                    "Igual Que El Universo",
+                    "Rosalia S\u00e1nchez A.",
+                    "Julio Jaramillo",
+                    "92"
+                ],
+                [
+                    "3",
+                    "Grupo \u00c1baco",
+                    "El Combate",
+                    "Ma. Eugenia De Esesarte",
+                    "Julio Jaramillo",
+                    "90"
+                ],
+                [
+                    "4",
+                    "Las Vicu\u00f1itas",
+                    "Fiesta En Mi Pueblo",
+                    "Sergio Andrade",
+                    "Sergio Andrade",
+                    "83"
+                ],
+                [
+                    "4",
+                    "Grupo Aventura",
+                    "Vamos A Mi Fiesta",
+                    "Jos\u00e9 A. Garay",
+                    "Julio Jaramillo",
+                    "83"
+                ],
+                [
+                    "5",
+                    "Yvette Y Monique",
+                    "Rock And Roll",
+                    "Francisco Curiel",
+                    "Julio Jaramillo",
+                    "82"
+                ],
+                [
+                    "5",
+                    "Sara Eugenia",
+                    "Si Yo Fuera Presidente",
+                    "Pedro Krishmar e Ignacio Copani",
+                    "Jorge Neri",
+                    "82"
+                ],
+                [
+                    "6",
+                    "Lolita Cortes",
+                    "Don Quijote Y Sancho Panza",
+                    "Martha Heredia",
+                    "Jorge Neri",
+                    "81"
+                ],
+                [
+                    "7",
+                    "Juanito Farias",
+                    "Caballo De Palo",
+                    "Omar Alfanno",
+                    "Chucho Ferrer",
+                    "80"
+                ]
+            ],
+            "title": "Juguemos a Cantar - The Top 10",
+            "table_id": "ff67e781-7a93-423e-a0f1-ce07d4c9b282"
+        },
+        "query": "What are the songs scoring more than 90 points and which artists performed them?",
+        "summary": "The songs get over 90 points have \"Vamos A Jugar\" by Lorenzo Antonio Y Su Grupo with 98 points, \"La Risa De Las Vocales\" by Katy with 92 points, and \"Igual Que El Universo\" by Byanka Y Malessa with 92 points. These three songs are singed by them own artists, get best scores in the game.",
+        "row_ids": [
+            0,
+            1,
+            2
+        ]
+    },
+    {
+        "example_id": "ba553b9a-d49a-4b94-be65-7cfe9192e918",
+        "table": {
+            "header": [
+                "Player",
+                "Matches",
+                "Overs",
+                "Wickets",
+                "Average",
+                "Economy",
+                "Bbi",
+                "4Wi"
+            ],
+            "rows": [
+                [
+                    "Ben Phillips",
+                    "8",
+                    "47.0",
+                    "14",
+                    "14.0",
+                    "4.17",
+                    "3 / 24",
+                    "0"
+                ],
+                [
+                    "Charl Willoughby",
+                    "6",
+                    "42.4",
+                    "11",
+                    "19.18",
+                    "4.94",
+                    "3 / 36",
+                    "0"
+                ],
+                [
+                    "Zander De Bruyn",
+                    "8",
+                    "32.4",
+                    "6",
+                    "28.33",
+                    "5.2",
+                    "4 / 20",
+                    "1"
+                ],
+                [
+                    "Alfonso Thomas",
+                    "6",
+                    "37.1",
+                    "13",
+                    "14.92",
+                    "5.21",
+                    "4 / 18",
+                    "1"
+                ],
+                [
+                    "Max Waller",
+                    "5",
+                    "28.0",
+                    "6",
+                    "24.5",
+                    "5.25",
+                    "2 / 34",
+                    "0"
+                ],
+                [
+                    "Peter Trego",
+                    "8",
+                    "49.0",
+                    "4",
+                    "64.5",
+                    "5.26",
+                    "2 / 29",
+                    "0"
+                ],
+                [
+                    "Mark Turner",
+                    "5",
+                    "23.0",
+                    "7",
+                    "20.71",
+                    "6.3",
+                    "3 / 27",
+                    "0"
+                ]
+            ],
+            "title": "Somerset County Cricket Club In 2009",
+            "table_id": "6b35eeb6-8a6b-4e3f-9780-4cf173469408"
+        },
+        "query": "Who had the best bowling economy in 2009? Summarize the basic information of this player.",
+        "summary": "In 2009, Mark Turner had the best bowling economy out of any player for the Somerset County Cricket Club at 6.3. He had five matches, 23 overs, seven wickets, an average of 20.71, a BBI of 3/27 and zero four-wicket hauls in 2009.",
+        "row_ids": [
+            6
+        ]
+    },
+    {
+        "example_id": "572058cc-4c70-4442-8a40-b2c700ab095c",
+        "table": {
+            "header": [
+                "No",
+                "Year",
+                "Title",
+                "Role",
+                "Language",
+                "Notes"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1993",
+                    "Major Chandrakanth",
+                    "",
+                    "Telugu",
+                    "Child actor"
+                ],
+                [
+                    "2",
+                    "1997",
+                    "Adavilo Anna",
+                    "",
+                    "Telugu",
+                    "Child actor"
+                ],
+                [
+                    "3",
+                    "1998",
+                    "Khaidhigaru",
+                    "Raju",
+                    "Telugu",
+                    "Child actor"
+                ],
+                [
+                    "4",
+                    "2004",
+                    "Donga Dongadi",
+                    "Vasu",
+                    "Telugu",
+                    "CineMAA Awards - Best Male Debut, Remake Of Thiruda Thirudi"
+                ],
+                [
+                    "5",
+                    "2005",
+                    "Political Rowdy",
+                    "Himself",
+                    "Telugu",
+                    "Special Appearance"
+                ],
+                [
+                    "6",
+                    "2005",
+                    "Sri",
+                    "Sri",
+                    "Telugu",
+                    ""
+                ],
+                [
+                    "7",
+                    "2007",
+                    "Raju Bhai",
+                    "Raju Bhai",
+                    "Telugu",
+                    "Remake of Chithiram Pesuthadi"
+                ],
+                [
+                    "8",
+                    "2008",
+                    "Nenu Meeku Telusa...?",
+                    "Adithya",
+                    "Telugu",
+                    "Dubbed in Tamil as Yennai Theriyuma"
+                ],
+                [
+                    "9",
+                    "2009",
+                    "Prayanam",
+                    "Dhruv",
+                    "Telugu",
+                    ""
+                ],
+                [
+                    "10",
+                    "2010",
+                    "Bindaas",
+                    "Ajay",
+                    "Telugu",
+                    "Nandi Special Jury Award"
+                ],
+                [
+                    "11",
+                    "2010",
+                    "Vedam",
+                    "Vivek Chakravarthy",
+                    "Telugu",
+                    ""
+                ],
+                [
+                    "12",
+                    "2010",
+                    "Jhummandi Naadam",
+                    "Balu",
+                    "Telugu",
+                    ""
+                ],
+                [
+                    "13",
+                    "2012",
+                    "Mr. Nookayya",
+                    "Nookayya",
+                    "Telugu",
+                    ""
+                ],
+                [
+                    "14",
+                    "2012",
+                    "Uu Kodathara? Ulikki Padathara?",
+                    "Manoj",
+                    "Telugu",
+                    ""
+                ],
+                [
+                    "15",
+                    "2013",
+                    "Potugadu",
+                    "Govindu",
+                    "Telugu",
+                    ""
+                ],
+                [
+                    "16",
+                    "2014",
+                    "Pandavulu Pandavulu Thummeda",
+                    "Ajay",
+                    "Telugu",
+                    ""
+                ],
+                [
+                    "17",
+                    "2014",
+                    "Current Theega",
+                    "Raju",
+                    "Telugu",
+                    ""
+                ],
+                [
+                    "18",
+                    "2015",
+                    "Dongaata",
+                    "Himself",
+                    "Telugu",
+                    "Special Appearance"
+                ],
+                [
+                    "19",
+                    "2016",
+                    "Shourya",
+                    "Shourya",
+                    "Telugu",
+                    ""
+                ],
+                [
+                    "20",
+                    "2016",
+                    "Attack",
+                    "Radha Krishna",
+                    "Telugu",
+                    ""
+                ],
+                [
+                    "21",
+                    "2017",
+                    "Gunturodu",
+                    "",
+                    "Telugu",
+                    ""
+                ],
+                [
+                    "22",
+                    "2017",
+                    "Okkadu Migiladu",
+                    "Surya",
+                    "Telugu",
+                    ""
+                ]
+            ],
+            "title": "Manchu Manoj - Filmography",
+            "table_id": "7ed31a15-5533-4ec8-9be1-42be446f305c"
+        },
+        "query": "Which were the years when Manchu Manoj appeared in more than one film, and what were the titles and his roles in these films?",
+        "summary": "In 2010, Manchu Manoj act in three film, name is \"Bindaas\" play Ajay, \"Vedam\" play Vivek Chakravarthy, \"Jhummandi Naadam\" play Balu. In 2012, he acted in two film, \"Mr. Nookayya\" play Nookayya and \"Uu Kodathara? Ulikki Padathara?\" play Manoj. Manoj also appear in two film in 2014, first as Ajay in \"Pandavulu Pandavulu Thummeda,\" and then as Raju in \"Current Theega.\" Last, in 2016, he act in two movie, play main role in \"Shourya\" and play Radha Krishna in \"Attack.\"",
+        "row_ids": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            15,
+            16,
+            18,
+            19,
+            20,
+            21
+        ]
+    },
+    {
+        "example_id": "8ecda039-7f51-4132-8a8e-dd01dcaab13e",
+        "table": {
+            "header": [
+                "No.",
+                "Score",
+                "Against",
+                "Pos.",
+                "Inn.",
+                "S/R",
+                "Venue",
+                "H/A/N",
+                "Date",
+                "Result"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "148",
+                    "Pakistan Pakistan",
+                    "3",
+                    "1",
+                    "120.33",
+                    "India APCA-VDCA Stadium, Visakhapatnam",
+                    "Home",
+                    "5 April 2005",
+                    "Won"
+                ],
+                [
+                    "2",
+                    "183*",
+                    "Sri Lanka Sri Lanka",
+                    "3",
+                    "2",
+                    "126.21",
+                    "India Sawai Mansingh Stadium, Jaipur",
+                    "Home",
+                    "31 October 2005",
+                    "Won"
+                ],
+                [
+                    "3",
+                    "139*",
+                    "Africa XI",
+                    "7",
+                    "1",
+                    "143.30",
+                    "India M. A. Chidambaram Stadium, Chennai",
+                    "Home",
+                    "10 June 2007",
+                    "Won"
+                ],
+                [
+                    "4",
+                    "109*",
+                    "Hong Kong Hong Kong",
+                    "4",
+                    "1",
+                    "113.54",
+                    "Pakistan National Stadium, Karachi",
+                    "Neutral",
+                    "25 June 2008",
+                    "Won"
+                ],
+                [
+                    "5",
+                    "124",
+                    "Australia",
+                    "5",
+                    "1",
+                    "115.89",
+                    "India VCA Stadium, Nagpur",
+                    "Home",
+                    "28 October 2009",
+                    "Won"
+                ],
+                [
+                    "6",
+                    "107",
+                    "Sri Lanka Sri Lanka",
+                    "5",
+                    "1",
+                    "96.40",
+                    "India VCA Stadium, Nagpur",
+                    "Home",
+                    "18 December 2009",
+                    "Lost"
+                ],
+                [
+                    "7",
+                    "101*",
+                    "Bangladesh",
+                    "5",
+                    "2",
+                    "94.39",
+                    "Bangladesh Shere Bangla National Stadium, Dhaka",
+                    "Away",
+                    "7 January 2010",
+                    "Won"
+                ],
+                [
+                    "8",
+                    "113*",
+                    "Pakistan Pakistan",
+                    "7",
+                    "1",
+                    "90.40",
+                    "India M. A. Chidambaram Stadium, Chennai",
+                    "Home",
+                    "30 December 2012",
+                    "Lost"
+                ],
+                [
+                    "9",
+                    "139*",
+                    "Australia",
+                    "6",
+                    "1",
+                    "114.88",
+                    "India Punjab Cricket Association Stadium, Mohali",
+                    "Home",
+                    "19 October 2013",
+                    "Lost"
+                ],
+                [
+                    "10",
+                    "134",
+                    "England",
+                    "5",
+                    "1",
+                    "109.84",
+                    "India Barabati Stadium, Cuttack",
+                    "Home",
+                    "19 January 2017",
+                    "Won"
+                ]
+            ],
+            "title": "MS Dhoni - One Day International Cricket",
+            "table_id": "7dede8eb-e73e-45f5-8975-ada88e1ebfa4"
+        },
+        "query": "With which opponent and in which venue has MS Dhoni scored the most? What are the potential factors that might have contributed to this?",
+        "summary": "MS Dhoni get his most high One Day International (ODI) score of 183* against to Sri Lanka at Sawai Mansingh Stadium in Jaipur, India. Much reasons for this good show can be seen. First, is a home game. Next, he batting at number 3, it give him more chance to play more balls and make big score.",
+        "row_ids": [
+            1
+        ]
+    },
+    {
+        "example_id": "fbd3a579-d9f2-415b-9c45-d5a537c4cf08",
+        "table": {
+            "header": [
+                "Channel",
+                "Frequency",
+                "Channel",
+                "Frequency",
+                "Channel",
+                "Frequency",
+                "Channel",
+                "Frequency"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "26.965 MHz",
+                    "11",
+                    "27.085 MHz",
+                    "21",
+                    "27.215 MHz",
+                    "31",
+                    "27.315 MHz"
+                ],
+                [
+                    "2",
+                    "26.975 MHz",
+                    "12",
+                    "27.105 MHz",
+                    "22",
+                    "27.225 MHz",
+                    "32",
+                    "27.325 MHz"
+                ],
+                [
+                    "3",
+                    "26.985 MHz",
+                    "13",
+                    "27.115 MHz",
+                    "23",
+                    "27.255 MHz",
+                    "33",
+                    "27.335 MHz"
+                ],
+                [
+                    "4",
+                    "27.005 MHz",
+                    "14",
+                    "27.125 MHz",
+                    "24",
+                    "27.235 MHz",
+                    "34",
+                    "27.345 MHz"
+                ],
+                [
+                    "5",
+                    "27.015 MHz",
+                    "15",
+                    "27.135 MHz",
+                    "25",
+                    "27.245 MHz",
+                    "35",
+                    "27.355 MHz"
+                ],
+                [
+                    "6",
+                    "27.025 MHz",
+                    "16",
+                    "27.155 MHz",
+                    "26",
+                    "27.265 MHz",
+                    "36",
+                    "27.365 MHz"
+                ],
+                [
+                    "7",
+                    "27.035 MHz",
+                    "17",
+                    "27.165 MHz",
+                    "27",
+                    "27.275 MHz",
+                    "37",
+                    "27.375 MHz"
+                ],
+                [
+                    "8",
+                    "27.055 MHz",
+                    "18",
+                    "27.175 MHz",
+                    "28",
+                    "27.285 MHz",
+                    "38",
+                    "27.385 MHz"
+                ],
+                [
+                    "9",
+                    "27.065 MHz",
+                    "19",
+                    "27.185 MHz",
+                    "29",
+                    "27.295 MHz",
+                    "39",
+                    "27.395 MHz"
+                ],
+                [
+                    "10",
+                    "27.075 MHz",
+                    "20",
+                    "27.205 MHz",
+                    "30",
+                    "27.305 MHz",
+                    "40",
+                    "27.405 MHz"
+                ]
+            ],
+            "title": "Citizens band radio - Standard Channels",
+            "table_id": "2063b301-ef06-43d4-a558-779d0d480bf4"
+        },
+        "query": "What is the frequency of Channel 21 in MHz and how does it compare to that of Channel 30?",
+        "summary": "The frequency for Channel 21 is 27.215 MHz, as show in table above. Compare to Channel 30, which have frequency of 27.305 MHz, there is difference of 0.10 MHz between two channels. This mean Channel 30 operate at little higher frequency than Channel 21.",
+        "row_ids": [
+            0,
+            9
+        ]
+    },
+    {
+        "example_id": "d018408d-311a-46e8-9f12-339419ff13b8",
+        "table": {
+            "header": [
+                "Month",
+                "1914",
+                "1915",
+                "1916",
+                "1917",
+                "1918"
+            ],
+            "rows": [
+                [
+                    "January",
+                    "",
+                    "47,981",
+                    "81,259",
+                    "368,521",
+                    "306,658"
+                ],
+                [
+                    "February",
+                    "",
+                    "59,921",
+                    "117,547",
+                    "540,006",
+                    "318,957"
+                ],
+                [
+                    "March",
+                    "",
+                    "80,775",
+                    "167,097",
+                    "593,841",
+                    "342,597"
+                ],
+                [
+                    "April",
+                    "",
+                    "55,725",
+                    "191,667",
+                    "881,027",
+                    "278,719"
+                ],
+                [
+                    "May",
+                    "",
+                    "120,058",
+                    "129,175",
+                    "596,629",
+                    "295,520"
+                ],
+                [
+                    "June",
+                    "",
+                    "131,428",
+                    "108,851",
+                    "687,507",
+                    "255,587"
+                ],
+                [
+                    "July",
+                    "",
+                    "109,640",
+                    "118,215",
+                    "557,988",
+                    "260,967"
+                ],
+                [
+                    "August",
+                    "62,767",
+                    "185,866",
+                    "162,744",
+                    "511,730",
+                    "283,815"
+                ],
+                [
+                    "September",
+                    "98,378",
+                    "151,884",
+                    "230,460",
+                    "351,748",
+                    "187,881"
+                ],
+                [
+                    "October",
+                    "87,917",
+                    "88,534",
+                    "353,660",
+                    "458,558",
+                    "118,559"
+                ],
+                [
+                    "November",
+                    "19,413",
+                    "153,043",
+                    "311,508",
+                    "289,212",
+                    "17,682"
+                ],
+                [
+                    "December",
+                    "44,197",
+                    "123,141",
+                    "355,139",
+                    "399,212",
+                    ""
+                ],
+                [
+                    "Total",
+                    "312,672",
+                    "1,307,996",
+                    "2,327,326",
+                    "6,235,878",
+                    "2,666,942"
+                ]
+            ],
+            "title": "U-boat Campaign (World War I) - Allied and Neutral Tonnage sunk by u-boats in World War I",
+            "table_id": "f765431d-389e-4de0-98a7-eab3d5be1d07"
+        },
+        "query": "Which month in 1917 had the highest tonnage sunk and how does this figure compare to the tonnage sunk in the same month of other years?",
+        "summary": "In 1917, the month of April have highest weight sunk, with a very big 881,027 tons of Allied and Neutral ships destroyed by U-boats. When compare this number to same month in other year, can see April 1917 have most big lost in weight. In 1915, only 55,725 tons were sunk in April, while the amount increase in 1916 with lost of 191,667 tons. Go to 1918, the weight sunk in April become less 278,719 tons. So, April 1917 have most high U-boat working in World War I, with the sinking weight more big than any other April in war.",
+        "row_ids": [
+            3
+        ]
+    },
+    {
+        "example_id": "882c579d-0caa-455c-80f6-0f0eaf3bbbe3",
+        "table": {
+            "header": [
+                "No.",
+                "Album",
+                "Artist",
+                "Released",
+                "Chart",
+                "Sales"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "First Love",
+                    "Hikaru Utada",
+                    "10 March 1999",
+                    "1",
+                    "7,672,000"
+                ],
+                [
+                    "2",
+                    "B'z The Best \"Pleasure\"",
+                    "B'z",
+                    "20 May 1998",
+                    "1",
+                    "5,136,000"
+                ],
+                [
+                    "3",
+                    "Review",
+                    "Glay",
+                    "1 October 1997",
+                    "1",
+                    "4,876,000"
+                ],
+                [
+                    "4",
+                    "Distance",
+                    "Hikaru Utada",
+                    "28 March 2001",
+                    "1",
+                    "4,472,000"
+                ],
+                [
+                    "5",
+                    "B'z The Best \"Treasure\"",
+                    "B'z",
+                    "20 September 1998",
+                    "1",
+                    "4,439,000"
+                ],
+                [
+                    "6",
+                    "A Best",
+                    "Ayumi Hamasaki",
+                    "28 March 2001",
+                    "1",
+                    "4,312,000"
+                ],
+                [
+                    "7",
+                    "Globe",
+                    "Globe",
+                    "31 March 1996",
+                    "1",
+                    "4,136,000"
+                ],
+                [
+                    "8",
+                    "Deep River",
+                    "Hikaru Utada",
+                    "19 June 2002",
+                    "1",
+                    "3,605,000"
+                ],
+                [
+                    "9",
+                    "Umi no Yeah!!",
+                    "Southern All Stars",
+                    "25 June 1998",
+                    "1",
+                    "3,592,000"
+                ],
+                [
+                    "10",
+                    "Delicious Way",
+                    "Mai Kuraki",
+                    "28 June 2000",
+                    "1",
+                    "3,530,000"
+                ],
+                [
+                    "11",
+                    "Time to Destination",
+                    "Every Little Thing",
+                    "15 April 1998",
+                    "1",
+                    "3,520,000"
+                ],
+                [
+                    "12",
+                    "Atomic Heart",
+                    "Mr. Children",
+                    "1 September 1994",
+                    "1",
+                    "3,430,000"
+                ],
+                [
+                    "13",
+                    "Sweet 19 Blues",
+                    "Namie Amuro",
+                    "22 July 1996",
+                    "1",
+                    "3,359,000"
+                ],
+                [
+                    "14",
+                    "Bolero",
+                    "Mr. Children",
+                    "5 March 1997",
+                    "1",
+                    "3,283,000"
+                ],
+                [
+                    "15",
+                    "Neue Musik",
+                    "Yumi Matsutoya",
+                    "6 November 1998",
+                    "1",
+                    "3,252,000"
+                ],
+                [
+                    "16",
+                    "Faces Places",
+                    "Globe",
+                    "12 March 1997",
+                    "1",
+                    "3,239,000"
+                ],
+                [
+                    "17",
+                    "The Swinging Star",
+                    "Dreams Come True",
+                    "14 November 1992",
+                    "1",
+                    "3,227,000"
+                ],
+                [
+                    "18",
+                    "Impressions",
+                    "Mariya Takeuchi",
+                    "25 July 1994",
+                    "1",
+                    "3,067,000"
+                ],
+                [
+                    "19",
+                    "Zard Best the Single Collection \uff5e\u8ecc\u8de1\uff5e",
+                    "Zard",
+                    "28 May 1999",
+                    "1",
+                    "3,034,000"
+                ],
+                [
+                    "20",
+                    "All Singles Best",
+                    "Kobukuro",
+                    "27 September 2006",
+                    "1",
+                    "3,018,000"
+                ]
+            ],
+            "title": "List of best-selling albums in Japan - List of best-selling albums by domestic acts",
+            "table_id": "41a5495d-bba3-4fc8-9d6e-190f2f552cec"
+        },
+        "query": "Who are the three artists with the highest selling albums, and what are their respective sales numbers?",
+        "summary": "The three artists who have the highest sell albums in Japan is Hikaru Utada, B'z, and Glay. Their best-selling albums have sale numbers like this: 7,672,000 for \"First Love\", 5,136,000 for \"B'z The Best 'Pleasure'\" , and 4,876,000 for \"Review\" .",
+        "row_ids": [
+            0,
+            1,
+            2
+        ]
+    },
+    {
+        "example_id": "696fa3e7-2444-4d56-bf26-a31126d48ae9",
+        "table": {
+            "header": [
+                "Date",
+                "Opponent",
+                "Rank",
+                "Site",
+                "Result",
+                "Attendance"
+            ],
+            "rows": [
+                [
+                    "September 30",
+                    "Texas Christian",
+                    "3",
+                    "Ohio Stadium Columbus , Oh",
+                    "T7 - 7",
+                    "82878"
+                ],
+                [
+                    "October 7",
+                    "Ucla",
+                    "8",
+                    "Ohio Stadium Columbus , Oh",
+                    "W13 - 3",
+                    "82992"
+                ],
+                [
+                    "October 14",
+                    "Illinois",
+                    "7",
+                    "Ohio Stadium Columbus , Oh",
+                    "W44 - 0",
+                    "82374"
+                ],
+                [
+                    "October 21",
+                    "Northwestern",
+                    "7",
+                    "Dyche Stadium Evanston , Il",
+                    "W10 - 0",
+                    "43259"
+                ],
+                [
+                    "October 28",
+                    "Wisconsin",
+                    "6",
+                    "Camp Randall Stadium Madison , Wi",
+                    "W30 - 21",
+                    "58411"
+                ],
+                [
+                    "November 4",
+                    "9 Iowa",
+                    "5",
+                    "Ohio Stadium Columbus , Oh",
+                    "W29 - 13",
+                    "83795"
+                ],
+                [
+                    "November 11",
+                    "Indiana",
+                    "3",
+                    "Memorial Stadium Bloomington , In",
+                    "W16 - 7",
+                    "27108"
+                ],
+                [
+                    "November 18",
+                    "Oregon",
+                    "3",
+                    "Ohio Stadium Columbus , Oh",
+                    "W22 - 12",
+                    "82073"
+                ],
+                [
+                    "November 25",
+                    "Michigan",
+                    "2",
+                    "Michigan Stadium Ann Arbor , Mi",
+                    "W50 - 20",
+                    "80444"
+                ]
+            ],
+            "title": "1961 Ohio State Buckeyes Football Team",
+            "table_id": "0064602b-edbe-4dfa-836d-b02788256aeb"
+        },
+        "query": "Summarize the game(s) with attendance between 40,000 and 60,000 when playing against the 1961 Ohio State Buckeyes.",
+        "summary": "The Ohio State Buckeyes played two games with attendance between 40,000 and 60,000 during the 1961 season. The first was on October 21 against Northwestern at Dyche Stadium in Evanston, Illinois with 43259 attendance. The final score was 10-0 in favor of the Buckeyes. The second game was on October 28 against Wisconsin at Camp Randall Stadium in Madison, Wisconsin with 58411 attendance. The final score was 30-21 in favor of the Buckeyes.",
+        "row_ids": [
+            3,
+            4
+        ]
+    },
+    {
+        "example_id": "e0b399c1-0f1d-49d2-8393-9e6f418edbd2",
+        "table": {
+            "header": [
+                "Rank",
+                "Name",
+                "Image",
+                "Height ft / m",
+                "Floors",
+                "Year",
+                "Notes"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Xerox Tower",
+                    "Xerox Tower.JPG",
+                    "443 / 135",
+                    "30",
+                    "1968",
+                    "Third tallest building in New York outside of New York City"
+                ],
+                [
+                    "2",
+                    "Legacy Tower",
+                    "-",
+                    "401 / 122",
+                    "20",
+                    "1995",
+                    "Formerly known as Bausch & Lomb Place. Only the spire makes it taller than The Metropolitan"
+                ],
+                [
+                    "3",
+                    "The Metropolitan",
+                    "-",
+                    "392 / 119",
+                    "27",
+                    "1973",
+                    "Formerly known as Chase Tower, renamed and partially converted to residential."
+                ],
+                [
+                    "4",
+                    "Kodak Tower",
+                    "-",
+                    "360 / 110",
+                    "19",
+                    "1914",
+                    "Expanded in 1930 from 16 to 19 stories and tower"
+                ],
+                [
+                    "5",
+                    "First Federal Plaza",
+                    "-",
+                    "309 / 94",
+                    "21",
+                    "1976",
+                    ""
+                ],
+                [
+                    "6",
+                    "Five Star Bank Plaza",
+                    "-",
+                    "284 / 87",
+                    "21",
+                    "1970",
+                    "Formerly known as One HSBC Plaza"
+                ],
+                [
+                    "7",
+                    "Hyatt Regency Hotel",
+                    "-",
+                    "271 / 83",
+                    "25",
+                    "1990",
+                    ""
+                ],
+                [
+                    "8",
+                    "Times Square Building",
+                    "-",
+                    "260 / 79",
+                    "14",
+                    "1930",
+                    ""
+                ],
+                [
+                    "9",
+                    "Tower 280",
+                    "-",
+                    "251 / 77",
+                    "18",
+                    "1962 / 2015",
+                    "Once part of Midtown Plaza. Refitted into offices and residential units"
+                ],
+                [
+                    "10",
+                    "Saint Michael's Church",
+                    "St. Michael's Church, Rochester, NY.JPG",
+                    "246 / 75",
+                    "1",
+                    "1890",
+                    ""
+                ],
+                [
+                    "11",
+                    "Temple Building",
+                    "",
+                    "218 / 66",
+                    "14",
+                    "1925",
+                    ""
+                ],
+                [
+                    "12",
+                    "Crossroads Building",
+                    "",
+                    "215 / 66",
+                    "15",
+                    "1969",
+                    ""
+                ],
+                [
+                    "13",
+                    "Eastman School of Music Student Living Center",
+                    "",
+                    "213 / 65",
+                    "14",
+                    "1990",
+                    ""
+                ],
+                [
+                    "14",
+                    "Seneca Towers Apartments",
+                    "",
+                    "212 / 65",
+                    "22",
+                    "1968",
+                    ""
+                ],
+                [
+                    "15",
+                    "Sibley Center",
+                    "",
+                    "203 / 62",
+                    "12",
+                    "1926",
+                    ""
+                ],
+                [
+                    "16",
+                    "Clinton Square Building",
+                    "",
+                    "200 / 61",
+                    "14",
+                    "1990",
+                    ""
+                ]
+            ],
+            "title": "List of tallest buildings in Rochester, New York - Tallest buildings",
+            "table_id": "58ce58ce-925f-4141-8cc2-25d7093038ff"
+        },
+        "query": "What is the trend in the construction year of the top six tallest buildings in Rochester, New York? Is there a consistency over decades, or is there a distinct period where the majority were built?",
+        "summary": "When look at building years of top six high buildings in Rochester, New York, can see that most of them built during 1960s to 1990s. Xerox Tower, the highest building in Rochester, be finished in 1968, and Five Star Bank Plaza be made in 1970. The Metropolitan be built in 1973, and after that First Federal Plaza in 1976. Only two buildings that not same as this trend: Kodak Tower, made in 1914 and more added in 1930, and Legacy Tower, finished in 1995. In total, can see lots of construction during 1960s-1990s for top six high buildings in Rochester.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    }
+]

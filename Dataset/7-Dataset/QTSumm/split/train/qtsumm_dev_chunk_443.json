@@ -1,0 +1,1188 @@
+[
+    {
+        "example_id": "3e18240f-e34b-4da4-9d72-c20224c556e0",
+        "table": {
+            "header": [
+                "Vessel",
+                "Built",
+                "Max Speed",
+                "Length",
+                "Breadth",
+                "Flag",
+                "Propulsion"
+            ],
+            "rows": [
+                [
+                    "Gallion",
+                    "2010",
+                    "30 Knots",
+                    "20 M",
+                    "6.5 M",
+                    "United Kingdom",
+                    "Prop"
+                ],
+                [
+                    "Gardian 1",
+                    "2010",
+                    "30 Knots",
+                    "20 M",
+                    "6.5 M",
+                    "United Kingdom",
+                    "Prop"
+                ],
+                [
+                    "Gardian 2",
+                    "2010",
+                    "30 Knots",
+                    "20 M",
+                    "6.5 M",
+                    "United Kingdom",
+                    "Prop"
+                ],
+                [
+                    "Gardian 7",
+                    "2010",
+                    "30 Knots",
+                    "20 M",
+                    "6.5 M",
+                    "United Kingdom",
+                    "Prop"
+                ],
+                [
+                    "Gardian 9",
+                    "2010",
+                    "30 Knots",
+                    "20 M",
+                    "6.5 M",
+                    "United Kingdom",
+                    "Prop"
+                ],
+                [
+                    "Marianarray",
+                    "2011",
+                    "26 Knots",
+                    "17 M",
+                    "6 M",
+                    "United Kingdom",
+                    "Jet"
+                ],
+                [
+                    "Smeaton Array",
+                    "2011",
+                    "30 Knots",
+                    "20 M",
+                    "6 M",
+                    "United Kingdom",
+                    "Controllable Pitch Propeller"
+                ]
+            ],
+            "title": "Gardline Group",
+            "table_id": "5dc981b2-8464-4aa1-acb1-60fd8d2c8034"
+        },
+        "query": "Summarize the basic information of the vessels built in 2011 that are flagged under the United Kingdom.",
+        "summary": "The two vessels built in 2011 and flagged under the United Kingdom are Marianarray and Smeaton Array. Marianarray has a maximum speed of 26 knots, length of 17 metres, breadth of 6 metres and is propelled by jet. Smeaton Array has a maximum speed of 30 knots, length of 20 metres, breadth of 6 metres and is propelled by controllable pitch propeller.",
+        "row_ids": [
+            5,
+            6
+        ]
+    },
+    {
+        "example_id": "2e20cf00-13e4-457c-8295-ef1083eb228f",
+        "table": {
+            "header": [
+                "Year",
+                "School",
+                "Conf",
+                "Class",
+                "Pos",
+                "G",
+                "Rec",
+                "Yds",
+                "Avg",
+                "TD"
+            ],
+            "rows": [
+                [
+                    "2011",
+                    "Hawaii",
+                    "WAC",
+                    "FR",
+                    "WR",
+                    "7",
+                    "28",
+                    "366",
+                    "13.1",
+                    "3"
+                ],
+                [
+                    "2012",
+                    "Hawaii",
+                    "MWC",
+                    "SO",
+                    "WR",
+                    "8",
+                    "17",
+                    "235",
+                    "13.8",
+                    "2"
+                ],
+                [
+                    "2014",
+                    "California",
+                    "Pac-12",
+                    "JR",
+                    "WR",
+                    "9",
+                    "24",
+                    "399",
+                    "16.6",
+                    "5"
+                ],
+                [
+                    "2015",
+                    "California",
+                    "Pac-12",
+                    "SR",
+                    "WR",
+                    "13",
+                    "40",
+                    "672",
+                    "16.8",
+                    "2"
+                ],
+                [
+                    "Career",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "109",
+                    "1,672",
+                    "15.3",
+                    "12"
+                ]
+            ],
+            "title": "Trevor Davis - College statistics",
+            "table_id": "0a60dbb4-0c33-4cdd-9f18-5aefd22d59e0"
+        },
+        "query": "What is the trend in Trevor Davis's reception (Rec) numbers over his time in college?",
+        "summary": "Throughout Trevor Davis's college years, there was an decreasing first and then increasing trend in his reception (Rec) numbers. His freshman year at Hawaii in 2011 saw Davis with 28 receptions, which dropped to 17 in 2012 but increased once he transferred to California. In 2014, his junior year, he recorded 24 receptions, and finally, in his senior year, he reached a career-high of 40 receptions at California.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    {
+        "example_id": "b6525e72-827f-4e2b-8f4a-923a85453282",
+        "table": {
+            "header": [
+                "N",
+                "Ep",
+                "Huckleberry Hound",
+                "Pixie And Dixie",
+                "Hokey Wolf",
+                "Air Date",
+                "Credited Animators"
+            ],
+            "rows": [
+                [
+                    "40",
+                    "1",
+                    "Spud Dud",
+                    "High Jinks",
+                    "Tricks And Treats (Pilot)",
+                    "1960.09.11",
+                    "George Nicholas , Dick Lundy , Don Patterson"
+                ],
+                [
+                    "41",
+                    "2",
+                    "Legion Bound Hound",
+                    "Price For Mice",
+                    "Hokey Dokey",
+                    "1960.09.18",
+                    "Kenneth Muse , Bob Carr"
+                ],
+                [
+                    "42",
+                    "3",
+                    "Science Friction",
+                    "Plutocrat Cat",
+                    "Lamb - Basted Wolf",
+                    "1960.09.25",
+                    "Ed Love , Lewis Marshall , Hicks Lokey"
+                ],
+                [
+                    "43",
+                    "4",
+                    "Nuts Over Mutts",
+                    "Pied Piper Pipe",
+                    "Which Witch Is Witch",
+                    "1960.10.02",
+                    "Ed Love , Don Patterson , George Nicholas"
+                ],
+                [
+                    "44",
+                    "5",
+                    "Knight School",
+                    "Woo For Two",
+                    "Pick A Chick",
+                    "1960.10.09",
+                    "Lewis Marshall , Bob Carr , Ed Demattia"
+                ],
+                [
+                    "45",
+                    "6",
+                    "Huck Hounds Tale",
+                    "Party Peeper Jinks",
+                    "Robot Plot",
+                    "1960.10.16",
+                    "Ed Demattia , Dick Lundy , "
+                ],
+                [
+                    "46",
+                    "7",
+                    "The Unmasked Avenger",
+                    "A Wise Quack",
+                    "Boobs In The Woods",
+                    "1960.10.23",
+                    "Don Williams , Bob Carr , "
+                ],
+                [
+                    "47",
+                    "8",
+                    "Hillbilly Huck",
+                    "Missile Bound Cat",
+                    "Castle Hassle",
+                    "1960.10.30",
+                    "Hicks Lokey , Lewis Marshall , Bob Carr"
+                ],
+                [
+                    "48",
+                    "9",
+                    "Fast Gun Huck",
+                    "Kind To Meeces Week",
+                    "Booty On The Bounty",
+                    "1960.11.06",
+                    "Brad Case , Hicks Lokey , "
+                ],
+                [
+                    "49",
+                    "10",
+                    "Astro - Nut Huck",
+                    "Crew Cat",
+                    "Hokey In The Pokey",
+                    "1960.11.13",
+                    "Lewis Marshall , Brad Case , Don Patterson"
+                ],
+                [
+                    "50",
+                    "11",
+                    "Huck And Ladder",
+                    "Jinxed Jinks",
+                    "Whos Zoo",
+                    "1960.11.20",
+                    "Hicks Lokey , Art Davis Robert Bentley"
+                ],
+                [
+                    "51",
+                    "12",
+                    "Lawman Huck",
+                    "Light Headed Cat",
+                    "Dogged Sheep Dog",
+                    "1960.11.27",
+                    "Bob Carr , Lewis Marshall , Don Patterson , "
+                ]
+            ],
+            "title": "List Of The Huckleberry Hound Show Episodes",
+            "table_id": "deb0de89-7aab-45d1-bff8-86d3646b7109"
+        },
+        "query": "Summarize the basic information of episode(s) credited don Patterson.",
+        "summary": "Don Patterson was credited as an animator in four episodes of the Huckleberry Hound Show, spanning from episode 40 to episode 51. These episodes included Spud Dud, Nuts Over Mutts, Astro - Nut Huck, and Lawman Huck. They were aired on September 11th, 1960, October 2nd, 1960, November 13th, 1960 and November 27th, 1960 respectively.",
+        "row_ids": [
+            0,
+            3,
+            9,
+            11
+        ]
+    },
+    {
+        "example_id": "af708eb8-ad11-4a29-abb9-de3cfd84fdff",
+        "table": {
+            "header": [
+                "Pos",
+                "No.",
+                "Driver",
+                "Manufacturer",
+                "Laps",
+                "Laps led",
+                "Money",
+                "Time/Status"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "29",
+                    "Nelson Stacy",
+                    "'62 Ford",
+                    "400",
+                    "13",
+                    "$25,505",
+                    "4:46:44"
+                ],
+                [
+                    "2",
+                    "8",
+                    "Joe Weatherly",
+                    "'62 Pontiac",
+                    "400",
+                    "0",
+                    "$11,105",
+                    "+32.35 seconds"
+                ],
+                [
+                    "3",
+                    "0",
+                    "Fred Lorenzen",
+                    "'62 Ford",
+                    "399",
+                    "0",
+                    "$6,870",
+                    "+1 lap"
+                ],
+                [
+                    "4",
+                    "43",
+                    "Richard Petty",
+                    "'62 Plymouth",
+                    "397",
+                    "5",
+                    "$5,400",
+                    "+3 laps"
+                ],
+                [
+                    "5",
+                    "66",
+                    "Larry Frank",
+                    "'62 Ford",
+                    "395",
+                    "0",
+                    "$3,475",
+                    "+5 laps"
+                ],
+                [
+                    "6",
+                    "11",
+                    "Ned Jarrett",
+                    "'62 Chevrolet",
+                    "394",
+                    "0",
+                    "$3,600",
+                    "+6 laps"
+                ],
+                [
+                    "7",
+                    "3",
+                    "David Pearson",
+                    "'62 Pontiac",
+                    "393",
+                    "208",
+                    "$4,695",
+                    "Engine failure"
+                ],
+                [
+                    "8",
+                    "21",
+                    "Marvin Panch",
+                    "'62 Ford",
+                    "393",
+                    "0",
+                    "$1,600",
+                    "+7 laps"
+                ],
+                [
+                    "9",
+                    "22",
+                    "Fireball Roberts",
+                    "'62 Pontiac",
+                    "393",
+                    "27",
+                    "$2,095",
+                    "+7 laps"
+                ],
+                [
+                    "10",
+                    "41",
+                    "Bunkie Blackburn",
+                    "'62 Plymouth",
+                    "393",
+                    "0",
+                    "$1,100",
+                    "+7 laps"
+                ]
+            ],
+            "title": "1962 World 600 - Top ten finishers",
+            "table_id": "81d2ea19-e4db-4e13-9f3b-5083d12f7fc3"
+        },
+        "query": "Which driver finished first in the 1962 World 600 and how much did they earn in prize money?",
+        "summary": "Nelson Stacy finished first in the 1962 World 600. He earned $25,505 in prize money for his victory.",
+        "row_ids": [
+            0
+        ]
+    },
+    {
+        "example_id": "a5fed2f6-ad16-433e-a9b9-ab4095903e7f",
+        "table": {
+            "header": [
+                "Artist",
+                "Single",
+                "Released",
+                "Sales (in millions)",
+                "Source"
+            ],
+            "rows": [
+                [
+                    "Gloria Gaynor",
+                    "\"I Will Survive\"",
+                    "1978",
+                    "14",
+                    ""
+                ],
+                [
+                    "Scorpions",
+                    "\"Wind of Change\"",
+                    "1991",
+                    "14",
+                    ""
+                ],
+                [
+                    "Kyu Sakamoto",
+                    "\"Sukiyaki\"",
+                    "1963",
+                    "13",
+                    ""
+                ],
+                [
+                    "Trio",
+                    "\"Da Da Da\"",
+                    "1982",
+                    "13",
+                    ""
+                ],
+                [
+                    "Gene Autry",
+                    "\"Rudolph the Red-Nosed Reindeer\"",
+                    "1949",
+                    "12.5",
+                    ""
+                ],
+                [
+                    "The Beatles",
+                    "\"I Want to Hold Your Hand\"",
+                    "1963",
+                    "12",
+                    ""
+                ],
+                [
+                    "Andrea Bocelli and Sarah Brightman",
+                    "\"Time to Say Goodbye\"",
+                    "1996",
+                    "12",
+                    ""
+                ],
+                [
+                    "Village People",
+                    "\"Y.M.C.A.\"",
+                    "1978",
+                    "12",
+                    ""
+                ],
+                [
+                    "Band Aid",
+                    "\"Do They Know It's Christmas?\"",
+                    "1984",
+                    "11.7",
+                    ""
+                ],
+                [
+                    "Cher",
+                    "\"Believe\"",
+                    "1998",
+                    "11",
+                    ""
+                ],
+                [
+                    "Carl Douglas",
+                    "\"Kung Fu Fighting\"",
+                    "1974",
+                    "11",
+                    ""
+                ],
+                [
+                    "George McCrae",
+                    "\"Rock Your Baby\"",
+                    "1974",
+                    "11",
+                    ""
+                ],
+                [
+                    "Mills Brothers",
+                    "\"Paper Doll\"",
+                    "1943",
+                    "11",
+                    ""
+                ],
+                [
+                    "Roger Whittaker",
+                    "\"The Last Farewell\"",
+                    "1975",
+                    "11",
+                    ""
+                ],
+                [
+                    "ABBA",
+                    "\"Fernando\"",
+                    "1976",
+                    "10",
+                    ""
+                ],
+                [
+                    "Roy Acuff",
+                    "\"Wabash Cannonball\"",
+                    "1942",
+                    "10",
+                    ""
+                ],
+                [
+                    "Paul Anka",
+                    "\"Diana\"",
+                    "1957",
+                    "10",
+                    ""
+                ],
+                [
+                    "Toni Braxton",
+                    "\"Un-Break My Heart\"",
+                    "1996",
+                    "10",
+                    ""
+                ],
+                [
+                    "George Harrison",
+                    "\"My Sweet Lord\"",
+                    "1970",
+                    "10",
+                    ""
+                ],
+                [
+                    "Los del R\u00edo",
+                    "\"Macarena\"",
+                    "1995",
+                    "10",
+                    ""
+                ],
+                [
+                    "Middle of the Road",
+                    "\"Chirpy Chirpy Cheep Cheep\"",
+                    "1971",
+                    "10",
+                    ""
+                ],
+                [
+                    "The Monkees",
+                    "\"I'm a Believer\"",
+                    "1966",
+                    "10",
+                    ""
+                ],
+                [
+                    "Panjabi MC",
+                    "\"Mundian To Bach Ke\"",
+                    "1998",
+                    "10",
+                    ""
+                ],
+                [
+                    "Patti Page",
+                    "\"Tennessee Waltz\"",
+                    "1950",
+                    "10",
+                    ""
+                ],
+                [
+                    "The Penguins",
+                    "\"Earth Angel\"",
+                    "1954",
+                    "10",
+                    ""
+                ],
+                [
+                    "Elvis Presley",
+                    "\"Hound Dog\"",
+                    "1956",
+                    "10",
+                    ""
+                ],
+                [
+                    "Procol Harum",
+                    "\"A Whiter Shade of Pale\"",
+                    "1967",
+                    "10",
+                    ""
+                ],
+                [
+                    "Britney Spears",
+                    "\"...Baby One More Time\"",
+                    "1998",
+                    "10",
+                    ""
+                ]
+            ],
+            "title": "List of best-selling singles - 10\u201314.9 million copies",
+            "table_id": "1a486603-254c-40b8-ba74-0e8f3f58df1f"
+        },
+        "query": "Which single from the 90s had the highest number of sales according to the data presented in this list?",
+        "summary": "According to the data presented in this list, the single with the highest number of sales from the 90s is \"Wind of Change\" by Scorpions, released in 1991, with 14 million sales.",
+        "row_ids": [
+            1
+        ]
+    },
+    {
+        "example_id": "bedce8f6-ed5f-4ead-93da-efe5af6e0d97",
+        "table": {
+            "header": [
+                "Round",
+                "Year",
+                "Team",
+                "Opponent",
+                "Goals",
+                "Behinds"
+            ],
+            "rows": [
+                [
+                    "Round 15",
+                    "2009",
+                    "Carlton",
+                    "Richmond",
+                    "9",
+                    "1"
+                ],
+                [
+                    "Round 12",
+                    "2008",
+                    "Carlton",
+                    "Collingwood",
+                    "8",
+                    "6"
+                ],
+                [
+                    "Round 13",
+                    "2004",
+                    "Carlton",
+                    "Richmond",
+                    "8",
+                    "5"
+                ],
+                [
+                    "Round 3",
+                    "2008",
+                    "Carlton",
+                    "Essendon",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Round 6",
+                    "2009",
+                    "Carlton",
+                    "Hawthorn",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Round 19",
+                    "2006",
+                    "Carlton",
+                    "Hawthorn",
+                    "8",
+                    "3"
+                ],
+                [
+                    "Round 11",
+                    "2009",
+                    "Carlton",
+                    "Brisbane",
+                    "8",
+                    "3"
+                ],
+                [
+                    "Round 3",
+                    "2007",
+                    "Carlton",
+                    "Essendon",
+                    "8",
+                    "2"
+                ],
+                [
+                    "Round 5",
+                    "2003",
+                    "Carlton",
+                    "North Melbourne",
+                    "8",
+                    "2"
+                ]
+            ],
+            "title": "Brendan Fevola - Best career games",
+            "table_id": "c318f22a-9546-4f01-97e4-1f95dd398cce"
+        },
+        "query": "What were some key differences and/or similarities between Brendan Fevola's performance against Richmond in 2004 and 2009 as per the table?",
+        "summary": "Brendan Fevola show very good performance against Richmond in both 2004 and 2009, showing his skill as high score forward. In 2004, during Round 13, Fevola play for Carlton and score great 8 goals and 5 behinds against Richmond other team. Comparing, in 2009 Round 15 match, again play for Carlton, he do better than before by score 9 goals and only 1 behind against same team. The key different between two performance is number of goals and behinds scored by Brendan Fevola, with more goals and less behinds in 2009 match than 2004. ",
+        "row_ids": [
+            0,
+            2
+        ]
+    },
+    {
+        "example_id": "dc88cf80-abcd-4d96-b78f-becf2112af58",
+        "table": {
+            "header": [
+                "No.",
+                "Album",
+                "Artist",
+                "Released",
+                "Chart",
+                "Sales"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "First Love",
+                    "Hikaru Utada",
+                    "10 March 1999",
+                    "1",
+                    "7,672,000"
+                ],
+                [
+                    "2",
+                    "B'z The Best \"Pleasure\"",
+                    "B'z",
+                    "20 May 1998",
+                    "1",
+                    "5,136,000"
+                ],
+                [
+                    "3",
+                    "Review",
+                    "Glay",
+                    "1 October 1997",
+                    "1",
+                    "4,876,000"
+                ],
+                [
+                    "4",
+                    "Distance",
+                    "Hikaru Utada",
+                    "28 March 2001",
+                    "1",
+                    "4,472,000"
+                ],
+                [
+                    "5",
+                    "B'z The Best \"Treasure\"",
+                    "B'z",
+                    "20 September 1998",
+                    "1",
+                    "4,439,000"
+                ],
+                [
+                    "6",
+                    "A Best",
+                    "Ayumi Hamasaki",
+                    "28 March 2001",
+                    "1",
+                    "4,312,000"
+                ],
+                [
+                    "7",
+                    "Globe",
+                    "Globe",
+                    "31 March 1996",
+                    "1",
+                    "4,136,000"
+                ],
+                [
+                    "8",
+                    "Deep River",
+                    "Hikaru Utada",
+                    "19 June 2002",
+                    "1",
+                    "3,605,000"
+                ],
+                [
+                    "9",
+                    "Umi no Yeah!!",
+                    "Southern All Stars",
+                    "25 June 1998",
+                    "1",
+                    "3,592,000"
+                ],
+                [
+                    "10",
+                    "Delicious Way",
+                    "Mai Kuraki",
+                    "28 June 2000",
+                    "1",
+                    "3,530,000"
+                ],
+                [
+                    "11",
+                    "Time to Destination",
+                    "Every Little Thing",
+                    "15 April 1998",
+                    "1",
+                    "3,520,000"
+                ],
+                [
+                    "12",
+                    "Atomic Heart",
+                    "Mr. Children",
+                    "1 September 1994",
+                    "1",
+                    "3,430,000"
+                ],
+                [
+                    "13",
+                    "Sweet 19 Blues",
+                    "Namie Amuro",
+                    "22 July 1996",
+                    "1",
+                    "3,359,000"
+                ],
+                [
+                    "14",
+                    "Bolero",
+                    "Mr. Children",
+                    "5 March 1997",
+                    "1",
+                    "3,283,000"
+                ],
+                [
+                    "15",
+                    "Neue Musik",
+                    "Yumi Matsutoya",
+                    "6 November 1998",
+                    "1",
+                    "3,252,000"
+                ],
+                [
+                    "16",
+                    "Faces Places",
+                    "Globe",
+                    "12 March 1997",
+                    "1",
+                    "3,239,000"
+                ],
+                [
+                    "17",
+                    "The Swinging Star",
+                    "Dreams Come True",
+                    "14 November 1992",
+                    "1",
+                    "3,227,000"
+                ],
+                [
+                    "18",
+                    "Impressions",
+                    "Mariya Takeuchi",
+                    "25 July 1994",
+                    "1",
+                    "3,067,000"
+                ],
+                [
+                    "19",
+                    "Zard Best the Single Collection \uff5e\u8ecc\u8de1\uff5e",
+                    "Zard",
+                    "28 May 1999",
+                    "1",
+                    "3,034,000"
+                ],
+                [
+                    "20",
+                    "All Singles Best",
+                    "Kobukuro",
+                    "27 September 2006",
+                    "1",
+                    "3,018,000"
+                ]
+            ],
+            "title": "List of best-selling albums in Japan - List of best-selling albums by domestic acts",
+            "table_id": "4a1b0dd4-5799-46f9-9e04-1178bf37c16b"
+        },
+        "query": "What were the total sales of Hikaru Utada's albums and how many of her albums were included in the top 20 best-selling albums in Japan?",
+        "summary": "Hikaru Utada album sale total 15,749,000 copy, have three album in Japan top 20 best-sell album.",
+        "row_ids": [
+            0,
+            3,
+            7
+        ]
+    },
+    {
+        "example_id": "d902ec89-d5bc-4ab1-b6ff-efdc4f60a2aa",
+        "table": {
+            "header": [
+                "Country",
+                "Date",
+                "Label",
+                "Format",
+                "Catalogue Number (S)"
+            ],
+            "rows": [
+                [
+                    "United Kingdom",
+                    "22 September 2008",
+                    "Eagle Records",
+                    "Double Cd",
+                    "Edgcd391"
+                ],
+                [
+                    "United Kingdom",
+                    "22 September 2008",
+                    "Eagle Eye Media",
+                    "Dvd",
+                    "Eredv711"
+                ],
+                [
+                    "United Kingdom",
+                    "1 December 2008",
+                    "Eagle Eye Media",
+                    "Blu - Ray",
+                    "-"
+                ],
+                [
+                    "United States",
+                    "30 September 2008",
+                    "Eagle Records",
+                    "Cd / Digital Download",
+                    "-"
+                ],
+                [
+                    "United States",
+                    "30 September 2008",
+                    "Eagle Eye Media",
+                    "Dvd",
+                    "Ee 39172 - 9"
+                ],
+                [
+                    "United States",
+                    "9 December 2008",
+                    "Eagle Eye Media",
+                    "Blu - Ray",
+                    "-"
+                ],
+                [
+                    "Canada",
+                    "14 October 2008",
+                    "Eagle Records",
+                    "Cd / Digital Download",
+                    "-"
+                ],
+                [
+                    "Canada",
+                    "14 October 2008",
+                    "Eagle Eye Media",
+                    "Dvd",
+                    "-"
+                ]
+            ],
+            "title": "1992",
+            "table_id": "14d8ac19-4efb-43f7-b88e-d23f217b97e3"
+        },
+        "query": "What are the release date(s) and format(s) of the 1992 album in the United Kingdom? Summarize the basic information of the release.",
+        "summary": "The 1992 album was released in the United Kingdom on September 22, 2008 in a double CD format by Eagle Records, along with a DVD release from Eagle Eye Media and the Blu - Ray release from Eagle Eye Media on December 1 2008.",
+        "row_ids": [
+            0,
+            1,
+            2
+        ]
+    },
+    {
+        "example_id": "5d61c029-d889-47e9-abdb-78aa20182d73",
+        "table": {
+            "header": [
+                "First Game",
+                "Played",
+                "Drawn",
+                "Lost",
+                "Percentage"
+            ],
+            "rows": [
+                [
+                    "1988",
+                    "1",
+                    "0",
+                    "1",
+                    "0.00%"
+                ],
+                [
+                    "2001",
+                    "4",
+                    "1",
+                    "3",
+                    "12.50%"
+                ],
+                [
+                    "2006",
+                    "1",
+                    "0",
+                    "1",
+                    "0.00%"
+                ],
+                [
+                    "2007",
+                    "1",
+                    "0",
+                    "0",
+                    "100.00%"
+                ],
+                [
+                    "2000",
+                    "7",
+                    "0",
+                    "7",
+                    "0.00%"
+                ],
+                [
+                    "2006",
+                    "1",
+                    "0",
+                    "0",
+                    "100.00%"
+                ],
+                [
+                    "2007",
+                    "2",
+                    "0",
+                    "0",
+                    "100.00%"
+                ],
+                [
+                    "2006",
+                    "3",
+                    "0",
+                    "3",
+                    "0.00%"
+                ],
+                [
+                    "2009",
+                    "1",
+                    "0",
+                    "1",
+                    "0.00%"
+                ],
+                [
+                    "2010",
+                    "1",
+                    "0",
+                    "1",
+                    "0.00%"
+                ],
+                [
+                    "1986",
+                    "3",
+                    "0",
+                    "3",
+                    "0.00%"
+                ],
+                [
+                    "2011",
+                    "2",
+                    "0",
+                    "1",
+                    "50.00%"
+                ],
+                [
+                    "1986",
+                    "28",
+                    "1",
+                    "21",
+                    "23.21%"
+                ]
+            ],
+            "title": "Belgium Women 'S National Rugby Union Team",
+            "table_id": "eb0c5551-c702-410f-8de8-cc4a0ec5dd49"
+        },
+        "query": "How many games did the team play in 2011? Summarize the result of those game(s).",
+        "summary": "In 2011, the Belgium Women's National Rugby Union Team played in two games. Out of these two matches, they won one and lost one. This means that their winning percentage for 2011 was 50%.",
+        "row_ids": [
+            11
+        ]
+    },
+    {
+        "example_id": "93a6074e-a5cd-499a-8ac9-7e8c8c64a658",
+        "table": {
+            "header": [
+                "Date",
+                "Opponent",
+                "Venue",
+                "Result",
+                "Scorers"
+            ],
+            "rows": [
+                [
+                    "18 September 1985",
+                    "Bohemians",
+                    "A",
+                    "5 - 2",
+                    "Sturrock (3) , Bannon (2)"
+                ],
+                [
+                    "2 October 1985",
+                    "Bohemians",
+                    "H",
+                    "2 - 2",
+                    "Milne , Redford"
+                ],
+                [
+                    "23 October 1985",
+                    "Vardar",
+                    "H",
+                    "2 - 0",
+                    "Redford , Gough"
+                ],
+                [
+                    "6 November 1985",
+                    "Vardar",
+                    "A",
+                    "1 - 1",
+                    "Hegarty"
+                ],
+                [
+                    "26 November 1985",
+                    "Neuchtel Xamax",
+                    "H",
+                    "2 - 1",
+                    "Dodds , Redford"
+                ],
+                [
+                    "10 December 1985",
+                    "Neuchtel Xamax",
+                    "A",
+                    "1 - 3",
+                    "Bannon"
+                ]
+            ],
+            "title": "1985 - 86 Dundee United F.C. Season",
+            "table_id": "15abf0c2-8eaf-4630-9d76-90bc3d3858a2"
+        },
+        "query": "How many games did Dundee United F.C. play against Bohemians in 1985 - 86 season? Summarize the basic information of these game(s).",
+        "summary": "Dundee United F.C. played two games against Bohemians during the 1985 - 86 season. The first game was on 18 September 1985, away at Bohemians, which Dundee United won 5-2 with goals from Sturrock (3) and Bannon (2). The second game was on 2 October 1985, at home, which ended in a draw with both teams scoring two goals; Milne and Redford for Dundee United, and two for Bohemians.",
+        "row_ids": [
+            0,
+            1
+        ]
+    }
+]

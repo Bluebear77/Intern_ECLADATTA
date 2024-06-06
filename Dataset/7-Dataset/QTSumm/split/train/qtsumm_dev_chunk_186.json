@@ -1,0 +1,1161 @@
+[
+    {
+        "example_id": "287a7ccf-2e32-4fa1-b6f8-6739279bde95",
+        "table": {
+            "header": [
+                "Rank",
+                "Airport Name",
+                "Location",
+                "Iata Code",
+                "Passengers",
+                "% Chg 2009 / 10"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "John F Kennedy International Airport",
+                    "Queens , New York",
+                    "Jfk",
+                    "22702882",
+                    "5.8%"
+                ],
+                [
+                    "2",
+                    "Miami International Airport",
+                    "Miami , Florida",
+                    "Mia",
+                    "16207353",
+                    "5.3%"
+                ],
+                [
+                    "3",
+                    "Los Angeles International Airport",
+                    "Los Angeles , California",
+                    "Lax",
+                    "15505566",
+                    "4.7%"
+                ],
+                [
+                    "4",
+                    "Newark Liberty International Airport",
+                    "Newark , New Jersey",
+                    "Ewr",
+                    "11372186",
+                    "6.6%"
+                ],
+                [
+                    "5",
+                    "O'Hare International Airport",
+                    "Chicago , Illinois",
+                    "Ord",
+                    "10426287",
+                    "2.5%"
+                ],
+                [
+                    "6",
+                    "Hartsfield - Jackson Atlanta International Airport",
+                    "Atlanta , Georgia",
+                    "Atl",
+                    "9120974",
+                    "4.1%"
+                ],
+                [
+                    "7",
+                    "San Francisco International Airport",
+                    "San Mateo County , California",
+                    "Sfo",
+                    "8476172",
+                    "7.4%"
+                ],
+                [
+                    "8",
+                    "George Bush Intercontinental Airport",
+                    "Houston , Texas",
+                    "Iah",
+                    "8279513",
+                    "9.5%"
+                ],
+                [
+                    "9",
+                    "Washington Dulles International Airport",
+                    "Dulles , Virginia",
+                    "Iad",
+                    "6167501",
+                    "9.5%"
+                ]
+            ],
+            "title": "List Of The Busiest Airports In The United States",
+            "table_id": "810f5dee-c41d-49fb-b79e-0518fa8bfaec"
+        },
+        "query": "Summarize the basic information of the airports located in Georgia and Virginia.",
+        "summary": "The busiest airport in Georgia is the Hartsfield - Jackson Atlanta International Airport, located in Atlanta and identified by the IATA code ATL. This airport had 9,120,974 passengers passing through in 2010, representing a 4.1% growth from 2009. The busiest airport located in Virginia is the Washington Dulles International Airport, located in Dulles and identified by IATA code IAD. This airport had 6,167,501 passengers passing through it in 2010, witnessing a 9.5% jump from 2009.",
+        "row_ids": [
+            5,
+            8
+        ]
+    },
+    {
+        "example_id": "751a2f04-286e-4845-9b0a-c043ae5fa21c",
+        "table": {
+            "header": [
+                "Team",
+                "Games",
+                "Drawn",
+                "Lost",
+                "Points Difference",
+                "Points"
+            ],
+            "rows": [
+                [
+                    "Czechoslovakia",
+                    "7",
+                    "0",
+                    "0",
+                    "44 - 15",
+                    "14"
+                ],
+                [
+                    "Soviet Union",
+                    "7",
+                    "0",
+                    "1",
+                    "46 - 23",
+                    "12"
+                ],
+                [
+                    "Canada",
+                    "7",
+                    "0",
+                    "3",
+                    "32 - 26",
+                    "8"
+                ],
+                [
+                    "Sweden",
+                    "7",
+                    "0",
+                    "3",
+                    "35 - 21",
+                    "8"
+                ],
+                [
+                    "West Germany",
+                    "7",
+                    "1",
+                    "4",
+                    "23 - 35",
+                    "5"
+                ],
+                [
+                    "United States",
+                    "7",
+                    "1",
+                    "5",
+                    "25 - 42",
+                    "3"
+                ],
+                [
+                    "East Germany",
+                    "7",
+                    "1",
+                    "5",
+                    "13 - 45",
+                    "3"
+                ],
+                [
+                    "Finland",
+                    "7",
+                    "1",
+                    "5",
+                    "23 - 34",
+                    "3"
+                ]
+            ],
+            "title": "1978 World Ice Hockey Championships",
+            "table_id": "1942b9c2-ccb0-47eb-8a4a-3c95711ad439"
+        },
+        "query": "Summarize the teams that had a positive points difference.",
+        "summary": "The top four teams all had positive points differentials: Czechoslovakia earned the most points with 44-15, followed by the Soviet Union who tallied up 46-23, Canada\u2019s 32-26, and Sweden\u2019s 35-21.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3
+        ]
+    },
+    {
+        "example_id": "38e4ef13-7eb7-4dad-86cc-c316f25e7c86",
+        "table": {
+            "header": [
+                "No.",
+                "Date",
+                "Venue",
+                "Cap",
+                "Opponent",
+                "Score",
+                "Result",
+                "Competition"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "28 March 2015",
+                    "Vasil Levski National Stadium, Sofia, Bulgaria",
+                    "1",
+                    "Bulgaria",
+                    "2\u20132",
+                    "2\u20132",
+                    "UEFA Euro 2016 qualifying"
+                ],
+                [
+                    "2",
+                    "10 October 2015",
+                    "Baku National Stadium, Baku, Azerbaijan",
+                    "5",
+                    "Azerbaijan",
+                    "1\u20130",
+                    "3\u20131",
+                    "UEFA Euro 2016 qualifying"
+                ],
+                [
+                    "3",
+                    "17 June 2016",
+                    "Stadium Municipal, Toulouse, France",
+                    "12",
+                    "Sweden",
+                    "1\u20130",
+                    "1\u20130",
+                    "UEFA Euro 2016"
+                ],
+                [
+                    "4",
+                    "28 March 2017",
+                    "Amsterdam Arena, Amsterdam, Netherlands",
+                    "21",
+                    "Netherlands",
+                    "1\u20130",
+                    "2\u20131",
+                    "Friendly"
+                ],
+                [
+                    "5",
+                    "7 June 2017",
+                    "Allianz Riviera Stadium, Nice, France",
+                    "22",
+                    "Uruguay",
+                    "2\u20130",
+                    "3\u20130",
+                    "Friendly"
+                ],
+                [
+                    "6",
+                    "11 June 2017",
+                    "Stadio Friuli, Udine, Italy",
+                    "23",
+                    "Liechtenstein",
+                    "3\u20130",
+                    "5\u20130",
+                    "2018 FIFA World Cup qualification"
+                ]
+            ],
+            "title": "\u00c9der (Italian footballer) - International goals",
+            "table_id": "ee5e2330-d9b2-4cc0-823e-ee797fd5ec39"
+        },
+        "query": "From the table, how would you describe the significance of the 'Cap' number in relation to \u00c9der's goals?",
+        "summary": "The 'Cap' number in the table show the times \u00c9der has played for Italian national football team when he scored each goal. This information can help us study his performance and help to the team over time. From his very first appearance for the team (Cap #1) during UEFA Euro 2016 qualifying, he scored his first goal, showing his immediate impact on the team. As the Cap number becomes bigger throughout the table, it also show his success and importance on the field, by scoring goals that help the team's performance in important competitions like the UEFA Euro 2016 and 2018 FIFA World Cup qualification.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    },
+    {
+        "example_id": "69c90c41-4940-4c74-9ce3-2034f74b210b",
+        "table": {
+            "header": [
+                "Year",
+                "Races",
+                "Distance (Miles)",
+                "Time (days, hours, minutes, seconds)",
+                "Placing"
+            ],
+            "rows": [
+                [
+                    "1999",
+                    "Sri Chinmoy Ultra Trio 700 Mile Race",
+                    "700",
+                    "09:09:10:40",
+                    "1."
+                ],
+                [
+                    "2000",
+                    "Sri Chinmoy Ultra Trio 700 Mile Race",
+                    "700",
+                    "09:09:44:59",
+                    "1."
+                ],
+                [
+                    "2000",
+                    "Self-Transcendence 10 Day Race",
+                    "669",
+                    "10:00:00:00",
+                    "2."
+                ],
+                [
+                    "2000",
+                    "Self-Transcendence 3100 Mile Race",
+                    "3100",
+                    "47:13:29:55",
+                    "1."
+                ],
+                [
+                    "2001",
+                    "Self-Transcendence 10 Day Race",
+                    "349",
+                    "10:00:00:00",
+                    "\u2014"
+                ],
+                [
+                    "2001",
+                    "Sri Chinmoy Ultra Trio 700 Mile Race",
+                    "700",
+                    "09:20:32:29",
+                    "1."
+                ],
+                [
+                    "2001",
+                    "Self-Transcendence 3100 Mile Race",
+                    "3100",
+                    "48:10:56:12",
+                    "1."
+                ],
+                [
+                    "2002",
+                    "Self-Transcendence 6 Day Race",
+                    "422",
+                    "06:00:00:00",
+                    "1."
+                ],
+                [
+                    "2002",
+                    "Self-Transcendence 3100 Mile Race",
+                    "3100",
+                    "46:13:27:51",
+                    "2."
+                ],
+                [
+                    "2003",
+                    "Self-Transcendence 6 Day Race",
+                    "457",
+                    "06:00:00:00",
+                    "1."
+                ],
+                [
+                    "2004",
+                    "Self-Transcendence 6 Day Race",
+                    "433",
+                    "06:00:00:00",
+                    "1."
+                ],
+                [
+                    "2004",
+                    "Self-Transcendence 3100 Mile Race",
+                    "3100",
+                    "46:06:55:11",
+                    "1."
+                ],
+                [
+                    "2005",
+                    "Self-Transcendence 3100 Mile Race",
+                    "3100",
+                    "49:10:28:49",
+                    "2."
+                ],
+                [
+                    "2006",
+                    "Self-Transcendence 3100 Mile Race",
+                    "3100",
+                    "43:15:49:33",
+                    "2."
+                ],
+                [
+                    "2007",
+                    "Self-Transcendence 3100 Mile Race",
+                    "3100",
+                    "43:04:26:32",
+                    "1."
+                ],
+                [
+                    "2008",
+                    "Self-Transcendence 3100 Mile Race",
+                    "3100",
+                    "44:02:42:15",
+                    "1."
+                ],
+                [
+                    "2009",
+                    "Self-Transcendence 3100 Mile Race",
+                    "3100",
+                    "43:16:28:06",
+                    "1."
+                ],
+                [
+                    "2010",
+                    "Self-Transcendence 3100 Mile Race",
+                    "3100",
+                    "46:07:37:24",
+                    "1."
+                ],
+                [
+                    "2011",
+                    "Self-Transcendence 6 Day Race",
+                    "467",
+                    "06:00:00:00",
+                    "2."
+                ],
+                [
+                    "2011",
+                    "Self-Transcendence 3100 Mile Race",
+                    "3100",
+                    "46:07:37:24",
+                    "3."
+                ],
+                [
+                    "2012",
+                    "Self-Transcendence 6 Day Race",
+                    "470",
+                    "06:00:00:00",
+                    "2."
+                ],
+                [
+                    "2013",
+                    "Self-Transcendence 3100 Mile Race",
+                    "3100",
+                    "48:16:14:33",
+                    "3."
+                ],
+                [
+                    "2014",
+                    "Self-Transcendence 10 Day Race",
+                    "833",
+                    "10:00:00:00",
+                    "1."
+                ],
+                [
+                    "2015",
+                    "Self-Transcendence 3100 Mile Race",
+                    "3100",
+                    "40:09:06:21",
+                    "1."
+                ]
+            ],
+            "title": "Ashprihanal Pekka Aalto - Races",
+            "table_id": "61f3b54a-4f46-4dc0-84bd-d3fc97bbfcd0"
+        },
+        "query": "What is the trend in Ashprihanal Pekka Aalto's placings in the Self-Transcendence 3100 Mile Race over the years?",
+        "summary": "Ashprihanal Pekka Aalto's placings in the Self-Transcendence 3100 Mile Race over the years show a pattern of consistently strong performances. He consecutively secured first place finishes in 2000, 2001, 2004, 2007, 2008, 2009,  2010 and 2015. In later years, his placing slightly varied with three second place finishes in 2001,2005 and 2006, and two third place finishes in 2011 and 2013.",
+        "row_ids": [
+            3,
+            6,
+            8,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            19,
+            21,
+            23
+        ]
+    },
+    {
+        "example_id": "b6e3c522-51f7-405c-8798-4d754a54099b",
+        "table": {
+            "header": [
+                "Rank",
+                "County",
+                "Per capita income",
+                "Median household income",
+                "Median family income",
+                "Population",
+                "Number of households"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Rockingham",
+                    "$40,469",
+                    "$81,198",
+                    "$96,200",
+                    "295,223",
+                    "115,033"
+                ],
+                [
+                    "2",
+                    "Hillsborough",
+                    "$35,242",
+                    "$71,244",
+                    "$85,966",
+                    "400,721",
+                    "155,466"
+                ],
+                [
+                    "",
+                    "New Hampshire",
+                    "$34,362",
+                    "$66,779",
+                    "$81,726",
+                    "1,316,470",
+                    "518,973"
+                ],
+                [
+                    "3",
+                    "Carroll",
+                    "$32,612",
+                    "$53,306",
+                    "$62,468",
+                    "47,818",
+                    "21,052"
+                ],
+                [
+                    "4",
+                    "Grafton",
+                    "$32,469",
+                    "$55,762",
+                    "$71,587",
+                    "89,118",
+                    "35,986"
+                ],
+                [
+                    "5",
+                    "Merrimack",
+                    "$32,020",
+                    "$65,983",
+                    "$81,950",
+                    "146,445",
+                    "57,069"
+                ],
+                [
+                    "6",
+                    "Belknap",
+                    "$31,644",
+                    "$62,159",
+                    "$72,089",
+                    "60,088",
+                    "24,766"
+                ],
+                [
+                    "7",
+                    "Cheshire",
+                    "$30,181",
+                    "$57,782",
+                    "$71,354",
+                    "77,117",
+                    "30,204"
+                ],
+                [
+                    "8",
+                    "Strafford",
+                    "$29,917",
+                    "$60,711",
+                    "$76,368",
+                    "123,143",
+                    "47,100"
+                ],
+                [
+                    "9",
+                    "Sullivan",
+                    "$29,004",
+                    "$56,032",
+                    "$67,911",
+                    "43,742",
+                    "18,126"
+                ],
+                [
+                    "",
+                    "United States",
+                    "$28,930",
+                    "$53,889",
+                    "$66,011",
+                    "308,745,538",
+                    "116,716,292"
+                ],
+                [
+                    "10",
+                    "Coos",
+                    "$24,546",
+                    "$42,312",
+                    "$55,385",
+                    "33,055",
+                    "14,171"
+                ]
+            ],
+            "title": "List of New Hampshire locations by per capita income - New Hampshire counties ranked by per capita income",
+            "table_id": "73255c6b-310a-4659-a1f9-9b797f6ae6d6"
+        },
+        "query": "Please detail the income disparity among New Hampshire counties, particularly focusing on the highest-ranking county (Rockingham) and the lowest-ranking county (Coos).",
+        "summary": "The income difference in New Hampshire counties is very big. Rockingham county, which is highest, have much more per capita income than Coos county, which is lowest. Rockingham per capita income is $40,469 and Coos per capita income is just $24,546. This shows big difference in how much money people in these two counties have. Also, Rockingham has higher median household income ($81,198) and median family income ($96,200), but Coos has lower median household income ($42,312) and median family income ($55,385). This makes the income difference between these two counties in New Hampshire more clear.",
+        "row_ids": [
+            0,
+            11
+        ]
+    },
+    {
+        "example_id": "0892f71c-f659-4ad0-b614-0eb36b04ece0",
+        "table": {
+            "header": [
+                "Team",
+                "Match",
+                "Points",
+                "Draw",
+                "Lost"
+            ],
+            "rows": [
+                [
+                    "Stal Rzesz\u00f3w",
+                    "12",
+                    "22",
+                    "0",
+                    "1"
+                ],
+                [
+                    "Unia Leszno",
+                    "12",
+                    "22",
+                    "0",
+                    "1"
+                ],
+                [
+                    "Skra Warszawa",
+                    "12",
+                    "14",
+                    "0",
+                    "5"
+                ],
+                [
+                    "Gwardia Katowice",
+                    "12",
+                    "8",
+                    "0",
+                    "8"
+                ],
+                [
+                    "Stal Gorz\u00f3w Wlkp",
+                    "12",
+                    "8",
+                    "0",
+                    "8"
+                ],
+                [
+                    "Ostrovia Ostr\u00f3w Wlkp",
+                    "12",
+                    "6",
+                    "0",
+                    "9"
+                ],
+                [
+                    "Lp\u017c Lublin",
+                    "12",
+                    "4",
+                    "0",
+                    "10"
+                ]
+            ],
+            "title": "1957 Team Speedway Polish Championship",
+            "table_id": "78577e60-c27d-455b-a283-f96ef49a55ae"
+        },
+        "query": "What are the teams that scored the highest points in the 1957 Team Speedway Polish Championship? Summarize the basic information of these teams.",
+        "summary": "The teams that scored the highest points in the 1957 Team Speedway Polish Championship are Stal Rzesz\u00f3w and Unia Leszno, both with 22 points. Both teams had 12 matches, 0 draws, and 1 lost match. Together they topped the scoreboard , with Skra Warszawa and Gwardia Katowice not far behind with 14 and 8 points respectively.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3
+        ]
+    },
+    {
+        "example_id": "4e613c6e-6e5f-4f7f-baf4-8fee942beeef",
+        "table": {
+            "header": [
+                "Year",
+                "Venue",
+                "Winners",
+                "Runner - Up",
+                "3Rd Place"
+            ],
+            "rows": [
+                [
+                    "1977",
+                    "Vojens",
+                    "Alf Busk (9 Pts)",
+                    "Joe Owen (8 Pts)",
+                    "Les Collins (7 Pts)"
+                ],
+                [
+                    "1978",
+                    "Lonigo",
+                    "Finn Rune Jensen (13 Pts)",
+                    "Kevin Jolly (12 + 3 Pts)",
+                    "Neil Middleditch (12 + 2 Pts)"
+                ],
+                [
+                    "1979",
+                    "Leningrad",
+                    "Ron Preston (13 Pts)",
+                    "Airat Faizulin (12 Pts)",
+                    "Ari Koponen (11 + 3 Pts)"
+                ],
+                [
+                    "1980",
+                    "Pocking",
+                    "Tommy Knudsen (14 Pts)",
+                    "Tony Briggs (12 Pts)",
+                    "Dennis Sigalos (11 + 3 Pts)"
+                ],
+                [
+                    "1981",
+                    "Slan\u00fd",
+                    "Shawn Moran (15 Pts)",
+                    "Anton\u00edn Kasper , Jr (14 Pts)",
+                    "Jiri Hrdinak (13 Pts)"
+                ],
+                [
+                    "1982",
+                    "Pocking",
+                    "Anton\u00edn Kasper , Jr (14 Pts)",
+                    "Mark Courtney (12 + 3 Pts)",
+                    "Peter Ravn (12 + 2 Pts)"
+                ],
+                [
+                    "1983",
+                    "Lonigo",
+                    "Steve Baker (13 Pts)",
+                    "David Bargh (12 Pts)",
+                    "Marvyn Cox (11 Pts)"
+                ],
+                [
+                    "1984",
+                    "King 'S Lynn",
+                    "Marvyn Cox (12 Pts)",
+                    "Neil Evitts (11 + 3 Pts)",
+                    "Steve Lucero (11 + 2 Pts)"
+                ],
+                [
+                    "1985",
+                    "Abensberg",
+                    "Per Jonsson (15 Pts)",
+                    "Jimmy Nilsen (13 Pts)",
+                    "Ole Hansen (11 + 3Pts)"
+                ],
+                [
+                    "1986",
+                    "Rivne",
+                    "Igor Marko (13 Pts)",
+                    "Tony Olsson (12 Pts)",
+                    "Brian Karger (11 Pts)"
+                ],
+                [
+                    "1987",
+                    "Zielona G\u00f3ra",
+                    "Gary Havelock (13 Pts)",
+                    "Piotr \u015awist (12 + 3 Pts)",
+                    "Sean Wilson (12 + 2 Pts)"
+                ],
+                [
+                    "Year",
+                    "Venue",
+                    "Winners",
+                    "Runner - Up",
+                    "3Rd Place"
+                ]
+            ],
+            "title": "Individual Speedway Junior World Championship",
+            "table_id": "38aec663-cc48-4232-bf11-528a28127172"
+        },
+        "query": "Summarize the basic information of the winners of the Individual Speedway Junior World Championship between 1984 and 1987.",
+        "summary": "Between 1984 and 1987, the winners of the Individual Speedway Junior World Championship were Marvyn Cox (1984), Per Jonsson (1985), Igor Marko (1986), and Gary Havelock (1987). Marvyn Cox got 12 points at King's Lynn , Per Jonsson got 15 points at Abensberg, Igor Marko obtained 13 points in Rivne, and lastly Gary Havelock earned 13 points in Zielona G\u00f3ra. The runners-up for this four year period were Neil Evitts (1984), Jimmy Nilsen (1985), Tony Olsson (1986), and Piotr \u015awist (1987). Additionally, the third place winners were Steve Lucero (1984), Ole Hansen (1985), Brian Karger (1986), and Sean Wilson (1987).",
+        "row_ids": [
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "example_id": "ffe18404-08c3-4aa0-b057-0b945fc64979",
+        "table": {
+            "header": [
+                "Name",
+                "Area (km2)",
+                "Population 2010 Census",
+                "Population 2013 estimate",
+                "Capital",
+                "HDI 2014 Estimates"
+            ],
+            "rows": [
+                [
+                    "Tarakan City",
+                    "250.80",
+                    "193,370",
+                    "220,200",
+                    "Tarakan City",
+                    "0.746 (High)"
+                ],
+                [
+                    "Bulungan Regency",
+                    "13,181.92",
+                    "112,663",
+                    "154,934",
+                    "Tanjung Selor",
+                    "0.692 (Medium)"
+                ],
+                [
+                    "Malinau Regency",
+                    "39,766.32",
+                    "62,580",
+                    "71,501",
+                    "Malinau",
+                    "0.700 (High)"
+                ],
+                [
+                    "Nunukan Regency",
+                    "14,247.50",
+                    "140,841",
+                    "162,711",
+                    "Nunukan",
+                    "0.631 (Medium)"
+                ],
+                [
+                    "Tana Tidung Regency",
+                    "4,828.58",
+                    "15,202",
+                    "18,985",
+                    "Tideng Pale",
+                    "0.647 (Medium)"
+                ],
+                [
+                    "Totals",
+                    "72,275.12",
+                    "524,656",
+                    "628,331",
+                    "Tarakan",
+                    "0.686 (Medium)"
+                ]
+            ],
+            "title": "North Kalimantan - Administrative divisions",
+            "table_id": "35181235-2e34-4945-b734-329a95ad8c73"
+        },
+        "query": "What are the populations, based on the 2010 Census and 2013 estimates, of the two divisions with the smallest and largest areas, respectively, and how do these populations compare?",
+        "summary": "According to 2010 Census and 2013 estimated, two divisions with small and large area is Tarakan City and Malinau Regency. Tarakan City has area 250.80 km2, in 2010 population 193,370 and in 2013 estimated population 220,200. Different, Malinau Regency has area 39,766.32 km2, but population 62,580 in 2010 and 2013 estimated population 71,501.",
+        "row_ids": [
+            0,
+            2
+        ]
+    },
+    {
+        "example_id": "50ac4081-496b-4ef5-a18d-1ae04166a443",
+        "table": {
+            "header": [
+                "No. overall",
+                "No. in season",
+                "Title",
+                "Directed by",
+                "Written by",
+                "Original air date",
+                "Prod. code",
+                "US viewers (millions)"
+            ],
+            "rows": [
+                [
+                    "52",
+                    "1",
+                    "\"Checking In\"",
+                    "Ryan Murphy",
+                    "Ryan Murphy & Brad Falchuk",
+                    "October 7, 2015",
+                    "5ATS01",
+                    "5.81"
+                ],
+                [
+                    "53",
+                    "2",
+                    "\"Chutes and Ladders\"",
+                    "Bradley Buecker",
+                    "Tim Minear",
+                    "October 14, 2015",
+                    "5ATS02",
+                    "4.06"
+                ],
+                [
+                    "54",
+                    "3",
+                    "\"Mommy\"",
+                    "Bradley Buecker",
+                    "James Wong",
+                    "October 21, 2015",
+                    "5ATS03",
+                    "3.20"
+                ],
+                [
+                    "55",
+                    "4",
+                    "\"Devil's Night\"",
+                    "Loni Peristere",
+                    "Jennifer Salt",
+                    "October 28, 2015",
+                    "5ATS04",
+                    "3.04"
+                ],
+                [
+                    "56",
+                    "5",
+                    "\"Room Service\"",
+                    "Michael Goi",
+                    "Ned Martel",
+                    "November 4, 2015",
+                    "5ATS05",
+                    "2.87"
+                ],
+                [
+                    "57",
+                    "6",
+                    "\"Room 33\"",
+                    "Loni Peristere",
+                    "John J. Gray",
+                    "November 11, 2015",
+                    "5ATS06",
+                    "2.64"
+                ],
+                [
+                    "58",
+                    "7",
+                    "\"Flicker\"",
+                    "Michael Goi",
+                    "Crystal Liu",
+                    "November 18, 2015",
+                    "5ATS07",
+                    "2.64"
+                ],
+                [
+                    "59",
+                    "8",
+                    "\"The Ten Commandments Killer\"",
+                    "Loni Peristere",
+                    "Ryan Murphy",
+                    "December 2, 2015",
+                    "5ATS08",
+                    "2.31"
+                ],
+                [
+                    "60",
+                    "9",
+                    "\"She Wants Revenge\"",
+                    "Michael Uppendahl",
+                    "Brad Falchuk",
+                    "December 9, 2015",
+                    "5ATS09",
+                    "2.14"
+                ],
+                [
+                    "61",
+                    "10",
+                    "\"She Gets Revenge\"",
+                    "Bradley Buecker",
+                    "James Wong",
+                    "December 16, 2015",
+                    "5ATS10",
+                    "1.85"
+                ],
+                [
+                    "62",
+                    "11",
+                    "\"Battle Royale\"",
+                    "Michael Uppendahl",
+                    "Ned Martel",
+                    "January 6, 2016",
+                    "5ATS11",
+                    "1.84"
+                ],
+                [
+                    "63",
+                    "12",
+                    "\"Be Our Guest\"",
+                    "Bradley Buecker",
+                    "John J. Gray",
+                    "January 13, 2016",
+                    "5ATS12",
+                    "2.24"
+                ]
+            ],
+            "title": "List of American Horror Story episodes - Season 5: Hotel (2015\u201316)",
+            "table_id": "5836fd77-31bc-4866-82a8-f74189a91323"
+        },
+        "query": "What trends can be observed in the number of US viewers in millions throughout the season from the first episode \"Checking In\" to the last episode \"Be Our Guest\"?",
+        "summary": "In American Horror Story: Hotel's fifth season, we can see the number of US viewers in millions go down. First episode, \"Checking In,\" have 5.81 million people watch. But, the people who watch become less and less as season go on. When it come to episode ten, \"She Gets Revenge,\" only 1.85 million people watch, this is lowest point. Last episode, \"Be Our Guest,\" have 2.24 million people watch, it is a little more than episode ten, but still not as much as first episode.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "example_id": "726cb6b1-5ee6-4cc3-b4c1-be52c7e423b2",
+        "table": {
+            "header": [
+                "Year",
+                "",
+                "Democrat",
+                "Votes",
+                "Pct",
+                "",
+                "Republican",
+                "Votes",
+                "Pct",
+                "",
+                "3rd Party",
+                "Party",
+                "Votes",
+                "Pct",
+                "",
+                "4th Party",
+                "Party",
+                "Votes",
+                "Pct",
+                ""
+            ],
+            "rows": [
+                [
+                    "1988",
+                    "",
+                    "Lloyd Bentsen*",
+                    "3,149,806",
+                    "59%",
+                    "",
+                    "Beau Boulter",
+                    "2,129,228",
+                    "40%",
+                    "",
+                    "Jeff Daiell",
+                    "Libertarian",
+                    "43,989",
+                    "1%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    "1993",
+                    "",
+                    "Bob Krueger",
+                    "576,538",
+                    "33%",
+                    "",
+                    "Kay Bailey Hutchison",
+                    "1,188,716",
+                    "67%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    "1994",
+                    "",
+                    "Richard W. Fisher",
+                    "1,639,615",
+                    "38%",
+                    "",
+                    "Kay Bailey Hutchison",
+                    "2,604,218",
+                    "61%",
+                    "",
+                    "Pierre Blondeau",
+                    "Libertarian",
+                    "36,107",
+                    "1%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    "2000",
+                    "",
+                    "Gene Kelly",
+                    "2,025,024",
+                    "32%",
+                    "",
+                    "Kay Bailey Hutchison",
+                    "4,078,954",
+                    "65%",
+                    "",
+                    "Douglas Sandage",
+                    "Green",
+                    "91,329",
+                    "1%",
+                    "",
+                    "Mary Ruwart",
+                    "Libertarian",
+                    "72,657",
+                    "1%",
+                    ""
+                ],
+                [
+                    "2006",
+                    "",
+                    "Barbara Ann Radnofsky",
+                    "1,555,202",
+                    "36%",
+                    "",
+                    "Kay Bailey Hutchison",
+                    "2,661,789",
+                    "62%",
+                    "",
+                    "Scott Jameson",
+                    "Libertarian",
+                    "97,672",
+                    "2%",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            ],
+            "title": "Kay Bailey Hutchison - Electoral history",
+            "table_id": "66c57510-2a4d-4ec0-b46e-641c4a637bbc"
+        },
+        "query": "What is the highest percentage of votes that Kay Bailey Hutchison received in the years listed and which year was it?",
+        "summary": "In 2000, Kay Bailey Hutchison get most high percentage of votes, 65% of all votes.",
+        "row_ids": [
+            3
+        ]
+    }
+]
