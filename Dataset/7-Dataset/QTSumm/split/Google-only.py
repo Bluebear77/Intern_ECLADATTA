@@ -220,7 +220,7 @@ def save_to_csv(data, filename):
     logger.info(f"Saved data to {csv_filename}")
 
 def main():
-    dev_directory = './test'
+    dev_directory = './train'
     json_files = [f for f in os.listdir(dev_directory) if f.endswith('.json')]
     
     # Check for existing .csv files and filter json_files
