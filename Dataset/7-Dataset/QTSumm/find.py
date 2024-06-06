@@ -1,78 +1,55 @@
-import subprocess
-import sys
-from urllib.parse import urlparse, parse_qs
-
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-# List of packages to ensure are installed
-required_packages = [
-    "pandas",
-    "requests",
-    "fuzzywuzzy",
-    "tqdm",
-    "beautifulsoup4",
-    "lxml"
-]
-
-for package in required_packages:
-    try:
-        __import__(package)
-    except ImportError:
-        install(package)
-
 import json
 import pandas as pd
 import requests
 from fuzzywuzzy import fuzz
 from tqdm import tqdm
 from bs4 import BeautifulSoup
+from io import StringIO
 import logging
+
+# Ensure necessary packages are installed
+# pip install lxml
+# pip install tqdm
+# pip install fuzzywuzzy
+# pip install beautifulsoup4
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 logger = logging.getLogger()
 
 # Create file handler to log to a file
-file_handler = logging.FileHandler('testlog.txt')
+file_handler = logging.FileHandler('log.md')
 file_handler.setLevel(logging.INFO)
 formatter = logging.Formatter('%(message)s')
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
-def get_wikipedia_page_id(url):
+def search_wikipedia(title):
+    base_url = "https://en.wikipedia.org/w/api.php"
+    params = {
+        'action': 'query',
+        'list': 'search',
+        'srsearch': title,
+        'format': 'json'
+    }
     try:
-        # Extract the title from the URL
-        parsed_url = urlparse(url)
-        if 'title' in parse_qs(parsed_url.query):
-            title = parse_qs(parsed_url.query)['title'][0]
-        else:
-            title = parsed_url.path.split('/')[-1]
-        
-        # Make a request to the Wikipedia API to get the page ID
-        api_url = f"https://en.wikipedia.org/w/api.php?action=query&titles={title}&format=json"
-        response = requests.get(api_url)
-        response.raise_for_status()
-        data = response.json()
-        
-        # Extract the page ID from the API response
-        pages = data['query']['pages']
-        page_id = next(iter(pages))
-        
-        if page_id != "-1":  # Ensure page exists
-            return page_id
+        response = requests.get(base_url, params=params)
+        response.raise_for_status()  # This will raise an exception for HTTP errors
+        results = response.json().get('query', {}).get('search', [])
+        if results:
+            # Take the most relevant result
+            top_result = results[0]
+            page_id = top_result['pageid']
+            url = f"http://en.wikipedia.org/?curid={page_id}"
+            return url, top_result['title']
     except requests.RequestException as e:
-        print(f"Request failed: {e}")
-    return None
-
-def clean_matched_title(matched_title):
-    # Remove unwanted parts from matched_title
-    if 'wikipedia.org' in matched_title:
-        matched_title = matched_title.split('wikipedia.org')[0].strip()
-    return matched_title
+        logger.info(f"Request failed: {e}")
+    except json.JSONDecodeError:
+        logger.info("Failed to decode JSON from response.")
+    return "Not found", "No title matched"
 
 def search_google(title):
-    search_url = f"https://www.google.com/search?q={title.replace(' ', '+')}+site:wikipedia.org"
+    search_url = f"https://www.google.com/search?q={title.replace(' ', '+')}+wikipedia"
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
@@ -83,26 +60,31 @@ def search_google(title):
         for link in soup.find_all('a'):
             href = link.get('href')
             if href and 'wikipedia.org' in href:
-                full_url = href.split('&')[0].replace('/url?q=', '')
-                if 'en.wikipedia.org/wiki/' in full_url:
-                    page_id = get_wikipedia_page_id(full_url)
-                    if page_id:
-                        wiki_url = f"http://en.wikipedia.org/?curid={page_id}"
-                        return wiki_url, clean_matched_title(link.get_text())
+                google_url = href.split('&')[0].replace('/url?q=', '')
+                google_url = google_url.split('%')[0]  # Truncate the URL at the first occurrence of '%'
+                google_title = link.get_text()
+                return google_url, google_title
     except requests.RequestException as e:
         logger.info(f"Request failed: {e}")
     return "Not found", "No title matched"
 
-
-
-
-
 def search_combined(title):
+    wiki_url, wiki_title = search_wikipedia(title)
     google_url, google_title = search_google(title)
 
-    if google_title:
+    # Calculate similarity scores
+    if wiki_title and google_title:
+        wiki_score = fuzz.ratio(title, wiki_title)
         google_score = fuzz.ratio(title, google_title)
+
+        if google_score > wiki_score:
+            return google_url, google_title
+        else:
+            return wiki_url, wiki_title
+    elif google_title:
         return google_url, google_title
+    elif wiki_title:
+        return wiki_url, wiki_title
     else:
         return "Not found", "No title matched"
 
@@ -112,7 +94,7 @@ def fetch_all_wikipedia_tables(url):
         response.raise_for_status()
         soup = BeautifulSoup(response.content, 'html.parser')
         tables = soup.find_all('table', {'class': 'wikitable'})
-        dataframes = [pd.read_html(str(table))[0] for table in tables]
+        dataframes = [pd.read_html(StringIO(str(table)), flavor='lxml')[0] for table in tables]
         return dataframes
     except requests.RequestException as e:
         logger.info(f"Request failed: {e}")
@@ -122,7 +104,7 @@ def fetch_all_wikipedia_tables(url):
 
 def extract_first_4x4(df):
     if not df.empty:
-        df = df.astype(str)
+        df = df.astype(str)  # Ensure all data is string for fair comparison
         return df.iloc[:4, :4].fillna('')
     return pd.DataFrame()
 
@@ -164,11 +146,11 @@ def load_and_process_file(filename):
         else:
             actual_table = pd.DataFrame()
 
-        logger.info(f"\nProcessing table: {title}\nTable_id: {table_id}")
+        logger.info(f"\nProcessing table: {title} with table_id: {table_id}")
         logger.info(f"Actual table (first 4 rows and columns):\n{extract_first_4x4(actual_table)}\n")
 
         found_url, matched_title = search_combined(title)
-        logger.info(f"Found URL: {found_url}, \nMatched Title: {matched_title}")
+        logger.info(f"Found URL: {found_url}, Matched Title: {matched_title}")
         
         title_similarity = fuzz.ratio(title.lower(), matched_title.lower()) if found_url != "Not found" else 0.0
         logger.info(f"Title similarity: {title_similarity}")
@@ -183,7 +165,7 @@ def load_and_process_file(filename):
         
         logger.info(f"Table similarity: {table_similarity}\n")
         
-        overall_similarity = int(0.7 * title_similarity + 0.3 * table_similarity)
+        overall_similarity = int(0.7 * title_similarity + 0.3 * table_similarity)  # Convert to integer
         logger.info(f"Overall similarity: {overall_similarity}\n")
         
         if overall_similarity > highest_overall_similarity:
@@ -221,4 +203,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
