@@ -207,8 +207,7 @@ def load_and_process_file(filename):
             "overall_similarity": overall_similarity
         })
 
-        # Add a delay to avoid rate limiting
-        time.sleep(random.uniform(1, 3))
+      
         
     logger.info(f"URL with highest overall similarity: {best_url}")
     logger.info(f"Best matched table (first 4 rows and columns):\n{extract_first_4x4(best_matched_table)}")
