@@ -5,8 +5,7 @@ Here is the Recovery QTSumm Dataset.
 
 `wiki-api`  directory contains the result of Wiki-API ('https://en.wikipedia.org/w/api.php') based on the table title.
 
-`cpombined` directory  contains the result of the optimal selection result from both Google Search and  Wiki-API by calculate_combined_score = int(0.5 * row['title_similarity'] + 0.5 * row['table_similarity'])
-.
+`cpombined` directory  contains the result of the optimal selection result from both Google Search and  Wiki-API by `calculate_combined_score = int(0.5 * row['title_similarity'] + 0.5 * row['table_similarity'])`.
 
 
 ***
