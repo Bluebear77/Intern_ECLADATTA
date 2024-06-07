@@ -1,0 +1,1299 @@
+[
+    {
+        "example_id": "35b07d9d-87d2-4532-a551-d5d8e1ad8442",
+        "table": {
+            "header": [
+                "Rank",
+                "Fastest Time (S)",
+                "Wind (M / S)",
+                "Athlete",
+                "Nation",
+                "Date",
+                "Location"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "11.13",
+                    "+ 2.0",
+                    "Chandra Cheeseborough",
+                    "United States",
+                    "21 June 1976",
+                    "Eugene"
+                ],
+                [
+                    "2",
+                    "11.14",
+                    "+ 1.7",
+                    "Marion Jones",
+                    "United States",
+                    "6 June 1992",
+                    "Norwalk"
+                ],
+                [
+                    "2",
+                    "11.14",
+                    "0.5",
+                    "Angela Williams",
+                    "United States",
+                    "21 June 1997",
+                    "Edwardsville"
+                ],
+                [
+                    "4",
+                    "11.16",
+                    "+ 1.2",
+                    "Gabrielle Mayo",
+                    "United States",
+                    "22 June 2006",
+                    "Indianapolis"
+                ],
+                [
+                    "5",
+                    "11.17 A",
+                    "+ 0.6",
+                    "Wendy Vereen",
+                    "United States",
+                    "3 July 1983",
+                    "Colorado Springs"
+                ],
+                [
+                    "6",
+                    "11.20 A",
+                    "+ 1.2",
+                    "Raelene Boyle",
+                    "Australia",
+                    "15 June 1968",
+                    "Mexico City"
+                ],
+                [
+                    "7",
+                    "11.24",
+                    "+ 1.2",
+                    "Jeneba Tarmoh",
+                    "United States",
+                    "22 June 2006",
+                    "Indianapolis"
+                ],
+                [
+                    "7",
+                    "11.24",
+                    "+ 0.8",
+                    "Jodie Williams",
+                    "Great Britain",
+                    "31 May 2010",
+                    "Bedford"
+                ],
+                [
+                    "9",
+                    "11.26",
+                    "+ 1.4",
+                    "Grit Breuer",
+                    "East Germany",
+                    "30 June 1989",
+                    "Dresden"
+                ],
+                [
+                    "9",
+                    "11.26",
+                    "+ 1.2",
+                    "Bianca Knight",
+                    "United States",
+                    "22 June 2006",
+                    "Indianapolis"
+                ]
+            ],
+            "title": "100 Metres",
+            "table_id": "ff91c4a4-c8ce-42ab-98f8-da4592829b4e"
+        },
+        "query": "Summarize the athletes who achieved the fastest time between 1992 and 2006.",
+        "summary": "Between 1992 and 2006, the athletes who achieved the fastest time in the 100 metres were Marion Jones , Angela Williams , Gabrielle Mayo , Jeneba Tarmoh and Bianca Knight from the United States. Marion Jones ran the fastest time of 11.14 seconds with a wind of + 1.7 metres per second on 6 June 1992 in Norwalk. Angela Williams ran 11.14 seconds with a wind of 0.5 metres per second on 21 June 1997 in Edwardsville. Gabrielle Mayo ran 11.16 seconds with a wind of + 1.2 metres per second on 22 June 2006 in Indianapolis. Jeneba Tarmoh ran 11.24 seconds with a wind of + 1.2 metres per second on 22 June 2006 in Indianapolis. Finally, Bianca Knight ran 11.26 seconds with a wind of + 1.2 metres per second on 22 June 2006 in Indianapolis.",
+        "row_ids": [
+            1,
+            2,
+            3,
+            6,
+            9
+        ]
+    },
+    {
+        "example_id": "76a13163-0a71-47aa-9a34-93d021f8e708",
+        "table": {
+            "header": [
+                "Presidential candidate",
+                "Party",
+                "Popular vote",
+                "Percentage",
+                "Electoral vote"
+            ],
+            "rows": [
+                [
+                    "John Kerry",
+                    "Democratic",
+                    "184,067",
+                    "58.94%",
+                    "3"
+                ],
+                [
+                    "George W. Bush",
+                    "Republican",
+                    "121,180",
+                    "38.80%",
+                    "0"
+                ],
+                [
+                    "Ralph Nader",
+                    "Independent",
+                    "4,494",
+                    "1.44%",
+                    "0"
+                ],
+                [
+                    "Michael Badnarik",
+                    "Libertarian",
+                    "1,102",
+                    "0.35%",
+                    "0"
+                ],
+                [
+                    "Write ins",
+                    "",
+                    "957",
+                    "0.31%",
+                    "0"
+                ],
+                [
+                    "John Parker",
+                    "Liberty Union",
+                    "265",
+                    "0.09%",
+                    "0"
+                ],
+                [
+                    "R\u00f3ger Calero",
+                    "Socialist Workers",
+                    "244",
+                    "0.08%",
+                    "0"
+                ]
+            ],
+            "title": "2004 United States presidential election in Vermont - Results",
+            "table_id": "04462ead-bf56-49e6-8ddd-97260d0558d3"
+        },
+        "query": "What percentage of the popular vote did the top two candidates, John Kerry and George W. Bush, receive respectively in the 2004 United States presidential election in Vermont, and how many electoral votes were they awarded?",
+        "summary": "In the 2004 United States president election in Vermont, John Kerry get 58.94% of the popular votes and George W. Bush get 38.80% of the popular votes. John Kerry was give 3 electoral votes, while George W. Bush not get any electoral votes in Vermont.",
+        "row_ids": [
+            0,
+            1
+        ]
+    },
+    {
+        "example_id": "6ca6390b-d91f-424c-b91d-b28f823b82b7",
+        "table": {
+            "header": [
+                "Date",
+                "Opponent",
+                "Result",
+                "Attendance",
+                "Rank"
+            ],
+            "rows": [
+                [
+                    "April 18, 2019",
+                    "Washington Capitals",
+                    "W (2\u20131)",
+                    "19,202",
+                    "1"
+                ],
+                [
+                    "June 8, 2002",
+                    "Detroit Red Wings",
+                    "OTL (2\u20133)",
+                    "18,982",
+                    "2"
+                ],
+                [
+                    "June 19, 2006",
+                    "Edmonton Oilers",
+                    "W (3\u20131)",
+                    "18,978",
+                    "3"
+                ],
+                [
+                    "April 22, 2019",
+                    "Washington Capitals",
+                    "W (5\u20132)",
+                    "18,913",
+                    "4"
+                ],
+                [
+                    "May 8, 2009",
+                    "Boston Bruins",
+                    "W (4\u20131)",
+                    "18,878",
+                    "5"
+                ],
+                [
+                    "May 23, 2009",
+                    "Pittsburgh Penguins",
+                    "L (2\u20136)",
+                    "18,789",
+                    "6"
+                ],
+                [
+                    "April 15, 2019",
+                    "Washington Capitals",
+                    "W (5\u20130)",
+                    "18,783",
+                    "7"
+                ],
+                [
+                    "October 4, 2018",
+                    "New York Islanders",
+                    "OTL (1\u20132)",
+                    "18,680",
+                    "8"
+                ],
+                [
+                    "October 29, 1999",
+                    "New Jersey Devils",
+                    "L (2\u20134)",
+                    "18,680",
+                    "9"
+                ],
+                [
+                    "April 22, 2001",
+                    "New Jersey Devils",
+                    "L (1\u20135)",
+                    "18,680",
+                    "10"
+                ]
+            ],
+            "title": "PNC Arena - Top 10 attended Hurricanes games at PNC Arena",
+            "table_id": "ffe38ee3-50b3-49fa-b195-3895034fb808"
+        },
+        "query": "Which game recorded the highest attendance at the PNC Arena and what was the outcome of that game?",
+        "summary": "Highest attendings at PNC Arena was recorded on April 18, 2019, in game between Carolina Hurricanes and Washington Capitals. Hurricanes winning this game with score 2-1.",
+        "row_ids": [
+            0
+        ]
+    },
+    {
+        "example_id": "5000194e-8e3c-437a-9f13-a80f94db44f2",
+        "table": {
+            "header": [
+                "Player",
+                "Games Played",
+                "Minutes",
+                "Field Goals",
+                "Three Pointers",
+                "Free Throws",
+                "Rebounds",
+                "Assists",
+                "Blocks",
+                "Steals",
+                "Points"
+            ],
+            "rows": [
+                [
+                    "Moore Maya Moore",
+                    "39",
+                    "1209",
+                    "284",
+                    "90",
+                    "96",
+                    "348",
+                    "127",
+                    "59",
+                    "76",
+                    "754"
+                ],
+                [
+                    "Montgomery Renee Montgomery",
+                    "39",
+                    "1237",
+                    "226",
+                    "99",
+                    "93",
+                    "82",
+                    "199",
+                    "9",
+                    "61",
+                    "644"
+                ],
+                [
+                    "Charles Tina Charles",
+                    "39",
+                    "982",
+                    "259",
+                    "0",
+                    "124",
+                    "348",
+                    "41",
+                    "62",
+                    "35",
+                    "642"
+                ],
+                [
+                    "Greene Kalana Greene",
+                    "39",
+                    "990",
+                    "141",
+                    "6",
+                    "50",
+                    "181",
+                    "68",
+                    "11",
+                    "37",
+                    "338"
+                ],
+                [
+                    "Doty Caroline Doty",
+                    "17",
+                    "406",
+                    "52",
+                    "30",
+                    "13",
+                    "57",
+                    "33",
+                    "4",
+                    "16",
+                    "147"
+                ],
+                [
+                    "Hayes Tiffany Hayes",
+                    "39",
+                    "1002",
+                    "109",
+                    "46",
+                    "63",
+                    "156",
+                    "102",
+                    "15",
+                    "44",
+                    "327"
+                ],
+                [
+                    "Mclaren Kaili Mclaren",
+                    "38",
+                    "581",
+                    "61",
+                    "0",
+                    "37",
+                    "130",
+                    "73",
+                    "22",
+                    "19",
+                    "159"
+                ],
+                [
+                    "Williams Tahirah Williams",
+                    "33",
+                    "245",
+                    "33",
+                    "0",
+                    "22",
+                    "62",
+                    "22",
+                    "4",
+                    "9",
+                    "88"
+                ],
+                [
+                    "Dixon Lorin Dixon",
+                    "39",
+                    "604",
+                    "28",
+                    "2",
+                    "31",
+                    "63",
+                    "71",
+                    "2",
+                    "17",
+                    "89"
+                ],
+                [
+                    "Gardler Meghan Gardler",
+                    "32",
+                    "335",
+                    "19",
+                    "5",
+                    "15",
+                    "62",
+                    "21",
+                    "3",
+                    "12",
+                    "58"
+                ],
+                [
+                    "Fernandes Jacquie Fernandes",
+                    "30",
+                    "141",
+                    "8",
+                    "3",
+                    "4",
+                    "17",
+                    "2",
+                    "0",
+                    "3",
+                    "23"
+                ]
+            ],
+            "title": "2008 - 09 Connecticut Huskies Women 'S Basketball Team",
+            "table_id": "7d31a7ba-4d8c-45d5-a31f-e685560387c3"
+        },
+        "query": "Which player(s) scored more than 600 points in the 2008 - 09 Connecticut Huskies Women's Basketball Team? Summarize the basic information of these players.",
+        "summary": "The 2008 - 09 Connecticut Huskies Women's Basketball Team had three players who scored more than 600 points: Maya Moore, Renee Montgomery and Tina Charles. Maya Moore scored 754 points, playing a total of 1209 minutes. She had 284 field goals, 90 three pointers, and 96 free throws. Montgomery Renee Montgomery scored 644 points in 1237 minutes, compiling 226 field goals, 99 three point shots and 93 free throws. Tina Charles scored 642 points in 982 minutes, with 259 field goals and 124 free throws.",
+        "row_ids": [
+            0,
+            1,
+            2
+        ]
+    },
+    {
+        "example_id": "e20e32c8-7346-4d77-8ea2-6ec47cf9018c",
+        "table": {
+            "header": [
+                "Rank",
+                "Lane",
+                "Name",
+                "Nationality",
+                "Time",
+                "Notes"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "4",
+                    "Chad le Clos",
+                    "South Africa",
+                    "51.42",
+                    "Q, NR"
+                ],
+                [
+                    "2",
+                    "6",
+                    "Tyler McGill",
+                    "United States",
+                    "51.61",
+                    "Q"
+                ],
+                [
+                    "3",
+                    "3",
+                    "Milorad \u010cavi\u0107",
+                    "Serbia",
+                    "51.66",
+                    "Q"
+                ],
+                [
+                    "4",
+                    "2",
+                    "Joeri Verlinden",
+                    "Netherlands",
+                    "51.75",
+                    "Q, NR"
+                ],
+                [
+                    "5",
+                    "5",
+                    "Yevgeny Korotyshkin",
+                    "Russia",
+                    "51.85",
+                    "Q"
+                ],
+                [
+                    "6",
+                    "1",
+                    "Dinko Juki\u0107",
+                    "Austria",
+                    "51.99",
+                    "NR"
+                ],
+                [
+                    "7",
+                    "7",
+                    "Nikolay Skvortsov",
+                    "Russia",
+                    "52.03",
+                    ""
+                ],
+                [
+                    "8",
+                    "8",
+                    "Jason Dunford",
+                    "Kenya",
+                    "52.16",
+                    ""
+                ]
+            ],
+            "title": "Swimming at the 2012 Summer Olympics \u2013 Men's 100 metre butterfly - Semifinal 2",
+            "table_id": "8b715c8e-da31-4ff0-ae00-8400fe66bc0e"
+        },
+        "query": "Who were the four fastest swimmers in Semifinal 2 for the men's 100 meter butterfly at the 2012 Summer Olympics based on the time they completed the event, and what were their times?",
+        "summary": "In 2012 Summer Olympics, men's 100 meter butterfly Semifinal 2, four fastest swimmers were there. Chad le Clos from South Africa got 51.42, Tyler McGill from United States got 51.61 , Milorad \u010cavi\u0107 from Serbia got 51.66 , and Joeri Verlinden from Netherlands got 51.75 .",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3
+        ]
+    },
+    {
+        "example_id": "c5a2aa37-0705-4bd4-bf3a-97a0a2a40b5d",
+        "table": {
+            "header": [
+                "School",
+                "Location(s)",
+                "Control",
+                "Type",
+                "Enrollment (2016)",
+                "Founded"
+            ],
+            "rows": [
+                [
+                    "Bates College",
+                    "Lewiston",
+                    "Private",
+                    "Baccalaureate college",
+                    "1,903",
+                    "1855"
+                ],
+                [
+                    "Beal College",
+                    "Bangor",
+                    "Private (for-profit)",
+                    "Associates college",
+                    "600",
+                    "1891"
+                ],
+                [
+                    "Bowdoin College",
+                    "Brunswick",
+                    "Private",
+                    "Baccalaureate college",
+                    "1,952",
+                    "1794"
+                ],
+                [
+                    "Central Maine Community College",
+                    "Auburn",
+                    "Public",
+                    "Associates college",
+                    "3,978",
+                    "1963"
+                ],
+                [
+                    "Colby College",
+                    "Waterville",
+                    "Private",
+                    "Baccalaureate college",
+                    "2,055",
+                    "1813"
+                ],
+                [
+                    "College of the Atlantic",
+                    "Bar Harbor",
+                    "Private",
+                    "Baccalaureate college",
+                    "424",
+                    "1969"
+                ],
+                [
+                    "Eastern Maine Community College",
+                    "Bangor",
+                    "Public",
+                    "Associates college",
+                    "4,051",
+                    "1966"
+                ],
+                [
+                    "Husson University",
+                    "Bangor and South Portland",
+                    "Private",
+                    "Masters university",
+                    "3,860",
+                    "1898"
+                ],
+                [
+                    "Institute for Doctoral Studies in the Visual Arts",
+                    "Portland",
+                    "Private",
+                    "Baccalaureate college",
+                    "79",
+                    "2007"
+                ],
+                [
+                    "Kennebec Valley Community College",
+                    "Fairfield",
+                    "Public",
+                    "Associates college",
+                    "3,284",
+                    "1969"
+                ],
+                [
+                    "Maine College of Art",
+                    "Portland",
+                    "Private",
+                    "School of art",
+                    "495",
+                    "1882"
+                ],
+                [
+                    "Maine Maritime Academy",
+                    "Castine",
+                    "Public",
+                    "Baccalaureate college",
+                    "1,037",
+                    "1941"
+                ],
+                [
+                    "Maine College of Health Professions",
+                    "Lewiston",
+                    "Private",
+                    "Associates college",
+                    "216",
+                    "1891"
+                ],
+                [
+                    "Northern Maine Community College",
+                    "Presque Isle",
+                    "Public",
+                    "Associates college",
+                    "1,285",
+                    "1961"
+                ],
+                [
+                    "Saint Joseph's College of Maine",
+                    "Standish",
+                    "Private",
+                    "Masters university",
+                    "4,465",
+                    "1912"
+                ],
+                [
+                    "Southern Maine Community College",
+                    "South Portland",
+                    "Public",
+                    "Associates college",
+                    "8,648",
+                    "1946"
+                ],
+                [
+                    "Thomas College",
+                    "Waterville",
+                    "Private",
+                    "Baccalaureate college",
+                    "1,918",
+                    "1894"
+                ],
+                [
+                    "Unity College",
+                    "Unity",
+                    "Private",
+                    "Baccalaureate college",
+                    "766",
+                    "1965"
+                ],
+                [
+                    "University of Maine",
+                    "Orono",
+                    "Public",
+                    "Research university",
+                    "12,488",
+                    "1865"
+                ],
+                [
+                    "University of Maine at Augusta",
+                    "Augusta",
+                    "Public",
+                    "Baccalaureate college",
+                    "6,193",
+                    "1965"
+                ],
+                [
+                    "University of Maine at Farmington",
+                    "Farmington",
+                    "Public",
+                    "Baccalaureate college",
+                    "2,424",
+                    "1863"
+                ],
+                [
+                    "University of Maine at Fort Kent",
+                    "Fort Kent",
+                    "Public",
+                    "Baccalaureate college",
+                    "2,032",
+                    "1878"
+                ],
+                [
+                    "University of Maine at Machias",
+                    "Machias",
+                    "Public",
+                    "Baccalaureate college",
+                    "1,007",
+                    "1909"
+                ],
+                [
+                    "University of Maine at Presque Isle",
+                    "Presque Isle",
+                    "Public",
+                    "Baccalaureate college",
+                    "1,657",
+                    "1903"
+                ],
+                [
+                    "University of New England",
+                    "Biddeford and Portland",
+                    "Private",
+                    "Masters university",
+                    "12,245",
+                    "1939"
+                ],
+                [
+                    "University of Southern Maine",
+                    "Gorham, Portland and Lewiston",
+                    "Public",
+                    "Masters university",
+                    "9,835",
+                    "1878"
+                ],
+                [
+                    "Washington County Community College",
+                    "Calais",
+                    "Public",
+                    "Associates college",
+                    "597",
+                    "1969"
+                ],
+                [
+                    "York County Community College",
+                    "Wells",
+                    "Public",
+                    "Associates college",
+                    "2,364",
+                    "1994"
+                ]
+            ],
+            "title": "List of colleges and universities in Maine - Open institutions",
+            "table_id": "bdccec5f-1a09-424b-ad43-bb241868e97e"
+        },
+        "query": "Which of the institutions in Maine has the highest enrollment as of 2016 and when was it founded?",
+        "summary": "University of Maine, in Orono, have most student in Maine since 2016 with 12,488 student. It begin from 1865.",
+        "row_ids": [
+            18
+        ]
+    },
+    {
+        "example_id": "4d7dde51-765e-4233-ba99-a24fd246e0b9",
+        "table": {
+            "header": [
+                "Unnamed: 0",
+                "Played",
+                "Charlton Wins",
+                "Drawn",
+                "Millwall Wins",
+                "Charlton Goals",
+                "Millwall Goals"
+            ],
+            "rows": [
+                [
+                    "The Football League",
+                    "67",
+                    "11",
+                    "23",
+                    "33",
+                    "62",
+                    "111"
+                ],
+                [
+                    "Anglo - Italian Cup",
+                    "2",
+                    "1",
+                    "1",
+                    "0",
+                    "4",
+                    "3"
+                ],
+                [
+                    "Sub - Total",
+                    "69",
+                    "12",
+                    "24",
+                    "33",
+                    "66",
+                    "114"
+                ],
+                [
+                    "Kent Fa Challenge Cup Finals",
+                    "18",
+                    "9",
+                    "5",
+                    "4",
+                    "36",
+                    "31"
+                ],
+                [
+                    "London Challenge Cup",
+                    "1",
+                    "1",
+                    "0",
+                    "0",
+                    "1",
+                    "0"
+                ],
+                [
+                    "Football League Jubilee Fund",
+                    "2",
+                    "1",
+                    "1",
+                    "0",
+                    "2",
+                    "1"
+                ],
+                [
+                    "London Pfa Charity Fund",
+                    "5",
+                    "2",
+                    "1",
+                    "2",
+                    "7",
+                    "5"
+                ]
+            ],
+            "title": "South London Derby",
+            "table_id": "9bb9dd04-6dbe-49ee-922c-ba59c8efa42e"
+        },
+        "query": "Summarize the matches between these two teams in the Kent FA Challenge Cup Finals.",
+        "summary": "The two teams have met a total of 18 times in the Kent FA Challenge Cup Finals, with Charlton winning nine of the matches and Millwall taking home four. The two teams have drawn five matches. Charlton has scored 36 goals to Millwall's 31.",
+        "row_ids": [
+            3
+        ]
+    },
+    {
+        "example_id": "0578b816-70dc-41af-9148-7ae35531ccf8",
+        "table": {
+            "header": [
+                "Year",
+                "Country",
+                "Miss Asia Pacific World",
+                "National Title",
+                "Location",
+                "Delegates"
+            ],
+            "rows": [
+                [
+                    "2016",
+                    "Czech Republic Czech Republic",
+                    "Natalie Stejskalova",
+                    "Miss Czech Republic",
+                    "Mayaguez, Puerto Rico",
+                    "67"
+                ],
+                [
+                    "2015",
+                    "South Korea South Korea",
+                    "Not held",
+                    "Not held",
+                    "Jeju Island, South Korea",
+                    "25"
+                ],
+                [
+                    "2014",
+                    "India",
+                    "Swetha Raj",
+                    "Femina Miss India",
+                    "Seoul, South Korea",
+                    "39"
+                ],
+                [
+                    "2013",
+                    "India",
+                    "Srishti Rana",
+                    "Miss Diva",
+                    "Mar Del Plata, Argentina",
+                    "41"
+                ],
+                [
+                    "2012",
+                    "India",
+                    "Himangini Singh Yadu",
+                    "I am she-Miss Universe India",
+                    "Seoul, South Korea",
+                    "39"
+                ],
+                [
+                    "2011",
+                    "Korea",
+                    "Jung Eun A",
+                    "Miss Korea Asia",
+                    "Vi\u00f1a Del Mar, Chile",
+                    "54"
+                ]
+            ],
+            "title": "Miss Asia Pacific World - Titleholders",
+            "table_id": "10ca00e6-0175-4536-a6d9-9a61c61701b0"
+        },
+        "query": "What was the number of delegates in the Miss Asia Pacific World contest in the years 2014 and 2012, and how does this compare to 2016 and 2011?",
+        "summary": "In year 2014 and 2012, the Miss Asia Pacific World contest have 39 delegates each. This is less than the 67 delegates in 2016, but more much than the 25 delegates in 2015.",
+        "row_ids": [
+            0,
+            2,
+            4,
+            5
+        ]
+    },
+    {
+        "example_id": "f7693b41-a909-4e7d-84c8-c417d9a06516",
+        "table": {
+            "header": [
+                "No.",
+                "Date",
+                "Teams",
+                "Sport",
+                "Competition",
+                "Crowd"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "18 June 2006",
+                    "Hawthorn vs. Richmond",
+                    "Australian rules football",
+                    "AFL",
+                    "20,971"
+                ],
+                [
+                    "2",
+                    "8 August 2009",
+                    "Hawthorn vs. St Kilda",
+                    "Australian rules football",
+                    "AFL",
+                    "20,011"
+                ],
+                [
+                    "3",
+                    "9 August 2008",
+                    "Hawthorn vs. Brisbane Lions",
+                    "Australian rules football",
+                    "AFL",
+                    "19,929"
+                ],
+                [
+                    "4",
+                    "31 May 2008",
+                    "Hawthorn vs. Western Bulldogs",
+                    "Australian rules football",
+                    "AFL",
+                    "19,378"
+                ],
+                [
+                    "5",
+                    "4 July 2004",
+                    "St Kilda vs. Port Adelaide",
+                    "Australian rules football",
+                    "AFL",
+                    "19,223"
+                ],
+                [
+                    "6",
+                    "29 April 2012",
+                    "Hawthorn vs. Sydney",
+                    "Australian rules football",
+                    "AFL",
+                    "19,217"
+                ],
+                [
+                    "7",
+                    "29 July 2007",
+                    "Hawthorn vs. Kangaroos",
+                    "Australian rules football",
+                    "AFL",
+                    "19,114"
+                ],
+                [
+                    "8",
+                    "26 August 2006",
+                    "Hawthorn vs. Kangaroos",
+                    "Australian rules football",
+                    "AFL",
+                    "18,836"
+                ],
+                [
+                    "9",
+                    "26 May 2007",
+                    "Hawthorn vs. West Coast",
+                    "Australian rules football",
+                    "AFL",
+                    "18,112"
+                ],
+                [
+                    "10",
+                    "30 July 2016",
+                    "Hawthorn vs. Carlton",
+                    "Australian rules football",
+                    "AFL",
+                    "18,112"
+                ]
+            ],
+            "title": "York Park - Attendance records",
+            "table_id": "38ed3df5-c8ab-41ff-be56-3a7dcbd0e6d3"
+        },
+        "query": "Which two teams had the highest crowd turnout in the games listed in the table?",
+        "summary": "In table of games, highest crowd is for match on 18 June 2006 between Hawthorn and Richmond, have 20,971 peoples. Second high crowd is on 8 August 2009, Hawthorn play with St Kilda, and crowd is 20,011 peoples.",
+        "row_ids": [
+            0,
+            1
+        ]
+    },
+    {
+        "example_id": "43320395-ad76-4a1b-bf2b-466e71c73da7",
+        "table": {
+            "header": [
+                "Draw",
+                "Country",
+                "Artist",
+                "Song",
+                "Language",
+                "Place",
+                "Points"
+            ],
+            "rows": [
+                [
+                    "01",
+                    "Cyprus",
+                    "Hara & Andreas Konstantinou",
+                    "\"Mana mou\" (\u039c\u03ac\u03bd\u03b1 \u03bc\u03bf\u03c5)",
+                    "Greek",
+                    "5",
+                    "98"
+                ],
+                [
+                    "02",
+                    "Turkey",
+                    "\u015eebnem Paker & Grup Ethnic",
+                    "\"Dinle\"",
+                    "Turkish",
+                    "3",
+                    "121"
+                ],
+                [
+                    "03",
+                    "Norway",
+                    "Tor Endresen",
+                    "\"San Francisco\"",
+                    "Norwegian",
+                    "24",
+                    "0"
+                ],
+                [
+                    "04",
+                    "Austria",
+                    "Bettina Soriat",
+                    "\"One Step\"",
+                    "German",
+                    "21",
+                    "12"
+                ],
+                [
+                    "05",
+                    "Ireland",
+                    "Marc Roberts",
+                    "\"Mysterious Woman\"",
+                    "English",
+                    "2",
+                    "157"
+                ],
+                [
+                    "06",
+                    "Slovenia",
+                    "Tanja Ribi\u010d",
+                    "\"Zbudi se\"",
+                    "Slovene",
+                    "10",
+                    "60"
+                ],
+                [
+                    "07",
+                    "Switzerland",
+                    "Barbara Berta",
+                    "\"Dentro di me\"",
+                    "Italian",
+                    "22",
+                    "5"
+                ],
+                [
+                    "08",
+                    "Netherlands",
+                    "Mrs. Einstein",
+                    "\"Niemand heeft nog tijd\"",
+                    "Dutch",
+                    "22",
+                    "5"
+                ],
+                [
+                    "09",
+                    "Italy",
+                    "Jalisse",
+                    "\"Fiumi di parole\"",
+                    "Italian",
+                    "4",
+                    "114"
+                ],
+                [
+                    "10",
+                    "Spain",
+                    "Marcos Llunas",
+                    "\"Sin rencor\"",
+                    "Spanish",
+                    "6",
+                    "96"
+                ],
+                [
+                    "11",
+                    "Germany",
+                    "Bianca Shomburg",
+                    "\"Zeit\"",
+                    "German",
+                    "18",
+                    "22"
+                ],
+                [
+                    "12",
+                    "Poland",
+                    "Anna Maria Jopek",
+                    "\"Ale jestem\"",
+                    "Polish",
+                    "11",
+                    "54"
+                ],
+                [
+                    "13",
+                    "Estonia",
+                    "Maarja-Liis Ilus",
+                    "\"Keelatud maa\"",
+                    "Estonian",
+                    "8",
+                    "82"
+                ],
+                [
+                    "14",
+                    "Bosnia and Herzegovina",
+                    "Alma \u010card\u017ei\u0107",
+                    "\"Goodbye\"",
+                    "Bosnian",
+                    "18",
+                    "22"
+                ],
+                [
+                    "15",
+                    "Portugal",
+                    "C\u00e9lia Lawson",
+                    "\"Antes do adeus\"",
+                    "Portuguese",
+                    "24",
+                    "0"
+                ],
+                [
+                    "16",
+                    "Sweden",
+                    "Blond",
+                    "\"Bara hon \u00e4lskar mig\"",
+                    "Swedish",
+                    "14",
+                    "36"
+                ],
+                [
+                    "17",
+                    "Greece",
+                    "Marianna Zorba",
+                    "\"Horepse\" (\u03a7\u03cc\u03c1\u03b5\u03c8\u03b5)",
+                    "Greek",
+                    "12",
+                    "39"
+                ],
+                [
+                    "18",
+                    "Malta",
+                    "Debbie Scerri",
+                    "\"Let Me Fly\"",
+                    "English",
+                    "9",
+                    "66"
+                ],
+                [
+                    "19",
+                    "Hungary",
+                    "V.I.P.",
+                    "\"Mi\u00e9rt kell, hogy elmenj?\"",
+                    "Hungarian",
+                    "12",
+                    "39"
+                ],
+                [
+                    "20",
+                    "Russia",
+                    "Alla Pugacheva",
+                    "\"Primadonna\" (\u041f\u0440\u0438\u043c\u0430\u0434\u043e\u043d\u043d\u0430)",
+                    "Russian",
+                    "15",
+                    "33"
+                ],
+                [
+                    "21",
+                    "Denmark",
+                    "K\u00f8lig Kaj",
+                    "\"Stemmen i mit liv\"",
+                    "Danish",
+                    "16",
+                    "25"
+                ],
+                [
+                    "22",
+                    "France",
+                    "Fanny",
+                    "\"Sentiments songes\"",
+                    "French",
+                    "7",
+                    "95"
+                ],
+                [
+                    "23",
+                    "Croatia",
+                    "E.N.I.",
+                    "\"Probudi me\"",
+                    "Croatian",
+                    "17",
+                    "24"
+                ],
+                [
+                    "24",
+                    "United Kingdom",
+                    "Katrina and the Waves",
+                    "\"Love Shine a Light\"",
+                    "English",
+                    "1",
+                    "227"
+                ],
+                [
+                    "25",
+                    "Iceland",
+                    "Paul Oscar",
+                    "\"Minn hinsti dans\"",
+                    "Icelandic",
+                    "20",
+                    "18"
+                ]
+            ],
+            "title": "Eurovision Song Contest 1997 - Results",
+            "table_id": "23d6bf81-892b-4675-833a-acc62c382b84"
+        },
+        "query": "How many countries got zero points and which ones were they?",
+        "summary": "In the 1997 Eurovision Song Contest, two countries received zero points. These countries were Norway, with their entry \"San Francisco\" performed by Tor Endresen, and Portugal, with their entry \"Antes do adeus\" performed by C\u00e9lia Lawson. Both countries placed last, sharing the 24th position in the final ranking.",
+        "row_ids": [
+            2,
+            14
+        ]
+    }
+]

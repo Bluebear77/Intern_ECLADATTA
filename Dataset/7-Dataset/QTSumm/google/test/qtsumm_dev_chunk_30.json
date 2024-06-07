@@ -1,0 +1,985 @@
+[
+    {
+        "example_id": "c76db40d-1729-4cc6-8049-452cd62feed5",
+        "table": {
+            "header": [
+                "Model",
+                "Build Year",
+                "Top Speed (In Operation) \uff08Km / H\uff09",
+                "Power Output \uff08Kw\uff09",
+                "Total Production"
+            ],
+            "rows": [
+                [
+                    "6Y2",
+                    "1958-1961",
+                    "101",
+                    "4740",
+                    "25"
+                ],
+                [
+                    "6 G1",
+                    "1971",
+                    "120",
+                    "5100",
+                    "2"
+                ],
+                [
+                    "6 G",
+                    "1973",
+                    "112",
+                    "5400",
+                    "40"
+                ],
+                [
+                    "6K",
+                    "1986 - 1987",
+                    "100",
+                    "5100",
+                    "85"
+                ],
+                [
+                    "8 G",
+                    "1987 - 1990",
+                    "100",
+                    "23200",
+                    "100"
+                ],
+                [
+                    "8K",
+                    "1987",
+                    "100",
+                    "23200",
+                    "150"
+                ]
+            ],
+            "title": "List Of Locomotives In China",
+            "table_id": "8b6df2ec-cb61-44a3-8ad4-0e6115630132"
+        },
+        "query": "Summarize the locomotives with top speed in operation more than 100 km/h.",
+        "summary": "The 6Y2 locomotive, build between 1958 and 1961, with a top speed of 101 km/h and power output of 4740 kW was the first model to reach speeds over 100 km/h in operation. This was followed by the 6 G1 which hit 120 km/h with a power output of 5100kW when it was released in 1971 and the 6 G that reached 112 km/h with a power output of 5400kW in 1973.",
+        "row_ids": [
+            0,
+            1,
+            2
+        ]
+    },
+    {
+        "example_id": "cb1516c7-6d6a-45b1-8d8a-2497335b8898",
+        "table": {
+            "header": [
+                "Model",
+                "Type",
+                "Production years",
+                "Units made",
+                "Engine",
+                "Horse- power",
+                "Top speed (km/h)",
+                "Avg. L/100km",
+                "Length",
+                "Width",
+                "Height"
+            ],
+            "rows": [
+                [
+                    "Superb",
+                    "640",
+                    "1934\u201339",
+                    "201",
+                    "2.5 L I6 SV",
+                    "55",
+                    "110",
+                    "17",
+                    "5,500 mm (216.5 in)",
+                    "1,700 mm (66.9 in)",
+                    "1,700 mm (66.9 in)"
+                ],
+                [
+                    "Superb",
+                    "902",
+                    "1936\u201337",
+                    "53",
+                    "2.7 L I6 SV",
+                    "60",
+                    "115",
+                    "17",
+                    "5,500 mm (216.5 in)",
+                    "1,700 mm (66.9 in)",
+                    "1,700 mm (66.9 in)"
+                ],
+                [
+                    "Superb",
+                    "913",
+                    "1936\u201339",
+                    "350",
+                    "2.9 L I6 SV",
+                    "65",
+                    "120",
+                    "17",
+                    "5,500 mm (216.5 in)",
+                    "1,700 mm (66.9 in)",
+                    "1,700 mm (66.9 in)"
+                ],
+                [
+                    "Superb OHV",
+                    "924",
+                    "1938\u201343 1946\u201349",
+                    "275",
+                    "3.1 L I6 OHV",
+                    "85",
+                    "125",
+                    "18",
+                    "5,200 mm (204.7 in)",
+                    "1,760 mm (69.3 in) / 1,800 mm (70.9 in)",
+                    "1,710 mm (67.3 in) / 1,720 mm (67.7 in)"
+                ],
+                [
+                    "Superb 3000",
+                    "952 956 (4\u00d74)",
+                    "1941\u201343 1942\u201343",
+                    "1631",
+                    "3.1 L I6 OHV",
+                    "85",
+                    "100 90",
+                    "18",
+                    "4,800 mm (189.0 in)",
+                    "1,800 mm (70.9 in)",
+                    "1,720 mm (67.7 in)"
+                ],
+                [
+                    "Superb 4000",
+                    "919",
+                    "1939\u201340",
+                    "12",
+                    "4.0 L V8 OHV",
+                    "96",
+                    "135",
+                    "24",
+                    "5,700 mm (224.4 in)",
+                    "1,800 mm (70.9 in)",
+                    "1,750 mm (68.9 in)"
+                ]
+            ],
+            "title": "\u0160koda Superb (1934\u20131949) - Specifications",
+            "table_id": "2412fb79-bda2-4e7c-bb7f-06675b9d12d4"
+        },
+        "query": "How does the fuel efficiency (as measured by Avg. L/100km) in each of the \u0160koda Superb models correlate with their respective engine capacity and horse-power?",
+        "summary": "The fuel efficiency of \u0160koda Superb models, measured by Avg. L/100km, seem to show some relation with both engine capacity and horse-power. In general, as the engine capacity and horse-power goes up, the fuel use also goes up, meaning lower fuel efficiency. For example, the Superb 4000 model has the highest engine capacity (4.0 L V8 OHV), horse-power (96) and the highest fuel use (24 L/100km). But, the Superb OHV and Superb 3000 models have almost the same engine capacity and horse-power, still the Superb 3000 model is a little less fuel efficient (18 L/100km) compared to the Superb OHV model (18 L/100km), which might be due to other factors like vehicle weight or air flow.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    },
+    {
+        "example_id": "20addeb4-d94c-4143-9cf9-a356ddd908f7",
+        "table": {
+            "header": [
+                "Game",
+                "Date",
+                "Opponent",
+                "Result",
+                "Black Knights Points",
+                "Opponents",
+                "Record"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Oct 5",
+                    "Stevens Tech",
+                    "Win",
+                    "27",
+                    "0",
+                    "1 - 0"
+                ],
+                [
+                    "2",
+                    "Oct 12",
+                    "Rutgers",
+                    "Win",
+                    "19",
+                    "0",
+                    "2 - 0"
+                ],
+                [
+                    "3",
+                    "Oct 19",
+                    "Yale",
+                    "Loss",
+                    "0",
+                    "6",
+                    "2 - 1"
+                ],
+                [
+                    "4",
+                    "Oct 26",
+                    "Colgate",
+                    "Win",
+                    "18",
+                    "7",
+                    "3 - 1"
+                ],
+                [
+                    "5",
+                    "Nov 9",
+                    "Carlisle Indian",
+                    "Loss",
+                    "6",
+                    "27",
+                    "3 - 2"
+                ],
+                [
+                    "6",
+                    "Nov 16",
+                    "Tufts University",
+                    "Win",
+                    "15",
+                    "6",
+                    "4 - 2"
+                ],
+                [
+                    "7",
+                    "Nov 23",
+                    "Syracuse",
+                    "Win",
+                    "23",
+                    "7",
+                    "5 - 2"
+                ]
+            ],
+            "title": "1912 Army Cadets Football Team",
+            "table_id": "047ca1f4-fa8b-4fe6-9883-6b6ef0a7f8ad"
+        },
+        "query": "Summarize the basic information of the game between Army Cadets and Carlisle Indian.",
+        "summary": "The game between the Army Cadets and Carlisle Indian was held on November 9th, 1912. The result of the game was a loss for the Army Cadets, with 6 points scored to the 27 points scored by the Carlisle Indian team. Following this game, the Army Cadet's record became 3 wins and 2 losses.",
+        "row_ids": [
+            4
+        ]
+    },
+    {
+        "example_id": "a6d6e37f-5dc3-4029-9109-c09038c06d27",
+        "table": {
+            "header": [
+                "Name",
+                "Height m / ft",
+                "Floors",
+                "Year",
+                "Status",
+                "Notes"
+            ],
+            "rows": [
+                [
+                    "Torre De Angola",
+                    "325 m (1,066 ft)",
+                    "70",
+                    "2015",
+                    "Approved",
+                    ""
+                ],
+                [
+                    "World Trade Center Angola - Tower 1",
+                    "155 m (509 ft)",
+                    "42",
+                    "2012",
+                    "Under Construction",
+                    ""
+                ],
+                [
+                    "World Trade Center Angola - Tower 2",
+                    "135 m (443 ft)",
+                    "37",
+                    "2012",
+                    "Under Construction",
+                    ""
+                ],
+                [
+                    "T\u00f3rre C I F",
+                    "115 m (377 ft)",
+                    "25",
+                    "2014",
+                    "Under Construction",
+                    ""
+                ],
+                [
+                    "Euro Africa Tower",
+                    "110 m (360 ft)",
+                    "23",
+                    "2013",
+                    "Approved",
+                    ""
+                ],
+                [
+                    "Major Kanhangulo Street Building",
+                    "110 m (360 ft)",
+                    "24",
+                    "2013",
+                    "Under Construction",
+                    ""
+                ],
+                [
+                    "Edif\u00edcio Rocha Monteiro",
+                    "105 m (344 ft)",
+                    "24",
+                    "2013",
+                    "Approved",
+                    ""
+                ],
+                [
+                    "Baia Building",
+                    "100 m (330 ft)",
+                    "22",
+                    "2013",
+                    "Approved",
+                    ""
+                ]
+            ],
+            "title": "List of tallest buildings in Luanda - Projects",
+            "table_id": "6a272822-ffeb-4252-be03-314fbb80971f"
+        },
+        "query": "Among the buildings listed that are still under construction, which one has the lowest height measurement in both meters and feet?",
+        "summary": "Among the buildings listed that are still under construction, Major Kanhangulo Street Building has the lowest height measurement at 110 meters (360 feet).",
+        "row_ids": [
+            5
+        ]
+    },
+    {
+        "example_id": "db57e7fc-9f59-4519-b48a-fb96ebbb4a74",
+        "table": {
+            "header": [
+                "Rank",
+                "Lane",
+                "Name",
+                "Nationality",
+                "Time",
+                "Notes"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "4",
+                    "CavicMilorad \u010cavi\u0107",
+                    "Serbia",
+                    "50.92",
+                    "Q"
+                ],
+                [
+                    "2",
+                    "1",
+                    "Crocker, IanIan Crocker",
+                    "United States",
+                    "51.27",
+                    "Q"
+                ],
+                [
+                    "3",
+                    "5",
+                    "Serdinov, AndriyAndriy Serdinov",
+                    "Ukraine",
+                    "51.41",
+                    "Q"
+                ],
+                [
+                    "4",
+                    "6",
+                    "Fujii, TakuroTakuro Fujii",
+                    "Japan",
+                    "51.59",
+                    "Q"
+                ],
+                [
+                    "5",
+                    "3",
+                    "Manko\u010d, PeterPeter Manko\u010d",
+                    "Slovenia",
+                    "51.80",
+                    ""
+                ],
+                [
+                    "6",
+                    "2",
+                    "Swanepoel, CorneyCorney Swanepoel",
+                    "New Zealand",
+                    "52.01",
+                    ""
+                ],
+                [
+                    "7",
+                    "8",
+                    "Ferns, LyndonLyndon Ferns",
+                    "South Africa",
+                    "52.18",
+                    ""
+                ],
+                [
+                    "8",
+                    "7",
+                    "Bousquet, Fr\u00e9d\u00e9rickFr\u00e9d\u00e9rick Bousquet",
+                    "France",
+                    "52.94",
+                    ""
+                ]
+            ],
+            "title": "Swimming at the 2008 Summer Olympics \u2013 Men's 100 metre butterfly - Semifinal 2",
+            "table_id": "48227f2c-7d99-4daa-b626-cd199b64f588"
+        },
+        "query": "Who were the swimmers in the Men's 100 metre butterfly semifinal 2 at the 2008 Summer Olympics who finished in the middle (ranks 4, 5, and 6) and what were their completion times?",
+        "summary": "In Men's 100 metre butterfly semifinal 2 at 2008 Summer Olympics, swimmers who finish in middle with rank 4, 5, and 6 was Takuro Fujii from Japan, Peter Manko\u010d from Slovenia, and Corney Swanepoel from New Zealand. Their finish time is 51.59 seconds, 51.80 seconds, and 52.01 seconds.",
+        "row_ids": [
+            3,
+            4,
+            5
+        ]
+    },
+    {
+        "example_id": "e8414d75-7ef7-4e26-9d42-65fb49621c0c",
+        "table": {
+            "header": [
+                "Channel",
+                "Frequency",
+                "Channel",
+                "Frequency",
+                "Channel",
+                "Frequency",
+                "Channel",
+                "Frequency"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "26.965 MHz",
+                    "11",
+                    "27.085 MHz",
+                    "21",
+                    "27.215 MHz",
+                    "31",
+                    "27.315 MHz"
+                ],
+                [
+                    "2",
+                    "26.975 MHz",
+                    "12",
+                    "27.105 MHz",
+                    "22",
+                    "27.225 MHz",
+                    "32",
+                    "27.325 MHz"
+                ],
+                [
+                    "3",
+                    "26.985 MHz",
+                    "13",
+                    "27.115 MHz",
+                    "23",
+                    "27.255 MHz",
+                    "33",
+                    "27.335 MHz"
+                ],
+                [
+                    "4",
+                    "27.005 MHz",
+                    "14",
+                    "27.125 MHz",
+                    "24",
+                    "27.235 MHz",
+                    "34",
+                    "27.345 MHz"
+                ],
+                [
+                    "5",
+                    "27.015 MHz",
+                    "15",
+                    "27.135 MHz",
+                    "25",
+                    "27.245 MHz",
+                    "35",
+                    "27.355 MHz"
+                ],
+                [
+                    "6",
+                    "27.025 MHz",
+                    "16",
+                    "27.155 MHz",
+                    "26",
+                    "27.265 MHz",
+                    "36",
+                    "27.365 MHz"
+                ],
+                [
+                    "7",
+                    "27.035 MHz",
+                    "17",
+                    "27.165 MHz",
+                    "27",
+                    "27.275 MHz",
+                    "37",
+                    "27.375 MHz"
+                ],
+                [
+                    "8",
+                    "27.055 MHz",
+                    "18",
+                    "27.175 MHz",
+                    "28",
+                    "27.285 MHz",
+                    "38",
+                    "27.385 MHz"
+                ],
+                [
+                    "9",
+                    "27.065 MHz",
+                    "19",
+                    "27.185 MHz",
+                    "29",
+                    "27.295 MHz",
+                    "39",
+                    "27.395 MHz"
+                ],
+                [
+                    "10",
+                    "27.075 MHz",
+                    "20",
+                    "27.205 MHz",
+                    "30",
+                    "27.305 MHz",
+                    "40",
+                    "27.405 MHz"
+                ]
+            ],
+            "title": "Citizens band radio - Standard Channels",
+            "table_id": "fd260b15-ead1-42f6-b06e-072344b7c91a"
+        },
+        "query": "Which channels have a frequency above 27.355 MHz and how does the frequency change across these channels?",
+        "summary": "Channel 36 to 40 has frequencies up 27.355 MHz. The change frequency across these channels is same, each next channel increase 0.010 MHz. Channel 36 has frequency 27.365 MHz, Channel 37 has 27.375 MHz, Channel 38 has 27.385 MHz, Channel 39 has 27.395 MHz, and Channel 40 has 27.405 MHz.",
+        "row_ids": [
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "example_id": "7fb2a295-67fe-46d3-96ee-ec4731aa9865",
+        "table": {
+            "header": [
+                "Player",
+                "Matches",
+                "Innings",
+                "Wickets",
+                "Average",
+                "Bbi",
+                "Bbm",
+                "5Wi",
+                "10Wi"
+            ],
+            "rows": [
+                [
+                    "Murali Kartik",
+                    "11",
+                    "20",
+                    "45",
+                    "19.6",
+                    "6 / 42",
+                    "11 / 72",
+                    "5",
+                    "2"
+                ],
+                [
+                    "Ben Phillips",
+                    "11",
+                    "19",
+                    "29",
+                    "22.79",
+                    "5 / 72",
+                    "5 / 72",
+                    "1",
+                    "0"
+                ],
+                [
+                    "Alfonso Thomas",
+                    "15",
+                    "26",
+                    "49",
+                    "24.53",
+                    "5 / 40",
+                    "7 / 117",
+                    "2",
+                    "0"
+                ],
+                [
+                    "Damien Wright",
+                    "5",
+                    "9",
+                    "14",
+                    "26.92",
+                    "5 / 41",
+                    "6 / 89",
+                    "1",
+                    "0"
+                ],
+                [
+                    "Charl Willoughby",
+                    "16",
+                    "29",
+                    "58",
+                    "27.27",
+                    "6 / 101",
+                    "7 / 97",
+                    "1",
+                    "0"
+                ],
+                [
+                    "Zander De Bruyn",
+                    "14",
+                    "17",
+                    "12",
+                    "32.16",
+                    "4 / 23",
+                    "4 / 23",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Peter Trego",
+                    "16",
+                    "25",
+                    "22",
+                    "33.13",
+                    "4 / 26",
+                    "6 / 121",
+                    "0",
+                    "0"
+                ]
+            ],
+            "title": "Somerset County Cricket Club In 2010",
+            "table_id": "4bcddabf-a986-419d-b9d1-75e88b746f8e"
+        },
+        "query": "Summarize the basic information of the players who had taken the most number of wickets in 2010.",
+        "summary": "The table shows the performance of seven players from the Somerset County Cricket Club in 2010. Charl Willoughby had the highest number of wickets with 58. He had a bowling average of 27.27 and has played 16 matches",
+        "row_ids": [
+            4
+        ]
+    },
+    {
+        "example_id": "ba2616d5-d028-4714-a85f-9ec13f27fe81",
+        "table": {
+            "header": [
+                "Year Of Election",
+                "Candidates Elected",
+                "Of Seats Available",
+                "Of Votes",
+                "% Of Popular Vote"
+            ],
+            "rows": [
+                [
+                    "1934",
+                    "1",
+                    "90",
+                    "Na",
+                    "7.0%"
+                ],
+                [
+                    "1937",
+                    "0",
+                    "90",
+                    "Na",
+                    "5.6%"
+                ],
+                [
+                    "1943",
+                    "34",
+                    "90",
+                    "Na",
+                    "31.7%"
+                ],
+                [
+                    "1945",
+                    "8",
+                    "90",
+                    "Na",
+                    "22.4%"
+                ],
+                [
+                    "1948",
+                    "21",
+                    "90",
+                    "Na",
+                    "27.0%"
+                ],
+                [
+                    "1951",
+                    "2",
+                    "90",
+                    "Na",
+                    "19.1%"
+                ],
+                [
+                    "1955",
+                    "3",
+                    "98",
+                    "Na",
+                    "16.5%"
+                ],
+                [
+                    "1959",
+                    "5",
+                    "98",
+                    "Na",
+                    "16.7%"
+                ]
+            ],
+            "title": "Co - Operative Commonwealth Federation (Ontario Section)",
+            "table_id": "28178c12-9863-466d-b2b8-25d1b990e47a"
+        },
+        "query": "Summarize the election results of the Co-operative Commonwealth Federation (Ontario Section) between 1943 and 1959.",
+        "summary": "The Co-Operative Commonwealth Federation (Ontario Section) had a total of six elections between 1943 and 1959. In the 1943 election, the party elected 34 of the 90 seats available with 31.7% of the popular vote. This was their highest percentage in this period and their highest total number of seats elected. The 1945 election saw them decrease to 8 seats and 22.4% of the popular vote. In 1948 they bounced back somewhat, winning 21 seats and 27% of the popular vote before declining yet again in 1951 where they won 2 seats and 19.1% of the popular vote. The last two elections saw the party win 3 and 5 seats respectively with 16.5% and 16.7% of the popular vote.",
+        "row_ids": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    },
+    {
+        "example_id": "c629d1c6-d692-43c7-91fb-389bcfe64c18",
+        "table": {
+            "header": [
+                "Year",
+                "Theme",
+                "Artist",
+                "Issue Price",
+                "Special Notes"
+            ],
+            "rows": [
+                [
+                    "2008",
+                    "Calgary Flames",
+                    "N / A",
+                    "15.95",
+                    "From Coin And Puck Set"
+                ],
+                [
+                    "2008",
+                    "Calgary Flames",
+                    "N / A",
+                    "24.95",
+                    "From Calgary Flames Gift Set"
+                ],
+                [
+                    "2008",
+                    "Edmonton Oilers",
+                    "N / A",
+                    "15.95",
+                    "From Coin And Puck Set"
+                ],
+                [
+                    "2008",
+                    "Edmonton Oilers",
+                    "N / A",
+                    "24.95",
+                    "From Edmonton Oilers Gift Set"
+                ],
+                [
+                    "2008",
+                    "Montreal Canadiens",
+                    "N / A",
+                    "15.95",
+                    "From Coin And Puck Set"
+                ],
+                [
+                    "2008",
+                    "Montreal Canadiens",
+                    "N / A",
+                    "24.95",
+                    "From Montreal Canadiens Gift Set"
+                ],
+                [
+                    "2008",
+                    "Ottawa Senators",
+                    "N / A",
+                    "15.95",
+                    "From Coin And Puck Set"
+                ],
+                [
+                    "2008",
+                    "Ottawa Senators",
+                    "N / A",
+                    "24.95",
+                    "From Ottawa Senators Gift Set"
+                ],
+                [
+                    "2008",
+                    "Toronto Maple Leafs",
+                    "N / A",
+                    "15.95",
+                    "From Coin And Puck Set"
+                ],
+                [
+                    "2008",
+                    "Toronto Maple Leafs",
+                    "N / A",
+                    "24.95",
+                    "From Toronto Maple Leafs Gift Set"
+                ],
+                [
+                    "2008",
+                    "Vancouver Canucks",
+                    "N / A",
+                    "15.95",
+                    "From Coin And Puck Set"
+                ],
+                [
+                    "2008",
+                    "Vancouver Canucks",
+                    "N / A",
+                    "24.95",
+                    "From Vancouver Canucks Gift Set"
+                ]
+            ],
+            "title": "Royal Canadian Mint Ice Hockey Coins",
+            "table_id": "e449ec3a-3b83-4027-bc68-a573af080dbb"
+        },
+        "query": "What are the coins from Coin and Puck Set in 2008? Summarize the basic information of these coins.",
+        "summary": "The Royal Canadian Mint released a series of ice hockey coins in 2008, featuring teams from the NHL at the time. The coins were created for Coin and Puck Sets, as well as their respective team gift sets. The Coin and Puck Sets featured coins from the Calgary Flames, Edmonton Oilers, Montreal Canadiens, Ottawa Senators, Toronto Maple Leafs, and Vancouver Canucks. The coins had a theme based on each team, as well as artwork from an unknown artist.",
+        "row_ids": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+        ]
+    },
+    {
+        "example_id": "248fde2b-7984-44eb-b215-9b3ec0682809",
+        "table": {
+            "header": [
+                "Rank",
+                "Name",
+                "Nationality",
+                "Team",
+                "Points"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Davide Rebellin",
+                    "Italy",
+                    "Gerolsteiner",
+                    "157"
+                ],
+                [
+                    "2",
+                    "Alejandro Valverde",
+                    "Spain",
+                    "Caisse D'Epargne",
+                    "107"
+                ],
+                [
+                    "3",
+                    "Danilo Di Luca",
+                    "Italy",
+                    "Liquigas",
+                    "100"
+                ],
+                [
+                    "4",
+                    "\u00d3scar Freire",
+                    "Spain",
+                    "Rabobank",
+                    "82"
+                ],
+                [
+                    "5",
+                    "Stuart Ogrady",
+                    "Australia",
+                    "Team Csc",
+                    "79"
+                ],
+                [
+                    "6",
+                    "Stefan Schumacher",
+                    "Germany",
+                    "Gerolsteiner",
+                    "75"
+                ],
+                [
+                    "7",
+                    "Fr\u00e4nk Schleck",
+                    "Luxembourg",
+                    "Team Csc",
+                    "63"
+                ],
+                [
+                    "8",
+                    "Juan Jos\u00e9 Cobo",
+                    "Spain",
+                    "Saunier Duval - Prodir",
+                    "62"
+                ],
+                [
+                    "9",
+                    "Alberto Contador",
+                    "Spain",
+                    "Discovery Channel",
+                    "58"
+                ],
+                [
+                    "10",
+                    "Tom Boonen",
+                    "Belgium",
+                    "Quick Step - Innergetic",
+                    "57"
+                ],
+                [
+                    "11",
+                    "Thomas Dekker",
+                    "Netherlands",
+                    "Rabobank",
+                    "55"
+                ],
+                [
+                    "12",
+                    "Andreas Kl\u00f6den",
+                    "Germany",
+                    "Astana",
+                    "53"
+                ],
+                [
+                    "13",
+                    "Vladimir Karpets",
+                    "Russia",
+                    "Caisse D'Epargne",
+                    "52"
+                ],
+                [
+                    "14",
+                    "Alessandro Ballan",
+                    "Italy",
+                    "Lampre - Fondital",
+                    "50"
+                ],
+                [
+                    "15",
+                    "Matthias Kessler",
+                    "Germany",
+                    "Astana",
+                    "50"
+                ]
+            ],
+            "title": "2007 Volta A Catalunya",
+            "table_id": "d905e45d-9b56-4354-a0bb-45f357a7e6f0"
+        },
+        "query": "Summarize the riders who are from Spain and finished between 3rd to 5th place in 2007 Volta A Catalunya.",
+        "summary": "The rider from Spain who finished between 3rd to 5th place in 2007 Volta A Catalunya was \u00d3scar Freire. He finished in 4th place with 82 points for Rabobank.",
+        "row_ids": [
+            3
+        ]
+    }
+]

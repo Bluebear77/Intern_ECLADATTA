@@ -1,0 +1,1151 @@
+[
+    {
+        "example_id": "5d3ca98e-ca03-458f-9351-83d704d40e23",
+        "table": {
+            "header": [
+                "Rank",
+                "Athlete",
+                "Nation",
+                "Olympics",
+                "Gold",
+                "Silver",
+                "Bronze",
+                "Total (Min 2 Medals)"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Paavo Nurmi",
+                    "Finland (Fin)",
+                    "1920 - 1928",
+                    "2",
+                    "0",
+                    "0",
+                    "2"
+                ],
+                [
+                    "1",
+                    "Emil Z\u00e1topek",
+                    "Czechoslovakia (Tch)",
+                    "1948 - 1952",
+                    "2",
+                    "0",
+                    "0",
+                    "2"
+                ],
+                [
+                    "1",
+                    "Lasse Viren",
+                    "Finland (Fin)",
+                    "1972 - 1976",
+                    "2",
+                    "0",
+                    "0",
+                    "2"
+                ],
+                [
+                    "1",
+                    "Haile Gebrselassie",
+                    "Ethiopia (Eth)",
+                    "1996 - 2000",
+                    "2",
+                    "0",
+                    "0",
+                    "2"
+                ],
+                [
+                    "1",
+                    "Kenenisa Bekele",
+                    "Ethiopia (Eth)",
+                    "2004 - 2008",
+                    "2",
+                    "0",
+                    "0",
+                    "2"
+                ],
+                [
+                    "6",
+                    "Ville Ritola",
+                    "Finland (Fin)",
+                    "1924 - 1928",
+                    "1",
+                    "1",
+                    "0",
+                    "2"
+                ],
+                [
+                    "7",
+                    "Miruts Yifter",
+                    "Ethiopia (Eth)",
+                    "1972 - 1980",
+                    "1",
+                    "0",
+                    "1",
+                    "2"
+                ],
+                [
+                    "8",
+                    "Alain Mimoun",
+                    "France (Fra)",
+                    "1948 - 1952",
+                    "0",
+                    "2",
+                    "0",
+                    "2"
+                ],
+                [
+                    "8",
+                    "Paul Tergat",
+                    "Kenya (Ken)",
+                    "1996 - 2000",
+                    "0",
+                    "2",
+                    "0",
+                    "2"
+                ],
+                [
+                    "8",
+                    "Sileshi Sihine",
+                    "Ethiopia (Eth)",
+                    "2004 - 2008",
+                    "0",
+                    "2",
+                    "0",
+                    "2"
+                ],
+                [
+                    "11",
+                    "Edvin Wide",
+                    "Sweden (Swe)",
+                    "1924 - 1928",
+                    "0",
+                    "1",
+                    "1",
+                    "2"
+                ],
+                [
+                    "11",
+                    "Volmari Iso - Hollo",
+                    "Finland (Fin)",
+                    "1932 - 1936",
+                    "0",
+                    "1",
+                    "1",
+                    "2"
+                ]
+            ],
+            "title": "List Of Olympic Medalists In Athletics (Men)",
+            "table_id": "0c52962c-9a36-4784-85b4-443d855e3ebf"
+        },
+        "query": "Which country may have the lowest level of competitive sports, and why?",
+        "summary": "Based on this table, Sweden may have the lowest level of competitive sports. Sweden only has one athlete represented in this list, Edvin Wide, and he only won 1 silver and 1 bronze total. By comparison, Finland has 4 different athletes represented, all of whom won at least two medals each. This suggests that the athletes from Finland are more competitive than those from Sweden. Additionally, Ethiopia appears to have 3 competitive athletes who won a total of 6 medals between them. This indicates that Ethiopia is likely a more competitive nation when it comes to athletics than Sweden.",
+        "row_ids": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            9,
+            10,
+            11
+        ]
+    },
+    {
+        "example_id": "8c7af56f-7ead-440f-91e6-956fdce5b928",
+        "table": {
+            "header": [
+                "Season",
+                "Date",
+                "Super Bowl",
+                "Visiting team",
+                "Points",
+                "Home team",
+                "Points",
+                "Spectators"
+            ],
+            "rows": [
+                [
+                    "1976",
+                    "January 9, 1977",
+                    "XI",
+                    "Oakland Raiders",
+                    "32",
+                    "Minnesota Vikings",
+                    "14",
+                    "103,438"
+                ],
+                [
+                    "1979",
+                    "January 20, 1980",
+                    "XIV",
+                    "Los Angeles Rams",
+                    "19",
+                    "Pittsburgh Steelers",
+                    "31",
+                    "103,985"
+                ],
+                [
+                    "1982",
+                    "January 30, 1983",
+                    "XVII",
+                    "Miami Dolphins",
+                    "17",
+                    "Washington Redskins",
+                    "27",
+                    "103,667"
+                ],
+                [
+                    "1986",
+                    "January 25, 1987",
+                    "XXI",
+                    "Denver Broncos",
+                    "20",
+                    "New York Giants",
+                    "39",
+                    "101,063"
+                ],
+                [
+                    "1992",
+                    "January 31, 1993",
+                    "XXVII",
+                    "Buffalo Bills",
+                    "17",
+                    "Dallas Cowboys",
+                    "52",
+                    "98,374"
+                ]
+            ],
+            "title": "Rose Bowl (stadium) - Super Bowls",
+            "table_id": "e3906548-4d35-499d-b750-2a7cdbe69fe8"
+        },
+        "query": "How have the scores of the visiting teams and the home teams differed over all the Super Bowls held at the Rose Bowl stadium?",
+        "summary": "The scores of visiting teams and home teams in Super Bowls at Rose Bowl stadium have big difference, and home teams win more. In all five times, home team win and get more points than visiting team. The small win is 10 points, in Super Bowl XVII when Washington Redskins win over Miami Dolphins 27 to 17. The big win is 35 points, in Super Bowl XXVII when Dallas Cowboys win over Buffalo Bills 52 to 17.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    {
+        "example_id": "e7f4b9e8-15fe-4ecb-a675-960ca171b654",
+        "table": {
+            "header": [
+                "Tenure",
+                "Coach",
+                "Years",
+                "Record",
+                "Pct"
+            ],
+            "rows": [
+                [
+                    "1982 - 1984",
+                    "Jim Goodman",
+                    "3",
+                    "15 - 17 - 1",
+                    "470"
+                ],
+                [
+                    "1985",
+                    "Jim Berryman",
+                    "1",
+                    "5 - 6 - 0",
+                    "455"
+                ],
+                [
+                    "1986 - 1991",
+                    "Mike Cavan",
+                    "6",
+                    "37 - 22 - 2",
+                    "623"
+                ],
+                [
+                    "1992 - 1996",
+                    "Hal Mumme",
+                    "5",
+                    "40 - 17 - 1",
+                    "698"
+                ],
+                [
+                    "1997 - 1999",
+                    "Mike Kelly",
+                    "3",
+                    "15 - 16 - 0",
+                    "484"
+                ],
+                [
+                    "1999",
+                    "Mark Nelson",
+                    "1",
+                    "0 - 2 - 0",
+                    "0"
+                ],
+                [
+                    "2000 - 2006",
+                    "Chris Hatcher",
+                    "7",
+                    "76 - 12 - 0",
+                    "864"
+                ],
+                [
+                    "2007 - Present",
+                    "David Dean",
+                    "6",
+                    "54 - 17 - 0",
+                    "760"
+                ],
+                [
+                    "Totals",
+                    "8 Coaches",
+                    "30 Seasons",
+                    "242 - 109 - 4",
+                    "687"
+                ]
+            ],
+            "title": "Valdosta State Blazers Football",
+            "table_id": "1a5d1b2a-bf89-4664-a41b-ea9381932157"
+        },
+        "query": "Summarize the tenure of Chris Hatcher as the head coach of Valdosta State Blazers Football.",
+        "summary": "Chris Hatcher had a tenure as the head coach of Valdosta State Blazers Football from 2000 to 2006. During his 7 year run, he achieved an overall record of 76-12-0 which translates to a winning percentage of 864.",
+        "row_ids": [
+            6
+        ]
+    },
+    {
+        "example_id": "e6af2f6c-66ce-424a-b637-8ae7abedd8db",
+        "table": {
+            "header": [
+                "Rank",
+                "Date",
+                "Opponent",
+                "Attendance",
+                "Score",
+                "Winner"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "September 20, 2012",
+                    "BYU",
+                    "36,864",
+                    "7\u20136",
+                    "Boise State"
+                ],
+                [
+                    "2",
+                    "September 4, 2015",
+                    "Washington",
+                    "36,836",
+                    "16\u201313",
+                    "Boise State"
+                ],
+                [
+                    "3",
+                    "October 23, 2014",
+                    "BYU",
+                    "36,752",
+                    "55\u201330",
+                    "Boise State"
+                ],
+                [
+                    "4",
+                    "October 6, 2018",
+                    "San Diego State",
+                    "36,679",
+                    "13\u201319",
+                    "SDSU"
+                ],
+                [
+                    "5",
+                    "October 1, 2016",
+                    "Utah State",
+                    "36,602",
+                    "21\u201310",
+                    "Boise State"
+                ],
+                [
+                    "6",
+                    "September 10, 2016",
+                    "Washington State",
+                    "36,163",
+                    "31\u201328",
+                    "Boise State"
+                ],
+                [
+                    "7",
+                    "November 3, 2012",
+                    "San Diego State",
+                    "36,084",
+                    "19\u201321",
+                    "SDSU"
+                ],
+                [
+                    "8",
+                    "September 13, 2013",
+                    "Air Force",
+                    "36,069",
+                    "42\u201320",
+                    "Boise State"
+                ],
+                [
+                    "9",
+                    "October 20, 2012",
+                    "UNLV",
+                    "36,012",
+                    "32\u20137",
+                    "Boise State"
+                ],
+                [
+                    "10",
+                    "November 24, 2018",
+                    "Utah State",
+                    "35,960",
+                    "33\u201324",
+                    "Boise State"
+                ]
+            ],
+            "title": "Albertsons Stadium - Top 10 highest attended games",
+            "table_id": "48359789-fd7a-484f-8498-3d712a9d8b5f"
+        },
+        "query": "Who was the opponent and what was the attendance of the game ranked 10th in terms of high attendance at Albertsons Stadium?",
+        "summary": "The game opponent ranked 10 at Albertsons Stadium for high attendence was Utah State, and attendence was 35,960.",
+        "row_ids": [
+            9
+        ]
+    },
+    {
+        "example_id": "6bfb9eca-3f7a-4836-aa20-db0bf6d0186a",
+        "table": {
+            "header": [
+                "Artist",
+                "Single",
+                "Released",
+                "Sales (in millions)",
+                "Source"
+            ],
+            "rows": [
+                [
+                    "Maroon 5",
+                    "\"One More Night\"",
+                    "2012",
+                    "6.9",
+                    ""
+                ],
+                [
+                    "Usher featuring will.i.am",
+                    "\"OMG\"",
+                    "2010",
+                    "6.9",
+                    ""
+                ],
+                [
+                    "Katy Perry",
+                    "\"California Gurls\"",
+                    "2010",
+                    "6.7",
+                    ""
+                ],
+                [
+                    "Flo Rida",
+                    "\"Whistle\"",
+                    "2012",
+                    "6.6",
+                    ""
+                ],
+                [
+                    "Train",
+                    "\"Hey, Soul Sister\"",
+                    "2009",
+                    "6.6",
+                    ""
+                ],
+                [
+                    "Rihanna featuring Jay Z",
+                    "\"Umbrella\"",
+                    "2007",
+                    "6.6",
+                    ""
+                ],
+                [
+                    "Taylor Swift",
+                    "\"Love Story\"",
+                    "2009",
+                    "6.5",
+                    ""
+                ],
+                [
+                    "Flo Rida featuring Sia",
+                    "\"Wild Ones\"",
+                    "2012",
+                    "6.5",
+                    ""
+                ],
+                [
+                    "Bruno Mars",
+                    "\"The Lazy Song\"",
+                    "2011",
+                    "6.5",
+                    ""
+                ],
+                [
+                    "Sh\u014dnan no Kaze",
+                    "\"Junrenka\"",
+                    "2006",
+                    "6.5",
+                    ""
+                ],
+                [
+                    "Justin Bieber featuring Ludacris",
+                    "\"Baby\"",
+                    "2010",
+                    "6.4",
+                    ""
+                ],
+                [
+                    "Timbaland",
+                    "\"Apologize\"",
+                    "2008",
+                    "6.2",
+                    ""
+                ],
+                [
+                    "Paramore",
+                    "\"crushcrushcrush\"",
+                    "2007",
+                    "6.1",
+                    ""
+                ],
+                [
+                    "Beyonc\u00e9",
+                    "\"Single Ladies (Put a Ring on It)\"",
+                    "2008",
+                    "6.1",
+                    ""
+                ],
+                [
+                    "A Great Big World and Christina Aguilera",
+                    "\"Say Something\"",
+                    "2013",
+                    "6",
+                    ""
+                ],
+                [
+                    "Clean Bandit featuring Jess Glynne",
+                    "\"Rather Be\"",
+                    "2014",
+                    "6",
+                    ""
+                ],
+                [
+                    "Kimura Kaela",
+                    "\"Butterfly\"",
+                    "2009",
+                    "6",
+                    ""
+                ],
+                [
+                    "The Pussycat Dolls featuring Busta Rhymes",
+                    "\"Don't Cha\"",
+                    "2005",
+                    "6",
+                    ""
+                ]
+            ],
+            "title": "List of best-selling singles - 6\u20136.99 million copies",
+            "table_id": "9059c242-4c7f-4239-b90f-e5e83f99fc4d"
+        },
+        "query": "How many singles released in 2010 sold between 6 and 6.99 million copies, and what are their respective artists and sales figures?",
+        "summary": "In 2010, there were three singles that sold between 6 and 6.99 million copies. These singles include \"OMG\" by Usher featuring will.i.am with 6.9 million copies sold, \"California Gurls\" by Katy Perry with 6.7 million copies sold, and \"Baby\" by Justin Bieber featuring Ludacris with 6.4 million copies sold.",
+        "row_ids": [
+            1,
+            2,
+            10
+        ]
+    },
+    {
+        "example_id": "abdcbeba-e00a-4ca7-bba1-283b9b02b935",
+        "table": {
+            "header": [
+                "Artist",
+                "Single",
+                "Released",
+                "Sales (in millions)",
+                "Source"
+            ],
+            "rows": [
+                [
+                    "Robin Thicke featuring T.I. and Pharrell",
+                    "\"Blurred Lines\"",
+                    "2013",
+                    "14.8",
+                    ""
+                ],
+                [
+                    "Lady Gaga",
+                    "\"Poker Face\"",
+                    "2008",
+                    "14",
+                    "[unreliable source?]"
+                ],
+                [
+                    "Maroon 5 featuring Christina Aguilera",
+                    "\"Moves like Jagger\"",
+                    "2011",
+                    "13.9",
+                    "[unreliable source?]"
+                ],
+                [
+                    "Pharrell Williams",
+                    "\"Happy\"",
+                    "2013",
+                    "13.9",
+                    ""
+                ],
+                [
+                    "Psy",
+                    "\"Gangnam Style\"",
+                    "2012",
+                    "13.5",
+                    ""
+                ],
+                [
+                    "Maroon 5",
+                    "\"Sugar\"",
+                    "2015",
+                    "13.5",
+                    ""
+                ],
+                [
+                    "Macklemore and Ryan Lewis featuring Wanz",
+                    "\"Thrift Shop\"",
+                    "2012",
+                    "13.4",
+                    ""
+                ],
+                [
+                    "Katy Perry featuring Juicy J",
+                    "\"Dark Horse\"",
+                    "2013",
+                    "13.2",
+                    ""
+                ],
+                [
+                    "Major Lazer & DJ Snake featuring M\u00d8",
+                    "\"Lean On\"",
+                    "2015",
+                    "13.1",
+                    ""
+                ],
+                [
+                    "Gotye featuring Kimbra",
+                    "\"Somebody That I Used to Know\"",
+                    "2011",
+                    "13",
+                    ""
+                ],
+                [
+                    "Eminem featuring Rihanna",
+                    "\"Love the Way You Lie\"",
+                    "2010",
+                    "12.8",
+                    "[unreliable source?]"
+                ],
+                [
+                    "Ellie Goulding",
+                    "\"Love Me like You Do\"",
+                    "2015",
+                    "12.6",
+                    ""
+                ],
+                [
+                    "Drake featuring Wizkid and Kyla",
+                    "\"One Dance\"",
+                    "2016",
+                    "12.5",
+                    ""
+                ],
+                [
+                    "Bruno Mars",
+                    "\"Just the Way You Are\"",
+                    "2010",
+                    "12.5",
+                    ""
+                ],
+                [
+                    "Adele",
+                    "\"Hello\"",
+                    "2015",
+                    "12.3",
+                    ""
+                ],
+                [
+                    "John Legend",
+                    "\"All of Me\"",
+                    "2013",
+                    "12.3",
+                    ""
+                ],
+                [
+                    "Jason Mraz",
+                    "\"I'm Yours\"",
+                    "2008",
+                    "12.2",
+                    ""
+                ],
+                [
+                    "Flo Rida featuring Kesha",
+                    "\"Right Round\"",
+                    "2009",
+                    "12",
+                    ""
+                ],
+                [
+                    "Flo Rida featuring T-Pain",
+                    "\"Low\"",
+                    "2007",
+                    "12",
+                    ""
+                ]
+            ],
+            "title": "List of best-selling singles - 12\u201314.99 million copies",
+            "table_id": "e8c64d44-4c17-466a-a2c1-954d6c0fb344"
+        },
+        "query": "How many songs were released in the year 2013 and had sales of 13 million copies or above?",
+        "summary": "In 2013 year, three song have sales of 13 million copies or more.",
+        "row_ids": [
+            0,
+            3,
+            7
+        ]
+    },
+    {
+        "example_id": "4337d3a3-3650-4d25-8796-b634463f7e67",
+        "table": {
+            "header": [
+                "Year",
+                "Theme",
+                "Artist",
+                "Composition",
+                "Mintage",
+                "Issue Price"
+            ],
+            "rows": [
+                [
+                    "2000",
+                    "Year Of The Dragon",
+                    "Harvey Chan",
+                    "75% Gold , 25% Silver",
+                    "8874",
+                    "388.88"
+                ],
+                [
+                    "2001",
+                    "Year Of The Snake",
+                    "Harvey Chan",
+                    "75% Gold , 25% Silver",
+                    "6571",
+                    "388.88"
+                ],
+                [
+                    "2002",
+                    "Year Of The Horse",
+                    "Harvey Chan",
+                    "75% Gold , 25% Silver",
+                    "6843",
+                    "388.88"
+                ],
+                [
+                    "2003",
+                    "Year Of The Goat",
+                    "Harvey Chan",
+                    "75% Gold , 25% Silver",
+                    "3927",
+                    "398.88"
+                ],
+                [
+                    "2004",
+                    "Year Of The Monkey",
+                    "Harvey Chan",
+                    "75% Gold , 25% Silver",
+                    "3318",
+                    "398.88"
+                ],
+                [
+                    "2005",
+                    "Year Of The Rooster",
+                    "Harvey Chan",
+                    "75% Gold , 25% Silver",
+                    "4888",
+                    "398.88"
+                ],
+                [
+                    "2006",
+                    "Year Of The Dog",
+                    "Harvey Chan",
+                    "75% Gold , 25% Silver",
+                    "4888",
+                    "448.88"
+                ],
+                [
+                    "2007",
+                    "Year Of The Pig",
+                    "Harvey Chan",
+                    "75% Gold , 25% Silver",
+                    "4888",
+                    "498.95"
+                ],
+                [
+                    "2008",
+                    "Year Of The Rat",
+                    "Harvey Chan",
+                    "75% Gold , 25% Silver",
+                    "4888",
+                    "508.95"
+                ],
+                [
+                    "2009",
+                    "Year Of The Ox",
+                    "Harvey Chan",
+                    "75% Gold , 25% Silver",
+                    "4888",
+                    "638.88"
+                ],
+                [
+                    "2010",
+                    "Year Of The Tiger",
+                    "Harvey Chan",
+                    "75% Gold , 25% Silver",
+                    "4888",
+                    "555.55"
+                ],
+                [
+                    "2011",
+                    "Year Of The Rabbit",
+                    "Harvey Chan",
+                    "75% Gold , 25% Silver",
+                    "4888",
+                    "638.88"
+                ]
+            ],
+            "title": "Royal Canadian Mint Numismatic Coins (2000S)",
+            "table_id": "ff33beb7-16bf-4288-a533-7d12a37c5677"
+        },
+        "query": "Summarize the coins released in the Year of The Rat.",
+        "summary": "The Royal Canadian Mint released the Year of The Rat numismatic coin in 2008. This 75% gold and 25% silver commemorative coin was created by artist Harvey Chan, and it was limited to a mintage of 4888 pieces. The issue price for this coin was 508.95.",
+        "row_ids": [
+            8
+        ]
+    },
+    {
+        "example_id": "9f244b2d-b416-465a-b285-73ad440b486b",
+        "table": {
+            "header": [
+                "Year",
+                "Office",
+                "State/City",
+                "Candidate",
+                "Votes",
+                "%",
+                "Misc."
+            ],
+            "rows": [
+                [
+                    "2003",
+                    "Governor",
+                    "California",
+                    "John Burton",
+                    "6,748",
+                    "0.1%",
+                    "Urged for a \"No\" vote on the recall"
+                ],
+                [
+                    "2006",
+                    "Senate",
+                    "New York",
+                    "Bill Van Auken",
+                    "6,004",
+                    "0.1%",
+                    ""
+                ],
+                [
+                    "2006",
+                    "House",
+                    "Michigan",
+                    "Jerome White",
+                    "1,862",
+                    "0.8%",
+                    "12th district, Detroit"
+                ],
+                [
+                    "2006",
+                    "State Senate",
+                    "Illinois",
+                    "Joe Parnarauskis",
+                    "1,894",
+                    "3.4%",
+                    "52nd district, Champaign\u2013Urbana"
+                ],
+                [
+                    "2006",
+                    "State Senate",
+                    "Maine",
+                    "Eric DesMarais",
+                    "296",
+                    "2.3%",
+                    "32nd district, Bangor"
+                ],
+                [
+                    "2009",
+                    "Mayor",
+                    "Detroit",
+                    "D'Artagnan Collier",
+                    "1,265",
+                    "1.4%",
+                    ""
+                ],
+                [
+                    "2010",
+                    "State House",
+                    "Michigan",
+                    "D'Artagnan Collier",
+                    "138",
+                    "0.7%",
+                    "9th district, Detroit"
+                ],
+                [
+                    "2013",
+                    "Mayor",
+                    "Detroit",
+                    "D'Artagnan Collier",
+                    "91",
+                    "0.1%",
+                    ""
+                ],
+                [
+                    "2016",
+                    "State House",
+                    "West Virginia",
+                    "Naomi Spencer",
+                    "921",
+                    "2.3%",
+                    "16th district, Huntington"
+                ],
+                [
+                    "2018",
+                    "House",
+                    "California",
+                    "Kevin Mitchell",
+                    "1,473",
+                    "1.9%",
+                    "51st district, Imperial and San Diego counties, top two primary"
+                ],
+                [
+                    "2018",
+                    "Senate",
+                    "California",
+                    "David Moore",
+                    "24,601",
+                    "0.4%",
+                    "Top two primary"
+                ],
+                [
+                    "2018",
+                    "House",
+                    "Michigan",
+                    "Niles Niemuth",
+                    "2,200",
+                    "0.8%",
+                    "12th district, Detroit and Ann Arbor"
+                ]
+            ],
+            "title": "Socialist Equality Party (United States) - Elections",
+            "table_id": "7233a466-cf58-44e7-83a6-3af38cff2e89"
+        },
+        "query": "Among all the candidates listed, who received the highest number of votes and in which election year, and how does this compare to the candidate with the lowest votes?",
+        "summary": "The candidate who received the highest number of votes among all the candidates listed was David Moore in the 2018 Senate election for California, securing 24,601 votes. In contrast, the candidate with the lowest number of votes was D'Artagnan Collier in the 2013 Mayor election for Detroit, who received only 91 votes. The difference in the number of votes between these two candidates is significant, with Moore receiving 24,510 more votes than Collier. This disparity highlights the varying levels of support for different Socialist Equality Party candidates in different election years and positions.",
+        "row_ids": [
+            7,
+            10
+        ]
+    },
+    {
+        "example_id": "1ffad780-f4cb-43e4-8b1a-a45831f3b61c",
+        "table": {
+            "header": [
+                "Club",
+                "Sport",
+                "Founded",
+                "League",
+                "Venue"
+            ],
+            "rows": [
+                [
+                    "Brooklyn Cyclones",
+                    "Baseball",
+                    "2001",
+                    "New York - Penn League",
+                    "Mcu Park"
+                ],
+                [
+                    "Long Island Ducks",
+                    "Baseball",
+                    "2000",
+                    "Atlantic League",
+                    "Bethpage Ballpark"
+                ],
+                [
+                    "New York Mets",
+                    "Baseball",
+                    "1962",
+                    "Major League Baseball",
+                    "Citi Field"
+                ],
+                [
+                    "Brooklyn Nets",
+                    "Basketball",
+                    "1967",
+                    "National Basketball Association",
+                    "Barclays Center"
+                ],
+                [
+                    "Long Island Lions",
+                    "Football",
+                    "2010",
+                    "Five Star Football League",
+                    "Mitchel Athletic Field"
+                ],
+                [
+                    "Empire State Demon Knights",
+                    "Football",
+                    "2008",
+                    "Five Star Football League",
+                    "Aviator Sports Complex"
+                ],
+                [
+                    "New York Islanders",
+                    "Ice Hockey",
+                    "1972",
+                    "National Hockey League",
+                    "Nassau Coliseum"
+                ],
+                [
+                    "Long Island Lizards",
+                    "Lacrosse",
+                    "2001",
+                    "Major League Lacrosse",
+                    "Mitchel Athletic Complex"
+                ],
+                [
+                    "New York Cosmos",
+                    "Soccer",
+                    "2010",
+                    "North American Soccer League",
+                    "James M Shuart Stadium"
+                ]
+            ],
+            "title": "Long Island",
+            "table_id": "0bb1ff91-8e3a-480a-9746-42bc3da5b61a"
+        },
+        "query": "Summarize the basic information of the teams playing the sport of baseball on Long Island.",
+        "summary": "The three teams playing the sport of baseball on Long Island are the Brooklyn Cyclones, the Long Island Ducks and New York Mets. The Brooklyn Cyclones were founded in 2001 and play in the New York-Penn League, with their home venue being Mcu Park. The Long Island Ducks were founded in 2000 and are part of the Atlantic League, with their home venue being Bethpage Ballpark. Lastly, the New York Mets were founded in 1962, playing in the Major League Baseball, with their home venue being Citi Field.",
+        "row_ids": [
+            0,
+            1,
+            2
+        ]
+    },
+    {
+        "example_id": "f7f4f971-4195-4e10-8c24-a00c263b2298",
+        "table": {
+            "header": [
+                "No.",
+                "Title",
+                "Directed by",
+                "Original air date",
+                "Viewers (%)"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "\"\u3042\u308a\u3048\u306a\u3044\u30d7\u30ed\u30dd\u30fc\u30ba!?\"",
+                    "Shin Hirano",
+                    "12 October 2015",
+                    "12.6"
+                ],
+                [
+                    "2",
+                    "\"\u3042\u306a\u305f\u3058\u3083\u306a\u3044\u3068\u30c0\u30e1\u306a\u3093\u3067\u3059!\u79c1\u306f\u7d76\u5bfe\u306b\u96e2\u308c\u306a\u3044\"",
+                    "Shin Hirano",
+                    "19 October 2015",
+                    "12.1"
+                ],
+                [
+                    "3",
+                    "\"\u3042\u306a\u305f\u3092\u597d\u304d\u306b\u306a\u308b\u3053\u3068\u306f\u4e00\u751f\u7d76\u5bfe\u306b\u3042\u308a\u307e\u305b\u3093!\"",
+                    "Shin Hirano",
+                    "26 October 2015",
+                    "10.7"
+                ],
+                [
+                    "4",
+                    "\"\u5927\u6ce2\u4e71!!\u4e00\u89e6\u5373\u767a\u306e\u56db\u89d2\u95a2\u4fc2!!\u7981\u65ad\u306e\u79d8\u5bc6\u3001\u30d0\u30ec\u308b\"",
+                    "Masaki Tanimura",
+                    "2 November 2015",
+                    "11.6"
+                ],
+                [
+                    "5",
+                    "\"\u30a4\u30b1\u30ca\u30a4\u4e00\u591c!?\u5927\u6ce2\u4e71\u306e\u56db\u89d2\u95a2\u4fc2\u306b\u7981\u65ad\u306e\u30b8\u30a8\u30f3\u30c9\"",
+                    "Hideyuki Aizawa",
+                    "9 November 2015",
+                    "11.7"
+                ],
+                [
+                    "6",
+                    "\"\u30cf\u30c3\u30d4\u30fc\u30a6\u30a7\u30c7\u30a3\u30f3\u30b0\u306f\u60aa\u5922!?\u6700\u5f37\u306e\u30e9\u30a4\u30d0\u30eb\u73fe\u308b\"",
+                    "Shin Hirano",
+                    "16 November 2015",
+                    "10.6"
+                ],
+                [
+                    "7",
+                    "\"\u4eca\u591c\u6c7a\u7740!\u8ca0\u3051\u305f\u3089\u7d42\u308f\u308a!\u30e9\u30d6\u30c8\u30fc\u30ca\u30e1\u30f3\u30c8\u6c7a\u52dd!\"",
+                    "Masaki Tanimura",
+                    "23 November 2015",
+                    "12.1"
+                ],
+                [
+                    "8",
+                    "\"\u4eca\u591c\u9650\u5b9a!\u4e8c\u4eba\u306b\u8a2a\u308c\u308b\u5207\u306a\u3059\u304e\u308b\u30e9\u30d6\u30a8\u30d4\u30bd\u30fc\u30c9\u2026\"",
+                    "Hideyuki Aizawa",
+                    "30 November 2015",
+                    "11.4"
+                ],
+                [
+                    "9",
+                    "\"\u3055\u3088\u306a\u3089\u6f64\u5b50\u3055\u3093\u2026\u5f15\u304d\u88c2\u304b\u308c\u308b\u604b\u3001\u885d\u6483\u306e\u30e9\u30b9\u30c8\"",
+                    "Shin Hirano",
+                    "7 December 2015",
+                    "11.6"
+                ],
+                [
+                    "10",
+                    "\"\u8056\u306a\u308b\u591c\u306b\u604b\u306e\u5947\u8e5f!\u6d99\u3001\u6d99\u306e\u30e9\u30b9\u30c8\u30b5\u30d7\u30e9\u30a4\u30ba\"",
+                    "Shin Hirano",
+                    "14 December 2015",
+                    "12.7"
+                ]
+            ],
+            "title": "5-ji Kara 9-ji Made: Watashi ni Koi Shita Ob\u014dsan - Episodes",
+            "table_id": "80886010-3024-45f5-b850-2257c38251dd"
+        },
+        "query": "What is the highest and the lowest viewer percentage of the episodes, and which specific episodes do they correspond to?",
+        "summary": "The top viewer percentage of episodes is 12.7%, which is belong to No.10 episode named \"\u8056\u306a\u308b\u591c\u306b\u604b\u306e\u5947\u8de1\uff01\u6dda\u3001\u6dda\u306e\u30e9\u30b9\u30c8\u30b5\u30d7\u30e9\u30a4\u30ba\" and it show on 14 December 2015. Other side, the bottom viewer percentage is 10.6% and connect with sixth episode called \"\u30cf\u30c3\u30d4\u30fc\u30a6\u30a7\u30c7\u30a3\u30f3\u30b0\u306f\u60aa\u5922!?\u6700\u5f37\u306e\u30e9\u30a4\u30d0\u30eb\u73fe\u308b\" which show on 16 November 2015.",
+        "row_ids": [
+            5,
+            9
+        ]
+    }
+]

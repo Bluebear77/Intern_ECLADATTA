@@ -1,0 +1,968 @@
+[
+    {
+        "example_id": "67830f95-b4ed-4dc8-9b2b-a5443ce48534",
+        "table": {
+            "header": [
+                "Nationality",
+                "Passengers",
+                "Crew",
+                "Ground",
+                "Total"
+            ],
+            "rows": [
+                [
+                    "United States United States",
+                    "247",
+                    "13",
+                    "2",
+                    "262"
+                ],
+                [
+                    "Saudi Arabia Saudi Arabia",
+                    "4",
+                    "",
+                    "",
+                    "4"
+                ],
+                [
+                    "South Korea South Korea",
+                    "1",
+                    "",
+                    "",
+                    "1"
+                ],
+                [
+                    "Austria Austria",
+                    "1",
+                    "",
+                    "",
+                    "1"
+                ],
+                [
+                    "Belgium Belgium",
+                    "1",
+                    "",
+                    "",
+                    "1"
+                ],
+                [
+                    "Netherlands Netherlands",
+                    "4",
+                    "",
+                    "",
+                    "4"
+                ],
+                [
+                    "Total",
+                    "258",
+                    "13",
+                    "2",
+                    "273"
+                ]
+            ],
+            "title": "American Airlines Flight 191 - Nationalities of the victims",
+            "table_id": "db7a3993-5969-4514-9bb4-27f782bbeb95"
+        },
+        "query": "What proportion of total victims were part of the crew, according to the table?",
+        "summary": "From table, 13 crew members in 273 all victim of American Airlines Flight 191. This mean crew about 4.76% of all victim.",
+        "row_ids": [
+            0,
+            6
+        ]
+    },
+    {
+        "example_id": "47eb0d0e-ddfd-4055-984f-719b244cd8e8",
+        "table": {
+            "header": [
+                "Year",
+                "Team",
+                "Co-Drivers",
+                "Car",
+                "Class",
+                "Laps",
+                "Pos.",
+                "Class Pos."
+            ],
+            "rows": [
+                [
+                    "2014",
+                    "Australia Fiat Abarth Motorsport",
+                    "Australia Matt Cherry Australia Luke Ellery",
+                    "Fiat Abarth 500",
+                    "F",
+                    "10",
+                    "28th",
+                    "3rd"
+                ],
+                [
+                    "2015",
+                    "Australia Amac Motorsport",
+                    "Australia Andrew Macpherson Australia Bradley Shiels",
+                    "Porsche 997 GT3-R",
+                    "AA",
+                    "41",
+                    "DNF",
+                    "DNF"
+                ],
+                [
+                    "2016",
+                    "Australia Objective Racing",
+                    "Australia Warren Luff Australia Tim Slade Australia Tony Walls",
+                    "McLaren 650S GT3",
+                    "AA",
+                    "49",
+                    "DNF",
+                    "DNF"
+                ],
+                [
+                    "2017",
+                    "United States Competition Motorsports",
+                    "Australia David Calvert-Jones United States Patrick Long Germany Marc Lieb",
+                    "Porsche 911 GT3 R",
+                    "APA",
+                    "289",
+                    "2nd",
+                    "1st"
+                ],
+                [
+                    "2018",
+                    "United States Competition Motorsports",
+                    "Australia David Calvert-Jones United States Patrick Long Australia Alex Davison",
+                    "Porsche 911 GT3 R",
+                    "APA",
+                    "271",
+                    "4th",
+                    "2nd"
+                ],
+                [
+                    "2019",
+                    "New Zealand Earl Bamber Motorsport",
+                    "Norway Dennis Olsen Germany Dirk Werner",
+                    "Porsche 911 GT3 R",
+                    "APP",
+                    "312",
+                    "1st",
+                    "1st"
+                ]
+            ],
+            "title": "Matt Campbell (racing driver) - Complete Bathurst 12 Hour results",
+            "table_id": "2add0ad3-af51-4b24-b6db-09e6f0bb6e66"
+        },
+        "query": "In what year did Matt Campbell not finish the race and which team was he representing?",
+        "summary": "In 2015 and 2016, Matt Campbell no finish Bathurst 12 Hour race. He represent Australia Amac Motorsport in 2015 and Australia Objective Racing in 2016.",
+        "row_ids": [
+            1,
+            2
+        ]
+    },
+    {
+        "example_id": "16a781ec-f3dd-4269-84f7-65f62df6a293",
+        "table": {
+            "header": [
+                "Rank",
+                "Lane",
+                "Name",
+                "Nationality",
+                "Time",
+                "Notes"
+            ],
+            "rows": [
+                [
+                    "",
+                    "4",
+                    "Lisbeth Trickett",
+                    "Australia",
+                    "56.73",
+                    "OC"
+                ],
+                [
+                    "",
+                    "5",
+                    "Christine Magnuson",
+                    "United States",
+                    "57.10",
+                    ""
+                ],
+                [
+                    "",
+                    "3",
+                    "Jessicah Schipper",
+                    "Australia",
+                    "57.25",
+                    ""
+                ],
+                [
+                    "4",
+                    "2",
+                    "Zhou Yafei",
+                    "China",
+                    "57.84",
+                    ""
+                ],
+                [
+                    "5",
+                    "6",
+                    "Tao Li",
+                    "Singapore",
+                    "57.99",
+                    ""
+                ],
+                [
+                    "6",
+                    "7",
+                    "Jemma Lowe",
+                    "Great Britain",
+                    "58.06",
+                    ""
+                ],
+                [
+                    "7",
+                    "8",
+                    "Gabriella Silva",
+                    "Brazil",
+                    "58.10",
+                    ""
+                ],
+                [
+                    "8",
+                    "1",
+                    "Inge Dekker",
+                    "Netherlands",
+                    "58.54",
+                    ""
+                ]
+            ],
+            "title": "Swimming at the 2008 Summer Olympics \u2013 Women's 100 metre butterfly - Final",
+            "table_id": "c89c7d46-ff16-49a4-8f32-e6607b6521f7"
+        },
+        "query": "Did any of the top 8 female swimmers in the 100 metre butterfly event at the 2008 Summer Olympics set an Olympic record?",
+        "summary": "Yes, an Olympic record was set in the 100 metre butterfly event at the 2008 Summer Olympics by one of the top 8 female swimmers. Lisbeth Trickett from Australia, who ranked first, set the Olympic record with a time of 56.73 seconds.",
+        "row_ids": [
+            0
+        ]
+    },
+    {
+        "example_id": "fee2f64a-1512-4044-b7be-1b55fe35dda6",
+        "table": {
+            "header": [
+                "Game",
+                "January",
+                "Opponent",
+                "Score",
+                "Record",
+                "Points"
+            ],
+            "rows": [
+                [
+                    "39",
+                    "2",
+                    "New Jersey Devils",
+                    "1 - 1 Ot",
+                    "17 - 14 - 8 - 0",
+                    "42"
+                ],
+                [
+                    "40",
+                    "5",
+                    "Atlanta Thrashers",
+                    "6 - 4",
+                    "18 - 14 - 8 - 0",
+                    "44"
+                ],
+                [
+                    "41",
+                    "6",
+                    "Atlanta Thrashers",
+                    "2 - 2 Ot",
+                    "18 - 14 - 9 - 0",
+                    "45"
+                ],
+                [
+                    "42",
+                    "8",
+                    "St Louis Blues",
+                    "2 - 1 Ot",
+                    "19 - 14 - 9 - 0",
+                    "47"
+                ],
+                [
+                    "43",
+                    "12",
+                    "Tampa Bay Lightning",
+                    "3 - 0",
+                    "20 - 14 - 9 - 0",
+                    "49"
+                ],
+                [
+                    "44",
+                    "13",
+                    "Florida Panthers",
+                    "4 - 1",
+                    "21 - 14 - 9 - 0",
+                    "51"
+                ],
+                [
+                    "45",
+                    "16",
+                    "New York Rangers",
+                    "3 - 4 Ot",
+                    "21 - 14 - 9 - 1",
+                    "52"
+                ],
+                [
+                    "46",
+                    "18",
+                    "New Jersey Devils",
+                    "1 - 7",
+                    "21 - 15 - 9 - 1",
+                    "52"
+                ],
+                [
+                    "47",
+                    "20",
+                    "Florida Panthers",
+                    "5 - 3",
+                    "22 - 15 - 9 - 1",
+                    "54"
+                ],
+                [
+                    "48",
+                    "22",
+                    "Los Angeles Kings",
+                    "3 - 0",
+                    "23 - 15 - 9 - 1",
+                    "56"
+                ],
+                [
+                    "49",
+                    "25",
+                    "Chicago Blackhawks",
+                    "5 - 1",
+                    "24 - 15 - 9 - 1",
+                    "58"
+                ],
+                [
+                    "50",
+                    "27",
+                    "Carolina Hurricanes",
+                    "4 - 3",
+                    "25 - 15 - 9 - 1",
+                    "60"
+                ],
+                [
+                    "51",
+                    "28",
+                    "Washington Capitals",
+                    "2 - 4",
+                    "25 - 16 - 9 - 1",
+                    "60"
+                ],
+                [
+                    "52",
+                    "31",
+                    "Pittsburgh Penguins",
+                    "5 - 1",
+                    "26 - 16 - 9 - 1",
+                    "62"
+                ]
+            ],
+            "title": "2000 - 01 Philadelphia Flyers Season",
+            "table_id": "4824a042-1a99-4e93-9428-091c8d7881b6"
+        },
+        "query": "How many games did the Philadelphia Flyers win in January 2000? Summarize the basic information of these games.",
+        "summary": "The Philadelphia Flyers won eight games in January 2000. They first played the Atlanta Thrashers with 6-4. They then defeated the Tampa Bay Lightning, followed by wins over the Florida Panthers twice, Los Angeles Kings, Chicago Blackhawks, Carolina Hurricanes and Pittsburgh Penguins.",
+        "row_ids": [
+            1,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11,
+            13
+        ]
+    },
+    {
+        "example_id": "2b779443-2fab-45b7-84b4-b26ff31c78cb",
+        "table": {
+            "header": [
+                "Date of election",
+                "Constituency",
+                "Party",
+                "Votes",
+                "%"
+            ],
+            "rows": [
+                [
+                    "1950",
+                    "Chorley",
+                    "Conservative",
+                    "22872",
+                    "46.9"
+                ],
+                [
+                    "25 March 1959",
+                    "South West Norfolk",
+                    "Independent",
+                    "785",
+                    "2.6"
+                ],
+                [
+                    "28 March 1968",
+                    "Acton",
+                    "NF",
+                    "1400",
+                    "5.6"
+                ],
+                [
+                    "4 March 1976",
+                    "Coventry NW",
+                    "NF",
+                    "986",
+                    "3.1"
+                ],
+                [
+                    "1979",
+                    "Norwich South",
+                    "NF",
+                    "264",
+                    "0.7"
+                ]
+            ],
+            "title": "Andrew Fountaine - Elections contested",
+            "table_id": "f26ca933-559a-416b-90bd-81dba12e22fd"
+        },
+        "query": "When did Andrew Fountaine switch his party affiliation from Conservative to National Front, and did this change impact his voting percentages?",
+        "summary": "Andrew Fountaine switched his party affiliation from Conservative to National Front (NF) between the elections of 25 March 1959, where he contested as an Independent, and 28 March 1968, where he represented the NF. In the 1950 election, as a Conservative candidate, he received 22,872 votes with a 46.9% voting percentage. Upon switching to the National Front, there was a noticeable decrease in his voting percentages. In the 1968 election, Fountaine secured only 1,400 votes, which accounted for 5.6% of the total votes, and in 1979, his voting percentage dropped further to 0.7%, with just 264 votes. Thus, the change in party affiliation from Conservative to National Front negatively impacted Andrew Fountaine's voting success.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    {
+        "example_id": "01feb8af-8f95-428e-bcba-4f53266d6468",
+        "table": {
+            "header": [
+                "No.",
+                "Date",
+                "Venue",
+                "Cap",
+                "Opponent",
+                "Score",
+                "Result",
+                "Competition"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "24 February 1996",
+                    "Pyla Municipal Stadium, Pyla, Cyprus",
+                    "39",
+                    "Faroe Islands",
+                    "1\u20130",
+                    "2\u20132",
+                    "Friendly"
+                ],
+                [
+                    "2",
+                    "13 November 1996",
+                    "Estadi Comunal, Andorra la Vella, Andorra",
+                    "47",
+                    "Andorra",
+                    "6\u20131",
+                    "6\u20131",
+                    "Friendly"
+                ],
+                [
+                    "3",
+                    "1 March 1997",
+                    "Antonis Papadopoulos Stadium, Larnaca, Cyprus",
+                    "51",
+                    "Azerbaijan",
+                    "1\u20130",
+                    "2\u20130",
+                    "Friendly"
+                ],
+                [
+                    "4",
+                    "8 June 1997",
+                    "Kadriorg Stadium, Tallinn, Estonia",
+                    "56",
+                    "Sweden",
+                    "2\u20133",
+                    "2\u20133",
+                    "1998 FIFA World Cup qualification"
+                ],
+                [
+                    "5",
+                    "10 July 1997",
+                    "\u017dalgiris Stadium, Vilnius, Lithuania",
+                    "59",
+                    "Latvia",
+                    "1\u20130",
+                    "1\u20132",
+                    "1997 Baltic Cup"
+                ],
+                [
+                    "6",
+                    "27 November 1997",
+                    "Rizal Memorial Stadium, Manila, Philippines",
+                    "64",
+                    "Philippines",
+                    "1\u20130",
+                    "1\u20130",
+                    "Friendly"
+                ],
+                [
+                    "7",
+                    "18 August 1999",
+                    "P\u00e4rnu Kalev Stadium, P\u00e4rnu, Estonia",
+                    "86",
+                    "Armenia",
+                    "1\u20130",
+                    "2\u20130",
+                    "Friendly"
+                ],
+                [
+                    "8",
+                    "19 March 2001",
+                    "Cairo International Stadium, Cairo, Egypt",
+                    "99",
+                    "Egypt",
+                    "2\u20131",
+                    "3\u20133",
+                    "Friendly"
+                ],
+                [
+                    "9",
+                    "28 March 2001",
+                    "Tsirio Stadium, Limassol, Cyprus",
+                    "100",
+                    "Cyprus",
+                    "1\u20132",
+                    "2\u20132",
+                    "2002 FIFA World Cup qualification"
+                ]
+            ],
+            "title": "Marko Kristal - International goals",
+            "table_id": "3bfb90e0-9d01-4daa-aedd-f129d8566358"
+        },
+        "query": "What are the three venues where Marko Kristal scored during a Friendly competition?",
+        "summary": "the three venues where Marko Kristal scored during a Friendly competition WERE Pyla Municipal Stadium,Estadi Comunal AND aNTONIS pAPADOPOULOS sTADIYM.",
+        "row_ids": [
+            0,
+            1,
+            2
+        ]
+    },
+    {
+        "example_id": "ffd60198-2e76-47e9-ad06-cecab88b3d31",
+        "table": {
+            "header": [
+                "Competition",
+                "Attendance",
+                "Opponent",
+                "Season",
+                "Result"
+            ],
+            "rows": [
+                [
+                    "Welsh Premier League",
+                    "2593",
+                    "Prestatyn Town",
+                    "2011 - 12",
+                    "5 - 3"
+                ],
+                [
+                    "Welsh Cup",
+                    "12000",
+                    "Cardiff City",
+                    "1927 - 28",
+                    "0 - 2"
+                ],
+                [
+                    "Uefa Champions League",
+                    "1189",
+                    "Hjk Helsinki",
+                    "2011 - 12",
+                    "0 - 3"
+                ],
+                [
+                    "Uefa Europa League",
+                    "1022",
+                    "Fc Zimbru",
+                    "2012 - 13",
+                    "0 - 0"
+                ],
+                [
+                    "Uefa Cup 1",
+                    "3426",
+                    "\u00cda Akranes",
+                    "1994 - 95",
+                    "1 - 2"
+                ],
+                [
+                    "Uefa Cup Winners' Cup 2",
+                    "12000",
+                    "Napoli",
+                    "1962 - 63",
+                    "2 - 0"
+                ]
+            ],
+            "title": "Bangor City F.C",
+            "table_id": "b3cd31d2-6f52-41a7-ab93-f6124fe69ebf"
+        },
+        "query": "Summarize the basic information of the Welsh Premier League match between Bangor City F.C and Prestatyn Town.",
+        "summary": "The Welsh Premier League match between Bangor City F.C and Prestatyn Town in the 2011-12 season was a match with a large crowd of 2593 people in attendance. The match ended with Bangor City F.C securing a 5-3 victory against their opponent Prestatyn Town.",
+        "row_ids": [
+            0
+        ]
+    },
+    {
+        "example_id": "6f847134-8271-44ad-829e-bc95f621214b",
+        "table": {
+            "header": [
+                "Year",
+                "Rider",
+                "Nationality",
+                "Race",
+                "Km / Hour",
+                "Distance"
+            ],
+            "rows": [
+                [
+                    "1936",
+                    "Gustave Danneels",
+                    "Belgium",
+                    "Paris\u2013Tours",
+                    "41.455",
+                    "251 km"
+                ],
+                [
+                    "1938",
+                    "Jules Rossi",
+                    "Italy",
+                    "Paris\u2013Tours",
+                    "42.092",
+                    "251 km"
+                ],
+                [
+                    "1948",
+                    "Rik Van Steenbergen",
+                    "Belgium",
+                    "Paris\u2013Roubaix",
+                    "43.612",
+                    "246 km"
+                ],
+                [
+                    "1955",
+                    "Jacques Dupont",
+                    "France",
+                    "Paris\u2013Tours",
+                    "43.666",
+                    "253 km"
+                ],
+                [
+                    "1962",
+                    "Jo de Roo",
+                    "Netherlands",
+                    "Paris\u2013Tours",
+                    "44.903",
+                    "267.5 km"
+                ],
+                [
+                    "1964",
+                    "Peter Post",
+                    "Netherlands",
+                    "Paris\u2013Roubaix",
+                    "45.129",
+                    "265 km"
+                ],
+                [
+                    "1975",
+                    "Freddy Maertens",
+                    "Belgium",
+                    "Paris\u2013Brussels",
+                    "46.110",
+                    "285.5 km"
+                ],
+                [
+                    "1997",
+                    "Andrei Tchmil",
+                    "Ukraine",
+                    "Paris\u2013Tours",
+                    "47.168",
+                    "254.5 km"
+                ],
+                [
+                    "2003",
+                    "Erik Zabel",
+                    "Germany",
+                    "Paris\u2013Tours",
+                    "47.550",
+                    "257.5 km"
+                ],
+                [
+                    "2010",
+                    "\u00d3scar Freire",
+                    "Spain",
+                    "Paris\u2013Tours",
+                    "47.730",
+                    "233 km"
+                ],
+                [
+                    "2012",
+                    "Marco Marcato",
+                    "Italy",
+                    "Paris\u2013Tours",
+                    "48.629",
+                    "235.5 km"
+                ],
+                [
+                    "2015",
+                    "Matteo Trentin",
+                    "Italy",
+                    "Paris\u2013Tours",
+                    "49.641",
+                    "231 km"
+                ]
+            ],
+            "title": "Ruban Jaune - Holders of the Ruban Jaune",
+            "table_id": "cda857bf-565c-4813-977d-36c3f7197d6e"
+        },
+        "query": "What are the details surrounding the participation of Belgian riders in the Ruban Jaune as per the table, taking into account the years they participated, their average speed (Km / Hour), and the races they took part in?",
+        "summary": "Belgian riders have had a notable presence in the Ruban Jaune throughout the years, especially in the earlier years of this prestigious cycling recognition. According to the table, there have been three Belgian riders who held the Ruban Jaune in the years 1936, 1948, and 1975. Gustave Danneels earned the title in 1936 in the Paris-Tours race, with a remarkable average speed of 41.455 km/hour over a distance of 251 km. Rik Van Steenbergen later followed in 1948 during the Paris-Roubaix race, clocking a higher average speed of 43.612 km/hour while covering a distance of 246 km. Lastly, Freddy Maertens set a phenomenal 46.110 km/hour in the Paris-Brussels race of 1975, covering a distance of 285.5 km.",
+        "row_ids": [
+            0,
+            2,
+            6
+        ]
+    },
+    {
+        "example_id": "8732c448-bac3-4337-9161-c313fb0bcaaf",
+        "table": {
+            "header": [
+                "Round",
+                "Pick",
+                "Name",
+                "Position",
+                "College"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "28",
+                    "Lawrence Jackson",
+                    "De",
+                    "Usc"
+                ],
+                [
+                    "2",
+                    "38",
+                    "John Carlson",
+                    "Te",
+                    "Notre Dame"
+                ],
+                [
+                    "4",
+                    "121",
+                    "Red Bryant",
+                    "Dt",
+                    "Texas A&M"
+                ],
+                [
+                    "5",
+                    "163",
+                    "Owen Schmitt",
+                    "Fb",
+                    "West Virginia"
+                ],
+                [
+                    "6",
+                    "189",
+                    "Tyler Schmitt",
+                    "Ls",
+                    "San Diego State"
+                ],
+                [
+                    "7",
+                    "233",
+                    "Justin Forsett",
+                    "Rb",
+                    "Cal"
+                ],
+                [
+                    "7",
+                    "235",
+                    "Brandon Coutu",
+                    "Pk",
+                    "Georgia"
+                ]
+            ],
+            "title": "2008 Seattle Seahawks Season",
+            "table_id": "122aa8d7-2ea4-4925-9e8b-c1145cefd976"
+        },
+        "query": "Summarize the basic information of the players drafted by the Seahawks in the 2008 NFL draft who played the position of running back.",
+        "summary": "The Seattle Seahawks drafted Justin Forsett in the 7th round of the 2008 NFL draft with the 233rd overall pick. Forsett played running back and attended Cal, where he was a standout player.",
+        "row_ids": [
+            5
+        ]
+    },
+    {
+        "example_id": "3f824cbb-8f23-412e-8b34-704b4615b3be",
+        "table": {
+            "header": [
+                "Year",
+                "# Finishers",
+                "Men's winner",
+                "Time (h:m:s)",
+                "Women's winner",
+                "Time (h:m:s)"
+            ],
+            "rows": [
+                [
+                    "2018",
+                    "4678",
+                    "Robert Chemonges (UGA)",
+                    "2:09:05",
+                    "Abeba-Tekulu Gebremeskel (ETH)",
+                    "2:30:13"
+                ],
+                [
+                    "2017",
+                    "4584",
+                    "Jackson Limo (KEN)",
+                    "2:11:34",
+                    "Monica Jepkoech (KEN)",
+                    "2:26:58"
+                ],
+                [
+                    "2016",
+                    "4752",
+                    "Samuel Mwaniki (KEN)",
+                    "2:11:48",
+                    "Loice Kiptoo (KEN)",
+                    "2:29:13"
+                ],
+                [
+                    "2015",
+                    "4558",
+                    "Gilbert Koech (KEN)",
+                    "2:14:04",
+                    "Brigid Kosgei (KEN)",
+                    "2:47:59"
+                ],
+                [
+                    "2014",
+                    "4042",
+                    "Workneh Fikre (ERI)",
+                    "2:13:10",
+                    "Marta Tigabea (ETH)",
+                    "2:31:54"
+                ],
+                [
+                    "2013",
+                    "2755",
+                    "Joash Mutai (KEN)",
+                    "2:13:04",
+                    "Chaltu Waka (ETH)",
+                    "2:37:47"
+                ],
+                [
+                    "2012",
+                    "1668",
+                    "Anthony Wairuri (KEN)",
+                    "2:12:14",
+                    "Abeba Gebremeskele (ETH)",
+                    "2:39:51"
+                ],
+                [
+                    "2011",
+                    "1545",
+                    "Philemon Baaru (KEN)",
+                    "2:09:51",
+                    "Pauline Chepchumba (KEN)",
+                    "2:41:24"
+                ],
+                [
+                    "2010",
+                    "1180",
+                    "Alex Kirui (KEN)",
+                    "2:14:25",
+                    "Beatrice Toroitich (KEN)",
+                    "2:37:49"
+                ],
+                [
+                    "2009",
+                    "857",
+                    "Johnstone Changwony (KEN)",
+                    "2:13:12",
+                    "Priscah Jeptoo (KEN)",
+                    "2:30:40"
+                ],
+                [
+                    "2008",
+                    "583",
+                    "Samuel Mugo (KEN)",
+                    "2:11:08",
+                    "Tirfi Tsegaye (ETH)",
+                    "2:35:31"
+                ],
+                [
+                    "2007",
+                    "412",
+                    "Edwin Kimutai (KEN)",
+                    "2:15:12",
+                    "Marisa Barros (POR)",
+                    "2:31:31"
+                ],
+                [
+                    "2006",
+                    "373",
+                    "Lawrence Saina (KEN)",
+                    "2:09:52",
+                    "Aureliana Edmundo (POR)",
+                    "2:57:35"
+                ],
+                [
+                    "2005",
+                    "310",
+                    "Ruben Chepkwick (KEN)",
+                    "2:22:27",
+                    "F\u00e1tima Silva (POR)",
+                    "2:45:09"
+                ],
+                [
+                    "2004",
+                    "317",
+                    "Steven Kiprotich (KEN)",
+                    "2:13:57",
+                    "Nat\u00e1lia Pinto (POR)",
+                    "2:58:09"
+                ]
+            ],
+            "title": "Porto Marathon - List of winners",
+            "table_id": "13019435-75c7-40e5-9518-89a816b66f19"
+        },
+        "query": "How many times did Kenyan athletes win the marathon in both the men's and women's categories between 2004 and 2018?",
+        "summary": "Between 2004 and 2018, Kenyan athletes showcased their excellence in long-distance running by dominating the Porto Marathon in Portugal. In the men's category, they achieved an extraordinary winning streak, securing the championship title each year for a total of 13 victories. On the women's side, Kenyan runners similarly demonstrated their prowess, emerging as champions 6 times during the same timeframe. Taking both categories into account, Kenyan athletes have collectively clinched a remarkable 19 wins at the Porto Marathon between 2004 and 2018. This feat underscores their dominance in long-distance races and cements their status as formidable competitors on the international stage.",
+        "row_ids": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    }
+]

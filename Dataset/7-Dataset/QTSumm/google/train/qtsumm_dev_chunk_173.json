@@ -1,0 +1,926 @@
+[
+    {
+        "example_id": "b479e311-1c29-4514-bd87-5181ebaa6a00",
+        "table": {
+            "header": [
+                "Pollutant",
+                "Type",
+                "Standard",
+                "Averaging Time",
+                "Regulatory Citation"
+            ],
+            "rows": [
+                [
+                    "So 2",
+                    "Primary",
+                    "0.14 Ppm (365 \u039cg / M 3 )",
+                    "24 - Hour",
+                    "40 Cfr 50.4 (B)"
+                ],
+                [
+                    "So 2",
+                    "Primary",
+                    "0.030 Ppm (80 \u039cg / M Cubic)",
+                    "Annual",
+                    "40 Cfr 50.4 (A)"
+                ],
+                [
+                    "So 2",
+                    "Secondary",
+                    "0.5 Ppm (1300 \u039cg / M Cubic)",
+                    "3 - Hour",
+                    "40 Cfr 50.5 (A)"
+                ],
+                [
+                    "Pm 10",
+                    "Primary And Secondary",
+                    "150 \u039cg / M Cubic",
+                    "24 - Hour",
+                    "40 Cfr 50.6 (A)"
+                ],
+                [
+                    "Pm 2.5",
+                    "Secondary",
+                    "35 \u039cg / M Cubic",
+                    "24 - Hour",
+                    "40 Cfr 50.7 (A)"
+                ],
+                [
+                    "Pm 2.5",
+                    "Primary",
+                    "15 \u039cg / M Cubic",
+                    "Annual",
+                    "40 Cfr 50.7 (A)"
+                ],
+                [
+                    "Co",
+                    "Primary",
+                    "35 Ppm (40 Mg / M Cubic)",
+                    "1 - Hour",
+                    "40 Cfr 50.8 (A) (2)"
+                ],
+                [
+                    "Co",
+                    "Primary",
+                    "9 Ppm (10 Mg / M Cubic)",
+                    "8 - Hour",
+                    "40 Cfr 50.8 (A) (1)"
+                ],
+                [
+                    "O 3",
+                    "Primary And Secondary",
+                    "0.12 Ppm (235 \u039cg / M Cubic)",
+                    "1 - Hour",
+                    "40 Cfr 50.9 (A)"
+                ],
+                [
+                    "O 3",
+                    "Primary And Secondary",
+                    "0.075 Ppm (150 \u039cg / M Cubic)",
+                    "8 - Hour",
+                    "40 Cfr 50.10 (A)"
+                ],
+                [
+                    "No 2",
+                    "Primary And Secondary",
+                    "0.053 Ppm (100 \u039cg / M Cubic)",
+                    "Annual",
+                    "40 Cfr 50.11 (A) And (B)"
+                ],
+                [
+                    "Pb",
+                    "Primary And Secondary",
+                    "0.15 \u039cg / M Cubic",
+                    "Rolling 3 Months",
+                    "40 Cfr 50.12"
+                ]
+            ],
+            "title": "National Ambient Air Quality Standards",
+            "table_id": "c29390e3-1b28-4090-bdb6-0c5c291759c8"
+        },
+        "query": "What are the standards for So2, PM10, PM2.5 pollutants?",
+        "summary": "The National Ambient Air Quality Standards table provides standards for various pollutants with primary and secondary designations. For SO2, the standard for the primary designation is 0.14ppm (365\u03bcg/m3) for a 24-hour time period, and 0.03ppm (80\u03bcg/m3) for an annual averaging period. The standard for the secondary designation is 0.5ppm (1300\u03bcg/m3). For PM10, the standard is 150\u03bcg/m3 per 24 hours; while the PM2.5 has a primary designated standard of 15\u03bcg/m3 annually and 35\u03bcg/m3 hourly per 24 hours as their respective secondary established limits.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    },
+    {
+        "example_id": "df18c425-f7f2-4a8f-8909-eb04f976d60d",
+        "table": {
+            "header": [
+                ".308 Winchester Cartridge Type",
+                "100 M Group (Mm)",
+                "100 M Group ( Moa )",
+                "300 M Group (Mm)",
+                "300 M Group ( Moa )"
+            ],
+            "rows": [
+                [
+                    "Ruag Swiss P Target 168 Gr Hp - Bt",
+                    "13",
+                    "0.45",
+                    "48",
+                    "0.55"
+                ],
+                [
+                    "Federal Gm 168 Gr Sierra Matchking",
+                    "14",
+                    "0.48",
+                    "55",
+                    "0.63"
+                ],
+                [
+                    "Sellier & Bellot 168 Gr Hp - Bt",
+                    "15",
+                    "0.51",
+                    "52",
+                    "0.59"
+                ],
+                [
+                    "Imi 168 Gr Match",
+                    "13",
+                    "0.44",
+                    "52",
+                    "0.59"
+                ],
+                [
+                    ".300 Winchester Magnum Cartridge Type",
+                    "100 M Group (Mm)",
+                    "100 M Group ( Moa )",
+                    "300 M Group (Mm)",
+                    "300 M Group ( Moa )"
+                ],
+                [
+                    "Ruag Swiss P Target 200 Gs Hp - Bt",
+                    "13",
+                    "0.45",
+                    "38",
+                    "0.43"
+                ],
+                [
+                    "Sellier & Bellot 168 Gr Hp - Bt",
+                    "14",
+                    "0.48",
+                    "45",
+                    "0.51"
+                ]
+            ],
+            "title": "Dsr - Precision Gmbh Dsr - 1",
+            "table_id": "9328b982-c996-4208-b139-44aa8837128d"
+        },
+        "query": "What are the cartridge types that have 100m groups of 14mm or less?",
+        "summary": "The .308 Winchester cartridge types Ruag Swiss P Target 168 Gr Hp-Bt, Federal GM 168 Gr Sierra Matchking, IMI 168 Gr Match, Ruag Swiss P Target 200 Gs Hp - Bt and Sellier & Bellot 168 Gr Hp - Bt all have 100m groups of 14mm or less.",
+        "row_ids": [
+            0,
+            1,
+            3,
+            5,
+            6
+        ]
+    },
+    {
+        "example_id": "531078a9-1a4f-4461-8cbd-fa25f65a868e",
+        "table": {
+            "header": [
+                "Call Sign",
+                "Frequency Mhz",
+                "City Of License",
+                "Erp W",
+                "Fcc Info"
+            ],
+            "rows": [
+                [
+                    "W211Bf",
+                    "90.1",
+                    "Big Stone Gap , Virginia",
+                    "8.0",
+                    "Fcc"
+                ],
+                [
+                    "W212Bp",
+                    "90.3",
+                    "Clintwood , Virginia",
+                    "1.0",
+                    "Fcc"
+                ],
+                [
+                    "W211Be",
+                    "90.1",
+                    "Lebanon , Virginia",
+                    "8.5",
+                    "Fcc"
+                ],
+                [
+                    "W219Cj",
+                    "91.7",
+                    "Norton , Virginia",
+                    "50.0",
+                    "Fcc"
+                ],
+                [
+                    "W217Bf",
+                    "91.3",
+                    "Pound , Virginia",
+                    "1.0",
+                    "Fcc"
+                ],
+                [
+                    "W215Bj",
+                    "90.9",
+                    "Saint Paul , Virginia",
+                    "1.0",
+                    "Fcc"
+                ]
+            ],
+            "title": "Wvtf",
+            "table_id": "86ada253-2b23-4462-9c30-5544d986f2f6"
+        },
+        "query": "What are the call signs of the radio stations with ERP W of 8.0 or higher? Summarize the basic information of these stations.",
+        "summary": "The call signs of the radio stations with an ERP W of 8.0 or higher are W211Bf, W211Be and W219Cj. W211Bf has a frequency of 90.1MHz, is located in Big Stone Gap, Virginia and has an Erp W of 8.0. W211Be has a frequency of 90.1MHz, is located in Lebanon, Virginia and has an Erp W of 8.5. Lastly, W219Cj has a frequency of 91.7MHz, is located in Norton, Virginia and has an Erp W of 50.0. All the stations have FCC info.",
+        "row_ids": [
+            0,
+            2,
+            3
+        ]
+    },
+    {
+        "example_id": "cafc3b96-a995-4503-9518-b0c4e02558bc",
+        "table": {
+            "header": [
+                "Team",
+                "City / Area",
+                "Arena",
+                "Capacity",
+                "Last Season"
+            ],
+            "rows": [
+                [
+                    "Birmingham Panthers",
+                    "Birmingham & Telford",
+                    "Uow , Walsall Campus & Tcat Arena",
+                    "1000",
+                    "New"
+                ],
+                [
+                    "Cheshire Jets",
+                    "Chester",
+                    "Northgate Arena",
+                    "1000",
+                    "9Th"
+                ],
+                [
+                    "Everton Tigers",
+                    "Liverpool",
+                    "Echo Arena & Greenbank Sports Academy",
+                    "7513",
+                    "New"
+                ],
+                [
+                    "Guildford Heat",
+                    "Guildford",
+                    "Guildford Spectrum",
+                    "1100",
+                    "1St"
+                ],
+                [
+                    "Leicester Riders",
+                    "Leicester",
+                    "John Sandford Centre",
+                    "800",
+                    "7Th"
+                ],
+                [
+                    "London Capital",
+                    "London",
+                    "Capital City Academy",
+                    "300",
+                    "New"
+                ],
+                [
+                    "Milton Keynes Lions",
+                    "Milton Keynes",
+                    "Bletchley Centre",
+                    "800",
+                    "6Th"
+                ],
+                [
+                    "Newcastle Eagles",
+                    "Newcastle Upon Tyne",
+                    "Metro Radio Arena",
+                    "6500",
+                    "3Rd"
+                ],
+                [
+                    "Plymouth Raiders",
+                    "Plymouth",
+                    "Plymouth Pavilions",
+                    "1480",
+                    "5Th"
+                ],
+                [
+                    "Scottish Rocks",
+                    "Glasgow",
+                    "Braehead Arena",
+                    "4000",
+                    "4Th"
+                ],
+                [
+                    "Sheffield Sharks",
+                    "Sheffield",
+                    "English Institute Of Sport",
+                    "1200",
+                    "2Nd"
+                ],
+                [
+                    "Worcester Wolves",
+                    "Worcester",
+                    "University Of Worcester",
+                    "600",
+                    "10Th"
+                ]
+            ],
+            "title": "2007 - 08 British Basketball League Season",
+            "table_id": "0fed4cf9-723f-4198-a257-41008c648f3d"
+        },
+        "query": "Summarize the basic information of the teams in the British Basketball League who finished in the top three of the last season.",
+        "summary": "The top three teams in the 2007 - 08 British Basketball League season were the Guildford Heat, Sheffield Sharks, and Newcastle Eagles. The Guildford Heat played their home games at the Guildford Spectrum and had a capacity of 1100. They finished in first place during the last season. The Sheffield Sharks had their home games at the English Institute of Sport and had a capacity of 1200. They came in second place during the last season. Finally, the Newcastle Eagles played their home games at the Metro Radio Arena and had a capacity of 6500. They placed third in league standings during the last season.",
+        "row_ids": [
+            3,
+            7,
+            10
+        ]
+    },
+    {
+        "example_id": "6eb0ea50-0256-40e0-9b6b-6694b4743248",
+        "table": {
+            "header": [
+                "Year",
+                "Performance",
+                "Venue",
+                "Date",
+                "World Rank"
+            ],
+            "rows": [
+                [
+                    "2014",
+                    "20.36",
+                    "Switzerland Z\u00fcrich",
+                    "14/08/2014",
+                    "39th"
+                ],
+                [
+                    "2013",
+                    "20.77",
+                    "Italy Milan",
+                    "28/07/2013",
+                    ""
+                ],
+                [
+                    "2012",
+                    "20.77",
+                    "Italy Misano Adriatico",
+                    "17/06/2012",
+                    ""
+                ],
+                [
+                    "2010",
+                    "20.91",
+                    "Italy Rome",
+                    "110/06/2010",
+                    ""
+                ],
+                [
+                    "2009",
+                    "20.98",
+                    "Italy Rieti",
+                    "114/06/2009",
+                    ""
+                ],
+                [
+                    "2008",
+                    "21.18",
+                    "Poland Bydgoszcz",
+                    "110/07/2008",
+                    ""
+                ]
+            ],
+            "title": "Diego Marani (athlete) - Progression",
+            "table_id": "8dc0dcf0-bdff-446d-b1fb-3cbcbdc540a1"
+        },
+        "query": "In which years did Marani achieve the same performance and where were these events held?",
+        "summary": "In year 2013 and 2012, Marani get same performance of 20.77 seconds. These events was hold in Italy, with 2013 event happen in Milan and 2012 event in Misano Adriatico.",
+        "row_ids": [
+            1,
+            2
+        ]
+    },
+    {
+        "example_id": "4710ccea-cebc-4567-ac3f-b12ec40afaed",
+        "table": {
+            "header": [
+                "Rank",
+                "Name",
+                "Image",
+                "Height ft / m",
+                "Floors",
+                "Year",
+                "Notes"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Xerox Tower",
+                    "Xerox Tower.JPG",
+                    "443 / 135",
+                    "30",
+                    "1968",
+                    "Third tallest building in New York outside of New York City"
+                ],
+                [
+                    "2",
+                    "Legacy Tower",
+                    "-",
+                    "401 / 122",
+                    "20",
+                    "1995",
+                    "Formerly known as Bausch & Lomb Place. Only the spire makes it taller than The Metropolitan"
+                ],
+                [
+                    "3",
+                    "The Metropolitan",
+                    "-",
+                    "392 / 119",
+                    "27",
+                    "1973",
+                    "Formerly known as Chase Tower, renamed and partially converted to residential."
+                ],
+                [
+                    "4",
+                    "Kodak Tower",
+                    "-",
+                    "360 / 110",
+                    "19",
+                    "1914",
+                    "Expanded in 1930 from 16 to 19 stories and tower"
+                ],
+                [
+                    "5",
+                    "First Federal Plaza",
+                    "-",
+                    "309 / 94",
+                    "21",
+                    "1976",
+                    ""
+                ],
+                [
+                    "6",
+                    "Five Star Bank Plaza",
+                    "-",
+                    "284 / 87",
+                    "21",
+                    "1970",
+                    "Formerly known as One HSBC Plaza"
+                ],
+                [
+                    "7",
+                    "Hyatt Regency Hotel",
+                    "-",
+                    "271 / 83",
+                    "25",
+                    "1990",
+                    ""
+                ],
+                [
+                    "8",
+                    "Times Square Building",
+                    "-",
+                    "260 / 79",
+                    "14",
+                    "1930",
+                    ""
+                ],
+                [
+                    "9",
+                    "Tower 280",
+                    "-",
+                    "251 / 77",
+                    "18",
+                    "1962 / 2015",
+                    "Once part of Midtown Plaza. Refitted into offices and residential units"
+                ],
+                [
+                    "10",
+                    "Saint Michael's Church",
+                    "St. Michael's Church, Rochester, NY.JPG",
+                    "246 / 75",
+                    "1",
+                    "1890",
+                    ""
+                ],
+                [
+                    "11",
+                    "Temple Building",
+                    "",
+                    "218 / 66",
+                    "14",
+                    "1925",
+                    ""
+                ],
+                [
+                    "12",
+                    "Crossroads Building",
+                    "",
+                    "215 / 66",
+                    "15",
+                    "1969",
+                    ""
+                ],
+                [
+                    "13",
+                    "Eastman School of Music Student Living Center",
+                    "",
+                    "213 / 65",
+                    "14",
+                    "1990",
+                    ""
+                ],
+                [
+                    "14",
+                    "Seneca Towers Apartments",
+                    "",
+                    "212 / 65",
+                    "22",
+                    "1968",
+                    ""
+                ],
+                [
+                    "15",
+                    "Sibley Center",
+                    "",
+                    "203 / 62",
+                    "12",
+                    "1926",
+                    ""
+                ],
+                [
+                    "16",
+                    "Clinton Square Building",
+                    "",
+                    "200 / 61",
+                    "14",
+                    "1990",
+                    ""
+                ]
+            ],
+            "title": "List of tallest buildings in Rochester, New York - Tallest buildings",
+            "table_id": "408bd176-9e69-44c7-a470-18121c796a6b"
+        },
+        "query": "Which buildings were completed in the 1990s and what are their heights and number of floors?",
+        "summary": "In 1990s, four building in Rochester, New York was finished: Legacy Tower, Hyatt Regency Hotel, Eastman School of Music Student Living Center and Clinton Square Building. The Legacy Tower is 401 feet (122 meters) tall and have 20 floors, the Hyatt Regency Hotel is 271 feet (83 meters) tall and have 25 floors, the Eastman School of Music Student Living Center is 213 feet (65 meters) tall and have 14 floors and Clinton Square Building is 200 feet (61 meters) tall and have 14 floors.",
+        "row_ids": [
+            1,
+            6,
+            12,
+            15
+        ]
+    },
+    {
+        "example_id": "de8cb695-cf1c-40e2-976c-d493c4b0a83a",
+        "table": {
+            "header": [
+                "Year",
+                "Event",
+                "Record",
+                "Athlete",
+                "Nationality"
+            ],
+            "rows": [
+                [
+                    "1936",
+                    "110 M Hurdles",
+                    "13.7",
+                    "Forrest Towns",
+                    "United States"
+                ],
+                [
+                    "1935",
+                    "110 M Hurdles",
+                    "14.2",
+                    "Alvin Moreau",
+                    "United States"
+                ],
+                [
+                    "1934",
+                    "Shot Put",
+                    "17.40 M",
+                    "Jack Torrance",
+                    "United States"
+                ],
+                [
+                    "1934",
+                    "Discus Throw",
+                    "52.42 M",
+                    "Harald Andersson",
+                    "Sweden"
+                ],
+                [
+                    "1925",
+                    "Pole Vault",
+                    "4.23 M",
+                    "Charles Hoff",
+                    "Norway"
+                ],
+                [
+                    "1924",
+                    "110 M Hurdles",
+                    "14.2",
+                    "Percy Beard",
+                    "Canada"
+                ]
+            ],
+            "title": "Bislett Games",
+            "table_id": "99b87614-20f9-45c7-b7d1-7672584306e1"
+        },
+        "query": "Summarize the records set by the United States athletes at the Bislett Games.",
+        "summary": "The United States athletes at the Bislett Games set a number of records over the years. In 1936, Forrest Towns set a record in the 110 M Hurdles with 13.7 seconds. Alvin Moreau matched this feat in 1935 and ran 14.2 seconds. Jack Torrance set a record in the Shot Put with 17.40 M in 1934.",
+        "row_ids": [
+            0,
+            1,
+            2
+        ]
+    },
+    {
+        "example_id": "1d8a2857-f27d-47b4-85f3-cc2e7b52409e",
+        "table": {
+            "header": [
+                "Game",
+                "January",
+                "Opponent",
+                "Score",
+                "Record"
+            ],
+            "rows": [
+                [
+                    "38",
+                    "3",
+                    "Montreal Canadiens",
+                    "6 - 2",
+                    "21 - 13 - 4"
+                ],
+                [
+                    "39",
+                    "5",
+                    "Vancouver Canucks",
+                    "6 - 4",
+                    "22 - 13 - 4"
+                ],
+                [
+                    "40",
+                    "9",
+                    "St Louis Blues",
+                    "5 - 3",
+                    "23 - 13 - 4"
+                ],
+                [
+                    "41",
+                    "10",
+                    "Colorado Rockies",
+                    "5 - 3",
+                    "24 - 13 - 4"
+                ],
+                [
+                    "42",
+                    "14",
+                    "Atlanta Flames",
+                    "6 - 4",
+                    "25 - 13 - 4"
+                ],
+                [
+                    "43",
+                    "15",
+                    "Minnesota North Stars",
+                    "8 - 1",
+                    "25 - 14 - 4"
+                ],
+                [
+                    "44",
+                    "17",
+                    "New York Islanders",
+                    "5 - 3",
+                    "26 - 14 - 4"
+                ],
+                [
+                    "45",
+                    "20",
+                    "St Louis Blues",
+                    "3 - 2",
+                    "26 - 15 - 4"
+                ],
+                [
+                    "46",
+                    "21",
+                    "Philadelphia Flyers",
+                    "5 - 5",
+                    "26 - 15 - 5"
+                ],
+                [
+                    "47",
+                    "24",
+                    "Washington Capitals",
+                    "5 - 1",
+                    "26 - 16 - 5"
+                ],
+                [
+                    "48",
+                    "25",
+                    "Buffalo Sabres",
+                    "5 - 4",
+                    "27 - 16 - 5"
+                ],
+                [
+                    "49",
+                    "27",
+                    "New York Islanders",
+                    "7 - 2",
+                    "28 - 16 - 5"
+                ],
+                [
+                    "50",
+                    "30",
+                    "Vancouver Canucks",
+                    "5 - 3",
+                    "29 - 16 - 5"
+                ],
+                [
+                    "51",
+                    "31",
+                    "Colorado Rockies",
+                    "5 - 4",
+                    "29 - 17 - 5"
+                ]
+            ],
+            "title": "1978 - 79 New York Rangers Season",
+            "table_id": "7087683f-a492-4c39-8154-56fa1741e7e5"
+        },
+        "query": "Summarize the basic information of the game(s) played by the New York Rangers before 15 January 1978.",
+        "summary": "The New York Rangers played 5 games before 15 January 1978.The first game, on 3 January, was against the Montreal Canadiens and the Rangers won 6-2. This put their record at 21-13-4. The second game, on 5 January, was against the Vancouver Canucks and the Rangers won 6-4. This put their record at 22-13-4. The third game, on 9 January, was against the St. Louis Blues and the Rangers won 5-3. This put their record at 23-13-4. The fourth game, on 10 January, was against the Colorado Rockies and the Rangers won 5-3. This put their record at 24-13-4. The fifth game, on 14 January, was against the Atlanta Flames and the Rangers won 6-4. This put their record at 25-13-4.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    {
+        "example_id": "a81074a7-ba91-43d4-a2c3-baa34a219f21",
+        "table": {
+            "header": [
+                "Unit",
+                "Type",
+                "El. Output (MW)",
+                "Start of project",
+                "First criticality",
+                "Shut down"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "AMB-100",
+                    "108",
+                    "1958-06-01",
+                    "1964-04-26",
+                    "1983-01-01"
+                ],
+                [
+                    "2",
+                    "AMB-200",
+                    "160",
+                    "1962-01-01",
+                    "1967-12-29",
+                    "1990-01-01"
+                ],
+                [
+                    "3",
+                    "BN-600",
+                    "600",
+                    "1969-01-01",
+                    "1980-04-08",
+                    ""
+                ],
+                [
+                    "4",
+                    "BN-800",
+                    "885",
+                    "1987",
+                    "2014-06-27",
+                    ""
+                ],
+                [
+                    "5",
+                    "BN-1200",
+                    "1,220",
+                    "2025",
+                    "2030 est.",
+                    ""
+                ]
+            ],
+            "title": "Beloyarsk Nuclear Power Station - Later reactors",
+            "table_id": "add58b99-17b6-4c11-9bd4-8834217848a5"
+        },
+        "query": "What is the progression in electrical output from the first to the last units at Beloyarsk Nuclear Power Station, and what does this indicate about the evolution of nuclear power technology over time?",
+        "summary": "The progression in electrical output from the first to the last units at Beloyarsk Nuclear Power Station shows a significant increase, starting with Unit 1's output of 108 MW and culminating in the projected output of 1,220 MW for Unit 5. This substantial growth in output can be attributed to advancements in nuclear power technology over time, with each new unit utilizing more efficient and advanced reactor designs. ",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    {
+        "example_id": "86c192b5-dcb0-4727-b996-9009d80b7688",
+        "table": {
+            "header": [
+                "Hr No",
+                "Hr Name",
+                "Cr No",
+                "Lms No",
+                "Built",
+                "Works",
+                "Withdrawn"
+            ],
+            "rows": [
+                [
+                    "70",
+                    "River Ness",
+                    "938",
+                    "14756",
+                    "9 / 1915",
+                    "Hawthorn Leslie 3095",
+                    "10 / 1939"
+                ],
+                [
+                    "71",
+                    "River Spey",
+                    "939",
+                    "14757",
+                    "9 / 1915",
+                    "Hawthorn Leslie 3096",
+                    "12 / 1936"
+                ],
+                [
+                    "(72)",
+                    "(River Tay)",
+                    "940",
+                    "14758",
+                    "11 / 1915",
+                    "Hawthorn Leslie 3097",
+                    "9 / 1945"
+                ],
+                [
+                    "(73)",
+                    "(River Findhorn)",
+                    "941",
+                    "14759",
+                    "11 / 1915",
+                    "Hawthorn Leslie 3098",
+                    "2 / 1939"
+                ],
+                [
+                    "(74)",
+                    "(River Garry)",
+                    "942",
+                    "14760",
+                    "12 / 1915",
+                    "Hawthorn Leslie 3099",
+                    "12 / 1946"
+                ],
+                [
+                    "(75)",
+                    "(River Tummel)",
+                    "943",
+                    "14761",
+                    "12 / 1915",
+                    "Hawthorn Leslie 3100",
+                    "10 / 1939"
+                ]
+            ],
+            "title": "Highland Railway River Class",
+            "table_id": "addee313-8546-4319-8fd8-bd939e41e1c7"
+        },
+        "query": "Summarize the River Class locomotives that were withdrawn in 1939 and 1945.",
+        "summary": "The River Class locomotives that were withdrawn in 1939 and 1945 included the River Ness,River Tay, River Findhorn, and River Tummel. These locomotives were all built in 1915 by Hawthorn Leslie and had HR numbers of 70, 72, 73, and 75 respectively. The River Tay was the only locomotive to be withdrawn in 1945. All of these locomotives were built with LMS numbers ranging from 14756 to 14761.",
+        "row_ids": [
+            0,
+            2,
+            3,
+            5
+        ]
+    }
+]

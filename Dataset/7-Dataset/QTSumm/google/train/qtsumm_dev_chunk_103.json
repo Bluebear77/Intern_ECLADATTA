@@ -1,0 +1,1158 @@
+[
+    {
+        "example_id": "ea3ba964-2bdb-4924-828a-58d3ec3f1c6a",
+        "table": {
+            "header": [
+                "Facility",
+                "Location",
+                "Year Opened",
+                "Major Facility",
+                "Population Gender",
+                "Capacity",
+                "Custody Level (S)"
+            ],
+            "rows": [
+                [
+                    "Airway Heights Corrections Center (Ahcc)",
+                    "Airway Heights",
+                    "1992",
+                    "Yes",
+                    "Male",
+                    "2258",
+                    "Mi - 2 Mi - 3 Medium"
+                ],
+                [
+                    "Cedar Creek Corrections Center (Cccc)",
+                    "Littlerock",
+                    "1954",
+                    "No",
+                    "Male",
+                    "480",
+                    "Mi - 2"
+                ],
+                [
+                    "Clallam Bay Corrections Center (Cbcc)",
+                    "Clallam Bay",
+                    "1985",
+                    "Yes",
+                    "Male",
+                    "858",
+                    "Medium Close Maximum"
+                ],
+                [
+                    "Coyote Ridge Corrections Center (Crcc)",
+                    "Connell",
+                    "1992 (Msu) 2009 (Msc)",
+                    "Yes",
+                    "Male",
+                    "2468",
+                    "Mi - 2 Mi - 3 Medium"
+                ],
+                [
+                    "Larch Corrections Center (Lcc)",
+                    "Yacolt",
+                    "1956",
+                    "No",
+                    "Male",
+                    "480",
+                    "Mi - 2"
+                ],
+                [
+                    "Mission Creek Corrections Center For Women (Mcccw)",
+                    "Belfair",
+                    "2005",
+                    "No",
+                    "Female",
+                    "305",
+                    "Mi - 2"
+                ],
+                [
+                    "Monroe Correctional Complex (Mcc)",
+                    "Monroe",
+                    "1910",
+                    "Yes",
+                    "Male",
+                    "2400",
+                    "Mi - 2 Medium Close Maximum"
+                ],
+                [
+                    "Olympic Corrections Center (Occ)",
+                    "Forks",
+                    "1968",
+                    "No",
+                    "Male",
+                    "378",
+                    "Mi - 2"
+                ],
+                [
+                    "Stafford Creek Corrections Center (Sccc)",
+                    "Aberdeen",
+                    "2000",
+                    "Yes",
+                    "Male",
+                    "1936",
+                    "Mi - 2 Medium Maximum"
+                ],
+                [
+                    "Washington Corrections Center (Wcc)",
+                    "Shelton",
+                    "1964",
+                    "Yes",
+                    "Male",
+                    "1268",
+                    "Medium Close Maximum"
+                ],
+                [
+                    "Washington Corrections Center For Women (Wccw)",
+                    "Gig Harbor",
+                    "1971",
+                    "Yes",
+                    "Female",
+                    "738",
+                    "Mi - 2 Medium Close"
+                ]
+            ],
+            "title": "List Of Washington State Prisons",
+            "table_id": "bd3f9ba6-9a50-415b-89e8-cc7bbda8e817"
+        },
+        "query": "Summarize the prisons with custody level of Mi - 2 and Mi - 3.",
+        "summary": "The prisons with custody levels of Mi - 2 and Mi - 3 are Airway Heights Corrections Center (Ahcc) and Coyote Ridge Corrections Center (Crcc). Ahcc is located in Airway Heights, opened in 1992, and is a major facility. It houses 2258 male inmates and the custody level is Mi - 2 Mi - 3 Medium. Crcc is located in Connell and opened both as an Msu in 1992 and an Msc in 2009. Both are major facilities and it holds 2468 male inmates with the custody level of Mi - 2 Mi - 3 Medium.",
+        "row_ids": [
+            0,
+            3
+        ]
+    },
+    {
+        "example_id": "412ea038-342b-4506-bb61-02e684e9d8ea",
+        "table": {
+            "header": [
+                "No",
+                "Party",
+                "Base State",
+                "Withdrawal Date",
+                "Reason for Withdrawal"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Telangana Rashtra Samithi",
+                    "Telangana",
+                    "2006",
+                    "Differences over proposed statehood for Telangana"
+                ],
+                [
+                    "2",
+                    "Bahujan Samaj Party",
+                    "National Party",
+                    "2008",
+                    "Congress opposed the UP government where the BSP was the ruling party"
+                ],
+                [
+                    "3",
+                    "Communist Party of India (Marxist)",
+                    "National Party",
+                    "2008",
+                    "Due to Indo-US nuclear deal."
+                ],
+                [
+                    "4",
+                    "Communist Party of India",
+                    "National Party",
+                    "2008",
+                    "Due to Indo-US nuclear deal"
+                ],
+                [
+                    "5",
+                    "Jammu and Kashmir Peoples Democratic Party",
+                    "Jammu and Kashmir",
+                    "2009",
+                    "Congress decided to support National Conference Government in Jammu and Kashmir"
+                ],
+                [
+                    "6",
+                    "Pattali Makkal Katchi",
+                    "Tamil Nadu",
+                    "2009",
+                    "PMK declared that it would join the AIADMK led front"
+                ],
+                [
+                    "7",
+                    "All India Majlis-e-Ittehadul Muslimeen",
+                    "Telangana",
+                    "2012",
+                    "Accused Congress led State Government of Communalism"
+                ],
+                [
+                    "8",
+                    "All India Trinamool Congress",
+                    "West Bengal",
+                    "2012",
+                    "TMC's demands on rollbacks and reforms not met, including the governments decision to allow FDI in retail"
+                ],
+                [
+                    "9",
+                    "Socialist Janata (Democratic)",
+                    "Kerala",
+                    "2014",
+                    "It merged with Janata Dal (United) on 29 December 2014."
+                ]
+            ],
+            "title": "United Progressive Alliance - Past members",
+            "table_id": "2bc2be8d-a353-46d8-9c84-c11f6f4d7ec7"
+        },
+        "query": "Which parties were based on a national level and what were their reasons for withdrawal from the United Progressive Alliance?",
+        "summary": "The national level parties that withdrew from the United Progressive Alliance were the Bahujan Samaj Party, Communist Party of India (Marxist), and Communist Party of India. The Bahujan Samaj Party withdrew in 2008 because Congress opposed the Uttar Pradesh government where the BSP was the ruling party. Both the Communist Party of India (Marxist) and Communist Party of India withdrew in 2008 due to their opposition to the Indo-US nuclear deal.",
+        "row_ids": [
+            1,
+            2,
+            3
+        ]
+    },
+    {
+        "example_id": "f3c73856-5784-4f32-99cc-0247fc4c132b",
+        "table": {
+            "header": [
+                "No.",
+                "Name",
+                "Appointed",
+                "Presentation of Credentials",
+                "Termination of Mission",
+                "Days in Office",
+                "Notes"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Frederick A. Sterling",
+                    "February 19, 1927",
+                    "July 27, 1927",
+                    "March 7, 1934",
+                    "2415",
+                    ""
+                ],
+                [
+                    "2",
+                    "W. W. McDowell",
+                    "January 15, 1934",
+                    "March 27, 1934",
+                    "April 9, 1934",
+                    "13",
+                    ""
+                ],
+                [
+                    "3",
+                    "Alvin Mansfield Owsley",
+                    "May 15, 1935",
+                    "June 27, 1935",
+                    "July 7, 1937",
+                    "741",
+                    ""
+                ],
+                [
+                    "4",
+                    "John Cudahy",
+                    "May 28, 1937",
+                    "August 23, 1937",
+                    "January 15, 1940",
+                    "875",
+                    ""
+                ],
+                [
+                    "5",
+                    "David Gray",
+                    "February 16, 1940",
+                    "April 15, 1940",
+                    "June 28, 1947",
+                    "2630",
+                    ""
+                ],
+                [
+                    "6",
+                    "George A. Garrett",
+                    "April 10, 1947",
+                    "July 28, 1947",
+                    "April 18, 1950",
+                    "995",
+                    ""
+                ]
+            ],
+            "title": "List of ambassadors of the United States to Ireland - Envoys",
+            "table_id": "cf6dd2ea-f867-4973-a9ea-0605972ef04e"
+        },
+        "query": "Who served the longest and the least duration as an ambassador from the United States to Ireland according to the number of days in office provided in the table?",
+        "summary": "David Gray be serve longest time as ambassador from United States to Ireland with 2630 days in office, while W. W. McDowell be serve least time with only 13 days in office according to table provide.",
+        "row_ids": [
+            1,
+            4
+        ]
+    },
+    {
+        "example_id": "3a84a1ab-7489-4749-8097-1484b523bebc",
+        "table": {
+            "header": [
+                "Rank",
+                "Name",
+                "Image",
+                "Height m (ft)",
+                "Floors",
+                "Year",
+                "City",
+                "Notes"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Midland Square",
+                    "",
+                    "247 (810)",
+                    "47",
+                    "2007",
+                    "Nagoya",
+                    "Tallest building in Aichi Prefecture"
+                ],
+                [
+                    "2",
+                    "JR Central Office Tower",
+                    "",
+                    "245 (804)",
+                    "51",
+                    "2000",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "3",
+                    "JR Central Hotel Tower",
+                    "",
+                    "226 (741)",
+                    "53",
+                    "2000",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "4",
+                    "JR Gate Tower",
+                    "",
+                    "211 (693)",
+                    "46",
+                    "2016",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "5",
+                    "JP Tower",
+                    "",
+                    "196 (642)",
+                    "40",
+                    "2015",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "6",
+                    "Nagoya Lucent Tower",
+                    "",
+                    "180 (591)",
+                    "40",
+                    "2007",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "7",
+                    "Dai-Nagoya Building",
+                    "",
+                    "175 (574)",
+                    "34",
+                    "2015",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "8",
+                    "Mode Gakuen Spiral Towers",
+                    "",
+                    "170 (558)",
+                    "36",
+                    "2008",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "8",
+                    "Global Gate SKY TOWER",
+                    "",
+                    "170 (558)",
+                    "36",
+                    "2017",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "10",
+                    "The Lions Mid Capital Tower",
+                    "",
+                    "162 (531)",
+                    "47",
+                    "2009",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "11",
+                    "The Scene Johoku",
+                    "",
+                    "160 (524)",
+                    "45",
+                    "1996",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "12",
+                    "Grand Maison Ikeshita the Tower",
+                    "",
+                    "153 (501)",
+                    "42",
+                    "2013",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "13",
+                    "Grand Maison Misonoza Tower",
+                    "",
+                    "150 (492)",
+                    "41",
+                    "2017",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "14",
+                    "Kanayama Minami Building",
+                    "",
+                    "135 (441)",
+                    "31",
+                    "1998",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "15",
+                    "Aqua Town Nayabashi",
+                    "",
+                    "118 (386)",
+                    "33",
+                    "2006",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "16",
+                    "Alpen Marunouchi Tower",
+                    "",
+                    "116 (380)",
+                    "25",
+                    "2007",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "17",
+                    "Symphony TOYOTA Building",
+                    "",
+                    "115 (377)",
+                    "25",
+                    "2016",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "18",
+                    "NADYA Park",
+                    "",
+                    "114 (373)",
+                    "23",
+                    "1996",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "19",
+                    "Hilton Nagoya",
+                    "",
+                    "111 (362)",
+                    "25",
+                    "1989",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "20",
+                    "AXIOS CHIKUSA",
+                    "",
+                    "108 (356)",
+                    "31",
+                    "2004",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "21",
+                    "NAGOYA PRIME CENTRAL TOWERAXIOS CHIKUSA",
+                    "",
+                    "106 (348)",
+                    "23",
+                    "2009",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "22",
+                    "Nagoya International Center",
+                    "",
+                    "102 (335)",
+                    "26",
+                    "1984",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "23",
+                    "Sumitomo Life Nagoya Building",
+                    "",
+                    "102 (334)",
+                    "26",
+                    "1974",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "24",
+                    "Urbanet Nagoya Building",
+                    "",
+                    "101 (335)",
+                    "22",
+                    "2005",
+                    "Nagoya",
+                    ""
+                ],
+                [
+                    "25",
+                    "Grand-Suite Chikusa Tower",
+                    "",
+                    "101 (332)",
+                    "30",
+                    "2010",
+                    "Nagoya",
+                    ""
+                ]
+            ],
+            "title": "List of tallest buildings in Nagoya - Tallest buildings",
+            "table_id": "1170cbe3-3b79-41fd-9437-18c590b247d9"
+        },
+        "query": "What is the average number of floors for the top 5 tallest buildings in Nagoya, based on the data in the table?",
+        "summary": "The top 5 high buildings in Nagoya is Midland Square, JR Central Office Tower, JR Central Hotel Tower, JR Gate Tower, and JP Tower. From the data in table, average floor number is 47+51+53+46+40 = 237 floors all. Divide by 5, averagely 47.4 floors each building.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    {
+        "example_id": "bcd97a4d-7fa8-47f3-8deb-efac94703c69",
+        "table": {
+            "header": [
+                "City",
+                "Region",
+                "July",
+                "January",
+                "Annual Precipitation",
+                "Plant Hardiness Zone"
+            ],
+            "rows": [
+                [
+                    "Morden",
+                    "Pembina Valley",
+                    "26 / 14Degree (79 / 58Degree)",
+                    "11 / 20Degree (12 / - 4Degree)",
+                    "533 Mm (21.0In)",
+                    "3A"
+                ],
+                [
+                    "Winnipeg",
+                    "Winnipeg",
+                    "26 / 13Degree (79 / 55Degree)",
+                    "13 / 23Degree (9 / - 9Degree)",
+                    "514 Mm (20.2In)",
+                    "2B"
+                ],
+                [
+                    "Steinbach",
+                    "Eastman",
+                    "26 / 13Degree (79 / 55Degree)",
+                    "12 / 23Degree (10 / - 9Degree)",
+                    "539 Mm (21.2In)",
+                    "2B"
+                ],
+                [
+                    "Portage La Prairie",
+                    "Central Plains",
+                    "25 / 13Degree (77 / 55Degree)",
+                    "12 / 23Degree (10 / - 9Degree)",
+                    "515 Mm (20.3In)",
+                    "3A"
+                ],
+                [
+                    "Dauphin",
+                    "Parkland",
+                    "25 / 12Degree (77 / 54Degree)",
+                    "12 / 23Degree (10 - 9Degree)",
+                    "508 Mm (20.0In)",
+                    "2B"
+                ],
+                [
+                    "Brandon",
+                    "Westman",
+                    "25 / 11Degree (77 / 52Degree)",
+                    "13 / 24Degree (9 / - 11Degree)",
+                    "472 Mm (18.6In)",
+                    "2B"
+                ],
+                [
+                    "The Pas",
+                    "Northern",
+                    "23 / 12Degree (73 / 54Degree)",
+                    "16 / 26Degree (3 / - 15Degree)",
+                    "443 Mm (17.4In)",
+                    "1B"
+                ],
+                [
+                    "Thompson",
+                    "Northern",
+                    "23 / 9Degree (73 / 48Degree)",
+                    "19 / 31Degree ( - 2 / - 24Degree)",
+                    "517 Mm (20.4In)",
+                    "0B"
+                ],
+                [
+                    "Churchill",
+                    "Northern",
+                    "17 / 7Degree (73 / 48Degree)",
+                    "23 / 31Degree ( - 2 / - 24Degree)",
+                    "431 Mm (17.0In)",
+                    "0A"
+                ]
+            ],
+            "title": "Manitoba",
+            "table_id": "479ffe2f-92e6-4dae-a9b5-bed1da748673"
+        },
+        "query": "Summarize the climate information of cities located in the Pembina Valley and Central Plains regions of Manitoba.",
+        "summary": "The Pembina Valley and Central Plains regions of Manitoba have climates that vary depending on the city. In the Pembina Valley region, Morden has an average highest temperature of 26 degrees Celsius (79 degrees Fahrenheit) in July and an average highest temperature of 11 degrees Celsius (12 degrees Fahrenheit) in January. The annual precipitation for Morden is 533 mm (21.0 inches). The plant hardiness zone for this region is 3A. In the Central Plains region, Portage La Prairie has an average highest temperature of 25 degrees Celsius (77 degrees Fahrenheit) in July and an average highest temperature of 12 degrees Celsius (10 degrees Fahrenheit) in January. The annual precipitation for this city is 515 mm (20.3 inches), and the plant hardiness zone is 3A.",
+        "row_ids": [
+            0,
+            3
+        ]
+    },
+    {
+        "example_id": "1199f130-2da7-41e9-86e1-24f0d64b5352",
+        "table": {
+            "header": [
+                "Title",
+                "Portrait",
+                "Named individual",
+                "Start date",
+                "End date",
+                "Notes"
+            ],
+            "rows": [
+                [
+                    "President",
+                    "-",
+                    "Samuel Osgood",
+                    "1812",
+                    "1813",
+                    "City Bank of New York"
+                ],
+                [
+                    "President",
+                    "-",
+                    "William Few",
+                    "1813",
+                    "1817",
+                    ""
+                ],
+                [
+                    "President",
+                    "",
+                    "Peter Staff",
+                    "1817",
+                    "1825",
+                    ""
+                ],
+                [
+                    "President",
+                    "",
+                    "Thomas L. Smith",
+                    "1825",
+                    "1827",
+                    ""
+                ],
+                [
+                    "President",
+                    "",
+                    "Isaac Wright",
+                    "1827",
+                    "1832",
+                    ""
+                ],
+                [
+                    "President",
+                    "",
+                    "Thomas Bloodgood",
+                    "1832",
+                    "1844",
+                    ""
+                ],
+                [
+                    "President",
+                    "",
+                    "Gorham A. Worth",
+                    "1844",
+                    "1856",
+                    ""
+                ],
+                [
+                    "President",
+                    "Moses Taylor - NARA - 527881.tif",
+                    "Moses Taylor",
+                    "1856",
+                    "1882",
+                    "National City Bank after 1865 - telegraph lines referred to it as \"Citibank\""
+                ],
+                [
+                    "President",
+                    "-",
+                    "Percy Pyne",
+                    "1882",
+                    "1891",
+                    ""
+                ],
+                [
+                    "President",
+                    "-",
+                    "James Stillman",
+                    "1891",
+                    "1909",
+                    ""
+                ]
+            ],
+            "title": "List of chairmen of Citigroup - Presidents",
+            "table_id": "0cbf2b40-f3fc-441f-8cd3-9c3a5d41eb2d"
+        },
+        "query": "What period of time did James Stillman serve as the President of Citigroup and who was his immediate successor?",
+        "summary": "James Stillman be President of Citigroup from 1891 to 1909, but table given not say who be next President.",
+        "row_ids": [
+            9
+        ]
+    },
+    {
+        "example_id": "5f7ae240-eba8-4246-8311-f132d01974b8",
+        "table": {
+            "header": [
+                "Epic",
+                "Composer",
+                "Dated",
+                "Number of cantos",
+                "Number of verses",
+                "Number of metres used",
+                "Word at each canto-end"
+            ],
+            "rows": [
+                [
+                    "Kum\u0101rasambhavam",
+                    "K\u0101lid\u0101sa",
+                    "5th c. CE",
+                    "8",
+                    "613",
+                    "8",
+                    "\u2014"
+                ],
+                [
+                    "Bha\u1e6d\u1e6dik\u0101vyam",
+                    "Bha\u1e6d\u1e6di",
+                    "7th c. CE",
+                    "21",
+                    "1602",
+                    "\u2014",
+                    "\u2014"
+                ],
+                [
+                    "Raghuva\u1e43\u015bam",
+                    "K\u0101lid\u0101sa",
+                    "5th c. CE",
+                    "19",
+                    "1572",
+                    "21",
+                    "\u2014"
+                ],
+                [
+                    "Kir\u0101t\u0101rjun\u012byam",
+                    "Bh\u0101ravi",
+                    "6th c. CE",
+                    "18",
+                    "1040",
+                    "12",
+                    "Lak\u1e63m\u012b"
+                ],
+                [
+                    "\u015ai\u015bup\u0101lavadham",
+                    "M\u0101gha",
+                    "7th/8th c. CE",
+                    "20",
+                    "1645",
+                    "16",
+                    "\u015ar\u012b"
+                ],
+                [
+                    "Nai\u1e63adh\u012byacaritam",
+                    "\u015ar\u012bhar\u1e63a",
+                    "12th c. CE",
+                    "22",
+                    "2828",
+                    "19",
+                    "Nisargojjvala"
+                ],
+                [
+                    "\u015ar\u012bbh\u0101rgavar\u0101ghav\u012byam",
+                    "R\u0101mabhadr\u0101c\u0101rya",
+                    "21st c. CE",
+                    "21",
+                    "2121",
+                    "40",
+                    "\u015ar\u012b"
+                ]
+            ],
+            "title": "Sribhargavaraghaviyam - Comparison with other Sanskrit epics",
+            "table_id": "b8fd9af3-13a4-4ac2-aaa6-4278ddf0adbf"
+        },
+        "query": "How does the number of cantos and verses in each epic correlate with the time period they were composed?",
+        "summary": "The number of cantos and verses in the each epic does not showing a consistent correlation with when them were composed. Some earlier works like K\u0101lid\u0101sa's Kum\u0101rasambhavam (5th c. CE) have fewer cantos and verses, while other works from later periods like Bh\u0101ravi's Kir\u0101t\u0101rjun\u012byam (6th c. CE) or R\u0101mabhadr\u0101c\u0101rya's \u015ar\u012bbh\u0101rgavar\u0101ghav\u012byam (21st c. CE) have more cantos and verses, showing that the size and complexity of these epics might have been influenced by other factors not just their time of composition.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    },
+    {
+        "example_id": "5a1818e7-153b-47c1-875b-6f6405412de8",
+        "table": {
+            "header": [
+                "No.",
+                "Score",
+                "Player",
+                "Team",
+                "Balls",
+                "Inns.",
+                "Opposing team",
+                "Date",
+                "Result"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "123",
+                    "Everton Weekes",
+                    "West Indies",
+                    "NR",
+                    "2",
+                    "New Zealand",
+                    "3 February 1956",
+                    "Won"
+                ],
+                [
+                    "2",
+                    "143",
+                    "Graham Dowling",
+                    "New Zealand",
+                    "NR",
+                    "1",
+                    "India",
+                    "15 February 1968",
+                    "Lost"
+                ],
+                [
+                    "3",
+                    "201",
+                    "Mushtaq Mohammad",
+                    "Pakistan",
+                    "NR",
+                    "1",
+                    "New Zealand",
+                    "7 February 1973",
+                    "Won"
+                ],
+                [
+                    "4",
+                    "175",
+                    "Asif Iqbal",
+                    "Pakistan",
+                    "NR",
+                    "2",
+                    "New Zealand",
+                    "7 February 1973",
+                    "Won"
+                ],
+                [
+                    "5",
+                    "105",
+                    "Desmond Haynes",
+                    "West Indies",
+                    "323",
+                    "3",
+                    "New Zealand",
+                    "8 February 1980",
+                    "Lost"
+                ],
+                [
+                    "6",
+                    "111*",
+                    "Jeremy Coney",
+                    "New Zealand",
+                    "243",
+                    "4",
+                    "Pakistan",
+                    "9 February 1985",
+                    "Drawn"
+                ],
+                [
+                    "7",
+                    "127",
+                    "Asanka Gurusinha",
+                    "Sri Lanka",
+                    "429",
+                    "3",
+                    "New Zealand",
+                    "18 March 1995",
+                    "Drawn"
+                ],
+                [
+                    "8",
+                    "108",
+                    "Hashan Tillakaratne",
+                    "Sri Lanka",
+                    "258",
+                    "3",
+                    "New Zealand",
+                    "18 March 1995",
+                    "Drawn"
+                ],
+                [
+                    "9",
+                    "267*",
+                    "Bryan Young",
+                    "New Zealand",
+                    "522",
+                    "1",
+                    "Sri Lanka",
+                    "7 March 1997",
+                    "Won"
+                ],
+                [
+                    "10",
+                    "103",
+                    "Romesh Kaluwitharana",
+                    "Sri Lanka",
+                    "103",
+                    "3",
+                    "New Zealand",
+                    "7 March 1997",
+                    "Won"
+                ]
+            ],
+            "title": "List of international cricket centuries at Carisbrook - Test centuries",
+            "table_id": "0760b2c0-681f-4786-9f4e-62c3ac9f1202"
+        },
+        "query": "How many centuries were achieved in the 1st innings, and what were the outcomes of those matches?",
+        "summary": "Out of 10 centuries listed, four got in 1st innings. Graham Dowling make 143 runs for New Zealand versus India on 15 February 1968, but New Zealand does not win in that match. Mushtaq Mohammad make big 201 runs for Pakistan against New Zealand on 7 February 1973, taking Pakistan to victory. Bryan Young made not out 267 runs for New Zealand against Sri Lanka on 7 March 1997, making New Zealand win.",
+        "row_ids": [
+            1,
+            2,
+            8
+        ]
+    },
+    {
+        "example_id": "f2be74d2-b7c5-40ff-803c-f4ab03eebb0f",
+        "table": {
+            "header": [
+                "Publication",
+                "Country",
+                "Accolade",
+                "Year",
+                "Rank"
+            ],
+            "rows": [
+                [
+                    "Spin",
+                    "United States",
+                    "Best Albums Of 1994",
+                    "1994",
+                    "10"
+                ],
+                [
+                    "The Village Voice",
+                    "United States",
+                    "Album Of The Year - Critics Pick",
+                    "1994",
+                    "8"
+                ],
+                [
+                    "Alternative Press",
+                    "United States",
+                    "The 90 Greatest Albums Of The '90S",
+                    "1998",
+                    "63"
+                ],
+                [
+                    "Pitchfork Media",
+                    "United States",
+                    "Top 100 Albums Of The 1990S",
+                    "2003",
+                    "10"
+                ],
+                [
+                    "Spin",
+                    "United States",
+                    "Top 100 Albums Of The Last 20 Years",
+                    "2005",
+                    "37"
+                ],
+                [
+                    "Amazoncom",
+                    "United States",
+                    "The 100 Greatest Indie Rock Albums Of All Time",
+                    "2009",
+                    "1"
+                ],
+                [
+                    "Mojo",
+                    "United Kingdom",
+                    "The 100 Greatest Albums Of Our Lifetime 19932006",
+                    "2006",
+                    "80"
+                ],
+                [
+                    "Rolling Stone",
+                    "United States",
+                    "The 100 Best Albums Of The Nineties",
+                    "1999",
+                    "79"
+                ]
+            ],
+            "title": "Bee Thousand",
+            "table_id": "4d121bb9-d72c-44f0-b156-2a8275568efa"
+        },
+        "query": "Summarize the accolades of Bee Thousand in the United States.",
+        "summary": "Bee Thousand has been highly praised in the United States, oftentimes appearing on important lists of album rankings. It was named the tenth best albums of 1994 by Spin Magazine and achieved 8th place in The Village Voice's Album of the Year - Critics Pick. It was ranked 63rd on the 90 Greatest Albums of the '90s by Alternative Press in 1998, later achieving 10th place on Pitchfork Media's Top 100 Albums of the 1990s in 2003. In 2005, it made Spin Magazine's Top 100 Albums of the Last 20 Years list at number 37, and even topped Amazoncom's The 100 Greatest Indie Rock Albums of All Time with a first-place standing 2009. Rolling Stone magazine listed it as 79th on its 1999 The 100 Best Albums of the Nineties chart.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+        ]
+    },
+    {
+        "example_id": "adfc89ef-6166-46de-8e94-0f9e37a8318f",
+        "table": {
+            "header": [
+                "Club",
+                "Sport",
+                "Founded",
+                "League",
+                "Venue",
+                "Avg Attend",
+                "Ref"
+            ],
+            "rows": [
+                [
+                    "Cincinnati Reds",
+                    "Baseball",
+                    "1882",
+                    "Major League Baseball",
+                    "Great American Ball Park",
+                    "23,383",
+                    ""
+                ],
+                [
+                    "Cincinnati Bearcats",
+                    "Football",
+                    "1885",
+                    "NCAA Division I",
+                    "Nippert Stadium",
+                    "33,871",
+                    ""
+                ],
+                [
+                    "Cincinnati Bearcats",
+                    "Basketball",
+                    "1901",
+                    "NCAA Division I",
+                    "Fifth Third Arena",
+                    "9,415",
+                    ""
+                ],
+                [
+                    "Xavier Musketeers",
+                    "Basketball",
+                    "1920",
+                    "NCAA Division I",
+                    "Cintas Center",
+                    "10,281",
+                    ""
+                ],
+                [
+                    "Cincinnati Bengals",
+                    "Football",
+                    "1968",
+                    "National Football League",
+                    "Paul Brown Stadium",
+                    "60,511",
+                    ""
+                ],
+                [
+                    "FC Cincinnati",
+                    "Soccer",
+                    "2015",
+                    "Major League Soccer",
+                    "Nippert Stadium",
+                    "21,199",
+                    ""
+                ]
+            ],
+            "title": "Cincinnati - Sports",
+            "table_id": "5e8a7164-ce29-4141-b032-88fe9473c337"
+        },
+        "query": "Can the venue used by each sports club in Cincinnati and the league they belong to be identified from the table?",
+        "summary": "Yes, table provided can identify venue used by each sports club in Cincinnati and their league. Cincinnati Reds, is a baseball team, compete in Major League Baseball and play at Great American Ball Park. Cincinnati Bearcats, football and basketball teams both join in NCAA Division I and use Nippert Stadium and Fifth Third Arena as venues. Xavier Musketeers play basketball in NCAA Division I at Cintas Center, and Cincinnati Bengals, is a football team, are part of National Football League and play at Paul Brown Stadium. At last, FC Cincinnati play soccer in Major League Soccer and use Nippert Stadium as venue.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    }
+]

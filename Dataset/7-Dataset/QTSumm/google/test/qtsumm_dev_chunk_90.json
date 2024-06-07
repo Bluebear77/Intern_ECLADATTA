@@ -1,0 +1,1164 @@
+[
+    {
+        "example_id": "e0effa11-917d-4351-915d-375a07477877",
+        "table": {
+            "header": [
+                "Rank",
+                "Company",
+                "Country",
+                "Industry",
+                "Sales (Billion )",
+                "Profits (Billion )",
+                "Assets (Billion )",
+                "Market Value (Billion )"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Citigroup",
+                    "Usa",
+                    "Banking",
+                    "108.28",
+                    "17.05",
+                    "1 , 4.10",
+                    "247.66"
+                ],
+                [
+                    "2",
+                    "General Electric",
+                    "Usa",
+                    "Conglomerates",
+                    "152.36",
+                    "16.59",
+                    "750.33",
+                    "372.14"
+                ],
+                [
+                    "3",
+                    "American International Group",
+                    "Usa",
+                    "Insurance",
+                    "95.04",
+                    "10.91",
+                    "776.42",
+                    "173.99"
+                ],
+                [
+                    "4",
+                    "Bank Of America",
+                    "Usa",
+                    "Banking",
+                    "65.45",
+                    "14.14",
+                    "1110.46",
+                    "188.77"
+                ],
+                [
+                    "5",
+                    "Hsbc",
+                    "Uk",
+                    "Banking",
+                    "62.97",
+                    "9.52",
+                    "1031.29",
+                    "186.74"
+                ],
+                [
+                    "6",
+                    "Exxonmobil",
+                    "Usa",
+                    "Oil & Gas",
+                    "263.99",
+                    "25.33",
+                    "195.26",
+                    "405.25"
+                ],
+                [
+                    "7",
+                    "Royal Dutch Shell",
+                    "Netherlands",
+                    "Oil & Gas",
+                    "265.19",
+                    "18.54",
+                    "193.83",
+                    "221.49"
+                ],
+                [
+                    "8",
+                    "Bp",
+                    "Uk",
+                    "Oil & Gas",
+                    "285.06",
+                    "15.73",
+                    "191.11",
+                    "231.88"
+                ],
+                [
+                    "9",
+                    "Ing Group",
+                    "Netherlands",
+                    "Diversified Financials",
+                    "92.01",
+                    "8.1",
+                    "1175.16",
+                    "68.04"
+                ],
+                [
+                    "10",
+                    "Toyota",
+                    "Japan",
+                    "Automotive",
+                    "165.68",
+                    "11.13",
+                    "211.15",
+                    "140.89"
+                ]
+            ],
+            "title": "Forbes Global 2000",
+            "table_id": "ff91a984-48f5-4ee8-a02d-e9b4fa556799"
+        },
+        "query": "Summarize the basic information of the companies in the Oil & Gas industry in the Forbes Global 2000.",
+        "summary": "The three companies listed in the Forbes Global 2000 that are in the Oil &amp; Gas industry are ExxonMobil, Royal Dutch Shell, and BP. ExxonMobil is ranked 6th on the Forbes Global 2000 list, with 263.99 billion in sales, 25.33 billion in profits, 195.26 billion in assets and a market value of 405.25 billion. Royal Dutch Shell follows close behind as the 7th ranked company, with 265.19 billion in sales, 18.54 billion in profits, 193.83 billion in assets and a market value of 221.49 billion. BP rounds out the top three ranked companies in the Oil &amp; Gas industry at 8th place, with 285.06 billion in sales, 15.73 billion in profits, 191.11 billion in assets and a market value of 231.88 billion.",
+        "row_ids": [
+            5,
+            6,
+            7
+        ]
+    },
+    {
+        "example_id": "bad4c6e0-4b94-4952-b29d-65713c6bb3d4",
+        "table": {
+            "header": [
+                "Rank",
+                "Player",
+                "Club",
+                "Tally",
+                "Total"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Christy Ring",
+                    "Cork",
+                    "12-09",
+                    "45"
+                ],
+                [
+                    "2",
+                    "Jimmy Doyle",
+                    "Tipperary",
+                    "5-26",
+                    "41"
+                ],
+                [
+                    "3",
+                    "Eddie Keher",
+                    "Kilkenny",
+                    "5-10",
+                    "25"
+                ],
+                [
+                    "4",
+                    "Padge Kehoe",
+                    "Wexford",
+                    "5-09",
+                    "24"
+                ],
+                [
+                    "5",
+                    "Ned Long",
+                    "Carlow",
+                    "7-02",
+                    "23"
+                ],
+                [
+                    "6",
+                    "Donal Whelan",
+                    "Waterford",
+                    "7-01",
+                    "22"
+                ],
+                [
+                    "7",
+                    "Oliver McGrath",
+                    "Wexford",
+                    "6-03",
+                    "21"
+                ],
+                [
+                    "8",
+                    "Frankie Walsh",
+                    "Waterford",
+                    "1-17",
+                    "20"
+                ],
+                [
+                    "9",
+                    "Larry Shannon",
+                    "Dublin",
+                    "3-10",
+                    "19"
+                ],
+                [
+                    "10",
+                    "Mick Quane",
+                    "Cork",
+                    "5-03",
+                    "18"
+                ]
+            ],
+            "title": "1959\u201360 National Hurling League - Top scorers",
+            "table_id": "016e51a1-3e0a-434a-90af-f62bd40cd237"
+        },
+        "query": "What are the clubs of the players who have total scores ranging from 20 to 25 in the 1959-60 National Hurling League?",
+        "summary": "In the 1959-60 National Hurling League, many clubs have top players who scored total points between 20 and 25. Eddie Keher, who scored 25 points, played for Kilkenny club. Another player in this range is Padge Kehoe from Wexford club, with a total of 24 points. Ned Long, who scored 23 points in the league, played for Carlow club. Oliver McGrath, who scored 21 points in the league, played for Wexford. Finally, Donal Whelan played for Waterford club and scored a total of 22 points, while his teammate Frankie Walsh also played for Waterford and scored 20 points in the league.",
+        "row_ids": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    },
+    {
+        "example_id": "e05c1732-6e0d-46f4-aeb4-80182e637591",
+        "table": {
+            "header": [
+                "Year",
+                "Team",
+                "League",
+                "GP",
+                "GAA",
+                "SV%"
+            ],
+            "rows": [
+                [
+                    "2005-06",
+                    "Ankat",
+                    "2. Divisioona",
+                    "18",
+                    "4.20",
+                    ".893"
+                ],
+                [
+                    "2006-07",
+                    "Ankat",
+                    "2. Divisioona",
+                    "7",
+                    "3.00",
+                    ".917"
+                ],
+                [
+                    "",
+                    "Ketter\u00e4",
+                    "Suomi-sarja",
+                    "8",
+                    "5.28",
+                    ".883"
+                ],
+                [
+                    "2007-08",
+                    "Ketter\u00e4",
+                    "Suomi-sarja",
+                    "28",
+                    "3.96",
+                    ".897"
+                ],
+                [
+                    "2008-09",
+                    "Ketter\u00e4",
+                    "Suomi-sarja",
+                    "34",
+                    "2.96",
+                    ".911"
+                ],
+                [
+                    "2009-10",
+                    "RoKi",
+                    "Mestis",
+                    "12",
+                    "3.89",
+                    ".850"
+                ],
+                [
+                    "",
+                    "Kiekko-Laser",
+                    "Suomi-sarja",
+                    "9",
+                    "2.78",
+                    ".910"
+                ],
+                [
+                    "2010-11",
+                    "Kiekko-Vantaa",
+                    "Mestis",
+                    "37",
+                    "2.58",
+                    ".922"
+                ],
+                [
+                    "2011-12",
+                    "HIFK",
+                    "SM-liiga",
+                    "7",
+                    "1.70",
+                    ".944"
+                ],
+                [
+                    "",
+                    "Kiekko-Vantaa (on loan)",
+                    "Mestis",
+                    "12",
+                    "2.72",
+                    ".913"
+                ],
+                [
+                    "",
+                    "KooKoo (on loan)",
+                    "Mestis",
+                    "4",
+                    "1.97",
+                    ".941"
+                ],
+                [
+                    "2012-13",
+                    "HIFK",
+                    "SM-liiga",
+                    "11",
+                    "2.65",
+                    ".905"
+                ],
+                [
+                    "",
+                    "HCK (on loan)",
+                    "Mestis",
+                    "8",
+                    "2.94",
+                    ".918"
+                ],
+                [
+                    "",
+                    "KooKoo (on loan)",
+                    "Mestis",
+                    "1",
+                    "4.00",
+                    ".902"
+                ],
+                [
+                    "2013-14",
+                    "Timr\u00e5 IK",
+                    "HockeyAllsvenskan",
+                    "11",
+                    "1.59",
+                    ".941"
+                ]
+            ],
+            "title": "Mika Norja - Career Stats",
+            "table_id": "e9109e7e-2d18-48da-a4e1-b924fe00cf17"
+        },
+        "query": "What was Mika Norja's best season and worst season based on his GAA and SV% scores and at which respective teams were these performances?",
+        "summary": "Mika Norja goodest season look to be in 2013-14, when he play for Timr\u00e5 IK in HockeyAllsvenskan, he record very good 1.59 GAA and 0.941 SV%. But his baddest season came in 2006-07 when play for Ketter\u00e4 in Suomi-sarja, have GAA of 5.28 and not high 0.883 SV%.",
+        "row_ids": [
+            2,
+            14
+        ]
+    },
+    {
+        "example_id": "1da1ec79-3392-4d7c-b5b2-6547a7851631",
+        "table": {
+            "header": [
+                "Player",
+                "Country",
+                "Year(s) won",
+                "R1",
+                "R2",
+                "R3",
+                "R4",
+                "Total",
+                "To par",
+                "Finish"
+            ],
+            "rows": [
+                [
+                    "Retief Goosen",
+                    "South Africa",
+                    "2001",
+                    "70",
+                    "66",
+                    "69",
+                    "71",
+                    "276",
+                    "\u22124",
+                    "1"
+                ],
+                [
+                    "Ernie Els",
+                    "South Africa",
+                    "1994, 1997",
+                    "70",
+                    "67",
+                    "70",
+                    "80",
+                    "287",
+                    "+7",
+                    "T9"
+                ],
+                [
+                    "Tiger Woods",
+                    "United States",
+                    "2000, 2002",
+                    "72",
+                    "69",
+                    "73",
+                    "76",
+                    "290",
+                    "+10",
+                    "T17"
+                ],
+                [
+                    "Corey Pavin",
+                    "United States",
+                    "1995",
+                    "67",
+                    "71",
+                    "73",
+                    "79",
+                    "290",
+                    "+10",
+                    "T17"
+                ],
+                [
+                    "Lee Janzen",
+                    "United States",
+                    "1993, 1998",
+                    "72",
+                    "70",
+                    "71",
+                    "79",
+                    "292",
+                    "+12",
+                    "T24"
+                ],
+                [
+                    "Jim Furyk",
+                    "United States",
+                    "2003",
+                    "72",
+                    "72",
+                    "75",
+                    "79",
+                    "298",
+                    "+18",
+                    "T48"
+                ],
+                [
+                    "Tom Kite",
+                    "United States",
+                    "1992",
+                    "72",
+                    "71",
+                    "75",
+                    "84",
+                    "302",
+                    "+22",
+                    "T57"
+                ]
+            ],
+            "title": "2004 U.S. Open (golf) - Made the cut",
+            "table_id": "42651030-9051-4aab-9aab-20ac4c038b39"
+        },
+        "query": "Who are the players that finished within the top 10 and what are their total scores along with the years they previously won?",
+        "summary": "Retief Goosen and Ernie Els is players that is finish in top 10 in 2004 U.S. Open. Goosen, he have total score 276, he win before in 2001, but Els score total 287 and he win in 1994 and 1997.",
+        "row_ids": [
+            0,
+            1
+        ]
+    },
+    {
+        "example_id": "c5394233-8684-4e18-a2ab-a608310818c7",
+        "table": {
+            "header": [
+                "Episode",
+                "Original Title",
+                "Directed By",
+                "Written By",
+                "Original Airdate",
+                "Duration",
+                "Viewership"
+            ],
+            "rows": [
+                [
+                    "8",
+                    "Testing Times",
+                    "Dewi Humphreys",
+                    "Jim Sullivan",
+                    "15 September 2006",
+                    "30 Minutes",
+                    "5.04 Million"
+                ],
+                [
+                    "9",
+                    "Here 'S To You , Mrs Boyce",
+                    "Dewi Humphreys",
+                    "John Sullivan",
+                    "22 September 2006",
+                    "30 Minutes",
+                    "4.79 Million"
+                ],
+                [
+                    "10",
+                    "Bothered And Bewildered",
+                    "Dewi Humphreys",
+                    "Derren Litten And John Sullivan",
+                    "29 September 2006",
+                    "30 Minutes",
+                    "4.77 Million"
+                ],
+                [
+                    "11",
+                    "Mother Earth",
+                    "Dewi Humphreys",
+                    "Jim Sullivan",
+                    "6 October 2006",
+                    "30 Minutes",
+                    "5.01 Million"
+                ],
+                [
+                    "12",
+                    "Schoolboy French",
+                    "Dewi Humphreys",
+                    "James Windett And John Sullivan",
+                    "13 October 2006",
+                    "30 Minutes",
+                    "4.96 Million"
+                ],
+                [
+                    "13",
+                    "More Questions Than Answers",
+                    "Dewi Humphreys",
+                    "Paul Alexander And John Sullivan",
+                    "20 October 2006",
+                    "30 Minutes",
+                    "3.90 Million"
+                ]
+            ],
+            "title": "List Of The Green Green Grass Episodes",
+            "table_id": "3da6ea77-01ba-4c83-bbf6-f03e03104b5e"
+        },
+        "query": "Summarize the episodes of the Green Green Grass series that were written by Jim Sullivan.",
+        "summary": "The episodes of the Green Green Grass series that were written by Jim Sullivan are 8 and 11. Episode 8, titled 'Testing Times' , was directed by Dewi Humphreys and aired on September 15th, 2006. It lasted 30 minutes and had a viewership of 5.04 million. Episode 11, titled 'Mother Earth', was also directed by Dewi Humphreys, aired on October 6th 2006, and ran for 30 minutes with a viewership of 5.01 million.",
+        "row_ids": [
+            0,
+            3
+        ]
+    },
+    {
+        "example_id": "585b66a6-586c-4c98-a8d9-bc102bc2e5cd",
+        "table": {
+            "header": [
+                "First No",
+                "Second No",
+                "Name",
+                "Built",
+                "Withdrawn",
+                "Service Life",
+                "Notes"
+            ],
+            "rows": [
+                [
+                    "3400",
+                    "3700",
+                    "Durban",
+                    "Aug 1901",
+                    "Nov 1929",
+                    "28 Years, 3 months",
+                    ""
+                ],
+                [
+                    "3401",
+                    "3701",
+                    "Gibraltar",
+                    "Aug 1901",
+                    "Aug 1928",
+                    "27 Years",
+                    ""
+                ],
+                [
+                    "3402",
+                    "3702",
+                    "Halifax",
+                    "Aug 1901",
+                    "Apr 1929",
+                    "27 Years, 8 months",
+                    ""
+                ],
+                [
+                    "3403",
+                    "3703",
+                    "Hobart",
+                    "Sept 1901",
+                    "Aug 1929",
+                    "27 Years, 11 months",
+                    ""
+                ],
+                [
+                    "3404",
+                    "3704",
+                    "Lyttelton",
+                    "Sept 1901",
+                    "Sept 1928",
+                    "27 Years",
+                    ""
+                ],
+                [
+                    "3405",
+                    "3705",
+                    "Mauritius",
+                    "Sept 1901",
+                    "Sept 1928",
+                    "27 Years",
+                    ""
+                ],
+                [
+                    "3406",
+                    "3706",
+                    "Melbourne",
+                    "Sept 1901",
+                    "Jun 1929",
+                    "27 Years, 9 months",
+                    ""
+                ],
+                [
+                    "3407",
+                    "3707",
+                    "Malta",
+                    "Sept 1901",
+                    "Apr 1929",
+                    "27 Years, 7 months",
+                    ""
+                ],
+                [
+                    "3408",
+                    "3708",
+                    "Ophir",
+                    "Oct 1901",
+                    "Oct 1929",
+                    "28 Years",
+                    "Renamed Killarney in July 1907."
+                ],
+                [
+                    "3409",
+                    "3709",
+                    "Quebec",
+                    "Oct 1901",
+                    "Sept 1929",
+                    "27 Years, 11 months",
+                    ""
+                ],
+                [
+                    "3433",
+                    "3710",
+                    "City of Bath",
+                    "Mar 1903",
+                    "Sept 1928",
+                    "25 Years, 6 months",
+                    ""
+                ],
+                [
+                    "3434",
+                    "3711",
+                    "City of Birmingham",
+                    "May 1903",
+                    "Jul 1930",
+                    "27 Years, 2 months",
+                    ""
+                ],
+                [
+                    "3435",
+                    "3712",
+                    "City of Bristol",
+                    "May 1903",
+                    "May 1931",
+                    "28 Years",
+                    "Last to be withdrawn"
+                ],
+                [
+                    "3436",
+                    "3713",
+                    "City of Chester",
+                    "May 1903",
+                    "Dec 1929",
+                    "26 Years, 7 months",
+                    ""
+                ],
+                [
+                    "3437",
+                    "3714",
+                    "City of Gloucester",
+                    "May 1903",
+                    "Nov 1929",
+                    "26 Years, 6 months",
+                    ""
+                ],
+                [
+                    "3438",
+                    "3715",
+                    "City of Hereford",
+                    "May 1903",
+                    "Oct 1929",
+                    "26 Years, 5 months",
+                    ""
+                ],
+                [
+                    "3439",
+                    "3716",
+                    "City of London",
+                    "May 1903",
+                    "Apr 1929",
+                    "25 Years, 11 months",
+                    ""
+                ],
+                [
+                    "3440",
+                    "3717",
+                    "City of Truro",
+                    "May 1903",
+                    "Mar 1931",
+                    "27 Years, 10 months",
+                    "Preserved"
+                ],
+                [
+                    "3441",
+                    "3718",
+                    "City of Winchester",
+                    "May 1903",
+                    "Oct 1927",
+                    "24 Years, 5 months",
+                    "First to be withdrawn"
+                ],
+                [
+                    "3442",
+                    "3719",
+                    "City of Worcester",
+                    "May 1903",
+                    "Apr 1929",
+                    "25 years, 11 months",
+                    "Renamed City of Exeter"
+                ]
+            ],
+            "title": "GWR 3700 Class - Details",
+            "table_id": "134cbeb3-a9f8-43e5-9246-a6ea22273943"
+        },
+        "query": "What is the significance of the 'Preserved' note for \"City of Truro\" and the 'Renamed' note for \"City of Worcester\" and \"Ophir\"?",
+        "summary": "The 'Preserved' note for \"City of Truro\" mean that this one locomotive not be scrapped and is saved as a history piece, maybe displayed or use for special times. The 'Renamed' note for \"City of Worcester\" and \"Ophir\" is show that these locomotives change name in their service life, with \"City of Worcester\" later being call \"City of Exeter\" and \"Ophir\" renamed to \"Killarney\" in July 1907. This information important for know history of these locomotives and their different name during their service life.",
+        "row_ids": [
+            8,
+            17,
+            19
+        ]
+    },
+    {
+        "example_id": "dca407e5-a76a-461c-882d-a8697b31c9fa",
+        "table": {
+            "header": [
+                "Year",
+                "Dates",
+                "Rounds",
+                "Field",
+                "Avg. Elo",
+                "Top score",
+                "Winners"
+            ],
+            "rows": [
+                [
+                    "1971",
+                    "March 14\u201320",
+                    "7",
+                    "33",
+                    "2190",
+                    "6",
+                    "Larry Evans (United States)"
+                ],
+                [
+                    "1972",
+                    "March 12\u201318",
+                    "7",
+                    "35",
+                    "2262",
+                    "6",
+                    "Svetozar Gligori\u0107 (Yugoslavia)"
+                ],
+                [
+                    "1973",
+                    "March 18\u201324",
+                    "7",
+                    "48",
+                    "2322",
+                    "6",
+                    "Arthur Bisguier (United States)"
+                ],
+                [
+                    "1974",
+                    "March 24\u201330",
+                    "7",
+                    "53",
+                    "2310",
+                    "6",
+                    "Walter Browne (United States)"
+                ],
+                [
+                    "1975",
+                    "April 13\u201324",
+                    "10",
+                    "44",
+                    "2428",
+                    "7\u00bd",
+                    "Vladimir Liberzon (Israel)"
+                ],
+                [
+                    "1976",
+                    "March 7\u201313",
+                    "7",
+                    "57",
+                    "2371",
+                    "5\u00bd",
+                    "Tigran Petrosian (Soviet Union)"
+                ],
+                [
+                    "1977",
+                    "March 20\u201330",
+                    "9",
+                    "48",
+                    "2410",
+                    "6\u00bd",
+                    "Yuri Balashov (Soviet Union) Dragutin Sahovi\u0107 (Yugoslavia) Oscar Panno (Argentina) Nona Gaprindashvili (Soviet Union)"
+                ],
+                [
+                    "1978",
+                    "April 1\u201312",
+                    "9",
+                    "68",
+                    "2431",
+                    "7\u00bd",
+                    "Bent Larsen (Denmark)"
+                ],
+                [
+                    "1979",
+                    "March 25\u2013April 4",
+                    "9",
+                    "73",
+                    "2444",
+                    "6\u00bd",
+                    "Svetozar Gligori\u0107 (Yugoslavia) Florin Gheorghiu (Romania) Vladimir Liberzon (Israel) Vlastimil Hort (Czechoslovakia)"
+                ],
+                [
+                    "1980",
+                    "March 16\u201326",
+                    "9",
+                    "43",
+                    "2487",
+                    "7",
+                    "Roman Dzindzichashvili (Israel)"
+                ],
+                [
+                    "1981",
+                    "March 29\u2013April 8",
+                    "9",
+                    "61",
+                    "",
+                    "7",
+                    "Viktor Korchnoi (Switzerland)"
+                ]
+            ],
+            "title": "Lone Pine International - Summary",
+            "table_id": "648b9c17-90d4-49f8-8d5d-85dfa2a0f2a3"
+        },
+        "query": "How did the number of tournament rounds fluctuate over the years and did it appear to influence the top score of the tournament?",
+        "summary": "In past years, in the Lone Pine International  tournament\uff0cthe number of rounds have some change. At first, from 1971 to 1974 there are 7 rounds. Then in 1975, it becomes 10 rounds, but back to 7 rounds in 1976. During 1977 to 1981, it always have 9 rounds. This change in number of rounds not seem to impact the top score much, as the win score is between 5\u00bd and 7\u00bd no matter how many rounds play.",
+        "row_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "example_id": "6f120655-f810-43f5-8849-e9ca43500578",
+        "table": {
+            "header": [
+                "Season",
+                "Season Premiere",
+                "Season Finale",
+                "Tv Season",
+                "Rank",
+                "Viewers (In Millions)"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "September 23 , 1995",
+                    "May 22 , 1996",
+                    "1995 - 1996",
+                    "79",
+                    "11.56"
+                ],
+                [
+                    "2",
+                    "January 3 , 1997",
+                    "April 18 , 1997",
+                    "1996 - 1997",
+                    "68",
+                    "11.8"
+                ],
+                [
+                    "3",
+                    "September 23 , 1997",
+                    "May 19 , 1998",
+                    "1997 - 1998",
+                    "36",
+                    "12.9"
+                ],
+                [
+                    "4",
+                    "September 22 , 1998",
+                    "May 25 , 1999",
+                    "1998 - 1999",
+                    "17",
+                    "14.2"
+                ],
+                [
+                    "5",
+                    "September 21 , 1999",
+                    "May 23 , 2000",
+                    "1999 - 2000",
+                    "25",
+                    "14.07"
+                ],
+                [
+                    "6",
+                    "October 3 , 2000",
+                    "May 22 , 2001",
+                    "2000 - 2001",
+                    "26",
+                    "14.6"
+                ],
+                [
+                    "7",
+                    "September 25 , 2001",
+                    "May 21 , 2002",
+                    "2001 - 2002",
+                    "15",
+                    "14.8"
+                ],
+                [
+                    "8",
+                    "September 24 , 2002",
+                    "May 20 , 2003",
+                    "2002 - 2003",
+                    "26",
+                    "12.97"
+                ],
+                [
+                    "9",
+                    "September 26 , 2003",
+                    "May 21 , 2004",
+                    "2003 - 2004",
+                    "37",
+                    "10.8"
+                ]
+            ],
+            "title": "Jag (Tv Series)",
+            "table_id": "451c408e-8587-4946-86b6-569b315ead4d"
+        },
+        "query": "Summarize the viewership of the seasons between 2000 and 2002.",
+        "summary": "The viewership of Jag from 2000 to 2002 saw a steady increase. Season 6, which aired during the 2000-2001 tv season, had 14.6 million viewers. Finally, in season 7, which aired during the 2001-2002 tv season, had 14.8 million viewers. This was the highest viewership rating for any season between 2000 and 2002 and a substantial increase from previous seasons.",
+        "row_ids": [
+            5,
+            6
+        ]
+    },
+    {
+        "example_id": "5fdb362d-45c3-4c4d-bb8a-a97e2a7114a4",
+        "table": {
+            "header": [
+                "Player",
+                "Club",
+                "Games",
+                "Goals",
+                "Assists",
+                "Points"
+            ],
+            "rows": [
+                [
+                    "Nathan Robinson",
+                    "Eisb\u00e4ren Berlin",
+                    "13",
+                    "4",
+                    "11",
+                    "15"
+                ],
+                [
+                    "Ivan Ciernik",
+                    "K\u00f6lner Haie",
+                    "14",
+                    "11",
+                    "2",
+                    "13"
+                ],
+                [
+                    "Chris Taylor",
+                    "Frankfurt Lions",
+                    "12",
+                    "5",
+                    "8",
+                    "13"
+                ],
+                [
+                    "Peter Sarno",
+                    "Hamburg Freezers",
+                    "8",
+                    "4",
+                    "9",
+                    "13"
+                ],
+                [
+                    "Sven Felski",
+                    "Eisb\u00e4ren Berlin",
+                    "13",
+                    "3",
+                    "10",
+                    "13"
+                ],
+                [
+                    "Jason Young",
+                    "Frankfurt Lions",
+                    "12",
+                    "3",
+                    "10",
+                    "13"
+                ]
+            ],
+            "title": "2007 - 08 German Ice Hockey League Season",
+            "table_id": "61dce86b-e641-46e8-9320-6f2d2def3d04"
+        },
+        "query": "Who had the highest points among the players listed in the table?",
+        "summary": "Nathan Robinson had the highest points among the players listed in the table. He played 13 games for the Eisb\u00e4ren Berlin and recorded 4 goals, 11 assists, and 15 points.",
+        "row_ids": [
+            0
+        ]
+    },
+    {
+        "example_id": "73ae7479-e707-4452-8f43-c15f52390a3a",
+        "table": {
+            "header": [
+                "Pick",
+                "Round",
+                "Player",
+                "Position",
+                "College"
+            ],
+            "rows": [
+                [
+                    "7",
+                    "Round 1",
+                    "Ken Ruettgers",
+                    "Guard",
+                    "Usc"
+                ],
+                [
+                    "71",
+                    "Round 3",
+                    "Rich Moran",
+                    "Guard",
+                    "San Diego State"
+                ],
+                [
+                    "98",
+                    "Round 4",
+                    "Walter Stanley",
+                    "Wide Receiver",
+                    "Mesa State"
+                ],
+                [
+                    "125",
+                    "Round 5",
+                    "Brian Noble",
+                    "Linebacker",
+                    "Arizona State"
+                ],
+                [
+                    "155",
+                    "Round 6",
+                    "Mark Lewis",
+                    "Tight End",
+                    "Texas A&M"
+                ],
+                [
+                    "171",
+                    "Round 7",
+                    "Eric Wilson",
+                    "Linebacker",
+                    "Maryland"
+                ],
+                [
+                    "182",
+                    "Round 7",
+                    "Gary Ellerson",
+                    "Running Back",
+                    "Wisconsin"
+                ],
+                [
+                    "209",
+                    "Round 8",
+                    "Ken Stills",
+                    "Defensive Back",
+                    "Wisconsin"
+                ],
+                [
+                    "239",
+                    "Round 9",
+                    "Morris Johnson",
+                    "Guard",
+                    "Alabama A&M"
+                ],
+                [
+                    "266",
+                    "Round 10",
+                    "Ronnie Burgess",
+                    "Defensive Back",
+                    "Wake Forest"
+                ],
+                [
+                    "294",
+                    "Round 11",
+                    "Joe Shield",
+                    "Quarterback",
+                    "Trinity"
+                ],
+                [
+                    "323",
+                    "Round 12",
+                    "Jim Meyer",
+                    "Punter",
+                    "Arizona State"
+                ]
+            ],
+            "title": "1985 Green Bay Packers Season",
+            "table_id": "436d503c-184e-4255-9ea7-6c1fa141ba6b"
+        },
+        "query": "Who were the defensive player(s) selected in the 1985 Green Bay Packers Season? Summarize their basic information.",
+        "summary": "The 1985 Green Bay Packers Season included draft selections of two defensive players: Ken Stills and Ronnie Burgess. Ken Stills was selected in the 8th round and played Defensive Back from the University of Wisconsin. Ronnie Burgess was selected in the 10th round and plays Defensive Back from Wake Forest.",
+        "row_ids": [
+            7,
+            9
+        ]
+    }
+]
