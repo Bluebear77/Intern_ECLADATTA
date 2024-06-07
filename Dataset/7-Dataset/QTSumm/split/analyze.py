@@ -26,9 +26,12 @@ threshold_overall = overall_avg - z_threshold * overall_std
 lowest_title_similarity = df.nsmallest(10, 'title_similarity')
 lowest_table_similarity = df.nsmallest(10, 'table_similarity')
 
+# Get the 10 rows with the highest title and table similarities
+highest_title_similarity = df.nlargest(10, 'title_similarity')
+highest_table_similarity = df.nlargest(10, 'table_similarity')
+
 # Filter rows below the title similarity threshold with table similarity below 50%
 below_threshold_df = df[(df['title_similarity'] < threshold_title) & (df['table_similarity'] < 50)]
-
 
 # Save the filtered rows to a CSV file
 below_threshold_df.to_csv('below_threshold.csv', index=False)
@@ -75,3 +78,7 @@ with open('stats.md', 'w') as f:
     f.write(lowest_title_similarity.to_markdown(index=False))
     f.write("\n\n## 10 Rows with Lowest Table Similarity\n\n")
     f.write(lowest_table_similarity.to_markdown(index=False))
+    f.write("\n\n## 10 Rows with Highest Title Similarity\n\n")
+    f.write(highest_title_similarity.to_markdown(index=False))
+    f.write("\n\n## 10 Rows with Highest Table Similarity\n\n")
+    f.write(highest_table_similarity.to_markdown(index=False))
