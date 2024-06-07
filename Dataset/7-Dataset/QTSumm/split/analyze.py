@@ -26,8 +26,9 @@ threshold_overall = overall_avg - z_threshold * overall_std
 lowest_title_similarity = df.nsmallest(10, 'title_similarity')
 lowest_table_similarity = df.nsmallest(10, 'table_similarity')
 
-# Filter rows below the table similarity threshold
-below_threshold_df = df[df['title_similarity'] < threshold_title]
+# Filter rows below the title similarity threshold with table similarity below 50%
+below_threshold_df = df[(df['title_similarity'] < threshold_title) & (df['table_similarity'] < 50)]
+
 
 # Save the filtered rows to a CSV file
 below_threshold_df.to_csv('below_threshold.csv', index=False)
