@@ -7,7 +7,7 @@ def split_data(data, chunk_size):
         yield data[i:i + chunk_size]
 
 # Path to the input JSON file in the parent directory
-input_file_path = os.path.join('..', 'qtsumm_train.json')
+input_file_path = os.path.join('.', 'filtered_qtsumm.json')
 
 # Load the input JSON file
 with open(input_file_path, 'r') as file:
@@ -25,7 +25,7 @@ os.makedirs(output_dir, exist_ok=True)
 
 # Save each chunk as a separate JSON file
 for i, chunk in enumerate(chunks):
-    chunk_filename = os.path.join(output_dir, f'qtsumm_dev_chunk_{i + 1}.json')
+    chunk_filename = os.path.join(output_dir, f'v1_chunk_{i + 1}.json')
     with open(chunk_filename, 'w') as chunk_file:
         json.dump(chunk, chunk_file, indent=4)
 
