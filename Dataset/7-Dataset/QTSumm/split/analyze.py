@@ -62,12 +62,12 @@ with open('stats.md', 'w') as f:
     f.write("![Similarity Plot](similarity_plot.png)\n\n")
     f.write("## Statistics\n\n")
     f.write(
-        f"Average Title Similarity: {title_avg:.2f}\n"
-        f"Average Table Similarity: {table_avg:.2f}\n"
-        f"Average Overall Similarity: {overall_avg:.2f}\n"
-        f"Title Similarity Threshold (z={z_threshold}): {threshold_title:.2f}\n"
-        f"Table Similarity Threshold (z={z_threshold}): {threshold_table:.2f}\n"
-        f"Overall Similarity Threshold (z={z_threshold}): {threshold_overall:.2f}\n"
+        f"\nAverage Title Similarity: {title_avg:.2f}\n"
+        f"\nAverage Table Similarity: {table_avg:.2f}\n"
+        f"\nAverage Overall Similarity: {overall_avg:.2f}\n"
+        f"\nTitle Similarity Threshold (z={z_threshold}): {threshold_title:.2f}\n"
+        f"\nTable Similarity Threshold (z={z_threshold}): {threshold_table:.2f}\n"
+        f"\nOverall Similarity Threshold (z={z_threshold}): {threshold_overall:.2f}\n"
         "\nTables below these thresholds should not be considered.\n"
     )
     f.write("\n## 10 Rows with Lowest Title Similarity\n\n")
