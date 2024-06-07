@@ -22,19 +22,15 @@ threshold_title = title_avg - z_threshold * title_std
 threshold_table = table_avg - z_threshold * table_std
 threshold_overall = overall_avg - z_threshold * overall_std
 
-# Output the statistics to a text file
-stats_content = (
-    f"Average Title Similarity: {title_avg:.2f}\n"
-    f"Average Table Similarity: {table_avg:.2f}\n"
-    f"Average Overall Similarity: {overall_avg:.2f}\n"
-    f"Title Similarity Threshold (z={z_threshold}): {threshold_title:.2f}\n"
-    f"Table Similarity Threshold (z={z_threshold}): {threshold_table:.2f}\n"
-    f"Overall Similarity Threshold (z={z_threshold}): {threshold_overall:.2f}\n"
-    "\nTables below these thresholds should not be considered.\n"
-)
+# Get the 10 rows with the lowest title and table similarities
+lowest_title_similarity = df.nsmallest(10, 'title_similarity')
+lowest_table_similarity = df.nsmallest(10, 'table_similarity')
 
-with open('stats.txt', 'w') as f:
-    f.write(stats_content)
+# Filter rows below the table similarity threshold
+below_threshold_df = df[df['table_similarity'] < threshold_table]
+
+# Save the filtered rows to a CSV file
+below_threshold_df.to_csv('below_threshold.csv', index=False)
 
 # Plotting the similarities using histograms
 plt.figure(figsize=(12, 8))
@@ -65,4 +61,16 @@ with open('stats.md', 'w') as f:
     f.write("# Similarity Statistics\n\n")
     f.write("![Similarity Plot](similarity_plot.png)\n\n")
     f.write("## Statistics\n\n")
-    f.write(stats_content)
+    f.write(
+        f"Average Title Similarity: {title_avg:.2f}\n"
+        f"Average Table Similarity: {table_avg:.2f}\n"
+        f"Average Overall Similarity: {overall_avg:.2f}\n"
+        f"Title Similarity Threshold (z={z_threshold}): {threshold_title:.2f}\n"
+        f"Table Similarity Threshold (z={z_threshold}): {threshold_table:.2f}\n"
+        f"Overall Similarity Threshold (z={z_threshold}): {threshold_overall:.2f}\n"
+        "\nTables below these thresholds should not be considered.\n"
+    )
+    f.write("\n## 10 Rows with Lowest Title Similarity\n\n")
+    f.write(lowest_title_similarity.to_markdown(index=False))
+    f.write("\n\n## 10 Rows with Lowest Table Similarity\n\n")
+    f.write(lowest_table_similarity.to_markdown(index=False))
