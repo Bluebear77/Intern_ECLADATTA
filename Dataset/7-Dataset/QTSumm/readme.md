@@ -9,9 +9,13 @@ Here is the Recovery QTSumm Dataset.
 
 
 ***
+From data:
+- qtsumm_dev.json: 1052 tables
+- qtsumm_train.json: 4981 tables
+- qtsumm_test.json: 1078 tables
+- Total number of tables in all .json files: 7111
 
-
-
+From paper:
 - 2,934 Tables from 2 sources: <br/>LOGICNLG (Chen et al., 2020a), 7,392 tables  <br/> ToTTo (Parikh et al., 2020), 83,141 tables
 
 Source：
