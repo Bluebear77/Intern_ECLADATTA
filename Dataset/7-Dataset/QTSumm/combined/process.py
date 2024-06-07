@@ -94,7 +94,7 @@ csv_file = 'below_threshold.csv'
 df_below_threshold = pd.read_csv(csv_file)
 
 # Get the list of table_ids from the CSV file
-table_ids = df_below_threshold['table_id'].tolist()
+table_ids_below_threshold = df_below_threshold['table_id'].tolist()
 
 # List of JSON files in the parent directory
 json_files = ["../qtsumm_dev.json", "../qtsumm_test.json", "../qtsumm_train.json"]
@@ -109,23 +109,31 @@ for json_file in json_files:
         all_data.extend(data)
 
 # Filter the instances based on the table_id
-filtered_instances = [instance for instance in all_data if instance['table']['table_id'] in table_ids]
+filtered_instances_below_threshold = [instance for instance in all_data if instance['table']['table_id'] in table_ids_below_threshold]
 
 # Save the filtered instances to a new JSON file
-output_file = 'below_threshold_qtsumm.json'
-with open(output_file, 'w') as f:
-    json.dump(filtered_instances, f, indent=4)
+output_file_below_threshold = 'below_threshold_qtsumm.json'
+with open(output_file_below_threshold, 'w') as f:
+    json.dump(filtered_instances_below_threshold, f, indent=4)
 
-print(f"Filtered {len(filtered_instances)} instances based on table_id and saved to {output_file}")
+print(f"Filtered {len(filtered_instances_below_threshold)} instances based on table_id and saved to {output_file_below_threshold}")
 
 # Extract and save instances based on different criteria
 def save_filtered_instances(instances, filename):
     with open(filename, 'w') as f:
         json.dump(instances, f, indent=4)
 
-def get_filtered_instances(df, condition, json_data):
+def get_filtered_instances(df, condition, json_data, top_n=10):
     table_ids = condition['table_id'].tolist()
-    return [instance for instance in json_data if instance['table']['table_id'] in table_ids]
+    filtered = [instance for instance in json_data if instance['table']['table_id'] in table_ids]
+    unique_tables = {}
+    for instance in filtered:
+        table_id = instance['table']['table_id']
+        if table_id not in unique_tables:
+            unique_tables[table_id] = instance
+        if len(unique_tables) >= top_n:
+            break
+    return list(unique_tables.values())
 
 # Get instances based on conditions
 lowest_title_instances = get_filtered_instances(df, lowest_title_similarity, all_data)
