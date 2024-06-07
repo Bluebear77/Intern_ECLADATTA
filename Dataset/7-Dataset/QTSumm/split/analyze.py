@@ -17,7 +17,7 @@ table_std = df['table_similarity'].std()
 overall_std = df['overall_similarity'].std()
 
 # Determine a more rigorous threshold using z-score
-z_threshold = 1.0  # You can adjust this value as needed
+z_threshold = 2.0  # You can adjust this value as needed
 threshold_title = title_avg - z_threshold * title_std
 threshold_table = table_avg - z_threshold * table_std
 threshold_overall = overall_avg - z_threshold * overall_std
@@ -68,7 +68,7 @@ with open('stats.md', 'w') as f:
         f"\nTitle Similarity Threshold (z={z_threshold}): {threshold_title:.2f}\n"
         f"\nTable Similarity Threshold (z={z_threshold}): {threshold_table:.2f}\n"
         f"\nOverall Similarity Threshold (z={z_threshold}): {threshold_overall:.2f}\n"
-        "\nTables below these thresholds should not be considered.\n"
+        #"\nTables below these thresholds should not be considered.\n"
     )
     f.write("\n## 10 Rows with Lowest Title Similarity\n\n")
     f.write(lowest_title_similarity.to_markdown(index=False))

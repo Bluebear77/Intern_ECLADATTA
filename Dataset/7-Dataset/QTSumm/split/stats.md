@@ -11,13 +11,11 @@ Average Table Similarity: 67.50
 
 Average Overall Similarity: 74.10
 
-Title Similarity Threshold (z=1.0): 58.19
+Title Similarity Threshold (z=2.0): 38.80
 
-Table Similarity Threshold (z=1.0): 35.80
+Table Similarity Threshold (z=2.0): 4.10
 
-Overall Similarity Threshold (z=1.0): 57.33
-
-Tables below these thresholds should not be considered.
+Overall Similarity Threshold (z=2.0): 40.57
 
 ## 10 Rows with Lowest Title Similarity
 
