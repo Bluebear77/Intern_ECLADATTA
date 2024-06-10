@@ -28,13 +28,13 @@ threshold_title = title_avg - z_threshold * title_std
 threshold_table = table_avg - z_threshold * table_std
 threshold_overall = overall_avg - z_threshold * overall_std
 
-# Get the 10 rows with the lowest title and table similarities
-lowest_title_similarity = df.nsmallest(10, 'title_similarity')
-lowest_table_similarity = df.nsmallest(10, 'table_similarity')
+# Get the 5 rows with the lowest title and table similarities
+lowest_title_similarity = df.nsmallest(5, 'title_similarity')
+lowest_table_similarity = df.nsmallest(5, 'table_similarity')
 
-# Get the 10 rows with the highest title and table similarities
-highest_title_similarity = df.nlargest(10, 'title_similarity')
-highest_table_similarity = df.nlargest(10, 'table_similarity')
+# Get the 5 rows with the highest title and table similarities
+highest_title_similarity = df.nlargest(5, 'title_similarity')
+highest_table_similarity = df.nlargest(5, 'table_similarity')
 
 # Filter rows below the title similarity threshold with table similarity below 50%
 below_threshold_df = df[(df['title_similarity'] < threshold_title) & (df['table_similarity'] < 50)]
@@ -79,13 +79,13 @@ with open('stats.md', 'w') as f:
         f"\nTable Similarity Threshold (z={z_threshold}): {threshold_table:.2f}\n"
         f"\nOverall Similarity Threshold (z={z_threshold}): {threshold_overall:.2f}\n"
     )
-    f.write("\n## 10 Rows with Lowest Title Similarity\n\n")
+    f.write("\n## 5 Rows with Lowest Title Similarity\n\n")
     f.write(lowest_title_similarity.to_markdown(index=False))
-    f.write("\n\n## 10 Rows with Lowest Table Similarity\n\n")
+    f.write("\n\n## 5 Rows with Lowest Table Similarity\n\n")
     f.write(lowest_table_similarity.to_markdown(index=False))
-    f.write("\n\n## 10 Rows with Highest Title Similarity\n\n")
+    f.write("\n\n## 5 Rows with Highest Title Similarity\n\n")
     f.write(highest_title_similarity.to_markdown(index=False))
-    f.write("\n\n## 10 Rows with Highest Table Similarity\n\n")
+    f.write("\n\n## 5 Rows with Highest Table Similarity\n\n")
     f.write(highest_table_similarity.to_markdown(index=False))
 
 # Part 2: Filter Instances Based on table_id
@@ -123,7 +123,7 @@ def save_filtered_instances(instances, filename):
     with open(filename, 'w') as f:
         json.dump(instances, f, indent=4)
 
-def get_filtered_instances(df, condition, json_data, top_n=10):
+def get_filtered_instances(df, condition, json_data, top_n=5):
     table_ids = condition['table_id'].tolist()
     filtered = [instance for instance in json_data if instance['table']['table_id'] in table_ids]
     unique_tables = {}
