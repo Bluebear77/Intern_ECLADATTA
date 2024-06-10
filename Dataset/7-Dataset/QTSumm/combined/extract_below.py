@@ -25,7 +25,7 @@ for json_file in json_files:
 filtered_instances = [instance for instance in all_data if instance['table']['table_id'] in table_ids]
 
 # Save the filtered instances to a new JSON file
-output_file = 'filtered_qtsumm.json'
+output_file = 'below_threshold.json'
 with open(output_file, 'w') as f:
     json.dump(filtered_instances, f, indent=4)
 

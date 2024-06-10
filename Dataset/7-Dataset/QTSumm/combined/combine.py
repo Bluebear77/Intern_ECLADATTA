@@ -6,7 +6,7 @@ files = ["qtsumm_dev.csv", "qtsumm_test.csv", "qtsumm_train.csv"]
 
 # Function to calculate the combined score
 def calculate_combined_score(row):
-    return int(0.5 * row['title_similarity'] + 0.5 * row['table_similarity'])
+    return int(0.7 * row['title_similarity'] + 0.3 * row['table_similarity'])
 
 # Function to process a single pair of files
 def process_files(wiki_file, google_file, output_file):

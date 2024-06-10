@@ -5,37 +5,37 @@
 ## Statistics
 
 
-Average Title Similarity: 78.92
+Average Title Similarity: 79.10
 
-Average Table Similarity: 69.55
+Average Table Similarity: 69.26
 
-Average Overall Similarity: 75.67
+Average Overall Similarity: 75.71
 
-Title Similarity Threshold (z=2.0): 42.54
+Title Similarity Threshold (z=2.0): 43.11
 
-Table Similarity Threshold (z=2.0): 8.95
+Table Similarity Threshold (z=2.0): 8.15
 
-Overall Similarity Threshold (z=2.0): 45.73
+Overall Similarity Threshold (z=2.0): 45.90
 
 ## 5 Rows with Lowest Title Similarity
 
-| URL                                     | title                              | table_id                             | matched_title                               |   title_similarity |   table_similarity |   overall_similarity |
-|:----------------------------------------|:-----------------------------------|:-------------------------------------|:--------------------------------------------|-------------------:|-------------------:|---------------------:|
-| http://en.wikipedia.org/?curid=18758280 | Festivali i Këngës 47 - Results    | 791e1189-6745-42a0-bc22-e41a92a14f81 | Albania in the Eurovision Song Contest 2009 |                 11 |                 71 |                   29 |
-| http://en.wikipedia.org/?curid=18758280 | Festivali i Këngës 47 - Results    | 791e1189-6745-42a0-bc22-e41a92a14f81 | Albania in the Eurovision Song Contest 2009 |                 11 |                 71 |                   29 |
-| http://en.wikipedia.org/?curid=53880829 | Paula Mataele                      | da67bbfb-6c3b-4c9e-8bda-fb5dae644d04 | Răzvan Cojanu                               |                 15 |                 20 |                   16 |
-| http://en.wikipedia.org/?curid=53880829 | Paula Mataele                      | da67bbfb-6c3b-4c9e-8bda-fb5dae644d04 | Răzvan Cojanu                               |                 15 |                 20 |                   16 |
-| http://en.wikipedia.org/?curid=18934536 | Asymmetric Digital Subscriber Line | 625e09e2-c61d-43ca-8617-18f17a253f02 | ADSL                                        |                 16 |                 19 |                   16 |
+| URL                                     | title                              | table_id                             | matched_title   |   title_similarity |   table_similarity |   overall_similarity |
+|:----------------------------------------|:-----------------------------------|:-------------------------------------|:----------------|-------------------:|-------------------:|---------------------:|
+| http://en.wikipedia.org/?curid=53880829 | Paula Mataele                      | da67bbfb-6c3b-4c9e-8bda-fb5dae644d04 | Răzvan Cojanu   |                 15 |                 20 |                   16 |
+| http://en.wikipedia.org/?curid=53880829 | Paula Mataele                      | da67bbfb-6c3b-4c9e-8bda-fb5dae644d04 | Răzvan Cojanu   |                 15 |                 20 |                   16 |
+| http://en.wikipedia.org/?curid=18934536 | Asymmetric Digital Subscriber Line | 625e09e2-c61d-43ca-8617-18f17a253f02 | ADSL            |                 16 |                 19 |                   16 |
+| http://en.wikipedia.org/?curid=18934536 | Asymmetric Digital Subscriber Line | 625e09e2-c61d-43ca-8617-18f17a253f02 | ADSL            |                 16 |                 19 |                   16 |
+| http://en.wikipedia.org/?curid=3848862  | Muhsin Corbbrey                    | 469e289e-fb18-4086-a1db-2094834b66bc | Nick Diaz       |                 17 |                 27 |                   20 |
 
 ## 5 Rows with Lowest Table Similarity
 
 | URL                                     | title                                                          | table_id                             | matched_title                                         |   title_similarity |   table_similarity |   overall_similarity |
 |:----------------------------------------|:---------------------------------------------------------------|:-------------------------------------|:------------------------------------------------------|-------------------:|-------------------:|---------------------:|
 | http://en.wikipedia.org/?curid=639283   | List of rulers of Galicia and Volhynia - Rurik Dynasty         | 1f4f32d4-c26f-4ea1-98ad-89222c4c5b04 | Kingdom of Galicia–Volhynia                           |                 52 |                  0 |                   36 |
+| http://en.wikipedia.org/?curid=60350760 | Sebastián Prieto                                               | 5adcbc95-1e12-446c-85c2-b64ef723f507 | Sebastián Prieto                                      |                100 |                  0 |                   70 |
 | http://en.wikipedia.org/?curid=9226526  | Speedway Grand Prix of Denmark - Winners                       | 54101cd5-f4e6-438f-991f-65883eb44af6 | Speedway Grand Prix of Denmark                        |                 86 |                  0 |                   60 |
 | http://en.wikipedia.org/?curid=683465   | List of former Jesuit secondary schools in the United States - | d0797210-9bf5-42a7-a36a-540b205adaa3 | List of Jesuit secondary schools in the United States |                 91 |                  0 |                   63 |
 | http://en.wikipedia.org/?curid=31468646 | List of scandals in India - Notable scandals                   | 6de9f2be-f106-447e-88a3-dc3c523bcf4a | List of scandals in India                             |                 72 |                  0 |                   50 |
-| http://en.wikipedia.org/?curid=174491   | Nordic Skiing                                                  | 74bebba1-2a15-4866-b452-61d6e4453736 | Nordic skiing                                         |                100 |                  0 |                   70 |
 
 ## 5 Rows with Highest Title Similarity
 
