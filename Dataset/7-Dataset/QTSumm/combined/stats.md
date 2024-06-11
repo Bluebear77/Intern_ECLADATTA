@@ -1,6 +1,8 @@
 # Similarity Statistics
 
-![Similarity Plot](similarity_plot.png)
+![Similarity Plot (z=1.0)](similarity_plot_z_1.0.png)
+
+![Similarity Plot (z=2.0)](similarity_plot_z_2.0.png)
 
 ## Statistics
 
@@ -10,6 +12,12 @@ Average Title Similarity: 79.10
 Average Table Similarity: 69.26
 
 Average Overall Similarity: 75.71
+
+Title Similarity Threshold (z=1.0): 61.11
+
+Table Similarity Threshold (z=1.0): 38.70
+
+Overall Similarity Threshold (z=1.0): 60.81
 
 Title Similarity Threshold (z=2.0): 43.11
 
