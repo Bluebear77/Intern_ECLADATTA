@@ -6,19 +6,12 @@
 
 ## Metrics
 - **Precision**: 0.86
-- **Recall**: 0.86
-
+- **Recall**: 0.92
 
 ## Explanation
-The data provided consists of various articles with their respective titles and matched titles. The goal is to evaluate how well the method recovers the origin URL based on title matching. The Boolean column indicates True Positives (TP), True Negatives (TN), False Positives (FP), and False Negatives (FN).
+The data provided consists of various articles with their respective titles and matched titles. Based on the Boolean column indicating True Positives (TP), True Negatives (TN), False Positives (FP), and False Negatives (FN), the precision and recall metrics have been calculated to an accuracy of two decimal points. The confusion matrix visualizes the actual versus predicted conditions, showcasing the performance of the classification.
 
-- **True Positives (TP)**: Cases where the title matching correctly identifies the origin URL.
-- **True Negatives (TN)**: Cases where the title matching correctly identifies non-matching titles.
-- **False Positives (FP)**: Cases where the title matching incorrectly identifies a non-matching title as a match.
-- **False Negatives (FN)**: Cases where the title matching fails to identify a matching title.
+- **Precision** is the ratio of correctly predicted positive observations to the total predicted positives.
+- **Recall** is the ratio of correctly predicted positive observations to all observations in the actual class.
 
-### Metrics
-- **Precision**: The ratio of correctly predicted positive matches to the total predicted positive matches. A precision of 0.86 indicates that 86% of the URLs recovered as matches are correct.
-- **Recall**: The ratio of correctly predicted positive matches to all actual matches. A recall of 0.86 indicates that 86% of the actual matching URLs were correctly identified by the title matching method.
-
-Both precision and recall values indicate a balanced and effective performance of the title matching method in recovering the origin URLs.
+Both metrics indicate a balanced performance of the classification model.
