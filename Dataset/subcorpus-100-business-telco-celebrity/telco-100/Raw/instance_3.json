@@ -1,0 +1,433 @@
+{
+    "_index": "corpus_doc_telco100_en",
+    "_id": "201952",
+    "_source": {
+        "identificationMetadata": {
+            "id": "201952",
+            "title": "CdmaOne",
+            "url": [
+                "https://en.wikipedia.org/?curid=201952",
+                "https://en.wikipedia.org/wiki/CdmaOne"
+            ],
+            "version": 1167187086,
+            "versionDate": "2023-07-26T07:06:15Z",
+            "hash": "8a869bb3c766dc96f90c405090550443",
+            "wikidata": "Q1375972"
+        },
+        "descriptionMetadata": {
+            "categories": [
+                "Articles with short description",
+                "Short description matches Wikidata",
+                "Articles needing additional references from August 2022",
+                "All articles needing additional references",
+                "Wikipedia articles that are too technical from April 2011",
+                "All articles that are too technical",
+                "Articles with multiple maintenance issues",
+                "All articles with unsourced statements",
+                "Articles with unsourced statements from May 2015",
+                "3rd Generation Partnership Project 2 standards",
+                "Telecommunications-related introductions in 1995",
+                "Qualcomm"
+            ],
+            "language": "en",
+            "source": "wikipedia"
+        },
+        "contentMetadata": {
+            "format": "wikitext",
+            "content": "{{Short description|First CDMA-based digital cellular technology}}\n{{About|the mobile phone technology |the channel access method|Code-division multiple access}}\n{{lowercase title}}\n{{multiple issues|\n{{refimprove|date=August 2022}}\n{{Technical|date=April 2011}}\n}}\n[[File:Samsung CDMA Phone.jpg|thumb|Samsung cdmaOne [[mobile phone]] disassembled]]\n\n'''Interim Standard 95''' ('''IS-95''') was the first digital cellular technology that used [[code-division multiple access]] (CDMA). It was developed by [[Qualcomm]] and later adopted as a standard by the [[Telecommunications Industry Association]] in TIA/EIA/IS-95 release published in 1995. The proprietary name for IS-95 is '''cdmaOne'''.\n\nIt is a [[2G]] mobile telecommunications standard that uses CDMA, a [[multiple access]] scheme for [[digital radio]], to send voice, data and signaling data (such as a dialed telephone number) between mobile [[telephone|telephones]] and [[cellular phone|cell sites]]. CDMA transmits streams of [[bit|bits]] ([[pseudorandom noise|PN codes]]). CDMA permits several radios to share the same frequencies. Unlike [[time-division multiple access]] (TDMA), a competing system used in 2G [[GSM]], all radios can be active all the time, because network capacity does not directly limit the number of active radios.  Since larger numbers of phones can be served by smaller numbers of cell-sites, CDMA-based standards have a significant economic advantage over TDMA-based standards,{{cn|date=May 2015}} or the oldest cellular standards that used [[frequency-division multiplexing]].\n\nIn North America, the technology competed with [[Digital AMPS]] (IS-136), a TDMA-based standard, as well as with the TDMA-based GSM.  It was supplanted by [[IS-2000]] (CDMA2000), a later CDMA-based standard.\n\n==Protocol revisions==\ncdmaOne's technical history is reflective of both its birth as a Qualcomm internal project, and the world of then-unproven competing digital cellular standards under which it was developed. The '''term IS-95''' generically applies to the earlier set of protocol revisions, namely P_REV's one through five.\n\nP_REV=1 was developed under an [[American National Standards Institute|ANSI]] standards process with documentation reference ''J-STD-008''. J-STD-008, published in 1995, was only defined for the then-new North American PCS band (Band Class 1, 1900&nbsp;MHz). The term ''IS-95'' properly refers to P_REV=1, developed under the [[Telecommunications Industry Association]] (TIA) standards process, for the North American cellular band (Band Class 0, 800&nbsp;MHz) under roughly the same time frame. IS-95 offered interoperation (including handoff) with the analog cellular network. For digital operation, IS-95 and J-STD-008 have most technical details in common. The immature style and structure of both documents are highly reflective of the \"standardizing\" of Qualcomm's internal project.\n\nP_REV=2 is termed ''Interim Standard 95A (IS-95A)''. IS-95A was developed for Band Class 0 only, as in incremental improvement over IS-95 in the TIA standards process.\n\nP_REV=3 is termed ''Technical Services Bulletin 74 (TSB-74)''. TSB-74 was the next incremental improvement over IS-95A in the TIA standards process.\n\nP_REV=4 is termed ''Interim Standard 95B (IS-95B) Phase I'', and P_REV=5 is termed ''Interim Standard 95B (IS-95B) Phase II''. The IS-95B standards track provided for a merging of the TIA and ANSI standards tracks under the TIA, and was the first document that provided for interoperation of IS-95 mobile handsets in both band classes (dual-band operation). P_REV=4 was by far the most popular variant of IS-95, with P_REV=5 only seeing minimal uptake in South Korea.\n\nP_REV=6 and beyond fall under the [[CDMA2000]] umbrella. Besides technical improvements, the IS-2000 documents are much more mature in terms of layout and content. They also provide backwards-compatibility to IS-95.\n\n==Protocol details==\n[[File:CdmaOneNetworkGeneralView.svg|thumb|300px|cdmaOne network structure]]\nThe IS-95 standards describe an ''air interface'',<ref>{{Cite web |title=Air Interface - an overview {{!}} ScienceDirect Topics |url=https://www.sciencedirect.com/topics/engineering/air-interface |access-date=2022-08-05 |website=www.sciencedirect.com}}</ref> a set of protocols used between mobile units and the network. IS-95 is widely described as a three-layer stack, where L1 corresponds to the physical ([[PHY]]) layer, L2 refers to the [[Media Access Control]] (MAC) and Link-Access Control (LAC) sublayers, and L3 to the call-processing state machine.\n\n===Physical layer===\nIS-95 defines the transmission of signals in both the ''forward'' (network-to-mobile) and ''reverse'' (mobile-to-network) directions.\n\nIn the forward direction, radio signals are transmitted by base stations (BTS's). Every BTS is synchronized with a [[GPS]] receiver so transmissions are tightly controlled in time. All forward transmissions are [[QPSK]] with a chip rate of 1,228,800 per second. Each signal is spread with a [[Walsh code]] of length 64 and a [[pseudo-random noise]] code ([[PN Sequences|PN code]]) of length 2<sup>15</sup>, yielding a PN roll-over period of <math>\\frac{80}{3}</math> ms. \n\nFor the reverse direction, radio signals are transmitted by the mobile. Reverse link transmissions are [[OQPSK]] in order to operate in the optimal range of the mobile's power amplifier. Like the forward link, the chip rate is 1,228,800 per second and signals are spread with [[Walsh codes]] and the [[pseudo-random noise]] code, which is also known as a Short Code.\n\n====Forward broadcast channels====\nEvery BTS dedicates a significant amount of output power to a ''pilot channel'', which is an unmodulated PN sequence (in other words, spread with Walsh code 0). Each BTS sector in the network is assigned a PN offset in steps of 64 chips. There is no data carried on the forward pilot. With its strong [[autocorrelation]] function, the forward pilot allows mobiles to determine system timing and distinguish different BTSs for [[handoff]].\n\nWhen a mobile is \"searching\", it is attempting to find pilot signals on the network by tuning to particular radio frequencies and performing a cross-correlation across all possible PN phases. A strong correlation peak result indicates the proximity of a BTS.\n\nOther forward channels, selected by their Walsh code, carry data from the network to the mobiles. Data consists of network signaling and user traffic. Generally, data to be transmitted is divided into frames of bits. A frame of bits is passed through a convolutional encoder, adding forward error correction redundancy, generating a frame of symbols. These symbols are then spread with the Walsh and PN sequences and transmitted.\n\nBTSs transmit a ''sync channel'' spread with Walsh code 32. The sync channel frame is <math>\\frac{80}{3}</math> ms long, and its frame boundary is aligned to the pilot. The sync channel continually transmits a single message, the ''Sync Channel Message'', which has a length and content dependent on the P_REV. The message is transmitted 32 bits per frame, encoded to 128 symbols, yielding a rate of 1200 bit/s. The Sync Channel Message contains information about the network, including the PN offset used by the BTS sector.\n\nOnce a mobile has found a strong pilot channel, it listens to the sync channel and decodes a Sync Channel Message to develop a highly accurate synchronization to system time. At this point the mobile knows whether it is roaming, and that it is \"in service\". \n\nBTSs transmit at least one, and as many as seven, ''paging channel''s starting with Walsh code 1. The paging channel frame time is 20 ms, and is time aligned to the IS-95 system (i.e. GPS) 2-second roll-over. There are two possible rates used on the paging channel: 4800 bit/s or 9600 bit/s. Both rates are encoded to 19200 symbols per second.\n\nThe paging channel contains signaling messages transmitted from the network to all idle mobiles. A set of messages communicate detailed network overhead to the mobiles, circulating this information while the paging channel is free. The paging channel also carries higher-priority messages dedicated to setting up calls to and from the mobiles.\n\nWhen a mobile is idle, it is mostly listening to a paging channel. Once a mobile has parsed all the network overhead information, it ''registers'' with the network, then optionally enters ''slotted-mode''. Both of these processes are described in more detail below.\n\n====Forward traffic channels====\nThe Walsh space not dedicated to broadcast channels on the BTS sector is available for ''traffic channel''s. These channels carry the individual voice and data calls supported by IS-95. Like the paging channel, traffic channels have a frame time of 20ms.\n\nSince voice and user data are intermittent, the traffic channels support variable-rate operation. Every 20 ms frame may be transmitted at a different rate, as determined by the service in use (voice or data). P_REV=1 and P_REV=2 supported ''rate set 1'', providing a rate of 1200, 2400, 4800, or 9600 bit/s. P_REV=3 and beyond also provided ''rate set 2'', yielding rates of 1800, 3600, 7200, or 14400 bit/s.\n\nFor voice calls, the traffic channel carries frames of ''vocoder'' data. A number of different vocoders are defined under IS-95, the earlier of which were limited to rate set 1, and were responsible for some user complaints of poor voice quality. More sophisticated vocoders, taking advantage of modern DSPs and rate set 2, remedied the voice quality situation and are still in wide use in 2005.\n\nThe mobile receiving a variable-rate traffic frame does not know the rate at which the frame was transmitted. Typically, the frame is decoded at each possible rate, and using the quality metrics of the [[Viterbi decoder]], the correct result is chosen.\n\nTraffic channels may also carry circuit-switch data calls in IS-95. The variable-rate traffic frames are generated using the IS-95 ''Radio Link Protocol (RLP)''. RLP provides a mechanism to improve the performance of the wireless link for data. Where voice calls might tolerate the dropping of occasional 20 ms frames, a data call would have unacceptable performance without RLP. \n\nUnder IS-95B P_REV=5, it was possible for a user to use up to seven supplemental \"code\" (traffic) channels simultaneously to increase the throughput of a data call. Very few mobiles or networks ever provided this feature, which could in theory offer 115200 bit/s to a user.\n\n====Block Interleaver====\nAfter convolution coding and repetition, symbols are sent to a 20 ms block interleaver, which is a 24 by 16 array.\n<!--\n\n====Security: the long PN code====\nTBD\n\n====Reverse channels====\nTBD\n\n====Fast reverse power control====\nTBD\n-->\n\n====Capacity====\nIS-95 and its use of CDMA techniques, like any other communications system, have their throughput limited according to [[Shannon's theorem]]. Accordingly, capacity improves with SNR and bandwidth. IS-95 has a fixed bandwidth, but fares well in the digital world because it takes active steps to improve SNR.\n\nWith CDMA, signals that are not correlated with the channel of interest (such as other PN offsets from adjacent cellular base stations) appear as noise, and signals carried on other Walsh codes (that are properly time aligned) are essentially removed in the de-spreading process. The variable-rate nature of traffic channels provide lower-rate frames to be transmitted at lower power causing less noise for other signals still to be correctly received. These factors provide an inherently lower noise level than other cellular technologies allowing the IS-95 network to squeeze more users into the same radio spectrum.\n\nActive (slow) power control is also used on the forward traffic channels, where during a call, the mobile sends signaling messages to the network indicating the quality of the signal. The network will control the transmitted power of the traffic channel to keep the signal quality just good enough, thereby keeping the noise level seen by all other users to a minimum.\n\nThe receiver also uses the techniques of the [[rake receiver]] to improve SNR as well as perform [[soft handoff]].\n\n===Layer 2===\nOnce a call is established, a mobile is restricted to using the traffic channel. A frame format is defined in the MAC for the traffic channel that allows the regular voice (vocoder) or data (RLP) bits to be multiplexed with signaling message fragments. The signaling message fragments are pieced together in the LAC, where complete signaling messages are passed on to Layer 3.\n<!--\n===Layer 3===\nTBD\n\n====Registration====\nTBD\n\n====Slotted-mode operation====\nTBD\n\n==Service options==\nTBD\n\n==Network equipment vendors==\nTBD\n\n==Mobile equipment vendors==\nTBD\n\n==Network operators==\nTBD\n-->\n\n==Deployment==\ncdmaOne was used in the following areas:\n*North America\n*Japan and South Korea (2G GSM is not available in these two countries)\n*Hong Kong (by [[Hutchison Telecom]], other operators and Hutchison Telecom itself also provides GSM)\n\n==See also==\n* [[PN code]]\n* [[Comparison of mobile phone standards]]\n* [[CDMA spectral efficiency]]\n\n==References==\n{{Reflist}}\n\n==External links==\n* [https://web.archive.org/web/20120104170108/http://www.tiaonline.org/standards/committees/committee.cfm?comm=tr-45 TR-45 Engineering Committee] CDMA Standards Developing Group\n\n{{Mobile telecommunications standards}}\n{{cdma}}\n{{Telecommunications}}\n\n[[Category:3rd Generation Partnership Project 2 standards]]\n[[Category:Telecommunications-related introductions in 1995]]\n[[Category:Qualcomm]]",
+            "text": "Interim Standard 95 (IS-95) was the first digital cellular technology that used code-division multiple access (CDMA). It was developed by Qualcomm and later adopted as a standard by the Telecommunications Industry Association in TIA/EIA/IS-95 release published in 1995. The proprietary name for IS-95 is cdmaOne. It is a 2G mobile telecommunications standard that uses CDMA, a multiple access scheme for digital radio, to send voice, data and signaling data (such as a dialed telephone number) between mobile telephones and cell sites. CDMA transmits streams of bits (PN codes). CDMA permits several radios to share the same frequencies. Unlike time-division multiple access (TDMA), a competing system used in 2G GSM, all radios can be active all the time, because network capacity does not directly limit the number of active radios. Since larger numbers of phones can be served by smaller numbers of cell-sites, CDMA-based standards have a significant economic advantage over TDMA-based standards,[citation needed] or the oldest cellular standards that used frequency-division multiplexing. In North America, the technology competed with Digital AMPS (IS-136), a TDMA-based standard, as well as with the TDMA-based GSM. It was supplanted by IS-2000 (CDMA2000), a later CDMA-based standard. cdmaOne's technical history is reflective of both its birth as a Qualcomm internal project, and the world of then-unproven competing digital cellular standards under which it was developed. The term IS-95 generically applies to the earlier set of protocol revisions, namely P_REV's one through five. P_REV=1 was developed under an ANSI standards process with documentation reference J-STD-008. J-STD-008, published in 1995, was only defined for the then-new North American PCS band (Band Class 1, 1900 MHz). The term IS-95 properly refers to P_REV=1, developed under the Telecommunications Industry Association (TIA) standards process, for the North American cellular band (Band Class 0, 800 MHz) under roughly the same time frame. IS-95 offered interoperation (including handoff) with the analog cellular network. For digital operation, IS-95 and J-STD-008 have most technical details in common. The immature style and structure of both documents are highly reflective of the \"standardizing\" of Qualcomm's internal project. P_REV=2 is termed Interim Standard 95A (IS-95A). IS-95A was developed for Band Class 0 only, as in incremental improvement over IS-95 in the TIA standards process. P_REV=3 is termed Technical Services Bulletin 74 (TSB-74). TSB-74 was the next incremental improvement over IS-95A in the TIA standards process. P_REV=4 is termed Interim Standard 95B (IS-95B) Phase I, and P_REV=5 is termed Interim Standard 95B (IS-95B) Phase II. The IS-95B standards track provided for a merging of the TIA and ANSI standards tracks under the TIA, and was the first document that provided for interoperation of IS-95 mobile handsets in both band classes (dual-band operation). P_REV=4 was by far the most popular variant of IS-95, with P_REV=5 only seeing minimal uptake in South Korea. P_REV=6 and beyond fall under the CDMA2000 umbrella. Besides technical improvements, the IS-2000 documents are much more mature in terms of layout and content. They also provide backwards-compatibility to IS-95. The IS-95 standards describe an air interface, a set of protocols used between mobile units and the network. IS-95 is widely described as a three-layer stack, where L1 corresponds to the physical (PHY) layer, L2 refers to the Media Access Control (MAC) and Link-Access Control (LAC) sublayers, and L3 to the call-processing state machine. IS-95 defines the transmission of signals in both the forward (network-to-mobile) and reverse (mobile-to-network) directions. In the forward direction, radio signals are transmitted by base stations (BTS's). Every BTS is synchronized with a GPS receiver so transmissions are tightly controlled in time. All forward transmissions are QPSK with a chip rate of 1,228,800 per second. Each signal is spread with a Walsh code of length 64 and a pseudo-random noise code (PN code) of length 215, yielding a PN roll-over period of 80 3 {\\displaystyle {\\frac {80}{3}}} ms. For the reverse direction, radio signals are transmitted by the mobile. Reverse link transmissions are OQPSK in order to operate in the optimal range of the mobile's power amplifier. Like the forward link, the chip rate is 1,228,800 per second and signals are spread with Walsh codes and the pseudo-random noise code, which is also known as a Short Code. Every BTS dedicates a significant amount of output power to a pilot channel, which is an unmodulated PN sequence (in other words, spread with Walsh code 0). Each BTS sector in the network is assigned a PN offset in steps of 64 chips. There is no data carried on the forward pilot. With its strong autocorrelation function, the forward pilot allows mobiles to determine system timing and distinguish different BTSs for handoff. When a mobile is \"searching\", it is attempting to find pilot signals on the network by tuning to particular radio frequencies and performing a cross-correlation across all possible PN phases. A strong correlation peak result indicates the proximity of a BTS. Other forward channels, selected by their Walsh code, carry data from the network to the mobiles. Data consists of network signaling and user traffic. Generally, data to be transmitted is divided into frames of bits. A frame of bits is passed through a convolutional encoder, adding forward error correction redundancy, generating a frame of symbols. These symbols are then spread with the Walsh and PN sequences and transmitted. BTSs transmit a sync channel spread with Walsh code 32. The sync channel frame is 80 3 {\\displaystyle {\\frac {80}{3}}} ms long, and its frame boundary is aligned to the pilot. The sync channel continually transmits a single message, the Sync Channel Message, which has a length and content dependent on the P_REV. The message is transmitted 32 bits per frame, encoded to 128 symbols, yielding a rate of 1200 bit/s. The Sync Channel Message contains information about the network, including the PN offset used by the BTS sector. Once a mobile has found a strong pilot channel, it listens to the sync channel and decodes a Sync Channel Message to develop a highly accurate synchronization to system time. At this point the mobile knows whether it is roaming, and that it is \"in service\". BTSs transmit at least one, and as many as seven, paging channels starting with Walsh code 1. The paging channel frame time is 20 ms, and is time aligned to the IS-95 system (i.e. GPS) 2-second roll-over. There are two possible rates used on the paging channel: 4800 bit/s or 9600 bit/s. Both rates are encoded to 19200 symbols per second. The paging channel contains signaling messages transmitted from the network to all idle mobiles. A set of messages communicate detailed network overhead to the mobiles, circulating this information while the paging channel is free. The paging channel also carries higher-priority messages dedicated to setting up calls to and from the mobiles. When a mobile is idle, it is mostly listening to a paging channel. Once a mobile has parsed all the network overhead information, it registers with the network, then optionally enters slotted-mode. Both of these processes are described in more detail below. The Walsh space not dedicated to broadcast channels on the BTS sector is available for traffic channels. These channels carry the individual voice and data calls supported by IS-95. Like the paging channel, traffic channels have a frame time of 20ms. Since voice and user data are intermittent, the traffic channels support variable-rate operation. Every 20 ms frame may be transmitted at a different rate, as determined by the service in use (voice or data). P_REV=1 and P_REV=2 supported rate set 1, providing a rate of 1200, 2400, 4800, or 9600 bit/s. P_REV=3 and beyond also provided rate set 2, yielding rates of 1800, 3600, 7200, or 14400 bit/s. For voice calls, the traffic channel carries frames of vocoder data. A number of different vocoders are defined under IS-95, the earlier of which were limited to rate set 1, and were responsible for some user complaints of poor voice quality. More sophisticated vocoders, taking advantage of modern DSPs and rate set 2, remedied the voice quality situation and are still in wide use in 2005. The mobile receiving a variable-rate traffic frame does not know the rate at which the frame was transmitted. Typically, the frame is decoded at each possible rate, and using the quality metrics of the Viterbi decoder, the correct result is chosen. Traffic channels may also carry circuit-switch data calls in IS-95. The variable-rate traffic frames are generated using the IS-95 Radio Link Protocol (RLP). RLP provides a mechanism to improve the performance of the wireless link for data. Where voice calls might tolerate the dropping of occasional 20 ms frames, a data call would have unacceptable performance without RLP. Under IS-95B P_REV=5, it was possible for a user to use up to seven supplemental \"code\" (traffic) channels simultaneously to increase the throughput of a data call. Very few mobiles or networks ever provided this feature, which could in theory offer 115200 bit/s to a user. After convolution coding and repetition, symbols are sent to a 20 ms block interleaver, which is a 24 by 16 array. IS-95 and its use of CDMA techniques, like any other communications system, have their throughput limited according to Shannon's theorem. Accordingly, capacity improves with SNR and bandwidth. IS-95 has a fixed bandwidth, but fares well in the digital world because it takes active steps to improve SNR. With CDMA, signals that are not correlated with the channel of interest (such as other PN offsets from adjacent cellular base stations) appear as noise, and signals carried on other Walsh codes (that are properly time aligned) are essentially removed in the de-spreading process. The variable-rate nature of traffic channels provide lower-rate frames to be transmitted at lower power causing less noise for other signals still to be correctly received. These factors provide an inherently lower noise level than other cellular technologies allowing the IS-95 network to squeeze more users into the same radio spectrum. Active (slow) power control is also used on the forward traffic channels, where during a call, the mobile sends signaling messages to the network indicating the quality of the signal. The network will control the transmitted power of the traffic channel to keep the signal quality just good enough, thereby keeping the noise level seen by all other users to a minimum. The receiver also uses the techniques of the rake receiver to improve SNR as well as perform soft handoff. Once a call is established, a mobile is restricted to using the traffic channel. A frame format is defined in the MAC for the traffic channel that allows the regular voice (vocoder) or data (RLP) bits to be multiplexed with signaling message fragments. The signaling message fragments are pieced together in the LAC, where complete signaling messages are passed on to Layer 3. cdmaOne was used in the following areas: North America Japan and South Korea (2G GSM is not available in these two countries) Hong Kong (by Hutchison Telecom, other operators and Hutchison Telecom itself also provides GSM) PN code Comparison of mobile phone standards CDMA spectral efficiency \"Air Interface - an overview | ScienceDirect Topics\". www.sciencedirect.com. Retrieved 2022-08-05. TR-45 Engineering Committee CDMA Standards Developing Group"
+        },
+        "collectMetadata": {
+            "requestedDate": "2023-10-16T00:00:00",
+            "ingestedDate": "2023-10-20T04:35:26.056119"
+        },
+        "extractionMetadata": [
+            {
+                "id": "WikitextExtractor",
+                "linkExtractionDate": "2023-10-20T04:35:26.060829",
+                "links": [
+                    {
+                        "fragment": null,
+                        "link": "File:Samsung_CDMA_Phone.jpg",
+                        "text": "thumb|Samsung cdmaOne [[mobile phone]] disassembled",
+                        "title": "File:Samsung CDMA Phone.jpg"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_phone",
+                        "text": null,
+                        "title": "mobile phone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Code-division_multiple_access",
+                        "text": null,
+                        "title": "code-division multiple access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Qualcomm",
+                        "text": null,
+                        "title": "Qualcomm"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Telecommunications_Industry_Association",
+                        "text": null,
+                        "title": "Telecommunications Industry Association"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "2G",
+                        "text": null,
+                        "title": "2G"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Multiple_access",
+                        "text": null,
+                        "title": "multiple access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Digital_radio",
+                        "text": null,
+                        "title": "digital radio"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Telephone",
+                        "text": "telephones",
+                        "title": "telephone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Cellular_phone",
+                        "text": "cell sites",
+                        "title": "cellular phone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Bit",
+                        "text": "bits",
+                        "title": "bit"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Pseudorandom_noise",
+                        "text": "PN codes",
+                        "title": "pseudorandom noise"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Time-division_multiple_access",
+                        "text": null,
+                        "title": "time-division multiple access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GSM",
+                        "text": null,
+                        "title": "GSM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Frequency-division_multiplexing",
+                        "text": null,
+                        "title": "frequency-division multiplexing"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Digital_AMPS",
+                        "text": null,
+                        "title": "Digital AMPS"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "IS-2000",
+                        "text": null,
+                        "title": "IS-2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "American_National_Standards_Institute",
+                        "text": "ANSI",
+                        "title": "American National Standards Institute"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Telecommunications_Industry_Association",
+                        "text": null,
+                        "title": "Telecommunications Industry Association"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA2000",
+                        "text": null,
+                        "title": "CDMA2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "File:CdmaOneNetworkGeneralView.svg",
+                        "text": "thumb|300px|cdmaOne network structure",
+                        "title": "File:CdmaOneNetworkGeneralView.svg"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "PHY",
+                        "text": null,
+                        "title": "PHY"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Media_Access_Control",
+                        "text": null,
+                        "title": "Media Access Control"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "GPS",
+                        "text": null,
+                        "title": "GPS"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "QPSK",
+                        "text": null,
+                        "title": "QPSK"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Walsh_code",
+                        "text": null,
+                        "title": "Walsh code"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Pseudo-random_noise",
+                        "text": null,
+                        "title": "pseudo-random noise"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "PN_Sequences",
+                        "text": "PN code",
+                        "title": "PN Sequences"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "OQPSK",
+                        "text": null,
+                        "title": "OQPSK"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Walsh_codes",
+                        "text": null,
+                        "title": "Walsh codes"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Pseudo-random_noise",
+                        "text": null,
+                        "title": "pseudo-random noise"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Autocorrelation",
+                        "text": null,
+                        "title": "autocorrelation"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Handoff",
+                        "text": null,
+                        "title": "handoff"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Viterbi_decoder",
+                        "text": null,
+                        "title": "Viterbi decoder"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Shannon's_theorem",
+                        "text": null,
+                        "title": "Shannon's theorem"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Rake_receiver",
+                        "text": null,
+                        "title": "rake receiver"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Soft_handoff",
+                        "text": null,
+                        "title": "soft handoff"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Hutchison_Telecom",
+                        "text": null,
+                        "title": "Hutchison Telecom"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "PN_code",
+                        "text": null,
+                        "title": "PN code"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Comparison_of_mobile_phone_standards",
+                        "text": null,
+                        "title": "Comparison of mobile phone standards"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA_spectral_efficiency",
+                        "text": null,
+                        "title": "CDMA spectral efficiency"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:3rd_Generation_Partnership_Project_2_standards",
+                        "text": null,
+                        "title": "Category:3rd Generation Partnership Project 2 standards"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Telecommunications-related_introductions_in_1995",
+                        "text": null,
+                        "title": "Category:Telecommunications-related introductions in 1995"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Qualcomm",
+                        "text": null,
+                        "title": "Category:Qualcomm"
+                    }
+                ],
+                "nbLinks": 44,
+                "nbTables": 0,
+                "nbTexts": 13,
+                "tableExtractionDate": "2023-10-20T04:35:26.060829",
+                "tables": [],
+                "technology": "WikitextExtractor",
+                "textExtractionDate": "2023-10-20T04:35:26.060829",
+                "texts": [
+                    {
+                        "endOffset": 1777,
+                        "index": 0,
+                        "level": 0,
+                        "startOffset": 0,
+                        "title": null,
+                        "value": "{{Short description|First CDMA-based digital cellular technology}}\n{{About|the mobile phone technology |the channel access method|Code-division multiple access}}\n{{lowercase title}}\n{{multiple issues|\n{{refimprove|date=August 2022}}\n{{Technical|date=April 2011}}\n}}\n[[File:Samsung CDMA Phone.jpg|thumb|Samsung cdmaOne [[mobile phone]] disassembled]]\n\nInterim Standard 95 (IS-95) was the first digital cellular technology that used [[code-division multiple access]] (CDMA). It was developed by [[Qualcomm]] and later adopted as a standard by the [[Telecommunications Industry Association]] in TIA/EIA/IS-95 release published in 1995. The proprietary name for IS-95 is cdmaOne.\n\nIt is a [[2G]] mobile telecommunications standard that uses CDMA, a [[multiple access]] scheme for [[digital radio]], to send voice, data and signaling data (such as a dialed telephone number) between mobile [[telephone|telephones]] and [[cellular phone|cell sites]]. CDMA transmits streams of [[bit|bits]] ([[pseudorandom noise|PN codes]]). CDMA permits several radios to share the same frequencies. Unlike [[time-division multiple access]] (TDMA), a competing system used in 2G [[GSM]], all radios can be active all the time, because network capacity does not directly limit the number of active radios.  Since larger numbers of phones can be served by smaller numbers of cell-sites, CDMA-based standards have a significant economic advantage over TDMA-based standards,{{cn|date=May 2015}} or the oldest cellular standards that used [[frequency-division multiplexing]].\n\nIn North America, the technology competed with [[Digital AMPS]] (IS-136), a TDMA-based standard, as well as with the TDMA-based GSM.  It was supplanted by [[IS-2000]] (CDMA2000), a later CDMA-based standard."
+                    },
+                    {
+                        "endOffset": 3902,
+                        "index": 1,
+                        "level": 2,
+                        "startOffset": 1777,
+                        "title": "Protocol revisions",
+                        "value": "cdmaOne's technical history is reflective of both its birth as a Qualcomm internal project, and the world of then-unproven competing digital cellular standards under which it was developed. The term IS-95 generically applies to the earlier set of protocol revisions, namely P_REV's one through five.\n\nP_REV=1 was developed under an [[American National Standards Institute|ANSI]] standards process with documentation reference J-STD-008. J-STD-008, published in 1995, was only defined for the then-new North American PCS band (Band Class 1, 1900 MHz). The term IS-95 properly refers to P_REV=1, developed under the [[Telecommunications Industry Association]] (TIA) standards process, for the North American cellular band (Band Class 0, 800 MHz) under roughly the same time frame. IS-95 offered interoperation (including handoff) with the analog cellular network. For digital operation, IS-95 and J-STD-008 have most technical details in common. The immature style and structure of both documents are highly reflective of the \"standardizing\" of Qualcomm's internal project.\n\nP_REV=2 is termed Interim Standard 95A (IS-95A). IS-95A was developed for Band Class 0 only, as in incremental improvement over IS-95 in the TIA standards process.\n\nP_REV=3 is termed Technical Services Bulletin 74 (TSB-74). TSB-74 was the next incremental improvement over IS-95A in the TIA standards process.\n\nP_REV=4 is termed Interim Standard 95B (IS-95B) Phase I, and P_REV=5 is termed Interim Standard 95B (IS-95B) Phase II. The IS-95B standards track provided for a merging of the TIA and ANSI standards tracks under the TIA, and was the first document that provided for interoperation of IS-95 mobile handsets in both band classes (dual-band operation). P_REV=4 was by far the most popular variant of IS-95, with P_REV=5 only seeing minimal uptake in South Korea.\n\nP_REV=6 and beyond fall under the [[CDMA2000]] umbrella. Besides technical improvements, the IS-2000 documents are much more mature in terms of layout and content. They also provide backwards-compatibility to IS-95."
+                    },
+                    {
+                        "endOffset": 12768,
+                        "index": 2,
+                        "level": 2,
+                        "startOffset": 3902,
+                        "title": "Protocol details",
+                        "value": "[[File:CdmaOneNetworkGeneralView.svg|thumb|300px|cdmaOne network structure]]\nThe IS-95 standards describe an air interface,<ref>{{Cite web |title=Air Interface - an overview {{!}} ScienceDirect Topics |url=https://www.sciencedirect.com/topics/engineering/air-interface |access-date=2022-08-05 |website=www.sciencedirect.com}}</ref> a set of protocols used between mobile units and the network. IS-95 is widely described as a three-layer stack, where L1 corresponds to the physical ([[PHY]]) layer, L2 refers to the [[Media Access Control]] (MAC) and Link-Access Control (LAC) sublayers, and L3 to the call-processing state machine."
+                    },
+                    {
+                        "endOffset": 12166,
+                        "index": 3,
+                        "level": 3,
+                        "startOffset": 4560,
+                        "title": "Physical layer",
+                        "value": "IS-95 defines the transmission of signals in both the forward (network-to-mobile) and reverse (mobile-to-network) directions.\n\nIn the forward direction, radio signals are transmitted by base stations (BTS's). Every BTS is synchronized with a [[GPS]] receiver so transmissions are tightly controlled in time. All forward transmissions are [[QPSK]] with a chip rate of 1,228,800 per second. Each signal is spread with a [[Walsh code]] of length 64 and a [[pseudo-random noise]] code ([[PN Sequences|PN code]]) of length 2<sup>15</sup>, yielding a PN roll-over period of <math>\\frac{80}{3}</math> ms. \n\nFor the reverse direction, radio signals are transmitted by the mobile. Reverse link transmissions are [[OQPSK]] in order to operate in the optimal range of the mobile's power amplifier. Like the forward link, the chip rate is 1,228,800 per second and signals are spread with [[Walsh codes]] and the [[pseudo-random noise]] code, which is also known as a Short Code."
+                    },
+                    {
+                        "endOffset": 8466,
+                        "index": 4,
+                        "level": 4,
+                        "startOffset": 5557,
+                        "title": "Forward broadcast channels",
+                        "value": "Every BTS dedicates a significant amount of output power to a pilot channel, which is an unmodulated PN sequence (in other words, spread with Walsh code 0). Each BTS sector in the network is assigned a PN offset in steps of 64 chips. There is no data carried on the forward pilot. With its strong [[autocorrelation]] function, the forward pilot allows mobiles to determine system timing and distinguish different BTSs for [[handoff]].\n\nWhen a mobile is \"searching\", it is attempting to find pilot signals on the network by tuning to particular radio frequencies and performing a cross-correlation across all possible PN phases. A strong correlation peak result indicates the proximity of a BTS.\n\nOther forward channels, selected by their Walsh code, carry data from the network to the mobiles. Data consists of network signaling and user traffic. Generally, data to be transmitted is divided into frames of bits. A frame of bits is passed through a convolutional encoder, adding forward error correction redundancy, generating a frame of symbols. These symbols are then spread with the Walsh and PN sequences and transmitted.\n\nBTSs transmit a sync channel spread with Walsh code 32. The sync channel frame is <math>\\frac{80}{3}</math> ms long, and its frame boundary is aligned to the pilot. The sync channel continually transmits a single message, the Sync Channel Message, which has a length and content dependent on the P_REV. The message is transmitted 32 bits per frame, encoded to 128 symbols, yielding a rate of 1200 bit/s. The Sync Channel Message contains information about the network, including the PN offset used by the BTS sector.\n\nOnce a mobile has found a strong pilot channel, it listens to the sync channel and decodes a Sync Channel Message to develop a highly accurate synchronization to system time. At this point the mobile knows whether it is roaming, and that it is \"in service\". \n\nBTSs transmit at least one, and as many as seven, paging channels starting with Walsh code 1. The paging channel frame time is 20 ms, and is time aligned to the IS-95 system (i.e. GPS) 2-second roll-over. There are two possible rates used on the paging channel: 4800 bit/s or 9600 bit/s. Both rates are encoded to 19200 symbols per second.\n\nThe paging channel contains signaling messages transmitted from the network to all idle mobiles. A set of messages communicate detailed network overhead to the mobiles, circulating this information while the paging channel is free. The paging channel also carries higher-priority messages dedicated to setting up calls to and from the mobiles.\n\nWhen a mobile is idle, it is mostly listening to a paging channel. Once a mobile has parsed all the network overhead information, it registers with the network, then optionally enters slotted-mode. Both of these processes are described in more detail below."
+                    },
+                    {
+                        "endOffset": 10473,
+                        "index": 5,
+                        "level": 4,
+                        "startOffset": 8466,
+                        "title": "Forward traffic channels",
+                        "value": "The Walsh space not dedicated to broadcast channels on the BTS sector is available for traffic channels. These channels carry the individual voice and data calls supported by IS-95. Like the paging channel, traffic channels have a frame time of 20ms.\n\nSince voice and user data are intermittent, the traffic channels support variable-rate operation. Every 20 ms frame may be transmitted at a different rate, as determined by the service in use (voice or data). P_REV=1 and P_REV=2 supported rate set 1, providing a rate of 1200, 2400, 4800, or 9600 bit/s. P_REV=3 and beyond also provided rate set 2, yielding rates of 1800, 3600, 7200, or 14400 bit/s.\n\nFor voice calls, the traffic channel carries frames of vocoder data. A number of different vocoders are defined under IS-95, the earlier of which were limited to rate set 1, and were responsible for some user complaints of poor voice quality. More sophisticated vocoders, taking advantage of modern DSPs and rate set 2, remedied the voice quality situation and are still in wide use in 2005.\n\nThe mobile receiving a variable-rate traffic frame does not know the rate at which the frame was transmitted. Typically, the frame is decoded at each possible rate, and using the quality metrics of the [[Viterbi decoder]], the correct result is chosen.\n\nTraffic channels may also carry circuit-switch data calls in IS-95. The variable-rate traffic frames are generated using the IS-95 Radio Link Protocol (RLP). RLP provides a mechanism to improve the performance of the wireless link for data. Where voice calls might tolerate the dropping of occasional 20 ms frames, a data call would have unacceptable performance without RLP. \n\nUnder IS-95B P_REV=5, it was possible for a user to use up to seven supplemental \"code\" (traffic) channels simultaneously to increase the throughput of a data call. Very few mobiles or networks ever provided this feature, which could in theory offer 115200 bit/s to a user."
+                    },
+                    {
+                        "endOffset": 10734,
+                        "index": 6,
+                        "level": 4,
+                        "startOffset": 10473,
+                        "title": "Block Interleaver",
+                        "value": "After convolution coding and repetition, symbols are sent to a 20 ms block interleaver, which is a 24 by 16 array."
+                    },
+                    {
+                        "endOffset": 12166,
+                        "index": 7,
+                        "level": 4,
+                        "startOffset": 10734,
+                        "title": "Capacity",
+                        "value": "IS-95 and its use of CDMA techniques, like any other communications system, have their throughput limited according to [[Shannon's theorem]]. Accordingly, capacity improves with SNR and bandwidth. IS-95 has a fixed bandwidth, but fares well in the digital world because it takes active steps to improve SNR.\n\nWith CDMA, signals that are not correlated with the channel of interest (such as other PN offsets from adjacent cellular base stations) appear as noise, and signals carried on other Walsh codes (that are properly time aligned) are essentially removed in the de-spreading process. The variable-rate nature of traffic channels provide lower-rate frames to be transmitted at lower power causing less noise for other signals still to be correctly received. These factors provide an inherently lower noise level than other cellular technologies allowing the IS-95 network to squeeze more users into the same radio spectrum.\n\nActive (slow) power control is also used on the forward traffic channels, where during a call, the mobile sends signaling messages to the network indicating the quality of the signal. The network will control the transmitted power of the traffic channel to keep the signal quality just good enough, thereby keeping the noise level seen by all other users to a minimum.\n\nThe receiver also uses the techniques of the [[rake receiver]] to improve SNR as well as perform [[soft handoff]]."
+                    },
+                    {
+                        "endOffset": 12768,
+                        "index": 8,
+                        "level": 3,
+                        "startOffset": 12166,
+                        "title": "Layer 2",
+                        "value": "Once a call is established, a mobile is restricted to using the traffic channel. A frame format is defined in the MAC for the traffic channel that allows the regular voice (vocoder) or data (RLP) bits to be multiplexed with signaling message fragments. The signaling message fragments are pieced together in the LAC, where complete signaling messages are passed on to Layer 3."
+                    },
+                    {
+                        "endOffset": 13014,
+                        "index": 9,
+                        "level": 2,
+                        "startOffset": 12768,
+                        "title": "Deployment",
+                        "value": "cdmaOne was used in the following areas:\n*North America\n*Japan and South Korea (2G GSM is not available in these two countries)\n*Hong Kong (by [[Hutchison Telecom]], other operators and Hutchison Telecom itself also provides GSM)"
+                    },
+                    {
+                        "endOffset": 13116,
+                        "index": 10,
+                        "level": 2,
+                        "startOffset": 13014,
+                        "title": "See also",
+                        "value": "* [[PN code]]\n* [[Comparison of mobile phone standards]]\n* [[CDMA spectral efficiency]]"
+                    },
+                    {
+                        "endOffset": 13144,
+                        "index": 11,
+                        "level": 2,
+                        "startOffset": 13116,
+                        "title": "References",
+                        "value": "{{Reflist}}"
+                    },
+                    {
+                        "endOffset": 13558,
+                        "index": 12,
+                        "level": 2,
+                        "startOffset": 13144,
+                        "title": "External links",
+                        "value": "* TR-45 Engineering Committee CDMA Standards Developing Group\n\n{{Mobile telecommunications standards}}\n{{cdma}}\n{{Telecommunications}}\n\n[[Category:3rd Generation Partnership Project 2 standards]]\n[[Category:Telecommunications-related introductions in 1995]]\n[[Category:Qualcomm]]"
+                    }
+                ]
+            }
+        ],
+        "statsMetadata": {
+            "textSize": 12723
+        }
+    }
+}

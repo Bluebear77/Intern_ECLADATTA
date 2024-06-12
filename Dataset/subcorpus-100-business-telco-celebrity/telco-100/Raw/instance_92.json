@@ -1,0 +1,1520 @@
+{
+    "_index": "corpus_doc_telco100_en",
+    "_id": "949984",
+    "_source": {
+        "identificationMetadata": {
+            "id": "949984",
+            "title": "Evolution-Data Optimized",
+            "url": [
+                "https://en.wikipedia.org/?curid=949984",
+                "https://en.wikipedia.org/wiki/Evolution-Data Optimized"
+            ],
+            "version": 1166735221,
+            "versionDate": "2023-07-23T12:34:49Z",
+            "hash": "3be5ae3b08ca05793d2c3f580960c47c",
+            "wikidata": "Q155028"
+        },
+        "descriptionMetadata": {
+            "categories": [
+                "Webarchive template wayback links",
+                "Articles with short description",
+                "Short description matches Wikidata",
+                "Wikipedia articles that are too technical from September 2010",
+                "All articles that are too technical",
+                "Code division multiple access",
+                "3rd Generation Partnership Project 2 standards"
+            ],
+            "language": "en",
+            "source": "wikipedia"
+        },
+        "contentMetadata": {
+            "format": "wikitext",
+            "content": "{{Short description|Telecommunications standard for the wireless transmission of data through radio signals}}\n{{Technical|date=September 2010}}\n\n[[File:Kyocera EVDO router.jpg|thumb|A Kyocera [[PC Card]] EV-DO [[router (computing)|router]] with [[Wi-Fi]]]][[File:1XEV Mobile Phone Screenshot blackberry.png|thumb|[[BlackBerry]] Style (9670 series) smartphone displaying '1XEV' as the service status as highlighted in the upper right corner.]]\n[[File:Sanyo katana connecting to the internet - mar 2022.jpg|thumb|[[Sanyo]] Katana cell phone connected to the internet via EV-DO]]\n'''Evolution-Data Optimized''' ('''EV-DO''', '''EVDO''', etc.) is a [[telecommunication]]s standard for the [[wireless]] transmission of data through [[radio]] signals, typically for [[broadband Internet access]]. EV-DO is an evolution of the [[CDMA2000]] ([[IS-2000]]) standard which supports high data rates and can be deployed alongside a wireless carrier's voice services. It uses advanced <!-- (advanced in 2013) --> [[multiplexing]] techniques including [[code-division multiple access]] (CDMA) as well as [[time-division multiplexing]] (TDM) to maximize throughput. <!-- (Excessive detail for Lead removed, + too technical, see [[Wikipedia:Manual of Style (lead section)]]) --> It is a part of the [[CDMA2000]] family of standards and has been adopted by many [[mobile phone]] service providers around the world  particularly those previously employing [[CDMA]] networks. It is also used on the [[Globalstar]] [[satellite phone]] network.<ref>{{cite web|url=http://www.engadgetmobile.com/2006/11/09/globalstar-gsp-1700-satphone-also-loaded-with-ev-do/|title=Globalstar GSP-1700 satphone also loaded with EV-DO|author=Cyrus Farivar|work=Engadget|access-date=14 August 2015}}</ref>\n\nEV-DO service was discontinued in much of Canada in 2015.<ref>{{cite web|title=Service Bulletins: CDMA Network Changes in Canada|url=https://www.mts.ca/mts/support/service+bulletins/cdma+network+changes+in+canada|publisher=MTS|access-date=29 May 2015|quote=As of July 1, 2015 EVDO service across Canada (excluding Manitoba) is being shut down.|archive-url=https://web.archive.org/web/20150529222419/https://www.mts.ca/mts/support/service+bulletins/cdma+network+changes+in+canada|archive-date=29 May 2015|url-status=dead}}</ref>\n\nAn EV-DO channel has a bandwidth of 1.25&nbsp;MHz, the same bandwidth size that IS-95A ([[IS-95]]) and IS-2000 ([[CDMA2000|1xRTT]]) use,<ref name=\"CDG\">{{cite web|url=http://www.cdg.org/technology/3g_1xEV-DO.asp |title=3G - CDMA2000 1xEV-DO Technologies |access-date=2008-01-18 |publisher=CDMA development Group |archive-url=https://web.archive.org/web/20071220233907/http://www.cdg.org/technology/3g_1xEV-DO.asp |archive-date=2007-12-20 |url-status=dead }}</ref> though the channel structure is very different. The back-end network is entirely [[packet switching|packet-based]], and is not constrained by restrictions typically present on a [[circuit switched]] network.\n\nThe EV-DO feature of CDMA2000 networks provides access to mobile devices with [[forward link]] air interface speeds of up to 2.4 Mbit/s with Rel. 0 and up to 3.1 Mbit/s with Rev. A. The [[reverse link]] rate for Rel. 0 can operate up to 153 kbit/s, while Rev. A can operate at up to 1.8 Mbit/s. It was designed to be operated end-to-end as an [[IP based network]], and can support any application which can operate on such a network and bit rate constraints.\n\n== Standard revisions ==\n[[File:3G With USB cable.jpg|thumb|[[Huawei]] [[CDMA2000]] EV-DO USB [[wireless modem]]]]\n[[File:Huawei E173 3G HSPA+ Modem USB Movistar Colombia (6).jpg|thumb|[[Huawei]] 3G [[HSPA+]] EV-DO USB [[wireless modem]] from [[Movistar]] Colombia]]\nThere have been several revisions of the standard, starting with Release 0 (Rel. 0). This was later expanded upon with Revision A (Rev. A) to support [[quality of service]] (to improve latency) and higher rates on the forward and reverse link. In late 2006, Revision B (Rev. B) was published, whose features include the ability to bundle multiple carriers to achieve even higher rates and lower latencies (see [[EVDO#TIA-856 Rev B|TIA-856 Rev. B]] below).  The upgrade from EV-DO Rev. A to Rev. B involves a software update of the cell site modem, and additional equipment for new EV-DO carriers.  Existing cdma2000 operators may have to retune some of their existing 1xRTT channels to other frequencies, as Rev. B requires all DO carriers be within 5&nbsp;MHz.\n\n=== EV-DO Rel. 0 (TIA-856 Release 0) ===\nThe initial design of EV-DO was developed by [[Qualcomm]] in 1999 to meet [[IMT-2000]] requirements for a greater-than-2Mbit/s down link for stationary communications, as opposed to mobile communication (i.e., moving cellular phone service). Initially, the standard was called High Data Rate (HDR), but was renamed to 1xEV-DO after it was ratified by the [[International Telecommunication Union]] (ITU) under the designation '''TIA-856'''. Originally, 1xEV-DO stood for \"1x Evolution-Data Only\", referring to its being a direct evolution of the [[CDMA2000|1x]] (1xRTT) air interface standard, with its channels carrying only data traffic. The title of the 1xEV-DO standard document is \"cdma2000 High Rate Packet Data Air Interface Specification\", as cdma2000 (lowercase) is another name for the 1x standard, numerically designated as TIA-2000.\n\nLater, due to possible negative connotations of the word \"only\", the \"DO\"-part of the standard's name 1xEV-DO was changed to stand for \"Data Optimized\", the full name - EV-DO now stands for \"Evolution-Data Optimized.\" The 1x prefix has been dropped by many of the major carriers, and is marketed simply as EV-DO.<ref name=\"qualcomm\">{{cite web |url=http://www.qualcomm.com/technology/1xev-do.html |archive-url=https://archive.today/20061104082805/http://www.qualcomm.com/technology/1xev-do.html |url-status=dead |archive-date=2006-11-04 |title=CDMA2000 1xEV-DO |publisher=QUALCOMM Technology and Solutions }}</ref> This provides a more market-friendly emphasis of the technology being data-optimized.\n\n==== Forward link channel structure ====\nThe primary characteristic that differentiates an EV-DO channel from a 1xRTT channel is that it is [[Time-division multiplexing|time multiplexed]] on the forward link (from the tower to the mobile). This means that a single mobile has full use of the forward traffic channel within a particular geographic area (a sector) during a given slot of time. Using this technique, EV-DO is able to [[Digital modulation method|modulate]] each user’s time slot independently. This allows the service of users in favorable RF conditions with very complex [[modulation]] techniques while also serving users in poor RF conditions with simpler (and more redundant) signals.<ref name=\"Performance\">{{Cite journal |first1=Qi |last1=Bi |author2=S. Vitebsky |title=Performance analysis of 3G-1X EV-DO high data rate system |journal=IEEE Wireless Communications and Networking Conference |publisher=IEEE |pages=389–395 |date=17–21 March 2002}}</ref>\n\nThe forward channel is divided into slots, each being 1.667 ms long. In addition to user traffic, overhead channels are interlaced into the stream, which include the 'pilot', which helps the mobile find and identify the channel, the [[MAC address|Media Access Channel (MAC)]] which tells the mobile devices when their data is scheduled, and the 'control channel', which contains other information the network needs the mobile devices to know.\n\nThe [[modulation]] to be used to communicate with a given mobile unit is determined by the mobile device itself; it listens to the traffic on the channel, and depending on the receive signal strength along with the perceived multi-path and fading conditions, makes a best guess as to what data-rate it can sustain while maintaining a reasonable frame error rate of 1-2%. It then communicates this information back to the serving sector in the form of an integer between 1 and 12 on the \"Digital Rate Control\" (DRC) channel. Alternatively, the mobile can select a \"null\" rate (DRC 0), indicating that the mobile either cannot decode data at any rate, or that it is attempting to [[handoff|hand off]] to another serving sector.<ref name=\"Performance\" />\n\nThe DRC values are as follows:<ref name=\"Lucent\">{{cite web |url=http://www.cdg.org/resources/white_papers/files/Lucent%201xEV-DO%20Rev%20O%20Mar%2004.pdf |title=A Forward Link Performance Study of the 1xEV-DO Rel. 0 System Using Field Measurements and Simulations |access-date=2008-01-18 |last=Bi |first=Qi |date=March 2004 |publisher=[[Alcatel-Lucent|Lucent Technologies]] }}</ref>\n\n{| class=\"wikitable\"\n|-\n! DRC Index\n! [[Bit rate|Data rate (kbit/s)]]\n! Slots scheduled\n! Payload size (bits)\n! [[Code rate|Code Rate]]\n! [[Modulation]]\n! [[Signal-to-noise ratio|SNR]] Reqd.\n|-\n| 1\n| 38.4\n| 16\n| 1024\n| 1/5\n| [[QPSK#Quadrature phase-shift keying (QPSK)|QPSK]]\n| -12\n|-\n| 2\n| 76.8\n| 8\n| 1024\n| 1/5\n| [[QPSK#Quadrature phase-shift keying (QPSK)|QPSK]]\n| -9.6\n|-\n| 3\n| 153.6\n| 4\n| 1024\n| 1/5\n| [[QPSK#Quadrature phase-shift keying (QPSK)|QPSK]]\n| -6.8\n|-\n| 4\n| 307.2\n| 2\n| 1024\n| 1/5\n| [[QPSK#Quadrature phase-shift keying (QPSK)|QPSK]]\n| -3.9\n|-\n| 5\n| 307.2\n| 4\n| 2048\n| 1/5\n| [[QPSK#Quadrature phase-shift keying (QPSK)|QPSK]]\n| -3.8\n|-\n| 6\n| 614.4\n| 1\n| 1024\n| 1/3\n| [[QPSK#Quadrature phase-shift keying (QPSK)|QPSK]]\n| -0.6\n|-\n| 7\n| 614.4\n| 2\n| 2048\n| 1/3\n| [[QPSK#Quadrature phase-shift keying (QPSK)|QPSK]]\n| -0.8\n|-\n| 8\n| 921.6\n| 2\n| 3072\n| 1/3\n| [[8PSK|8-PSK]]\n| 1.8\n|-\n| 9\n| 1228.8\n| 1\n| 2048\n| 2/3\n| [[QPSK#Quadrature phase-shift keying (QPSK)|QPSK]]\n| 3.7\n|-\n| 10\n| 1228.8\n| 2\n| 4096\n| 1/3\n| [[QAM#Rectangular QAM|16-QAM]]\n| 3.8\n|-\n| 11\n| 1843.2\n| 1\n| 3072\n| 2/3\n| [[8PSK|8-PSK]]\n| 7.5\n|-\n| 12\n| 2457.6\n| 1\n| 4096\n| 2/3\n| [[QAM#Rectangular QAM|16-QAM]]\n| 9.7\n|}\n\nAnother important aspect of the EV-DO forward link channel is the scheduler. The scheduler most commonly used is called \"[[proportional fair]]\". It's designed to maximize sector throughput while also guaranteeing each user a certain minimum level of service. The idea is to schedule mobiles reporting higher DRC indices more often, with the hope that those reporting worse conditions will improve in time.\n\nThe system also incorporates [[Hybrid automatic repeat-request|Incremental Redundancy Hybrid ARQ]]. Each sub-packet of a multi-slot transmission is a [[Turbo code|turbo-coded]] replica of the original data bits. This allows mobiles to acknowledge a packet before all of its sub-sections have been transmitted. For example, if a mobile transmits a DRC index of 3 and is scheduled to receive data, it will expect to get data during four time slots. If after decoding the first slot the mobile is able to determine the entire data packet, it can send an early acknowledgement back at that time; the remaining three sub-packets will be cancelled. If however the packet is not acknowledged, the network will proceed with the transmission of the remaining parts until all have been transmitted or the packet is acknowledged.<ref name=\"Performance\" />\n\n==== Reverse link structure ====\nThe reverse link (from the mobile back to the [[Base Transceiver Station]]) on EV-DO Rel. 0 operates very similar to that of [[CDMA2000|CDMA2000 1xRTT]]. The channel includes a reverse link pilot (helps with decoding the signal) along with the user data channels. Some additional channels that do not exist in 1x include the DRC channel (described above) and the ACK channel (used for [[Hybrid automatic repeat-request|HARQ]]). Only the reverse link has any sort of [[power control]], because the forward link is always transmitted at full power for use by all the mobiles.<ref name=\"Lucent\" />  The reverse link has both open loop and closed loop power control.  In the open loop, the reverse link transmission power is set based upon the received power on the forward link. In the closed loop, the reverse link power is adjusted up or down 800 times a second, as indicated by the serving sector (similar to [[CDMA2000|1x]]).<ref>[http://www.cdg.org/technology/3g/advantages_cdma2000.asp CDG: Advantages of CDMA2000] {{webarchive |url=https://web.archive.org/web/20081023022338/http://www.cdg.org/technology/3g/advantages_cdma2000.asp |date=October 23, 2008 }}</ref>\n\nAll of the reverse link channels are combined using [[code-division multiple access|code division]] and transmitted back to the base station using [[BPSK]]<ref>{{cite web|url=http://rfmw.em.keysight.com/rfcomms/refdocs/1xevdo/1xevdo_gen_rtap_rate.html|title=RTAP Rate|work=keysight.com|access-date=14 August 2015}}</ref> where they are decoded. The maximum speed available for user data is 153.2 kbit/s, but in real-life conditions this is rarely achieved. Typical speeds achieved are between 20-50 kbit/s.\n\n=== EV-DO Rev. A (TIA-856 Revision A) ===\nRevision A of EV-DO makes several additions to the protocol while keeping it completely backwards compatible with Release 0.\n\nThese changes included the introduction of several new forward link data rates that increase the maximum burst rate from 2.45 Mbit/s to 3.1 Mbit/s. Also included were protocols that would decrease connection establishment time (called enhanced access channel MAC), the ability for more than one mobile to share the same timeslot (multi-user packets) and the introduction of [[Quality of service|QoS]] flags. All of these were put in place to allow for low latency, low bit rate communications such as [[Voice over Internet Protocol|VoIP]].<ref name='Gopal'>{{Cite book| first=Thawatt | last=Gopal| title=2007 IEEE Wireless Communications and Networking Conference| chapter=EVDO Rev. A Control Channel Bandwidth Analysis for Paging| publisher=IEEE| pages=3262–7| date=11–15 March 2007| doi= 10.1109/WCNC.2007.601| isbn=978-1-4244-0658-6| s2cid=15430071}}</ref>\n\nThe additional forward rates for EV-DO Rev. An are:<ref name=\"RevAStandard\">{{cite web |url=http://www.3gpp2.org/Public_html/specs/C.S0024-A_v2.0_050727.pdf |title=cdma2000 High Rate Packet Data Air Interface |access-date=2008-01-18 |date=July 2005 |publisher=[[3GPP2]] |pages=10–114 |archive-url=https://web.archive.org/web/20080216101310/http://www.3gpp2.org/Public_html/specs/C.S0024-A_v2.0_050727.pdf |archive-date=2008-02-16 |url-status=dead }}</ref>\n\n{| class=\"wikitable\"\n|-\n! DRC Index\n! [[Bit rate|Data rate in kbit/s]]\n! Slots scheduled\n! Payload size (bits)\n! [[Code rate|Code Rate]]\n! [[Modulation]]\n|-\n| 13\n| 1536\n| 2\n| 5120\n| 5/12\n| [[QAM#Rectangular QAM|16-QAM]]\n|-\n| 14\n| 3072\n| 1\n| 5120\n| 5/6\n| [[QAM#Rectangular QAM|16-QAM]]\n|}\n\nIn addition to the changes on the forward link, the reverse link was enhanced to support higher complexity [[modulation]] (and thus higher bit rates). An optional secondary pilot was added, which is activated by the mobile when it tries to achieve enhanced data rates. To combat reverse link congestion and noise rise, the protocol calls for each mobile to be given an interference allowance which is replenished by the network when the reverse link conditions allow it.<ref name=\"RevAStandard\" /> The reverse link has a maximum rate of 1.8 Mbit/s, but under normal conditions users experience a rate of approximately 500-1000 Kbit/s but with more [[Relationship between latency and throughput|latency]] than [[DOCSIS]] and [[DSL]].\n\n=== EV-DO Rev. B (TIA-856 Revision B) ===\nEV-DO Rev. B is a multi-carrier evolution of the Rev. A specification.  It maintains the capabilities of EV-DO Rev. A, and provides the following enhancements:\n* Higher rates per [[Carrier signal|carrier]] (up to 4.9 Mbit/s on the downlink per carrier).  Typical deployments are expected to include 2 or 3 carriers for a peak rate of 14.7 Mbit/s. Higher rates by bundling multiple channels together enhance the user experience and enable new services such as [[high-definition video|high definition]] [[video streaming]].\n* Reduced latency by using [[statistical multiplexing]] across channels—enhances the experience for latency sensitive services such as gaming, video telephony, remote console sessions and web browsing.\n* Increased talk-time and standby time\n* Reduced interference from the adjacent sectors especially to users at the edge of the cell signal which improves the rates that can be offered by using Hybrid frequency re-use.\n* Efficient support for services that have asymmetric download and upload requirements (i.e. different data rates required in each direction) such as file transfers, web browsing, and broadband multimedia content delivery.\n\n=== EV-DO Rev. C (TIA-856 Revision C) and TIA-1121 === <!-- This section is linked from redirect [[Ultra Mobile Broadband]]. -->\n\nQualcomm early on realized that EV-DO was a stop-gap solution, and foresaw an upcoming format war between [[LTE (telecommunication)|LTE]] and determined that a new standard would be needed. Qualcomm originally called this technology EV-DV (Evolution Data and Voice).<ref>{{cite web|url=http://www.mobileburn.com/definition.jsp?term=1xEV-DV|title=What is EV-DV? - Definition|first=Michael F. Jr.|last=Oryl|website=www.mobileburn.com|access-date=5 April 2018}}</ref> As EV-DO became more pervasive, EV-DV evolved into EV-DO Rev C.\n\nThe EV-DO Rev. C standard was specified by [[3GPP2]] to improve the [[CDMA2000]] mobile phone standard for next generation applications and requirements. It was proposed by [[Qualcomm]] as the natural evolution path for CDMA2000 and the specifications were published by 3GPP2 (C.S0084-*) and TIA (TIA-1121) in 2007 and 2008 respectively.<ref>{{cite web|url=http://www.cdg.org/news/press/2007/Sep24_07.asp|title=CDG : News & Events : CDG Press Releases|website=www.cdg.org|access-date=5 April 2018}}</ref><ref name=\"TIA-1121\">{{cite web|url=http://www.tiaonline.org/news-media/press-releases-archive?iframeurl=http://www.tiaonline.org/news_events_/press_room/press_releases/2008/PR-319_TIA_Publishes_UMB_Standards_Suite.cfm|title=Telecommunications Industry Association (TIA) Publishes UMB Standards Suite|work=tiaonline.org|date=19 March 2008|access-date=14 August 2015|archive-url=https://web.archive.org/web/20150221132953/http://www.tiaonline.org/news-media/press-releases-archive?iframeurl=http%3A%2F%2Fwww.tiaonline.org%2Fnews_events_%2Fpress_room%2Fpress_releases%2F2008%2FPR-319_TIA_Publishes_UMB_Standards_Suite.cfm|archive-date=21 February 2015|url-status=dead}}</ref>\n\nThe brand name '''UMB (Ultra Mobile Broadband)''' was introduced in 2006 as a synonym for this standard.<ref>{{cite web|url=http://www.cdg.org/news/press/2006/Dec05_06.asp|title=CDG : News & Events : CDG Press Releases|website=www.cdg.org|access-date=5 April 2018}}</ref>\n\nUMB was intended to be a [[4G|fourth-generation]] technology, which would make it compete with [[LTE (telecommunication)|LTE]] and [[WiMAX]].  These technologies use a high bandwidth, low latency, underlying [[Internet Protocol|TCP/IP]] network with high level services such as voice built on top.  Widespread deployment of 4G networks promises to make applications that were previously not feasible not only possible but ubiquitous.  Examples of such applications include mobile [[High-definition television|high definition video]] streaming and mobile gaming.\n\nLike LTE, the UMB system was to be based upon Internet networking technologies running over a next generation radio system, with peak rates of up to 280 Mbit/s. Its designers intended for the system to be more efficient and capable of providing more services than the technologies it was intended to replace. To provide compatibility with the systems it was intended to replace, UMB was to support handoffs with other technologies including existing CDMA2000 1X and 1xEV-DO systems.\n\nUMB's use of OFDMA would have eliminated many of the disadvantages of the CDMA technology used by its predecessor, including the \"breathing\" phenomenon, the difficulty of adding capacity via microcells, the fixed bandwidth sizes that limit the total bandwidth available to handsets, and the near complete control by one company of the required intellectual property.\n\nWhile capacity of existing Rel. B networks can be increased 1.5-fold by using EVRC-B voice codec and QLIC handset interference cancellation, 1x Advanced and EV-DO Advanced offers up to 4x network capacity increase using  BTS interference cancellation (reverse link interference cancellation), multi-carrier links, and smart network management technologies.<ref>{{cite web|title=DO Advanced: Maximizing the Performance of EV-DO|url=http://www.qualcomm.com/media/documents/do-advanced-maximizing-performance-ev-do|publisher=Qualcomm|date=October 27, 2011}}</ref><ref>{{cite web|title=1X Advanced – Four-Fold Increase in Voice Capacity Whitepaper|url=http://www.qualcomm.com/media/documents/1x-advanced-four-fold-increase-voice-capacity-whitepaper|publisher=Qualcomm|date=May 1, 2009}}</ref>\n\nIn November 2008, [[Qualcomm]], UMB's lead sponsor, announced it was ending development of the technology, favoring [[LTE_(telecommunication)|LTE]] instead. This followed the announcement that most CDMA carriers chose to adopt either [[WiMAX]] or the competing [[LTE_(telecommunication)|LTE]] standard as their 4G technology. In fact no carrier had announced plans to adopt UMB.<ref>[https://www.reuters.com/article/marketsNews/idUSN1335969420081113?rpc=401& Qualcomm halts UMB project], Reuters, November 13th, 2008</ref>\n\nHowever, during the ongoing development process of the 4G technology, 3GPP added some functionalities to LTE, allowing it to become a sole upgrade path for all wireless networks.\n\n==== Features ====\n* [[OFDMA]]-based air interface\n* [[Duplex (telecommunications)|Frequency Division Duplex]]\n* Scalable bandwidth between 1.25–20&nbsp;MHz (OFDMA systems are especially well suited for wider bandwidths larger than 5&nbsp;MHz)\n* Support of mixed cell sizes, e.g., macro-cellular, [[Microcell|micro-cellular]] & pico-cellular.\n* [[Internet Protocol|IP]] network architecture\n* Support of flat, centralized and mixed topologies\n* Data speeds over 275 Mbit/s downstream and over 75 Mbit/s upstream\n<!--*Built upon large PP2 ecosystem with track history of early delivery of robust and advanced wireless systems -- this needs translating into English. WTX is PP2? -->\n* Significantly higher data rates & reduced latencies using Forward Link (FL) advanced antenna techniques\n** [[MIMO]], [[Space-division multiple access|SDMA]] and [[Beamforming]]\n* Higher Reverse Link (RL) sector capacity with quasi-orthogonal reverse link\t\n* Increased cell edge user data rates using adaptive interference management\n** Dynamic fractional frequency reuse\n** Distributed RL power control based on other cell interference\n* Real time services enabled by fast seamless L1/L2 handoffs \n** Independent RL & FL handoffs provide better airlink and handoff performance\n* Power optimization through use of quick paging and semi-connected state\n* Low-overhead signaling using flexible airlink resource management\n* Fast access and request using RL [[CDMA]] control channels\n* New scalable IP architecture supports inter-technology handoffs\n** New handoff mechanisms support real-time services throughout the network and across different airlink technologies\n* Fast acquisition and efficient multi-carrier operation through use of beacons \n* Multi-carrier configuration supports incremental deployment & mix of low-complexity & wideband devices\n\n== See also ==\n{{portal|Telecommunication}}\n* [[3GPP2]]\n* [[4G]]\n* [[CDMA2000]]\n* [[Evolved EDGE]]\n* [[Flash-OFDM]]\n* [[High-Speed Downlink Packet Access]] or [[HSDPA]]\n* [[Mobile broadband]]\n* [[Mobile broadband modem]]\n* [[OFDM]]\n* [[List of device bandwidths]]\n* [[List of Evolution-Data Optimized network equipment suppliers]]\n* [[List of CDMA2000 networks]]\n* [[Long Term Evolution|LTE]]\n* [[SVDO|Simultaneous Voice and EV-DO data (SVDO)]]\n* [[WiMAX]]\n\n== Notes and references ==\n{{reflist}}\n\n== External links ==\n* [http://www.3gpp2.org/ 3GPP2] CDMA2000 standards and specification documents\n* [https://web.archive.org/web/20110208014615/http://www.cdg.org/ CDMA Development Group (CDG)]\n* [http://www.evdoforums.com/ EVDOforums.com] EV-DO discussion group\n* [http://mfile.akamai.com/8499/wmv/qualcomm.download.akamai.com/8499/1xEV/1x_EVDO_Rev_B_Demo.asx A video demonstration of EVDO Rev. B capabilities]\n\n{{Cdma}}\n{{Internet Access}}\n{{Mobile telecommunications standards}}\n\n[[Category:Code division multiple access]]\n[[Category:3rd Generation Partnership Project 2 standards]]",
+            "text": "Evolution-Data Optimized (EV-DO, EVDO, etc.) is a telecommunications standard for the wireless transmission of data through radio signals, typically for broadband Internet access. EV-DO is an evolution of the CDMA2000 (IS-2000) standard which supports high data rates and can be deployed alongside a wireless carrier's voice services. It uses advanced multiplexing techniques including code-division multiple access (CDMA) as well as time-division multiplexing (TDM) to maximize throughput. It is a part of the CDMA2000 family of standards and has been adopted by many mobile phone service providers around the world particularly those previously employing CDMA networks. It is also used on the Globalstar satellite phone network. EV-DO service was discontinued in much of Canada in 2015. An EV-DO channel has a bandwidth of 1.25 MHz, the same bandwidth size that IS-95A (IS-95) and IS-2000 (1xRTT) use, though the channel structure is very different. The back-end network is entirely packet-based, and is not constrained by restrictions typically present on a circuit switched network. The EV-DO feature of CDMA2000 networks provides access to mobile devices with forward link air interface speeds of up to 2.4 Mbit/s with Rel. 0 and up to 3.1 Mbit/s with Rev. A. The reverse link rate for Rel. 0 can operate up to 153 kbit/s, while Rev. A can operate at up to 1.8 Mbit/s. It was designed to be operated end-to-end as an IP based network, and can support any application which can operate on such a network and bit rate constraints. There have been several revisions of the standard, starting with Release 0 (Rel. 0). This was later expanded upon with Revision A (Rev. A) to support quality of service (to improve latency) and higher rates on the forward and reverse link. In late 2006, Revision B (Rev. B) was published, whose features include the ability to bundle multiple carriers to achieve even higher rates and lower latencies (see TIA-856 Rev. B below). The upgrade from EV-DO Rev. A to Rev. B involves a software update of the cell site modem, and additional equipment for new EV-DO carriers. Existing cdma2000 operators may have to retune some of their existing 1xRTT channels to other frequencies, as Rev. B requires all DO carriers be within 5 MHz. The initial design of EV-DO was developed by Qualcomm in 1999 to meet IMT-2000 requirements for a greater-than-2Mbit/s down link for stationary communications, as opposed to mobile communication (i.e., moving cellular phone service). Initially, the standard was called High Data Rate (HDR), but was renamed to 1xEV-DO after it was ratified by the International Telecommunication Union (ITU) under the designation TIA-856. Originally, 1xEV-DO stood for \"1x Evolution-Data Only\", referring to its being a direct evolution of the 1x (1xRTT) air interface standard, with its channels carrying only data traffic. The title of the 1xEV-DO standard document is \"cdma2000 High Rate Packet Data Air Interface Specification\", as cdma2000 (lowercase) is another name for the 1x standard, numerically designated as TIA-2000. Later, due to possible negative connotations of the word \"only\", the \"DO\"-part of the standard's name 1xEV-DO was changed to stand for \"Data Optimized\", the full name - EV-DO now stands for \"Evolution-Data Optimized.\" The 1x prefix has been dropped by many of the major carriers, and is marketed simply as EV-DO. This provides a more market-friendly emphasis of the technology being data-optimized. The primary characteristic that differentiates an EV-DO channel from a 1xRTT channel is that it is time multiplexed on the forward link (from the tower to the mobile). This means that a single mobile has full use of the forward traffic channel within a particular geographic area (a sector) during a given slot of time. Using this technique, EV-DO is able to modulate each user’s time slot independently. This allows the service of users in favorable RF conditions with very complex modulation techniques while also serving users in poor RF conditions with simpler (and more redundant) signals. The forward channel is divided into slots, each being 1.667 ms long. In addition to user traffic, overhead channels are interlaced into the stream, which include the 'pilot', which helps the mobile find and identify the channel, the Media Access Channel (MAC) which tells the mobile devices when their data is scheduled, and the 'control channel', which contains other information the network needs the mobile devices to know. The modulation to be used to communicate with a given mobile unit is determined by the mobile device itself; it listens to the traffic on the channel, and depending on the receive signal strength along with the perceived multi-path and fading conditions, makes a best guess as to what data-rate it can sustain while maintaining a reasonable frame error rate of 1-2%. It then communicates this information back to the serving sector in the form of an integer between 1 and 12 on the \"Digital Rate Control\" (DRC) channel. Alternatively, the mobile can select a \"null\" rate (DRC 0), indicating that the mobile either cannot decode data at any rate, or that it is attempting to hand off to another serving sector. The DRC values are as follows: Another important aspect of the EV-DO forward link channel is the scheduler. The scheduler most commonly used is called \"proportional fair\". It's designed to maximize sector throughput while also guaranteeing each user a certain minimum level of service. The idea is to schedule mobiles reporting higher DRC indices more often, with the hope that those reporting worse conditions will improve in time. The system also incorporates Incremental Redundancy Hybrid ARQ. Each sub-packet of a multi-slot transmission is a turbo-coded replica of the original data bits. This allows mobiles to acknowledge a packet before all of its sub-sections have been transmitted. For example, if a mobile transmits a DRC index of 3 and is scheduled to receive data, it will expect to get data during four time slots. If after decoding the first slot the mobile is able to determine the entire data packet, it can send an early acknowledgement back at that time; the remaining three sub-packets will be cancelled. If however the packet is not acknowledged, the network will proceed with the transmission of the remaining parts until all have been transmitted or the packet is acknowledged. The reverse link (from the mobile back to the Base Transceiver Station) on EV-DO Rel. 0 operates very similar to that of CDMA2000 1xRTT. The channel includes a reverse link pilot (helps with decoding the signal) along with the user data channels. Some additional channels that do not exist in 1x include the DRC channel (described above) and the ACK channel (used for HARQ). Only the reverse link has any sort of power control, because the forward link is always transmitted at full power for use by all the mobiles. The reverse link has both open loop and closed loop power control. In the open loop, the reverse link transmission power is set based upon the received power on the forward link. In the closed loop, the reverse link power is adjusted up or down 800 times a second, as indicated by the serving sector (similar to 1x). All of the reverse link channels are combined using code division and transmitted back to the base station using BPSK where they are decoded. The maximum speed available for user data is 153.2 kbit/s, but in real-life conditions this is rarely achieved. Typical speeds achieved are between 20-50 kbit/s. Revision A of EV-DO makes several additions to the protocol while keeping it completely backwards compatible with Release 0. These changes included the introduction of several new forward link data rates that increase the maximum burst rate from 2.45 Mbit/s to 3.1 Mbit/s. Also included were protocols that would decrease connection establishment time (called enhanced access channel MAC), the ability for more than one mobile to share the same timeslot (multi-user packets) and the introduction of QoS flags. All of these were put in place to allow for low latency, low bit rate communications such as VoIP. The additional forward rates for EV-DO Rev. An are: In addition to the changes on the forward link, the reverse link was enhanced to support higher complexity modulation (and thus higher bit rates). An optional secondary pilot was added, which is activated by the mobile when it tries to achieve enhanced data rates. To combat reverse link congestion and noise rise, the protocol calls for each mobile to be given an interference allowance which is replenished by the network when the reverse link conditions allow it. The reverse link has a maximum rate of 1.8 Mbit/s, but under normal conditions users experience a rate of approximately 500-1000 Kbit/s but with more latency than DOCSIS and DSL. EV-DO Rev. B is a multi-carrier evolution of the Rev. A specification. It maintains the capabilities of EV-DO Rev. A, and provides the following enhancements: Higher rates per carrier (up to 4.9 Mbit/s on the downlink per carrier). Typical deployments are expected to include 2 or 3 carriers for a peak rate of 14.7 Mbit/s. Higher rates by bundling multiple channels together enhance the user experience and enable new services such as high definition video streaming. Reduced latency by using statistical multiplexing across channels—enhances the experience for latency sensitive services such as gaming, video telephony, remote console sessions and web browsing. Increased talk-time and standby time Reduced interference from the adjacent sectors especially to users at the edge of the cell signal which improves the rates that can be offered by using Hybrid frequency re-use. Efficient support for services that have asymmetric download and upload requirements (i.e. different data rates required in each direction) such as file transfers, web browsing, and broadband multimedia content delivery. Qualcomm early on realized that EV-DO was a stop-gap solution, and foresaw an upcoming format war between LTE and determined that a new standard would be needed. Qualcomm originally called this technology EV-DV (Evolution Data and Voice). As EV-DO became more pervasive, EV-DV evolved into EV-DO Rev C. The EV-DO Rev. C standard was specified by 3GPP2 to improve the CDMA2000 mobile phone standard for next generation applications and requirements. It was proposed by Qualcomm as the natural evolution path for CDMA2000 and the specifications were published by 3GPP2 (C.S0084-*) and TIA (TIA-1121) in 2007 and 2008 respectively. The brand name UMB (Ultra Mobile Broadband) was introduced in 2006 as a synonym for this standard. UMB was intended to be a fourth-generation technology, which would make it compete with LTE and WiMAX. These technologies use a high bandwidth, low latency, underlying TCP/IP network with high level services such as voice built on top. Widespread deployment of 4G networks promises to make applications that were previously not feasible not only possible but ubiquitous. Examples of such applications include mobile high definition video streaming and mobile gaming. Like LTE, the UMB system was to be based upon Internet networking technologies running over a next generation radio system, with peak rates of up to 280 Mbit/s. Its designers intended for the system to be more efficient and capable of providing more services than the technologies it was intended to replace. To provide compatibility with the systems it was intended to replace, UMB was to support handoffs with other technologies including existing CDMA2000 1X and 1xEV-DO systems. UMB's use of OFDMA would have eliminated many of the disadvantages of the CDMA technology used by its predecessor, including the \"breathing\" phenomenon, the difficulty of adding capacity via microcells, the fixed bandwidth sizes that limit the total bandwidth available to handsets, and the near complete control by one company of the required intellectual property. While capacity of existing Rel. B networks can be increased 1.5-fold by using EVRC-B voice codec and QLIC handset interference cancellation, 1x Advanced and EV-DO Advanced offers up to 4x network capacity increase using BTS interference cancellation (reverse link interference cancellation), multi-carrier links, and smart network management technologies. In November 2008, Qualcomm, UMB's lead sponsor, announced it was ending development of the technology, favoring LTE instead. This followed the announcement that most CDMA carriers chose to adopt either WiMAX or the competing LTE standard as their 4G technology. In fact no carrier had announced plans to adopt UMB. However, during the ongoing development process of the 4G technology, 3GPP added some functionalities to LTE, allowing it to become a sole upgrade path for all wireless networks. OFDMA-based air interface Frequency Division Duplex Scalable bandwidth between 1.25–20 MHz (OFDMA systems are especially well suited for wider bandwidths larger than 5 MHz) Support of mixed cell sizes, e.g., macro-cellular, micro-cellular & pico-cellular. IP network architecture Support of flat, centralized and mixed topologies Data speeds over 275 Mbit/s downstream and over 75 Mbit/s upstream Significantly higher data rates & reduced latencies using Forward Link (FL) advanced antenna techniques MIMO, SDMA and Beamforming Higher Reverse Link (RL) sector capacity with quasi-orthogonal reverse link Increased cell edge user data rates using adaptive interference management Dynamic fractional frequency reuse Distributed RL power control based on other cell interference Real time services enabled by fast seamless L1/L2 handoffs Independent RL & FL handoffs provide better airlink and handoff performance Power optimization through use of quick paging and semi-connected state Low-overhead signaling using flexible airlink resource management Fast access and request using RL CDMA control channels New scalable IP architecture supports inter-technology handoffs New handoff mechanisms support real-time services throughout the network and across different airlink technologies Fast acquisition and efficient multi-carrier operation through use of beacons Multi-carrier configuration supports incremental deployment & mix of low-complexity & wideband devices Telecommunication portal 3GPP2 4G CDMA2000 Evolved EDGE Flash-OFDM High-Speed Downlink Packet Access or HSDPA Mobile broadband Mobile broadband modem OFDM List of device bandwidths List of Evolution-Data Optimized network equipment suppliers List of CDMA2000 networks LTE Simultaneous Voice and EV-DO data (SVDO) WiMAX Cyrus Farivar. \"Globalstar GSP-1700 satphone also loaded with EV-DO\". Engadget. Retrieved 14 August 2015. \"Service Bulletins: CDMA Network Changes in Canada\". MTS. Archived from the original on 29 May 2015. Retrieved 29 May 2015. As of July 1, 2015 EVDO service across Canada (excluding Manitoba) is being shut down. \"3G - CDMA2000 1xEV-DO Technologies\". CDMA development Group. Archived from the original on 2007-12-20. Retrieved 2008-01-18. \"CDMA2000 1xEV-DO\". QUALCOMM Technology and Solutions. Archived from the original on 2006-11-04. Bi, Qi; S. Vitebsky (17–21 March 2002). \"Performance analysis of 3G-1X EV-DO high data rate system\". IEEE Wireless Communications and Networking Conference. IEEE: 389–395. Bi, Qi (March 2004). \"A Forward Link Performance Study of the 1xEV-DO Rel. 0 System Using Field Measurements and Simulations\" (PDF). Lucent Technologies. Retrieved 2008-01-18. CDG: Advantages of CDMA2000 Archived October 23, 2008, at the Wayback Machine \"RTAP Rate\". keysight.com. Retrieved 14 August 2015. Gopal, Thawatt (11–15 March 2007). \"EVDO Rev. A Control Channel Bandwidth Analysis for Paging\". 2007 IEEE Wireless Communications and Networking Conference. IEEE. pp. 3262–7. doi:10.1109/WCNC.2007.601. ISBN 978-1-4244-0658-6. S2CID 15430071. \"cdma2000 High Rate Packet Data Air Interface\" (PDF). 3GPP2. July 2005. pp. 10–114. Archived from the original (PDF) on 2008-02-16. Retrieved 2008-01-18. Oryl, Michael F. Jr. \"What is EV-DV? - Definition\". www.mobileburn.com. Retrieved 5 April 2018. \"CDG : News & Events : CDG Press Releases\". www.cdg.org. Retrieved 5 April 2018. \"Telecommunications Industry Association (TIA) Publishes UMB Standards Suite\". tiaonline.org. 19 March 2008. Archived from the original on 21 February 2015. Retrieved 14 August 2015. \"CDG : News & Events : CDG Press Releases\". www.cdg.org. Retrieved 5 April 2018. \"DO Advanced: Maximizing the Performance of EV-DO\". Qualcomm. October 27, 2011. \"1X Advanced – Four-Fold Increase in Voice Capacity Whitepaper\". Qualcomm. May 1, 2009. Qualcomm halts UMB project, Reuters, November 13th, 2008 3GPP2 CDMA2000 standards and specification documents CDMA Development Group (CDG) EVDOforums.com EV-DO discussion group A video demonstration of EVDO Rev. B capabilities"
+        },
+        "collectMetadata": {
+            "requestedDate": "2023-10-16T00:00:00",
+            "ingestedDate": "2023-10-22T21:01:32.786937"
+        },
+        "extractionMetadata": [
+            {
+                "id": "WikitextExtractor",
+                "linkExtractionDate": "2023-10-22T21:01:32.791902",
+                "links": [
+                    {
+                        "fragment": null,
+                        "link": "File:Kyocera_EVDO_router.jpg",
+                        "text": "thumb|A Kyocera [[PC Card]] EV-DO [[router (computing)|router]] with [[Wi-Fi]]",
+                        "title": "File:Kyocera EVDO router.jpg"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "PC_Card",
+                        "text": null,
+                        "title": "PC Card"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Router_(computing)",
+                        "text": "router",
+                        "title": "router (computing)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Wi-Fi",
+                        "text": null,
+                        "title": "Wi-Fi"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "File:1XEV_Mobile_Phone_Screenshot_blackberry.png",
+                        "text": "thumb|[[BlackBerry]] Style (9670 series) smartphone displaying '1XEV' as the service status as highlighted in the upper right corner.",
+                        "title": "File:1XEV Mobile Phone Screenshot blackberry.png"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "BlackBerry",
+                        "text": null,
+                        "title": "BlackBerry"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "File:Sanyo_katana_connecting_to_the_internet_-_mar_2022.jpg",
+                        "text": "thumb|[[Sanyo]] Katana cell phone connected to the internet via EV-DO",
+                        "title": "File:Sanyo katana connecting to the internet - mar 2022.jpg"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Sanyo",
+                        "text": null,
+                        "title": "Sanyo"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Telecommunication",
+                        "text": null,
+                        "title": "telecommunication"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Wireless",
+                        "text": null,
+                        "title": "wireless"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Radio",
+                        "text": null,
+                        "title": "radio"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Broadband_Internet_access",
+                        "text": null,
+                        "title": "broadband Internet access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA2000",
+                        "text": null,
+                        "title": "CDMA2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "IS-2000",
+                        "text": null,
+                        "title": "IS-2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Multiplexing",
+                        "text": null,
+                        "title": "multiplexing"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Code-division_multiple_access",
+                        "text": null,
+                        "title": "code-division multiple access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Time-division_multiplexing",
+                        "text": null,
+                        "title": "time-division multiplexing"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA2000",
+                        "text": null,
+                        "title": "CDMA2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_phone",
+                        "text": null,
+                        "title": "mobile phone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA",
+                        "text": null,
+                        "title": "CDMA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Globalstar",
+                        "text": null,
+                        "title": "Globalstar"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Satellite_phone",
+                        "text": null,
+                        "title": "satellite phone"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "IS-95",
+                        "text": null,
+                        "title": "IS-95"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA2000",
+                        "text": "1xRTT",
+                        "title": "CDMA2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Packet_switching",
+                        "text": "packet-based",
+                        "title": "packet switching"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Circuit_switched",
+                        "text": null,
+                        "title": "circuit switched"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Forward_link",
+                        "text": null,
+                        "title": "forward link"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Reverse_link",
+                        "text": null,
+                        "title": "reverse link"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "IP_based_network",
+                        "text": null,
+                        "title": "IP based network"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "File:3G_With_USB_cable.jpg",
+                        "text": "thumb|[[Huawei]] [[CDMA2000]] EV-DO USB [[wireless modem]]",
+                        "title": "File:3G With USB cable.jpg"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Huawei",
+                        "text": null,
+                        "title": "Huawei"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA2000",
+                        "text": null,
+                        "title": "CDMA2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Wireless_modem",
+                        "text": null,
+                        "title": "wireless modem"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "File:Huawei_E173_3G_HSPA+_Modem_USB_Movistar_Colombia_(6).jpg",
+                        "text": "thumb|[[Huawei]] 3G [[HSPA+]] EV-DO USB [[wireless modem]] from [[Movistar]] Colombia",
+                        "title": "File:Huawei E173 3G HSPA+ Modem USB Movistar Colombia (6).jpg"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Huawei",
+                        "text": null,
+                        "title": "Huawei"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "HSPA+",
+                        "text": null,
+                        "title": "HSPA+"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Wireless_modem",
+                        "text": null,
+                        "title": "wireless modem"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Movistar",
+                        "text": null,
+                        "title": "Movistar"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Quality_of_service",
+                        "text": null,
+                        "title": "quality of service"
+                    },
+                    {
+                        "fragment": "TIA-856 Rev B",
+                        "link": "EVDO",
+                        "text": "TIA-856 Rev. B",
+                        "title": "EVDO"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Qualcomm",
+                        "text": null,
+                        "title": "Qualcomm"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "IMT-2000",
+                        "text": null,
+                        "title": "IMT-2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "International_Telecommunication_Union",
+                        "text": null,
+                        "title": "International Telecommunication Union"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA2000",
+                        "text": "1x",
+                        "title": "CDMA2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Time-division_multiplexing",
+                        "text": "time multiplexed",
+                        "title": "Time-division multiplexing"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Digital_modulation_method",
+                        "text": "modulate",
+                        "title": "Digital modulation method"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Modulation",
+                        "text": null,
+                        "title": "modulation"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "MAC_address",
+                        "text": "Media Access Channel (MAC)",
+                        "title": "MAC address"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Modulation",
+                        "text": null,
+                        "title": "modulation"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Handoff",
+                        "text": "hand off",
+                        "title": "handoff"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Alcatel-Lucent",
+                        "text": "Lucent Technologies",
+                        "title": "Alcatel-Lucent"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Bit_rate",
+                        "text": "Data rate (kbit/s)",
+                        "title": "Bit rate"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Code_rate",
+                        "text": "Code Rate",
+                        "title": "Code rate"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Modulation",
+                        "text": null,
+                        "title": "Modulation"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Signal-to-noise_ratio",
+                        "text": "SNR",
+                        "title": "Signal-to-noise ratio"
+                    },
+                    {
+                        "fragment": "Quadrature phase-shift keying (QPSK)",
+                        "link": "QPSK",
+                        "text": "QPSK",
+                        "title": "QPSK"
+                    },
+                    {
+                        "fragment": "Quadrature phase-shift keying (QPSK)",
+                        "link": "QPSK",
+                        "text": "QPSK",
+                        "title": "QPSK"
+                    },
+                    {
+                        "fragment": "Quadrature phase-shift keying (QPSK)",
+                        "link": "QPSK",
+                        "text": "QPSK",
+                        "title": "QPSK"
+                    },
+                    {
+                        "fragment": "Quadrature phase-shift keying (QPSK)",
+                        "link": "QPSK",
+                        "text": "QPSK",
+                        "title": "QPSK"
+                    },
+                    {
+                        "fragment": "Quadrature phase-shift keying (QPSK)",
+                        "link": "QPSK",
+                        "text": "QPSK",
+                        "title": "QPSK"
+                    },
+                    {
+                        "fragment": "Quadrature phase-shift keying (QPSK)",
+                        "link": "QPSK",
+                        "text": "QPSK",
+                        "title": "QPSK"
+                    },
+                    {
+                        "fragment": "Quadrature phase-shift keying (QPSK)",
+                        "link": "QPSK",
+                        "text": "QPSK",
+                        "title": "QPSK"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "8PSK",
+                        "text": "8-PSK",
+                        "title": "8PSK"
+                    },
+                    {
+                        "fragment": "Quadrature phase-shift keying (QPSK)",
+                        "link": "QPSK",
+                        "text": "QPSK",
+                        "title": "QPSK"
+                    },
+                    {
+                        "fragment": "Rectangular QAM",
+                        "link": "QAM",
+                        "text": "16-QAM",
+                        "title": "QAM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "8PSK",
+                        "text": "8-PSK",
+                        "title": "8PSK"
+                    },
+                    {
+                        "fragment": "Rectangular QAM",
+                        "link": "QAM",
+                        "text": "16-QAM",
+                        "title": "QAM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Proportional_fair",
+                        "text": null,
+                        "title": "proportional fair"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Hybrid_automatic_repeat-request",
+                        "text": "Incremental Redundancy Hybrid ARQ",
+                        "title": "Hybrid automatic repeat-request"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Turbo_code",
+                        "text": "turbo-coded",
+                        "title": "Turbo code"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Base_Transceiver_Station",
+                        "text": null,
+                        "title": "Base Transceiver Station"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA2000",
+                        "text": "CDMA2000 1xRTT",
+                        "title": "CDMA2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Hybrid_automatic_repeat-request",
+                        "text": "HARQ",
+                        "title": "Hybrid automatic repeat-request"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Power_control",
+                        "text": null,
+                        "title": "power control"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA2000",
+                        "text": "1x",
+                        "title": "CDMA2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Code-division_multiple_access",
+                        "text": "code division",
+                        "title": "code-division multiple access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "BPSK",
+                        "text": null,
+                        "title": "BPSK"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Quality_of_service",
+                        "text": "QoS",
+                        "title": "Quality of service"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Voice_over_Internet_Protocol",
+                        "text": "VoIP",
+                        "title": "Voice over Internet Protocol"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3GPP2",
+                        "text": null,
+                        "title": "3GPP2"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Bit_rate",
+                        "text": "Data rate in kbit/s",
+                        "title": "Bit rate"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Code_rate",
+                        "text": "Code Rate",
+                        "title": "Code rate"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Modulation",
+                        "text": null,
+                        "title": "Modulation"
+                    },
+                    {
+                        "fragment": "Rectangular QAM",
+                        "link": "QAM",
+                        "text": "16-QAM",
+                        "title": "QAM"
+                    },
+                    {
+                        "fragment": "Rectangular QAM",
+                        "link": "QAM",
+                        "text": "16-QAM",
+                        "title": "QAM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Modulation",
+                        "text": null,
+                        "title": "modulation"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Relationship_between_latency_and_throughput",
+                        "text": "latency",
+                        "title": "Relationship between latency and throughput"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "DOCSIS",
+                        "text": null,
+                        "title": "DOCSIS"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "DSL",
+                        "text": null,
+                        "title": "DSL"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Carrier_signal",
+                        "text": "carrier",
+                        "title": "Carrier signal"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "High-definition_video",
+                        "text": "high definition",
+                        "title": "high-definition video"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Video_streaming",
+                        "text": null,
+                        "title": "video streaming"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Statistical_multiplexing",
+                        "text": null,
+                        "title": "statistical multiplexing"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "LTE_(telecommunication)",
+                        "text": "LTE",
+                        "title": "LTE (telecommunication)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3GPP2",
+                        "text": null,
+                        "title": "3GPP2"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA2000",
+                        "text": null,
+                        "title": "CDMA2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Qualcomm",
+                        "text": null,
+                        "title": "Qualcomm"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "4G",
+                        "text": "fourth-generation",
+                        "title": "4G"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "LTE_(telecommunication)",
+                        "text": "LTE",
+                        "title": "LTE (telecommunication)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "WiMAX",
+                        "text": null,
+                        "title": "WiMAX"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Internet_Protocol",
+                        "text": "TCP/IP",
+                        "title": "Internet Protocol"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "High-definition_television",
+                        "text": "high definition video",
+                        "title": "High-definition television"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Qualcomm",
+                        "text": null,
+                        "title": "Qualcomm"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "LTE_(telecommunication)",
+                        "text": "LTE",
+                        "title": "LTE_(telecommunication)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "WiMAX",
+                        "text": null,
+                        "title": "WiMAX"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "LTE_(telecommunication)",
+                        "text": "LTE",
+                        "title": "LTE_(telecommunication)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "OFDMA",
+                        "text": null,
+                        "title": "OFDMA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Duplex_(telecommunications)",
+                        "text": "Frequency Division Duplex",
+                        "title": "Duplex (telecommunications)"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Microcell",
+                        "text": "micro-cellular",
+                        "title": "Microcell"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Internet_Protocol",
+                        "text": "IP",
+                        "title": "Internet Protocol"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "MIMO",
+                        "text": null,
+                        "title": "MIMO"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Space-division_multiple_access",
+                        "text": "SDMA",
+                        "title": "Space-division multiple access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Beamforming",
+                        "text": null,
+                        "title": "Beamforming"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA",
+                        "text": null,
+                        "title": "CDMA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "3GPP2",
+                        "text": null,
+                        "title": "3GPP2"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "4G",
+                        "text": null,
+                        "title": "4G"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "CDMA2000",
+                        "text": null,
+                        "title": "CDMA2000"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Evolved_EDGE",
+                        "text": null,
+                        "title": "Evolved EDGE"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Flash-OFDM",
+                        "text": null,
+                        "title": "Flash-OFDM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "High-Speed_Downlink_Packet_Access",
+                        "text": null,
+                        "title": "High-Speed Downlink Packet Access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "HSDPA",
+                        "text": null,
+                        "title": "HSDPA"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_broadband",
+                        "text": null,
+                        "title": "Mobile broadband"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Mobile_broadband_modem",
+                        "text": null,
+                        "title": "Mobile broadband modem"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "OFDM",
+                        "text": null,
+                        "title": "OFDM"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "List_of_device_bandwidths",
+                        "text": null,
+                        "title": "List of device bandwidths"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "List_of_Evolution-Data_Optimized_network_equipment_suppliers",
+                        "text": null,
+                        "title": "List of Evolution-Data Optimized network equipment suppliers"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "List_of_CDMA2000_networks",
+                        "text": null,
+                        "title": "List of CDMA2000 networks"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Long_Term_Evolution",
+                        "text": "LTE",
+                        "title": "Long Term Evolution"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "SVDO",
+                        "text": "Simultaneous Voice and EV-DO data (SVDO)",
+                        "title": "SVDO"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "WiMAX",
+                        "text": null,
+                        "title": "WiMAX"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:Code_division_multiple_access",
+                        "text": null,
+                        "title": "Category:Code division multiple access"
+                    },
+                    {
+                        "fragment": null,
+                        "link": "Category:3rd_Generation_Partnership_Project_2_standards",
+                        "text": null,
+                        "title": "Category:3rd Generation Partnership Project 2 standards"
+                    }
+                ],
+                "nbLinks": 132,
+                "nbTables": 2,
+                "nbTexts": 11,
+                "tableExtractionDate": "2023-10-22T21:01:32.791902",
+                "tables": [
+                    {
+                        "endOffset": 9785,
+                        "startOffset": 8600,
+                        "tableCaption": null,
+                        "tableContent": "{| class=\"wikitable\"\n|-\n! DRC Index\n! [[Bit rate|Data rate (kbit/s)]]\n! Slots scheduled\n! Payload size (bits)\n! [[Code rate|Code Rate]]\n! [[Modulation]]\n! [[Signal-to-noise ratio|SNR]] Reqd.\n|-\n| 1\n| 38.4\n| 16\n| 1024\n| 1/5\n| [[QPSK#Quadrature phase-shift keying (QPSK)|QPSK]]\n| -12\n|-\n| 2\n| 76.8\n| 8\n| 1024\n| 1/5\n| [[QPSK#Quadrature phase-shift keying (QPSK)|QPSK]]\n| -9.6\n|-\n| 3\n| 153.6\n| 4\n| 1024\n| 1/5\n| [[QPSK#Quadrature phase-shift keying (QPSK)|QPSK]]\n| -6.8\n|-\n| 4\n| 307.2\n| 2\n| 1024\n| 1/5\n| [[QPSK#Quadrature phase-shift keying (QPSK)|QPSK]]\n| -3.9\n|-\n| 5\n| 307.2\n| 4\n| 2048\n| 1/5\n| [[QPSK#Quadrature phase-shift keying (QPSK)|QPSK]]\n| -3.8\n|-\n| 6\n| 614.4\n| 1\n| 1024\n| 1/3\n| [[QPSK#Quadrature phase-shift keying (QPSK)|QPSK]]\n| -0.6\n|-\n| 7\n| 614.4\n| 2\n| 2048\n| 1/3\n| [[QPSK#Quadrature phase-shift keying (QPSK)|QPSK]]\n| -0.8\n|-\n| 8\n| 921.6\n| 2\n| 3072\n| 1/3\n| [[8PSK|8-PSK]]\n| 1.8\n|-\n| 9\n| 1228.8\n| 1\n| 2048\n| 2/3\n| [[QPSK#Quadrature phase-shift keying (QPSK)|QPSK]]\n| 3.7\n|-\n| 10\n| 1228.8\n| 2\n| 4096\n| 1/3\n| [[QAM#Rectangular QAM|16-QAM]]\n| 3.8\n|-\n| 11\n| 1843.2\n| 1\n| 3072\n| 2/3\n| [[8PSK|8-PSK]]\n| 7.5\n|-\n| 12\n| 2457.6\n| 1\n| 4096\n| 2/3\n| [[QAM#Rectangular QAM|16-QAM]]\n| 9.7\n|}",
+                        "tableData": [
+                            [
+                                "DRC Index",
+                                "Data rate (kbit/s)",
+                                "Slots scheduled",
+                                "Payload size (bits)",
+                                "Code Rate",
+                                "Modulation",
+                                "SNR Reqd."
+                            ],
+                            [
+                                "1",
+                                "38.4",
+                                "16",
+                                "1024",
+                                "1/5",
+                                "QPSK",
+                                "-12"
+                            ],
+                            [
+                                "2",
+                                "76.8",
+                                "8",
+                                "1024",
+                                "1/5",
+                                "QPSK",
+                                "-9.6"
+                            ],
+                            [
+                                "3",
+                                "153.6",
+                                "4",
+                                "1024",
+                                "1/5",
+                                "QPSK",
+                                "-6.8"
+                            ],
+                            [
+                                "4",
+                                "307.2",
+                                "2",
+                                "1024",
+                                "1/5",
+                                "QPSK",
+                                "-3.9"
+                            ],
+                            [
+                                "5",
+                                "307.2",
+                                "4",
+                                "2048",
+                                "1/5",
+                                "QPSK",
+                                "-3.8"
+                            ],
+                            [
+                                "6",
+                                "614.4",
+                                "1",
+                                "1024",
+                                "1/3",
+                                "QPSK",
+                                "-0.6"
+                            ],
+                            [
+                                "7",
+                                "614.4",
+                                "2",
+                                "2048",
+                                "1/3",
+                                "QPSK",
+                                "-0.8"
+                            ],
+                            [
+                                "8",
+                                "921.6",
+                                "2",
+                                "3072",
+                                "1/3",
+                                "8-PSK",
+                                "1.8"
+                            ],
+                            [
+                                "9",
+                                "1228.8",
+                                "1",
+                                "2048",
+                                "2/3",
+                                "QPSK",
+                                "3.7"
+                            ],
+                            [
+                                "10",
+                                "1228.8",
+                                "2",
+                                "4096",
+                                "1/3",
+                                "16-QAM",
+                                "3.8"
+                            ],
+                            [
+                                "11",
+                                "1843.2",
+                                "1",
+                                "3072",
+                                "2/3",
+                                "8-PSK",
+                                "7.5"
+                            ],
+                            [
+                                "12",
+                                "2457.6",
+                                "1",
+                                "4096",
+                                "2/3",
+                                "16-QAM",
+                                "9.7"
+                            ]
+                        ],
+                        "tableNum": 0
+                    },
+                    {
+                        "endOffset": 14523,
+                        "startOffset": 14236,
+                        "tableCaption": null,
+                        "tableContent": "{| class=\"wikitable\"\n|-\n! DRC Index\n! [[Bit rate|Data rate in kbit/s]]\n! Slots scheduled\n! Payload size (bits)\n! [[Code rate|Code Rate]]\n! [[Modulation]]\n|-\n| 13\n| 1536\n| 2\n| 5120\n| 5/12\n| [[QAM#Rectangular QAM|16-QAM]]\n|-\n| 14\n| 3072\n| 1\n| 5120\n| 5/6\n| [[QAM#Rectangular QAM|16-QAM]]\n|}",
+                        "tableData": [
+                            [
+                                "DRC Index",
+                                "Data rate in kbit/s",
+                                "Slots scheduled",
+                                "Payload size (bits)",
+                                "Code Rate",
+                                "Modulation"
+                            ],
+                            [
+                                "13",
+                                "1536",
+                                "2",
+                                "5120",
+                                "5/12",
+                                "16-QAM"
+                            ],
+                            [
+                                "14",
+                                "3072",
+                                "1",
+                                "5120",
+                                "5/6",
+                                "16-QAM"
+                            ]
+                        ],
+                        "tableNum": 1
+                    }
+                ],
+                "technology": "WikitextExtractor",
+                "textExtractionDate": "2023-10-22T21:01:32.791902",
+                "texts": [
+                    {
+                        "endOffset": 3427,
+                        "index": 0,
+                        "level": 0,
+                        "startOffset": 0,
+                        "title": null,
+                        "value": "{{Short description|Telecommunications standard for the wireless transmission of data through radio signals}}\n{{Technical|date=September 2010}}\n\n[[File:Kyocera EVDO router.jpg|thumb|A Kyocera [[PC Card]] EV-DO [[router (computing)|router]] with [[Wi-Fi]]]][[File:1XEV Mobile Phone Screenshot blackberry.png|thumb|[[BlackBerry]] Style (9670 series) smartphone displaying '1XEV' as the service status as highlighted in the upper right corner.]]\n[[File:Sanyo katana connecting to the internet - mar 2022.jpg|thumb|[[Sanyo]] Katana cell phone connected to the internet via EV-DO]]\nEvolution-Data Optimized (EV-DO, EVDO, etc.) is a [[telecommunication]]s standard for the [[wireless]] transmission of data through [[radio]] signals, typically for [[broadband Internet access]]. EV-DO is an evolution of the [[CDMA2000]] ([[IS-2000]]) standard which supports high data rates and can be deployed alongside a wireless carrier's voice services. It uses advanced  [[multiplexing]] techniques including [[code-division multiple access]] (CDMA) as well as [[time-division multiplexing]] (TDM) to maximize throughput.  It is a part of the [[CDMA2000]] family of standards and has been adopted by many [[mobile phone]] service providers around the world  particularly those previously employing [[CDMA]] networks. It is also used on the [[Globalstar]] [[satellite phone]] network.<ref>{{cite web|url=http://www.engadgetmobile.com/2006/11/09/globalstar-gsp-1700-satphone-also-loaded-with-ev-do/|title=Globalstar GSP-1700 satphone also loaded with EV-DO|author=Cyrus Farivar|work=Engadget|access-date=14 August 2015}}</ref>\n\nEV-DO service was discontinued in much of Canada in 2015.<ref>{{cite web|title=Service Bulletins: CDMA Network Changes in Canada|url=https://www.mts.ca/mts/support/service+bulletins/cdma+network+changes+in+canada|publisher=MTS|access-date=29 May 2015|quote=As of July 1, 2015 EVDO service across Canada (excluding Manitoba) is being shut down.|archive-url=https://web.archive.org/web/20150529222419/https://www.mts.ca/mts/support/service+bulletins/cdma+network+changes+in+canada|archive-date=29 May 2015|url-status=dead}}</ref>\n\nAn EV-DO channel has a bandwidth of 1.25 MHz, the same bandwidth size that IS-95A ([[IS-95]]) and IS-2000 ([[CDMA2000|1xRTT]]) use,<ref name=\"CDG\">{{cite web|url=http://www.cdg.org/technology/3g_1xEV-DO.asp |title=3G - CDMA2000 1xEV-DO Technologies |access-date=2008-01-18 |publisher=CDMA development Group |archive-url=https://web.archive.org/web/20071220233907/http://www.cdg.org/technology/3g_1xEV-DO.asp |archive-date=2007-12-20 |url-status=dead }}</ref> though the channel structure is very different. The back-end network is entirely [[packet switching|packet-based]], and is not constrained by restrictions typically present on a [[circuit switched]] network.\n\nThe EV-DO feature of CDMA2000 networks provides access to mobile devices with [[forward link]] air interface speeds of up to 2.4 Mbit/s with Rel. 0 and up to 3.1 Mbit/s with Rev. A. The [[reverse link]] rate for Rel. 0 can operate up to 153 kbit/s, while Rev. A can operate at up to 1.8 Mbit/s. It was designed to be operated end-to-end as an [[IP based network]], and can support any application which can operate on such a network and bit rate constraints."
+                    },
+                    {
+                        "endOffset": 23322,
+                        "index": 1,
+                        "level": 2,
+                        "startOffset": 3427,
+                        "title": "Standard revisions",
+                        "value": "[[File:3G With USB cable.jpg|thumb|[[Huawei]] [[CDMA2000]] EV-DO USB [[wireless modem]]]]\n[[File:Huawei E173 3G HSPA+ Modem USB Movistar Colombia (6).jpg|thumb|[[Huawei]] 3G [[HSPA+]] EV-DO USB [[wireless modem]] from [[Movistar]] Colombia]]\nThere have been several revisions of the standard, starting with Release 0 (Rel. 0). This was later expanded upon with Revision A (Rev. A) to support [[quality of service]] (to improve latency) and higher rates on the forward and reverse link. In late 2006, Revision B (Rev. B) was published, whose features include the ability to bundle multiple carriers to achieve even higher rates and lower latencies (see [[EVDO#TIA-856 Rev B|TIA-856 Rev. B]] below).  The upgrade from EV-DO Rev. A to Rev. B involves a software update of the cell site modem, and additional equipment for new EV-DO carriers.  Existing cdma2000 operators may have to retune some of their existing 1xRTT channels to other frequencies, as Rev. B requires all DO carriers be within 5 MHz."
+                    },
+                    {
+                        "endOffset": 12750,
+                        "index": 2,
+                        "level": 3,
+                        "startOffset": 4457,
+                        "title": "EV-DO Rel. 0 (TIA-856 Release 0)",
+                        "value": "The initial design of EV-DO was developed by [[Qualcomm]] in 1999 to meet [[IMT-2000]] requirements for a greater-than-2Mbit/s down link for stationary communications, as opposed to mobile communication (i.e., moving cellular phone service). Initially, the standard was called High Data Rate (HDR), but was renamed to 1xEV-DO after it was ratified by the [[International Telecommunication Union]] (ITU) under the designation TIA-856. Originally, 1xEV-DO stood for \"1x Evolution-Data Only\", referring to its being a direct evolution of the [[CDMA2000|1x]] (1xRTT) air interface standard, with its channels carrying only data traffic. The title of the 1xEV-DO standard document is \"cdma2000 High Rate Packet Data Air Interface Specification\", as cdma2000 (lowercase) is another name for the 1x standard, numerically designated as TIA-2000.\n\nLater, due to possible negative connotations of the word \"only\", the \"DO\"-part of the standard's name 1xEV-DO was changed to stand for \"Data Optimized\", the full name - EV-DO now stands for \"Evolution-Data Optimized.\" The 1x prefix has been dropped by many of the major carriers, and is marketed simply as EV-DO.<ref name=\"qualcomm\">{{cite web |url=http://www.qualcomm.com/technology/1xev-do.html |archive-url=https://archive.today/20061104082805/http://www.qualcomm.com/technology/1xev-do.html |url-status=dead |archive-date=2006-11-04 |title=CDMA2000 1xEV-DO |publisher=QUALCOMM Technology and Solutions }}</ref> This provides a more market-friendly emphasis of the technology being data-optimized."
+                    },
+                    {
+                        "endOffset": 11040,
+                        "index": 3,
+                        "level": 4,
+                        "startOffset": 6045,
+                        "title": "Forward link channel structure",
+                        "value": "The primary characteristic that differentiates an EV-DO channel from a 1xRTT channel is that it is [[Time-division multiplexing|time multiplexed]] on the forward link (from the tower to the mobile). This means that a single mobile has full use of the forward traffic channel within a particular geographic area (a sector) during a given slot of time. Using this technique, EV-DO is able to [[Digital modulation method|modulate]] each user’s time slot independently. This allows the service of users in favorable RF conditions with very complex [[modulation]] techniques while also serving users in poor RF conditions with simpler (and more redundant) signals.<ref name=\"Performance\">{{Cite journal |first1=Qi |last1=Bi |author2=S. Vitebsky |title=Performance analysis of 3G-1X EV-DO high data rate system |journal=IEEE Wireless Communications and Networking Conference |publisher=IEEE |pages=389–395 |date=17–21 March 2002}}</ref>\n\nThe forward channel is divided into slots, each being 1.667 ms long. In addition to user traffic, overhead channels are interlaced into the stream, which include the 'pilot', which helps the mobile find and identify the channel, the [[MAC address|Media Access Channel (MAC)]] which tells the mobile devices when their data is scheduled, and the 'control channel', which contains other information the network needs the mobile devices to know.\n\nThe [[modulation]] to be used to communicate with a given mobile unit is determined by the mobile device itself; it listens to the traffic on the channel, and depending on the receive signal strength along with the perceived multi-path and fading conditions, makes a best guess as to what data-rate it can sustain while maintaining a reasonable frame error rate of 1-2%. It then communicates this information back to the serving sector in the form of an integer between 1 and 12 on the \"Digital Rate Control\" (DRC) channel. Alternatively, the mobile can select a \"null\" rate (DRC 0), indicating that the mobile either cannot decode data at any rate, or that it is attempting to [[handoff|hand off]] to another serving sector.<ref name=\"Performance\" />\n\nThe DRC values are as follows:<ref name=\"Lucent\">{{cite web |url=http://www.cdg.org/resources/white_papers/files/Lucent%201xEV-DO%20Rev%20O%20Mar%2004.pdf |title=A Forward Link Performance Study of the 1xEV-DO Rel. 0 System Using Field Measurements and Simulations |access-date=2008-01-18 |last=Bi |first=Qi |date=March 2004 |publisher=[[Alcatel-Lucent|Lucent Technologies]] }}</ref>\n\n\n\nAnother important aspect of the EV-DO forward link channel is the scheduler. The scheduler most commonly used is called \"[[proportional fair]]\". It's designed to maximize sector throughput while also guaranteeing each user a certain minimum level of service. The idea is to schedule mobiles reporting higher DRC indices more often, with the hope that those reporting worse conditions will improve in time.\n\nThe system also incorporates [[Hybrid automatic repeat-request|Incremental Redundancy Hybrid ARQ]]. Each sub-packet of a multi-slot transmission is a [[Turbo code|turbo-coded]] replica of the original data bits. This allows mobiles to acknowledge a packet before all of its sub-sections have been transmitted. For example, if a mobile transmits a DRC index of 3 and is scheduled to receive data, it will expect to get data during four time slots. If after decoding the first slot the mobile is able to determine the entire data packet, it can send an early acknowledgement back at that time; the remaining three sub-packets will be cancelled. If however the packet is not acknowledged, the network will proceed with the transmission of the remaining parts until all have been transmitted or the packet is acknowledged.<ref name=\"Performance\" />"
+                    },
+                    {
+                        "endOffset": 12750,
+                        "index": 4,
+                        "level": 4,
+                        "startOffset": 11040,
+                        "title": "Reverse link structure",
+                        "value": "The reverse link (from the mobile back to the [[Base Transceiver Station]]) on EV-DO Rel. 0 operates very similar to that of [[CDMA2000|CDMA2000 1xRTT]]. The channel includes a reverse link pilot (helps with decoding the signal) along with the user data channels. Some additional channels that do not exist in 1x include the DRC channel (described above) and the ACK channel (used for [[Hybrid automatic repeat-request|HARQ]]). Only the reverse link has any sort of [[power control]], because the forward link is always transmitted at full power for use by all the mobiles.<ref name=\"Lucent\" />  The reverse link has both open loop and closed loop power control.  In the open loop, the reverse link transmission power is set based upon the received power on the forward link. In the closed loop, the reverse link power is adjusted up or down 800 times a second, as indicated by the serving sector (similar to [[CDMA2000|1x]]).<ref>CDG: Advantages of CDMA2000 {{webarchive |url=https://web.archive.org/web/20081023022338/http://www.cdg.org/technology/3g/advantages_cdma2000.asp |date=October 23, 2008 }}</ref>\n\nAll of the reverse link channels are combined using [[code-division multiple access|code division]] and transmitted back to the base station using [[BPSK]]<ref>{{cite web|url=http://rfmw.em.keysight.com/rfcomms/refdocs/1xevdo/1xevdo_gen_rtap_rate.html|title=RTAP Rate|work=keysight.com|access-date=14 August 2015}}</ref> where they are decoded. The maximum speed available for user data is 153.2 kbit/s, but in real-life conditions this is rarely achieved. Typical speeds achieved are between 20-50 kbit/s."
+                    },
+                    {
+                        "endOffset": 15259,
+                        "index": 5,
+                        "level": 3,
+                        "startOffset": 12750,
+                        "title": "EV-DO Rev. A (TIA-856 Revision A)",
+                        "value": "Revision A of EV-DO makes several additions to the protocol while keeping it completely backwards compatible with Release 0.\n\nThese changes included the introduction of several new forward link data rates that increase the maximum burst rate from 2.45 Mbit/s to 3.1 Mbit/s. Also included were protocols that would decrease connection establishment time (called enhanced access channel MAC), the ability for more than one mobile to share the same timeslot (multi-user packets) and the introduction of [[Quality of service|QoS]] flags. All of these were put in place to allow for low latency, low bit rate communications such as [[Voice over Internet Protocol|VoIP]].<ref name='Gopal'>{{Cite book| first=Thawatt | last=Gopal| title=2007 IEEE Wireless Communications and Networking Conference| chapter=EVDO Rev. A Control Channel Bandwidth Analysis for Paging| publisher=IEEE| pages=3262–7| date=11–15 March 2007| doi= 10.1109/WCNC.2007.601| isbn=978-1-4244-0658-6| s2cid=15430071}}</ref>\n\nThe additional forward rates for EV-DO Rev. An are:<ref name=\"RevAStandard\">{{cite web |url=http://www.3gpp2.org/Public_html/specs/C.S0024-A_v2.0_050727.pdf |title=cdma2000 High Rate Packet Data Air Interface |access-date=2008-01-18 |date=July 2005 |publisher=[[3GPP2]] |pages=10–114 |archive-url=https://web.archive.org/web/20080216101310/http://www.3gpp2.org/Public_html/specs/C.S0024-A_v2.0_050727.pdf |archive-date=2008-02-16 |url-status=dead }}</ref>\n\n\n\nIn addition to the changes on the forward link, the reverse link was enhanced to support higher complexity [[modulation]] (and thus higher bit rates). An optional secondary pilot was added, which is activated by the mobile when it tries to achieve enhanced data rates. To combat reverse link congestion and noise rise, the protocol calls for each mobile to be given an interference allowance which is replenished by the network when the reverse link conditions allow it.<ref name=\"RevAStandard\" /> The reverse link has a maximum rate of 1.8 Mbit/s, but under normal conditions users experience a rate of approximately 500-1000 Kbit/s but with more [[Relationship between latency and throughput|latency]] than [[DOCSIS]] and [[DSL]]."
+                    },
+                    {
+                        "endOffset": 23322,
+                        "index": 6,
+                        "level": 3,
+                        "startOffset": 15259,
+                        "title": "EV-DO Rev. B (TIA-856 Revision B)",
+                        "value": "EV-DO Rev. B is a multi-carrier evolution of the Rev. A specification.  It maintains the capabilities of EV-DO Rev. A, and provides the following enhancements:\n* Higher rates per [[Carrier signal|carrier]] (up to 4.9 Mbit/s on the downlink per carrier).  Typical deployments are expected to include 2 or 3 carriers for a peak rate of 14.7 Mbit/s. Higher rates by bundling multiple channels together enhance the user experience and enable new services such as [[high-definition video|high definition]] [[video streaming]].\n* Reduced latency by using [[statistical multiplexing]] across channels—enhances the experience for latency sensitive services such as gaming, video telephony, remote console sessions and web browsing.\n* Increased talk-time and standby time\n* Reduced interference from the adjacent sectors especially to users at the edge of the cell signal which improves the rates that can be offered by using Hybrid frequency re-use.\n* Efficient support for services that have asymmetric download and upload requirements (i.e. different data rates required in each direction) such as file transfers, web browsing, and broadband multimedia content delivery.\n\n=== EV-DO Rev. C (TIA-856 Revision C) and TIA-1121 === \n\nQualcomm early on realized that EV-DO was a stop-gap solution, and foresaw an upcoming format war between [[LTE (telecommunication)|LTE]] and determined that a new standard would be needed. Qualcomm originally called this technology EV-DV (Evolution Data and Voice).<ref>{{cite web|url=http://www.mobileburn.com/definition.jsp?term=1xEV-DV|title=What is EV-DV? - Definition|first=Michael F. Jr.|last=Oryl|website=www.mobileburn.com|access-date=5 April 2018}}</ref> As EV-DO became more pervasive, EV-DV evolved into EV-DO Rev C.\n\nThe EV-DO Rev. C standard was specified by [[3GPP2]] to improve the [[CDMA2000]] mobile phone standard for next generation applications and requirements. It was proposed by [[Qualcomm]] as the natural evolution path for CDMA2000 and the specifications were published by 3GPP2 (C.S0084-*) and TIA (TIA-1121) in 2007 and 2008 respectively.<ref>{{cite web|url=http://www.cdg.org/news/press/2007/Sep24_07.asp|title=CDG : News & Events : CDG Press Releases|website=www.cdg.org|access-date=5 April 2018}}</ref><ref name=\"TIA-1121\">{{cite web|url=http://www.tiaonline.org/news-media/press-releases-archive?iframeurl=http://www.tiaonline.org/news_events_/press_room/press_releases/2008/PR-319_TIA_Publishes_UMB_Standards_Suite.cfm|title=Telecommunications Industry Association (TIA) Publishes UMB Standards Suite|work=tiaonline.org|date=19 March 2008|access-date=14 August 2015|archive-url=https://web.archive.org/web/20150221132953/http://www.tiaonline.org/news-media/press-releases-archive?iframeurl=http%3A%2F%2Fwww.tiaonline.org%2Fnews_events_%2Fpress_room%2Fpress_releases%2F2008%2FPR-319_TIA_Publishes_UMB_Standards_Suite.cfm|archive-date=21 February 2015|url-status=dead}}</ref>\n\nThe brand name UMB (Ultra Mobile Broadband) was introduced in 2006 as a synonym for this standard.<ref>{{cite web|url=http://www.cdg.org/news/press/2006/Dec05_06.asp|title=CDG : News & Events : CDG Press Releases|website=www.cdg.org|access-date=5 April 2018}}</ref>\n\nUMB was intended to be a [[4G|fourth-generation]] technology, which would make it compete with [[LTE (telecommunication)|LTE]] and [[WiMAX]].  These technologies use a high bandwidth, low latency, underlying [[Internet Protocol|TCP/IP]] network with high level services such as voice built on top.  Widespread deployment of 4G networks promises to make applications that were previously not feasible not only possible but ubiquitous.  Examples of such applications include mobile [[High-definition television|high definition video]] streaming and mobile gaming.\n\nLike LTE, the UMB system was to be based upon Internet networking technologies running over a next generation radio system, with peak rates of up to 280 Mbit/s. Its designers intended for the system to be more efficient and capable of providing more services than the technologies it was intended to replace. To provide compatibility with the systems it was intended to replace, UMB was to support handoffs with other technologies including existing CDMA2000 1X and 1xEV-DO systems.\n\nUMB's use of OFDMA would have eliminated many of the disadvantages of the CDMA technology used by its predecessor, including the \"breathing\" phenomenon, the difficulty of adding capacity via microcells, the fixed bandwidth sizes that limit the total bandwidth available to handsets, and the near complete control by one company of the required intellectual property.\n\nWhile capacity of existing Rel. B networks can be increased 1.5-fold by using EVRC-B voice codec and QLIC handset interference cancellation, 1x Advanced and EV-DO Advanced offers up to 4x network capacity increase using  BTS interference cancellation (reverse link interference cancellation), multi-carrier links, and smart network management technologies.<ref>{{cite web|title=DO Advanced: Maximizing the Performance of EV-DO|url=http://www.qualcomm.com/media/documents/do-advanced-maximizing-performance-ev-do|publisher=Qualcomm|date=October 27, 2011}}</ref><ref>{{cite web|title=1X Advanced – Four-Fold Increase in Voice Capacity Whitepaper|url=http://www.qualcomm.com/media/documents/1x-advanced-four-fold-increase-voice-capacity-whitepaper|publisher=Qualcomm|date=May 1, 2009}}</ref>\n\nIn November 2008, [[Qualcomm]], UMB's lead sponsor, announced it was ending development of the technology, favoring [[LTE_(telecommunication)|LTE]] instead. This followed the announcement that most CDMA carriers chose to adopt either [[WiMAX]] or the competing [[LTE_(telecommunication)|LTE]] standard as their 4G technology. In fact no carrier had announced plans to adopt UMB.<ref>Qualcomm halts UMB project, Reuters, November 13th, 2008</ref>\n\nHowever, during the ongoing development process of the 4G technology, 3GPP added some functionalities to LTE, allowing it to become a sole upgrade path for all wireless networks."
+                    },
+                    {
+                        "endOffset": 23322,
+                        "index": 7,
+                        "level": 4,
+                        "startOffset": 21488,
+                        "title": "Features",
+                        "value": "* [[OFDMA]]-based air interface\n* [[Duplex (telecommunications)|Frequency Division Duplex]]\n* Scalable bandwidth between 1.25–20 MHz (OFDMA systems are especially well suited for wider bandwidths larger than 5 MHz)\n* Support of mixed cell sizes, e.g., macro-cellular, [[Microcell|micro-cellular]] & pico-cellular.\n* [[Internet Protocol|IP]] network architecture\n* Support of flat, centralized and mixed topologies\n* Data speeds over 275 Mbit/s downstream and over 75 Mbit/s upstream\n\n* Significantly higher data rates & reduced latencies using Forward Link (FL) advanced antenna techniques\n** [[MIMO]], [[Space-division multiple access|SDMA]] and [[Beamforming]]\n* Higher Reverse Link (RL) sector capacity with quasi-orthogonal reverse link\t\n* Increased cell edge user data rates using adaptive interference management\n** Dynamic fractional frequency reuse\n** Distributed RL power control based on other cell interference\n* Real time services enabled by fast seamless L1/L2 handoffs \n** Independent RL & FL handoffs provide better airlink and handoff performance\n* Power optimization through use of quick paging and semi-connected state\n* Low-overhead signaling using flexible airlink resource management\n* Fast access and request using RL [[CDMA]] control channels\n* New scalable IP architecture supports inter-technology handoffs\n** New handoff mechanisms support real-time services throughout the network and across different airlink technologies\n* Fast acquisition and efficient multi-carrier operation through use of beacons \n* Multi-carrier configuration supports incremental deployment & mix of low-complexity & wideband devices"
+                    },
+                    {
+                        "endOffset": 23780,
+                        "index": 8,
+                        "level": 2,
+                        "startOffset": 23322,
+                        "title": "See also",
+                        "value": "{{portal|Telecommunication}}\n* [[3GPP2]]\n* [[4G]]\n* [[CDMA2000]]\n* [[Evolved EDGE]]\n* [[Flash-OFDM]]\n* [[High-Speed Downlink Packet Access]] or [[HSDPA]]\n* [[Mobile broadband]]\n* [[Mobile broadband modem]]\n* [[OFDM]]\n* [[List of device bandwidths]]\n* [[List of Evolution-Data Optimized network equipment suppliers]]\n* [[List of CDMA2000 networks]]\n* [[Long Term Evolution|LTE]]\n* [[SVDO|Simultaneous Voice and EV-DO data (SVDO)]]\n* [[WiMAX]]"
+                    },
+                    {
+                        "endOffset": 23820,
+                        "index": 9,
+                        "level": 2,
+                        "startOffset": 23780,
+                        "title": "Notes and references",
+                        "value": "{{reflist}}"
+                    },
+                    {
+                        "endOffset": 24407,
+                        "index": 10,
+                        "level": 2,
+                        "startOffset": 23820,
+                        "title": "External links",
+                        "value": "* 3GPP2 CDMA2000 standards and specification documents\n* CDMA Development Group (CDG)\n* EVDOforums.com EV-DO discussion group\n* A video demonstration of EVDO Rev. B capabilities\n\n{{Cdma}}\n{{Internet Access}}\n{{Mobile telecommunications standards}}\n\n[[Category:Code division multiple access]]\n[[Category:3rd Generation Partnership Project 2 standards]]"
+                    }
+                ]
+            }
+        ],
+        "statsMetadata": {
+            "textSize": 21829
+        },
+        "preprocessingMetadata": [
+            {
+                "technologyResults": [
+                    {
+                        "dagobah": {
+                            "debug": {
+                                "cpaTaskTimeSec": 0.0,
+                                "memoryUsage": 0.0,
+                                "entityScoringTimeSec": 0.02,
+                                "ceaTaskTimeSec": 3.4699999999999993,
+                                "abnormalLookupMentions": [],
+                                "ctaTaskTimeSec": 0.35,
+                                "avgLookupCandidate": 93.33,
+                                "subgraphConstructionTimeSec": 0.88
+                            },
+                            "preprocessed": {
+                                "primitiveTyping": [
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "ORDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 0
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 1
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 2
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 3
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "DATE",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 4
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "ORG",
+                                                "typingScore": 0.67
+                                            },
+                                            {
+                                                "typingLabel": "UNKNOWN",
+                                                "typingScore": 0.17
+                                            },
+                                            {
+                                                "typingLabel": "TIME",
+                                                "typingScore": 0.17
+                                            }
+                                        ],
+                                        "columnIndex": 5
+                                    },
+                                    {
+                                        "typing": [
+                                            {
+                                                "typingLabel": "CARDINAL",
+                                                "typingScore": 1.0
+                                            }
+                                        ],
+                                        "columnIndex": 6
+                                    }
+                                ],
+                                "headerInfo": {
+                                    "hasHeader": true,
+                                    "headerScore": 0.56,
+                                    "headerLabel": [
+                                        "DRC Index",
+                                        "Data rate (kbit/s)",
+                                        "Slots scheduled",
+                                        "Payload size (bits)",
+                                        "Code Rate",
+                                        "Modulation",
+                                        "SNR Reqd."
+                                    ],
+                                    "headerPosition": 0
+                                },
+                                "primaryKeyInfo": {
+                                    "primaryKeyScore": 0.0,
+                                    "primaryKeyPosition": null,
+                                    "hasPrimaryKey": false
+                                },
+                                "tableOrientation": {
+                                    "orientationScore": 0.57,
+                                    "orientationLabel": "HORIZONTAL"
+                                }
+                            },
+                            "executionTimeSec": {
+                                "preprocessingTime": 0.4,
+                                "totalTime": 10.6,
+                                "lookupTime": 1.52
+                            },
+                            "annotated": {
+                                "CTA": [
+                                    {
+                                        "annotation": [
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.07,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q7187"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.05,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q3511065"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.05,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q863908"
+                                            },
+                                            {
+                                                "coverage": 1.0,
+                                                "score": 0.05,
+                                                "label": "Dump not contain this info",
+                                                "uri": "http://www.wikidata.org/entity/Q50365914"
+                                            }
+                                        ],
+                                        "column": 5
+                                    }
+                                ],
+                                "tableDataRevised": [
+                                    [
+                                        "DRC Index",
+                                        "Data rate (kbit/s)",
+                                        "Slots scheduled",
+                                        "Payload size (bits)",
+                                        "Code Rate",
+                                        "Modulation",
+                                        "SNR Reqd."
+                                    ],
+                                    [
+                                        "1",
+                                        "38.4",
+                                        "16",
+                                        "1024",
+                                        "1/5",
+                                        "QPSK",
+                                        "-12"
+                                    ],
+                                    [
+                                        "2",
+                                        "76.8",
+                                        "8",
+                                        "1024",
+                                        "1/5",
+                                        "QPSK",
+                                        "-9.6"
+                                    ],
+                                    [
+                                        "3",
+                                        "153.6",
+                                        "4",
+                                        "1024",
+                                        "1/5",
+                                        "QPSK",
+                                        "-6.8"
+                                    ],
+                                    [
+                                        "4",
+                                        "307.2",
+                                        "2",
+                                        "1024",
+                                        "1/5",
+                                        "QPSK",
+                                        "-3.9"
+                                    ],
+                                    [
+                                        "5",
+                                        "307.2",
+                                        "4",
+                                        "2048",
+                                        "1/5",
+                                        "QPSK",
+                                        "-3.8"
+                                    ],
+                                    [
+                                        "6",
+                                        "614.4",
+                                        "1",
+                                        "1024",
+                                        "1/3",
+                                        "QPSK",
+                                        "-0.6"
+                                    ],
+                                    [
+                                        "7",
+                                        "614.4",
+                                        "2",
+                                        "2048",
+                                        "1/3",
+                                        "QPSK",
+                                        "-0.8"
+                                    ],
+                                    [
+                                        "8",
+                                        "921.6",
+                                        "2",
+                                        "3072",
+                                        "1/3",
+                                        "8-PSK",
+                                        "1.8"
+                                    ],
+                                    [
+                                        "9",
+                                        "1228.8",
+                                        "1",
+                                        "2048",
+                                        "2/3",
+                                        "QPSK",
+                                        "3.7"
+                                    ],
+                                    [
+                                        "10",
+                                        "1228.8",
+                                        "2",
+                                        "4096",
+                                        "1/3",
+                                        "16-QAM",
+                                        "3.8"
+                                    ],
+                                    [
+                                        "11",
+                                        "1843.2",
+                                        "1",
+                                        "3072",
+                                        "2/3",
+                                        "8-PSK",
+                                        "7.5"
+                                    ],
+                                    [
+                                        "12",
+                                        "2457.6",
+                                        "1",
+                                        "4096",
+                                        "2/3",
+                                        "16-QAM",
+                                        "9.7"
+                                    ]
+                                ],
+                                "CPA": [],
+                                "CEA": [
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29725791"
+                                        },
+                                        "column": 5,
+                                        "row": 1
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29725791"
+                                        },
+                                        "column": 5,
+                                        "row": 2
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29725791"
+                                        },
+                                        "column": 5,
+                                        "row": 3
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29725791"
+                                        },
+                                        "column": 5,
+                                        "row": 4
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29725791"
+                                        },
+                                        "column": 5,
+                                        "row": 5
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29725791"
+                                        },
+                                        "column": 5,
+                                        "row": 6
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29725791"
+                                        },
+                                        "column": 5,
+                                        "row": 7
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29711822"
+                                        },
+                                        "column": 5,
+                                        "row": 8
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29725791"
+                                        },
+                                        "column": 5,
+                                        "row": 9
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q62974311"
+                                        },
+                                        "column": 5,
+                                        "row": 10
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.07,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q29711822"
+                                        },
+                                        "column": 5,
+                                        "row": 11
+                                    },
+                                    {
+                                        "annotation": {
+                                            "score": 0.06,
+                                            "label": "Dump not contain this info",
+                                            "uri": "http://www.wikidata.org/entity/Q62974311"
+                                        },
+                                        "column": 5,
+                                        "row": 12
+                                    }
+                                ]
+                            }
+                        },
+                        "index": 0
+                    },
+                    {
+                        "dagobah": {
+                            "debug": {
+                                "cpaTaskTimeSec": 0.0,
+                                "memoryUsage": 0.0,
+                                "entityScoringTimeSec": 0.0,
+                                "ceaTaskTimeSec": 0.0,
+                                "abnormalLookupMentions": [],
+                                "ctaTaskTimeSec": 0.0,
+                                "avgLookupCandidate": 0.0,
+                                "subgraphConstructionTimeSec": 0.0
+                            },
+                            "preprocessed": {},
+                            "executionTimeSec": {
+                                "preprocessingTime": 0.0,
+                                "totalTime": 4.14,
+                                "lookupTime": 0.0
+                            },
+                            "annotated": {}
+                        },
+                        "index": 1
+                    }
+                ],
+                "technologyExecution": {
+                    "beginDate": "2024-01-17T14:41:02.999696",
+                    "endDate": "2024-01-17T14:41:19.218556"
+                },
+                "technology": {
+                    "name": "DAGOBAH Table Annotation",
+                    "company": "Orange",
+                    "id": "dagobah_anotation",
+                    "type": "table",
+                    "version": "Unknown"
+                }
+            }
+        ]
+    }
+}
