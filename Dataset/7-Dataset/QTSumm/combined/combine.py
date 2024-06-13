@@ -6,7 +6,7 @@ files = ["qtsumm_dev.csv", "qtsumm_test.csv", "qtsumm_train.csv"]
 
 # Function to calculate the combined score
 def calculate_combined_score(row):
-    return int(0.7 * row['title_similarity'] + 0.3 * row['table_similarity'])
+    return int(0.4 * row['title_similarity'] + 0.6 * row['table_similarity'])
 
 # Function to process a single pair of files
 def process_files(wiki_file, google_file, output_file):
@@ -25,6 +25,9 @@ def process_files(wiki_file, google_file, output_file):
     # Select the row with the highest combined score
     optimal_df = pd.DataFrame()
     optimal_df = wiki_df.where(wiki_df['combined_score'] >= google_df['combined_score'], google_df)
+
+    # Replace overall_similarity with the combined score
+    optimal_df['overall_similarity'] = optimal_df['combined_score']
 
     # Drop the combined score column before saving
     optimal_df.drop(columns=['combined_score'], inplace=True)
