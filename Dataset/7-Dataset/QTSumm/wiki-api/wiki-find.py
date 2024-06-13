@@ -1,6 +1,7 @@
 import subprocess
 import sys
 import time
+import os
 from urllib.parse import urlparse, parse_qs
 import random
 from io import StringIO
@@ -44,7 +45,7 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
 logger = logging.getLogger()
 
 # Create file handler to log to a file
-file_handler = logging.FileHandler('log.txt')
+file_handler = logging.FileHandler('log-v2.txt')
 file_handler.setLevel(logging.INFO)
 formatter = logging.Formatter('%(message)s')
 file_handler.setFormatter(formatter)
@@ -99,7 +100,7 @@ def compare_tables(actual_df, matched_df):
     matched_sub = extract_first_4x4(matched_df)
     if actual_sub.empty or matched_sub.empty:
         return 0.0
-    return fuzz.ratio(actual_sub.to_string(index=False, header=False), matched_sub.to_string(index=False, header=False))
+    return fuzz.ratio(actual_sub.to_string(index=False, header=True), matched_sub.to_string(index=False, header=True))
 
 def find_most_similar_table(url, input_df):
     extracted_tables = fetch_all_wikipedia_tables(url)
@@ -177,11 +178,29 @@ def save_to_csv(data, filename):
     df.to_csv(csv_filename, index=False)
     logger.info(f"Saved data to {csv_filename}")
 
+
+
+# Assuming the load_and_process_file and save_to_csv functions are already defined
+
 def main():
+    # Get the current script directory
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    # Get the parent directory
+    parent_dir = os.path.abspath(os.path.join(current_dir, '..'))
+
     for file_name in ['qtsumm_dev.json', 'qtsumm_test.json', 'qtsumm_train.json']:
-        data, best_url = load_and_process_file(file_name)
+        # Construct the full file path to the parent directory
+        file_path = os.path.join(parent_dir, file_name)
+
+        # Process the file
+        data, best_url = load_and_process_file(file_path)
+
+        # Save the processed data to a CSV
         save_to_csv(data, file_name)
+
+        # Log the URL with the highest overall similarity
         logger.info(f"URL with highest overall similarity for {file_name}: {best_url}")
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
     main()
