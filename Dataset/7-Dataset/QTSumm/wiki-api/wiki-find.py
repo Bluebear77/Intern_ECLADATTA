@@ -150,7 +150,8 @@ def load_and_process_file(filename):
         
         logger.info(f"Table similarity: {table_similarity}\n")
         
-        overall_similarity = int(0.7 * title_similarity + 0.3 * table_similarity)  # Convert to integer
+        overall_similarity = int(0.4 * title_similarity + 0.6 * table_similarity)  # Convert to integer
+        
         logger.info(f"Overall similarity: {overall_similarity}\n")
         
         if overall_similarity > highest_overall_similarity:
