@@ -1,35 +1,34 @@
 import os
 import pandas as pd
-import re
 
-# Directory containing the .csv files
-directory = './train'
+def merge_csv_files(directory, output_filename):
+    # List all files in the directory
+    files = os.listdir(directory)
+    
+    # Filter and sort the files that match the pattern `chunk_i_v2.csv`
+    csv_files = sorted([f for f in files if f.endswith('.csv') and 'chunk' in f and '_v2' in f], 
+                       key=lambda x: int(x.split('_')[3]))
+    
+    # Initialize an empty DataFrame
+    merged_df = pd.DataFrame()
+    
+    # Read and concatenate each CSV file
+    for file in csv_files:
+        file_path = os.path.join(directory, file)
+        df = pd.read_csv(file_path)
+        merged_df = pd.concat([merged_df, df], ignore_index=True)
+    
+    # Save the merged DataFrame to the output file
+    merged_df.to_csv(output_filename, index=False)
+    print(f'Merged file saved as {output_filename}')
 
-# Function to extract the chunk number from the filename
-def get_chunk_number(filename):
-    match = re.search(r'qtsumm_dev_chunk_(\d+).csv', filename)
-    return int(match.group(1)) if match else float('inf')
+# Define the directories and output filenames
+directories = {
+    './train': 'qtsumm_train_v2.csv',
+    './test': 'qtsumm_test_v2.csv',
+    './dev': 'qtsumm_dev_v2.csv'
+}
 
-# Get all csv files in the directory
-csv_files = [f for f in os.listdir(directory) if f.endswith('.csv')]
-
-# Sort files by the chunk number
-csv_files.sort(key=get_chunk_number)
-
-# List to hold dataframes
-df_list = []
-
-# Read and append each dataframe to the list
-for file in csv_files:
-    file_path = os.path.join(directory, file)
-    df = pd.read_csv(file_path)
-    df_list.append(df)
-
-# Concatenate all dataframes
-merged_df = pd.concat(df_list)
-
-# Save the merged dataframe to a new csv file
-merged_df.to_csv(os.path.join(directory, 'train.csv'), index=False)
-
-print("Merged CSV file created successfully.")
-
+# Merge files for each directory
+for dir_path, output_file in directories.items():
+    merge_csv_files(dir_path, output_file)
