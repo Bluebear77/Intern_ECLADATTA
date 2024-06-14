@@ -1,5 +1,6 @@
 import pandas as pd
 from fuzzywuzzy import fuzz
+import glob
 
 def extract_first_4x4(df):
     return df.iloc[:4, :4]
@@ -44,34 +45,53 @@ def parse_text_file(text_file):
     return tables_info
 
 def table_to_df(table_lines):
-    data = [line.split(maxsplit=3) for line in table_lines if line]
-    columns = data[0]
-    rows = data[1:]
-    return pd.DataFrame(rows, columns=columns)
+    if not table_lines:
+        return pd.DataFrame()
 
-# Load the text file and parse the table information
-text_file = "qtsumm_dev_chunk_1.txt"
-tables_info = parse_text_file(text_file)
+    # Extract the header
+    header = table_lines[0].split()
+    num_columns = len(header)
 
-# Load the CSV file
-csv_file = "qtsumm_dev_chunk_1.csv"
-df = pd.read_csv(csv_file)
+    # Extract the data
+    data = []
+    for line in table_lines[1:]:
+        row = line.split(maxsplit=num_columns-1)  # Ensure split into the correct number of columns
+        if len(row) == num_columns:
+            data.append(row)
+        else:
+            # Handle rows with unexpected number of columns
+            row += [''] * (num_columns - len(row))  # Pad with empty strings if columns are missing
+            data.append(row)
 
-# Update the CSV file with the table similarities
-for table_info in tables_info:
-    table_id = table_info["table_id"]
-    actual_df = table_to_df(table_info["actual"])
-    matched_df = table_to_df(table_info["matched"])
+    return pd.DataFrame(data, columns=header)
+
+# Get all text and csv files
+text_files = sorted(glob.glob("qtsumm_dev_chunk_*.txt"))
+csv_files = sorted(glob.glob("qtsumm_dev_chunk_*.csv"))
+
+# Process each pair of text and csv files
+for text_file, csv_file in zip(text_files, csv_files):
+    # Load the text file and parse the table information
+    tables_info = parse_text_file(text_file)
     
-    table_similarity = compare_tables(actual_df, matched_df)
-    df.loc[df['table_id'] == table_id, 'table_similarity'] = table_similarity
+    # Load the CSV file
+    df = pd.read_csv(csv_file)
     
-    # Update the overall similarity
-    df.loc[df['table_id'] == table_id, 'overall_similarity'] = (
-        0.4 * df.loc[df['table_id'] == table_id, 'title_similarity'] + 0.6 * table_similarity
-    ).astype(int)
-
-# Save the updated CSV file
-updated_csv_file = "qtsumm_dev_chunk_1_updated.csv"
-df.to_csv(updated_csv_file, index=False)
-print(f"Updated CSV file saved to {updated_csv_file}")
+    # Update the CSV file with the table similarities
+    for table_info in tables_info:
+        table_id = table_info["table_id"]
+        actual_df = table_to_df(table_info["actual"])
+        matched_df = table_to_df(table_info["matched"])
+        
+        table_similarity = compare_tables(actual_df, matched_df)
+        df.loc[df['table_id'] == table_id, 'table_similarity'] = table_similarity
+        
+        # Update the overall similarity
+        df.loc[df['table_id'] == table_id, 'overall_similarity'] = (
+            0.4 * df.loc[df['table_id'] == table_id, 'title_similarity'] + 0.6 * table_similarity
+        ).astype(int)
+    
+    # Save the updated CSV file
+    updated_csv_file = csv_file.replace(".csv", "_v2.csv")
+    df.to_csv(updated_csv_file, index=False)
+    print(f"Updated CSV file saved to {updated_csv_file}")
