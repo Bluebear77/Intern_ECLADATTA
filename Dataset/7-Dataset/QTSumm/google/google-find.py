@@ -137,7 +137,7 @@ def compare_tables(actual_df, matched_df):
     matched_sub = extract_first_4x4(matched_df)
     if actual_sub.empty or matched_sub.empty:
         return 0.0
-    return fuzz.ratio(actual_sub.to_string(index=False, header=False), matched_sub.to_string(index=False, header=False))
+    return fuzz.ratio(actual_sub.to_string(index=False, header=True), matched_sub.to_string(index=False, header=True))
 
 def find_most_similar_table(url, input_df):
     extracted_tables = fetch_all_wikipedia_tables(url)
@@ -189,7 +189,9 @@ def load_and_process_file(filename):
         
         logger.info(f"Table similarity: {table_similarity}\n")
         
-        overall_similarity = int(0.7 * title_similarity + 0.3 * table_similarity)
+        #overall_similarity = int(0.7 * title_similarity + 0.3 * table_similarity)
+        overall_similarity = int(0.4 * title_similarity + 0.6 * table_similarity)
+
         logger.info(f"Overall similarity: {overall_similarity}\n")
         
         if overall_similarity > highest_overall_similarity:
