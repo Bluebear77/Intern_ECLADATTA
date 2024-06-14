@@ -24,9 +24,9 @@ def merge_csv_files(directory, output_filename):
 
 # Define the directories and output filenames
 directories = {
-    './train': 'qtsumm_train_v2.csv',
-    './test': 'qtsumm_test_v2.csv',
-    './dev': 'qtsumm_dev_v2.csv'
+    './train': 'qtsumm_train.csv',
+    './test': 'qtsumm_test.csv',
+    './dev': 'qtsumm_dev.csv'
 }
 
 # Merge files for each directory
