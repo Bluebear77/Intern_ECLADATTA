@@ -37,5 +37,6 @@ def process_csv(input_file, output_file):
 
 # Example usage
 input_file = 'test.csv'
-output_file = 'output.csv'
+output_file = f"{input_file.rsplit('.', 1)[0]}-d.csv"
 process_csv(input_file, output_file)
+

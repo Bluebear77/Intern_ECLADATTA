@@ -37,7 +37,7 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
 logger = logging.getLogger()
 
 # Create file handler to log to a file
-file_handler = logging.FileHandler('logg2.txt')
+file_handler = logging.FileHandler('log2.txt')
 file_handler.setLevel(logging.INFO)
 formatter = logging.Formatter('%(message)s')
 file_handler.setFormatter(formatter)
@@ -210,7 +210,7 @@ def load_and_process_file(filename):
     best_url = "Not found"
     best_matched_table = pd.DataFrame()
     
-    with open('test.txt', 'w') as f:  # Open file once for writing
+    with open('tables-log.txt', 'w') as f:  # Open file once for writing
         for item in tqdm(data, desc=f"Processing {filename}"):
             title = item['table']['title']
             table_id = item['table']['table_id']
@@ -302,7 +302,8 @@ def main():
     parent_dir = os.path.abspath(os.path.join(current_dir, '..'))
 
     
-    for file_name in ['test.json']:
+   # for file_name in ['test.json']:
+    for file_name in ['qtsumm_dev.json', 'qtsumm_test.json', 'qtsumm_train.json']:
         # Construct the full file path to the parent directory
         file_path = os.path.join(parent_dir, file_name)
 
