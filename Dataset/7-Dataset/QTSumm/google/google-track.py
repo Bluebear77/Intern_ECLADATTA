@@ -75,46 +75,52 @@ def clean_matched_title(matched_title):
         matched_title = matched_title.split('wikipedia.org')[0].strip()
     return matched_title
 
-def search_google(title, num_results=3):
+def search_google(title):
     search_url = f"https://www.google.com/search?q={title.replace(' ', '+')}+site:wikipedia.org"
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
     
-    results = []
-    try:
-        response = requests.get(search_url, headers=headers)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, 'html.parser')
-        for link in soup.find_all('a'):
-            href = link.get('href')
-            if href and 'wikipedia.org' in href:
-                full_url = href.split('&')[0].replace('/url?q=', '')
-                if 'en.wikipedia.org/wiki/' in full_url:
-                    page_id = get_wikipedia_page_id(full_url)
-                    if page_id:
-                        results.append((full_url, clean_matched_title(link.get_text()), page_id))
-                        if len(results) >= num_results:
-                            break
-    except requests.RequestException as e:
-        logger.info(f"Request failed: {e}")
-    return results
+    top_results = []
+    
+    while True:
+        try:
+            response = requests.get(search_url, headers=headers)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.text, 'html.parser')
+            for link in soup.find_all('a'):
+                href = link.get('href')
+                if href and 'wikipedia.org' in href:
+                    full_url = href.split('&')[0].replace('/url?q=', '')
+                    if 'en.wikipedia.org/wiki/' in full_url:
+                        page_id = get_wikipedia_page_id(full_url)
+                        if page_id:
+                            wiki_url = f"http://en.wikipedia.org/?curid={page_id}"
+                            top_results.append((wiki_url, clean_matched_title(link.get_text())))
+                            if len(top_results) == 3:
+                                return top_results
+        except requests.RequestException as e:
+            if response.status_code == 429:
+                logger.info(f"Request failed: {e}. Retrying after a pause...")
+                time.sleep(120)  # Wait for a minute before retrying
+            else:
+                logger.info(f"Request failed: {e}")
+                return []
+    return top_results
+
 
 def search_combined(title):
     google_results = search_google(title)
+    results = []
 
-    best_url = "Not found"
-    best_title = "No title matched"
-    best_score = 0
+    for url, matched_title in google_results:
+        title_similarity = fuzz.ratio(title.lower(), matched_title.lower())
+        results.append((url, matched_title, title_similarity))
 
-    for url, matched_title, page_id in google_results:
-        score = fuzz.ratio(title.lower(), matched_title.lower())
-        if score > best_score:
-            best_score = score
-            best_url = url
-            best_title = matched_title
+    return results
 
-    return best_url, best_title
+
+    return results
 
 def fetch_all_wikipedia_tables(url):
     try:
@@ -156,67 +162,6 @@ def find_most_similar_table(url, input_df):
 
     return most_similar_table, highest_score
 
-def is_disambiguation_page(curid):
-    """
-    Check if a Wikipedia page is a disambiguation page.
-
-    Parameters:
-    curid (str): The curid of the Wikipedia page.
-
-    Returns:
-    bool: True if it is a disambiguation page, False otherwise.
-    """
-    url = f"https://en.wikipedia.org/w/api.php"
-    params = {
-        'action': 'query',
-        'pageids': curid,
-        'prop': 'pageprops',
-        'format': 'json'
-    }
-    
-    response = requests.get(url, params=params)
-    data = response.json()
-    
-    try:
-        pageprops = data['query']['pages'][curid]['pageprops']
-        if 'disambiguation' in pageprops:
-            return True
-    except KeyError:
-        # If the page does not exist or has no pageprops
-        return False
-    
-    return False
-
-def explore_disambiguation_page(url, input_df):
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.content, 'html.parser')
-        links = soup.find_all('a', href=True)
-        highest_score = 0
-        most_similar_table = pd.DataFrame()
-        best_url = ""
-
-        for link in links:
-            href = link['href']
-            if href.startswith('/wiki/') and not href.startswith('/wiki/Special:'):
-                full_url = f"https://en.wikipedia.org{href}"
-                page_id = get_wikipedia_page_id(full_url)
-                if page_id:
-                    curid_url = f"https://en.wikipedia.org/?curid={page_id}"
-                    table, score = find_most_similar_table(curid_url, input_df)
-                    if score > highest_score:
-                        highest_score = score
-                        most_similar_table = table
-                        best_url = curid_url
-
-        return most_similar_table, highest_score, best_url
-
-    except requests.RequestException as e:
-        logger.info(f"Request failed: {e}")
-    except Exception as e:
-        logger.info(f"Error exploring disambiguation page: {e}")
-    return pd.DataFrame(), 0.0, ""
 
 def load_and_process_file(filename):
     with open(filename, 'r') as file:
@@ -226,6 +171,7 @@ def load_and_process_file(filename):
     highest_overall_similarity = 0
     best_url = "Not found"
     best_matched_table = pd.DataFrame()
+    log_file = open('test.txt', 'a')
     
     for item in tqdm(data, desc=f"Processing {filename}"):
         title = item['table']['title']
@@ -239,60 +185,62 @@ def load_and_process_file(filename):
         logger.info(f"\nProcessing table: {title}\nTable_id: {table_id}")
         logger.info(f"Actual table (first 4 rows and columns):\n{extract_first_4x4(actual_table)}\n")
 
-        google_results = search_google(title, num_results=3)
-        logger.info(f"Google search results: {google_results}")
+        google_results = search_combined(title)
+        logger.info(f"Found URLs: {[result[0] for result in google_results]}")
         
-        best_google_result = ("Not found", "No title matched", 0)
-        best_google_score = 0
+        best_result = {"overall_similarity": 0}
+        
+        for found_url, matched_title, title_similarity in google_results:
+            logger.info(f"Found URL: {found_url}, Matched Title: {matched_title}")
+            logger.info(f"Title similarity: {title_similarity}")
 
-        for url, matched_title, page_id in google_results:
-            if is_disambiguation_page(page_id):
-                logger.info(f"URL is a disambiguation page: {url}")
-                most_similar_table, table_similarity, disambiguation_best_url = explore_disambiguation_page(url, actual_table)
-                title_similarity = fuzz.ratio(title.lower(), matched_title.lower())
-                if disambiguation_best_url:
-                    url = disambiguation_best_url
-            else:
-                title_similarity = fuzz.ratio(title.lower(), matched_title.lower())
-                logger.info(f"Found URL: {url}, Matched Title: {matched_title}")
-                logger.info(f"Title similarity: {title_similarity}")
-                
-                table_similarity = 0.0
-                most_similar_table = pd.DataFrame()
-                if url != "Not found":
-                    most_similar_table, table_similarity = find_most_similar_table(url, actual_table)
-                    logger.info(f"Most similar table (first 4 rows and columns):\n{extract_first_4x4(most_similar_table)}\n")
-                
-            logger.info(f"Table similarity: {table_similarity}\n")
-            
+            table_similarity = 0.0
+            most_similar_table = pd.DataFrame()
+            if found_url != "Not found":
+                most_similar_table, table_similarity = find_most_similar_table(found_url, actual_table)
+                logger.info(f"Most similar table (first 4 rows and columns):\n{extract_first_4x4(most_similar_table)}")
+
+            logger.info(f"Table similarity: {table_similarity}")
+
             overall_similarity = int(0.4 * title_similarity + 0.6 * table_similarity)
             logger.info(f"Overall similarity: {overall_similarity}\n")
             
-            if overall_similarity > best_google_score:
-                best_google_score = overall_similarity
-                best_google_result = (url, matched_title, page_id)
-                best_matched_table = most_similar_table
-
-        found_url, matched_title, _ = best_google_result
-        overall_similarity = best_google_score
+            if overall_similarity > best_result["overall_similarity"]:
+                best_result = {
+                    "overall_similarity": overall_similarity,
+                    "url": found_url,
+                    "matched_title": matched_title,
+                    "title_similarity": title_similarity,
+                    "table_similarity": table_similarity,
+                    "most_similar_table": most_similar_table
+                }
         
-        if overall_similarity > highest_overall_similarity:
-            highest_overall_similarity = overall_similarity
-            best_url = found_url
+        if best_result["overall_similarity"] > highest_overall_similarity:
+            highest_overall_similarity = best_result["overall_similarity"]
+            best_url = best_result["url"]
+            best_matched_table = best_result["most_similar_table"]
         
         output_data.append({
-            "URL": found_url,
+            "URL": best_result["url"],
             "title": title,
             "table_id": table_id,
-            "matched_title": matched_title,
-            "title_similarity": title_similarity,
-            "table_similarity": table_similarity,
-            "overall_similarity": overall_similarity
+            "matched_title": best_result["matched_title"],
+            "title_similarity": best_result["title_similarity"],
+            "table_similarity": best_result["table_similarity"],
+            "overall_similarity": best_result["overall_similarity"]
         })
+        
+        # Log the matched URL and full table to the test.txt file
+        log_file.write(f"Matched URL: {best_result['url']}\n")
+        log_file.write(f"Table Title: {title}\n")
+        log_file.write(f"Matched Table:\n{best_result['most_similar_table'].to_string(index=False)}\n\n")
         
     logger.info(f"URL with highest overall similarity: {best_url}")
     logger.info(f"Best matched table (first 4 rows and columns):\n{extract_first_4x4(best_matched_table)}")
+    
+    log_file.close()
     return output_data, best_url
+
 
 def save_to_csv(data, filename):
     df = pd.DataFrame(data)
@@ -300,6 +248,33 @@ def save_to_csv(data, filename):
     df.to_csv(csv_filename, index=False)
     logger.info(f"Saved data to {csv_filename}")
 
+def main():
+    # Get the current script directory
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    # Get the parent directory
+    parent_dir = os.path.abspath(os.path.join(current_dir, '..'))
+
+    
+   # for file_name in ['test.json']:
+    for file_name in ['test.json']:
+        # Construct the full file path to the parent directory
+        file_path = os.path.join(parent_dir, file_name)
+
+        # Process the file
+        data, best_url = load_and_process_file(file_path)
+
+        # Save the processed data to a CSV
+        save_to_csv(data, file_name)
+
+        # Log the URL with the highest overall similarity
+        logger.info(f"URL with highest overall similarity for {file_name}: {best_url}")
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+    main()
+
+
+'''
 
 
 def main():
@@ -318,3 +293,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+'''
