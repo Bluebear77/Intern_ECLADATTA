@@ -248,6 +248,29 @@ def save_to_csv(data, filename):
     df.to_csv(csv_filename, index=False)
     logger.info(f"Saved data to {csv_filename}")
 
+
+def main():
+    dev_directory = './dev/'
+    json_files = [f for f in os.listdir(dev_directory) if f.endswith('.json')]
+    
+    # Check for existing .csv files and filter json_files
+    json_files_to_process = [f for f in json_files if not os.path.exists(os.path.join(dev_directory, f.replace('.json', '.csv')))]
+    
+    for file_name in json_files_to_process:
+        full_path = os.path.join(dev_directory, file_name)
+        data, best_url = load_and_process_file(full_path)
+        save_to_csv(data, full_path)
+        logger.info(f"URL with highest overall similarity for {file_name}: {best_url}")
+
+
+if __name__ == "__main__":
+    main()
+
+'''
+
+
+
+
 def main():
     # Get the current script directory
     current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -273,24 +296,4 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     main()
 
-
-'''
-
-
-def main():
-    dev_directory = './dev/'
-    json_files = [f for f in os.listdir(dev_directory) if f.endswith('.json')]
-    
-    # Check for existing .csv files and filter json_files
-    json_files_to_process = [f for f in json_files if not os.path.exists(os.path.join(dev_directory, f.replace('.json', '.csv')))]
-    
-    for file_name in json_files_to_process:
-        full_path = os.path.join(dev_directory, file_name)
-        data, best_url = load_and_process_file(full_path)
-        save_to_csv(data, full_path)
-        logger.info(f"URL with highest overall similarity for {file_name}: {best_url}")
-
-
-if __name__ == "__main__":
-    main()
 '''
