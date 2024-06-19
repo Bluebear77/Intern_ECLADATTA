@@ -59,12 +59,15 @@ def get_wikipedia_page_id(url):
         response.raise_for_status()
         data = response.json()
         
-        # Extract the page ID from the API response
-        pages = data['query']['pages']
-        page_id = next(iter(pages))
-        
-        if page_id != "-1":  # Ensure page exists
-            return page_id
+        # Ensure the 'pages' key exists in the response
+        if 'query' in data and 'pages' in data['query']:
+            pages = data['query']['pages']
+            page_id = next(iter(pages))
+            if page_id != "-1":  # Ensure page exists
+                return page_id
+        else:
+            logger.info(f"'pages' key not found in the response for URL: {url}")
+            logger.info(f"Response data: {data}")
     except requests.RequestException as e:
         logger.info(f"Request failed: {e}")
     return None
@@ -108,7 +111,6 @@ def search_google(title):
                 return []
     return top_results
 
-
 def search_combined(title):
     google_results = search_google(title)
     results = []
@@ -116,9 +118,6 @@ def search_combined(title):
     for url, matched_title in google_results:
         title_similarity = fuzz.ratio(title.lower(), matched_title.lower())
         results.append((url, matched_title, title_similarity))
-
-    return results
-
 
     return results
 
@@ -161,7 +160,6 @@ def find_most_similar_table(url, input_df):
             most_similar_table = table
 
     return most_similar_table, highest_score
-
 
 def load_and_process_file(filename):
     with open(filename, 'r') as file:
@@ -241,13 +239,11 @@ def load_and_process_file(filename):
     log_file.close()
     return output_data, best_url
 
-
 def save_to_csv(data, filename):
     df = pd.DataFrame(data)
     csv_filename = filename.replace('.json', '.csv')
     df.to_csv(csv_filename, index=False)
     logger.info(f"Saved data to {csv_filename}")
-
 
 def main():
     dev_directory = './train/'
@@ -262,38 +258,5 @@ def main():
         save_to_csv(data, full_path)
         logger.info(f"URL with highest overall similarity for {file_name}: {best_url}")
 
-
 if __name__ == "__main__":
     main()
-
-'''
-
-
-
-
-def main():
-    # Get the current script directory
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    # Get the parent directory
-    parent_dir = os.path.abspath(os.path.join(current_dir, '..'))
-
-    
-   # for file_name in ['test.json']:
-    for file_name in ['test.json']:
-        # Construct the full file path to the parent directory
-        file_path = os.path.join(parent_dir, file_name)
-
-        # Process the file
-        data, best_url = load_and_process_file(file_path)
-
-        # Save the processed data to a CSV
-        save_to_csv(data, file_name)
-
-        # Log the URL with the highest overall similarity
-        logger.info(f"URL with highest overall similarity for {file_name}: {best_url}")
-
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-    main()
-
-'''
