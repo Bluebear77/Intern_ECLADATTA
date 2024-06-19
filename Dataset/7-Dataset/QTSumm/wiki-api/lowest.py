@@ -14,7 +14,7 @@ combined_df = combined_df.drop_duplicates()
 sorted_df = combined_df.sort_values(by='overall_similarity')
 
 # Select the 10 unique instances with the lowest 'overall_similarity'
-lowest_df = sorted_df.head(20)
+lowest_df = sorted_df.head(50)
 
 # Save the resulting dataframe to 'lowest.csv'
 lowest_df.to_csv('lowest.csv', index=False)
