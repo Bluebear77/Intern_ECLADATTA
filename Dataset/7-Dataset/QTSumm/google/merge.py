@@ -5,10 +5,13 @@ def merge_csv_files(directory, output_filename):
     # List all files in the directory
     files = os.listdir(directory)
     
-    # Filter and sort the files that match the pattern `chunk_i_v2.csv`
-    csv_files = sorted([f for f in files if f.endswith('.csv') and 'chunk' in f and '_v2' in f], 
-                       key=lambda x: int(x.split('_')[3]))
     
+
+    # Filter and sort the files that match the pattern `chunk_i.csv`
+    csv_files = sorted([f for f in files if f.endswith('.csv') and '_chunk_' in f], 
+                   key=lambda x: int(x.split('_chunk_')[1].split('.')[0]))
+
+
     # Initialize an empty DataFrame
     merged_df = pd.DataFrame()
     
