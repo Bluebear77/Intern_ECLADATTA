@@ -78,7 +78,7 @@ plt.figure(figsize=(10, 7))
 plt.plot(thresholds, precisions, label='Precision', marker='o')
 plt.plot(thresholds, recalls, label='Recall', marker='o')
 plt.xlabel('Threshold Overall Similarity Value')
-plt.ylabel('Score')
+plt.ylabel('Precision and Recall Value')
 plt.title('Precision and Recall vs. Threshold')
 plt.legend()
 plt.grid(True)
@@ -149,4 +149,4 @@ with open('report.md', 'w') as report_file:
     report_file.write(report_content)
 
 # Print the first 3 rows to verify the update
-print(data.head(3))
+# print(data.head(3))
