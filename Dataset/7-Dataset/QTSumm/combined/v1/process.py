@@ -95,7 +95,7 @@ df_below_thresholds = {z: pd.read_csv(below_threshold_files[z]) for z in z_score
 table_ids_below_thresholds = {z: df_below_thresholds[z]['table_id'].tolist() for z in z_scores}
 
 # List of JSON files in the parent directory
-json_files = ["../qtsumm_dev.json", "../qtsumm_test.json", "../qtsumm_train.json"]
+json_files = ["../../qtsumm_dev.json", "../../qtsumm_test.json", "../../qtsumm_train.json"]
 
 # Initialize a list to hold all data from the JSON files
 all_data = []
