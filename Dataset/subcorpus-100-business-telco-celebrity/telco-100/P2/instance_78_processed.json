@@ -1,0 +1,69 @@
+[
+    {
+        "id": "59764200",
+        "title": "5G NR",
+        "url": "https://en.wikipedia.org/?curid=59764200",
+        "header": [
+            "Sub-Carrier Spacing (kHz)",
+            "Slot duration (ms)",
+            "Frequency Bands",
+            "Notes"
+        ],
+        "rows": [
+            [
+                "15",
+                "1",
+                "FR1",
+                "Same as LTE"
+            ],
+            [
+                "30",
+                "0.5",
+                "FR1",
+                ""
+            ],
+            [
+                "60",
+                "0.25",
+                "FR1 and FR2",
+                "Both normal Cyclic Prefix (CP) and extended CP may be used with 60 kHz subcarrier spacing"
+            ],
+            [
+                "120",
+                "0.125",
+                "FR2",
+                ""
+            ],
+            [
+                "240",
+                "0.0625",
+                "FR2",
+                "This is only possible for search and measurement purposes, using the Synchronization Signal Block (SSB)"
+            ],
+            [
+                "480",
+                "0.03125",
+                "FR2",
+                ""
+            ],
+            [
+                "960",
+                "0.01565",
+                "FR2",
+                ""
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "numeric",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            0,
+            1
+        ],
+        "date_columns": {}
+    }
+]

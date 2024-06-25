@@ -1,0 +1,253 @@
+[
+    {
+        "id": "22691",
+        "title": "Orthogonal frequency-division multiplexing",
+        "url": "https://en.wikipedia.org/?curid=22691",
+        "header": [
+            "S. no.",
+            "Transmission type",
+            "M in M-QAM",
+            "No. of subcarriers",
+            "Bit rate",
+            "Fiber length",
+            "Received power, at BER of 10−9",
+            "Bandwidth efficiency"
+        ],
+        "rows": [
+            [
+                "1",
+                "Single carrier",
+                "64",
+                "1",
+                "",
+                "",
+                "−37.3dBm",
+                "6.0000"
+            ],
+            [
+                "2",
+                "Multicarrier",
+                "64",
+                "128",
+                "",
+                "",
+                "−36.3dBm",
+                "10.6022"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "numeric",
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            0,
+            2,
+            3
+        ],
+        "date_columns": {}
+    },
+    {
+        "id": "22691",
+        "title": "Orthogonal frequency-division multiplexing",
+        "url": "https://en.wikipedia.org/?curid=22691",
+        "header": [
+            "Standard name",
+            "DAB Eureka 147",
+            "DVB-T",
+            "DVB-H",
+            "DTMB",
+            "DVB-T2",
+            "IEEE 802.11a"
+        ],
+        "rows": [
+            [
+                "Year ratified",
+                "1995",
+                "1997",
+                "2004",
+                "2006",
+                "2007",
+                "1999"
+            ],
+            [
+                "Frequency range of today's equipment (MHz)",
+                ",",
+                ",",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "Channel spacing, B (MHz)",
+                "1.712",
+                "6, 7, 8",
+                "5, 6, 7, 8",
+                "6, 7, 8",
+                "1.7, 5, 6, 7, 8, 10",
+                "20"
+            ],
+            [
+                "FFT size,",
+                "Mode I: 2kMode II: 512Mode III: 256Mode IV: 1k",
+                "2k, 8k",
+                "2k, 4k, 8k",
+                "1 (single-carrier)4k (multi-carrier)",
+                "1k, 2k, 4k, 8k, 16k, 32k",
+                "64"
+            ],
+            [
+                "Number of non-silent subcarriers, N",
+                "Mode I: 1,536Mode II: 384Mode III: 192Mode IV: 768",
+                "2K mode: 1,7058K mode: 6,817",
+                "1,705, 3,409, 6,817",
+                "1 (single-carrier)3,780 (multi-carrier)",
+                "853–27,841 (1K normal to 32K extended carrier mode)",
+                "52"
+            ],
+            [
+                "Subcarrier modulation scheme",
+                "-DQPSK",
+                "QPSK,4QAM is equivalent to QPSK 16QAM, 64QAM",
+                "QPSK, 16QAM, 64QAM",
+                "4QAM, 4QAM-NR,NR refers to Nordstrom-Robinson code 16QAM, 32QAM, 64QAM",
+                "QPSK, 16QAM, 64QAM, 256QAM",
+                "BPSK, QPSK, 16QAM, 64QAM"
+            ],
+            [
+                "Useful symbol length, TU (μs)",
+                "Mode I: 1,000Mode II: 250Mode III: 125Mode IV: 500",
+                "2K mode: 2248K mode: 896",
+                "224, 448, 896",
+                "500 (multi-carrier)",
+                "112–3,584 (1K to 32K mode on 8 MHz channel)",
+                "3.2"
+            ],
+            [
+                "Additional guard interval, TG/TU",
+                "24.6% (all modes)",
+                ", , ,",
+                ", , ,",
+                ", ,",
+                "1/128, 1/32, 1/16, 19/256, 1/8, 19/128, 1/4 (for 32k mode maximum 1/8)",
+                ""
+            ],
+            [
+                "Subcarrier spacing, \\Delta f = \\frac{1}{T_U} \\approx \\frac{B}{N} (Hz)",
+                "Mode I: 1,000Mode II: 4,000Mode III: 8,000Mode IV: 2,000",
+                "2K mode: 4,4648K mode: 1,116",
+                "4,464, 2,232, 1,116",
+                "8 M (single-carrier)2,000 (multi-carrier)",
+                "279–8,929 (32K down to 1K mode)",
+                "312.5 K"
+            ],
+            [
+                "Net bit rate, R (Mbit/s)",
+                "0.576–1.152",
+                "4.98–31.67 ( 24.13)",
+                "3.7–23.8",
+                "4.81–32.49",
+                "Typically 35.4",
+                "6–54"
+            ],
+            [
+                "Link spectral efficiency, R/B (bit/s·Hz)",
+                "0.34–0.67",
+                "0.62–4.0 ( 3.0)",
+                "0.62–4.0",
+                "0.60–4.1",
+                "0.87–6.65",
+                "0.30–2.7"
+            ],
+            [
+                "Inner FEC",
+                "Conv. coding with equal error protection code rates: , , , , , , , \n\nUnequal error protection with avg. code rates of: ~0.34, 0.41, 0.50, 0.60, and 0.75",
+                "Conv. coding with code rates: , , , , or",
+                "Conv. coding with code rates: , , , , or",
+                "LDPC with code rates: 0.4, 0.6, or 0.8",
+                "LDPC: , , , , ,",
+                "Conv. coding with code rates: , , or"
+            ],
+            [
+                "Outer FEC",
+                "Optional RS (120, 110, )",
+                "RS (204, 188, )",
+                "RS (204, 188, ) + MPE-FEC",
+                "BCH code (762, 752)",
+                "BCH code",
+                ""
+            ],
+            [
+                "Maximum travelling speed (km/h)",
+                "200–600",
+                "53–185, varies with transmission frequency",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "Time interleaving depth (ms)",
+                "384",
+                "0.6–3.5",
+                "0.6–3.5",
+                "200–500",
+                "Up to 250 (500 with extension frame)",
+                ""
+            ],
+            [
+                "Adaptive transmission",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "Multiple access method",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "Typical source coding",
+                "192 kbit/s MPEG2 Audio layer 2",
+                "2–18 Mbit/s Standard – HDTV H.264 or MPEG2",
+                "H.264",
+                "Not defined (video: MPEG-2, H.264, H.265 and/or AVS+; audio: MP2 or DRA or AC-3)",
+                "H.264 or MPEG2 (audio: AAC HE, Dolby Digital AC-3 (A52), MPEG-2 AL 2)",
+                ""
+            ]
+        ],
+        "column_types": [
+            "string",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "date_columns": {}
+    }
+]
