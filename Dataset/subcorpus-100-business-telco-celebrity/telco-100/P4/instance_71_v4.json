@@ -1,0 +1,172 @@
+[
+    {
+        "id": "23475353",
+        "title": "5G",
+        "url": "https://en.wikipedia.org/?curid=23475353",
+        "header": [
+            "Cell types",
+            "Cell types",
+            "Deployment environment",
+            "Max. number of users",
+            "Output power (W)",
+            "Max. distance from base station"
+        ],
+        "rows": [
+            [
+                "5G NR FR2",
+                "Femtocell",
+                "Homes, businesses",
+                "Home: 4–8Businesses: 16–32",
+                "indoors: 0.01–0.1outdoors: 0.2–1",
+                "tens of meters"
+            ],
+            [
+                "5G NR FR2",
+                "Pico cell",
+                "Public areas like shopping malls,airports, train stations, skyscrapers",
+                "64 to 128",
+                "indoors: 0.1–0.25outdoors: 1–5",
+                "tens of meters"
+            ],
+            [
+                "5G NR FR2",
+                "Micro cell",
+                "Urban areas to fill coverage gaps",
+                "128 to 256",
+                "outdoors: 5−10",
+                "few hundreds of meters"
+            ],
+            [
+                "5G NR FR2",
+                "Macro cell",
+                "Urban areas to provide additional capacity",
+                "more than 250",
+                "outdoors: 10−20",
+                "hundreds of meters"
+            ],
+            [
+                "Wi-Fi(for comparison)",
+                "Wi-Fi(for comparison)",
+                "Homes, businesses",
+                "fewer than 50",
+                "indoors: 0.02–0.1outdoors: 0.2–1",
+                "few tens of meters"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "numeric",
+            "numeric",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            3,
+            4
+        ],
+        "date_columns": {}
+    },
+    {
+        "id": "23475353",
+        "title": "5G",
+        "url": "https://en.wikipedia.org/?curid=23475353",
+        "header": [
+            "NF Name",
+            "NF Acronym",
+            "Analogous EPC element"
+        ],
+        "rows": [
+            [
+                "Authentication Server Function",
+                "AUSF",
+                "MME / HSS (Authentication)"
+            ],
+            [
+                "Access and Mobility Management Function",
+                "AMF",
+                "MME"
+            ],
+            [
+                "Unstructured Data Storage Function",
+                "UDSF",
+                "N/A"
+            ],
+            [
+                "Network Exposure Function",
+                "NEF",
+                "N/A"
+            ],
+            [
+                "Network Slice Specific Authentication and Authorization Function",
+                "NSSAAF",
+                "N/A"
+            ],
+            [
+                "Network Slice Selection Function",
+                "NSSF",
+                "N/A"
+            ],
+            [
+                "Policy Control Function",
+                "PCF",
+                "PCRF"
+            ],
+            [
+                "Session Management Function",
+                "SMF",
+                "MME / PGW-C"
+            ],
+            [
+                "Unified Data Management",
+                "UDM",
+                "HSS (DB Front End)"
+            ],
+            [
+                "Unified Data Repository",
+                "UDR",
+                "HSS (User Database)"
+            ],
+            [
+                "User Plane Function",
+                "UPF",
+                "SGW-U / PGW-U"
+            ],
+            [
+                "UE radio Capability Management Function",
+                "UCMF",
+                "N/A"
+            ],
+            [
+                "Application Function",
+                "AF",
+                "AF (IMS)"
+            ],
+            [
+                "Network Data Analytics Function",
+                "NWDAF",
+                "N/A"
+            ],
+            [
+                "CHarging Function",
+                "CHF",
+                "CSCF"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "numeric",
+            "numeric",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            3,
+            4
+        ],
+        "date_columns": {}
+    }
+]

@@ -8,7 +8,7 @@ This is the 2nd version of 100 female celebrities data.
 
 ***
 
-- Raw >> P4: supply.py, determine the  "column_types","key_column" using DAGOBAH
+- P2 >> P4: supply.py, determine the  "column_types","key_column" using DAGOBAH
 
 - P4 >> P5: rct.py, refine the column type.
 

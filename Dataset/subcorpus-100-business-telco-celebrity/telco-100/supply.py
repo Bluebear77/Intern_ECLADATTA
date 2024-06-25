@@ -4,7 +4,7 @@ import os
 def process_file(i):
     input_file_path = f'./Complete/instance_{i}.json'
     processed_file_path = f'./P2/instance_{i}_processed.json'
-    output_file_path = f'./P3/instance_{i}_v4.json'
+    output_file_path = f'./P3/instance_{i}_v3.json'
     
     # Check if input and processed files exist
     if not os.path.exists(input_file_path) or not os.path.exists(processed_file_path):
@@ -57,7 +57,7 @@ def process_file(i):
         # Ensure output directory exists
         os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
 
-        # Save the updated data to instance_i_v4.json
+        # Save the updated data to instance_i_v3.json
         with open(output_file_path, 'w', encoding='utf-8') as file:
             json.dump(processed_data, file, ensure_ascii=False, indent=4)
 
