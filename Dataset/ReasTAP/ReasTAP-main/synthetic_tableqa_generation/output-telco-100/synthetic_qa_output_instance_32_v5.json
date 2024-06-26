@@ -1,0 +1,148 @@
+[
+    {
+        "id": "7143",
+        "title": "Code-division multiple access",
+        "url": "https://en.wikipedia.org/?curid=7143",
+        "header": [
+            "Step",
+            "Encode sender0",
+            "Encode sender1"
+        ],
+        "rows": [
+            [
+                "0",
+                "code0 = (1, \u22121), data0 = (1, 0, 1, 1)",
+                "code1 = (1, 1), data1 = (0, 0, 1, 1)"
+            ],
+            [
+                "1",
+                "encode0 = 2(1, 0, 1, 1) \u2212 (1, 1, 1, 1) = (1, \u22121, 1, 1)",
+                "encode1 = 2(0, 0, 1, 1) \u2212 (1, 1, 1, 1) = (\u22121, \u22121, 1, 1)"
+            ],
+            [
+                "2",
+                "signal0 = encode0 \u2297 code0= (1, \u22121, 1, 1) \u2297 (1, \u22121)= (1, \u22121, \u22121, 1, 1, \u22121, 1, \u22121)",
+                "signal1 = encode1 \u2297 code1= (\u22121, \u22121, 1, 1) \u2297 (1, 1)= (\u22121, \u22121, \u22121, \u22121, 1, 1, 1, 1)"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "date_columns": {},
+        "qas": []
+    },
+    {
+        "id": "7143",
+        "title": "Code-division multiple access",
+        "url": "https://en.wikipedia.org/?curid=7143",
+        "header": [
+            "Step",
+            "Decode sender0",
+            "Decode sender1"
+        ],
+        "rows": [
+            [
+                "0",
+                "code0 = (1, \u22121), signal = (0, \u22122, \u22122, 0, 2, 0, 2, 0)",
+                "code1 = (1, 1), signal = (0, \u22122, \u22122, 0, 2, 0, 2, 0)"
+            ],
+            [
+                "1",
+                "decode0 = pattern.vector0",
+                "decode1 = pattern.vector1"
+            ],
+            [
+                "2",
+                "decode0 = ((0, \u22122), (\u22122, 0), (2, 0), (2, 0))\u2009\u00b7\u2009(1, \u22121)",
+                "decode1 = ((0, \u22122), (\u22122, 0), (2, 0), (2, 0))\u2009\u00b7\u2009(1, 1)"
+            ],
+            [
+                "3",
+                "decode0 = ((0 + 2), (\u22122 + 0), (2 + 0), (2 + 0))",
+                "decode1 = ((0 \u2212 2), (\u22122 + 0), (2 + 0), (2 + 0))"
+            ],
+            [
+                "4",
+                "data0=(2, \u22122, 2, 2), meaning (1, 0, 1, 1)",
+                "data1=(\u22122, \u22122, 2, 2), meaning (0, 0, 1, 1)"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "date_columns": {},
+        "qas": []
+    },
+    {
+        "id": "7143",
+        "title": "Code-division multiple access",
+        "url": "https://en.wikipedia.org/?curid=7143",
+        "header": [
+            "Step",
+            "Decode sender0",
+            "Decode sender1"
+        ],
+        "rows": [
+            [
+                "0",
+                "code0 = (1, \u22121), signal = (1, \u22121, \u22121, 1, 1, \u22121, 1, \u22121)",
+                "code1 = (1, 1), signal = (1, \u22121, \u22121, 1, 1, \u22121, 1, \u22121)"
+            ],
+            [
+                "1",
+                "decode0 = pattern.vector0",
+                "decode1 = pattern.vector1"
+            ],
+            [
+                "2",
+                "decode0 = ((1, \u22121), (\u22121, 1), (1, \u22121), (1, \u22121))\u2009\u00b7\u2009(1, \u22121)",
+                "decode1 = ((1, \u22121), (\u22121, 1), (1, \u22121), (1, \u22121))\u2009\u00b7\u2009(1, 1)"
+            ],
+            [
+                "3",
+                "decode0 = ((1 + 1), (\u22121 \u2212 1), (1 + 1), (1 + 1))",
+                "decode1 = ((1 \u2212 1), (\u22121 + 1), (1 \u2212 1), (1 \u2212 1))"
+            ],
+            [
+                "4",
+                "data0 = (2, \u22122, 2, 2), meaning (1, 0, 1, 1)",
+                "data1 = (0, 0, 0, 0), meaning no data"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "date_columns": {},
+        "qas": []
+    }
+]

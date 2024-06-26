@@ -1,0 +1,108 @@
+[
+    {
+        "id": "55565392",
+        "title": "TADIG code",
+        "url": "https://en.wikipedia.org/?curid=55565392",
+        "header": [
+            "Country Code",
+            "Operator/ Company identifier"
+        ],
+        "rows": [
+            [
+                "CAN (for Canada)",
+                "GW (for Globalive Wireless, the original parent company of Freedom)"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many Country Code had Operator/ Company identifier string contains parent?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "55565392",
+        "title": "TADIG code",
+        "url": "https://en.wikipedia.org/?curid=55565392",
+        "header": [
+            "Country Code",
+            "Operator/ Company identifier"
+        ],
+        "rows": [
+            [
+                "SWE (for Sweden)",
+                "01"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "numeric"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            1
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many Country Code had Operator/ Company identifier was greater than 01?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Country Code had Operator/ Company identifier was less than 01?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "55565392",
+        "title": "TADIG code",
+        "url": "https://en.wikipedia.org/?curid=55565392",
+        "header": [
+            "Country Code",
+            "Operator/ Company identifier"
+        ],
+        "rows": [
+            [
+                "USA (for the United States)",
+                "HI (unofficially for Hawai\u02bbi, where Mobi is a regional wireless carrier)"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many Country Code had Operator/ Company identifier string starts with HI?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

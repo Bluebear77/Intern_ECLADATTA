@@ -1,0 +1,361 @@
+[
+    {
+        "id": "22691",
+        "title": "Orthogonal frequency-division multiplexing",
+        "url": "https://en.wikipedia.org/?curid=22691",
+        "header": [
+            "Standard name",
+            "DAB Eureka 147",
+            "DVB-T",
+            "DVB-H",
+            "DTMB",
+            "DVB-T2",
+            "IEEE 802.11a"
+        ],
+        "rows": [
+            [
+                "Year ratified",
+                "1995",
+                "1997",
+                "2004",
+                "2006",
+                "2007",
+                "1999"
+            ],
+            [
+                "Frequency range of today's equipment (MHz)",
+                ",",
+                ",",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "Channel spacing, B (MHz)",
+                "1.712",
+                "6, 7, 8",
+                "5, 6, 7, 8",
+                "6, 7, 8",
+                "1.7, 5, 6, 7, 8, 10",
+                "20"
+            ],
+            [
+                "FFT size,",
+                "Mode I: 2kMode II: 512Mode III: 256Mode IV: 1k",
+                "2k, 8k",
+                "2k, 4k, 8k",
+                "1 (single-carrier)4k (multi-carrier)",
+                "1k, 2k, 4k, 8k, 16k, 32k",
+                "64"
+            ],
+            [
+                "Number of non-silent subcarriers, N",
+                "Mode I: 1,536Mode II: 384Mode III: 192Mode IV: 768",
+                "2K mode: 1,7058K mode: 6,817",
+                "1,705, 3,409, 6,817",
+                "1 (single-carrier)3,780 (multi-carrier)",
+                "853\u201327,841 (1K normal to 32K extended carrier mode)",
+                "52"
+            ],
+            [
+                "Subcarrier modulation scheme",
+                "-DQPSK",
+                "QPSK,4QAM is equivalent to QPSK 16QAM, 64QAM",
+                "QPSK, 16QAM, 64QAM",
+                "4QAM, 4QAM-NR,NR refers to Nordstrom-Robinson code 16QAM, 32QAM, 64QAM",
+                "QPSK, 16QAM, 64QAM, 256QAM",
+                "BPSK, QPSK, 16QAM, 64QAM"
+            ],
+            [
+                "Useful symbol length, TU (\u03bcs)",
+                "Mode I: 1,000Mode II: 250Mode III: 125Mode IV: 500",
+                "2K mode: 2248K mode: 896",
+                "224, 448, 896",
+                "500 (multi-carrier)",
+                "112\u20133,584 (1K to 32K mode on 8\u00a0MHz channel)",
+                "3.2"
+            ],
+            [
+                "Additional guard interval, TG/TU",
+                "24.6% (all modes)",
+                ", , ,",
+                ", , ,",
+                ", ,",
+                "1/128, 1/32, 1/16, 19/256, 1/8, 19/128, 1/4 (for 32k mode maximum 1/8)",
+                ""
+            ],
+            [
+                "Subcarrier spacing, \\Delta f = \\frac{1}{T_U} \\approx \\frac{B}{N} (Hz)",
+                "Mode I: 1,000Mode II: 4,000Mode III: 8,000Mode IV: 2,000",
+                "2K mode: 4,4648K mode: 1,116",
+                "4,464, 2,232, 1,116",
+                "8 M (single-carrier)2,000 (multi-carrier)",
+                "279\u20138,929 (32K down to 1K mode)",
+                "312.5 K"
+            ],
+            [
+                "Net bit rate, R (Mbit/s)",
+                "0.576\u20131.152",
+                "4.98\u201331.67 ( 24.13)",
+                "3.7\u201323.8",
+                "4.81\u201332.49",
+                "Typically 35.4",
+                "6\u201354"
+            ],
+            [
+                "Link spectral efficiency, R/B (bit/s\u00b7Hz)",
+                "0.34\u20130.67",
+                "0.62\u20134.0 ( 3.0)",
+                "0.62\u20134.0",
+                "0.60\u20134.1",
+                "0.87\u20136.65",
+                "0.30\u20132.7"
+            ],
+            [
+                "Inner FEC",
+                "Conv. coding with equal error protection code rates: , , , , , , , \n\nUnequal error protection with avg. code rates of: ~0.34, 0.41, 0.50, 0.60, and 0.75",
+                "Conv. coding with code rates: , , , , or",
+                "Conv. coding with code rates: , , , , or",
+                "LDPC with code rates: 0.4, 0.6, or 0.8",
+                "LDPC: , , , , ,",
+                "Conv. coding with code rates: , , or"
+            ],
+            [
+                "Outer FEC",
+                "Optional RS (120, 110, )",
+                "RS (204, 188, )",
+                "RS (204, 188, ) + MPE-FEC",
+                "BCH code (762, 752)",
+                "BCH code",
+                ""
+            ],
+            [
+                "Maximum travelling speed (km/h)",
+                "200\u2013600",
+                "53\u2013185, varies with transmission frequency",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "Time interleaving depth (ms)",
+                "384",
+                "0.6\u20133.5",
+                "0.6\u20133.5",
+                "200\u2013500",
+                "Up to 250 (500 with extension frame)",
+                ""
+            ],
+            [
+                "Adaptive transmission",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "Multiple access method",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "Typical source coding",
+                "192\u00a0kbit/s MPEG2 Audio layer 2",
+                "2\u201318\u00a0Mbit/s Standard \u2013 HDTV H.264 or MPEG2",
+                "H.264",
+                "Not defined (video: MPEG-2, H.264, H.265 and/or AVS+; audio: MP2 or DRA or AC-3)",
+                "H.264 or MPEG2 (audio: AAC HE, Dolby Digital AC-3 (A52), MPEG-2 AL 2)",
+                ""
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "numeric",
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "numeric"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            0,
+            2,
+            3,
+            7
+        ],
+        "date_columns": {},
+        "qas": []
+    },
+    {
+        "id": "22691",
+        "title": "Orthogonal frequency-division multiplexing",
+        "url": "https://en.wikipedia.org/?curid=22691",
+        "header": [
+            "S. no.",
+            "Transmission type",
+            "M in M-QAM",
+            "No. of subcarriers",
+            "Bit rate",
+            "Fiber length",
+            "Received power, at BER of 10\u22129",
+            "Bandwidth efficiency"
+        ],
+        "rows": [
+            [
+                "1",
+                "Single carrier",
+                "64",
+                "1",
+                "",
+                "",
+                "\u221237.3dBm",
+                "6.0000"
+            ],
+            [
+                "2",
+                "Multicarrier",
+                "64",
+                "128",
+                "",
+                "",
+                "\u221236.3dBm",
+                "10.6022"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "numeric",
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "numeric"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            0,
+            2,
+            3,
+            7
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Transmission type when the Bandwidth efficiency was less than or equal to 6.0000 and the M in M-QAM was equal to 64?",
+                "answers": [
+                    "Single carrier"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Transmission type when the No. of subcarriers was greater than or equal to 1 and the S. no. was less than 2?",
+                "answers": [
+                    "Single carrier"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Transmission type, with Bandwidth efficiency was greater than or equal to 6.0000, have M in M-QAM was greater than or equal to 64?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Transmission type, with M in M-QAM was greater than or equal to 64, have No. of subcarriers was less than or equal to 1?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Transmission type, with Bandwidth efficiency was greater than or equal to 6.0000, has the 1st largest No. of subcarriers?",
+                "answers": [
+                    "Multicarrier"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Transmission type, with M in M-QAM was equal to 64, has the 2nd largest S. no.?",
+                "answers": [
+                    "Single carrier"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Transmission type, with No. of subcarriers was greater than or equal to 1, has the 1st largest M in M-QAM?",
+                "answers": [
+                    "Single carrier",
+                    "Multicarrier"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Transmission type had Bandwidth efficiency was greater than 6.0000?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Transmission type had M in M-QAM was equal to 64?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Transmission type had M in M-QAM was greater than 64?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of No. of subcarriers when the S. no. was greater than or equal to 1?",
+                "answers": [
+                    "129.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of No. of subcarriers when the M in M-QAM was equal to 64?",
+                "answers": [
+                    "64.5"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of S. no. when the M in M-QAM was equal to 64?",
+                "answers": [
+                    "1.5"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    }
+]

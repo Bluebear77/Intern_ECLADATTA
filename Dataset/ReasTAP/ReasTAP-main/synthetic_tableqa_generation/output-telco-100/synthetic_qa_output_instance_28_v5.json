@@ -1,0 +1,108 @@
+[
+    {
+        "id": "26803131",
+        "title": "O2 (UK)",
+        "url": "https://en.wikipedia.org/?curid=26803131",
+        "header": [
+            "Frequency",
+            "Band",
+            "Protocol",
+            "Class"
+        ],
+        "rows": [
+            [
+                "900\u00a0MHz",
+                "",
+                "GSM/GPRS/EDGE",
+                "2G"
+            ],
+            [
+                "900\u00a0MHz",
+                "8",
+                "UMTS/HSDPA/HSPA+/DC-HSPA+",
+                "3G"
+            ],
+            [
+                "2,100\u00a0MHz",
+                "1",
+                "UMTS/HSDPA/HSPA+/DC-HSPA+",
+                "3G"
+            ],
+            [
+                "700\u00a0MHz",
+                "28",
+                "LTE/LTE Advanced",
+                "4G/4G+"
+            ],
+            [
+                "800\u00a0MHz",
+                "20",
+                "LTE/LTE Advanced",
+                "4G/4G+"
+            ],
+            [
+                "900\u00a0MHz",
+                "8",
+                "LTE/LTE Advanced",
+                "4G/4G+"
+            ],
+            [
+                "1,800\u00a0MHz",
+                "3",
+                "LTE/LTE Advanced",
+                "4G/4G+"
+            ],
+            [
+                "2,100\u00a0MHz",
+                "1",
+                "LTE/LTE Advanced",
+                "4G/4G+"
+            ],
+            [
+                "2,300\u00a0MHz",
+                "40",
+                "TD-LTE",
+                "4G/4G+"
+            ],
+            [
+                "2,600\u00a0MHz",
+                "38",
+                "TD-LTE",
+                "4G/4G+"
+            ],
+            [
+                "700\u00a0MHz",
+                "n28",
+                "5G NR",
+                "5G"
+            ],
+            [
+                "3,500\u00a0MHz",
+                "n78",
+                "5G NR",
+                "5G"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "numeric",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            1
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many Frequency had Protocol string contains Advanced?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]
