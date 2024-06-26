@@ -1,0 +1,217 @@
+[
+    {
+        "id": "13630225",
+        "title": "Ska Studios",
+        "url": "https://en.wikipedia.org/?curid=13630225",
+        "header": [
+            "Year",
+            "Title",
+            "Platform",
+            "Developers",
+            "Metacritic Score"
+        ],
+        "rows": [
+            [
+                "2009",
+                "ZP2K9",
+                "XBLIG",
+                "James Silva",
+                ""
+            ],
+            [
+                "2009",
+                "The Dishwasher: Dead Samurai",
+                "XBLA",
+                "James Silva",
+                "75"
+            ],
+            [
+                "2009",
+                "I MAED A GAM3 W1TH Z0MB1ES 1NIT!!!1",
+                "XBLIG",
+                "James Silva",
+                ""
+            ],
+            [
+                "2010",
+                "ZP2KX",
+                "XBLIG",
+                "James Silva, Dustin Burg",
+                ""
+            ],
+            [
+                "2011",
+                "The Dishwasher: Vampire Smile",
+                "XBLA/PC",
+                "James Silva, Dustin Burg",
+                "81"
+            ],
+            [
+                "2012",
+                "Z0MB1ES (on  ph0ne)",
+                "WP7",
+                "James Silva",
+                ""
+            ],
+            [
+                "2013",
+                "Charlie Murder",
+                "XBLA/PC",
+                "James Silva, Michelle Juett Silva",
+                "78"
+            ],
+            [
+                "2014",
+                "TIME VIKING!!!!!ANDSPACERAPTOR",
+                "XBLIG",
+                "James Silva, Michelle Juett Silva",
+                ""
+            ],
+            [
+                "2016",
+                "Salt and Sanctuary",
+                "PS4/PC/PS VITA/Switch/XB1",
+                "James Silva, Michelle Juett Silva",
+                "85"
+            ],
+            [
+                "2022",
+                "Salt and Sacrifice",
+                "PS5/PS4/PC",
+                "James Silva, Shane Lynch",
+                "72"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "numeric"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            4
+        ],
+        "date_columns": {
+            "0": [
+                2009,
+                2009,
+                2009,
+                2010,
+                2011,
+                2012,
+                2013,
+                2014,
+                2016,
+                2022
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Developers string contains Silva and the Year was after 2010?",
+                "answers": [
+                    "The Dishwasher: Vampire Smile",
+                    "Z0MB1ES (on  ph0ne)",
+                    "Charlie Murder",
+                    "TIME VIKING!!!!!ANDSPACERAPTOR",
+                    "Salt and Sanctuary",
+                    "Salt and Sacrifice"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Developers string contains James and the Year was after 2012?",
+                "answers": [
+                    "Charlie Murder",
+                    "TIME VIKING!!!!!ANDSPACERAPTOR",
+                    "Salt and Sanctuary",
+                    "Salt and Sacrifice"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Title, with Developers string starts with James, have Year was before 2011?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Title, with Developers string contains Silva, have Year was on 2009?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Year was before 2012, happened the 4th according to Year?",
+                "answers": [
+                    "ZP2KX"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Year was after 2009, happened the 2nd according to Year?",
+                "answers": [
+                    "The Dishwasher: Vampire Smile"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Year was after 2009, happened the 4th according to Year?",
+                "answers": [
+                    "Charlie Murder"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Metacritic Score was 81 and when the Metacritic Score was 72?",
+                "answers": [
+                    "11"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Metacritic Score was 78 and when the Metacritic Score was 81?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Developers string starts with James?",
+                "answers": [
+                    "10"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Year was after 2009 and Developers string starts with James?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Year was after 2011?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

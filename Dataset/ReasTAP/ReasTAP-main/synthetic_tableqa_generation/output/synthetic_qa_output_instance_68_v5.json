@@ -1,0 +1,141 @@
+[
+    {
+        "id": "62638173",
+        "title": "Bad Wolf (production company)",
+        "url": "https://en.wikipedia.org/?curid=62638173",
+        "header": [
+            "Year",
+            "Title",
+            "Creator(s)",
+            "Distributor(s)",
+            "Notes"
+        ],
+        "rows": [
+            [
+                "2016",
+                "The Night Of",
+                "Steven ZaillianRichard Price",
+                "BBC Worldwide",
+                "Owned by BBC"
+            ],
+            [
+                "2017",
+                "Beddgelert",
+                "Medeni Griffiths",
+                "BBC Worldwide",
+                "Owned by BBC"
+            ],
+            [
+                "2018\u20132022",
+                "A Discovery of Witches",
+                "Deborah Harkness",
+                "Sky Vision (S1)NBCUniversal International Distribution (S2/S3)",
+                "Owned by NBCUniversal"
+            ],
+            [
+                "2019\u20132022",
+                "His Dark Materials",
+                "Philip Pullman",
+                "BBC Studios (United Kingdom)HBO (International)",
+                "Owned by HBO and BBC"
+            ],
+            [
+                "2020\u2013present",
+                "Industry",
+                "Konrad KayMickey Down",
+                "BBC Studios (United Kingdom)HBO (International)",
+                ""
+            ],
+            [
+                "2020\u2013present",
+                "I Hate Suzie",
+                "Lucy PrebbleBillie Piper",
+                "NBCUniversal International Distribution",
+                "Owned by NBCUniversal"
+            ],
+            [
+                "2023\u2013present",
+                "The Winter King",
+                "Kate Brooke Ed Whitmore",
+                "Sony Pictures Television",
+                ""
+            ],
+            [
+                "2023-present",
+                "Doctor Who",
+                "Sydney NewmanC.E. WebberDonald Wilson",
+                "BBC Studios (United Kingdom and Ireland) Disney+ (International)",
+                "Owned by BBC"
+            ],
+            [
+                "TBA",
+                "Coming Undone",
+                "Terri White",
+                "Netflix",
+                ""
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            0
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Notes string contains by and the Creator(s) string contains Price?",
+                "answers": [
+                    "The Night Of"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Notes string contains by and the Distributor(s) string ends with Distribution?",
+                "answers": [
+                    "I Hate Suzie"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Title, with Creator(s) string ends with Piper, have Notes string starts with Owned?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Title, with Creator(s) string starts with Lucy, have Distributor(s) string contains Distribution?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Notes string contains by and Distributor(s) string contains Worldwide?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Notes string contains by?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

@@ -1,0 +1,203 @@
+[
+    {
+        "id": "61814219",
+        "title": "Media Dreams",
+        "url": "https://en.wikipedia.org/?curid=61814219",
+        "header": [
+            "Title",
+            "Year",
+            "Language",
+            "Director",
+            "Cast",
+            "Synopsis",
+            ""
+        ],
+        "rows": [
+            [
+                "Bharathi",
+                "2000",
+                "Tamil",
+                "Gnana Rajasekaran",
+                "Sayaji Shinde, Devayani, Nizhalgal Ravi",
+                "The film is a biography of renowned Tamil poet Subramaniya Bharathi.",
+                ""
+            ],
+            [
+                "Nila Kaalam",
+                "2001",
+                "Tamil",
+                "Gandhi Krishna",
+                "Udayaraj, Dinesh, Ranjani, Roja",
+                "Daughter of a film actress befriends two boys who work in a mechanic shop.",
+                ""
+            ],
+            [
+                "Little John",
+                "2001",
+                "English, Hindi, Tamil",
+                "Singeetam Srinivasa Rao",
+                "Bentley Mitchum, Jyothika, Anupam Kher",
+                "A foreigner who arrives to India to do a research on Mookuthi Amman temple is accused of stealing ring of the goddess.",
+                ""
+            ],
+            [
+                "Krishna Krishna",
+                "2001",
+                "Tamil",
+                "S. Ve. Shekher",
+                "S. Ve. Shekher, Sukanya, Sriman",
+                "Gopalakrishnan faces problems after his wife suspects and mistakes him for everything.",
+                ""
+            ],
+            [
+                "Pandavar Bhoomi",
+                "2001",
+                "Tamil",
+                "Cheran",
+                "Arun Vijay, Shamitha, Rajkiran, Ranjith",
+                "Dhanasekar hires an engineer, to rebuild his ancestral house. When he falls in love with Dhanasekar's niece, Dhanasekar narrates his family's past, which changes his mind to sacrifice his love.",
+                ""
+            ],
+            [
+                "Pammal K. Sambandam",
+                "2002",
+                "Tamil",
+                "Moulee",
+                "Kamal Haasan, Simran, Abbas, Sneha",
+                "A stuntman who works in film industry and a female doctor both hate the word \"Love\".",
+                ""
+            ],
+            [
+                "Whistle",
+                "2003",
+                "Tamil",
+                "J. D.- Jerry",
+                "Vikramaditya, Sherin, Gayathri Raguram",
+                "Sarawathi, a young girl, commits suicide after being bullied by Anjali and her friends. Years later, when her friends start turning up dead, she fears that Sarawathi has returned to exact revenge.",
+                ""
+            ]
+        ],
+        "column_types": [
+            "string",
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {
+            "1": [
+                2000,
+                2001,
+                2001,
+                2001,
+                2001,
+                2002,
+                2003
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Synopsis string contains rebuild and the Year was before 2003?",
+                "answers": [
+                    "Pandavar Bhoomi"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Synopsis string starts with A and the Language is Tamil?",
+                "answers": [
+                    "Pammal K. Sambandam"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Title, with Year was after 2000, have Synopsis string contains film?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Title, with Year was after 2000, have Director string contains Krishna?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Language is Tamil, happened the 6th according to Year?",
+                "answers": [
+                    "Whistle"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Year was on 2001, happened the 3rd according to Year?",
+                "answers": [
+                    "Nila Kaalam",
+                    "Little John",
+                    "Krishna Krishna",
+                    "Pandavar Bhoomi"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Synopsis string contains A, happened the 2nd according to Year?",
+                "answers": [
+                    "Pammal K. Sambandam"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Synopsis was Sarawathi, a young girl, commits suicide after being bullied by Anjali and her friends. Years later, when her friends start turning up dead, she fears that Sarawathi has returned to exact revenge. and when the Synopsis was A stuntman who works in film industry and a female doctor both hate the word \"Love\".?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Synopsis was Gopalakrishnan faces problems after his wife suspects and mistakes him for everything. and when the Synopsis was Sarawathi, a young girl, commits suicide after being bullied by Anjali and her friends. Years later, when her friends start turning up dead, she fears that Sarawathi has returned to exact revenge.?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Year was on 2001?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Year was before 2003?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Synopsis string starts with Daughter and Year was on 2001?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

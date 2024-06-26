@@ -1,0 +1,727 @@
+[
+    {
+        "id": "60838912",
+        "title": "Sunday Night Productions",
+        "url": "https://en.wikipedia.org/?curid=60838912",
+        "header": [
+            "Year",
+            "Film title",
+            "Director",
+            "Budget",
+            "Gross (worldwide)",
+            "Notes"
+        ],
+        "rows": [
+            [
+                "2009",
+                "Brief Interviews with Hideous Men",
+                "John Krasinski",
+                "",
+                "$33,745",
+                ""
+            ],
+            [
+                "2012",
+                "Promised Land",
+                "Gus Van Sant",
+                "$15 million",
+                "$11 million",
+                ""
+            ],
+            [
+                "2016",
+                "The Hollars",
+                "John Krasinski",
+                "$3.8 million",
+                "$1.1 million",
+                ""
+            ],
+            [
+                "2018",
+                "A Quiet Place",
+                "John Krasinski",
+                "$17 million",
+                "$350.3 million",
+                ""
+            ],
+            [
+                "2020",
+                "A Quiet Place Part II",
+                "John Krasinski",
+                "$55 million",
+                "$297.4 million",
+                ""
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2009,
+                2012,
+                2016,
+                2018,
+                2020
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Film title when the Gross (worldwide) string contains million and the Year was on 2020?",
+                "answers": [
+                    "A Quiet Place Part II"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Film title when the Budget string contains million and the Year was on 2020?",
+                "answers": [
+                    "A Quiet Place Part II"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Film title, with Year was after 2016, have Budget string ends with million?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Film title, with Gross (worldwide) string ends with million, have Director string starts with John?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Film title, with Director string starts with John, happened the 1st according to Year?",
+                "answers": [
+                    "Brief Interviews with Hideous Men"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Film title, with Year was after 2012, happened the 3rd according to Year?",
+                "answers": [
+                    "A Quiet Place Part II"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Film title, with Gross (worldwide) string ends with million, happened the 2nd according to Year?",
+                "answers": [
+                    "The Hollars"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Gross (worldwide) was $350.3 million and when the Gross (worldwide) was $297.4 million?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Gross (worldwide) was $350.3 million and when the Gross (worldwide) was $1.1 million?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Film title had Director string contains John and Year was before 2012?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Film title had Year was before 2016?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Film title had Year was after 2009?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "60838912",
+        "title": "Sunday Night Productions",
+        "url": "https://en.wikipedia.org/?curid=60838912",
+        "header": [
+            "Year",
+            "Title",
+            "Network",
+            "Notes"
+        ],
+        "rows": [
+            [
+                "2015\u20132019",
+                "Lip Sync Battle",
+                "Paramount Network",
+                "with Eight Million Plus Productions, Matador Content, Four Eyes Entertainment and Casey Patterson Entertainment"
+            ],
+            [
+                "2016\u20132020",
+                "Dream Corp LLC",
+                "Adult Swim",
+                "with Caviar Content (season 1), Alive and Kicking, Inc. (season 2) and Williams Street"
+            ],
+            [
+                "2018\u20132023",
+                "Jack Ryan",
+                "Amazon Prime Video",
+                "with Amazon Studios, Paramount Television Studios, Platinum Dunes, Skydance Television, and Genre Arts Push, Boot. (seasons 1\u20132)"
+            ],
+            [
+                "2020",
+                "Some Good News",
+                "YouTube",
+                ""
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                9999,
+                9999,
+                9999,
+                2020
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Network string starts with Paramount and the Notes string contains Entertainment?",
+                "answers": [
+                    "Lip Sync Battle"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Network string starts with Paramount and the Notes string contains Million?",
+                "answers": [
+                    "Lip Sync Battle"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Title, with Notes string contains Arts, have Network string starts with Amazon?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Title, with Notes string contains Caviar, have Network string contains Adult?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Network string starts with Adult?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Notes string contains Matador and Network string contains Paramount?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "60838912",
+        "title": "Sunday Night Productions",
+        "url": "https://en.wikipedia.org/?curid=60838912",
+        "header": [
+            "Year",
+            "Category",
+            "Nominated work",
+            "Result",
+            "Ref."
+        ],
+        "rows": [
+            [
+                "2019",
+                "Best Sci-Fi/Horror Movie",
+                "A Quiet Place",
+                "",
+                ""
+            ],
+            [
+                "2019",
+                "Best Structured Series",
+                "Lip Sync Battle",
+                "",
+                ""
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2019,
+                2019
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Category when the Year was on 2019 and the Nominated work string contains Place?",
+                "answers": [
+                    "Best Sci-Fi/Horror Movie"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Category when the Year was on 2019 and the Nominated work string ends with Battle?",
+                "answers": [
+                    "Best Structured Series"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Category, with Year was on 2019, have Nominated work string starts with Lip?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Category, with Year was on 2019, have Nominated work string ends with Battle?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Nominated work was A Quiet Place and when the Nominated work was Lip Sync Battle?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Category had Year was on 2019 and Nominated work string contains Sync?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Category had Year was on 2019?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "60838912",
+        "title": "Sunday Night Productions",
+        "url": "https://en.wikipedia.org/?curid=60838912",
+        "header": [
+            "Year",
+            "Category",
+            "Nominated work",
+            "Result",
+            "Ref."
+        ],
+        "rows": [
+            [
+                "2018",
+                "Outstanding Structured Reality Program",
+                "Lip Sync Battle",
+                "",
+                ""
+            ],
+            [
+                "2017",
+                "Outstanding Structured Reality Program",
+                "Lip Sync Battle",
+                "",
+                ""
+            ],
+            [
+                "2016",
+                "Outstanding Structured Reality Program",
+                "Lip Sync Battle",
+                "",
+                ""
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2018,
+                2017,
+                2016
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Category when the Year was on 2016 and the Nominated work string starts with Lip?",
+                "answers": [
+                    "Outstanding Structured Reality Program"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Category when the Year was before 2017 and the Nominated work string contains Lip?",
+                "answers": [
+                    "Outstanding Structured Reality Program"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Category, with Nominated work string starts with Lip, have Year was before 2018?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Category, with Year was on 2017, have Nominated work string starts with Lip?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Category, with Nominated work string contains Sync, happened the 1st according to Year?",
+                "answers": [
+                    "Outstanding Structured Reality Program"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Category, with Nominated work string starts with Lip, happened the 1st according to Year?",
+                "answers": [
+                    "Outstanding Structured Reality Program"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Category, with Nominated work string contains Sync, happened the 2nd according to Year?",
+                "answers": [
+                    "Outstanding Structured Reality Program"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Category had Year was after 2016 and Nominated work string contains Lip?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Category had Year was before 2018?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Category had Nominated work string contains Battle?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "60838912",
+        "title": "Sunday Night Productions",
+        "url": "https://en.wikipedia.org/?curid=60838912",
+        "header": [
+            "Year",
+            "Category",
+            "Nominated work",
+            "Result",
+            "Ref."
+        ],
+        "rows": [
+            [
+                "2018",
+                "Outstanding Producer of Competition Television",
+                "Lip Sync Battle",
+                "",
+                ""
+            ],
+            [
+                "2017",
+                "Outstanding Producer of Competition Television",
+                "Lip Sync Battle",
+                "",
+                ""
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2018,
+                2017
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Category when the Nominated work string ends with Battle and the Year was before 2018?",
+                "answers": [
+                    "Outstanding Producer of Competition Television"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Category when the Year was on 2017 and the Nominated work string contains Sync?",
+                "answers": [
+                    "Outstanding Producer of Competition Television"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Category, with Year was on 2018, have Nominated work string contains Battle?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Category, with Nominated work string starts with Lip, have Year was on 2018?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Category had Nominated work string contains Battle?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Category had Nominated work string starts with Lip?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "60838912",
+        "title": "Sunday Night Productions",
+        "url": "https://en.wikipedia.org/?curid=60838912",
+        "header": [
+            "Year",
+            "Category",
+            "Nominated work",
+            "Result",
+            "Ref."
+        ],
+        "rows": [
+            [
+                "2020",
+                "Webby Award for Special Achievement",
+                "Some Good News",
+                "",
+                ""
+            ],
+            [
+                "2019",
+                "Webby Award for Video - Trailer",
+                "Dream Corp LLC Dream Sequence",
+                "",
+                ""
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2020,
+                2019
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Category when the Year was after 2019 and the Nominated work string starts with Some?",
+                "answers": [
+                    "Webby Award for Special Achievement"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Category when the Nominated work string contains News and the Year was on 2020?",
+                "answers": [
+                    "Webby Award for Special Achievement"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Category, with Year was on 2020, have Nominated work string starts with Some?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Category, with Year was after 2019, have Nominated work string starts with Some?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Nominated work was Dream Corp LLC Dream Sequence and when the Nominated work was Some Good News?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Nominated work was Some Good News and when the Nominated work was Dream Corp LLC Dream Sequence?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Category had Year was after 2019 and Nominated work string contains News?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Category had Nominated work string ends with News?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Category had Year was on 2019?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

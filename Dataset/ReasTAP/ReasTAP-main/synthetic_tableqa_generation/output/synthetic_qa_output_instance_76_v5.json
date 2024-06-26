@@ -1,0 +1,139 @@
+[
+    {
+        "id": "41995813",
+        "title": "Pitbull Studio",
+        "url": "https://en.wikipedia.org/?curid=41995813",
+        "header": [
+            "Year",
+            "Game",
+            "Platform(s)"
+        ],
+        "rows": [
+            [
+                "2010",
+                "Circus Challenge",
+                "Microsoft Windows"
+            ],
+            [
+                "2011",
+                "BigTopTHD",
+                "Android"
+            ],
+            [
+                "2012",
+                "Silent Hill: Downpour",
+                "Xbox 360"
+            ],
+            [
+                "2013",
+                "Gears of War: Judgment",
+                "Xbox 360"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2010,
+                2011,
+                2012,
+                2013
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Game when the Year was on 2011 and the Platform(s) is Android?",
+                "answers": [
+                    "BigTopTHD"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Game, with Year was after 2010, have Platform(s) is Android?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Game, with Platform(s) string contains Windows, have Year was before 2012?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Game, with Year was before 2013, happened the 1st according to Year?",
+                "answers": [
+                    "Circus Challenge"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Game, with Year was after 2010, happened the 2nd according to Year?",
+                "answers": [
+                    "Silent Hill: Downpour"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Game, with Year was after 2010, happened the 3rd according to Year?",
+                "answers": [
+                    "Gears of War: Judgment"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Platform(s) was Android and when the Platform(s) was Microsoft Windows?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Platform(s) was Microsoft Windows and when the Platform(s) was Android?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Game had Platform(s) string contains Windows and Year was before 2011?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Game had Year was after 2010?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Game had Platform(s) is Android and Year was on 2011?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

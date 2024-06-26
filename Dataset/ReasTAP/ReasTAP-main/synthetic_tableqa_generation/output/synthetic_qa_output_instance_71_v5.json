@@ -1,0 +1,108 @@
+[
+    {
+        "id": "22966768",
+        "title": "Access Bank Botswana",
+        "url": "https://en.wikipedia.org/?curid=22966768",
+        "header": [
+            "Rank",
+            "Shareholder",
+            "Domicile",
+            "Percentage",
+            "Notes"
+        ],
+        "rows": [
+            [
+                "1",
+                "Access Bank Group",
+                "Nigeria",
+                "78.15",
+                ""
+            ],
+            [
+                "2",
+                "Other Investors on BSE",
+                "International",
+                "21.85",
+                ""
+            ],
+            [
+                "",
+                "Total",
+                "",
+                "100.0",
+                ""
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "string",
+            "numeric",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            0,
+            3
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Shareholder when the Percentage was less than 100.0 and the Domicile is Nigeria?",
+                "answers": [
+                    "Access Bank Group"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Shareholder when the Percentage was greater than or equal to 21.85 and the Domicile is International?",
+                "answers": [
+                    "Other Investors on BSE"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Shareholder, with Domicile is International, have Percentage was less than or equal to 78.15?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Shareholder, with Domicile is Nigeria, have Percentage was greater than 21.85?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Shareholder had Percentage was less than or equal to 100.0 and Domicile is Nigeria?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Shareholder had Domicile is International?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Shareholder had Domicile is International and Percentage was less than or equal to 78.15?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

@@ -1,0 +1,244 @@
+[
+    {
+        "id": "67204720",
+        "title": "Hoorae Media",
+        "url": "https://en.wikipedia.org/?curid=67204720",
+        "header": [
+            "Year",
+            "Title",
+            "Co-producers",
+            "Distributor"
+        ],
+        "rows": [
+            [
+                "TBA",
+                "Perfect Strangers",
+                "Spyglass Media Group, Eagle Pictures and 3 Marys Entertainment",
+                "TBA"
+            ],
+            [
+                "TBA",
+                "Ghost in the Machine",
+                "Heyday Films",
+                "Netflix"
+            ],
+            [
+                "TBA",
+                "Sinkhole",
+                "Monkeypaw Productions",
+                "Universal Pictures"
+            ],
+            [
+                "TBA",
+                "Juju",
+                "La La Anthony",
+                "Universal Pictures"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Distributor string contains Universal and the Co-producers string contains Productions?",
+                "answers": [
+                    "Sinkhole"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Distributor string contains Pictures and the Co-producers string contains Anthony?",
+                "answers": [
+                    "Juju"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Title, with Distributor string ends with Pictures, have Co-producers string ends with Anthony?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Title, with Distributor string starts with Universal, have Co-producers string starts with La?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Co-producers string ends with Anthony and Distributor string starts with Universal?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Co-producers string starts with La and Distributor string contains Universal?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Distributor string starts with Universal?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "67204720",
+        "title": "Hoorae Media",
+        "url": "https://en.wikipedia.org/?curid=67204720",
+        "header": [
+            "Year(s)",
+            "Title",
+            "Co-producers",
+            "Network"
+        ],
+        "rows": [
+            [
+                "2016\u20132021",
+                "Insecure",
+                "Penny For Your Thoughts Entertainment, 3 Arts Entertainment and HBO Entertainment",
+                "HBO"
+            ],
+            [
+                "2019\u20132023",
+                "A Black Lady Sketch Show",
+                "For Better or Words Inc., 3 Arts Entertainment, Jax Media and HBO Entertainment",
+                "HBO"
+            ],
+            [
+                "2021\u20132022",
+                "Sweet Life: Los Angeles",
+                "Main Event Media and Morning Dew Pictures",
+                "HBO Max"
+            ],
+            [
+                "2022\u2013present",
+                "Rap Sh!t",
+                "District 8 Productions and 3 Arts Entertainment",
+                "HBO Max (season 1)"
+            ],
+            [
+                "2023\u2013present",
+                "Project Greenlight: A New Generation",
+                "3 Arts Entertainment, Miramax Television and Alfred Street Industries",
+                "Max"
+            ],
+            [
+                "TBA",
+                "Tre Cnt",
+                "HBO Entertainment",
+                "HBO"
+            ],
+            [
+                "TBA",
+                "Seen & Heard",
+                "HBO Entertainment",
+                "HBO"
+            ],
+            [
+                "TBA",
+                "The Vanishing Half",
+                "HBO Entertainment",
+                "HBO"
+            ],
+            [
+                "TBA",
+                "Nice White Parents",
+                "HBO Entertainment",
+                "HBO"
+            ],
+            [
+                "TBA",
+                "Untitled scripted series with Mark Phillips",
+                "N/A",
+                "Max"
+            ],
+            [
+                "TBA",
+                "The Gang\u2019s All Queer: The Lives of Gay Gang Members",
+                "3 Arts Entertainment and HBO Entertainment",
+                "HBO"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Co-producers string starts with 3 and the Network is Max?",
+                "answers": [
+                    "Project Greenlight: A New Generation"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Co-producers string starts with District and the Network string contains Max?",
+                "answers": [
+                    "Rap Sh!t"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Title, with Co-producers string contains Entertainment, have Network is Max?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Title, with Co-producers string starts with 3, have Network is Max?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Co-producers string contains 3?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Co-producers string ends with Entertainment?",
+                "answers": [
+                    "8"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

@@ -1,0 +1,287 @@
+[
+    {
+        "id": "10507864",
+        "title": "Local TV LLC",
+        "url": "https://en.wikipedia.org/?curid=10507864",
+        "header": [
+            "City of license / Market",
+            "Station",
+            "Channel",
+            "Years owned",
+            "Current status"
+        ],
+        "rows": [
+            [
+                "Birmingham, AL",
+                "WBRC",
+                "6",
+                "2008\u20132009",
+                "Fox affiliate owned by Gray Television"
+            ],
+            [
+                "Huntsville, AL",
+                "WHNT-TV",
+                "19",
+                "2007\u20132013",
+                "CBS affiliate owned by Nexstar Media Group"
+            ],
+            [
+                "Fort Smith\u2013Fayetteville, AR",
+                "KFSM-TV",
+                "5",
+                "2007\u20132013",
+                "CBS affiliate owned by Tegna Inc."
+            ],
+            [
+                "Fort Smith\u2013Fayetteville, AR",
+                "KXNW",
+                "34",
+                "2012\u20132013",
+                "MyNetworkTV affiliate owned by Nexstar Media Group"
+            ],
+            [
+                "Denver, CO",
+                "KDVR",
+                "31",
+                "2008\u20132013",
+                "Fox affiliate owned by Nexstar Media Group"
+            ],
+            [
+                "Denver, CO",
+                "KWGN-TV",
+                "2",
+                "2008-2013",
+                "The CW owned-and-operated (O&O)"
+            ],
+            [
+                "Fort Collins, CO",
+                "KFCT",
+                "22",
+                "2008\u20132013",
+                "Fox affiliate owned by Nexstar Media Group"
+            ],
+            [
+                "Des Moines, IA",
+                "WHO-DT",
+                "13",
+                "2007\u20132013",
+                "NBC affiliate owned by Nexstar Media Group"
+            ],
+            [
+                "Moline, IL\u2013Davenport, IA",
+                "WQAD-TV",
+                "8",
+                "2007\u20132013",
+                "ABC affiliate owned by Tegna Inc."
+            ],
+            [
+                "Moline, IL\u2013Davenport, IA",
+                "WBQD-LP",
+                "26",
+                "2008\u20132011",
+                "Defunct, ceased operations in 2011"
+            ],
+            [
+                "Kansas City, MO",
+                "WDAF-TV",
+                "4",
+                "2008\u20132013",
+                "Fox affiliate owned by Nexstar Media Group"
+            ],
+            [
+                "St. Louis, MO",
+                "KTVI",
+                "2",
+                "2008\u20132013",
+                "Fox affiliate owned by Nexstar Media Group"
+            ],
+            [
+                "St. Louis, MO",
+                "KPLR-TV",
+                "11",
+                "2008\u20132013",
+                "The CW owned-and-operated (O&O)"
+            ],
+            [
+                "High Point\u2013Greensboro\u2013Winston-Salem, NC",
+                "WGHP",
+                "8",
+                "2008\u20132013",
+                "Fox affiliate owned by Nexstar Media Group"
+            ],
+            [
+                "Cleveland\u2013Akron, OH",
+                "WJW",
+                "8",
+                "2008\u20132013",
+                "Fox affiliate owned by Nexstar Media Group"
+            ],
+            [
+                "Oklahoma City, OK",
+                "KFOR-TV",
+                "4",
+                "2007\u20132013",
+                "NBC affiliate owned by Nexstar Media Group"
+            ],
+            [
+                "Oklahoma City, OK",
+                "KAUT-TV",
+                "43",
+                "2007\u20132013",
+                "The CW owned-and-operated (O&O)"
+            ],
+            [
+                "Scranton\u2013Wilkes Barre, PA",
+                "WNEP-TV",
+                "16",
+                "2007\u20132013",
+                "ABC affiliate owned by Tegna Inc."
+            ],
+            [
+                "Memphis, TN",
+                "WREG-TV",
+                "3",
+                "2007\u20132013",
+                "CBS affiliate owned by Nexstar Media Group"
+            ],
+            [
+                "Salt Lake City, UT",
+                "KSTU",
+                "13",
+                "2008\u20132013",
+                "Fox affiliate owned by the E. W. Scripps Company"
+            ],
+            [
+                "Norfolk\u2013Portsmouth\u2013Newport News, VA",
+                "WTKR",
+                "3",
+                "2007\u20132013",
+                "CBS affiliate owned by the E. W. Scripps Company"
+            ],
+            [
+                "Norfolk\u2013Portsmouth\u2013Newport News, VA",
+                "WGNT",
+                "27",
+                "2010\u20132013",
+                "The CW affiliate owned by the E. W. Scripps Company"
+            ],
+            [
+                "Richmond, VA",
+                "WTVR-TV",
+                "6",
+                "2009\u20132013",
+                "CBS affiliate owned by the E. W. Scripps Company"
+            ],
+            [
+                "Milwaukee, WI",
+                "WITI",
+                "6",
+                "2008\u20132013",
+                "Fox owned-and-operated (O&O)"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "numeric",
+            "numeric",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            2,
+            3
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the City of license / Market when the Current status string contains Group and the Channel was less than or equal to 27?",
+                "answers": [
+                    "Huntsville, AL",
+                    "Fort Collins, CO",
+                    "Des Moines, IA",
+                    "Kansas City, MO",
+                    "St. Louis, MO",
+                    "High Point\u2013Greensboro\u2013Winston-Salem, NC",
+                    "Cleveland\u2013Akron, OH",
+                    "Oklahoma City, OK",
+                    "Memphis, TN"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the City of license / Market when the Current status string contains affiliate and the Channel was equal to 31?",
+                "answers": [
+                    "Denver, CO"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every City of license / Market, with Current status string starts with Fox, have Channel was less than or equal to 2?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every City of license / Market, with Current status string starts with Fox, have Channel was equal to 13?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which City of license / Market, with Current status string starts with Fox, has the 3rd largest Channel?",
+                "answers": [
+                    "Salt Lake City, UT"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which City of license / Market, with Current status string contains Company, has the 4th largest Channel?",
+                "answers": [
+                    "Norfolk\u2013Portsmouth\u2013Newport News, VA"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many City of license / Market had Channel was less than 34 and Current status string contains affiliate?",
+                "answers": [
+                    "18"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many City of license / Market had Channel was less than 34 and Current status string contains ABC?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many City of license / Market had Current status string starts with Fox and Channel was less than or equal to 16?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Channel when the Current status string contains by?",
+                "answers": [
+                    "12.21"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    }
+]

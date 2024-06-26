@@ -1,0 +1,187 @@
+[
+    {
+        "id": "56148746",
+        "title": "Azamara",
+        "url": "https://en.wikipedia.org/?curid=56148746",
+        "header": [
+            "Ship",
+            "Built",
+            "Builder",
+            "Entered servicefor Azamara",
+            "Gross Tonnage",
+            "Flag",
+            "Notes",
+            "Image"
+        ],
+        "rows": [
+            [
+                "Azamara Journey",
+                "2000",
+                "Chantiers de l'Atlantique",
+                "2007",
+                "30,277 tons",
+                "",
+                "Previously R Six, Blue Star and Blue Dream.",
+                "200px"
+            ],
+            [
+                "Azamara Quest",
+                "2000",
+                "Chantiers de l'Atlantique",
+                "2007",
+                "30,277 tons",
+                "",
+                "Previously R Seven, Delphin Renaissance and Blue Moon.",
+                "200px"
+            ],
+            [
+                "Azamara Pursuit",
+                "2001",
+                "Chantiers de l'Atlantique",
+                "2018",
+                "30,277 tons",
+                "",
+                "Previously R Eight, Minerva II, Royal Princess and Adonia.",
+                "200px"
+            ],
+            [
+                "Azamara Onward",
+                "1999",
+                "Chantiers de l'Atlantique",
+                "2022",
+                "30,277 tons",
+                "",
+                "Previously R Three, Pacific Princess. Was renamed Azamara Onward on May 2, 2022.",
+                "200px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "datetime",
+            "string",
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {
+            "1": [
+                2000,
+                2000,
+                2001,
+                1999
+            ],
+            "3": [
+                2007,
+                2007,
+                2018,
+                2022
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Ship when the Entered servicefor Azamara was on 2018 and the Builder string contains de?",
+                "answers": [
+                    "Azamara Pursuit"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Ship when the Built was after 1999 and the Entered servicefor Azamara was on 2007?",
+                "answers": [
+                    "Azamara Journey",
+                    "Azamara Quest"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Ship, with Entered servicefor Azamara was on 2007, have Built was after 1999?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Ship, with Entered servicefor Azamara was after 2007, have Builder string contains de?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Ship, with Notes string contains R, happened the 3rd according to Built?",
+                "answers": [
+                    "Azamara Journey",
+                    "Azamara Quest"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Ship, with Notes string starts with Previously, happened the 2nd according to Entered servicefor Azamara?",
+                "answers": [
+                    "Azamara Journey",
+                    "Azamara Quest"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Ship, with Built was after 1999, happened the 1st according to Entered servicefor Azamara?",
+                "answers": [
+                    "Azamara Journey",
+                    "Azamara Quest"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Entered servicefor Azamara was 2022 and when the Entered servicefor Azamara was 2018?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Notes was Previously R Eight, Minerva II, Royal Princess and Adonia. and when the Notes was Previously R Six, Blue Star and Blue Dream.?",
+                "answers": [
+                    "11"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ship had Entered servicefor Azamara was before 2018 and Built was on 2000?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ship had Entered servicefor Azamara was on 2007?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ship had Gross Tonnage string ends with tons and Entered servicefor Azamara was after 2007?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

@@ -1,0 +1,155 @@
+[
+    {
+        "id": "141876",
+        "title": "MyTravel Group",
+        "url": "https://en.wikipedia.org/?curid=141876",
+        "header": [
+            "Airline",
+            "Country",
+            "Image",
+            "Description",
+            "Fate"
+        ],
+        "rows": [
+            [
+                "MyTravel Airways Limited",
+                "United Kingdom",
+                "125x125px",
+                "MyTravel Airways Limited was a British scheduled and charter airline, formerly known as Airtours International.",
+                "Transferred to Thomas Cook Group (2007) Merged with Thomas Cook Airlines UK (2008)"
+            ],
+            [
+                "MyTravel Airways A/S",
+                "Denmark",
+                "124x124px",
+                "MyTravel Airways was a Scandinavian scheduled and charter airline.",
+                "Transferred to Thomas Cook Group (2007)\nRebranded to Thomas Cook Airlines Scandinavia (2008)"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": []
+    },
+    {
+        "id": "141876",
+        "title": "MyTravel Group",
+        "url": "https://en.wikipedia.org/?curid=141876",
+        "header": [
+            "Name",
+            "Country",
+            "Fate"
+        ],
+        "rows": [
+            [
+                "MyTravel Tour Operations Limited",
+                "United Kingdom",
+                "Merged into Thomas Cook Tour Operations"
+            ],
+            [
+                "Panorama Holiday Group Limited",
+                "United Kingdom",
+                "Transferred to Thomas Cook Group (2007)\nDissolution (2014)"
+            ],
+            [
+                "BCT Travel Group Limited",
+                "United Kingdom",
+                "Transferred to Thomas Cook Group (2007)\nRebranded to Thomas Cook Scheduled Tour Operations Limited (2008)\n\nDissolution (2015)"
+            ],
+            [
+                "Direct Holidays plc",
+                "United Kingdom",
+                "Dissolution (2013)"
+            ],
+            [
+                "Tj\u00e6reborg",
+                "DenmarkFinland",
+                "Transferred to Thomas Cook Group (2007)"
+            ],
+            [
+                "Spies",
+                "Denmark",
+                "Transferred to Thomas Cook Group (2007)"
+            ],
+            [
+                "Ving",
+                "DenmarkNorwaySweden",
+                "Transferred to Thomas Cook Group (2007)"
+            ],
+            [
+                "ALBA Tours",
+                "Canada",
+                "Transferred to Thomas Cook Group (2007)"
+            ],
+            [
+                "Sunquest Vacations",
+                "Canada",
+                "Transferred to Thomas Cook Group (2007)\nSold to Red Label Vacations (2013)"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Name when the Fate string starts with Transferred and the Country string starts with United?",
+                "answers": [
+                    "Panorama Holiday Group Limited",
+                    "BCT Travel Group Limited"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Name when the Fate string starts with Dissolution and the Country string contains Kingdom?",
+                "answers": [
+                    "Direct Holidays plc"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Name, with Country is Canada, have Fate string starts with Transferred?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Name, with Fate string starts with Transferred, have Country string ends with Kingdom?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Name had Fate string starts with Transferred?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Name had Fate string starts with Transferred and Country string starts with United?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

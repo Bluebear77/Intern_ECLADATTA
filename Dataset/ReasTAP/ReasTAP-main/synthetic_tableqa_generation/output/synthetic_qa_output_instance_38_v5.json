@@ -1,0 +1,181 @@
+[
+    {
+        "id": "53294564",
+        "title": "Bliss Media",
+        "url": "https://en.wikipedia.org/?curid=53294564",
+        "header": [
+            "Year",
+            "Title",
+            "Notes"
+        ],
+        "rows": [
+            [
+                "2013",
+                "The Lovers(known as Time Traveller in UK)",
+                "One of the production companies"
+            ],
+            [
+                "2016",
+                "Hacksaw Ridge",
+                "Acquired Chinese distribution rights"
+            ],
+            [
+                "2016",
+                "Jackie",
+                "One of the production companies; acquired Chinese distribution rights"
+            ],
+            [
+                "2016",
+                "Loving",
+                "Its affiliate company Insiders is in charge of international sales"
+            ],
+            [
+                "2017",
+                "S.M.A.R.T. Chase",
+                "One of two production companies & co-distributor"
+            ],
+            [
+                "2017",
+                "Kings",
+                "One of the production companies & co-distributor"
+            ],
+            [
+                "2020",
+                "Resistance",
+                "One of the production companies"
+            ],
+            [
+                "2022",
+                "The Moon & the Sun(known as The King's Daughter going forward)",
+                "One of the production companies"
+            ],
+            [
+                "2023",
+                "Ferrari",
+                "One of the production companies"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2013,
+                2016,
+                2016,
+                2016,
+                2017,
+                2017,
+                2020,
+                2022,
+                2023
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Year was after 2013 and the Notes string starts with Its?",
+                "answers": [
+                    "Loving"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Year was before 2017 and the Notes string starts with One?",
+                "answers": [
+                    "The Lovers(known as Time Traveller in UK)",
+                    "Jackie"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Title, with Year was before 2017, have Notes string contains in?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Title, with Notes string starts with One, have Year was on 2022?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Year was after 2016, happened the 2nd according to Year?",
+                "answers": [
+                    "S.M.A.R.T. Chase",
+                    "Kings"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Year was on 2016, happened the 3rd according to Year?",
+                "answers": [
+                    "Hacksaw Ridge",
+                    "Jackie",
+                    "Loving"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Notes string starts with One, happened the 5th according to Year?",
+                "answers": [
+                    "Resistance"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Notes was Acquired Chinese distribution rights and when the Notes was One of two production companies & co-distributor?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Notes was One of two production companies & co-distributor and when the Notes was Its affiliate company Insiders is in charge of international sales?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Year was after 2017?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Notes string contains One?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Year was on 2017 and Notes string starts with One?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

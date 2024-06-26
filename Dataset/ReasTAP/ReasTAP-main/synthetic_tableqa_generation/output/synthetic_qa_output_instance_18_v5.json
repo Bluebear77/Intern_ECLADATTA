@@ -1,0 +1,110 @@
+[
+    {
+        "id": "5804320",
+        "title": "Buffalo Gal Pictures",
+        "url": "https://en.wikipedia.org/?curid=5804320",
+        "header": [
+            "Awards",
+            "Category",
+            "Recipient"
+        ],
+        "rows": [
+            [
+                "Gemini Awards",
+                "Best Direction in a Comedy Program or Series",
+                "Less Than Kind"
+            ],
+            [
+                "2009 Cannes Film Festival",
+                "Fipresci Prize",
+                "Amreeka"
+            ],
+            [
+                "Toronto International Film Festival",
+                "Best Canadian Feature",
+                "My Winnipeg"
+            ],
+            [
+                "Method Fest Independent Film Festival",
+                "Best Feature\n\nBest Screenplay",
+                "Seven Times Lucky"
+            ],
+            [
+                "Genie Awards",
+                "Costumes, Editing & Music",
+                "Saddest Music in the World"
+            ],
+            [
+                "Banff TV Festival",
+                "Rockie Award",
+                "Gabrielle Roy"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Awards when the Recipient string contains Winnipeg and the Category string starts with Best?",
+                "answers": [
+                    "Toronto International Film Festival"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Awards when the Category string starts with Best and the Recipient string contains Seven?",
+                "answers": [
+                    "Method Fest Independent Film Festival"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Awards, with Category string contains Feature, have Recipient string starts with Seven?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Awards, with Category string contains Best, have Recipient string contains Seven?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Awards had Category string contains Feature?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Awards had Category string contains Feature and Recipient string contains Winnipeg?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Awards had Category string starts with Best and Recipient string contains Lucky?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

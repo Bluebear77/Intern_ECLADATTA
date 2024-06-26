@@ -1,0 +1,402 @@
+[
+    {
+        "id": "29816052",
+        "title": "Compagnie du Ponant",
+        "url": "https://en.wikipedia.org/?curid=29816052",
+        "header": [
+            "Ship",
+            "Built",
+            "Entered servicefor Ponant",
+            "Gross tonnage",
+            "Flag",
+            "Notes",
+            "Ship image"
+        ],
+        "rows": [
+            [
+                "Le Ponant",
+                "1991",
+                "1991",
+                "",
+                "",
+                "A barque built in 1991, 32 cabins for 64 passengers and 32 crew members.",
+                ""
+            ],
+            [
+                "Boreal class",
+                "Boreal class",
+                "Boreal class",
+                "Boreal class",
+                "Boreal class",
+                "Boreal class",
+                "Boreal class"
+            ],
+            [
+                "Le Bor\u00e9al",
+                "2010",
+                "2010",
+                "",
+                "",
+                "Built in 2010, 132 cabins and suites for 264 passengers and 140 crew members.",
+                "150px"
+            ],
+            [
+                "L'Austral",
+                "2011",
+                "2011",
+                "",
+                "",
+                "Sister vessel of Le Bor\u00e9al, built in 2011, 132 cabins and suites for 264 passengers and 140 crew members. L'Austral was put into service on April 20, 2011.",
+                "150px"
+            ],
+            [
+                "Le Sol\u00e9al",
+                "2012",
+                "2012",
+                "",
+                "",
+                "Sister vessel of Le Bor\u00e9al and L'Austral. Like her sisters, she has 132 cabins and suites for 264 passengers and 140 crew members.",
+                "150px"
+            ],
+            [
+                "Le Lyrial",
+                "2015",
+                "2015",
+                "",
+                "",
+                "On 16 July 2013, Fincantieri and Ponant announced that they had signed a contract for a new super luxury cruise ship, to be delivered in 2015.  Le Lyrial is the sister ship of Le Sol\u00e9al and like her sister, she was built in Fincantieri's Ancona shipyard.",
+                "150x150px"
+            ],
+            [
+                "Explorer class",
+                "Explorer class",
+                "Explorer class",
+                "Explorer class",
+                "Explorer class",
+                "Explorer class",
+                "Explorer class"
+            ],
+            [
+                "Le Lap\u00e9rouse",
+                "2018",
+                "2018",
+                "",
+                "",
+                "First ship in the Explorer class. Built at VARD in \u00c5lesund, Norway and in Tulcea in Romania.",
+                "150x150px"
+            ],
+            [
+                "Le Champlain",
+                "2018",
+                "2018",
+                "",
+                "",
+                "Second ship in the Explorer class. Also built at VARD in \u00c5lesund, Norway and in Tulcea in Romania.",
+                "152x152px"
+            ],
+            [
+                "Le Bougainville",
+                "2019",
+                "2019",
+                "",
+                "",
+                "Third ship in the Explorer class. Also built at VARD in \u00c5lesund, Norway and in Tulcea in Romania.",
+                "150x150px"
+            ],
+            [
+                "Le Dumont-d'Urville",
+                "2019",
+                "2019",
+                "",
+                "",
+                "Fourth ship in the Explorer class. Also built at VARD in \u00c5lesund, Norway and in Tulcea in Romania.",
+                "150x150px"
+            ],
+            [
+                "Le Bellot",
+                "2020",
+                "2020",
+                "",
+                "",
+                "Fifth ship in the Explorer class. Also built at VARD in \u00c5lesund, Norway and in Tulcea in Romania.",
+                ""
+            ],
+            [
+                "Le Jacques Cartier",
+                "2020",
+                "2020",
+                "",
+                "",
+                "Sixth ship in the Explorer class. Also built at VARD in \u00c5lesund, Norway and in Tulcea in Romania.",
+                "160x120px"
+            ],
+            [
+                "Polar Exploration class",
+                "Polar Exploration class",
+                "Polar Exploration class",
+                "Polar Exploration class",
+                "Polar Exploration class",
+                "Polar Exploration class",
+                "Polar Exploration class"
+            ],
+            [
+                "Le Commandant Charcot",
+                "2021",
+                "2021",
+                "",
+                "",
+                "First hybrid-electric polar exploration ship powered by liquefied natural gas. Also built at VARD in S\u00f8viknes, Norway and in Tulcea in Romania.",
+                ""
+            ],
+            [
+                "Paul Gauguin Cruises",
+                "Paul Gauguin Cruises",
+                "Paul Gauguin Cruises",
+                "Paul Gauguin Cruises",
+                "Paul Gauguin Cruises",
+                "Paul Gauguin Cruises",
+                "Paul Gauguin Cruises"
+            ],
+            [
+                "Paul Gauguin",
+                "1997",
+                "2019",
+                "19,200 tons",
+                "",
+                "Paul Gauguin Cruises was purchased by Ponant in 2019",
+                "150x150px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "datetime",
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {
+            "1": [
+                1991,
+                9999,
+                2010,
+                2011,
+                2012,
+                2015,
+                9999,
+                2018,
+                2018,
+                2019,
+                2019,
+                2020,
+                2020,
+                9999,
+                2021,
+                9999,
+                1997
+            ],
+            "2": [
+                1991,
+                9999,
+                2010,
+                2011,
+                2012,
+                2015,
+                9999,
+                2018,
+                2018,
+                2019,
+                2019,
+                2020,
+                2020,
+                9999,
+                2021,
+                9999,
+                2019
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Ship when the Notes string starts with Paul and the Gross tonnage string starts with Paul?",
+                "answers": [
+                    "Paul Gauguin Cruises"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Ship when the Flag string contains Explorer and the Notes string contains Explorer?",
+                "answers": [
+                    "Explorer class"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Ship, with Ship image string contains Explorer, have Notes string contains Explorer?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Ship, with Notes string contains Exploration, have Gross tonnage string contains class?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Built was 1997 and when the Built was 2012?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Entered servicefor Ponant was 1991 and when the Entered servicefor Ponant was 2015?",
+                "answers": [
+                    "24"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ship had Flag string contains class and Gross tonnage string contains class?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ship had Flag string contains class and Notes string starts with Polar?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ship had Flag string starts with Boreal?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "29816052",
+        "title": "Compagnie du Ponant",
+        "url": "https://en.wikipedia.org/?curid=29816052",
+        "header": [
+            "Ship",
+            "Built",
+            "In servicefor Ponant",
+            "Gross tonnage",
+            "Flag",
+            "Notes",
+            "Ship image"
+        ],
+        "rows": [
+            [
+                "Le Levant",
+                "1998",
+                "1998-2012",
+                "",
+                "",
+                "A yacht built in 1998, 45 cabins for 90 passengers and 55 crew members. Sold to Paul Gauguin Cruises to become Tere Moana. Delivered in 2012.",
+                "In previous livery as Le Levant"
+            ],
+            [
+                "Le Diamant",
+                "1974, rebuilt in 1986",
+                "2004-2011",
+                "",
+                "",
+                "A luxury liner bought in 2004, 113 cabins for 226 passengers and 120 crew. Transferred to Quark expeditions in 2013.",
+                "In previous livery as Le Diamant"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "datetime",
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {
+            "1": [
+                1998,
+                9999
+            ],
+            "2": [
+                9999,
+                9999
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Ship when the Ship image string starts with In and the Notes string starts with A?",
+                "answers": [
+                    "Le Levant",
+                    "Le Diamant"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Ship when the Notes string starts with A and the Ship image string contains Levant?",
+                "answers": [
+                    "Le Levant"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Ship, with Notes string starts with A, have Ship image string contains previous?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ship had Ship image string starts with In and Notes string contains in?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ship had Ship image string contains Le?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ship had Notes string starts with A and Ship image string ends with Levant?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

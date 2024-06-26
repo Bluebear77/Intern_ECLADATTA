@@ -1,0 +1,65 @@
+[
+    {
+        "id": "32921356",
+        "title": "US Aviation",
+        "url": "https://en.wikipedia.org/?curid=32921356",
+        "header": [
+            "Model name",
+            "First flight",
+            "Number built",
+            "Type"
+        ],
+        "rows": [
+            [
+                "US Aviation Super Floater",
+                "1970s",
+                "",
+                "Ultralight glider"
+            ],
+            [
+                "US Aviation Cloud Dancer",
+                "1983",
+                "",
+                "Ultralight motorglider"
+            ],
+            [
+                "US Aviation Cumulus",
+                "1995",
+                "",
+                "Ultralight motorglider"
+            ],
+            [
+                "US Aviation CAVU",
+                "1997",
+                "",
+                "Ultralight aircraft"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "datetime",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {
+            "1": [
+                9999,
+                1983,
+                1995,
+                1997
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many Model name had Type string contains glider?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

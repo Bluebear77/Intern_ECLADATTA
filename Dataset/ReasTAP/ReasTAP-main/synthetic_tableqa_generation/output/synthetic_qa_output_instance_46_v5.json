@@ -1,0 +1,274 @@
+[
+    {
+        "id": "35047916",
+        "title": "Jam City (company)",
+        "url": "https://en.wikipedia.org/?curid=35047916",
+        "header": [
+            "Year",
+            "Title",
+            "Genre(s)",
+            "Platform(s)",
+            "Notes",
+            ""
+        ],
+        "rows": [
+            [
+                "2013",
+                "Panda Pop",
+                "Bubble shooter",
+                "Android, iOS",
+                "",
+                ""
+            ],
+            [
+                "2013",
+                "Bingo Pop",
+                "Bingo",
+                "Android, iOS",
+                "Originally developed by Uken Games; acquired by Jam City in 2018",
+                ""
+            ],
+            [
+                "2014",
+                "Cookie Jam + Cookie Jam Blast",
+                "Match-three game",
+                "Android, iOS",
+                "",
+                ""
+            ],
+            [
+                "2014",
+                "Book of Life: Sugar Smash",
+                "Match-three game",
+                "Android, iOS",
+                "Partnership with Fox and based on the film The Book of Life. This was Jam City's first collaboration with a major Hollywood studio to release a game simultaneously with a film",
+                ""
+            ],
+            [
+                "2014",
+                "Family Guy: The Quest for Stuff",
+                "City-building game",
+                "Android, iOS",
+                "Licensed game based on the Family Guy animated sitcom; originally developed by TinyCo",
+                ""
+            ],
+            [
+                "2016",
+                "Disney Emoji Blitz",
+                "Match-three game",
+                "Android, iOS",
+                "Originally developed by Disney Games; license acquired by Jam City in 2018",
+                ""
+            ],
+            [
+                "2016",
+                "Genies & Gems",
+                "Match-three game",
+                "Android, iOS",
+                "",
+                ""
+            ],
+            [
+                "2017",
+                "Futurama: Worlds of Tomorrow",
+                "City building, adventure",
+                "Android, iOS",
+                "Licensed game based on the Futurama series",
+                ""
+            ],
+            [
+                "2017",
+                "Snoopy Pop",
+                "Bubble shooter",
+                "Android, iOS",
+                "Licensed game based on the Peanuts comic strip",
+                ""
+            ],
+            [
+                "2017",
+                "Family Guy: Another Freakin' Mobile Game",
+                "Puzzle, adventure",
+                "Android, iOS",
+                "Licensed game based on Family Guy",
+                ""
+            ],
+            [
+                "2018",
+                "Harry Potter: Hogwarts Mystery",
+                "Role-playing",
+                "Android, iOS",
+                "Licensed game based on Harry Potter franchise",
+                ""
+            ],
+            [
+                "2019",
+                "Frozen Adventures",
+                "Match-three, decorating",
+                "Android, iOS",
+                "Licensed game based on the Frozen franchise''",
+                ""
+            ],
+            [
+                "2019",
+                "Vineyard Valley",
+                "Puzzle, simulation",
+                "Android, iOS",
+                "",
+                ""
+            ],
+            [
+                "2020",
+                "World War Doh",
+                "Strategy, action",
+                "Android, iOS",
+                "",
+                ""
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2013,
+                2013,
+                2014,
+                2014,
+                2014,
+                2016,
+                2016,
+                2017,
+                2017,
+                2017,
+                2018,
+                2019,
+                2019,
+                2020
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Platform(s) string ends with iOS and the Year was before 2020?",
+                "answers": [
+                    "Panda Pop",
+                    "Bingo Pop",
+                    "Cookie Jam + Cookie Jam Blast",
+                    "Book of Life: Sugar Smash",
+                    "Family Guy: The Quest for Stuff",
+                    "Disney Emoji Blitz",
+                    "Genies & Gems",
+                    "Futurama: Worlds of Tomorrow",
+                    "Snoopy Pop",
+                    "Family Guy: Another Freakin' Mobile Game",
+                    "Harry Potter: Hogwarts Mystery",
+                    "Frozen Adventures",
+                    "Vineyard Valley"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Year was after 2014 and the Notes string contains Licensed?",
+                "answers": [
+                    "Futurama: Worlds of Tomorrow",
+                    "Snoopy Pop",
+                    "Family Guy: Another Freakin' Mobile Game",
+                    "Harry Potter: Hogwarts Mystery",
+                    "Frozen Adventures"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Title, with Year was after 2017, have Platform(s) string contains iOS?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Title, with Year was before 2016, have Notes string starts with Licensed?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Year was before 2019, happened the 10th according to Year?",
+                "answers": [
+                    "Futurama: Worlds of Tomorrow",
+                    "Snoopy Pop",
+                    "Family Guy: Another Freakin' Mobile Game"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Year was after 2017, happened the 1st according to Year?",
+                "answers": [
+                    "Harry Potter: Hogwarts Mystery"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Year was on 2014, happened the 3rd according to Year?",
+                "answers": [
+                    "Cookie Jam + Cookie Jam Blast",
+                    "Book of Life: Sugar Smash",
+                    "Family Guy: The Quest for Stuff"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Notes was Licensed game based on the Futurama series and when the Notes was Originally developed by Uken Games; acquired by Jam City in 2018?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Notes was Licensed game based on Harry Potter franchise and when the Notes was Licensed game based on the Futurama series?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Platform(s) string contains iOS and Genre(s) string ends with adventure?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Year was on 2014 and Genre(s) string starts with City?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Notes string contains first?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

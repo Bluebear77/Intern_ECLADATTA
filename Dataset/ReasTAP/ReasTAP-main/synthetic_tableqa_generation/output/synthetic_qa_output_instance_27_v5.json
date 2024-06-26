@@ -1,0 +1,243 @@
+[
+    {
+        "id": "17507201",
+        "title": "Times Mirror Company",
+        "url": "https://en.wikipedia.org/?curid=17507201",
+        "header": [
+            "City of license / market",
+            "Station",
+            "Channel",
+            "Years owned",
+            "Current status"
+        ],
+        "rows": [
+            [
+                "Birmingham, AL",
+                "WVTM-TV",
+                "13",
+                "1980\u20131993",
+                "NBC affiliate owned by Hearst Television"
+            ],
+            [
+                "Los Angeles, CA",
+                "KTTV",
+                "11",
+                "1949\u20131963",
+                "Fox owned-and-operated (O&O)"
+            ],
+            [
+                "Baltimore, MD",
+                "WMAR-TV",
+                "2",
+                "1986",
+                "ABC affiliate owned by The E.W. Scripps Company"
+            ],
+            [
+                "St. Louis, MO",
+                "KTVI",
+                "2",
+                "1980\u20131993",
+                "Fox affiliate owned by Nexstar Media Group"
+            ],
+            [
+                "Elmira, NY",
+                "WETM-TV",
+                "18",
+                "1980\u20131986",
+                "NBC affiliate owned by Nexstar Media Group"
+            ],
+            [
+                "Syracuse, NY",
+                "WSTM-TV",
+                "3",
+                "1980\u20131986",
+                "NBC affiliate owned by Sinclair Broadcast Group"
+            ],
+            [
+                "Harrisburg, PA",
+                "WHTM-TV",
+                "27",
+                "1980\u20131986",
+                "ABC affiliate owned by Nexstar Media Group"
+            ],
+            [
+                "Austin, TX",
+                "KTBC-TV",
+                "7",
+                "1973\u20131993",
+                "Fox owned-and-operated (O&O)"
+            ],
+            [
+                "Dallas - Fort Worth, TX",
+                "KDFW-TV",
+                "4",
+                "1970\u20131993",
+                "Fox owned-and-operated (O&O)"
+            ],
+            [
+                "Richmond, VA",
+                "WRLH-TV",
+                "35",
+                "1986",
+                "Fox affiliate owned by Sinclair Broadcast Group"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "numeric",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            2
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many City of license / market had Channel was greater than 35?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "17507201",
+        "title": "Times Mirror Company",
+        "url": "https://en.wikipedia.org/?curid=17507201",
+        "header": [
+            "Name",
+            "City",
+            "Dates",
+            "Fate"
+        ],
+        "rows": [
+            [
+                "Los Angeles Times",
+                "Los Angeles",
+                "1884\u20132000",
+                "Acquired by Tribune Company"
+            ],
+            [
+                "NewsdayJones, Tim. \"Tribune Co. To Merge With Times Mirror,\" Chicago Tribune (March 13, 2000).",
+                "Long Island, Westchester",
+                "1970\u20132000",
+                "Acquired by Tribune Company"
+            ],
+            [
+                "Dallas Times Herald",
+                "Dallas, Texas",
+                "1969\u20131986",
+                "Sold to MediaNews Group"
+            ],
+            [
+                "The Advocate",
+                "Stamford, Connecticut",
+                "1977\u20132000",
+                "Acquired by Tribune Company"
+            ],
+            [
+                "Greenwich Time",
+                "Greenwich, Connecticut",
+                "1977\u20132000",
+                "Acquired by Tribune Company"
+            ],
+            [
+                "Hartford Courant",
+                "Hartford, Connecticut",
+                "1979\u20132000",
+                "Acquired by Tribune Company"
+            ],
+            [
+                "The Denver Post",
+                "Denver, Colorado",
+                "1980\u20131987",
+                "Sold to MediaNews Group"
+            ],
+            [
+                "The Morning Call",
+                "Allentown, Pennsylvania",
+                "1984\u20132000",
+                "Acquired by Tribune Company"
+            ],
+            [
+                "The Baltimore Sun",
+                "Baltimore, Maryland",
+                "1986\u20132000",
+                "Acquired by Tribune Company"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "numeric",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            2
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Name when the Fate string contains Company and the City string starts with Long?",
+                "answers": [
+                    "NewsdayJones, Tim. \"Tribune Co. To Merge With Times Mirror,\" Chicago Tribune (March 13, 2000)."
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Name when the Fate string starts with Acquired and the City string contains Maryland?",
+                "answers": [
+                    "The Baltimore Sun"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Name, with City string ends with Maryland, have Fate string starts with Acquired?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Name, with Fate string starts with Acquired, have City string ends with Pennsylvania?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Name had Fate string ends with Company and City string contains Connecticut?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Name had Fate string starts with Acquired?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Name had Fate string contains Company and City string contains Connecticut?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

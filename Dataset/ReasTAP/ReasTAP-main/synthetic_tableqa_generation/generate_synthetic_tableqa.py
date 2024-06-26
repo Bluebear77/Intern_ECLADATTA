@@ -86,7 +86,7 @@ def log_error(message):
 
 def main():
     template_dict = json.load(open("question_template.json"))
-    table_data_dir = "../../../subcorpus-100-business-telco-celebrity/telco-100/P5"
+    table_data_dir = "../../../subcorpus-100-business-telco-celebrity/business-100/P5"
     # table_data_dir = "table_data"
     
     files = [f for f in os.listdir(table_data_dir) if f.endswith(".json")]

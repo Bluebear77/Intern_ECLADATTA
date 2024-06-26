@@ -1,0 +1,73 @@
+[
+    {
+        "id": "33227123",
+        "title": "Global Vectra Helicorp",
+        "url": "https://en.wikipedia.org/?curid=33227123",
+        "header": [
+            "Helicopter",
+            "In service",
+            "Orders"
+        ],
+        "rows": [
+            [
+                "Bell 412EP",
+                "17",
+                "1"
+            ],
+            [
+                "AS350B3",
+                "3",
+                "\u2013"
+            ],
+            [
+                "AS350B3E",
+                "3",
+                "\u2013"
+            ],
+            [
+                "AW139",
+                "4",
+                "\u2013"
+            ],
+            [
+                "AW169",
+                "3",
+                "2"
+            ],
+            [
+                "Total",
+                "30",
+                "2"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "numeric",
+            "numeric"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            1,
+            2
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many Helicopter had In service was greater than or equal to 4?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Helicopter had In service was greater than or equal to 3?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

@@ -1,0 +1,191 @@
+[
+    {
+        "id": "57185455",
+        "title": "June Pictures",
+        "url": "https://en.wikipedia.org/?curid=57185455",
+        "header": [
+            "Year",
+            "Title",
+            "Director",
+            "Notes"
+        ],
+        "rows": [
+            [
+                "2016",
+                "Operator",
+                "Logan Kibens",
+                "distributed by The Orchard"
+            ],
+            [
+                "2017",
+                "Joshua: Teenager vs. Superpower",
+                "Joe Piscatella",
+                "distributed by Netflix"
+            ],
+            [
+                "2017",
+                "Thoroughbreds",
+                "Cory Finley",
+                "distributed by Focus Features"
+            ],
+            [
+                "2017",
+                "Fun Mom Dinner",
+                "Alethea Jones",
+                "distributed by Momentum Pictures"
+            ],
+            [
+                "2017",
+                "The Florida Project",
+                "Sean Baker",
+                "distributed by A24"
+            ],
+            [
+                "2018",
+                "Wildlife",
+                "Paul Dano",
+                "distributed by IFC Films"
+            ],
+            [
+                "2018",
+                "Dude",
+                "Olivia Milch",
+                "distributed by Netflix"
+            ],
+            [
+                "2018",
+                "Book Club",
+                "Bill Holderman",
+                "distributed by Paramount Pictures"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2016,
+                2017,
+                2017,
+                2017,
+                2017,
+                2018,
+                2018,
+                2018
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Year was before 2018 and the Notes string starts with distributed?",
+                "answers": [
+                    "Operator",
+                    "Joshua: Teenager vs. Superpower",
+                    "Thoroughbreds",
+                    "Fun Mom Dinner",
+                    "The Florida Project"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Year was after 2017 and the Director string starts with Paul?",
+                "answers": [
+                    "Wildlife"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Title, with Director string starts with Bill, have Notes string starts with distributed?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Title, with Year was on 2016, have Notes string starts with distributed?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Year was before 2018, happened the 1st according to Year?",
+                "answers": [
+                    "Operator"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Year was on 2017, happened the 2nd according to Year?",
+                "answers": [
+                    "Joshua: Teenager vs. Superpower",
+                    "Thoroughbreds",
+                    "Fun Mom Dinner",
+                    "The Florida Project"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Notes string starts with distributed, happened the 3rd according to Year?",
+                "answers": [
+                    "Joshua: Teenager vs. Superpower",
+                    "Thoroughbreds",
+                    "Fun Mom Dinner",
+                    "The Florida Project"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Director was Logan Kibens and when the Director was Bill Holderman?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Director was Sean Baker and when the Director was Olivia Milch?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Notes string starts with distributed?",
+                "answers": [
+                    "8"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Notes string starts with distributed and Year was after 2016?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Director string starts with Logan and Year was on 2016?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

@@ -1,0 +1,219 @@
+[
+    {
+        "id": "19395922",
+        "title": "Berliner-Joyce",
+        "url": "https://en.wikipedia.org/?curid=19395922",
+        "header": [
+            "Model name",
+            "First flight",
+            "Number built",
+            "Type"
+        ],
+        "rows": [
+            [
+                "Berliner-Joyce CM-4",
+                "1928",
+                "6",
+                "three-seat open-cockpit parasol monoplane"
+            ],
+            [
+                "Berliner-Joyce 29-1 Commercial",
+                "1929",
+                "1",
+                "high-wing utility cabin monoplane"
+            ],
+            [
+                "Berliner-Joyce XFJ",
+                "1930",
+                "1",
+                "Prototype single-engine biplane fighter"
+            ],
+            [
+                "Berliner-Joyce P-16",
+                "1929",
+                "26",
+                "Single engine biplane fighter"
+            ],
+            [
+                "Berliner-Joyce OJ",
+                "1931",
+                "39",
+                "Single-engine biplane observation floatplane"
+            ],
+            [
+                "Berliner-Joyce F2J",
+                "1933",
+                "1",
+                "Prototype single-engine biplane fighter"
+            ],
+            [
+                "Berliner-Joyce XF3J",
+                "1934",
+                "1",
+                "Prototype single-engine biplane fighter"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "datetime",
+            "numeric",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            2
+        ],
+        "date_columns": {
+            "1": [
+                1928,
+                1929,
+                1930,
+                1929,
+                1931,
+                1933,
+                1934
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Model name when the Number built was less than or equal to 1 and the Type string contains monoplane?",
+                "answers": [
+                    "Berliner-Joyce 29-1 Commercial"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Model name when the Type string starts with Prototype and the First flight was after 1931?",
+                "answers": [
+                    "Berliner-Joyce F2J",
+                    "Berliner-Joyce XF3J"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Model name, with Type string starts with Prototype, have First flight was on 1933?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Model name, with First flight was on 1934, have Number built was less than 26?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Model name, with First flight was after 1928, happened the 5th according to First flight?",
+                "answers": [
+                    "Berliner-Joyce F2J"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Model name, with Number built was greater than 1, happened the 1st according to First flight?",
+                "answers": [
+                    "Berliner-Joyce CM-4"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Model name, with Type string starts with Single, has the 2nd largest Number built?",
+                "answers": [
+                    "Berliner-Joyce P-16"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Model name, with Type string contains biplane, has the 4th largest Number built?",
+                "answers": [
+                    "Berliner-Joyce XFJ",
+                    "Berliner-Joyce F2J",
+                    "Berliner-Joyce XF3J"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Model name, with Type string ends with monoplane, has the 2nd largest Number built?",
+                "answers": [
+                    "Berliner-Joyce 29-1 Commercial"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Type was Single-engine biplane observation floatplane and when the Type was Single engine biplane fighter?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Number built was 39 and when the Number built was 6?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Model name had First flight was after 1930 and Number built was equal to 1?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Model name had Number built was greater than or equal to 1 and First flight was before 1934?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Model name had Number built was greater than or equal to 1?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Number built when the First flight was after 1928?",
+                "answers": [
+                    "69.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Number built when the Type string contains fighter?",
+                "answers": [
+                    "29.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Number built when the First flight was after 1929?",
+                "answers": [
+                    "10.5"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    }
+]
