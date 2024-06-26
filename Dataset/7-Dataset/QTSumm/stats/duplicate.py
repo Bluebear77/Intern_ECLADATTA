@@ -1,58 +1,55 @@
+import os
 import json
-import pandas as pd
-import matplotlib.pyplot as plt
-from tqdm import tqdm
+from collections import defaultdict
 
-# File paths pointing to the parent directory
-files = {
-    'qtsumm_test.json': '../qtsumm_test.json',
-    'qtsumm_dev.json': '../qtsumm_dev.json',
-    'qtsumm_train.json': '../qtsumm_train.json'
+# Paths to the JSON files
+json_files = [
+    "../qtsumm_test.json",
+    "../qtsumm_dev.json",
+    "../qtsumm_train.json"
+]
+
+# Dictionary to store tables by title and the files they appear in
+tables_by_title = defaultdict(lambda: {"sources": [], "tables": []})
+
+# Iterate through each file and extract tables by title
+for file_path in json_files:
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+        for item in data:
+            title = item["table"]["title"]
+            table_id = item["table"]["table_id"]
+            source = os.path.basename(file_path)
+            tables_by_title[title]["sources"].append(source)
+            tables_by_title[title]["tables"].append({
+                "table_id": table_id,
+                "source": source,
+                "table": item["table"]
+            })
+
+# Filter to include only tables that appear in two or more different files
+filtered_tables = {
+    title: info for title, info in tables_by_title.items()
+    if len(set(info["sources"])) > 1
 }
 
-# To store the table data
-table_data = []
+# Create Markdown and JSON output
+md_lines = ["| Title | Table ID | Source |", "|-------|----------|--------|"]
+json_output = []
 
-# To track tables across files
-table_titles = {}
+for title, info in filtered_tables.items():
+    for table_info in info["tables"]:
+        table_id = table_info["table_id"]
+        source = table_info["source"]
+        md_lines.append(f"| {title} | {table_id} | {source} |")
+        json_output.append(table_info["table"])
 
-# Read each file and process data
-for filename, filepath in tqdm(files.items(), desc="Processing files"):
-    with open(filepath, 'r') as file:
-        data = json.load(file)
-        for entry in tqdm(data, desc=f"Processing {filename}", leave=False):
-            title = entry['table']['title']
-            table_id = entry['table']['table_id']
-            table_data.append({'title': title, 'table_id': table_id, 'source': filename})
-            
-            if title in table_titles:
-                found = False
-                for item in table_titles[title]:
-                    if item['table_id'] == table_id:
-                        item['source'].append(filename)
-                        found = True
-                        break
-                if not found:
-                    table_titles[title].append({'table_id': table_id, 'source': [filename]})
-            else:
-                table_titles[title] = [{'table_id': table_id, 'source': [filename]}]
+# Write Markdown file
+with open("tables_summary.md", "w") as md_file:
+    md_file.write("\n".join(md_lines))
 
-# Convert to DataFrame for easier manipulation
-df = pd.DataFrame(table_data)
+# Write JSON file
+with open("tables_summary.json", "w") as json_file:
+    json.dump(json_output, json_file, indent=4)
 
-# Create markdown file with the tables' details
-markdown_table = df.pivot_table(index=['title', 'table_id'], values='source', aggfunc=lambda x: ', '.join(set(x))).reset_index()
-markdown_table.to_markdown('table_details.md', index=False)
-
-# Create JSON file with table titles data
-with open('table_titles.json', 'w') as jsonfile:
-    json.dump(table_titles, jsonfile, indent=4)
-
-# Plotting the frequency of table titles
-title_counts = df['title'].value_counts()
-title_counts.plot(kind='bar')
-plt.title('Frequency of Table Titles Across Files')
-plt.xlabel('Table Titles')
-plt.ylabel('Frequency')
-plt.savefig('title_frequency.png')
-plt.show()
+print("Markdown and JSON files have been generated.")
