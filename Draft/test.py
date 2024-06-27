@@ -30,7 +30,8 @@ def extract_typing_labels(json_file):
                 if "primitiveTyping" in tech_result["dagobah"]["preprocessed"]:
                     # Extract typing information
                     primitive_typing = tech_result["dagobah"]["preprocessed"]["primitiveTyping"]
-                    column_types = ["UNKNOWN"] * len(table["tableData"][0])  # default to "UNKNOWN"
+                    max_column_index = max([col["columnIndex"] for col in primitive_typing]) + 1
+                    column_types = ["UNKNOWN"] * max_column_index  # default to "UNKNOWN"
                     for column in primitive_typing:
                         column_index = column["columnIndex"]
                         if column["typing"]:
@@ -52,7 +53,8 @@ def extract_typing_labels(json_file):
     
     # Create a DataFrame
     if results:
-        headers = ["TableNum"] + [f"Column {i+1}" for i in range(len(results[0]) - 1)]
+        max_columns = max([len(row) for row in results]) - 1
+        headers = ["TableNum"] + [f"Column {i+1}" for i in range(max_columns)]
         df = pd.DataFrame(results, columns=headers)
     else:
         df = pd.DataFrame()  # Return an empty DataFrame if no results
