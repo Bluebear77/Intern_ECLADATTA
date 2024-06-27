@@ -36,3 +36,12 @@ Output Requirements:
     The log file should be saved as log.txt with entries such as "For file [file_name], the table [tableNum] no primitiveTyping data was found."
 
 Please write and execute the Python script.
+
+***
+
+extract_typing_labels: Extracts typing labels and generates a CSV file. Ensures "UNKNOWN" values are not converted to NaN.
+extract_key_column: Extracts the primary key position directly from the JSON file.
+extract_typing_label_from_csv: Extracts typing labels from the generated CSV files for a specific table, ensuring no conversion to NaN and removing trailing empty values.
+update_table_with_key_and_types: Updates the processed JSON data with the key column and column types.
+process_file: Main function to process each file, generate the CSV, log missing data, and update the JSON output.
+Loop through the files: Processes files from 1 to 100.
