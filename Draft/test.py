@@ -63,7 +63,7 @@ def extract_typing_labels(json_file):
 
 # Main function to read JSON and output CSV and log
 def main():
-    json_file = 'instance_47.json'
+    json_file = 'instance_76.json'
     output_csv = 'output.csv'
     output_log = 'log.txt'
     

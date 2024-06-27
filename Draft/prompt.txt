@@ -1,0 +1,38 @@
+Prompt:
+
+Write a Python script that reads a JSON file and outputs a CSV file containing a table with the following structure:
+
+    The row header should be "TableNum".
+    The column headers should be "Column 1", "Column 2", ..., up to the maximum number of columns determined dynamically from the JSON data.
+
+Each cell in the table represents the "typingLabel" for a column in the original tables, identified by the [tableNum, columnIndex] coordinate. If there are multiple "typingLabel" values for a column, always choose the first one.
+
+Structure Details:
+
+The JSON structure is as follows:
+
+    _source >> extractionMetadata >> tables >> tableNum
+    _source >> preprocessingMetadata >> technologyResults >> dagobah >> index
+    _source >> preprocessingMetadata >> technologyResults >> dagobah >> preprocessed >> primitiveTyping >> columnIndex
+    _source >> preprocessingMetadata >> technologyResults >> dagobah >> preprocessed >> primitiveTyping >> typing >> typingLabel
+
+    Match tableNum from tables with index in technologyResults to find the corresponding typing information.
+
+    Ensure that the number of columns in the CSV corresponds to the highest columnIndex found in the primitiveTyping data for each table.
+
+    Create a log file recording any tables for which no primitiveTyping data was found.
+
+Example of the CSV structure:
+
+sql
+
+| TableNum | Column 1 | Column 2 | Column 3 | Column 4 |
+|----------|----------|----------|----------|----------|
+| 0        | PERSON   | UNKNOWN  | UNKNOWN  | UNKNOWN  |
+
+Output Requirements:
+
+    The CSV file should be saved as output.csv.
+    The log file should be saved as log.txt with entries such as "For file [file_name], the table [tableNum] no primitiveTyping data was found."
+
+Please write and execute the Python script.
