@@ -11,17 +11,16 @@ Achievement(s):
 - Perform a human verification for the bottom 60 instances with the least overall similarity. Find the optimize threshold overall = similarity by the Precision and Recall trending. 
 - Visualize the overall similarity by a distribution plot, the majority of the recovery is centered between 80 and 100.
 2. Create and record the full list of unparsed templates for 100-business and in the 100-telco datasets, with the distribution of the usage of the unparsed template.
-3. Process 41 tables applying the DAGOBAH annotations for "column_types" and "key_column" on Celebrity corpora. And then implementing the REASTAP on the 72 DAGOBAH annotated female celebrities:
+3. Extracting DAGOBAH annotation and then apply the REASTAP on DAGOBAH annotated tables with both "column_types" and "key_column" on 41 tables from telco-100 tables and 87 tables from business-100 corpora. 
 
 Troubleshooting(s):
 1.While some wiki web pages are successfully recovered, for lots of tables, QTSumm utilizes an outdated version table that is not present in the current version.
 2. In some cases, the extracted URL is accurate, but the best-matched table is not properly selected by the algorithm, resulting in a low overall similarity score.
 3.In some cases, the extracted URL is accurate, but NO table is extracted results in a 0 score in table similarity. This is becasue these tables are not `wikitable`.
 4.In some cases, the page is merged into another page. The table disappears.
-5.
-
-
-
+5. ReasTAP gives “list index out of range” error which results in empty Question-Answer pair, this is caused by the  a mismatch between the actual number of columns in the table and the number of column types defined. 
 
 
 Next step(s):
+1. Continue to fix the “list index out of range” error" from ReasTAP implementation.
+2.
