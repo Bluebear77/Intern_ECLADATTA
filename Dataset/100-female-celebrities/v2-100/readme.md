@@ -6,7 +6,9 @@ This is the 2nd version of 100 female celebrities data.
 
 - P2 >> P3: convert.py, determine the  "column_types","key_column","numeric_columns"and "date_columns" based on the table info (regex) … should rather use DAGOBAH!
 
+
 ***
+- Raw >> CSV: 2csv.py, extract the key columns and their column types from the DAGOBAH annotations in the raw JSON file and save the results into CSV files.
 
 - P2 >> P4: supply.py, determine the  "column_types","key_column" using DAGOBAH
 
