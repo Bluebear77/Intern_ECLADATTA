@@ -58,7 +58,9 @@ def extract_typing_labels(json_file):
     # Create a DataFrame
     if results:
         max_columns = max([len(row) for row in results]) - 2  # Adjust for TableNum and column_number
-        headers = ["TableNum", "column_number"] + [f"Column {i+1}" for i in range(max_columns)]
+       # headers = ["TableNum", "column_number"] + [f"Column {i+1}" for i in range(max_columns)]
+        headers = ["TableNum", "column_number"] + [f"column_type_{i+1}" for i in range(max_columns)]
+
         df = pd.DataFrame(results, columns=headers)
     else:
         df = None  # Return None if no results
