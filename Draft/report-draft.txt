@@ -1,0 +1,15 @@
+Main activities:
+1.Recovering the QTSumm dataset:Python scripts are made to automate URL verification for the QTSumm dataset recovery by implementing a function that performs a fuzzy comparison of the content of the tables. Give statistcs according to the unique `table_id` tables, unique `title` tables and unique tuples(Table,Qestion,Answer).
+2.
+
+Achievement(s):
+1. Successfully recovered the QTSumm combing both Google Search and Wiki-API methods. 
+2. Perform a human verification for the bottom 60 instances with the least overall similarity. Find the optimize threshold overall similarity by the Precision and Recall trending. 
+3. Visualize the  overall similarity distribution plot for 
+
+
+Troubleshooting(s):
+1. Test and assign weights for 'title_similarity' and 'table_similarity'.
+
+
+Next step(s):
