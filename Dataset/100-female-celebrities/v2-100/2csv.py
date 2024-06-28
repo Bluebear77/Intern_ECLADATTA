@@ -41,7 +41,9 @@ def extract_typing_labels(json_file):
                                 column_type = 'datetime'
                             column_types[column_index] = column_type
                     # Append the result for this table
-                    results.append([table_num, max_column_index] + column_types)
+                    
+                    results.append([table_num] + column_types + [max_column_index])
+
                 else:
                     log_message = f"For file [{json_file}], the table [{table_num}] no primitiveTyping data was found."
                     print(log_message)
@@ -58,8 +60,9 @@ def extract_typing_labels(json_file):
     # Create a DataFrame
     if results:
         max_columns = max([len(row) for row in results]) - 2  # Adjust for TableNum and column_number
-       # headers = ["TableNum", "column_number"] + [f"Column {i+1}" for i in range(max_columns)]
-        headers = ["TableNum", "column_number"] + [f"column_type_{i+1}" for i in range(max_columns)]
+    
+        headers = ["TableNum"] + [f"column_type_{i+1}" for i in range(max_columns)] + ["column_number"]
+
 
         df = pd.DataFrame(results, columns=headers)
     else:
