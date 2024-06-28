@@ -41,7 +41,8 @@ def extract_typing_labels(json_file):
                                 column_type = 'datetime'
                             column_types[column_index] = column_type
                     # Append the result for this table
-                    results.append([table_num] + column_types + [max_column_index])
+                    results.append([table_num, max_column_index] + column_types)
+                    
                 else:
                     log_message = f"For file [{json_file}], the table [{table_num}] no primitiveTyping data was found."
                     print(log_message)
@@ -58,7 +59,9 @@ def extract_typing_labels(json_file):
     # Create a DataFrame
     if results:
         max_columns = max([len(row) for row in results]) - 2  # Adjust for TableNum and column_number
-        headers = ["TableNum"] + [f"column_type_{i+1}" for i in range(max_columns)] + ["column_number"]
+       # headers = ["TableNum", "column_number"] + [f"Column {i+1}" for i in range(max_columns)]
+        headers = ["TableNum", "column_number"] + [f"column_type_{i+1}" for i in range(max_columns)]
+
         df = pd.DataFrame(results, columns=headers)
     else:
         df = None  # Return None if no results
@@ -82,9 +85,8 @@ def extract_key_column(json_file):
                     
                     preprocessed = result['dagobah']['preprocessed']
                     primary_key_position = preprocessed['primaryKeyInfo'].get('primaryKeyPosition')
-                    if primary_key_position is not None:
-                        index = result['index']
-                        primary_key_positions[index] = int(primary_key_position)
+                    index = result['index']
+                    primary_key_positions[index] = primary_key_position
 
     return primary_key_positions
 
@@ -125,7 +127,7 @@ def main():
                         break
 
                 if valid_tables:
-                    df['key column'] = df['TableNum'].map(lambda x: int(primary_key_positions[x]) if x in primary_key_positions and primary_key_positions[x] is not None else -1)
+                    df['key column'] = df['TableNum'].map(primary_key_positions)
                     df.to_csv(csv_file_path, index=False, encoding='utf-8')
                 else:
                     log_message = f"For file [{input_file_path}], CSV not generated due to missing primary key position."
