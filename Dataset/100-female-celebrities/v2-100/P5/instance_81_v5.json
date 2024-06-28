@@ -137,15 +137,15 @@
             "string",
             "string",
             "string",
-            "numeric",
+            "string",
+            "string",
             "string",
             "datetime",
             "string"
         ],
         "key_column": 2,
         "numeric_columns": [
-            0,
-            5
+            0
         ],
         "date_columns": {
             "1": [
@@ -154,11 +154,11 @@
                 "25/10/2015",
                 "23/10/2016"
             ],
-            "7": [
-                "Chan Hao-ching Chan Yung-jan",
-                "Garbiñe Muguruza Carla Suárez Navarro",
-                "Bethanie Mattek-Sands Lucie Šafářová",
-                "Bethanie Mattek-Sands Lucie Šafářová"
+            "8": [
+                "6-4, 7-6",
+                "7-5, 6-2",
+                "6-2, 3-0,",
+                "6-3, 7-5"
             ]
         }
     },
@@ -203,26 +203,27 @@
             "datetime",
             "string",
             "string",
-            "string",
-            "numeric",
+            "datetime",
             "string",
             "datetime",
-            "numeric"
+            "string"
         ],
         "key_column": 2,
         "numeric_columns": [
-            0,
-            5,
-            8
+            0
         ],
         "date_columns": {
             "1": [
                 "06/08/2016",
                 "31/07/2021"
             ],
-            "7": [
-                "Parcours",
-                "Parcours"
+            "4": [
+                "(1/16)",
+                "(1/32)"
+            ],
+            "6": [
+                "6-2, 6-3",
+                "6-2, 6-7, 6-3"
             ]
         }
     },
@@ -270,21 +271,24 @@
             "datetime",
             "string",
             "string",
+            "datetime",
             "string",
-            "numeric",
             "string",
             "datetime",
             "string"
         ],
         "key_column": 2,
         "numeric_columns": [
-            0,
-            5
+            0
         ],
         "date_columns": {
             "1": [
                 "06/08/2016",
                 "31/07/2021"
+            ],
+            "4": [
+                "(1/16)",
+                "(1/16)"
             ],
             "7": [
                 "6-0, 0-6, 6-4",
@@ -325,8 +329,8 @@
             "datetime",
             "string",
             "string",
-            "string",
             "numeric",
+            "string",
             "string",
             "datetime",
             "string"
@@ -334,7 +338,7 @@
         "key_column": 2,
         "numeric_columns": [
             0,
-            5
+            4
         ],
         "date_columns": {
             "1": [
@@ -817,16 +821,14 @@
             "string",
             "string",
             "string",
-            "numeric",
             "string",
-            "datetime",
-            "numeric"
+            "numeric",
+            "string"
         ],
         "key_column": 2,
         "numeric_columns": [
             0,
-            5,
-            8
+            6
         ],
         "date_columns": {
             "1": [
@@ -875,53 +877,6 @@
                 "2019 - Finale (groupe mondial) - France - Australie -",
                 "09/10/2019",
                 "09/10/2019"
-            ],
-            "7": [
-                "",
-                "2013 -  Barrage (groupe mondial II) - France - Kazakhstan -",
-                "Parcours",
-                "",
-                "2014 -  Barrage (groupe mondial I) - États-Unis - France -",
-                "Parcours",
-                "Parcours",
-                "Parcours",
-                "",
-                "2015 -  (groupe mondial) - Italie - France -",
-                "Parcours",
-                "Parcours",
-                "Parcours",
-                "",
-                "2015 - 1/2 finale (groupe mondial) - République tchèque - France -",
-                "Parcours",
-                "Parcours",
-                "",
-                "2016 -  (groupe mondial) - France - Italie -",
-                "Parcours",
-                "Parcours",
-                "Parcours",
-                "",
-                "2016 - 1/2 finale (groupe mondial) - France - Pays-Bas -",
-                "Parcours",
-                "Parcours",
-                "Parcours",
-                "",
-                "2016 - Finale (groupe mondial) - France - République tchèque -",
-                "Parcours",
-                "Parcours",
-                "Parcours",
-                "",
-                "2019 - 1/4 de finale (groupe mondial) - Belgique - France -",
-                "Parcours",
-                "Parcours",
-                "",
-                "2019 - 1/2 finale (groupe mondial) - France - Roumanie -",
-                "Parcours",
-                "Parcours",
-                "Parcours",
-                "",
-                "2019 - Finale (groupe mondial) - France - Australie -",
-                "Parcours",
-                "Parcours"
             ]
         }
     },
@@ -1094,45 +1049,23 @@
             ]
         ],
         "column_types": [
-            "numeric",
-            "datetime",
-            "string",
             "string",
             "numeric",
             "numeric",
-            "string",
-            "datetime",
-            "numeric"
+            "numeric",
+            "numeric",
+            "numeric",
+            "string"
         ],
-        "key_column": 2,
+        "key_column": 0,
         "numeric_columns": [
-            0,
+            1,
+            2,
+            3,
             4,
-            5,
-            8
+            5
         ],
-        "date_columns": {
-            "1": [
-                "2",
-                "7",
-                "1",
-                "1",
-                "1",
-                "2",
-                "1",
-                "9",
-                "2",
-                "4",
-                "1",
-                "3",
-                "3",
-                "1",
-                "5",
-                "1",
-                "1"
-            ],
-            "7": []
-        }
+        "date_columns": {}
     },
     {
         "id": "5510922",
@@ -1162,27 +1095,11 @@
             ]
         ],
         "column_types": [
-            "numeric",
-            "datetime",
-            "string",
-            "string",
-            "numeric",
-            "numeric",
-            "string",
-            "datetime",
-            "numeric"
+            "string"
         ],
-        "key_column": 2,
-        "numeric_columns": [
-            0,
-            4,
-            5,
-            8
-        ],
-        "date_columns": {
-            "1": [],
-            "7": []
-        }
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {}
     },
     {
         "id": "5510922",
@@ -1556,23 +1473,22 @@
         ],
         "column_types": [
             "numeric",
+            "string",
             "datetime",
             "string",
             "string",
-            "numeric",
-            "numeric",
             "string",
+            "numeric",
             "datetime",
             "string"
         ],
-        "key_column": 2,
+        "key_column": 1,
         "numeric_columns": [
             0,
-            4,
-            5
+            6
         ],
         "date_columns": {
-            "1": [
+            "2": [
                 "",
                 "",
                 "",

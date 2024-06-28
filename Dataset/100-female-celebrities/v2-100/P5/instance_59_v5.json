@@ -109,7 +109,6 @@
             "string",
             "string",
             "string",
-            "string",
             "string"
         ],
         "key_column": 0,
@@ -335,13 +334,34 @@
         "column_types": [
             "string",
             "string",
-            "string",
-            "string",
-            "string",
-            "string"
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
         ],
         "key_column": 0,
-        "numeric_columns": [],
+        "numeric_columns": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+        ],
         "date_columns": {}
     },
     {
@@ -494,15 +514,21 @@
             ]
         ],
         "column_types": [
+            "numeric",
             "string",
             "string",
             "string",
             "string",
             "string",
-            "string"
+            "string",
+            "string",
+            "numeric"
         ],
-        "key_column": 0,
-        "numeric_columns": [],
+        "key_column": 1,
+        "numeric_columns": [
+            0,
+            8
+        ],
         "date_columns": {}
     },
     {
@@ -529,15 +555,10 @@
         "column_types": [
             "string",
             "string",
-            "string",
-            "numeric",
-            "string",
             "string"
         ],
         "key_column": 0,
-        "numeric_columns": [
-            3
-        ],
+        "numeric_columns": [],
         "date_columns": {}
     }
 ]

@@ -447,38 +447,38 @@
             ]
         ],
         "column_types": [
-            "datetime",
             "string",
             "string",
             "string",
             "string",
             "string",
-            "string"
+            "string",
+            "string",
+            "string",
+            "numeric",
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
         ],
-        "key_column": 1,
-        "numeric_columns": [],
-        "date_columns": {
-            "0": [
-                9999,
-                9999,
-                9999,
-                9999,
-                9999,
-                9999,
-                9999,
-                9999,
-                9999,
-                9999,
-                9999,
-                9999,
-                9999,
-                9999,
-                9999,
-                9999,
-                9999,
-                9999
-            ]
-        }
+        "key_column": 0,
+        "numeric_columns": [
+            8,
+            9,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+        ],
+        "date_columns": {}
     },
     {
         "id": "5581115",
@@ -743,6 +743,7 @@
             "string",
             "string",
             "string",
+            "string",
             "string"
         ],
         "key_column": 1,
@@ -998,11 +999,14 @@
             "string",
             "string",
             "string",
+            "numeric",
             "string",
             "string"
         ],
         "key_column": 1,
-        "numeric_columns": [],
+        "numeric_columns": [
+            5
+        ],
         "date_columns": {
             "0": [
                 9999,
@@ -1101,6 +1105,7 @@
             "string",
             "string",
             "string",
+            "string",
             "string"
         ],
         "key_column": 1,
@@ -1166,21 +1171,30 @@
             ]
         ],
         "column_types": [
+            "numeric",
             "datetime",
             "string",
             "string",
             "string",
             "string",
             "string",
+            "datetime",
             "string"
         ],
-        "key_column": 1,
-        "numeric_columns": [],
+        "key_column": 2,
+        "numeric_columns": [
+            0
+        ],
         "date_columns": {
-            "0": [
-                1,
-                1,
-                1
+            "1": [
+                9999,
+                9999,
+                9999
+            ],
+            "7": [
+                9999,
+                9999,
+                9999
             ]
         }
     },
@@ -1211,19 +1225,28 @@
             ]
         ],
         "column_types": [
+            "numeric",
             "datetime",
             "string",
             "string",
+            "datetime",
             "string",
-            "string",
-            "string",
+            "datetime",
             "string"
         ],
-        "key_column": 1,
-        "numeric_columns": [],
+        "key_column": 2,
+        "numeric_columns": [
+            0
+        ],
         "date_columns": {
-            "0": [
-                1
+            "1": [
+                9999
+            ],
+            "4": [
+                9999
+            ],
+            "6": [
+                9999
             ]
         }
     },
@@ -1256,19 +1279,27 @@
             ]
         ],
         "column_types": [
+            "numeric",
             "datetime",
             "string",
             "string",
+            "numeric",
             "string",
             "string",
-            "string",
+            "datetime",
             "string"
         ],
-        "key_column": 1,
-        "numeric_columns": [],
+        "key_column": 2,
+        "numeric_columns": [
+            0,
+            4
+        ],
         "date_columns": {
-            "0": [
-                1
+            "1": [
+                9999
+            ],
+            "7": [
+                9999
             ]
         }
     },
@@ -1499,39 +1530,65 @@
             ]
         ],
         "column_types": [
+            "numeric",
             "datetime",
             "string",
             "string",
             "string",
             "string",
-            "string",
+            "datetime",
             "string"
         ],
-        "key_column": 1,
-        "numeric_columns": [],
+        "key_column": 2,
+        "numeric_columns": [
+            0
+        ],
         "date_columns": {
-            "0": [
+            "1": [
                 9999,
                 9999,
-                1,
-                1,
                 9999,
                 9999,
-                2,
-                2,
-                2,
                 9999,
                 9999,
-                3,
-                3,
                 9999,
                 9999,
-                4,
-                4,
                 9999,
                 9999,
-                5,
-                5
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999
+            ],
+            "6": [
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999
             ]
         }
     },
@@ -1605,29 +1662,23 @@
             ]
         ],
         "column_types": [
-            "datetime",
-            "string",
             "string",
             "numeric",
             "numeric",
-            "string",
+            "numeric",
+            "numeric",
+            "numeric",
             "string"
         ],
-        "key_column": 1,
+        "key_column": 0,
         "numeric_columns": [
+            1,
+            2,
             3,
-            4
+            4,
+            5
         ],
-        "date_columns": {
-            "0": [
-                9999,
-                9999,
-                9999,
-                9999,
-                9999,
-                9999
-            ]
-        }
+        "date_columns": {}
     },
     {
         "id": "5581115",
@@ -1660,31 +1711,11 @@
             ]
         ],
         "column_types": [
-            "datetime",
-            "string",
-            "string",
-            "numeric",
-            "numeric",
-            "numeric",
             "string"
         ],
-        "key_column": 1,
-        "numeric_columns": [
-            3,
-            4,
-            5
-        ],
-        "date_columns": {
-            "0": [
-                9999,
-                9999,
-                9999,
-                9999,
-                9999,
-                9999,
-                9999
-            ]
-        }
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {}
     },
     {
         "id": "5581115",
@@ -1875,32 +1906,62 @@
             ]
         ],
         "column_types": [
+            "numeric",
+            "string",
             "datetime",
             "string",
             "string",
             "string",
-            "numeric",
-            "string",
+            "datetime",
+            "datetime",
             "string"
         ],
         "key_column": 1,
         "numeric_columns": [
-            4
+            0
         ],
         "date_columns": {
-            "0": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7,
-                8,
-                9,
-                10,
-                11,
-                12
+            "2": [
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999
+            ],
+            "6": [
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999
+            ],
+            "7": [
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999
             ]
         }
     }

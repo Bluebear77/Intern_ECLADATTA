@@ -8,9 +8,9 @@ This is the 2nd version of 100 female celebrities data.
 
 
 ***
-- Raw >> CSV: 2csv.py, extract the key columns and their column types from the DAGOBAH annotations in the raw JSON file and save the results into CSV files.
+- Raw >> CSV: 2JSON.py, extract the key columns and their column types from the DAGOBAH annotations in the raw JSON file and save the results into CSV files.
 
-- P2 >> P4: supply.py, determine the  "column_types","key_column" using DAGOBAH
+- P2 >> P4: 2JSON.py, determine the  "column_types","key_column" using DAGOBAH
 
 - P4 >> P5: rct.py, refine the column type.
 

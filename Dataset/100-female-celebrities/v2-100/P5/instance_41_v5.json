@@ -317,14 +317,19 @@
             "datetime",
             "string",
             "string",
+            "numeric",
             "string",
+            "numeric",
             "string",
-            "string",
-            "string",
+            "numeric",
             "string"
         ],
-        "key_column": 1,
-        "numeric_columns": [],
+        "key_column": 2,
+        "numeric_columns": [
+            3,
+            5,
+            7
+        ],
         "date_columns": {
             "0": [
                 "1999",
@@ -395,6 +400,7 @@
         ],
         "column_types": [
             "datetime",
+            "string",
             "string",
             "string",
             "string",
@@ -486,24 +492,34 @@
             ]
         ],
         "column_types": [
+            "numeric",
             "datetime",
             "string",
             "string",
             "string",
             "string",
             "string",
-            "string",
+            "datetime",
             "string"
         ],
-        "key_column": 1,
-        "numeric_columns": [],
+        "key_column": 2,
+        "numeric_columns": [
+            0
+        ],
         "date_columns": {
-            "0": [
-                "1",
-                "2",
-                "3",
-                "4",
-                "5"
+            "1": [
+                "29/10/2001",
+                "04/11/2002",
+                "03/11/2003",
+                "06/11/2006",
+                "05/11/2007"
+            ],
+            "7": [
+                "6-3, 7-6",
+                "6-2, 6-1",
+                "7-6, 3-6, 6-3",
+                "6-4, 6-3",
+                "5-7, 7-5, 6-3"
             ]
         }
     },
@@ -534,20 +550,25 @@
             ]
         ],
         "column_types": [
+            "numeric",
             "datetime",
             "string",
             "string",
             "string",
             "string",
-            "string",
-            "string",
+            "datetime",
             "string"
         ],
-        "key_column": 1,
-        "numeric_columns": [],
+        "key_column": 2,
+        "numeric_columns": [
+            0
+        ],
         "date_columns": {
-            "0": [
-                "1"
+            "1": [
+                "15/08/2004"
+            ],
+            "6": [
+                "6-3, 6-3"
             ]
         }
     },
@@ -998,62 +1019,109 @@
             ]
         ],
         "column_types": [
+            "numeric",
             "datetime",
             "string",
             "string",
             "string",
             "string",
-            "string",
-            "string",
+            "datetime",
             "string"
         ],
-        "key_column": 1,
-        "numeric_columns": [],
+        "key_column": 2,
+        "numeric_columns": [
+            0
+        ],
         "date_columns": {
-            "0": [
+            "1": [
                 "",
                 "1999 - 1/4 de finale (groupe mondial II) - Pays-Bas - Belgique -",
-                "1",
-                "1",
+                "17/04/1999",
+                "17/04/1999",
                 "",
                 "2000 - 1/2 finale (groupe mondial) - États-Unis - Belgique -",
-                "2",
+                "22/11/2000",
                 "",
                 "2001 - Round robin (groupe mondial) - Belgique - Allemagne -",
-                "3",
+                "07/11/2001",
                 "",
                 "2001 - Round robin (groupe mondial) - Belgique - Australie -",
-                "4",
+                "09/11/2001",
                 "",
                 "2001 - Round robin (groupe mondial) - Espagne - Belgique -",
-                "5",
+                "10/11/2001",
                 "",
                 "2001 - Finale (groupe mondial) - Belgique - Russie -",
-                "6",
+                "07/11/2001",
                 "",
                 "2002 -  (groupe mondial) - Belgique - Australie -",
-                "7",
-                "7",
+                "27/04/2002",
+                "27/04/2002",
                 "",
                 "2003 -  (groupe mondial) - Belgique - Autriche -",
-                "8",
+                "26/04/2003",
                 "",
                 "2003 - 1/4 de finale (groupe mondial) - Belgique - Slovaquie -",
-                "9",
-                "9",
+                "19/07/2003",
+                "19/07/2003",
                 "",
                 "2006 - 1/4 de finale (groupe mondial) - Belgique - Russie -",
-                "10",
-                "10",
-                "10",
+                "22/04/2006",
+                "22/04/2006",
+                "22/04/2006",
                 "",
                 "2006 - Finale (groupe mondial) - Belgique - Italie -",
-                "11",
-                "11",
-                "11",
+                "16/09/2006",
+                "16/09/2006",
+                "16/09/2006",
                 "",
                 "2010 -  Barrage (groupe mondial I) - Belgique - Estonie -",
-                "12"
+                "24/04/2010"
+            ],
+            "6": [
+                "",
+                "1999 - 1/4 de finale (groupe mondial II) - Pays-Bas - Belgique -",
+                "5-7, 7-5, 6-3",
+                "6-4, 6-3",
+                "",
+                "2000 - 1/2 finale (groupe mondial) - États-Unis - Belgique -",
+                "7-6, 6-2",
+                "",
+                "2001 - Round robin (groupe mondial) - Belgique - Allemagne -",
+                "6-3, 6-1",
+                "",
+                "2001 - Round robin (groupe mondial) - Belgique - Australie -",
+                "7-5, 6-0",
+                "",
+                "2001 - Round robin (groupe mondial) - Espagne - Belgique -",
+                "6-3, 5-7, 7-5",
+                "",
+                "2001 - Finale (groupe mondial) - Belgique - Russie -",
+                "6-0, 6-3",
+                "",
+                "2002 -  (groupe mondial) - Belgique - Australie -",
+                "6-4, 4-6, 6-0",
+                "6-2, 6-1",
+                "",
+                "2003 -  (groupe mondial) - Belgique - Autriche -",
+                "6-2, 6-1",
+                "",
+                "2003 - 1/4 de finale (groupe mondial) - Belgique - Slovaquie -",
+                "7-5, 6-4",
+                "6-2, 6-1",
+                "",
+                "2006 - 1/4 de finale (groupe mondial) - Belgique - Russie -",
+                "6-7, 6-4, 6-3",
+                "6-2, 6-0",
+                "7-6, 7-5",
+                "",
+                "2006 - Finale (groupe mondial) - Belgique - Italie -",
+                "6-4, 7-5",
+                "6-4, 7-5",
+                "3-6, 6-2, 2-0,",
+                "",
+                "2010 -  Barrage (groupe mondial I) - Belgique - Estonie -",
+                "6-7, 6-4, 6-3"
             ]
         }
     },
@@ -1096,26 +1164,36 @@
             ]
         ],
         "column_types": [
-            "datetime",
-            "string",
             "string",
             "numeric",
             "numeric",
             "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
             "string",
-            "string"
+            "string",
+            "numeric"
         ],
-        "key_column": 1,
+        "key_column": 0,
         "numeric_columns": [
+            1,
+            2,
             3,
             4,
-            5
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            13
         ],
-        "date_columns": {
-            "0": [
-                "Rang"
-            ]
-        }
+        "date_columns": {}
     },
     {
         "id": "18984",
@@ -1140,26 +1218,22 @@
             ]
         ],
         "column_types": [
-            "datetime",
-            "string",
             "string",
             "numeric",
             "numeric",
             "numeric",
-            "string",
-            "string"
+            "numeric",
+            "numeric"
         ],
-        "key_column": 1,
+        "key_column": 0,
         "numeric_columns": [
+            1,
+            2,
             3,
             4,
             5
         ],
-        "date_columns": {
-            "0": [
-                "Rang"
-            ]
-        }
+        "date_columns": {}
     },
     {
         "id": "18984",
@@ -1208,26 +1282,25 @@
             ]
         ],
         "column_types": [
+            "numeric",
+            "string",
             "datetime",
             "string",
-            "string",
-            "string",
             "numeric",
-            "numeric",
-            "string",
-            "string"
+            "numeric"
         ],
         "key_column": 1,
         "numeric_columns": [
+            0,
             4,
             5
         ],
         "date_columns": {
-            "0": [
-                "1",
-                "2",
-                "3",
-                "4"
+            "2": [
+                "20/10/2003 - 26/10/2003",
+                "10/11/2003 - 12/09/2004",
+                "13/11/2006 - 28/01/2007",
+                "19/03/2007 - 18/05/2008"
             ]
         }
     },
@@ -1409,41 +1482,22 @@
             ]
         ],
         "column_types": [
-            "datetime",
-            "string",
             "string",
             "numeric",
             "numeric",
-            "string",
-            "string",
+            "numeric",
+            "numeric",
+            "numeric",
             "string"
         ],
-        "key_column": 1,
+        "key_column": 0,
         "numeric_columns": [
+            1,
+            2,
             3,
-            4
+            4,
+            5
         ],
-        "date_columns": {
-            "0": [
-                "Venus Williams",
-                "Serena Williams",
-                "Kim Clijsters",
-                "Martina Hingis",
-                "Amélie Mauresmo",
-                "Lindsay Davenport",
-                "Maria Sharapova",
-                "Jennifer Capriati",
-                "Marion Bartoli",
-                "Anastasia Myskina",
-                "Mary Pierce",
-                "Patty Schnyder",
-                "Svetlana Kuznetsova",
-                "Elena Dementieva",
-                "Nadia Petrova",
-                "Francesca Schiavone",
-                "Vera Zvonareva",
-                "Total"
-            ]
-        }
+        "date_columns": {}
     }
 ]

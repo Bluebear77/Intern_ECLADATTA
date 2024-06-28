@@ -269,6 +269,9 @@
             "string",
             "string",
             "string",
+            "string",
+            "string",
+            "string",
             "string"
         ],
         "key_column": 0,
@@ -318,6 +321,8 @@
             ]
         ],
         "column_types": [
+            "string",
+            "string",
             "string",
             "string",
             "string",
@@ -643,6 +648,9 @@
             "string",
             "string",
             "string",
+            "string",
+            "string",
+            "string",
             "string"
         ],
         "key_column": 0,
@@ -692,6 +700,8 @@
             ]
         ],
         "column_types": [
+            "string",
+            "string",
             "string",
             "string",
             "string",
@@ -945,14 +955,50 @@
             ]
         ],
         "column_types": [
+            "numeric",
             "string",
             "string",
-            "string",
-            "string"
+            "datetime",
+            "datetime",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
         ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {}
+        "key_column": 1,
+        "numeric_columns": [
+            0,
+            5,
+            6,
+            7,
+            8
+        ],
+        "date_columns": {
+            "3": [
+                1998,
+                2010,
+                1992,
+                2010,
+                1994,
+                1968,
+                1998,
+                2014,
+                1992,
+                2006
+            ],
+            "4": [
+                2014,
+                2018,
+                2006,
+                2018,
+                2006,
+                1980,
+                2010,
+                2022,
+                1994,
+                2006
+            ]
+        }
     },
     {
         "id": "2691667",
@@ -1082,13 +1128,49 @@
             ]
         ],
         "column_types": [
+            "numeric",
             "string",
             "string",
-            "string",
-            "string"
+            "datetime",
+            "datetime",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
         ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {}
+        "key_column": 1,
+        "numeric_columns": [
+            0,
+            5,
+            6,
+            7,
+            8
+        ],
+        "date_columns": {
+            "3": [
+                2010,
+                2002,
+                2010,
+                2018,
+                1992,
+                1998,
+                2010,
+                2002,
+                2010,
+                2006
+            ],
+            "4": [
+                2018,
+                2010,
+                2018,
+                2022,
+                2006,
+                2006,
+                2014,
+                2010,
+                2010,
+                2010
+            ]
+        }
     }
 ]

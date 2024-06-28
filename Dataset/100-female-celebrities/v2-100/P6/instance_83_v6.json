@@ -152,11 +152,14 @@
             "string",
             "numeric",
             "string",
+            "numeric",
+            "string",
             "string"
         ],
-        "key_column": 2,
+        "key_column": 3,
         "numeric_columns": [
-            4
+            4,
+            6
         ],
         "date_columns": {}
     },
@@ -219,13 +222,17 @@
             "string",
             "string",
             "string",
+            "string",
+            "numeric",
+            "string",
             "numeric",
             "string",
             "string"
         ],
         "key_column": 2,
         "numeric_columns": [
-            4
+            5,
+            7
         ],
         "date_columns": {}
     },
@@ -327,18 +334,32 @@
             ]
         ],
         "column_types": [
-            "string",
+            "datetime",
             "string",
             "string",
             "string",
             "numeric",
             "string",
+            "numeric",
+            "string",
+            "string",
+            "string",
             "string"
         ],
         "key_column": 2,
         "numeric_columns": [
-            4
+            4,
+            6
         ],
-        "date_columns": {}
+        "date_columns": {
+            "0": [
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999
+            ]
+        }
     }
 ]
