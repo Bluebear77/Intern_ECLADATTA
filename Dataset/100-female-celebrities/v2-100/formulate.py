@@ -1,47 +1,32 @@
 import os
 import json
-from datetime import datetime
-
-def infer_data_types(row):
-    types = []
-    for item in row:
-        try:
-            int(item)
-            types.append('numeric')
-        except ValueError:
-            try:
-                datetime.strptime(item, '%Y-%m-%d')
-                types.append('datetime')
-            except ValueError:
-                types.append('string')
-    return types
 
 def process_file(input_path, output_path):
-    with open(input_path, 'r', encoding='utf-8') as file:
-        data = json.load(file)
+    try:
+        with open(input_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+    except json.JSONDecodeError:
+        print(f"Error decoding JSON from file: {input_path}")
+        return
 
     processed_data = []
-    for dataset in data['tableData']:
+    for dataset in data.get('tableData', []):
         if not dataset:
             continue
 
         header = dataset[0]
         rows = dataset[1:]
-        column_types = infer_data_types(rows[0]) if rows else ['string'] * len(header)
-
-        numeric_columns = [i for i, typ in enumerate(column_types) if typ == 'numeric']
-        date_columns = {i: [row[i] for row in rows] for i, typ in enumerate(column_types) if typ == 'datetime'}
 
         processed_data.append({
-            "id": data["id"],
-            "title": data["title"],
-            "url": data["url"][0] if data["url"] else "",
+            "id": data.get("id", ""),
+            "title": data.get("title", ""),
+            "url": data.get("url", [""])[0] if data.get("url") else "",
             "header": header,
             "rows": rows,
-            "column_types": column_types,
-            "key_column": 0,  # assuming the first column is the key column
-            "numeric_columns": numeric_columns,
-            "date_columns": date_columns
+            "column_types": "",  # placeholder for column types
+            "key_column": "",  # placeholder for key column
+            "numeric_columns": [],
+            "date_columns": {}
         })
 
     with open(output_path, 'w', encoding='utf-8') as file:

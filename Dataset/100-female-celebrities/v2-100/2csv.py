@@ -36,7 +36,10 @@ def extract_typing_labels(json_file):
                     for column in primitive_typing:
                         column_index = column["columnIndex"]
                         if column["typing"]:
-                            column_types[column_index] = column["typing"][0]["typingLabel"]  # take the first typingLabel
+                            column_type = column["typing"][0]["typingLabel"]  # take the first typingLabel
+                            if column_type == 'DATE':
+                                column_type = 'datetime'
+                            column_types[column_index] = column_type
                     # Append the result for this table
                     results.append([table_num] + column_types)
                 else:
