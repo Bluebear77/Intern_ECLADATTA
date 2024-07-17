@@ -1,5 +1,6 @@
 # Statistics for Instance 22<br/>
 Total number of questions: 4<br/>
+Total number of tables: 4<br/>
 Total 2 unique reasoning types are produced.<br/>
 ## Reasoning Type Statistics<br/>
 - **counting:** Count = 3, Percentage = 75.00%<br/>

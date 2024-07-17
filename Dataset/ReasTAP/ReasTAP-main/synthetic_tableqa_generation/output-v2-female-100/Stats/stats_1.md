@@ -1,5 +1,6 @@
 # Statistics for Instance 1<br/>
 Total number of questions: 20<br/>
+Total number of tables: 4<br/>
 Total 4 unique reasoning types are produced.<br/>
 ## Reasoning Type Statistics<br/>
 - **temporal_comparison:** Count = 8, Percentage = 40.00%<br/>

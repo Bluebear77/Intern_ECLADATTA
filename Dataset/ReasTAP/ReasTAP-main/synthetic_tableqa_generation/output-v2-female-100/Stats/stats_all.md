@@ -1,5 +1,7 @@
 # Statistics for Instance all<br/>
+Total number of pages: 72<br/>
 Total number of questions: 1807<br/>
+Total number of tables: 508<br/>
 Total 7 unique reasoning types are produced.<br/>
 ## Reasoning Type Statistics<br/>
 - **temporal_comparison:** Count = 122, Percentage = 6.75%<br/>

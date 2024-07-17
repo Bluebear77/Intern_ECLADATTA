@@ -1,5 +1,6 @@
 # Statistics for Instance 39<br/>
 Total number of questions: 71<br/>
+Total number of tables: 11<br/>
 Total 3 unique reasoning types are produced.<br/>
 ## Reasoning Type Statistics<br/>
 - **conjunction:** Count = 21, Percentage = 29.58%<br/>
