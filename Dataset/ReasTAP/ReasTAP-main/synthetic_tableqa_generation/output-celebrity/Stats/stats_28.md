@@ -1,5 +1,5 @@
 # Result<br/>
-1. Total number of questions: 154<br/>
+1. Total number of qas: 154<br/>
 2. Total number of tables: 20<br/>
 3. Total 5 unique reasoning types are produced.<br/>
 ## **Reasoning Type Statistics**<br/>

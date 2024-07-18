@@ -1,6 +1,6 @@
 # Result<br/>
 Total number of pages: 41<br/>
-1. Total number of questions: 1015<br/>
+1. Total number of qas: 1015<br/>
 2. Total number of tables: 145<br/>
 3. Total 7 unique reasoning types are produced.<br/>
 ## **Reasoning Type Statistics**<br/>

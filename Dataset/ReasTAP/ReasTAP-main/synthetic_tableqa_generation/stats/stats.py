@@ -17,7 +17,7 @@ def analyze_json_files(base_path, start, end):
     
     # Process each file
     for i in range(start, end + 1):
-        file_path = os.path.join(base_path, f'synthetic_qa_output_instance_{i}_v6.json')
+        file_path = os.path.join(base_path, f'synthetic_qa_output_instance_{i}_v5.json')
         
         try:
             total_questions, total_tables, reasoning_type_counts = process_file(file_path)
@@ -59,7 +59,7 @@ def write_stats_markdown(directory, index, total_questions, total_tables, reason
             md_file.write(f"Total number of pages: {total_pages}<br/>\n")
         else:
             md_file.write(f"# Result<br/>\n")
-        md_file.write(f"1. Total number of questions: {total_questions}<br/>\n")
+        md_file.write(f"1. Total number of qas: {total_questions}<br/>\n")
         md_file.write(f"2. Total number of tables: {total_tables}<br/>\n")
         md_file.write(f"3. Total {len(reasoning_type_counts)} unique reasoning types are produced.<br/>\n")
         md_file.write("## **Reasoning Type Statistics**<br/>\n")
@@ -70,7 +70,7 @@ def write_stats_markdown(directory, index, total_questions, total_tables, reason
             md_file.write(f"Total number of pages: {total_pages}<br/>\n")
 
 # Specify the base directory where files are located
-base_path = "../output-celebrity"
+base_path = "../output-business"
 
 # Analyze JSON files from instance 1 to 100
 analyze_json_files(base_path, 1, 100)
