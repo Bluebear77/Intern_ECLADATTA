@@ -1,0 +1,661 @@
+[
+    {
+        "id": "342938",
+        "title": "Aretha Franklin",
+        "url": "https://fr.wikipedia.org/?curid=342938",
+        "header": [
+            "Ann\u00e9e",
+            "Cat\u00e9gorie",
+            "Genre",
+            "Titre"
+        ],
+        "rows": [
+            [
+                "1968",
+                "Best Rhythm And Blues Recording",
+                "R&B",
+                "Respect"
+            ],
+            [
+                "1968",
+                "Best Female R&B Vocal Performance",
+                "R&B",
+                "Respect"
+            ],
+            [
+                "1969",
+                "Best Female R&B Vocal Performance",
+                "R&B",
+                "Chain of Fools"
+            ],
+            [
+                "1970",
+                "Best Female R&B Vocal Performance",
+                "R&B",
+                ""
+            ],
+            [
+                "1971",
+                "Best Female R&B Vocal Performance",
+                "R&B",
+                "Don't Play That Song (You Lied)"
+            ],
+            [
+                "1972",
+                "Best Female R&B Vocal Performance",
+                "R&B",
+                "Bridge over Troubled Water"
+            ],
+            [
+                "1973",
+                "Best Female R&B Vocal Performance",
+                "R&B",
+                ""
+            ],
+            [
+                "1973",
+                "Best Soul Gospel Performance",
+                "Gospel",
+                "Amazing Grace"
+            ],
+            [
+                "1974",
+                "Best Female R&B Vocal Performance",
+                "R&B",
+                "Master of Eyes"
+            ],
+            [
+                "1975",
+                "Best Female R&B Vocal Performance",
+                "R&B",
+                ""
+            ],
+            [
+                "1982",
+                "Best Female R&B Vocal Performance",
+                "R&B",
+                "Hold On, I'm Comin'"
+            ],
+            [
+                "1986",
+                "Best Female R&B Vocal Performance",
+                "R&B",
+                "Freeway of Love"
+            ],
+            [
+                "1988",
+                "Best Female R&B Vocal Performance",
+                "R&B",
+                "Aretha"
+            ],
+            [
+                "1988",
+                "Best R&B Vocal By Duo Or Group",
+                "R&B",
+                "I Knew You Were Waiting (For Me)avec George Michael"
+            ],
+            [
+                "1991",
+                "Legend Award",
+                "General",
+                "--"
+            ],
+            [
+                "2004",
+                "Best Traditional R&B Vocal Performance",
+                "R&B",
+                "Wonderful"
+            ],
+            [
+                "2006",
+                "Best Traditional R&B Vocal Performance",
+                "R&B",
+                ""
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                1968,
+                1968,
+                1969,
+                1970,
+                1971,
+                1972,
+                1973,
+                1973,
+                1974,
+                1975,
+                1982,
+                1986,
+                1988,
+                1988,
+                1991,
+                2004,
+                2006
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Cat\u00e9gorie when the Ann\u00e9e was before 1970 and the Titre string contains Fools?",
+                "answers": [
+                    "Best Female R&B Vocal Performance"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Cat\u00e9gorie when the Ann\u00e9e was on 1991 and the Genre is General?",
+                "answers": [
+                    "Legend Award"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Cat\u00e9gorie, with Ann\u00e9e was after 1973, have Genre is General?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Cat\u00e9gorie, with Ann\u00e9e was before 2006, have Titre is Respect?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Cat\u00e9gorie, with Ann\u00e9e was after 1986, happened the 2nd according to Ann\u00e9e?",
+                "answers": [
+                    "Best Female R&B Vocal Performance",
+                    "Best R&B Vocal By Duo Or Group"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Cat\u00e9gorie, with Ann\u00e9e was before 1975, happened the 6th according to Ann\u00e9e?",
+                "answers": [
+                    "Best Female R&B Vocal Performance"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Cat\u00e9gorie, with Ann\u00e9e was before 2004, happened the 10th according to Ann\u00e9e?",
+                "answers": [
+                    "Best Female R&B Vocal Performance"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Titre was Wonderful and when the Titre was Aretha?",
+                "answers": [
+                    "16"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Titre was Chain of Fools and when the Titre was Master of Eyes?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Cat\u00e9gorie had Ann\u00e9e was before 1986?",
+                "answers": [
+                    "11"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Cat\u00e9gorie had Ann\u00e9e was after 1968?",
+                "answers": [
+                    "15"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Cat\u00e9gorie had Ann\u00e9e was after 1991?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "342938",
+        "title": "Aretha Franklin",
+        "url": "https://fr.wikipedia.org/?curid=342938",
+        "header": [
+            "Classement",
+            "D\u00e9cern\u00e9 par\u2026",
+            "Titre",
+            "R\u00e9compens\u00e9",
+            "Date"
+        ],
+        "rows": [
+            [
+                "1",
+                "Rolling Stone",
+                "200 plus grands chanteurs de tous les temps",
+                "Aretha Franklin",
+                "2023"
+            ],
+            [
+                "1",
+                "Rolling Stone",
+                "100 plus grands chanteurs de tous les temps.",
+                "Aretha Franklin",
+                "2010"
+            ],
+            [
+                "1",
+                "Rolling Stone",
+                "Women in Rock: 50 Essential Albums.",
+                "I Never Loved A Man (The Way I Love You) (album)",
+                "2012"
+            ],
+            [
+                "1",
+                "Rock and Roll Hall of Fame",
+                "Femmes intronis\u00e9es.",
+                "Aretha Franklin",
+                "1987"
+            ],
+            [
+                "1",
+                "TIME",
+                "Femmes noires \u00e0 faire la une du TIME.",
+                "Aretha Franklin",
+                "1968"
+            ],
+            [
+                "1",
+                "Billboard",
+                "Plus grandes artistes f\u00e9minines R&B de tous les temps",
+                "Aretha Franklin",
+                "2011"
+            ],
+            [
+                "1",
+                "New Musical Express",
+                "150 meilleures chansons de tous les temps.",
+                "I Say A Little Prayer",
+                "1987"
+            ],
+            [
+                "1",
+                "YouGov",
+                "Artistes f\u00e9minines pr\u00e9f\u00e9r\u00e9es des Am\u00e9ricains.",
+                "Aretha Franklin",
+                "2018"
+            ],
+            [
+                "1",
+                "YouGov",
+                "Artistes soul/funk pr\u00e9f\u00e9r\u00e9s aux \u00c9tats-Unis.",
+                "Aretha Franklin",
+                "2020"
+            ],
+            [
+                "2",
+                "YouGov",
+                "Artistes soul/funk les plus connus aux \u00c9tats-Unis.",
+                "Aretha Franklin",
+                "2020"
+            ],
+            [
+                "2",
+                "",
+                "Femmes intronis\u00e9es",
+                "Aretha Franklin",
+                "2005"
+            ],
+            [
+                "5",
+                "Rolling Stone",
+                "500 plus grandes chansons de tous les temps.",
+                "Respect",
+                "2017"
+            ],
+            [
+                "9",
+                "Rolling Stone",
+                "100 plus grands artistes de tous les temps.",
+                "Aretha Franklin",
+                "2010"
+            ],
+            [
+                "13",
+                "Rolling Stone",
+                "500 plus grands albums de tous les temps.",
+                "I Never Loved A Man (The Way I Love You) (album)",
+                "2020"
+            ],
+            [
+                "15",
+                "Pitchfork Media",
+                "200 plus grandes chansons de tous les temps.",
+                "Think",
+                "2006"
+            ],
+            [
+                "19",
+                "Billboard",
+                "Plus grands artistes de tous les temps.",
+                "Aretha Franklin",
+                "2011"
+            ],
+            [
+                "20",
+                "Acclaimedmusic",
+                "1000 plus grands artistes de tous les temps.",
+                "Aretha Franklin",
+                "-"
+            ],
+            [
+                "27",
+                "VH1",
+                "100 plus grands artistes de tous les temps.",
+                "Aretha Franklin",
+                "2010"
+            ],
+            [
+                "30",
+                "VH1",
+                "Plus grands albums de tous les temps.",
+                "I Never Loved a Man the Way I Love You (album)",
+                "2001"
+            ],
+            [
+                "35",
+                "Rolling Stone",
+                "50 meilleurs albums live de tous les temps.",
+                "\"Live at Fillmore West\u2019\"",
+                "2015"
+            ],
+            [
+                "41",
+                "VH1",
+                "Plus grands albums de tous les temps",
+                "Lady Soul (album)",
+                "2001"
+            ],
+            [
+                "75",
+                "Rolling Stone",
+                "500 plus grands albums de tous les temps",
+                "Lady Soul (album)",
+                "2020"
+            ],
+            [
+                "76",
+                "VH1",
+                "Plus grands albums de tous les temps",
+                "Young, Gifted & Black (album)",
+                "2001"
+            ],
+            [
+                "83",
+                "Rolling Stone Magazine",
+                "500 plus grands albums de tous les temps",
+                "I Never Loved A Man (The Way I Love You) (album)",
+                "2003"
+            ],
+            [
+                "84",
+                "Rolling Stone Magazine",
+                "500 plus grands albums de tous les temps",
+                "Lady Soul (album)",
+                "2003"
+            ],
+            [
+                "133",
+                "Pitchfork Media",
+                "200 meilleurs albums des ann\u00e9es 1960.",
+                "Aretha Now (album)",
+                "-"
+            ],
+            [
+                "154",
+                "Rolling Stone",
+                "500 plus grands albums de tous les temps",
+                "Amazing Grace (album)",
+                "2020"
+            ],
+            [
+                "186",
+                "Rolling Stone",
+                "500 plus grandes chansons de tous les temps",
+                "I Never Loved A Man (The Way I Love You) (chanson)",
+                "2017"
+            ],
+            [
+                "248",
+                "Rolling Stone",
+                "500 plus grandes chansons de tous les temps",
+                "Chain of Fools",
+                "2017"
+            ],
+            [
+                "388",
+                "Rolling Stone Magazine",
+                "500 plus grands albums de tous les temps",
+                "Young, Gifted & Black (album)",
+                "2020"
+            ],
+            [
+                "473",
+                "Rolling Stone",
+                "500 plus grandes chansons de tous les temps",
+                "Do Right Man Do Right Woman",
+                "2017"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "datetime"
+        ],
+        "key_column": 2,
+        "numeric_columns": [
+            0
+        ],
+        "date_columns": {
+            "4": [
+                2023,
+                2010,
+                2012,
+                1987,
+                1968,
+                2011,
+                1987,
+                2018,
+                2020,
+                2020,
+                2005,
+                2017,
+                2010,
+                2020,
+                2006,
+                2011,
+                9999,
+                2010,
+                2001,
+                2015,
+                2001,
+                2020,
+                2001,
+                2003,
+                2003,
+                9999,
+                2020,
+                2017,
+                2017,
+                2020,
+                2017
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Titre when the R\u00e9compens\u00e9 string contains Loved and the Classement was greater than or equal to 1?",
+                "answers": [
+                    "Women in Rock: 50 Essential Albums.",
+                    "500 plus grands albums de tous les temps.",
+                    "Plus grands albums de tous les temps.",
+                    "500 plus grands albums de tous les temps",
+                    "500 plus grandes chansons de tous les temps"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Titre when the Classement was less than 473 and the R\u00e9compens\u00e9 string starts with I?",
+                "answers": [
+                    "Women in Rock: 50 Essential Albums.",
+                    "150 meilleures chansons de tous les temps.",
+                    "500 plus grands albums de tous les temps.",
+                    "Plus grands albums de tous les temps.",
+                    "500 plus grands albums de tous les temps",
+                    "500 plus grandes chansons de tous les temps"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Titre, with D\u00e9cern\u00e9 par\u2026 string contains Stone, have R\u00e9compens\u00e9 string starts with I?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Titre, with Classement was equal to 1, have R\u00e9compens\u00e9 string contains I?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Titre, with Classement was less than or equal to 1, happened the 5th according to Date?",
+                "answers": [
+                    "Plus grandes artistes f\u00e9minines R&B de tous les temps"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Titre, with D\u00e9cern\u00e9 par\u2026 string contains Stone, has the 7th largest Classement?",
+                "answers": [
+                    "500 plus grands albums de tous les temps"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Titre, with R\u00e9compens\u00e9 string starts with I, has the 4th largest Classement?",
+                "answers": [
+                    "500 plus grands albums de tous les temps."
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Titre, with D\u00e9cern\u00e9 par\u2026 string ends with Magazine, has the 3rd largest Classement?",
+                "answers": [
+                    "500 plus grands albums de tous les temps"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Classement was 13 and when the Classement was 76?",
+                "answers": [
+                    "19"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Classement was 83 and when the Classement was 15?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Classement was less than or equal to 41 and R\u00e9compens\u00e9 string starts with I?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Classement was greater than 2?",
+                "answers": [
+                    "20"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Classement was less than or equal to 9?",
+                "answers": [
+                    "13"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Classement when the D\u00e9cern\u00e9 par\u2026 string contains Rolling?",
+                "answers": [
+                    "1756.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Classement when the R\u00e9compens\u00e9 string contains Franklin?",
+                "answers": [
+                    "86.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Classement when the R\u00e9compens\u00e9 string contains Man?",
+                "answers": [
+                    "786.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    }
+]
