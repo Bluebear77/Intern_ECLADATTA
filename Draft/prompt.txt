@@ -45,3 +45,18 @@ extract_typing_label_from_csv: Extracts typing labels from the generated CSV fil
 update_table_with_key_and_types: Updates the processed JSON data with the key column and column types.
 process_file: Main function to process each file, generate the CSV, log missing data, and update the JSON output.
 Loop through the files: Processes files from 1 to 100.
+
+
+
+***
+
+
+Prompt:
+
+Please update the code to perform the following tasks:
+
+    Check if the number of rows in "column_types" matches the number of rows in "header".
+    If "column_types" has fewer rows than "header", fill in the missing rows with the type "string".
+    If "column_types" has more rows than "header", truncate the extra rows.
+    Ensure this check and adjustment happens before any further processing of the column types.
+    Ensure the existing functionality for determining and refining column types based on the values in the "rows" remains intact.
