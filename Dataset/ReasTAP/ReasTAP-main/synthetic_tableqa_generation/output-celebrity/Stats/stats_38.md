@@ -1,0 +1,10 @@
+# Result<br/>
+1. Total number of questions: 23<br/>
+2. Total number of tables: 4<br/>
+3. Total 5 unique reasoning types are produced.<br/>
+## **Reasoning Type Statistics**<br/>
+1. conjunction: Count = 4, Percentage = 17.39%<br/>
+2. quantifiers: Count = 4, Percentage = 17.39%<br/>
+3. temporal_comparison: Count = 6, Percentage = 26.09%<br/>
+4. date_difference: Count = 2, Percentage = 8.70%<br/>
+5. counting: Count = 7, Percentage = 30.43%<br/>

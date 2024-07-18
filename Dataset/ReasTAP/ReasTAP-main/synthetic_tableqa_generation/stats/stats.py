@@ -70,7 +70,7 @@ def write_stats_markdown(directory, index, total_questions, total_tables, reason
             md_file.write(f"Total number of pages: {total_pages}<br/>\n")
 
 # Specify the base directory where files are located
-base_path = "../output-telco-100"
+base_path = "../output-telco"
 
 # Analyze JSON files from instance 1 to 100
 analyze_json_files(base_path, 1, 100)
