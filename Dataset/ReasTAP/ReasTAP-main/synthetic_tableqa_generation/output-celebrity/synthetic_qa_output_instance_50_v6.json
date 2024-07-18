@@ -93,7 +93,7 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [
             2
         ],
@@ -101,27 +101,29 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Remarques string contains de and the Nom string starts with Catherine?",
+                "question": "What was the Nom when the Remarques string starts with Fils and the Conjoint string contains Grey?",
                 "answers": [
-                    "Portrait de Catherine d'Aragon.",
-                    "Portrait suppos\u00e9 de Catherine Howard.",
-                    "Portrait imaginaire de Catherine Parr."
+                    "Guilford Dudley(1535 \u2013 )"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Blason string contains de and the Nom string starts with Catherine?",
+                "question": "What was the Nom when the Portrait string contains de and the Remarques string contains de?",
                 "answers": [
-                    "Portrait de Catherine d'Aragon.",
-                    "Portrait suppos\u00e9 de Catherine Howard.",
-                    "Portrait imaginaire de Catherine Parr."
+                    "Catherine d'Aragon( \u2013 )",
+                    "Jeanne Seymour(vers 1508 \u2013 )",
+                    "Anne de Cl\u00e8ves( \u2013 )",
+                    "Catherine Howard(entre 1520 et 1525 \u2013 )",
+                    "Catherine Parr(1512 \u2013 )",
+                    "Guilford Dudley(1535 \u2013 )",
+                    "Philippe de Habsbourg( \u2013 )"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with Conjoint string contains Grey, have Blason string contains de?",
+                "question": "Does only Nom, with Remarques string starts with Fille, have Portrait string starts with Portrait?",
                 "answers": [
                     "No"
                 ],
@@ -129,7 +131,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Remarques string starts with Fils, have Conjoint string ends with Grey?",
+                "question": "Does only Nom, with Conjoint string contains Grey, have Portrait string starts with Portrait?",
                 "answers": [
                     "No"
                 ],
@@ -137,25 +139,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Remarques string contains de?",
-                "answers": [
-                    "8"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Nom string starts with Catherine?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Remarques string starts with Fille?",
+                "question": "How many Nom had Remarques string starts with Fille?",
                 "answers": [
                     "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Portrait string starts with Portrait?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Portrait string starts with Portrait and Blason string contains Catherine?",
+                "answers": [
+                    "3"
                 ],
                 "reasoning_type": "counting"
             }
@@ -231,7 +233,7 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [
             2
         ],
@@ -239,7 +241,19 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Conjoint string contains de and the Blason string starts with Sous?",
+                "question": "What was the Nom when the Portrait string starts with Portrait and the Blason string contains la?",
+                "answers": [
+                    "Anne de Danemark( \u2013 )",
+                    "Henriette-Marie de France( \u2013 )",
+                    "Catherine de Bragance( \u2013 )",
+                    "Marie de Mod\u00e8ne( \u2013 )",
+                    "Georges de Danemark( \u2013 )"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the Remarques string starts with Sous and the Blason string contains de?",
                 "answers": [
                     "Sous le Protectorat, l'\u00e9pouse du lord-protecteur porte le titre de \u00ab  \u00bb. Il est port\u00e9 de mani\u00e8re certaine par la femme d'Oliver Cromwell, , de 1653 \u00e0 1658, et peut-\u00eatre ensuite par , femme de Richard Cromwell, en 1659."
                 ],
@@ -247,15 +261,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Blason string starts with Sous and the Remarques string contains le?",
-                "answers": [
-                    "Sous le Protectorat, l'\u00e9pouse du lord-protecteur porte le titre de \u00ab  \u00bb. Il est port\u00e9 de mani\u00e8re certaine par la femme d'Oliver Cromwell, , de 1653 \u00e0 1658, et peut-\u00eatre ensuite par , femme de Richard Cromwell, en 1659."
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with Blason string starts with Sous, have Conjoint string starts with Sous?",
+                "question": "Does every Nom, with Conjoint string starts with Sous, have Remarques string contains se?",
                 "answers": [
                     "Yes"
                 ],
@@ -263,23 +269,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Remarques string contains de, have Conjoint string starts with Sous?",
+                "question": "Does only Nom, with Conjoint string starts with Sous, have Remarques string starts with Sous?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Remarques string starts with Fille?",
+                "question": "How many Nom had Portrait string contains Portrait?",
                 "answers": [
-                    "4"
+                    "5"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Remarques string contains titre?",
+                "question": "How many Nom had Remarques string starts with Fils and Portrait string starts with Portrait?",
                 "answers": [
                     "1"
                 ],
@@ -287,7 +293,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Blason string contains de and Remarques string starts with Fille?",
+                "question": "How many Nom had Remarques string starts with Fille?",
                 "answers": [
                     "4"
                 ],
@@ -393,7 +399,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Portrait string starts with Portrait and the Conjoint is Edgar?",
+                "question": "What was the Nom when the Remarques string starts with Fille and the Conjoint is Edgar?",
                 "answers": [
                     "\u00c6lfthryth(morte entre 999 et 1001)"
                 ],
@@ -401,7 +407,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Conjoint is Eadwig and the Remarques string starts with Fille?",
+                "question": "What was the Nom when the Portrait string starts with Portrait and the Conjoint is Eadwig?",
                 "answers": [
                     "\u00c6lfgifu(morte entre 966 et 975 ?)"
                 ],
@@ -409,31 +415,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Portrait string contains Portrait, have Remarques string starts with Fille?",
+                "question": "Does every Nom, with Conjoint string starts with Knut, have Remarques string contains de?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom, with Remarques string starts with Fille, have Conjoint is Eadwig?",
+                "question": "Does only Nom, with Remarques string contains le, have Conjoint is Edgar?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Remarques string contains est?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Portrait string starts with Portrait?",
+                "question": "How many Nom had Portrait string contains Portrait?",
                 "answers": [
                     "5"
                 ],
@@ -441,9 +439,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Remarques string contains de?",
+                "question": "How many Nom had Remarques string starts with Fille and Conjoint string contains le?",
                 "answers": [
-                    "10"
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Remarques string starts with Fille?",
+                "answers": [
+                    "8"
                 ],
                 "reasoning_type": "counting"
             }
@@ -504,7 +510,7 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [
             2
         ],
@@ -512,31 +518,47 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Conjoint string contains le and the Remarques string starts with Fille?",
+                "question": "What was the Nom when the Conjoint string contains le and the Remarques string starts with Fille?",
                 "answers": [
-                    "Statue \u00e0 l'effigie (imaginaire) de Mathilde de Flandre."
+                    "Mathilde de Flandre(vers 1031 \u2013 )"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with Nom string contains de, have Remarques string starts with Fille?",
+                "question": "What was the Nom when the Portrait string contains de and the Remarques string starts with Fils?",
                 "answers": [
-                    "Yes"
+                    "Geoffroy d'Anjou( \u2013 )"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom, with Remarques string starts with Fils, have Portrait string contains Portrait?",
+                "answers": [
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with Remarques string contains le, have Conjoint string contains le?",
+                "question": "Does every Nom, with Remarques string starts with Fille, have Portrait string starts with Statue?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Remarques string starts with Fils?",
+                "question": "How many Nom had Remarques string starts with Fille?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Remarques string contains de and Conjoint string contains le?",
                 "answers": [
                     "1"
                 ],
@@ -544,17 +566,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Remarques string contains Fille?",
+                "question": "How many Nom had Remarques string starts with Fille and Conjoint string contains le?",
                 "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Remarques string starts with Fille?",
-                "answers": [
-                    "4"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -726,7 +740,7 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [
             2
         ],
@@ -734,23 +748,32 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Remarques string starts with Fille and the Nom string starts with Catherine?",
+                "question": "What was the Nom when the Blason string contains de and the Conjoint string ends with Lion?",
                 "answers": [
-                    "Portrait imaginaire de Catherine."
+                    "B\u00e9reng\u00e8re de Navarre(1163 \u2013 )"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Remarques string contains Son and the Nom string starts with Marguerite?",
+                "question": "What was the Nom when the Portrait string starts with Portrait and the Remarques string starts with Fille?",
                 "answers": [
-                    "Portrait imaginaire de Marguerite."
+                    "Marguerite de France(1158 \u2013 )",
+                    "\u00c9l\u00e9onore de Provence(1223 \u2013 )",
+                    "\u00c9l\u00e9onore de Castille(vers 1241 \u2013 )",
+                    "Isabelle de France(vers 1295 \u2013 )",
+                    "Anne de Boh\u00eame( \u2013 )",
+                    "Isabelle de Valois( \u2013 )",
+                    "Catherine de Valois( \u2013 )",
+                    "Marguerite d'Anjou(23/ \u2013 )",
+                    "\u00c9lisabeth Woodville(1437 \u2013 )",
+                    "Anne Neville( \u2013 )"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Remarques string contains de, have Nom string contains Marguerite?",
+                "question": "Does only Nom, with Remarques string starts with Fille, have Blason string contains de?",
                 "answers": [
                     "No"
                 ],
@@ -758,33 +781,33 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Blason string contains de, have Remarques string starts with Fille?",
+                "question": "Does every Nom, with Conjoint string contains Lion, have Remarques string starts with Fille?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Nom string starts with Marguerite and Remarques string starts with Fille?",
+                "question": "How many Nom had Portrait string starts with Portrait?",
                 "answers": [
-                    "3"
+                    "12"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Remarques string starts with Fille and Blason string contains de?",
+                "question": "How many Nom had Portrait string starts with Portrait and Blason string contains de?",
                 "answers": [
-                    "13"
+                    "9"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Remarques string contains de?",
+                "question": "How many Nom had Remarques string contains pas?",
                 "answers": [
-                    "16"
+                    "5"
                 ],
                 "reasoning_type": "counting"
             }

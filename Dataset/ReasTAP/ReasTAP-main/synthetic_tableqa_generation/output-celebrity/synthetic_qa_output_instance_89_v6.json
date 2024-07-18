@@ -1145,37 +1145,29 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Semaine # when the Artiste original string starts with Otis and the Th\u00e8me is Hollywood?",
+                "question": "What was the Th\u00e8me when the Semaine # string starts with Top and the Chanson choisie string starts with Walk?",
                 "answers": [
-                    "Top 121"
+                    "Chansons d'amour"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Semaine # when the Chanson choisie string contains A and the Artiste original string contains Otis?",
+                "question": "What was the Th\u00e8me when the Semaine # is Audition and the Artiste original string ends with James?",
                 "answers": [
-                    "Top 2"
+                    "Aucun"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Semaine #, with Artiste original string starts with Vanessa, have Th\u00e8me is Hollywood?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Semaine #, with Chanson choisie is Respect, have Th\u00e8me is Semifinal?",
+                "question": "Does every Th\u00e8me, with Semaine # string contains Top, have Artiste original string ends with Franklin?",
                 "answers": [
                     "No"
                 ],
@@ -1183,7 +1175,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Semaine # had Chanson choisie string ends with Last?",
+                "question": "Does only Th\u00e8me, with Semaine # string starts with Top, have Artiste original string contains Weather?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Th\u00e8me had Semaine # string starts with Top and Artiste original string ends with Redding?",
                 "answers": [
                     "2"
                 ],
@@ -1191,7 +1191,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Semaine # had Artiste original string starts with Otis and Th\u00e8me is Hollywood?",
+                "question": "How many Th\u00e8me had Artiste original string starts with Vanessa and Semaine # string contains Top?",
                 "answers": [
                     "1"
                 ],
@@ -1199,9 +1199,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Semaine # had Chanson choisie string contains I and Th\u00e8me is Hollywood?",
+                "question": "How many Th\u00e8me had Artiste original string starts with Otis and Chanson choisie is Respect?",
                 "answers": [
-                    "1"
+                    "2"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1451,15 +1451,16 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the \u00c9pisode string contains 14 and the R\u00f4le is Coach?",
+                "question": "What was the Titre when the Ann\u00e9e was before 2019 and the \u00c9pisode string contains 14?",
                 "answers": [
+                    "American Idol",
                     "The Voice"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the \u00c9pisode string ends with 1 and the R\u00f4le is Coach?",
+                "question": "What was the Titre when the \u00c9pisode string contains 1 and the Ann\u00e9e was on 2012?",
                 "answers": [
                     "Duets"
                 ],
@@ -1467,7 +1468,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Titre, with Ann\u00e9e was after 2002, have \u00c9pisode string starts with Stressed?",
+                "question": "Does only Titre, with \u00c9pisode string contains Superstar, have Ann\u00e9e was before 2019?",
                 "answers": [
                     "No"
                 ],
@@ -1475,7 +1476,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Titre, with R\u00f4le string starts with Coach, have Ann\u00e9e was after 2012?",
+                "question": "Does only Titre, with R\u00f4le string contains pour, have \u00c9pisode string contains 2?",
                 "answers": [
                     "No"
                 ],
@@ -1483,24 +1484,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Ann\u00e9e was after 2012, happened the 4th according to Ann\u00e9e?",
-                "answers": [
-                    "Nashville"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Titre, with Ann\u00e9e was before 2019, happened the 6th according to Ann\u00e9e?",
-                "answers": [
-                    "From Justin to Kelly",
-                    "Mes plus belles ann\u00e9es"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Titre, with Ann\u00e9e was before 2011, happened the 2nd according to Ann\u00e9e?",
+                "question": "Which Titre, with Ann\u00e9e was before 2005, happened the 1st according to Ann\u00e9e?",
                 "answers": [
                     "Sabrina, l'apprentie sorci\u00e8re",
                     "That '80s Show",
@@ -1511,15 +1495,35 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the \u00c9pisode was Superstar K2 and when the \u00c9pisode was Saison 8, \u00e9pisode 1?",
+                "question": "Which Titre, with Ann\u00e9e was before 2007, happened the 8th according to Ann\u00e9e?",
                 "answers": [
-                    "8"
+                    "Mes plus belles ann\u00e9es",
+                    "Les Rois du Texas"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Titre, with Ann\u00e9e was before 2016, happened the 19th according to Ann\u00e9e?",
+                "answers": [
+                    "Saturday Night Live",
+                    "The Voice",
+                    "Duets",
+                    "Blake Shelton's Not So Family Christmas"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the \u00c9pisode was Saison 1, \u00e9pisode 4 and when the \u00c9pisode was S\u00e9rie documentaire; saison 4, \u00e9pisode 1?",
+                "answers": [
+                    "6"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the \u00c9pisode was Saison 5 and when the \u00c9pisode was Saison 8, \u00e9pisode 1?",
+                "question": "How many years had passed between when the \u00c9pisode was Saison 1, \u00e9pisode 1 and when the \u00c9pisode was Saison 6, \u00e9pisode 20 Le d\u00e9fil\u00e9 de mode?",
                 "answers": [
                     "3"
                 ],
@@ -1527,25 +1531,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had \u00c9pisode string ends with mode?",
+                "question": "How many Titre had Ann\u00e9e was after 2002?",
                 "answers": [
-                    "1"
+                    "27"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Ann\u00e9e was before 2010?",
+                "question": "How many Titre had Ann\u00e9e was after 2003?",
                 "answers": [
-                    "14"
+                    "25"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Ann\u00e9e was before 2012?",
+                "question": "How many Titre had Ann\u00e9e was after 2005 and R\u00f4le string ends with musical?",
                 "answers": [
-                    "16"
+                    "5"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1641,26 +1645,25 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Travail nomm\u00e9 when the Ann\u00e9e was before 2010 and the Cat\u00e9gorie string contains Award?",
+                "question": "What was the Travail nomm\u00e9 when the Ann\u00e9e was before 2013 and the Cat\u00e9gorie string contains collaboration?",
                 "answers": [
-                    "Miss Independent",
-                    "Since U Been Gone",
-                    "Breakaway",
                     "Because of You (avec Reba McEntire)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Travail nomm\u00e9 when the Ann\u00e9e was before 2006 and the Cat\u00e9gorie string contains pop?",
+                "question": "What was the Travail nomm\u00e9 when the Ann\u00e9e was after 2006 and the Cat\u00e9gorie string contains pop?",
                 "answers": [
-                    "Miss Independent"
+                    "All I Ever Wanted",
+                    "Stronger",
+                    "Stronger (What Doesn't Kill You)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Travail nomm\u00e9, with Ann\u00e9e was before 2008, have Cat\u00e9gorie string contains Award?",
+                "question": "Does only Travail nomm\u00e9, with Cat\u00e9gorie string contains de, have Ann\u00e9e was before 2008?",
                 "answers": [
                     "No"
                 ],
@@ -1668,23 +1671,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Travail nomm\u00e9, with Cat\u00e9gorie string contains de, have Ann\u00e9e was before 2012?",
+                "question": "Does only Travail nomm\u00e9, with Cat\u00e9gorie string contains pop, have Ann\u00e9e was on 2006?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Travail nomm\u00e9, with Cat\u00e9gorie string contains album, happened the 3rd according to Ann\u00e9e?",
-                "answers": [
-                    "Stronger"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Travail nomm\u00e9, with Ann\u00e9e was after 2008, happened the 3rd according to Ann\u00e9e?",
+                "question": "Which Travail nomm\u00e9, with Ann\u00e9e was on 2013, happened the 1st according to Ann\u00e9e?",
                 "answers": [
                     "Stronger",
                     "Stronger (What Doesn't Kill You)"
@@ -1693,7 +1688,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Travail nomm\u00e9, with Ann\u00e9e was after 2010, happened the 2nd according to Ann\u00e9e?",
+                "question": "Which Travail nomm\u00e9, with Ann\u00e9e was after 2010, happened the 4th according to Ann\u00e9e?",
                 "answers": [
                     "Stronger",
                     "Stronger (What Doesn't Kill You)"
@@ -1702,7 +1697,16 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Cat\u00e9gorie was Grammy Award du disque de l'ann\u00e9e and when the Cat\u00e9gorie was Grammy Award de la meilleure collaboration country?",
+                "question": "Which Travail nomm\u00e9, with Ann\u00e9e was on 2013, happened the 2nd according to Ann\u00e9e?",
+                "answers": [
+                    "Stronger",
+                    "Stronger (What Doesn't Kill You)"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Cat\u00e9gorie was Grammy Award de la meilleure collaboration country and when the Cat\u00e9gorie was Grammy Award de la meilleure performance pop?",
                 "answers": [
                     "5"
                 ],
@@ -1710,15 +1714,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Travail nomm\u00e9 had Ann\u00e9e was after 2004?",
+                "question": "How many years had passed between when the Cat\u00e9gorie was Grammy Award du meilleur duo ou groupe country and when the Cat\u00e9gorie was Grammy Award de la meilleure performance pop?",
                 "answers": [
-                    "8"
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Travail nomm\u00e9 had Ann\u00e9e was after 2008 and Cat\u00e9gorie string contains de?",
+                "answers": [
+                    "2"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Travail nomm\u00e9 had Ann\u00e9e was before 2013 and Cat\u00e9gorie string ends with pop?",
+                "question": "How many Travail nomm\u00e9 had Cat\u00e9gorie string contains la?",
                 "answers": [
                     "4"
                 ],
@@ -1726,9 +1738,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Travail nomm\u00e9 had Ann\u00e9e was after 2012?",
+                "question": "How many Travail nomm\u00e9 had Cat\u00e9gorie string contains pop and Ann\u00e9e was before 2013?",
                 "answers": [
-                    "3"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1853,7 +1865,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Tourn\u00e9e internationale is Non and the Promotion de l'album is Stronger?",
+                "question": "What was the Nom when the Promotion de l'album is Stronger and the Tourn\u00e9e internationale is Non?",
                 "answers": [
                     "2012 Summer Tour (avec The Fray)"
                 ],
@@ -1861,9 +1873,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Promotion de l'album is Stronger and the Tourn\u00e9e internationale is Non?",
+                "question": "What was the Nom when the Tourn\u00e9e internationale is Non and the Promotion de l'album string contains December?",
                 "answers": [
-                    "2012 Summer Tour (avec The Fray)"
+                    "2 Worlds 2 Voices Tour (avec Reba McEntire)"
                 ],
                 "reasoning_type": "conjunction"
             },
@@ -1877,19 +1889,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom, with Promotion de l'album is Stronger, have Tourn\u00e9e internationale is Non?",
+                "question": "Does only Nom, with Promotion de l'album is Stronger, have Tourn\u00e9e internationale is Non?",
                 "answers": [
                     "No"
                 ],
                 "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Nom, with Tourn\u00e9e internationale is Non, happened the 3rd according to Ann\u00e9e(s)?",
-                "answers": [
-                    "The Independent Tour (avec Clay Aiken)"
-                ],
-                "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
@@ -1901,15 +1905,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with Tourn\u00e9e internationale is Non, happened the 4th according to Ann\u00e9e(s)?",
+                "question": "Which Nom, with Tourn\u00e9e internationale is Non, happened the 3rd according to Ann\u00e9e(s)?",
                 "answers": [
-                    "2 Worlds 2 Voices Tour (avec Reba McEntire)"
+                    "The Independent Tour (avec Clay Aiken)"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Dates was 39 and when the Dates was 32?",
+                "question": "How many years had passed between when the Dates was 57 and when the Dates was 39?",
                 "answers": [
                     "4"
                 ],
@@ -1917,23 +1921,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Dates was 10 and when the Dates was 32?",
+                "question": "How many years had passed between when the Dates was 28 and when the Dates was ?",
                 "answers": [
-                    "1"
+                    "13"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Tourn\u00e9e internationale is Non?",
+                "question": "How many Nom had Tourn\u00e9e internationale is Non and Promotion de l'album is Stronger?",
                 "answers": [
-                    "5"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Promotion de l'album is Stronger?",
+                "question": "How many Nom had Promotion de l'album string starts with Piece?",
                 "answers": [
                     "2"
                 ],

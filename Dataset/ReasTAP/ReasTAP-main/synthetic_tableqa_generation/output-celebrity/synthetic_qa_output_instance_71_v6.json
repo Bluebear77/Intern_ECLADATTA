@@ -733,7 +733,7 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {
             "2": [
@@ -831,87 +831,78 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Film string starts with Le and the Cat\u00e9gorie string ends with distribution?",
+                "question": "What was the Cat\u00e9gorie when the R\u00e9compense string contains international and the Film string contains Ma?",
                 "answers": [
-                    "Screen Actors Guild Awards"
+                    "Meilleure actrice"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every R\u00e9compense, with Cat\u00e9gorie string contains second, have Film string starts with Le?",
+                "question": "Does every Cat\u00e9gorie, with R\u00e9compense string contains Guild, have Film string starts with Le?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every R\u00e9compense, with Cat\u00e9gorie string contains Film, have Film string starts with Le?",
+                "question": "Does only Cat\u00e9gorie, with Film string starts with Le, have R\u00e9compense string starts with Screen?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Film string contains Le, happened the 18th according to Ann\u00e9e?",
+                "question": "Which Cat\u00e9gorie, with R\u00e9compense string contains Society, happened the 1st according to Ann\u00e9e?",
                 "answers": [
-                    "Oscars",
-                    "Screen Actors Guild Awards",
-                    "Golden Globes",
-                    "BAFTA",
-                    "Prix du cin\u00e9ma europ\u00e9en"
+                    "Meilleure actrice"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Film string ends with Maria, happened the 5th according to Ann\u00e9e?",
+                "question": "Which Cat\u00e9gorie, with R\u00e9compense string starts with Screen, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
-                    "International Cinephile Society Awards"
+                    "Meilleure actrice",
+                    "Meilleure distribution"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Film string starts with Le, happened the 11st according to Ann\u00e9e?",
+                "question": "Which Cat\u00e9gorie, with Film string contains Patient, happened the 7th according to Ann\u00e9e?",
                 "answers": [
-                    "Festival du film de Cabourg",
-                    "Oscars",
-                    "Screen Actors Guild Awards",
-                    "Golden Globes",
-                    "Chicago Film Critics Association",
-                    "Chlotrudis Awards",
-                    "Dallas-Fort Worth Film Critics Association",
-                    "Southeastern Film Critics Association",
-                    "BAFTA",
-                    "Berlinale",
-                    "Prix du cin\u00e9ma europ\u00e9en"
+                    "Swann d'or de la meilleure actrice",
+                    "Meilleure actrice dans un second r\u00f4le",
+                    "Meilleure distribution",
+                    "Ours d'argent de la meilleure actrice",
+                    "Meilleure actrice"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Film was D\u00e9calage horaire and when the Film was Mauvais Sang?",
+                "question": "How many Cat\u00e9gorie had R\u00e9compense string starts with International?",
                 "answers": [
-                    "16"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Film string contains Patient and Cat\u00e9gorie string contains un?",
-                "answers": [
-                    "8"
+                    "7"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Film string starts with Le?",
+                "question": "How many Cat\u00e9gorie had Film string starts with Le and R\u00e9compense string contains Critics?",
                 "answers": [
-                    "25"
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Cat\u00e9gorie had R\u00e9compense string starts with Screen?",
+                "answers": [
+                    "4"
                 ],
                 "reasoning_type": "counting"
             }

@@ -309,55 +309,63 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the R\u00f4le string starts with Mary and the Metteur en sc\u00e8ne string starts with Bob?",
+                "question": "What was the Titre when the Auteur string contains Ibsen and the Lieu(x) des repr\u00e9sentations string contains Festival?",
                 "answers": [
-                    "Mary Said What She Said"
+                    "Hedda Gabler"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the R\u00f4le string contains Stuart and the Auteur string ends with Schiller?",
+                "question": "What was the Titre when the Auteur string starts with Tennessee and the Lieu(x) des repr\u00e9sentations string contains Grenoble?",
                 "answers": [
-                    "Mary Stuart"
+                    "Un tramway d'apr\u00e8s Un tramway nomm\u00e9 D\u00e9sir"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre, with R\u00f4le is Maria, have Auteur string starts with Albert?",
+                "question": "Does only Titre, with Metteur en sc\u00e8ne string contains Wilson, have Lieu(x) des repr\u00e9sentations string contains Lausanne?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Titre, with Auteur string contains Tennessee, have Lieu(x) des repr\u00e9sentations string contains de?",
+                "question": "Does every Titre, with Metteur en sc\u00e8ne string starts with Bob, have R\u00f4le string ends with Stuart?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Metteur en sc\u00e8ne string starts with Caroline, happened the 2nd according to Ann\u00e9e?",
+                "question": "Which Titre, with Metteur en sc\u00e8ne string starts with Caroline, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
-                    "Voyage autour de ma marmite"
+                    "On ne badine pas avec l'amour"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Metteur en sc\u00e8ne was Lu\u00eds Miguel Cintra and when the Metteur en sc\u00e8ne was Peter Zadek?",
+                "question": "Which Titre, with Metteur en sc\u00e8ne string contains Caroline, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
-                    "12"
+                    "On ne badine pas avec l'amour"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Auteur was Jean-Jacques Varoujean and when the Auteur was Franz Kafka?",
+                "answers": [
+                    "1"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Lieu(x) des repr\u00e9sentations was Op\u00e9ra Bastille and when the Lieu(x) des repr\u00e9sentations was Th\u00e9\u00e2tre Daniel-Sorano (Vincennes) et Festival des arts de Chiraz-Pers\u00e9polis (Iran)?",
+                "question": "How many years had passed between when the Auteur was Wajdi Mouawad, Sarah Kane (L'Amour de Ph\u00e8dre), J.M. Coetzee and when the Auteur was Friedrich Schiller?",
                 "answers": [
                     "20"
                 ],
@@ -365,7 +373,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Metteur en sc\u00e8ne string ends with Wilson and Lieu(x) des repr\u00e9sentations string contains de?",
+                "question": "How many Titre had Metteur en sc\u00e8ne string starts with Bob?",
                 "answers": [
                     "4"
                 ],
@@ -373,9 +381,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Lieu(x) des repr\u00e9sentations string contains Rome?",
+                "question": "How many Titre had Metteur en sc\u00e8ne string contains Bob and R\u00f4le string starts with Madame?",
                 "answers": [
                     "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Metteur en sc\u00e8ne string contains Bob?",
+                "answers": [
+                    "4"
                 ],
                 "reasoning_type": "counting"
             }
@@ -444,7 +460,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre des textes when the Circonstances string ends with solos and the Auteur string starts with Jan?",
+                "question": "What was the Titre des textes when the Lieu string contains de and the Auteur string starts with Jan?",
                 "answers": [
                     "Une tribu, voil\u00e0 ce que je suisJe suis une erreurAnother sleepy dusty delta day"
                 ],
@@ -460,15 +476,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre des textes, with Auteur string starts with Marguerite, have Lieu string contains de?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Titre des textes, with Auteur string contains Duras, have Lieu string starts with Shanghai?",
+                "question": "Does every Titre des textes, with Auteur string ends with Smith, have Circonstances string contains Smith?",
                 "answers": [
                     "Yes"
                 ],
@@ -476,25 +484,33 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre des textes had Circonstances string contains le?",
+                "question": "Does only Titre des textes, with Lieu string contains de, have Circonstances string ends with solos?",
                 "answers": [
-                    "3"
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre des textes had Auteur string starts with Jan?",
+                "answers": [
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre des textes had Circonstances string contains de?",
+                "question": "How many Titre des textes had Circonstances string contains solos and Lieu string contains de?",
                 "answers": [
-                    "2"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre des textes had Circonstances string contains cadre?",
+                "question": "How many Titre des textes had Lieu string contains de and Auteur string starts with Jan?",
                 "answers": [
-                    "2"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -639,23 +655,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Film when the Ann\u00e9e was before 2003 and the R\u00e9compense string contains un?",
+                "question": "What was the Film when the Ann\u00e9e was after 1996 and the R\u00e9compense string contains second?",
                 "answers": [
-                    "Alo\u00efse"
+                    "Amour"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Film when the R\u00e9compense string contains un and the Ann\u00e9e was before 2003?",
+                "question": "What was the Film when the R\u00e9compense string contains un and the Ann\u00e9e was after 2003?",
                 "answers": [
-                    "Alo\u00efse"
+                    "Amour"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Film, with Ann\u00e9e was before 1981, have R\u00e9compense string contains un?",
+                "question": "Does only Film, with Ann\u00e9e was before 2002, have R\u00e9compense string contains second?",
                 "answers": [
                     "No"
                 ],
@@ -663,7 +679,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Film, with Ann\u00e9e was before 1981, have R\u00e9compense string contains un?",
+                "question": "Does only Film, with Ann\u00e9e was before 2003, have R\u00e9compense string contains un?",
                 "answers": [
                     "No"
                 ],
@@ -671,49 +687,49 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was before 2013, happened the 6th according to Ann\u00e9e?",
+                "question": "Which Film, with Ann\u00e9e was after 1995, happened the 4th according to Ann\u00e9e?",
                 "answers": [
-                    "Une affaire de femmes"
+                    "La Pianiste"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was before 2017, happened the 7th according to Ann\u00e9e?",
+                "question": "Which Film, with Ann\u00e9e was before 1981, happened the 2nd according to Ann\u00e9e?",
                 "answers": [
-                    "La S\u00e9paration"
+                    "La Dentelli\u00e8re"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was after 2001, happened the 5th according to Ann\u00e9e?",
+                "question": "Which Film, with Ann\u00e9e was before 2001, happened the 8th according to Ann\u00e9e?",
                 "answers": [
-                    "Valley of Love"
+                    "La C\u00e9r\u00e9monie"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was before 1982?",
+                "question": "How many Film had Ann\u00e9e was after 1995 and R\u00e9compense string contains second?",
                 "answers": [
-                    "4"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was before 2002?",
+                "question": "How many Film had Ann\u00e9e was before 1995?",
                 "answers": [
-                    "10"
+                    "6"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was before 2017 and R\u00e9compense string contains un?",
+                "question": "How many Film had R\u00e9compense string contains second and Ann\u00e9e was before 2002?",
                 "answers": [
-                    "2"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -753,9 +769,9 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was after 2017?",
+                "question": "How many R\u00e9compense had Ann\u00e9e was on 2017?",
                 "answers": [
-                    "0"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -834,16 +850,7 @@
                 2017
             ]
         },
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was before 2017?",
-                "answers": [
-                    "0"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
+        "qas": []
     },
     {
         "id": "43734",
@@ -887,11 +894,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only R\u00e9compense, with Ann\u00e9e was on 1978, have Film string starts with La?",
+                "question": "What was the R\u00e9compense when the Film string starts with La and the Ann\u00e9e was on 1978?",
                 "answers": [
-                    "Yes"
+                    "Meilleur espoir f\u00e9minin"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
@@ -903,17 +910,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Film string starts with La and Ann\u00e9e was on 1978?",
+                "question": "Does only R\u00e9compense, with Ann\u00e9e was on 1978, have Film string starts with La?",
                 "answers": [
-                    "1"
+                    "Yes"
                 ],
-                "reasoning_type": "counting"
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was on 1978 and Film string starts with La?",
+                "question": "How many R\u00e9compense had Ann\u00e9e was after 1978?",
                 "answers": [
-                    "1"
+                    "0"
                 ],
                 "reasoning_type": "counting"
             }
@@ -967,7 +974,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Ann\u00e9e was on 1980 and the Film string starts with La?",
+                "question": "What was the R\u00e9compense when the Film string starts with La and the Ann\u00e9e was before 1989?",
                 "answers": [
                     "Meilleure actrice \u00e9trang\u00e8re"
                 ],
@@ -975,7 +982,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Ann\u00e9e was before 2003 and the Film string contains La?",
+                "question": "What was the R\u00e9compense when the Ann\u00e9e was before 2003 and the Film string starts with La?",
                 "answers": [
                     "Meilleure actrice \u00e9trang\u00e8re"
                 ],
@@ -983,7 +990,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every R\u00e9compense, with Ann\u00e9e was after 1980, have Film string contains de?",
+                "question": "Does only R\u00e9compense, with Film string starts with La, have Ann\u00e9e was before 2003?",
                 "answers": [
                     "No"
                 ],
@@ -991,19 +998,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only R\u00e9compense, with Film string contains La, have Ann\u00e9e was before 2003?",
+                "question": "Does every R\u00e9compense, with Ann\u00e9e was on 1980, have Film string contains La?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Film was La Dentelli\u00e8re and when the Film was ?",
-                "answers": [
-                    "23"
-                ],
-                "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
@@ -1015,17 +1014,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was on 1980?",
+                "question": "How many years had passed between when the Film was Une affaire de femmes and when the Film was La Dentelli\u00e8re?",
                 "answers": [
-                    "1"
+                    "9"
                 ],
-                "reasoning_type": "counting"
+                "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
                 "question": "How many R\u00e9compense had Ann\u00e9e was after 1980?",
                 "answers": [
                     "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many R\u00e9compense had Ann\u00e9e was on 1989?",
+                "answers": [
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1072,6 +1079,14 @@
         "qas": [
             {
                 "source": "synthetic_qa",
+                "question": "What was the R\u00e9compense when the Film string starts with La and the Ann\u00e9e was after 1978?",
+                "answers": [
+                    "Prix d'interpr\u00e9tation f\u00e9minine"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
                 "question": "What was the R\u00e9compense when the Ann\u00e9e was after 1978 and the Film string starts with La?",
                 "answers": [
                     "Prix d'interpr\u00e9tation f\u00e9minine"
@@ -1080,15 +1095,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Ann\u00e9e was on 2001 and the Film string contains La?",
-                "answers": [
-                    "Prix d'interpr\u00e9tation f\u00e9minine"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only R\u00e9compense, with Ann\u00e9e was after 1978, have Film string starts with La?",
+                "question": "Does every R\u00e9compense, with Film string starts with La, have Ann\u00e9e was on 2001?",
                 "answers": [
                     "Yes"
                 ],
@@ -1096,7 +1103,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every R\u00e9compense, with Ann\u00e9e was on 2001, have Film string starts with La?",
+                "question": "Does every R\u00e9compense, with Ann\u00e9e was after 1978, have Film string starts with La?",
                 "answers": [
                     "Yes"
                 ],
@@ -1112,15 +1119,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Film was Violette Nozi\u00e8re and when the Film was La Pianiste?",
-                "answers": [
-                    "23"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was after 1978?",
+                "question": "How many R\u00e9compense had Film string contains La and Ann\u00e9e was on 2001?",
                 "answers": [
                     "1"
                 ],
@@ -1129,6 +1128,14 @@
             {
                 "source": "synthetic_qa",
                 "question": "How many R\u00e9compense had Ann\u00e9e was on 2001?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many R\u00e9compense had Film string contains La and Ann\u00e9e was after 1978?",
                 "answers": [
                     "1"
                 ],
@@ -1184,7 +1191,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Ann\u00e9e was before 1995 and the Film string contains de?",
+                "question": "What was the R\u00e9compense when the Ann\u00e9e was on 2005 and the Film string contains de?",
+                "answers": [
+                    "Lion d'or sp\u00e9cial"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the R\u00e9compense when the Film string starts with La and the Ann\u00e9e was before 2005?",
                 "answers": [
                     "Meilleure actrice"
                 ],
@@ -1192,15 +1207,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Ann\u00e9e was on 1995 and the Film string starts with La?",
+                "question": "Does every R\u00e9compense, with Ann\u00e9e was after 1988, have Film string contains La?",
                 "answers": [
-                    "Meilleure actrice"
+                    "No"
                 ],
-                "reasoning_type": "conjunction"
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every R\u00e9compense, with Film string starts with La, have Ann\u00e9e was on 1995?",
+                "question": "Does every R\u00e9compense, with Ann\u00e9e was on 1995, have Film string contains La?",
                 "answers": [
                     "Yes"
                 ],
@@ -1208,31 +1223,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only R\u00e9compense, with Ann\u00e9e was before 2005, have Film string contains affaire?",
+                "question": "How many years had passed between when the Film was La C\u00e9r\u00e9monie and when the Film was Gabrielle et l'ensemble de sa carri\u00e8re?",
                 "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Film was La C\u00e9r\u00e9monie and when the Film was Une affaire de femmes?",
-                "answers": [
-                    "7"
+                    "10"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Film was Une affaire de femmes and when the Film was Gabrielle et l'ensemble de sa carri\u00e8re?",
-                "answers": [
-                    "17"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was on 2005 and Film string contains sa?",
+                "question": "How many R\u00e9compense had Ann\u00e9e was before 1995 and Film string contains affaire?",
                 "answers": [
                     "1"
                 ],
@@ -1240,7 +1239,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Film string contains La and Ann\u00e9e was on 1995?",
+                "question": "How many R\u00e9compense had Ann\u00e9e was before 1988?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many R\u00e9compense had Ann\u00e9e was on 2005?",
                 "answers": [
                     "1"
                 ],
@@ -1289,7 +1296,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Ann\u00e9e was after 2002 and the Film string contains sa?",
+                "question": "What was the R\u00e9compense when the Film string contains sa and the Ann\u00e9e was on 2022?",
                 "answers": [
                     "Ours d'or d'honneur"
                 ],
@@ -1297,15 +1304,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Re\u00e7ue ? string contains la and the Ann\u00e9e was on 2002?",
+                "question": "What was the R\u00e9compense when the Ann\u00e9e was on 2022 and the Film string contains de?",
                 "answers": [
-                    "Meilleure contribution artistique"
+                    "Ours d'or d'honneur"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every R\u00e9compense, with Ann\u00e9e was before 2022, have Re\u00e7ue ? string contains la?",
+                "question": "Does every R\u00e9compense, with Ann\u00e9e was on 2002, have Re\u00e7ue ? string contains pour?",
                 "answers": [
                     "Yes"
                 ],
@@ -1313,11 +1320,19 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every R\u00e9compense, with Re\u00e7ue ? string contains distribution, have Ann\u00e9e was before 2022?",
+                "question": "Does only R\u00e9compense, with Film string contains sa, have Ann\u00e9e was on 2022?",
                 "answers": [
                     "Yes"
                 ],
                 "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Re\u00e7ue ? was Prix collectif pour l'ensemble de la distribution du film. and when the Re\u00e7ue ? was .?",
+                "answers": [
+                    "20"
+                ],
+                "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
@@ -1329,15 +1344,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Film was L'ensemble de sa carri\u00e8re and when the Film was Huit Femmes?",
-                "answers": [
-                    "20"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Re\u00e7ue ? string contains distribution and Ann\u00e9e was on 2002?",
+                "question": "How many R\u00e9compense had Ann\u00e9e was on 2022 and Film string contains de?",
                 "answers": [
                     "1"
                 ],
@@ -1345,7 +1352,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was before 2002?",
+                "question": "How many R\u00e9compense had Ann\u00e9e was after 2022?",
                 "answers": [
                     "0"
                 ],
@@ -1394,7 +1401,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Film string contains Madame and the Ann\u00e9e was before 2008?",
+                "question": "What was the R\u00e9compense when the Ann\u00e9e was before 2008 and the Film string starts with Madame?",
                 "answers": [
                     "Meilleure actrice"
                 ],
@@ -1402,15 +1409,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Film string starts with Madame and the Ann\u00e9e was on 1991?",
-                "answers": [
-                    "Meilleure actrice"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every R\u00e9compense, with Film string contains Madame, have Ann\u00e9e was before 2008?",
+                "question": "Does only R\u00e9compense, with Ann\u00e9e was on 1991, have Film string contains Madame?",
                 "answers": [
                     "Yes"
                 ],
@@ -1418,7 +1417,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every R\u00e9compense, with Ann\u00e9e was before 2008, have Film string starts with Madame?",
+                "question": "Does only R\u00e9compense, with Ann\u00e9e was before 2008, have Film string starts with Madame?",
                 "answers": [
                     "Yes"
                 ],
@@ -1434,23 +1433,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Film was Madame Bovary and when the Film was ?",
-                "answers": [
-                    "17"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was before 1991?",
-                "answers": [
-                    "0"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Film string starts with Madame and Ann\u00e9e was before 2008?",
+                "question": "How many R\u00e9compense had Ann\u00e9e was on 1991?",
                 "answers": [
                     "1"
                 ],
@@ -1458,9 +1441,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was after 2008?",
+                "question": "How many R\u00e9compense had Film string starts with Madame?",
                 "answers": [
-                    "0"
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many R\u00e9compense had Ann\u00e9e was before 2008?",
+                "answers": [
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1507,7 +1498,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Film string contains le and the Ann\u00e9e was on 2000?",
+                "question": "What was the R\u00e9compense when the Film string contains pour and the Ann\u00e9e was on 2000?",
                 "answers": [
                     "Meilleure actrice"
                 ],
@@ -1515,7 +1506,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Ann\u00e9e was before 2008 and the Film string contains pour?",
+                "question": "What was the R\u00e9compense when the Ann\u00e9e was on 2000 and the Film string contains le?",
                 "answers": [
                     "Meilleure actrice"
                 ],
@@ -1523,7 +1514,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every R\u00e9compense, with Ann\u00e9e was on 2000, have Film string contains le?",
+                "question": "Does every R\u00e9compense, with Ann\u00e9e was on 2000, have Film string contains pour?",
                 "answers": [
                     "Yes"
                 ],
@@ -1531,7 +1522,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every R\u00e9compense, with Film string contains le, have Ann\u00e9e was before 2008?",
+                "question": "Does every R\u00e9compense, with Film string contains pour, have Ann\u00e9e was before 2008?",
                 "answers": [
                     "Yes"
                 ],
@@ -1564,6 +1555,14 @@
             {
                 "source": "synthetic_qa",
                 "question": "How many R\u00e9compense had Ann\u00e9e was on 2000 and Film string contains le?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many R\u00e9compense had Ann\u00e9e was on 2000 and Film string contains pour?",
                 "answers": [
                     "1"
                 ],
@@ -1605,7 +1604,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was after 1991?",
+                "question": "How many R\u00e9compense had Ann\u00e9e was before 1991?",
                 "answers": [
                     "0"
                 ],
@@ -1689,15 +1688,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was before 2016, happened the 2nd according to Ann\u00e9e?",
-                "answers": [
-                    "Merci pour le chocolat"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was before 2017, happened the 6th according to Ann\u00e9e?",
+                "question": "Which Film, with Ann\u00e9e was after 2007, happened the 1st according to Ann\u00e9e?",
                 "answers": [
                     "Valley of Love",
                     ""
@@ -1706,12 +1697,29 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was after 2001, happened the 3rd according to Ann\u00e9e?",
+                "question": "Which Film, with Ann\u00e9e was after 1996, happened the 5th according to Ann\u00e9e?",
                 "answers": [
                     "Valley of Love",
                     ""
                 ],
                 "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Film, with Ann\u00e9e was after 1996, happened the 4th according to Ann\u00e9e?",
+                "answers": [
+                    "Valley of Love",
+                    ""
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Film had Ann\u00e9e was before 2006?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
             }
         ]
     },
@@ -1747,6 +1755,14 @@
             ]
         },
         "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many R\u00e9compense had Ann\u00e9e was on 2003?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
             {
                 "source": "synthetic_qa",
                 "question": "How many R\u00e9compense had Ann\u00e9e was before 2003?",
@@ -1792,14 +1808,6 @@
             {
                 "source": "synthetic_qa",
                 "question": "How many R\u00e9compense had Ann\u00e9e was after 2017?",
-                "answers": [
-                    "0"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was before 2017?",
                 "answers": [
                     "0"
                 ],
@@ -1883,7 +1891,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Film when the Ann\u00e9e was on 2009 and the R\u00e9compense string starts with European?",
+                "question": "What was the Film when the Ann\u00e9e was after 2001 and the R\u00e9compense string starts with European?",
                 "answers": [
                     ""
                 ],
@@ -1891,7 +1899,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Film when the Ann\u00e9e was before 2016 and the R\u00e9compense string starts with European?",
+                "question": "What was the Film when the Ann\u00e9e was after 2002 and the R\u00e9compense string starts with European?",
                 "answers": [
                     ""
                 ],
@@ -1899,23 +1907,31 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Film, with Ann\u00e9e was after 2001, have R\u00e9compense string contains European?",
+                "question": "Does every Film, with Ann\u00e9e was after 2001, have R\u00e9compense string starts with European?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Film, with Ann\u00e9e was before 2016, have R\u00e9compense string contains European?",
+                "question": "Does every Film, with Ann\u00e9e was before 2017, have R\u00e9compense string starts with European?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was before 2016, happened the 2nd according to Ann\u00e9e?",
+                "question": "Which Film, with Ann\u00e9e was before 2017, happened the 4th according to Ann\u00e9e?",
+                "answers": [
+                    "Ma m\u00e8re"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Film, with Ann\u00e9e was before 2017, happened the 2nd according to Ann\u00e9e?",
                 "answers": [
                     "Huit Femmes"
                 ],
@@ -1923,41 +1939,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was after 2004, happened the 1st according to Ann\u00e9e?",
+                "question": "How many Film had Ann\u00e9e was before 2004?",
                 "answers": [
-                    ""
+                    "3"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was before 2004, happened the 2nd according to Ann\u00e9e?",
+                "question": "How many Film had Ann\u00e9e was after 2002?",
                 "answers": [
-                    "Huit Femmes"
+                    "4"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was after 2002 and R\u00e9compense string starts with European?",
+                "question": "How many Film had Ann\u00e9e was on 2009?",
                 "answers": [
                     "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was before 2016?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was after 2001?",
-                "answers": [
-                    "6"
                 ],
                 "reasoning_type": "counting"
             }
@@ -2004,14 +2004,6 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Ann\u00e9e was on 2017 and the Film string starts with Madame?",
-                "answers": [
-                    "L\u00e9opard de la meilleure interpr\u00e9tation f\u00e9minine"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
                 "question": "What was the R\u00e9compense when the Film string starts with Madame and the Ann\u00e9e was after 2011?",
                 "answers": [
                     "L\u00e9opard de la meilleure interpr\u00e9tation f\u00e9minine"
@@ -2020,7 +2012,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only R\u00e9compense, with Film string starts with Madame, have Ann\u00e9e was on 2017?",
+                "question": "What was the R\u00e9compense when the Film string starts with Madame and the Ann\u00e9e was on 2017?",
+                "answers": [
+                    "L\u00e9opard de la meilleure interpr\u00e9tation f\u00e9minine"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only R\u00e9compense, with Ann\u00e9e was on 2017, have Film string contains Madame?",
                 "answers": [
                     "Yes"
                 ],
@@ -2028,7 +2028,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only R\u00e9compense, with Ann\u00e9e was after 2011, have Film string contains Madame?",
+                "question": "Does every R\u00e9compense, with Ann\u00e9e was on 2017, have Film string starts with Madame?",
                 "answers": [
                     "Yes"
                 ],
@@ -2036,11 +2036,19 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Film was Madame Hyde and when the Film was ?",
+                "question": "How many years had passed between when the Film was  and when the Film was Madame Hyde?",
                 "answers": [
                     "6"
                 ],
                 "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many R\u00e9compense had Ann\u00e9e was after 2017?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
@@ -2052,17 +2060,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was after 2011 and Film string starts with Madame?",
+                "question": "How many R\u00e9compense had Ann\u00e9e was before 2011?",
                 "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was after 2011?",
-                "answers": [
-                    "1"
+                    "0"
                 ],
                 "reasoning_type": "counting"
             }
@@ -2207,7 +2207,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Festival when the Prix string contains Award and the Ann\u00e9e was before 2011?",
+                "question": "What was the Festival when the Prix string ends with Plateau and the Ann\u00e9e was after 2009?",
+                "answers": [
+                    "Festival international du film de Flandre-Gand"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Festival when the Ann\u00e9e was before 2012 and the Prix string contains Award?",
                 "answers": [
                     "NaturVision",
                     "Festival du film de Taormine",
@@ -2217,16 +2225,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Festival when the Ann\u00e9e was after 2002 and the Prix string contains Award?",
-                "answers": [
-                    "",
-                    "Festival du film de Munich"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Festival, with Prix string ends with Award, have Ann\u00e9e was after 2008?",
+                "question": "Does every Festival, with Ann\u00e9e was after 2009, have Prix string ends with Festival?",
                 "answers": [
                     "No"
                 ],
@@ -2234,15 +2233,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Festival, with Ann\u00e9e was before 2013, have Prix string contains contribution?",
+                "question": "Does only Festival, with Ann\u00e9e was after 2009, have Prix string contains Award?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Festival, with Ann\u00e9e was on 2011, happened the 2nd according to Ann\u00e9e?",
+                "question": "Which Festival, with Ann\u00e9e was on 2011, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
                     "Festival international du film de Stockholm",
                     "Festival international du film de Flandre-Gand",
@@ -2252,58 +2251,50 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Festival, with Ann\u00e9e was after 1986, happened the 4th according to Ann\u00e9e?",
+                "question": "Which Festival, with Ann\u00e9e was after 2003, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
-                    "Festival du film de Hambourg",
-                    "Festival international du film de Saint-S\u00e9bastien"
+                    "Festival de Karlovy Vary",
+                    "Festival de Shanghai"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Festival, with Ann\u00e9e was before 2003, happened the 2nd according to Ann\u00e9e?",
+                "question": "How many years had passed between when the Prix was Prix d'honneur and when the Prix was Prix Donostia d'honneur?",
                 "answers": [
-                    "NaturVision"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Prix was Prix Krzysztof-Kie\u015blowski and when the Prix was Cam\u00e9ra d'or 300 d'honneur?",
-                "answers": [
-                    "5"
+                    "8"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Prix was pour l'ensemble de la carri\u00e8re and when the Prix was Cam\u00e9ra d'or 300 d'honneur?",
+                "question": "How many years had passed between when the Prix was European Actors Award and when the Prix was Globe de cristal de la contribution exceptionnelle au cin\u00e9ma mondial?",
                 "answers": [
-                    "4"
+                    "8"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Festival had Ann\u00e9e was before 2011?",
+                "question": "How many Festival had Ann\u00e9e was after 2009?",
                 "answers": [
-                    "9"
+                    "7"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Festival had Prix string contains Award?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Festival had Ann\u00e9e was before 2011 and Prix string contains Award?",
+                "question": "How many Festival had Prix string ends with Award and Ann\u00e9e was before 2012?",
                 "answers": [
                     "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Festival had Ann\u00e9e was before 2012?",
+                "answers": [
+                    "12"
                 ],
                 "reasoning_type": "counting"
             }
@@ -2399,24 +2390,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Pi\u00e8ce when the Ann\u00e9e was on 2022 and the R\u00e9compense string contains la?",
+                "question": "What was the Pi\u00e8ce when the R\u00e9compense string contains la and the Ann\u00e9e was on 2016?",
                 "answers": [
-                    "La Cerisaie"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Pi\u00e8ce when the Ann\u00e9e was before 2017 and the R\u00e9compense string contains public?",
-                "answers": [
-                    "Les Fausses Confidences",
                     "Ph\u00e8dre(s)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Pi\u00e8ce, with Ann\u00e9e was on 2014, have R\u00e9compense string contains la?",
+                "question": "What was the Pi\u00e8ce when the Ann\u00e9e was on 2001 and the R\u00e9compense string contains de?",
+                "answers": [
+                    "M\u00e9d\u00e9e"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Pi\u00e8ce, with Ann\u00e9e was on 1989, have R\u00e9compense string contains la?",
                 "answers": [
                     "Yes"
                 ],
@@ -2424,7 +2414,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Pi\u00e8ce, with R\u00e9compense string contains la, have Ann\u00e9e was after 1994?",
+                "question": "Does only Pi\u00e8ce, with Ann\u00e9e was after 2001, have R\u00e9compense string contains de?",
                 "answers": [
                     "No"
                 ],
@@ -2432,49 +2422,49 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Pi\u00e8ce, with R\u00e9compense string contains de, happened the 6th according to Ann\u00e9e?",
+                "question": "Which Pi\u00e8ce, with Ann\u00e9e was before 2001, happened the 2nd according to Ann\u00e9e?",
                 "answers": [
-                    "Les Fausses Confidences"
+                    "Orlando"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Pi\u00e8ce, with R\u00e9compense string ends with public, happened the 3rd according to Ann\u00e9e?",
+                "question": "Which Pi\u00e8ce, with Ann\u00e9e was before 2022, happened the 8th according to Ann\u00e9e?",
                 "answers": [
-                    "La Cerisaie"
+                    ""
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Pi\u00e8ce, with Ann\u00e9e was after 1994, happened the 2nd according to Ann\u00e9e?",
+                "question": "Which Pi\u00e8ce, with Ann\u00e9e was after 1989, happened the 1st according to Ann\u00e9e?",
                 "answers": [
-                    "M\u00e9d\u00e9e"
+                    "Orlando"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Pi\u00e8ce had R\u00e9compense string contains public?",
+                "question": "How many Pi\u00e8ce had R\u00e9compense string contains de and Ann\u00e9e was before 2005?",
                 "answers": [
-                    "3"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Pi\u00e8ce had Ann\u00e9e was before 1995 and R\u00e9compense string contains de?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Pi\u00e8ce had Ann\u00e9e was before 2017?",
+                "question": "How many Pi\u00e8ce had Ann\u00e9e was after 1989 and R\u00e9compense string contains de?",
                 "answers": [
                     "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Pi\u00e8ce had Ann\u00e9e was before 2016?",
+                "answers": [
+                    "6"
                 ],
                 "reasoning_type": "counting"
             }
@@ -2514,27 +2504,11 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Ann\u00e9e was on 2014 and the Pi\u00e8ce string starts with Les?",
-                "answers": [
-                    "Meilleure com\u00e9dienne - choix des internautes"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
                 "question": "What was the R\u00e9compense when the Pi\u00e8ce string starts with Les and the Ann\u00e9e was on 2014?",
                 "answers": [
                     "Meilleure com\u00e9dienne - choix des internautes"
                 ],
                 "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every R\u00e9compense, with Ann\u00e9e was on 2014, have Pi\u00e8ce string contains Les?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
@@ -2546,17 +2520,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was on 2014 and Pi\u00e8ce string starts with Les?",
+                "question": "How many R\u00e9compense had Ann\u00e9e was after 2014?",
                 "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was on 2014 and Pi\u00e8ce string contains confidences?",
-                "answers": [
-                    "1"
+                    "0"
                 ],
                 "reasoning_type": "counting"
             }
@@ -2636,9 +2602,9 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was before 2017?",
+                "question": "How many R\u00e9compense had Ann\u00e9e was on 2017?",
                 "answers": [
-                    "0"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -2678,9 +2644,9 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was on 2017?",
+                "question": "How many R\u00e9compense had Ann\u00e9e was after 2017?",
                 "answers": [
-                    "1"
+                    "0"
                 ],
                 "reasoning_type": "counting"
             }

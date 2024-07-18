@@ -8,6 +8,560 @@
             "Nom\n(dates)",
             "\u00c9poux",
             "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "90x90px",
+                "Anne de Celje\n(1381-1416)",
+                "* W\u0142adys\u0142aw II Jagellon (mariage en 1402)",
+                "* Reine de Pologne et grande-duchesse de Lituanie (1402-1416)",
+                "* Princesse de la Maison de . Fille de  et d'Anne de Pologne.\n* M\u00e8re d'Jadwiga Jagellon.",
+                ""
+            ],
+            [
+                "108x108px",
+                "\u00c9lisabeth de Pilica\n(1372-1420)",
+                "* Jean de Ji\u010dina\n*Vincent Granovsky (mariage en 1397)\n*W\u0142adys\u0142aw II Jagellon (mariage en 1417)",
+                "* Reine de Pologne et grande-duchesse de Lituanie (1417-1420)",
+                "* Princesse de la Famille de Pilica. Fille d' et d'Edwige de Melsztyn.",
+                ""
+            ],
+            [
+                "197x197px",
+                "Zofia de Holszany\n(1405-1461)",
+                "* W\u0142adys\u0142aw II Jagellon (mariage en 1422)",
+                "* Reine de Pologne et grande-duchesse de Lituanie (1422-1434)",
+                "* Princesse de la Famille d'. Fille d' et d'Alexandra Drucka.\n* M\u00e8re de W\u0142adys\u0142aw III Jagellon et de Kazimierz IV Jagellon.",
+                ""
+            ],
+            [
+                "122x122px",
+                "\u00c9lisabeth de Habsbourg\n(1436-1505)",
+                "* Kazimierz IV Jagellon (mariage en 1454)",
+                "* Reine de Pologne et grande-duchesse de Lituanie (1454-1492)",
+                "* Princesse de la Maison de Habsbourg. Fille d'Albert II du Saint-Empire et d'\u00c9lisabeth de Luxembourg.\n* M\u00e8re de Vladislas IV de Boh\u00eame, d'Jadwiga Jagellon, de Saint Kazimierz de Pologne, de Jean  Albert Jagellon, d'Alexandre Ier Jagellon, de Sophie Jagellon, de Sigismond Ier de Pologne, de Fryderyk Jagellon, d'Anna Jagellon et de Barbara Jagellon.",
+                ""
+            ],
+            [
+                "106x106px",
+                "H\u00e9l\u00e8ne de Moscou\n(1476-1513)",
+                "* Aleksander Ier Jagellon (mariage en 1495)",
+                "* Grande-duchesse de Lituanie (1495-1506)\n* Reine de Pologne (1501-1506)",
+                "* Princesse riourikide. Fille d'Ivan III de Russie et de Sophie Pal\u00e9ologue.",
+                ""
+            ],
+            [
+                "153x153px",
+                "Barbara Z\u00e1polya\n(1495-1515)",
+                "* Zygmunt Ier  (mariage en 1512)",
+                "* Reine de Pologne et grande-duchesse de Lituanie (1512-1515)",
+                "* Princesse de la Famille Z\u00e1polya. Fille d'\u00c9tienne Zapolya et d'Edwige de Cieszyn.\n* M\u00e8re d'Jadwiga Jagellon.",
+                ""
+            ],
+            [
+                "108x108px",
+                "Bona Sforza\n(1494-1557)",
+                "* Zygmunt Ier  (mariage en 1518)",
+                "* Reine de Pologne et grande-duchesse de Lituanie (1518-1548)\n* duchesse de Bari et princesse de Rossano (de plein droit, 1524-1557)",
+                "* Princesse de la Famille Sforza. Fille de Jean Gal\u00e9as Sforza et d'Isabelle de Naples.\n* M\u00e8re d'Isabelle Jagellon, de Zygmunt II August, de Sophie Jagellon, d'Anna Jagellon et de Katarzyna Jagellon.",
+                "95x95px"
+            ],
+            [
+                "141x141px",
+                "\u00c9lisabeth d'Autriche\n(1526-1545)",
+                "* Zygmunt II August (mariage en 1543)",
+                "* Co-reine de Pologne et grande-duchesse de Lituanie (1543-1545)",
+                "* Princesse de la Maison de Habsbourg. Fille de Ferdinand Ier du Saint-Empire et d'Anna Jagellon.",
+                ""
+            ],
+            [
+                "106x106px",
+                "Barbara Radziwi\u0142\u0142\n(1520-1551)",
+                "* Stanislovas Go\u0161tautas (mariage en 1537)\n*Zygmunt II August (mariage en 1547)",
+                "* Reine de Pologne et grande-duchesse de Lituanie (1548-1551)",
+                "* Princesse de la Maison Radziwi\u0142\u0142. Fille de Jerzy Radziwi\u0142\u0142 et de Barbara Kola.",
+                ""
+            ],
+            [
+                "106x106px",
+                "Catherine d'Autriche\n(1533-1572)",
+                "*Fran\u00e7ois III de Mantoue (mariage en 1549)\n*Zygmunt II August (mariage en 1553)",
+                "* Duchesse de Mantoue et marquise de Montferrat (1549-1550)\n* Reine de Pologne et grande-duchesse de Lituanie (1553-1572)",
+                "* Princesse de la Maison de Habsbourg. Fille de Ferdinand Ier du Saint-Empire et d'Anne Jagellon.",
+                ""
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the Titres string contains de?",
+                "answers": [
+                    "Anne de Celje\n(1381-1416)",
+                    "\u00c9lisabeth de Pilica\n(1372-1420)",
+                    "Zofia de Holszany\n(1405-1461)",
+                    "\u00c9lisabeth de Habsbourg\n(1436-1505)",
+                    "H\u00e9l\u00e8ne de Moscou\n(1476-1513)",
+                    "Barbara Z\u00e1polya\n(1495-1515)",
+                    "Bona Sforza\n(1494-1557)",
+                    "\u00c9lisabeth d'Autriche\n(1526-1545)",
+                    "Barbara Radziwi\u0142\u0142\n(1520-1551)",
+                    "Catherine d'Autriche\n(1533-1572)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom\n(dates), with \u00c9poux string contains II, have Titres string contains de?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom\n(dates), with \u00c9poux string contains II, have El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had Titres string contains de?",
+                "answers": [
+                    "10"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "10"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de and \u00c9poux string contains II?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "8051660",
+        "title": "Liste des \u00e9pouses des souverains de Pologne",
+        "url": "https://fr.wikipedia.org/?curid=8051660",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "126x126px",
+                "Marie d'Autriche\n(1528-1603)",
+                "* Maximilien II de Habsbourg (mariage en 1548)",
+                "* Reine de Germanie et de Boh\u00eame (1562-1576)\n* Reine de Hongrie et de Croatie (1563-1576)\n* Imp\u00e9ratrice du Saint-Empire et archiduchesse d'Autriche (1564-1576)\n* Reine de Pologne et grande-duchesse de Lituanie (1575)",
+                "* Princesse de la Maison de Habsbourg. Fille de Charles Quint et d'Isabelle de Portugal.\n* M\u00e8re d'Anne d'Autriche, de Rodolphe II du Saint-Empire, d'Ernest d'Autriche, d'\u00c9lisabeth d'Autriche, de Matthias  de Habsbourg, de Maximilien III d'Autriche, d'Albert d'Autriche, de Wenceslas d'Autriche et de Marguerite d'Autriche.",
+                ""
+            ],
+            [
+                "109x109px",
+                "Anne d'Autriche\n(1573-1598)",
+                "* Zygmunt III Vasa (mariage en 1592)",
+                "* Reine de Su\u00e8de et de Pologne, grande-duchesse de Lituanie (1592-1598)",
+                "* Princesse de la Maison de Habsbourg. Fille de Charles II d'Autriche-Styrie et de Marie-Anne de Bavi\u00e8re.\n* M\u00e8re de Ladislas IV Vasa.",
+                "95x95px"
+            ],
+            [
+                "119x119px",
+                "Constance d'Autriche\n(1588-1631)",
+                "* Zygmunt III Vasa (mariage en 1605)",
+                "* Reine de Pologne et grande-duchesse de Lituanie (1605-1631)",
+                "* Princesse de la Maison de Habsbourg. Fille de Charles II d'Autriche-Styrie et de Marie-Anne de Bavi\u00e8re.\n* M\u00e8re de Jean II Casimir Vasa, de Johann-Albert Vasa, de Charles-Ferdinand Vasa et d'Anne-Catherine-Constance Vasa.",
+                "95x95px"
+            ],
+            [
+                "133x133px",
+                "C\u00e9cile-Ren\u00e9e d'Autriche\n(1611-1644)",
+                "* W\u0142adys\u0142aw IV Vasa (mariage en 1637)",
+                "* Reine de Pologne et grande-duchesse de Lituanie (1637-1644)",
+                "* Princesse de la Maison de Habsbourg. Fille de Ferdinand II du Saint-Empire et de Marie-Anne de Bavi\u00e8re.",
+                "95x95px"
+            ],
+            [
+                "147x147px",
+                "Louise-Marie de Gonzague\n(1611-1667)",
+                "* W\u0142adys\u0142aw IV Vasa (mariage en 1646)\n* Jan II Kazimierz Vasa (mariage en 1649)",
+                "* Reine de Pologne et grande-duchesse de Lituanie (1646-1648 puis 1649-1667)",
+                "* Princesse de la Maison de Gonzague-Nevers. Fille de Charles  de Mantoue et de Catherine de Mayenne.\n* M\u00e8re de Maria-Anna-Th\u00e9r\u00e8sa Vasa.",
+                ""
+            ],
+            [
+                "112x112px",
+                "\u00c9l\u00e9onore d'Autriche\n(1653-1697)",
+                "* Micha\u0142 Wi\u015bniowiecki (mariage en 1670)\n* Charles V de Lorraine (mariage en 1678)",
+                "* Reine de Pologne et grande-duchesse de Lituanie (1670-1673)\n* Duchesse de Lorraine et de Bar (1678-1690)",
+                "* Princesse de la Maison de Habsbourg. Fille de Ferdinand III de Habsbourg et d'\u00c9l\u00e9onore de Nevers-Mantoue.\n* M\u00e8re de L\u00e9opold Ier de Lorraine, de Charles-Joseph de Lorraine et de Joseph de Lorraine.",
+                ""
+            ],
+            [
+                "125x125px",
+                "Marie-Casimire-Louise de La Grange d'Arquien\n(1641-1716)",
+                "*Jean Sobiepan Zamoyski (mariage en 1658)\n*Jan III Sobieski (mariage en 1665)",
+                "* Reine de Pologne et grande-duchesse de Lituanie (1674-1696)",
+                "* Princesse de Famille de La Grange. Fille d'Henri-Albert de La Grange d'Arquien et de Fran\u00e7oise de La Ch\u00e2tre.\n* M\u00e8re de Jacques-Louis-Henri Sobieski, de Th\u00e9r\u00e8se-Cun\u00e9gonde Sobieska et d'Aleksander Benedykt Sobieski.",
+                ""
+            ],
+            [
+                "101x101px",
+                "Eberhardine de Brandebourg-Bayreuth\n(1671-1727)",
+                "* Auguste II de Pologne (mariage en 1693)",
+                "* Princesse-\u00e9lectrice de Saxe (1694-1727)\n* Reine de Pologne et grande-duchesse de Lituanie (1697-1706 puis 1709-1727)",
+                "* Princesse de la Maison de Hohenzollern. Fille de Christian-Ernest de Brandebourg-Bayreuth et de Sophie-Louise de Wurtemberg.\n* M\u00e8re d'Auguste III de Pologne.",
+                "99x99px"
+            ],
+            [
+                "122x122px",
+                "Katarzyna Opali\u0144ska\n(1680-1747)",
+                "* Stanis\u0142aw Leszczy\u0144ski (mariage en 1698)",
+                "* Reine de Pologne et grande-duchesse de Lituanie (1705-1709 puis 1733-1736)\n* Duchesse de Lorraine et de Bar (1737-1747)",
+                "* Princesse de la Famille Opalinski. Fille de Jan Karol Opali\u0144ski et de Zofia Anna Czarnkowska.\n* M\u00e8re d'Anna Leszczy\u0144ska et de Maria Leszczy\u0144ska.",
+                ""
+            ],
+            [
+                "113x113px",
+                "Marie-Jos\u00e8phe d'Autriche\n(1699-1757)",
+                "* Auguste III de Pologne (mariage en 1719)",
+                "* Princesse-\u00e9lectrice de Saxe (1733-1757)\n* Reine de Pologne et grande-duchesse de Lituanie (1733 puis 1736-1757)",
+                "* Princesse de la Maison de Habsbourg. Fille de Joseph Ier du Saint-Empire et de Wilhelmine-Am\u00e9lie de Brunswick-Lunebourg.\n* M\u00e8re de Fr\u00e9d\u00e9ric IV de Saxe, de Marie-Am\u00e9lie de Saxe, de Marie-Anne de Saxe, de Xavier de Saxe, de Marie-Jos\u00e8phe de Saxe, de Charles-Christian de Saxe, de Christine de Saxe, de Marie-\u00c9lisabeth de Saxe, d'Albert de Saxe-Teschen, de Cl\u00e9ment-Wenceslas de Saxe et de Cun\u00e9gonde de Saxe.",
+                "99x99px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the Titres string contains de and the El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "Marie d'Autriche\n(1528-1603)",
+                    "Anne d'Autriche\n(1573-1598)",
+                    "Constance d'Autriche\n(1588-1631)",
+                    "C\u00e9cile-Ren\u00e9e d'Autriche\n(1611-1644)",
+                    "Louise-Marie de Gonzague\n(1611-1667)",
+                    "\u00c9l\u00e9onore d'Autriche\n(1653-1697)",
+                    "Marie-Casimire-Louise de La Grange d'Arquien\n(1641-1716)",
+                    "Eberhardine de Brandebourg-Bayreuth\n(1671-1727)",
+                    "Katarzyna Opali\u0144ska\n(1680-1747)",
+                    "Marie-Jos\u00e8phe d'Autriche\n(1699-1757)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the \u00c9poux string contains III and the El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "Anne d'Autriche\n(1573-1598)",
+                    "Constance d'Autriche\n(1588-1631)",
+                    "Marie-Casimire-Louise de La Grange d'Arquien\n(1641-1716)",
+                    "Marie-Jos\u00e8phe d'Autriche\n(1699-1757)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom\n(dates), with \u00c9poux string contains en, have El\u00e9ments biographiques string contains Fille?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom\n(dates), with El\u00e9ments biographiques string contains de, have Titres string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains II and Titres string contains de?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had Titres string contains de?",
+                "answers": [
+                    "10"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "10"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "8051660",
+        "title": "Liste des \u00e9pouses des souverains de Pologne",
+        "url": "https://fr.wikipedia.org/?curid=8051660",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques"
+        ],
+        "rows": [
+            [
+                "114x114px",
+                "Am\u00e9lie de Deux-Ponts-Birkenfeld\n(1752-1828)",
+                "* Fr\u00e9d\u00e9ric-Auguste Ier de Saxe (mariage en 1769)",
+                "* Princesse-\u00e9lectrice (1769-1806) puis reine de Saxe (1806-1827)\n* Duchesse de Varsovie (1807-1815)",
+                "* Princesse de la Maison de Wittelsbach. Fille de Fr\u00e9d\u00e9ric de Deux-Ponts-Birkenfeld et de Fran\u00e7oise de Palatinat-Soulzbach.\n* M\u00e8re d'Augusta de Saxe."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the Titres string contains de?",
+                "answers": [
+                    "Am\u00e9lie de Deux-Ponts-Birkenfeld\n(1752-1828)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the \u00c9poux string contains Ier and the El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "Am\u00e9lie de Deux-Ponts-Birkenfeld\n(1752-1828)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains de, have \u00c9poux string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom\n(dates), with El\u00e9ments biographiques string contains la, have Titres string contains Saxe?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains en and El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "8051660",
+        "title": "Liste des \u00e9pouses des souverains de Pologne",
+        "url": "https://fr.wikipedia.org/?curid=8051660",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
+            "El\u00e9ments biographiques",
+            "Armoiries"
+        ],
+        "rows": [
+            [
+                "112x112px",
+                "Louise de Bade\n(1779-1826)",
+                "* Alexandre Ier de Russie (mariage en 1793)",
+                "* Grande-duchesse de Russie (1793-1796)\n* Tsarevna et grande-duchesse de Russie (1796-1801)\n* Imp\u00e9ratrice de Russie (1801-1825)\n* Reine de Pologne (1815-1825)",
+                "* Princesse de la Maison de Z\u00e4hringen. Fille de Charles-Louis de Bade et d'Am\u00e9lie de Hesse-Darmstadt.",
+                "93x93px"
+            ],
+            [
+                "110x110px",
+                "Charlotte de Prusse\n(1798- 1860)",
+                "* Nicolas  de Russie (mariage en 1817)",
+                "* Grande-duchesse de Russie (1817-1825)\n* Imp\u00e9ratrice de Russie et reine de Pologne (1825-1855)",
+                "* Princesse de la Maison de Hohenzollern. Fille de Fr\u00e9d\u00e9ric-Guillaume III de Prusse et de Louise de Mecklembourg-Strelitz.\n* M\u00e8re d'Alexandre II de Russie, de Marie Nikola\u00efevna de Russie, d'Olga Nikola\u00efevna de Russie, d'Alexandra Nikola\u00efevna de Russie, de Constantin Nikola\u00efevitch de Russie, de Nicolas Nikola\u00efevitch de Russie et de Michel Nikola\u00efevitch de Russie.",
+                "93x93px"
+            ],
+            [
+                "123x123px",
+                "Marie de Hesse-Darmstadt\n\n(1824 -1880)",
+                "* Alexandre II de Russie (mariage en 1841)",
+                "* Tsarevna et grande-duchesse de Russie (1841-1855)\n* Imp\u00e9ratrice de Russie et reine de Pologne (1855-1880)",
+                "* Princesse de la Maison de Hesse. Fille de Louis II de Hesse et de Wilhelmine de Bade.\n* M\u00e8re d'Alexandra Alexandrovna de Russie, de Nicolas Alexandrovitch de Russie, d'Alexandre III de Russie, de Vladimir Alexandrovitch de Russie, d'Alexis Alexandrovitch de Russie, de Maria Alexandrovna de Russie, de Serge Alexandrovitch de Russie et de Paul Alexandrovitch de Russie.",
+                "135x135px"
+            ],
+            [
+                "134x134px",
+                "Dagmar de Danemark\n\n(1847-1928)",
+                "* Alexandre III de Russie (mariage en 1866)",
+                "* Tsarevna et grande-duchesse de Russie (1866-1881)\n* Imp\u00e9ratrice de Russie et reine de Pologne (1881-1894)",
+                "* Princesse de la Maison de Gl\u00fccksbourg. Fille de Christian IX de Danemark et de Louise de Hesse-Cassel.\n* M\u00e8re de Nicolas II de Russie, d'Alexandre Alexandrovitch de Russie, de Georges Aleksandrovitch de Russie, de Xenia Alexandrovna de Russie, de Michel Alexandrovitch de Russie et d'Olga Alexandrovna de Russie.",
+                "135x135px"
+            ],
+            [
+                "113x113px",
+                "Alix de Hesse-Darmstadt\n\n(1872-1918)",
+                "* Nicolas II de Russie (mariage en 1894)",
+                "* Imp\u00e9ratrice de Russie (1894-1917)\n* Reine de Pologne (1894-1916)",
+                "* Princesse de la Maison de Hesse. Fille de Louis IV de Hesse et d'Alice du Royaume-Uni.\n* M\u00e8re d'Olga Nikola\u00efevna de Russie, de Tatiana Nikola\u00efevna de Russie, de Maria Nikola\u00efevna de Russie, d'Anastasia Nikola\u00efevna de Russie et d'Alexis Nikola\u00efevitch de Russie.",
+                "135x135px"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains de?",
+                "answers": [
+                    "Louise de Bade\n(1779-1826)",
+                    "Charlotte de Prusse\n(1798- 1860)",
+                    "Marie de Hesse-Darmstadt\n\n(1824 -1880)",
+                    "Dagmar de Danemark\n\n(1847-1928)",
+                    "Alix de Hesse-Darmstadt\n\n(1872-1918)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the Titres string contains de and the El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "Louise de Bade\n(1779-1826)",
+                    "Charlotte de Prusse\n(1798- 1860)",
+                    "Marie de Hesse-Darmstadt\n\n(1824 -1880)",
+                    "Dagmar de Danemark\n\n(1847-1928)",
+                    "Alix de Hesse-Darmstadt\n\n(1872-1918)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom\n(dates), with El\u00e9ments biographiques string contains de, have Titres string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom\n(dates), with Titres string contains de, have El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had Titres string contains de and El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de and \u00c9poux string contains de?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "8051660",
+        "title": "Liste des \u00e9pouses des souverains de Pologne",
+        "url": "https://fr.wikipedia.org/?curid=8051660",
+        "header": [
+            "Portrait",
+            "Nom\n(dates)",
+            "\u00c9poux",
+            "Titres",
             "El\u00e9ments biographiques"
         ],
         "rows": [
@@ -53,7 +607,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains en?",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains Ier?",
                 "answers": [
                     "Dubravka de Boh\u00eame\n(931-977)",
                     "Oda von Haldensleben\n(962-1023)",
@@ -64,23 +618,18 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the \u00c9poux string contains margrave and the Titres string contains des?",
+                "question": "What was the Nom\n(dates) when the Titres string contains de and the \u00c9poux string contains en?",
                 "answers": [
-                    "Emnilda de Lusace\n(970-1017)"
+                    "Dubravka de Boh\u00eame\n(931-977)",
+                    "Oda von Haldensleben\n(962-1023)",
+                    "Emnilda de Lusace\n(970-1017)",
+                    "Oda de Misnie\n(996-?)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains la, have Titres string contains des?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with Titres string contains des, have \u00c9poux string contains de?",
+                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains Fille, have \u00c9poux string contains en?",
                 "answers": [
                     "Yes"
                 ],
@@ -88,7 +637,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains Fille and \u00c9poux string contains Ier?",
+                "question": "Does every Nom\n(dates), with El\u00e9ments biographiques string contains de, have Titres string contains des?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de and \u00c9poux string contains en?",
                 "answers": [
                     "4"
                 ],
@@ -96,7 +653,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had Titres string contains des and El\u00e9ments biographiques string contains de?",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains Fille and Titres string contains des?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains en and El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "4"
                 ],
@@ -298,7 +863,19 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains de?",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains III?",
+                "answers": [
+                    "Zbys\u0142awa de Kiev\n(1085-1112)",
+                    "Salom\u00e9 von Berg\n(1101-1144)",
+                    "Eudoxia de Kiev\n(1131-1187)",
+                    "Lucie de R\u00fcgen\n(?-1231)",
+                    "Marguerite de Brandebourg\n(1272-1315)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains Fille?",
                 "answers": [
                     "Oda de Misnie\n(996-?)",
                     "Richezza de Lorraine\n(993-1063)",
@@ -329,16 +906,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the Titres string contains de and the El\u00e9ments biographiques string contains Lech?",
-                "answers": [
-                    "Viacheslava de Novgorod\n(1125-1162)",
-                    "H\u00e9l\u00e8ne de Znojmo\n(1141-1206)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Nom\n(dates), with Titres string contains de, have El\u00e9ments biographiques string contains de?",
+                "question": "Does every Nom\n(dates), with El\u00e9ments biographiques string contains de, have \u00c9poux string contains en?",
                 "answers": [
                     "Yes"
                 ],
@@ -346,15 +914,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with Titres string contains des, have El\u00e9ments biographiques string contains Fille?",
+                "question": "Does every Nom\n(dates), with \u00c9poux string contains en, have El\u00e9ments biographiques string contains Fille?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de?",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains de?",
                 "answers": [
                     "24"
                 ],
@@ -362,17 +930,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains la and \u00c9poux string contains en?",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains Ier and El\u00e9ments biographiques string contains de?",
                 "answers": [
-                    "17"
+                    "6"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had Titres string contains de and \u00c9poux string contains de?",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de and \u00c9poux string contains Ier?",
                 "answers": [
-                    "24"
+                    "6"
                 ],
                 "reasoning_type": "counting"
             }
@@ -412,21 +980,31 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9poux string contains de and the Nom\n(dates) string starts with Viola?",
+                "question": "What was the Nom\n(dates) when the Titres string contains de and the El\u00e9ments biographiques string contains Fille?",
                 "answers": [
-                    ""
+                    "\u00c9lizabeth Ryksa\n(1288-1335)",
+                    "Viola \u00c9lisabeth de Cieszyn"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with \u00c9poux string contains de, have El\u00e9ments biographiques string contains Fille?",
+                "question": "What was the Nom\n(dates) when the \u00c9poux string contains en and the Titres string contains de?",
+                "answers": [
+                    "\u00c9lizabeth Ryksa\n(1288-1335)",
+                    "Viola \u00c9lisabeth de Cieszyn"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom\n(dates), with \u00c9poux string contains de, have El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -434,7 +1012,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with Titres string contains de, have Nom\n(dates) string starts with Viola?",
+                "question": "Does every Nom\n(dates), with Titres string contains de, have El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -442,15 +1020,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Nom\n(dates) string starts with Viola and \u00c9poux string contains de?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains de and Titres string contains de?",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains en?",
                 "answers": [
                     "2"
                 ],
@@ -458,7 +1028,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de and El\u00e9ments biographiques string contains la?",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de and \u00c9poux string contains II?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "2"
                 ],
@@ -527,6 +1105,17 @@
         "qas": [
             {
                 "source": "synthetic_qa",
+                "question": "What was the Nom\n(dates) when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains de?",
+                "answers": [
+                    "Jadwiga de Kalisz\n(1266-1339)",
+                    "Aldona de Lituanie\n(1309-1339)",
+                    "Ad\u00e9la\u00efde de Hesse\n(1324-1371)",
+                    "Edwige de Sagan\n(1350-1390)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
                 "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains en?",
                 "answers": [
                     "Jadwiga de Kalisz\n(1266-1339)",
@@ -538,18 +1127,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains de?",
+                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains III, have Titres string contains de?",
                 "answers": [
-                    "Jadwiga de Kalisz\n(1266-1339)",
-                    "Aldona de Lituanie\n(1309-1339)",
-                    "Ad\u00e9la\u00efde de Hesse\n(1324-1371)",
-                    "Edwige de Sagan\n(1350-1390)"
+                    "No"
                 ],
-                "reasoning_type": "conjunction"
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with \u00c9poux string contains de, have Titres string contains de?",
+                "question": "Does only Nom\n(dates), with Titres string contains de, have El\u00e9ments biographiques string contains Fille?",
                 "answers": [
                     "Yes"
                 ],
@@ -557,15 +1143,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with Titres string contains de, have \u00c9poux string contains III?",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains la and Titres string contains de?",
                 "answers": [
-                    "Yes"
+                    "3"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains Fille and Titres string contains de?",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "4"
                 ],
@@ -573,15 +1159,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains Fille and \u00c9poux string contains en?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had \u00c9poux string contains de and El\u00e9ments biographiques string contains Fille?",
+                "question": "How many Nom\n(dates) had Titres string contains de and El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "4"
                 ],
@@ -622,7 +1200,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains Fille and the Titres string contains de?",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains II and the \u00c9poux string contains Ier?",
                 "answers": [
                     "\u00c9lisabeth de Bosnie\n(1340-1387)"
                 ],
@@ -630,7 +1208,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the Titres string contains de and the \u00c9poux string contains en?",
+                "question": "What was the Nom\n(dates) when the \u00c9poux string contains Louis and the Titres string contains de?",
                 "answers": [
                     "\u00c9lisabeth de Bosnie\n(1340-1387)"
                 ],
@@ -638,7 +1216,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom\n(dates), with \u00c9poux string contains Ier, have El\u00e9ments biographiques string contains de?",
+                "question": "Does only Nom\n(dates), with \u00c9poux string contains en, have Titres string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -646,7 +1224,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom\n(dates), with \u00c9poux string contains Louis, have El\u00e9ments biographiques string contains de?",
+                "question": "Does only Nom\n(dates), with \u00c9poux string contains Ier, have El\u00e9ments biographiques string contains Catherine?",
                 "answers": [
                     "Yes"
                 ],
@@ -654,565 +1232,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had \u00c9poux string contains en?",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains Fille and \u00c9poux string contains Ier?",
                 "answers": [
                     "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains Fille and Titres string contains de?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "8051660",
-        "title": "Liste des \u00e9pouses des souverains de Pologne",
-        "url": "https://fr.wikipedia.org/?curid=8051660",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "90x90px",
-                "Anne de Celje\n(1381-1416)",
-                "* W\u0142adys\u0142aw II Jagellon (mariage en 1402)",
-                "* Reine de Pologne et grande-duchesse de Lituanie (1402-1416)",
-                "* Princesse de la Maison de . Fille de  et d'Anne de Pologne.\n* M\u00e8re d'Jadwiga Jagellon.",
-                ""
-            ],
-            [
-                "108x108px",
-                "\u00c9lisabeth de Pilica\n(1372-1420)",
-                "* Jean de Ji\u010dina\n*Vincent Granovsky (mariage en 1397)\n*W\u0142adys\u0142aw II Jagellon (mariage en 1417)",
-                "* Reine de Pologne et grande-duchesse de Lituanie (1417-1420)",
-                "* Princesse de la Famille de Pilica. Fille d' et d'Edwige de Melsztyn.",
-                ""
-            ],
-            [
-                "197x197px",
-                "Zofia de Holszany\n(1405-1461)",
-                "* W\u0142adys\u0142aw II Jagellon (mariage en 1422)",
-                "* Reine de Pologne et grande-duchesse de Lituanie (1422-1434)",
-                "* Princesse de la Famille d'. Fille d' et d'Alexandra Drucka.\n* M\u00e8re de W\u0142adys\u0142aw III Jagellon et de Kazimierz IV Jagellon.",
-                ""
-            ],
-            [
-                "122x122px",
-                "\u00c9lisabeth de Habsbourg\n(1436-1505)",
-                "* Kazimierz IV Jagellon (mariage en 1454)",
-                "* Reine de Pologne et grande-duchesse de Lituanie (1454-1492)",
-                "* Princesse de la Maison de Habsbourg. Fille d'Albert II du Saint-Empire et d'\u00c9lisabeth de Luxembourg.\n* M\u00e8re de Vladislas IV de Boh\u00eame, d'Jadwiga Jagellon, de Saint Kazimierz de Pologne, de Jean  Albert Jagellon, d'Alexandre Ier Jagellon, de Sophie Jagellon, de Sigismond Ier de Pologne, de Fryderyk Jagellon, d'Anna Jagellon et de Barbara Jagellon.",
-                ""
-            ],
-            [
-                "106x106px",
-                "H\u00e9l\u00e8ne de Moscou\n(1476-1513)",
-                "* Aleksander Ier Jagellon (mariage en 1495)",
-                "* Grande-duchesse de Lituanie (1495-1506)\n* Reine de Pologne (1501-1506)",
-                "* Princesse riourikide. Fille d'Ivan III de Russie et de Sophie Pal\u00e9ologue.",
-                ""
-            ],
-            [
-                "153x153px",
-                "Barbara Z\u00e1polya\n(1495-1515)",
-                "* Zygmunt Ier  (mariage en 1512)",
-                "* Reine de Pologne et grande-duchesse de Lituanie (1512-1515)",
-                "* Princesse de la Famille Z\u00e1polya. Fille d'\u00c9tienne Zapolya et d'Edwige de Cieszyn.\n* M\u00e8re d'Jadwiga Jagellon.",
-                ""
-            ],
-            [
-                "108x108px",
-                "Bona Sforza\n(1494-1557)",
-                "* Zygmunt Ier  (mariage en 1518)",
-                "* Reine de Pologne et grande-duchesse de Lituanie (1518-1548)\n* duchesse de Bari et princesse de Rossano (de plein droit, 1524-1557)",
-                "* Princesse de la Famille Sforza. Fille de Jean Gal\u00e9as Sforza et d'Isabelle de Naples.\n* M\u00e8re d'Isabelle Jagellon, de Zygmunt II August, de Sophie Jagellon, d'Anna Jagellon et de Katarzyna Jagellon.",
-                "95x95px"
-            ],
-            [
-                "141x141px",
-                "\u00c9lisabeth d'Autriche\n(1526-1545)",
-                "* Zygmunt II August (mariage en 1543)",
-                "* Co-reine de Pologne et grande-duchesse de Lituanie (1543-1545)",
-                "* Princesse de la Maison de Habsbourg. Fille de Ferdinand Ier du Saint-Empire et d'Anna Jagellon.",
-                ""
-            ],
-            [
-                "106x106px",
-                "Barbara Radziwi\u0142\u0142\n(1520-1551)",
-                "* Stanislovas Go\u0161tautas (mariage en 1537)\n*Zygmunt II August (mariage en 1547)",
-                "* Reine de Pologne et grande-duchesse de Lituanie (1548-1551)",
-                "* Princesse de la Maison Radziwi\u0142\u0142. Fille de Jerzy Radziwi\u0142\u0142 et de Barbara Kola.",
-                ""
-            ],
-            [
-                "106x106px",
-                "Catherine d'Autriche\n(1533-1572)",
-                "*Fran\u00e7ois III de Mantoue (mariage en 1549)\n*Zygmunt II August (mariage en 1553)",
-                "* Duchesse de Mantoue et marquise de Montferrat (1549-1550)\n* Reine de Pologne et grande-duchesse de Lituanie (1553-1572)",
-                "* Princesse de la Maison de Habsbourg. Fille de Ferdinand Ier du Saint-Empire et d'Anne Jagellon.",
-                ""
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 1,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "Anne de Celje\n(1381-1416)",
-                    "\u00c9lisabeth de Pilica\n(1372-1420)",
-                    "Zofia de Holszany\n(1405-1461)",
-                    "\u00c9lisabeth de Habsbourg\n(1436-1505)",
-                    "H\u00e9l\u00e8ne de Moscou\n(1476-1513)",
-                    "Barbara Z\u00e1polya\n(1495-1515)",
-                    "Bona Sforza\n(1494-1557)",
-                    "\u00c9lisabeth d'Autriche\n(1526-1545)",
-                    "Barbara Radziwi\u0142\u0142\n(1520-1551)",
-                    "Catherine d'Autriche\n(1533-1572)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains Jean and the \u00c9poux string contains en?",
-                "answers": [
-                    "\u00c9lisabeth de Habsbourg\n(1436-1505)",
-                    "Bona Sforza\n(1494-1557)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with \u00c9poux string contains II, have Titres string contains de?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with Titres string contains de, have El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had \u00c9poux string contains II?",
-                "answers": [
-                    "6"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had \u00c9poux string contains en and Titres string contains de?",
-                "answers": [
-                    "10"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "8051660",
-        "title": "Liste des \u00e9pouses des souverains de Pologne",
-        "url": "https://fr.wikipedia.org/?curid=8051660",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "126x126px",
-                "Marie d'Autriche\n(1528-1603)",
-                "* Maximilien II de Habsbourg (mariage en 1548)",
-                "* Reine de Germanie et de Boh\u00eame (1562-1576)\n* Reine de Hongrie et de Croatie (1563-1576)\n* Imp\u00e9ratrice du Saint-Empire et archiduchesse d'Autriche (1564-1576)\n* Reine de Pologne et grande-duchesse de Lituanie (1575)",
-                "* Princesse de la Maison de Habsbourg. Fille de Charles Quint et d'Isabelle de Portugal.\n* M\u00e8re d'Anne d'Autriche, de Rodolphe II du Saint-Empire, d'Ernest d'Autriche, d'\u00c9lisabeth d'Autriche, de Matthias  de Habsbourg, de Maximilien III d'Autriche, d'Albert d'Autriche, de Wenceslas d'Autriche et de Marguerite d'Autriche.",
-                ""
-            ],
-            [
-                "109x109px",
-                "Anne d'Autriche\n(1573-1598)",
-                "* Zygmunt III Vasa (mariage en 1592)",
-                "* Reine de Su\u00e8de et de Pologne, grande-duchesse de Lituanie (1592-1598)",
-                "* Princesse de la Maison de Habsbourg. Fille de Charles II d'Autriche-Styrie et de Marie-Anne de Bavi\u00e8re.\n* M\u00e8re de Ladislas IV Vasa.",
-                "95x95px"
-            ],
-            [
-                "119x119px",
-                "Constance d'Autriche\n(1588-1631)",
-                "* Zygmunt III Vasa (mariage en 1605)",
-                "* Reine de Pologne et grande-duchesse de Lituanie (1605-1631)",
-                "* Princesse de la Maison de Habsbourg. Fille de Charles II d'Autriche-Styrie et de Marie-Anne de Bavi\u00e8re.\n* M\u00e8re de Jean II Casimir Vasa, de Johann-Albert Vasa, de Charles-Ferdinand Vasa et d'Anne-Catherine-Constance Vasa.",
-                "95x95px"
-            ],
-            [
-                "133x133px",
-                "C\u00e9cile-Ren\u00e9e d'Autriche\n(1611-1644)",
-                "* W\u0142adys\u0142aw IV Vasa (mariage en 1637)",
-                "* Reine de Pologne et grande-duchesse de Lituanie (1637-1644)",
-                "* Princesse de la Maison de Habsbourg. Fille de Ferdinand II du Saint-Empire et de Marie-Anne de Bavi\u00e8re.",
-                "95x95px"
-            ],
-            [
-                "147x147px",
-                "Louise-Marie de Gonzague\n(1611-1667)",
-                "* W\u0142adys\u0142aw IV Vasa (mariage en 1646)\n* Jan II Kazimierz Vasa (mariage en 1649)",
-                "* Reine de Pologne et grande-duchesse de Lituanie (1646-1648 puis 1649-1667)",
-                "* Princesse de la Maison de Gonzague-Nevers. Fille de Charles  de Mantoue et de Catherine de Mayenne.\n* M\u00e8re de Maria-Anna-Th\u00e9r\u00e8sa Vasa.",
-                ""
-            ],
-            [
-                "112x112px",
-                "\u00c9l\u00e9onore d'Autriche\n(1653-1697)",
-                "* Micha\u0142 Wi\u015bniowiecki (mariage en 1670)\n* Charles V de Lorraine (mariage en 1678)",
-                "* Reine de Pologne et grande-duchesse de Lituanie (1670-1673)\n* Duchesse de Lorraine et de Bar (1678-1690)",
-                "* Princesse de la Maison de Habsbourg. Fille de Ferdinand III de Habsbourg et d'\u00c9l\u00e9onore de Nevers-Mantoue.\n* M\u00e8re de L\u00e9opold Ier de Lorraine, de Charles-Joseph de Lorraine et de Joseph de Lorraine.",
-                ""
-            ],
-            [
-                "125x125px",
-                "Marie-Casimire-Louise de La Grange d'Arquien\n(1641-1716)",
-                "*Jean Sobiepan Zamoyski (mariage en 1658)\n*Jan III Sobieski (mariage en 1665)",
-                "* Reine de Pologne et grande-duchesse de Lituanie (1674-1696)",
-                "* Princesse de Famille de La Grange. Fille d'Henri-Albert de La Grange d'Arquien et de Fran\u00e7oise de La Ch\u00e2tre.\n* M\u00e8re de Jacques-Louis-Henri Sobieski, de Th\u00e9r\u00e8se-Cun\u00e9gonde Sobieska et d'Aleksander Benedykt Sobieski.",
-                ""
-            ],
-            [
-                "101x101px",
-                "Eberhardine de Brandebourg-Bayreuth\n(1671-1727)",
-                "* Auguste II de Pologne (mariage en 1693)",
-                "* Princesse-\u00e9lectrice de Saxe (1694-1727)\n* Reine de Pologne et grande-duchesse de Lituanie (1697-1706 puis 1709-1727)",
-                "* Princesse de la Maison de Hohenzollern. Fille de Christian-Ernest de Brandebourg-Bayreuth et de Sophie-Louise de Wurtemberg.\n* M\u00e8re d'Auguste III de Pologne.",
-                "99x99px"
-            ],
-            [
-                "122x122px",
-                "Katarzyna Opali\u0144ska\n(1680-1747)",
-                "* Stanis\u0142aw Leszczy\u0144ski (mariage en 1698)",
-                "* Reine de Pologne et grande-duchesse de Lituanie (1705-1709 puis 1733-1736)\n* Duchesse de Lorraine et de Bar (1737-1747)",
-                "* Princesse de la Famille Opalinski. Fille de Jan Karol Opali\u0144ski et de Zofia Anna Czarnkowska.\n* M\u00e8re d'Anna Leszczy\u0144ska et de Maria Leszczy\u0144ska.",
-                ""
-            ],
-            [
-                "113x113px",
-                "Marie-Jos\u00e8phe d'Autriche\n(1699-1757)",
-                "* Auguste III de Pologne (mariage en 1719)",
-                "* Princesse-\u00e9lectrice de Saxe (1733-1757)\n* Reine de Pologne et grande-duchesse de Lituanie (1733 puis 1736-1757)",
-                "* Princesse de la Maison de Habsbourg. Fille de Joseph Ier du Saint-Empire et de Wilhelmine-Am\u00e9lie de Brunswick-Lunebourg.\n* M\u00e8re de Fr\u00e9d\u00e9ric IV de Saxe, de Marie-Am\u00e9lie de Saxe, de Marie-Anne de Saxe, de Xavier de Saxe, de Marie-Jos\u00e8phe de Saxe, de Charles-Christian de Saxe, de Christine de Saxe, de Marie-\u00c9lisabeth de Saxe, d'Albert de Saxe-Teschen, de Cl\u00e9ment-Wenceslas de Saxe et de Cun\u00e9gonde de Saxe.",
-                "99x99px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string contains Constance and the Titres string contains de?",
-                "answers": [
-                    "119x119px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains Charles?",
-                "answers": [
-                    "126x126px",
-                    "109x109px",
-                    "119x119px",
-                    "147x147px",
-                    "112x112px",
-                    "113x113px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with Nom\n(dates) string contains La, have \u00c9poux string contains en?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with El\u00e9ments biographiques string contains Ier, have \u00c9poux string contains de?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de?",
-                "answers": [
-                    "10"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de and El\u00e9ments biographiques string contains II?",
-                "answers": [
-                    "6"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains en and El\u00e9ments biographiques string contains Catherine?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "8051660",
-        "title": "Liste des \u00e9pouses des souverains de Pologne",
-        "url": "https://fr.wikipedia.org/?curid=8051660",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques"
-        ],
-        "rows": [
-            [
-                "114x114px",
-                "Am\u00e9lie de Deux-Ponts-Birkenfeld\n(1752-1828)",
-                "* Fr\u00e9d\u00e9ric-Auguste Ier de Saxe (mariage en 1769)",
-                "* Princesse-\u00e9lectrice (1769-1806) puis reine de Saxe (1806-1827)\n* Duchesse de Varsovie (1807-1815)",
-                "* Princesse de la Maison de Wittelsbach. Fille de Fr\u00e9d\u00e9ric de Deux-Ponts-Birkenfeld et de Fran\u00e7oise de Palatinat-Soulzbach.\n* M\u00e8re d'Augusta de Saxe."
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains en?",
-                "answers": [
-                    "114x114px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9poux string contains Ier and the El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "114x114px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with Nom\n(dates) string contains de, have \u00c9poux string contains en?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Nom\n(dates) string contains de, have \u00c9poux string contains Ier?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains Saxe and El\u00e9ments biographiques string contains Fille?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains en and Titres string contains de?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "8051660",
-        "title": "Liste des \u00e9pouses des souverains de Pologne",
-        "url": "https://fr.wikipedia.org/?curid=8051660",
-        "header": [
-            "Portrait",
-            "Nom\n(dates)",
-            "\u00c9poux",
-            "Titres",
-            "El\u00e9ments biographiques",
-            "Armoiries"
-        ],
-        "rows": [
-            [
-                "112x112px",
-                "Louise de Bade\n(1779-1826)",
-                "* Alexandre Ier de Russie (mariage en 1793)",
-                "* Grande-duchesse de Russie (1793-1796)\n* Tsarevna et grande-duchesse de Russie (1796-1801)\n* Imp\u00e9ratrice de Russie (1801-1825)\n* Reine de Pologne (1815-1825)",
-                "* Princesse de la Maison de Z\u00e4hringen. Fille de Charles-Louis de Bade et d'Am\u00e9lie de Hesse-Darmstadt.",
-                "93x93px"
-            ],
-            [
-                "110x110px",
-                "Charlotte de Prusse\n(1798- 1860)",
-                "* Nicolas  de Russie (mariage en 1817)",
-                "* Grande-duchesse de Russie (1817-1825)\n* Imp\u00e9ratrice de Russie et reine de Pologne (1825-1855)",
-                "* Princesse de la Maison de Hohenzollern. Fille de Fr\u00e9d\u00e9ric-Guillaume III de Prusse et de Louise de Mecklembourg-Strelitz.\n* M\u00e8re d'Alexandre II de Russie, de Marie Nikola\u00efevna de Russie, d'Olga Nikola\u00efevna de Russie, d'Alexandra Nikola\u00efevna de Russie, de Constantin Nikola\u00efevitch de Russie, de Nicolas Nikola\u00efevitch de Russie et de Michel Nikola\u00efevitch de Russie.",
-                "93x93px"
-            ],
-            [
-                "123x123px",
-                "Marie de Hesse-Darmstadt\n\n(1824 -1880)",
-                "* Alexandre II de Russie (mariage en 1841)",
-                "* Tsarevna et grande-duchesse de Russie (1841-1855)\n* Imp\u00e9ratrice de Russie et reine de Pologne (1855-1880)",
-                "* Princesse de la Maison de Hesse. Fille de Louis II de Hesse et de Wilhelmine de Bade.\n* M\u00e8re d'Alexandra Alexandrovna de Russie, de Nicolas Alexandrovitch de Russie, d'Alexandre III de Russie, de Vladimir Alexandrovitch de Russie, d'Alexis Alexandrovitch de Russie, de Maria Alexandrovna de Russie, de Serge Alexandrovitch de Russie et de Paul Alexandrovitch de Russie.",
-                "135x135px"
-            ],
-            [
-                "134x134px",
-                "Dagmar de Danemark\n\n(1847-1928)",
-                "* Alexandre III de Russie (mariage en 1866)",
-                "* Tsarevna et grande-duchesse de Russie (1866-1881)\n* Imp\u00e9ratrice de Russie et reine de Pologne (1881-1894)",
-                "* Princesse de la Maison de Gl\u00fccksbourg. Fille de Christian IX de Danemark et de Louise de Hesse-Cassel.\n* M\u00e8re de Nicolas II de Russie, d'Alexandre Alexandrovitch de Russie, de Georges Aleksandrovitch de Russie, de Xenia Alexandrovna de Russie, de Michel Alexandrovitch de Russie et d'Olga Alexandrovna de Russie.",
-                "135x135px"
-            ],
-            [
-                "113x113px",
-                "Alix de Hesse-Darmstadt\n\n(1872-1918)",
-                "* Nicolas II de Russie (mariage en 1894)",
-                "* Imp\u00e9ratrice de Russie (1894-1917)\n* Reine de Pologne (1894-1916)",
-                "* Princesse de la Maison de Hesse. Fille de Louis IV de Hesse et d'Alice du Royaume-Uni.\n* M\u00e8re d'Olga Nikola\u00efevna de Russie, de Tatiana Nikola\u00efevna de Russie, de Maria Nikola\u00efevna de Russie, d'Anastasia Nikola\u00efevna de Russie et d'Alexis Nikola\u00efevitch de Russie.",
-                "135x135px"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "string"
-        ],
-        "key_column": 0,
-        "numeric_columns": [],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the Nom\n(dates) string contains de and the El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "112x112px",
-                    "110x110px",
-                    "123x123px",
-                    "134x134px",
-                    "113x113px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains en?",
-                "answers": [
-                    "112x112px",
-                    "110x110px",
-                    "123x123px",
-                    "134x134px",
-                    "113x113px"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with El\u00e9ments biographiques string contains Fille, have Nom\n(dates) string starts with Charlotte?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Portrait, with Nom\n(dates) string contains de, have El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains en and El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains de and Titres string contains de?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de and El\u00e9ments biographiques string contains de?",
-                "answers": [
-                    "5"
                 ],
                 "reasoning_type": "counting"
             }

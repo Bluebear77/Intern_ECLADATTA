@@ -185,7 +185,7 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [
             2,
             3,
@@ -199,23 +199,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Saison when the G\u00e9n\u00e9ral is Points and the Mass start is Position?",
+                "question": "What was the Individuel when the G\u00e9n\u00e9ral is Position and the Poursuite is Position?",
                 "answers": [
-                    "Saison"
+                    "Courses"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Saison when the Mass start is Points and the Mass start is Courses?",
+                "question": "What was the Individuel when the Mass start is Position and the G\u00e9n\u00e9ral is Points?",
                 "answers": [
-                    "Saison"
+                    "Courses"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Saison, with Mass start is Courses, have Individuel is Courses?",
+                "question": "Does every Individuel, with G\u00e9n\u00e9ral is Points, have G\u00e9n\u00e9ral is Courses?",
                 "answers": [
                     "Yes"
                 ],
@@ -223,27 +223,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Saison, with G\u00e9n\u00e9ral is Position, have Poursuite is Position?",
+                "question": "Does only Individuel, with G\u00e9n\u00e9ral is Position, have Mass start is Position?",
                 "answers": [
                     "Yes"
                 ],
                 "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Saison had Mass start is Points?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Saison had G\u00e9n\u00e9ral is Courses?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
             }
         ]
     },
@@ -334,7 +318,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Sprint when the Individuel is 1 and the Total was less than or equal to 34?",
+                "question": "What was the Sprint when the Poursuite is 7 and the Total was greater than or equal to 5?",
                 "answers": [
                     "18"
                 ],
@@ -342,7 +326,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Sprint when the Individuel is 1 and the Poursuite is 7?",
+                "question": "What was the Sprint when the Total was greater than 7 and the Poursuite is 7?",
                 "answers": [
                     "18"
                 ],
@@ -350,7 +334,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Sprint, with Individuel is 1, have Mass start is 8?",
+                "question": "Does every Sprint, with Mass start string starts with Vancouver, have Total was greater than or equal to 4?",
                 "answers": [
                     "Yes"
                 ],
@@ -358,7 +342,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Sprint, with Total was equal to 34, have Mass start is 8?",
+                "question": "Does only Sprint, with Mass start is 8, have Individuel is 1?",
                 "answers": [
                     "Yes"
                 ],
@@ -366,7 +350,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Sprint had Total was greater than or equal to 5 and Mass start is 8?",
+                "question": "How many Sprint had Poursuite is 7?",
                 "answers": [
                     "1"
                 ],
@@ -374,7 +358,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Sprint had Mass start string starts with Vancouver and Total was less than 34?",
+                "question": "How many Sprint had Total was less than or equal to 5 and Mass start string contains Vancouver?",
                 "answers": [
                     "1"
                 ],
@@ -382,9 +366,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Sprint had Total was less than or equal to 7?",
+                "question": "How many Sprint had Total was greater than 3?",
                 "answers": [
-                    "5"
+                    "6"
                 ],
                 "reasoning_type": "counting"
             }
@@ -517,7 +501,7 @@
             "numeric",
             "numeric"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [
             1,
             2,
@@ -532,23 +516,25 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9sultat when the Sprint was less than or equal to 1 and the Poursuite was greater than or equal to 1?",
+                "question": "What was the Individuel when the Total was equal to 3 and the Total\n(\u00e9preuvesindividuelles) was less than 18?",
                 "answers": [
-                    "Hors des points"
+                    "1"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9sultat when the Poursuite was less than 45 and the Total\n(\u00e9preuvesindividuelles) was equal to 113?",
+                "question": "What was the Individuel when the R\u00e9sultat is Place and the Poursuite was less than or equal to 7?",
                 "answers": [
-                    "Top 10"
+                    "1",
+                    "\u2013",
+                    "3"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every R\u00e9sultat, with Total\n(\u00e9preuvesindividuelles) was less than 138, have Poursuite was equal to 3?",
+                "question": "Does every Individuel, with Poursuite was greater than or equal to 45, have R\u00e9sultat string starts with Top?",
                 "answers": [
                     "No"
                 ],
@@ -556,7 +542,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every R\u00e9sultat, with Total\n(\u00e9preuvesindividuelles) was greater than 34, have Poursuite was less than 42?",
+                "question": "Does every Individuel, with Sprint was greater than or equal to 1, have Total\n(\u00e9preuvesindividuelles) was less than or equal to 113?",
                 "answers": [
                     "No"
                 ],
@@ -564,23 +550,47 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which R\u00e9sultat, with Total\n(\u00e9preuvesindividuelles) was greater than or equal to 3, has the 8th largest Poursuite?",
+                "question": "Which Individuel, with Poursuite was less than or equal to 3, has the 1st largest Total\n(\u00e9preuvesindividuelles)?",
                 "answers": [
-                    "Place"
+                    "3"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which R\u00e9sultat, with Total was greater than or equal to 47, has the 5th largest Poursuite?",
+                "question": "Which Individuel, with Poursuite was greater than or equal to 3, has the 6th largest Total\n(\u00e9preuvesindividuelles)?",
                 "answers": [
-                    "Podiums"
+                    "1"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9sultat had Sprint was less than or equal to 45 and Total\n(\u00e9preuvesindividuelles) was greater than 18?",
+                "question": "Which Individuel, with Sprint was less than 18, has the 2nd largest Total?",
+                "answers": [
+                    "\u2013"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Individuel had Total\n(\u00e9preuvesindividuelles) was less than 63?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Individuel had Poursuite was greater than 7 and Total\n(\u00e9preuvesindividuelles) was less than 138?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Individuel had Sprint was less than or equal to 9?",
                 "answers": [
                     "3"
                 ],
@@ -588,41 +598,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9sultat had Total was less than 137 and Poursuite was less than 42?",
+                "question": "What was the average of Poursuite when the Total\n(\u00e9preuvesindividuelles) was less than 34?",
                 "answers": [
-                    "5"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many R\u00e9sultat had Total was greater than or equal to 3 and Poursuite was less than 46?",
-                "answers": [
-                    "8"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the average of Poursuite when the Sprint was greater than or equal to 18?",
-                "answers": [
-                    "31.67"
+                    "3.67"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of Total when the Poursuite was less than or equal to 7?",
+                "question": "What was the sum of Poursuite when the Total\n(\u00e9preuvesindividuelles) was less than 63?",
                 "answers": [
-                    "85.0"
+                    "18.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of Poursuite when the Total was greater than 3?",
+                "question": "What was the average of Total\n(\u00e9preuvesindividuelles) when the Poursuite was greater than 1?",
                 "answers": [
-                    "200.0"
+                    "84.5"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -676,7 +670,7 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": []
@@ -801,7 +795,7 @@
             "numeric",
             "numeric"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [
             1,
             2,
@@ -850,15 +844,31 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Temps en course when the saison 2009-2010 was before 9 / 21 and the saison 2011-2012 was on 6 / 25?",
+                "question": "What was the saison 2005\u20132006 when the saison 2011-2012 was on 5 / 25 and the saison 2009-2010 was after 1 / 21?",
                 "answers": [
-                    "Autre"
+                    "0 / 10"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Temps en course, with saison 2006\u20132007 was before 7 / 24, have saison 2011-2012 was on 7 / 25?",
+                "question": "What was the saison 2005\u20132006 when the saison 2011-2012 was on 7 / 25 and the Temps en course string contains temps?",
+                "answers": [
+                    "0 / 10"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every saison 2005\u20132006, with Temps en course string starts with Second, have saison 2011-2012 was on 7 / 25?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only saison 2005\u20132006, with saison 2009-2010 was after 1 / 21, have Temps en course string contains temps?",
                 "answers": [
                     "No"
                 ],
@@ -866,26 +876,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Temps en course, with saison 2009-2010 was after 1 / 21, happened the 1st according to saison 2006\u20132007?",
+                "question": "Which saison 2005\u20132006, with Temps en course string contains temps, happened the 3rd according to saison 2011-2012?",
                 "answers": [
-                    "Second temps",
-                    "Autre"
+                    "0 / 10"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Temps en course, with saison 2011-2012 was after 5 / 25, happened the 3rd according to saison 2008\u20132009?",
+                "question": "How many saison 2005\u20132006 had Temps en course string ends with temps?",
                 "answers": [
-                    "Autre"
+                    "3"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Temps en course had saison 2011-2012 was before 7 / 25 and saison 2006\u20132007 was on 5 / 24?",
+                "question": "How many saison 2005\u20132006 had Temps en course string contains temps?",
                 "answers": [
-                    "1"
+                    "3"
                 ],
                 "reasoning_type": "counting"
             }
@@ -992,7 +1001,7 @@
             "numeric",
             "numeric"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [
             1,
             2,
@@ -1044,7 +1053,7 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": []
@@ -1127,29 +1136,29 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Mondiaux \\ \u00c9preuve when the Poursuite string contains Vancouver and the Mass start string ends with Vancouver?",
+                "question": "What was the Individuel when the Mass start string contains Vancouver and the Sprint string ends with Vancouver?",
                 "answers": [
-                    "2010 Khanty-Mansi\u00efsk"
+                    "Jeux olympiques de Vancouver"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Mondiaux \\ \u00c9preuve when the Poursuite string contains Vancouver and the Relais string contains de?",
+                "question": "What was the Individuel when the Sprint string ends with Vancouver and the Mass start string ends with Vancouver?",
                 "answers": [
-                    "2010 Khanty-Mansi\u00efsk"
+                    "Jeux olympiques de Vancouver"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Mondiaux \\ \u00c9preuve, with Relais string contains Vancouver, have Individuel string ends with Vancouver?",
+                "question": "Does every Individuel, with Relais string contains Vancouver, have Sprint string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -1157,7 +1166,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Mondiaux \\ \u00c9preuve, with Relais string contains Vancouver, have Individuel string contains Vancouver?",
+                "question": "Does every Individuel, with Mass start string contains Vancouver, have Relais string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -1165,7 +1174,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Mondiaux \\ \u00c9preuve had Relais string ends with Vancouver and Individuel string contains de?",
+                "question": "How many Individuel had Sprint string contains de and Mass start string contains Vancouver?",
                 "answers": [
                     "1"
                 ],
@@ -1173,7 +1182,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Mondiaux \\ \u00c9preuve had Relais string ends with Vancouver and Mass start string contains de?",
+                "question": "How many Individuel had Relais string contains Vancouver and Sprint string contains de?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Individuel had Mass start string contains Vancouver and Poursuite string ends with Vancouver?",
                 "answers": [
                     "1"
                 ],

@@ -210,32 +210,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the S\u00e9rie when the Ann\u00e9e was on 2020 and the R\u00f4le is Principal?",
+                "question": "What was the S\u00e9rie when the Nom du R\u00f4le string ends with Dam and the Ann\u00e9e was after 2008?",
                 "answers": [
-                    "Backstreet Rookie"
+                    "Secret Door"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the S\u00e9rie when the Ann\u00e9e was after 2016 and the R\u00f4le is Principal?",
+                "question": "What was the S\u00e9rie when the Ann\u00e9e was before 2014 and the R\u00f4le is Principal?",
                 "answers": [
-                    "Clean Up Like It's Hot",
-                    "Backstreet Rookie"
+                    "Gumiho"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every S\u00e9rie, with Ann\u00e9e was before 2016, have R\u00f4le is Principal?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every S\u00e9rie, with Nom du R\u00f4le string ends with Dam, have Ann\u00e9e was after 2009?",
+                "question": "Does every S\u00e9rie, with R\u00f4le is Principal, have Ann\u00e9e was after 2009?",
                 "answers": [
                     "Yes"
                 ],
@@ -243,58 +234,60 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which S\u00e9rie, with Ann\u00e9e was after 2014, happened the 2nd according to Ann\u00e9e?",
+                "question": "Does every S\u00e9rie, with R\u00f4le is Principal, have Nom du R\u00f4le string ends with Sol?",
                 "answers": [
-                    "Angry Mom",
-                    "Love Cells 2"
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which S\u00e9rie, with Ann\u00e9e was on 2009, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "Cain and Abel",
+                    "Queen Seon Deok",
+                    "Tempted Again"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which S\u00e9rie, with R\u00f4le is Principal, happened the 7th according to Ann\u00e9e?",
+                "question": "Which S\u00e9rie, with Ann\u00e9e was on 2010, happened the 2nd according to Ann\u00e9e?",
                 "answers": [
-                    "Clean Up Like It's Hot"
+                    "Dong Yi",
+                    "Gumiho",
+                    "Flames of Desire"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which S\u00e9rie, with Ann\u00e9e was before 2018, happened the 3rd according to Ann\u00e9e?",
+                "question": "Which S\u00e9rie, with Ann\u00e9e was after 2008, happened the 10th according to Ann\u00e9e?",
                 "answers": [
-                    "Powerful Opponents",
-                    "Iljimae",
-                    "Painter of The Wind"
+                    "Secret Door",
+                    "Love Cells"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre Original was \uce74\uc778\uacfc \uc544\ubca8 and when the Titre Original was \uc77c\ub2e8 \ub728\uac81\uac8c \uccad\uc18c\ud558\ub77c?",
+                "question": "How many years had passed between when the Titre Original was \uc5bc\ub801\ub6b1\ub545 \ud765\uc2e0\uc18c and when the Titre Original was \uad6c\ubbf8\ud638: \uc5ec\uc6b0\ub204\uc774\ub390?",
                 "answers": [
-                    "9"
+                    "3"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Nom du R\u00f4le was Jeong Saet Byeol and when the Nom du R\u00f4le was Kim Yeong Min jeune?",
+                "question": "How many years had passed between when the Titre Original was \ud669\uae08\ubb34\uc9c0\uac1c and when the Titre Original was \ub3d9\uc774?",
                 "answers": [
-                    "10"
+                    "3"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many S\u00e9rie had Ann\u00e9e was after 2012 and R\u00f4le is Principal?",
-                "answers": [
-                    "7"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many S\u00e9rie had Cha\u00eene is SBS?",
+                "question": "How many S\u00e9rie had Ann\u00e9e was after 2014?",
                 "answers": [
                     "5"
                 ],
@@ -302,9 +295,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many S\u00e9rie had Ann\u00e9e was before 2012?",
+                "question": "How many S\u00e9rie had Ann\u00e9e was after 2010 and Cha\u00eene is SBS?",
                 "answers": [
-                    "10"
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many S\u00e9rie had Ann\u00e9e was before 2010?",
+                "answers": [
+                    "7"
                 ],
                 "reasoning_type": "counting"
             }
@@ -435,7 +436,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Film when the R\u00f4le is Principal and the Ann\u00e9e was before 2007?",
+                "question": "What was the Film when the R\u00f4le is Principal and the Ann\u00e9e was before 2014?",
                 "answers": [
                     "Four Horror Tales - Hidden Floor"
                 ],
@@ -443,18 +444,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Film when the Ann\u00e9e was after 2013 and the R\u00f4le is Principal?",
+                "question": "What was the Film when the R\u00f4le is Principal and the Ann\u00e9e was on 2022?",
                 "answers": [
-                    "Thread of Lies",
-                    "Circle of Atonement",
-                    "Saranghagi ttaemoone",
                     "20th Century Girl"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Film, with Ann\u00e9e was before 2008, have R\u00f4le is Principal?",
+                "question": "Does every Film, with Ann\u00e9e was before 2013, have R\u00f4le is Principal?",
                 "answers": [
                     "No"
                 ],
@@ -462,74 +460,71 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Film, with Ann\u00e9e was before 2007, have R\u00f4le is Principal?",
+                "question": "Does only Film, with R\u00f4le is Principal, have Ann\u00e9e was after 2014?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was before 2009, happened the 2nd according to Ann\u00e9e?",
+                "question": "Which Film, with R\u00f4le is Principal, happened the 4th according to Ann\u00e9e?",
                 "answers": [
-                    "Four Horror Tales - Hidden Floor",
-                    "Lump of Sugar",
-                    "Dasepo Naughty Girls"
+                    "Saranghagi ttaemoone"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with Ann\u00e9e was after 2006, happened the 4th according to Ann\u00e9e?",
+                "question": "Which Film, with Ann\u00e9e was after 2006, happened the 6th according to Ann\u00e9e?",
                 "answers": [
-                    "The Last Day",
-                    "Possessed"
+                    "Thread of Lies"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Film, with R\u00f4le is Principal, happened the 3rd according to Ann\u00e9e?",
+                "question": "Which Film, with R\u00f4le is Principal, happened the 5th according to Ann\u00e9e?",
                 "answers": [
-                    "Circle of Atonement"
+                    "20th Century Girl"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre Original was \ub3d9\ucc3d\uc0dd and when the Titre Original was \ud574\uc6b4\ub300?",
+                "question": "How many years had passed between when the Titre Original was \uc5b4\ub290\ub0a0 \uac11\uc790\uae30 \ub450\ubc88\uc9f8 and when the Titre Original was 20\uc138\uae30 \uc18c\ub140?",
                 "answers": [
-                    "4"
+                    "16"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre Original was \ud669\uc9c4\uc774 and when the Titre Original was \ubd88\uc2e0\uc9c0\uc625?",
+                "question": "How many years had passed between when the Titre Original was \ud574\uc6b4\ub300 and when the Titre Original was \uc0ac\ub791\ud558\uae30 \ub54c\ubb38\uc5d0?",
                 "answers": [
-                    "2"
+                    "8"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was after 2006 and R\u00f4le is Principal?",
+                "question": "How many Film had R\u00f4le is Principal?",
                 "answers": [
-                    "4"
+                    "5"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was before 2022?",
+                "question": "How many Film had Ann\u00e9e was before 2014?",
                 "answers": [
-                    "11"
+                    "8"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Film had Ann\u00e9e was after 2013?",
+                "question": "How many Film had R\u00f4le is Principal and Ann\u00e9e was after 2013?",
                 "answers": [
                     "4"
                 ],

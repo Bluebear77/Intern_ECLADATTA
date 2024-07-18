@@ -381,7 +381,7 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [
             1
         ],
@@ -389,32 +389,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Title when the Cha\u00eene string contains TV and the Notes string contains 11?",
+                "question": "What was the Ann\u00e9e when the Notes string starts with Musical and the Title string contains Jimmy?",
                 "answers": [
-                    "Dan\u00e7a dos Famosos"
+                    "2017"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Title when the Cha\u00eene string contains Video and the Notes is Performer?",
+                "question": "What was the Ann\u00e9e when the Notes is Performer and the Cha\u00eene string starts with TV?",
                 "answers": [
-                    "Savage x Fenty Show Vol.4",
-                    "Amazon Music Live"
+                    "2023"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Title, with R\u00f4le(s) is Participant, have Cha\u00eene string contains TV?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Title, with Notes string contains 3, have Cha\u00eene string contains TV?",
+                "question": "Does every Ann\u00e9e, with Cha\u00eene string starts with Amazon, have Title string contains Live?",
                 "answers": [
                     "No"
                 ],
@@ -422,25 +413,33 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Title had Notes is Performer?",
+                "question": "Does every Ann\u00e9e, with Cha\u00eene string starts with TV, have Notes string contains 3?",
                 "answers": [
-                    "3"
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ann\u00e9e had Notes string contains 7?",
+                "answers": [
+                    "6"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Title had Cha\u00eene string starts with TV?",
+                "question": "How many Ann\u00e9e had Cha\u00eene string starts with TV and Notes string contains musical?",
                 "answers": [
-                    "10"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Title had Cha\u00eene string starts with TV and Notes string contains de?",
+                "question": "How many Ann\u00e9e had Cha\u00eene is ABC?",
                 "answers": [
-                    "5"
+                    "2"
                 ],
                 "reasoning_type": "counting"
             }
@@ -515,7 +514,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the R\u00f4le string starts with Helena and the Ann\u00e9e was before 2015?",
+                "question": "What was the Titre when the Ann\u00e9e was before 2015 and the R\u00f4le string starts with Helena?",
                 "answers": [
                     "Copa de Elite"
                 ],
@@ -523,15 +522,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the R\u00f4le string contains Helena and the Ann\u00e9e was on 2014?",
+                "question": "What was the Titre when the R\u00f4le string contains dos and the Ann\u00e9e was after 2017?",
                 "answers": [
-                    "Copa de Elite"
+                    "Hitpig"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre, with Ann\u00e9e was before 2015, have R\u00f4le string contains Helena?",
+                "question": "Does every Titre, with R\u00f4le string starts with Helena, have Ann\u00e9e was on 2014?",
                 "answers": [
                     "Yes"
                 ],
@@ -539,11 +538,19 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre, with Ann\u00e9e was before 2015, have R\u00f4le string starts with Helena?",
+                "question": "Does every Titre, with Ann\u00e9e was on 2014, have R\u00f4le string starts with Helena?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Titre, with Ann\u00e9e was after 2014, happened the 4th according to Ann\u00e9e?",
+                "answers": [
+                    "Hitpig"
+                ],
+                "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
@@ -555,17 +562,10 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Ann\u00e9e was before 2017, happened the 3rd according to Ann\u00e9e?",
+                "question": "Which Titre, with Ann\u00e9e was before 2017, happened the 2nd according to Ann\u00e9e?",
                 "answers": [
-                    "Breaking Through"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Titre, with Ann\u00e9e was after 2014, happened the 2nd according to Ann\u00e9e?",
-                "answers": [
-                    "Meus 15 Anos - O Filme"
+                    "Copa de Elite",
+                    "Didi e o Segredo dos Anjos"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
@@ -579,6 +579,22 @@
             },
             {
                 "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00f4le was Helena Boccato and when the R\u00f4le was Deusa Sol\u00e1ris?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had R\u00f4le string contains Helena and Ann\u00e9e was on 2014?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
                 "question": "How many Titre had Ann\u00e9e was before 2023?",
                 "answers": [
                     "5"
@@ -587,9 +603,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Ann\u00e9e was on 2014 and R\u00f4le string starts with Helena?",
+                "question": "How many Titre had Ann\u00e9e was before 2017?",
                 "answers": [
-                    "1"
+                    "3"
                 ],
                 "reasoning_type": "counting"
             }
@@ -622,22 +638,13 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {
             "1": [
                 2023
             ]
         },
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "How many Title had Ann\u00e9e was before 2023?",
-                "answers": [
-                    "0"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
+        "qas": []
     }
 ]

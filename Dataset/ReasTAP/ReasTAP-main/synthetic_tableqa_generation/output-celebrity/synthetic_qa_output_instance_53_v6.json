@@ -145,15 +145,16 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Cat\u00e9gorie when the Ann\u00e9e was before 1970 and the Titre string contains Fools?",
+                "question": "What was the Cat\u00e9gorie when the Ann\u00e9e was on 1968 and the Titre is Respect?",
                 "answers": [
+                    "Best Rhythm And Blues Recording",
                     "Best Female R&B Vocal Performance"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Cat\u00e9gorie when the Ann\u00e9e was on 1991 and the Genre is General?",
+                "question": "What was the Cat\u00e9gorie when the Genre is General and the Ann\u00e9e was after 1970?",
                 "answers": [
                     "Legend Award"
                 ],
@@ -161,15 +162,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Cat\u00e9gorie, with Ann\u00e9e was after 1973, have Genre is General?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Cat\u00e9gorie, with Ann\u00e9e was before 2006, have Titre is Respect?",
+                "question": "Does every Cat\u00e9gorie, with Ann\u00e9e was after 1970, have Genre is General?",
                 "answers": [
                     "No"
                 ],
@@ -177,16 +170,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Cat\u00e9gorie, with Ann\u00e9e was after 1986, happened the 2nd according to Ann\u00e9e?",
+                "question": "Does only Cat\u00e9gorie, with Ann\u00e9e was before 2006, have Genre is General?",
                 "answers": [
-                    "Best Female R&B Vocal Performance",
-                    "Best R&B Vocal By Duo Or Group"
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Cat\u00e9gorie, with Ann\u00e9e was after 1972, happened the 10th according to Ann\u00e9e?",
+                "answers": [
+                    "Best Traditional R&B Vocal Performance"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Cat\u00e9gorie, with Ann\u00e9e was before 1975, happened the 6th according to Ann\u00e9e?",
+                "question": "Which Cat\u00e9gorie, with Ann\u00e9e was before 1988, happened the 5th according to Ann\u00e9e?",
                 "answers": [
                     "Best Female R&B Vocal Performance"
                 ],
@@ -194,15 +194,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Cat\u00e9gorie, with Ann\u00e9e was before 2004, happened the 10th according to Ann\u00e9e?",
+                "question": "Which Cat\u00e9gorie, with Ann\u00e9e was after 1970, happened the 12nd according to Ann\u00e9e?",
                 "answers": [
-                    "Best Female R&B Vocal Performance"
+                    "Best Traditional R&B Vocal Performance"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre was Wonderful and when the Titre was Aretha?",
+                "question": "How many years had passed between when the Titre was I Knew You Were Waiting (For Me)avec George Michael and when the Titre was Bridge over Troubled Water?",
                 "answers": [
                     "16"
                 ],
@@ -210,17 +210,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre was Chain of Fools and when the Titre was Master of Eyes?",
+                "question": "How many years had passed between when the Titre was Amazing Grace and when the Titre was Wonderful?",
                 "answers": [
-                    "5"
+                    "31"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Cat\u00e9gorie had Ann\u00e9e was before 1986?",
+                "question": "How many Cat\u00e9gorie had Ann\u00e9e was before 1971?",
                 "answers": [
-                    "11"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
@@ -234,9 +234,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Cat\u00e9gorie had Ann\u00e9e was after 1991?",
+                "question": "How many Cat\u00e9gorie had Ann\u00e9e was before 2004?",
                 "answers": [
-                    "2"
+                    "15"
                 ],
                 "reasoning_type": "counting"
             }
@@ -521,11 +521,10 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the R\u00e9compens\u00e9 string contains Loved and the Classement was greater than or equal to 1?",
+                "question": "What was the Titre when the R\u00e9compens\u00e9 string starts with I and the D\u00e9cern\u00e9 par\u2026 string contains Rolling?",
                 "answers": [
                     "Women in Rock: 50 Essential Albums.",
                     "500 plus grands albums de tous les temps.",
-                    "Plus grands albums de tous les temps.",
                     "500 plus grands albums de tous les temps",
                     "500 plus grandes chansons de tous les temps"
                 ],
@@ -533,12 +532,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the Classement was less than 473 and the R\u00e9compens\u00e9 string starts with I?",
+                "question": "What was the Titre when the Classement was greater than or equal to 1 and the D\u00e9cern\u00e9 par\u2026 string starts with Rolling?",
                 "answers": [
+                    "200 plus grands chanteurs de tous les temps",
+                    "100 plus grands chanteurs de tous les temps.",
                     "Women in Rock: 50 Essential Albums.",
-                    "150 meilleures chansons de tous les temps.",
+                    "500 plus grandes chansons de tous les temps.",
+                    "100 plus grands artistes de tous les temps.",
                     "500 plus grands albums de tous les temps.",
-                    "Plus grands albums de tous les temps.",
+                    "50 meilleurs albums live de tous les temps.",
                     "500 plus grands albums de tous les temps",
                     "500 plus grandes chansons de tous les temps"
                 ],
@@ -546,71 +548,95 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre, with D\u00e9cern\u00e9 par\u2026 string contains Stone, have R\u00e9compens\u00e9 string starts with I?",
+                "question": "Does every Titre, with D\u00e9cern\u00e9 par\u2026 string contains Rock, have Classement was greater than or equal to 1?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre, with Classement was equal to 1, have R\u00e9compens\u00e9 string contains I?",
+                "question": "Does every Titre, with R\u00e9compens\u00e9 string contains Grace, have Classement was greater than or equal to 27?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Classement was less than or equal to 1, happened the 5th according to Date?",
+                "question": "Which Titre, with Classement was equal to 1, happened the 8th according to Date?",
                 "answers": [
-                    "Plus grandes artistes f\u00e9minines R&B de tous les temps"
+                    "Artistes soul/funk pr\u00e9f\u00e9r\u00e9s aux \u00c9tats-Unis."
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with D\u00e9cern\u00e9 par\u2026 string contains Stone, has the 7th largest Classement?",
+                "question": "Which Titre, with D\u00e9cern\u00e9 par\u2026 string contains Stone, happened the 15th according to Date?",
                 "answers": [
-                    "500 plus grands albums de tous les temps"
+                    "200 plus grands chanteurs de tous les temps"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Titre, with D\u00e9cern\u00e9 par\u2026 string starts with Rolling, has the 4th largest Classement?",
+                "answers": [
+                    "500 plus grandes chansons de tous les temps"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with R\u00e9compens\u00e9 string starts with I, has the 4th largest Classement?",
+                "question": "Which Titre, with D\u00e9cern\u00e9 par\u2026 is Billboard, has the 1st largest Classement?",
                 "answers": [
-                    "500 plus grands albums de tous les temps."
+                    "Plus grands artistes de tous les temps."
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with D\u00e9cern\u00e9 par\u2026 string ends with Magazine, has the 3rd largest Classement?",
+                "question": "Which Titre, with R\u00e9compens\u00e9 string starts with I, has the 3rd largest Classement?",
                 "answers": [
-                    "500 plus grands albums de tous les temps"
+                    "Plus grands albums de tous les temps."
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Classement was 13 and when the Classement was 76?",
+                "question": "How many years had passed between when the Classement was 9 and when the Classement was 248?",
                 "answers": [
-                    "19"
+                    "7"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Classement was 83 and when the Classement was 15?",
+                "question": "How many years had passed between when the Classement was 76 and when the Classement was 84?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Classement was less than 2?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had D\u00e9cern\u00e9 par\u2026 string starts with Rolling and Classement was less than or equal to 1?",
                 "answers": [
                     "3"
                 ],
-                "reasoning_type": "date_difference"
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Classement was less than or equal to 41 and R\u00e9compens\u00e9 string starts with I?",
+                "question": "How many Titre had R\u00e9compens\u00e9 string starts with I and D\u00e9cern\u00e9 par\u2026 string starts with Rolling?",
                 "answers": [
                     "4"
                 ],
@@ -618,25 +644,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Classement was greater than 2?",
+                "question": "What was the average of Classement when the D\u00e9cern\u00e9 par\u2026 string ends with Magazine?",
                 "answers": [
-                    "20"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Titre had Classement was less than or equal to 9?",
-                "answers": [
-                    "13"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the sum of Classement when the D\u00e9cern\u00e9 par\u2026 string contains Rolling?",
-                "answers": [
-                    "1756.0"
+                    "185.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
@@ -650,9 +660,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of Classement when the R\u00e9compens\u00e9 string contains Man?",
+                "question": "What was the average of Classement when the D\u00e9cern\u00e9 par\u2026 string ends with Stone?",
                 "answers": [
-                    "786.0"
+                    "100.08"
                 ],
                 "reasoning_type": "numerical_operation"
             }

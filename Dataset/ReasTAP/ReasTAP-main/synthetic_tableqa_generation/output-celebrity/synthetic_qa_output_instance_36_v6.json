@@ -148,8 +148,12 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the Rang was greater than 9 and the \u00c9poux string contains le?",
+                "question": "What was the Nom\n(dates) when the Titres string contains de and the Rang was greater than 5?",
                 "answers": [
+                    "Claire-Cl\u00e9mence de Maill\u00e9(25 f\u00e9vrier 1628 - 16 avril 1694)",
+                    "Anne de Bavi\u00e8re(13 mars 1648 - 23 f\u00e9vrier 1723)",
+                    "Louise-Fran\u00e7oise de Bourbon ( juin 1673 - 16 juin 1743)",
+                    "Marie-Anne de Bourbon-Conti(18 avril 1689 - 21 mars 1720)",
                     "Caroline de Hesse-Rheinfels-Rotembourg(18 ao\u00fbt 1714 - 14 juin 1741)",
                     "Charlotte de Rohan(7 octobre 1737 - 4 mars 1760)",
                     "Marie-Catherine Brignole(7 octobre 1737 - 18 mars 1813)",
@@ -159,15 +163,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the Rang was less than or equal to 8 and the \u00c9poux string contains 10?",
+                "question": "What was the Nom\n(dates) when the Rang was equal to 7 and the El\u00e9ments biographiques string contains de?",
                 "answers": [
-                    "Marie de Cl\u00e8ves(1553 - 30 octobre 1574)"
+                    "Anne de Bavi\u00e8re(13 mars 1648 - 23 f\u00e9vrier 1723)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with Rang was less than 3, have El\u00e9ments biographiques string contains de?",
+                "question": "Does only Nom\n(dates), with Rang was greater than or equal to 8, have El\u00e9ments biographiques string contains la?",
                 "answers": [
                     "No"
                 ],
@@ -175,7 +179,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with Titres string contains de, have Rang was less than or equal to 8?",
+                "question": "Does every Nom\n(dates), with Rang was less than or equal to 3, have El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -183,31 +187,31 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom\n(dates), with El\u00e9ments biographiques string contains de, has the 8th largest Rang?",
+                "question": "Which Nom\n(dates), with El\u00e9ments biographiques string contains Charles, has the 2nd largest Rang?",
                 "answers": [
-                    "Claire-Cl\u00e9mence de Maill\u00e9(25 f\u00e9vrier 1628 - 16 avril 1694)"
+                    "Louise-Fran\u00e7oise de Bourbon ( juin 1673 - 16 juin 1743)"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom\n(dates), with Titres string contains mars, has the 1st largest Rang?",
+                "question": "Which Nom\n(dates), with El\u00e9ments biographiques string contains Louis, has the 6th largest Rang?",
                 "answers": [
-                    "Marie-Catherine Brignole(7 octobre 1737 - 18 mars 1813)"
+                    "Anne de Bavi\u00e8re(13 mars 1648 - 23 f\u00e9vrier 1723)"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom\n(dates), with \u00c9poux string contains le, has the 12nd largest Rang?",
+                "question": "Which Nom\n(dates), with Titres string contains de, has the 5th largest Rang?",
                 "answers": [
-                    "Fran\u00e7oise d'Orl\u00e9ans-Longueville (5 avril 1549 - 11 juin 1601)"
+                    "Marie-Anne de Bourbon-Conti(18 avril 1689 - 21 mars 1720)"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had Rang was less than 6?",
+                "question": "How many Nom\n(dates) had Rang was greater than or equal to 9 and \u00c9poux string contains de?",
                 "answers": [
                     "5"
                 ],
@@ -215,27 +219,19 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had Rang was greater than or equal to 8?",
+                "question": "How many Nom\n(dates) had Rang was less than or equal to 2?",
                 "answers": [
-                    "6"
+                    "2"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had \u00c9poux string contains 8 and Titres string contains 5?",
+                "question": "How many Nom\n(dates) had Rang was greater than 1 and Titres string contains dame?",
                 "answers": [
-                    "4"
+                    "10"
                 ],
                 "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the average of Rang when the Titres string contains 2?",
-                "answers": [
-                    "7.4"
-                ],
-                "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
@@ -247,9 +243,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of Rang when the \u00c9poux string contains le?",
+                "question": "What was the average of Rang when the Titres string contains de?",
                 "answers": [
-                    "91.0"
+                    "7.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }

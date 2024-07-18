@@ -119,29 +119,37 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9dition when the Or string contains Peter and the Argent string starts with Frank?",
+                "question": "What was the Or when the \u00c9dition string starts with Squaw and the Bronze string starts with Alexander?",
                 "answers": [
-                    "Sarajevo 1984"
+                    "Klas Lestander (SWE)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9dition when the Or string starts with Peter and the Argent string starts with Frank?",
+                "question": "What was the Or when the Argent string contains Luck and the \u00c9dition string starts with Salt?",
                 "answers": [
-                    "Sarajevo 1984"
+                    "Ole Einar Bj\u00f8rndalen (NOR)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u00c9dition, with Argent string starts with Frank, have Or string starts with Peter?",
+                "question": "Does every Or, with Argent string contains Frank, have \u00c9dition string contains Sarajevo?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Or, with \u00c9dition string starts with Lake, have Argent string starts with Frank?",
                 "answers": [
                     "Yes"
                 ],
@@ -149,15 +157,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u00c9dition, with Argent string starts with Frank, have Bronze string contains Fischer?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u00c9dition had Argent string starts with Frank and Or string starts with Peter?",
+                "question": "How many Or had \u00c9dition string contains Sarajevo and Argent string starts with Frank?",
                 "answers": [
                     "1"
                 ],
@@ -165,17 +165,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u00c9dition had Or string starts with Martin?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u00c9dition had Argent string contains Frank?",
+                "question": "How many Or had Argent string starts with Frank?",
                 "answers": [
                     "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Or had Argent string starts with Frank and \u00c9dition string contains Lake?",
+                "answers": [
+                    "2"
                 ],
                 "reasoning_type": "counting"
             }
@@ -271,21 +271,29 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9dition when the Argent string starts with Peter and the Bronze string contains Jacob?",
+                "question": "What was the Or when the Argent string starts with Peter and the Bronze string contains Jacob?",
                 "answers": [
-                    "Sarajevo 1984"
+                    "Eirik Kvalfoss (NOR)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u00c9dition, with Argent string contains Peter, have Bronze string contains Jacob?",
+                "question": "What was the Or when the \u00c9dition string starts with Sarajevo and the Argent string contains Peter?",
+                "answers": [
+                    "Eirik Kvalfoss (NOR)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Or, with Argent string contains Fischer, have \u00c9dition string contains Salt?",
                 "answers": [
                     "Yes"
                 ],
@@ -293,11 +301,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u00c9dition had Or string starts with Mark?",
+                "question": "Does every Or, with Argent string contains Peter, have \u00c9dition string starts with Sarajevo?",
                 "answers": [
-                    "1"
+                    "Yes"
                 ],
-                "reasoning_type": "counting"
+                "reasoning_type": "quantifiers"
             }
         ]
     },
@@ -355,29 +363,29 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9dition when the Bronze string contains Doll and the Or string starts with Martin?",
+                "question": "What was the Or when the Bronze string contains Jay and the \u00c9dition string contains Vancouver?",
                 "answers": [
-                    "Pyeongchang 2018(R\u00e9sultats d\u00e9taill\u00e9s)"
+                    "Bj\u00f6rn Ferry (NOR)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9dition when the Or string contains Ferry and the Bronze string contains Jay?",
+                "question": "What was the Or when the Bronze string contains Fischer and the \u00c9dition string contains Turin?",
                 "answers": [
-                    "Vancouver 2010(R\u00e9sultats d\u00e9taill\u00e9s)"
+                    "Vincent Defrasne (FRA)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u00c9dition, with Bronze string contains Jay, have Or string contains Ferry?",
+                "question": "Does every Or, with Bronze string contains Jay, have \u00c9dition string starts with Vancouver?",
                 "answers": [
                     "Yes"
                 ],
@@ -385,7 +393,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u00c9dition, with Bronze string contains Doll, have Or string starts with Martin?",
+                "question": "Does only Or, with Bronze string contains Jay, have \u00c9dition string contains Vancouver?",
                 "answers": [
                     "Yes"
                 ],
@@ -393,17 +401,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u00c9dition had Bronze string contains Doll and Or string starts with Martin?",
+                "question": "How many Or had Bronze string contains Jay and \u00c9dition string starts with Vancouver?",
                 "answers": [
                     "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u00c9dition had Or string starts with Martin?",
-                "answers": [
-                    "2"
                 ],
                 "reasoning_type": "counting"
             }
@@ -457,53 +457,53 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9dition when the Argent string starts with Simon and the Or string starts with Martin?",
+                "question": "What was the Or when the Argent string contains Martin and the \u00c9dition string starts with Vancouver?",
                 "answers": [
-                    "Pyeongchang 2018(R\u00e9sultats d\u00e9taill\u00e9s)"
+                    "Evgeny Ustyugov (RUS)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9dition when the Or string contains Martin and the Argent string starts with Simon?",
+                "question": "What was the Or when the \u00c9dition string starts with Vancouver and the Argent string contains Martin?",
                 "answers": [
-                    "Pyeongchang 2018(R\u00e9sultats d\u00e9taill\u00e9s)"
+                    "Evgeny Ustyugov (RUS)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u00c9dition, with Or string starts with Martin, have Argent string contains Simon?",
+                "question": "Does only Or, with \u00c9dition string starts with Vancouver, have Argent string starts with Martin?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u00c9dition, with Argent string starts with Simon, have Or string starts with Martin?",
+                "question": "How many Or had \u00c9dition string starts with Turin?",
                 "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many \u00c9dition had Argent string starts with Martin?",
-                "answers": [
-                    "3"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u00c9dition had Argent string starts with Simon and Or string starts with Martin?",
+                "question": "How many Or had Argent string starts with Martin and \u00c9dition string contains Vancouver?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Or had Argent string contains Martin and \u00c9dition string starts with Vancouver?",
                 "answers": [
                     "1"
                 ],
@@ -619,29 +619,29 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9dition when the Argent string starts with Mathias and the Bronze string contains Peter?",
+                "question": "What was the Or when the \u00c9dition string starts with Sarajevo and the Bronze string starts with Ernst?",
                 "answers": [
-                    "Lake Placid 1980"
+                    "Dmitri Vassiliev  Yuri Kachkarov  Algimantas Salna  Sergei Buligin"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9dition when the Bronze string contains Beer and the Or string starts with Alexander?",
+                "question": "What was the Or when the Bronze string contains Walter and the Argent string starts with Odd?",
                 "answers": [
-                    "Innsbruck 1976"
+                    "Dmitri Vassiliev  Yuri Kachkarov  Algimantas Salna  Sergei Buligin"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u00c9dition, with Argent string contains Jr., have Or string contains Fischer?",
+                "question": "Does only Or, with Bronze string starts with Ernst, have \u00c9dition string contains Sarajevo?",
                 "answers": [
                     "Yes"
                 ],
@@ -649,15 +649,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u00c9dition had Or string contains Fischer?",
+                "question": "Does every Or, with \u00c9dition string starts with Calgary, have Argent string starts with Ernst?",
                 "answers": [
-                    "4"
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Or had Argent string starts with Ernst and \u00c9dition string starts with Calgary?",
+                "answers": [
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u00c9dition had Or string starts with Alexander and Bronze string contains Beer?",
+                "question": "How many Or had \u00c9dition string starts with Calgary and Argent string starts with Ernst?",
                 "answers": [
                     "1"
                 ],
@@ -737,29 +745,29 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Lieu et date des Jeux when the Argent string starts with Liv and the Bronze string contains Magdalena?",
+                "question": "What was the Or when the Bronze string starts with Magdalena and the Argent string starts with Liv?",
                 "answers": [
-                    "Salt Lake City 2002"
+                    "Andrea Henkel (GER)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Lieu et date des Jeux when the Argent string starts with Liv and the Bronze string starts with Magdalena?",
+                "question": "What was the Or when the Lieu et date des Jeux string contains City and the Bronze string starts with Magdalena?",
                 "answers": [
-                    "Salt Lake City 2002"
+                    "Andrea Henkel (GER)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Lieu et date des Jeux, with Bronze string starts with Magdalena, have Argent string starts with Liv?",
+                "question": "Does every Or, with Lieu et date des Jeux string starts with Salt, have Bronze string starts with Magdalena?",
                 "answers": [
                     "Yes"
                 ],
@@ -767,7 +775,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Lieu et date des Jeux, with Argent string starts with Liv, have Bronze string starts with Magdalena?",
+                "question": "Does only Or, with Argent string starts with Liv, have Lieu et date des Jeux string starts with Salt?",
                 "answers": [
                     "Yes"
                 ],
@@ -775,7 +783,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Lieu et date des Jeux had Bronze string contains Magdalena and Argent string starts with Liv?",
+                "question": "How many Or had Lieu et date des Jeux string starts with Salt and Argent string starts with Liv?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Or had Lieu et date des Jeux string contains Salt?",
                 "answers": [
                     "1"
                 ],
@@ -855,21 +871,29 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Lieu et date des Jeux when the Argent string starts with Anna and the Or string starts with Florence?",
+                "question": "What was the Or when the Lieu et date des Jeux string contains Vancouver and the Argent string starts with Magdalena?",
                 "answers": [
-                    "Turin 2006"
+                    "Anastasiya Kuzmina (SVK)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Lieu et date des Jeux, with Argent string starts with Anna, have Or string contains Florence?",
+                "question": "What was the Or when the Lieu et date des Jeux string starts with Vancouver and the Argent string starts with Magdalena?",
+                "answers": [
+                    "Anastasiya Kuzmina (SVK)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Or, with Argent string starts with Anna, have Lieu et date des Jeux string contains Turin?",
                 "answers": [
                     "Yes"
                 ],
@@ -877,11 +901,19 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Lieu et date des Jeux, with Argent string starts with Anna, have Or string starts with Florence?",
+                "question": "Does only Or, with Lieu et date des Jeux string contains City, have Bronze string contains Magdalena?",
                 "answers": [
                     "Yes"
                 ],
                 "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Or had Argent string contains Anna?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
             }
         ]
     },
@@ -939,21 +971,37 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Lieu et date des Jeux when the Bronze string contains Brunet and the Or string starts with Magdalena?",
+                "question": "What was the Or when the Bronze string contains Brunet and the Lieu et date des Jeux string starts with Vancouver?",
                 "answers": [
-                    "Vancouver 2010(R\u00e9sultats d\u00e9taill\u00e9s)"
+                    "Magdalena Neuner (GER)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Lieu et date des Jeux had Bronze string contains Brunet?",
+                "question": "What was the Or when the Lieu et date des Jeux string starts with Vancouver and the Bronze string contains Brunet?",
+                "answers": [
+                    "Magdalena Neuner (GER)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Or, with Bronze string contains Brunet, have Lieu et date des Jeux string starts with Vancouver?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Or had Lieu et date des Jeux string starts with Vancouver?",
                 "answers": [
                     "1"
                 ],
@@ -1009,19 +1057,10 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "How many Lieu et date des Jeux had Or string contains Magdalena?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
+        "qas": []
     },
     {
         "id": "2691667",
@@ -1095,21 +1134,29 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Lieu et date des Jeux when the Bronze string starts with Fanny and the Argent string starts with Yana?",
+                "question": "What was the Or when the Lieu et date des Jeux string starts with Nagano and the Bronze string contains Anne?",
                 "answers": [
-                    "Sotchi 2014(R\u00e9sultats d\u00e9taill\u00e9s)"
+                    "Uschi Disl  Martina Zellner  Katrin Apel  Petra Schaaf Behle"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Lieu et date des Jeux, with Argent string starts with Yana, have Bronze string starts with Fanny?",
+                "question": "What was the Or when the Bronze string starts with Fanny and the Argent string starts with Yana?",
+                "answers": [
+                    "Vita SemerenkoJuliya DzhymaValj SemerenkoOlena Pidhrushna"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Or, with Bronze string starts with Vanessa, have Argent string starts with ROC?",
                 "answers": [
                     "Yes"
                 ],
@@ -1117,7 +1164,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Lieu et date des Jeux, with Bronze string starts with Vanessa, have Argent string starts with ROC?",
+                "question": "Does only Or, with Argent string starts with ROC, have Bronze string starts with Vanessa?",
                 "answers": [
                     "Yes"
                 ],
@@ -1125,7 +1172,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Lieu et date des Jeux had Argent string starts with Yana and Bronze string starts with Fanny?",
+                "question": "How many Or had Bronze string starts with Fanny and Argent string starts with Yana?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Or had Lieu et date des Jeux string starts with Salt and Argent string contains Liv?",
                 "answers": [
                     "1"
                 ],
@@ -1169,7 +1224,7 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": []
@@ -1349,80 +1404,78 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Biathlete when the Or was greater than or equal to 3 and the Total was equal to 6?",
+                "question": "What was the Biathlete when the De * was before 1992 and the \u00c0 * was on 1980?",
+                "answers": [
+                    "Alexandre Tikhonov"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Biathlete when the Or was less than 4 and the Rang was greater than 3?",
                 "answers": [
                     "Halvard Hanevold",
-                    "Johannes Thingnes B\u00f8"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Biathlete when the Total was greater than or equal to 6 and the De * was on 1998?",
-                "answers": [
-                    "Ole Einar Bj\u00f8rndalen",
-                    "Halvard Hanevold"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Biathlete, with \u00c0 * was after 2006, have Rang was less than 5?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Biathlete, with De * was before 2010, have Or was greater than 3?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Biathlete, with Or was less than 4, happened the 2nd according to \u00c0 *?",
-                "answers": [
-                    "Michael Greis"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Biathlete, with \u00c0 * was after 1980, happened the 2nd according to \u00c0 *?",
-                "answers": [
-                    "Ricco Gro\u00df",
-                    "Sven Fischer",
-                    "Michael Greis"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Biathlete, with De * was before 2006, happened the 3rd according to \u00c0 *?",
-                "answers": [
-                    "Ricco Gro\u00df",
-                    "Sven Fischer"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Biathlete, with \u00c0 * was before 2010, has the 4th largest Or?",
-                "answers": [
+                    "Johannes Thingnes B\u00f8",
                     "Mark Kirchner",
                     "Michael Greis"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Biathlete, with Or was less than or equal to 5, have \u00c0 * was after 2018?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Biathlete, with Rang was greater than 3, have \u00c0 * was after 2006?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Biathlete, with Or was less than or equal to 3, happened the 2nd according to \u00c0 *?",
+                "answers": [
+                    "Michael Greis"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Biathlete, with De * was after 1968, happened the 5th according to \u00c0 *?",
+                "answers": [
+                    "Halvard Hanevold"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Biathlete, with Rang was greater than or equal to 3, happened the 7th according to De *?",
+                "answers": [
+                    "Emil Hegle Svendsen"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Biathlete, with Rang was less than 6, has the 4th largest Total?",
+                "answers": [
+                    "Ricco Gro\u00df",
+                    "Emil Hegle Svendsen",
+                    "Sven Fischer"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Biathlete, with Total was greater than or equal to 3, has the 6th largest Or?",
+                "question": "Which Biathlete, with \u00c0 * was before 2018, has the 2nd largest Or?",
                 "answers": [
                     "Ricco Gro\u00df",
-                    "Emil Hegle Svendsen",
                     "Sven Fischer",
                     "Alexandre Tikhonov"
                 ],
@@ -1430,31 +1483,49 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Biathlete, with \u00c0 * was before 2010, has the 2nd largest Rang?",
+                "question": "Which Biathlete, with \u00c0 * was after 1980, has the 2nd largest Total?",
                 "answers": [
-                    "Mark Kirchner"
+                    "Ricco Gro\u00df",
+                    "Emil Hegle Svendsen",
+                    "Sven Fischer"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Rang was 6 and when the Rang was 2?",
+                "question": "How many years had passed between when the Total was 5 and when the Total was 3?",
                 "answers": [
-                    "38"
+                    "26"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Total was 5 and when the Total was 4?",
+                "question": "How many years had passed between when the De * was 2006 and when the De * was 1968?",
                 "answers": [
-                    "24"
+                    "26"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Biathlete had Or was less than 4?",
+                "question": "How many Biathlete had De * was on 1998?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Biathlete had \u00c0 * was before 2022?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Biathlete had Or was less than or equal to 3?",
                 "answers": [
                     "4"
                 ],
@@ -1462,41 +1533,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Biathlete had Total was greater than or equal to 7 and Or was equal to 4?",
+                "question": "What was the average of Rang when the \u00c0 * was on 2006?",
                 "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Biathlete had Total was less than 8?",
-                "answers": [
-                    "6"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the average of Total when the Or was greater than 4?",
-                "answers": [
-                    "10.0"
+                    "6.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Rang when the De * was after 1992?",
+                "question": "What was the sum of Total when the Rang was equal to 7?",
                 "answers": [
-                    "5.0"
+                    "12.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Rang when the Total was less than 6?",
+                "question": "What was the sum of Or when the Total was equal to 6?",
                 "answers": [
-                    "8.33"
+                    "6.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -1677,24 +1732,25 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Biathlete when the De * was before 2010 and the \u00c0 * was before 2010?",
+                "question": "What was the Biathlete when the Rang was greater than or equal to 9 and the Argent was greater than or equal to 1?",
                 "answers": [
-                    "Uschi Disl",
-                    "Katrin Apel"
+                    "Magdalena Neuner",
+                    "Olga Zaitseva"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Biathlete when the Total was less than or equal to 6 and the \u00c0 * was before 2010?",
+                "question": "What was the Biathlete when the \u00c0 * was on 2018 and the Or was greater than 2?",
                 "answers": [
-                    "Katrin Apel"
+                    "Darya Domracheva",
+                    "Anastasiya Kuzmina"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Biathlete, with Rang was equal to 1, have Or was greater than 2?",
+                "question": "Does every Biathlete, with Total was greater than or equal to 9, have \u00c0 * was before 2010?",
                 "answers": [
                     "Yes"
                 ],
@@ -1702,7 +1758,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Biathlete, with Rang was equal to 6, have Or was less than or equal to 2?",
+                "question": "Does every Biathlete, with Argent was equal to 1, have De * was before 2010?",
                 "answers": [
                     "No"
                 ],
@@ -1710,49 +1766,35 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Biathlete, with Argent was greater than or equal to 3, happened the 2nd according to \u00c0 *?",
+                "question": "Which Biathlete, with Rang was less than or equal to 9, happened the 1st according to De *?",
                 "answers": [
-                    "Kati Wilhelm"
+                    "Uschi Disl"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Biathlete, with De * was after 2006, happened the 2nd according to \u00c0 *?",
-                "answers": [
-                    "Tora Berger"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Biathlete, with Argent was less than or equal to 1, happened the 3rd according to De *?",
-                "answers": [
-                    "Olga Zaitseva"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Biathlete, with Rang was greater than 2, has the 3rd largest Total?",
-                "answers": [
-                    "Anastasiya Kuzmina",
-                    "Marte Olsbu R\u00f8iseland"
-                ],
-                "reasoning_type": "numerical_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Biathlete, with Rang was greater than or equal to 1, has the 4th largest Argent?",
+                "question": "Which Biathlete, with Total was equal to 6, happened the 3rd according to \u00c0 *?",
                 "answers": [
                     "Marte Olsbu R\u00f8iseland"
                 ],
-                "reasoning_type": "numerical_comparison"
+                "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Biathlete, with Rang was greater than or equal to 9, has the 1st largest Total?",
+                "question": "Which Biathlete, with Or was greater than 2, happened the 4th according to De *?",
                 "answers": [
+                    "Marte Olsbu R\u00f8iseland"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Biathlete, with Or was less than 3, has the 3rd largest Argent?",
+                "answers": [
+                    "Katrin Apel",
+                    "Tora Berger",
+                    "Andrea Henkel",
                     "Magdalena Neuner",
                     "Olga Zaitseva"
                 ],
@@ -1760,31 +1802,55 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Rang was 1 and when the Rang was 3?",
+                "question": "Which Biathlete, with De * was on 2002, has the 1st largest Rang?",
                 "answers": [
-                    "0"
+                    "Andrea Henkel"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Biathlete, with \u00c0 * was after 2010, has the 3rd largest Rang?",
+                "answers": [
+                    "Anastasiya Kuzmina"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Rang was 5 and when the Rang was 4?",
+                "answers": [
+                    "16"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Rang was 3 and when the Rang was 2?",
+                "question": "How many years had passed between when the Rang was 1 and when the Rang was 4?",
                 "answers": [
-                    "8"
+                    "4"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Biathlete had Argent was less than or equal to 1 and Total was less than 7?",
+                "question": "How many Biathlete had Or was less than or equal to 3?",
                 "answers": [
-                    "6"
+                    "9"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Biathlete had Or was less than or equal to 2 and De * was on 2010?",
+                "question": "How many Biathlete had Rang was greater than or equal to 6 and \u00c0 * was before 2014?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Biathlete had De * was on 2002?",
                 "answers": [
                     "2"
                 ],
@@ -1792,25 +1858,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Biathlete had Or was greater than or equal to 2?",
+                "question": "What was the sum of Rang when the Argent was less than or equal to 4?",
                 "answers": [
-                    "10"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the average of Rang when the De * was before 2010?",
-                "answers": [
-                    "5.6"
+                    "51.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Rang when the \u00c0 * was after 2006?",
+                "question": "What was the sum of Argent when the Total was less than or equal to 7?",
                 "answers": [
-                    "5.0"
+                    "14.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },

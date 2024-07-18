@@ -13,245 +13,6 @@
             "tour",
             "tour",
             "tour",
-            "tour"
-        ],
-        "rows": [
-            [
-                "Ann\u00e9e",
-                "Parti",
-                "Parti",
-                "Circonscription",
-                "Voix",
-                "%",
-                "Issue",
-                "Voix",
-                "%",
-                "Issue"
-            ],
-            [
-                "2002",
-                "",
-                "CSA-PRG",
-                "Saint-Pierre-et-Miquelon",
-                "465",
-                "14,8",
-                "\u00c9limin\u00e9e",
-                "",
-                "",
-                ""
-            ],
-            [
-                "2007",
-                "",
-                "CSA-PRG",
-                "Saint-Pierre-et-Miquelon",
-                "966",
-                "31,1",
-                "Ballottage",
-                "",
-                "51,3",
-                "\u00c9lue"
-            ],
-            [
-                "2012",
-                "",
-                "CSA-PRG",
-                "Saint-Pierre-et-Miquelon",
-                "",
-                "65,5",
-                "\u00c9lue",
-                "",
-                "",
-                ""
-            ],
-            [
-                "2014.",
-                "",
-                "CSA-PRG",
-                "Saint-Pierre-et-Miquelon",
-                "",
-                "59,9",
-                "\u00c9lue",
-                "",
-                "",
-                ""
-            ],
-            [
-                "2017.",
-                "",
-                "CSA-PRG",
-                "Saint-Pierre-et-Miquelon",
-                "",
-                "41,6",
-                "Ballottage",
-                "",
-                "51,9",
-                "\u00c9lue"
-            ]
-        ],
-        "column_types": [
-            "datetime",
-            "string",
-            "string",
-            "string",
-            "numeric",
-            "numeric",
-            "string",
-            "string",
-            "numeric",
-            "string"
-        ],
-        "key_column": 2,
-        "numeric_columns": [
-            4,
-            5,
-            8
-        ],
-        "date_columns": {
-            "0": [
-                9999,
-                2002,
-                2007,
-                2012,
-                9999,
-                9999
-            ]
-        },
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Parti when the tour is Issue and the tour is Issue?",
-                "answers": [
-                    "Parti"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Parti, with tour is Issue, have tour is Issue?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Parti, with tour is Issue, have tour is Issue?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the tour was 65,5 and when the tour was 14,8?",
-                "answers": [
-                    "10"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the tour was 65,5 and when the tour was 31,1?",
-                "answers": [
-                    "5"
-                ],
-                "reasoning_type": "date_difference"
-            }
-        ]
-    },
-    {
-        "id": "1683000",
-        "title": "Annick Girardin",
-        "url": "https://fr.wikipedia.org/?curid=1683000",
-        "header": [
-            "Ann\u00e9e",
-            "Parti",
-            "Parti",
-            "Circonscription",
-            "Premier/unique tour",
-            "Premier/unique tour",
-            "Premier/unique tour",
-            "Issue"
-        ],
-        "rows": [
-            [
-                "Ann\u00e9e",
-                "Parti",
-                "Parti",
-                "Circonscription",
-                "Voix",
-                "%",
-                "Rang",
-                "Issue"
-            ],
-            [
-                "2023",
-                "",
-                "CSA-PRV",
-                "Saint-Pierre-et-Miquelon",
-                "20",
-                "51,3",
-                "",
-                "\u00c9lue"
-            ]
-        ],
-        "column_types": [
-            "string",
-            "string",
-            "string",
-            "string",
-            "string",
-            "numeric",
-            "string",
-            "string"
-        ],
-        "key_column": 2,
-        "numeric_columns": [
-            5
-        ],
-        "date_columns": {},
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Parti when the Premier/unique tour is Rang and the Issue is Issue?",
-                "answers": [
-                    "Parti"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Parti, with Premier/unique tour is Rang, have Issue is Issue?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Parti had Premier/unique tour is Rang?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "1683000",
-        "title": "Annick Girardin",
-        "url": "https://fr.wikipedia.org/?curid=1683000",
-        "header": [
-            "Ann\u00e9e",
-            "Parti",
-            "Parti",
-            "Circonscription",
-            "tour",
-            "tour",
-            "tour",
-            "tour",
-            "tour",
             "tour",
             "Si\u00e8ges obtenus"
         ],
@@ -380,7 +141,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Parti when the Circonscription string contains de and the tour is Battue?",
+                "question": "What was the Parti when the Circonscription string contains section and the tour is Battue?",
                 "answers": [
                     "CSA-PRG"
                 ],
@@ -396,11 +157,19 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Parti, with tour is Issue, have tour is Issue?",
+                "question": "Does only Parti, with tour is Issue, have tour is Issue?",
                 "answers": [
                     "Yes"
                 ],
                 "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Parti, with tour is Battue, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "CSA-PRG"
+                ],
+                "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
@@ -412,11 +181,27 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Parti, with tour is Battue, happened the 3rd according to Ann\u00e9e?",
+                "question": "How many years had passed between when the tour was 28,8 and when the tour was 33,2?",
                 "answers": [
-                    "CSA-PRG"
+                    "6"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Parti had tour is Battue?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Parti had tour is Issue and tour is Issue?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
             }
         ]
     },
@@ -529,11 +314,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Parti when the tour is Issue and the Commune is Commune?",
+                "question": "Does only Parti, with Commune is Commune, have tour is Issue?",
                 "answers": [
-                    "Parti"
+                    "Yes"
                 ],
-                "reasoning_type": "conjunction"
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
@@ -545,7 +330,136 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Parti, with Commune is Commune, have tour is Issue?",
+                "question": "How many Parti had tour is Battue?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "1683000",
+        "title": "Annick Girardin",
+        "url": "https://fr.wikipedia.org/?curid=1683000",
+        "header": [
+            "Ann\u00e9e",
+            "Parti",
+            "Parti",
+            "Circonscription",
+            "tour",
+            "tour",
+            "tour",
+            "tour",
+            "tour",
+            "tour"
+        ],
+        "rows": [
+            [
+                "Ann\u00e9e",
+                "Parti",
+                "Parti",
+                "Circonscription",
+                "Voix",
+                "%",
+                "Issue",
+                "Voix",
+                "%",
+                "Issue"
+            ],
+            [
+                "2002",
+                "",
+                "CSA-PRG",
+                "Saint-Pierre-et-Miquelon",
+                "465",
+                "14,8",
+                "\u00c9limin\u00e9e",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2007",
+                "",
+                "CSA-PRG",
+                "Saint-Pierre-et-Miquelon",
+                "966",
+                "31,1",
+                "Ballottage",
+                "",
+                "51,3",
+                "\u00c9lue"
+            ],
+            [
+                "2012",
+                "",
+                "CSA-PRG",
+                "Saint-Pierre-et-Miquelon",
+                "",
+                "65,5",
+                "\u00c9lue",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2014.",
+                "",
+                "CSA-PRG",
+                "Saint-Pierre-et-Miquelon",
+                "",
+                "59,9",
+                "\u00c9lue",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2017.",
+                "",
+                "CSA-PRG",
+                "Saint-Pierre-et-Miquelon",
+                "",
+                "41,6",
+                "Ballottage",
+                "",
+                "51,9",
+                "\u00c9lue"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "numeric",
+            "numeric",
+            "string",
+            "string",
+            "numeric",
+            "string"
+        ],
+        "key_column": 2,
+        "numeric_columns": [
+            4,
+            5,
+            8
+        ],
+        "date_columns": {
+            "0": [
+                9999,
+                2002,
+                2007,
+                2012,
+                9999,
+                9999
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Parti, with tour is Issue, have tour is Issue?",
                 "answers": [
                     "Yes"
                 ],
@@ -553,11 +467,97 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Parti had tour is Battue?",
+                "question": "Does only Parti, with tour is Issue, have tour is Issue?",
                 "answers": [
-                    "1"
+                    "Yes"
                 ],
-                "reasoning_type": "counting"
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the tour was 14,8 and when the tour was 65,5?",
+                "answers": [
+                    "10"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the tour was 65,5 and when the tour was 14,8?",
+                "answers": [
+                    "10"
+                ],
+                "reasoning_type": "date_difference"
+            }
+        ]
+    },
+    {
+        "id": "1683000",
+        "title": "Annick Girardin",
+        "url": "https://fr.wikipedia.org/?curid=1683000",
+        "header": [
+            "Ann\u00e9e",
+            "Parti",
+            "Parti",
+            "Circonscription",
+            "Premier/unique tour",
+            "Premier/unique tour",
+            "Premier/unique tour",
+            "Issue"
+        ],
+        "rows": [
+            [
+                "Ann\u00e9e",
+                "Parti",
+                "Parti",
+                "Circonscription",
+                "Voix",
+                "%",
+                "Rang",
+                "Issue"
+            ],
+            [
+                "2023",
+                "",
+                "CSA-PRV",
+                "Saint-Pierre-et-Miquelon",
+                "20",
+                "51,3",
+                "",
+                "\u00c9lue"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "numeric",
+            "string",
+            "string"
+        ],
+        "key_column": 2,
+        "numeric_columns": [
+            5
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Parti when the Premier/unique tour is Rang and the Issue is Issue?",
+                "answers": [
+                    "Parti"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Parti, with Issue is Issue, have Premier/unique tour is Rang?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
             }
         ]
     }

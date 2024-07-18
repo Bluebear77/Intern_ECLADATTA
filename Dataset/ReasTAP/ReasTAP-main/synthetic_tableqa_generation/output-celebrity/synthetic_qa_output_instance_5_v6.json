@@ -59,7 +59,7 @@
             "numeric",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [
             1,
             2,
@@ -71,24 +71,32 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Joueuse when the Pourcentagede victoires was less than 57,1 and the Victoires was equal to 2?",
+                "question": "What was the Meilleurclassement when the Confrontations was equal to 6 and the Pourcentagede victoires was less than 57,1?",
                 "answers": [
-                    "Aryna Sabalenka",
-                    "Daria Kasatkina"
+                    "1",
+                    "3"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Joueuse when the Victoires was equal to 2 and the D\u00e9faites was equal to 3?",
+                "question": "What was the Meilleurclassement when the Victoires was equal to 3 and the Derni\u00e8re confrontation string contains Wimbledon?",
                 "answers": [
-                    "Daria Kasatkina"
+                    "3"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Joueuse, with D\u00e9faites was greater than or equal to 3, have Pourcentagede victoires was less than 33,3?",
+                "question": "Does every Meilleurclassement, with Pourcentagede victoires was equal to 57,1, have Confrontations was greater than 6?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Meilleurclassement, with Confrontations was less than or equal to 6, have D\u00e9faites was greater than or equal to 3?",
                 "answers": [
                     "No"
                 ],
@@ -96,57 +104,34 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Joueuse, with Meilleurclassement was greater than 1, have Pourcentagede victoires was less than or equal to 33,3?",
+                "question": "Which Meilleurclassement, with Victoires was greater than 2, has the 1st largest D\u00e9faites?",
                 "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Joueuse, with Meilleurclassement was greater than or equal to 2, has the 2nd largest Confrontations?",
-                "answers": [
-                    "Elina Svitolina"
+                    "3",
+                    "2"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Joueuse, with Meilleurclassement was less than or equal to 8, has the 4th largest D\u00e9faites?",
+                "question": "Which Meilleurclassement, with Pourcentagede victoires was less than or equal to 33,3, has the 3rd largest D\u00e9faites?",
                 "answers": [
-                    "Daria Kasatkina",
-                    "Elina Svitolina",
-                    "Ons Jabeur"
-                ],
-                "reasoning_type": "numerical_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Joueuse, with D\u00e9faites was less than or equal to 3, has the 2nd largest Victoires?",
-                "answers": [
-                    "Elina Svitolina"
-                ],
-                "reasoning_type": "numerical_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Joueuse had D\u00e9faites was greater than or equal to 3 and Pourcentagede victoires was greater than 40?",
-                "answers": [
+                    "8",
                     "3"
                 ],
-                "reasoning_type": "counting"
+                "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Joueuse had Pourcentagede victoires was greater than or equal to 50?",
+                "question": "Which Meilleurclassement, with Confrontations was less than or equal to 6, has the 3rd largest D\u00e9faites?",
                 "answers": [
+                    "8",
                     "3"
                 ],
-                "reasoning_type": "counting"
+                "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Joueuse had Confrontations was greater than or equal to 7 and Victoires was greater than or equal to 2?",
+                "question": "How many Meilleurclassement had Victoires was equal to 3 and Derni\u00e8re confrontation string contains Wimbledon?",
                 "answers": [
                     "1"
                 ],
@@ -154,25 +139,41 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Confrontations when the Victoires was greater than 2?",
+                "question": "How many Meilleurclassement had Confrontations was less than or equal to 6 and D\u00e9faites was equal to 3?",
                 "answers": [
-                    "6.5"
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Meilleurclassement had Victoires was greater than or equal to 2?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Victoires when the Pourcentagede victoires was less than 57,1?",
+                "answers": [
+                    "2.33"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of Pourcentagede victoires when the Meilleurclassement was greater than 2?",
+                "question": "What was the average of Confrontations when the Victoires was less than or equal to 2?",
                 "answers": [
-                    "90.0"
+                    "5.5"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of Meilleurclassement when the Confrontations was equal to 6?",
+                "question": "What was the sum of D\u00e9faites when the Confrontations was greater than or equal to 6?",
                 "answers": [
-                    "4.0"
+                    "10.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -211,7 +212,7 @@
         "column_types": [
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": []
@@ -432,7 +433,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only , with Tableau is Tableau, have Tour is Finale?",
+                "question": "Does only , with Tour is Finale, have Tableau is Tableau?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only , with Tableau is Tableau, have Tournoi string starts with Indian?",
                 "answers": [
                     "Yes"
                 ],
@@ -440,25 +449,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only , with Tournoi is Rome, have Surface string ends with battue?",
+                "question": "How many  had Tournoi string contains Open?",
                 "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many  had Tableau is Tableau and Surface string contains battue?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many  had Tournoi is Wimbledon?",
-                "answers": [
-                    "2"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
@@ -523,7 +516,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the R\u00e9sultat is Argent and the Date was on 24/07/2021?",
+                "question": "What was the Nom de l'olympiade when the # was greater than or equal to 1 and the Date was on 24/07/2021?",
                 "answers": [
                     "Olympic Tennis Event Tokyo"
                 ],
@@ -531,7 +524,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom de l'olympiade, with R\u00e9sultat is Argent, have # was less than or equal to 1?",
+                "question": "What was the Nom de l'olympiade when the # was equal to 1 and the R\u00e9sultat is Argent?",
+                "answers": [
+                    "Olympic Tennis Event Tokyo"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom de l'olympiade, with Date was on 24/07/2021, have # was equal to 1?",
                 "answers": [
                     "Yes"
                 ],
@@ -539,7 +540,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'olympiade, with R\u00e9sultat is Argent, have # was equal to 1?",
+                "question": "Does every Nom de l'olympiade, with # was less than or equal to 1, have R\u00e9sultat is Argent?",
                 "answers": [
                     "Yes"
                 ],
@@ -547,7 +548,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had Date was on 24/07/2021 and R\u00e9sultat is Argent?",
+                "question": "How many Nom de l'olympiade had # was less than or equal to 1 and R\u00e9sultat is Argent?",
                 "answers": [
                     "1"
                 ],
@@ -555,7 +556,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had R\u00e9sultat is Argent and Date was on 24/07/2021?",
+                "question": "How many Nom de l'olympiade had R\u00e9sultat is Argent?",
                 "answers": [
                     "1"
                 ],
@@ -617,7 +618,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the R\u00e9sultat string ends with finale and the Date was on 31/07/2021?",
+                "question": "What was the Nom de l'olympiade when the R\u00e9sultat string contains finale and the Date was on 31/07/2021?",
                 "answers": [
                     "Olympic Tennis Event Tokyo"
                 ],
@@ -625,7 +626,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the Date was on 31/07/2021 and the # was greater than or equal to 1?",
+                "question": "What was the Nom de l'olympiade when the Date was on 31/07/2021 and the # was equal to 1?",
                 "answers": [
                     "Olympic Tennis Event Tokyo"
                 ],
@@ -633,7 +634,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom de l'olympiade, with Date was on 31/07/2021, have # was less than or equal to 1?",
+                "question": "Does only Nom de l'olympiade, with Date was on 31/07/2021, have # was equal to 1?",
                 "answers": [
                     "Yes"
                 ],
@@ -641,7 +642,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom de l'olympiade, with R\u00e9sultat string contains de, have Date was on 31/07/2021?",
+                "question": "Does only Nom de l'olympiade, with # was greater than or equal to 1, have Date was on 31/07/2021?",
                 "answers": [
                     "Yes"
                 ],
@@ -649,7 +650,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had Date was after 31/07/2021?",
+                "question": "How many Nom de l'olympiade had Date was before 31/07/2021?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'olympiade had # was greater than 1?",
                 "answers": [
                     "0"
                 ],

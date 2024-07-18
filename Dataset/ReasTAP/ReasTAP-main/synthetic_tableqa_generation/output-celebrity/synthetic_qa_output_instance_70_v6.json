@@ -1,0 +1,2834 @@
+[
+    {
+        "id": "154700",
+        "title": "Martina Hingis",
+        "url": "https://fr.wikipedia.org/?curid=154700",
+        "header": [
+            "Ann\u00e9e",
+            "Open d'Australie",
+            "Open d'Australie",
+            "Internationaux de France",
+            "Internationaux de France",
+            "Wimbledon",
+            "Wimbledon",
+            "US Open",
+            "US Open"
+        ],
+        "rows": [
+            [
+                "1995",
+                "(1/32)",
+                "Kyoko Nagatsuka",
+                "(1/16)",
+                "Lindsay Davenport",
+                "(1/64)",
+                "Steffi Graf",
+                "(1/8)",
+                "Gabriela Sabatini"
+            ],
+            [
+                "1996",
+                "1/4 de finale",
+                "Amanda Coetzer",
+                "(1/16)",
+                "Karina Hab\u0161udov\u00e1",
+                "(1/8)",
+                "Steffi Graf",
+                "1/2 finale",
+                "Steffi Graf"
+            ],
+            [
+                "1997",
+                "Victoire",
+                "Mary Pierce",
+                "Finale",
+                "Iva Majoli",
+                "Victoire",
+                "Jana Novotn\u00e1",
+                "Victoire",
+                "Venus Williams"
+            ],
+            [
+                "1998",
+                "Victoire",
+                "Conchita Mart\u00ednez",
+                "1/2 finale",
+                "Monica Seles",
+                "1/2 finale",
+                "Jana Novotn\u00e1",
+                "Finale",
+                "Lindsay Davenport"
+            ],
+            [
+                "1999",
+                "Victoire",
+                "Am\u00e9lie Mauresmo",
+                "Finale",
+                "Steffi Graf",
+                "(1/64)",
+                "Jelena Doki\u0107",
+                "Finale",
+                "Serena Williams"
+            ],
+            [
+                "2000",
+                "Finale",
+                "Lindsay Davenport",
+                "1/2 finale",
+                "Mary Pierce",
+                "1/4 de finale",
+                "Venus Williams",
+                "1/2 finale",
+                "Venus Williams"
+            ],
+            [
+                "2001",
+                "Finale",
+                "Jennifer Capriati",
+                "1/2 finale",
+                "J. Capriati",
+                "(1/64)",
+                "Virginia Ruano",
+                "1/2 finale",
+                "Serena Williams"
+            ],
+            [
+                "2002",
+                "Finale",
+                "Jennifer Capriati",
+                "-",
+                "-",
+                "-",
+                "-",
+                "(1/8)",
+                "Monica Seles"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2006",
+                "1/4 de finale",
+                "Kim Clijsters",
+                "1/4 de finale",
+                "Kim Clijsters",
+                "(1/16)",
+                "Ai Sugiyama",
+                "(1/32)",
+                "Virginie Razzano"
+            ],
+            [
+                "2007",
+                "1/4 de finale",
+                "Kim Clijsters",
+                "-",
+                "-",
+                "(1/16)",
+                "Laura Granville",
+                "(1/16)",
+                "Victoria Azarenka"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "numeric",
+            "string",
+            "numeric",
+            "string"
+        ],
+        "key_column": 2,
+        "numeric_columns": [
+            5,
+            7
+        ],
+        "date_columns": {
+            "0": [
+                1995,
+                1996,
+                1997,
+                1998,
+                1999,
+                2000,
+                2001,
+                2002,
+                9999,
+                2006,
+                2007
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Open d'Australie when the Internationaux de France string starts with Iva and the Internationaux de France is Finale?",
+                "answers": [
+                    "Mary Pierce"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Open d'Australie when the Wimbledon string starts with Venus and the Internationaux de France string contains Pierce?",
+                "answers": [
+                    "Lindsay Davenport"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Open d'Australie, with US Open string ends with Williams, have Wimbledon string starts with Virginia?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Open d'Australie, with Internationaux de France string contains finale, have Wimbledon string starts with Ai?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Open d'Australie, with US Open string contains Williams, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "Mary Pierce"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Open d'Australie, with US Open string ends with Williams, happened the 3rd according to Ann\u00e9e?",
+                "answers": [
+                    "Lindsay Davenport"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Open d'Australie, with Open d'Australie is Finale, happened the 3rd according to Ann\u00e9e?",
+                "answers": [
+                    "Jennifer Capriati"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the US Open was Victoria Azarenka and when the US Open was Lindsay Davenport?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Wimbledon was - and when the Wimbledon was Laura Granville?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Open d'Australie had Open d'Australie is Finale and Wimbledon string starts with Venus?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Open d'Australie had US Open string contains Williams?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "154700",
+        "title": "Martina Hingis",
+        "url": "https://fr.wikipedia.org/?curid=154700",
+        "header": [
+            "Ann\u00e9e",
+            "Open d'Australie",
+            "Open d'Australie",
+            "Internationaux de France",
+            "Internationaux de France",
+            "Wimbledon",
+            "Wimbledon",
+            "US Open",
+            "US Open"
+        ],
+        "rows": [
+            [
+                "1995",
+                "(1/32) A. Ellwood",
+                "Mana Endo N. Sawamatsu",
+                "-",
+                "-",
+                "(1/16) R. Zrub\u00e1kov\u00e1",
+                "M. Bollegraf Rennae Stubbs",
+                "(1/8) Iva Majoli",
+                "G. Fern\u00e1ndez N. Zvereva"
+            ],
+            [
+                "1996",
+                "(1/32) Iva Majoli",
+                "Miho Saeki Yuka Yoshida",
+                "1/4 de finale Helena Sukov\u00e1",
+                "M. McGrath L. Neiland",
+                "Victoire Helena Sukov\u00e1",
+                "M. McGrath L. Neiland",
+                "1/2 finale Helena Sukov\u00e1",
+                "Jana Novotn\u00e1 A. S\u00e1nchez"
+            ],
+            [
+                "1997",
+                "Victoire N. Zvereva",
+                "L. Davenport Lisa Raymond",
+                "1/2 finale A. S\u00e1nchez",
+                "G. Fern\u00e1ndez N. Zvereva",
+                "1/4 de finale A. S\u00e1nchez",
+                "Nicole Arendt M. Bollegraf",
+                "1/2 finale A. S\u00e1nchez",
+                "L. Davenport Jana Novotn\u00e1"
+            ],
+            [
+                "1998",
+                "Victoire Mirjana Lu\u010di\u0107",
+                "L. Davenport N. Zvereva",
+                "Victoire Jana Novotn\u00e1",
+                "L. Davenport N. Zvereva",
+                "Victoire Jana Novotn\u00e1",
+                "L. Davenport N. Zvereva",
+                "Victoire Jana Novotn\u00e1",
+                "L. Davenport N. Zvereva"
+            ],
+            [
+                "1999",
+                "Victoire A. Kournikova",
+                "L. Davenport N. Zvereva",
+                "Finale A. Kournikova",
+                "S. Williams V. Williams",
+                "-",
+                "-",
+                "-",
+                "-"
+            ],
+            [
+                "2000",
+                "Finale Mary Pierce",
+                "Lisa Raymond Rennae Stubbs",
+                "Victoire Mary Pierce",
+                "V. Ruano Paola Su\u00e1rez",
+                "(1/16) Mary Pierce",
+                "A. Cocheteux N. Dechy",
+                "(1/8) Mary Pierce",
+                "C. Mart\u00ednez P. Tarabini"
+            ],
+            [
+                "2001",
+                "1/2 finale Monica Seles",
+                "S. Williams V. Williams",
+                "-",
+                "-",
+                "-",
+                "-",
+                "1/4 de finale J. Capriati",
+                "Lisa Raymond Rennae Stubbs"
+            ],
+            [
+                "2002",
+                "Victoire A. Kournikova",
+                "D. Hantuchov\u00e1 A. S\u00e1nchez",
+                "-",
+                "-",
+                "-",
+                "-",
+                "1/4 de finale A. Kournikova",
+                "V. Ruano Paola Su\u00e1rez"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2007",
+                "(1/16) S. Kuznetsova",
+                "V. Dushevina M. Kirilenko",
+                "-",
+                "-",
+                "-",
+                "-",
+                "(1/8) D. Hantuchov\u00e1",
+                "Kv\u011bta Peschke Rennae Stubbs"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2013",
+                "-",
+                "-",
+                "-",
+                "-",
+                "-",
+                "-",
+                "(1/32) D. Hantuchov\u00e1",
+                "Sara Errani Roberta Vinci"
+            ],
+            [
+                "2014",
+                "-",
+                "-",
+                "-",
+                "-",
+                "(1/32) V. Zvonareva",
+                "Cara Black Sania Mirza",
+                "Finale F. Pennetta",
+                "E. Makarova Elena Vesnina"
+            ],
+            [
+                "2015",
+                "(1/8) F. Pennetta",
+                "Chan Yung-jan Zheng Jie",
+                "1/4 de finale Sania Mirza",
+                "B. Mattek L. \u0160af\u00e1\u0159ov\u00e1",
+                "Victoire Sania Mirza",
+                "E. Makarova Elena Vesnina",
+                "Victoire Sania Mirza",
+                "C. Dellacqua Y. Shvedova"
+            ],
+            [
+                "2016",
+                "Victoire Sania Mirza",
+                "A. Hlav\u00e1\u010dkov\u00e1 L. Hradeck\u00e1",
+                "(1/8) Sania Mirza",
+                "B. Krej\u010d\u00edkov\u00e1 K. Siniakov\u00e1",
+                "1/4 de finale Sania Mirza",
+                "T\u00edmea Babos Y. Shvedova",
+                "1/2 finale C. Vandeweghe",
+                "Caroline Garcia K. Mladenovic"
+            ],
+            [
+                "2017",
+                "(1/16) C. Vandeweghe",
+                "Ashleigh Barty C. Dellacqua",
+                "1/2 finale Chan Yung-jan",
+                "B. Mattek L. \u0160af\u00e1\u0159ov\u00e1",
+                "1/4 de finale Chan Yung-jan",
+                "A.-L. Gr\u00f6nefeld Kv\u011bta Peschke",
+                "Victoire Chan Yung-jan",
+                "Lucie Hradeck\u00e1 K. Siniakov\u00e1"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                1995,
+                1996,
+                1997,
+                1998,
+                1999,
+                2000,
+                2001,
+                2002,
+                9999,
+                2007,
+                9999,
+                2013,
+                2014,
+                2015,
+                2016,
+                2017
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Open d'Australie when the US Open string contains Davenport and the Internationaux de France string contains finale?",
+                "answers": [
+                    "Victoire N. Zvereva"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Open d'Australie, with US Open string contains Davenport, have Open d'Australie string contains Davenport?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Open d'Australie, with Wimbledon string contains de, happened the 2nd according to Ann\u00e9e?",
+                "answers": [
+                    "Victoire Sania Mirza"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Open d'Australie, with US Open string contains finale, happened the 4th according to Ann\u00e9e?",
+                "answers": [
+                    "Victoire A. Kournikova"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the US Open was - and when the US Open was Victoire Chan Yung-jan?",
+                "answers": [
+                    "18"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Open d'Australie was Lisa Raymond Rennae Stubbs and when the Open d'Australie was L. Davenport Lisa Raymond?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Open d'Australie had US Open string contains finale?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "154700",
+        "title": "Martina Hingis",
+        "url": "https://fr.wikipedia.org/?curid=154700",
+        "header": [
+            "Ann\u00e9e",
+            "Open d'Australie",
+            "Open d'Australie",
+            "Internationaux de France",
+            "Internationaux de France",
+            "Wimbledon",
+            "Wimbledon",
+            "US Open",
+            "US Open"
+        ],
+        "rows": [
+            [
+                "1996",
+                "-",
+                "-",
+                "1/4 de finale Philippoussis",
+                "M. Bollegraf Rick Leach",
+                "(1/16) Lorenzo Manta",
+                "Laura Golarsa van Rensburg",
+                "1/2 finale van Rensburg",
+                "M. Bollegraf Rick Leach"
+            ],
+            [
+                "1997",
+                "-",
+                "-",
+                "-",
+                "-",
+                "1/4 de finale J. de Jager",
+                "M. de Swardt Neil Broad",
+                "-",
+                "-"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2000",
+                "-",
+                "-",
+                "-",
+                "-",
+                "-",
+                "-",
+                "1/4 de finale J. Gambill",
+                "Likhovtseva Paul Haarhuis"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2006",
+                "Victoire M. Bhupathi",
+                "Likhovtseva Daniel Nestor",
+                "(1/8) M. Bhupathi",
+                "Navr\u00e1tilov\u00e1 Bob Bryan",
+                "-",
+                "-",
+                "-",
+                "-"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2013",
+                "-",
+                "-",
+                "-",
+                "-",
+                "-",
+                "-",
+                "(1/16) M. Bhupathi",
+                "Chan Yung-jan R. Lindstedt"
+            ],
+            [
+                "2014",
+                "-",
+                "-",
+                "-",
+                "-",
+                "1/4 de finale Bruno Soares",
+                "K. Mladenovic Daniel Nestor",
+                "-",
+                "-"
+            ],
+            [
+                "2015",
+                "Victoire Leander Paes",
+                "K. Mladenovic Daniel Nestor",
+                "(1/8) Leander Paes",
+                "K. Srebotnik Horia Tec\u0103u",
+                "Victoire Leander Paes",
+                "T\u00edmea Babos A. Peya",
+                "Victoire Leander Paes",
+                "B. Mattek Sam Querrey"
+            ],
+            [
+                "2016",
+                "1/4 de finale Leander Paes",
+                "Sania Mirza Ivan Dodig",
+                "Victoire Leander Paes",
+                "Sania Mirza Ivan Dodig",
+                "(1/8) Leander Paes",
+                "Heather Watson Henri Kontinen",
+                "(1/8) Leander Paes",
+                "C. Vandeweghe Rajeev Ram"
+            ],
+            [
+                "2017",
+                "1/4 de finale Leander Paes",
+                "S. Stosur Sam Groth",
+                "(1/16) Leander Paes",
+                "K. Srebotnik Raven Klaasen",
+                "Victoire Jamie Murray",
+                "Heather Watson Henri Kontinen",
+                "Victoire Jamie Murray",
+                "Chan Hao-ching Michael Venus"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                1996,
+                1997,
+                9999,
+                2000,
+                9999,
+                2006,
+                9999,
+                2013,
+                2014,
+                2015,
+                2016,
+                2017
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Open d'Australie when the US Open string contains Ram and the Wimbledon string contains Watson?",
+                "answers": [
+                    "1/4 de finale Leander Paes"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Open d'Australie when the Internationaux de France string contains Leander and the Wimbledon string starts with Heather?",
+                "answers": [
+                    "1/4 de finale Leander Paes"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Open d'Australie, with Open d'Australie string contains Daniel, have Internationaux de France string contains Leander?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Open d'Australie, with Wimbledon string starts with Heather, have US Open string contains Michael?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Open d'Australie, with Wimbledon string contains de, happened the 2nd according to Ann\u00e9e?",
+                "answers": [
+                    "-"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Open d'Australie, with Internationaux de France string contains Leander, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "Victoire Leander Paes"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Wimbledon was (1/8) Leander Paes and when the Wimbledon was (1/16) Lorenzo Manta?",
+                "answers": [
+                    "20"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Internationaux de France was Sania Mirza Ivan Dodig and when the Internationaux de France was Navr\u00e1tilov\u00e1 Bob Bryan?",
+                "answers": [
+                    "10"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Open d'Australie had Internationaux de France string contains Leander?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "154700",
+        "title": "Martina Hingis",
+        "url": "https://fr.wikipedia.org/?curid=154700",
+        "header": [
+            "#",
+            "Date",
+            "Nom de l'\u00e9dition",
+            "($)",
+            "Surface",
+            "R\u00e9sultat",
+            "Ultime adversaire",
+            "Score",
+            ""
+        ],
+        "rows": [
+            [
+                "1",
+                "18/11/1996",
+                "Chase Championships New York",
+                "",
+                "Moquette ()",
+                "Finale",
+                "Steffi Graf",
+                "6-3, 4-6, 6-0, 4-6, 6-0",
+                "Parcours"
+            ],
+            [
+                "2",
+                "17/11/1997",
+                "Chase Championships  New York",
+                "",
+                "Moquette ()",
+                "1/4 de finale",
+                "Mary Pierce",
+                "6-3, 2-6, 7-5",
+                "Parcours"
+            ],
+            [
+                "3",
+                "16/11/1998",
+                "Chase Championships  New York",
+                "",
+                "Moquette ()",
+                "Victoire",
+                "Lindsay Davenport",
+                "7-5, 6-4, 4-6, 6-2",
+                "Parcours"
+            ],
+            [
+                "4",
+                "15/11/1999",
+                "Chase Championships  New York",
+                "",
+                "Moquette ()",
+                "Finale",
+                "Lindsay Davenport",
+                "6-4, 6-2",
+                "Parcours"
+            ],
+            [
+                "5",
+                "13/11/2000",
+                "Chase Championships  New York",
+                "",
+                "Moquette ()",
+                "Victoire",
+                "Monica Seles",
+                "6-7, 6-4, 6-4",
+                "Parcours"
+            ],
+            [
+                "6",
+                "06/11/2006",
+                "Sony Ericsson Championships Madrid",
+                "",
+                "Dur ()",
+                "Round Robin (d\u00e9faite)",
+                "Justine Henin",
+                "6-2, 6-7, 6-1",
+                "Parcours"
+            ],
+            [
+                "6",
+                "06/11/2006",
+                "Sony Ericsson Championships Madrid",
+                "",
+                "Dur ()",
+                "Round Robin (victoire)",
+                "Nadia Petrova",
+                "6-4, 3-6, 6-3",
+                "Parcours"
+            ],
+            [
+                "6",
+                "06/11/2006",
+                "Sony Ericsson Championships Madrid",
+                "",
+                "Dur ()",
+                "Round Robin (d\u00e9faite)",
+                "Am\u00e9lie Mauresmo",
+                "3-6, 6-1, 6-4",
+                "Parcours"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "datetime",
+            "string"
+        ],
+        "key_column": 2,
+        "numeric_columns": [
+            0
+        ],
+        "date_columns": {
+            "1": [
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999
+            ],
+            "7": [
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom de l'\u00e9dition when the Ultime adversaire string contains Seles and the # was greater than or equal to 5?",
+                "answers": [
+                    "Chase Championships  New York"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom de l'\u00e9dition when the # was equal to 5 and the Date was after 16/11/1998?",
+                "answers": [
+                    "Chase Championships  New York"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom de l'\u00e9dition, with # was greater than or equal to 5, have Surface string contains Moquette?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom de l'\u00e9dition, with Date was on 06/11/2006, have # was greater than or equal to 5?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with # was greater than or equal to 3, happened the 1st according to Date?",
+                "answers": [
+                    "Chase Championships  New York"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with Surface string contains Moquette, happened the 3rd according to Date?",
+                "answers": [
+                    "Chase Championships  New York"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with Date was after 18/11/1996, has the 4th largest #?",
+                "answers": [
+                    "Chase Championships  New York"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with Date was before 06/11/2006, has the 3rd largest #?",
+                "answers": [
+                    "Chase Championships  New York"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'\u00e9dition had # was less than 6?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'\u00e9dition had # was greater than 4?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'\u00e9dition had Surface string starts with Moquette?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of # when the Surface string contains Moquette?",
+                "answers": [
+                    "3.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of # when the Date was on 06/11/2006?",
+                "answers": [
+                    "6.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of # when the R\u00e9sultat string starts with Round?",
+                "answers": [
+                    "18.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    },
+    {
+        "id": "154700",
+        "title": "Martina Hingis",
+        "url": "https://fr.wikipedia.org/?curid=154700",
+        "header": [
+            "#",
+            "Date",
+            "Nom de l'\u00e9dition",
+            "($)",
+            "Surface",
+            "R\u00e9sultat",
+            "Partenaire",
+            "Ultimes adversaires",
+            "Score",
+            ""
+        ],
+        "rows": [
+            [
+                "1",
+                "18/11/1996",
+                "Chase Championships New York",
+                "",
+                "Moquette ()",
+                "1/4 de finale",
+                "Helena Sukov\u00e1",
+                "Jana Novotn\u00e1 Arantxa S\u00e1nchez",
+                "6-4, 3-6, 7-5",
+                "Parcours"
+            ],
+            [
+                "2",
+                "17/11/1997",
+                "Chase Championships New York",
+                "",
+                "Moquette ()",
+                "1/4 de finale",
+                "Arantxa S\u00e1nchez",
+                "Alexandra Fusai Nathalie Tauziat",
+                "6-3, 6-1",
+                "Parcours"
+            ],
+            [
+                "3",
+                "16/11/1998",
+                "Chase Championships New York",
+                "",
+                "Moquette ()",
+                "1/4 de finale",
+                "Jana Novotn\u00e1",
+                "Yayuk Basuki Caroline Vis",
+                "6-4, 2-6, 6-4",
+                "Parcours"
+            ],
+            [
+                "4",
+                "15/11/1999",
+                "Chase Championships New York",
+                "",
+                "Moquette ()",
+                "Victoire",
+                "Anna Kournikova",
+                "Larisa Neiland Arantxa S\u00e1nchez",
+                "6-4, 6-4",
+                "Parcours"
+            ],
+            [
+                "5",
+                "13/11/2000",
+                "Chase Championships New York",
+                "",
+                "Moquette ()",
+                "Victoire",
+                "Anna Kournikova",
+                "Nicole Arendt Manon Bollegraf",
+                "6-2, 6-3",
+                "Parcours"
+            ],
+            [
+                "6",
+                "25/10/2015",
+                "BNP Paribas WTA Finals by SC Global Singapour",
+                "",
+                "Dur ()",
+                "Victoire",
+                "Sania Mirza",
+                "Garbi\u00f1e Muguruza Carla Su\u00e1rez Navarro",
+                "6-0, 6-3",
+                "Parcours"
+            ],
+            [
+                "7",
+                "23/10/2016",
+                "BNP Paribas WTA Finals by SC Global Singapour",
+                "",
+                "Dur ()",
+                "1/2 finale",
+                "Sania Mirza",
+                "Ekaterina Makarova Elena Vesnina",
+                "3-6, 6-2, [10-6]",
+                "Parcours"
+            ],
+            [
+                "8",
+                "22/10/2017",
+                "BNP Paribas WTA Finals by SC Global Singapour",
+                "",
+                "Dur ()",
+                "1/2 finale",
+                "Chan Yung-jan",
+                "T\u00edmea Babos Andrea Hlav\u00e1\u010dkov\u00e1",
+                "6-4, 7-6",
+                "Parcours"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "datetime",
+            "string"
+        ],
+        "key_column": 2,
+        "numeric_columns": [
+            0
+        ],
+        "date_columns": {
+            "1": [
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999
+            ],
+            "8": [
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom de l'\u00e9dition when the R\u00e9sultat string ends with finale and the Surface string starts with Moquette?",
+                "answers": [
+                    "Chase Championships New York"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom de l'\u00e9dition when the Partenaire string starts with Helena and the # was less than 5?",
+                "answers": [
+                    "Chase Championships New York"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom de l'\u00e9dition, with Partenaire string starts with Anna, have Date was before 22/10/2017?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom de l'\u00e9dition, with Partenaire string starts with Anna, have Surface string starts with Moquette?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with # was less than or equal to 7, happened the 5th according to Date?",
+                "answers": [
+                    "Chase Championships New York"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with Date was before 13/11/2000, happened the 4th according to Date?",
+                "answers": [
+                    "Chase Championships New York"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with Date was before 25/10/2015, has the 1st largest #?",
+                "answers": [
+                    "Chase Championships New York"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with Date was before 13/11/2000, has the 2nd largest #?",
+                "answers": [
+                    "Chase Championships New York"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with Partenaire string starts with Anna, has the 2nd largest #?",
+                "answers": [
+                    "Chase Championships New York"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'\u00e9dition had Date was before 22/10/2017 and R\u00e9sultat string contains finale?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'\u00e9dition had R\u00e9sultat string contains de?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'\u00e9dition had # was less than 7?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of # when the Date was after 16/11/1998?",
+                "answers": [
+                    "30.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of # when the Date was after 13/11/2000?",
+                "answers": [
+                    "21.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of # when the Surface string starts with Moquette?",
+                "answers": [
+                    "15.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    },
+    {
+        "id": "154700",
+        "title": "Martina Hingis",
+        "url": "https://fr.wikipedia.org/?curid=154700",
+        "header": [
+            "#",
+            "Date",
+            "Nom de l'olympiade",
+            "Surface",
+            "R\u00e9sultat",
+            "Ultime adversaire",
+            "Score",
+            ""
+        ],
+        "rows": [
+            [
+                "1",
+                "23/07/1996",
+                "Olympic Tennis Event Atlanta",
+                "Dur ()",
+                "(1/16)",
+                "Ai Sugiyama",
+                "6-4, 6-4",
+                "Parcours"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "datetime",
+            "string",
+            "string",
+            "datetime",
+            "string",
+            "datetime",
+            "string"
+        ],
+        "key_column": 2,
+        "numeric_columns": [
+            0
+        ],
+        "date_columns": {
+            "1": [
+                9999
+            ],
+            "4": [
+                9999
+            ],
+            "6": [
+                9999
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom de l'olympiade when the Date was on 23/07/1996 and the # was less than or equal to 1?",
+                "answers": [
+                    "Olympic Tennis Event Atlanta"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom de l'olympiade when the # was equal to 1 and the Ultime adversaire string contains Ai?",
+                "answers": [
+                    "Olympic Tennis Event Atlanta"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom de l'olympiade, with # was greater than or equal to 1, have Date was on 23/07/1996?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom de l'olympiade, with Date was on 23/07/1996, have # was equal to 1?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'olympiade had Ultime adversaire string starts with Ai?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'olympiade had Date was on 23/07/1996 and Ultime adversaire string starts with Ai?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'olympiade had # was equal to 1 and Date was on 23/07/1996?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "154700",
+        "title": "Martina Hingis",
+        "url": "https://fr.wikipedia.org/?curid=154700",
+        "header": [
+            "#",
+            "Date",
+            "Nom de l'olympiade",
+            "Surface",
+            "R\u00e9sultat",
+            "Partenaire",
+            "Ultimes adversaires",
+            "Score",
+            ""
+        ],
+        "rows": [
+            [
+                "1",
+                "23/07/1996",
+                "Olympic Tennis Event Atlanta",
+                "Dur ()",
+                "1/4 de finale",
+                "Patty Schnyder",
+                "Manon Bollegraf Brenda Schultz",
+                "6-4, 6-3",
+                "Parcours"
+            ],
+            [
+                "2",
+                "06/08/2016",
+                "Olympic Tennis Event Rio de Janeiro",
+                "Dur ()",
+                "Argent",
+                "Timea Bacsinszky",
+                "Ekaterina Makarova  Elena Vesnina",
+                "6-4, 6-4",
+                "Parcours"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "datetime",
+            "string"
+        ],
+        "key_column": 2,
+        "numeric_columns": [
+            0
+        ],
+        "date_columns": {
+            "1": [
+                9999,
+                9999
+            ],
+            "7": [
+                9999,
+                9999
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom de l'olympiade when the Date was on 06/08/2016 and the # was less than or equal to 2?",
+                "answers": [
+                    "Olympic Tennis Event Rio de Janeiro"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom de l'olympiade when the # was less than or equal to 2 and the Date was on 06/08/2016?",
+                "answers": [
+                    "Olympic Tennis Event Rio de Janeiro"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom de l'olympiade, with # was less than or equal to 1, have Date was on 23/07/1996?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom de l'olympiade, with Date was on 06/08/2016, have # was greater than or equal to 2?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'olympiade had R\u00e9sultat is Argent and # was greater than or equal to 2?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'olympiade had Partenaire string starts with Patty and Date was on 23/07/1996?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "154700",
+        "title": "Martina Hingis",
+        "url": "https://fr.wikipedia.org/?curid=154700",
+        "header": [
+            "#",
+            "Date",
+            "Lieu",
+            "Surface",
+            "Gagnante(s)",
+            "Perdante(s)",
+            "Score",
+            ""
+        ],
+        "rows": [
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "1996 -  Barrage (groupe mondial II) - Indon\u00e9sie - Suisse -",
+                "1996 -  Barrage (groupe mondial II) - Indon\u00e9sie - Suisse -",
+                "1996 -  Barrage (groupe mondial II) - Indon\u00e9sie - Suisse -",
+                "1996 -  Barrage (groupe mondial II) - Indon\u00e9sie - Suisse -",
+                "1996 -  Barrage (groupe mondial II) - Indon\u00e9sie - Suisse -",
+                "1996 -  Barrage (groupe mondial II) - Indon\u00e9sie - Suisse -",
+                "1996 -  Barrage (groupe mondial II) - Indon\u00e9sie - Suisse -",
+                "1996 -  Barrage (groupe mondial II) - Indon\u00e9sie - Suisse -"
+            ],
+            [
+                "1",
+                "13/07/1996",
+                "Jakarta",
+                "Dur ()",
+                "Martina Hingis",
+                "Liza Andriyani",
+                "6-0, 6-0",
+                "Parcours"
+            ],
+            [
+                "1",
+                "13/07/1996",
+                "Jakarta",
+                "Dur ()",
+                "Yayuk Basuki",
+                "Martina Hingis",
+                "5-7, 6-3, 6-1",
+                "Parcours"
+            ],
+            [
+                "1",
+                "13/07/1996",
+                "Jakarta",
+                "Dur ()",
+                "Martina Hingis Patty Schnyder",
+                "Yayuk Basuki Romana Tedjakusuma",
+                "6-3, 6-2",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "1997 - 1/4 de finale (groupe mondial II) - Slovaquie - Suisse -",
+                "1997 - 1/4 de finale (groupe mondial II) - Slovaquie - Suisse -",
+                "1997 - 1/4 de finale (groupe mondial II) - Slovaquie - Suisse -",
+                "1997 - 1/4 de finale (groupe mondial II) - Slovaquie - Suisse -",
+                "1997 - 1/4 de finale (groupe mondial II) - Slovaquie - Suisse -",
+                "1997 - 1/4 de finale (groupe mondial II) - Slovaquie - Suisse -",
+                "1997 - 1/4 de finale (groupe mondial II) - Slovaquie - Suisse -",
+                "1997 - 1/4 de finale (groupe mondial II) - Slovaquie - Suisse -"
+            ],
+            [
+                "2",
+                "01/03/1997",
+                "Ko\u0161ice",
+                "Moquette ()",
+                "Martina Hingis",
+                "Katar\u00edna Studen\u00edkov\u00e1",
+                "6-1, 6-3",
+                "Parcours"
+            ],
+            [
+                "2",
+                "01/03/1997",
+                "Ko\u0161ice",
+                "Moquette ()",
+                "Martina Hingis",
+                "Karina Hab\u0161udov\u00e1",
+                "6-2, 6-0",
+                "Parcours"
+            ],
+            [
+                "2",
+                "01/03/1997",
+                "Ko\u0161ice",
+                "Moquette ()",
+                "Martina Hingis Patty Schnyder",
+                "Karina Hab\u0161udov\u00e1 Radka Zrub\u00e1kov\u00e1",
+                "6-0, 6-1",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "1997 -  Barrage (groupe mondial I) - Suisse - Argentine -",
+                "1997 -  Barrage (groupe mondial I) - Suisse - Argentine -",
+                "1997 -  Barrage (groupe mondial I) - Suisse - Argentine -",
+                "1997 -  Barrage (groupe mondial I) - Suisse - Argentine -",
+                "1997 -  Barrage (groupe mondial I) - Suisse - Argentine -",
+                "1997 -  Barrage (groupe mondial I) - Suisse - Argentine -",
+                "1997 -  Barrage (groupe mondial I) - Suisse - Argentine -",
+                "1997 -  Barrage (groupe mondial I) - Suisse - Argentine -"
+            ],
+            [
+                "3",
+                "12/07/1997",
+                "Zurich",
+                "Moquette ()",
+                "Martina Hingis",
+                "Maria Jose Gaidano",
+                "6-1, 6-2",
+                "Parcours"
+            ],
+            [
+                "3",
+                "12/07/1997",
+                "Zurich",
+                "Moquette ()",
+                "Martina Hingis",
+                "Florencia Labat",
+                "6-2, 6-1",
+                "Parcours"
+            ],
+            [
+                "3",
+                "12/07/1997",
+                "Zurich",
+                "Moquette ()",
+                "Emmanuelle Gagliardi Martina Hingis",
+                "Laura Montalvo Mercedes Paz",
+                "6-3, 6-4",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "1998 - 1/4 de finale (groupe mondial) - R\u00e9publique tch\u00e8que - Suisse -",
+                "1998 - 1/4 de finale (groupe mondial) - R\u00e9publique tch\u00e8que - Suisse -",
+                "1998 - 1/4 de finale (groupe mondial) - R\u00e9publique tch\u00e8que - Suisse -",
+                "1998 - 1/4 de finale (groupe mondial) - R\u00e9publique tch\u00e8que - Suisse -",
+                "1998 - 1/4 de finale (groupe mondial) - R\u00e9publique tch\u00e8que - Suisse -",
+                "1998 - 1/4 de finale (groupe mondial) - R\u00e9publique tch\u00e8que - Suisse -",
+                "1998 - 1/4 de finale (groupe mondial) - R\u00e9publique tch\u00e8que - Suisse -",
+                "1998 - 1/4 de finale (groupe mondial) - R\u00e9publique tch\u00e8que - Suisse -"
+            ],
+            [
+                "4",
+                "18/04/1998",
+                "Brno",
+                "Moquette ()",
+                "Martina Hingis",
+                "Adriana Ger\u0161i",
+                "6-2, 6-1",
+                "Parcours"
+            ],
+            [
+                "4",
+                "18/04/1998",
+                "Brno",
+                "Moquette ()",
+                "Martina Hingis",
+                "Jana Novotn\u00e1",
+                "4-6, 6-3, 6-2",
+                "Parcours"
+            ],
+            [
+                "4",
+                "18/04/1998",
+                "Brno",
+                "Moquette ()",
+                "Martina Hingis Patty Schnyder",
+                "Denisa Chl\u00e1dkov\u00e1 Ludmila Richterov\u00e1",
+                "6-0, 6-1",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "1998 - 1/2 finale (groupe mondial) - Suisse - France -",
+                "1998 - 1/2 finale (groupe mondial) - Suisse - France -",
+                "1998 - 1/2 finale (groupe mondial) - Suisse - France -",
+                "1998 - 1/2 finale (groupe mondial) - Suisse - France -",
+                "1998 - 1/2 finale (groupe mondial) - Suisse - France -",
+                "1998 - 1/2 finale (groupe mondial) - Suisse - France -",
+                "1998 - 1/2 finale (groupe mondial) - Suisse - France -",
+                "1998 - 1/2 finale (groupe mondial) - Suisse - France -"
+            ],
+            [
+                "5",
+                "25/07/1998",
+                "Sion",
+                "Terre ()",
+                "Martina Hingis",
+                "Julie Halard",
+                "7-5, 6-1",
+                "Parcours"
+            ],
+            [
+                "5",
+                "25/07/1998",
+                "Sion",
+                "Terre ()",
+                "Martina Hingis",
+                "Am\u00e9lie Mauresmo",
+                "6-7, 6-4, 6-2",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "1998 - Finale (groupe mondial) - Suisse - Espagne -",
+                "1998 - Finale (groupe mondial) - Suisse - Espagne -",
+                "1998 - Finale (groupe mondial) - Suisse - Espagne -",
+                "1998 - Finale (groupe mondial) - Suisse - Espagne -",
+                "1998 - Finale (groupe mondial) - Suisse - Espagne -",
+                "1998 - Finale (groupe mondial) - Suisse - Espagne -",
+                "1998 - Finale (groupe mondial) - Suisse - Espagne -",
+                "1998 - Finale (groupe mondial) - Suisse - Espagne -"
+            ],
+            [
+                "6",
+                "19/09/1998",
+                "Gen\u00e8ve",
+                "Dur ()",
+                "Martina Hingis",
+                "Conchita Mart\u00ednez",
+                "6-4, 6-4",
+                "Parcours"
+            ],
+            [
+                "6",
+                "19/09/1998",
+                "Gen\u00e8ve",
+                "Dur ()",
+                "Martina Hingis",
+                "Arantxa S\u00e1nchez",
+                "7-6, 6-3",
+                "Parcours"
+            ],
+            [
+                "6",
+                "19/09/1998",
+                "Gen\u00e8ve",
+                "Dur ()",
+                "Conchita Mart\u00ednez Arantxa S\u00e1nchez",
+                "Martina Hingis Patty Schnyder",
+                "6-0, 6-2",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2015 -  Barrage (groupe mondial I) - Pologne - Suisse -",
+                "2015 -  Barrage (groupe mondial I) - Pologne - Suisse -",
+                "2015 -  Barrage (groupe mondial I) - Pologne - Suisse -",
+                "2015 -  Barrage (groupe mondial I) - Pologne - Suisse -",
+                "2015 -  Barrage (groupe mondial I) - Pologne - Suisse -",
+                "2015 -  Barrage (groupe mondial I) - Pologne - Suisse -",
+                "2015 -  Barrage (groupe mondial I) - Pologne - Suisse -",
+                "2015 -  Barrage (groupe mondial I) - Pologne - Suisse -"
+            ],
+            [
+                "7",
+                "18/04/2015",
+                "Zielona G\u00f3ra",
+                "Dur ()",
+                "Agnieszka Radwa\u0144ska",
+                "Martina Hingis",
+                "6-4, 6-0",
+                "Parcours"
+            ],
+            [
+                "7",
+                "18/04/2015",
+                "Zielona G\u00f3ra",
+                "Dur ()",
+                "Urszula Radwa\u0144ska",
+                "Martina Hingis",
+                "4-6, 7-5, 6-1",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2016 -  (groupe mondial) - Allemagne - Suisse -",
+                "2016 -  (groupe mondial) - Allemagne - Suisse -",
+                "2016 -  (groupe mondial) - Allemagne - Suisse -",
+                "2016 -  (groupe mondial) - Allemagne - Suisse -",
+                "2016 -  (groupe mondial) - Allemagne - Suisse -",
+                "2016 -  (groupe mondial) - Allemagne - Suisse -",
+                "2016 -  (groupe mondial) - Allemagne - Suisse -",
+                "2016 -  (groupe mondial) - Allemagne - Suisse -"
+            ],
+            [
+                "8",
+                "06/02/2016",
+                "Leipzig",
+                "Dur ()",
+                "Belinda Bencic Martina Hingis",
+                "Anna-Lena Gr\u00f6nefeld Andrea Petkovic",
+                "6-3, 6-2",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2016 - 1/2 finale (groupe mondial) - Suisse - R\u00e9publique tch\u00e8que -",
+                "2016 - 1/2 finale (groupe mondial) - Suisse - R\u00e9publique tch\u00e8que -",
+                "2016 - 1/2 finale (groupe mondial) - Suisse - R\u00e9publique tch\u00e8que -",
+                "2016 - 1/2 finale (groupe mondial) - Suisse - R\u00e9publique tch\u00e8que -",
+                "2016 - 1/2 finale (groupe mondial) - Suisse - R\u00e9publique tch\u00e8que -",
+                "2016 - 1/2 finale (groupe mondial) - Suisse - R\u00e9publique tch\u00e8que -",
+                "2016 - 1/2 finale (groupe mondial) - Suisse - R\u00e9publique tch\u00e8que -",
+                "2016 - 1/2 finale (groupe mondial) - Suisse - R\u00e9publique tch\u00e8que -"
+            ],
+            [
+                "9",
+                "16/04/2016",
+                "Lucerne",
+                "Dur ()",
+                "Lucie Hradeck\u00e1 Karol\u00edna Pl\u00ed\u0161kov\u00e1",
+                "Viktorija Golubic Martina Hingis",
+                "6-2, 6-2",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2017 -  (groupe mondial) - Suisse - France :",
+                "2017 -  (groupe mondial) - Suisse - France :",
+                "2017 -  (groupe mondial) - Suisse - France :",
+                "2017 -  (groupe mondial) - Suisse - France :",
+                "2017 -  (groupe mondial) - Suisse - France :",
+                "2017 -  (groupe mondial) - Suisse - France :",
+                "2017 -  (groupe mondial) - Suisse - France :",
+                "2017 -  (groupe mondial) - Suisse - France :"
+            ],
+            [
+                "10",
+                "11/02/2017",
+                "Gen\u00e8ve",
+                "Dur ()",
+                "Timea Bacsinszky Martina Hingis",
+                "Amandine Hesse Kristina Mladenovic",
+                "6-4, 6-4",
+                "Parcours"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "2017 - 1/2 finale (groupe mondial) - Bi\u00e9lorussie - Suisse -",
+                "2017 - 1/2 finale (groupe mondial) - Bi\u00e9lorussie - Suisse -",
+                "2017 - 1/2 finale (groupe mondial) - Bi\u00e9lorussie - Suisse -",
+                "2017 - 1/2 finale (groupe mondial) - Bi\u00e9lorussie - Suisse -",
+                "2017 - 1/2 finale (groupe mondial) - Bi\u00e9lorussie - Suisse -",
+                "2017 - 1/2 finale (groupe mondial) - Bi\u00e9lorussie - Suisse -",
+                "2017 - 1/2 finale (groupe mondial) - Bi\u00e9lorussie - Suisse -",
+                "2017 - 1/2 finale (groupe mondial) - Bi\u00e9lorussie - Suisse -"
+            ],
+            [
+                "11",
+                "22/04/2017",
+                "Minsk",
+                "Dur ()",
+                "Belinda Bencic Martina Hingis",
+                "Olga Govortsova Vera Lapko",
+                "6-0, 6-1",
+                "Parcours"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "numeric",
+            "string"
+        ],
+        "key_column": 2,
+        "numeric_columns": [
+            0,
+            6
+        ],
+        "date_columns": {
+            "1": [
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Lieu when the Gagnante(s) string contains Patty and the Surface string starts with Moquette?",
+                "answers": [
+                    "Ko\u0161ice",
+                    "Brno"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Lieu when the Surface string starts with Moquette and the Perdante(s) string contains Maria?",
+                "answers": [
+                    "Zurich"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Lieu, with Gagnante(s) string contains Patty, have Surface string starts with Moquette?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Lieu, with Surface string starts with Moquette, happened the 2nd according to Date?",
+                "answers": [
+                    "Ko\u0161ice"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Lieu, with Surface string starts with Moquette, happened the 8th according to Date?",
+                "answers": [
+                    "Brno"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Lieu had Surface string contains Moquette?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Lieu had Surface string starts with Moquette and Perdante(s) string contains de?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "154700",
+        "title": "Martina Hingis",
+        "url": "https://fr.wikipedia.org/?curid=154700",
+        "header": [
+            "Ann\u00e9e",
+            "1994",
+            "1995",
+            "1996",
+            "1997",
+            "1998",
+            "1999",
+            "2000",
+            "2001",
+            "2002",
+            "2003",
+            "2004",
+            "2005",
+            "2006",
+            "2007"
+        ],
+        "rows": [
+            [
+                "Rang",
+                "87",
+                "16",
+                "6",
+                "1",
+                "2",
+                "1",
+                "1",
+                "4",
+                "10",
+                "-",
+                "-",
+                "-",
+                "7",
+                "19"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "numeric",
+            "numeric"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            13,
+            14
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the 1994 when the 1999 was less than or equal to 1 and the 2006 was less than or equal to 7?",
+                "answers": [
+                    "87"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the 1994 when the 1998 was equal to 2 and the 1999 was greater than or equal to 1?",
+                "answers": [
+                    "87"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every 1994, with 2002 was equal to 10, have 1998 was greater than or equal to 2?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only 1994, with 2001 was greater than or equal to 4, have 2000 was less than or equal to 1?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many 1994 had 2002 was equal to 10 and 2006 was equal to 7?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many 1994 had Ann\u00e9e is Rang?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many 1994 had 1999 was less than or equal to 1 and Ann\u00e9e is Rang?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "154700",
+        "title": "Martina Hingis",
+        "url": "https://fr.wikipedia.org/?curid=154700",
+        "header": [
+            "Ann\u00e9e",
+            "1995",
+            "1996",
+            "1997",
+            "1998",
+            "1999",
+            "2000",
+            "2001",
+            "2002",
+            "2003",
+            "2004",
+            "2005",
+            "2006",
+            "2007",
+            "2008",
+            "2009",
+            "2010",
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017"
+        ],
+        "rows": [
+            [
+                "Rang",
+                "29",
+                "10",
+                "3",
+                "2",
+                "2",
+                "3",
+                "30",
+                "15",
+                "-",
+                "-",
+                "-",
+                "-",
+                "64",
+                "-",
+                "-",
+                "-",
+                "-",
+                "-",
+                "180",
+                "11",
+                "2",
+                "4",
+                "1"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "string",
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            13,
+            19,
+            20,
+            21,
+            22,
+            23
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the 1995 when the 1997 was equal to 3 and the 2015 was greater than or equal to 2?",
+                "answers": [
+                    "29"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the 1995 when the 1998 was greater than or equal to 2 and the 2002 was less than or equal to 15?",
+                "answers": [
+                    "29"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only 1995, with 2001 was less than or equal to 30, have 1996 was less than or equal to 10?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every 1995, with 2016 was greater than or equal to 4, have 1996 was less than or equal to 10?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many 1995 had Ann\u00e9e is Rang?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many 1995 had 2014 was equal to 11?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many 1995 had 2015 was greater than or equal to 2 and 1997 was equal to 3?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "154700",
+        "title": "Martina Hingis",
+        "url": "https://fr.wikipedia.org/?curid=154700",
+        "header": [
+            "#",
+            "Pr\u00e9c\u00e9d\u00e9e par",
+            "Dates",
+            "Suivie par",
+            "Nombre desemaines",
+            "Cumul"
+        ],
+        "rows": [
+            [
+                "1",
+                "Steffi Graf",
+                "31/03/1997 - 11/10/1998",
+                "Lindsay Davenport",
+                "80",
+                "80"
+            ],
+            [
+                "2",
+                "Lindsay Davenport",
+                "08/02/1999 - 04/07/1999",
+                "Lindsay Davenport",
+                "21",
+                "101"
+            ],
+            [
+                "3",
+                "Lindsay Davenport",
+                "09/08/1999 - 02/04/2000",
+                "Lindsay Davenport",
+                "34",
+                "135"
+            ],
+            [
+                "4",
+                "Lindsay Davenport",
+                "08/05/2000 - 14/05/2000",
+                "Lindsay Davenport",
+                "1",
+                "136"
+            ],
+            [
+                "5",
+                "Lindsay Davenport",
+                "22/05/2000 - 14/10/2001",
+                "Jennifer Capriati",
+                "73",
+                "209"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "datetime",
+            "string",
+            "numeric",
+            "numeric"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            0,
+            4,
+            5
+        ],
+        "date_columns": {
+            "2": [
+                9999,
+                9999,
+                9999,
+                9999,
+                9999
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Pr\u00e9c\u00e9d\u00e9e par when the Cumul was greater than 101 and the Nombre desemaines was less than 80?",
+                "answers": [
+                    "Lindsay Davenport"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Pr\u00e9c\u00e9d\u00e9e par when the Cumul was less than 101 and the # was less than 5?",
+                "answers": [
+                    "Steffi Graf"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Pr\u00e9c\u00e9d\u00e9e par, with Cumul was equal to 80, have Nombre desemaines was equal to 80?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Pr\u00e9c\u00e9d\u00e9e par, with Suivie par string starts with Lindsay, have # was greater than 2?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Pr\u00e9c\u00e9d\u00e9e par, with Suivie par string contains Davenport, has the 1st largest #?",
+                "answers": [
+                    "Lindsay Davenport"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Pr\u00e9c\u00e9d\u00e9e par, with Cumul was greater than or equal to 101, has the 4th largest #?",
+                "answers": [
+                    "Lindsay Davenport"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Pr\u00e9c\u00e9d\u00e9e par, with # was greater than or equal to 2, has the 4th largest Nombre desemaines?",
+                "answers": [
+                    "Lindsay Davenport"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Pr\u00e9c\u00e9d\u00e9e par had Nombre desemaines was greater than 1?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Pr\u00e9c\u00e9d\u00e9e par had Suivie par string ends with Davenport and Cumul was greater than or equal to 101?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Pr\u00e9c\u00e9d\u00e9e par had Nombre desemaines was greater than 21 and Suivie par string starts with Lindsay?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of # when the Nombre desemaines was greater than or equal to 34?",
+                "answers": [
+                    "9.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of # when the Cumul was greater than 101?",
+                "answers": [
+                    "12.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of # when the Cumul was less than or equal to 209?",
+                "answers": [
+                    "3.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    },
+    {
+        "id": "154700",
+        "title": "Martina Hingis",
+        "url": "https://fr.wikipedia.org/?curid=154700",
+        "header": [
+            "#",
+            "Pr\u00e9c\u00e9d\u00e9e par",
+            "Dates",
+            "Suivie par",
+            "Nombre desemaines",
+            "Cumul"
+        ],
+        "rows": [
+            [
+                "1",
+                "Natasha Zvereva",
+                "08/06/1998 - 02/08/1998",
+                "Jana Novotn\u00e1",
+                "8",
+                "8"
+            ],
+            [
+                "2",
+                "Lindsay Davenport",
+                "17/08/1998 - 25/10/1998",
+                "Natasha Zvereva",
+                "10",
+                "18"
+            ],
+            [
+                "3",
+                "Natasha Zvereva",
+                "02/11/1998 - 22/11/1998",
+                "Natasha Zvereva",
+                "3",
+                "21"
+            ],
+            [
+                "4",
+                "Jana Novotn\u00e1",
+                "07/06/1999 - 04/07/1999",
+                "Natasha Zvereva",
+                "4",
+                "25"
+            ],
+            [
+                "5",
+                "Natasha Zvereva",
+                "02/08/1999 - 22/08/1999",
+                "Lindsay Davenport",
+                "3",
+                "28"
+            ],
+            [
+                "6",
+                "Anna Kournikova",
+                "31/01/2000 - 19/03/2000",
+                "Lindsay Davenport",
+                "7",
+                "35"
+            ],
+            [
+                "7",
+                "Sania Mirza",
+                "18/01/2016 - 21/08/2016",
+                "Sania Mirza",
+                "31",
+                "66"
+            ],
+            [
+                "8",
+                "Lucie \u0160af\u00e1\u0159ov\u00e1",
+                "02/10/2017 - 18/03/2018",
+                "Latisha Chan",
+                "24",
+                "90"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "datetime",
+            "string",
+            "numeric",
+            "numeric"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            0,
+            4,
+            5
+        ],
+        "date_columns": {
+            "2": [
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Pr\u00e9c\u00e9d\u00e9e par when the Suivie par string contains Davenport and the # was equal to 6?",
+                "answers": [
+                    "Anna Kournikova"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Pr\u00e9c\u00e9d\u00e9e par when the # was equal to 5 and the Suivie par string ends with Davenport?",
+                "answers": [
+                    "Natasha Zvereva"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Pr\u00e9c\u00e9d\u00e9e par, with Nombre desemaines was greater than or equal to 3, have Cumul was less than 28?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Pr\u00e9c\u00e9d\u00e9e par, with Nombre desemaines was equal to 3, have Suivie par string starts with Lindsay?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Pr\u00e9c\u00e9d\u00e9e par, with Cumul was greater than or equal to 66, has the 2nd largest #?",
+                "answers": [
+                    "Sania Mirza"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Pr\u00e9c\u00e9d\u00e9e par, with Cumul was less than 25, has the 3rd largest #?",
+                "answers": [
+                    "Natasha Zvereva"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Pr\u00e9c\u00e9d\u00e9e par, with # was less than or equal to 5, has the 1st largest Cumul?",
+                "answers": [
+                    "Natasha Zvereva"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Pr\u00e9c\u00e9d\u00e9e par had Cumul was less than 35?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Pr\u00e9c\u00e9d\u00e9e par had # was greater than 3 and Suivie par string contains Davenport?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Pr\u00e9c\u00e9d\u00e9e par had # was greater than or equal to 3 and Cumul was less than or equal to 35?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of # when the Nombre desemaines was greater than or equal to 3?",
+                "answers": [
+                    "4.5"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Cumul when the Nombre desemaines was less than 31?",
+                "answers": [
+                    "225.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of # when the Nombre desemaines was greater than 3?",
+                "answers": [
+                    "28.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    }
+]

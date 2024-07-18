@@ -55,17 +55,17 @@ def write_stats_markdown(directory, index, total_questions, total_tables, reason
     filename = os.path.join(directory, f'stats_{index}.md')
     with open(filename, 'w') as md_file:
         if total_pages is not None and index == 'all':
-            md_file.write(f"# Statistics for Instance {index}<br/>\n")
+            md_file.write(f"# Result<br/>\n")
             md_file.write(f"Total number of pages: {total_pages}<br/>\n")
         else:
-            md_file.write(f"# Statistics for Instance {index}<br/>\n")
-        md_file.write(f"Total number of questions: {total_questions}<br/>\n")
-        md_file.write(f"Total number of tables: {total_tables}<br/>\n")
-        md_file.write(f"Total {len(reasoning_type_counts)} unique reasoning types are produced.<br/>\n")
-        md_file.write("## Reasoning Type Statistics<br/>\n")
-        for rtype, count in reasoning_type_counts.items():
+            md_file.write(f"# Result<br/>\n")
+        md_file.write(f"1. Total number of questions: {total_questions}<br/>\n")
+        md_file.write(f"2. Total number of tables: {total_tables}<br/>\n")
+        md_file.write(f"3. Total {len(reasoning_type_counts)} unique reasoning types are produced.<br/>\n")
+        md_file.write("## **Reasoning Type Statistics**<br/>\n")
+        for seq, (rtype, count) in enumerate(reasoning_type_counts.items(), start=1):
             percentage = (count / total_questions) * 100
-            md_file.write(f"- **{rtype}:** Count = {count}, Percentage = {percentage:.2f}%<br/>\n")
+            md_file.write(f"{seq}. {rtype}: Count = {count}, Percentage = {percentage:.2f}%<br/>\n")
         if total_pages is not None and index != 'all':
             md_file.write(f"Total number of pages: {total_pages}<br/>\n")
 

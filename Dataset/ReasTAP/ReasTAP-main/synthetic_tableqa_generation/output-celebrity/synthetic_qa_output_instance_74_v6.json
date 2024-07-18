@@ -695,7 +695,7 @@
             "numeric",
             "numeric"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [
             3,
             4,
@@ -777,29 +777,25 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Victoiresen cat\u00e9gorie was greater than 0 and the D\u00e9parts was equal to 1?",
+                "question": "What was the Pays when the Victoiresen cat\u00e9gorie was less than or equal to 0 and the Victoires was less than or equal to 0?",
                 "answers": [
-                    "Marie Laurent",
-                    "Mich\u00e8le Mouton"
+                    "",
+                    "Afrique du Sud"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Victoires was less than or equal to 0 and the Top 10 was greater than 0?",
+                "question": "What was the Pays when the Victoiresen cat\u00e9gorie was equal to 0 and the Victoires was greater than or equal to 0?",
                 "answers": [
-                    "Odette Siko",
-                    "Marguerite Mareuse\u00c9galement Coupe des Dames au Rallye Monte-Carlo en 1933.",
-                    "Anne-Charlotte Verney",
-                    "Desir\u00e9 Wilson",
-                    "Lilian Bryner",
-                    "Vanina Ickx"
+                    "",
+                    "Afrique du Sud"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom, with Top 10 was greater than or equal to 0, have D\u00e9parts was less than or equal to 1?",
+                "question": "Does every Pays, with D\u00e9parts was greater than 1, have Nom string contains Hawkes?",
                 "answers": [
                     "No"
                 ],
@@ -807,183 +803,98 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom, with Victoires was greater than or equal to 0, have Top 10 was greater than 0?",
+                "question": "Does every Pays, with Top 10 was less than or equal to 0, have Victoires was equal to 0?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with D\u00e9parts was equal to 1, happened the 16th according to Ann\u00e9es?",
+                "question": "Which Pays, with D\u00e9parts was less than or equal to 2, has the 44th largest Victoires?",
                 "answers": [
-                    "R\u00e9gine Gordine"
+                    ""
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with D\u00e9parts was greater than or equal to 1, has the 53rd largest Victoires?",
+                "question": "Which Pays, with Victoires was greater than or equal to 0, has the 3rd largest Top 10?",
                 "answers": [
-                    "Odette Siko",
-                    "Marguerite Mareuse\u00c9galement Coupe des Dames au Rallye Monte-Carlo en 1933.",
-                    "Joan Chetwynd",
-                    "H.H. Stisted",
-                    "Elsie Wisdom",
-                    "Marie Desprez",
-                    "Dorothy Champney",
-                    "Kay Petre",
-                    "Anne-Cecile Rose-Itier",
-                    "Stewart Gwenda Hawkes",
-                    "Gordon Simpson",
-                    "Joan Richmond",
-                    "Doreen Evans",
-                    "Barbara Skinner",
-                    "Collen Eaton",
-                    "Margaret Allen",
-                    "Dorothy Stanley-Turner",
-                    "Fernande Roux",
-                    "Joan Riddell",
-                    "Marjorie Eccles",
-                    "Suzanne Largeot\u00c9galement Coupe des Dames au rallye Monte-Carlo en 1939.",
-                    "Marjorie Fawcett",
-                    "Germaine Rouault",
-                    "Viviane Elder",
-                    "R\u00e9gine Gordine",
-                    "Yvonne Simon",
-                    "Betty Haig",
-                    "Gilberte Thirion",
-                    "Marie-Claude Beaumont",
-                    "Christine Beckers",
-                    "Anne-Charlotte Verney",
-                    "Yvette Fontaine",
-                    "Marie Laurent",
-                    "Martine R\u00e9nier",
-                    "Corinne Tarnaud",
-                    "Christine Dacremont",
-                    "Mich\u00e8le Mouton",
-                    "Marianne Hoepfner",
-                    "Lella Lombardi",
-                    "Anna Cambiaghi",
-                    "Juliette Slaughter",
-                    "Desir\u00e9 Wilson",
-                    "Margie Smith-Haas",
-                    "Lyn St. James",
-                    "Tomiko Yoshikawa",
-                    "Lilian Bryner",
-                    "Cathy Muller",
-                    "Claudia H\u00fcrtgen",
-                    "Vanina Ickx",
                     "",
-                    "Milka Duno",
-                    "Natacha Gachnang",
-                    "Cyndie Allemann",
-                    "Rahel Frey",
-                    "Andrea Robertson",
-                    "Keiko Ihara",
-                    "In\u00e8s Taittinger",
-                    "Christina Nielsen",
-                    "Michelle Gatting",
-                    "Manuela Gostner",
-                    "Tatiana Calder\u00f3n",
-                    "Sophia Fl\u00f6rsch",
-                    "Beitske Visser",
-                    "Sarah Bovy",
-                    "Lilou Wadoux",
-                    "Doriane Pin"
+                    "Afrique du Sud"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with Victoiresen cat\u00e9gorie was greater than or equal to 0, has the 45th largest D\u00e9parts?",
+                "question": "Which Pays, with Victoiresen cat\u00e9gorie was equal to 1, has the 6th largest Top 10?",
                 "answers": [
-                    "Joan Chetwynd",
-                    "H.H. Stisted",
-                    "Marie Desprez",
-                    "Dorothy Champney",
-                    "Gordon Simpson",
-                    "Doreen Evans",
-                    "Barbara Skinner",
-                    "Collen Eaton",
-                    "Margaret Allen",
-                    "Dorothy Stanley-Turner",
-                    "Fernande Roux",
-                    "Joan Riddell",
-                    "Marjorie Eccles",
-                    "Marjorie Fawcett",
-                    "Viviane Elder",
-                    "R\u00e9gine Gordine",
-                    "Betty Haig",
-                    "Gilberte Thirion",
-                    "Marie Laurent",
-                    "Corinne Tarnaud",
-                    "Mich\u00e8le Mouton",
-                    "Anna Cambiaghi",
-                    "Juliette Slaughter",
-                    "Cathy Muller",
-                    "",
-                    "Cyndie Allemann",
-                    "Andrea Robertson",
-                    "In\u00e8s Taittinger",
-                    "Doriane Pin"
+                    ""
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with Victoiresen cat\u00e9gorie was greater than 0, has the 9th largest Victoires?",
+                "question": "How many years had passed between when the Nom was Gordon Simpson and when the Nom was Andrea Robertson?",
                 "answers": [
-                    "Odette Siko",
-                    "Marie Laurent",
-                    "Christine Dacremont",
-                    "Mich\u00e8le Mouton",
-                    "Marianne Hoepfner",
-                    "Suzanne Largeot\u00c9galement Coupe des Dames au rallye Monte-Carlo en 1939.",
-                    "Marie-Claude Beaumont",
-                    "Christine Beckers",
-                    "Anne-Charlotte Verney",
-                    "Yvette Fontaine"
+                    "76"
                 ],
-                "reasoning_type": "numerical_comparison"
+                "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Top 10 was less than or equal to 0?",
+                "question": "How many years had passed between when the Nom was Corinne Tarnaud and when the Nom was Gilberte Thirion?",
                 "answers": [
-                    "61"
+                    "21"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Pays had D\u00e9parts was greater than or equal to 4 and Top 10 was greater than 0?",
+                "answers": [
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Victoires was greater than 0?",
+                "question": "How many Pays had Victoires was equal to 0?",
                 "answers": [
-                    "0"
+                    "67"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Victoires when the Victoiresen cat\u00e9gorie was equal to 0?",
+                "question": "How many Pays had D\u00e9parts was greater than or equal to 2 and Victoires was equal to 0?",
                 "answers": [
-                    "0.0"
+                    "38"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Top 10 when the D\u00e9parts was equal to 2?",
+                "answers": [
+                    "0.07"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of D\u00e9parts when the Victoires was less than or equal to 0?",
+                "question": "What was the sum of Top 10 when the Victoires was equal to 0?",
                 "answers": [
-                    "156.0"
+                    "7.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Victoiresen cat\u00e9gorie when the D\u00e9parts was greater than or equal to 1?",
+                "question": "What was the average of Top 10 when the D\u00e9parts was greater than 2?",
                 "answers": [
-                    "0.15"
+                    "0.26"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -1131,7 +1042,7 @@
             "numeric",
             "numeric"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [
             1,
             2,
@@ -1143,31 +1054,33 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Pays when the Pilotes was greater than 2 and the Top 10 was less than or equal to 0?",
+                "question": "What was the Premier when the Pilotes was less than or equal to 2 and the Top 10 was less than or equal to 0?",
                 "answers": [
-                    ""
+                    "2016",
+                    "1992",
+                    "1997",
+                    "1934",
+                    "1935",
+                    "2001"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Pays when the D\u00e9parts was less than 8 and the Victoire en cat\u00e9gorie was equal to 0?",
+                "question": "What was the Premier when the Pilotes was greater than 2 and the Top 10 was greater than or equal to 0?",
                 "answers": [
-                    ""
+                    "1930",
+                    "1931",
+                    "1954",
+                    "1993",
+                    "1984",
+                    "1975"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Pays, with D\u00e9parts was equal to 7, have Top 10 was equal to 0?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Pays, with Top 10 was greater than 0, have Premier was equal to 1954?",
+                "question": "Does every Premier, with Pilotes was greater than or equal to 2, have Victoire en cat\u00e9gorie was less than or equal to 0?",
                 "answers": [
                     "No"
                 ],
@@ -1175,39 +1088,53 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Pays, with D\u00e9parts was greater than 3, has the 4th largest Premier?",
+                "question": "Does only Premier, with D\u00e9parts was equal to 7, have Victoire en cat\u00e9gorie was greater than or equal to 0?",
                 "answers": [
-                    ""
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Premier, with Victoire en cat\u00e9gorie was greater than or equal to 0, has the 13rd largest Top 10?",
+                "answers": [
+                    "1931",
+                    "1984",
+                    "1975",
+                    "2016",
+                    "1992",
+                    "1997",
+                    "1934",
+                    "1935",
+                    "2001"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Pays, with D\u00e9parts was less than or equal to 2, has the 3rd largest Premier?",
+                "question": "Which Premier, with D\u00e9parts was less than or equal to 7, has the 9th largest Victoire en cat\u00e9gorie?",
                 "answers": [
-                    ""
+                    "1975",
+                    "1992",
+                    "1997",
+                    "1934",
+                    "1982",
+                    "1935",
+                    "2001"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Pays, with Premier was greater than 1954, has the 1st largest Pilotes?",
+                "question": "Which Premier, with Top 10 was greater than 0, has the 1st largest Pilotes?",
                 "answers": [
-                    ""
+                    "1930"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Pays had Premier was greater than 1954?",
-                "answers": [
-                    "10"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Pays had D\u00e9parts was less than or equal to 7?",
+                "question": "How many Premier had Pilotes was less than or equal to 2 and D\u00e9parts was less than or equal to 8?",
                 "answers": [
                     "9"
                 ],
@@ -1215,33 +1142,41 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Pays had Premier was greater than or equal to 2001?",
+                "question": "How many Premier had Top 10 was less than 1 and D\u00e9parts was greater than or equal to 2?",
                 "answers": [
-                    "4"
+                    "11"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Pilotes when the D\u00e9parts was greater than 3?",
+                "question": "How many Premier had Top 10 was less than or equal to 0?",
                 "answers": [
-                    "6.67"
+                    "11"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Top 10 when the Pilotes was greater than 4?",
+                "answers": [
+                    "2.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Premier when the Top 10 was greater than 0?",
+                "question": "What was the average of Top 10 when the D\u00e9parts was greater than 16?",
                 "answers": [
-                    "1964.75"
+                    "2.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Victoire en cat\u00e9gorie when the D\u00e9parts was less than or equal to 7?",
+                "question": "What was the sum of Top 10 when the Victoire en cat\u00e9gorie was greater than 0?",
                 "answers": [
-                    "0.0"
+                    "5.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -1548,8 +1483,9 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9quipe when the Ann\u00e9e was after 1976 and the Classementdans la classe is Abandon?",
+                "question": "What was the \u00c9quipe when the Ann\u00e9e was after 1951 and the Classement is Abandon?",
                 "answers": [
+                    "Elf Switzerland",
                     "Team Esso Aseptogyl",
                     "WM A.E.R.E.M. / Team Esso Aseptogyl",
                     "Euro Racing   A.O. Racing",
@@ -1560,16 +1496,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the \u00c9quipe when the Pilotes string contains Frey and the Ann\u00e9e was after 2020?",
+                "question": "What was the \u00c9quipe when the Pilotes string ends with Muller and the Ann\u00e9e was before 2019?",
                 "answers": [
-                    "Iron Lynx",
-                    "Iron Dames"
+                    "Euro Racing   A.O. Racing"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every \u00c9quipe, with Ann\u00e9e was after 1935, have Classement is Abandon?",
+                "question": "Does only \u00c9quipe, with Classementdans la classe is Abandon, have Ann\u00e9e was after 1975?",
                 "answers": [
                     "No"
                 ],
@@ -1577,7 +1512,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only \u00c9quipe, with Classementdans la classe is Abandon, have Pilotes string contains Frey?",
+                "question": "Does only \u00c9quipe, with Ann\u00e9e was before 1938, have Classement is Abandon?",
                 "answers": [
                     "No"
                 ],
@@ -1585,23 +1520,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which \u00c9quipe, with Ann\u00e9e was after 1975, happened the 6th according to Ann\u00e9e?",
+                "question": "Which \u00c9quipe, with Ann\u00e9e was after 1950, happened the 18th according to Ann\u00e9e?",
                 "answers": [
-                    "Matech Competition"
+                    "Iron Dames"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which \u00c9quipe, with Classementdans la classe is Abandon, happened the 4th according to Ann\u00e9e?",
+                "question": "Which \u00c9quipe, with Ann\u00e9e was before 1977, happened the 9th according to Ann\u00e9e?",
                 "answers": [
-                    "Mme. A. Itier"
+                    "G. E. T. Eyston"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which \u00c9quipe, with Ann\u00e9e was after 1939, happened the 5th according to Ann\u00e9e?",
+                "question": "Which \u00c9quipe, with Ann\u00e9e was on 1975, happened the 1st according to Ann\u00e9e?",
                 "answers": [
                     "Anne-Charlotte Verney",
                     "Soci\u00e9t\u00e9 Esso",
@@ -1611,41 +1546,41 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Voiture was Riley Nine MPH Six Racing and when the Voiture was WM P76 / Peugeot?",
+                "question": "How many years had passed between when the Voiture was Riley Nine MPH Six Racing and when the Voiture was Porsche 911 RSR-19?",
                 "answers": [
-                    "43"
+                    "88"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Pilotes was Gordon Simpson Joan Richmond and when the Pilotes was Joan Chetwynd  H.H. Stistend?",
+                "question": "How many years had passed between when the Pilotes was Fernande Roux Germaine Rouault and when the Pilotes was Natacha Gachnang Cyndie Allemann Rahel Frey?",
                 "answers": [
-                    "4"
+                    "72"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u00c9quipe had Ann\u00e9e was before 1935?",
+                "question": "How many \u00c9quipe had Classementdans la classe is Abandon?",
                 "answers": [
-                    "4"
+                    "11"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u00c9quipe had Ann\u00e9e was before 1978 and Classementdans la classe is Abandon?",
+                "question": "How many \u00c9quipe had Ann\u00e9e was on 1938?",
                 "answers": [
-                    "7"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many \u00c9quipe had Classement is Abandon and Ann\u00e9e was before 2010?",
+                "question": "How many \u00c9quipe had Classementdans la classe is Abandon and Classement is Abandon?",
                 "answers": [
-                    "9"
+                    "11"
                 ],
                 "reasoning_type": "counting"
             }

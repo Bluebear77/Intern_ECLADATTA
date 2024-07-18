@@ -77,49 +77,61 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the \u00c9poux string contains en and the El\u00e9ments biographiques string contains de?",
+                "question": "What was the \u00c9poux when the Nom\n(dates) string contains de and the Titres string contains de?",
                 "answers": [
-                    "Rothilde de Brosse\n(?-972)",
-                    "Ermengarde\n(?-1034)",
-                    "Adeline de Nevers",
-                    "Agn\u00e8s de Savoie\n(1104-1180)",
-                    "Mathilde  de Bourbon\n(1165-1218)"
+                    "* Aymar de Bourbon",
+                    "* Aymon Ier de Bourbon",
+                    "* Archambaud Ier de Bourbon (mariage en 961)",
+                    "* Archambaud II de Bourbon (mariage en 1000)",
+                    "* Archambaud III de Bourbon",
+                    "* Archambaud IV de Bourbon",
+                    "* Aymon II de Bourbon (mariage en 1099)",
+                    "* Archambaud VII de Bourbon (mariage en 1140)",
+                    "* Gaucher IV de M\u00e2con (mariage en 1178)\n* Guy II de Dampierre (mariage en 1196)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom\n(dates) when the \u00c9poux string contains de and the El\u00e9ments biographiques string contains IV?",
+                "question": "What was the \u00c9poux when the Titres string contains Bourbon and the El\u00e9ments biographiques string contains de?",
                 "answers": [
-                    "Beltrude"
+                    "* Aymar de Bourbon",
+                    "* Aymon Ier de Bourbon",
+                    "* Archambaud Ier de Bourbon (mariage en 961)",
+                    "* Archambaud II de Bourbon (mariage en 1000)",
+                    "* Archambaud III de Bourbon",
+                    "* Archambaud IV de Bourbon",
+                    "* Aymon II de Bourbon (mariage en 1099)",
+                    "* Archambaud VII de Bourbon (mariage en 1140)",
+                    "* Gaucher IV de M\u00e2con (mariage en 1178)\n* Guy II de Dampierre (mariage en 1196)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom\n(dates), with Titres string contains Bourbon, have \u00c9poux string contains Ier?",
+                "question": "Does every \u00c9poux, with El\u00e9ments biographiques string contains de, have Nom\n(dates) string contains de?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains V, have Titres string contains de?",
+                "question": "Does only \u00c9poux, with Titres string contains de, have Nom\n(dates) string contains Bourbon?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had Titres string contains de?",
+                "question": "How many \u00c9poux had Titres string contains Dame?",
                 "answers": [
                     "10"
                 ],
@@ -127,15 +139,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had \u00c9poux string ends with Bourbon?",
+                "question": "How many \u00c9poux had Titres string contains Bourbon and Nom\n(dates) string contains de?",
                 "answers": [
-                    "5"
+                    "9"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de and \u00c9poux string contains de?",
+                "question": "How many \u00c9poux had Titres string contains Dame and El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "9"
                 ],
@@ -203,16 +215,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Titres string contains de and the \u00c9poux string contains Bourgogne?",
-                "answers": [
-                    "Mathilde II de Bourbon\n(1234-1262)",
-                    "Agn\u00e8s de Bourbon\n(1237-1287)"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom when the \u00c9poux string contains en and the Titres string contains Bourbon?",
+                "question": "What was the Nom when the \u00c9poux string contains de and the Titres string contains Bourbon?",
                 "answers": [
                     "B\u00e9atrice de Montlu\u00e7on",
                     "Yolande de Ch\u00e2tillon\n(1221-1254)",
@@ -223,15 +226,18 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with \u00c9poux string contains VIII, have El\u00e9ments biographiques string contains de?",
+                "question": "What was the Nom when the Titres string contains Bourbon and the \u00c9poux string contains en?",
                 "answers": [
-                    "No"
+                    "B\u00e9atrice de Montlu\u00e7on",
+                    "Yolande de Ch\u00e2tillon\n(1221-1254)",
+                    "Mathilde II de Bourbon\n(1234-1262)",
+                    "Agn\u00e8s de Bourbon\n(1237-1287)"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom, with \u00c9poux string contains VIII, have Titres string contains Bourbon?",
+                "question": "Does only Nom, with Titres string contains Bourbon, have El\u00e9ments biographiques string contains Fille?",
                 "answers": [
                     "Yes"
                 ],
@@ -239,7 +245,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had El\u00e9ments biographiques string contains de?",
+                "question": "Does every Nom, with Titres string contains Bourbon, have El\u00e9ments biographiques string contains la?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had \u00c9poux string contains de?",
                 "answers": [
                     "4"
                 ],
@@ -247,7 +261,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had El\u00e9ments biographiques string contains Fille and \u00c9poux string contains en?",
+                "question": "How many Nom had \u00c9poux string contains en?",
                 "answers": [
                     "4"
                 ],
@@ -255,9 +269,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had El\u00e9ments biographiques string contains Marguerite and \u00c9poux string contains en?",
+                "question": "How many Nom had Titres string contains Bourbon?",
                 "answers": [
-                    "2"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             }
@@ -293,29 +307,29 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains de and the Titres string contains Charolais?",
+                "question": "What was the Nom\n(dates) when the Titres string contains Bourbon and the El\u00e9ments biographiques string contains de?",
                 "answers": [
-                    "238x238px"
+                    "B\u00e9atrice de Bourgogne\n(1257-1310)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9poux string contains de and the El\u00e9ments biographiques string contains Jean?",
+                "question": "What was the Nom\n(dates) when the \u00c9poux string contains en and the Titres string contains de?",
                 "answers": [
-                    "238x238px"
+                    "B\u00e9atrice de Bourgogne\n(1257-1310)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Nom\n(dates) string contains de, have Titres string contains de?",
+                "question": "Does every Nom\n(dates), with Titres string contains Charolais, have El\u00e9ments biographiques string contains Fille?",
                 "answers": [
                     "Yes"
                 ],
@@ -323,7 +337,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with Titres string contains Charolais, have El\u00e9ments biographiques string contains de?",
+                "question": "Does every Nom\n(dates), with Titres string contains Dame, have \u00c9poux string contains en?",
                 "answers": [
                     "Yes"
                 ],
@@ -331,23 +345,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains en and El\u00e9ments biographiques string contains Fille?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains Dame and Nom\n(dates) string contains Bourgogne?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Nom\n(dates) string contains de?",
+                "question": "How many Nom\n(dates) had Titres string contains de?",
                 "answers": [
                     "1"
                 ],
@@ -457,43 +455,39 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the El\u00e9ments biographiques string contains II and the Titres string contains de?",
+                "question": "What was the Nom\n(dates) when the Titres string contains de and the \u00c9poux string contains Charles?",
                 "answers": [
-                    "266x266px",
-                    "146x146px",
-                    "171x171px",
-                    "145x145px",
-                    "177x177px",
-                    "186x186px"
+                    "Agn\u00e8s de Bourgogne\n(1407-1476)",
+                    "Suzanne de Bourbon\n(1491-1521)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Titres string contains de and the \u00c9poux string contains de?",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains en?",
                 "answers": [
-                    "273x273px",
-                    "266x266px",
-                    "146x146px",
-                    "229x229px",
-                    "171x171px",
-                    "145x145px",
-                    "140x140px",
-                    "177x177px",
-                    "139x139px",
-                    "186x186px"
+                    "Marie de Hainaut\n(1280-1354)",
+                    "Isabelle de Valois\n(1313-1383)",
+                    "Anne de Forez\n(1358-1417)",
+                    "Marie de Berry\n(1375-1434)",
+                    "Agn\u00e8s de Bourgogne\n(1407-1476)",
+                    "Jeanne de France\n(1435-1482)",
+                    "Catherine d'Armagnac\n(1466-1487)",
+                    "Jeanne de Bourbon-Vend\u00f4me\n(1465-1511)",
+                    "Anne de France\n(1461-1522)",
+                    "Suzanne de Bourbon\n(1491-1521)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Nom\n(dates) string contains Bourbon, have El\u00e9ments biographiques string contains de?",
+                "question": "Does every Nom\n(dates), with El\u00e9ments biographiques string contains de, have Titres string contains Bourbon?",
                 "answers": [
                     "Yes"
                 ],
@@ -501,7 +495,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with El\u00e9ments biographiques string contains de, have \u00c9poux string contains de?",
+                "question": "Does only Nom\n(dates), with \u00c9poux string contains de, have El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -509,23 +503,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Nom\n(dates) string contains de and Titres string contains de?",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains Bourbon and Titres string contains Bourbon?",
                 "answers": [
-                    "9"
+                    "10"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Nom\n(dates) string contains de?",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de?",
                 "answers": [
-                    "9"
+                    "10"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains la?",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de and Titres string contains de?",
                 "answers": [
                     "10"
                 ],
@@ -563,29 +557,29 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9poux string contains Charles and the Titres string contains Maine?",
+                "question": "What was the Nom\n(dates) when the Titres string contains de and the El\u00e9ments biographiques string contains de?",
                 "answers": [
-                    "143x143px"
+                    "Louise de Savoie\n(1476-1531)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Titres string contains France and the \u00c9poux string contains Charles?",
+                "question": "What was the Nom\n(dates) when the \u00c9poux string contains Charles and the El\u00e9ments biographiques string contains de?",
                 "answers": [
-                    "143x143px"
+                    "Louise de Savoie\n(1476-1531)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with \u00c9poux string contains Charles, have El\u00e9ments biographiques string contains de?",
+                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains de, have Titres string contains Bourbon?",
                 "answers": [
                     "Yes"
                 ],
@@ -593,7 +587,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with El\u00e9ments biographiques string contains de, have Titres string contains la?",
+                "question": "Does every Nom\n(dates), with El\u00e9ments biographiques string contains de, have Titres string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -601,7 +595,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains en and El\u00e9ments biographiques string contains la?",
+                "question": "How many Nom\n(dates) had Titres string contains de and El\u00e9ments biographiques string contains Ier?",
                 "answers": [
                     "1"
                 ],
@@ -609,7 +603,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9poux string contains Charles?",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains en and El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "1"
                 ],
@@ -663,39 +657,33 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9poux string contains Louis and the El\u00e9ments biographiques string contains la?",
+                "question": "What was the Nom\n(dates) when the Titres string contains de and the El\u00e9ments biographiques string contains de?",
                 "answers": [
-                    "149x149px",
-                    "143x143px"
+                    "Claire-Cl\u00e9mence de Maill\u00e9\n(1628-1694)",
+                    "Louise-Fran\u00e7oise de Bourbon\n(1673-1743)",
+                    "Bathilde d'Orl\u00e9ans\n(1750-1822)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9poux string contains de and the Titres string contains de?",
+                "question": "What was the Nom\n(dates) when the El\u00e9ments biographiques string contains de and the \u00c9poux string contains Louis?",
                 "answers": [
-                    "149x149px",
-                    "143x143px"
+                    "Claire-Cl\u00e9mence de Maill\u00e9\n(1628-1694)",
+                    "Louise-Fran\u00e7oise de Bourbon\n(1673-1743)",
+                    "Bathilde d'Orl\u00e9ans\n(1750-1822)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Nom\n(dates) string contains de, have El\u00e9ments biographiques string contains II?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Portrait, with \u00c9poux string contains de, have El\u00e9ments biographiques string contains de?",
+                "question": "Does only Nom\n(dates), with El\u00e9ments biographiques string contains de, have Titres string contains de?",
                 "answers": [
                     "Yes"
                 ],
@@ -703,7 +691,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had El\u00e9ments biographiques string contains de?",
+                "question": "Does every Nom\n(dates), with Titres string contains de, have \u00c9poux string contains en?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom\n(dates) had \u00c9poux string contains de and El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "3"
                 ],
@@ -711,15 +707,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de and \u00c9poux string contains II?",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de and Titres string contains de?",
                 "answers": [
-                    "2"
+                    "3"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Titres string contains de?",
+                "question": "How many Nom\n(dates) had El\u00e9ments biographiques string contains de?",
                 "answers": [
                     "3"
                 ],

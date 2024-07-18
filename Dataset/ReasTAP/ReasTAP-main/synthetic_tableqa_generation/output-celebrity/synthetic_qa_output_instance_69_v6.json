@@ -147,20 +147,16 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Notaire when the Lien internet string contains de and the Notes string contains de?",
+                "question": "What was the Notaire when the Lien internet string starts with Testament and the Acte notari\u00e9 string contains de?",
                 "answers": [
-                    "Pierre-Christophe Tessier",
-                    "Andr\u00e9 Guillaume Deshayes",
                     "Edme-Louis Bronod",
-                    "Guillaume Henri Picquais",
-                    "Joseph-Roch Andelle",
                     "Charles Nicolas Denis de Villiers"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Notaire when the Lien internet string contains Alexandrine and the Cote du document string starts with AN?",
+                "question": "What was the Notaire when the Notes string starts with Le and the Lien internet string starts with Testament?",
                 "answers": [
                     "Charles Nicolas Denis de Villiers"
                 ],
@@ -168,7 +164,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Notaire, with Notes string contains de, have Date string starts with 21?",
+                "question": "Does only Notaire, with Lien internet string starts with Testament, have Cote du document string starts with AN?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Notaire, with Notes string starts with Testament, have Lien internet string starts with Testament?",
                 "answers": [
                     "Yes"
                 ],
@@ -176,23 +180,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Notaire, with Date string starts with 21, have Notes string contains de?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Notaire had Acte notari\u00e9 string contains de?",
-                "answers": [
-                    "14"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Notaire had Notes string contains Roman?",
+                "question": "How many Notaire had Lien internet string starts with Testament and Notes string contains de?",
                 "answers": [
                     "2"
                 ],
@@ -200,9 +188,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Notaire had Lien internet string contains de?",
+                "question": "How many Notaire had Notes string starts with Le?",
                 "answers": [
-                    "9"
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Notaire had Acte notari\u00e9 string contains de?",
+                "answers": [
+                    "14"
                 ],
                 "reasoning_type": "counting"
             }
@@ -344,63 +340,45 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Notaire when the Ville is Paris and the \u00c9tude is XII?",
+                "question": "What was the P\u00e9riode d'exercice when the Notes string contains de and the Quartier is Louvre?",
                 "answers": [
-                    "Andr\u00e9 Guillaume Deshayes"
+                    "au"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Notaire when the Adresse string starts with rue and the P\u00e9riode d'exercice is au?",
+                "question": "What was the P\u00e9riode d'exercice when the \u00c9tude is LXXXVIII and the Notaire string starts with Louis?",
                 "answers": [
-                    "Claude Aleaume",
-                    "Joseph-Roch Andelle",
-                    "Sylvain Ballot",
-                    "Louis Bronod",
-                    "Edme-Louis Bronod",
-                    "Charles Nicolas Denis de Villiers",
-                    "Andr\u00e9 Guillaume Deshayes",
-                    "Hubert-Antoine Gibe",
-                    "Bernard Maigret",
-                    "Guillaume Henri Picquais",
-                    "Pierre-Christophe Tessier"
+                    "au"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Notaire, with P\u00e9riode d'exercice is au, have \u00c9tude is LVI?",
+                "question": "Does only P\u00e9riode d'exercice, with Adresse string starts with rue, have Notaire string contains Gibe?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Notaire, with Ville is Paris, have Notes string starts with rue?",
+                "question": "Does only P\u00e9riode d'exercice, with Notes string contains de, have Quartier is Louvre?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Notaire had Notes string contains son and Ville is Paris?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Notaire had P\u00e9riode d'exercice is au and Adresse string starts with rue?",
+                "question": "How many P\u00e9riode d'exercice had Adresse string contains rue and Ville is Paris?",
                 "answers": [
                     "11"
                 ],
@@ -408,9 +386,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Notaire had Quartier is Temple and Adresse string starts with rue?",
+                "question": "How many P\u00e9riode d'exercice had Adresse string starts with rue?",
                 "answers": [
-                    "1"
+                    "11"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many P\u00e9riode d'exercice had Adresse string starts with rue and Ville is Paris?",
+                "answers": [
+                    "11"
                 ],
                 "reasoning_type": "counting"
             }
@@ -443,29 +429,29 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the AN when the ET string contains de and the MC string contains Central?",
+                "question": "What was the MC when the RE string starts with Cote and the AN string starts with Archives?",
                 "answers": [
-                    "Archives Nationales"
+                    "Minutier Central"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the AN when the ET string starts with Cote and the MC string ends with Central?",
+                "question": "What was the MC when the AN string contains Archives and the RE string starts with Cote?",
                 "answers": [
-                    "Archives Nationales"
+                    "Minutier Central"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every AN, with ET string starts with Cote, have MC string contains Central?",
+                "question": "Does only MC, with ET string contains Cote, have RE string starts with Cote?",
                 "answers": [
                     "Yes"
                 ],
@@ -473,7 +459,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every AN, with MC string contains Central, have ET string starts with Cote?",
+                "question": "Does only MC, with RE string starts with Cote, have AN string starts with Archives?",
                 "answers": [
                     "Yes"
                 ],
@@ -481,7 +467,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many AN had MC string contains Central and ET string ends with Minute?",
+                "question": "How many MC had AN string starts with Archives?",
                 "answers": [
                     "1"
                 ],
@@ -489,7 +475,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many AN had ET string starts with Cote?",
+                "question": "How many MC had RE string starts with Cote and AN string starts with Archives?",
                 "answers": [
                     "1"
                 ],
@@ -497,7 +483,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many AN had MC string contains Central and RE string contains Cote?",
+                "question": "How many MC had ET string starts with Cote?",
                 "answers": [
                     "1"
                 ],

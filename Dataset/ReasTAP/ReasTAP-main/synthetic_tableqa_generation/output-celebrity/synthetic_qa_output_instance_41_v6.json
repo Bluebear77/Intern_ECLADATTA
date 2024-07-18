@@ -554,25 +554,17 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Does every Lieu, with Surface string contains Belgique, have Perdante(s) string contains robin?",
+                "question": "Which Lieu, with Surface string contains Moquette, happened the 1st according to Date?",
                 "answers": [
-                    "No"
+                    "Bois-le-Duc"
                 ],
-                "reasoning_type": "quantifiers"
+                "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Lieu, with Gagnante(s) string contains Belgique, have Perdante(s) string contains de?",
+                "question": "How many Lieu had Surface string starts with Moquette?",
                 "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Lieu had Surface string contains Finale and Perdante(s) string contains Belgique?",
-                "answers": [
-                    "2"
+                    "3"
                 ],
                 "reasoning_type": "counting"
             }
@@ -632,7 +624,7 @@
             "string",
             "numeric"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [
             1,
             2,
@@ -650,23 +642,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Ann\u00e9e when the 1999 was greater than or equal to 69 and the 2002 was equal to 5?",
+                "question": "What was the 1998 when the 2010 was less than or equal to 12 and the 2002 was less than or equal to 5?",
                 "answers": [
-                    "Rang"
+                    "226"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Ann\u00e9e when the 2003 was equal to 1 and the 2004 was less than or equal to 8?",
+                "question": "What was the 1998 when the 2004 was greater than or equal to 8 and the 2006 was equal to 1?",
                 "answers": [
-                    "Rang"
+                    "226"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Ann\u00e9e, with 1999 was less than or equal to 69, have 2010 was less than or equal to 12?",
+                "question": "Does only 1998, with 2004 was greater than or equal to 8, have 1999 was greater than or equal to 69?",
                 "answers": [
                     "Yes"
                 ],
@@ -674,7 +666,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Ann\u00e9e, with 2007 was less than or equal to 1, have 2004 was greater than or equal to 8?",
+                "question": "Does only 1998, with 2010 was less than or equal to 12, have 2001 was less than or equal to 7?",
                 "answers": [
                     "Yes"
                 ],
@@ -682,7 +674,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Ann\u00e9e had 2004 was greater than or equal to 8?",
+                "question": "How many 1998 had 2005 was less than or equal to 6?",
                 "answers": [
                     "1"
                 ],
@@ -690,7 +682,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Ann\u00e9e had 2003 was equal to 1?",
+                "question": "How many 1998 had 2010 was less than or equal to 12?",
                 "answers": [
                     "1"
                 ],
@@ -698,9 +690,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Ann\u00e9e had 2005 was less than 6?",
+                "question": "How many 1998 had 2006 was less than or equal to 1 and 2007 was equal to 1?",
                 "answers": [
-                    "0"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -736,7 +728,7 @@
             "numeric",
             "numeric"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [
             1,
             2,
@@ -748,23 +740,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Ann\u00e9e when the 2000 was less than or equal to 46 and the 2001 was equal to 46?",
+                "question": "What was the 1998 when the 2002 was greater than or equal to 43 and the 1999 was less than or equal to 260?",
                 "answers": [
-                    "Rang"
+                    "377"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Ann\u00e9e when the 2000 was greater than or equal to 46 and the 1999 was greater than or equal to 260?",
+                "question": "What was the 1998 when the 2000 was greater than or equal to 46 and the 2001 was equal to 46?",
                 "answers": [
-                    "Rang"
+                    "377"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Ann\u00e9e, with 1998 was less than or equal to 377, have 2000 was equal to 46?",
+                "question": "Does every 1998, with 2002 was equal to 43, have 2001 was less than or equal to 46?",
                 "answers": [
                     "Yes"
                 ],
@@ -772,7 +764,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Ann\u00e9e, with 2002 was equal to 43, have 2000 was equal to 46?",
+                "question": "Does every 1998, with 2000 was greater than or equal to 46, have Ann\u00e9e is Rang?",
                 "answers": [
                     "Yes"
                 ],
@@ -780,7 +772,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Ann\u00e9e had 1998 was equal to 377 and 1999 was greater than or equal to 260?",
+                "question": "How many 1998 had 2002 was greater than or equal to 43?",
                 "answers": [
                     "1"
                 ],
@@ -788,17 +780,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Ann\u00e9e had 1999 was greater than or equal to 260?",
+                "question": "How many 1998 had 2000 was less than 46?",
                 "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Ann\u00e9e had 1998 was equal to 377 and 2000 was equal to 46?",
-                "answers": [
-                    "1"
+                    "0"
                 ],
                 "reasoning_type": "counting"
             }
@@ -875,7 +859,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Pr\u00e9c\u00e9d\u00e9e par when the Cumul was greater than or equal to 117 and the Nombre desemaines was greater than or equal to 1?",
+                "question": "What was the Pr\u00e9c\u00e9d\u00e9e par when the # was greater than 3 and the Cumul was equal to 117?",
                 "answers": [
                     "Maria Sharapova"
                 ],
@@ -883,15 +867,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Pr\u00e9c\u00e9d\u00e9e par when the Nombre desemaines was less than 61 and the Cumul was equal to 56?",
+                "question": "What was the Pr\u00e9c\u00e9d\u00e9e par when the Nombre desemaines was less than or equal to 61 and the Cumul was greater than or equal to 117?",
                 "answers": [
-                    "Am\u00e9lie Mauresmo"
+                    "Maria Sharapova"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Pr\u00e9c\u00e9d\u00e9e par, with Cumul was equal to 45, have Nombre desemaines was greater than or equal to 1?",
+                "question": "Does every Pr\u00e9c\u00e9d\u00e9e par, with Cumul was equal to 56, have # was greater than or equal to 2?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Pr\u00e9c\u00e9d\u00e9e par, with Cumul was greater than or equal to 45, have Nombre desemaines was less than 44?",
                 "answers": [
                     "No"
                 ],
@@ -899,15 +891,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Pr\u00e9c\u00e9d\u00e9e par, with Nombre desemaines was greater than or equal to 1, have Suivie par string contains Maria?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Pr\u00e9c\u00e9d\u00e9e par, with # was less than or equal to 3, has the 2nd largest Nombre desemaines?",
+                "question": "Which Pr\u00e9c\u00e9d\u00e9e par, with Cumul was greater than 1, has the 2nd largest #?",
                 "answers": [
                     "Am\u00e9lie Mauresmo"
                 ],
@@ -915,7 +899,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Pr\u00e9c\u00e9d\u00e9e par, with Suivie par string starts with Maria, has the 2nd largest #?",
+                "question": "Which Pr\u00e9c\u00e9d\u00e9e par, with # was greater than or equal to 2, has the 3rd largest Nombre desemaines?",
                 "answers": [
                     "Am\u00e9lie Mauresmo"
                 ],
@@ -923,7 +907,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Pr\u00e9c\u00e9d\u00e9e par, with Suivie par string starts with Maria, has the 2nd largest Nombre desemaines?",
+                "question": "Which Pr\u00e9c\u00e9d\u00e9e par, with Nombre desemaines was less than or equal to 11, has the 1st largest #?",
                 "answers": [
                     "Am\u00e9lie Mauresmo"
                 ],
@@ -931,15 +915,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Pr\u00e9c\u00e9d\u00e9e par had Cumul was greater than or equal to 45 and Nombre desemaines was greater than 1?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Pr\u00e9c\u00e9d\u00e9e par had # was greater than or equal to 1?",
+                "question": "How many Pr\u00e9c\u00e9d\u00e9e par had Nombre desemaines was less than or equal to 61 and Cumul was less than or equal to 117?",
                 "answers": [
                     "4"
                 ],
@@ -947,7 +923,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Pr\u00e9c\u00e9d\u00e9e par had # was greater than 2?",
+                "question": "How many Pr\u00e9c\u00e9d\u00e9e par had Nombre desemaines was less than or equal to 11?",
                 "answers": [
                     "2"
                 ],
@@ -955,25 +931,33 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of Cumul when the # was less than or equal to 4?",
+                "question": "How many Pr\u00e9c\u00e9d\u00e9e par had Cumul was less than 117 and Nombre desemaines was less than or equal to 44?",
                 "answers": [
-                    "219.0"
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Cumul when the # was greater than or equal to 3?",
+                "answers": [
+                    "86.5"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of Cumul when the Suivie par string starts with Maria?",
+                "question": "What was the average of Cumul when the # was less than or equal to 4?",
                 "answers": [
-                    "173.0"
+                    "54.75"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of Cumul when the Nombre desemaines was less than 61?",
+                "question": "What was the average of Cumul when the Nombre desemaines was greater than 1?",
                 "answers": [
-                    "102.0"
+                    "72.67"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -1165,7 +1149,7 @@
             "numeric",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [
             1,
             2,
@@ -1177,32 +1161,25 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Joueuse when the Confrontations was greater than or equal to 13 and the D\u00e9faites was less than or equal to 59?",
+                "question": "What was the Meilleur classement when the Derni\u00e8re confrontation string contains tennis and the D\u00e9faites was less than or equal to 2?",
                 "answers": [
-                    "Serena Williams",
-                    "Kim Clijsters",
-                    "Am\u00e9lie Mauresmo",
-                    "Svetlana Kuznetsova",
-                    "Elena Dementieva",
-                    "Nadia Petrova",
-                    "Total"
+                    "1",
+                    "9"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Joueuse when the D\u00e9faites was less than or equal to 8 and the Confrontations was greater than or equal to 14?",
+                "question": "What was the Meilleur classement when the Derni\u00e8re confrontation string contains Masters and the Confrontations was less than 6?",
                 "answers": [
-                    "Serena Williams",
-                    "Am\u00e9lie Mauresmo",
-                    "Svetlana Kuznetsova",
-                    "Nadia Petrova"
+                    "1",
+                    "9"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Joueuse, with Confrontations was equal to 4, have Victoires was less than 11?",
+                "question": "Does every Meilleur classement, with Confrontations was less than or equal to 9, have D\u00e9faites was less than 1?",
                 "answers": [
                     "No"
                 ],
@@ -1210,7 +1187,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Joueuse, with D\u00e9faites was greater than or equal to 13, have Confrontations was less than 185?",
+                "question": "Does only Meilleur classement, with Derni\u00e8re confrontation string contains de, have Confrontations was less than or equal to 9?",
                 "answers": [
                     "No"
                 ],
@@ -1218,75 +1195,73 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Joueuse, with D\u00e9faites was less than or equal to 59, has the 1st largest Victoires?",
+                "question": "Which Meilleur classement, with Confrontations was greater than or equal to 7, has the 6th largest D\u00e9faites?",
                 "answers": [
-                    "Total"
+                    "1"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Joueuse, with Confrontations was greater than or equal to 7, has the 7th largest Victoires?",
+                "question": "Which Meilleur classement, with Victoires was greater than or equal to 11, has the 5th largest D\u00e9faites?",
                 "answers": [
-                    "Am\u00e9lie Mauresmo",
-                    "Anastasia Myskina",
-                    "Patty Schnyder"
+                    "3"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Joueuse, with Victoires was greater than or equal to 11, has the 4th largest Confrontations?",
+                "question": "Which Meilleur classement, with Confrontations was greater than 14, has the 4th largest D\u00e9faites?",
                 "answers": [
-                    "Nadia Petrova"
+                    "3"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Joueuse had D\u00e9faites was less than or equal to 3 and Victoires was greater than 7?",
+                "question": "How many Meilleur classement had Confrontations was greater than 13 and Joueuse string contains Williams?",
                 "answers": [
-                    "5"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Joueuse had Confrontations was greater than or equal to 9?",
+                "question": "How many Meilleur classement had Victoires was less than 14 and Confrontations was greater than or equal to 5?",
                 "answers": [
-                    "12"
+                    "13"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Joueuse had Victoires was greater than or equal to 7?",
+                "question": "How many Meilleur classement had Confrontations was greater than or equal to 8 and Victoires was less than or equal to 6?",
                 "answers": [
-                    "11"
+                    "2"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Victoires when the D\u00e9faites was greater than 2?",
+                "question": "What was the average of Confrontations when the D\u00e9faites was less than or equal to 8?",
                 "answers": [
-                    "23.0"
+                    "10.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of D\u00e9faites when the Confrontations was less than or equal to 7?",
+                "question": "What was the average of Confrontations when the D\u00e9faites was less than or equal to 3?",
                 "answers": [
-                    "6.0"
+                    "9.25"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of Victoires when the D\u00e9faites was greater than 2?",
+                "question": "What was the sum of D\u00e9faites when the Victoires was less than or equal to 2?",
                 "answers": [
-                    "184.0"
+                    "9.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -1448,40 +1423,39 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Tournoi when the Surface string contains battue and the Lieu is Madrid?",
+                "question": "What was the Tournoi when the Lieu is Paris and the Surface string ends with battue?",
                 "answers": [
-                    "Open de Madrid"
+                    "Roland-Garros"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Tournoi when the Surface string contains battue and the Cat\u00e9gorie string contains Premier?",
+                "question": "What was the Tournoi when the 2010 is Finale and the Lieu is Melbourne?",
                 "answers": [
-                    "Grand Prix de Stuttgart",
-                    "Open de Madrid"
+                    "Open d'Australie"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Tournoi, with Lieu is Melbourne, have 2010 is Finale?",
+                "question": "Does only Tournoi, with Cat\u00e9gorie string starts with Grand, have 2010 is Finale?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Tournoi, with Ultime adversaire string ends with Williams, have Lieu is Melbourne?",
+                "question": "Does every Tournoi, with 2010 is Finale, have Lieu is Melbourne?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Tournoi had Surface string contains battue and Cat\u00e9gorie string starts with Grand?",
+                "question": "How many Tournoi had Lieu is Brisbane and 2010 is Finale?",
                 "answers": [
                     "1"
                 ],
@@ -1489,7 +1463,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Tournoi had Cat\u00e9gorie string contains Grand?",
+                "question": "How many Tournoi had Cat\u00e9gorie string contains Events?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Tournoi had Surface string contains battue?",
                 "answers": [
                     "4"
                 ],
@@ -1694,31 +1676,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Open d'Australie when the Internationaux de France string ends with Davenport and the Ann\u00e9e was on 1999?",
+                "question": "What was the Open d'Australie when the US Open string ends with Williams and the Wimbledon string starts with Venus?",
                 "answers": [
-                    "-"
+                    "Monica Seles"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Open d'Australie when the Internationaux de France string contains Ana and the Ann\u00e9e was on 2007?",
+                "question": "What was the Open d'Australie when the Ann\u00e9e was on 2001 and the Wimbledon string ends with Williams?",
                 "answers": [
-                    "-"
+                    "Monica Seles"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Open d'Australie, with US Open string starts with Mary, have Ann\u00e9e was before 2007?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Open d'Australie, with US Open string contains Maria, have Open d'Australie is Finale?",
+                "question": "Does every Open d'Australie, with US Open string contains Williams, have Ann\u00e9e was before 2006?",
                 "answers": [
                     "Yes"
                 ],
@@ -1726,15 +1700,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Open d'Australie, with Wimbledon string contains Williams, happened the 3rd according to Ann\u00e9e?",
+                "question": "Does every Open d'Australie, with Ann\u00e9e was after 2001, have Wimbledon string contains Williams?",
                 "answers": [
-                    "Venus Williams"
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Open d'Australie, with Ann\u00e9e was before 2011, happened the 9th according to Ann\u00e9e?",
+                "answers": [
+                    "-"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Open d'Australie, with Ann\u00e9e was before 2005, happened the 6th according to Ann\u00e9e?",
+                "question": "Which Open d'Australie, with Ann\u00e9e was before 2007, happened the 6th according to Ann\u00e9e?",
                 "answers": [
                     "Kim Clijsters"
                 ],
@@ -1742,23 +1724,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Open d'Australie, with Ann\u00e9e was after 2004, happened the 2nd according to Ann\u00e9e?",
+                "question": "Which Open d'Australie, with Ann\u00e9e was before 2007, happened the 5th according to Ann\u00e9e?",
                 "answers": [
-                    "Am\u00e9lie Mauresmo"
+                    "Venus Williams"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Internationaux de France was Anik\u00f3 Kapros and when the Internationaux de France was Lindsay Davenport?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the US Open was Lindsay Davenport and when the US Open was Mary Pierce?",
+                "question": "How many years had passed between when the US Open was Mary Pierce and when the US Open was Lindsay Davenport?",
                 "answers": [
                     "5"
                 ],
@@ -1766,25 +1740,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Open d'Australie had Wimbledon string starts with Venus and Ann\u00e9e was after 2000?",
+                "question": "How many years had passed between when the Internationaux de France was Lindsay Davenport and when the Internationaux de France was Tathiana Garbin?",
                 "answers": [
-                    "2"
+                    "5"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Open d'Australie had Ann\u00e9e was before 2003?",
+                "answers": [
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Open d'Australie had Wimbledon string contains Williams and Ann\u00e9e was before 2009?",
+                "question": "How many Open d'Australie had Wimbledon string contains Williams and Ann\u00e9e was before 2004?",
                 "answers": [
                     "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Open d'Australie had US Open string starts with Mary and Ann\u00e9e was after 2002?",
-                "answers": [
-                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1863,27 +1837,11 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Open d'Australie when the Internationaux de France string contains finale and the Ann\u00e9e was before 2002?",
+                "question": "What was the Open d'Australie when the Ann\u00e9e was before 2003 and the Internationaux de France string contains finale?",
                 "answers": [
                     "(1/16) E. Dominikovic"
                 ],
                 "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Open d'Australie when the Ann\u00e9e was on 2001 and the Internationaux de France string contains finale?",
-                "answers": [
-                    "(1/16) E. Dominikovic"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Open d'Australie, with Ann\u00e9e was before 2003, have Internationaux de France string contains finale?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
@@ -1895,11 +1853,35 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the US Open was - and when the US Open was S. Jeyaseelan L. Krasnoroutska\u00efa?",
+                "question": "Does only Open d'Australie, with Internationaux de France string contains finale, have Ann\u00e9e was before 2002?",
                 "answers": [
-                    "2"
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the US Open was - and when the US Open was (1/16) C. Granados?",
+                "answers": [
+                    "1"
                 ],
                 "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the US Open was C. Dhenin M. Matev\u017ei\u010d and when the US Open was S. Jeyaseelan L. Krasnoroutska\u00efa?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Open d'Australie had Ann\u00e9e was before 2002?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
@@ -2017,7 +1999,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the Date was after 03/11/2003 and the Ultime adversaire string starts with Maria?",
+                "question": "What was the Nom de l'\u00e9dition when the # was greater than 2 and the Date was on 06/11/2006?",
                 "answers": [
                     "Sony Ericsson Championships Madrid"
                 ],
@@ -2025,7 +2007,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the Date was on 06/11/2006 and the # was less than or equal to 5?",
+                "question": "What was the Nom de l'\u00e9dition when the Ultime adversaire string starts with Maria and the # was greater than 3?",
                 "answers": [
                     "Sony Ericsson Championships Madrid"
                 ],
@@ -2033,15 +2015,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'\u00e9dition, with Ultime adversaire string starts with Maria, have Date was after 04/11/2002?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Nom de l'\u00e9dition, with Date was before 03/11/2003, have # was less than 5?",
+                "question": "Does only Nom de l'\u00e9dition, with Ultime adversaire string starts with Maria, have Date was on 05/11/2007?",
                 "answers": [
                     "Yes"
                 ],
@@ -2049,55 +2023,71 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Date was before 05/11/2007, happened the 3rd according to Date?",
+                "question": "Does only Nom de l'\u00e9dition, with Ultime adversaire string starts with Maria, have # was greater than 1?",
                 "answers": [
-                    "Tour Championships by Porsche Los Angeles"
+                    "No"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with # was less than or equal to 4, happened the 1st according to Date?",
-                "answers": [
-                    "Sanex Championships Munich"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Date was before 06/11/2006, happened the 3rd according to Date?",
-                "answers": [
-                    "Tour Championships by Porsche Los Angeles"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Date was before 03/11/2003, has the 2nd largest #?",
-                "answers": [
-                    "Sanex Championships Munich"
-                ],
-                "reasoning_type": "numerical_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Date was after 03/11/2003, has the 1st largest #?",
+                "question": "Which Nom de l'\u00e9dition, with Date was after 04/11/2002, happened the 2nd according to Date?",
                 "answers": [
                     "Sony Ericsson Championships Madrid"
                 ],
-                "reasoning_type": "numerical_comparison"
+                "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Date was after 04/11/2002, has the 1st largest #?",
+                "question": "Which Nom de l'\u00e9dition, with # was less than 4, happened the 2nd according to Date?",
                 "answers": [
-                    "Sony Ericsson Championships Madrid"
+                    "Home Depot Championships Los Angeles"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with Date was before 06/11/2006, has the 2nd largest #?",
+                "answers": [
+                    "Home Depot Championships Los Angeles"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had R\u00e9sultat string contains finale?",
+                "question": "Which Nom de l'\u00e9dition, with Date was after 04/11/2002, has the 3rd largest #?",
+                "answers": [
+                    "Tour Championships by Porsche Los Angeles"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom de l'\u00e9dition, with R\u00e9sultat string ends with finale, has the 3rd largest #?",
+                "answers": [
+                    "Sanex Championships Munich"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'\u00e9dition had Date was after 29/10/2001 and # was greater than or equal to 4?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'\u00e9dition had # was less than 5?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom de l'\u00e9dition had # was greater than or equal to 3?",
                 "answers": [
                     "3"
                 ],
@@ -2105,41 +2095,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had # was less than or equal to 3 and Date was on 04/11/2002?",
+                "question": "What was the sum of # when the Date was before 03/11/2003?",
                 "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had Date was before 06/11/2006?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the average of # when the R\u00e9sultat string contains de?",
-                "answers": [
-                    "1.5"
+                    "3.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of # when the Date was after 29/10/2001?",
+                "question": "What was the sum of # when the R\u00e9sultat string contains finale?",
                 "answers": [
-                    "14.0"
-                ],
-                "reasoning_type": "numerical_operation"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the average of # when the Date was after 29/10/2001?",
-                "answers": [
-                    "3.5"
+                    "6.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -2196,7 +2162,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the Date was on 15/08/2004 and the # was greater than or equal to 1?",
+                "question": "What was the Nom de l'olympiade when the Date was on 15/08/2004 and the R\u00e9sultat is Or?",
                 "answers": [
                     "Olympic Tennis Event Ath\u00e8nes"
                 ],
@@ -2204,11 +2170,19 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the Date was on 15/08/2004 and the R\u00e9sultat is Or?",
+                "question": "What was the Nom de l'olympiade when the # was equal to 1 and the R\u00e9sultat is Or?",
                 "answers": [
                     "Olympic Tennis Event Ath\u00e8nes"
                 ],
                 "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Nom de l'olympiade, with R\u00e9sultat is Or, have # was less than or equal to 1?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
@@ -2220,25 +2194,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'olympiade, with # was less than or equal to 1, have R\u00e9sultat is Or?",
+                "question": "How many Nom de l'olympiade had # was less than 1?",
                 "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had R\u00e9sultat is Or?",
-                "answers": [
-                    "1"
+                    "0"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had Date was before 15/08/2004?",
+                "question": "How many Nom de l'olympiade had Date was on 15/08/2004 and R\u00e9sultat is Or?",
                 "answers": [
-                    "0"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }

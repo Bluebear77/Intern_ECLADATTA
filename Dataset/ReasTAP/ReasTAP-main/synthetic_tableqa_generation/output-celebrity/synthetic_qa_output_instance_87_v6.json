@@ -47,31 +47,29 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the  when the Propri\u00e9taire is X and the D\u00e9tenteur de droits d'usage et de gestion is X?",
+                "question": "What was the Propri\u00e9taire when the D\u00e9tenteur de droits d'usage et de gestion is X and the Propri\u00e9taire sans droit d'ali\u00e9nation is X?",
                 "answers": [
-                    "1. Droit d'acc\u00e8s et pr\u00e9l\u00e8vement",
-                    "2. Droit de gestion"
+                    "X"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the  when the D\u00e9tenteur de droits d'usage et de gestion is X and the Propri\u00e9taire sans droit d'ali\u00e9nation is X?",
+                "question": "What was the Propri\u00e9taire when the Propri\u00e9taire sans droit d'ali\u00e9nation is X and the D\u00e9tenteur de droits d'usage et de gestion is X?",
                 "answers": [
-                    "1. Droit d'acc\u00e8s et pr\u00e9l\u00e8vement",
-                    "2. Droit de gestion"
+                    "X"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every , with Utilisateur autoris\u00e9 is X, have Propri\u00e9taire sans droit d'ali\u00e9nation is X?",
+                "question": "Does only Propri\u00e9taire, with Propri\u00e9taire sans droit d'ali\u00e9nation is X, have Utilisateur autoris\u00e9 is X?",
                 "answers": [
                     "Yes"
                 ],
@@ -79,7 +77,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only , with Propri\u00e9taire is X, have Utilisateur autoris\u00e9 is X?",
+                "question": "Does only Propri\u00e9taire, with D\u00e9tenteur de droits d'usage et de gestion is X, have Utilisateur autoris\u00e9 is X?",
                 "answers": [
                     "Yes"
                 ],
@@ -87,7 +85,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many  had Propri\u00e9taire sans droit d'ali\u00e9nation is X?",
+                "question": "How many Propri\u00e9taire had Propri\u00e9taire sans droit d'ali\u00e9nation is X?",
                 "answers": [
                     "3"
                 ],
@@ -95,15 +93,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many  had Propri\u00e9taire is X?",
+                "question": "How many Propri\u00e9taire had Propri\u00e9taire sans droit d'ali\u00e9nation is X and D\u00e9tenteur de droits d'usage et de gestion is X?",
                 "answers": [
-                    "4"
+                    "2"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many  had D\u00e9tenteur de droits d'usage et de gestion is X?",
+                "question": "How many Propri\u00e9taire had D\u00e9tenteur de droits d'usage et de gestion is X and Propri\u00e9taire sans droit d'ali\u00e9nation is X?",
                 "answers": [
                     "2"
                 ],

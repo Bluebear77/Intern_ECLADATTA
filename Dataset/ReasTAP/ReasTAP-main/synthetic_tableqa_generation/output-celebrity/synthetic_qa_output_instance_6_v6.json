@@ -26,7 +26,7 @@
             "string",
             "numeric"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [
             1,
             2,
@@ -36,23 +36,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Ann\u00e9e when the 2020 \u00e0 2021 string starts with Non and the 2018 was equal to 1?",
+                "question": "What was the 2018 when the Ann\u00e9e is Rang and the 2020 \u00e0 2021 string contains Non?",
                 "answers": [
-                    "Rang"
+                    "1"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Ann\u00e9e when the 2018 was greater than or equal to 1 and the 2019 was greater than or equal to 3?",
+                "question": "What was the 2018 when the 2019 was equal to 3 and the 2022 was equal to 18?",
                 "answers": [
-                    "Rang"
+                    "1"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Ann\u00e9e, with 2020 \u00e0 2021 string contains Non, have 2018 was greater than or equal to 1?",
+                "question": "Does every 2018, with Ann\u00e9e is Rang, have 2022 was greater than or equal to 18?",
                 "answers": [
                     "Yes"
                 ],
@@ -60,7 +60,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Ann\u00e9e, with 2020 \u00e0 2021 string contains Non, have 2019 was equal to 3?",
+                "question": "Does every 2018, with 2020 \u00e0 2021 string starts with Non, have 2022 was less than or equal to 18?",
                 "answers": [
                     "Yes"
                 ],
@@ -68,7 +68,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Ann\u00e9e had 2019 was equal to 3?",
+                "question": "How many 2018 had 2020 \u00e0 2021 string starts with Non and Ann\u00e9e is Rang?",
                 "answers": [
                     "1"
                 ],
@@ -76,7 +76,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Ann\u00e9e had 2018 was greater than or equal to 1 and 2022 was less than or equal to 18?",
+                "question": "How many 2018 had 2019 was greater than or equal to 3 and 2022 was greater than or equal to 18?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many 2018 had 2019 was less than or equal to 3?",
                 "answers": [
                     "1"
                 ],

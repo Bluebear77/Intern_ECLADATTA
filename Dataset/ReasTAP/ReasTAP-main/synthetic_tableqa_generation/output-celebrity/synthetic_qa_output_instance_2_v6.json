@@ -180,8 +180,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Organisation when the Ann\u00e9e was before 2014 and the Film string starts with Le?",
+                "question": "What was the Organisation when the Ann\u00e9e was on 2011 and the Film string starts with Harry?",
                 "answers": [
+                    "Scream Awards",
+                    "Nickelodeon Kids' Choice Awards",
+                    "Saturn Awards"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Organisation when the Ann\u00e9e was after 2010 and the Film string contains de?",
+                "answers": [
+                    "Scream Awards",
+                    "Nickelodeon Kids' Choice Awards",
+                    "Saturn Awards",
+                    "Teen Choice Award",
+                    "MTV Movie Award",
                     "St. Louis Critics Awards",
                     "Phoenix Film Critics Society Awards",
                     "Boston Society of Film Critics Awards"
@@ -190,15 +205,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Organisation when the Film string contains de and the Cat\u00e9gorie string starts with Saturn?",
+                "question": "Does every Organisation, with Cat\u00e9gorie string ends with film, have Film string starts with Harry?",
                 "answers": [
-                    "Acad\u00e9mie des films fantastiques et d'horreur"
+                    "Yes"
                 ],
-                "reasoning_type": "conjunction"
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Organisation, with Film string starts with Harry, have Ann\u00e9e was before 2012?",
+                "question": "Does only Organisation, with Ann\u00e9e was on 2011, have Film string contains de?",
                 "answers": [
                     "No"
                 ],
@@ -206,72 +221,69 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Organisation, with Ann\u00e9e was on 2012, have Cat\u00e9gorie string contains un?",
+                "question": "Which Organisation, with Ann\u00e9e was before 2012, happened the 12nd according to Ann\u00e9e?",
                 "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Organisation, with Film string contains les, happened the 1st according to Ann\u00e9e?",
-                "answers": [
-                    "Glamour Awards"
+                    "National Movie Awards",
+                    "MTV Movie Awards"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Organisation, with Ann\u00e9e was after 2002, happened the 18th according to Ann\u00e9e?",
+                "question": "Which Organisation, with Film string starts with Le, happened the 1st according to Ann\u00e9e?",
                 "answers": [
-                    "People's Choice Award",
-                    "American Comedy Awards"
+                    "St. Louis Critics Awards",
+                    "Phoenix Film Critics Society Awards",
+                    "Boston Society of Film Critics Awards"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Organisation, with Ann\u00e9e was before 2010, happened the 5th according to Ann\u00e9e?",
+                "question": "Which Organisation, with Ann\u00e9e was before 2011, happened the 2nd according to Ann\u00e9e?",
                 "answers": [
-                    "Broadcast Film Critics Association"
+                    "Acad\u00e9mie des films fantastiques et d'horreur",
+                    "Empire",
+                    "American Moviegoer Awards",
+                    "Young Artist Awards"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Cat\u00e9gorie was Empire Award. Meilleur d\u00e9but, avec Daniel Radcliffe et Rupert Grint and when the Cat\u00e9gorie was Interpr\u00e9tation de l'Ann\u00e9e?",
-                "answers": [
-                    "8"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Cat\u00e9gorie was Meilleure Actrice dans un r\u00f4le secondaire and when the Cat\u00e9gorie was Meilleure interpr\u00e9tation f\u00e9minine?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Organisation had Ann\u00e9e was before 2006?",
+                "question": "How many years had passed between when the Cat\u00e9gorie was Meilleure actrice. and when the Cat\u00e9gorie was Meilleure actrice pour un second r\u00f4le dans une com\u00e9die?",
                 "answers": [
                     "6"
                 ],
-                "reasoning_type": "counting"
+                "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Organisation had Film string contains Potter and Ann\u00e9e was before 2011?",
+                "question": "How many years had passed between when the Cat\u00e9gorie was Meilleure performance f\u00e9minine and when the Cat\u00e9gorie was Actrice de Soutien remarquable?",
                 "answers": [
                     "10"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Organisation had Film string contains la?",
+                "answers": [
+                    "9"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Organisation had Film string starts with Harry?",
+                "question": "How many Organisation had Ann\u00e9e was after 2008?",
+                "answers": [
+                    "13"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Organisation had Film string starts with Harry and Ann\u00e9e was before 2014?",
                 "answers": [
                     "15"
                 ],
@@ -474,77 +486,74 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Organisation when the Film string starts with Harry and the Cat\u00e9gorie string contains talent?",
+                "question": "What was the Organisation when the Ann\u00e9e was on 2012 and the Cat\u00e9gorie string ends with film?",
                 "answers": [
-                    "Total Film"
+                    "People's Choice Awards"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Organisation when the Film string starts with Le and the Cat\u00e9gorie string ends with ensemble?",
-                "answers": [
-                    "Boston Society of Film Critics",
-                    "Florida Film Critics Circle",
-                    "Georgia Film Critics Association"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Organisation, with Ann\u00e9e was before 2004, have Cat\u00e9gorie string contains un?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Organisation, with Film string starts with Harry, have Cat\u00e9gorie string contains film?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Organisation, with Ann\u00e9e was before 2012, happened the 2nd according to Ann\u00e9e?",
+                "question": "What was the Organisation when the Ann\u00e9e was on 2008 and the Cat\u00e9gorie string contains de?",
                 "answers": [
                     "Otto Awards"
                 ],
-                "reasoning_type": "temporal_comparison"
+                "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Organisation, with Ann\u00e9e was before 2013, happened the 11st according to Ann\u00e9e?",
+                "question": "Does only Organisation, with Ann\u00e9e was on 2007, have Film string contains Potter?",
                 "answers": [
-                    "Constellation Awards",
-                    "Otto Awards",
-                    "SyFy Genre Awards"
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Organisation, with Film string starts with Harry, have Ann\u00e9e was after 2008?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Organisation, with Ann\u00e9e was after 2013, happened the 3rd according to Ann\u00e9e?",
+                "answers": [
+                    "MTV Movie Awards",
+                    "Teen Choice Awards"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Organisation, with Film string contains Potter, happened the 9th according to Ann\u00e9e?",
+                "question": "Which Organisation, with Ann\u00e9e was after 2011, happened the 7th according to Ann\u00e9e?",
                 "answers": [
-                    "Constellation Awards",
-                    "Otto Awards",
-                    "SyFy Genre Awards"
+                    "MTV Movie Awards",
+                    "Teen Choice Awards"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Cat\u00e9gorie was Jeune talent de l'ann\u00e9e. and when the Cat\u00e9gorie was Meilleure actrice dans un second r\u00f4le?",
+                "question": "Which Organisation, with Ann\u00e9e was after 2008, happened the 11st according to Ann\u00e9e?",
                 "answers": [
-                    "8"
+                    "Boston Society of Film Critics",
+                    "Florida Film Critics Circle"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Cat\u00e9gorie was Meilleure Actrice (Bronze). and when the Cat\u00e9gorie was Meilleur baiser?",
+                "answers": [
+                    "5"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Cat\u00e9gorie was Gagnante du AOL Moviegoer Awards. and when the Cat\u00e9gorie was Jeune talent de l'ann\u00e9e.?",
+                "question": "How many years had passed between when the Film was Harry Potter \u00e0 l'\u00e9cole des sorciers and when the Film was Harry Potter et la Chambre des secrets?",
                 "answers": [
                     "1"
                 ],
@@ -552,25 +561,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Organisation had Ann\u00e9e was after 2002?",
+                "question": "How many Organisation had Film string starts with La?",
                 "answers": [
-                    "23"
+                    "2"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Organisation had Film string starts with Le?",
+                "question": "How many Organisation had Ann\u00e9e was after 2003 and Cat\u00e9gorie string contains un?",
                 "answers": [
-                    "7"
+                    "9"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Organisation had Ann\u00e9e was after 2008?",
+                "question": "How many Organisation had Ann\u00e9e was on 2017?",
                 "answers": [
-                    "13"
+                    "2"
                 ],
                 "reasoning_type": "counting"
             }

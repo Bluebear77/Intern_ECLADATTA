@@ -532,7 +532,31 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Does every Lieu, with Surface string contains Barrage, have Gagnante(s) string contains France?",
+                "question": "What was the Lieu when the Gagnante(s) string starts with Caroline and the Surface string contains battue?",
+                "answers": [
+                    "Rouen"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Lieu when the Gagnante(s) string starts with Caroline and the Perdante(s) string starts with Madison?",
+                "answers": [
+                    "St Louis"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Lieu, with Perdante(s) string contains Madison, have Gagnante(s) string starts with Caroline?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Lieu, with Perdante(s) string contains Rus, have Gagnante(s) string starts with Caroline?",
                 "answers": [
                     "Yes"
                 ],
@@ -540,49 +564,33 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Lieu, with Gagnante(s) string starts with Caroline, have Perdante(s) string contains Madison?",
+                "question": "Which Lieu, with Gagnante(s) string starts with Caroline, happened the 9th according to Date?",
                 "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Lieu, with Gagnante(s) string starts with Caroline, happened the 5th according to Date?",
-                "answers": [
-                    "G\u00eanes"
+                    "Marseille"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Lieu, with Gagnante(s) string starts with Caroline, happened the 13rd according to Date?",
+                "question": "Which Lieu, with Gagnante(s) string contains Caroline, happened the 17th according to Date?",
                 "answers": [
-                    "Strasbourg"
+                    "Li\u00e8ge"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Lieu, with Perdante(s) string starts with Caroline, happened the 1st according to Date?",
+                "question": "Which Lieu, with Gagnante(s) string starts with Caroline, happened the 4th according to Date?",
                 "answers": [
-                    "Ostrava"
+                    "St Louis"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Lieu had Gagnante(s) string starts with Caroline and Perdante(s) string starts with Madison?",
+                "question": "How many Lieu had Gagnante(s) string contains France?",
                 "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Lieu had Gagnante(s) string starts with Caroline and Surface string contains battue?",
-                "answers": [
-                    "2"
+                    "10"
                 ],
                 "reasoning_type": "counting"
             },
@@ -773,7 +781,7 @@
             "numeric",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [
             1,
             2,
@@ -785,29 +793,31 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Joueuse when the Pourcentagede victoires was less than 60 and the Confrontations was less than or equal to 5?",
+                "question": "What was the Meilleurclassement when the Victoires was greater than 1 and the Pourcentagede victoires was greater than 28,5?",
                 "answers": [
-                    "Agnieszka Radwa\u0144ska",
-                    "Madison Keys",
-                    "Anett Kontaveit",
-                    "Jelena Jankovi\u0107",
-                    "Andrea Petkovic"
+                    "1",
+                    "2",
+                    "3",
+                    "5"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Joueuse when the D\u00e9faites was less than or equal to 4 and the Victoires was equal to 3?",
+                "question": "What was the Meilleurclassement when the Pourcentagede victoires was less than or equal to 80 and the Confrontations was greater than or equal to 5?",
                 "answers": [
-                    "Johanna Konta",
-                    "Aryna Sabalenka",
-                    "Elina Svitolina"
+                    "2",
+                    "7",
+                    "1",
+                    "9",
+                    "4",
+                    "3"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Joueuse, with Confrontations was greater than 5, have D\u00e9faites was greater than or equal to 3?",
+                "question": "Does only Meilleurclassement, with Victoires was equal to 3, have Pourcentagede victoires was greater than 60?",
                 "answers": [
                     "No"
                 ],
@@ -815,7 +825,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Joueuse, with Pourcentagede victoires was less than 71,4, have Confrontations was equal to 5?",
+                "question": "Does every Meilleurclassement, with Victoires was greater than 2, have Confrontations was less than or equal to 5?",
                 "answers": [
                     "No"
                 ],
@@ -823,76 +833,75 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Joueuse, with Victoires was less than 3, has the 2nd largest Pourcentagede victoires?",
+                "question": "Which Meilleurclassement, with Victoires was equal to 3, has the 1st largest Confrontations?",
                 "answers": [
-                    "Simona Halep"
+                    "1"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Joueuse, with Pourcentagede victoires was greater than or equal to 40, has the 4th largest Meilleurclassement?",
+                "question": "Which Meilleurclassement, with Victoires was greater than or equal to 5, has the 2nd largest Pourcentagede victoires?",
                 "answers": [
-                    "Elina Svitolina",
-                    "Sloane Stephens"
+                    "3"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Joueuse, with Confrontations was less than or equal to 9, has the 14th largest Pourcentagede victoires?",
+                "question": "Which Meilleurclassement, with Pourcentagede victoires was equal to 40, has the 1st largest Confrontations?",
                 "answers": [
-                    "Anett Kontaveit",
-                    "Jelena Jankovi\u0107",
-                    "Andrea Petkovic"
+                    "2",
+                    "1",
+                    "9"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Joueuse had Victoires was greater than or equal to 2 and Confrontations was less than or equal to 9?",
+                "question": "How many Meilleurclassement had Victoires was greater than 1 and Confrontations was greater than or equal to 6?",
                 "answers": [
-                    "15"
+                    "8"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Joueuse had Pourcentagede victoires was greater than or equal to 22,2?",
+                "question": "How many Meilleurclassement had Pourcentagede victoires was greater than 22,2 and Victoires was less than or equal to 4?",
                 "answers": [
-                    "7"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Joueuse had Confrontations was greater than 6?",
+                "question": "How many Meilleurclassement had Pourcentagede victoires was less than or equal to 40 and Confrontations was equal to 5?",
                 "answers": [
-                    "6"
+                    "5"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Pourcentagede victoires when the D\u00e9faites was equal to 1?",
+                "question": "What was the average of D\u00e9faites when the Pourcentagede victoires was equal to 80?",
                 "answers": [
-                    "80.0"
+                    "1.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of D\u00e9faites when the Meilleurclassement was greater than or equal to 1?",
+                "question": "What was the sum of D\u00e9faites when the Confrontations was less than 9?",
                 "answers": [
-                    "56.0"
+                    "38.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Pourcentagede victoires when the D\u00e9faites was equal to 3?",
+                "question": "What was the average of Victoires when the Confrontations was equal to 5?",
                 "answers": [
-                    "159.0"
+                    "2.44"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -928,7 +937,7 @@
         "column_types": [
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": []
@@ -1381,7 +1390,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the  when the Tableau is Tableau and the Surface string contains battue?",
+                "question": "What was the  when the # was less than 24 and the Surface string contains battue?",
                 "answers": [
                     ""
                 ],
@@ -1389,7 +1398,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every , with Tableau is Tableau, have Tournoi string starts with US?",
+                "question": "What was the  when the # was less than 17 and the Surface string contains battue?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only , with Surface string ends with battue, have Tableau is Tableau?",
                 "answers": [
                     "No"
                 ],
@@ -1397,11 +1414,19 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only , with # was greater than or equal to 1, have Tournoi is Masters?",
+                "question": "Does only , with Tournoi is Masters, have # was greater than or equal to 4?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which , with Tour is Finale, has the 4th largest #?",
+                "answers": [
+                    ""
+                ],
+                "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
@@ -1413,7 +1438,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which , with Tableau is Tableau, has the 1st largest #?",
+                "question": "Which , with Tableau is Tableau, has the 12nd largest #?",
                 "answers": [
                     ""
                 ],
@@ -1421,57 +1446,49 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which , with Tournoi is Masters, has the 6th largest #?",
+                "question": "How many  had # was less than or equal to 22 and Tour is Finale?",
                 "answers": [
-                    ""
-                ],
-                "reasoning_type": "numerical_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many  had # was less than or equal to 5?",
-                "answers": [
-                    "5"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many  had Tableau is Tableau and Tournoi is Masters?",
+                "question": "How many  had Tour is Finale and # was less than 17?",
                 "answers": [
-                    "6"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many  had Tableau is Tableau?",
+                "question": "How many  had # was greater than or equal to 7 and Tournoi is Cincinnati?",
                 "answers": [
-                    "25"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of # when the Tournoi is Masters?",
+                "question": "What was the average of # when the Tournoi is Stuttgart?",
                 "answers": [
-                    "119.0"
+                    "10.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of # when the Tableau is Tableau?",
+                "question": "What was the average of # when the Tournoi is Wuhan?",
                 "answers": [
-                    "13.0"
+                    "6.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of # when the Tournoi is Masters?",
+                "question": "What was the sum of # when the Tableau is Tableau?",
                 "answers": [
-                    "19.83"
+                    "325.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -1545,31 +1562,31 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the Ultime(s) adversaire(s) string contains Venus and the # was equal to 1?",
+                "question": "What was the Nom de l'\u00e9dition when the Date was after 22/10/2017 and the # was equal to 2?",
                 "answers": [
-                    "BNP Paribas WTA Finals Singapour"
+                    "WTA Finals Fort Worth"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the Ultime(s) adversaire(s) string ends with Williams and the Date was before 31/10/2022?",
+                "question": "What was the Nom de l'\u00e9dition when the Date was after 22/10/2017 and the # was greater than 1?",
                 "answers": [
-                    "BNP Paribas WTA Finals Singapour"
+                    "WTA Finals Fort Worth"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'\u00e9dition, with Ultime(s) adversaire(s) string starts with Venus, have # was less than or equal to 2?",
+                "question": "Does every Nom de l'\u00e9dition, with Date was after 22/10/2017, have # was greater than 1?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'\u00e9dition, with Date was before 31/10/2022, have # was equal to 1?",
+                "question": "Does only Nom de l'\u00e9dition, with # was less than or equal to 2, have Date was on 22/10/2017?",
                 "answers": [
                     "Yes"
                 ],
@@ -1580,14 +1597,6 @@
                 "question": "How many Nom de l'\u00e9dition had # was greater than or equal to 1?",
                 "answers": [
                     "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had Date was after 31/10/2022?",
-                "answers": [
-                    "0"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1692,7 +1701,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the # was less than or equal to 2 and the Date was on 25/10/2015?",
+                "question": "What was the Nom de l'\u00e9dition when the # was less than or equal to 1 and the Date was on 25/10/2015?",
                 "answers": [
                     "BNP Paribas WTA Finals Singapour"
                 ],
@@ -1700,15 +1709,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'\u00e9dition when the R\u00e9sultat string starts with Round and the Date was before 23/10/2016?",
-                "answers": [
-                    "BNP Paribas WTA Finals Singapour"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom de l'\u00e9dition, with # was less than 2, have Date was on 25/10/2015?",
+                "question": "Does every Nom de l'\u00e9dition, with Date was on 23/10/2016, have # was greater than or equal to 2?",
                 "answers": [
                     "Yes"
                 ],
@@ -1716,19 +1717,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom de l'\u00e9dition, with Date was after 25/10/2015, have # was equal to 2?",
+                "question": "Does every Nom de l'\u00e9dition, with Date was on 25/10/2015, have R\u00e9sultat string starts with Round?",
                 "answers": [
                     "Yes"
                 ],
                 "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with # was equal to 1, happened the 3rd according to Date?",
-                "answers": [
-                    "BNP Paribas WTA Finals Singapour"
-                ],
-                "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
@@ -1740,7 +1733,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Date was on 25/10/2015, has the 1st largest #?",
+                "question": "Which Nom de l'\u00e9dition, with Date was before 23/10/2016, has the 2nd largest #?",
                 "answers": [
                     "BNP Paribas WTA Finals Singapour"
                 ],
@@ -1756,15 +1749,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom de l'\u00e9dition, with Date was on 25/10/2015, has the 3rd largest #?",
-                "answers": [
-                    "BNP Paribas WTA Finals Singapour"
-                ],
-                "reasoning_type": "numerical_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had R\u00e9sultat string starts with Round and # was greater than or equal to 1?",
+                "question": "How many Nom de l'\u00e9dition had # was less than or equal to 2 and Date was on 25/10/2015?",
                 "answers": [
                     "3"
                 ],
@@ -1772,23 +1757,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had # was greater than or equal to 1 and R\u00e9sultat string starts with Round?",
+                "question": "How many Nom de l'\u00e9dition had # was greater than or equal to 1?",
                 "answers": [
-                    "3"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'\u00e9dition had # was less than or equal to 1?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the sum of # when the Date was on 25/10/2015?",
+                "question": "What was the sum of # when the R\u00e9sultat string starts with Round?",
                 "answers": [
                     "3.0"
                 ],
@@ -1796,7 +1773,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of # when the Date was on 25/10/2015?",
+                "question": "What was the average of # when the Date was before 23/10/2016?",
                 "answers": [
                     "1.0"
                 ],
@@ -1871,15 +1848,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the # was greater than or equal to 1 and the Date was before 31/07/2021?",
-                "answers": [
-                    "Olympic Tennis Event Rio de Janeiro"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the # was equal to 2 and the Ultime adversaire string contains Donna?",
+                "question": "What was the Nom de l'olympiade when the Ultime adversaire string starts with Donna and the Date was on 31/07/2021?",
                 "answers": [
                     "Olympic Tennis Event Tokyo"
                 ],
@@ -1887,7 +1856,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'olympiade, with # was less than or equal to 2, have Date was on 06/08/2016?",
+                "question": "What was the Nom de l'olympiade when the # was less than or equal to 1 and the Date was before 31/07/2021?",
+                "answers": [
+                    "Olympic Tennis Event Rio de Janeiro"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom de l'olympiade, with Ultime adversaire string starts with Donna, have # was greater than or equal to 1?",
                 "answers": [
                     "Yes"
                 ],
@@ -1895,31 +1872,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom de l'olympiade, with # was less than or equal to 2, have Date was before 31/07/2021?",
+                "question": "Does only Nom de l'olympiade, with # was greater than 1, have Ultime adversaire string starts with Donna?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had # was less than or equal to 2?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had # was greater than 2?",
-                "answers": [
-                    "0"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had Date was on 31/07/2021?",
+                "question": "How many Nom de l'olympiade had Ultime adversaire string contains Donna and Date was on 31/07/2021?",
                 "answers": [
                     "1"
                 ],
@@ -1998,7 +1959,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the # was greater than or equal to 1 and the Date was on 31/07/2021?",
+                "question": "What was the Nom de l'olympiade when the Date was after 06/08/2016 and the # was greater than or equal to 1?",
                 "answers": [
                     "Olympic Tennis Event Tokyo"
                 ],
@@ -2006,23 +1967,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the # was equal to 1 and the Date was after 06/08/2016?",
+                "question": "What was the Nom de l'olympiade when the Date was before 31/07/2021 and the # was equal to 1?",
                 "answers": [
-                    "Olympic Tennis Event Tokyo"
+                    "Olympic Tennis Event Rio de Janeiro"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'olympiade, with # was less than or equal to 1, have Date was after 06/08/2016?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Nom de l'olympiade, with # was less than or equal to 1, have Date was on 31/07/2021?",
+                "question": "Does only Nom de l'olympiade, with Date was before 31/07/2021, have # was equal to 1?",
                 "answers": [
                     "No"
                 ],
@@ -2030,11 +1983,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom de l'olympiade had # was less than or equal to 1?",
+                "question": "Does every Nom de l'olympiade, with # was equal to 1, have Date was on 31/07/2021?",
                 "answers": [
-                    "2"
+                    "No"
                 ],
-                "reasoning_type": "counting"
+                "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
@@ -2101,7 +2054,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the # was equal to 1 and the Date was on 06/08/2016?",
+                "question": "What was the Nom de l'olympiade when the Date was on 06/08/2016 and the # was less than or equal to 1?",
                 "answers": [
                     "Olympic Tennis Event Rio de Janeiro"
                 ],
@@ -2109,7 +2062,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom de l'olympiade when the Date was on 06/08/2016 and the # was equal to 1?",
+                "question": "What was the Nom de l'olympiade when the Date was on 06/08/2016 and the # was greater than or equal to 1?",
                 "answers": [
                     "Olympic Tennis Event Rio de Janeiro"
                 ],
@@ -2117,7 +2070,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom de l'olympiade, with Date was on 06/08/2016, have # was equal to 1?",
+                "question": "Does only Nom de l'olympiade, with # was greater than or equal to 1, have Date was on 06/08/2016?",
                 "answers": [
                     "Yes"
                 ],
@@ -2125,7 +2078,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom de l'olympiade, with Date was on 06/08/2016, have # was equal to 1?",
+                "question": "Does every Nom de l'olympiade, with Date was on 06/08/2016, have # was less than or equal to 1?",
                 "answers": [
                     "Yes"
                 ],

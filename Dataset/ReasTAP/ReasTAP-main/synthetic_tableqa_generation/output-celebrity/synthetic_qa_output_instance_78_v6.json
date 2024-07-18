@@ -266,25 +266,24 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Vue d'artiste when the Rang was equal to 65 and the Notes string contains en?",
+                "question": "What was the Vue d'artiste when the Rang was less than 65 and the Armoiries string contains de?",
                 "answers": [
-                    "Cl\u00e9mence de Hongrie"
+                    "Marguerite de Bourgogneportrait fictif"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Vue d'artiste when the Notes string contains de and the Rang was less than or equal to 47?",
+                "question": "What was the Vue d'artiste when the \u00c9pouse de string starts with Charles and the Nom string contains environ?",
                 "answers": [
-                    "Ad\u00e9la\u00efde d'Aquitaine repr\u00e9sentation imaginaire r\u00e9trospective",
-                    "80pxrepr\u00e9sentation imaginaire r\u00e9trospective",
-                    "Constance d'Arlesrepr\u00e9sentation imaginaire r\u00e9trospective"
+                    "Blanche de Bourgogneportrait fictif",
+                    "Marie de Luxembourgportrait fictif et anachronique"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Vue d'artiste, with Nom string ends with ans, have Rang was less than or equal to 64?",
+                "question": "Does every Vue d'artiste, with \u00c9pouse de string starts with Louis, have Rang was equal to 59?",
                 "answers": [
                     "No"
                 ],
@@ -292,73 +291,73 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Vue d'artiste, with Rang was less than 65, have Armoiries string contains de?",
+                "question": "Does only Vue d'artiste, with Rang was greater than 44, have Armoiries string contains de?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Vue d'artiste, with \u00c9pouse de string starts with Robert, has the 1st largest Rang?",
+                "question": "Which Vue d'artiste, with Notes string starts with Fille, has the 2nd largest Rang?",
                 "answers": [
-                    "Constance d'Arlesrepr\u00e9sentation imaginaire r\u00e9trospective"
+                    "80pxrepr\u00e9sentation contemporaine pr\u00e9sum\u00e9e"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Vue d'artiste, with \u00c9pouse de string contains IV, has the 4th largest Rang?",
+                "question": "Which Vue d'artiste, with Nom string starts with Marguerite, has the 2nd largest Rang?",
                 "answers": [
-                    "Jeanne de Champagneportrait fictif"
+                    "Marguerite de Provence"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Vue d'artiste had Rang was less than or equal to 56?",
+                "question": "Which Vue d'artiste, with \u00c9pouse de string contains II, has the 4th largest Rang?",
                 "answers": [
-                    "13"
+                    "Agn\u00e8s de M\u00e9ranieportrait fictif"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Vue d'artiste had \u00c9pouse de string starts with Louis and Notes string contains fils?",
+                "answers": [
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Vue d'artiste had Nom string ends with ans and Rang was less than 54?",
+                "question": "How many Vue d'artiste had \u00c9pouse de string contains Louis and Notes string contains de?",
                 "answers": [
-                    "10"
+                    "8"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Vue d'artiste had Nom string ends with ans and \u00c9pouse de string contains I?",
+                "question": "How many Vue d'artiste had \u00c9pouse de string contains Louis?",
                 "answers": [
-                    "21"
+                    "8"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of Rang when the Nom string ends with ans?",
+                "question": "What was the sum of Rang when the \u00c9pouse de string starts with Louis?",
                 "answers": [
-                    "1415.0"
+                    "462.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Rang when the Notes string starts with Fille?",
+                "question": "What was the sum of Rang when the Notes string contains de?",
                 "answers": [
-                    "51.67"
-                ],
-                "reasoning_type": "numerical_operation"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the sum of Rang when the Notes string contains sa?",
-                "answers": [
-                    "985.0"
+                    "1418.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -569,25 +568,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9pouse de string contains le and the Rang was greater than 78?",
+                "question": "What was the Portrait when the Rang was equal to 71 and the Notes string starts with Fille?",
                 "answers": [
-                    "\u00c9lisabeth d'Autriche"
+                    "Blanche de Navarre"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the \u00c9pouse de string contains XII and the Rang was greater than or equal to 77?",
+                "question": "What was the Portrait when the Rang was equal to 77 and the Notes string starts with Fille?",
                 "answers": [
-                    "Jeanne de France",
-                    "Anne de Bretagne",
-                    "Marie Tudor"
+                    "Anne de Bretagne"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Notes string starts with Fille, have Rang was greater than 72?",
+                "question": "Does only Portrait, with \u00c9pouse de string contains Charles, have Notes string starts with Fille?",
                 "answers": [
                     "No"
                 ],
@@ -595,7 +592,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Rang was equal to 82, have Nom string starts with Catherine?",
+                "question": "Does every Portrait, with Rang was equal to 85, have Notes string contains la?",
                 "answers": [
                     "Yes"
                 ],
@@ -603,73 +600,81 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Portrait, with Notes string starts with Fille, has the 2nd largest Rang?",
+                "question": "Which Portrait, with Notes string starts with Fille, has the 15th largest Rang?",
                 "answers": [
-                    "\u00c9lisabeth d'Autriche"
+                    "Blanche de Navarre"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Portrait, with \u00c9pouse de string starts with Charles, has the 3rd largest Rang?",
+                "question": "Which Portrait, with Notes string contains Louis, has the 3rd largest Rang?",
                 "answers": [
-                    "Marie d'Anjou"
+                    "Jeanne de France"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Portrait, with Nom string starts with Anne, has the 2nd largest Rang?",
+                "question": "Which Portrait, with \u00c9pouse de string starts with Louis, has the 4th largest Rang?",
                 "answers": [
-                    "Anne de Bretagne"
+                    "Charlotte de Savoie"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9pouse de string contains II?",
+                "question": "How many years had passed between when the Nom was Sainte Jeanne de Francel'Estropi\u00e9e(, Nogent-le-Roi - , Bourges) morte \u00e0 40 ans and when the Nom was Blanche de NavarreBelle Sagesse(1331, ? \u2013 , Neaufles-Saint-Martin) morte \u00e0 67 ans?",
                 "answers": [
-                    "9"
+                    "148"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Portrait had Rang was greater than or equal to 75 and Nom string ends with ans?",
+                "answers": [
+                    "12"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Rang was less than or equal to 82 and Notes string starts with Fille?",
+                "question": "How many Portrait had Rang was less than 75 and Nom string ends with ans?",
                 "answers": [
-                    "13"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Rang was less than or equal to 78?",
+                "question": "How many Portrait had Rang was less than 77?",
                 "answers": [
-                    "10"
+                    "7"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Rang when the \u00c9pouse de string starts with Charles?",
+                "question": "What was the sum of Rang when the Notes string starts with Fille?",
                 "answers": [
-                    "76.6"
+                    "1240.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Rang when the Notes string starts with Fille?",
+                "question": "What was the sum of Rang when the Notes string contains III?",
                 "answers": [
-                    "77.5"
+                    "307.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of Rang when the \u00c9pouse de string starts with Charles?",
+                "question": "What was the sum of Rang when the \u00c9pouse de string contains II?",
                 "answers": [
-                    "383.0"
+                    "708.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -762,7 +767,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Rang was less than or equal to 90 and the Notes string starts with Fille?",
+                "question": "What was the Portrait when the Notes string starts with Fille and the Rang was less than or equal to 91?",
                 "answers": [
                     "Marguerite de France",
                     "Marie de M\u00e9dicis",
@@ -773,16 +778,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Rang was less than 89 and the Notes string starts with Fille?",
+                "question": "What was the Portrait when the Nom string contains ans and the \u00c9pouse de string ends with XV?",
                 "answers": [
-                    "Marguerite de France",
-                    "Marie de M\u00e9dicis"
+                    "Marie Leszcynska"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Notes string starts with Fille, have Rang was less than 89?",
+                "question": "Does every Portrait, with Nom string contains ans, have \u00c9pouse de string contains IV?",
                 "answers": [
                     "No"
                 ],
@@ -790,7 +794,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with \u00c9pouse de string ends with XIII, have Rang was greater than or equal to 86?",
+                "question": "Does every Portrait, with Rang was less than or equal to 86, have Notes string contains le?",
                 "answers": [
                     "Yes"
                 ],
@@ -798,39 +802,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Portrait, with \u00c9pouse de string starts with Louis, has the 1st largest Rang?",
+                "question": "Which Portrait, with Notes string starts with Fille, has the 1st largest Rang?",
                 "answers": [
-                    "Marie-Antoinette d'Autriche"
+                    "Marie Leszcynska"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Portrait, with Notes string contains premier, has the 2nd largest Rang?",
+                "question": "Which Portrait, with Nom string ends with ans, has the 6th largest Rang?",
                 "answers": [
-                    "Marie-Th\u00e9r\u00e8se de Habsbourg"
+                    "Marguerite de France"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Portrait, with \u00c9pouse de string starts with Louis, has the 3rd largest Rang?",
-                "answers": [
-                    "Marie-Th\u00e9r\u00e8se de Habsbourg"
-                ],
-                "reasoning_type": "numerical_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had \u00c9pouse de string starts with Louis?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Rang was greater than or equal to 87?",
+                "question": "How many Portrait had Rang was less than or equal to 90 and Nom string contains ans?",
                 "answers": [
                     "5"
                 ],
@@ -838,19 +826,19 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Rang was greater than 87?",
+                "question": "How many Portrait had Nom string starts with Marguerite?",
                 "answers": [
-                    "4"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Rang when the Notes string starts with Fille?",
+                "question": "How many Portrait had Rang was greater than or equal to 87 and \u00c9pouse de string starts with Louis?",
                 "answers": [
-                    "88.0"
+                    "4"
                 ],
-                "reasoning_type": "numerical_operation"
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
@@ -862,7 +850,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of Rang when the \u00c9pouse de string contains Louis?",
+                "question": "What was the average of Rang when the Notes string contains de?",
+                "answers": [
+                    "88.5"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Rang when the \u00c9pouse de string starts with Louis?",
                 "answers": [
                     "358.0"
                 ],
@@ -920,7 +916,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Rang was greater than or equal to 2 and the Notes string starts with Fille?",
+                "question": "What was the Nom when the Rang was less than or equal to 1 and the Notes string contains sa?",
+                "answers": [
+                    "Jos\u00e9phine de BeauharnaisLa vie amoureuse de l'imp\u00e9ratrice Jos\u00e9phine, par G\u00e9rard d'Houville, publi\u00e9 par Flammarion, 1925(, Les Trois-\u00celets - , Rueil-Malmaison) morte \u00e0 50 ans"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Nom when the Armoiries string contains px and the Notes string starts with Fille?",
                 "answers": [
                     "Marie-Louise d'Autriche(, Vienne - , Parme) morte \u00e0 56 ans"
                 ],
@@ -928,23 +932,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Rang was equal to 2 and the Notes string starts with Fille?",
-                "answers": [
-                    "Marie-Louise d'Autriche(, Vienne - , Parme) morte \u00e0 56 ans"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Nom, with Armoiries string starts with 120, have Notes string starts with Fille?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Nom, with Rang was greater than or equal to 1, have Armoiries string starts with 120?",
+                "question": "Does every Nom, with Rang was equal to 2, have Notes string starts with Fille?",
                 "answers": [
                     "Yes"
                 ],
@@ -952,7 +940,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with Armoiries string contains 120, has the 1st largest Rang?",
+                "question": "Does every Nom, with Armoiries string ends with px, have Rang was less than 2?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Nom, with Armoiries string contains px, has the 1st largest Rang?",
                 "answers": [
                     "Marie-Louise d'Autriche(, Vienne - , Parme) morte \u00e0 56 ans"
                 ],
@@ -960,39 +956,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with Armoiries string starts with 120, has the 2nd largest Rang?",
+                "question": "Which Nom, with Armoiries string starts with 120, has the 1st largest Rang?",
                 "answers": [
-                    "Jos\u00e9phine de BeauharnaisLa vie amoureuse de l'imp\u00e9ratrice Jos\u00e9phine, par G\u00e9rard d'Houville, publi\u00e9 par Flammarion, 1925(, Les Trois-\u00celets - , Rueil-Malmaison) morte \u00e0 50 ans"
+                    "Marie-Louise d'Autriche(, Vienne - , Parme) morte \u00e0 56 ans"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with Notes string contains de, has the 2nd largest Rang?",
-                "answers": [
-                    "Jos\u00e9phine de BeauharnaisLa vie amoureuse de l'imp\u00e9ratrice Jos\u00e9phine, par G\u00e9rard d'Houville, publi\u00e9 par Flammarion, 1925(, Les Trois-\u00celets - , Rueil-Malmaison) morte \u00e0 50 ans"
-                ],
-                "reasoning_type": "numerical_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Notes string contains est and Rang was less than or equal to 2?",
-                "answers": [
-                    "2"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Rang was greater than 2?",
-                "answers": [
-                    "0"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Rang was greater than 1 and Notes string contains par?",
+                "question": "How many Nom had Armoiries string starts with 120 and Notes string starts with Fille?",
                 "answers": [
                     "1"
                 ],
@@ -1000,7 +972,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of Rang when the Armoiries string starts with 120?",
+                "question": "How many Nom had Armoiries string starts with 120 and Rang was greater than or equal to 1?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Rang when the Armoiries string contains px?",
                 "answers": [
                     "3.0"
                 ],
@@ -1008,9 +988,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Rang when the Armoiries string contains px?",
+                "question": "What was the average of Rang when the Armoiries string ends with px?",
                 "answers": [
                     "1.5"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Rang when the Notes string contains de?",
+                "answers": [
+                    "3.0"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -1058,7 +1046,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Notes string contains Ferdinand and the Rang was less than or equal to 93?",
+                "question": "What was the Portrait when the Nom string contains 83 and the Rang was greater than or equal to 93?",
                 "answers": [
                     "Marie-Am\u00e9lie des Deux-Siciles"
                 ],
@@ -1066,7 +1054,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Portrait when the Rang was greater than or equal to 93 and the Notes string contains la?",
+                "question": "What was the Portrait when the Rang was greater than or equal to 93 and the \u00c9pouse de string contains I?",
                 "answers": [
                     "Marie-Am\u00e9lie des Deux-Siciles"
                 ],
@@ -1074,7 +1062,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Portrait, with Notes string contains de, have \u00c9pouse de string contains I?",
+                "question": "Does every Portrait, with Rang was equal to 93, have Nom string contains 83?",
                 "answers": [
                     "Yes"
                 ],
@@ -1082,7 +1070,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Portrait, with Notes string contains roi, have Nom string ends with ans?",
+                "question": "Does only Portrait, with \u00c9pouse de string contains I, have Rang was less than or equal to 93?",
                 "answers": [
                     "Yes"
                 ],
@@ -1090,7 +1078,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Rang was less than or equal to 93?",
+                "question": "How many Portrait had \u00c9pouse de string contains I and Nom string contains 83?",
                 "answers": [
                     "1"
                 ],
@@ -1098,17 +1086,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Portrait had Notes string contains la and Nom string ends with ans?",
+                "question": "How many Portrait had Rang was greater than or equal to 93?",
                 "answers": [
                     "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Portrait had Rang was greater than 93?",
-                "answers": [
-                    "0"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1156,7 +1136,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Rang was less than or equal to 3 and the \u00c9pouse de string ends with III?",
+                "question": "What was the Nom when the Notes string starts with Fille and the Rang was greater than or equal to 3?",
                 "answers": [
                     "Eug\u00e9nie de Montijo(, Grenade - , Madrid) morte \u00e0 94 ans"
                 ],
@@ -1164,7 +1144,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Rang was less than or equal to 3 and the Notes string starts with Fille?",
+                "question": "What was the Nom when the Rang was less than or equal to 3 and the Notes string contains III?",
                 "answers": [
                     "Eug\u00e9nie de Montijo(, Grenade - , Madrid) morte \u00e0 94 ans"
                 ],
@@ -1172,7 +1152,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with \u00c9pouse de string ends with III, have Rang was greater than or equal to 3?",
+                "question": "Does every Nom, with Rang was greater than or equal to 3, have \u00c9pouse de string contains III?",
                 "answers": [
                     "Yes"
                 ],
@@ -1180,7 +1160,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Rang was greater than or equal to 3, have Notes string starts with Fille?",
+                "question": "Does every Nom, with \u00c9pouse de string contains III, have Notes string starts with Fille?",
                 "answers": [
                     "Yes"
                 ],
@@ -1188,15 +1168,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Rang was greater than or equal to 3?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Rang was greater than or equal to 3 and Notes string starts with Fille?",
+                "question": "How many Nom had \u00c9pouse de string contains III and Rang was equal to 3?",
                 "answers": [
                     "1"
                 ],
@@ -1496,25 +1468,24 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Notes string starts with Concubine and the Titres string contains de?",
+                "question": "What was the Nom when the Notes string starts with On and the \u00c9pouse de string contains I?",
                 "answers": [
-                    "M\u00e9rofl\u00e8de(v.520\u2013v.567?)  morte \u00e0 probablement 47 ans environ",
-                    "Th\u00e9odechilde(v.520\u2013v.567?)  morte \u00e0 probablement 47 ans environ"
+                    "Haldetrude(v.580\u2013v.602)  morte \u00e0 22 ans environ",
+                    "Sichilde(v.590\u2013ap.627)  morte probablement vers 37 ans"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Notes string contains donne and the Titres string contains des?",
+                "question": "What was the Nom when the \u00c9pouse de string contains Ier and the Titres string contains des?",
                 "answers": [
-                    "Vuldetrade de Lombardie(v.520\u2013v.570?)  morte probablement \u00e0 50 ans environ",
-                    "Nantilde(v.610\u2013642)  morte \u00e0 32 ans environ"
+                    "Vuldetrade de Lombardie(v.520\u2013v.570?)  morte probablement \u00e0 50 ans environ"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Titres string contains des, have Notes string contains Concubine?",
+                "question": "Does every Nom, with Notes string starts with Concubine, have Titres string contains de?",
                 "answers": [
                     "No"
                 ],
@@ -1522,7 +1493,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom, with Titres string contains de, have Notes string contains de?",
+                "question": "Does only Nom, with Notes string contains est, have \u00c9pouse de string contains I?",
                 "answers": [
                     "No"
                 ],
@@ -1530,17 +1501,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Titres string ends with Francs and Notes string contains de?",
+                "question": "How many Nom had \u00c9pouse de string ends with II?",
                 "answers": [
-                    "3"
+                    "7"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Notes string contains roi and Titres string contains des?",
+                "question": "How many Nom had Titres string ends with Francs?",
                 "answers": [
-                    "8"
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Titres string contains des?",
+                "answers": [
+                    "23"
                 ],
                 "reasoning_type": "counting"
             }
@@ -1696,23 +1675,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the \u00c9pouse de string contains le and the Rang was greater than 27?",
+                "question": "What was the Nom when the Notes string contains de and the Rang was equal to 31?",
                 "answers": [
-                    "Fastrade(v.760 \u2013 794) morte \u00e0 34 ans environ",
-                    "Luitgarde d'Al\u00e9manie(v.776 \u2013 800) morte \u00e0 24 ans environ",
-                    "Ermengarde de Hesbaye(v.780 \u2013 ) morte \u00e0 38 ans environ",
-                    "Judith de Bavi\u00e8re(v.805 \u2013 ) morte \u00e0 38 ans environ",
-                    "Ermentrude d'Orl\u00e9ans(v.830 \u2013 ) morte \u00e0 49 ans environ",
-                    "Richilde d'Ardennes(v.845 \u2013 ) morte \u00e0 65 ans environ",
-                    "Ansgarde de Bourgogne(v.826 \u2013 v.881) morte \u00e0 55 ans environ",
-                    "Ad\u00e9la\u00efde de Frioul(v.850 \u2013 ) morte \u00e0 51 ans environ",
-                    "Richarde de Souabe Sainte Richarde d'Andlau(840 \u2013 ) morte \u00e0 56 ans environ"
+                    "Judith de Bavi\u00e8re(v.805 \u2013 ) morte \u00e0 38 ans environ"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the \u00c9pouse de is Charlemagne and the Titres string contains des?",
+                "question": "What was the Nom when the \u00c9pouse de is Charlemagne and the Rang was less than or equal to 35?",
                 "answers": [
                     "Himiltrude(v.750 \u2013 ap.769) morte au moins \u00e0 19 ans environ",
                     "D\u00e9sir\u00e9e de Lombardie(v.750 \u2013 ap.771) morte au moins \u00e0 21 ans environ",
@@ -1724,7 +1695,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with \u00c9pouse de is Charlemagne, have Rang was greater than or equal to 24?",
+                "question": "Does only Nom, with Notes string contains son, have Rang was less than or equal to 30?",
                 "answers": [
                     "No"
                 ],
@@ -1732,7 +1703,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom, with Titres string contains des, have Rang was greater than or equal to 31?",
+                "question": "Does every Nom, with Rang was less than or equal to 36, have Notes string starts with Fille?",
                 "answers": [
                     "No"
                 ],
@@ -1740,15 +1711,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with \u00c9pouse de is Charlemagne, has the 1st largest Rang?",
+                "question": "Which Nom, with \u00c9pouse de string starts with Louis, has the 4th largest Rang?",
                 "answers": [
-                    "Luitgarde d'Al\u00e9manie(v.776 \u2013 800) morte \u00e0 24 ans environ"
+                    "Ermengarde de Hesbaye(v.780 \u2013 ) morte \u00e0 38 ans environ"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with \u00c9pouse de string starts with Charles, has the 1st largest Rang?",
+                "question": "Which Nom, with Titres string contains Francs, has the 1st largest Rang?",
                 "answers": [
                     "Richarde de Souabe Sainte Richarde d'Andlau(840 \u2013 ) morte \u00e0 56 ans environ"
                 ],
@@ -1756,15 +1727,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Rang was greater than 30?",
+                "question": "Which Nom, with \u00c9pouse de string starts with Louis, has the 1st largest Rang?",
                 "answers": [
-                    "6"
+                    "Ad\u00e9la\u00efde de Frioul(v.850 \u2013 ) morte \u00e0 51 ans environ"
                 ],
-                "reasoning_type": "counting"
+                "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had \u00c9pouse de is Charlemagne?",
+                "question": "How many Nom had \u00c9pouse de is Charlemagne and Titres string contains Francs?",
                 "answers": [
                     "5"
                 ],
@@ -1772,33 +1743,41 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had \u00c9pouse de string contains le and Titres string contains Francs?",
+                "question": "How many Nom had Notes string starts with Fille and Titres string contains des?",
                 "answers": [
-                    "13"
+                    "2"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of Rang when the \u00c9pouse de string contains II?",
+                "question": "How many Nom had Rang was less than 28?",
                 "answers": [
-                    "170.0"
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Rang when the Titres string contains des?",
+                "answers": [
+                    "30.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Rang when the \u00c9pouse de is Charlemagne?",
+                "question": "What was the average of Rang when the Titres string ends with Lombards?",
                 "answers": [
-                    "27.0"
+                    "28.0"
                 ],
                 "reasoning_type": "numerical_operation"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Rang when the \u00c9pouse de string contains II?",
+                "question": "What was the average of Rang when the \u00c9pouse de string contains Charles?",
                 "answers": [
-                    "34.0"
+                    "33.67"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -1846,7 +1825,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Rang was greater than or equal to 37 and the Titres string contains des?",
+                "question": "What was the Nom when the \u00c9pouse de string contains de and the Rang was greater than or equal to 37?",
                 "answers": [
                     "Th\u00e9od\u00e9rade"
                 ],
@@ -1854,7 +1833,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the \u00c9pouse de string ends with France and the Notes string contains de?",
+                "question": "What was the Nom when the Titres string contains des and the \u00c9pouse de string contains de?",
                 "answers": [
                     "Th\u00e9od\u00e9rade"
                 ],
@@ -1862,7 +1841,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom, with Rang was less than or equal to 37, have Titres string contains de?",
+                "question": "Does only Nom, with Notes string contains de, have Titres string contains des?",
                 "answers": [
                     "Yes"
                 ],
@@ -1870,7 +1849,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom, with \u00c9pouse de string contains de, have Notes string contains par?",
+                "question": "Does every Nom, with \u00c9pouse de string contains de, have Rang was greater than or equal to 37?",
                 "answers": [
                     "Yes"
                 ],
@@ -1878,7 +1857,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Titres string contains de and Rang was greater than or equal to 37?",
+                "question": "How many Nom had Rang was less than or equal to 37?",
                 "answers": [
                     "1"
                 ],
@@ -1886,15 +1865,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Rang was greater than 37?",
+                "question": "How many Nom had Rang was equal to 37 and \u00c9pouse de string contains France?",
                 "answers": [
-                    "0"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Rang was equal to 37?",
+                "question": "How many Nom had Rang was greater than or equal to 37?",
                 "answers": [
                     "1"
                 ],
@@ -1953,7 +1932,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the \u00c9pouse de string ends with Simple and the Titres string contains Francs?",
+                "question": "What was the Nom when the Titres string contains des and the \u00c9pouse de string ends with Simple?",
                 "answers": [
                     "Fr\u00e9d\u00e9rune (vers 887 \u2013 ) morte \u00e0 30 ans environ",
                     "Edwige de Wessex (vers 903 \u2013 apr\u00e8s 955) morte \u00e0 52 ans environ"
@@ -1962,7 +1941,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Rang was less than 39 and the Titres string contains Francs?",
+                "question": "What was the Nom when the Rang was equal to 38 and the Titres string ends with Francs?",
                 "answers": [
                     "Fr\u00e9d\u00e9rune (vers 887 \u2013 ) morte \u00e0 30 ans environ"
                 ],
@@ -1970,7 +1949,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with \u00c9pouse de string contains III, have Rang was less than 39?",
+                "question": "Does every Nom, with Titres string contains des, have \u00c9pouse de string ends with Simple?",
                 "answers": [
                     "Yes"
                 ],
@@ -1978,19 +1957,11 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom, with Rang was equal to 38, have Titres string ends with Francs?",
+                "question": "Does only Nom, with Notes string starts with Fille, have \u00c9pouse de string contains Simple?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Nom, with \u00c9pouse de string ends with Simple, has the 2nd largest Rang?",
-                "answers": [
-                    "Fr\u00e9d\u00e9rune (vers 887 \u2013 ) morte \u00e0 30 ans environ"
-                ],
-                "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
@@ -2002,7 +1973,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with Titres string contains des, has the 1st largest Rang?",
+                "question": "Which Nom, with Titres string contains Francs, has the 1st largest Rang?",
                 "answers": [
                     "Edwige de Wessex (vers 903 \u2013 apr\u00e8s 955) morte \u00e0 52 ans environ"
                 ],
@@ -2010,7 +1981,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had \u00c9pouse de string contains III and Rang was equal to 39?",
+                "question": "Which Nom, with \u00c9pouse de string starts with Charles, has the 2nd largest Rang?",
+                "answers": [
+                    "Fr\u00e9d\u00e9rune (vers 887 \u2013 ) morte \u00e0 30 ans environ"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Notes string starts with Fille and \u00c9pouse de string starts with Charles?",
                 "answers": [
                     "1"
                 ],
@@ -2018,7 +1997,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had \u00c9pouse de string starts with Charles?",
+                "question": "How many Nom had Titres string contains Francs and \u00c9pouse de string starts with Charles?",
                 "answers": [
                     "2"
                 ],
@@ -2026,15 +2005,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Rang was less than or equal to 39?",
+                "question": "How many Nom had Rang was greater than or equal to 39?",
                 "answers": [
-                    "2"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Rang when the \u00c9pouse de string contains III?",
+                "question": "What was the average of Rang when the \u00c9pouse de string starts with Charles?",
                 "answers": [
                     "38.5"
                 ],
@@ -2042,17 +2021,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the sum of Rang when the Titres string contains des?",
+                "question": "What was the average of Rang when the \u00c9pouse de string contains Simple?",
                 "answers": [
-                    "77.0"
-                ],
-                "reasoning_type": "numerical_operation"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the sum of Rang when the \u00c9pouse de string contains Charles?",
-                "answers": [
-                    "77.0"
+                    "38.5"
                 ],
                 "reasoning_type": "numerical_operation"
             }
@@ -2100,7 +2071,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Rang was greater than or equal to 40 and the Titres string contains des?",
+                "question": "What was the Nom when the Rang was greater than or equal to 40 and the Notes string contains de?",
                 "answers": [
                     "B\u00e9atrice de Vermandois (v.880 \u2013 ap.931) morte au moins \u00e0 51 ans environ"
                 ],
@@ -2108,7 +2079,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Titres string contains des, have Notes string starts with Fille?",
+                "question": "What was the Nom when the Notes string starts with Fille and the Rang was equal to 40?",
+                "answers": [
+                    "B\u00e9atrice de Vermandois (v.880 \u2013 ap.931) morte au moins \u00e0 51 ans environ"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Nom, with Rang was greater than or equal to 40, have Notes string starts with Fille?",
                 "answers": [
                     "Yes"
                 ],
@@ -2116,7 +2095,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with \u00c9pouse de string starts with Robert, have Rang was less than or equal to 40?",
+                "question": "Does every Nom, with Rang was greater than or equal to 40, have Notes string contains roi?",
                 "answers": [
                     "Yes"
                 ],
@@ -2124,7 +2103,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Titres string contains des and Notes string contains roi?",
+                "question": "How many Nom had Rang was less than or equal to 40 and Notes string contains Fille?",
                 "answers": [
                     "1"
                 ],
@@ -2132,7 +2111,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Rang was greater than or equal to 40?",
+                "question": "How many Nom had Rang was less than or equal to 40 and Titres string contains de?",
                 "answers": [
                     "1"
                 ],
@@ -2140,9 +2119,9 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Titres string contains Francs and \u00c9pouse de string ends with I?",
+                "question": "How many Nom had Rang was less than 40?",
                 "answers": [
-                    "1"
+                    "0"
                 ],
                 "reasoning_type": "counting"
             }
@@ -2190,7 +2169,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Titres string contains des and the Notes string starts with Fille?",
+                "question": "What was the Nom when the Notes string starts with Fille and the Rang was less than or equal to 41?",
                 "answers": [
                     "Emma de France (v.894 \u2013 934) morte \u00e0 40 ans environ"
                 ],
@@ -2198,7 +2177,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Titres string contains des and the Rang was equal to 41?",
+                "question": "What was the Nom when the Notes string contains de and the Rang was greater than or equal to 41?",
                 "answers": [
                     "Emma de France (v.894 \u2013 934) morte \u00e0 40 ans environ"
                 ],
@@ -2206,7 +2185,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Nom, with Notes string starts with Fille, have Rang was greater than or equal to 41?",
+                "question": "Does only Nom, with Rang was less than or equal to 41, have Titres string ends with Francs?",
                 "answers": [
                     "Yes"
                 ],
@@ -2214,7 +2193,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Rang was greater than or equal to 41, have Notes string starts with Fille?",
+                "question": "Does only Nom, with Rang was equal to 41, have Titres string contains Francs?",
                 "answers": [
                     "Yes"
                 ],
@@ -2222,23 +2201,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Notes string starts with Fille and Rang was less than or equal to 41?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Rang was greater than 41?",
-                "answers": [
-                    "0"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Nom had Titres string ends with Francs and Notes string starts with Fille?",
+                "question": "How many Nom had Notes string starts with Fille?",
                 "answers": [
                     "1"
                 ],
@@ -2297,16 +2260,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Titres string contains des and the Rang was greater than or equal to 42?",
+                "question": "What was the Nom when the Rang was greater than or equal to 43 and the Notes string contains le?",
                 "answers": [
-                    "Gerberge de Saxe (v.913 \u2013 984) morte \u00e0 71 ans environ",
                     "Emma d'Italie (v.948 \u2013 ap. 989)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Nom when the Rang was less than or equal to 42 and the Titres string contains des?",
+                "question": "What was the Nom when the \u00c9pouse de string contains IV and the Rang was equal to 42?",
                 "answers": [
                     "Gerberge de Saxe (v.913 \u2013 984) morte \u00e0 71 ans environ"
                 ],
@@ -2314,7 +2276,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Titres string contains des, have Rang was less than or equal to 43?",
+                "question": "Does only Nom, with Rang was equal to 42, have \u00c9pouse de string starts with Louis?",
                 "answers": [
                     "Yes"
                 ],
@@ -2322,7 +2284,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Nom, with Rang was greater than or equal to 42, have Titres string contains des?",
+                "question": "Does every Nom, with Notes string starts with Fille, have Rang was equal to 43?",
                 "answers": [
                     "Yes"
                 ],
@@ -2330,15 +2292,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Nom, with Titres string contains des, has the 1st largest Rang?",
+                "question": "Which Nom, with Titres string contains des, has the 2nd largest Rang?",
                 "answers": [
-                    "Emma d'Italie (v.948 \u2013 ap. 989)"
+                    "Gerberge de Saxe (v.913 \u2013 984) morte \u00e0 71 ans environ"
                 ],
                 "reasoning_type": "numerical_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Nom had Rang was greater than or equal to 42?",
+                "question": "How many Nom had Notes string contains sa and Titres string contains des?",
                 "answers": [
                     "2"
                 ],
@@ -2346,7 +2308,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the average of Rang when the Titres string contains des?",
+                "question": "How many Nom had Titres string contains des and Rang was greater than 42?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Nom had Titres string contains des and Rang was less than or equal to 43?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Rang when the Notes string contains roi?",
                 "answers": [
                     "42.5"
                 ],

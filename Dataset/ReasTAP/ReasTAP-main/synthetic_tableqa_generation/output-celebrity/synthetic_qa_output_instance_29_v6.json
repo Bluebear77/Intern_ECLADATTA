@@ -347,19 +347,8 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre fran\u00e7ais when the Date de la parution fran\u00e7aise was on 1971 and the Illustrateur string starts with Albert?",
+                "question": "What was the Titre fran\u00e7ais when the Date de la parution fran\u00e7aise was after 1969 and the Pr\u00e9senced'unejaquette is non?",
                 "answers": [
-                    "Alice et le Chandelier",
-                    "Alice au ranch"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Titre fran\u00e7ais when the Illustrateur string starts with Albert and the Date de la parution fran\u00e7aise was after 1968?",
-                "answers": [
-                    "Alice et le Corsaire",
-                    "Quand Alice rencontre Alice",
                     "Alice et la Pierre d'onyx",
                     "Alice et le Fant\u00f4me",
                     "Alice et le Chandelier",
@@ -368,13 +357,36 @@
                     "Alice aux \u00eeles Hawa\u00ef",
                     "Alice et les Contrebandiers",
                     "Alice d\u00e9tective",
-                    "Alice et le Mannequin"
+                    "Alice et le Mannequin",
+                    "Alice et les Chaussons rouges",
+                    "Alice et les Trois Clefs",
+                    "Alice et le Vison",
+                    "Alice et le Pickpocket",
+                    "Alice et le Flibustier",
+                    "Alice et l'Ombre chinoise",
+                    "Alice et le Carnet vert",
+                    "Alice et la Pantoufle d'hermine",
+                    "Alice et le Tiroir secret",
+                    "Alice dans l'\u00eele au tr\u00e9sor",
+                    "Alice et le Pigeon voyageur",
+                    "Alice et le Talisman d'ivoire",
+                    "Alice au manoir hant\u00e9"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Titre fran\u00e7ais, with Date de la parution fran\u00e7aise was after 1966, have Illustrateur string contains Albert?",
+                "question": "What was the Titre fran\u00e7ais when the Date de la parution fran\u00e7aise was on 1965 and the Illustrateur string starts with Albert?",
+                "answers": [
+                    "Alice au bal masqu\u00e9",
+                    "Alice au Canada",
+                    "Alice et les Plumes de paon"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Titre fran\u00e7ais, with Date de la parution fran\u00e7aise was after 1974, have Pr\u00e9senced'unejaquette is non?",
                 "answers": [
                     "No"
                 ],
@@ -382,39 +394,47 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre fran\u00e7ais, with Date de la parution fran\u00e7aise was on 1972, have Illustrateur string contains Albert?",
+                "question": "Does every Titre fran\u00e7ais, with Illustrateur string contains Jean, have Pr\u00e9senced'unejaquette is non?",
                 "answers": [
-                    "No"
+                    "Yes"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre fran\u00e7ais, with Date de la parution fran\u00e7aise was before 1981, happened the 6th according to Date de la parution fran\u00e7aise?",
+                "question": "Which Titre fran\u00e7ais, with Date de la parution fran\u00e7aise was after 1977, happened the 5th according to Date de la parution fran\u00e7aise?",
                 "answers": [
-                    "Alice \u00e9cuy\u00e8re",
-                    "Alice en \u00c9cosse",
-                    "Alice et les Chats persans"
+                    "Alice et le Pigeon voyageur",
+                    "Alice et le Talisman d'ivoire"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre fran\u00e7ais, with Date de la parution fran\u00e7aise was after 1971, happened the 13rd according to Date de la parution fran\u00e7aise?",
+                "question": "Which Titre fran\u00e7ais, with Date de la parution fran\u00e7aise was before 1967, happened the 3rd according to Date de la parution fran\u00e7aise?",
                 "answers": [
-                    "Alice et le Carnet vert",
-                    "Alice et la Pantoufle d'hermine"
+                    "Alice au bal masqu\u00e9",
+                    "Alice au Canada",
+                    "Alice et les Plumes de paon"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre fran\u00e7ais, with Date de la parution fran\u00e7aise was after 1975, happened the 7th according to Date de la parution fran\u00e7aise?",
+                "question": "Which Titre fran\u00e7ais, with Pr\u00e9senced'unejaquette is non, happened the 15th according to Date de la parution fran\u00e7aise?",
                 "answers": [
-                    "Alice et le Tiroir secret",
-                    "Alice dans l'\u00eele au tr\u00e9sor"
+                    "Alice et le Flibustier",
+                    "Alice et l'Ombre chinoise"
                 ],
                 "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre fran\u00e7ais had Date de la parution fran\u00e7aise was before 1981 and Illustrateur string starts with Albert?",
+                "answers": [
+                    "22"
+                ],
+                "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
@@ -511,33 +531,24 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the Illustrateur string starts with Guy and the Ann\u00e9ede parution was before 1975?",
+                "question": "What was the Titre when the Ann\u00e9ede parution was before 1974 and the Illustrateur string starts with Albert?",
                 "answers": [
-                    "Alice au bal masqu\u00e9",
-                    "Alice au manoir hant\u00e9"
+                    "Alice d\u00e9tective, Alice et le Chandelier, Alice au bal masqu\u00e9(collection: \u00ab Un volume 3 en 1 \u00bb)",
+                    "Alice et le Pigeon voyageur"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the Ann\u00e9ede parution was before 1977 and the Illustrateur string starts with Guy?",
+                "question": "What was the Titre when the Ann\u00e9ede parution was after 1971 and the Illustrateur string starts with Albert?",
                 "answers": [
-                    "Alice au bal masqu\u00e9",
-                    "Alice au manoir hant\u00e9"
+                    "Alice et le Pigeon voyageur"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre, with Ann\u00e9ede parution was before 1976, have Illustrateur string starts with Guy?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Titre, with Illustrateur string starts with Guy, have Ann\u00e9ede parution was before 1976?",
+                "question": "Does only Titre, with Illustrateur string contains Albert, have Ann\u00e9ede parution was before 1977?",
                 "answers": [
                     "No"
                 ],
@@ -545,31 +556,39 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Ann\u00e9ede parution was before 1975, happened the 2nd according to Ann\u00e9ede parution?",
+                "question": "Does only Titre, with Ann\u00e9ede parution was before 1977, have Illustrateur string contains Guy?",
                 "answers": [
-                    "Alice au bal masqu\u00e9"
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Titre, with Ann\u00e9ede parution was after 1967, happened the 3rd according to Ann\u00e9ede parution?",
+                "answers": [
+                    "Alice au manoir hant\u00e9"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Ann\u00e9ede parution was before 1974, happened the 2nd according to Ann\u00e9ede parution?",
+                "question": "Which Titre, with Ann\u00e9ede parution was before 1975, happened the 4th according to Ann\u00e9ede parution?",
                 "answers": [
-                    "Alice au bal masqu\u00e9"
+                    "Alice au manoir hant\u00e9"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Ann\u00e9ede parution was after 1967, happened the 7th according to Ann\u00e9ede parution?",
+                "question": "Which Titre, with Ann\u00e9ede parution was after 1974, happened the 1st according to Ann\u00e9ede parution?",
                 "answers": [
-                    "Alice et l'Esprit frappeur"
+                    "Alice et les Faux-monnayeurs"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Illustrateur string contains Guy?",
+                "question": "How many Titre had Illustrateur string starts with Guy?",
                 "answers": [
                     "2"
                 ],
@@ -577,17 +596,17 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Ann\u00e9ede parution was before 1976?",
+                "question": "How many Titre had Illustrateur string starts with Guy and Ann\u00e9ede parution was before 1975?",
                 "answers": [
-                    "5"
+                    "2"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Ann\u00e9ede parution was before 1975?",
+                "question": "How many Titre had Ann\u00e9ede parution was on 1973 and Illustrateur string starts with Albert?",
                 "answers": [
-                    "4"
+                    "1"
                 ],
                 "reasoning_type": "counting"
             }
@@ -685,7 +704,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the Ann\u00e9ede parution was on 1983 and the Illustrateur string starts with Jean?",
+                "question": "What was the Titre when the Illustrateur string contains Jean and the Ann\u00e9ede parution was on 1983?",
                 "answers": [
                     "Alice et la Soucoupe volante",
                     "Alice et le Symbole grec"
@@ -694,15 +713,16 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the Ann\u00e9ede parution was after 1983 and the Illustrateur string starts with Jean?",
+                "question": "What was the Titre when the Illustrateur string starts with Jean and the Ann\u00e9ede parution was before 1984?",
                 "answers": [
-                    "Alice et le Flibustier"
+                    "Alice et la Soucoupe volante",
+                    "Alice et le Symbole grec"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Titre, with Ann\u00e9ede parution was before 1984, have Illustrateur string starts with Jean?",
+                "question": "Does only Titre, with Ann\u00e9ede parution was before 1984, have Illustrateur string starts with Jean?",
                 "answers": [
                     "No"
                 ],
@@ -710,7 +730,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre, with Illustrateur string contains Jean, have Ann\u00e9ede parution was on 1984?",
+                "question": "Does every Titre, with Ann\u00e9ede parution was after 1983, have Illustrateur string starts with Jean?",
                 "answers": [
                     "No"
                 ],
@@ -718,7 +738,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Ann\u00e9ede parution was on 1983, happened the 5th according to Ann\u00e9ede parution?",
+                "question": "Which Titre, with Ann\u00e9ede parution was on 1983, happened the 4th according to Ann\u00e9ede parution?",
                 "answers": [
                     "Alice et la Soucoupe volante",
                     "Alice et le Symbole grec",
@@ -730,45 +750,33 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Ann\u00e9ede parution was after 1983, happened the 2nd according to Ann\u00e9ede parution?",
+                "question": "Which Titre, with Ann\u00e9ede parution was after 1983, happened the 4th according to Ann\u00e9ede parution?",
                 "answers": [
-                    "Alice et le Secret de la vieille dentelle",
-                    "Alice et le Flibustier",
-                    "Alice et le Robot"
+                    "Alice et la Bague du gourou"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Ann\u00e9ede parution was on 1984, happened the 3rd according to Ann\u00e9ede parution?",
+                "question": "Which Titre, with Illustrateur string starts with Jean, happened the 3rd according to Ann\u00e9ede parution?",
                 "answers": [
-                    "Alice et le Secret de la vieille dentelle",
-                    "Alice et le Flibustier",
-                    "Alice et le Robot"
+                    "Alice et le Flibustier"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Illustrateur string starts with Jean and Ann\u00e9ede parution was before 1984?",
+                "question": "How many Titre had Ann\u00e9ede parution was after 1983?",
                 "answers": [
-                    "2"
+                    "4"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Ann\u00e9ede parution was before 1984?",
+                "question": "How many Titre had Ann\u00e9ede parution was on 1983?",
                 "answers": [
                     "5"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Titre had Illustrateur string starts with Jean and Ann\u00e9ede parution was before 1985?",
-                "answers": [
-                    "3"
                 ],
                 "reasoning_type": "counting"
             }
@@ -836,13 +844,13 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many Noms originaux had Noms fran\u00e7ais string starts with James?",
+                "question": "How many Noms fran\u00e7ais had Noms originaux string starts with Carson?",
                 "answers": [
                     "1"
                 ],
@@ -900,21 +908,21 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {},
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "How many Volumes cartonn\u00e9s (1955 \u00e0 1987) had Volumes souples (1988 - 2016) string contains Marguerite?",
+                "question": "How many Volumes souples (1988 - 2016) had Volumes cartonn\u00e9s (1955 \u00e0 1987) string contains Jean?",
                 "answers": [
-                    "1"
+                    "2"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Volumes cartonn\u00e9s (1955 \u00e0 1987) had Volumes souples (1988 - 2016) string starts with Marguerite?",
+                "question": "How many Volumes souples (1988 - 2016) had Volumes cartonn\u00e9s (1955 \u00e0 1987) string starts with Joseph?",
                 "answers": [
                     "1"
                 ],
@@ -2576,44 +2584,22 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre original(et sa traduction litt\u00e9rale) when the Ann\u00e9edeparutionauxUSA was before 1937 and the Titre fran\u00e7ais string contains en?",
+                "question": "What was the Titre original(et sa traduction litt\u00e9rale) when the Illustrateur de la \u00e9dition fran\u00e7aise string ends with France and the Auteur string contains James?",
                 "answers": [
-                    "(La Myst\u00e9rieuse Lettre de Nancy)",
-                    "(Le Message dans le ch\u00eane creux)"
+                    "(L\u2019\u00c9nigme du costume ancien)",
+                    "(La Toile d'araign\u00e9e argent\u00e9e)",
+                    "(Le Carrousel hant\u00e9)",
+                    "(L'Image myst\u00e9rieuse)"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre original(et sa traduction litt\u00e9rale) when the Ann\u00e9edeparutionauxUSA was before 1995 and the Illustrateur de la \u00e9dition fran\u00e7aise string starts with Albert?",
+                "question": "What was the Titre original(et sa traduction litt\u00e9rale) when the Illustrateur de la \u00e9dition fran\u00e7aise string starts with Albert and the Auteur string ends with Adams?",
                 "answers": [
-                    "(Le Secret de la vieille horloge)",
-                    "(L\u2019Escalier cach\u00e9)",
-                    "(Le Myst\u00e8re du bungalow)",
-                    "(Myst\u00e8re \u00e0 l'auberge des Lilas)",
-                    "(Le Secret de la ferme Le Portail rouge)",
-                    "(L'Indice dans le carnet)",
-                    "(L'Indication des chandelles torses)",
-                    "(Le Mot de passe pour le chemin du Pied-d'alouette)",
-                    "(L'Indice dans le m\u00e9daillon bris\u00e9)",
-                    "(Le Message dans le ch\u00eane creux)",
-                    "(Le Myst\u00e8re du talisman d'ivoire)",
-                    "(La Statue qui murmure)",
-                    "(L'Indice des talons qui claquent)",
-                    "(Le Myst\u00e8re de la malle cercl\u00e9e de cuivre)",
-                    "(\u00c0 la recherche de la carte manquante)",
-                    "(L'Indice dans la bo\u00eete \u00e0 bijoux)",
-                    "(Le Secret du vieux grenier)",
-                    "(L'Indice dans le mur qui tombe en ruine)",
-                    "(Le Myst\u00e8re de la cloche qui sonne)",
-                    "(Le Fant\u00f4me de la villa Blackwood)",
                     "(L\u2019Indice de la chemin\u00e9e pench\u00e9e)",
-                    "(Le Secret de la dame de bois)",
                     "(L\u2019\u00c9nigme des clefs noires)",
-                    "(Le Myst\u00e8re du tremplin de saut \u00e0 ski)",
-                    "(L\u2019\u00c9nigme du masque de velours)",
                     "(Le Secret du Monsieur Loyal)",
-                    "(Le Myst\u00e8re du chausson \u00e9carlate)",
                     "(Le Signe de l'arbre aux sorci\u00e8res)",
                     "(Le Myst\u00e8re de la fen\u00eatre cach\u00e9e)",
                     "(Le Bateau \u00e0 aubes hant\u00e9)",
@@ -2630,7 +2616,15 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Titre original(et sa traduction litt\u00e9rale), with Illustrateur de la \u00e9dition fran\u00e7aise string contains en, have Titre fran\u00e7ais string contains les?",
+                "question": "Does every Titre original(et sa traduction litt\u00e9rale), with Auteur string contains Adams, have Ann\u00e9edeparutionauxUSA was before 1983?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Titre original(et sa traduction litt\u00e9rale), with Titre fran\u00e7ais string contains de, have Auteur string starts with Walter?",
                 "answers": [
                     "No"
                 ],
@@ -2638,32 +2632,25 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre original(et sa traduction litt\u00e9rale), with Titre fran\u00e7ais string contains France, have Ann\u00e9edeparutionauxUSA was after 1981?",
+                "question": "Which Titre original(et sa traduction litt\u00e9rale), with Auteur string starts with Walter, happened the 3rd according to Ann\u00e9edeparutionauxUSA?",
                 "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Titre original(et sa traduction litt\u00e9rale), with Ann\u00e9edeparutionauxUSA was before 1955, happened the 7th according to Ann\u00e9edeparutionauxUSA?",
-                "answers": [
-                    "(L'Indice dans le carnet)",
-                    "(La Myst\u00e9rieuse Lettre de Nancy)"
+                    "(L'Indication des chandelles torses)",
+                    "(Le Mot de passe pour le chemin du Pied-d'alouette)"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre fran\u00e7ais was Alice et le M\u00e9daillon d'or and when the Titre fran\u00e7ais was Alice millionnaire?",
+                "question": "Which Titre original(et sa traduction litt\u00e9rale), with Illustrateur de la \u00e9dition fran\u00e7aise string starts with Jean, happened the 12nd according to Ann\u00e9edeparutionauxUSA?",
                 "answers": [
-                    "34"
+                    "(Le Myst\u00e8re de la poup\u00e9e Kachina)",
+                    "(Le T\u00e9moin prisonnier)"
                 ],
-                "reasoning_type": "date_difference"
+                "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Titre fran\u00e7ais was Alice et le Vase de Chine and when the Titre fran\u00e7ais was Alice et les Magiciens?",
+                "question": "How many years had passed between when the Titre fran\u00e7ais was Alice et les F\u00e9lins and when the Titre fran\u00e7ais was Alice et l'Avion fant\u00f4me?",
                 "answers": [
                     "17"
                 ],
@@ -2671,25 +2658,33 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre original(et sa traduction litt\u00e9rale) had Ann\u00e9edeparutionauxUSA was after 1991?",
+                "question": "How many years had passed between when the Titre fran\u00e7ais was Alice et la Bague du gourou and when the Titre fran\u00e7ais was Alice et le Myst\u00e8re du lac Tahoe?",
                 "answers": [
-                    "42"
+                    "9"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre original(et sa traduction litt\u00e9rale) had Ann\u00e9edeparutionauxUSA was after 1946?",
+                "answers": [
+                    "124"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre original(et sa traduction litt\u00e9rale) had Ann\u00e9edeparutionauxUSA was after 1995?",
+                "question": "How many Titre original(et sa traduction litt\u00e9rale) had Titre fran\u00e7ais string ends with France and Ann\u00e9edeparutionauxUSA was on 1992?",
                 "answers": [
-                    "18"
+                    "6"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre original(et sa traduction litt\u00e9rale) had Titre fran\u00e7ais string contains en and Auteur string contains Nancy?",
+                "question": "How many Titre original(et sa traduction litt\u00e9rale) had Ann\u00e9edeparutionauxUSA was on 1995?",
                 "answers": [
-                    "3"
+                    "8"
                 ],
                 "reasoning_type": "counting"
             }

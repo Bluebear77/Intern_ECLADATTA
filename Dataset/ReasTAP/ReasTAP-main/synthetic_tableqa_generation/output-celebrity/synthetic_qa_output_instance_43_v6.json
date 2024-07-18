@@ -4,6 +4,205 @@
         "title": "Isabelle Adjani",
         "url": "https://fr.wikipedia.org/?curid=44279",
         "header": [
+            "",
+            "Films",
+            "R\u00e9alisateur",
+            "Ann\u00e9es",
+            "France (entr\u00e9es)"
+        ],
+        "rows": [
+            [
+                "1",
+                "L'\u00c9t\u00e9 meurtrier",
+                "Jean Becker",
+                "1983",
+                ""
+            ],
+            [
+                "2",
+                "Raiponce",
+                "Byron Howard & Nathan Greno",
+                "2010",
+                ""
+            ],
+            [
+                "3",
+                "La Gifle",
+                "Claude Pinoteau",
+                "1974",
+                ""
+            ],
+            [
+                "4",
+                "Subway",
+                "Luc Besson",
+                "1985",
+                ""
+            ],
+            [
+                "5",
+                "Camille Claudel",
+                "Bruno Nuytten",
+                "1988",
+                ""
+            ],
+            [
+                "6",
+                "Tout feu, tout flamme",
+                "Jean-Paul Rappeneau",
+                "1982",
+                ""
+            ],
+            [
+                "7",
+                "La Reine Margot",
+                "Patrice Ch\u00e9reau",
+                "1994",
+                ""
+            ],
+            [
+                "8",
+                "Sous les jupes des filles",
+                "Audrey Dana",
+                "2014",
+                ""
+            ],
+            [
+                "9",
+                "Driver",
+                "Walter Hill",
+                "1978",
+                ""
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "string",
+            "datetime",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            0
+        ],
+        "date_columns": {
+            "3": [
+                1983,
+                2010,
+                1974,
+                1985,
+                1988,
+                1982,
+                1994,
+                2014,
+                1978
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Films when the R\u00e9alisateur string starts with Byron and the Ann\u00e9es was after 1978?",
+                "answers": [
+                    "Raiponce"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Films when the Ann\u00e9es was after 1985 and the R\u00e9alisateur string starts with Bruno?",
+                "answers": [
+                    "Camille Claudel"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Films, with R\u00e9alisateur string starts with Bruno, have Ann\u00e9es was before 2010?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Films, with Ann\u00e9es was before 1994, have R\u00e9alisateur string contains Walter?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Films, with Ann\u00e9es was before 1988, happened the 2nd according to Ann\u00e9es?",
+                "answers": [
+                    "Driver"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Films, with Ann\u00e9es was before 2014, happened the 7th according to Ann\u00e9es?",
+                "answers": [
+                    "La Reine Margot"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Films, with Ann\u00e9es was after 1978, happened the 3rd according to Ann\u00e9es?",
+                "answers": [
+                    "Subway"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9alisateur was Bruno Nuytten and when the R\u00e9alisateur was Patrice Ch\u00e9reau?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the R\u00e9alisateur was Jean Becker and when the R\u00e9alisateur was Bruno Nuytten?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Films had R\u00e9alisateur string contains Bruno and Ann\u00e9es was after 1983?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Films had Ann\u00e9es was before 1985?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Films had Ann\u00e9es was after 1978?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "44279",
+        "title": "Isabelle Adjani",
+        "url": "https://fr.wikipedia.org/?curid=44279",
+        "header": [
             "R\u00e9compense",
             "Ann\u00e9e",
             "Film",
@@ -137,7 +336,7 @@
             "string",
             "string"
         ],
-        "key_column": 0,
+        "key_column": 1,
         "numeric_columns": [],
         "date_columns": {
             "1": [
@@ -166,24 +365,24 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Film is Kinship and the Ann\u00e9e was on 2015?",
+                "question": "What was the Ann\u00e9e when the Film is Possession and the R\u00e9compense string contains Festival?",
                 "answers": [
-                    "Globe de Cristal de la meilleure com\u00e9dienne"
+                    "1981"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Ann\u00e9e was after 1981 and the Film string starts with Le?",
+                "question": "What was the Ann\u00e9e when the R\u00e9compense string contains de and the Film is Possession?",
                 "answers": [
-                    "C\u00e9sar de la meilleure actrice dans un second r\u00f4le",
-                    "Globe de Cristal de la meilleure actrice de com\u00e9die"
+                    "1982",
+                    "1981"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every R\u00e9compense, with Ann\u00e9e was after 1976, have Film string starts with La?",
+                "question": "Does every Ann\u00e9e, with Film string contains la, have R\u00e9compense string starts with Oscar?",
                 "answers": [
                     "No"
                 ],
@@ -191,75 +390,49 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only R\u00e9compense, with Ann\u00e9e was before 1986, have Film is Quartet?",
+                "question": "Does only Ann\u00e9e, with R\u00e9compense string starts with Globe, have Film string contains de?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Ann\u00e9e was after 1995, happened the 4th according to Ann\u00e9e?",
+                "question": "How many years had passed between when the Film was La Dame aux cam\u00e9lias and when the Film was Kinship?",
                 "answers": [
-                    "C\u00e9sar de la meilleure actrice",
-                    "Lumi\u00e8re de la meilleure actrice"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Ann\u00e9e was after 1976, happened the 15th according to Ann\u00e9e?",
-                "answers": [
-                    "Globe de Cristal de la meilleure com\u00e9dienne"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Ann\u00e9e was after 2015, happened the 1st according to Ann\u00e9e?",
-                "answers": [
-                    "C\u00e9sar de la meilleure actrice dans un second r\u00f4le",
-                    "Globe de Cristal de la meilleure actrice de com\u00e9die"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Film was L'\u00c9t\u00e9 meurtrier and when the Film was La Reine Margot?",
-                "answers": [
-                    "11"
+                    "14"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Film was La Dame aux cam\u00e9lias and when the Film was La Reine Margot?",
+                "question": "How many years had passed between when the Film was L'\u00c9t\u00e9 meurtrier and when the Film was Opening Night?",
                 "answers": [
-                    "6"
+                    "36"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was before 2007?",
-                "answers": [
-                    "13"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was after 2010?",
-                "answers": [
-                    "4"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was on 1981?",
+                "question": "How many Ann\u00e9e had Film string starts with Le?",
                 "answers": [
                     "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ann\u00e9e had Film string starts with La and R\u00e9compense string contains la?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Ann\u00e9e had Film string starts with La?",
+                "answers": [
+                    "5"
                 ],
                 "reasoning_type": "counting"
             }
@@ -453,20 +626,17 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Ann\u00e9e was before 2010 and the Film string starts with La?",
+                "question": "What was the R\u00e9compense when the Ann\u00e9e was after 1995 and the Cat\u00e9gorie string starts with Grand?",
                 "answers": [
-                    "David di Donatello",
-                    "C\u00e9sar",
-                    "Festival de Monte Carlo"
+                    "Festival de Montr\u00e9al"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the R\u00e9compense when the Ann\u00e9e was after 1976 and the Film string contains de?",
+                "question": "What was the R\u00e9compense when the Film string starts with La and the Ann\u00e9e was after 1976?",
                 "answers": [
                     "C\u00e9sar",
-                    "Festival de Berlin",
                     "Festival de Monte Carlo",
                     "Lumi\u00e8res de la presse internationale",
                     "Globe de Cristal",
@@ -476,7 +646,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only R\u00e9compense, with Ann\u00e9e was after 1984, have Film string contains de?",
+                "question": "Does every R\u00e9compense, with Ann\u00e9e was after 1973, have Cat\u00e9gorie string starts with Grand?",
                 "answers": [
                     "No"
                 ],
@@ -484,24 +654,23 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every R\u00e9compense, with Cat\u00e9gorie string starts with Grand, have Ann\u00e9e was before 2010?",
+                "question": "Does every R\u00e9compense, with Ann\u00e9e was after 1973, have Film string starts with La?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Ann\u00e9e was after 1983, happened the 3rd according to Ann\u00e9e?",
+                "question": "Which R\u00e9compense, with Ann\u00e9e was before 1989, happened the 10th according to Ann\u00e9e?",
                 "answers": [
-                    "C\u00e9sar",
-                    "Festival de Berlin"
+                    "Festival de Cannes"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Ann\u00e9e was after 2004, happened the 1st according to Ann\u00e9e?",
+                "question": "Which R\u00e9compense, with Film string contains la, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
                     "Festival de Monte Carlo"
                 ],
@@ -509,252 +678,52 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which R\u00e9compense, with Ann\u00e9e was after 1978, happened the 13rd according to Ann\u00e9e?",
+                "question": "Which R\u00e9compense, with Ann\u00e9e was before 2010, happened the 4th according to Ann\u00e9e?",
                 "answers": [
-                    "Lumi\u00e8res de la presse internationale",
-                    "Globe de Cristal",
-                    "\u00c9toile d'or",
-                    "C\u00e9sar"
+                    "David di Donatello",
+                    "National Board of Review",
+                    "New York Film Critics Circle",
+                    "National Society of Films Critics Awards"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Film was - and when the Film was La Gifle?",
+                "question": "How many years had passed between when the Film was L'histoire d'Ad\u00e8le H and when the Film was Carri\u00e8re?",
                 "answers": [
-                    "1"
+                    "26"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Film was Adolphe and when the Film was La Reine Margot?",
+                "question": "How many years had passed between when the Film was L'histoire d'Ad\u00e8le H and when the Film was L'\u00c9cole des femmes (pi\u00e8ce)?",
                 "answers": [
-                    "8"
+                    "5"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was after 1974?",
+                "question": "How many R\u00e9compense had Film string starts with La and Ann\u00e9e was after 1983?",
                 "answers": [
-                    "21"
+                    "6"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was after 1975?",
+                "question": "How many R\u00e9compense had Ann\u00e9e was before 1989 and Film string contains H?",
                 "answers": [
-                    "17"
+                    "6"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many R\u00e9compense had Ann\u00e9e was before 2010?",
+                "question": "How many R\u00e9compense had Ann\u00e9e was after 1982?",
                 "answers": [
-                    "19"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "44279",
-        "title": "Isabelle Adjani",
-        "url": "https://fr.wikipedia.org/?curid=44279",
-        "header": [
-            "",
-            "Films",
-            "R\u00e9alisateur",
-            "Ann\u00e9es",
-            "France (entr\u00e9es)"
-        ],
-        "rows": [
-            [
-                "1",
-                "L'\u00c9t\u00e9 meurtrier",
-                "Jean Becker",
-                "1983",
-                ""
-            ],
-            [
-                "2",
-                "Raiponce",
-                "Byron Howard & Nathan Greno",
-                "2010",
-                ""
-            ],
-            [
-                "3",
-                "La Gifle",
-                "Claude Pinoteau",
-                "1974",
-                ""
-            ],
-            [
-                "4",
-                "Subway",
-                "Luc Besson",
-                "1985",
-                ""
-            ],
-            [
-                "5",
-                "Camille Claudel",
-                "Bruno Nuytten",
-                "1988",
-                ""
-            ],
-            [
-                "6",
-                "Tout feu, tout flamme",
-                "Jean-Paul Rappeneau",
-                "1982",
-                ""
-            ],
-            [
-                "7",
-                "La Reine Margot",
-                "Patrice Ch\u00e9reau",
-                "1994",
-                ""
-            ],
-            [
-                "8",
-                "Sous les jupes des filles",
-                "Audrey Dana",
-                "2014",
-                ""
-            ],
-            [
-                "9",
-                "Driver",
-                "Walter Hill",
-                "1978",
-                ""
-            ]
-        ],
-        "column_types": [
-            "numeric",
-            "string",
-            "string",
-            "datetime",
-            "string"
-        ],
-        "key_column": 1,
-        "numeric_columns": [
-            0
-        ],
-        "date_columns": {
-            "3": [
-                1983,
-                2010,
-                1974,
-                1985,
-                1988,
-                1982,
-                1994,
-                2014,
-                1978
-            ]
-        },
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Films when the Ann\u00e9es was after 1974 and the R\u00e9alisateur string contains Jean?",
-                "answers": [
-                    "L'\u00c9t\u00e9 meurtrier",
-                    "Tout feu, tout flamme"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "What was the Films when the R\u00e9alisateur string starts with Walter and the Ann\u00e9es was before 1994?",
-                "answers": [
-                    "Driver"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Films, with R\u00e9alisateur string starts with Byron, have Ann\u00e9es was on 2010?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does every Films, with Ann\u00e9es was before 2010, have R\u00e9alisateur string starts with Walter?",
-                "answers": [
-                    "No"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Films, with Ann\u00e9es was before 1988, happened the 5th according to Ann\u00e9es?",
-                "answers": [
-                    "Subway"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Films, with Ann\u00e9es was after 1983, happened the 4th according to Ann\u00e9es?",
-                "answers": [
-                    "Raiponce"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Films, with Ann\u00e9es was before 2014, happened the 3rd according to Ann\u00e9es?",
-                "answers": [
-                    "Tout feu, tout flamme"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9alisateur was Luc Besson and when the R\u00e9alisateur was Bruno Nuytten?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the R\u00e9alisateur was Jean-Paul Rappeneau and when the R\u00e9alisateur was Luc Besson?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Films had Ann\u00e9es was after 1988?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Films had Ann\u00e9es was after 1994 and R\u00e9alisateur string starts with Byron?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Films had R\u00e9alisateur string starts with Byron and Ann\u00e9es was after 1994?",
-                "answers": [
-                    "1"
+                    "12"
                 ],
                 "reasoning_type": "counting"
             }

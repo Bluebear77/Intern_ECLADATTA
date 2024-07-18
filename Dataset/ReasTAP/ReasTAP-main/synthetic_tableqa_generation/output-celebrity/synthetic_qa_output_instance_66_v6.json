@@ -5,89 +5,6 @@
         "url": "https://fr.wikipedia.org/?curid=135765",
         "header": [
             "Ann\u00e9e",
-            "Film",
-            "Salaire."
-        ],
-        "rows": [
-            [
-                "1997-2003",
-                "Buffy contre les vampires",
-                ""
-            ],
-            [
-                "1999",
-                "Sexe Intentions",
-                ""
-            ],
-            [
-                "1999",
-                "Simplement irr\u00e9sistible",
-                "Estim\u00e9 entre  et"
-            ],
-            [
-                "2002",
-                "Scooby-Doo",
-                ""
-            ],
-            [
-                "2004",
-                "Scooby-Doo 2 : Les monstres se d\u00e9cha\u00eenent",
-                ""
-            ],
-            [
-                "2004",
-                "The Grudge",
-                ""
-            ],
-            [
-                "2011-2012",
-                "Ringer",
-                "par \u00e9pisode"
-            ]
-        ],
-        "column_types": [
-            "datetime",
-            "string",
-            "string"
-        ],
-        "key_column": 1,
-        "numeric_columns": [],
-        "date_columns": {
-            "0": [
-                9999,
-                1999,
-                1999,
-                2002,
-                2004,
-                2004,
-                9999
-            ]
-        },
-        "qas": [
-            {
-                "source": "synthetic_qa",
-                "question": "How many Film had Salaire. string starts with par?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Film had Salaire. string contains par?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
-            }
-        ]
-    },
-    {
-        "id": "135765",
-        "title": "Sarah Michelle Gellar",
-        "url": "https://fr.wikipedia.org/?curid=135765",
-        "header": [
-            "Ann\u00e9e",
             "C\u00e9r\u00e9monie",
             "Titre",
             "R\u00e9sultat"
@@ -354,21 +271,23 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the C\u00e9r\u00e9monie string ends with Awards and the Ann\u00e9e was on 2002?",
+                "question": "What was the Titre when the Ann\u00e9e was after 2000 and the C\u00e9r\u00e9monie string contains Choice?",
                 "answers": [
-                    "Meilleure h\u00e9ro\u00efne d'actionpour Buffy contre les vampires",
-                    "Meilleure r\u00f4le dans une \u0153uvre t\u00e9l\u00e9vis\u00e9epour Buffy contre les vampires",
+                    "Meilleure carri\u00e8re",
                     "Meilleure actrice \u00e0 la t\u00e9l\u00e9visionpour Buffy contre les vampires",
+                    "Meilleure h\u00e9ro\u00efne d'actionpour Buffy contre les vampires",
                     "Meilleure actrice dans une s\u00e9rie dramatiquepour Buffy contre les vampires",
                     "Meilleure actrice dans un film de com\u00e9diepour Scooby-Doo (film)",
                     "Meilleur couple dans un film de com\u00e9diepour Scooby-Doo (film) (avec Freddie Prinze Jr.)",
-                    "Meilleur jeune v\u00e9t\u00e9ran f\u00e9minin pour sa carri\u00e8re"
+                    "Meilleure actrice dans un film d'horreur-thrillerpour The Grudge",
+                    "Meilleure actrice dans une s\u00e9rie dramatiquepour Ringer",
+                    "Meilleure actrice dans une nouvelle s\u00e9riepour The Crazy Ones"
                 ],
                 "reasoning_type": "conjunction"
             },
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the Ann\u00e9e was on 2003 and the C\u00e9r\u00e9monie string starts with Saturn?",
+                "question": "What was the Titre when the C\u00e9r\u00e9monie string starts with Saturn and the Ann\u00e9e was before 2002?",
                 "answers": [
                     "Meilleure actrice \u00e0 la t\u00e9l\u00e9visionpour Buffy contre les vampires"
                 ],
@@ -376,7 +295,7 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does only Titre, with C\u00e9r\u00e9monie string contains Awards, have Ann\u00e9e was after 2001?",
+                "question": "Does every Titre, with C\u00e9r\u00e9monie string starts with Saturn, have Ann\u00e9e was after 1999?",
                 "answers": [
                     "No"
                 ],
@@ -384,36 +303,34 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Does every Titre, with C\u00e9r\u00e9monie string contains Movie, have Ann\u00e9e was before 2014?",
+                "question": "Does only Titre, with Ann\u00e9e was after 1994, have C\u00e9r\u00e9monie string starts with Emmy?",
                 "answers": [
-                    "Yes"
+                    "No"
                 ],
                 "reasoning_type": "quantifiers"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Ann\u00e9e was before 2002, happened the 16th according to Ann\u00e9e?",
+                "question": "Which Titre, with Ann\u00e9e was after 2000, happened the 16th according to Ann\u00e9e?",
                 "answers": [
-                    "Meilleure actrice dans une com\u00e9diepour Sexe Intentions",
-                    "Meilleure actricepour Sexe Intentions",
-                    "Meilleur baiserpour Sexe Intentions (avec Selma Blair)",
-                    "Meilleur m\u00e9chantpour Sexe Intentions",
-                    "Meilleure actrice dans une s\u00e9rie dramatiquepour Buffy contre les vampires",
-                    "Meilleure actrice \u00e0 la t\u00e9l\u00e9visionpour Buffy contre les vampires"
+                    "Meilleure prestation la plus effrayantepour The Grudge",
+                    "Meilleure actrice dans un film d'horreur-thrillerpour The Grudge"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Ann\u00e9e was before 1999, happened the 3rd according to Ann\u00e9e?",
+                "question": "Which Titre, with Ann\u00e9e was before 2014, happened the 10th according to Ann\u00e9e?",
                 "answers": [
-                    "Meilleure jeune actrice dans une s\u00e9rie t\u00e9l\u00e9vis\u00e9e dramatiquepour La Force du destin"
+                    "Femme la plus belle au monde",
+                    "Meilleure actrice \u00e0 la t\u00e9l\u00e9visionpour Buffy contre les vampires",
+                    "Meilleure actrice dans une s\u00e9rie dramatiquepour Buffy contre les vampires"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Ann\u00e9e was before 2012, happened the 30th according to Ann\u00e9e?",
+                "question": "Which Titre, with Ann\u00e9e was on 2003, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
                     "Meilleure actrice dans une s\u00e9rie dramatiquepour Buffy contre les vampires",
                     "Meilleure actrice \u00e0 la t\u00e9l\u00e9visionpour Buffy contre les vampires",
@@ -423,44 +340,94 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the C\u00e9r\u00e9monie was People's Choice Award and when the C\u00e9r\u00e9monie was FHM?",
+                "question": "How many Titre had Ann\u00e9e was before 2005 and C\u00e9r\u00e9monie string contains Saturn?",
                 "answers": [
-                    "15"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the C\u00e9r\u00e9monie was Kids' Choice Awards and when the C\u00e9r\u00e9monie was Golden Globe Awards?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Titre had Ann\u00e9e was on 2000?",
-                "answers": [
-                    "6"
+                    "7"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Ann\u00e9e was after 2000 and C\u00e9r\u00e9monie string starts with Teen?",
+                "question": "How many Titre had C\u00e9r\u00e9monie string contains Awards and Ann\u00e9e was before 2014?",
                 "answers": [
-                    "8"
+                    "33"
                 ],
                 "reasoning_type": "counting"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had C\u00e9r\u00e9monie string contains Awards and Ann\u00e9e was after 1998?",
+                "question": "How many Titre had Ann\u00e9e was after 1995?",
                 "answers": [
-                    "26"
+                    "31"
                 ],
                 "reasoning_type": "counting"
             }
         ]
+    },
+    {
+        "id": "135765",
+        "title": "Sarah Michelle Gellar",
+        "url": "https://fr.wikipedia.org/?curid=135765",
+        "header": [
+            "Ann\u00e9e",
+            "Film",
+            "Salaire."
+        ],
+        "rows": [
+            [
+                "1997-2003",
+                "Buffy contre les vampires",
+                ""
+            ],
+            [
+                "1999",
+                "Sexe Intentions",
+                ""
+            ],
+            [
+                "1999",
+                "Simplement irr\u00e9sistible",
+                "Estim\u00e9 entre  et"
+            ],
+            [
+                "2002",
+                "Scooby-Doo",
+                ""
+            ],
+            [
+                "2004",
+                "Scooby-Doo 2 : Les monstres se d\u00e9cha\u00eenent",
+                ""
+            ],
+            [
+                "2004",
+                "The Grudge",
+                ""
+            ],
+            [
+                "2011-2012",
+                "Ringer",
+                "par \u00e9pisode"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                9999,
+                1999,
+                1999,
+                2002,
+                2004,
+                2004,
+                9999
+            ]
+        },
+        "qas": []
     }
 ]

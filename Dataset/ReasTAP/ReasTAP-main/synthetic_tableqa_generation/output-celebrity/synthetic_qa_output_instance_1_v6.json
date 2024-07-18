@@ -75,25 +75,25 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Commentaire string contains en, happened the 4th according to Ann\u00e9e?",
+                "question": "Which Titre, with Commentaire string contains en, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
-                    "Au c\u0153ur du Stade"
+                    "Live \u00e0 Paris"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Commentaire was 1 million certifi\u00e9 en Europe en 2004.. and when the Commentaire was Sorti en 1999 en coffrets collector num\u00e9rot\u00e9s (France).?",
+                "question": "How many years had passed between when the Commentaire was live. Sorti uniquement au Qu\u00e9bec. and when the Commentaire was Dont  aux \u00c9tats-Unis..?",
                 "answers": [
-                    "5"
+                    "19"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Commentaire was Dont  aux \u00c9tats-Unis.. and when the Commentaire was 2 millions certifi\u00e9s en Europe en 2004.?",
+                "question": "How many years had passed between when the Commentaire was live. Sorti uniquement au Qu\u00e9bec. and when the Commentaire was 2 millions certifi\u00e9s en Europe en 2004.?",
                 "answers": [
-                    "8"
+                    "11"
                 ],
                 "reasoning_type": "date_difference"
             }
@@ -161,7 +161,7 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Commentaire string contains en, happened the 1st according to Ann\u00e9e?",
+                "question": "Which Titre, with Commentaire string contains le, happened the 1st according to Ann\u00e9e?",
                 "answers": [
                     "The Collector's Series, Volume One"
                 ],
@@ -169,27 +169,27 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Commentaire string contains en, happened the 3rd according to Ann\u00e9e?",
-                "answers": [
-                    "My Love: Essential Collection"
-                ],
-                "reasoning_type": "temporal_comparison"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Commentaire was Disponible en CD / Double-CD / Triple-CD. and when the Commentaire was Disponible en CD ou Double-CD.  le plus vendu dans le monde en 2008..?",
-                "answers": [
-                    "3"
-                ],
-                "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many years had passed between when the Commentaire was Disponible en CD / Double-CD / Triple-CD. and when the Commentaire was 7 nouveaux titres studio et compilation.?",
+                "question": "How many years had passed between when the Commentaire was 7 nouveaux titres studio et compilation. and when the Commentaire was Disponible en CD / Double-CD / Triple-CD.?",
                 "answers": [
                     "6"
                 ],
                 "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Commentaire was Disponible en CD ou Double-CD.  le plus vendu dans le monde en 2008.. and when the Commentaire was 7 nouveaux titres studio et compilation.?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Titre had Commentaire string contains le?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
             }
         ]
     },
@@ -332,51 +332,27 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "What was the Titre when the Commentaire string contains en and the Ventes string contains En?",
+                "question": "Which Titre, with Commentaire string contains le, happened the 1st according to Ann\u00e9e?",
                 "answers": [
-                    "La Voix du Bon Dieu"
-                ],
-                "reasoning_type": "conjunction"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Does only Titre, with Commentaire string contains au, have Ventes string contains House?",
-                "answers": [
-                    "Yes"
-                ],
-                "reasoning_type": "quantifiers"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "Which Titre, with Commentaire string contains de, happened the 7th according to Ann\u00e9e?",
-                "answers": [
-                    "Sans attendre"
+                    "Dion chante Plamondon"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Commentaire was Album francophone le plus vendu de l'histoire du disque. and when the Commentaire was Dernier album studio avant de changer d'image et de maison de disques ; distribu\u00e9 exclusivement au Qu\u00e9bec.?",
+                "question": "How many years had passed between when the Commentaire was Album francophone le plus vendu de l'histoire du disque. and when the Commentaire was Prix F\u00e9lix pour un de ses albums et   ; distribu\u00e9 exclusivement au Qu\u00e9bec.?",
                 "answers": [
-                    "10"
+                    "13"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Commentaire was Certifi\u00e9 disque de diamant en France. and when the Commentaire was Album francophone le plus vendu de l'histoire du disque.?",
+                "question": "How many years had passed between when the Commentaire was Seul disque distribu\u00e9 au Canada \u00e0 ne pas \u00eatre devenu au moins disque d'or ; distribu\u00e9 exclusivement au Qu\u00e9bec. and when the Commentaire was paru chez CBS.?",
                 "answers": [
-                    "3"
+                    "6"
                 ],
                 "reasoning_type": "date_difference"
-            },
-            {
-                "source": "synthetic_qa",
-                "question": "How many Titre had Ventes string contains House and Commentaire string contains au?",
-                "answers": [
-                    "1"
-                ],
-                "reasoning_type": "counting"
             }
         ]
     },
@@ -498,7 +474,15 @@
         "qas": [
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Commentaire string starts with le, happened the 2nd according to Ann\u00e9e?",
+                "question": "Which Titre, with Commentaire string contains des, happened the 1st according to Ann\u00e9e?",
+                "answers": [
+                    "Falling into You"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Titre, with Commentaire string contains le, happened the 6th according to Ann\u00e9e?",
                 "answers": [
                     "One Heart"
                 ],
@@ -506,33 +490,33 @@
             },
             {
                 "source": "synthetic_qa",
-                "question": "Which Titre, with Commentaire string starts with le, happened the 1st according to Ann\u00e9e?",
+                "question": "Which Titre, with Commentaire string starts with le, happened the 3rd according to Ann\u00e9e?",
                 "answers": [
-                    "A New Day Has Come"
+                    "Taking Chances"
                 ],
                 "reasoning_type": "temporal_comparison"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Commentaire was Album-concept sur l'amour unissant une m\u00e8re et son b\u00e9b\u00e9. and when the Commentaire was Dont  (double disque de platine) aux \u00c9tats-Unis.?",
+                "question": "How many years had passed between when the Commentaire was Album-concept sur l'amour unissant une m\u00e8re et son b\u00e9b\u00e9. and when the Commentaire was le plus vendu dans le monde en 2007..?",
                 "answers": [
-                    "12"
+                    "3"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many years had passed between when the Commentaire was Dont  aux \u00c9tats-Unis. and when the Commentaire was le plus vendu dans le monde en 2003 ( aux \u00c9tats-Unis,  en Europe)....?",
+                "question": "How many years had passed between when the Commentaire was le plus vendu dans le monde en 2007.. and when the Commentaire was Dont  aux \u00c9tats-Unis.?",
                 "answers": [
-                    "10"
+                    "14"
                 ],
                 "reasoning_type": "date_difference"
             },
             {
                 "source": "synthetic_qa",
-                "question": "How many Titre had Commentaire string contains le?",
+                "question": "How many Titre had Commentaire string contains plus?",
                 "answers": [
-                    "8"
+                    "7"
                 ],
                 "reasoning_type": "counting"
             }
