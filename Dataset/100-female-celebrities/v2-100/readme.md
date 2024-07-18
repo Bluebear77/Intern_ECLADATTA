@@ -12,7 +12,7 @@ This is the 2nd version of 100 female celebrities data.
 
 - P2 >> P4: 2JSON.py, determine the  "column_types","key_column" using DAGOBAH
 
-- P4 >> P5: rct.py, refine the column type.
+- P4 >> P5: rct.py, refine the column type. Ensure the number of rows in "column_types" matches the number of rows in "header".
 
 - P5 >> P6: date.py, use 9999 as placeholder for empty date vlue in date_column.
 
