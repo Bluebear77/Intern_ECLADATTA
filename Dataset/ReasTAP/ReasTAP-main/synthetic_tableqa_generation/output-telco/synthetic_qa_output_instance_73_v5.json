@@ -1,0 +1,292 @@
+[
+    {
+        "id": "397763",
+        "title": "Near-field communication",
+        "url": "https://en.wikipedia.org/?curid=397763",
+        "header": [
+            "Speed (kbit/s)",
+            "Active device",
+            "Passive device"
+        ],
+        "rows": [
+            [
+                "424",
+                "Manchester, 10% ASK",
+                "Manchester, 10% ASK"
+            ],
+            [
+                "212",
+                "Manchester, 10% ASK",
+                "Manchester, 10% ASK"
+            ],
+            [
+                "106",
+                "Modified Miller, 100% ASK",
+                "Manchester, 10% ASK"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            0
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Active device when the Speed (kbit/s) was less than 424 and the Passive device string ends with ASK?",
+                "answers": [
+                    "Manchester, 10% ASK",
+                    "Modified Miller, 100% ASK"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Active device when the Speed (kbit/s) was greater than 106 and the Passive device string contains ASK?",
+                "answers": [
+                    "Manchester, 10% ASK"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Active device, with Speed (kbit/s) was greater than or equal to 424, have Passive device string ends with ASK?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Active device, with Speed (kbit/s) was equal to 212, have Passive device string ends with ASK?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Active device, with Passive device string contains ASK, has the 1st largest Speed (kbit/s)?",
+                "answers": [
+                    "Manchester, 10% ASK"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Active device, with Passive device string ends with ASK, has the 2nd largest Speed (kbit/s)?",
+                "answers": [
+                    "Manchester, 10% ASK"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Active device, with Passive device string ends with ASK, has the 3rd largest Speed (kbit/s)?",
+                "answers": [
+                    "Modified Miller, 100% ASK"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Active device had Speed (kbit/s) was greater than or equal to 212 and Passive device string contains ASK?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Active device had Speed (kbit/s) was greater than 106 and Passive device string contains ASK?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Active device had Speed (kbit/s) was greater than or equal to 106 and Passive device string ends with ASK?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Speed (kbit/s) when the Passive device string ends with ASK?",
+                "answers": [
+                    "742.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Speed (kbit/s) when the Passive device string contains ASK?",
+                "answers": [
+                    "247.33"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Speed (kbit/s) when the Passive device string ends with ASK?",
+                "answers": [
+                    "247.33"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    },
+    {
+        "id": "397763",
+        "title": "Near-field communication",
+        "url": "https://en.wikipedia.org/?curid=397763",
+        "header": [
+            "Aspect",
+            "NFC",
+            "Bluetooth",
+            "Bluetooth Low Energy"
+        ],
+        "rows": [
+            [
+                "Tag requires power",
+                "No",
+                "Yes",
+                "Yes"
+            ],
+            [
+                "Cost of tag",
+                "US$0.10",
+                "US$5.00",
+                "US$5.00"
+            ],
+            [
+                "RFID compatible",
+                "ISO/IEC 18000-3",
+                "Active",
+                "Active"
+            ],
+            [
+                "Standardisation body",
+                "ISO/IEC",
+                "Bluetooth SIG",
+                "Bluetooth SIG"
+            ],
+            [
+                "Network standard",
+                "ISO/IEC 13157 etc.",
+                "was IEEE 802.15.1; now by SIG specs",
+                "was IEEE 802.15.1; now by SIG specs"
+            ],
+            [
+                "Network type",
+                "Point-to-point",
+                "WPAN",
+                "WPAN"
+            ],
+            [
+                "Cryptography",
+                "Not with RFID",
+                "Available",
+                "Available"
+            ],
+            [
+                "Range",
+                "< 20\u00a0cm",
+                "\u2248100 m (class 1)",
+                "\u224850 m"
+            ],
+            [
+                "Frequency",
+                "13.56\u00a0MHz",
+                "2.4\u20132.5\u00a0GHz",
+                "2.4\u20132.5\u00a0GHz"
+            ],
+            [
+                "Bit rate",
+                "424 kbit/s",
+                "2.1 Mbit/s",
+                "1 Mbit/s"
+            ],
+            [
+                "Set-up time",
+                "< 0.1 s",
+                "< 6 s",
+                "< 0.006 s"
+            ],
+            [
+                "Current consumption",
+                "< 15 mA (read)",
+                "Varies with class",
+                "< 15 mA (read and transmit)"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            0
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the NFC when the Bluetooth Low Energy is Available and the Bluetooth is Available?",
+                "answers": [
+                    "Not with RFID"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the NFC when the Bluetooth Low Energy is Active and the Bluetooth is Active?",
+                "answers": [
+                    "ISO/IEC 18000-3"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every NFC, with Bluetooth Low Energy is Available, have Bluetooth is Available?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every NFC, with Bluetooth Low Energy is Yes, have Bluetooth is Yes?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many NFC had Bluetooth Low Energy is Available?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many NFC had Bluetooth string ends with s and Bluetooth Low Energy string ends with s?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

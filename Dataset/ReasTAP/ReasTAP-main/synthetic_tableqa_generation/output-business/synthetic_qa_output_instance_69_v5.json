@@ -1,0 +1,223 @@
+[
+    {
+        "id": "55544929",
+        "title": "Playmaker Media",
+        "url": "https://en.wikipedia.org/?curid=55544929",
+        "header": [
+            "Title",
+            "Network",
+            "Years",
+            "Format",
+            "Duration"
+        ],
+        "rows": [
+            [
+                "Wicked Love: The Maria Korp Story",
+                "Nine Network",
+                "2010",
+                "Telemovie",
+                ""
+            ],
+            [
+                "Slide",
+                "FOX8",
+                "2011",
+                "Drama series",
+                "1 season, 10 episodes"
+            ],
+            [
+                "Blood Brothers",
+                "Nine Network",
+                "2011",
+                "Telemovie",
+                ""
+            ],
+            [
+                "House Husbands",
+                "Nine Network",
+                "2012\u20132017",
+                "Drama",
+                "5 seasons, 58 episodes"
+            ],
+            [
+                "The Code",
+                "ABC",
+                "2014\u20132016",
+                "Drama series",
+                "2 seasons, 12 episodes"
+            ],
+            [
+                "Love Child",
+                "Nine Network",
+                "2014\u20132017",
+                "Drama series",
+                "4 seasons, 36 episodes"
+            ],
+            [
+                "Hiding",
+                "ABC",
+                "2015",
+                "Drama series",
+                "1 season, 8 episodes"
+            ],
+            [
+                "The Wrong Girl",
+                "Network Ten",
+                "2016\u20132017",
+                "Drama series",
+                "2 seasons, 18 episodes"
+            ],
+            [
+                "Chosen",
+                "iQiyi",
+                "2017",
+                "3-part Miniseries",
+                ""
+            ],
+            [
+                "Friday on My Mind",
+                "ABC",
+                "2017",
+                "2-part Miniseries",
+                ""
+            ],
+            [
+                "Bite Club",
+                "Nine Network",
+                "2018",
+                "Drama series",
+                "1 season, 8 episodes"
+            ],
+            [
+                "Blind Date",
+                "Network Ten",
+                "2018",
+                "Light Entertainment",
+                "1 season"
+            ],
+            [
+                "Bloom",
+                "Stan",
+                "2019\u2013present",
+                "Drama series",
+                "2 seasons, 12 episodes"
+            ],
+            [
+                "Reckoning",
+                "AXN",
+                "2019",
+                "Drama series",
+                "1 season, 10 episodes"
+            ],
+            [
+                "The Commons",
+                "Stan",
+                "2019",
+                "Drama series",
+                "1 season, 8 episodes"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "datetime",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {
+            "2": [
+                2010,
+                2011,
+                2011,
+                9999,
+                9999,
+                9999,
+                2015,
+                9999,
+                2017,
+                2017,
+                2018,
+                2018,
+                9999,
+                2019,
+                2019
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Format is Drama and the Network string contains Nine?",
+                "answers": [
+                    "House Husbands"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Duration string starts with 2 and the Network string starts with Network?",
+                "answers": [
+                    "The Wrong Girl"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Title, with Format string contains Drama, have Network string contains Ten?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Title, with Format string ends with series, have Network string contains Network?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Network was AXN and when the Network was FOX8?",
+                "answers": [
+                    "8"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Network was iQiyi and when the Network was AXN?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Format string ends with series and Duration string contains episodes?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Duration string starts with 1 and Network is ABC?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Format string contains series and Duration string starts with 1?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

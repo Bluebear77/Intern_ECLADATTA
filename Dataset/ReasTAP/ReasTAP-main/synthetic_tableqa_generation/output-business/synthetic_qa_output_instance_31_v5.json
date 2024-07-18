@@ -1,0 +1,234 @@
+[
+    {
+        "id": "63082619",
+        "title": "Hyundai Motor Manufacturing Indonesia",
+        "url": "https://en.wikipedia.org/?curid=63082619",
+        "header": [
+            "Model",
+            "Model",
+            "Indonesian introduction",
+            "Current model",
+            "Current model",
+            "Current production status"
+        ],
+        "rows": [
+            [
+                "Model",
+                "Model",
+                "Indonesian introduction",
+                "Introduction (model code)",
+                "Update/facelift",
+                "Current production status"
+            ],
+            [
+                "Sedan",
+                "Sedan",
+                "Sedan",
+                "Sedan",
+                "Sedan",
+                "Sedan"
+            ],
+            [
+                "200pxIONIQ 6",
+                "Ioniq 6",
+                "2023",
+                "2023 (CE)",
+                "\u2014",
+                "Imported from South Korea"
+            ],
+            [
+                "SUV/crossover",
+                "SUV/crossover",
+                "SUV/crossover",
+                "SUV/crossover",
+                "SUV/crossover",
+                "SUV/crossover"
+            ],
+            [
+                "200pxSTARGAZER X",
+                "Stargazer X",
+                "2023",
+                "2023 (KS)",
+                "\u2014",
+                "Assembled in Indonesia"
+            ],
+            [
+                "200pxCRETA",
+                "Creta",
+                "2022",
+                "2022 (SU2)",
+                "\u2014",
+                "Assembled in Indonesia"
+            ],
+            [
+                "200pxIONIQ 5",
+                "Ioniq 5",
+                "2022",
+                "2022 (NE)",
+                "\u2014",
+                "Assembled in Indonesia"
+            ],
+            [
+                "200pxSANTA FE",
+                "Santa Fe",
+                "2001",
+                "2018 (TM)",
+                "2021",
+                "Assembled in Indonesia since 2022"
+            ],
+            [
+                "200pxPALISADE",
+                "Palisade",
+                "2020",
+                "2020 (LX2)",
+                "2022",
+                "Imported from South Korea"
+            ],
+            [
+                "MPV",
+                "MPV",
+                "MPV",
+                "MPV",
+                "MPV",
+                "MPV"
+            ],
+            [
+                "200pxSTARGAZER",
+                "Stargazer",
+                "2022",
+                "2022 (KS)",
+                "\u2014",
+                "Assembled in Indonesia"
+            ],
+            [
+                "200pxSTARIA",
+                "Staria",
+                "2021",
+                "2021 (US4)",
+                "\u2014",
+                "Imported from South Korea"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {
+            "2": [
+                9999,
+                9999,
+                2023,
+                9999,
+                2023,
+                2022,
+                2022,
+                2001,
+                2020,
+                9999,
+                2022,
+                2021
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Model when the Current model string starts with Introduction and the Current production status string ends with status?",
+                "answers": [
+                    "Model"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Model when the Model string starts with Stargazer and the Current production status string starts with Assembled?",
+                "answers": [
+                    "200pxSTARGAZER X",
+                    "200pxSTARGAZER"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Model, with Current model string starts with Introduction, have Model is Model?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Model, with Current model is Sedan, have Model is Sedan?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Model, with Current production status string starts with Assembled, happened the 1st according to Indonesian introduction?",
+                "answers": [
+                    "200pxSANTA FE"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Model, with Current production status string starts with Assembled, happened the 2nd according to Indonesian introduction?",
+                "answers": [
+                    "200pxCRETA",
+                    "200pxIONIQ 5",
+                    "200pxSTARGAZER"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Model, with Current production status string starts with Assembled, happened the 4th according to Indonesian introduction?",
+                "answers": [
+                    "200pxCRETA",
+                    "200pxIONIQ 5",
+                    "200pxSTARGAZER"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Model was Ioniq 6 and when the Model was Staria?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Model was Palisade and when the Model was Stargazer?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Model had Current production status string ends with Indonesia?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Model had Current production status string starts with Assembled?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

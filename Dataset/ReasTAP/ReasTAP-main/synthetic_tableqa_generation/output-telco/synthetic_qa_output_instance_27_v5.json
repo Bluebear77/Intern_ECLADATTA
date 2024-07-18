@@ -1,0 +1,102 @@
+[
+    {
+        "id": "27320002",
+        "title": "EE Limited",
+        "url": "https://en.wikipedia.org/?curid=27320002",
+        "header": [
+            "Frequency",
+            "Band",
+            "Protocol",
+            "Class"
+        ],
+        "rows": [
+            [
+                "1,800\u00a0MHz",
+                "",
+                "GSM/GPRS/EDGE",
+                "2G"
+            ],
+            [
+                "2,100\u00a0MHz",
+                "1",
+                "UMTS/HSDPA/HSPA+/DC-HSPA+",
+                "3G"
+            ],
+            [
+                "800\u00a0MHz",
+                "20",
+                "LTE/LTE Advanced",
+                "4G/4G+"
+            ],
+            [
+                "1,800\u00a0MHz",
+                "3",
+                "LTE/LTE Advanced",
+                "4G/4G+"
+            ],
+            [
+                "2,100\u00a0MHz",
+                "1",
+                "LTE/LTE Advanced",
+                "4G/4G+"
+            ],
+            [
+                "2,600\u00a0MHz",
+                "7",
+                "LTE/LTE Advanced",
+                "4G/4G+"
+            ],
+            [
+                "700\u00a0MHz",
+                "n28",
+                "NR",
+                "5G"
+            ],
+            [
+                "1,800\u00a0MHz",
+                "n3",
+                "NR",
+                "5G"
+            ],
+            [
+                "2,100\u00a0MHz",
+                "n1",
+                "NR",
+                "5G"
+            ],
+            [
+                "2,600\u00a0MHz",
+                "n7",
+                "NR",
+                "5G"
+            ],
+            [
+                "3,500\u00a0MHz",
+                "n78",
+                "NR",
+                "5G"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "numeric",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            2
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many Frequency had Band is 1?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

@@ -1,0 +1,141 @@
+[
+    {
+        "id": "64239354",
+        "title": "Page Fifty-Four Pictures",
+        "url": "https://en.wikipedia.org/?curid=64239354",
+        "header": [
+            "Year",
+            "Title",
+            "Notes"
+        ],
+        "rows": [
+            [
+                "2020",
+                "The Glorias",
+                "distributed by Roadside Attractions and LD Entertainment"
+            ],
+            [
+                "2020",
+                "Chemical Hearts",
+                "distributed by Amazon Studios"
+            ],
+            [
+                "2022",
+                "Mack & Rita",
+                "distributed by Gravitas Premiere"
+            ],
+            [
+                "2023",
+                "Fool's Paradise",
+                "distributed by Roadside Attractions"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2020,
+                2020,
+                2022,
+                2023
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Year was on 2020 and the Notes string starts with distributed?",
+                "answers": [
+                    "The Glorias",
+                    "Chemical Hearts"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Notes string ends with Premiere and the Year was before 2023?",
+                "answers": [
+                    "Mack & Rita"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Title, with Year was on 2023, have Notes string starts with distributed?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Title, with Year was on 2022, have Notes string starts with distributed?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Notes string contains distributed, happened the 1st according to Year?",
+                "answers": [
+                    "The Glorias",
+                    "Chemical Hearts"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Notes string contains by, happened the 4th according to Year?",
+                "answers": [
+                    "Fool's Paradise"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Notes string starts with distributed, happened the 3rd according to Year?",
+                "answers": [
+                    "Mack & Rita"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Notes was distributed by Roadside Attractions and LD Entertainment and when the Notes was distributed by Roadside Attractions?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Year was before 2023?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Year was on 2020 and Notes string starts with distributed?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Year was after 2020 and Notes string contains distributed?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

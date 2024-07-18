@@ -1,0 +1,298 @@
+[
+    {
+        "id": "48539393",
+        "title": "Amira Nature Foods",
+        "url": "https://en.wikipedia.org/?curid=48539393",
+        "header": [
+            "Name of company",
+            "Country of incorporation or establishment",
+            "Equity interest held"
+        ],
+        "rows": [
+            [
+                "Amira Pure Foods Private Limited (\u201cAmira India\u201d)",
+                "India",
+                "49.8% by Amira Mauritius"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Name of company when the Equity interest held string contains Mauritius and the Country of incorporation or establishment is India?",
+                "answers": [
+                    "Amira Pure Foods Private Limited (\u201cAmira India\u201d)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Name of company when the Country of incorporation or establishment is India and the Equity interest held string contains by?",
+                "answers": [
+                    "Amira Pure Foods Private Limited (\u201cAmira India\u201d)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Name of company, with Equity interest held string contains by, have Country of incorporation or establishment is India?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Name of company had Country of incorporation or establishment is India and Equity interest held string contains by?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Name of company had Equity interest held string contains Mauritius and Country of incorporation or establishment is India?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "48539393",
+        "title": "Amira Nature Foods",
+        "url": "https://en.wikipedia.org/?curid=48539393",
+        "header": [
+            "",
+            "March 31, 2021",
+            "March 31, 2020",
+            "March 31, 2019",
+            "March 31, 2018",
+            "March 31, 2017",
+            "March 31, 2016",
+            "March 31, 2015"
+        ],
+        "rows": [
+            [
+                "Revenue",
+                "Filing overdue",
+                "Filing overdue",
+                "$64.4",
+                "$413.9",
+                "$551.8",
+                "$563.5",
+                "$700.0"
+            ],
+            [
+                "Profit/Loss",
+                "Filing overdue",
+                "Filing overdue",
+                "-$357.9",
+                "-$93.6",
+                "$31.5",
+                "$32.9",
+                "$53.2"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the  when the March 31, 2021 string starts with Filing and the March 31, 2020 string starts with Filing?",
+                "answers": [
+                    "Revenue",
+                    "Profit/Loss"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the  when the March 31, 2020 string starts with Filing and the March 31, 2021 string starts with Filing?",
+                "answers": [
+                    "Revenue",
+                    "Profit/Loss"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only , with March 31, 2021 string starts with Filing, have March 31, 2020 string starts with Filing?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only , with March 31, 2020 string starts with Filing, have March 31, 2021 string contains Filing?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many  had March 31, 2020 string starts with Filing?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many  had March 31, 2021 string starts with Filing and March 31, 2020 string starts with Filing?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many  had March 31, 2021 string starts with Filing?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "48539393",
+        "title": "Amira Nature Foods",
+        "url": "https://en.wikipedia.org/?curid=48539393",
+        "header": [
+            "Name of company",
+            "Country of incorporation or establishment",
+            "Equity interest held"
+        ],
+        "rows": [
+            [
+                "Amira Nature Foods Ltd (\u201cAmira Mauritius\u201d)",
+                "Mauritius",
+                "100% by Amira Nature Foods Ltd"
+            ],
+            [
+                "Amira International Finance B.V.",
+                "Netherlands",
+                "100% by Amira Nature Foods Ltd"
+            ],
+            [
+                "Red Reinel Limited",
+                "Mauritius",
+                "100% by Amira Mauritius"
+            ],
+            [
+                "Amira I Grand Foods Inc.",
+                "British Virgin Islands",
+                "100% by Amira Mauritius"
+            ],
+            [
+                "Amira Basmati Rice GmbH EUR",
+                "Germany",
+                "100% by Amira Mauritius"
+            ],
+            [
+                "Basmati Rice North America LLC",
+                "United States",
+                "100% by Amira I Grand Foods Inc. (BVI)"
+            ],
+            [
+                "Amira K.A. Foods International DMCC",
+                "United Arab Emirates",
+                "100% by Amira I Grand Foods Inc. (BVI)"
+            ],
+            [
+                "Amira G Foods Limited",
+                "United Kingdom",
+                "100% by Amira I Grand Foods Inc. (BVI)"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Name of company when the Equity interest held string ends with Mauritius and the Country of incorporation or establishment is Mauritius?",
+                "answers": [
+                    "Red Reinel Limited"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Name of company when the Equity interest held string contains by and the Country of incorporation or establishment is Mauritius?",
+                "answers": [
+                    "Amira Nature Foods Ltd (\u201cAmira Mauritius\u201d)",
+                    "Red Reinel Limited"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Name of company, with Country of incorporation or establishment string starts with United, have Equity interest held string contains Foods?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Name of company, with Equity interest held string contains Mauritius, have Country of incorporation or establishment is Mauritius?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Name of company had Equity interest held string contains by and Country of incorporation or establishment string contains United?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Name of company had Country of incorporation or establishment is Mauritius?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Name of company had Country of incorporation or establishment string ends with Kingdom and Equity interest held string contains I?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

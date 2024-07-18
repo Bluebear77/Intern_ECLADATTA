@@ -1,0 +1,107 @@
+[
+    {
+        "id": "69077109",
+        "title": "Phoenix Labs",
+        "url": "https://en.wikipedia.org/?curid=69077109",
+        "header": [
+            "Year",
+            "Title",
+            "Genre(s)",
+            "Platform(s)"
+        ],
+        "rows": [
+            [
+                "2019",
+                "Dauntless",
+                "Action role-playing",
+                "Microsoft Windows, Nintendo Switch, PlayStation 4, Xbox One"
+            ],
+            [
+                "2023",
+                "Fae Farm",
+                "Action role-playing",
+                "Microsoft Windows, Nintendo Switch"
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2019,
+                2023
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Genre(s) string starts with Action and the Year was on 2023?",
+                "answers": [
+                    "Fae Farm"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Platform(s) string ends with One and the Year was before 2023?",
+                "answers": [
+                    "Dauntless"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Title, with Year was on 2019, have Genre(s) string starts with Action?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Title, with Year was before 2023, have Platform(s) string contains Switch?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Platform(s) was Microsoft Windows, Nintendo Switch, PlayStation 4, Xbox One and when the Platform(s) was Microsoft Windows, Nintendo Switch?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Genre(s) string contains Action?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Year was before 2019?",
+                "answers": [
+                    "0"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Year was before 2023 and Platform(s) string ends with One?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

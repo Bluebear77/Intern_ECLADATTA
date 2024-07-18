@@ -1,0 +1,185 @@
+[
+    {
+        "id": "42852",
+        "title": "Radio frequency",
+        "url": "https://en.wikipedia.org/?curid=42852",
+        "header": [
+            "Frequencyrange",
+            "Wavelengthrange",
+            "ITU designation",
+            "ITU designation",
+            "IEEE bands"
+        ],
+        "rows": [
+            [
+                "Frequencyrange",
+                "Wavelengthrange",
+                "Full name",
+                "Abbreviation",
+                "IEEE bands"
+            ],
+            [
+                "Below 3\u00a0Hz",
+                ">105\u00a0km",
+                "",
+                "",
+                ""
+            ],
+            [
+                "3\u201330\u00a0Hz",
+                "105\u2013104\u00a0km",
+                "Extremely low frequency",
+                "ELF",
+                ""
+            ],
+            [
+                "30\u2013300\u00a0Hz",
+                "104\u2013103\u00a0km",
+                "Super low frequency",
+                "SLF",
+                ""
+            ],
+            [
+                "300\u20133000\u00a0Hz",
+                "103\u2013100\u00a0km",
+                "Ultra low frequency",
+                "ULF",
+                ""
+            ],
+            [
+                "3\u201330\u00a0kHz",
+                "100\u201310\u00a0km",
+                "Very low frequency",
+                "VLF",
+                ""
+            ],
+            [
+                "30\u2013300\u00a0kHz",
+                "10\u20131\u00a0km",
+                "Low frequency",
+                "LF",
+                ""
+            ],
+            [
+                "300\u00a0kHz \u2013 3\u00a0MHz",
+                "1\u00a0km \u2013 100 m",
+                "Medium frequency",
+                "MF",
+                ""
+            ],
+            [
+                "3\u201330\u00a0MHz",
+                "100\u201310\u00a0m",
+                "High frequency",
+                "HF",
+                "HF"
+            ],
+            [
+                "30\u2013300\u00a0MHz",
+                "10\u20131\u00a0m",
+                "Very high frequency",
+                "VHF",
+                "VHF"
+            ],
+            [
+                "300\u00a0MHz \u2013 3\u00a0GHz",
+                "1 m \u2013 100\u00a0mm",
+                "Ultra high frequency",
+                "UHF",
+                "UHF, L, S"
+            ],
+            [
+                "3\u201330\u00a0GHz",
+                "100\u201310\u00a0mm",
+                "Super high frequency",
+                "SHF",
+                "S, C, X, Ku, K, Ka"
+            ],
+            [
+                "30\u2013300\u00a0GHz",
+                "10\u20131\u00a0mm",
+                "Extremely high frequency",
+                "EHF",
+                "Ka, V, W, mm"
+            ],
+            [
+                "300\u00a0GHz \u2013 3\u00a0THz",
+                "1\u00a0mm \u2013 0.1\u00a0mm",
+                "Tremendously high frequency",
+                "THF",
+                ""
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 2,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the ITU designation when the ITU designation is UHF and the IEEE bands string contains S?",
+                "answers": [
+                    "Ultra high frequency"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the ITU designation when the Wavelengthrange string contains km and the Frequencyrange string contains 300?",
+                "answers": [
+                    "Super low frequency",
+                    "Ultra low frequency",
+                    "Low frequency",
+                    "Medium frequency"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only ITU designation, with ITU designation is Abbreviation, have IEEE bands string ends with bands?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only ITU designation, with Frequencyrange string contains 300, have ITU designation is EHF?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many ITU designation had Frequencyrange string ends with MHz?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many ITU designation had Frequencyrange string starts with 300?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many ITU designation had Wavelengthrange string contains km?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

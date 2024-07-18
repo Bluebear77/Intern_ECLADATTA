@@ -1,0 +1,79 @@
+[
+    {
+        "id": "55574451",
+        "title": "Sollac",
+        "url": "https://en.wikipedia.org/?curid=55574451",
+        "header": [
+            "Share",
+            "Company",
+            "Notes"
+        ],
+        "rows": [
+            [
+                "47.5%",
+                "PFFW (Petits-Fils de Fran\u00e7ois De Wendel)",
+                "Lorraine based, de Wendel"
+            ],
+            [
+                "47.5%",
+                "De Wendel & Cie.",
+                "Lorraine based, de Wendel"
+            ],
+            [
+                "3.5%",
+                "Forges et Aci\u00e9ries de Gueugnon",
+                "de Wendell"
+            ],
+            [
+                "3.5%",
+                "J.-J. Carnaud et Forges de Basse-Indre",
+                "de Wendell"
+            ],
+            [
+                "14.5%",
+                "Aci\u00e9ries de Rombas",
+                "Lorraine, Mar-Mich-Pont"
+            ],
+            [
+                "21%",
+                "Forges et Aci\u00e9ries de Dilling",
+                "Saar, Mar-Mich-Pont (soon to become part of Sid\u00e9lor)"
+            ],
+            [
+                "3.5%",
+                "UCPMI de Hagondange",
+                ""
+            ],
+            [
+                "",
+                "Marine & Hom\u00e9court",
+                ""
+            ],
+            [
+                "",
+                "Aci\u00e9ries de Longwy",
+                "Soon part of LorraineEscaut"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            0
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many Company had Notes string starts with Lorraine?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

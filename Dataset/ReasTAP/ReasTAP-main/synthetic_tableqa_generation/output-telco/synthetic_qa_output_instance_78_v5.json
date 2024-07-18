@@ -1,0 +1,175 @@
+[
+    {
+        "id": "59764200",
+        "title": "5G NR",
+        "url": "https://en.wikipedia.org/?curid=59764200",
+        "header": [
+            "Sub-Carrier Spacing (kHz)",
+            "Slot duration (ms)",
+            "Frequency Bands",
+            "Notes"
+        ],
+        "rows": [
+            [
+                "15",
+                "1",
+                "FR1",
+                "Same as LTE"
+            ],
+            [
+                "30",
+                "0.5",
+                "FR1",
+                ""
+            ],
+            [
+                "60",
+                "0.25",
+                "FR1 and FR2",
+                "Both normal Cyclic Prefix (CP) and extended CP may be used with 60\u00a0kHz subcarrier spacing"
+            ],
+            [
+                "120",
+                "0.125",
+                "FR2",
+                ""
+            ],
+            [
+                "240",
+                "0.0625",
+                "FR2",
+                "This is only possible for search and measurement purposes, using the Synchronization Signal Block (SSB)"
+            ],
+            [
+                "480",
+                "0.03125",
+                "FR2",
+                ""
+            ],
+            [
+                "960",
+                "0.01565",
+                "FR2",
+                ""
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "numeric",
+            "string",
+            "string"
+        ],
+        "key_column": 2,
+        "numeric_columns": [
+            0,
+            1
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Frequency Bands when the Sub-Carrier Spacing (kHz) was less than 240 and the Notes string contains as?",
+                "answers": [
+                    "FR1"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Frequency Bands when the Slot duration (ms) was greater than or equal to 0.5 and the Sub-Carrier Spacing (kHz) was greater than 15?",
+                "answers": [
+                    "FR1"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Frequency Bands, with Notes string contains as, have Sub-Carrier Spacing (kHz) was greater than 60?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Frequency Bands, with Slot duration (ms) was greater than 0.125, have Sub-Carrier Spacing (kHz) was greater than or equal to 30?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Frequency Bands, with Sub-Carrier Spacing (kHz) was less than 120, has the 2nd largest Slot duration (ms)?",
+                "answers": [
+                    "FR1"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Frequency Bands, with Sub-Carrier Spacing (kHz) was less than 960, has the 5th largest Slot duration (ms)?",
+                "answers": [
+                    "FR2"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Frequency Bands, with Slot duration (ms) was less than or equal to 0.5, has the 4th largest Sub-Carrier Spacing (kHz)?",
+                "answers": [
+                    "FR2"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Frequency Bands had Sub-Carrier Spacing (kHz) was greater than or equal to 240 and Slot duration (ms) was greater than or equal to 0.03125?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Frequency Bands had Sub-Carrier Spacing (kHz) was less than 30 and Slot duration (ms) was equal to 1?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Frequency Bands had Sub-Carrier Spacing (kHz) was greater than or equal to 60?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Sub-Carrier Spacing (kHz) when the Slot duration (ms) was less than or equal to 1?",
+                "answers": [
+                    "1905.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Sub-Carrier Spacing (kHz) when the Slot duration (ms) was less than 1?",
+                "answers": [
+                    "1890.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Slot duration (ms) when the Sub-Carrier Spacing (kHz) was greater than 120?",
+                "answers": [
+                    "0.04"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    }
+]

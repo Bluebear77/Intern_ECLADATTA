@@ -1,0 +1,274 @@
+[
+    {
+        "id": "45663969",
+        "title": "Captivate Entertainment",
+        "url": "https://en.wikipedia.org/?curid=45663969",
+        "header": [
+            "#",
+            "Title",
+            "Release date",
+            "Budget",
+            "Domestic Gross",
+            "Worldwide Gross",
+            "Rotten Tomatoes",
+            "Metacritic",
+            ""
+        ],
+        "rows": [
+            [
+                "1",
+                "The Bourne Legacy",
+                "",
+                "$125,000,000",
+                "$113,203,870",
+                "$276,144,750",
+                "55%",
+                "61",
+                ""
+            ],
+            [
+                "2",
+                "Jason Bourne",
+                "",
+                "$120,000,000",
+                "$162,434,410",
+                "$415,484,914",
+                "56%",
+                "58",
+                ""
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "numeric",
+            "numeric",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            0,
+            6,
+            7
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Metacritic was greater than or equal to 58 and the # was greater than or equal to 1?",
+                "answers": [
+                    "The Bourne Legacy",
+                    "Jason Bourne"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the # was less than 2 and the Metacritic was greater than or equal to 61?",
+                "answers": [
+                    "The Bourne Legacy"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Title, with # was equal to 2, have Metacritic was less than or equal to 58?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Title, with # was less than or equal to 1, have Metacritic was less than or equal to 61?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with # was greater than or equal to 1, has the 1st largest Metacritic?",
+                "answers": [
+                    "The Bourne Legacy"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Metacritic was less than or equal to 61, has the 1st largest #?",
+                "answers": [
+                    "Jason Bourne"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Metacritic was less than 61?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had # was equal to 2?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of # when the Metacritic was greater than or equal to 58?",
+                "answers": [
+                    "1.5"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Metacritic when the # was less than or equal to 2?",
+                "answers": [
+                    "59.5"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    },
+    {
+        "id": "45663969",
+        "title": "Captivate Entertainment",
+        "url": "https://en.wikipedia.org/?curid=45663969",
+        "header": [
+            "Title",
+            ""
+        ],
+        "rows": [
+            [
+                "The Chancellor Manuscript",
+                ""
+            ],
+            [
+                "The Parsifal Mosaic",
+                ""
+            ],
+            [
+                "Pursuit",
+                ""
+            ],
+            [
+                "The Janson Directive",
+                ""
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            0
+        ],
+        "date_columns": {},
+        "qas": []
+    },
+    {
+        "id": "45663969",
+        "title": "Captivate Entertainment",
+        "url": "https://en.wikipedia.org/?curid=45663969",
+        "header": [
+            "Title",
+            "Season",
+            "Episode(s)",
+            "First aired",
+            "Last aired",
+            "Co-production",
+            "Network",
+            "Notes"
+        ],
+        "rows": [
+            [
+                "Treadstone",
+                "1",
+                "10",
+                "October 15, 2019",
+                "December 2019",
+                "Universal Content ProductionsImperative Entertainment",
+                "USA Network",
+                ""
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "numeric",
+            "numeric"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            0,
+            6,
+            7
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Season when the Co-production string contains Content and the Episode(s) is 10?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Season when the Episode(s) is 10 and the Last aired string starts with December?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Season, with Episode(s) is 10, have Last aired string starts with December?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Season, with First aired string contains October, have Last aired string starts with December?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Season had First aired string starts with October?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Season had Episode(s) is 10 and Last aired string starts with December?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

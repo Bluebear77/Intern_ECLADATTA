@@ -1,0 +1,344 @@
+[
+    {
+        "id": "40371534",
+        "title": "Fusion IP",
+        "url": "https://en.wikipedia.org/?curid=40371534",
+        "header": [
+            "Company",
+            "Brief Description of Company Function",
+            "Year Company Founded",
+            "Fusion Shareholding",
+            "Current/Exit",
+            ""
+        ],
+        "rows": [
+            [
+                "Absynth Biologics",
+                "Vaccines and antibodies to treat Staphylococcus aureus",
+                "2007",
+                "52%",
+                "Current",
+                ""
+            ],
+            [
+                "Adjuvantix",
+                "Prophylactic and therapeutic vaccines",
+                "2003",
+                "42.6%",
+                "Current",
+                ""
+            ],
+            [
+                "Art of Xen",
+                "New anaesthetic drugs",
+                "2002",
+                "31.6%",
+                "Current",
+                ""
+            ],
+            [
+                "Asalus Medical Instruments",
+                "Medical device for surgical procedures",
+                "2009",
+                "44%",
+                "Current",
+                ""
+            ],
+            [
+                "Asterion",
+                "Therapeutic treatments for diseases",
+                "2003",
+                "38%",
+                "Current",
+                ""
+            ],
+            [
+                "Bitecic",
+                "",
+                "2006",
+                "10%",
+                "Current",
+                ""
+            ],
+            [
+                "Diurnal",
+                "Pharmaceutical solutions to drug releases within the body",
+                "2004",
+                "41.8%",
+                "Current",
+                ""
+            ],
+            [
+                "Fault Current Ltd",
+                "Commercial electricity products",
+                "2012",
+                "",
+                "Current",
+                ""
+            ],
+            [
+                "I2L Research",
+                "Research company",
+                "1994",
+                "31%",
+                "Current",
+                ""
+            ],
+            [
+                "iterate",
+                "Manufacturer testing equipment",
+                "2010",
+                "40%",
+                "Current",
+                ""
+            ],
+            [
+                "Magnomatics",
+                "Magnetic gearboxes and motors",
+                "2006",
+                "31.5%",
+                "Current",
+                ""
+            ],
+            [
+                "Medaphor",
+                "Ultrasound training devices",
+                "2004",
+                "39%",
+                "Current",
+                ""
+            ],
+            [
+                "Medella Therapeutics",
+                "Monoclonal antibodies to inhibit the action of Adrenomedullin (ADM)",
+                "2007",
+                "60%",
+                "Current",
+                ""
+            ],
+            [
+                "Mesuro",
+                "Design software",
+                "2008",
+                "46.5%",
+                "Current",
+                ""
+            ],
+            [
+                "Nanotether Discovery Science",
+                "Manipulation of molecules",
+                "2012",
+                "21.5%",
+                "Current",
+                ""
+            ],
+            [
+                "Perlemax",
+                "Bubble generators for commercial application",
+                "2011",
+                "35%",
+                "Current",
+                ""
+            ],
+            [
+                "Phase Focus",
+                "Microscopy",
+                "2006",
+                "34%",
+                "Current",
+                ""
+            ],
+            [
+                "proFlu",
+                "Pharmaceutical product",
+                "2012",
+                "",
+                "Current",
+                ""
+            ],
+            [
+                "Progenteq",
+                "Novel cartilage replacement therapy",
+                "2010",
+                "48%",
+                "Current",
+                ""
+            ],
+            [
+                "Q-Chip",
+                "Pharmaceuticals",
+                "2003",
+                "1.5%",
+                "Current",
+                ""
+            ],
+            [
+                "Seren Photonics",
+                "LED production",
+                "2010",
+                "40.2%",
+                "Current",
+                ""
+            ],
+            [
+                "simCYP",
+                "Drug modelling software",
+                "2001",
+                "24.9% (sold for \u00a332m)",
+                "Exit",
+                ""
+            ],
+            [
+                "zilico",
+                "Cervical cancer diagnostics",
+                "2006",
+                "3.6%",
+                "Current",
+                ""
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "datetime",
+            "numeric",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            3
+        ],
+        "date_columns": {
+            "2": [
+                2007,
+                2003,
+                2002,
+                2009,
+                2003,
+                2006,
+                2004,
+                2012,
+                1994,
+                2010,
+                2006,
+                2004,
+                2007,
+                2008,
+                2012,
+                2011,
+                2006,
+                2012,
+                2010,
+                2003,
+                2010,
+                2001,
+                2006
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Company when the Year Company Founded was on 2007 and the Current/Exit is Current?",
+                "answers": [
+                    "Absynth Biologics",
+                    "Medella Therapeutics"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Company when the Brief Description of Company Function string starts with Manipulation and the Year Company Founded was after 2006?",
+                "answers": [
+                    "Nanotether Discovery Science"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Company, with Year Company Founded was after 2003, have Brief Description of Company Function string starts with Manufacturer?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Company, with Brief Description of Company Function is Microscopy, have Year Company Founded was before 2009?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Company, with Current/Exit is Current, happened the 19th according to Year Company Founded?",
+                "answers": [
+                    "Perlemax"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Company, with Current/Exit is Current, happened the 18th according to Year Company Founded?",
+                "answers": [
+                    "iterate",
+                    "Progenteq",
+                    "Seren Photonics"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Company, with Year Company Founded was on 2006, happened the 4th according to Year Company Founded?",
+                "answers": [
+                    "Bitecic",
+                    "Magnomatics",
+                    "Phase Focus",
+                    "zilico"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Fusion Shareholding was 35% and when the Fusion Shareholding was 10%?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Brief Description of Company Function was Manufacturer testing equipment and when the Brief Description of Company Function was Magnetic gearboxes and motors?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Company had Year Company Founded was before 2003 and Current/Exit is Current?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Company had Year Company Founded was before 2004?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Company had Year Company Founded was after 1994?",
+                "answers": [
+                    "22"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

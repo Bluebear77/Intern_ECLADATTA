@@ -1,0 +1,214 @@
+[
+    {
+        "id": "2304367",
+        "title": "Videotelephony",
+        "url": "https://en.wikipedia.org/?curid=2304367",
+        "header": [
+            "Tool",
+            "Owner",
+            "Free?",
+            "Pure web based?",
+            "Works on desktops?",
+            "Mobile support?",
+            "Uses email?",
+            "Required hardware",
+            "Installation",
+            "Limitations",
+            "Specialities",
+            "Technologies",
+            "Deaf made?",
+            "Licensing"
+        ],
+        "rows": [
+            [
+                "Facebook Messenger",
+                "Facebook",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Any mobile",
+                "App must be installed, does not require a FB account",
+                "",
+                "",
+                "?",
+                "",
+                "100% proprietary"
+            ],
+            [
+                "FaceTime",
+                "Apple Inc",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Apple hardware only (Desktop or mobile)",
+                "App must be installed, requires Apple ID account",
+                "",
+                "",
+                "?",
+                "",
+                "100% proprietary"
+            ],
+            [
+                "Glide (software)",
+                "Glide",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Any mobiles",
+                "App must be installed",
+                "",
+                "",
+                "?",
+                "",
+                "100% proprietary"
+            ],
+            [
+                "Google Hangouts",
+                "Google",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Any Desktop or mobiles",
+                "App must be installed, requires Google account",
+                "",
+                "",
+                "?",
+                "",
+                "100% proprietary"
+            ],
+            [
+                "Skype",
+                "Microsoft",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Any Desktop or mobile",
+                "App must be installed, requires Microsoft account",
+                "",
+                "",
+                "?",
+                "",
+                "100% proprietary"
+            ],
+            [
+                "Tikatoy",
+                "Tikatoy",
+                "",
+                "",
+                "",
+                "Android only",
+                "",
+                "Desktop or Android",
+                "Requires a web browser with Adobe Flash",
+                "Apple blocks Adobe Flash",
+                "",
+                "C++, JavaScript, Python",
+                "",
+                "100% proprietary"
+            ],
+            [
+                "videomail.io",
+                "Binary Kitchen",
+                "",
+                "",
+                "",
+                "Android only",
+                "",
+                "Desktop or Android, iPhone and Safari (web browser) only for viewing",
+                "Web browser",
+                "Recording max 3 minutes, does not work on old browsers",
+                "Reusable: can be plugged directly into other websites or as a WordPress plugin ninja-forms-videomail",
+                "JavaScript",
+                "",
+                "Mixed. Proprietary server and client is open source"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Tool when the Owner string contains Binary and the Specialities string contains websites?",
+                "answers": [
+                    "videomail.io"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Tool when the Mobile support? string contains Android and the Owner string contains Binary?",
+                "answers": [
+                    "videomail.io"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Tool, with Licensing string contains proprietary, have Required hardware string ends with mobile?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Tool, with Mobile support? string starts with Android, have Installation string ends with browser?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Tool had Owner string contains Apple and Required hardware string contains or?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Tool had Licensing string contains proprietary?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Tool had Specialities string contains be and Required hardware string contains or?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

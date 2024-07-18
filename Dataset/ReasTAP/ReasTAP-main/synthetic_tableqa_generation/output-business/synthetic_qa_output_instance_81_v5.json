@@ -1,0 +1,731 @@
+[
+    {
+        "id": "3576545",
+        "title": "Shaw Organisation",
+        "url": "https://en.wikipedia.org/?curid=3576545",
+        "header": [
+            "Cinema",
+            "Screens/Halls",
+            "Seats",
+            "Location",
+            "Opening Year",
+            "Digital Hall",
+            "IMAX",
+            "3D Digital Hall",
+            "Shaw Premiere",
+            "Shaw Lumiere",
+            "Dreamers"
+        ],
+        "rows": [
+            [
+                "Lido (Shaw House)",
+                "11",
+                "1978",
+                "Orchard",
+                "1993",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "Lot One",
+                "8",
+                "664",
+                "Choa Chu Kang",
+                "1996",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "Balestier (Shaw Plaza)",
+                "11",
+                "721",
+                "Balestier",
+                "1999",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "nex",
+                "10",
+                "1285",
+                "Serangoon",
+                "2010",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "Seletar",
+                "8",
+                "739",
+                "Sengkang",
+                "2014",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "Waterway Point",
+                "11",
+                "1450",
+                "Punggol",
+                "2016",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "Jewel",
+                "11",
+                "828",
+                "Changi Airport",
+                "2019",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "Paya Lebar Quarter",
+                "12",
+                "986",
+                "Paya Lebar",
+                "2019",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        ],
+        "column_types": [
+            "string",
+            "numeric",
+            "numeric",
+            "string",
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            1,
+            2
+        ],
+        "date_columns": {
+            "4": [
+                1993,
+                1996,
+                1999,
+                2010,
+                2014,
+                2016,
+                2019,
+                2019
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Cinema when the Location is Orchard and the Screens/Halls was less than or equal to 11?",
+                "answers": [
+                    "Lido (Shaw House)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Cinema when the Seats was equal to 1450 and the Screens/Halls was greater than or equal to 8?",
+                "answers": [
+                    "Waterway Point"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Cinema, with Screens/Halls was less than or equal to 11, have Location is Orchard?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Cinema, with Screens/Halls was less than or equal to 11, have Seats was equal to 1285?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Cinema, with Opening Year was before 2010, happened the 3rd according to Opening Year?",
+                "answers": [
+                    "Balestier (Shaw Plaza)"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Cinema, with Opening Year was before 2019, happened the 4th according to Opening Year?",
+                "answers": [
+                    "nex"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Cinema, with Seats was less than 1450, happened the 4th according to Opening Year?",
+                "answers": [
+                    "Seletar"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Cinema, with Opening Year was after 1999, has the 4th largest Seats?",
+                "answers": [
+                    "Jewel"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Cinema, with Seats was less than or equal to 986, has the 5th largest Screens/Halls?",
+                "answers": [
+                    "Lot One",
+                    "Seletar"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Cinema, with Seats was less than or equal to 721, has the 1st largest Screens/Halls?",
+                "answers": [
+                    "Balestier (Shaw Plaza)"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Location was Choa Chu Kang and when the Location was Balestier?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Seats was 828 and when the Seats was 739?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Cinema had Screens/Halls was greater than 8?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Cinema had Screens/Halls was greater than or equal to 11 and Location is Orchard?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Cinema had Screens/Halls was greater than or equal to 11 and Opening Year was after 2010?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Screens/Halls when the Opening Year was before 1999?",
+                "answers": [
+                    "19.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Screens/Halls when the Seats was less than 1285?",
+                "answers": [
+                    "50.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Screens/Halls when the Opening Year was after 2014?",
+                "answers": [
+                    "34.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    },
+    {
+        "id": "3576545",
+        "title": "Shaw Organisation",
+        "url": "https://en.wikipedia.org/?curid=3576545",
+        "header": [
+            "Cinema",
+            "Screens/Halls",
+            "Seats",
+            "Location",
+            "Opening Year",
+            "Closed Year"
+        ],
+        "rows": [
+            [
+                "Bugis Junction",
+                "3",
+                "1080",
+                "Downtown Core",
+                "2001",
+                "2016"
+            ],
+            [
+                "Century Square",
+                "6",
+                "979",
+                "Tampines",
+                "1995",
+                "2017"
+            ],
+            [
+                "Changi",
+                "3",
+                "1154",
+                "Bedok",
+                "1980",
+                "2000"
+            ],
+            [
+                "Chinatown Point",
+                "2",
+                "684",
+                "Chinatown",
+                "1991",
+                "1999"
+            ],
+            [
+                "Great World",
+                "4",
+                "",
+                "River Valley",
+                "1936",
+                "1992"
+            ],
+            [
+                "Hoover",
+                "1",
+                "900",
+                "Balestier",
+                "1960",
+                "1996"
+            ],
+            [
+                "JCube",
+                "7",
+                "1010",
+                "Jurong East",
+                "2012",
+                "2023"
+            ],
+            [
+                "Oriental",
+                "2",
+                "",
+                "Chinatown",
+                "1990",
+                "2000"
+            ],
+            [
+                "President",
+                "1",
+                "1200",
+                "Balestier",
+                "1973",
+                "1996"
+            ],
+            [
+                "Republic",
+                "3",
+                "",
+                "Marine Parade",
+                "1980",
+                "1999"
+            ],
+            [
+                "Roxy",
+                "1",
+                "1200",
+                "Katong",
+                "1931",
+                "1978"
+            ],
+            [
+                "Savoy",
+                "2",
+                "",
+                "Boon Lay",
+                "1980s",
+                "1998"
+            ],
+            [
+                "Shaw Tower",
+                "4",
+                "1200",
+                "Beach Road",
+                "2001",
+                "2009"
+            ],
+            [
+                "Taman Jurong",
+                "1",
+                "",
+                "Jurong",
+                "1970s",
+                "1990s"
+            ],
+            [
+                "Vision",
+                "4",
+                "1200",
+                "Hougang",
+                "1993",
+                "2000"
+            ],
+            [
+                "Woodlands",
+                "2",
+                "619",
+                "Woodlands",
+                "1980",
+                "1999"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "numeric",
+            "numeric",
+            "string",
+            "datetime",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            1,
+            2
+        ],
+        "date_columns": {
+            "4": [
+                2001,
+                1995,
+                1980,
+                1991,
+                1936,
+                1960,
+                2012,
+                1990,
+                1973,
+                1980,
+                1931,
+                9999,
+                2001,
+                9999,
+                1993,
+                1980
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Cinema when the Location string starts with Downtown and the Screens/Halls was less than or equal to 6?",
+                "answers": [
+                    "Bugis Junction"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Cinema when the Screens/Halls was less than or equal to 1 and the Closed Year is 1990s?",
+                "answers": [
+                    "Taman Jurong"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Cinema, with Location string contains River, have Screens/Halls was less than or equal to 4?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Cinema, with Screens/Halls was equal to 4, have Location string starts with Beach?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Cinema, with Screens/Halls was greater than 3, happened the 3rd according to Opening Year?",
+                "answers": [
+                    "Century Square"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Cinema, with Screens/Halls was equal to 3, happened the 3rd according to Opening Year?",
+                "answers": [
+                    "Bugis Junction"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Seats was 684 and when the Seats was 1010?",
+                "answers": [
+                    "21"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Location was Downtown Core and when the Location was Jurong East?",
+                "answers": [
+                    "11"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Cinema had Screens/Halls was less than or equal to 4?",
+                "answers": [
+                    "14"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Cinema had Closed Year is 1990s and Screens/Halls was equal to 1?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Cinema had Screens/Halls was equal to 3?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "3576545",
+        "title": "Shaw Organisation",
+        "url": "https://en.wikipedia.org/?curid=3576545",
+        "header": [
+            "Commercial Property",
+            "Type",
+            "Location",
+            "Description"
+        ],
+        "rows": [
+            [
+                "Shaw Plaza",
+                "Shopping Mall",
+                "360 Balestier Road, Singapore 329783",
+                "A modern 5-storey shopping mall with a 2-storey annexe block. Currently closed for asset enhancement works."
+            ],
+            [
+                "Shaw House",
+                "Office Tower",
+                "350 Orchard Road, Singapore 238868",
+                "A 21-storey office building with a 6-storey retail/ entertainment complex."
+            ],
+            [
+                "Shaw Centre",
+                "Shopping Mall & Office Towers",
+                "1 Scotts Road, Singapore 228208",
+                "A 27-storey office building with a 5-storey retail and F&B mall."
+            ],
+            [
+                "Shaw Corner",
+                "Intermediate Apartment",
+                "12 Boon Teck Road, Singapore 329586",
+                "A 4-storey commercial building."
+            ],
+            [
+                "Oriental Plaza",
+                "Duplex Apartment",
+                "291 New Bridge Road, Singapore 088756",
+                "A 4-storey commercial building."
+            ],
+            [
+                "North Bridge Road Shophouse",
+                "Duplex Apartment",
+                "791/ 791A/ 791B North Bridge Road, Singapore",
+                "A 2-storey shophouse with an attic"
+            ],
+            [
+                "Balestier Warehouse",
+                "Duplex Apartment",
+                "12A Jalan Ampas, Singapore 329526",
+                "A 9-storey warehouse development."
+            ],
+            [
+                "Mackenzie Road Shophouse",
+                "Duplex Apartment",
+                "13 Mackenzie Road, Singapore 228676",
+                "A 4-storey shophouse."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "numeric",
+            "numeric",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            1,
+            2
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many Commercial Property had Description string contains A?",
+                "answers": [
+                    "8"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Commercial Property had Description string starts with A?",
+                "answers": [
+                    "8"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "3576545",
+        "title": "Shaw Organisation",
+        "url": "https://en.wikipedia.org/?curid=3576545",
+        "header": [
+            "Residential Property",
+            "Type",
+            "Location",
+            "Description"
+        ],
+        "rows": [
+            [
+                "Twin Heights",
+                "Condominium",
+                "350 Balestier Road, Singapore 329779; 352 Balestier Road, Singapore 329780",
+                "Two 21-storey freehold apartment blocks comprising 2 and 3-bedroom apartments and four penthouses."
+            ],
+            [
+                "Hullet Rise",
+                "Apartment Block",
+                "6 Hullet Rise, Singapore 229159",
+                "A 16-storey apartment block comprising bedroom apartments."
+            ],
+            [
+                "25 Jalan Sampurna",
+                "Semi-detached House",
+                "25 Jalan Sampurna, Singapore 268303",
+                "2 houses on the same plot of land with symmetrical layouts."
+            ],
+            [
+                "23 Fernhill Road",
+                "Intermediate Apartment",
+                "23 Fernhill Road, Singapore 259075",
+                "A 3-storey intermediate apartment with a car porch."
+            ],
+            [
+                "45 Coronation Road West",
+                "Duplex Apartment",
+                "(Duplex House) Singapore 269261",
+                "2-storey detached duplex apartment with car porch and swimming pools."
+            ],
+            [
+                "43 Coronation Road West",
+                "Duplex Apartment",
+                "(Duplex House) Singapore 266204",
+                "2-storey detached duplex apartment with car porch and swimming pools."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "numeric",
+            "numeric",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            1,
+            2
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many Residential Property had Description string contains A?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

@@ -1,0 +1,124 @@
+[
+    {
+        "id": "10321833",
+        "title": "Transport Initiatives Edinburgh",
+        "url": "https://en.wikipedia.org/?curid=10321833",
+        "header": [
+            "",
+            "Project",
+            "Description",
+            "Status"
+        ],
+        "rows": [
+            [
+                "Ingliston car park",
+                "Ingliston Park & Ride",
+                "a park and ride facility to be integrated with the Edinburgh tram system",
+                "Operational as a car park"
+            ],
+            [
+                "\"Stirling to Alloa and Kincardine railway under construction\"",
+                "Stirling-Alloa-Kincardine rail link",
+                "Railway line from Stirling to Kincardine",
+                "Operational"
+            ],
+            [
+                "",
+                "One-Ticket",
+                "A multi-modal ticketing system for south-east Scotland",
+                "Operational"
+            ],
+            [
+                "Edinburgh guided bus",
+                "Edinburgh Fastlink",
+                "A guided bus system in the west of the city, opened in 2004 and closed in 2009 to be replaced with the Edinburgh Trams line.",
+                "Closed"
+            ],
+            [
+                "Edinburgh Airport",
+                "Edinburgh Airport Rail Link (EARL)",
+                "Rail link connecting Edinburgh Airport with the main ScotRail network",
+                "Cancelled"
+            ],
+            [
+                "traffic on Princes Street Edinburgh",
+                "Congestion charging",
+                "A project to introduce a congestion charge into Edinburgh",
+                "Rejected in referendum"
+            ],
+            [
+                "Edinburgh tram",
+                "Edinburgh Trams",
+                "Construction of a new tramway in Edinburgh - Tie dismissed from project, August 2011Edinburgh trams project to be managed by new firm",
+                "Open - limited scope"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Project when the Description string starts with Rail and the Status is Cancelled?",
+                "answers": [
+                    "Edinburgh Airport Rail Link (EARL)"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Project when the Description string starts with Rail and the Status is Operational?",
+                "answers": [
+                    "Stirling-Alloa-Kincardine rail link"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Project, with Description string starts with A, have Status string contains a?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Project, with Status is Cancelled, have Description string contains a?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Project had Description string contains a and Status string starts with Operational?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Project had Description string starts with A and Status is Closed?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Project had Description string starts with A?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

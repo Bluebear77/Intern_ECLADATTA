@@ -1,0 +1,236 @@
+[
+    {
+        "id": "57956353",
+        "title": "NextDC",
+        "url": "https://en.wikipedia.org/?curid=57956353",
+        "header": [
+            "Name",
+            "Location",
+            "Status",
+            ""
+        ],
+        "rows": [
+            [
+                "PH1",
+                "Port Hedland, Western Australia",
+                "Under construction",
+                ""
+            ],
+            [
+                "A1",
+                "Adelaide, South Australia",
+                "In development",
+                ""
+            ],
+            [
+                "D1",
+                "Darwin, Northern Territory",
+                "In development",
+                ""
+            ],
+            [
+                "S4",
+                "Horsley Park, New South Wales",
+                "In development",
+                ""
+            ],
+            [
+                "S5",
+                "Macquarie Park, New South Wales",
+                "In development",
+                ""
+            ],
+            [
+                "M4",
+                "Port Melbourne, Victoria",
+                "In development",
+                ""
+            ],
+            [
+                "KL1",
+                "Kuala Lumpur, Malaysia",
+                "In development",
+                ""
+            ],
+            [
+                "AK1",
+                "Auckland, New Zealand",
+                "In development",
+                ""
+            ],
+            [
+                "TK1",
+                "Tokyo, Japan",
+                "In development",
+                ""
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "datetime",
+            "numeric"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            3
+        ],
+        "date_columns": {
+            "2": [
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999
+            ]
+        },
+        "qas": []
+    },
+    {
+        "id": "57956353",
+        "title": "NextDC",
+        "url": "https://en.wikipedia.org/?curid=57956353",
+        "header": [
+            "Name",
+            "Location",
+            "Launched in",
+            "Uptime Institute tier",
+            ""
+        ],
+        "rows": [
+            [
+                "B1",
+                "Brisbane, Queensland",
+                "2011",
+                "",
+                ""
+            ],
+            [
+                "B2",
+                "Fortitude Valley, Queensland",
+                "",
+                "IV",
+                ""
+            ],
+            [
+                "C1",
+                "Canberra, Australian Capital Territory",
+                "2012",
+                "",
+                ""
+            ],
+            [
+                "M1",
+                "Port Melbourne, Victoria",
+                "",
+                "III",
+                ""
+            ],
+            [
+                "M2",
+                "Tullamarine, Victoria",
+                "",
+                "IV",
+                ""
+            ],
+            [
+                "M3",
+                "West Footscray, Victoria",
+                "2022",
+                "",
+                ""
+            ],
+            [
+                "P1",
+                "Malaga, Western Australia",
+                "2014",
+                "III",
+                ""
+            ],
+            [
+                "P2",
+                "Perth, Western Australia",
+                "2020",
+                "IV",
+                ""
+            ],
+            [
+                "S1",
+                "Macquarie Park, New South Wales",
+                "2013",
+                "III",
+                ""
+            ],
+            [
+                "S2",
+                "Macquarie Park, New South Wales",
+                "2020",
+                "IV",
+                ""
+            ],
+            [
+                "S3",
+                "Artarmon, New South Wales",
+                "2022",
+                "IV",
+                ""
+            ],
+            [
+                "SC1",
+                "Maroochydore, Queensland",
+                "2021",
+                "N/A (Edge data centre)",
+                ""
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "datetime",
+            "numeric",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            3
+        ],
+        "date_columns": {
+            "2": [
+                2011,
+                9999,
+                2012,
+                9999,
+                9999,
+                2022,
+                2014,
+                2020,
+                2013,
+                2020,
+                2022,
+                2021
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Name was S1 and when the Name was C1?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Name was P2 and when the Name was B1?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "date_difference"
+            }
+        ]
+    }
+]

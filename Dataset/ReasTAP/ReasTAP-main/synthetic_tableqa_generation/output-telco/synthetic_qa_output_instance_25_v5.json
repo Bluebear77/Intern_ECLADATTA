@@ -1,0 +1,577 @@
+[
+    {
+        "id": "20563054",
+        "title": "T-Mobile US",
+        "url": "https://en.wikipedia.org/?curid=20563054",
+        "header": [
+            "Year",
+            "Revenuein mil. USD$",
+            "Net incomein mil. USD$",
+            "Total Assetsin mil. USD$",
+            "Price per Sharein USD$",
+            "Employees"
+        ],
+        "rows": [
+            [
+                "2011",
+                "20,618",
+                "\u22124,718",
+                "9,483",
+                "17.40",
+                ""
+            ],
+            [
+                "2012",
+                "19,719",
+                "\u22127,336",
+                "33,622",
+                "12.10",
+                ""
+            ],
+            [
+                "2013",
+                "24,420",
+                "35",
+                "49,953",
+                "21.14",
+                "40,000"
+            ],
+            [
+                "2014",
+                "29,564",
+                "247",
+                "56,653",
+                "30.59",
+                "45,000"
+            ],
+            [
+                "2015",
+                "32,467",
+                "678",
+                "62,413",
+                "36.45",
+                "50,000"
+            ],
+            [
+                "2016",
+                "37,490",
+                "1,405",
+                "65,891",
+                "44.29",
+                "50,000"
+            ],
+            [
+                "2017",
+                "40,604",
+                "4,481",
+                "70,563",
+                "62.59",
+                "51,000"
+            ],
+            [
+                "2018",
+                "43,310",
+                "2,888",
+                "72,468",
+                "63.61",
+                "52,000"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "numeric",
+            "string",
+            "string",
+            "numeric",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            0,
+            1,
+            4
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Year when the Revenuein mil. USD$ was greater than or equal to 19,719 and the Price per Sharein USD$ was equal to 62.59?",
+                "answers": [
+                    "2017"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Year when the Revenuein mil. USD$ was greater than 29,564 and the Price per Sharein USD$ was less than 62.59?",
+                "answers": [
+                    "2015",
+                    "2016"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Year, with Price per Sharein USD$ was greater than or equal to 17.40, have Revenuein mil. USD$ was greater than or equal to 20,618?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Year, with Price per Sharein USD$ was equal to 21.14, have Revenuein mil. USD$ was greater than or equal to 19,719?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Year, with Revenuein mil. USD$ was less than or equal to 43,310, has the 1st largest Price per Sharein USD$?",
+                "answers": [
+                    "2018"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Year, with Price per Sharein USD$ was less than 62.59, has the 4th largest Revenuein mil. USD$?",
+                "answers": [
+                    "2013"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Year, with Revenuein mil. USD$ was greater than or equal to 37,490, has the 3rd largest Price per Sharein USD$?",
+                "answers": [
+                    "2016"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Year had Price per Sharein USD$ was greater than 12.10 and Revenuein mil. USD$ was greater than or equal to 24,420?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Year had Revenuein mil. USD$ was greater than or equal to 20,618 and Price per Sharein USD$ was greater than 36.45?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Year had Revenuein mil. USD$ was greater than 19,719 and Price per Sharein USD$ was less than or equal to 62.59?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Price per Sharein USD$ when the Revenuein mil. USD$ was less than or equal to 20,618?",
+                "answers": [
+                    "29.5"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Revenuein mil. USD$ when the Price per Sharein USD$ was less than 21.14?",
+                "answers": [
+                    "40337.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    },
+    {
+        "id": "20563054",
+        "title": "T-Mobile US",
+        "url": "https://en.wikipedia.org/?curid=20563054",
+        "header": [
+            "Frequency Band",
+            "Band number",
+            "Protocol",
+            "Generation",
+            "Status",
+            "Notes"
+        ],
+        "rows": [
+            [
+                "850\u00a0MHz CLR",
+                "5",
+                "GSM/GPRS/EDGE",
+                "2G",
+                "Active",
+                "Operates in the 1.5x1.5 block of 850\u00a0MHz that T-Mobile owns in Myrtle Beach, SC. Network scheduled to be shut down on April 2, 2024."
+            ],
+            [
+                "1.9\u00a0GHz\u00a0PCS",
+                "2",
+                "GSM/GPRS/EDGE",
+                "2G",
+                "Active/refarming to NR",
+                "Currently retaining 2G service for M2M customers and international roaming. Network scheduled to be shut down on April 2, 2024."
+            ],
+            [
+                "600\u00a0MHz DD",
+                "71",
+                "LTE/LTE-A/LTE-A Pro",
+                "4G",
+                "Active/refarming to NR",
+                "Branded as 'Extended-range LTE'. Spectrum purchased in early 2017, network launched in August 2017. Licenses cover 100% of the United States."
+            ],
+            [
+                "700\u00a0MHz Lower SMH A/B/C Blocks, Upper SMH C Block",
+                "12",
+                "LTE/LTE-A/LTE-A Pro",
+                "4G",
+                "Active/building out",
+                "Branded as 'Extended-range LTE'. Rollout began in December 2014. The company owns 700\u00a0MHz licenses covering about 85% of the US population."
+            ],
+            [
+                "700\u00a0MHz Lower SMH A/B/C Blocks, Upper SMH C Block",
+                "13",
+                "LTE/LTE-A/LTE-A Pro",
+                "4G",
+                "Active",
+                "Band 13 limited to Puerto Rico and USVI. Network previously operated by Open Mobile, under the Sprint name."
+            ],
+            [
+                "850\u00a0MHz CLR",
+                "5/26",
+                "LTE/LTE-A/LTE-A Pro",
+                "4G",
+                "Active",
+                "T-Mobile owns a 10x10 block of 850\u00a0MHz spectrum that has been deployed in Myrtle Beach, SC.Band 26 acquired from Sprint and is currently active in a few locations to maintain license requirements. To be sold per merger requirements."
+            ],
+            [
+                "1.9\u00a0GHz\u00a0PCS",
+                "2/25",
+                "LTE/LTE-A/LTE-A Pro",
+                "4G",
+                "Active/refarming to NR",
+                "Used in rural areas for 2G to LTE conversions, and in cities for additional capacity. Band 25 G-block acquired from Sprint."
+            ],
+            [
+                "1.7/2.1\u00a0GHz\u00a0AWS",
+                "4/66",
+                "LTE/LTE-A/LTE-A Pro",
+                "4G",
+                "Active/building out",
+                "Main LTE band in most markets. Band 66 extended AWS-3 block for additional capacity in some areas."
+            ],
+            [
+                "2.5\u00a0GHz BRS/EBS",
+                "41",
+                "LTE/LTE-A/LTE-A Pro",
+                "4G",
+                "Active/refarming to NR",
+                "Launched alongside n41 in some markets for additional LTE capacity."
+            ],
+            [
+                "3.5\u00a0GHz CBRS",
+                "48",
+                "LTE/LTE-A/LTE-A Pro",
+                "4G",
+                "Active/building out",
+                "Additional capacity in select cities."
+            ],
+            [
+                "5.2\u00a0GHz U-NII",
+                "46",
+                "LTE/LTE-A/LTE-A Pro",
+                "4G",
+                "Active/building out",
+                "License assisted access (LAA). Additional capacity in select cities."
+            ],
+            [
+                "600\u00a0MHz DD",
+                "n71",
+                "NR",
+                "5G",
+                "Active/building out",
+                "Primary low-band 5G network. Launched on December 2, 2019. Licenses cover 100% of the United States. Branded as 'Extended Range 5G'."
+            ],
+            [
+                "1.9\u00a0GHz PCS",
+                "n25",
+                "NR",
+                "5G",
+                "Active/building out",
+                "Currently being refarmed from T-Mobile's GSM and UMTS networks and from Sprint's former CDMA and LTE networks."
+            ],
+            [
+                "2.5\u00a0GHz BRS/EBS",
+                "n41",
+                "NR",
+                "5G",
+                "Active/building out",
+                "Acquired spectrum from Sprint merger. Primary 5G mid-band frequency. Branded as 'Ultra Capacity 5G'."
+            ],
+            [
+                "3.4\u00a0GHz C-Band",
+                "n77",
+                "NR",
+                "5G",
+                "Pending deployment/in trial",
+                "Spectrum acquired in 2021 auction."
+            ],
+            [
+                "3.7\u00a0GHz C-Band",
+                "n77",
+                "NR",
+                "5G",
+                "Pending deployment/in trial",
+                "Spectrum will be available for use starting December 2023."
+            ],
+            [
+                "24 GHz K-Band",
+                "n258",
+                "NR",
+                "5G",
+                "Active/building out",
+                "Available in pockets of select cities. Branded as 'Ultra Capacity 5G'."
+            ],
+            [
+                "28\u00a0GHz Ka-Band",
+                "n261",
+                "NR",
+                "5G",
+                "Active/building out",
+                "Only available in select areas. Went live in June 2019. Branded as 'Ultra Capacity 5G'."
+            ],
+            [
+                "39\u00a0GHz Ka-Band",
+                "n260",
+                "NR",
+                "5G",
+                "Active/building out",
+                "Available in pockets of select cities. Branded as 'Ultra Capacity 5G'."
+            ],
+            [
+                "47 GHz V-Band",
+                "n262",
+                "NR",
+                "5G",
+                "Pending deployment",
+                "Spectrum acquired in 2020 auction."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            1
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Frequency Band when the Notes string starts with Main and the Status string ends with out?",
+                "answers": [
+                    "1.7/2.1\u00a0GHz\u00a0AWS"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Frequency Band when the Protocol string contains Pro and the Notes string starts with Main?",
+                "answers": [
+                    "1.7/2.1\u00a0GHz\u00a0AWS"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Frequency Band, with Protocol string ends with Pro, have Notes string contains Band?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Frequency Band, with Status string ends with out, have Notes string contains in?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Frequency Band had Status string contains out?",
+                "answers": [
+                    "10"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Frequency Band had Protocol string contains Pro?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Frequency Band had Notes string contains Capacity?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "20563054",
+        "title": "T-Mobile US",
+        "url": "https://en.wikipedia.org/?curid=20563054",
+        "header": [
+            "Frequency Band",
+            "Band number",
+            "Protocol",
+            "Generation",
+            "Status",
+            "Notes"
+        ],
+        "rows": [
+            [
+                "1.9\u00a0GHz\u00a0PCS",
+                "2",
+                "UMTS/HSPA/HSPA+/DC-HSPA+",
+                "3G",
+                "Retired",
+                "T-Mobile marketed its HSPA/HSPA+ services as \"4G\".  Network was retired on July 1, 2022."
+            ],
+            [
+                "1.7/2.1\u00a0GHz\u00a0AWS",
+                "4",
+                "UMTS/HSPA/HSPA+/DC-HSPA+",
+                "3G",
+                "Retired",
+                "T-Mobile marketed its HSPA/HSPA+ services as \"4G\".  Network was retired on July 1, 2022."
+            ]
+        ],
+        "column_types": [
+            "string",
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            1
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Frequency Band when the Band number was greater than or equal to 2 and the Notes string contains Network?",
+                "answers": [
+                    "1.9\u00a0GHz\u00a0PCS",
+                    "1.7/2.1\u00a0GHz\u00a0AWS"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Frequency Band when the Band number was greater than or equal to 2 and the Status is Retired?",
+                "answers": [
+                    "1.9\u00a0GHz\u00a0PCS",
+                    "1.7/2.1\u00a0GHz\u00a0AWS"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Frequency Band, with Band number was greater than or equal to 2, have Status is Retired?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Frequency Band, with Notes string contains July, have Band number was greater than or equal to 2?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Frequency Band, with Status is Retired, has the 2nd largest Band number?",
+                "answers": [
+                    "1.9\u00a0GHz\u00a0PCS"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Frequency Band, with Notes string contains its, has the 1st largest Band number?",
+                "answers": [
+                    "1.7/2.1\u00a0GHz\u00a0AWS"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Frequency Band had Band number was greater than or equal to 2 and Notes string contains was?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Frequency Band had Status is Retired and Notes string contains retired?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Frequency Band had Band number was less than or equal to 4?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Band number when the Status is Retired?",
+                "answers": [
+                    "6.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Band number when the Status is Retired?",
+                "answers": [
+                    "3.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    }
+]

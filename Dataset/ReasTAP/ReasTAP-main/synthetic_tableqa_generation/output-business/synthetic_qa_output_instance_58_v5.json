@@ -1,0 +1,220 @@
+[
+    {
+        "id": "8925883",
+        "title": "Glasair Aviation",
+        "url": "https://en.wikipedia.org/?curid=8925883",
+        "header": [
+            "Model name",
+            "First flight",
+            "Number built",
+            "Type"
+        ],
+        "rows": [
+            [
+                "Glasair I",
+                "1979",
+                "807",
+                "Low-wing, two seat kit aircraft"
+            ],
+            [
+                "Glasair II",
+                "1989",
+                "1200",
+                "Low-wing, two seat kit aircraft"
+            ],
+            [
+                "Glasair III",
+                "1986",
+                "500",
+                "Low-wing, two seat kit aircraft"
+            ],
+            [
+                "GlaStar",
+                "1994",
+                "300",
+                "High-wing, two seat kit aircraft"
+            ],
+            [
+                "Sportsman 2+2",
+                "2003",
+                "400",
+                "High-wing, four seat kit aircraft"
+            ],
+            [
+                "Glasair Merlin LSA",
+                "2015",
+                "1",
+                "High-wing, two seat SLSA aircraft"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "datetime",
+            "numeric",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            2
+        ],
+        "date_columns": {
+            "1": [
+                1979,
+                1989,
+                1986,
+                1994,
+                2003,
+                2015
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Model name when the Number built was greater than or equal to 807 and the First flight was before 2015?",
+                "answers": [
+                    "Glasair I",
+                    "Glasair II"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Model name when the Type string contains kit and the Number built was less than or equal to 500?",
+                "answers": [
+                    "Glasair III",
+                    "GlaStar",
+                    "Sportsman 2+2"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Model name, with Number built was equal to 300, have Type string contains two?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Model name, with Number built was less than or equal to 1, have Type string contains seat?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Model name, with Type string contains aircraft, happened the 1st according to First flight?",
+                "answers": [
+                    "Glasair I"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Model name, with Number built was greater than or equal to 400, happened the 1st according to First flight?",
+                "answers": [
+                    "Glasair I"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Model name, with First flight was before 2003, happened the 3rd according to First flight?",
+                "answers": [
+                    "Glasair II"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Model name, with First flight was before 1989, has the 1st largest Number built?",
+                "answers": [
+                    "Glasair I"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Model name, with Type string contains seat, has the 4th largest Number built?",
+                "answers": [
+                    "Sportsman 2+2"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Model name, with First flight was before 2015, has the 1st largest Number built?",
+                "answers": [
+                    "Glasair II"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Number built was 1 and when the Number built was 300?",
+                "answers": [
+                    "21"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Number built was 807 and when the Number built was 300?",
+                "answers": [
+                    "15"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Model name had Number built was greater than or equal to 500?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Model name had Number built was less than 1200?",
+                "answers": [
+                    "5"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Model name had First flight was before 2003?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Number built when the First flight was after 1979?",
+                "answers": [
+                    "480.2"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Number built when the First flight was after 1986?",
+                "answers": [
+                    "475.25"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Number built when the Type string contains two?",
+                "answers": [
+                    "2808.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    }
+]

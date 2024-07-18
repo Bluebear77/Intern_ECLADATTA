@@ -1,0 +1,198 @@
+[
+    {
+        "id": "547923",
+        "title": "PIPE Networks",
+        "url": "https://en.wikipedia.org/?curid=547923",
+        "header": [
+            "City",
+            "First opened",
+            "Number of sites"
+        ],
+        "rows": [
+            [
+                "Brisbane",
+                "May 2002",
+                "4"
+            ],
+            [
+                "Sydney",
+                "January 2003",
+                "6"
+            ],
+            [
+                "Adelaide",
+                "January 2003",
+                "2"
+            ],
+            [
+                "Melbourne",
+                "July 2003",
+                "4"
+            ],
+            [
+                "Hobart",
+                "August 2003",
+                "2"
+            ],
+            [
+                "Canberra",
+                "June 2004",
+                "1"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "datetime",
+            "numeric"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            2
+        ],
+        "date_columns": {
+            "1": [
+                9999,
+                9999,
+                9999,
+                9999,
+                9999,
+                9999
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the City when the First opened was before January 2003 and the Number of sites was greater than or equal to 2?",
+                "answers": [
+                    "Brisbane"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the City when the Number of sites was less than 4 and the First opened was before June 2004?",
+                "answers": [
+                    "Adelaide",
+                    "Hobart"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only City, with First opened was before June 2004, have Number of sites was less than or equal to 2?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every City, with First opened was after May 2002, have Number of sites was greater than or equal to 2?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which City, with First opened was before July 2003, happened the 2nd according to First opened?",
+                "answers": [
+                    "Sydney",
+                    "Adelaide"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which City, with First opened was after May 2002, happened the 1st according to First opened?",
+                "answers": [
+                    "Sydney",
+                    "Adelaide"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which City, with Number of sites was greater than or equal to 4, happened the 2nd according to First opened?",
+                "answers": [
+                    "Sydney"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which City, with First opened was on January 2003, has the 1st largest Number of sites?",
+                "answers": [
+                    "Sydney"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which City, with First opened was before August 2003, has the 3rd largest Number of sites?",
+                "answers": [
+                    "Brisbane",
+                    "Melbourne"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which City, with First opened was before June 2004, has the 4th largest Number of sites?",
+                "answers": [
+                    "Adelaide",
+                    "Hobart"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many City had First opened was before July 2003 and Number of sites was greater than 4?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many City had First opened was after January 2003 and Number of sites was less than or equal to 6?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many City had Number of sites was less than 4?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Number of sites when the First opened was after January 2003?",
+                "answers": [
+                    "7.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Number of sites when the First opened was on January 2003?",
+                "answers": [
+                    "4.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Number of sites when the First opened was before June 2004?",
+                "answers": [
+                    "18.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    }
+]

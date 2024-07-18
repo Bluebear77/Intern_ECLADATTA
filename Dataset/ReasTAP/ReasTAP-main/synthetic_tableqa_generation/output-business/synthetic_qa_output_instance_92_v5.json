@@ -1,0 +1,116 @@
+[
+    {
+        "id": "44570489",
+        "title": "OncoMed",
+        "url": "https://en.wikipedia.org/?curid=44570489",
+        "header": [
+            "Name",
+            "Target",
+            "ID",
+            "Clinical Phase"
+        ],
+        "rows": [
+            [
+                "demcizumab",
+                "DLL4",
+                "OMP-21M18",
+                "II"
+            ],
+            [
+                "tarextumab",
+                "Notch 2/3",
+                "OMP-59R5",
+                "II"
+            ],
+            [
+                "vantictumab",
+                "Fzd7",
+                "OMP-18R5",
+                "Ib"
+            ],
+            [
+                "ipafricept",
+                "Fzd8-fc",
+                "OMP-54F28",
+                "Ib"
+            ],
+            [
+                "brontictuzumab",
+                "Notch1",
+                "OMP-52M51",
+                "I"
+            ],
+            [
+                "unnamed",
+                "DLL4/VEGF",
+                "OMP-305B83",
+                "I"
+            ],
+            [
+                "unnamed",
+                "RSPO3",
+                "OMP-131R10",
+                "I"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Name when the Target string starts with Notch and the Clinical Phase is I?",
+                "answers": [
+                    "brontictuzumab"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Name when the Target string contains Notch and the Clinical Phase is I?",
+                "answers": [
+                    "brontictuzumab"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Name, with Target string contains Notch, have Clinical Phase is I?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Name, with Clinical Phase is I, have Target string starts with Notch?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Name had Target string starts with Notch?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Name had Clinical Phase is I?",
+                "answers": [
+                    "3"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

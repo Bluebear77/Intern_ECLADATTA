@@ -1,0 +1,77 @@
+[
+    {
+        "id": "63093656",
+        "title": "Kirkland Lake Gold",
+        "url": "https://en.wikipedia.org/?curid=63093656",
+        "header": [
+            "Dec 2018",
+            "Dec 2019",
+            "Dec 2020"
+        ],
+        "rows": [
+            [
+                "512 Alt URL",
+                "595 Alt URL",
+                "438 Alt URL"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Dec 2018 when the Dec 2019 string contains Alt and the Dec 2020 string contains URL?",
+                "answers": [
+                    "512 Alt URL"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Dec 2018 when the Dec 2020 string contains Alt and the Dec 2019 string contains Alt?",
+                "answers": [
+                    "512 Alt URL"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Dec 2018, with Dec 2019 string contains Alt, have Dec 2020 string ends with URL?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Dec 2018, with Dec 2019 string ends with URL, have Dec 2020 string contains URL?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Dec 2018 had Dec 2019 string ends with URL?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Dec 2018 had Dec 2020 string ends with URL and Dec 2019 string contains URL?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

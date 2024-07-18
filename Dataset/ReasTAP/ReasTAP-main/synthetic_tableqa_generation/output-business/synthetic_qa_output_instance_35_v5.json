@@ -1,0 +1,52 @@
+[
+    {
+        "id": "46403779",
+        "title": "Personal Flight",
+        "url": "https://en.wikipedia.org/?curid=46403779",
+        "header": [
+            "Model name",
+            "First flight",
+            "Number built",
+            "Type"
+        ],
+        "rows": [
+            [
+                "Personal Flight Sky-Bike",
+                "",
+                "",
+                "paramotor"
+            ],
+            [
+                "Personal Flight Sky-Bike Trike",
+                "",
+                "",
+                "powered parachute"
+            ],
+            [
+                "Personal Flight Sky-Tender",
+                "",
+                "",
+                "ultralight trike flying boat"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 0,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many Model name had Type string contains boat?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

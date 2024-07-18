@@ -1,0 +1,254 @@
+[
+    {
+        "id": "35047916",
+        "title": "Jam City (company)",
+        "url": "https://en.wikipedia.org/?curid=35047916",
+        "header": [
+            "Year",
+            "Title",
+            "Genre(s)",
+            "Platform(s)",
+            "Notes",
+            ""
+        ],
+        "rows": [
+            [
+                "2013",
+                "Panda Pop",
+                "Bubble shooter",
+                "Android, iOS",
+                "",
+                ""
+            ],
+            [
+                "2013",
+                "Bingo Pop",
+                "Bingo",
+                "Android, iOS",
+                "Originally developed by Uken Games; acquired by Jam City in 2018",
+                ""
+            ],
+            [
+                "2014",
+                "Cookie Jam + Cookie Jam Blast",
+                "Match-three game",
+                "Android, iOS",
+                "",
+                ""
+            ],
+            [
+                "2014",
+                "Book of Life: Sugar Smash",
+                "Match-three game",
+                "Android, iOS",
+                "Partnership with Fox and based on the film The Book of Life. This was Jam City's first collaboration with a major Hollywood studio to release a game simultaneously with a film",
+                ""
+            ],
+            [
+                "2014",
+                "Family Guy: The Quest for Stuff",
+                "City-building game",
+                "Android, iOS",
+                "Licensed game based on the Family Guy animated sitcom; originally developed by TinyCo",
+                ""
+            ],
+            [
+                "2016",
+                "Disney Emoji Blitz",
+                "Match-three game",
+                "Android, iOS",
+                "Originally developed by Disney Games; license acquired by Jam City in 2018",
+                ""
+            ],
+            [
+                "2016",
+                "Genies & Gems",
+                "Match-three game",
+                "Android, iOS",
+                "",
+                ""
+            ],
+            [
+                "2017",
+                "Futurama: Worlds of Tomorrow",
+                "City building, adventure",
+                "Android, iOS",
+                "Licensed game based on the Futurama series",
+                ""
+            ],
+            [
+                "2017",
+                "Snoopy Pop",
+                "Bubble shooter",
+                "Android, iOS",
+                "Licensed game based on the Peanuts comic strip",
+                ""
+            ],
+            [
+                "2017",
+                "Family Guy: Another Freakin' Mobile Game",
+                "Puzzle, adventure",
+                "Android, iOS",
+                "Licensed game based on Family Guy",
+                ""
+            ],
+            [
+                "2018",
+                "Harry Potter: Hogwarts Mystery",
+                "Role-playing",
+                "Android, iOS",
+                "Licensed game based on Harry Potter franchise",
+                ""
+            ],
+            [
+                "2019",
+                "Frozen Adventures",
+                "Match-three, decorating",
+                "Android, iOS",
+                "Licensed game based on the Frozen franchise''",
+                ""
+            ],
+            [
+                "2019",
+                "Vineyard Valley",
+                "Puzzle, simulation",
+                "Android, iOS",
+                "",
+                ""
+            ],
+            [
+                "2020",
+                "World War Doh",
+                "Strategy, action",
+                "Android, iOS",
+                "",
+                ""
+            ]
+        ],
+        "column_types": [
+            "datetime",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {
+            "0": [
+                2013,
+                2013,
+                2014,
+                2014,
+                2014,
+                2016,
+                2016,
+                2017,
+                2017,
+                2017,
+                2018,
+                2019,
+                2019,
+                2020
+            ]
+        },
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Year was on 2013 and the Notes string contains City?",
+                "answers": [
+                    "Bingo Pop"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Title when the Platform(s) string contains iOS and the Year was before 2014?",
+                "answers": [
+                    "Panda Pop",
+                    "Bingo Pop"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Title, with Platform(s) string contains iOS, have Year was after 2014?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Title, with Platform(s) string ends with iOS, have Genre(s) string contains game?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Year was before 2017, happened the 4th according to Year?",
+                "answers": [
+                    "Cookie Jam + Cookie Jam Blast",
+                    "Book of Life: Sugar Smash",
+                    "Family Guy: The Quest for Stuff"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Year was before 2018, happened the 4th according to Year?",
+                "answers": [
+                    "Cookie Jam + Cookie Jam Blast",
+                    "Book of Life: Sugar Smash",
+                    "Family Guy: The Quest for Stuff"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Title, with Platform(s) string contains iOS, happened the 8th according to Year?",
+                "answers": [
+                    "Futurama: Worlds of Tomorrow",
+                    "Snoopy Pop",
+                    "Family Guy: Another Freakin' Mobile Game"
+                ],
+                "reasoning_type": "temporal_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Genre(s) was Bingo and when the Genre(s) was City building, adventure?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many years had passed between when the Notes was Licensed game based on the Frozen franchise'' and when the Notes was Licensed game based on the Futurama series?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "date_difference"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Year was after 2014?",
+                "answers": [
+                    "9"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Title had Year was before 2017 and Notes string contains game?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    }
+]

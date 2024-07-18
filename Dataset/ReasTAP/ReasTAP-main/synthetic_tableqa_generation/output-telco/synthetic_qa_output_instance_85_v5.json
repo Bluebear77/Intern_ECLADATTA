@@ -1,0 +1,306 @@
+[
+    {
+        "id": "194846",
+        "title": "Deutsche Telekom",
+        "url": "https://en.wikipedia.org/?curid=194846",
+        "header": [
+            "Year",
+            "Revenuein bn. \u20ac",
+            "Net incomein bn. \u20ac",
+            "Total assetsin bn. \u20ac",
+            "Employees"
+        ],
+        "rows": [
+            [
+                "2011",
+                "58.653",
+                "0.557",
+                "122.542",
+                "240,369"
+            ],
+            [
+                "2012",
+                "58.169",
+                "-5.255",
+                "107.942",
+                "232,342"
+            ],
+            [
+                "2013",
+                "60.132",
+                "0.930",
+                "118.148",
+                "230,000"
+            ],
+            [
+                "2014",
+                "62.658",
+                "2.924",
+                "129.360",
+                "228,248"
+            ],
+            [
+                "2015",
+                "69.228",
+                "3.254",
+                "143.920",
+                "266,232"
+            ],
+            [
+                "2016",
+                "73.095",
+                "2.675",
+                "148.485",
+                "221,000"
+            ],
+            [
+                "2017",
+                "74.947",
+                "3.461",
+                "141.334",
+                "216,000"
+            ],
+            [
+                "2018",
+                "75.656",
+                "2.166",
+                "145.375",
+                "216,369"
+            ],
+            [
+                "2019",
+                "80.531",
+                "3.867",
+                "170.672",
+                "212,846"
+            ],
+            [
+                "2020",
+                "100.999",
+                "4.158",
+                "264.917",
+                "226,291"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Year when the Employees was greater than 232,342 and the Revenuein bn. \u20ac was less than 74.947?",
+                "answers": [
+                    "2011",
+                    "2015"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Year when the Employees was less than 240,369 and the Total assetsin bn. \u20ac was greater than or equal to 145.375?",
+                "answers": [
+                    "2016",
+                    "2018",
+                    "2019",
+                    "2020"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Year, with Employees was less than or equal to 230,000, have Total assetsin bn. \u20ac was greater than 129.360?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Year, with Employees was equal to 226,291, have Net incomein bn. \u20ac was greater than or equal to 2.924?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Year, with Revenuein bn. \u20ac was less than or equal to 100.999, has the 9th largest Employees?",
+                "answers": [
+                    "2017"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Year, with Net incomein bn. \u20ac was greater than or equal to -5.255, has the 10th largest Revenuein bn. \u20ac?",
+                "answers": [
+                    "2012"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Year, with Total assetsin bn. \u20ac was less than 170.672, has the 6th largest Net incomein bn. \u20ac?",
+                "answers": [
+                    "2013"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Year had Revenuein bn. \u20ac was less than 60.132 and Employees was greater than 216,369?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Year had Total assetsin bn. \u20ac was greater than 129.360?",
+                "answers": [
+                    "6"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Year had Revenuein bn. \u20ac was greater than or equal to 62.658?",
+                "answers": [
+                    "7"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Total assetsin bn. \u20ac when the Revenuein bn. \u20ac was less than or equal to 100.999?",
+                "answers": [
+                    "1492.695"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Revenuein bn. \u20ac when the Net incomein bn. \u20ac was less than or equal to 2.924?",
+                "answers": [
+                    "388.363"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Employees when the Total assetsin bn. \u20ac was less than or equal to 129.360?",
+                "answers": [
+                    "232739.75"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    },
+    {
+        "id": "194846",
+        "title": "Deutsche Telekom",
+        "url": "https://en.wikipedia.org/?curid=194846",
+        "header": [
+            "Country",
+            "Company",
+            "Stake held by Deutsche Telekom"
+        ],
+        "rows": [
+            [
+                "Austria",
+                "Magenta Telekom",
+                "100%"
+            ],
+            [
+                "Bosnia and Herzegovina",
+                "HT Eronet (JP Hrvatske telekomunikacije d.d. Mostar)",
+                "39.1% of shares held by Hrvatski Telekom"
+            ],
+            [
+                "Croatia",
+                "Hrvatski Telekom d.d.",
+                "52.2%"
+            ],
+            [
+                "Czech Republic",
+                "T-Mobile Czech Republic, a.s.",
+                "100%"
+            ],
+            [
+                "Germany",
+                "Telekom Deutschland GmbH",
+                "100%"
+            ],
+            [
+                "Greece",
+                "OTE (Hellenic Telecommunications Organization S.A.)",
+                "52.5%"
+            ],
+            [
+                "Greece",
+                "Cosmote (Cosmote Mobile Telecommunications S.A.)",
+                "100.00% of shares held by OTE"
+            ],
+            [
+                "Hungary",
+                "Magyar Telekom Nyrt.",
+                "59.21%"
+            ],
+            [
+                "Montenegro",
+                "Crnogorski Telekom A.D.",
+                "76,53% of shares held by Hrvatski Telekom"
+            ],
+            [
+                "North Macedonia",
+                "Makedonski Telekom AD",
+                "51% of shares held by Magyar Telekom"
+            ],
+            [
+                "Poland",
+                "T-Mobile Polska S.A.",
+                "100%"
+            ],
+            [
+                "Romania",
+                "Telekom Romania Mobile Communications S.A.",
+                "100% of shares held by OTE"
+            ],
+            [
+                "Slovakia",
+                "Slovak Telekom, a.s.",
+                "100%"
+            ],
+            [
+                "United States",
+                "T-Mobile US, Inc.",
+                "53.3%"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "numeric",
+            "numeric"
+        ],
+        "key_column": 0,
+        "numeric_columns": [
+            1,
+            2
+        ],
+        "date_columns": {},
+        "qas": []
+    }
+]
