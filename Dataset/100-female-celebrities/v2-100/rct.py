@@ -45,14 +45,21 @@ def convert_column_type(column_type, value):
 
 # Function to ensure column_types matches the length of header
 def ensure_column_types_length(data):
-    if 'header' in data and 'column_types' in data:
+    if 'header' in data:
         header_length = len(data['header'])
-        column_types_length = len(data['column_types'])
-        
-        if column_types_length < header_length:
-            data['column_types'].extend(['string'] * (header_length - column_types_length))
-        elif column_types_length > header_length:
-            data['column_types'] = data['column_types'][:header_length]
+        if 'column_types' not in data or not data['column_types']:
+            data['column_types'] = ['string'] * header_length
+        elif isinstance(data['column_types'], str):
+            data['column_types'] = ['string'] * header_length
+        else:
+            column_types_length = len(data['column_types'])
+            if column_types_length < header_length:
+                data['column_types'].extend(['string'] * (header_length - column_types_length))
+            elif column_types_length > header_length:
+                data['column_types'] = data['column_types'][:header_length]
+                
+    if 'key_column' not in data or not data['key_column']:
+        data['key_column'] = 1
 
 # Function to recursively search for column_types in nested dictionaries or lists, and refine them
 def find_and_refine_column_types(data):
@@ -60,7 +67,7 @@ def find_and_refine_column_types(data):
     date_columns = {}
     
     if isinstance(data, dict):
-        if 'header' in data and 'column_types' in data:
+        if 'header' in data:
             ensure_column_types_length(data)
         for key, value in data.items():
             if key == 'column_types' and isinstance(value, list):

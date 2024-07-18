@@ -95,7 +95,7 @@ def process_files(json_file_path, csv_file_path, output_file_path, error_log):
                 table_csv_row = table_csv_data.iloc[0]
 
                 column_types = [table_csv_row[f'column_type_{i}'] for i in range(1, table_csv_row['column_number'] + 1)]
-                key_column = int(table_csv_row['key column'])
+                key_column = int(table_csv_row['key column']) if not pd.isna(table_csv_row['key column']) else ""
 
                 table_data['column_types'] = column_types
                 table_data['key_column'] = key_column
@@ -107,6 +107,8 @@ def process_files(json_file_path, csv_file_path, output_file_path, error_log):
         if 'cannot convert float NaN to integer' in str(e):
             with open(error_log, 'a', encoding='utf-8') as log_file:
                 log_file.write(f'Skip due to missing key column: {csv_file_path}\n')
+
+
 
 def main():
     input_dir = './Raw/'
