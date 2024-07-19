@@ -1,0 +1,739 @@
+[
+    {
+        "id": "5892703",
+        "title": "Mikaela Shiffrin",
+        "url": "https://fr.wikipedia.org/?curid=5892703",
+        "header": [
+            "Saison / \u00c9preuve",
+            "Slalom",
+            "G\u00e9ant",
+            "Super-G",
+            "Descente",
+            "Combin\u00e9",
+            "City Event",
+            "Slalom parall\u00e8le",
+            "Total"
+        ],
+        "rows": [
+            [
+                "2012-2013",
+                "\u00c5re  Zagreb  Flachau    Lenzerheide",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "4"
+            ],
+            [
+                "2013-2014",
+                "Levi  Bormio  Flachau  \u00c5re   Lenzerheide",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "5"
+            ],
+            [
+                "2014-2015",
+                "K\u00fchtai  Zagreb  Maribor  \u00c5re  M\u00e9ribel",
+                "S\u00f6lden",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "6"
+            ],
+            [
+                "2015-2016",
+                "Aspen (\u00d7 2)  Crans-Montana  Jasna  Saint-Moritz",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "5"
+            ],
+            [
+                "2016-2017",
+                "Levi  Killington  Sestri\u00e8res  Semmering  Maribor  Squaw Valley",
+                "Semmering (\u00d7 2)   Squaw Valley",
+                "",
+                "",
+                "Crans-Montana",
+                "Stockholm",
+                "",
+                "11"
+            ],
+            [
+                "2017-2018",
+                "Killington  Lienz Zagreb Kranjska Gora  Flachau  Ofterschwang \u00c5re",
+                "Courchevel Kranjska Gora",
+                "",
+                "Lake Louise",
+                "",
+                "Oslo",
+                "Courchevel",
+                "12"
+            ],
+            [
+                "2018-2019",
+                "Levi Killington  Courchevel Semmering Zagreb Maribor \u0160pindler\u016fv Ml\u00fdn Soldeu",
+                "Courchevel Plan de Corones MariborVictoire partag\u00e9e avec Petra Vlhov\u00e1 dans un temps total identique de 2 min 31 s 31 Soldeu",
+                "Lake Louise Saint-Moritz   Cortina d'Ampezzo",
+                "",
+                "",
+                "Stockholm",
+                "Saint-Moritz",
+                "17"
+            ],
+            [
+                "2019-2020",
+                "Levi Killington  Lienz",
+                "Lienz",
+                "Bansko",
+                "Bansko",
+                "",
+                "",
+                "",
+                "6"
+            ],
+            [
+                "2020-2021",
+                "Flachau Jasna",
+                "Courchevel",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "3"
+            ],
+            [
+                "2021-2022",
+                "Killington Schladming",
+                "S\u00f6lden Courchevel",
+                "",
+                "Courchevel/M\u00e9ribel",
+                "",
+                "",
+                "",
+                "5"
+            ],
+            [
+                "2022-2023",
+                "Levi (x 2) Semmering Zagreb \u0160pindler\u016fv Ml\u00fdn  \u00c5re",
+                "Semmering (x 2)  Kranjska Gora Plan de Corones (x 2)   \u00c5re Soldeu",
+                "Saint-Moritz",
+                "",
+                "",
+                "",
+                "",
+                "14"
+            ],
+            [
+                "Total",
+                "53",
+                "21",
+                "5",
+                "3",
+                "1",
+                "3",
+                "2",
+                "88"
+            ]
+        ],
+        "column_types": [
+            "numeric",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "numeric"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            0,
+            8
+        ],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Slalom when the Slalom parall\u00e8le is 2 and the Combin\u00e9 is 1?",
+                "answers": [
+                    "53"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Slalom when the Combin\u00e9 is 1 and the Total was greater than 5?",
+                "answers": [
+                    "53"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Slalom, with G\u00e9ant is 21, have Combin\u00e9 is 1?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Slalom, with Slalom parall\u00e8le is 2, have Total was greater than or equal to 5?",
+                "answers": [
+                    "No"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Slalom, with G\u00e9ant string contains de, has the 1st largest Total?",
+                "answers": [
+                    "Levi Killington  Courchevel Semmering Zagreb Maribor \u0160pindler\u016fv Ml\u00fdn Soldeu"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Which Slalom, with City Event is Stockholm, has the 1st largest Total?",
+                "answers": [
+                    "Levi Killington  Courchevel Semmering Zagreb Maribor \u0160pindler\u016fv Ml\u00fdn Soldeu"
+                ],
+                "reasoning_type": "numerical_comparison"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Slalom had City Event is Stockholm?",
+                "answers": [
+                    "2"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Slalom had Total was greater than 14 and City Event is Stockholm?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Slalom had Total was greater than or equal to 5?",
+                "answers": [
+                    "10"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Total when the G\u00e9ant string contains Plan?",
+                "answers": [
+                    "31.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the sum of Total when the City Event is Stockholm?",
+                "answers": [
+                    "28.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the average of Total when the City Event is Stockholm?",
+                "answers": [
+                    "14.0"
+                ],
+                "reasoning_type": "numerical_operation"
+            }
+        ]
+    },
+    {
+        "id": "5892703",
+        "title": "Mikaela Shiffrin",
+        "url": "https://fr.wikipedia.org/?curid=5892703",
+        "header": [
+            "\u00c9dition / \u00c9preuve",
+            "Slalom g\u00e9ant",
+            "Slalom"
+        ],
+        "rows": [
+            [
+                "Mondiaux 2011 Crans-Montana",
+                "-",
+                ""
+            ],
+            [
+                "Mondiaux 2012 Roccaraso",
+                "Bronze",
+                "Abandon"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many Slalom g\u00e9ant had Slalom is Abandon?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "5892703",
+        "title": "Mikaela Shiffrin",
+        "url": "https://fr.wikipedia.org/?curid=5892703",
+        "header": [
+            "\u00c9dition / \u00c9preuve",
+            "Slalom g\u00e9ant",
+            "Slalom",
+            "Combin\u00e9 alpin",
+            "Descente",
+            "Super-G"
+        ],
+        "rows": [
+            [
+                "JO 2014 Sotchi",
+                "",
+                "Or",
+                "-",
+                "-",
+                "-"
+            ],
+            [
+                "JO 2018 Pyeongchang",
+                "Or",
+                "",
+                "Argent",
+                "-",
+                "-"
+            ],
+            [
+                "JO 2022 P\u00e9kin",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "How many Slalom g\u00e9ant had Slalom is Or?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "5892703",
+        "title": "Mikaela Shiffrin",
+        "url": "https://fr.wikipedia.org/?curid=5892703",
+        "header": [
+            "\u00c9dition / \u00c9preuve",
+            "Slalom g\u00e9ant",
+            "Slalom",
+            "Super G",
+            "Combin\u00e9"
+        ],
+        "rows": [
+            [
+                "Mondiaux 2013 Schladming",
+                "",
+                "Or",
+                "-",
+                "-"
+            ],
+            [
+                "Mondiaux 2015 Vail - Beaver Creek",
+                "",
+                "Or",
+                "-",
+                "-"
+            ],
+            [
+                "Mondiaux 2017 Saint-Moritz",
+                "Argent",
+                "Or",
+                "-",
+                "-"
+            ],
+            [
+                "Mondiaux 2019 \u00c5re",
+                "Bronze",
+                "Or",
+                "Or",
+                "-"
+            ],
+            [
+                "Mondiaux 2021 Cortina d'Ampezzo",
+                "Argent",
+                "Bronze",
+                "Bronze",
+                "Or"
+            ],
+            [
+                "Mondiaux 2023 M\u00e9ribel/Courchevel",
+                "Or",
+                "Argent",
+                "Argent",
+                "DSQ"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        "key_column": 1,
+        "numeric_columns": [],
+        "date_columns": {},
+        "qas": [
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Slalom g\u00e9ant when the Slalom is Bronze and the Combin\u00e9 is Or?",
+                "answers": [
+                    "Argent"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "What was the Slalom g\u00e9ant when the Slalom is Or and the Super G is Or?",
+                "answers": [
+                    "Bronze"
+                ],
+                "reasoning_type": "conjunction"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does every Slalom g\u00e9ant, with \u00c9dition / \u00c9preuve string contains Cortina, have Combin\u00e9 is Or?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "Does only Slalom g\u00e9ant, with Super G is Bronze, have Slalom is Bronze?",
+                "answers": [
+                    "Yes"
+                ],
+                "reasoning_type": "quantifiers"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Slalom g\u00e9ant had Combin\u00e9 is Or and \u00c9dition / \u00c9preuve string contains Cortina?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Slalom g\u00e9ant had Slalom is Bronze and Super G is Bronze?",
+                "answers": [
+                    "1"
+                ],
+                "reasoning_type": "counting"
+            },
+            {
+                "source": "synthetic_qa",
+                "question": "How many Slalom g\u00e9ant had Slalom is Or?",
+                "answers": [
+                    "4"
+                ],
+                "reasoning_type": "counting"
+            }
+        ]
+    },
+    {
+        "id": "5892703",
+        "title": "Mikaela Shiffrin",
+        "url": "https://fr.wikipedia.org/?curid=5892703",
+        "header": [
+            "Saison/Classement",
+            "G\u00e9n\u00e9ral",
+            "G\u00e9n\u00e9ral",
+            "Descente",
+            "Descente",
+            "Super G",
+            "Super G",
+            "G\u00e9ant",
+            "G\u00e9ant",
+            "Slalom",
+            "Slalom",
+            "Combin\u00e9",
+            "Combin\u00e9"
+        ],
+        "rows": [
+            [
+                "Saison/Classement",
+                "",
+                "Points",
+                "",
+                "Points",
+                "",
+                "Points",
+                "",
+                "Points",
+                "",
+                "Points",
+                "",
+                "Points"
+            ],
+            [
+                "2011-2012",
+                "",
+                "168",
+                "-",
+                "-",
+                "-",
+                "-",
+                "",
+                "5",
+                "",
+                "163",
+                "-",
+                "-"
+            ],
+            [
+                "2012-2013",
+                "",
+                "822",
+                "-",
+                "-",
+                "-",
+                "-",
+                "",
+                "134",
+                "",
+                "688",
+                "-",
+                "-"
+            ],
+            [
+                "2013-2014",
+                "",
+                "895",
+                "-",
+                "-",
+                "-",
+                "-",
+                "",
+                "257",
+                "",
+                "638",
+                "-",
+                "-"
+            ],
+            [
+                "2014-2015",
+                "",
+                "",
+                "-",
+                "-",
+                "-",
+                "-",
+                "",
+                "357",
+                "",
+                "679",
+                "-",
+                "-"
+            ],
+            [
+                "2015-2016",
+                "",
+                "648",
+                "-",
+                "-",
+                "",
+                "18",
+                "",
+                "98",
+                "",
+                "500",
+                "",
+                "32"
+            ],
+            [
+                "2016-2017",
+                "",
+                "",
+                "",
+                "33",
+                "",
+                "70",
+                "",
+                "600",
+                "",
+                "840",
+                "",
+                "100"
+            ],
+            [
+                "2017-2018",
+                "",
+                "",
+                "",
+                "256",
+                "",
+                "56",
+                "",
+                "481",
+                "",
+                "980",
+                "-",
+                "-"
+            ],
+            [
+                "2018-2019",
+                "",
+                "",
+                "",
+                "79",
+                "",
+                "350",
+                "",
+                "615",
+                "",
+                "",
+                "-",
+                "-"
+            ],
+            [
+                "2019-2020",
+                "",
+                "",
+                "",
+                "256",
+                "",
+                "186",
+                "",
+                "314",
+                "",
+                "440",
+                "-",
+                "-"
+            ],
+            [
+                "2020-2021",
+                "",
+                "1 075",
+                "-",
+                "-",
+                "-",
+                "-",
+                "",
+                "420",
+                "",
+                "655",
+                "-",
+                "-"
+            ],
+            [
+                "2021-2022",
+                "",
+                "",
+                "",
+                "105",
+                "",
+                "380",
+                "",
+                "507",
+                "",
+                "501",
+                "-",
+                "-"
+            ],
+            [
+                "2022-2023",
+                "",
+                "",
+                "",
+                "221",
+                "",
+                "240",
+                "",
+                "800",
+                "",
+                "945",
+                "-",
+                "-"
+            ]
+        ],
+        "column_types": [
+            "string",
+            "string",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
+        ],
+        "key_column": 1,
+        "numeric_columns": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ],
+        "date_columns": {},
+        "qas": []
+    }
+]
