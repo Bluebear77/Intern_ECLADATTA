@@ -1,5 +1,47 @@
 Prompt:
 
+
+Write a Python script that reads multiple JSON files named instance_i.json in the current directory and extracts _source >> extractionMetadata >> texts >> title and _source >> extractionMetadata >> texts >> value. For each JSON file, create a directory named after the file (e.g., ./instance_82 for instance_82.json) and generate separate text files for each section in texts within that directory. Each text file should contain the title and value. Mimic the logic from the provided code example which processes tables and technologyResults:
+
+def extract_typing_labels(json_file):
+	with open(json_file, 'r', encoding='utf-8') as file:
+    	data = json.load(file)
+    
+	results = []
+	logs = []
+
+	extraction_metadata = data["_source"]["extractionMetadata"]
+	preprocessing_metadata = data["_source"]["preprocessingMetadata"]
+    
+	tables = extraction_metadata[0]["tables"]
+	tech_results = preprocessing_metadata[0]["technologyResults"]
+    
+	tech_results_dict = {tr["index"]: tr for tr in tech_results}
+    
+	for table in tables:
+    	table_num = table["tableNum"]
+    	print(f"Processing tableNum: {table_num}")
+    	if table_num in tech_results_dict:
+        	tech_result = tech_results_dict[table_num]
+        	if "dagobah" in tech_result and "preprocessed" in tech_result["dagobah"]:
+            	if "primitiveTyping" in tech_result["dagobah"]["preprocessed"]:
+                	primitive_typing = tech_result["dagobah"]["preprocessed"]["primitiveTyping"]
+                	max_column_index = max([col["columnIndex"] for col in primitive_typing]) + 1
+                	column_types = ["UNKNOWN"] * max_column_index
+                	for column in primitive_typing:
+                    	column_index = column["columnIndex"]
+                    	if column["typing"]:
+                        	column_type = column["typing"][0]["typingLabel"]
+                        	if column_type == 'DATE':
+                            	column_type = 'datetime'
+                        	column_types[column_index] = column_type
+                	results.append([table_num, max_column_index] + column_types)
+
+
+
+
+***
+
 Write a Python script that reads a JSON file and outputs a CSV file containing a table with the following structure:
 
     The row header should be "TableNum".
@@ -60,3 +102,4 @@ Please update the code to perform the following tasks:
     If "column_types" has more rows than "header", truncate the extra rows.
     Ensure this check and adjustment happens before any further processing of the column types.
     Ensure the existing functionality for determining and refining column types based on the values in the "rows" remains intact.
+
