@@ -95,6 +95,66 @@ Loop through the files: Processes files from 1 to 100.
 
 Prompt:
 
+Write a Python script that reads multiple JSON files named instance_i.json in the current directory and extracts _source >> extractionMetadata >> texts >> title and _source >> extractionMetadata >> texts >> value. For each JSON file, create a directory named after the file (e.g., ./instance_82 for instance_82.json) and generate separate text files for each section in texts within that directory. Each text file should contain the title and value. Mimic the logic from the provided code example which processes tables and technologyResults:
+
+def extract_typing_labels(json_file):
+	with open(json_file, 'r', encoding='utf-8') as file:
+    	data = json.load(file)
+    
+	results = []
+	logs = []
+
+	extraction_metadata = data["_source"]["extractionMetadata"]
+	preprocessing_metadata = data["_source"]["preprocessingMetadata"]
+    
+	tables = extraction_metadata[0]["tables"]
+	tech_results = preprocessing_metadata[0]["technologyResults"]
+    
+	tech_results_dict = {tr["index"]: tr for tr in tech_results}
+    
+	for table in tables:
+    	table_num = table["tableNum"]
+    	print(f"Processing tableNum: {table_num}")
+    	if table_num in tech_results_dict:
+        	tech_result = tech_results_dict[table_num]
+        	if "dagobah" in tech_result and "preprocessed" in tech_result["dagobah"]:
+            	if "primitiveTyping" in tech_result["dagobah"]["preprocessed"]:
+                	primitive_typing = tech_result["dagobah"]["preprocessed"]["primitiveTyping"]
+                	max_column_index = max([col["columnIndex"] for col in primitive_typing]) + 1
+                	column_types = ["UNKNOWN"] * max_column_index
+                	for column in primitive_typing:
+                    	column_index = column["columnIndex"]
+                    	if column["typing"]:
+                        	column_type = column["typing"][0]["typingLabel"]
+                        	if column_type == 'DATE':
+                            	column_type = 'datetime'
+                        	column_types[column_index] = column_type
+                	results.append([table_num, max_column_index] + column_types)
+
+
+
+***
+
+Prompt:
+
+To describe the task most clearly, you could use the following prompt:
+Prompt:
+
+I have multiple JSON files named in the pattern synthetic_qa_output_instance_i_v6.json (e.g., synthetic_qa_output_instance_29_v6.json, synthetic_qa_output_instance_32_v6.json) in the current directory. Each JSON file contains multiple tables, and each table includes a list of question-answer sets (qas).
+
+I need a Python script that does the following:
+
+    Reads all JSON files in the current directory that match the pattern synthetic_qa_output_instance_*_v6.json.
+    For each JSON file:
+        Extracts the instance index from the filename.
+        Creates a directory named ./qas_instance_index (e.g., ./qas_29 for synthetic_qa_output_instance_29_v6.json).
+        For each table in the JSON file:
+            Extracts all qas.
+            Saves the qas of each table into a separate text file within the created directory. The text file should be named qas_instance_index_table_table_index.txt (e.g., qas_29_table_1.txt).
+            Each text file should contain the question and answer pairs in a human-readable format, with each question followed by its answers.
+
+
+
 Please update the code to perform the following tasks:
 
     Check if the number of rows in "column_types" matches the number of rows in "header".
