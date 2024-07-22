@@ -133,11 +133,17 @@ def extract_typing_labels(json_file):
 
 
 
-***
+Please update the code to perform the following tasks:
 
-Prompt:
+    Check if the number of rows in "column_types" matches the number of rows in "header".
+    If "column_types" has fewer rows than "header", fill in the missing rows with the type "string".
+    If "column_types" has more rows than "header", truncate the extra rows.
+    Ensure this check and adjustment happens before any further processing of the column types.
+    Ensure the existing functionality for determining and refining column types based on the values in the "rows" remains intact.
 
-To describe the task most clearly, you could use the following prompt:
+
+****
+
 Prompt:
 
 I have multiple JSON files named in the pattern synthetic_qa_output_instance_i_v6.json (e.g., synthetic_qa_output_instance_29_v6.json, synthetic_qa_output_instance_32_v6.json) in the current directory. Each JSON file contains multiple tables, and each table includes a list of question-answer sets (qas).
@@ -153,13 +159,4 @@ I need a Python script that does the following:
             Saves the qas of each table into a separate text file within the created directory. The text file should be named qas_instance_index_table_table_index.txt (e.g., qas_29_table_1.txt).
             Each text file should contain the question and answer pairs in a human-readable format, with each question followed by its answers.
 
-
-
-Please update the code to perform the following tasks:
-
-    Check if the number of rows in "column_types" matches the number of rows in "header".
-    If "column_types" has fewer rows than "header", fill in the missing rows with the type "string".
-    If "column_types" has more rows than "header", truncate the extra rows.
-    Ensure this check and adjustment happens before any further processing of the column types.
-    Ensure the existing functionality for determining and refining column types based on the values in the "rows" remains intact.
 
