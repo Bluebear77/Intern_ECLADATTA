@@ -15,7 +15,7 @@ def process_qas(qas):
 
 def main():
     # Get list of JSON files following the specified pattern
-    json_files = glob('synthetic_qa_output_instance_*_v6.json')
+    json_files = glob('./input-qas/synthetic_qa_output_instance_*_v6.json')
     
     for json_file in json_files:
         with open(json_file, 'r', encoding='utf-8') as f:
@@ -34,6 +34,6 @@ def main():
                 output_file = os.path.join(output_dir, f"qas_{instance_index}_table_{table_index + 1}.txt")
                 with open(output_file, 'w', encoding='utf-8') as f:
                     f.write(process_qas(table_qas))
-                    
+
 if __name__ == "__main__":
     main()

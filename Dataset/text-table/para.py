@@ -6,8 +6,8 @@ def process_json_file(file_path):
     # Get the base file name without extension
     base_name = os.path.splitext(os.path.basename(file_path))[0]
     
-    # Create a directory named after the base file name
-    output_dir = os.path.join(os.getcwd(), base_name)
+    # Create a directory named after the base file name under ./text
+    output_dir = os.path.join(os.getcwd(), 'text', base_name)
     os.makedirs(output_dir, exist_ok=True)
     
     # Read the JSON file
@@ -35,8 +35,8 @@ def process_json_file(file_path):
             with open(output_file_path, 'w', encoding='utf-8') as output_file:
                 output_file.write(content)
 
-# Get the list of JSON files matching the pattern instance_*.json
-json_files = glob.glob('instance_*.json')
+# Get the list of JSON files matching the pattern in the ./input-json directory
+json_files = glob.glob('./input-json/instance_*.json')
 
 # Process each JSON file
 for json_file in json_files:
