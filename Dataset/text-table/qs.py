@@ -1,15 +1,42 @@
 import os
 import json
 from glob import glob
+import re
+import nltk
+from nltk.corpus import stopwords
+
+# Download necessary NLTK data
+nltk.download('punkt')
+nltk.download('stopwords')
+
+# Define the function to clean text
+def clean_text(dirty_text, language='english'):
+    # Tokenize words
+    words = nltk.word_tokenize(dirty_text, language)
+
+    # Remove punctuation
+    words = [re.sub(r'[^\w\s]', '', word) for word in words]
+    # Convert to lowercase
+    words = [word.lower() for word in words]
+
+    # Remove stopwords
+    stop_words = set(stopwords.words(language))
+    words = [word for word in words if not word in stop_words]
+
+    # Join words back into a string
+    cleaned_text = ' '.join(words)
+    
+    # Return the cleaned text
+    return cleaned_text
 
 def process_qas(qas):
     """
-    Convert list of QA dictionaries to a formatted string.
+    Convert list of QA dictionaries to a formatted string and clean the text.
     """
     output = []
     for qa in qas:
-        question = qa['question']
-        answers = "\n".join(qa['answers'])
+        question = clean_text(qa['question'])
+        answers = "\n".join([clean_text(answer) for answer in qa['answers']])
         output.append(f"Question: {question}\nAnswers:\n{answers}\n")
     return "\n".join(output)
 
