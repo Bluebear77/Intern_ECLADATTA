@@ -142,7 +142,7 @@ Please update the code to perform the following tasks:
     Ensure the existing functionality for determining and refining column types based on the values in the "rows" remains intact.
 
 
-****
+***
 
 Prompt:
 
@@ -159,4 +159,29 @@ I need a Python script that does the following:
             Saves the qas of each table into a separate text file within the created directory. The text file should be named qas_instance_index_table_table_index.txt (e.g., qas_29_table_1.txt).
             Each text file should contain the question and answer pairs in a human-readable format, with each question followed by its answers.
 
+
+***
+
+Optimized Prompt:
+
+I need a Python script that iterates through each file in all subdirectories of both ./embedding/qas and ./embedding/text directories, and calculates cosine similarity between the files. The specific requirements are as follows:
+
+    Directory Structure:
+        In ./embedding/qas, there are subdirectories named qas_i (e.g., qas_29).
+        Each qas_i directory contains files named qas_i_table_j.txt (e.g., qas_29_table_1.txt).
+        In ./embedding/text, there are subdirectories named instance_i (e.g., instance_29).
+        Each instance_i directory contains files named section_j.txt (e.g., section_1.txt).
+
+    Task:
+        For each text file in ./embedding/qas/qas_i, calculate the cosine similarity with every text file in the corresponding ./embedding/text/instance_i directory (where i is the same for both directories).
+        Save the cosine similarity scores in an output directory ./embedding/output with the same subdirectory structure as the input.
+
+    Output:
+        The output for each qas_i directory should be a CSV file named cosine_similarity.csv in the corresponding ./embedding/output/qas_i directory.
+        The CSV file should have three columns: Similarity, QAS_File, and Text_File.
+        Each row should contain the similarity score, the name of the QAS file, and the name of the text file it was compared with.
+
+    Additional Features:
+        Include a progress bar to indicate the progress of the file processing.
+        Ensure the script is efficient and handles large numbers of files gracefully.
 
