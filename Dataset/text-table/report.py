@@ -39,7 +39,9 @@ def generate_bar_chart(df, title, output_path):
 
 def main():
     base_directories = ['./embedding/output/cosine', './embedding/output/jaccard']
-    report_file = './embedding/output/report.md'
+    report_directory = './embedding/output/report'
+    os.makedirs(report_directory, exist_ok=True)
+    report_file = os.path.join(report_directory, 'report.md')
     
     with open(report_file, 'w') as report:
         for base_dir in base_directories:
@@ -48,7 +50,7 @@ def main():
                     if file.endswith('.csv'):
                         file_path = os.path.join(root, file)
                         title = f"Similarity Scores for {file}"
-                        output_image_path = file_path.replace('.csv', '.png')
+                        output_image_path = os.path.join(report_directory, f"{file.replace('.csv', '')}.png")
                         
                         df = process_csv(file_path)
                         generate_bar_chart(df, title, output_image_path)
