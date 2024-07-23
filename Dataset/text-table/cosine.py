@@ -11,9 +11,9 @@ def read_file(file_path):
         return file.read()
 
 def calculate_cosine_similarity(text1, text2):
-    vectorizer = TfidfVectorizer().fit_transform([text1, text2])
-    vectors = vectorizer.toarray()
-    return cosine_similarity(vectors)[0, 1]
+    vector1 = np.array([float(num) for num in text1.split()])
+    vector2 = np.array([float(num) for num in text2.split()])
+    return cosine_similarity([vector1], [vector2])[0][0]
 
 def process_directories(qas_root, text_root, output_root):
     qas_dirs = glob.glob(os.path.join(qas_root, 'qas_*'))

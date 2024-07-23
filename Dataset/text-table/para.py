@@ -10,24 +10,39 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 # Define the function to clean text
-def clean_text(dirty_text, language='english'):
+import nltk
+from nltk.corpus import stopwords
+import re
+
+# Download necessary NLTK resources
+nltk.download('punkt')
+nltk.download('stopwords')
+
+def clean_text(dirty_text, language='french'):
     # Tokenize words
     words = nltk.word_tokenize(dirty_text, language)
 
     # Remove punctuation
     words = [re.sub(r'[^\w\s]', '', word) for word in words]
+    
     # Convert to lowercase
     words = [word.lower() for word in words]
 
     # Remove stopwords
     stop_words = set(stopwords.words(language))
-    words = [word for word in words if not word in stop_words]
+    words = [word for word in words if word not in stop_words]
 
     # Join words back into a string
     cleaned_text = ' '.join(words)
     
     # Return the cleaned text
     return cleaned_text
+
+# Example usage
+dirty_text = """les titres originaux américains de la série alice trahissent souvent lintrigue principale du roman  contrairement aux titres français qui entretiennent davantage le mystère"""
+cleaned_text = clean_text(dirty_text)
+print(cleaned_text)
+
 
 def process_json_file(file_path):
     # Get the base file name without extension
