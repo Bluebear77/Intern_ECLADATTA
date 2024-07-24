@@ -50,14 +50,15 @@ def main():
                     if file.endswith('.csv'):
                         file_path = os.path.join(root, file)
                         title = f"Similarity Scores for {file}"
-                        output_image_path = os.path.join(report_directory, f"{file.replace('.csv', '')}.png")
+                        output_image_path = os.path.join(root, f"{file.replace('.csv', '')}.png")
                         
                         df = process_csv(file_path)
                         generate_bar_chart(df, title, output_image_path)
                         
                         # Write to the report
+                        relative_image_path = os.path.relpath(output_image_path, report_directory)
                         report.write(f"## {title}\n")
-                        report.write(f"![{title}]({output_image_path})\n\n")
+                        report.write(f"![{title}]({relative_image_path})\n\n")
 
 if __name__ == "__main__":
     main()

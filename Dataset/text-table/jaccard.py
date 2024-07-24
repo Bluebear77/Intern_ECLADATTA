@@ -18,17 +18,7 @@ def read_file(file_path):
     with open(file_path, 'r') as file:
         return file.read()
 
-def calculate_cosine_similarity(text1, text2):
-    vector1 = np.array([float(num) for num in text1.split()])
-    vector2 = np.array([float(num) for num in text2.split()])
-    padded_vector1, padded_vector2 = pad_vectors(vector1, vector2)
-    return cosine_similarity([padded_vector1], [padded_vector2])[0][0]
 
-def pad_vectors(vector1, vector2):
-    max_len = max(len(vector1), len(vector2))
-    padded_vector1 = np.pad(vector1, (0, max_len - len(vector1)), 'constant')
-    padded_vector2 = np.pad(vector2, (0, max_len - len(vector2)), 'constant')
-    return padded_vector1, padded_vector2
 
 def process_directories(qas_root, text_root, output_root):
     qas_dirs = glob.glob(os.path.join(qas_root, 'qas_*'))
