@@ -133,25 +133,6 @@ def generate_combined_chart(data, output_path):
     plt.savefig(output_path)
     plt.close(fig)
 
-def generate_summary_table(data):
-    summary = {
-        'QAS_File': [],
-        'Average_Cosine': [],
-        'Highest_Cosine': [],
-        'Average_Jaccard': [],
-        'Highest_Jaccard': []
-    }
-    
-    for method, df in data.items():
-        avg_col = f'Average_{method}'
-        high_col = f'Highest_{method}'
-        summary['QAS_File'].extend(df['QAS_File'])
-        summary[avg_col].extend(df['Average_Similarity'])
-        summary[high_col].extend(df['Highest_Similarity'])
-    
-    summary_df = pd.DataFrame(summary)
-    return summary_df
-
 def main():
     base_directories = ['./embedding/output/cosine', './embedding/output/jaccard']
     report_directory = './embedding/output/report'
@@ -193,8 +174,6 @@ def main():
     combined_chart_path = os.path.join(report_directory, 'overview_similarity_combined.png')
     generate_combined_chart(combined_data, combined_chart_path)
     
-    summary_df = generate_summary_table(combined_data)
-
     with open(report_file, 'a') as report:
         report.write(f"## Overview of Similarity Scores - Bars\n")
         report.write(f"![Overview of Similarity Scores - Bars](overview_similarity_bars.png)\n\n")
@@ -202,9 +181,6 @@ def main():
         report.write(f"![Overview of Similarity Scores - Lines](overview_similarity_lines.png)\n\n")
         report.write(f"## Overview of Similarity Scores - Combined\n")
         report.write(f"![Overview of Similarity Scores - Combined](overview_similarity_combined.png)\n\n")
-        
-        report.write(f"## Summary Table\n")
-        report.write(summary_df.to_markdown(index=False))
 
 if __name__ == "__main__":
     main()
