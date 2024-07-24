@@ -28,12 +28,3 @@
 ## Similarity Scores for jaccard_similarity.csv
 ![Similarity Scores for jaccard_similarity.csv](../jaccard/qas_53/jaccard_similarity.png)
 
-## Overview of Similarity Scores - Bars
-![Overview of Similarity Scores - Bars](overview_similarity_bars.png)
-
-## Overview of Similarity Scores - Lines
-![Overview of Similarity Scores - Lines](overview_similarity_lines.png)
-
-## Overview of Similarity Scores - Combined
-![Overview of Similarity Scores - Combined](overview_similarity_combined.png)
-
