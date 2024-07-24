@@ -37,7 +37,7 @@ def generate_bar_chart(df, title, output_path):
     plt.savefig(output_path)
     plt.close(fig)
 
-def generate_combined_line_chart(data, output_path):
+def generate_overview_bar_chart(data, output_path):
     fig, ax = plt.subplots(figsize=(12, 8))
 
     combined_df = pd.DataFrame()
@@ -49,22 +49,84 @@ def generate_combined_line_chart(data, output_path):
     
     bar_width = 0.2
     x_ticks = combined_df['QAS_File'].unique()
-    x_pos = range(len(x_ticks))
+    x_pos = list(range(len(x_ticks)))
+
+    for i, method in enumerate(data.keys()):
+        df = combined_df[combined_df['Method'] == method]
+        df.sort_values(by='Average_Similarity', inplace=True)
+        pos = [j + i * bar_width for j in range(len(df))]
+        ax.bar(pos, df['Highest_Similarity'], width=bar_width, label=f'{method} Highest', alpha=0.5)
+        ax.bar([p + bar_width for p in pos], df['Average_Similarity'], width=bar_width, label=f'{method} Average', alpha=0.5)
+
+    plt.xlabel('QAS_File')
+    plt.ylabel('Similarity Score')
+    plt.title('Overview of Similarity Scores - Bars')
+    plt.xticks([r + bar_width for r in range(len(x_ticks))], x_ticks, rotation=45, ha='right')
+    plt.legend()
+    
+    plt.tight_layout()
+    plt.savefig(output_path)
+    plt.close(fig)
+
+def generate_overview_line_chart(data, output_path):
+    fig, ax = plt.subplots(figsize=(12, 8))
+
+    combined_df = pd.DataFrame()
+    for method, df in data.items():
+        df['Method'] = method
+        combined_df = pd.concat([combined_df, df], ignore_index=True)
+    
+    combined_df.sort_values(by='Average_Similarity', inplace=True)
+    
+    x_ticks = combined_df['QAS_File'].unique()
+    
+    for method in data.keys():
+        df = combined_df[combined_df['Method'] == method]
+        df.sort_values(by='Average_Similarity', inplace=True)
+        ax.plot(df['QAS_File'], df['Highest_Similarity'], label=f'{method} Highest', linestyle='-', marker='o')
+        ax.plot(df['QAS_File'], df['Average_Similarity'], label=f'{method} Average', linestyle='--', marker='x')
+
+    plt.xlabel('QAS_File')
+    plt.ylabel('Similarity Score')
+    plt.title('Overview of Similarity Scores - Lines')
+    plt.xticks(range(len(x_ticks)), x_ticks, rotation=45, ha='right')
+    plt.legend()
+    
+    plt.tight_layout()
+    plt.savefig(output_path)
+    plt.close(fig)
+
+def generate_combined_chart(data, output_path):
+    fig, ax = plt.subplots(figsize=(12, 8))
+
+    combined_df = pd.DataFrame()
+    for method, df in data.items():
+        df['Method'] = method
+        combined_df = pd.concat([combined_df, df], ignore_index=True)
+    
+    combined_df.sort_values(by='Average_Similarity', inplace=True)
+    
+    bar_width = 0.2
+    x_ticks = combined_df['QAS_File'].unique()
+    x_pos = list(range(len(x_ticks)))
+
+    for i, method in enumerate(data.keys()):
+        df = combined_df[combined_df['Method'] == method]
+        df.sort_values(by='Average_Similarity', inplace=True)
+        pos = [j + i * bar_width for j in range(len(df))]
+        ax.bar(pos, df['Highest_Similarity'], width=bar_width, label=f'{method} Highest (Bar)', alpha=0.5)
+        ax.bar([p + bar_width for p in pos], df['Average_Similarity'], width=bar_width, label=f'{method} Average (Bar)', alpha=0.5)
 
     for method in data.keys():
         df = combined_df[combined_df['Method'] == method]
         df.sort_values(by='Average_Similarity', inplace=True)
-        pos = [i for i in x_pos]
-        ax.plot(df['QAS_File'], df['Highest_Similarity'], label=f'{method} Highest', linestyle='-', marker='o')
-        ax.plot(df['QAS_File'], df['Average_Similarity'], label=f'{method} Average', linestyle='--', marker='x')
-        ax.bar(pos, df['Highest_Similarity'], width=bar_width, label=f'{method} Highest', alpha=0.5)
-        ax.bar([p + bar_width for p in pos], df['Average_Similarity'], width=bar_width, label=f'{method} Average', alpha=0.5)
-        x_pos = [p + 2 * bar_width for p in x_pos]
+        ax.plot(df['QAS_File'], df['Highest_Similarity'], label=f'{method} Highest (Line)', linestyle='-', marker='o')
+        ax.plot(df['QAS_File'], df['Average_Similarity'], label=f'{method} Average (Line)', linestyle='--', marker='x')
 
     plt.xlabel('QAS_File')
     plt.ylabel('Similarity Score')
-    plt.title('Overview of Similarity Scores')
-    plt.xticks(range(len(x_ticks)), x_ticks, rotation=45, ha='right')
+    plt.title('Overview of Similarity Scores - Combined')
+    plt.xticks([r + bar_width for r in range(len(x_ticks))], x_ticks, rotation=45, ha='right')
     plt.legend()
     
     plt.tight_layout()
@@ -103,12 +165,22 @@ def main():
                         report.write(f"## {title}\n")
                         report.write(f"![{title}]({relative_image_path})\n\n")
 
-    combined_output_path = os.path.join(report_directory, 'overview_similarity.png')
-    generate_combined_line_chart(combined_data, combined_output_path)
+    overview_bar_chart_path = os.path.join(report_directory, 'overview_similarity_bars.png')
+    generate_overview_bar_chart(combined_data, overview_bar_chart_path)
+    
+    overview_line_chart_path = os.path.join(report_directory, 'overview_similarity_lines.png')
+    generate_overview_line_chart(combined_data, overview_line_chart_path)
+
+    combined_chart_path = os.path.join(report_directory, 'overview_similarity_combined.png')
+    generate_combined_chart(combined_data, combined_chart_path)
     
     with open(report_file, 'a') as report:
-        report.write(f"## Overview of Similarity Scores\n")
-        report.write(f"![Overview of Similarity Scores]({combined_output_path})\n\n")
+        report.write(f"## Overview of Similarity Scores - Bars\n")
+        report.write(f"![Overview of Similarity Scores - Bars]({overview_bar_chart_path})\n\n")
+        report.write(f"## Overview of Similarity Scores - Lines\n")
+        report.write(f"![Overview of Similarity Scores - Lines]({overview_line_chart_path})\n\n")
+        report.write(f"## Overview of Similarity Scores - Combined\n")
+        report.write(f"![Overview of Similarity Scores - Combined]({combined_chart_path})\n\n")
 
 if __name__ == "__main__":
     main()
