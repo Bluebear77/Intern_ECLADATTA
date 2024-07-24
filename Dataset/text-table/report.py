@@ -37,14 +37,54 @@ def generate_bar_chart(df, title, output_path):
     plt.savefig(output_path)
     plt.close(fig)
 
+def generate_combined_line_chart(data, output_path):
+    fig, ax = plt.subplots(figsize=(12, 8))
+
+    combined_df = pd.DataFrame()
+    for method, df in data.items():
+        df['Method'] = method
+        combined_df = pd.concat([combined_df, df], ignore_index=True)
+    
+    combined_df.sort_values(by='Average_Similarity', inplace=True)
+    
+    bar_width = 0.2
+    x_ticks = combined_df['QAS_File'].unique()
+    x_pos = range(len(x_ticks))
+
+    for method in data.keys():
+        df = combined_df[combined_df['Method'] == method]
+        df.sort_values(by='Average_Similarity', inplace=True)
+        pos = [i for i in x_pos]
+        ax.plot(df['QAS_File'], df['Highest_Similarity'], label=f'{method} Highest', linestyle='-', marker='o')
+        ax.plot(df['QAS_File'], df['Average_Similarity'], label=f'{method} Average', linestyle='--', marker='x')
+        ax.bar(pos, df['Highest_Similarity'], width=bar_width, label=f'{method} Highest', alpha=0.5)
+        ax.bar([p + bar_width for p in pos], df['Average_Similarity'], width=bar_width, label=f'{method} Average', alpha=0.5)
+        x_pos = [p + 2 * bar_width for p in x_pos]
+
+    plt.xlabel('QAS_File')
+    plt.ylabel('Similarity Score')
+    plt.title('Overview of Similarity Scores')
+    plt.xticks(range(len(x_ticks)), x_ticks, rotation=45, ha='right')
+    plt.legend()
+    
+    plt.tight_layout()
+    plt.savefig(output_path)
+    plt.close(fig)
+
 def main():
     base_directories = ['./embedding/output/cosine', './embedding/output/jaccard']
     report_directory = './embedding/output/report'
     os.makedirs(report_directory, exist_ok=True)
     report_file = os.path.join(report_directory, 'report.md')
     
+    combined_data = {
+        'Cosine': pd.DataFrame(columns=['QAS_File', 'Highest_Similarity', 'Average_Similarity']),
+        'Jaccard': pd.DataFrame(columns=['QAS_File', 'Highest_Similarity', 'Average_Similarity'])
+    }
+
     with open(report_file, 'w') as report:
         for base_dir in base_directories:
+            method = 'Cosine' if 'cosine' in base_dir else 'Jaccard'
             for root, dirs, files in os.walk(base_dir):
                 for file in files:
                     if file.endswith('.csv'):
@@ -55,10 +95,20 @@ def main():
                         df = process_csv(file_path)
                         generate_bar_chart(df, title, output_image_path)
                         
+                        if not df.empty:
+                            combined_data[method] = pd.concat([combined_data[method], df], ignore_index=True)
+                        
                         # Write to the report
                         relative_image_path = os.path.relpath(output_image_path, report_directory)
                         report.write(f"## {title}\n")
                         report.write(f"![{title}]({relative_image_path})\n\n")
+
+    combined_output_path = os.path.join(report_directory, 'overview_similarity.png')
+    generate_combined_line_chart(combined_data, combined_output_path)
+    
+    with open(report_file, 'a') as report:
+        report.write(f"## Overview of Similarity Scores\n")
+        report.write(f"![Overview of Similarity Scores]({combined_output_path})\n\n")
 
 if __name__ == "__main__":
     main()
