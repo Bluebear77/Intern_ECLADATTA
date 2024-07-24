@@ -29,5 +29,5 @@
 ![Similarity Scores for jaccard_similarity.csv](../jaccard/qas_53/jaccard_similarity.png)
 
 ## Overview of Similarity Scores
-![Overview of Similarity Scores](./embedding/output/report/overview_similarity.png)
+![Overview of Similarity Scores](../overview_similarity.png)
 
