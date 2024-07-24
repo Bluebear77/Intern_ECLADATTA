@@ -176,11 +176,11 @@ def main():
     
     with open(report_file, 'a') as report:
         report.write(f"## Overview of Similarity Scores - Bars\n")
-        report.write(f"![Overview of Similarity Scores - Bars]({overview_bar_chart_path})\n\n")
+        report.write(f"![Overview of Similarity Scores - Bars](overview_similarity_bars.png)\n\n")
         report.write(f"## Overview of Similarity Scores - Lines\n")
-        report.write(f"![Overview of Similarity Scores - Lines]({overview_line_chart_path})\n\n")
+        report.write(f"![Overview of Similarity Scores - Lines](overview_similarity_lines.png)\n\n")
         report.write(f"## Overview of Similarity Scores - Combined\n")
-        report.write(f"![Overview of Similarity Scores - Combined]({combined_chart_path})\n\n")
+        report.write(f"![Overview of Similarity Scores - Combined](overview_similarity_combined.png)\n\n")
 
 if __name__ == "__main__":
     main()
