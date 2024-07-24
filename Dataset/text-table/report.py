@@ -133,6 +133,37 @@ def generate_combined_chart(data, output_path):
     plt.savefig(output_path)
     plt.close(fig)
 
+
+def generate_summary_table(data):
+    summary_data = {
+        'QAS_File': [],
+        'Average Cosine': [],
+        'Highest Cosine': [],
+        'Average Jaccard': [],
+        'Highest Jaccard': []
+    }
+    
+    for qas_file in data['Cosine']['QAS_File'].unique():
+        cosine_subset = data['Cosine'][data['Cosine']['QAS_File'] == qas_file]
+        jaccard_subset = data['Jaccard'][data['Jaccard']['QAS_File'] == qas_file]
+        
+        summary_data['QAS_File'].append(qas_file)
+        summary_data['Average Cosine'].append(cosine_subset['Average_Similarity'].mean() if not cosine_subset.empty else 'N/A')
+        summary_data['Highest Cosine'].append(cosine_subset['Highest_Similarity'].max() if not cosine_subset.empty else 'N/A')
+        summary_data['Average Jaccard'].append(jaccard_subset['Average_Similarity'].mean() if not jaccard_subset.empty else 'N/A')
+        summary_data['Highest Jaccard'].append(jaccard_subset['Highest_Similarity'].max() if not jaccard_subset.empty else 'N/A')
+    
+    return pd.DataFrame(summary_data)
+
+def write_summary_table_to_report(summary_df, report_file):
+    with open(report_file, 'a') as report:
+        report.write(f"## Summary Table\n")
+        report.write(summary_df.to_markdown(index=False))
+        report.write("\n\n")
+
+
+
+
 def main():
     base_directories = ['./embedding/output/cosine', './embedding/output/jaccard']
     report_directory = './embedding/output/report'
@@ -173,6 +204,10 @@ def main():
 
     combined_chart_path = os.path.join(report_directory, 'overview_similarity_combined.png')
     generate_combined_chart(combined_data, combined_chart_path)
+
+    # Add these lines at the end of the main function to generate and write the summary table
+    summary_df = generate_summary_table(combined_data)
+    write_summary_table_to_report(summary_df, report_file)
     
     with open(report_file, 'a') as report:
         report.write(f"## Overview of Similarity Scores - Bars\n")
