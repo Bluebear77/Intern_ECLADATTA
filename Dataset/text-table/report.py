@@ -134,9 +134,6 @@ def generate_combined_chart(data, output_path):
     plt.close(fig)
 
 
-
-
-
 def generate_summary_table(data):
     summary_data = {
         'QAS_File': [],
@@ -145,7 +142,7 @@ def generate_summary_table(data):
         'Average Jaccard': [],
         'Highest Jaccard': []
     }
-    
+
     overall_avg_cosine = data['Cosine']['Average_Similarity'].mean()
     overall_highest_cosine = data['Cosine']['Highest_Similarity'].max()
     overall_avg_jaccard = data['Jaccard']['Average_Similarity'].mean()
@@ -167,15 +164,12 @@ def generate_summary_table(data):
         summary_data['Average Jaccard'].append(jaccard_subset['Average_Similarity'].mean() if not jaccard_subset.empty else 'N/A')
         summary_data['Highest Jaccard'].append(jaccard_subset['Highest_Similarity'].max() if not jaccard_subset.empty else 'N/A')
     
-    summary_df = pd.DataFrame(summary_data)
-    return summary_df
+    return pd.DataFrame(summary_data)
 
 def write_summary_table_to_report(summary_df, report_file):
     with open(report_file, 'a') as report:
         report.write(f"## Summary Table\n")
-        summary_markdown = summary_df.to_markdown(index=False)
-        summary_markdown = summary_markdown.replace('| All |', '| **All** |').replace('|  ', '| **').replace('  |', '** |')
-        report.write(summary_markdown)
+        report.write(summary_df.to_markdown(index=False))
         report.write("\n\n")
 
 
