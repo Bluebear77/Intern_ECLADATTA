@@ -141,20 +141,27 @@ def generate_summary_table(data):
         'QAS_File': [],
         'Average Cosine': [],
         'Highest Cosine': [],
+        'Median Cosine': [],
         'Average Jaccard': [],
-        'Highest Jaccard': []
+        'Highest Jaccard': [],
+        'Median Jaccard': []
     }
 
     overall_avg_cosine = data['Cosine']['Average_Similarity'].mean()
     overall_highest_cosine = data['Cosine']['Highest_Similarity'].max()
+    overall_median_cosine = data['Cosine']['Average_Similarity'].median()
+    
     overall_avg_jaccard = data['Jaccard']['Average_Similarity'].mean()
     overall_highest_jaccard = data['Jaccard']['Highest_Similarity'].max()
+    overall_median_jaccard = data['Jaccard']['Average_Similarity'].median()
     
     summary_data['QAS_File'].append('All')
     summary_data['Average Cosine'].append(overall_avg_cosine)
     summary_data['Highest Cosine'].append(overall_highest_cosine)
+    summary_data['Median Cosine'].append(overall_median_cosine)
     summary_data['Average Jaccard'].append(overall_avg_jaccard)
     summary_data['Highest Jaccard'].append(overall_highest_jaccard)
+    summary_data['Median Jaccard'].append(overall_median_jaccard)
     
     for qas_file in data['Cosine']['QAS_File'].unique():
         cosine_subset = data['Cosine'][data['Cosine']['QAS_File'] == qas_file]
@@ -163,8 +170,10 @@ def generate_summary_table(data):
         summary_data['QAS_File'].append(qas_file)
         summary_data['Average Cosine'].append(cosine_subset['Average_Similarity'].mean() if not cosine_subset.empty else 'N/A')
         summary_data['Highest Cosine'].append(cosine_subset['Highest_Similarity'].max() if not cosine_subset.empty else 'N/A')
+        summary_data['Median Cosine'].append(cosine_subset['Average_Similarity'].median() if not cosine_subset.empty else 'N/A')
         summary_data['Average Jaccard'].append(jaccard_subset['Average_Similarity'].mean() if not jaccard_subset.empty else 'N/A')
         summary_data['Highest Jaccard'].append(jaccard_subset['Highest_Similarity'].max() if not jaccard_subset.empty else 'N/A')
+        summary_data['Median Jaccard'].append(jaccard_subset['Average_Similarity'].median() if not jaccard_subset.empty else 'N/A')
     
     return pd.DataFrame(summary_data)
 
