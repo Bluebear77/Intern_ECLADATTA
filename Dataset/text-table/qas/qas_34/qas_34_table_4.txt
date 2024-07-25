@@ -1,0 +1,37 @@
+Question: nom  dates  titres string contains de époux string contains charles 
+Answers:
+agnès de bourgogne  14071476 
+suzanne de bourbon  14911521 
+
+Question: nom  dates  eléments biographiques string contains de époux string contains en 
+Answers:
+marie de hainaut  12801354 
+isabelle de valois  13131383 
+anne de forez  13581417 
+marie de berry  13751434 
+agnès de bourgogne  14071476 
+jeanne de france  14351482 
+catherine darmagnac  14661487 
+jeanne de bourbonvendôme  14651511 
+anne de france  14611522 
+suzanne de bourbon  14911521 
+
+Question: every nom  dates   eléments biographiques string contains de  titres string contains bourbon 
+Answers:
+yes
+
+Question: nom  dates   époux string contains de  eléments biographiques string contains de 
+Answers:
+yes
+
+Question: many nom  dates  époux string contains bourbon titres string contains bourbon 
+Answers:
+10
+
+Question: many nom  dates  eléments biographiques string contains de 
+Answers:
+10
+
+Question: many nom  dates  eléments biographiques string contains de titres string contains de 
+Answers:
+10

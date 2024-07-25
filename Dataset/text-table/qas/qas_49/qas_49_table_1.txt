@@ -1,0 +1,34 @@
+Question: nom  dates  titres string contains france eléments biographiques string contains de 
+Answers:
+jeanne de bourbon  3 février 1338  6 février 1378 
+marie danjou  14 octobre 1404  29 novembre 1463 
+charlotte de savoie  1442  décembre 1483 
+
+Question: nom  dates  eléments biographiques string contains de époux string contains le 
+Answers:
+jeanne de bourbon  3 février 1338  6 février 1378 
+marguerite de bourgogne  8 décembre 1393  2 février 1442 
+jacqueline de hainaut  15 juillet 1401  8 octobre 1436 
+marie danjou  14 octobre 1404  29 novembre 1463 
+marguerite décosse  24 décembre 1424  16 août 1445 
+charlotte de savoie  1442  décembre 1483 
+
+Question: nom  dates   titres string contains 16  eléments biographiques string contains jean 
+Answers:
+
+
+Question: nom  dates   eléments biographiques string contains de  époux string contains charles 
+Answers:
+yes
+
+Question: many nom  dates  époux string contains france eléments biographiques string contains de 
+Answers:
+5
+
+Question: many nom  dates  eléments biographiques string contains de 
+Answers:
+6
+
+Question: many nom  dates  eléments biographiques string contains la 
+Answers:
+6

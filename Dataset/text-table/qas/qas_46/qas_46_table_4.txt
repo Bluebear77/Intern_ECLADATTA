@@ -1,0 +1,39 @@
+Question: nom  dates  époux string contains titres string contains de 
+Answers:
+marguerite de bourgogne  12901315 
+clémence de hongrie  12931328 
+jeanne de bourgogne  12911330 
+blanche de bourgogne  12961326 
+marie de luxembourg  13041324 
+jeanne dévreux  13101371 
+jeanne ii de navarre  13111349 
+
+Question: nom  dates  titres string contains de eléments biographiques string contains de 
+Answers:
+marguerite de bourgogne  12901315 
+clémence de hongrie  12931328 
+jeanne de bourgogne  12911330 
+blanche de bourgogne  12961326 
+marie de luxembourg  13041324 
+jeanne dévreux  13101371 
+jeanne ii de navarre  13111349 
+
+Question: nom  dates   titres string contains de  eléments biographiques string contains louis 
+Answers:
+yes
+
+Question: nom  dates   eléments biographiques string contains la  titres string contains de 
+Answers:
+yes
+
+Question: many nom  dates  titres string contains de 
+Answers:
+7
+
+Question: many nom  dates  eléments biographiques string contains de titres string contains france 
+Answers:
+6
+
+Question: many nom  dates  eléments biographiques string contains bourgogne 
+Answers:
+4

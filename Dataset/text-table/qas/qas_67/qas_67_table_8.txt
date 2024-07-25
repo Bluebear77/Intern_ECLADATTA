@@ -1,0 +1,38 @@
+Question: nom  dates  eléments biographiques string contains fille titres string contains des 
+Answers:
+jeanne ire de castille  14791555 
+isabelle de portugal  15031539 
+marie dangleterre  15161558 
+élisabeth de france  15451568 
+anne dautriche  15491580 
+isabelleclaireeugénie dautriche  15661633 
+élisabeth de france  16021644 
+marieanne dautriche  16341696 
+marielouise dorléans  16621689 
+marieanne de neubourg  16671740 
+
+Question: nom  dates  époux string contains en eléments biographiques string contains ferdinand 
+Answers:
+jeanne ire de castille  14791555 
+anne dautriche  15491580 
+marieanne dautriche  16341696 
+
+Question: nom  dates   époux string contains en  titres string contains de 
+Answers:
+yes
+
+Question: every nom  dates   titres string contains de  eléments biographiques string contains de 
+Answers:
+yes
+
+Question: many nom  dates  eléments biographiques string contains de titres string contains de 
+Answers:
+10
+
+Question: many nom  dates  titres string contains de 
+Answers:
+10
+
+Question: many nom  dates  époux string contains charles titres string contains de 
+Answers:
+3

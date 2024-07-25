@@ -1,0 +1,32 @@
+Question: nom  dates  titres string contains dame conjoint string contains en 
+Answers:
+marie de blois  vers 1345  
+yolande daragon   
+
+Question: nom  dates  eléments biographiques string contains de conjoint string contains en 
+Answers:
+marie de blois  vers 1345  
+yolande daragon   
+marguerite de savoie   
+isabelle de lorraine  vers 1410  
+jeanne de laval   
+
+Question: every nom  dates   conjoint string contains louis  eléments biographiques string contains fille 
+Answers:
+yes
+
+Question: nom  dates   titres string contains provence  conjoint string contains en 
+Answers:
+yes
+
+Question: many nom  dates  titres string contains de 
+Answers:
+5
+
+Question: many nom  dates  eléments biographiques string contains de 
+Answers:
+5
+
+Question: many nom  dates  titres string contains guise eléments biographiques string contains louis 
+Answers:
+3

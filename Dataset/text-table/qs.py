@@ -42,23 +42,26 @@ def process_qas(qas):
 
 def main():
     # Get list of JSON files following the specified pattern
-    json_files = glob('./input-qas/synthetic_qa_output_instance_*_v6.json')
+    json_files = glob('../ReasTAP/ReasTAP-main/synthetic_tableqa_generation/output-celebrity/synthetic_qa_output_instance_*_v6.json')
     
     for json_file in json_files:
         with open(json_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
             
         # Extract instance index from filename
-        instance_index = json_file.split('_')[4]
+        instance_index = re.search(r'synthetic_qa_output_instance_(\d+)_v6\.json', json_file).group(1)
         output_dir = f"./qas/qas_{instance_index}"
         
         # Create directory if it doesn't exist
-        os.makedirs(output_dir, exist_ok=True)
+        if not os.path.exists(output_dir):
+            print(f"Creating directory: {output_dir}")
+            os.makedirs(output_dir, exist_ok=True)
         
         for table_index, table in enumerate(data):
             table_qas = table.get('qas', [])
             if table_qas:
                 output_file = os.path.join(output_dir, f"qas_{instance_index}_table_{table_index + 1}.txt")
+                print(f"Writing to file: {output_file}")
                 with open(output_file, 'w', encoding='utf-8') as f:
                     f.write(process_qas(table_qas))
 
