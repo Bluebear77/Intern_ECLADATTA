@@ -82,7 +82,10 @@ def process_json_file(file_path):
                 output_file.write(content)
 
 # Get the list of JSON files matching the pattern in the ./input-json directory
-json_files = glob.glob('../100-female-celebrities/v2-100/Raw/instance_*.json')
+# json_files = glob.glob('../100-female-celebrities/v2-100/Raw/instance_*.json')
+
+json_files = glob.glob('../subcorpus-100-business-telco-celebrity/telco-100/Raw/instance_*.json')
+
 
 # Process each JSON file
 for json_file in json_files:

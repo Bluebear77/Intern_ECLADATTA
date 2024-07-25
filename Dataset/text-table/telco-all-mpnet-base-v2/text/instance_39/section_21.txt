@@ -1,0 +1,4 @@
+Title: Receiver
+
+Value:
+  file  ofdm receiver idealpngcenter800px   the receiver picks up the signal  math  r    math   which is then quadraturemixed down to baseband using cosine and sine waves at the   carrier frequency    this also creates signals centered  math  2 f_text    math   so lowpass filters are used to reject these  the baseband signals are then sampled and digitised using   analogtodigital converter    adcs   and a forward   fast fourier transformfft   is used to convert back to the frequency domain  this returns  math   math  parallel streams  each of which is converted to a binary stream using an appropriate symbol   detector  radio  detector    these streams are then recombined into a serial stream   math  hat      math   which is an estimate of the original binary stream at the transmitter 

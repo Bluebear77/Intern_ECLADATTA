@@ -3,24 +3,15 @@ from sentence_transformers import SentenceTransformer
 import numpy as np
 from tqdm import tqdm
 
-'''
-# Define input and output directory pairs with corresponding models
-dirs = [
-    {'input': './qas', 'output': './embedding/qas', 'model': 'sentence-transformers/all-mpnet-base-v2'},
-    {'input': './text', 'output': './embedding/text', 'model': 'dangvantuan/sentence-camembert-large'}
-]
+# Load the pre-trained model
 
-error: No sentence-transformers model found with name dangvantuan/sentence-camembert-large. Creating a new one with mean pooling.
+# model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-mpnet-base-v2')
 
-'''
-
-
-model =  SentenceTransformer("dangvantuan/sentence-camembert-large")
-
+model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
 
 # Define input and output directory pairs
 dirs = [
-    #{'input': './qas', 'output': './embedding/qas'},
+    {'input': './qas', 'output': './embedding/qas'},
     {'input': './text', 'output': './embedding/text'}
 ]
 
@@ -28,10 +19,6 @@ dirs = [
 for dir_pair in dirs:
     input_dir = dir_pair['input']
     output_dir = dir_pair['output']
-    model_name = dir_pair['model']
-    
-    # Load the pre-trained model for the current directory
-    model = SentenceTransformer(model_name)
     
     # Ensure the output directory exists
     os.makedirs(output_dir, exist_ok=True)
