@@ -174,6 +174,9 @@ def write_summary_table_to_report(summary_df, report_file):
         report.write(summary_df.to_markdown(index=False))
         report.write("\n\n")
 
+def write_summary_table_to_csv(summary_df, output_csv_path):
+    summary_df.to_csv(output_csv_path, index=False)
+
 def main():
     base_directories = ['./embedding/output/cosine', './embedding/output/jaccard']
     report_directory = './embedding/output/report'
@@ -215,9 +218,13 @@ def main():
     combined_chart_path = os.path.join(report_directory, 'overview_similarity_combined.png')
     generate_combined_chart(combined_data, combined_chart_path)
 
-    # Add these lines at the end of the main function to generate and write the summary table
+    # Generate and write the summary table
     summary_df = generate_summary_table(combined_data)
     write_summary_table_to_report(summary_df, report_file)
+    
+    # Write summary table to a separate CSV file
+    summary_csv_path = os.path.join(report_directory, 'summary_table.csv')
+    write_summary_table_to_csv(summary_df, summary_csv_path)
     
     with open(report_file, 'a') as report:
         report.write(f"## Overview of Similarity Scores - Bars\n")
