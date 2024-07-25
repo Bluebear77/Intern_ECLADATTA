@@ -44,7 +44,7 @@ def generate_overview_bar_chart(data, output_path):
     combined_df = pd.DataFrame()
     for method, df in data.items():
         df['Method'] = method
-        combined_df = pd.concat([combined_df, df], ignore_index=True)
+        combined_df = pd.concat([combined_df, df.dropna()], ignore_index=True)
     
     combined_df.sort_values(by='Average_Similarity', inplace=True)
     
@@ -53,7 +53,7 @@ def generate_overview_bar_chart(data, output_path):
     x_pos = list(range(len(x_ticks)))
 
     for i, method in enumerate(data.keys()):
-        df = combined_df[combined_df['Method'] == method]
+        df = combined_df[combined_df['Method'] == method].copy()
         df.sort_values(by='Average_Similarity', inplace=True)
         pos = [j + i * bar_width for j in range(len(df))]
         ax.bar(pos, df['Highest_Similarity'], width=bar_width, label=f'{method} Highest', alpha=0.5)
@@ -76,14 +76,14 @@ def generate_overview_line_chart(data, output_path):
     combined_df = pd.DataFrame()
     for method, df in data.items():
         df['Method'] = method
-        combined_df = pd.concat([combined_df, df], ignore_index=True)
+        combined_df = pd.concat([combined_df, df.dropna()], ignore_index=True)
     
     combined_df.sort_values(by='Average_Similarity', inplace=True)
     
     x_ticks = combined_df['QAS_File'].unique()
     
     for method in data.keys():
-        df = combined_df[combined_df['Method'] == method]
+        df = combined_df[combined_df['Method'] == method].copy()
         df.sort_values(by='Average_Similarity', inplace=True)
         ax.plot(df['QAS_File'], df['Highest_Similarity'], label=f'{method} Highest', linestyle='-', marker='o')
         ax.plot(df['QAS_File'], df['Average_Similarity'], label=f'{method} Average', linestyle='--', marker='x')
@@ -98,7 +98,81 @@ def generate_overview_line_chart(data, output_path):
     plt.savefig(output_path)
     plt.close(fig)
 
-# Other functions remain unchanged
+def generate_combined_chart(data, output_path):
+    num_files = len(next(iter(data.values()))['QAS_File'].unique())
+    fig, ax = plt.subplots(figsize=(num_files / 2, 8))
+
+    combined_df = pd.DataFrame()
+    for method, df in data.items():
+        df['Method'] = method
+        combined_df = pd.concat([combined_df, df.dropna()], ignore_index=True)
+    
+    combined_df.sort_values(by='Average_Similarity', inplace=True)
+    
+    bar_width = 0.2
+    x_ticks = combined_df['QAS_File'].unique()
+    x_pos = list(range(len(x_ticks)))
+
+    for i, method in enumerate(data.keys()):
+        df = combined_df[combined_df['Method'] == method].copy()
+        df.sort_values(by='Average_Similarity', inplace=True)
+        pos = [j + i * bar_width for j in range(len(df))]
+        ax.bar(pos, df['Highest_Similarity'], width=bar_width, label=f'{method} Highest (Bar)', alpha=0.5)
+        ax.bar([p + bar_width for p in pos], df['Average_Similarity'], width=bar_width, label=f'{method} Average (Bar)', alpha=0.5)
+
+    for method in data.keys():
+        df = combined_df[combined_df['Method'] == method].copy()
+        df.sort_values(by='Average_Similarity', inplace=True)
+        ax.plot(df['QAS_File'], df['Highest_Similarity'], label=f'{method} Highest (Line)', linestyle='-', marker='o')
+        ax.plot(df['QAS_File'], df['Average_Similarity'], label=f'{method} Average (Line)', linestyle='--', marker='x')
+
+    plt.xlabel('QAS_File')
+    plt.ylabel('Similarity Score')
+    plt.title('Overview of Similarity Scores - Combined')
+    plt.xticks([r + bar_width for r in range(len(x_ticks))], x_ticks, rotation=45, ha='right')
+    plt.legend()
+    
+    plt.tight_layout()
+    plt.savefig(output_path)
+    plt.close(fig)
+
+def generate_summary_table(data):
+    summary_data = {
+        'QAS_File': [],
+        'Average Cosine': [],
+        'Highest Cosine': [],
+        'Average Jaccard': [],
+        'Highest Jaccard': []
+    }
+
+    overall_avg_cosine = data['Cosine']['Average_Similarity'].mean()
+    overall_highest_cosine = data['Cosine']['Highest_Similarity'].max()
+    overall_avg_jaccard = data['Jaccard']['Average_Similarity'].mean()
+    overall_highest_jaccard = data['Jaccard']['Highest_Similarity'].max()
+    
+    summary_data['QAS_File'].append('All')
+    summary_data['Average Cosine'].append(overall_avg_cosine)
+    summary_data['Highest Cosine'].append(overall_highest_cosine)
+    summary_data['Average Jaccard'].append(overall_avg_jaccard)
+    summary_data['Highest Jaccard'].append(overall_highest_jaccard)
+    
+    for qas_file in data['Cosine']['QAS_File'].unique():
+        cosine_subset = data['Cosine'][data['Cosine']['QAS_File'] == qas_file]
+        jaccard_subset = data['Jaccard'][data['Jaccard']['QAS_File'] == qas_file]
+        
+        summary_data['QAS_File'].append(qas_file)
+        summary_data['Average Cosine'].append(cosine_subset['Average_Similarity'].mean() if not cosine_subset.empty else 'N/A')
+        summary_data['Highest Cosine'].append(cosine_subset['Highest_Similarity'].max() if not cosine_subset.empty else 'N/A')
+        summary_data['Average Jaccard'].append(jaccard_subset['Average_Similarity'].mean() if not jaccard_subset.empty else 'N/A')
+        summary_data['Highest Jaccard'].append(jaccard_subset['Highest_Similarity'].max() if not jaccard_subset.empty else 'N/A')
+    
+    return pd.DataFrame(summary_data)
+
+def write_summary_table_to_report(summary_df, report_file):
+    with open(report_file, 'a') as report:
+        report.write(f"## Summary Table\n")
+        report.write(summary_df.to_markdown(index=False))
+        report.write("\n\n")
 
 def main():
     base_directories = ['./embedding/output/cosine', './embedding/output/jaccard']
@@ -125,7 +199,7 @@ def main():
                         generate_bar_chart(df, title, output_image_path)
                         
                         if not df.empty:
-                            combined_data[method] = pd.concat([combined_data[method], df], ignore_index=True)
+                            combined_data[method] = pd.concat([combined_data[method], df.dropna()], ignore_index=True)
                         
                         # Write to the report
                         relative_image_path = os.path.relpath(output_image_path, report_directory)
