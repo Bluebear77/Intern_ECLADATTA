@@ -38,11 +38,12 @@ def clean_text(dirty_text, language='french'):
     # Return the cleaned text
     return cleaned_text
 
+'''
 # Example usage
 dirty_text = """les titres originaux américains de la série alice trahissent souvent lintrigue principale du roman  contrairement aux titres français qui entretiennent davantage le mystère"""
 cleaned_text = clean_text(dirty_text)
 print(cleaned_text)
-
+'''
 
 def process_json_file(file_path):
     # Get the base file name without extension
