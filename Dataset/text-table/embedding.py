@@ -4,7 +4,10 @@ import numpy as np
 from tqdm import tqdm
 
 # Load the pre-trained model
-model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-mpnet-base-v2')
+
+# model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-mpnet-base-v2')
+
+model =  SentenceTransformer("dangvantuan/sentence-camembert-large")
 
 # Define input and output directory pairs
 dirs = [
