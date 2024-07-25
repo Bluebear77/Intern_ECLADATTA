@@ -5,8 +5,8 @@ from tqdm import tqdm
 
 # Load the pre-trained model
 
-#model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-mpnet-base-v2')
-model =  SentenceTransformer("dangvantuan/sentence-camembert-large")
+model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-mpnet-base-v2')
+
 
 
 # Define input and output directory pairs
