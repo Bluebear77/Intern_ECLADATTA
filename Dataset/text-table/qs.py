@@ -44,7 +44,7 @@ def main():
     # Get list of JSON files following the specified pattern
 
     #  json_files = glob('../ReasTAP/ReasTAP-main/synthetic_tableqa_generation/output-celebrity/synthetic_qa_output_instance_*_v6.json')
-    json_files = glob('../ReasTAP/ReasTAP-main/synthetic_tableqa_generation/output-telco/synthetic_qa_output_instance_*_v5.json')
+    json_files = glob('../ReasTAP/ReasTAP-main/synthetic_tableqa_generation/output-business/synthetic_qa_output_instance_*_v5.json')
     
     for json_file in json_files:
         with open(json_file, 'r', encoding='utf-8') as f:
