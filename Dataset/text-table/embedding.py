@@ -5,13 +5,13 @@ from tqdm import tqdm
 
 # Load the pre-trained model
 
-# model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-mpnet-base-v2')
+model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-mpnet-base-v2')
 
-model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
+#model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
 
 # Define input and output directory pairs
 dirs = [
-    {'input': './qas', 'output': './embedding/qas'},
+    #{'input': './qas', 'output': './embedding/qas'},
     {'input': './text', 'output': './embedding/text'}
 ]
 

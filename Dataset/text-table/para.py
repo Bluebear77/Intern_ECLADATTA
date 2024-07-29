@@ -19,6 +19,8 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 def clean_text(dirty_text, language='french'):
+    # Remove newlines
+    dirty_text = dirty_text.replace('\n', ' ')
     # Tokenize words
     words = nltk.word_tokenize(dirty_text, language)
 
@@ -34,6 +36,10 @@ def clean_text(dirty_text, language='french'):
 
     # Join words back into a string
     cleaned_text = ' '.join(words)
+
+    # Remove newlines
+    cleaned_text = cleaned_text.replace('\n', ' ')
+
     
     # Return the cleaned text
     return cleaned_text
@@ -72,7 +78,7 @@ def process_json_file(file_path):
             cleaned_value = clean_text(value)
             
             # Construct the content to be written
-            content = f"Title: {title}\n\nValue:\n{cleaned_value}"
+            content = f"Title: {title}Value:{cleaned_value}"
             
             # Define the output file path
             output_file_path = os.path.join(output_dir, f'section_{idx+1}.txt')
@@ -83,9 +89,9 @@ def process_json_file(file_path):
 
 # Get the list of JSON files matching the pattern in the ./input-json directory
 # json_files = glob.glob('../100-female-celebrities/v2-100/Raw/instance_*.json')
+# json_files = glob.glob('../subcorpus-100-business-telco-celebrity/business-100/Raw/instance_*.json')
 
-json_files = glob.glob('../subcorpus-100-business-telco-celebrity/business-100/Raw/instance_*.json')
-
+json_files = glob.glob('./fr-multilingual-mpnet-base-v2/5-sample/input-json/instance_*.json')
 
 # Process each JSON file
 for json_file in json_files:
