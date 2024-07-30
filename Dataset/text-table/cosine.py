@@ -18,6 +18,7 @@ def calculate_cosine_similarity(text1, text2):
 def process_directories(qas_root, text_root, output_root):
     qas_dirs = glob.glob(os.path.join(qas_root, 'qas_*'))
     all_tables = []
+    plot_files = []
     for qas_dir in tqdm(qas_dirs, desc="Processing QAS Directories"):
         qas_index = os.path.basename(qas_dir).split('_')[1]
         text_dir = os.path.join(text_root, f'instance_{qas_index}')
@@ -74,14 +75,14 @@ def process_directories(qas_root, text_root, output_root):
                 plot_file_path = os.path.join(output_subdir, 'similarity_plot.png')
                 plt.savefig(plot_file_path)
                 plt.close()
+                plot_files.append(plot_file_path)
     
-    # Save to report.md
+    # Append plots to report.md
     report_path = os.path.join(output_root, 'report.md')
-    with open(report_path, 'w') as report_file:
-        for table_data in all_tables:
-            report_file.write(table_data.to_markdown())
-            report_file.write('\n\n')
-    
+    with open(report_path, 'a') as report_file:  # Open in append mode
+        for plot_file in plot_files:
+            report_file.write(f"![Similarity Plot]({plot_file})\n\n")
+
 if __name__ == "__main__":
     qas_root = './embedding/qas'
     text_root = './embedding/text'
