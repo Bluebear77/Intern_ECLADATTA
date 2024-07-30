@@ -72,8 +72,8 @@ def process_directories(qas_root, text_root, output_root):
                 plt.legend()
                 plt.xticks(rotation=90)
                 plt.tight_layout()
-                plot_file_path = os.path.join(output_subdir, 'similarity_plot.png')
-                plt.savefig(plot_file_path)
+                plot_file_path = os.path.relpath(os.path.join(output_subdir, 'similarity_plot.png'), start=output_root)
+                plt.savefig(os.path.join(output_subdir, 'similarity_plot.png'))
                 plt.close()
                 plot_files.append(plot_file_path)
     

@@ -57,13 +57,13 @@
 | instance_29     |              6 |                 43 |                 258 | https://fr.wikipedia.org/?curid=1424248 |
 | instance_59     |              4 |                 32 |                 128 | https://fr.wikipedia.org/?curid=5892703 |
 
-![Similarity Plot](./embedding/output/report/qas_53/similarity_plot.png)
+![Similarity Plot](qas_53/similarity_plot.png)
 
-![Similarity Plot](./embedding/output/report/qas_29/similarity_plot.png)
+![Similarity Plot](qas_29/similarity_plot.png)
 
-![Similarity Plot](./embedding/output/report/qas_32/similarity_plot.png)
+![Similarity Plot](qas_32/similarity_plot.png)
 
-![Similarity Plot](./embedding/output/report/qas_82/similarity_plot.png)
+![Similarity Plot](qas_82/similarity_plot.png)
 
-![Similarity Plot](./embedding/output/report/qas_59/similarity_plot.png)
+![Similarity Plot](qas_59/similarity_plot.png)
 
