@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
+import json
 
 def process_csv(file_path):
     df = pd.read_csv(file_path)
@@ -61,7 +62,7 @@ def generate_overview_bar_chart(data, output_path):
 
     plt.xlabel('QAS_File')
     plt.ylabel('Similarity Score')
-    plt.title('Overview of Similarity Scores - Bars')
+    plt.title('Overview of Cosine Similarity Scores - Bars')
     plt.xticks([r + bar_width for r in range(len(x_ticks))], x_ticks, rotation=45, ha='right')
     plt.legend()
     
@@ -90,7 +91,7 @@ def generate_overview_line_chart(data, output_path):
 
     plt.xlabel('QAS_File')
     plt.ylabel('Similarity Score')
-    plt.title('Overview of Similarity Scores - Lines')
+    plt.title('Overview of Cosine Similarity Scores - Lines')
     plt.xticks(range(len(x_ticks)), x_ticks, rotation=45, ha='right')
     plt.legend()
     
@@ -128,7 +129,7 @@ def generate_combined_chart(data, output_path):
 
     plt.xlabel('QAS_File')
     plt.ylabel('Similarity Score')
-    plt.title('Overview of Similarity Scores - Combined')
+    plt.title('Overview of Cosine Similarity Scores - Combined')
     plt.xticks([r + bar_width for r in range(len(x_ticks))], x_ticks, rotation=45, ha='right')
     plt.legend()
     
@@ -142,38 +143,38 @@ def generate_summary_table(data):
         'Average Cosine': [],
         'Highest Cosine': [],
         'Median Cosine': [],
-        'Average Jaccard': [],
-        'Highest Jaccard': [],
-        'Median Jaccard': []
+        # 'Average Jaccard': [],
+        # 'Highest Jaccard': [],
+        # 'Median Jaccard': []
     }
 
     overall_avg_cosine = data['Cosine']['Average_Similarity'].mean()
     overall_highest_cosine = data['Cosine']['Highest_Similarity'].max()
     overall_median_cosine = data['Cosine']['Average_Similarity'].median()
     
-    overall_avg_jaccard = data['Jaccard']['Average_Similarity'].mean()
-    overall_highest_jaccard = data['Jaccard']['Highest_Similarity'].max()
-    overall_median_jaccard = data['Jaccard']['Average_Similarity'].median()
+    # overall_avg_jaccard = data['Jaccard']['Average_Similarity'].mean()
+    # overall_highest_jaccard = data['Jaccard']['Highest_Similarity'].max()
+    # overall_median_jaccard = data['Jaccard']['Average_Similarity'].median()
     
     summary_data['QAS_File'].append('All')
     summary_data['Average Cosine'].append(overall_avg_cosine)
     summary_data['Highest Cosine'].append(overall_highest_cosine)
     summary_data['Median Cosine'].append(overall_median_cosine)
-    summary_data['Average Jaccard'].append(overall_avg_jaccard)
-    summary_data['Highest Jaccard'].append(overall_highest_jaccard)
-    summary_data['Median Jaccard'].append(overall_median_jaccard)
+    # summary_data['Average Jaccard'].append(overall_avg_jaccard)
+    # summary_data['Highest Jaccard'].append(overall_highest_jaccard)
+    # summary_data['Median Jaccard'].append(overall_median_jaccard)
     
     for qas_file in data['Cosine']['QAS_File'].unique():
         cosine_subset = data['Cosine'][data['Cosine']['QAS_File'] == qas_file]
-        jaccard_subset = data['Jaccard'][data['Jaccard']['QAS_File'] == qas_file]
+        # jaccard_subset = data['Jaccard'][data['Jaccard']['QAS_File'] == qas_file]
         
         summary_data['QAS_File'].append(qas_file)
         summary_data['Average Cosine'].append(cosine_subset['Average_Similarity'].mean() if not cosine_subset.empty else 'N/A')
         summary_data['Highest Cosine'].append(cosine_subset['Highest_Similarity'].max() if not cosine_subset.empty else 'N/A')
         summary_data['Median Cosine'].append(cosine_subset['Average_Similarity'].median() if not cosine_subset.empty else 'N/A')
-        summary_data['Average Jaccard'].append(jaccard_subset['Average_Similarity'].mean() if not jaccard_subset.empty else 'N/A')
-        summary_data['Highest Jaccard'].append(jaccard_subset['Highest_Similarity'].max() if not jaccard_subset.empty else 'N/A')
-        summary_data['Median Jaccard'].append(jaccard_subset['Average_Similarity'].median() if not jaccard_subset.empty else 'N/A')
+        # summary_data['Average Jaccard'].append(jaccard_subset['Average_Similarity'].mean() if not jaccard_subset.empty else 'N/A')
+        # summary_data['Highest Jaccard'].append(jaccard_subset['Highest_Similarity'].max() if not jaccard_subset.empty else 'N/A')
+        # summary_data['Median Jaccard'].append(jaccard_subset['Average_Similarity'].median() if not jaccard_subset.empty else 'N/A')
     
     return pd.DataFrame(summary_data)
 
@@ -186,20 +187,68 @@ def write_summary_table_to_report(summary_df, report_file):
 def write_summary_table_to_csv(summary_df, output_csv_path):
     summary_df.to_csv(output_csv_path, index=False)
 
+def generate_additional_table(report_directory, report_file):
+    additional_table_data = {
+        'nr of tables': [],
+        'nr of paragraphs': [],
+        'nr of comparisons': [],
+        'URL': []
+    }
+
+    input_json_directory = './fr-multilingual-mpnet-base-v2/5-sample/input-json'
+    for instance_file in os.listdir(input_json_directory):
+        if instance_file.endswith('.json'):
+            instance_path = os.path.join(input_json_directory, instance_file)
+            
+            with open(instance_path, 'r') as file:
+                data = json.load(file)
+                url = data['_source']['identificationMetadata']['url'][0]
+            
+            instance_id = instance_file.split('_')[-1].split('.')[0]
+            qas_dir = f'./qas/qas_{instance_id}'
+            text_dir = f'./text/instance_{instance_id}'
+            
+            if os.path.exists(qas_dir):
+                nr_of_tables = len(os.listdir(qas_dir))
+            else:
+                nr_of_tables = 0
+
+            if os.path.exists(text_dir):
+                nr_of_paragraphs = len(os.listdir(text_dir))
+            else:
+                nr_of_paragraphs = 0
+
+            nr_of_comparisons = nr_of_tables * nr_of_paragraphs
+
+            additional_table_data['nr of tables'].append(nr_of_tables)
+            additional_table_data['nr of paragraphs'].append(nr_of_paragraphs)
+            additional_table_data['nr of comparisons'].append(nr_of_comparisons)
+            additional_table_data['URL'].append(url)
+    
+    additional_table_df = pd.DataFrame(additional_table_data)
+    additional_table_path = os.path.join(report_directory, 'additional_table.csv')
+    additional_table_df.to_csv(additional_table_path, index=False)
+
+    with open(report_file, 'a') as report:
+        report.write(f"## Additional Table\n")
+        report.write(additional_table_df.to_markdown(index=False))
+        report.write("\n\n")
+
 def main():
-    base_directories = ['./embedding/output/cosine', './embedding/output/jaccard']
+    base_directories = ['./embedding/output/cosine']
+    # , './embedding/output/jaccard']
     report_directory = './embedding/output/report'
     os.makedirs(report_directory, exist_ok=True)
     report_file = os.path.join(report_directory, 'report.md')
     
     combined_data = {
-        'Cosine': pd.DataFrame(columns=['QAS_File', 'Highest_Similarity', 'Average_Similarity']),
-        'Jaccard': pd.DataFrame(columns=['QAS_File', 'Highest_Similarity', 'Average_Similarity'])
+        'Cosine': pd.DataFrame(columns=['QAS_File', 'Highest_Similarity', 'Average_Similarity'])
+        # , 'Jaccard': pd.DataFrame(columns=['QAS_File', 'Highest_Similarity', 'Average_Similarity'])
     }
 
     with open(report_file, 'w') as report:
         for base_dir in base_directories:
-            method = 'Cosine' if 'cosine' in base_dir else 'Jaccard'
+            method = 'Cosine' # if 'cosine' in base_dir else 'Jaccard'
             for root, dirs, files in os.walk(base_dir):
                 for file in files:
                     if file.endswith('.csv'):
@@ -237,11 +286,14 @@ def main():
     
     with open(report_file, 'a') as report:
         report.write(f"## Overview of Similarity Scores - Bars\n")
-        report.write(f"![Overview of Similarity Scores - Bars](overview_similarity_bars.png)\n\n")
+        report.write(f"![Overview of Cosine Similarity Scores - Bars](overview_similarity_bars.png)\n\n")
         report.write(f"## Overview of Similarity Scores - Lines\n")
-        report.write(f"![Overview of Similarity Scores - Lines](overview_similarity_lines.png)\n\n")
+        report.write(f"![Overview of Cosine Similarity Scores - Lines](overview_similarity_lines.png)\n\n")
         report.write(f"## Overview of Similarity Scores - Combined\n")
-        report.write(f"![Overview of Similarity Scores - Combined](overview_similarity_combined.png)\n\n")
+        report.write(f"![Overview of Cosine Similarity Scores - Combined](overview_similarity_combined.png)\n\n")
+    
+    # Generate and write the additional table
+    generate_additional_table(report_directory, report_file)
 
 if __name__ == "__main__":
     main()
