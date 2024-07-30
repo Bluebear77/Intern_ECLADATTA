@@ -189,6 +189,7 @@ def write_summary_table_to_csv(summary_df, output_csv_path):
 
 def generate_additional_table(report_directory, report_file):
     additional_table_data = {
+        'instance_name': [],
         'nr of tables': [],
         'nr of paragraphs': [],
         'nr of comparisons': [],
@@ -220,6 +221,7 @@ def generate_additional_table(report_directory, report_file):
 
             nr_of_comparisons = nr_of_tables * nr_of_paragraphs
 
+            additional_table_data['instance_name'].append(f'instance_{instance_id}')
             additional_table_data['nr of tables'].append(nr_of_tables)
             additional_table_data['nr of paragraphs'].append(nr_of_paragraphs)
             additional_table_data['nr of comparisons'].append(nr_of_comparisons)
