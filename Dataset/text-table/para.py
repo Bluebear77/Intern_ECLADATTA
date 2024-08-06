@@ -1,55 +1,6 @@
 import os
 import json
 import glob
-import re
-import nltk
-from nltk.corpus import stopwords
-
-# Download necessary NLTK data
-nltk.download('punkt')
-nltk.download('stopwords')
-
-# Define the function to clean text
-import nltk
-from nltk.corpus import stopwords
-import re
-
-# Download necessary NLTK resources
-nltk.download('punkt')
-nltk.download('stopwords')
-
-def clean_text(dirty_text, language='french'):
-    # Remove newlines
-    dirty_text = dirty_text.replace('\n', ' ')
-    # Tokenize words
-    words = nltk.word_tokenize(dirty_text, language)
-
-    # Remove punctuation
-    words = [re.sub(r'[^\w\s]', '', word) for word in words]
-    
-    # Convert to lowercase
-    words = [word.lower() for word in words]
-
-    # Remove stopwords
-    stop_words = set(stopwords.words(language))
-    words = [word for word in words if word not in stop_words]
-
-    # Join words back into a string
-    cleaned_text = ' '.join(words)
-
-    # Remove newlines
-    cleaned_text = cleaned_text.replace('\n', ' ')
-
-    
-    # Return the cleaned text
-    return cleaned_text
-
-'''
-# Example usage
-dirty_text = """les titres originaux américains de la série alice trahissent souvent lintrigue principale du roman  contrairement aux titres français qui entretiennent davantage le mystère"""
-cleaned_text = clean_text(dirty_text)
-print(cleaned_text)
-'''
 
 def process_json_file(file_path):
     # Get the base file name without extension
@@ -74,11 +25,8 @@ def process_json_file(file_path):
             title = section.get('title', 'Untitled')
             value = section.get('value', '')
             
-            # Clean the text value
-            cleaned_value = clean_text(value)
-            
             # Construct the content to be written
-            content = f"Title: {title}Value:{cleaned_value}"
+            content = f"Title: {title}\n\nValue:\n{value}"
             
             # Define the output file path
             output_file_path = os.path.join(output_dir, f'section_{idx+1}.txt')
@@ -88,10 +36,8 @@ def process_json_file(file_path):
                 output_file.write(content)
 
 # Get the list of JSON files matching the pattern in the ./input-json directory
-# json_files = glob.glob('../100-female-celebrities/v2-100/Raw/instance_*.json')
-# json_files = glob.glob('../subcorpus-100-business-telco-celebrity/business-100/Raw/instance_*.json')
-
 json_files = glob.glob('./fr-multilingual-mpnet-base-v2/5-sample/input-json/instance_*.json')
+
 
 # Process each JSON file
 for json_file in json_files:
