@@ -11,7 +11,7 @@ model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-mpnet
 
 # Define input and output directory pairs
 dirs = [
-    #{'input': './qas', 'output': './embedding/qas'},
+    {'input': './qas', 'output': './embedding/qas'},
     {'input': './text/v2', 'output': './embedding/text'}
 ]
 
