@@ -85,8 +85,8 @@ def process_directories(qas_root, text_root, output_root):
 
 if __name__ == "__main__":
     qas_root = './embedding/qas'
-    text_root = './embedding/text'
-    output_root = './embedding/output/report'
+    text_root = './embedding/text/'
+    output_root = './embedding/output/cosine'
 
     os.makedirs(output_root, exist_ok=True)
     process_directories(qas_root, text_root, output_root)

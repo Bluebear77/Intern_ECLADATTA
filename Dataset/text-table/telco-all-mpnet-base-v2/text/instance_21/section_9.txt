@@ -1,4 +1,0 @@
-Title: Procedures implemented
-
-Value:
-the main function of the hlr is to manage the fact that sims and phones move around a lot  the following procedures are implemented to deal with this   manage the mobility of subscribers by means of updating their position in administrative areas called location areas   which are identified with a lac  the action of a user of moving from one to another is followed by the hlr with a location area update procedure   send the subscriber data to a vlr or sgsn when a subscriber first roams there   broker between the gmsc or smsc and the subscriber current vlr in order to allow   gsm services  call set up process for incoming callsincoming calls or text messages to be delivered     remove subscriber data from the previous vlr when a subscriber has roamed away from it   responsible for all sri related queries  ie  for invoke sri  hlr should give sack sri or sri reply  
