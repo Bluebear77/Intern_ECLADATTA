@@ -9,3 +9,5 @@ cosine.py: calculate the cosine similarity between [ each text file in ./embeddi
 jaccard.py: calculate the jaccard similarity between [ each text file in ./embedding/qas/qas_i , every text file in the ./embedding/text/instance_i]. 
 
 report.py: generate report and plots for the similairty score.
+
+clean.py:remove wikimarkup and clean text.

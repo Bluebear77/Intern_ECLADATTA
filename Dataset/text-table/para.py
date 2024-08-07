@@ -7,7 +7,7 @@ def process_json_file(file_path):
     base_name = os.path.splitext(os.path.basename(file_path))[0]
     
     # Create a directory named after the base file name under ./text
-    output_dir = os.path.join(os.getcwd(), 'text', base_name)
+    output_dir = os.path.join(os.getcwd(), 'text/v1', base_name)
     os.makedirs(output_dir, exist_ok=True)
     
     # Read the JSON file

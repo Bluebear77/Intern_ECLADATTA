@@ -12,7 +12,7 @@ model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-mpnet
 # Define input and output directory pairs
 dirs = [
     #{'input': './qas', 'output': './embedding/qas'},
-    {'input': './text', 'output': './embedding/text'}
+    {'input': './text/v2', 'output': './embedding/text'}
 ]
 
 # Process each directory pair

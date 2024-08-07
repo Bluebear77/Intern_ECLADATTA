@@ -168,6 +168,7 @@ input_data = """
 '''Alice Roy''' ('''Nancy Drew''' en version originale anglophone) est l’héroïne fictive d'une série américaine de [[roman (littérature)|romans]] policiers pour la jeunesse signée du [[Pseudonyme|nom de plume]] collectif [[Caroline Quine]], et publiée aux États-Unis à partir de 1930 par [[Grosset & Dunlap]]. 
 """
 
+
 # Perform cleaning on the input data
 cleaned_output = clean_text(input_data)
 
