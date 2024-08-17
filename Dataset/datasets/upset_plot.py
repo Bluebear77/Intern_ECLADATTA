@@ -59,3 +59,56 @@ def interpret_overlap(url_dict):
         file.write(f"\nDatasets with the highest overlap: {most_overlapping_datasets[0][0]} & {most_overlapping_datasets[0][1]} ({most_overlapping_datasets[1]} URLs)\n")
 
 interpret_overlap(url_dict)
+
+# --- Additional Section for Bar Plots ---
+
+# Number of URLs in each dataset (non-unique)
+url_counts = {}
+for dataset in datasets:
+    df = pd.read_csv(dataset)
+    url_counts[dataset] = len(df.iloc[:, 0])
+
+# Unique URL counts
+unique_url_counts = {dataset: len(urls) for dataset, urls in url_dict.items()}
+
+# 1. Bar plot indicating the URL number of each dataset
+plt.figure(figsize=(12, 6))  # Increase the figure size for more space
+plt.bar(url_counts.keys(), url_counts.values())
+plt.title("Number of URLs in Each Dataset")
+plt.xlabel("Dataset")
+plt.ylabel("Number of URLs")
+plt.xticks(rotation=45, ha='right')
+
+# Adding the number above each bar with smaller font size
+for i, count in enumerate(url_counts.values()):
+    plt.text(i, count, str(count), ha='center', va='bottom', fontsize=8)  # Reduced font size to avoid overlapping
+
+plt.tight_layout()
+plt.savefig('url_counts_per_dataset.png', dpi=300)
+plt.show()
+
+# 2. Bar plot comparing URL number and unique URL number for each dataset
+plt.figure(figsize=(12, 6))  # Increase the figure size for more space
+
+# Bar positions
+positions = range(len(datasets))
+bar_width = 0.35  # Reduced the bar width for better spacing
+
+# Plotting both bars side by side for each dataset
+plt.bar([p - bar_width/2 for p in positions], url_counts.values(), width=bar_width, label='Total URLs')
+plt.bar([p + bar_width/2 for p in positions], unique_url_counts.values(), width=bar_width, label='Unique URLs')
+
+plt.title("Comparison of Total URLs and Unique URLs per Dataset")
+plt.xlabel("Dataset")
+plt.ylabel("Number of URLs")
+plt.xticks(positions, datasets, rotation=45, ha='right')
+
+# Adding the number above each bar with smaller font size
+for i, (total_count, unique_count) in enumerate(zip(url_counts.values(), unique_url_counts.values())):
+    plt.text(i - bar_width/2, total_count, str(total_count), ha='center', va='bottom', fontsize=8)  # Reduced font size
+    plt.text(i + bar_width/2, unique_count, str(unique_count), ha='center', va='bottom', fontsize=8)  # Reduced font size
+
+plt.legend()
+plt.tight_layout()
+plt.savefig('comparison_url_counts.png', dpi=300)
+plt.show()
