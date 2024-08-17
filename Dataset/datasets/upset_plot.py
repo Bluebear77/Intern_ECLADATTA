@@ -8,8 +8,8 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 # List of dataset filenames
 datasets = [
-    "F2WTQ.csv", "FeTaQA.csv", "LOGICNLG.csv", "LOTNLG.csv", "ToTTo.csv",
-    "WTQ.csv", "business100.csv", "female100.csv", "telco100.csv","female100_english.csv"
+    "F2WTQ-cleaned.csv", "FeTaQA-cleaned.csv", "LOGICNLG-cleaned.csv", "LOTNLG-cleaned.csv", "ToTTo-cleaned.csv",
+    "WTQ-cleaned.csv", "business100.csv", "female100.csv", "telco100.csv","female100_english.csv"
 ]
 
 # Dictionary to store URLs from each dataset
