@@ -13,6 +13,20 @@ csv_files = {
     'female100_english.csv': 'URL'
 }
 
+'''
+csv_files = {
+    'LOGICNLG.csv': 'URL',
+    'F2WTQ.csv': 'url',
+    'FeTaQA.csv': 'converted_url',
+    'LOTNLG.csv': 'URL',
+    'ToTTo.csv': 'Page ID URL',
+    'WTQ.csv': 'URL',
+    'telco100.csv': 'URL1',
+    'business100.csv': 'URL1',
+    'female100_english.csv': 'URL'
+}
+'''
+
 # Initialize counter for the total number of unique URLs
 total_unique_urls = 0
 
