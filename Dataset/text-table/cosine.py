@@ -52,45 +52,12 @@ def process_directories(qas_root, text_root, output_root):
                 output_file_path = os.path.join(output_subdir, 'cosine_similarity.csv')
                 df.to_csv(output_file_path, index=False)
                 
-                
-                # Assuming table_data is the DataFrame containing the similarity table
-
-                # Extract the 'qas_i_table_j' column separately
-                qas_column = table_data['qas_i_table_j']
-
-                # Drop the 'qas_i_table_j' column for sorting
-                data_columns = table_data.drop(columns=['qas_i_table_j'])
-
-                # Create a new DataFrame where each row is sorted by the similarity values in descending order
-                sorted_rows = []
-
-                for index, row in data_columns.iterrows():
-                    # Sort the row by values in descending order
-                    sorted_row = sorted(row.items(), key=lambda x: x[1], reverse=True)
-                    
-                    # Extract sorted sections (column names) and sorted similarity scores
-                    sorted_sections = [section for section, score in sorted_row]
-                    sorted_scores = [score for section, score in sorted_row]
-                    
-                    # Append the sorted sections and scores to a new list
-                    sorted_rows.append([qas_column.iloc[index]] + sorted_sections + sorted_scores)
-
-                # Combine the sorted rows into a new DataFrame
-                sorted_columns = ['qas_i_table_j'] + \
-                                [f'section_{i+1}' for i in range(len(data_columns.columns))] + \
-                                [f'similarity_{i+1}' for i in range(len(data_columns.columns))]
-
-                sorted_table_data = pd.DataFrame(sorted_rows, columns=sorted_columns)
-
-                # Save the sorted DataFrame to a CSV file
-                table_file_path = os.path.join(output_subdir, 'similarity_table_sorted.csv')
-                sorted_table_data.to_csv(table_file_path, index=False)
-
-                # Append the sorted table to the list of all tables (if needed)
-                all_tables.append(sorted_table_data)
-
-
-                
+                # Sort and save similarity_table.csv
+                table_data['qas_i_table_j_num'] = table_data['qas_i_table_j'].apply(lambda x: int(x.split('_')[-1]))
+                table_data = table_data.sort_values(by='qas_i_table_j_num').drop(columns=['qas_i_table_j_num'])
+                table_file_path = os.path.join(output_subdir, 'similarity_table.csv')
+                table_data.to_csv(table_file_path, index=False)
+                all_tables.append(table_data)
 
                 # Plot
                 plt.figure(figsize=(12, 6))
