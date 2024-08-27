@@ -19,6 +19,7 @@ def process_directories(qas_root, text_root, output_root):
     qas_dirs = glob.glob(os.path.join(qas_root, 'qas_*'))
     all_tables = []
     plot_files = []
+    
     for qas_dir in tqdm(qas_dirs, desc="Processing QAS Directories"):
         qas_index = os.path.basename(qas_dir).split('_')[1]
         text_dir = os.path.join(text_root, f'instance_{qas_index}')
@@ -27,10 +28,12 @@ def process_directories(qas_root, text_root, output_root):
             text_files = glob.glob(os.path.join(text_dir, '*.txt'))
             output_data = []
             table_data = pd.DataFrame(columns=['qas_i_table_j'] + [f'section_{os.path.basename(text_file).split("_")[1].split(".")[0]}' for text_file in text_files])
+            
             for qas_file in tqdm(qas_files, desc=f"Processing files in {qas_dir}", leave=False):
                 qas_text = read_file(qas_file)
                 qas_filename = os.path.basename(qas_file).split('.')[0]
                 row_data = {'qas_i_table_j': qas_filename}
+                
                 for text_file in text_files:
                     text_content = read_file(text_file)
                     similarity = calculate_cosine_similarity(qas_text, text_content)
@@ -52,12 +55,39 @@ def process_directories(qas_root, text_root, output_root):
                 output_file_path = os.path.join(output_subdir, 'cosine_similarity.csv')
                 df.to_csv(output_file_path, index=False)
                 
-                # Sort and save similarity_table.csv
+                # Sorting the similarity table by descending order of similarity scores
                 table_data['qas_i_table_j_num'] = table_data['qas_i_table_j'].apply(lambda x: int(x.split('_')[-1]))
                 table_data = table_data.sort_values(by='qas_i_table_j_num').drop(columns=['qas_i_table_j_num'])
-                table_file_path = os.path.join(output_subdir, 'similarity_table.csv')
-                table_data.to_csv(table_file_path, index=False)
-                all_tables.append(table_data)
+                
+                # Extract section column names
+                section_names = table_data.columns[1:]
+                
+                # Now, we will sort the sections based on the similarity score for each row (each table)
+                def sort_row(row):
+                    # Extract the table identifier
+                    table_id = row[0]
+                    # Extract the similarity scores (which are in the rest of the columns)
+                    scores = row[1:].astype(float)  # Convert to float to ensure proper sorting
+                    # Sort the sections and scores together in descending order by the scores
+                    sorted_sections_scores = sorted(zip(section_names, scores), key=lambda x: x[1], reverse=True)
+                    # Rebuild the row with sorted sections and scores
+                    sorted_sections, sorted_scores = zip(*sorted_sections_scores)
+                    # Return the reordered row, starting with the table identifier
+                    return [table_id] + list(sorted_scores)
+
+                # Apply the sorting function to each row of the DataFrame
+                sorted_table_data = table_data.apply(sort_row, axis=1, result_type='expand')
+
+                # Rename the columns to reflect the sorted section names (keeping the 'qas_i_table_j' as the first column)
+                sorted_section_names = ['qas_i_table_j'] + [section for section, _ in sorted(zip(section_names, table_data.iloc[0, 1:].astype(float)), key=lambda x: x[1], reverse=True)]
+                sorted_table_data.columns = sorted_section_names
+
+                # Save the sorted table to a CSV file
+                table_file_path = os.path.join(output_subdir, 'similarity_table_sorted.csv')
+                sorted_table_data.to_csv(table_file_path, index=False)
+
+                # Append the sorted data to the 'all_tables' list if needed
+                all_tables.append(sorted_table_data)
 
                 # Plot
                 plt.figure(figsize=(12, 6))
@@ -66,6 +96,7 @@ def process_directories(qas_root, text_root, output_root):
                     qas_filename = os.path.basename(qas_file).split('.')[0]
                     scores = table_data.loc[table_data['qas_i_table_j'] == qas_filename].drop('qas_i_table_j', axis=1).values.flatten().tolist()
                     plt.plot(sorted(table_data.columns[1:], key=lambda x: int(x.split('_')[-1])), scores, label=qas_filename, linestyle=line_styles[i % len(line_styles)])
+                
                 plt.xlabel('Paragraphs')
                 plt.ylabel('Cosine Similarity')
                 plt.title(f'Cosine Similarity Scores for QAS {qas_index}')
