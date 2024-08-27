@@ -161,7 +161,9 @@ def generate_additional_table(report_directory, report_file):
         'URL': []
     }
 
-    input_json_directory = './fr-multilingual-mpnet-base-v2/5-sample/input-json'
+    #input_json_directory = './fr-multilingual-mpnet-base-v2/5-sample/input-json'
+    
+    input_json_directory ='./all-mpnet-base-v2/input-json'
     for instance_file in os.listdir(input_json_directory):
         if instance_file.endswith('.json'):
             instance_path = os.path.join(input_json_directory, instance_file)

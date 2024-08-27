@@ -7,6 +7,7 @@ from nltk.corpus import stopwords
 # Download necessary NLTK data
 nltk.download('punkt')
 nltk.download('stopwords')
+nltk.download('punkt_tab')
 
 def remove_wiki_markup(text):
     # Remove text between {{Voir homonymes| and ''' (including these patterns)

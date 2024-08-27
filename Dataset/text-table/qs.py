@@ -49,15 +49,15 @@ def main():
 
     #  json_files = glob('../ReasTAP/ReasTAP-main/synthetic_tableqa_generation/output-celebrity/synthetic_qa_output_instance_*_v6.json')
     # json_files = glob('../ReasTAP/ReasTAP-main/synthetic_tableqa_generation/output-business/synthetic_qa_output_instance_*_v5.json')
-    json_files = glob('./fr-multilingual-mpnet-base-v2/5-sample/input-qas/synthetic_qa_output_instance_*_v6.json')
-
+    # json_files = glob('./fr-multilingual-mpnet-base-v2/5-sample/input-qas/synthetic_qa_output_instance_*_v6.json')
+    json_files = glob('./all-mpnet-base-v2/input-qas/synthetic_qa_output_instance_*_v5.json')
 
     for json_file in json_files:
         with open(json_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
             
         # Extract instance index from filename
-        instance_index = re.search(r'synthetic_qa_output_instance_(\d+)_v6\.json', json_file).group(1)
+        instance_index = re.search(r'synthetic_qa_output_instance_(\d+)_v5\.json', json_file).group(1)
         output_dir = f"./qas/qas_{instance_index}"
         
         # Create directory if it doesn't exist
