@@ -89,22 +89,22 @@ def process_directories(qas_root, text_root, output_root):
                 # Append the sorted data to the 'all_tables' list if needed
                 all_tables.append(sorted_table_data)
 
-                # Plot
+                # Plot the sorted similarity table
                 plt.figure(figsize=(12, 6))
                 line_styles = ['-', '--', '-.', ':']
                 for i, qas_file in enumerate(sorted(qas_files, key=lambda x: int(os.path.basename(x).split('_')[-1].split('.')[0]))):
                     qas_filename = os.path.basename(qas_file).split('.')[0]
-                    scores = table_data.loc[table_data['qas_i_table_j'] == qas_filename].drop('qas_i_table_j', axis=1).values.flatten().tolist()
-                    plt.plot(sorted(table_data.columns[1:], key=lambda x: int(x.split('_')[-1])), scores, label=qas_filename, linestyle=line_styles[i % len(line_styles)])
+                    scores = sorted_table_data.loc[sorted_table_data['qas_i_table_j'] == qas_filename].drop('qas_i_table_j', axis=1).values.flatten().tolist()
+                    plt.plot(sorted_section_names[1:], scores, label=qas_filename, linestyle=line_styles[i % len(line_styles)])
                 
-                plt.xlabel('Paragraphs')
+                plt.xlabel('Sections (Sorted by Similarity)')
                 plt.ylabel('Cosine Similarity')
-                plt.title(f'Cosine Similarity Scores for QAS {qas_index}')
+                plt.title(f'Sorted Cosine Similarity Scores for QAS {qas_index}')
                 plt.legend()
                 plt.xticks(rotation=90)
                 plt.tight_layout()
-                plot_file_path = os.path.relpath(os.path.join(output_subdir, 'similarity_plot.png'), start=output_root)
-                plt.savefig(os.path.join(output_subdir, 'similarity_plot.png'))
+                plot_file_path = os.path.relpath(os.path.join(output_subdir, 'sorted_similarity_plot.png'), start=output_root)
+                plt.savefig(os.path.join(output_subdir, 'sorted_similarity_plot.png'))
                 plt.close()
                 plot_files.append(plot_file_path)
     
@@ -112,7 +112,7 @@ def process_directories(qas_root, text_root, output_root):
     report_path = os.path.join(output_root, 'report.md')
     with open(report_path, 'a') as report_file:  # Open in append mode
         for plot_file in plot_files:
-            report_file.write(f"![Similarity Plot]({plot_file})\n\n")
+            report_file.write(f"![Sorted Similarity Plot]({plot_file})\n\n")
 
 if __name__ == "__main__":
     qas_root = './embedding/qas'
