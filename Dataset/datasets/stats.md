@@ -48,3 +48,17 @@ female100.csv & telco100.csv: 0
 female100_english.csv & telco100.csv: 0
 
 Datasets with the highest overlap: LOGICNLG-cleaned.csv & LOTNLG-cleaned.csv (804 URLs)
+
+
+
+| Dataset           | Total URLs (Before Cleaning) | Unique URLs (After Cleaning) | Difference |
+|-------------------|------------------------------|------------------------------|------------|
+| LOGICNLG          | 16,573                        | 10,538                        | 6,035      |
+| F2WTQ             | 7,675                         | 767                           | 6,908      |
+| FeTaQA            | 10,330                        | 9,334                         | 996        |
+| LOTNLG            | 962                           | 804                           | 158        |
+| ToTTo             | 135,351                       | 81,732                        | 53,619     |
+| WTQ               | 2,108                         | 2,104                         | 4          |
+| telco100          | 100                           | 100                           | 0          |
+| business100       | 101                           | 101                           | 0          |
+| female100_english | 100                           | 100                           | 0          |
