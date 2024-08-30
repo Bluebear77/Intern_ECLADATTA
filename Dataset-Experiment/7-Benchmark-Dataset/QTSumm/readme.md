@@ -1,32 +1,40 @@
+# QTSumm Dataset Recovery
 
-Here is the Recovery QTSumm Dataset.
+This directory contains the workflow and results for recovering the QTSumm dataset using a combination of Google Search and Wiki-API methods.
 
-The QTSumm directory contains the recovery of source URL of the QTSumm dataset.  The final result is [qtsumm_dev.csv, qtsumm_test.csv, qtsumm_train.csv] in the combined directory.
+## Directory Structure
 
-Python scripts (google-find.py &  wiki-find.py ) are made to automate URL verification for the QTSumm dataset recovery by implementing a function that performs a fuzzy comparison of table content.
+- **`original-json`**: Contains the original QTSumm JSON files.
+- **`google`**: Contains the code and results from the Google Search approach.
+- **`wiki-api`**: Contains the code and results from the Wiki-API search.
+- **`combined`**: Contains the combined results from both the Google and Wiki-API approaches.
+- **`recovery`**: Contains the final recovery results.
+- **`stats`**: Contains statistical analysis of the original QTSumm dataset.
 
-`google` directory contains the result of Google Search based on the 'table title + site:wikipedia.org' using google-find.py . There is a log.txt that stores the search and compare process.
+## Recovery Workflow
 
-`wiki-api` directory contains the result of Wiki-API based on the table title using wiki-find.py . There is a log.txt that stores the search and compare process.
+### 1. URL Recovery Based on Wiki-page Title
 
-`combined`  directory contains the result of the optimal selection result from both Google Search and Wiki-API based on the combined score.
-`calculate_combined_score = int(0.7 * row['title_similarity'] + 0.3 * row['table_similarity'])`
-More weights is given to the title because some table content could change by the time. 
+#### a. Google Search
+- Perform a Google search using the format: `wiki-page title + site:wikipedia.org`.
+- Select the top 3 results and form corresponding Wikipedia URLs.
+- Match the titles and calculate the title similarity.
+- Generate a `.csv` file for each JSON file containing the results.
 
+#### b. Wiki-API
+- Use the Wiki-API to search for the wiki-page title.
+- Select the top 3 results and form corresponding Wikipedia URLs.
+- Match the titles and calculate the title similarity.
+- If the table is a disambiguation page, scan all possible URLs and select the one with the highest table similarity score.
+- Generate a `.csv` file for each JSON file containing the results.
 
+### 2. Table Selection Based on Similarity Comparison
+- For each URL candidate, scan all tables on the wiki-page.
+- Convert each table (4 rows + 1 header, first 4 columns) into strings.
+- Calculate the table similarity score.
+- Select the table with the highest similarity score.
 
+### 3. Combine Both Approaches
+- Calculate the overall similarity using the formula: `int(0.4 * row['title_similarity'] + 0.6 * row['table_similarity'])`.
+- Select the table with the highest overall similarity score between both approaches.
 
-
-
-***
-From data:
-- qtsumm_dev.json: 1052 tables
-- qtsumm_train.json: 4981 tables
-- qtsumm_test.json: 1078 tables
-- Total number of tables in all .json files: 7111
-
-From paper:
-- 2,934 Tables from 2 sources: <br/>LOGICNLG (Chen et al., 2020a), 7,392 tables  <br/> ToTTo (Parikh et al., 2020), 83,141 tables
-
-Source：
-https://huggingface.co/datasets/yale-nlp/QTSumm/tree/main
