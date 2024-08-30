@@ -1,5 +1,12 @@
-Here contains the original WTQ raw json files `WikiTableQuestions-1.0.2/page`.
+This directory contains the original WikiTableQuestions (WTQ) raw JSON files located in the `WikiTableQuestions-1.0.2/page` directory.
 
-`url.py`: extracts the URL from each `20X-page` directory then generates `20X-page.csv` .
 
-`merge.py`: merge all `20X-page.csv` into `WTQ.csv`.
+
+- **`url.py`**:  
+  Extracts URLs from each `20X-page` directory and generates a corresponding `20X-page.csv` file.
+
+- **`merge.py`**:  
+  Merges all `20X-page.csv` files into a single comprehensive file, `WTQ.csv`.
+
+- **`WTQ.csv`**:  
+  A consolidated file that contains the URL source results for the entire WTQ dataset.

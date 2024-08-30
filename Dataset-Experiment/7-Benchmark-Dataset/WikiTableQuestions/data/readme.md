@@ -1,12 +1,27 @@
-Here contains all files of the `WikiTableQuestions-1.0.2/data` directory.
 
-`pull.py`: Extracts the table id and its origin file from each *.examples file and outputs a *.csv file.
+This directory contains scripts and files related to processing the `WikiTableQuestions-1.0.2/data` directory.
 
-`synthesis.py`: Iterates every row of *.csv file, use the source file column as an index to track the URL. It uses the "csv/xxx-csv/yyy.csv" as an index. Use "xxx-csv" to go to the '../url/xxx-page'directory. Then use "yyy.csv" finds "yyy.json". Then it reads the json file and extracts the table title and url. The final output is a new complete-xxx-tables.csv, with 4 columns: id,source file,table title and url.
+## Files Overview
 
-Then the the origin file `csv/xxx-csv/yyy.csv` will be used as index to track the corresponding URL.
+- **`pull.py`**:  
+  Extracts the table ID and its corresponding source file from each `*.examples` file and outputs the results into a `*.csv` file.
 
-***
+- **`synthesis.py`**:  
+  Iterates through each row of the generated `*.csv` file to match table IDs with their URLs. The script uses the `source file` column as an index to locate the correct URL:
+  
+  1. **File Indexing**:  
+     - The `source file` is formatted as `"csv/xxx-csv/yyy.csv"`.
+     - The `"xxx-csv"` part is used to navigate to the `../url/xxx-page` directory.
+     - The `"yyy.csv"` part is used to find the corresponding `"yyy.json"` file.
+
+  2. **URL Extraction**:  
+     - The script reads the `yyy.json` file to extract the table title and URL.
+     - The final output is a new `complete-xxx-tables.csv` file containing four columns: `id`, `source file`, `table title`, and `url`.
+
+- **URL Tracking**:  
+  The original file (`csv/xxx-csv/yyy.csv`) is used as an index to track the corresponding URL.
+
+
 **Dataset Splits:** 
 
 We split 22033 examples into multiple sets:
