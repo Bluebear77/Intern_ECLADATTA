@@ -1,21 +1,21 @@
+# F2WTQ Dataset
 
-This directory contains the Extraction URL process of the F2WTQ Dataset.
+This directory contains the scripts and files related to the URL extraction process of the F2WTQ Dataset.
 
-- *.JSON are the 3 original raw F2WTQ data.
+## Files Overview
 
-- complete-F2WTQ-*.csv are the corresponding URL Extraction result for each JSON file.
+- **`*.json`**: The 3 original raw F2WTQ data files.
+- **`complete-F2WTQ-*.csv`**: The URL extraction results corresponding to each JSON file.
+- **`F2WTQ.csv`**: A compressed CSV file containing all URLs extracted from the 3 datasets.
 
--  F2WTQ.csv is the compressed .csv file containing all URL for the 3 datasets.
+## About F2WTQ
 
-F2WTQ: The WTQ dataset (Pasupat and Liang, 2015) is adopted as a basis to construct F2WTQ. 
+The F2WTQ dataset is constructed using the WTQ dataset (Pasupat and Liang, 2015) as a basis.
 
-Source: https://github.com/yale-nlp/LLM-T2T/tree/main/data/F2WTQ
+Source: [Yale NLP - LLM-T2T Project](https://github.com/yale-nlp/LLM-T2T/tree/main/data/F2WTQ)
 
+## Script Descriptions
 
-
-find.py: Extracts the URL from JSON outputs complete-F2WTQ-*.csv.
-
-merge.py: Merge 3 complete-F2WTQ-*.csv to the F2WTQ.csv.
-
-
+- **`find.py`**: Extracts URLs from the JSON files and generates the corresponding `complete-F2WTQ-*.csv` files.
+- **`merge.py`**: Merges the 3 `complete-F2WTQ-*.csv` files into a single `F2WTQ.csv` file.
 
