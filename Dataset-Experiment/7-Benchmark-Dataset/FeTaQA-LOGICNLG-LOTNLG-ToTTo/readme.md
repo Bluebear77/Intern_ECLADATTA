@@ -1,4 +1,4 @@
-# FeTaQA-LOGICNLG-LOTNLG-ToTTo Directory
+# FeTaQA-LOGICNLG-LOTNLG-ToTTo 
 
 This directory contains datasets and scripts related to URL extraction and conversion for various datasets.
 
