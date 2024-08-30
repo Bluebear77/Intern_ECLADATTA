@@ -1,14 +1,17 @@
-- LOGICNLG, ToTTo, and QTSumm Datasets in CSV Format:<br/>
-https://drive.google.com/file/d/1PAwlg9wRPO-lg_rddVGWjIZ05airZLWD/view?usp=sharing
+This directory contains the study of 7 Benchmark Dataset.
 
-- Wikipedia Source Overview for LOGICNLG and ToTTo Datasets:<br/>
-  https://docs.google.com/spreadsheets/d/1G619zqazyZBmOIQp54zqRC_kr0S9n1h4Z4UVngqYe9I/edit?usp=sharing<br/>
+Gain comprehensive understanding of existing benchmark datasets, focusing on their interrelations.
 
-- Overlapped 1660 URLs for LOGICNLG and ToTTo Datasets:<br/>
-  https://github.com/Bluebear77/Intern_ECLADATTA/blob/main/Dataset/LOGICNLG%20%26%20ToTTo%20%26%20QTSumm/Overlapped-URLs.csv
+7 Datasets are introduced in QTSumm and LLM-T2T:
 
-  
-  <br/>
-  LOGICNLG originally in csv:https://github.com/wenhuchen/LogicNLG/blob/master/all_csv.zip<br/>
-  ToTTo  originally in jasonl:https://storage.googleapis.com/totto-public/totto_data.zip<br/>
-  QTSumm  originally  in jason:https://huggingface.co/datasets/yale-nlp/QTSumm/tree/main
+1.ToTTo, https://github.com/google-research-datasets/ToTTo
+2.LOGICNLG, https://github.com/wenhuchen/LogicNLG/blob/master/all_csv.zip
+3.QTSumm (based on LOGICNLG and ToTTo), https://huggingface.co/datasets/yale-nlp/QTSumm
+4.LOTNLG (based on LOGICNLG), https://github.com/yale-nlp/LLM-T2T/tree/main/data
+5.FetaQA (based on ToTTo), https://github.com/Yale-LILY/FeTaQA/tree/main/data
+6.WTQ, https://huggingface.co/datasets/wikitablequestions and https://github.com/ppasupat/WikiTableQuestions/tree/master/csv
+7.F2WTQ (based on WTQ), https://github.com/yale-nlp/LLM-T2T/tree/main/data
+
+- QTSumm is created on the basis of LOGICNLG and ToTTo and implement fact template to generate Query-Focused Summarization over Tabular Data.
+
+- [LOGICNLG, LOTNLG, FetaQA, F2WTQ] are used to train multiple LLMs.
