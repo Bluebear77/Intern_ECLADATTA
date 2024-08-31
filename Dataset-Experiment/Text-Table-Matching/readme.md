@@ -28,7 +28,7 @@ This project evaluates how closely a paragraph of text relates to a table by gen
    - Select 5 pages from the celebrity corpus.
 
 2. **Extraction**:  
-   - Extract all text and QA sets from each Wiki page into text files. Clean the extracted text and QAs using NLP techniques (text in French, QAs in English).
+   - Extract all text and QAS from each Wiki page into text files. Clean the extracted text and QAs using NLP techniques (text in French, QAs in English).
 
 3. **Create Embeddings**:  
    - Generate SBERT embeddings using the `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` model for each paragraph and QA set, producing 768-dimensional vector embeddings.
