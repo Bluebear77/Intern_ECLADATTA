@@ -8,9 +8,18 @@ This repo documents the results of an internship as part of the ECLADATTA projec
 
 ## Contributions
 
-- **Benchmark Analysis**: We conducted an in-depth analysis of publicly available benchmark datasets for reasoning over tables, emphasizing their interrelations and contributions to LLM training.
-- **Corpus Construction**: We constructed and studied three topic-specific corpora (female celebrities, business, telco) consisting of text and tables, pre-processed in English and French.
-- **ReasTAP Application**: We applied the ReasTAP model to generate a question-answer pairs (QAS) corpus that requires reasoning for the three created corpora.
+- **Benchmark Analysis**: We conducted an analysis of publicly available benchmark datasets for reasoning over tables, with a focus on their interrelations and source URL comparison. This includes the recovery of QTSumm source URLs, with results available in the [recovery directory](https://github.com/Bluebear77/Intern_ECLADATTA/tree/main/7-Benchmark-Dataset/QTSumm/recovery).
+
+  The CSV files containing each dataset's URLs can be found in the [csv directory](https://github.com/Bluebear77/Intern_ECLADATTA/tree/main/URL-Comparison/csv), and the overlap results are summarized in the [summary.csv file](https://github.com/Bluebear77/Intern_ECLADATTA/blob/main/URL-Comparison/csv/summary.csv).
+
+
+- **Corpus Construction**: We constructed and studied three topic-specific corpora (female celebrities, business, telco) consisting of text and tables, pre-processed in both English and French.
+
+- **ReasTAP Application**: We applied the ReasTAP model to generate a question-answer pairs (QAS) corpus requiring reasoning for the three created corpora. The outputs can be found at the following links:
+  - [Business Corpus Output](https://github.com/Bluebear77/Intern_ECLADATTA/tree/main/ReasTAP/ReasTAP-main/synthetic_tableqa_generation/output-business)
+  - [Celebrity Corpus Output](https://github.com/Bluebear77/Intern_ECLADATTA/tree/main/ReasTAP/ReasTAP-main/synthetic_tableqa_generation/output-celebrity)
+  - [Telco Corpus Output](https://github.com/Bluebear77/Intern_ECLADATTA/tree/main/ReasTAP/ReasTAP-main/synthetic_tableqa_generation/output-telco)
+
 - **Text-Table Relatedness Evaluation**: We evaluated the relatedness between textual sections and tables within the same Wikipedia page, using cosine similarity of SBERT embeddings between generated QAS and text data.
 
 ## Directory Structure
