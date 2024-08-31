@@ -1,2 +1,9 @@
-ReasTAP experiment on 3 ECLADATTA corpus.
-The output files are located @ ReasTAP/ReasTAP-main/synthetic_tableqa_generation/output-DatasetName.
+# ReasTAP Experiment on ECLADATTA Corpus
+
+This directory contains the results of the ReasTAP experiment conducted on three ECLADATTA corpora. 
+
+## Output Files
+
+The output files for each dataset can be found in the following locations:
+
+- `ReasTAP/ReasTAP-main/synthetic_tableqa_generation/output-DatasetName`
