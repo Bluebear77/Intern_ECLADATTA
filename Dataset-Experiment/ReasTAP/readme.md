@@ -2,8 +2,20 @@
 
 This directory contains the results of the ReasTAP experiment conducted on three ECLADATTA corpora. 
 
+
+
+## Directory Structure
+
+- **Location**: `ReasTAP/ReasTAP-main/synthetic_tableqa_generation/`
+
+## Running the Experiment
+
+To run the experiment, execute the script `generate_synthetic_tableqa.py`.
+
 ## Output Files
 
-The output files for each dataset can be found in the following locations:
+The script generates the following output files:
 
-- `ReasTAP/ReasTAP-main/synthetic_tableqa_generation/output-DatasetName`
+- **`output-business`**: Results related to the business corpus.
+- **`output-celebrity`**: Results related to the celebrity corpus.
+- **`output-telco`**: Results related to the telco corpus.
