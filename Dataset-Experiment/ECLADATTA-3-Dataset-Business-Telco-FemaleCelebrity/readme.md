@@ -1,51 +1,22 @@
-Here is the subcorpus for the ECLADATTA project.
+# ECLADATTA-3 Corpus: Business, Telco, and Female Celebrities
 
-It has 3 corpora: Business, Telco and Celebrity. Each with 100 examples.
+This repository contains 3 corpora constructed for the ECLADATTA project.
 
-```
-{
-    "_index": "corpus_doc_telco100_en",
-    "_id": "PLACEHOLDER_ID",
-    "_source": {
-        "identificationMetadata": {
-            "id": "PLACEHOLDER_ID",
-            "title": "PLACEHOLDER_TITLE",
-            "url": [
-                "PLACEHOLDER_URL_1",
-                "PLACEHOLDER_URL_2"
-            ],
-            "version": "PLACEHOLDER_VERSION",
-            "versionDate": "PLACEHOLDER_VERSION_DATE",
-            "hash": "PLACEHOLDER_HASH",
-            "wikidata": "PLACEHOLDER_WIKIDATA"
-        },
-        "descriptionMetadata": {
-            "categories": [
-                "PLACEHOLDER_CATEGORY_1",
-                "PLACEHOLDER_CATEGORY_2",
-                ...
-            ],
-            "language": "PLACEHOLDER_LANGUAGE",
-            "source": "PLACEHOLDER_SOURCE"
-        },
-        "contentMetadata": {
-            "format": "PLACEHOLDER_FORMAT",
-            "content": "PLACEHOLDER_CONTENT",
-            "text": "PLACEHOLDER_TEXT",
-            "nbLinks": "PLACEHOLDER_NB_LINKS",
-            "nbTables": "PLACEHOLDER_NB_TABLES",
-            "nbTexts": "PLACEHOLDER_NB_TEXTS",
-            "tableExtractionDate": "PLACEHOLDER_TABLE_EXTRACTION_DATE",
-            "tables": [],
-            "technology": "PLACEHOLDER_TECHNOLOGY",
-            "textExtractionDate": "PLACEHOLDER_TEXT_EXTRACTION_DATE",
-            "texts": [
-                "PLACEHOLDER_TEXT_1",
-                "PLACEHOLDER_TEXT_2",
-                ...
-            ]
-        }
-    }
-}
+## Directory Structure
 
-```
+- **100-female-celebrities/**: Contains the pre-processing pipeline for the 100 Female Celebrities dataset, designed for input into the ReasTAP model.
+- **business-100/**: Contains the pre-processing pipeline for the 100 Business Instances dataset, designed for input into the ReasTAP model.
+- **business-100/**: Contains the pre-processing pipeline for the 100 Telecommunication Instances dataset, designed for input into the ReasTAP model.
+- **csv/**: Contains URL summarization CSV files for the 100 Female Celebrities, Business, and Telco corpus.
+- **origin-files/**: Contains the original, unprocessed files used as input for the data processing pipelines.
+- **unparsed-template/**: Contains records of unparsed templates encountered during the CorpusWalker parsing of wikitables, with a focus on documenting templates that were difficult to parse due to their format or location within the text.
+
+- **stas.py**: A script that counts the number of files in specific subdirectories ("Complete," "Missing," "NoTable," and "Raw") within the "business-100" and "telco-100" directories. It generates a `stats.md` file summarizing the file counts.
+
+
+## Usage
+
+1. **Data Pre-processing**: Use the scripts within each specific directory (`100-female-celebrities`, `business-100`, `telco-100`) to process and prepare the data for analysis or model input.
+2. **Unparsed Templates**: Refer to the `unparsed-template` directory to understand and analyze instances where Wikipedia tables were not correctly parsed.
+3. **Statistics Generation**: Run the `stas.py` script to generate a summary of the file counts across different subdirectories, which is useful for tracking data processing progress.
+
