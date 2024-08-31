@@ -4,8 +4,8 @@ This directory contains scripts and data used to evaluate the similarity between
 
 ## Directory Structure
 
-- **`business5/`**: Contains the Matching experiment of the 5 sample files from the business corpus.
-- **`celebrity5/`**: Contains the Matching experiment of the female celebrity corpus of the matching experiment.
+- **`business5/`**: Contains the matching experiment of the 5 sample files from the business corpus.
+- **`celebrity5/`**: Contains the matching experiment of the female celebrity corpus of the matching experiment.
 - **`input-file/`**: Contains the extracted QA pairs and text sections used in the matching process.
 
 ## Scripts Overview
