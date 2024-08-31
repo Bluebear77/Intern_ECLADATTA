@@ -1,6 +1,6 @@
 # ReasTAP Experiment on ECLADATTA Corpus
 
-This directory contains the results of the ReasTAP experiment conducted on three ECLADATTA corpora. 
+This directory contains the results of the ReasTAP experiment conducted on 3 ECLADATTA corpora. 
 
 
 

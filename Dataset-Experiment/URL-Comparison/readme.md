@@ -1,6 +1,6 @@
 # URL-Comparison Directory
 
-This directory contains scripts and files for processing, analyzing, and visualizing URL data from various datasets.
+This directory contains scripts and files for processing, analyzing, and visualizing URL data from 7 benmark datasets and the 3 ECLADATTA corpus.
 
 ## Directory Structure
 

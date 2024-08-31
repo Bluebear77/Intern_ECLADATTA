@@ -34,12 +34,3 @@ This directory contains a comprehensive study of seven benchmark datasets, with 
    An enhanced version of WTQ, focusing on factuality and logical consistency.  
    [GitHub Repository](https://github.com/yale-nlp/LLM-T2T/tree/main/data)
 
-## Key Insights
-
-- **QTSumm**: Developed by combining LOGICNLG and ToTTo, QTSumm implements a fact template approach to generate query-focused summaries over tabular data.
-  
-- **Training LLMs**: Datasets such as LOGICNLG, LOTNLG, FetaQA, and F2WTQ are instrumental in training various large language models, helping to advance the field of natural language generation and understanding from tabular data.
-
-## Purpose
-
-This directory serves as a resource for researchers and practitioners seeking to explore the intricacies of these datasets, their contributions to LLM training, and their impact on the development of advanced table-to-text and summarization models.
