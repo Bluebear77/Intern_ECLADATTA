@@ -1,4 +1,4 @@
-# ECLADATTA-3 Corpus: Business, Telco, and Female Celebrities
+# ECLADATTA 3 Corpus: Business, Telco, and Female Celebrities
 
 This repository contains 3 corpora constructed for the ECLADATTA project.
 
