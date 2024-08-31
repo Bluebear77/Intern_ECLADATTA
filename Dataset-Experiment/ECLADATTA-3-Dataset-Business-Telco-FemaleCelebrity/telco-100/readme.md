@@ -1,21 +1,49 @@
-Here is the working stream of the 100 telco instances.
+# 100 Telco Instances Pre-Processing for ReasTAP Model
 
-Complete: pages with all tables extracted
+This repository contains the pre-processing pipeline for the 100 Telco Instances, designed as input for the ReasTAP model. The final processed output is stored in the `P5` directory.
 
-Missing: pages that have tables in the origin URL but none were extracted. Some are due to unparsed templates, others are just ordinary "wikitable sortable".
+## Directory Structure and Processing Stages
 
-NoTable: pages that have no tables in the URL
+### 1. Raw Data Overview
+- **Directories**:
+  - `Complete`: Contains pages where all tables were successfully extracted.
+  - `Missing`: Contains pages that have tables in the original URL but none were extracted, often due to issues like unparsed templates or standard "wikitable sortable" formats.
+  - `NoTable`: Contains pages that do not have tables in the original URL.
+  - `Raw`: Contains the original `_doc.json` files split per URL.
 
-Raw: the original *_doc.json splited per URL.
+### 2. Data Extraction (Complete to P1)
+- **Script**: `extract.py`
+- **Description**: Extracts all relevant information from the complete dataset.
 
-***
+### 3. Structuring Input for ReasTAP (P1 to P2)
+- **Script**: `formulate.py`
+- **Description**: Builds the input structure necessary for the REASTAP implementation.
 
-- Complete >> P1: extract.py, extract all related info
+### 4. Column Types and Key Columns (P2 to P3)
+- **Script**: `supply.py`
+- **Description**: Determines the `"column_types"` and `"key_column"` using DAGOBAH annotations.
 
-- P1 >> P2: formulate.py, build the input structure for the REASTAP implementation
+### 5. Refining Column Types (P3 to P4)
+- **Script**: `rct.py`
+- **Description**: Refines the column types to ensure accuracy and consistency in the data.
 
-- P2 >> P3: supply.py, determine the  "column_types","key_column" using DAGOBAH
+### 6. Handling Empty Date Values (P4 to P5)
+- **Script**: `date.py`
+- **Description**: Uses `9999` as a placeholder for empty date values in the `"date_column"`.
 
-- P3 >> P4: rct.py, refine the column type.
+## Files and Directories
 
-- P4 >> P5: date.py, use 9999 as placeholder for empty date vlue in date_column.
+- `Complete/`: Directory containing fully extracted data pages.
+- `Missing/`: Directory for pages with tables that were not extracted.
+- `NoTable/`: Directory for pages without any tables.
+- `Raw/`: Directory containing the original split JSON files.
+- `P1/`, `P2/`, `P3/`, `P4/`, `P5/`: Directories representing different stages of data processing.
+- `extract.py`: Script for initial data extraction from the complete dataset.
+- `formulate.py`: Script for structuring input data for the REASTAP model.
+- `supply.py`: Script for determining `"column_types"` and `"key_column"` using DAGOBAH.
+- `rct.py`: Script for refining the column types.
+- `date.py`: Script for handling empty date values by inserting placeholders.
+
+## Final Output
+
+The fully processed dataset is located in the `P5` directory, ready for input into the ReasTAP model.
