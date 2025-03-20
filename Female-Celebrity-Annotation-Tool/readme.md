@@ -1,1 +1,4 @@
-The annotation result and analyzation of the Female Celebrity Corpus using the Annotation Tool for ECLADATTA project: annotation-tool.ecladatta.eurecom.fr/
+# Female Celebrity Corpus Annotation & Analysis  
+
+This project presents the annotation results and analysis of the Female Celebrity Corpus using the ECLADATTA Annotation Tool: [annotation-tool.ecladatta.eurecom.fr](https://annotation-tool.ecladatta.eurecom.fr).  
+
