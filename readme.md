@@ -1,6 +1,6 @@
 # ECLADATTA Internship Project Documentation
 
-This repo documents the results of an internship as part of the ECLADATTA project, which aims to improve the extraction and interpretation of latent knowledge from documents by analyzing both texts and tables.
+This repo documents the results of an internship (March 2024 - August 2025) as part of the ECLADATTA project, which aims to improve the extraction and interpretation of latent knowledge from documents by analyzing both texts and tables.
 
 ## Background
 
