@@ -241,3 +241,47 @@
 | In Both | partner in business or sport | P1327 | 122 |
 | In Both | successful candidate | P991 | 115 |
 | In Both | conferred by | P1027 | 114 |
+
+## Line Chart of Human Annotated Counts
+
+![Line Chart](line_chart.png)
+
+## Empty Triplet Annotations
+
+| Title | Subject | Predicate | Object |
+|-------|---------|-----------|--------|
+| Liste des reines de Norvège | Q235447 | P97 | empty |
+| Liste des femmes pilotes aux 24 Heures du Mans | Q6547672 | P1352 | empty |
+| Liste des femmes pilotes aux 24 Heures du Mans | empty | P31 | Q3349205 |
+| Liste des femmes pilotes aux 24 Heures du Mans | Q3349205 | P1346 | empty |
+| Liste des comtesses et reines de Castille | empty | P97 | Q179293 |
+| Liste des comtesses et reines de Castille | empty | P97 | Q179293 |
+| Markéta Vondroušová | Q18918709 | empty | empty |
+| Markéta Vondroušová | Q18918709 | empty | Q509903 |
+| Saki Kumagai | Q220950 | P166 | empty |
+| Saki Kumagai | empty | P585 | Q218883 |
+| Saki Kumagai | empty | P585 | Q218883 |
+| Elizabeth Taylor | Q34851 | P3362 | empty |
+| Liste des femmes astronautes | Q44371 | P450 | empty |
+| Magdalena Neuner | Q76455 | empty | empty |
+| Magdalena Neuner | Q76455 | empty | empty |
+| Magdalena Neuner | Q76455 | empty | empty |
+| Magdalena Neuner | Q76455 | P1114 | empty |
+| Liste des épouses des rois et ducs de Bretagne | empty | P97 | Q16511993 |
+| Liste des épouses des rois et ducs de Bretagne | empty | P97 | Q16511993 |
+| Liste des conjoints des souverains de Bohême | Q131706 | empty | empty |
+| Caroline Garcia | Q181278 | P1351 | empty |
+| Caroline Garcia | Q181278 | P1351 | empty |
+| Ellen van Dijk | empty | empty | empty |
+| Ellen van Dijk | empty | empty | empty |
+| Liste des conjoints des souverains de Naples | Q235174 | empty | Q170353 |
+| Annick Girardin | empty | empty | empty |
+| Ségolène Royal | empty | empty | empty |
+| Sarah Michelle Gellar | Q180665 | P166 | empty |
+| Cécile Duflot | Q268634 | empty | Q51591359 |
+| Cécile Duflot | empty | P991 | Q51591359 |
+| Maria Sharapova | empty | empty | empty |
+| Allyson Felix | Q688615 | P585 | empty |
+| Allyson Felix | Q688615 | P585 | empty |
+| Allyson Felix | Q5799 | P10729 | empty |
+| **Total Empty** | 13 | 13 | 23 |
